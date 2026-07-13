@@ -1,1 +1,1373 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8d1111">
+  <title>USSR Socialist Stock Exchange</title>
+  <link rel="icon" href="logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --red-dark: #5f0909;
+      --red: #981515;
+      --red-light: #b82020;
+      --gold: #efc94c;
+      --cream: #eee5cd;
+      --paper: #d9cfb4;
+      --ink: #17130f;
+      --muted: #6e6656;
+      --green: #2d7a48;
+      --border: rgba(45, 30, 16, .34);
+      --shadow: 0 16px 40px rgba(28, 8, 4, .22);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(240, 232, 207, .92), rgba(240, 232, 207, .92)),
+        repeating-linear-gradient(0deg, transparent 0 3px, rgba(80, 49, 24, .025) 3px 4px);
+      font-family: Georgia, "Times New Roman", serif;
+      min-height: 100vh;
+    }
+
+    button, input, textarea, select { font: inherit; }
+
+    .top-stripe {
+      height: 8px;
+      background: linear-gradient(90deg, var(--gold) 0 18%, var(--red) 18% 82%, var(--gold) 82%);
+      border-bottom: 2px solid #3a0505;
+    }
+
+    .masthead {
+      background:
+        radial-gradient(circle at 70% 20%, rgba(255,255,255,.08), transparent 28%),
+        linear-gradient(135deg, #651010, #9d1717 55%, #6d0d0d);
+      color: #fff5d4;
+      border-bottom: 5px solid var(--gold);
+      box-shadow: 0 8px 25px rgba(51, 5, 5, .28);
+    }
+
+    .masthead-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      min-height: 160px;
+      padding: 24px clamp(18px, 4vw, 48px);
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 104px;
+      height: 104px;
+      object-fit: contain;
+      filter: drop-shadow(0 5px 8px rgba(0,0,0,.28));
+    }
+
+    .title-block small {
+      display: block;
+      color: var(--gold);
+      font: 700 12px/1.2 Arial, sans-serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .title-block h1 {
+      margin: 0;
+      font-size: clamp(30px, 4.5vw, 62px);
+      line-height: .95;
+      letter-spacing: -.035em;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 0 rgba(0,0,0,.22);
+    }
+
+    .title-block p {
+      margin: 12px 0 0;
+      color: #eadfbf;
+      font-size: 15px;
+      letter-spacing: .03em;
+    }
+
+    .clock-box {
+      min-width: 245px;
+      text-align: right;
+      border-left: 1px solid rgba(255,255,255,.22);
+      padding-left: 24px;
+    }
+
+    .clock-label {
+      color: var(--gold);
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    #cetClock {
+      margin-top: 6px;
+      font: 700 23px/1.15 "Courier New", monospace;
+    }
+
+    #marketCountdown {
+      margin-top: 8px;
+      font: 700 14px Arial, sans-serif;
+      color: #fff1b8;
+    }
+
+    .ticker {
+      background: #220403;
+      color: #fff5cf;
+      border-bottom: 2px solid #7c140f;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .ticker-track {
+      display: inline-flex;
+      min-width: 100%;
+      gap: 50px;
+      padding: 10px 0;
+      animation: ticker 30s linear infinite;
+      font: 700 13px Arial, sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .ticker-track span::before {
+      content: "★";
+      color: var(--gold);
+      margin-right: 12px;
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px clamp(16px, 3vw, 38px) 60px;
+    }
+
+    .status-row {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .status-card, .session-card, .panel, .announcement-card {
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(rgba(255,255,255,.22), rgba(255,255,255,.06)),
+        var(--cream);
+      box-shadow: var(--shadow);
+    }
+
+    .status-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 24px;
+      border-left: 8px solid var(--red);
+    }
+
+    .eyebrow {
+      color: var(--red);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font: 800 clamp(38px, 7vw, 78px)/.9 Georgia, serif;
+      letter-spacing: -.05em;
+    }
+
+    .price-unit {
+      color: var(--muted);
+      font: 700 13px Arial, sans-serif;
+      letter-spacing: .12em;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    .change {
+      min-width: 125px;
+      padding: 15px 12px;
+      text-align: center;
+      border: 2px solid currentColor;
+      font: 800 26px Arial, sans-serif;
+      background: rgba(255,255,255,.23);
+    }
+
+    .change.positive { color: var(--green); }
+    .change.negative { color: var(--red); }
+    .change.flat { color: #675d4c; }
+
+    .session-card {
+      padding: 22px;
+      border-top: 6px solid var(--gold);
+    }
+
+    .session-state {
+      font: 900 24px/1 Arial, sans-serif;
+      text-transform: uppercase;
+      margin: 7px 0 11px;
+    }
+
+    .session-state.open { color: var(--green); }
+    .session-state.closed { color: var(--red); }
+
+    .session-details {
+      color: var(--muted);
+      font: 14px/1.6 Arial, sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.8fr) minmax(290px, .8fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      padding: 14px 18px;
+      color: #fff6d6;
+      background: linear-gradient(90deg, #6c0d0d, #951818);
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .panel-header h2 {
+      margin: 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .panel-header span {
+      color: #efdba2;
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .chart-wrap {
+      position: relative;
+      height: 460px;
+      padding: 18px;
+    }
+
+    .chart-stamp {
+      position: absolute;
+      right: 30px;
+      top: 28px;
+      z-index: 2;
+      color: rgba(91, 13, 13, .13);
+      font: 900 42px Arial, sans-serif;
+      transform: rotate(-8deg);
+      border: 5px double currentColor;
+      padding: 8px 12px;
+      pointer-events: none;
+      text-transform: uppercase;
+    }
+
+    .market-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--border);
+    }
+
+    .meta-box {
+      padding: 16px;
+      border-right: 1px solid var(--border);
+    }
+
+    .meta-box:last-child { border-right: 0; }
+
+    .meta-box b {
+      display: block;
+      color: var(--red);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .meta-box span {
+      font: 700 16px Arial, sans-serif;
+    }
+
+    .announcements {
+      display: grid;
+      gap: 12px;
+    }
+
+    .announcement-card {
+      padding: 17px;
+      border-left: 5px solid var(--red);
+      box-shadow: 0 8px 18px rgba(30, 15, 5, .11);
+    }
+
+    .announcement-card time {
+      display: block;
+      color: var(--muted);
+      font: 700 10px Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .announcement-card h3 {
+      margin: 0 0 6px;
+      color: var(--red-dark);
+      font-size: 18px;
+    }
+
+    .announcement-card p {
+      margin: 0;
+      font: 14px/1.55 Arial, sans-serif;
+      color: #3c352b;
+    }
+
+    .empty {
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-style: italic;
+      border: 1px dashed var(--border);
+      background: rgba(255,255,255,.16);
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding: 22px 0 0;
+      border-top: 2px solid rgba(104, 15, 12, .25);
+      color: #675e4e;
+      font: 12px/1.6 Arial, sans-serif;
+      text-align: center;
+    }
+
+    .admin-backdrop {
+      position: fixed;
+      inset: 0;
+      display: none;
+      place-items: center;
+      z-index: 100;
+      padding: 18px;
+      background: rgba(21, 5, 3, .76);
+      backdrop-filter: blur(5px);
+    }
+
+    .admin-backdrop.open { display: grid; }
+
+    .admin-window {
+      width: min(980px, 100%);
+      max-height: 92vh;
+      overflow: auto;
+      background: #e9dfc4;
+      border: 5px solid #7e1111;
+      box-shadow: 0 25px 80px rgba(0,0,0,.5);
+    }
+
+    .admin-titlebar {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 17px;
+      color: #fff2c7;
+      background: #741010;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .admin-titlebar h2 {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .close-admin {
+      border: 1px solid #f3d26b;
+      color: #fff5d6;
+      background: transparent;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .admin-body {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .admin-section {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.23);
+      padding: 17px;
+    }
+
+    .admin-section.full { grid-column: 1 / -1; }
+
+    .admin-section h3 {
+      margin: 0 0 14px;
+      color: var(--red-dark);
+      text-transform: uppercase;
+      font: 800 15px Arial, sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .field label {
+      color: #5d5040;
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .field input, .field textarea, .field select {
+      width: 100%;
+      border: 1px solid #8c7c62;
+      background: #fffaf0;
+      color: var(--ink);
+      padding: 11px 12px;
+      outline: none;
+    }
+
+    .field input:focus, .field textarea:focus, .field select:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 2px rgba(151, 20, 20, .14);
+    }
+
+    .field textarea { min-height: 90px; resize: vertical; }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .admin-btn {
+      border: 0;
+      padding: 11px 15px;
+      cursor: pointer;
+      color: #fff8dc;
+      background: var(--red);
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .admin-btn:hover { filter: brightness(1.08); }
+    .admin-btn.secondary { background: #655942; }
+    .admin-btn.gold { color: #2b1d05; background: #dab33f; }
+    .admin-btn.danger { background: #3f0907; }
+
+    .admin-status {
+      grid-column: 1 / -1;
+      padding: 12px 14px;
+      color: #504636;
+      background: #d8ccb0;
+      border: 1px solid #aa9b7a;
+      font: 700 12px Arial, sans-serif;
+    }
+
+    .admin-status.good { border-color: #4e815c; color: #235b35; }
+    .admin-status.bad { border-color: #9c3730; color: #7c1711; }
+
+    .restricted {
+      width: min(460px, 100%);
+      padding: 26px;
+      text-align: center;
+      background: #eee2c3;
+      border: 5px solid #7b1010;
+      box-shadow: 0 25px 80px rgba(0,0,0,.5);
+    }
+
+    .restricted h2 { color: var(--red); text-transform: uppercase; }
+    .restricted p { font: 14px/1.55 Arial, sans-serif; }
+
+    .connection {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .connection::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #9a2922;
+      box-shadow: 0 0 0 3px rgba(154,41,34,.15);
+    }
+
+    .connection.online::before {
+      background: #3d8e57;
+      box-shadow: 0 0 0 3px rgba(61,142,87,.15);
+    }
+
+    @media (max-width: 900px) {
+      .masthead-inner { grid-template-columns: 82px 1fr; }
+      .logo { width: 78px; height: 78px; }
+      .clock-box {
+        grid-column: 1 / -1;
+        text-align: left;
+        border-left: 0;
+        border-top: 1px solid rgba(255,255,255,.22);
+        padding: 14px 0 0;
+      }
+      .status-row, .grid { grid-template-columns: 1fr; }
+      .chart-wrap { height: 390px; }
+    }
+
+    @media (max-width: 620px) {
+      .masthead-inner { grid-template-columns: 64px 1fr; min-height: 0; }
+      .logo { width: 62px; height: 62px; }
+      .title-block h1 { font-size: 31px; }
+      .status-card { grid-template-columns: 1fr; }
+      .change { width: 100%; }
+      .market-meta { grid-template-columns: 1fr; }
+      .meta-box { border-right: 0; border-bottom: 1px solid var(--border); }
+      .meta-box:last-child { border-bottom: 0; }
+      .admin-body { grid-template-columns: 1fr; }
+      .admin-section.full { grid-column: auto; }
+      .chart-wrap { height: 330px; padding: 10px; }
+      .chart-stamp { font-size: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-stripe"></div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <img class="logo" src="logo.png" alt="USSR Socialist Stock Exchange emblem">
+      <div class="title-block">
+        <small>State Committee for Financial Coordination</small>
+        <h1>USSR Socialist Stock Exchange</h1>
+        <p>Official public record of the Union's centrally supervised market index</p>
+      </div>
+      <div class="clock-box">
+        <div class="clock-label">Central European Time</div>
+        <div id="cetClock">--:--:--</div>
+        <div id="marketCountdown">Session data loading</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack">
+      <span>Official State Market Bulletin</span>
+      <span>No unscheduled price movement is permitted</span>
+      <span>All index changes are issued by the Central Bank</span>
+      <span>Official State Market Bulletin</span>
+      <span>No unscheduled price movement is permitted</span>
+      <span>All index changes are issued by the Central Bank</span>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="status-row">
+      <article class="status-card">
+        <div>
+          <div class="eyebrow">Union Composite Socialist Index</div>
+          <div class="price" id="currentPrice">0.00</div>
+          <div class="price-unit">State Index Points · Live Firebase Record</div>
+        </div>
+        <div id="changeBadge" class="change flat">0.00%</div>
+      </article>
+
+      <article class="session-card">
+        <div class="eyebrow">Trading Session</div>
+        <div id="sessionState" class="session-state closed">Closed</div>
+        <div id="sessionDetails" class="session-details">Awaiting an official market session.</div>
+        <div style="margin-top:14px">
+          <span id="connectionState" class="connection">Connecting</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Official Index Movement</h2>
+          <span id="movementLabel">No scheduled movement</span>
+        </div>
+        <div class="chart-wrap">
+          <div class="chart-stamp">State Verified</div>
+          <canvas id="marketChart"></canvas>
+        </div>
+        <div class="market-meta">
+          <div class="meta-box">
+            <b>Opening Level</b>
+            <span id="openingValue">0.00</span>
+          </div>
+          <div class="meta-box">
+            <b>Scheduled Target</b>
+            <span id="targetValue">0.00</span>
+          </div>
+          <div class="meta-box">
+            <b>Movement Completion</b>
+            <span id="movementCompletion">Not scheduled</span>
+          </div>
+        </div>
+      </article>
+
+      <aside class="panel">
+        <div class="panel-header">
+          <h2>State Announcements</h2>
+          <span>Central Bank Wire</span>
+        </div>
+        <div id="announcements" class="announcements" style="padding:14px">
+          <div class="empty">No official announcements have been issued.</div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      Published by the State Committee for Financial Coordination. All displayed values are centrally administered and do not represent a free-market exchange.
+    </footer>
+  </main>
+
+  <div id="adminBackdrop" class="admin-backdrop" aria-hidden="true">
+    <div id="adminContent" class="admin-window">
+      <div class="admin-titlebar">
+        <h2>Central Administration Console</h2>
+        <button id="closeAdmin" class="close-admin" aria-label="Close">×</button>
+      </div>
+
+      <div class="admin-body">
+        <section class="admin-section">
+          <h3>Index Control</h3>
+          <div class="field">
+            <label for="initialPrice">Set exact index value</label>
+            <input id="initialPrice" type="number" min="0" step="0.01" value="0">
+          </div>
+          <div class="button-row">
+            <button id="setExactPrice" class="admin-btn secondary">Set exact value</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Scheduled Movement</h3>
+          <div class="field">
+            <label for="growthPercent">Percentage change</label>
+            <input id="growthPercent" type="number" step="0.01" value="10">
+          </div>
+          <div class="field">
+            <label for="growthDuration">Movement duration in minutes</label>
+            <input id="growthDuration" type="number" min="1" step="1" value="30">
+          </div>
+          <div class="button-row">
+            <button id="scheduleGrowth" class="admin-btn gold">Issue movement order</button>
+            <button id="cancelMovement" class="admin-btn secondary">Freeze at current value</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Market Session Timer</h3>
+          <div class="field">
+            <label for="sessionHours">Session duration in hours</label>
+            <input id="sessionHours" type="number" min="1" max="168" step="1" value="24">
+          </div>
+          <div class="button-row">
+            <button id="resetTimer" class="admin-btn">Open / reset session</button>
+            <button id="closeMarket" class="admin-btn danger">Close market now</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Issue Announcement</h3>
+          <div class="field">
+            <label for="announcementTitle">Headline</label>
+            <input id="announcementTitle" maxlength="90" value="Central Bank announces market growth">
+          </div>
+          <div class="field">
+            <label for="announcementBody">Official statement</label>
+            <textarea id="announcementBody" maxlength="600">The Central Bank has authorised a 10% index increase following a higher volume of state-approved purchases than sales.</textarea>
+          </div>
+          <div class="button-row">
+            <button id="publishAnnouncement" class="admin-btn">Publish bulletin</button>
+          </div>
+        </section>
+
+        <section class="admin-section full">
+          <h3>Maintenance</h3>
+          <div class="button-row">
+            <button id="clearAnnouncements" class="admin-btn secondary">Clear announcements</button>
+            <button id="clearHistory" class="admin-btn secondary">Reset graph history</button>
+            <button id="factoryReset" class="admin-btn danger">Factory reset market</button>
+          </div>
+        </section>
+
+        <div id="adminStatus" class="admin-status">
+          Console restricted to the authorised network address.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+    import { getAnalytics, isSupported } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
+    import {
+      getDatabase,
+      ref,
+      onValue,
+      set,
+      update,
+      push,
+      remove
+    } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBM0hjqpvyUW4eTOGugc9kOMUMbaxgTNP0",
+      authDomain: "roblox-api-a62ec.firebaseapp.com",
+      databaseURL: "https://roblox-api-a62ec-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "roblox-api-a62ec",
+      storageBucket: "roblox-api-a62ec.firebasestorage.app",
+      messagingSenderId: "234688704322",
+      appId: "1:234688704322:web:68099b35e43275f3ee22db",
+      measurementId: "G-Y63V80ZWZ7"
+    };
+
+    const ADMIN_IP = "81.242.37.70";
+    const ROOT_PATH = "ussrSocialistStockMarket";
+    const MAX_HISTORY_POINTS = 300;
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    isSupported().then((supported) => {
+      if (supported) getAnalytics(app);
+    }).catch(() => {});
+
+    const rootRef = ref(db, ROOT_PATH);
+    const stateRef = ref(db, `${ROOT_PATH}/state`);
+    const historyRef = ref(db, `${ROOT_PATH}/history`);
+    const announcementsRef = ref(db, `${ROOT_PATH}/announcements`);
+    const serverOffsetRef = ref(db, ".info/serverTimeOffset");
+    const connectedRef = ref(db, ".info/connected");
+
+    let serverOffset = 0;
+    let marketState = null;
+    let historyData = {};
+    let announcementsData = {};
+    let currentPublicIp = null;
+    let adminAllowed = false;
+
+    const $ = (id) => document.getElementById(id);
+
+    const defaultState = () => ({
+      currentBasePrice: 0,
+      openingPrice: 0,
+      movement: {
+        active: false,
+        startPrice: 0,
+        targetPrice: 0,
+        percent: 0,
+        startAt: 0,
+        durationMs: 0
+      },
+      session: {
+        openedAt: 0,
+        closesAt: 0,
+        forceClosed: true
+      },
+      lastUpdatedAt: now()
+    });
+
+    function now() {
+      return Date.now() + serverOffset;
+    }
+
+    function safeNumber(value, fallback = 0) {
+      const n = Number(value);
+      return Number.isFinite(n) ? n : fallback;
+    }
+
+    function formatNumber(value) {
+      return safeNumber(value).toLocaleString("en-GB", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+    }
+
+    function formatCET(timestamp, includeDate = true) {
+      if (!timestamp) return "Not scheduled";
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Brussels",
+        day: includeDate ? "2-digit" : undefined,
+        month: includeDate ? "short" : undefined,
+        year: includeDate ? "numeric" : undefined,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(new Date(timestamp));
+    }
+
+    function getCalculatedPrice(at = now()) {
+      if (!marketState) return 0;
+      const movement = marketState.movement || {};
+      if (!movement.active) return Math.max(0, safeNumber(marketState.currentBasePrice));
+
+      const start = safeNumber(movement.startPrice);
+      const target = safeNumber(movement.targetPrice);
+      const duration = Math.max(1, safeNumber(movement.durationMs, 1));
+      const progress = Math.min(1, Math.max(0, (at - safeNumber(movement.startAt)) / duration));
+      return Math.max(0, start + ((target - start) * progress));
+    }
+
+    function sessionIsOpen(at = now()) {
+      if (!marketState?.session) return false;
+      const session = marketState.session;
+      return !session.forceClosed && safeNumber(session.closesAt) > at;
+    }
+
+    function movementProgress(at = now()) {
+      const movement = marketState?.movement;
+      if (!movement?.active) return 0;
+      return Math.min(1, Math.max(0, (at - movement.startAt) / Math.max(1, movement.durationMs)));
+    }
+
+    const chart = new Chart($("marketChart"), {
+      type: "line",
+      data: {
+        datasets: [{
+          label: "Union Composite Socialist Index",
+          data: [],
+          parsing: false,
+          borderColor: "#8f1515",
+          backgroundColor: "rgba(143, 21, 21, .12)",
+          borderWidth: 3,
+          pointRadius: 0,
+          pointHoverRadius: 5,
+          tension: .22,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        interaction: {
+          mode: "index",
+          intersect: false
+        },
+        scales: {
+          x: {
+            type: "linear",
+            grid: { color: "rgba(84, 57, 31, .10)" },
+            ticks: {
+              color: "#665c4b",
+              maxTicksLimit: 7,
+              callback: (value) => new Intl.DateTimeFormat("en-GB", {
+                timeZone: "Europe/Brussels",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+              }).format(new Date(value))
+            },
+            title: {
+              display: true,
+              text: "CENTRAL EUROPEAN TIME",
+              color: "#6f6250",
+              font: { weight: "bold", size: 10 }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            grid: { color: "rgba(84, 57, 31, .12)" },
+            ticks: {
+              color: "#665c4b",
+              callback: (value) => Number(value).toLocaleString("en-GB")
+            }
+          }
+        },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              title: (items) => items.length ? formatCET(items[0].parsed.x) : "",
+              label: (item) => ` Index: ${formatNumber(item.parsed.y)}`
+            }
+          }
+        }
+      }
+    });
+
+    function buildChartData() {
+      const points = Object.values(historyData || {})
+        .filter((point) => Number.isFinite(Number(point?.time)) && Number.isFinite(Number(point?.value)))
+        .map((point) => ({ x: Number(point.time), y: Number(point.value) }))
+        .sort((a, b) => a.x - b.x)
+        .slice(-MAX_HISTORY_POINTS);
+
+      const currentPoint = { x: now(), y: getCalculatedPrice() };
+      const last = points[points.length - 1];
+
+      if (!last || currentPoint.x > last.x) points.push(currentPoint);
+      else points[points.length - 1] = currentPoint;
+
+      if (points.length === 1) {
+        points.unshift({ x: currentPoint.x - 60_000, y: currentPoint.y });
+      }
+
+      chart.data.datasets[0].data = points;
+      chart.update("none");
+    }
+
+    function renderState() {
+      if (!marketState) return;
+
+      const currentPrice = getCalculatedPrice();
+      const opening = safeNumber(marketState.openingPrice);
+      const percentChange = opening > 0 ? ((currentPrice - opening) / opening) * 100 : 0;
+      const open = sessionIsOpen();
+      const movement = marketState.movement || {};
+      const progress = movementProgress();
+
+      $("currentPrice").textContent = formatNumber(currentPrice);
+      $("openingValue").textContent = formatNumber(opening);
+      $("targetValue").textContent = formatNumber(movement.active ? movement.targetPrice : currentPrice);
+
+      const badge = $("changeBadge");
+      badge.textContent = `${percentChange >= 0 ? "+" : ""}${percentChange.toFixed(2)}%`;
+      badge.className = `change ${percentChange > 0 ? "positive" : percentChange < 0 ? "negative" : "flat"}`;
+
+      $("sessionState").textContent = open ? "Market Open" : "Market Closed";
+      $("sessionState").className = `session-state ${open ? "open" : "closed"}`;
+
+      if (open) {
+        $("sessionDetails").textContent = `The official session closes at ${formatCET(marketState.session.closesAt)}.`;
+      } else {
+        $("sessionDetails").textContent = "The market is closed. New public movement requires an authorised session reset.";
+      }
+
+      if (movement.active && progress < 1) {
+        $("movementLabel").textContent =
+          `${safeNumber(movement.percent).toFixed(2)}% order · ${Math.round(progress * 100)}% complete`;
+        $("movementCompletion").textContent = formatCET(movement.startAt + movement.durationMs);
+      } else if (movement.active && progress >= 1) {
+        $("movementLabel").textContent = "Scheduled movement completed";
+        $("movementCompletion").textContent = formatCET(movement.startAt + movement.durationMs);
+      } else {
+        $("movementLabel").textContent = "No scheduled movement";
+        $("movementCompletion").textContent = "Not scheduled";
+      }
+
+      updateTicker(open, currentPrice, percentChange);
+      buildChartData();
+    }
+
+    function updateTicker(open, price, percent) {
+      const stateText = open ? "MARKET OPEN" : "STOCK MARKET CLOSED";
+      const movementText = marketState?.movement?.active
+        ? `CENTRAL ORDER ${safeNumber(marketState.movement.percent).toFixed(2)}%`
+        : "NO ACTIVE MOVEMENT ORDER";
+      const values = [
+        stateText,
+        `UNION INDEX ${formatNumber(price)}`,
+        `SESSION CHANGE ${percent >= 0 ? "+" : ""}${percent.toFixed(2)}%`,
+        movementText
+      ];
+      $("tickerTrack").innerHTML = [...values, ...values].map((text) => `<span>${text}</span>`).join("");
+    }
+
+    function renderAnnouncements() {
+      const items = Object.entries(announcementsData || {})
+        .map(([id, item]) => ({ id, ...item }))
+        .filter((item) => item.title || item.body)
+        .sort((a, b) => safeNumber(b.createdAt) - safeNumber(a.createdAt))
+        .slice(0, 15);
+
+      if (!items.length) {
+        $("announcements").innerHTML = '<div class="empty">No official announcements have been issued.</div>';
+        return;
+      }
+
+      $("announcements").innerHTML = items.map((item) => `
+        <article class="announcement-card">
+          <time>${escapeHtml(formatCET(item.createdAt || now()))}</time>
+          <h3>${escapeHtml(item.title || "State Bulletin")}</h3>
+          <p>${escapeHtml(item.body || "")}</p>
+        </article>
+      `).join("");
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function updateClock() {
+      const current = now();
+      $("cetClock").textContent = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Brussels",
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(new Date(current));
+
+      if (!marketState?.session || !sessionIsOpen(current)) {
+        $("marketCountdown").textContent = "STOCK MARKET CLOSED";
+        return;
+      }
+
+      const remaining = Math.max(0, marketState.session.closesAt - current);
+      const hours = Math.floor(remaining / 3_600_000);
+      const minutes = Math.floor((remaining % 3_600_000) / 60_000);
+      const seconds = Math.floor((remaining % 60_000) / 1000);
+      $("marketCountdown").textContent =
+        `SESSION CLOSES IN ${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    }
+
+    async function addHistoryPoint(value = getCalculatedPrice(), timestamp = now()) {
+      await push(historyRef, {
+        value: Math.max(0, safeNumber(value)),
+        time: timestamp
+      });
+    }
+
+    async function ensureStateExists() {
+      if (!adminAllowed || marketState) return;
+      await set(stateRef, defaultState());
+      await addHistoryPoint(0, now());
+    }
+
+    function setAdminStatus(message, type = "") {
+      const element = $("adminStatus");
+      element.textContent = message;
+      element.className = `admin-status ${type}`;
+    }
+
+    function requireAdmin() {
+      if (!adminAllowed) {
+        setAdminStatus("Access denied: this network address is not authorised.", "bad");
+        return false;
+      }
+      return true;
+    }
+
+    async function detectAdminIp() {
+      try {
+        const response = await fetch("https://api.ipify.org?format=json", { cache: "no-store" });
+        if (!response.ok) throw new Error("IP lookup failed");
+        const data = await response.json();
+        currentPublicIp = data.ip;
+        adminAllowed = currentPublicIp === ADMIN_IP;
+      } catch {
+        currentPublicIp = "unavailable";
+        adminAllowed = false;
+      }
+    }
+
+    async function openAdmin() {
+      await detectAdminIp();
+      const backdrop = $("adminBackdrop");
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+
+      if (!adminAllowed) {
+        $("adminContent").innerHTML = `
+          <div class="restricted">
+            <h2>Restricted State System</h2>
+            <p>This console is available only from the authorised administration network.</p>
+            <p><strong>Detected address:</strong> ${escapeHtml(currentPublicIp || "unknown")}</p>
+            <button id="restrictedClose" class="admin-btn">Close</button>
+          </div>
+        `;
+        $("restrictedClose").addEventListener("click", closeAdmin);
+        return;
+      }
+
+      setAdminStatus(`Authorised network confirmed: ${currentPublicIp}`, "good");
+      await ensureStateExists();
+    }
+
+    function closeAdmin() {
+      $("adminBackdrop").classList.remove("open");
+      $("adminBackdrop").setAttribute("aria-hidden", "true");
+    }
+
+    onValue(serverOffsetRef, (snapshot) => {
+      serverOffset = safeNumber(snapshot.val());
+    });
+
+    onValue(connectedRef, (snapshot) => {
+      const online = snapshot.val() === true;
+      $("connectionState").textContent = online ? "Firebase live" : "Offline / reconnecting";
+      $("connectionState").className = `connection ${online ? "online" : ""}`;
+    });
+
+    onValue(stateRef, (snapshot) => {
+      marketState = snapshot.val();
+      if (!marketState) {
+        marketState = defaultState();
+      }
+      renderState();
+    });
+
+    onValue(historyRef, (snapshot) => {
+      historyData = snapshot.val() || {};
+      buildChartData();
+    });
+
+    onValue(announcementsRef, (snapshot) => {
+      announcementsData = snapshot.val() || {};
+      renderAnnouncements();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      const tag = document.activeElement?.tagName;
+      const typing = tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT";
+      if (!typing && event.key.toLowerCase() === "f") {
+        event.preventDefault();
+        openAdmin();
+      }
+      if (event.key === "Escape") closeAdmin();
+    });
+
+    $("closeAdmin").addEventListener("click", closeAdmin);
+    $("adminBackdrop").addEventListener("click", (event) => {
+      if (event.target === $("adminBackdrop")) closeAdmin();
+    });
+
+    $("setExactPrice").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const value = Math.max(0, safeNumber($("initialPrice").value));
+        await addHistoryPoint(getCalculatedPrice());
+        await update(stateRef, {
+          currentBasePrice: value,
+          openingPrice: value,
+          movement: {
+            active: false,
+            startPrice: value,
+            targetPrice: value,
+            percent: 0,
+            startAt: now(),
+            durationMs: 0
+          },
+          lastUpdatedAt: now()
+        });
+        await addHistoryPoint(value);
+        setAdminStatus(`Index set to ${formatNumber(value)} points.`, "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("scheduleGrowth").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        if (!sessionIsOpen()) {
+          setAdminStatus("Open or reset the market session before issuing a movement order.", "bad");
+          return;
+        }
+
+        const percent = safeNumber($("growthPercent").value);
+        const durationMinutes = Math.max(1, safeNumber($("growthDuration").value, 30));
+        const startPrice = getCalculatedPrice();
+        const targetPrice = Math.max(0, startPrice * (1 + percent / 100));
+        const startAt = now();
+
+        await addHistoryPoint(startPrice, startAt);
+        await update(stateRef, {
+          currentBasePrice: startPrice,
+          movement: {
+            active: true,
+            startPrice,
+            targetPrice,
+            percent,
+            startAt,
+            durationMs: durationMinutes * 60_000
+          },
+          lastUpdatedAt: startAt
+        });
+
+        setAdminStatus(
+          `Movement order issued: ${percent >= 0 ? "+" : ""}${percent.toFixed(2)}% over ${durationMinutes} minutes.`,
+          "good"
+        );
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("cancelMovement").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const price = getCalculatedPrice();
+        const timestamp = now();
+        await addHistoryPoint(price, timestamp);
+        await update(stateRef, {
+          currentBasePrice: price,
+          movement: {
+            active: false,
+            startPrice: price,
+            targetPrice: price,
+            percent: 0,
+            startAt: timestamp,
+            durationMs: 0
+          },
+          lastUpdatedAt: timestamp
+        });
+        setAdminStatus(`Movement frozen at ${formatNumber(price)} points.`, "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("resetTimer").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const hours = Math.max(1, Math.min(168, safeNumber($("sessionHours").value, 24)));
+        const openedAt = now();
+        const price = getCalculatedPrice();
+
+        await addHistoryPoint(price, openedAt);
+        await update(stateRef, {
+          openingPrice: price,
+          session: {
+            openedAt,
+            closesAt: openedAt + hours * 3_600_000,
+            forceClosed: false
+          },
+          lastUpdatedAt: openedAt
+        });
+
+        setAdminStatus(`Market session opened for ${hours} hours.`, "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("closeMarket").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const timestamp = now();
+        await update(ref(db, `${ROOT_PATH}/state/session`), {
+          closesAt: timestamp,
+          forceClosed: true
+        });
+        setAdminStatus("Market closed by central order.", "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("publishAnnouncement").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const title = $("announcementTitle").value.trim();
+        const body = $("announcementBody").value.trim();
+        if (!title || !body) {
+          setAdminStatus("A headline and statement are required.", "bad");
+          return;
+        }
+
+        await push(announcementsRef, {
+          title,
+          body,
+          createdAt: now()
+        });
+
+        setAdminStatus("Official bulletin published.", "good");
+      } catch (error) {
+        setAdminStatus(`Publication failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("clearAnnouncements").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      if (!confirm("Clear every public announcement?")) return;
+      try {
+        await remove(announcementsRef);
+        setAdminStatus("Announcements cleared.", "good");
+      } catch (error) {
+        setAdminStatus(`Operation failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("clearHistory").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      if (!confirm("Reset the graph history to the current index value?")) return;
+      try {
+        const price = getCalculatedPrice();
+        await remove(historyRef);
+        await addHistoryPoint(price);
+        setAdminStatus("Graph history reset.", "good");
+      } catch (error) {
+        setAdminStatus(`Operation failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("factoryReset").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      if (!confirm("Factory reset the entire stock market to zero?")) return;
+      try {
+        await set(rootRef, {
+          state: defaultState(),
+          history: {
+            reset: { value: 0, time: now() }
+          },
+          announcements: {
+            reset: {
+              title: "Stock market closed",
+              body: "The market is awaiting a new daily directive from the Central Bank.",
+              createdAt: now()
+            }
+          }
+        });
+        setAdminStatus("Market factory reset completed.", "good");
+      } catch (error) {
+        setAdminStatus(`Reset failed: ${error.message}`, "bad");
+      }
+    });
+
+    setInterval(() => {
+      updateClock();
+      renderState();
+    }, 1000);
+
+    updateClock();
+  </script>
+</body>
+</html>
