@@ -882,7 +882,7 @@ State Trust "Red Star" Stock Exchange</title>
       <section class="economy-hero">
         <article class="gdp-card">
           <div class="eyebrow">Socialist Gross Domestic Value</div>
-          <div class="gdp-value" id="nationalEconomicValue">₽2,602,145</div>
+          <div class="gdp-value" id="nationalEconomicValue">₽20,602,145</div>
           <div class="gdp-subtitle">
             Combined recorded ruble holdings of citizens and the State Bank, together with the total official value of State Trust "Red Star" Stocks.
           </div>
@@ -905,8 +905,8 @@ State Trust "Red Star" Stock Exchange</title>
 
         <article class="economy-stat">
           <b>Total Stock Market Value</b>
-          <strong id="totalStockValue">₽2,000,000</strong>
-          <small>Official value of all State Trust "Red Star" Stocks.</small>
+          <strong id="totalStockValue">₽20,000,000</strong>
+          <small>Calculated automatically: issued shares × current stock price.</small>
         </article>
 
         <article class="economy-stat">
@@ -919,6 +919,30 @@ State Trust "Red Star" Stock Exchange</title>
           <b>State Bank Reserves</b>
           <strong id="stateBankReserves">₽296,403</strong>
           <small>Ruble balance held by the State Bank of the USSR.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Total Shares Issued</b>
+          <strong id="totalSharesIssued">200,000</strong>
+          <small>Total State Trust "Red Star" Stocks in existence.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Available for Purchase</b>
+          <strong id="availableShares">197,540</strong>
+          <small>Shares still held by the State and available in the store.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Citizen-Owned Shares</b>
+          <strong id="investorShares">2,460</strong>
+          <small>Issued shares minus shares currently available from the State.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Current Share Price</b>
+          <strong id="economySharePrice">₽100.00</strong>
+          <small>Live official market price from the stock exchange.</small>
         </article>
 
         <article class="economy-stat">
@@ -943,16 +967,16 @@ State Trust "Red Star" Stock Exchange</title>
           <div class="formula-box">
             <p>This page uses a simplified national economic value rather than real-world GDP.</p>
             <div class="formula-line">
-              <strong>Total Ruble Supply</strong><br>
-              Citizens' rubles + State Bank reserves
+              <strong>Total Stock Market Value</strong><br>
+              Total shares issued × current official share price
             </div>
             <div class="formula-line">
               <strong>Socialist Gross Domestic Value</strong><br>
-              Total rubles + total official stock value
+              Total rubles + automatically calculated stock market value
             </div>
             <div class="formula-line">
               <strong>Current calculation</strong><br>
-              <span id="economyFormula">₽602,145 + ₽2,000,000 = ₽2,602,145</span>
+              <span id="economyFormula">₽602,145 + (200,000 × ₽100.00) = ₽20,602,145</span>
             </div>
           </div>
         </article>
@@ -1068,8 +1092,12 @@ State Trust "Red Star" Stock Exchange</title>
             <input id="economyStateBank" type="number" min="0" step="1" value="296403">
           </div>
           <div class="field">
-            <label for="economyStockValue">Total value of all Red Star stocks</label>
-            <input id="economyStockValue" type="number" min="0" step="1" value="2000000">
+            <label for="economyTotalShares">Total shares issued</label>
+            <input id="economyTotalShares" type="number" min="1" step="1" value="200000">
+          </div>
+          <div class="field">
+            <label for="economyAvailableShares">Shares available for purchase</label>
+            <input id="economyAvailableShares" type="number" min="0" step="1" value="197540">
           </div>
           <div class="field">
             <label for="economyAccountCount">Recorded account holders</label>
@@ -1146,7 +1174,8 @@ State Trust "Red Star" Stock Exchange</title>
     let economyData = {
       totalRubles: 602145,
       stateBankRubles: 296403,
-      stockMarketValue: 2000000,
+      totalShares: 200000,
+      availableShares: 197540,
       accountCount: 44
     };
     let currentPublicIp = null;
@@ -1355,6 +1384,7 @@ State Trust "Red Star" Stock Exchange</title>
 
       updateTicker(open, currentPrice, percentChange);
       buildChartData();
+      renderEconomy();
     }
 
     function updateTicker(open, price, percent) {
@@ -1410,7 +1440,11 @@ State Trust "Red Star" Stock Exchange</title>
     function renderEconomy() {
       const totalRubles = Math.max(0, safeNumber(economyData.totalRubles, 602145));
       const stateBankRubles = Math.max(0, safeNumber(economyData.stateBankRubles, 296403));
-      const stockMarketValue = Math.max(0, safeNumber(economyData.stockMarketValue, 2000000));
+      const totalShares = Math.max(1, Math.floor(safeNumber(economyData.totalShares, 200000)));
+      const availableShares = Math.max(0, Math.min(totalShares, Math.floor(safeNumber(economyData.availableShares, 197540))));
+      const investorShares = totalShares - availableShares;
+      const sharePrice = Math.max(0, getCalculatedPrice());
+      const stockMarketValue = totalShares * sharePrice;
       const accountCount = Math.max(1, Math.floor(safeNumber(economyData.accountCount, 44)));
       const citizens = Math.max(0, totalRubles - stateBankRubles);
       const citizenAccounts = Math.max(1, accountCount - 1);
@@ -1421,10 +1455,14 @@ State Trust "Red Star" Stock Exchange</title>
       $("totalStockValue").textContent = formatRubles(stockMarketValue);
       $("citizenRubleHoldings").textContent = formatRubles(citizens);
       $("stateBankReserves").textContent = formatRubles(stateBankRubles);
+      $("totalSharesIssued").textContent = totalShares.toLocaleString("en-GB");
+      $("availableShares").textContent = availableShares.toLocaleString("en-GB");
+      $("investorShares").textContent = investorShares.toLocaleString("en-GB");
+      $("economySharePrice").textContent = `₽${formatNumber(sharePrice)}`;
       $("accountCount").textContent = accountCount.toLocaleString("en-GB");
       $("averageCitizenBalance").textContent = formatRubles(citizens / citizenAccounts);
       $("economyFormula").textContent =
-        `${formatRubles(totalRubles)} + ${formatRubles(stockMarketValue)} = ${formatRubles(nationalValue)}`;
+        `${formatRubles(totalRubles)} + (${totalShares.toLocaleString("en-GB")} × ₽${formatNumber(sharePrice)}) = ${formatRubles(nationalValue)}`;
 
       let rating = "DEVELOPING";
       if (nationalValue >= 5000000) rating = "POWERFUL";
@@ -1435,7 +1473,8 @@ State Trust "Red Star" Stock Exchange</title>
 
       if ($("economyTotalRubles")) $("economyTotalRubles").value = totalRubles;
       if ($("economyStateBank")) $("economyStateBank").value = stateBankRubles;
-      if ($("economyStockValue")) $("economyStockValue").value = stockMarketValue;
+      if ($("economyTotalShares")) $("economyTotalShares").value = totalShares;
+      if ($("economyAvailableShares")) $("economyAvailableShares").value = availableShares;
       if ($("economyAccountCount")) $("economyAccountCount").value = accountCount;
     }
 
@@ -1774,13 +1813,18 @@ State Trust "Red Star" Stock Exchange</title>
       try {
         const totalRubles = Math.max(0, safeNumber($("economyTotalRubles").value));
         const stateBankRubles = Math.max(0, Math.min(totalRubles, safeNumber($("economyStateBank").value)));
-        const stockMarketValue = Math.max(0, safeNumber($("economyStockValue").value));
+        const totalShares = Math.max(1, Math.floor(safeNumber($("economyTotalShares").value, 200000)));
+        const availableShares = Math.max(
+          0,
+          Math.min(totalShares, Math.floor(safeNumber($("economyAvailableShares").value, 197540)))
+        );
         const accountCount = Math.max(1, Math.floor(safeNumber($("economyAccountCount").value, 1)));
 
         await set(economyRef, {
           totalRubles,
           stateBankRubles,
-          stockMarketValue,
+          totalShares,
+          availableShares,
           accountCount,
           updatedAt: now()
         });
@@ -1834,7 +1878,8 @@ State Trust "Red Star" Stock Exchange</title>
           economy: {
             totalRubles: 602145,
             stateBankRubles: 296403,
-            stockMarketValue: 2000000,
+            totalShares: 200000,
+            availableShares: 197540,
             accountCount: 44,
             updatedAt: now()
           }
