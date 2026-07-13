@@ -553,6 +553,1800 @@ State Trust "Red Star" Stock Exchange</title>
       transform: translateY(1px);
     }
 
+    .site-nav {
+      background: #3c0806;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .site-nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(16px, 3vw, 38px);
+      display: flex;
+      gap: 0;
+    }
+
+    .nav-btn {
+      border: 0;
+      border-right: 1px solid rgba(255,255,255,.12);
+      padding: 13px 18px;
+      color: #eadfbf;
+      background: transparent;
+      cursor: pointer;
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .nav-btn:hover,
+    .nav-btn.active {
+      color: #2c1903;
+      background: var(--gold);
+    }
+
+    .site-page {
+      display: none;
+    }
+
+    .site-page.active {
+      display: block;
+    }
+
+    .economy-hero {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .gdp-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-left: 8px solid var(--red);
+      background:
+        linear-gradient(rgba(255,255,255,.22), rgba(255,255,255,.06)),
+        var(--cream);
+      box-shadow: var(--shadow);
+    }
+
+    .gdp-value {
+      margin-top: 10px;
+      font: 800 clamp(38px, 7vw, 72px)/.95 Georgia, serif;
+      letter-spacing: -.045em;
+    }
+
+    .gdp-subtitle {
+      margin-top: 12px;
+      color: var(--muted);
+      font: 14px/1.6 Arial, sans-serif;
+    }
+
+    .economy-seal {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      text-align: center;
+      color: #fff3ce;
+      background: linear-gradient(145deg, #68100d, #971816);
+      border: 1px solid #4a0907;
+      border-top: 6px solid var(--gold);
+      box-shadow: var(--shadow);
+    }
+
+    .economy-seal strong {
+      display: block;
+      color: var(--gold);
+      font-size: 32px;
+      margin-bottom: 9px;
+    }
+
+    .economy-seal span {
+      font: 800 12px/1.5 Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .economy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .economy-stat {
+      padding: 21px;
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--gold);
+      background: var(--cream);
+      box-shadow: 0 10px 24px rgba(28, 8, 4, .14);
+    }
+
+    .economy-stat b {
+      display: block;
+      color: var(--red);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .economy-stat strong {
+      display: block;
+      font-size: 29px;
+    }
+
+    .economy-stat small {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font: 12px/1.5 Arial, sans-serif;
+    }
+
+    .economy-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .economic-table {
+      width: 100%;
+      border-collapse: collapse;
+      font: 13px Arial, sans-serif;
+    }
+
+    .economic-table th,
+    .economic-table td {
+      padding: 11px 13px;
+      border-bottom: 1px solid rgba(45, 30, 16, .2);
+      text-align: left;
+    }
+
+    .economic-table th {
+      color: #fff5d5;
+      background: #741010;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .economic-table td:last-child,
+    .economic-table th:last-child {
+      text-align: right;
+    }
+
+    .formula-box {
+      padding: 20px;
+      font: 15px/1.75 Arial, sans-serif;
+    }
+
+    .formula-line {
+      margin: 12px 0;
+      padding: 14px;
+      background: rgba(255,255,255,.25);
+      border-left: 4px solid var(--red);
+    }
+
+    .formula-line strong {
+      color: var(--red-dark);
+    }
+
+    @media (max-width: 900px) {
+      .economy-hero,
+      .economy-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .economy-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    @media (max-width: 900px) {
+      .mobile-admin-btn {
+        display: block;
+      }
+      .masthead-inner { grid-template-columns: 82px 1fr; }
+      .logo { width: 78px; height: 78px; }
+      .clock-box {
+        grid-column: 1 / -1;
+        text-align: left;
+        border-left: 0;
+        border-top: 1px solid rgba(255,255,255,.22);
+        padding: 14px 0 0;
+      }
+      .status-row, .grid { grid-template-columns: 1fr; }
+      .chart-wrap { height: 390px; }
+    }
+
+    @media (max-width: 620px) {
+      .masthead-inner { grid-template-columns: 64px 1fr; min-height: 0; }
+      .logo { width: 62px; height: 62px; }
+      .title-block h1 { font-size: 31px; }
+      .status-card { grid-template-columns: 1fr; }
+      .change { width: 100%; }
+      .market-meta { grid-template-columns: 1fr; }
+      .meta-box { border-right: 0; border-bottom: 1px solid var(--border); }
+      .meta-box:last-child { border-bottom: 0; }
+      .admin-body { grid-template-columns: 1fr; }
+      .admin-section.full { grid-column: auto; }
+      .chart-wrap { height: 330px; padding: 10px; }
+      .chart-stamp { font-size: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-stripe"></div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <img class="logo" src="logo.png" alt="USSR Socialist Stock Exchange emblem">
+      <div class="title-block">
+        <small>Commissariat of Finance</small>
+        <h1>USSR Stock Exchange</h1>
+        <p>Official public record of the Union's centrally supervised market index</p>
+      </div>
+      <div class="clock-box">
+        <div class="clock-label">Central European Time</div>
+        <div id="cetClock">--:--:--</div>
+        <div id="marketCountdown">Session data loading</div>
+        <button id="mobileAdminBtn" class="mobile-admin-btn" type="button">
+          Administration Panel
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack">
+      <span>Official State Market Bulletin</span>
+      <span>No unscheduled price movement is permitted</span>
+      <span>All index changes are issued by the Central Bank</span>
+      <span>Official State Market Bulletin</span>
+      <span>No unscheduled price movement is permitted</span>
+      <span>All index changes are issued by the Central Bank</span>
+    </div>
+  </div>
+
+  <nav class="site-nav" aria-label="Website sections">
+    <div class="site-nav-inner">
+      <button class="nav-btn active" data-page="marketPage" type="button">Stock Market</button>
+      <button class="nav-btn" data-page="economyPage" type="button">National Economy</button>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div id="marketPage" class="site-page active">
+    <section class="status-row">
+      <article class="status-card">
+        <div>
+          <div class="eyebrow">Union Composite Socialist Index</div>
+          <div class="price" id="currentPrice">0.00</div>
+          <div class="price-unit">State Index Points · Live Record</div>
+        </div>
+        <div id="changeBadge" class="change flat">0.00%</div>
+      </article>
+
+      <article class="session-card">
+        <div class="eyebrow">Trading Session</div>
+        <div id="sessionState" class="session-state closed">Closed</div>
+        <div id="sessionDetails" class="session-details">Awaiting an official market session.</div>
+        <div style="margin-top:14px">
+          <span id="connectionState" class="connection">Connecting</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Official Index Movement</h2>
+          <span id="movementLabel">No scheduled movement</span>
+        </div>
+        <div class="chart-wrap">
+          <div class="chart-stamp">State Verified</div>
+          <canvas id="marketChart"></canvas>
+        </div>
+        <div class="market-meta">
+          <div class="meta-box">
+            <b>Opening Level</b>
+            <span id="openingValue">0.00</span>
+          </div>
+          <div class="meta-box">
+            <b>Scheduled Target</b>
+            <span id="targetValue">0.00</span>
+          </div>
+          <div class="meta-box">
+            <b>Movement Completion</b>
+            <span id="movementCompletion">Not scheduled</span>
+          </div>
+        </div>
+      </article>
+
+      <aside class="panel">
+        <div class="panel-header">
+          <h2>State Announcements</h2>
+          <span>Central Bank Wire</span>
+        </div>
+        <div id="announcements" class="announcements" style="padding:14px">
+          <div class="empty">No official announcements have been issued.</div>
+        </div>
+      </aside>
+    </section>
+
+    </div>
+
+    <div id="economyPage" class="site-page">
+      <section class="economy-hero">
+        <article class="gdp-card">
+          <div class="eyebrow">Socialist Gross Domestic Value</div>
+          <div class="gdp-value" id="nationalEconomicValue">₽2,602,145</div>
+          <div class="gdp-subtitle">
+            Combined recorded ruble holdings of citizens and the State Bank, together with the total official value of State Trust "Red Star" Stocks.
+          </div>
+        </article>
+
+        <aside class="economy-seal">
+          <div>
+            <strong id="economicRating">STABLE</strong>
+            <span>Official National<br>Economic Position</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="economy-grid">
+        <article class="economy-stat">
+          <b>Total Rubles in Recorded Accounts</b>
+          <strong id="totalRubleSupply">₽602,145</strong>
+          <small>Includes citizens and the State Bank.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Total Stock Market Value</b>
+          <strong id="totalStockValue">₽2,000,000</strong>
+          <small>Official value of all State Trust "Red Star" Stocks.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Citizen Ruble Holdings</b>
+          <strong id="citizenRubleHoldings">₽305,742</strong>
+          <small>Recorded rubles excluding the State Bank account.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>State Bank Reserves</b>
+          <strong id="stateBankReserves">₽296,403</strong>
+          <small>Ruble balance held by the State Bank of the USSR.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Recorded Account Holders</b>
+          <strong id="accountCount">44</strong>
+          <small>State Bank plus all listed citizen accounts.</small>
+        </article>
+
+        <article class="economy-stat">
+          <b>Average Citizen Balance</b>
+          <strong id="averageCitizenBalance">₽7,110</strong>
+          <small>Citizen holdings divided by listed citizen accounts.</small>
+        </article>
+      </section>
+
+      <section class="economy-columns">
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Economic Calculation</h2>
+            <span>State Accounting Method</span>
+          </div>
+          <div class="formula-box">
+            <p>This page uses a simplified national economic value rather than real-world GDP.</p>
+            <div class="formula-line">
+              <strong>Total Ruble Supply</strong><br>
+              Citizens' rubles + State Bank reserves
+            </div>
+            <div class="formula-line">
+              <strong>Socialist Gross Domestic Value</strong><br>
+              Total rubles + total official stock value
+            </div>
+            <div class="formula-line">
+              <strong>Current calculation</strong><br>
+              <span id="economyFormula">₽602,145 + ₽2,000,000 = ₽2,602,145</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Largest Ruble Accounts</h2>
+            <span>Current Recorded Balances</span>
+          </div>
+          <div style="overflow:auto">
+            <table class="economic-table">
+              <thead>
+                <tr><th>#</th><th>Account</th><th>Balance</th></tr>
+              </thead>
+              <tbody>
+              <tr><td>1</td><td>statebankoftheussr.</td><td>₽296,403</td></tr>
+              <tr><td>2</td><td>nikita_1961</td><td>₽45,059</td></tr>
+              <tr><td>3</td><td>fedposted</td><td>₽38,000</td></tr>
+              <tr><td>4</td><td>spoop69</td><td>₽37,001</td></tr>
+              <tr><td>5</td><td>toka2411</td><td>₽20,000</td></tr>
+              <tr><td>6</td><td>smdeinfvot_</td><td>₽17,225</td></tr>
+              <tr><td>7</td><td>cax18</td><td>₽15,000</td></tr>
+              <tr><td>8</td><td>filiptelford</td><td>₽12,859</td></tr>
+              <tr><td>9</td><td>hyawii2.0</td><td>₽10,000</td></tr>
+              <tr><td>10</td><td>erushim</td><td>₽8,840</td></tr>
+              <tr><td>11</td><td>grzegorz_brzeszcykiewicz</td><td>₽8,725</td></tr>
+              <tr><td>12</td><td>helloitsmisssteak</td><td>₽8,501</td></tr>
+              <tr><td>13</td><td>real_lettuce</td><td>₽8,270</td></tr>
+              <tr><td>14</td><td>riskfordafundz_</td><td>₽8,060</td></tr>
+              <tr><td>15</td><td>.moskaugreek</td><td>₽8,000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <footer class="footer">
+      Published by the Commissariat of Finance. All displayed values are centrally administered and do not represent a free-market exchange.
+    </footer>
+  </main>
+
+  <div id="adminBackdrop" class="admin-backdrop" aria-hidden="true">
+    <div id="adminContent" class="admin-window">
+      <div class="admin-titlebar">
+        <h2>Central Administration Console</h2>
+        <button id="closeAdmin" class="close-admin" aria-label="Close">×</button>
+      </div>
+
+      <div class="admin-body">
+        <section class="admin-section">
+          <h3>Index Control</h3>
+          <div class="field">
+            <label for="initialPrice">Set exact index value</label>
+            <input id="initialPrice" type="number" min="0" step="0.01" value="0">
+          </div>
+          <div class="button-row">
+            <button id="setExactPrice" class="admin-btn secondary">Set exact value</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Scheduled Movement</h3>
+          <div class="field">
+            <label for="growthPercent">Percentage change</label>
+            <input id="growthPercent" type="number" step="0.01" value="10">
+          </div>
+          <div class="field">
+            <label for="growthDuration">Movement duration in minutes</label>
+            <input id="growthDuration" type="number" min="1" step="1" value="30">
+          </div>
+          <div class="button-row">
+            <button id="scheduleGrowth" class="admin-btn gold">Issue movement order</button>
+            <button id="cancelMovement" class="admin-btn secondary">Freeze at current value</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Market Session Timer</h3>
+          <div class="field">
+            <label for="sessionHours">Session duration in hours</label>
+            <input id="sessionHours" type="number" min="1" max="168" step="1" value="24">
+          </div>
+          <div class="button-row">
+            <button id="resetTimer" class="admin-btn">Open / reset session</button>
+            <button id="closeMarket" class="admin-btn danger">Close market now</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Issue Announcement</h3>
+          <div class="field">
+            <label for="announcementTitle">Headline</label>
+            <input id="announcementTitle" maxlength="90" value="Central Bank announces market growth">
+          </div>
+          <div class="field">
+            <label for="announcementBody">Official statement</label>
+            <textarea id="announcementBody" maxlength="600">The Central Bank has authorised a 10% index increase following a higher volume of state-approved purchases than sales.</textarea>
+          </div>
+          <div class="button-row">
+            <button id="publishAnnouncement" class="admin-btn">Publish bulletin</button>
+          </div>
+        </section>
+
+        <section class="admin-section full">
+          <h3>National Economy</h3>
+          <div class="field">
+            <label for="economyTotalRubles">Total rubles in all accounts</label>
+            <input id="economyTotalRubles" type="number" min="0" step="1" value="602145">
+          </div>
+          <div class="field">
+            <label for="economyStateBank">State Bank ruble balance</label>
+            <input id="economyStateBank" type="number" min="0" step="1" value="296403">
+          </div>
+          <div class="field">
+            <label for="economyStockValue">Total value of all Red Star stocks</label>
+            <input id="economyStockValue" type="number" min="0" step="1" value="2000000">
+          </div>
+          <div class="field">
+            <label for="economyAccountCount">Recorded account holders</label>
+            <input id="economyAccountCount" type="number" min="1" step="1" value="44">
+          </div>
+          <div class="button-row">
+            <button id="saveEconomy" class="admin-btn gold">Update national economy</button>
+          </div>
+        </section>
+
+        <section class="admin-section full">
+          <h3>Maintenance</h3>
+          <div class="button-row">
+            <button id="clearAnnouncements" class="admin-btn secondary">Clear announcements</button>
+            <button id="clearHistory" class="admin-btn secondary">Reset graph history</button>
+            <button id="factoryReset" class="admin-btn danger">Factory reset market</button>
+          </div>
+        </section>
+
+        <div id="adminStatus" class="admin-status">
+          Console restricted to the authorised network address.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+    import { getAnalytics, isSupported } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
+    import {
+      getDatabase,
+      ref,
+      onValue,
+      set,
+      update,
+      push,
+      remove
+    } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBM0hjqpvyUW4eTOGugc9kOMUMbaxgTNP0",
+      authDomain: "roblox-api-a62ec.firebaseapp.com",
+      databaseURL: "https://roblox-api-a62ec-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "roblox-api-a62ec",
+      storageBucket: "roblox-api-a62ec.firebasestorage.app",
+      messagingSenderId: "234688704322",
+      appId: "1:234688704322:web:68099b35e43275f3ee22db",
+      measurementId: "G-Y63V80ZWZ7"
+    };
+
+    const ADMIN_IP = "81.242.37.70";
+    const MOBILE_ADMIN_PASSWORD = "whataburger";
+    const ROOT_PATH = "ussrSocialistStockMarket";
+    const MAX_HISTORY_POINTS = 300;
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    isSupported().then((supported) => {
+      if (supported) getAnalytics(app);
+    }).catch(() => {});
+
+    const rootRef = ref(db, ROOT_PATH);
+    const stateRef = ref(db, `${ROOT_PATH}/state`);
+    const historyRef = ref(db, `${ROOT_PATH}/history`);
+    const announcementsRef = ref(db, `${ROOT_PATH}/announcements`);
+    const economyRef = ref(db, `${ROOT_PATH}/economy`);
+    const serverOffsetRef = ref(db, ".info/serverTimeOffset");
+    const connectedRef = ref(db, ".info/connected");
+
+    let serverOffset = 0;
+    let marketState = null;
+    let historyData = {};
+    let announcementsData = {};
+    let economyData = {
+      totalRubles: 602145,
+      stateBankRubles: 296403,
+      stockMarketValue: 2000000,
+      accountCount: 44
+    };
+    let currentPublicIp = null;
+    let adminAllowed = false;
+
+    const $ = (id) => document.getElementById(id);
+
+    const defaultState = () => ({
+      currentBasePrice: 0,
+      openingPrice: 0,
+      movement: {
+        active: false,
+        startPrice: 0,
+        targetPrice: 0,
+        percent: 0,
+        startAt: 0,
+        durationMs: 0
+      },
+      session: {
+        openedAt: 0,
+        closesAt: 0,
+        forceClosed: true
+      },
+      lastUpdatedAt: now()
+    });
+
+    function now() {
+      return Date.now() + serverOffset;
+    }
+
+    function safeNumber(value, fallback = 0) {
+      const n = Number(value);
+      return Number.isFinite(n) ? n : fallback;
+    }
+
+    function formatNumber(value) {
+      return safeNumber(value).toLocaleString("en-GB", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+    }
+
+    function formatCET(timestamp, includeDate = true) {
+      if (!timestamp) return "Not scheduled";
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Brussels",
+        day: includeDate ? "2-digit" : undefined,
+        month: includeDate ? "short" : undefined,
+        year: includeDate ? "numeric" : undefined,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(new Date(timestamp));
+    }
+
+    function getCalculatedPrice(at = now()) {
+      if (!marketState) return 0;
+      const movement = marketState.movement || {};
+      if (!movement.active) return Math.max(0, safeNumber(marketState.currentBasePrice));
+
+      const start = safeNumber(movement.startPrice);
+      const target = safeNumber(movement.targetPrice);
+      const duration = Math.max(1, safeNumber(movement.durationMs, 1));
+      const progress = Math.min(1, Math.max(0, (at - safeNumber(movement.startAt)) / duration));
+      return Math.max(0, start + ((target - start) * progress));
+    }
+
+    function sessionIsOpen(at = now()) {
+      if (!marketState?.session) return false;
+      const session = marketState.session;
+      return !session.forceClosed && safeNumber(session.closesAt) > at;
+    }
+
+    function movementProgress(at = now()) {
+      const movement = marketState?.movement;
+      if (!movement?.active) return 0;
+      return Math.min(1, Math.max(0, (at - movement.startAt) / Math.max(1, movement.durationMs)));
+    }
+
+    const chart = new Chart($("marketChart"), {
+      type: "line",
+      data: {
+        datasets: [{
+          label: "Union Composite Socialist Index",
+          data: [],
+          parsing: false,
+          borderColor: "#8f1515",
+          backgroundColor: "rgba(143, 21, 21, .12)",
+          borderWidth: 3,
+          pointRadius: 0,
+          pointHoverRadius: 5,
+          tension: .22,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        interaction: {
+          mode: "index",
+          intersect: false
+        },
+        scales: {
+          x: {
+            type: "linear",
+            grid: { color: "rgba(84, 57, 31, .10)" },
+            ticks: {
+              color: "#665c4b",
+              maxTicksLimit: 7,
+              callback: (value) => new Intl.DateTimeFormat("en-GB", {
+                timeZone: "Europe/Brussels",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+              }).format(new Date(value))
+            },
+            title: {
+              display: true,
+              text: "CENTRAL EUROPEAN TIME",
+              color: "#6f6250",
+              font: { weight: "bold", size: 10 }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            grid: { color: "rgba(84, 57, 31, .12)" },
+            ticks: {
+              color: "#665c4b",
+              callback: (value) => Number(value).toLocaleString("en-GB")
+            }
+          }
+        },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              title: (items) => items.length ? formatCET(items[0].parsed.x) : "",
+              label: (item) => ` Index: ${formatNumber(item.parsed.y)}`
+            }
+          }
+        }
+      }
+    });
+
+    function buildChartData() {
+      const points = Object.values(historyData || {})
+        .filter((point) => Number.isFinite(Number(point?.time)) && Number.isFinite(Number(point?.value)))
+        .map((point) => ({ x: Number(point.time), y: Number(point.value) }))
+        .sort((a, b) => a.x - b.x)
+        .slice(-MAX_HISTORY_POINTS);
+
+      const currentPoint = { x: now(), y: getCalculatedPrice() };
+      const last = points[points.length - 1];
+
+      if (!last || currentPoint.x > last.x) points.push(currentPoint);
+      else points[points.length - 1] = currentPoint;
+
+      if (points.length === 1) {
+        points.unshift({ x: currentPoint.x - 60_000, y: currentPoint.y });
+      }
+
+      chart.data.datasets[0].data = points;
+      chart.update("none");
+    }
+
+    function renderState() {
+      if (!marketState) return;
+
+      const currentPrice = getCalculatedPrice();
+      const opening = safeNumber(marketState.openingPrice);
+      const percentChange = opening > 0 ? ((currentPrice - opening) / opening) * 100 : 0;
+      const open = sessionIsOpen();
+      const movement = marketState.movement || {};
+      const progress = movementProgress();
+
+      $("currentPrice").textContent = formatNumber(currentPrice);
+      $("openingValue").textContent = formatNumber(opening);
+      $("targetValue").textContent = formatNumber(movement.active ? movement.targetPrice : currentPrice);
+
+      const badge = $("changeBadge");
+      badge.textContent = `${percentChange >= 0 ? "+" : ""}${percentChange.toFixed(2)}%`;
+      badge.className = `change ${percentChange > 0 ? "positive" : percentChange < 0 ? "negative" : "flat"}`;
+
+      $("sessionState").textContent = open ? "Market Open" : "Market Closed";
+      $("sessionState").className = `session-state ${open ? "open" : "closed"}`;
+
+      if (open) {
+        $("sessionDetails").textContent = `The official session closes at ${formatCET(marketState.session.closesAt)}.`;
+      } else {
+        $("sessionDetails").textContent = "The market is closed. New public movement requires an authorised session reset.";
+      }
+
+      if (movement.active && progress < 1) {
+        $("movementLabel").textContent =
+          `${safeNumber(movement.percent).toFixed(2)}% order · ${Math.round(progress * 100)}% complete`;
+        $("movementCompletion").textContent = formatCET(movement.startAt + movement.durationMs);
+      } else if (movement.active && progress >= 1) {
+        $("movementLabel").textContent = "Scheduled movement completed";
+        $("movementCompletion").textContent = formatCET(movement.startAt + movement.durationMs);
+      } else {
+        $("movementLabel").textContent = "No scheduled movement";
+        $("movementCompletion").textContent = "Not scheduled";
+      }
+
+      updateTicker(open, currentPrice, percentChange);
+      buildChartData();
+    }
+
+    function updateTicker(open, price, percent) {
+      const stateText = open ? "MARKET OPEN" : "STOCK MARKET CLOSED";
+      const movementText = marketState?.movement?.active
+        ? `CENTRAL ORDER ${safeNumber(marketState.movement.percent).toFixed(2)}%`
+        : "NO ACTIVE MOVEMENT ORDER";
+      const values = [
+        stateText,
+        `UNION INDEX ${formatNumber(price)}`,
+        `SESSION CHANGE ${percent >= 0 ? "+" : ""}${percent.toFixed(2)}%`,
+        movementText
+      ];
+      $("tickerTrack").innerHTML = [...values, ...values].map((text) => `<span>${text}</span>`).join("");
+    }
+
+    function renderAnnouncements() {
+      const items = Object.entries(announcementsData || {})
+        .map(([id, item]) => ({ id, ...item }))
+        .filter((item) => item.title || item.body)
+        .sort((a, b) => safeNumber(b.createdAt) - safeNumber(a.createdAt))
+        .slice(0, 15);
+
+      if (!items.length) {
+        $("announcements").innerHTML = '<div class="empty">No official announcements have been issued.</div>';
+        return;
+      }
+
+      $("announcements").innerHTML = items.map((item) => `
+        <article class="announcement-card">
+          <time>${escapeHtml(formatCET(item.createdAt || now()))}</time>
+          <h3>${escapeHtml(item.title || "State Bulletin")}</h3>
+          <p>${escapeHtml(item.body || "")}</p>
+        </article>
+      `).join("");
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function formatRubles(value) {
+      return `₽${Math.max(0, safeNumber(value)).toLocaleString("en-GB", {
+        maximumFractionDigits: 0
+      })}`;
+    }
+
+    function renderEconomy() {
+      const totalRubles = Math.max(0, safeNumber(economyData.totalRubles, 602145));
+      const stateBankRubles = Math.max(0, safeNumber(economyData.stateBankRubles, 296403));
+      const stockMarketValue = Math.max(0, safeNumber(economyData.stockMarketValue, 2000000));
+      const accountCount = Math.max(1, Math.floor(safeNumber(economyData.accountCount, 44)));
+      const citizens = Math.max(0, totalRubles - stateBankRubles);
+      const citizenAccounts = Math.max(1, accountCount - 1);
+      const nationalValue = totalRubles + stockMarketValue;
+
+      $("nationalEconomicValue").textContent = formatRubles(nationalValue);
+      $("totalRubleSupply").textContent = formatRubles(totalRubles);
+      $("totalStockValue").textContent = formatRubles(stockMarketValue);
+      $("citizenRubleHoldings").textContent = formatRubles(citizens);
+      $("stateBankReserves").textContent = formatRubles(stateBankRubles);
+      $("accountCount").textContent = accountCount.toLocaleString("en-GB");
+      $("averageCitizenBalance").textContent = formatRubles(citizens / citizenAccounts);
+      $("economyFormula").textContent =
+        `${formatRubles(totalRubles)} + ${formatRubles(stockMarketValue)} = ${formatRubles(nationalValue)}`;
+
+      let rating = "DEVELOPING";
+      if (nationalValue >= 5000000) rating = "POWERFUL";
+      else if (nationalValue >= 3000000) rating = "STRONG";
+      else if (nationalValue >= 2000000) rating = "STABLE";
+      else if (nationalValue >= 1000000) rating = "MODEST";
+      $("economicRating").textContent = rating;
+
+      if ($("economyTotalRubles")) $("economyTotalRubles").value = totalRubles;
+      if ($("economyStateBank")) $("economyStateBank").value = stateBankRubles;
+      if ($("economyStockValue")) $("economyStockValue").value = stockMarketValue;
+      if ($("economyAccountCount")) $("economyAccountCount").value = accountCount;
+    }
+
+    function updatePageFromHash() {
+      const requested = location.hash === "#economy" ? "economyPage" : "marketPage";
+      document.querySelectorAll(".site-page").forEach((page) => {
+        page.classList.toggle("active", page.id === requested);
+      });
+      document.querySelectorAll(".nav-btn").forEach((button) => {
+        button.classList.toggle("active", button.dataset.page === requested);
+      });
+    }
+
+    function updateClock() {
+      const current = now();
+      $("cetClock").textContent = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Brussels",
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(new Date(current));
+
+      if (!marketState?.session || !sessionIsOpen(current)) {
+        $("marketCountdown").textContent = "STOCK MARKET CLOSED";
+        return;
+      }
+
+      const remaining = Math.max(0, marketState.session.closesAt - current);
+      const hours = Math.floor(remaining / 3_600_000);
+      const minutes = Math.floor((remaining % 3_600_000) / 60_000);
+      const seconds = Math.floor((remaining % 60_000) / 1000);
+      $("marketCountdown").textContent =
+        `SESSION CLOSES IN ${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+    }
+
+    async function addHistoryPoint(value = getCalculatedPrice(), timestamp = now()) {
+      await push(historyRef, {
+        value: Math.max(0, safeNumber(value)),
+        time: timestamp
+      });
+    }
+
+    async function ensureStateExists() {
+      if (!adminAllowed || marketState) return;
+      await set(stateRef, defaultState());
+      await addHistoryPoint(0, now());
+    }
+
+    function setAdminStatus(message, type = "") {
+      const element = $("adminStatus");
+      element.textContent = message;
+      element.className = `admin-status ${type}`;
+    }
+
+    function requireAdmin() {
+      if (!adminAllowed) {
+        setAdminStatus("Access denied: this network address is not authorised.", "bad");
+        return false;
+      }
+      return true;
+    }
+
+    async function detectAdminIp() {
+      try {
+        const response = await fetch("https://api.ipify.org?format=json", { cache: "no-store" });
+        if (!response.ok) throw new Error("IP lookup failed");
+        const data = await response.json();
+        currentPublicIp = data.ip;
+        adminAllowed = currentPublicIp === ADMIN_IP;
+      } catch {
+        currentPublicIp = "unavailable";
+        adminAllowed = false;
+      }
+    }
+
+    async function openMobileAdmin() {
+      const password = prompt("Enter the administration password:");
+
+      if (password === null) return;
+
+      if (password !== MOBILE_ADMIN_PASSWORD) {
+        alert("Incorrect administration password.");
+        return;
+      }
+
+      adminAllowed = true;
+      currentPublicIp = "Mobile password access";
+
+      const backdrop = $("adminBackdrop");
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+
+      setAdminStatus("Mobile administrator authentication confirmed.", "good");
+      await ensureStateExists();
+    }
+
+    async function openAdmin() {
+      await detectAdminIp();
+      const backdrop = $("adminBackdrop");
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+
+      if (!adminAllowed) {
+        $("adminContent").innerHTML = `
+          <div class="restricted">
+            <h2>Restricted State System</h2>
+            <p>This console is available only from the authorised administration network.</p>
+            <p><strong>Detected address:</strong> ${escapeHtml(currentPublicIp || "unknown")}</p>
+            <button id="restrictedClose" class="admin-btn">Close</button>
+          </div>
+        `;
+        $("restrictedClose").addEventListener("click", closeAdmin);
+        return;
+      }
+
+      setAdminStatus(`Authorised network confirmed: ${currentPublicIp}`, "good");
+      await ensureStateExists();
+    }
+
+    function closeAdmin() {
+      $("adminBackdrop").classList.remove("open");
+      $("adminBackdrop").setAttribute("aria-hidden", "true");
+    }
+
+    onValue(serverOffsetRef, (snapshot) => {
+      serverOffset = safeNumber(snapshot.val());
+    });
+
+    onValue(connectedRef, (snapshot) => {
+      const online = snapshot.val() === true;
+      $("connectionState").textContent = online ? "Database is live" : "Offline / reconnecting";
+      $("connectionState").className = `connection ${online ? "online" : ""}`;
+    });
+
+    onValue(stateRef, (snapshot) => {
+      marketState = snapshot.val();
+      if (!marketState) {
+        marketState = defaultState();
+      }
+      renderState();
+    });
+
+    onValue(historyRef, (snapshot) => {
+      historyData = snapshot.val() || {};
+      buildChartData();
+    });
+
+    onValue(announcementsRef, (snapshot) => {
+      announcementsData = snapshot.val() || {};
+      renderAnnouncements();
+    });
+
+    onValue(economyRef, (snapshot) => {
+      const value = snapshot.val();
+      if (value) economyData = value;
+      renderEconomy();
+    });
+
+    document.querySelectorAll(".nav-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        location.hash = button.dataset.page === "economyPage" ? "economy" : "market";
+      });
+    });
+
+    window.addEventListener("hashchange", updatePageFromHash);
+    updatePageFromHash();
+
+    document.addEventListener("keydown", (event) => {
+      const tag = document.activeElement?.tagName;
+      const typing = tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT";
+      if (!typing && event.key.toLowerCase() === "f") {
+        event.preventDefault();
+        openAdmin();
+      }
+      if (event.key === "Escape") closeAdmin();
+    });
+
+    $("mobileAdminBtn").addEventListener("click", openMobileAdmin);
+    $("closeAdmin").addEventListener("click", closeAdmin);
+    $("adminBackdrop").addEventListener("click", (event) => {
+      if (event.target === $("adminBackdrop")) closeAdmin();
+    });
+
+    $("setExactPrice").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const value = Math.max(0, safeNumber($("initialPrice").value));
+        await addHistoryPoint(getCalculatedPrice());
+        await update(stateRef, {
+          currentBasePrice: value,
+          openingPrice: value,
+          movement: {
+            active: false,
+            startPrice: value,
+            targetPrice: value,
+            percent: 0,
+            startAt: now(),
+            durationMs: 0
+          },
+          lastUpdatedAt: now()
+        });
+        await addHistoryPoint(value);
+        setAdminStatus(`Index set to ${formatNumber(value)} points.`, "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("scheduleGrowth").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        if (!sessionIsOpen()) {
+          setAdminStatus("Open or reset the market session before issuing a movement order.", "bad");
+          return;
+        }
+
+        const percent = safeNumber($("growthPercent").value);
+        const durationMinutes = Math.max(1, safeNumber($("growthDuration").value, 30));
+        const startPrice = getCalculatedPrice();
+        const targetPrice = Math.max(0, startPrice * (1 + percent / 100));
+        const startAt = now();
+
+        await addHistoryPoint(startPrice, startAt);
+        await update(stateRef, {
+          currentBasePrice: startPrice,
+          movement: {
+            active: true,
+            startPrice,
+            targetPrice,
+            percent,
+            startAt,
+            durationMs: durationMinutes * 60_000
+          },
+          lastUpdatedAt: startAt
+        });
+
+        setAdminStatus(
+          `Movement order issued: ${percent >= 0 ? "+" : ""}${percent.toFixed(2)}% over ${durationMinutes} minutes.`,
+          "good"
+        );
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("cancelMovement").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const price = getCalculatedPrice();
+        const timestamp = now();
+        await addHistoryPoint(price, timestamp);
+        await update(stateRef, {
+          currentBasePrice: price,
+          movement: {
+            active: false,
+            startPrice: price,
+            targetPrice: price,
+            percent: 0,
+            startAt: timestamp,
+            durationMs: 0
+          },
+          lastUpdatedAt: timestamp
+        });
+        setAdminStatus(`Movement frozen at ${formatNumber(price)} points.`, "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("resetTimer").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const hours = Math.max(1, Math.min(168, safeNumber($("sessionHours").value, 24)));
+        const openedAt = now();
+        const price = getCalculatedPrice();
+
+        await addHistoryPoint(price, openedAt);
+        await update(stateRef, {
+          openingPrice: price,
+          session: {
+            openedAt,
+            closesAt: openedAt + hours * 3_600_000,
+            forceClosed: false
+          },
+          lastUpdatedAt: openedAt
+        });
+
+        setAdminStatus(`Market session opened for ${hours} hours.`, "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("closeMarket").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const timestamp = now();
+        await update(ref(db, `${ROOT_PATH}/state/session`), {
+          closesAt: timestamp,
+          forceClosed: true
+        });
+        setAdminStatus("Market closed by central order.", "good");
+      } catch (error) {
+        setAdminStatus(`Write failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("publishAnnouncement").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const title = $("announcementTitle").value.trim();
+        const body = $("announcementBody").value.trim();
+        if (!title || !body) {
+          setAdminStatus("A headline and statement are required.", "bad");
+          return;
+        }
+
+        await push(announcementsRef, {
+          title,
+          body,
+          createdAt: now()
+        });
+
+        setAdminStatus("Official bulletin published.", "good");
+      } catch (error) {
+        setAdminStatus(`Publication failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("saveEconomy").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      try {
+        const totalRubles = Math.max(0, safeNumber($("economyTotalRubles").value));
+        const stateBankRubles = Math.max(0, Math.min(totalRubles, safeNumber($("economyStateBank").value)));
+        const stockMarketValue = Math.max(0, safeNumber($("economyStockValue").value));
+        const accountCount = Math.max(1, Math.floor(safeNumber($("economyAccountCount").value, 1)));
+
+        await set(economyRef, {
+          totalRubles,
+          stateBankRubles,
+          stockMarketValue,
+          accountCount,
+          updatedAt: now()
+        });
+
+        setAdminStatus("National economic figures updated.", "good");
+      } catch (error) {
+        setAdminStatus(`Economic update failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("clearAnnouncements").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      if (!confirm("Clear every public announcement?")) return;
+      try {
+        await remove(announcementsRef);
+        setAdminStatus("Announcements cleared.", "good");
+      } catch (error) {
+        setAdminStatus(`Operation failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("clearHistory").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      if (!confirm("Reset the graph history to the current index value?")) return;
+      try {
+        const price = getCalculatedPrice();
+        await remove(historyRef);
+        await addHistoryPoint(price);
+        setAdminStatus("Graph history reset.", "good");
+      } catch (error) {
+        setAdminStatus(`Operation failed: ${error.message}`, "bad");
+      }
+    });
+
+    $("factoryReset").addEventListener("click", async () => {
+      if (!requireAdmin()) return;
+      if (!confirm("Factory reset the entire stock market to zero?")) return;
+      try {
+        await set(rootRef, {
+          state: defaultState(),
+          history: {
+            reset: { value: 0, time: now() }
+          },
+          announcements: {
+            reset: {
+              title: "Stock market closed",
+              body: "The market is awaiting a new daily directive from the Central Bank.",
+              createdAt: now()
+            }
+          },
+          economy: {
+            totalRubles: 602145,
+            stateBankRubles: 296403,
+            stockMarketValue: 2000000,
+            accountCount: 44,
+            updatedAt: now()
+          }
+        });
+        setAdminStatus("Market factory reset completed.", "good");
+      } catch (error) {
+        setAdminStatus(`Reset failed: ${error.message}`, "bad");
+      }
+    });
+
+    setInterval(() => {
+      updateClock();
+      renderState();
+    }, 1000);
+
+    renderEconomy();
+    updatePageFromHash();
+    updateClock();
+  </script>
+</body>
+</html>      grid-template-columns: 110px 1fr auto;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 104px;
+      height: 104px;
+      object-fit: contain;
+      filter: drop-shadow(0 5px 8px rgba(0,0,0,.28));
+    }
+
+    .title-block small {
+      display: block;
+      color: var(--gold);
+      font: 700 12px/1.2 Arial, sans-serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .title-block h1 {
+      margin: 0;
+      font-size: clamp(30px, 4.5vw, 62px);
+      line-height: .95;
+      letter-spacing: -.035em;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 0 rgba(0,0,0,.22);
+    }
+
+    .title-block p {
+      margin: 12px 0 0;
+      color: #eadfbf;
+      font-size: 15px;
+      letter-spacing: .03em;
+    }
+
+    .clock-box {
+      min-width: 245px;
+      text-align: right;
+      border-left: 1px solid rgba(255,255,255,.22);
+      padding-left: 24px;
+    }
+
+    .clock-label {
+      color: var(--gold);
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    #cetClock {
+      margin-top: 6px;
+      font: 700 23px/1.15 "Courier New", monospace;
+    }
+
+    #marketCountdown {
+      margin-top: 8px;
+      font: 700 14px Arial, sans-serif;
+      color: #fff1b8;
+    }
+
+    .ticker {
+      background: #220403;
+      color: #fff5cf;
+      border-bottom: 2px solid #7c140f;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .ticker-track {
+      display: inline-flex;
+      min-width: 100%;
+      gap: 50px;
+      padding: 10px 0;
+      animation: ticker 30s linear infinite;
+      font: 700 13px Arial, sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .ticker-track span::before {
+      content: "★";
+      color: var(--gold);
+      margin-right: 12px;
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px clamp(16px, 3vw, 38px) 60px;
+    }
+
+    .status-row {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .status-card, .session-card, .panel, .announcement-card {
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(rgba(255,255,255,.22), rgba(255,255,255,.06)),
+        var(--cream);
+      box-shadow: var(--shadow);
+    }
+
+    .status-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 24px;
+      border-left: 8px solid var(--red);
+    }
+
+    .eyebrow {
+      color: var(--red);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font: 800 clamp(38px, 7vw, 78px)/.9 Georgia, serif;
+      letter-spacing: -.05em;
+    }
+
+    .price-unit {
+      color: var(--muted);
+      font: 700 13px Arial, sans-serif;
+      letter-spacing: .12em;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    .change {
+      min-width: 125px;
+      padding: 15px 12px;
+      text-align: center;
+      border: 2px solid currentColor;
+      font: 800 26px Arial, sans-serif;
+      background: rgba(255,255,255,.23);
+    }
+
+    .change.positive { color: var(--green); }
+    .change.negative { color: var(--red); }
+    .change.flat { color: #675d4c; }
+
+    .session-card {
+      padding: 22px;
+      border-top: 6px solid var(--gold);
+    }
+
+    .session-state {
+      font: 900 24px/1 Arial, sans-serif;
+      text-transform: uppercase;
+      margin: 7px 0 11px;
+    }
+
+    .session-state.open { color: var(--green); }
+    .session-state.closed { color: var(--red); }
+
+    .session-details {
+      color: var(--muted);
+      font: 14px/1.6 Arial, sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.8fr) minmax(290px, .8fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      padding: 14px 18px;
+      color: #fff6d6;
+      background: linear-gradient(90deg, #6c0d0d, #951818);
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .panel-header h2 {
+      margin: 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .panel-header span {
+      color: #efdba2;
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .chart-wrap {
+      position: relative;
+      height: 460px;
+      padding: 18px;
+    }
+
+    .chart-stamp {
+      position: absolute;
+      right: 30px;
+      top: 28px;
+      z-index: 2;
+      color: rgba(91, 13, 13, .13);
+      font: 900 42px Arial, sans-serif;
+      transform: rotate(-8deg);
+      border: 5px double currentColor;
+      padding: 8px 12px;
+      pointer-events: none;
+      text-transform: uppercase;
+    }
+
+    .market-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--border);
+    }
+
+    .meta-box {
+      padding: 16px;
+      border-right: 1px solid var(--border);
+    }
+
+    .meta-box:last-child { border-right: 0; }
+
+    .meta-box b {
+      display: block;
+      color: var(--red);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .meta-box span {
+      font: 700 16px Arial, sans-serif;
+    }
+
+    .announcements {
+      display: grid;
+      gap: 12px;
+    }
+
+    .announcement-card {
+      padding: 17px;
+      border-left: 5px solid var(--red);
+      box-shadow: 0 8px 18px rgba(30, 15, 5, .11);
+    }
+
+    .announcement-card time {
+      display: block;
+      color: var(--muted);
+      font: 700 10px Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .announcement-card h3 {
+      margin: 0 0 6px;
+      color: var(--red-dark);
+      font-size: 18px;
+    }
+
+    .announcement-card p {
+      margin: 0;
+      font: 14px/1.55 Arial, sans-serif;
+      color: #3c352b;
+    }
+
+    .empty {
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-style: italic;
+      border: 1px dashed var(--border);
+      background: rgba(255,255,255,.16);
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding: 22px 0 0;
+      border-top: 2px solid rgba(104, 15, 12, .25);
+      color: #675e4e;
+      font: 12px/1.6 Arial, sans-serif;
+      text-align: center;
+    }
+
+    .admin-backdrop {
+      position: fixed;
+      inset: 0;
+      display: none;
+      place-items: center;
+      z-index: 100;
+      padding: 18px;
+      background: rgba(21, 5, 3, .76);
+      backdrop-filter: blur(5px);
+    }
+
+    .admin-backdrop.open { display: grid; }
+
+    .admin-window {
+      width: min(980px, 100%);
+      max-height: 92vh;
+      overflow: auto;
+      background: #e9dfc4;
+      border: 5px solid #7e1111;
+      box-shadow: 0 25px 80px rgba(0,0,0,.5);
+    }
+
+    .admin-titlebar {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 17px;
+      color: #fff2c7;
+      background: #741010;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .admin-titlebar h2 {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .close-admin {
+      border: 1px solid #f3d26b;
+      color: #fff5d6;
+      background: transparent;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .admin-body {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .admin-section {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.23);
+      padding: 17px;
+    }
+
+    .admin-section.full { grid-column: 1 / -1; }
+
+    .admin-section h3 {
+      margin: 0 0 14px;
+      color: var(--red-dark);
+      text-transform: uppercase;
+      font: 800 15px Arial, sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .field label {
+      color: #5d5040;
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .field input, .field textarea, .field select {
+      width: 100%;
+      border: 1px solid #8c7c62;
+      background: #fffaf0;
+      color: var(--ink);
+      padding: 11px 12px;
+      outline: none;
+    }
+
+    .field input:focus, .field textarea:focus, .field select:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 2px rgba(151, 20, 20, .14);
+    }
+
+    .field textarea { min-height: 90px; resize: vertical; }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .admin-btn {
+      border: 0;
+      padding: 11px 15px;
+      cursor: pointer;
+      color: #fff8dc;
+      background: var(--red);
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .admin-btn:hover { filter: brightness(1.08); }
+    .admin-btn.secondary { background: #655942; }
+    .admin-btn.gold { color: #2b1d05; background: #dab33f; }
+    .admin-btn.danger { background: #3f0907; }
+
+    .admin-status {
+      grid-column: 1 / -1;
+      padding: 12px 14px;
+      color: #504636;
+      background: #d8ccb0;
+      border: 1px solid #aa9b7a;
+      font: 700 12px Arial, sans-serif;
+    }
+
+    .admin-status.good { border-color: #4e815c; color: #235b35; }
+    .admin-status.bad { border-color: #9c3730; color: #7c1711; }
+
+    .restricted {
+      width: min(460px, 100%);
+      padding: 26px;
+      text-align: center;
+      background: #eee2c3;
+      border: 5px solid #7b1010;
+      box-shadow: 0 25px 80px rgba(0,0,0,.5);
+    }
+
+    .restricted h2 { color: var(--red); text-transform: uppercase; }
+    .restricted p { font: 14px/1.55 Arial, sans-serif; }
+
+    .connection {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .connection::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #9a2922;
+      box-shadow: 0 0 0 3px rgba(154,41,34,.15);
+    }
+
+    .connection.online::before {
+      background: #3d8e57;
+      box-shadow: 0 0 0 3px rgba(61,142,87,.15);
+    }
+
+    .mobile-admin-btn {
+      display: none;
+      width: 100%;
+      margin-top: 14px;
+      padding: 11px 16px;
+      border: 2px solid var(--gold);
+      color: #fff5d4;
+      background: rgba(52, 4, 4, .58);
+      cursor: pointer;
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .mobile-admin-btn:active {
+      transform: translateY(1px);
+    }
+
     @media (max-width: 900px) {
       .mobile-admin-btn {
         display: block;
