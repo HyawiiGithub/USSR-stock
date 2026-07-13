@@ -1178,7 +1178,7 @@
 
     onValue(connectedRef, (snapshot) => {
       const online = snapshot.val() === true;
-      $("connectionState").textContent = online ? "Firebase live" : "Offline / reconnecting";
+      $("connectionState").textContent = online ? "Database is live" : "Offline / reconnecting";
       $("connectionState").className = `connection ${online ? "online" : ""}`;
     });
 
