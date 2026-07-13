@@ -1,11 +1,67 @@
-[Download the complete updated `index.html`](sandbox:/mnt/data/index.html)
 
-Everything remains the same, with one addition:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8d1111">
+  <title>USSR Stock Exchange</title>
+  <link rel="icon" href="logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --red-dark: #5f0909;
+      --red: #981515;
+      --red-light: #b82020;
+      --gold: #efc94c;
+      --cream: #eee5cd;
+      --paper: #d9cfb4;
+      --ink: #17130f;
+      --muted: #6e6656;
+      --green: #2d7a48;
+      --border: rgba(45, 30, 16, .34);
+      --shadow: 0 16px 40px rgba(28, 8, 4, .22);
+    }
 
-* On mobile, an **Administration Panel** button appears beneath the CET timer.
-* Tapping it requests the password: `whataburger`
-* A correct password opens the same full administration panel.
-* Desktop access through the **F** key and IP check remains unchanged.
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(240, 232, 207, .92), rgba(240, 232, 207, .92)),
+        repeating-linear-gradient(0deg, transparent 0 3px, rgba(80, 49, 24, .025) 3px 4px);
+      font-family: Georgia, "Times New Roman", serif;
+      min-height: 100vh;
+    }
+
+    button, input, textarea, select { font: inherit; }
+
+    .top-stripe {
+      height: 8px;
+      background: linear-gradient(90deg, var(--gold) 0 18%, var(--red) 18% 82%, var(--gold) 82%);
+      border-bottom: 2px solid #3a0505;
+    }
+
+    .masthead {
+      background:
+        radial-gradient(circle at 70% 20%, rgba(255,255,255,.08), transparent 28%),
+        linear-gradient(135deg, #651010, #9d1717 55%, #6d0d0d);
+      color: #fff5d4;
+      border-bottom: 5px solid var(--gold);
+      box-shadow: 0 8px 25px rgba(51, 5, 5, .28);
+    }
+
+    .masthead-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      min-height: 160px;
+      padding: 24px clamp(18px, 4vw, 48px);
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      gap: 22px;
       align-items: center;
     }
 
@@ -478,7 +534,28 @@ Everything remains the same, with one addition:
       box-shadow: 0 0 0 3px rgba(61,142,87,.15);
     }
 
+    .mobile-admin-btn {
+      display: none;
+      width: 100%;
+      margin-top: 14px;
+      padding: 11px 16px;
+      border: 2px solid var(--gold);
+      color: #fff5d4;
+      background: rgba(52, 4, 4, .58);
+      cursor: pointer;
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .mobile-admin-btn:active {
+      transform: translateY(1px);
+    }
+
     @media (max-width: 900px) {
+      .mobile-admin-btn {
+        display: block;
+      }
       .masthead-inner { grid-template-columns: 82px 1fr; }
       .logo { width: 78px; height: 78px; }
       .clock-box {
@@ -523,6 +600,9 @@ Everything remains the same, with one addition:
         <div class="clock-label">Central European Time</div>
         <div id="cetClock">--:--:--</div>
         <div id="marketCountdown">Session data loading</div>
+        <button id="mobileAdminBtn" class="mobile-admin-btn" type="button">
+          Administration Panel
+        </button>
       </div>
     </div>
   </header>
@@ -704,6 +784,7 @@ Everything remains the same, with one addition:
     };
 
     const ADMIN_IP = "81.242.37.70";
+    const MOBILE_ADMIN_PASSWORD = "whataburger";
     const ROOT_PATH = "ussrSocialistStockMarket";
     const MAX_HISTORY_POINTS = 300;
     const app = initializeApp(firebaseConfig);
@@ -1042,6 +1123,27 @@ Everything remains the same, with one addition:
       }
     }
 
+    async function openMobileAdmin() {
+      const password = prompt("Enter the administration password:");
+
+      if (password === null) return;
+
+      if (password !== MOBILE_ADMIN_PASSWORD) {
+        alert("Incorrect administration password.");
+        return;
+      }
+
+      adminAllowed = true;
+      currentPublicIp = "Mobile password access";
+
+      const backdrop = $("adminBackdrop");
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+
+      setAdminStatus("Mobile administrator authentication confirmed.", "good");
+      await ensureStateExists();
+    }
+
     async function openAdmin() {
       await detectAdminIp();
       const backdrop = $("adminBackdrop");
@@ -1108,6 +1210,7 @@ Everything remains the same, with one addition:
       if (event.key === "Escape") closeAdmin();
     });
 
+    $("mobileAdminBtn").addEventListener("click", openMobileAdmin);
     $("closeAdmin").addEventListener("click", closeAdmin);
     $("adminBackdrop").addEventListener("click", (event) => {
       if (event.target === $("adminBackdrop")) closeAdmin();
