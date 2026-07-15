@@ -1571,10 +1571,10 @@ State Trust "Red Star" Stock Exchange</title>
         `${formatRubles(totalRubles)} + (${totalShares.toLocaleString("en-GB")} × ₽${formatNumber(sharePrice)}) = ${formatRubles(nationalValue)}`;
 
       let rating = "DEVELOPING";
-      if (nationalValue >= 5000000) rating = "POWERFUL";
-      else if (nationalValue >= 3000000) rating = "STRONG";
-      else if (nationalValue >= 2000000) rating = "STABLE";
-      else if (nationalValue >= 1000000) rating = "MODEST";
+      if (nationalValue >= 5000000) rating = "ECONOMIC BOOM";
+      else if (nationalValue >= 3000000) rating = "RAPID GROWTH";
+      else if (nationalValue >= 2000000) rating = "GROWING";
+      else if (nationalValue >= 1000000) rating = "STAGNATION";
       $("economicRating").textContent = rating;
 
       if ($("economyTotalRubles")) $("economyTotalRubles").value = totalRubles;
