@@ -472,18 +472,13 @@
       font: 14px/1.6 Arial, sans-serif;
     }
 
-    .session-seal {
-      margin-top: 15px;
-      padding-top: 13px;
-      display: flex;
-      gap: 9px;
-      align-items: center;
-      color: #5f513b;
-      border-top: 1px solid var(--border);
-      font: 800 11px Arial, sans-serif;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
+.session-seal::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  flex: 0 0 27px;
+  background: url("logo2.png") center / contain no-repeat;
+}
 
     .session-seal::before {
       width: 27px;
