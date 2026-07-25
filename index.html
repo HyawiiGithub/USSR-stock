@@ -472,6 +472,19 @@
       font: 14px/1.6 Arial, sans-serif;
     }
 
+    .session-seal {
+      margin-top: 15px;
+      padding-top: 13px;
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      color: #5f513b;
+      border-top: 1px solid var(--border);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
 .session-seal::before {
   content: "";
   width: 27px;
@@ -479,17 +492,6 @@
   flex: 0 0 27px;
   background: url("logo2.png") center / contain no-repeat;
 }
-
-    .session-seal::before {
-      width: 27px;
-      height: 27px;
-      display: grid;
-      place-items: center;
-      color: var(--gold);
-      background: var(--red);
-      border-radius: 50%;
-      content: "★";
-    }
 
     .grid {
       display: grid;
@@ -1516,7 +1518,7 @@
        ====================================================================== */
 
     const CONFIG = Object.freeze({
-      API_BASE_URL: "ussr-stock-api.batuhanylz2009.workers.dev",
+      API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
       SITE_URL: window.location.origin + window.location.pathname,
       REQUEST_TIMEOUT_MS: 12000,
       MARKET_REFRESH_MS: 15000,
@@ -1550,6 +1552,7 @@
 
     const STATE = {
       user: null,
+      csrfToken: null,
       market: null,
       economy: null,
       announcements: [],
@@ -1729,6 +1732,20 @@
       const headers = new Headers(settings.headers || {});
       headers.set("Accept", "application/json");
 
+      try {
+        const sessionToken = window.sessionStorage.getItem("ussrExchangeSession");
+        if (sessionToken) {
+          headers.set("Authorization", "Bearer " + sessionToken);
+        }
+      } catch (storageError) {
+        console.warn("Session storage is unavailable.", storageError);
+      }
+
+      const method = String(settings.method || "GET").toUpperCase();
+      if (method !== "GET" && method !== "HEAD" && STATE.csrfToken) {
+        headers.set("X-CSRF-Token", STATE.csrfToken);
+      }
+
       let body = settings.body;
       if (body !== undefined && body !== null && !(body instanceof FormData)) {
         headers.set("Content-Type", "application/json");
@@ -1737,7 +1754,7 @@
 
       try {
         const response = await fetch(apiUrl(endpoint), {
-          method: settings.method || "GET",
+          method: method,
           credentials: "include",
           cache: settings.cache || "no-store",
           headers: headers,
@@ -1869,17 +1886,20 @@
     const loadSession = async function (silent) {
       if (!isApiConfigured()) {
         STATE.user = null;
+        STATE.csrfToken = null;
         renderSession();
         return;
       }
 
       try {
         const payload = await API.get(CONFIG.ENDPOINTS.SESSION);
+        STATE.csrfToken = payload && payload.csrfToken ? payload.csrfToken : null;
         STATE.user = normalizeSession(payload);
         renderSession();
       } catch (error) {
         if (error.status === 401 || error.status === 403) {
           STATE.user = null;
+          STATE.csrfToken = null;
           renderSession();
           return;
         }
@@ -1895,6 +1915,12 @@
       try {
         await API.post(CONFIG.ENDPOINTS.LOGOUT, {});
         STATE.user = null;
+        STATE.csrfToken = null;
+        try {
+          window.sessionStorage.removeItem("ussrExchangeSession");
+        } catch (storageError) {
+          console.warn("Session storage is unavailable.", storageError);
+        }
         closeAdmin();
         renderSession();
         showToast("Discord session closed.");
@@ -1907,8 +1933,19 @@
 
     const handleOAuthReturn = function () {
       const params = new URLSearchParams(window.location.search);
+      const fragment = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      const sessionToken = fragment.get("session");
       const authResult = params.get("auth");
       const authError = params.get("auth_error") || params.get("error");
+
+      if (sessionToken) {
+        try {
+          window.sessionStorage.setItem("ussrExchangeSession", sessionToken);
+        } catch (storageError) {
+          console.warn("Session storage is unavailable.", storageError);
+        }
+        fragment.delete("session");
+      }
 
       if (authResult === "success") {
         showToast("Discord authorisation completed.");
@@ -1916,12 +1953,15 @@
         showToast("Discord authorisation failed: " + authError, "error");
       }
 
-      if (authResult || authError) {
+      if (authResult || authError || sessionToken) {
         params.delete("auth");
         params.delete("auth_error");
         params.delete("error");
         const query = params.toString();
-        const cleanUrl = window.location.pathname + (query ? "?" + query : "") + window.location.hash;
+        const remainingFragment = fragment.toString();
+        const cleanUrl = window.location.pathname +
+          (query ? "?" + query : "") +
+          (remainingFragment ? "#" + remainingFragment : "");
         window.history.replaceState({}, document.title, cleanUrl);
       }
     };
