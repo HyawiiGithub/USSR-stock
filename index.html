@@ -1,5 +1,2779 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#8d1111"><title>State Trust "Red Star" Stock Exchange</title><link rel="icon" href="logo.png"><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script><style>
-:root{--red-dark:#5f0909;--red:#981515;--red-light:#b82020;--gold:#efc94c;--cream:#eee5cd;--paper:#d9cfb4;--ink:#17130f;--muted:#6e6656;--green:#2d7a48;--border:rgba(45,30,16,.34);--shadow:0 16px 40px rgba(28,8,4,.22)}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:linear-gradient(rgba(240,232,207,.94),rgba(240,232,207,.94)),repeating-linear-gradient(0deg,transparent 0 3px,rgba(80,49,24,.025) 3px 4px);font-family:Georgia,"Times New Roman",serif;min-height:100vh}button,input,textarea{font:inherit}.top-stripe{height:8px;background:linear-gradient(90deg,var(--gold) 0 18%,var(--red) 18% 82%,var(--gold) 82%);border-bottom:2px solid #3a0505}.masthead{background:linear-gradient(135deg,#651010,#9d1717 55%,#6d0d0d);color:#fff5d4;border-bottom:5px solid var(--gold);box-shadow:0 8px 25px rgba(51,5,5,.28)}.masthead-inner{max-width:1280px;margin:auto;min-height:150px;padding:24px clamp(18px,4vw,48px);display:grid;grid-template-columns:100px 1fr auto;gap:22px;align-items:center}.logo{width:96px;height:96px;object-fit:contain}.title-block small,.eyebrow{display:block;color:var(--gold);font:700 12px/1.2 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}.title-block h1{margin:6px 0;font-size:clamp(30px,4.5vw,58px);line-height:.95}.title-block p{margin:0}.account-actions{display:flex;gap:10px;align-items:center}.btn{border:2px solid #4d0707;background:var(--red);color:#fff5d4;padding:11px 16px;font-weight:800;cursor:pointer;text-decoration:none}.btn.gold{background:var(--gold);color:#321d03}.btn.dark{background:#3d0808}.ticker{overflow:hidden;background:#3c0806;color:#fff3ce;border-bottom:2px solid var(--gold);padding:9px 0;font:800 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}.ticker-track{white-space:nowrap;text-align:center}.page{max-width:1280px;margin:auto;padding:24px clamp(16px,3vw,38px) 60px}.warning{background:#fff0c7;border:4px solid var(--red);box-shadow:var(--shadow);padding:20px;margin-bottom:20px}.warning h2{margin:0 0 8px;color:var(--red);text-transform:uppercase}.warning p{margin:0 0 8px;font:15px/1.6 Arial,sans-serif}.grid{display:grid;grid-template-columns:1.35fr .65fr;gap:18px}.panel,.status-card,.session-card{background:var(--cream);border:1px solid var(--border);box-shadow:var(--shadow)}.status-card,.session-card{padding:24px}.price{font-size:clamp(52px,8vw,96px);font-weight:800;letter-spacing:-.06em}.price-unit{color:var(--muted);font:12px Arial,sans-serif}.change{display:inline-block;margin-top:12px;padding:8px 13px;color:white;background:#777;font:800 20px Arial,sans-serif}.change.up{background:var(--green)}.change.down{background:var(--red)}.session-state{font-size:34px;font-weight:800;margin:8px 0}.session-state.open{color:var(--green)}.session-state.closed{color:var(--red)}.session-details{color:var(--muted);font:14px/1.55 Arial,sans-serif}.panel{margin-top:18px}.panel-header{display:flex;justify-content:space-between;align-items:center;padding:15px 18px;background:#741010;color:#fff3ce;border-bottom:4px solid var(--gold)}.panel-header h2{margin:0;font-size:20px}.chart-wrap{height:370px;padding:18px}.market-meta,.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border)}.meta-box,.stat{padding:16px;border-right:1px solid var(--border)}.meta-box:last-child,.stat:nth-child(3n){border-right:0}.meta-box b,.stat b{display:block;color:var(--red);font:800 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em}.meta-box span,.stat span{display:block;margin-top:8px;font-size:24px;font-weight:800}.trade-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.portfolio,.trade-box,.admin{padding:20px}.portfolio dl{margin:0}.portfolio dl div{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}.portfolio dd{margin:0;font-weight:800}.trade-row{display:grid;grid-template-columns:1fr auto auto;gap:9px;margin-top:14px}.trade-row input,.admin input,.admin textarea{width:100%;padding:11px;border:1px solid var(--border);background:#fffaf0}.notice{font:13px/1.5 Arial,sans-serif;color:var(--muted)}.hidden{display:none!important}.admin-grid{display:grid;grid-template-columns:1fr 1fr auto auto auto;gap:10px;align-items:end}.admin label{font:700 12px Arial,sans-serif}.admin textarea{margin:10px 0}.footer{padding:24px;text-align:center;background:#3c0806;color:#eadfbf;border-top:4px solid var(--gold);font:12px Arial,sans-serif}@media(max-width:900px){.grid,.trade-layout{grid-template-columns:1fr}.masthead-inner{grid-template-columns:74px 1fr}.logo{width:70px;height:70px}.account-actions{grid-column:1/-1}.admin-grid{grid-template-columns:1fr}.market-meta,.stats-grid{grid-template-columns:1fr}.meta-box,.stat{border-right:0;border-bottom:1px solid var(--border)}}
-</style></head><body><div class="top-stripe"></div><header class="masthead"><div class="masthead-inner"><img class="logo" src="logo.png" alt="USSR Socialist Stock Exchange emblem"><div class="title-block"><small>State Committee of Economy</small><h1>State Trust “Red Star” Stock Exchange</h1><p>Official public market and citizen trading portal</p></div><div id="accountActions" class="account-actions"></div></div></header><div class="ticker"><div class="ticker-track">Official State Market Bulletin · Discord authorisation required for trading · All balances are verified through UnbelievaBoat · Citizen ownership limit enforced</div></div><main class="page"><section id="warning" class="warning hidden"><h2>Important Market Warning</h2><p id="warningText"></p><strong id="warningAuthor"></strong></section><section class="grid"><article class="status-card"><div class="eyebrow">State Trust “Red Star” Stock</div><div id="currentPrice" class="price">₽0.00</div><div class="price-unit">Current official price per share</div><div id="changeBadge" class="change">0.00%</div><p class="notice">The percentage resets to 0.00% when a session opens. The actual share price does not reset.</p></article><article class="session-card"><div class="eyebrow">Trading Session</div><div id="sessionState" class="session-state closed">Closed</div><div id="sessionDetails" class="session-details">Loading market data…</div></article></section><section class="panel"><div class="panel-header"><h2>Official Price History</h2><span>State verified</span></div><div class="chart-wrap"><canvas id="marketChart"></canvas></div><div class="market-meta"><div class="meta-box"><b>Session Opening Price</b><span id="openingPrice">₽0.00</span></div><div class="meta-box"><b>Publicly Available</b><span id="availableShares">0</span></div><div class="meta-box"><b>Citizen Share Limit</b><span id="citizenLimit">0</span></div></div></section><section class="trade-layout"><article class="panel portfolio"><div class="eyebrow">Citizen Portfolio</div><div id="loginPrompt"><p>Log in with Discord to view your verified UnbelievaBoat balance and stock holdings.</p><a class="btn gold" href="/auth/discord">Authorise with Discord</a></div><div id="portfolio" class="hidden"><dl><div><dt>Cash balance</dt><dd id="cashBalance">₽0</dd></div><div><dt>Bank balance</dt><dd id="bankBalance">₽0</dd></div><div><dt>Total balance</dt><dd id="totalBalance">₽0</dd></div><div><dt>Owned shares</dt><dd id="ownedShares">0</dd></div><div><dt>Market value</dt><dd id="marketValue">₽0</dd></div></dl></div></article><article class="panel trade-box"><div class="eyebrow">Buy or Sell Shares</div><p class="notice">Purchases use cash only. The API checks your real balance before every trade, so infinite or fake money cannot be used.</p><div class="trade-row"><input id="tradeQuantity" type="number" min="1" max="200" value="1"><button id="buyBtn" class="btn">Buy</button><button id="sellBtn" class="btn dark">Sell</button></div><p id="tradeMessage" class="notice"></p></article></section><section class="panel"><div class="panel-header"><h2>Server Statistics Used by the Market</h2><span>Balanced and capped</span></div><div class="stats-grid"><div class="stat"><b>Online</b><span id="online">0</span></div><div class="stat"><b>Offline</b><span id="offline">0</span></div><div class="stat"><b>Joins</b><span id="joins">0</span></div><div class="stat"><b>Leaves</b><span id="leaves">0</span></div><div class="stat"><b>Boosts</b><span id="boosts">0</span></div><div class="stat"><b>Messages Sent</b><span id="messages">0</span></div></div></section><section id="adminPanel" class="panel admin hidden"><div class="panel-header"><h2>Central Administration Console</h2><span>Authorised personnel only</span></div><div style="padding-top:18px"><div class="admin-grid"><label>Exact price<input id="adminPrice" type="number" step="0.01" min="1"></label><label>Displayed % from opening<input id="adminChange" type="number" step="0.01"></label><button id="saveMarket" class="btn">Save</button><button id="forceOpen" class="btn gold">Open</button><button id="forceSettle" class="btn dark">Close & settle</button></div><label>Official warning<textarea id="adminWarning" rows="4"></textarea></label><button id="saveWarning" class="btn">Update warning</button></div></section></main><footer class="footer">Published by the State Committee of Economy. Trading balances are obtained from UnbelievaBoat and cannot be created by the browser.</footer><script>
-const $=s=>document.querySelector(s);let session=null,chart=null;const money=n=>`₽${Number(n||0).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`;async function api(path,opt={}){const r=await fetch(path,{...opt,headers:{"content-type":"application/json",...(opt.headers||{})}});const b=await r.json().catch(()=>({}));if(!r.ok)throw new Error(b.error||`Request failed: ${r.status}`);return b}function render(d){const m=d.market||{},s=d.shares||{},st=d.statistics||{},w=d.warning||{},pct=Number(m.changePercent||0);$("#currentPrice").textContent=money(m.price);$("#openingPrice").textContent=money(m.sessionOpenPrice);$("#changeBadge").textContent=`${pct>=0?"+":""}${pct.toFixed(2)}%`;$("#changeBadge").className=`change ${pct>0?"up":pct<0?"down":""}`;$("#sessionState").textContent=String(m.status||"closed").toUpperCase();$("#sessionState").className=`session-state ${m.status||"closed"}`;$("#sessionDetails").textContent=m.status==="open"?`Closes ${new Date(m.closesAt).toLocaleString()}`:`Reopens ${m.reopensAt?new Date(m.reopensAt).toLocaleString():"after the next authorised opening"}`;$("#availableShares").textContent=Number(s.available||0).toLocaleString();$("#citizenLimit").textContent=Number(s.citizenLimit||0).toLocaleString();for(const [id,key] of Object.entries({online:"membersOnline",offline:"membersOffline",joins:"joins",leaves:"leaves",boosts:"boosts",messages:"messagesSent"}))$("#"+id).textContent=Number(st[key]||0).toLocaleString();$("#warning").classList.toggle("hidden",!w.enabled);$("#warningText").textContent=w.text||"";$("#warningAuthor").textContent=`— ${w.author||""}`;const h=Object.entries(d.history||{}).sort(([a],[b])=>a.localeCompare(b)).slice(-40);if(chart)chart.destroy();chart=new Chart($("#marketChart"),{type:"line",data:{labels:h.map(([k])=>k),datasets:[{label:"Closing price",data:h.map(([,v])=>Number(v.closePrice||0)),borderColor:"#981515",backgroundColor:"rgba(152,21,21,.12)",fill:true,tension:.25}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{maxTicksLimit:8}},y:{beginAtZero:false}}}});if(session?.isAdmin){$("#adminPrice").value=Number(m.price||0);$("#adminChange").value=pct;$("#adminWarning").value=w.text||""}}async function loadMarket(){render(await api("/api/public/market"))}async function loadSession(){session=(await api("/api/session")).user;if(!session){$("#accountActions").innerHTML='<a class="btn gold" href="/auth/discord">Login with Discord</a>';return}$("#accountActions").innerHTML=`<strong>${session.username}</strong><button id="logoutBtn" class="btn dark">Logout</button>`;$("#logoutBtn").onclick=async()=>{await api("/auth/logout",{method:"POST"});location.reload()};$("#loginPrompt").classList.add("hidden");$("#portfolio").classList.remove("hidden");if(session.isAdmin)$("#adminPanel").classList.remove("hidden");await loadPortfolio()}async function loadPortfolio(){if(!session)return;try{const p=await api("/api/portfolio");$("#cashBalance").textContent=money(p.cash);$("#bankBalance").textContent=money(p.bank);$("#totalBalance").textContent=money(p.total);$("#ownedShares").textContent=Number(p.shares).toLocaleString();$("#marketValue").textContent=money(p.marketValue)}catch(e){$("#tradeMessage").textContent=e.message}}async function trade(type){if(!session){location.href="/auth/discord";return}$("#tradeMessage").textContent="Processing verified transaction…";try{const x=await api(`/api/trade/${type}`,{method:"POST",body:JSON.stringify({quantity:Number($("#tradeQuantity").value)})});$("#tradeMessage").textContent=`${type==="buy"?"Bought":"Sold"} ${x.quantity} shares for ${money(x.total)}.`;await Promise.all([loadPortfolio(),loadMarket()])}catch(e){$("#tradeMessage").textContent=e.message}}$("#buyBtn").onclick=()=>trade("buy");$("#sellBtn").onclick=()=>trade("sell");$("#saveMarket").onclick=async()=>{await api("/api/admin/market",{method:"PATCH",body:JSON.stringify({price:Number($("#adminPrice").value),changePercent:Number($("#adminChange").value)})});await loadMarket()};$("#forceOpen").onclick=async()=>{await api("/api/admin/open",{method:"POST"});await loadMarket()};$("#forceSettle").onclick=async()=>{await api("/api/admin/settle",{method:"POST"});await loadMarket()};$("#saveWarning").onclick=async()=>{await api("/api/admin/warning",{method:"PATCH",body:JSON.stringify({enabled:true,text:$("#adminWarning").value})});await loadMarket()};Promise.all([loadSession(),loadMarket()]);setInterval(loadMarket,30000);
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8d1111">
+  <meta name="description" content="Official State Trust Red Star Stock Exchange public record.">
+  <title>State Trust "Red Star" Stock Exchange</title>
+  <link rel="icon" href="logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --red-dark: #5f0909;
+      --red-deep: #3a0505;
+      --red: #981515;
+      --red-light: #b82020;
+      --gold: #efc94c;
+      --gold-dark: #9d7414;
+      --cream: #eee5cd;
+      --paper: #d9cfb4;
+      --paper-light: #f6efdc;
+      --ink: #17130f;
+      --muted: #6e6656;
+      --green: #2d7a48;
+      --blue: #355f7b;
+      --border: rgba(45, 30, 16, .34);
+      --shadow: 0 16px 40px rgba(28, 8, 4, .22);
+      --soft-shadow: 0 8px 22px rgba(28, 8, 4, .15);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(240, 232, 207, .92), rgba(240, 232, 207, .92)),
+        repeating-linear-gradient(0deg, transparent 0 3px, rgba(80, 49, 24, .025) 3px 4px);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+      outline: 3px solid rgba(239, 201, 76, .8);
+      outline-offset: 2px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .top-stripe {
+      height: 8px;
+      background: linear-gradient(90deg, var(--gold) 0 18%, var(--red) 18% 82%, var(--gold) 82%);
+      border-bottom: 2px solid var(--red-deep);
+    }
+
+    .masthead {
+      color: #fff5d4;
+      background:
+        radial-gradient(circle at 70% 20%, rgba(255, 255, 255, .08), transparent 28%),
+        linear-gradient(135deg, #651010, #9d1717 55%, #6d0d0d);
+      border-bottom: 5px solid var(--gold);
+      box-shadow: 0 8px 25px rgba(51, 5, 5, .28);
+    }
+
+    .masthead-inner {
+      width: min(1280px, 100%);
+      min-height: 160px;
+      margin: 0 auto;
+      padding: 24px clamp(18px, 4vw, 48px);
+      display: grid;
+      grid-template-columns: 110px minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 104px;
+      height: 104px;
+      object-fit: contain;
+      filter: drop-shadow(0 5px 8px rgba(0, 0, 0, .28));
+    }
+
+    .title-block small {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--gold);
+      font: 700 12px/1.2 Arial, sans-serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .title-block h1 {
+      margin: 0;
+      font-size: clamp(30px, 4.5vw, 62px);
+      line-height: .95;
+      letter-spacing: -.035em;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 0 rgba(0, 0, 0, .22);
+    }
+
+    .title-block p {
+      margin: 12px 0 0;
+      color: #eadfbf;
+      font-size: 15px;
+      letter-spacing: .03em;
+    }
+
+    .clock-box {
+      min-width: 260px;
+      padding-left: 24px;
+      text-align: right;
+      border-left: 1px solid rgba(255, 255, 255, .22);
+    }
+
+    .clock-label {
+      color: var(--gold);
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    #cetClock {
+      margin-top: 6px;
+      font: 700 23px/1.15 "Courier New", monospace;
+    }
+
+    #marketCountdown {
+      min-height: 17px;
+      margin-top: 8px;
+      color: #fff1b8;
+      font: 700 14px Arial, sans-serif;
+    }
+
+    .account-box {
+      margin-top: 14px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .account-identity {
+      max-width: 150px;
+      overflow: hidden;
+      color: #fff6d6;
+      font: 700 12px Arial, sans-serif;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .account-avatar {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+    }
+
+    .btn {
+      min-height: 40px;
+      padding: 10px 15px;
+      color: #fff5d4;
+      background: linear-gradient(#a51d1d, #7c0f0f);
+      border: 1px solid #470505;
+      box-shadow: inset 0 1px rgba(255, 255, 255, .13), 0 3px 0 #3b0505;
+      cursor: pointer;
+      font: 800 12px/1 Arial, sans-serif;
+      letter-spacing: .05em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform .14s ease, filter .14s ease, box-shadow .14s ease;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      box-shadow: inset 0 1px rgba(255, 255, 255, .13), 0 1px 0 #3b0505;
+      transform: translateY(1px);
+    }
+
+    .btn:disabled {
+      cursor: not-allowed;
+      filter: grayscale(.65);
+      opacity: .58;
+      transform: none;
+    }
+
+    .btn.gold {
+      color: #331f04;
+      background: linear-gradient(#f5d96e, #c99a28);
+      border-color: #78570b;
+      box-shadow: inset 0 1px rgba(255, 255, 255, .45), 0 3px 0 #664708;
+    }
+
+    .btn.dark {
+      background: linear-gradient(#4c1111, #250303);
+    }
+
+    .btn.ghost {
+      min-height: 34px;
+      padding: 8px 11px;
+      color: #fff2c5;
+      background: rgba(29, 1, 1, .32);
+      border-color: rgba(239, 201, 76, .55);
+      box-shadow: none;
+      font-size: 10px;
+    }
+
+    .ticker {
+      overflow: hidden;
+      color: #fff5cf;
+      background: #220403;
+      border-bottom: 2px solid #7c140f;
+      white-space: nowrap;
+    }
+
+    .ticker-track {
+      min-width: max-content;
+      padding: 10px 0;
+      display: inline-flex;
+      gap: 50px;
+      animation: ticker 32s linear infinite;
+      font: 700 13px Arial, sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .ticker-track span::before {
+      margin-right: 12px;
+      color: var(--gold);
+      content: "★";
+    }
+
+    @keyframes ticker {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .section-nav {
+      color: #fbefca;
+      background: #520909;
+      border-bottom: 1px solid #2c0303;
+    }
+
+    .section-nav-inner {
+      width: min(1280px, 100%);
+      margin: 0 auto;
+      padding: 0 clamp(16px, 3vw, 38px);
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .nav-tabs {
+      display: flex;
+    }
+
+    .nav-tab {
+      padding: 14px 18px 12px;
+      color: #eadfbd;
+      background: transparent;
+      border: 0;
+      border-bottom: 4px solid transparent;
+      cursor: pointer;
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .nav-tab.active {
+      color: #fff6d8;
+      border-bottom-color: var(--gold);
+      background: rgba(255, 255, 255, .05);
+    }
+
+    .api-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #d8ccab;
+      font: 700 11px Arial, sans-serif;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .api-dot {
+      width: 9px;
+      height: 9px;
+      background: #827866;
+      border: 1px solid rgba(255, 255, 255, .4);
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, .04);
+    }
+
+    .api-status.online .api-dot {
+      background: #54b276;
+    }
+
+    .api-status.error .api-dot {
+      background: #d14e3f;
+    }
+
+    .page {
+      width: min(1280px, 100%);
+      margin: 0 auto;
+      padding: 28px clamp(16px, 3vw, 38px) 60px;
+    }
+
+    .official-warning {
+      position: relative;
+      margin-bottom: 18px;
+      padding: 17px 20px 17px 72px;
+      color: #391009;
+      background:
+        linear-gradient(90deg, rgba(239, 201, 76, .22), rgba(255, 255, 255, .05)),
+        #f4e8c9;
+      border: 2px solid #8b2017;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .official-warning::before {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      color: var(--red);
+      content: "!";
+      font: 900 39px/1 Georgia, serif;
+      transform: translateY(-53%);
+    }
+
+    .official-warning strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--red);
+      font: 900 12px Arial, sans-serif;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .official-warning p {
+      margin: 0;
+      font: 14px/1.55 Arial, sans-serif;
+    }
+
+    .status-row {
+      margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 18px;
+    }
+
+    .status-card,
+    .session-card,
+    .panel,
+    .announcement-card,
+    .economy-hero {
+      background:
+        linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)),
+        var(--cream);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .status-card {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      border-left: 8px solid var(--red);
+    }
+
+    .eyebrow {
+      margin-bottom: 8px;
+      color: var(--red);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .price {
+      font: 800 clamp(38px, 7vw, 78px)/.9 Georgia, serif;
+      letter-spacing: -.05em;
+    }
+
+    .price-unit {
+      margin-top: 10px;
+      color: var(--muted);
+      font: 700 13px Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .change {
+      min-width: 125px;
+      padding: 15px 12px;
+      text-align: center;
+      background: rgba(255, 255, 255, .23);
+      border: 2px solid currentColor;
+      font: 800 26px Arial, sans-serif;
+    }
+
+    .change.positive {
+      color: var(--green);
+    }
+
+    .change.negative {
+      color: var(--red);
+    }
+
+    .change.flat {
+      color: #675d4c;
+    }
+
+    .session-card {
+      padding: 22px;
+      border-top: 6px solid var(--gold);
+    }
+
+    .session-state {
+      margin: 7px 0 11px;
+      font: 900 24px/1 Arial, sans-serif;
+      text-transform: uppercase;
+    }
+
+    .session-state.open {
+      color: var(--green);
+    }
+
+    .session-state.closed,
+    .session-state.settlement {
+      color: var(--red);
+    }
+
+    .session-details {
+      color: var(--muted);
+      font: 14px/1.6 Arial, sans-serif;
+    }
+
+    .session-seal {
+      margin-top: 15px;
+      padding-top: 13px;
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      color: #5f513b;
+      border-top: 1px solid var(--border);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .session-seal::before {
+      width: 27px;
+      height: 27px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      background: var(--red);
+      border-radius: 50%;
+      content: "★";
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.8fr) minmax(290px, .8fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel-header {
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      color: #fff6d6;
+      background: linear-gradient(90deg, #6c0d0d, #951818);
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .panel-header h2 {
+      margin: 0;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .panel-tag {
+      color: var(--gold);
+      font: 800 10px Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .chart-wrap {
+      height: 410px;
+      padding: 20px;
+      background:
+        linear-gradient(rgba(255, 255, 255, .42), rgba(255, 255, 255, .18)),
+        repeating-linear-gradient(90deg, transparent 0 79px, rgba(95, 9, 9, .035) 79px 80px);
+    }
+
+    .market-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--border);
+    }
+
+    .meta-box {
+      min-height: 98px;
+      padding: 15px 17px;
+      border-right: 1px solid var(--border);
+    }
+
+    .meta-box:last-child {
+      border-right: 0;
+    }
+
+    .meta-label {
+      color: var(--muted);
+      font: 800 10px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .meta-value {
+      margin-top: 7px;
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .meta-note {
+      margin-top: 3px;
+      color: var(--muted);
+      font: 11px Arial, sans-serif;
+    }
+
+    .announcement-list {
+      max-height: 585px;
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+      overflow: auto;
+    }
+
+    .announcement-card {
+      position: relative;
+      padding: 17px 16px 15px 20px;
+      border-left: 5px solid var(--gold);
+      box-shadow: 0 6px 14px rgba(28, 8, 4, .12);
+    }
+
+    .announcement-card h3 {
+      margin: 0 0 7px;
+      color: var(--red-dark);
+      font-size: 17px;
+      line-height: 1.15;
+    }
+
+    .announcement-card p {
+      margin: 0;
+      color: #3d352a;
+      font: 13px/1.55 Arial, sans-serif;
+      white-space: pre-wrap;
+    }
+
+    .announcement-meta {
+      margin-top: 11px;
+      color: var(--muted);
+      font: 800 9px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .empty-state {
+      padding: 34px 20px;
+      color: var(--muted);
+      text-align: center;
+      font: italic 15px/1.55 Georgia, serif;
+    }
+
+    .economy-hero {
+      margin-bottom: 18px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      border-top: 8px solid var(--red);
+    }
+
+    .economy-value {
+      margin: 4px 0 9px;
+      color: var(--red-dark);
+      font: 900 clamp(38px, 7vw, 72px)/.95 Georgia, serif;
+      letter-spacing: -.04em;
+    }
+
+    .economy-description {
+      max-width: 750px;
+      margin: 0;
+      color: var(--muted);
+      font: 14px/1.6 Arial, sans-serif;
+    }
+
+    .economy-rating {
+      width: 150px;
+      height: 150px;
+      padding: 12px;
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      color: #fff5d4;
+      background: var(--red);
+      border: 5px double var(--gold);
+      border-radius: 50%;
+      text-align: center;
+      transform: rotate(-3deg);
+    }
+
+    .economy-rating strong {
+      font: 900 18px Arial, sans-serif;
+      text-transform: uppercase;
+    }
+
+    .economy-rating span {
+      margin-top: 4px;
+      color: var(--gold);
+      font: 800 9px Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .stat-grid {
+      margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .stat-card {
+      min-height: 150px;
+      padding: 18px;
+      background: var(--paper-light);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--gold-dark);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .stat-card b {
+      display: block;
+      color: var(--red);
+      font: 900 10px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .stat-card strong {
+      display: block;
+      margin: 11px 0 7px;
+      font-size: clamp(22px, 3vw, 31px);
+      line-height: 1;
+    }
+
+    .stat-card span {
+      color: var(--muted);
+      font: 12px/1.4 Arial, sans-serif;
+    }
+
+    .economy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .calculation {
+      padding: 22px;
+    }
+
+    .formula-row {
+      padding: 14px 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .formula-row:last-child {
+      border-bottom: 0;
+    }
+
+    .formula-row b {
+      color: var(--red-dark);
+    }
+
+    .formula-row span {
+      color: var(--muted);
+      font: 13px/1.4 Arial, sans-serif;
+    }
+
+    .formula-row strong {
+      align-self: center;
+      font-size: 17px;
+      text-align: right;
+    }
+
+    .leaderboard {
+      width: 100%;
+      border-collapse: collapse;
+      font: 13px Arial, sans-serif;
+    }
+
+    .leaderboard th,
+    .leaderboard td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+
+    .leaderboard th {
+      color: #fff4cf;
+      background: #691010;
+      font-size: 10px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .leaderboard th:last-child,
+    .leaderboard td:last-child {
+      text-align: right;
+    }
+
+    .leaderboard tbody tr:nth-child(even) {
+      background: rgba(109, 13, 13, .045);
+    }
+
+    .footer {
+      padding: 25px clamp(16px, 3vw, 38px);
+      color: #eadfbf;
+      background: #3c0806;
+      border-top: 4px solid var(--gold);
+      text-align: center;
+      font: 12px/1.6 Arial, sans-serif;
+    }
+
+    .footer strong {
+      color: var(--gold);
+    }
+
+    .backdrop {
+      position: fixed;
+      z-index: 1000;
+      inset: 0;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background: rgba(18, 3, 2, .76);
+      backdrop-filter: blur(5px);
+    }
+
+    .admin-shell {
+      width: min(980px, 100%);
+      max-height: calc(100vh - 48px);
+      overflow: auto;
+      color: var(--ink);
+      background: var(--paper-light);
+      border: 2px solid var(--gold);
+      box-shadow: 0 28px 80px rgba(0, 0, 0, .58);
+    }
+
+    .admin-head {
+      position: sticky;
+      z-index: 2;
+      top: 0;
+      padding: 17px 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      color: #fff5d4;
+      background: linear-gradient(90deg, #4a0707, #8e1515);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .admin-head h2 {
+      margin: 0;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+
+    .icon-button {
+      width: 38px;
+      height: 38px;
+      color: #fff5d4;
+      background: rgba(0, 0, 0, .18);
+      border: 1px solid rgba(255, 255, 255, .34);
+      cursor: pointer;
+      font: 900 22px Arial, sans-serif;
+    }
+
+    .admin-body {
+      padding: 20px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .admin-section {
+      padding: 17px;
+      background: #eee5cd;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--red);
+    }
+
+    .admin-section h3 {
+      margin: 0 0 14px;
+      color: var(--red-dark);
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      align-items: end;
+    }
+
+    .form-grid.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid.five {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      color: #5a4b37;
+      font: 800 10px Arial, sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: #fffaf0;
+      border: 1px solid #8e7e64;
+      border-radius: 0;
+    }
+
+    .button-row {
+      margin-top: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .admin-status {
+      min-height: 42px;
+      padding: 12px 14px;
+      color: #5c513f;
+      background: #e1d6bc;
+      border: 1px dashed #8d7d60;
+      font: 13px/1.4 Arial, sans-serif;
+    }
+
+    .admin-status.good {
+      color: #174a2c;
+      background: #dceadf;
+      border-color: #43835a;
+    }
+
+    .admin-status.bad {
+      color: #6b0c0c;
+      background: #eed7cf;
+      border-color: #9c372b;
+    }
+
+    .toast-stack {
+      position: fixed;
+      z-index: 1200;
+      right: 18px;
+      bottom: 18px;
+      width: min(380px, calc(100vw - 36px));
+      display: grid;
+      gap: 10px;
+      pointer-events: none;
+    }
+
+    .toast {
+      padding: 14px 16px;
+      color: #fff7df;
+      background: #3f0907;
+      border-left: 5px solid var(--gold);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .3);
+      font: 13px/1.45 Arial, sans-serif;
+      animation: toastIn .18s ease-out;
+    }
+
+    .toast.error {
+      border-left-color: #ef6b5d;
+    }
+
+    @keyframes toastIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+    }
+
+    .noscript {
+      padding: 14px;
+      color: white;
+      background: #7d1010;
+      text-align: center;
+      font: 700 14px Arial, sans-serif;
+    }
+
+    @media (max-width: 980px) {
+      .masthead-inner {
+        grid-template-columns: 90px 1fr;
+      }
+
+      .logo {
+        width: 84px;
+        height: 84px;
+      }
+
+      .clock-box {
+        grid-column: 1 / -1;
+        padding: 16px 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 20px;
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, .22);
+        border-left: 0;
+      }
+
+      .account-box {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        margin: 0;
+        justify-content: flex-end;
+      }
+
+      .grid,
+      .economy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .announcement-list {
+        max-height: none;
+      }
+
+      .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .form-grid.five {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .masthead-inner {
+        min-height: 0;
+        grid-template-columns: 64px 1fr;
+        gap: 14px;
+      }
+
+      .logo {
+        width: 62px;
+        height: 62px;
+      }
+
+      .title-block h1 {
+        font-size: clamp(27px, 8vw, 43px);
+      }
+
+      .title-block p {
+        font-size: 12px;
+      }
+
+      .clock-box {
+        min-width: 0;
+        grid-template-columns: 1fr;
+      }
+
+      .account-box {
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 9px;
+        justify-content: flex-start;
+      }
+
+      .section-nav-inner {
+        padding: 0;
+        display: block;
+      }
+
+      .nav-tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-tab {
+        padding-inline: 8px;
+      }
+
+      .api-status {
+        padding: 8px 16px;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+      }
+
+      .official-warning {
+        padding-left: 52px;
+      }
+
+      .official-warning::before {
+        left: 15px;
+      }
+
+      .status-row {
+        grid-template-columns: 1fr;
+      }
+
+      .status-card {
+        grid-template-columns: 1fr;
+      }
+
+      .change {
+        width: fit-content;
+      }
+
+      .chart-wrap {
+        height: 310px;
+        padding: 12px;
+      }
+
+      .market-meta,
+      .stat-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .meta-box {
+        min-height: 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .meta-box:last-child {
+        border-bottom: 0;
+      }
+
+      .economy-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .economy-rating {
+        width: 120px;
+        height: 120px;
+      }
+
+      .form-grid,
+      .form-grid.two,
+      .form-grid.five {
+        grid-template-columns: 1fr;
+      }
+
+      .backdrop {
+        padding: 0;
+        place-items: stretch;
+      }
+
+      .admin-shell {
+        max-height: 100vh;
+        border-width: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <div class="noscript">JavaScript is required to display the live State Exchange record.</div>
+  </noscript>
+
+  <div class="top-stripe"></div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <img class="logo" src="logo.png" alt="State Trust Red Star emblem">
+
+      <div class="title-block">
+        <small>Commissariat of Finance</small>
+        <h1>USSR Stock Exchange</h1>
+        <p>Official public record of the Union's centrally supervised market index</p>
+      </div>
+
+      <div class="clock-box">
+        <div>
+          <div class="clock-label">Central European Time</div>
+          <div id="cetClock">--:--:--</div>
+          <div id="marketCountdown">Session data loading</div>
+        </div>
+        <div id="accountBox" class="account-box">
+          <button id="loginButton" class="btn gold" type="button">Authorise with Discord</button>
+          <button id="adminButton" class="btn ghost" type="button">Administration Panel</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker" aria-label="Official market bulletin">
+    <div class="ticker-track">
+      <span>Official State Market Bulletin</span>
+      <span>No unscheduled price movement is permitted</span>
+      <span>All index changes are issued through the authorised State API</span>
+      <span>Official State Market Bulletin</span>
+      <span>No unscheduled price movement is permitted</span>
+      <span>All index changes are issued through the authorised State API</span>
+    </div>
+  </div>
+
+  <nav class="section-nav" aria-label="Exchange sections">
+    <div class="section-nav-inner">
+      <div class="nav-tabs">
+        <button class="nav-tab active" type="button" data-page="marketPage">Stock Market</button>
+        <button class="nav-tab" type="button" data-page="economyPage">National Economy</button>
+      </div>
+      <div id="apiStatus" class="api-status">
+        <span class="api-dot"></span>
+        <span id="apiStatusText">Connecting to State API</span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section id="officialWarning" class="official-warning hidden" aria-live="polite">
+      <strong>Official Market Warning</strong>
+      <p id="warningText"></p>
+    </section>
+
+    <section id="marketPage" class="site-page">
+      <div class="status-row">
+        <article class="status-card">
+          <div>
+            <div class="eyebrow">Union Composite Socialist Index</div>
+            <div id="currentPrice" class="price">0.00</div>
+            <div class="price-unit">State Index Points · Live Record</div>
+          </div>
+          <div id="changeBadge" class="change flat">0.00%</div>
+        </article>
+
+        <article class="session-card">
+          <div class="eyebrow">Trading Session</div>
+          <div id="sessionState" class="session-state closed">Closed</div>
+          <div id="sessionDetails" class="session-details">Awaiting an official market session.</div>
+          <div class="session-seal">State verified public record</div>
+        </article>
+      </div>
+
+      <div class="grid">
+        <article class="panel">
+          <header class="panel-header">
+            <h2>Official Index Movement</h2>
+            <span id="movementLabel" class="panel-tag">No scheduled movement</span>
+          </header>
+
+          <div class="chart-wrap">
+            <canvas id="marketChart" aria-label="Official index movement graph"></canvas>
+          </div>
+
+          <div class="market-meta">
+            <div class="meta-box">
+              <div class="meta-label">Opening Level</div>
+              <div id="openingPrice" class="meta-value">0.00</div>
+              <div class="meta-note">Current session reference</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">Scheduled Target</div>
+              <div id="targetPrice" class="meta-value">0.00</div>
+              <div id="targetNote" class="meta-note">No active order</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">Movement Completion</div>
+              <div id="movementCompletion" class="meta-value">Not scheduled</div>
+              <div class="meta-note">Authorised API timing</div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="panel">
+          <header class="panel-header">
+            <h2>State Announcements</h2>
+            <span class="panel-tag">Central Bank Wire</span>
+          </header>
+          <div id="announcementList" class="announcement-list">
+            <div class="empty-state">No official announcements have been issued.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="economyPage" class="site-page hidden">
+      <article class="economy-hero">
+        <div>
+          <div class="eyebrow">Socialist Gross Domestic Value</div>
+          <div id="socialistGrossValue" class="economy-value">₽0</div>
+          <p class="economy-description">
+            Combined recorded ruble holdings of citizens and the State Bank, together with the total
+            official value of State Trust "Red Star" Stocks.
+          </p>
+        </div>
+        <div class="economy-rating">
+          <strong id="economyRating">Stable</strong>
+          <span>Official national economic position</span>
+        </div>
+      </article>
+
+      <div class="stat-grid">
+        <article class="stat-card">
+          <b>Total Rubles in Recorded Accounts</b>
+          <strong id="totalRubles">₽0</strong>
+          <span>Includes citizens and the State Bank.</span>
+        </article>
+        <article class="stat-card">
+          <b>Total Stock Market Value</b>
+          <strong id="totalStockValue">₽0</strong>
+          <span>Issued shares multiplied by the current official share price.</span>
+        </article>
+        <article class="stat-card">
+          <b>Citizen Ruble Holdings</b>
+          <strong id="citizenRubles">₽0</strong>
+          <span>Recorded rubles excluding the State Bank account.</span>
+        </article>
+        <article class="stat-card">
+          <b>State Bank Reserves</b>
+          <strong id="stateBankRubles">₽0</strong>
+          <span>Ruble balance held by the State Bank of the USSR.</span>
+        </article>
+        <article class="stat-card">
+          <b>Total Shares Issued</b>
+          <strong id="totalShares">0</strong>
+          <span>Total State Trust "Red Star" Stocks in existence.</span>
+        </article>
+        <article class="stat-card">
+          <b>Available for Purchase</b>
+          <strong id="availableShares">0</strong>
+          <span>Shares held by the State and available in the store.</span>
+        </article>
+        <article class="stat-card">
+          <b>Citizen-Owned Shares</b>
+          <strong id="citizenShares">0</strong>
+          <span>Issued shares minus shares currently held by the State.</span>
+        </article>
+        <article class="stat-card">
+          <b>Recorded Account Holders</b>
+          <strong id="accountHolders">0</strong>
+          <span>State Bank plus all listed citizen accounts.</span>
+        </article>
+      </div>
+
+      <div class="economy-grid">
+        <article class="panel">
+          <header class="panel-header">
+            <h2>Economic Calculation</h2>
+            <span class="panel-tag">State Accounting Method</span>
+          </header>
+          <div class="calculation">
+            <div class="formula-row">
+              <span><b>Total Stock Market Value</b><br>Total shares issued × current official share price</span>
+              <strong id="stockFormula">0 × ₽0.00</strong>
+            </div>
+            <div class="formula-row">
+              <span><b>Socialist Gross Domestic Value</b><br>Total rubles + official stock market value</span>
+              <strong id="grossFormula">₽0 + ₽0</strong>
+            </div>
+            <div class="formula-row">
+              <span><b>Average Citizen Balance</b><br>Citizen holdings divided by recorded citizen accounts</span>
+              <strong id="averageCitizenBalance">₽0</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <header class="panel-header">
+            <h2>Largest Ruble Accounts</h2>
+            <span class="panel-tag">Current Recorded Balances</span>
+          </header>
+          <table class="leaderboard">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Account</th>
+                <th>Balance</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboardBody">
+              <tr>
+                <td colspan="3">No account data received.</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Published by the <strong>Commissariat of Finance</strong>. All displayed values are centrally
+    administered and do not represent a free-market exchange.
+  </footer>
+
+  <div id="adminBackdrop" class="backdrop hidden" aria-hidden="true">
+    <section class="admin-shell" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <header class="admin-head">
+        <div>
+          <div class="clock-label">Authorised Personnel Only</div>
+          <h2 id="adminTitle">Central Administration Console</h2>
+        </div>
+        <button id="closeAdmin" class="icon-button" type="button" aria-label="Close administration console">×</button>
+      </header>
+
+      <div class="admin-body">
+        <div id="adminStatus" class="admin-status">
+          Sign in through Discord and the authorised State API to use administrative controls.
+        </div>
+
+        <section class="admin-section">
+          <h3>Index Control</h3>
+          <div class="form-grid two">
+            <div class="field">
+              <label for="adminExactPrice">Set exact index value</label>
+              <input id="adminExactPrice" type="number" min="0.01" step="0.01" inputmode="decimal">
+            </div>
+            <button id="setExactPrice" class="btn" type="button">Set Exact Value</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Scheduled Movement</h3>
+          <div class="form-grid">
+            <div class="field">
+              <label for="adminMovementPercent">Percentage change</label>
+              <input id="adminMovementPercent" type="number" step="0.01" inputmode="decimal">
+            </div>
+            <div class="field">
+              <label for="adminMovementMinutes">Movement duration in minutes</label>
+              <input id="adminMovementMinutes" type="number" min="1" step="1" value="30" inputmode="numeric">
+            </div>
+            <button id="scheduleMovement" class="btn" type="button">Issue Movement Order</button>
+          </div>
+          <div class="button-row">
+            <button id="freezeMovement" class="btn dark" type="button">Freeze at Current Value</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Market Session Timer</h3>
+          <div class="form-grid two">
+            <div class="field">
+              <label for="adminSessionHours">Session duration in hours</label>
+              <input id="adminSessionHours" type="number" min="1" max="168" step="1" value="24" inputmode="numeric">
+            </div>
+            <div class="button-row">
+              <button id="openSession" class="btn gold" type="button">Open / Reset Session</button>
+              <button id="closeSession" class="btn dark" type="button">Close Market Now</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Issue Announcement</h3>
+          <div class="form-grid two">
+            <div class="field">
+              <label for="adminAnnouncementTitle">Headline</label>
+              <input id="adminAnnouncementTitle" type="text" maxlength="120">
+            </div>
+            <div class="field">
+              <label for="adminAnnouncementAuthor">Issuing authority</label>
+              <input id="adminAnnouncementAuthor" type="text" maxlength="80" value="Central Bank">
+            </div>
+            <div class="field full">
+              <label for="adminAnnouncementBody">Official statement</label>
+              <textarea id="adminAnnouncementBody" rows="4" maxlength="1200"></textarea>
+            </div>
+          </div>
+          <div class="button-row">
+            <button id="publishAnnouncement" class="btn" type="button">Publish Bulletin</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Official Market Warning</h3>
+          <div class="field">
+            <label for="adminWarningText">Warning issued by hyawii2.0, State Committee of Economy</label>
+            <textarea id="adminWarningText" rows="3" maxlength="800"></textarea>
+          </div>
+          <div class="button-row">
+            <button id="saveWarning" class="btn" type="button">Update Warning</button>
+            <button id="clearWarning" class="btn dark" type="button">Remove Warning</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>National Economy</h3>
+          <div class="form-grid five">
+            <div class="field">
+              <label for="adminTotalRubles">Total rubles</label>
+              <input id="adminTotalRubles" type="number" min="0" step="1">
+            </div>
+            <div class="field">
+              <label for="adminStateBank">State Bank rubles</label>
+              <input id="adminStateBank" type="number" min="0" step="1">
+            </div>
+            <div class="field">
+              <label for="adminIssuedShares">Total shares issued</label>
+              <input id="adminIssuedShares" type="number" min="0" step="1">
+            </div>
+            <div class="field">
+              <label for="adminAvailableShares">Shares available</label>
+              <input id="adminAvailableShares" type="number" min="0" step="1">
+            </div>
+            <div class="field">
+              <label for="adminAccountHolders">Account holders</label>
+              <input id="adminAccountHolders" type="number" min="1" step="1">
+            </div>
+          </div>
+          <div class="button-row">
+            <button id="saveEconomy" class="btn" type="button">Update National Economy</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Maintenance</h3>
+          <div class="button-row">
+            <button id="clearAnnouncements" class="btn dark" type="button">Clear Announcements</button>
+            <button id="resetHistory" class="btn dark" type="button">Reset Graph History</button>
+            <button id="factoryReset" class="btn dark" type="button">Factory Reset Market</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <div id="toastStack" class="toast-stack" aria-live="polite"></div>
+
+  <script>
+    "use strict";
+
+    /* ======================================================================
+       CONFIGURATION — EDIT THIS BLOCK WHEN YOUR CUSTOM API IS READY
+
+       Discord's client secret, your economy-bot token, and every other secret
+       must stay on your API server. Never place those secrets in this file.
+
+       The API should set a Secure, HttpOnly, SameSite=None session cookie and
+       allow credentialed CORS only from your exact GitHub Pages origin.
+       ====================================================================== */
+
+    const CONFIG = Object.freeze({
+      API_BASE_URL: "ussr-stock-api.batuhanylz2009.workers.dev",
+      SITE_URL: window.location.origin + window.location.pathname,
+      REQUEST_TIMEOUT_MS: 12000,
+      MARKET_REFRESH_MS: 15000,
+      SESSION_REFRESH_MS: 60000,
+      CET_TIME_ZONE: "Europe/Brussels",
+      OAUTH_RETURN_PARAMETER: "returnTo",
+      ENDPOINTS: Object.freeze({
+        DISCORD_LOGIN: "/auth/discord",
+        LOGOUT: "/auth/logout",
+        SESSION: "/api/session",
+        MARKET: "/api/public/market",
+        ECONOMY: "/api/public/economy",
+        ANNOUNCEMENTS: "/api/public/announcements",
+        ADMIN_SET_PRICE: "/api/admin/market/price",
+        ADMIN_SCHEDULE_MOVEMENT: "/api/admin/market/movement",
+        ADMIN_FREEZE_MOVEMENT: "/api/admin/market/freeze",
+        ADMIN_OPEN_SESSION: "/api/admin/market/open",
+        ADMIN_CLOSE_SESSION: "/api/admin/market/close",
+        ADMIN_ANNOUNCEMENTS: "/api/admin/announcements",
+        ADMIN_WARNING: "/api/admin/warning",
+        ADMIN_ECONOMY: "/api/admin/economy",
+        ADMIN_CLEAR_ANNOUNCEMENTS: "/api/admin/announcements/clear",
+        ADMIN_RESET_HISTORY: "/api/admin/market/history/reset",
+        ADMIN_FACTORY_RESET: "/api/admin/market/factory-reset"
+      })
+    });
+
+    /* ======================================================================
+       APPLICATION STATE
+       ====================================================================== */
+
+    const STATE = {
+      user: null,
+      market: null,
+      economy: null,
+      announcements: [],
+      chart: null,
+      serverClockOffsetMs: 0,
+      marketTimerId: null,
+      refreshTimerId: null,
+      sessionRefreshTimerId: null,
+      publicRefreshInFlight: false
+    };
+
+    /* ======================================================================
+       DOM HELPERS AND FORMATTERS
+       ====================================================================== */
+
+    const byId = function (id) {
+      return document.getElementById(id);
+    };
+
+    const asNumber = function (value, fallback) {
+      const number = Number(value);
+      return Number.isFinite(number) ? number : (fallback === undefined ? 0 : fallback);
+    };
+
+    const firstNumber = function () {
+      for (let index = 0; index < arguments.length; index += 1) {
+        const candidate = arguments[index];
+        if (candidate === null || candidate === undefined || candidate === "") {
+          continue;
+        }
+        const number = Number(candidate);
+        if (Number.isFinite(number)) {
+          return number;
+        }
+      }
+      return 0;
+    };
+
+    const formatNumber = function (value, decimals) {
+      const places = decimals === undefined ? 0 : decimals;
+      return asNumber(value).toLocaleString("en-GB", {
+        minimumFractionDigits: places,
+        maximumFractionDigits: places
+      });
+    };
+
+    const formatMoney = function (value, decimals) {
+      return "₽" + formatNumber(value, decimals === undefined ? 0 : decimals);
+    };
+
+    const formatIndex = function (value) {
+      return formatNumber(value, 2);
+    };
+
+    const formatDateTime = function (value) {
+      if (!value) {
+        return "Not scheduled";
+      }
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) {
+        return "Not scheduled";
+      }
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: CONFIG.CET_TIME_ZONE,
+        dateStyle: "medium",
+        timeStyle: "short"
+      }).format(date);
+    };
+
+    const escapeText = function (value) {
+      return value === null || value === undefined ? "" : String(value);
+    };
+
+    const getServerNow = function () {
+      return Date.now() + STATE.serverClockOffsetMs;
+    };
+
+    const setApiStatus = function (mode, text) {
+      const status = byId("apiStatus");
+      status.classList.remove("online", "error");
+      if (mode) {
+        status.classList.add(mode);
+      }
+      byId("apiStatusText").textContent = text;
+    };
+
+    const showToast = function (message, type) {
+      const toast = document.createElement("div");
+      toast.className = "toast" + (type === "error" ? " error" : "");
+      toast.textContent = escapeText(message);
+      byId("toastStack").appendChild(toast);
+      window.setTimeout(function () {
+        toast.remove();
+      }, 5000);
+    };
+
+    const setAdminStatus = function (message, mode) {
+      const status = byId("adminStatus");
+      status.className = "admin-status" + (mode ? " " + mode : "");
+      status.textContent = message;
+    };
+
+    const setBusy = function (button, busy, busyLabel) {
+      if (!button) {
+        return;
+      }
+      if (busy) {
+        button.dataset.originalLabel = button.textContent;
+        button.textContent = busyLabel || "Working…";
+        button.disabled = true;
+      } else {
+        button.textContent = button.dataset.originalLabel || button.textContent;
+        button.disabled = false;
+      }
+    };
+
+    /* ======================================================================
+       CUSTOM API CLIENT
+
+       Expected session response:
+       { "authenticated": true, "user": {
+           "id": "...", "username": "...", "avatarUrl": "...", "isAdmin": true
+       }}
+
+       The public endpoints may return their resource directly or wrapped in
+       { "market": ... }, { "economy": ... }, or { "announcements": [...] }.
+       ====================================================================== */
+
+    class ApiError extends Error {
+      constructor(message, status, payload) {
+        super(message);
+        this.name = "ApiError";
+        this.status = status || 0;
+        this.payload = payload || null;
+      }
+    }
+
+    const isApiConfigured = function () {
+      return Boolean(
+        CONFIG.API_BASE_URL &&
+        !CONFIG.API_BASE_URL.includes("YOUR-CUSTOM-API") &&
+        /^https?:\/\//i.test(CONFIG.API_BASE_URL)
+      );
+    };
+
+    const apiUrl = function (endpoint) {
+      const base = CONFIG.API_BASE_URL.replace(/\/+$/, "") + "/";
+      const path = String(endpoint || "").replace(/^\/+/, "");
+      return new URL(path, base).toString();
+    };
+
+    const parseApiResponse = async function (response) {
+      if (response.status === 204) {
+        return null;
+      }
+
+      const contentType = response.headers.get("content-type") || "";
+      if (contentType.includes("application/json")) {
+        return response.json();
+      }
+
+      const text = await response.text();
+      return text ? { message: text } : null;
+    };
+
+    const apiRequest = async function (endpoint, options) {
+      if (!isApiConfigured()) {
+        throw new ApiError("Set CONFIG.API_BASE_URL at the top of index.html.", 0);
+      }
+
+      const settings = options || {};
+      const controller = new AbortController();
+      const timeoutId = window.setTimeout(function () {
+        controller.abort();
+      }, CONFIG.REQUEST_TIMEOUT_MS);
+
+      const headers = new Headers(settings.headers || {});
+      headers.set("Accept", "application/json");
+
+      let body = settings.body;
+      if (body !== undefined && body !== null && !(body instanceof FormData)) {
+        headers.set("Content-Type", "application/json");
+        body = typeof body === "string" ? body : JSON.stringify(body);
+      }
+
+      try {
+        const response = await fetch(apiUrl(endpoint), {
+          method: settings.method || "GET",
+          credentials: "include",
+          cache: settings.cache || "no-store",
+          headers: headers,
+          body: body,
+          signal: controller.signal
+        });
+
+        const payload = await parseApiResponse(response);
+        if (!response.ok) {
+          const message =
+            payload && (payload.error || payload.message) ?
+              (payload.error || payload.message) :
+              "State API request failed (" + response.status + ").";
+          throw new ApiError(message, response.status, payload);
+        }
+
+        return payload;
+      } catch (error) {
+        if (error.name === "AbortError") {
+          throw new ApiError("The State API did not respond in time.", 0);
+        }
+        throw error;
+      } finally {
+        window.clearTimeout(timeoutId);
+      }
+    };
+
+    const API = Object.freeze({
+      get: function (endpoint) {
+        return apiRequest(endpoint);
+      },
+      post: function (endpoint, body) {
+        return apiRequest(endpoint, { method: "POST", body: body });
+      },
+      patch: function (endpoint, body) {
+        return apiRequest(endpoint, { method: "PATCH", body: body });
+      },
+      delete: function (endpoint, body) {
+        return apiRequest(endpoint, { method: "DELETE", body: body });
+      }
+    });
+
+    /* ======================================================================
+       DISCORD OAUTH AND SERVER SESSION
+
+       The browser starts OAuth at the custom API. The API performs the Discord
+       token exchange and redirects back to CONFIG.SITE_URL. The browser never
+       receives or stores Discord's client secret.
+       ====================================================================== */
+
+    const startDiscordLogin = function () {
+      if (!isApiConfigured()) {
+        showToast("Configure CONFIG.API_BASE_URL before using Discord login.", "error");
+        return;
+      }
+
+      const loginUrl = new URL(apiUrl(CONFIG.ENDPOINTS.DISCORD_LOGIN));
+      loginUrl.searchParams.set(CONFIG.OAUTH_RETURN_PARAMETER, CONFIG.SITE_URL);
+      window.location.assign(loginUrl.toString());
+    };
+
+    const normalizeSession = function (payload) {
+      if (!payload) {
+        return null;
+      }
+      if (payload.authenticated === false) {
+        return null;
+      }
+      return payload.user || payload.session || payload.account ||
+        (payload.id || payload.username ? payload : null);
+    };
+
+    const renderSession = function () {
+      const accountBox = byId("accountBox");
+      accountBox.replaceChildren();
+
+      if (!STATE.user) {
+        const login = document.createElement("button");
+        login.id = "loginButton";
+        login.className = "btn gold";
+        login.type = "button";
+        login.textContent = "Authorise with Discord";
+        login.addEventListener("click", startDiscordLogin);
+
+        const admin = document.createElement("button");
+        admin.id = "adminButton";
+        admin.className = "btn ghost";
+        admin.type = "button";
+        admin.textContent = "Administration Panel";
+        admin.addEventListener("click", openAdmin);
+
+        accountBox.append(login, admin);
+        return;
+      }
+
+      if (STATE.user.avatarUrl) {
+        const avatar = document.createElement("img");
+        avatar.className = "account-avatar";
+        avatar.src = STATE.user.avatarUrl;
+        avatar.alt = "";
+        avatar.referrerPolicy = "no-referrer";
+        accountBox.appendChild(avatar);
+      }
+
+      const identity = document.createElement("span");
+      identity.className = "account-identity";
+      identity.textContent = STATE.user.displayName || STATE.user.username || "Authorised citizen";
+      accountBox.appendChild(identity);
+
+      if (STATE.user.isAdmin) {
+        const admin = document.createElement("button");
+        admin.id = "adminButton";
+        admin.className = "btn ghost";
+        admin.type = "button";
+        admin.textContent = "Administration";
+        admin.addEventListener("click", openAdmin);
+        accountBox.appendChild(admin);
+      }
+
+      const logout = document.createElement("button");
+      logout.id = "logoutButton";
+      logout.className = "btn dark";
+      logout.type = "button";
+      logout.textContent = "Sign Out";
+      logout.addEventListener("click", logoutSession);
+      accountBox.appendChild(logout);
+    };
+
+    const loadSession = async function (silent) {
+      if (!isApiConfigured()) {
+        STATE.user = null;
+        renderSession();
+        return;
+      }
+
+      try {
+        const payload = await API.get(CONFIG.ENDPOINTS.SESSION);
+        STATE.user = normalizeSession(payload);
+        renderSession();
+      } catch (error) {
+        if (error.status === 401 || error.status === 403) {
+          STATE.user = null;
+          renderSession();
+          return;
+        }
+        if (!silent) {
+          showToast(error.message, "error");
+        }
+      }
+    };
+
+    const logoutSession = async function () {
+      const button = byId("logoutButton");
+      setBusy(button, true, "Signing Out…");
+      try {
+        await API.post(CONFIG.ENDPOINTS.LOGOUT, {});
+        STATE.user = null;
+        closeAdmin();
+        renderSession();
+        showToast("Discord session closed.");
+      } catch (error) {
+        showToast(error.message, "error");
+      } finally {
+        setBusy(button, false);
+      }
+    };
+
+    const handleOAuthReturn = function () {
+      const params = new URLSearchParams(window.location.search);
+      const authResult = params.get("auth");
+      const authError = params.get("auth_error") || params.get("error");
+
+      if (authResult === "success") {
+        showToast("Discord authorisation completed.");
+      } else if (authError) {
+        showToast("Discord authorisation failed: " + authError, "error");
+      }
+
+      if (authResult || authError) {
+        params.delete("auth");
+        params.delete("auth_error");
+        params.delete("error");
+        const query = params.toString();
+        const cleanUrl = window.location.pathname + (query ? "?" + query : "") + window.location.hash;
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
+    };
+
+    /* ======================================================================
+       MARKET DATA NORMALISATION AND RENDERING
+       ====================================================================== */
+
+    const normalizeHistory = function (history) {
+      if (Array.isArray(history)) {
+        return history
+          .map(function (entry) {
+            return {
+              timestamp: entry.timestamp || entry.time || entry.createdAt || entry.date,
+              price: firstNumber(entry.price, entry.value, entry.closePrice, entry.close)
+            };
+          })
+          .filter(function (entry) {
+            return entry.timestamp && Number.isFinite(entry.price);
+          })
+          .sort(function (left, right) {
+            return new Date(left.timestamp) - new Date(right.timestamp);
+          });
+      }
+
+      if (history && typeof history === "object") {
+        return Object.keys(history)
+          .map(function (key) {
+            const value = history[key];
+            return {
+              timestamp: value.timestamp || value.time || value.createdAt || key,
+              price: firstNumber(value.price, value.value, value.closePrice, value.close, value)
+            };
+          })
+          .filter(function (entry) {
+            return entry.timestamp && Number.isFinite(entry.price);
+          })
+          .sort(function (left, right) {
+            return new Date(left.timestamp) - new Date(right.timestamp);
+          });
+      }
+
+      return [];
+    };
+
+    const normalizeMarket = function (payload) {
+      const source = payload && (payload.market || payload.data) ? (payload.market || payload.data) : (payload || {});
+      const price = firstNumber(source.price, source.currentPrice, source.indexValue, source.value);
+      const openingPrice = firstNumber(
+        source.openingPrice,
+        source.sessionOpeningPrice,
+        source.sessionOpenPrice,
+        source.openPrice,
+        price
+      );
+      const targetPrice = firstNumber(source.targetPrice, source.scheduledTarget, price);
+
+      let changePercent = Number(source.changePercent);
+      if (!Number.isFinite(changePercent)) {
+        changePercent = openingPrice > 0 ? ((price - openingPrice) / openingPrice) * 100 : 0;
+      }
+
+      return {
+        price: price,
+        openingPrice: openingPrice,
+        targetPrice: targetPrice,
+        changePercent: changePercent,
+        status: String(source.status || source.marketStatus || "closed").toLowerCase(),
+        openedAt: source.openedAt || source.sessionOpenedAt || null,
+        closesAt: source.closesAt || source.sessionClosesAt || null,
+        reopensAt: source.reopensAt || source.opensAt || null,
+        movementStartedAt: source.movementStartedAt || source.scheduleStartedAt || null,
+        movementEndsAt: source.movementEndsAt || source.targetReachedAt || null,
+        movementActive: Boolean(source.movementActive || source.scheduledMovement),
+        movementPercent: firstNumber(source.movementPercent, source.scheduledPercent, changePercent),
+        serverTime: source.serverTime || payload.serverTime || null,
+        history: normalizeHistory(payload.history || source.history)
+      };
+    };
+
+    const renderPrice = function () {
+      const market = STATE.market;
+      if (!market) {
+        return;
+      }
+
+      byId("currentPrice").textContent = formatIndex(market.price);
+      byId("openingPrice").textContent = formatIndex(market.openingPrice);
+      byId("targetPrice").textContent = formatIndex(market.targetPrice);
+
+      const percent = asNumber(market.changePercent);
+      const badge = byId("changeBadge");
+      badge.textContent = (percent > 0 ? "+" : "") + percent.toFixed(2) + "%";
+      badge.className =
+        "change " + (percent > 0 ? "positive" : (percent < 0 ? "negative" : "flat"));
+
+      const status = market.status === "open" ? "open" :
+        (market.status === "settlement" ? "settlement" : "closed");
+      const sessionState = byId("sessionState");
+      sessionState.textContent = status === "open" ? "Open" :
+        (status === "settlement" ? "Settlement" : "Closed");
+      sessionState.className = "session-state " + status;
+
+      if (status === "open") {
+        byId("sessionDetails").textContent =
+          market.closesAt ? "Official session closes " + formatDateTime(market.closesAt) + "." :
+            "Trading is authorised. Awaiting an official closing time.";
+      } else if (market.reopensAt) {
+        byId("sessionDetails").textContent =
+          "Trading is suspended. The next authorised opening is " + formatDateTime(market.reopensAt) + ".";
+      } else {
+        byId("sessionDetails").textContent = "Awaiting an official market session.";
+      }
+
+      if (market.movementActive) {
+        byId("movementLabel").textContent =
+          (market.movementPercent >= 0 ? "+" : "") + market.movementPercent.toFixed(2) + "% scheduled";
+        byId("targetNote").textContent = "Official scheduled destination";
+        byId("movementCompletion").textContent = formatDateTime(market.movementEndsAt);
+      } else {
+        byId("movementLabel").textContent = "No scheduled movement";
+        byId("targetNote").textContent = "No active order";
+        byId("movementCompletion").textContent = "Not scheduled";
+      }
+
+      populateAdminFromState();
+      renderChart(market.history);
+      updateCountdown();
+    };
+
+    const chartLabel = function (timestamp) {
+      const date = new Date(timestamp);
+      if (Number.isNaN(date.getTime())) {
+        return String(timestamp);
+      }
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: CONFIG.CET_TIME_ZONE,
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(date);
+    };
+
+    const renderChart = function (history) {
+      if (typeof Chart === "undefined") {
+        return;
+      }
+
+      const points = history && history.length ? history.slice(-160) :
+        (STATE.market ? [{ timestamp: Date.now(), price: STATE.market.price }] : []);
+      const canvas = byId("marketChart");
+      const context = canvas.getContext("2d");
+      const gradient = context.createLinearGradient(0, 0, 0, 380);
+      gradient.addColorStop(0, "rgba(152, 21, 21, .28)");
+      gradient.addColorStop(1, "rgba(152, 21, 21, .015)");
+
+      if (STATE.chart) {
+        STATE.chart.destroy();
+      }
+
+      STATE.chart = new Chart(context, {
+        type: "line",
+        data: {
+          labels: points.map(function (entry) {
+            return chartLabel(entry.timestamp);
+          }),
+          datasets: [{
+            label: "Official Index",
+            data: points.map(function (entry) {
+              return entry.price;
+            }),
+            borderColor: "#981515",
+            backgroundColor: gradient,
+            borderWidth: 3,
+            pointRadius: points.length > 50 ? 0 : 2,
+            pointHoverRadius: 5,
+            pointBackgroundColor: "#efc94c",
+            pointBorderColor: "#5f0909",
+            fill: true,
+            tension: .22
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: {
+            duration: 450
+          },
+          interaction: {
+            intersect: false,
+            mode: "index"
+          },
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              backgroundColor: "#3a0505",
+              titleColor: "#efc94c",
+              bodyColor: "#fff5d4",
+              callbacks: {
+                label: function (contextValue) {
+                  return " Index: " + formatIndex(contextValue.parsed.y);
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                color: "rgba(95, 9, 9, .08)"
+              },
+              ticks: {
+                color: "#6e6656",
+                maxTicksLimit: 8,
+                maxRotation: 0
+              }
+            },
+            y: {
+              beginAtZero: false,
+              grid: {
+                color: "rgba(95, 9, 9, .1)"
+              },
+              ticks: {
+                color: "#6e6656",
+                callback: function (value) {
+                  return formatIndex(value);
+                }
+              }
+            }
+          }
+        }
+      });
+    };
+
+    const updateCountdown = function () {
+      if (!STATE.market) {
+        byId("marketCountdown").textContent = "Session data loading";
+        return;
+      }
+
+      const market = STATE.market;
+      const isOpen = market.status === "open";
+      const destination = isOpen ? market.closesAt : market.reopensAt;
+
+      if (!destination) {
+        byId("marketCountdown").textContent =
+          isOpen ? "Open · closing time pending" : "Market closed";
+        return;
+      }
+
+      const remaining = new Date(destination).getTime() - getServerNow();
+      if (!Number.isFinite(remaining) || remaining <= 0) {
+        byId("marketCountdown").textContent = isOpen ? "Closing in progress" : "Opening in progress";
+        return;
+      }
+
+      const totalSeconds = Math.floor(remaining / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      const units = [];
+      if (days) {
+        units.push(days + "d");
+      }
+      units.push(String(hours).padStart(2, "0") + "h");
+      units.push(String(minutes).padStart(2, "0") + "m");
+      units.push(String(seconds).padStart(2, "0") + "s");
+
+      byId("marketCountdown").textContent =
+        (isOpen ? "Closes in " : "Opens in ") + units.join(" ");
+    };
+
+    const loadMarket = async function () {
+      const payload = await API.get(CONFIG.ENDPOINTS.MARKET);
+      STATE.market = normalizeMarket(payload || {});
+
+      if (STATE.market.serverTime) {
+        const serverTime = new Date(STATE.market.serverTime).getTime();
+        if (Number.isFinite(serverTime)) {
+          STATE.serverClockOffsetMs = serverTime - Date.now();
+        }
+      }
+
+      renderPrice();
+    };
+
+    /* ======================================================================
+       ANNOUNCEMENTS
+       ====================================================================== */
+
+    const normalizeAnnouncements = function (payload) {
+      const source = Array.isArray(payload) ? payload :
+        (payload && Array.isArray(payload.announcements) ? payload.announcements : []);
+
+      return source
+        .map(function (item, index) {
+          return {
+            id: item.id || String(index),
+            title: escapeText(item.title || item.headline || "Official Bulletin"),
+            body: escapeText(item.body || item.text || item.message || ""),
+            author: escapeText(item.author || item.authority || "Central Bank"),
+            createdAt: item.createdAt || item.timestamp || item.date || null
+          };
+        })
+        .sort(function (left, right) {
+          return new Date(right.createdAt || 0) - new Date(left.createdAt || 0);
+        });
+    };
+
+    const renderAnnouncements = function () {
+      const list = byId("announcementList");
+      list.replaceChildren();
+
+      if (!STATE.announcements.length) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.textContent = "No official announcements have been issued.";
+        list.appendChild(empty);
+        return;
+      }
+
+      STATE.announcements.forEach(function (announcement) {
+        const card = document.createElement("article");
+        card.className = "announcement-card";
+
+        const title = document.createElement("h3");
+        title.textContent = announcement.title;
+
+        const body = document.createElement("p");
+        body.textContent = announcement.body;
+
+        const meta = document.createElement("div");
+        meta.className = "announcement-meta";
+        meta.textContent =
+          announcement.author +
+          (announcement.createdAt ? " · " + formatDateTime(announcement.createdAt) : "");
+
+        card.append(title, body, meta);
+        list.appendChild(card);
+      });
+    };
+
+    const loadAnnouncements = async function () {
+      const payload = await API.get(CONFIG.ENDPOINTS.ANNOUNCEMENTS);
+      STATE.announcements = normalizeAnnouncements(payload);
+      renderAnnouncements();
+    };
+
+    /* ======================================================================
+       NATIONAL ECONOMY
+       ====================================================================== */
+
+    const normalizeLeaderboard = function (source) {
+      if (!Array.isArray(source)) {
+        return [];
+      }
+      return source.map(function (entry) {
+        return {
+          name: escapeText(entry.name || entry.username || entry.account || "Citizen"),
+          balance: firstNumber(entry.balance, entry.total, entry.rubles)
+        };
+      }).sort(function (left, right) {
+        return right.balance - left.balance;
+      }).slice(0, 15);
+    };
+
+    const normalizeEconomy = function (payload) {
+      const source = payload && (payload.economy || payload.data) ? (payload.economy || payload.data) : (payload || {});
+      const totalRubles = firstNumber(source.totalRubles, source.moneySupply, source.totalMoney);
+      const stateBankRubles = firstNumber(source.stateBankRubles, source.stateBankBalance, source.stateBank);
+      const totalShares = firstNumber(source.totalShares, source.issuedShares, source.sharesIssued);
+      const availableShares = firstNumber(source.availableShares, source.purchasableShares, source.stateShares);
+      const currentPrice = firstNumber(
+        source.currentPrice,
+        source.stockPrice,
+        STATE.market && STATE.market.price
+      );
+      const citizenRubles = Number.isFinite(Number(source.citizenRubles)) ?
+        Number(source.citizenRubles) :
+        Math.max(0, totalRubles - stateBankRubles);
+      const citizenShares = Number.isFinite(Number(source.citizenShares)) ?
+        Number(source.citizenShares) :
+        Math.max(0, totalShares - availableShares);
+      const totalStockValue = Number.isFinite(Number(source.totalStockValue)) ?
+        Number(source.totalStockValue) :
+        totalShares * currentPrice;
+      const socialistGrossValue = Number.isFinite(Number(source.socialistGrossValue)) ?
+        Number(source.socialistGrossValue) :
+        totalRubles + totalStockValue;
+
+      return {
+        totalRubles: totalRubles,
+        stateBankRubles: stateBankRubles,
+        citizenRubles: citizenRubles,
+        totalShares: totalShares,
+        availableShares: availableShares,
+        citizenShares: citizenShares,
+        currentPrice: currentPrice,
+        totalStockValue: totalStockValue,
+        socialistGrossValue: socialistGrossValue,
+        accountHolders: firstNumber(source.accountHolders, source.recordedAccounts, source.accounts),
+        rating: escapeText(source.rating || source.economicRating || "Stable"),
+        warning: source.warning || payload.warning || null,
+        leaderboard: normalizeLeaderboard(source.leaderboard || payload.leaderboard)
+      };
+    };
+
+    const renderWarning = function (warning) {
+      const banner = byId("officialWarning");
+      const text = warning && (warning.text || warning.message || warning.body);
+      banner.classList.toggle("hidden", !text || warning.enabled === false);
+      byId("warningText").textContent = text ?
+        escapeText(text) + " — " + escapeText(warning.author || "hyawii2.0, State Committee of Economy") :
+        "";
+    };
+
+    const renderLeaderboard = function (leaders) {
+      const body = byId("leaderboardBody");
+      body.replaceChildren();
+
+      if (!leaders.length) {
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        cell.colSpan = 3;
+        cell.textContent = "No account data received.";
+        row.appendChild(cell);
+        body.appendChild(row);
+        return;
+      }
+
+      leaders.forEach(function (leader, index) {
+        const row = document.createElement("tr");
+        const rank = document.createElement("td");
+        const name = document.createElement("td");
+        const balance = document.createElement("td");
+        rank.textContent = String(index + 1);
+        name.textContent = leader.name;
+        balance.textContent = formatMoney(leader.balance);
+        row.append(rank, name, balance);
+        body.appendChild(row);
+      });
+    };
+
+    const renderEconomy = function () {
+      const economy = STATE.economy;
+      if (!economy) {
+        return;
+      }
+
+      byId("socialistGrossValue").textContent = formatMoney(economy.socialistGrossValue);
+      byId("economyRating").textContent = economy.rating || "Stable";
+      byId("totalRubles").textContent = formatMoney(economy.totalRubles);
+      byId("totalStockValue").textContent = formatMoney(economy.totalStockValue);
+      byId("citizenRubles").textContent = formatMoney(economy.citizenRubles);
+      byId("stateBankRubles").textContent = formatMoney(economy.stateBankRubles);
+      byId("totalShares").textContent = formatNumber(economy.totalShares);
+      byId("availableShares").textContent = formatNumber(economy.availableShares);
+      byId("citizenShares").textContent = formatNumber(economy.citizenShares);
+      byId("accountHolders").textContent = formatNumber(economy.accountHolders);
+      byId("stockFormula").textContent =
+        formatNumber(economy.totalShares) + " × " + formatMoney(economy.currentPrice, 2);
+      byId("grossFormula").textContent =
+        formatMoney(economy.totalRubles) + " + " + formatMoney(economy.totalStockValue);
+
+      const citizenAccounts = Math.max(1, economy.accountHolders - 1);
+      byId("averageCitizenBalance").textContent =
+        formatMoney(economy.citizenRubles / citizenAccounts);
+
+      renderWarning(economy.warning);
+      renderLeaderboard(economy.leaderboard);
+      populateAdminFromState();
+    };
+
+    const loadEconomy = async function () {
+      const payload = await API.get(CONFIG.ENDPOINTS.ECONOMY);
+      STATE.economy = normalizeEconomy(payload || {});
+      renderEconomy();
+    };
+
+    /* ======================================================================
+       ADMINISTRATION
+       ====================================================================== */
+
+    function openAdmin() {
+      if (!STATE.user) {
+        showToast("Authorise with Discord before opening administration.", "error");
+        startDiscordLogin();
+        return;
+      }
+
+      if (!STATE.user.isAdmin) {
+        showToast("The State API has not authorised this Discord account.", "error");
+        return;
+      }
+
+      const backdrop = byId("adminBackdrop");
+      backdrop.classList.remove("hidden");
+      backdrop.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+      setAdminStatus("Authenticated through the authorised State API.", "good");
+      populateAdminFromState();
+      byId("closeAdmin").focus();
+    }
+
+    function closeAdmin() {
+      const backdrop = byId("adminBackdrop");
+      backdrop.classList.add("hidden");
+      backdrop.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+    }
+
+    const populateAdminFromState = function () {
+      if (STATE.market) {
+        byId("adminExactPrice").value = STATE.market.price.toFixed(2);
+      }
+
+      if (STATE.economy) {
+        byId("adminTotalRubles").value = String(Math.round(STATE.economy.totalRubles));
+        byId("adminStateBank").value = String(Math.round(STATE.economy.stateBankRubles));
+        byId("adminIssuedShares").value = String(Math.round(STATE.economy.totalShares));
+        byId("adminAvailableShares").value = String(Math.round(STATE.economy.availableShares));
+        byId("adminAccountHolders").value = String(Math.round(STATE.economy.accountHolders));
+        if (STATE.economy.warning && STATE.economy.warning.text) {
+          byId("adminWarningText").value = STATE.economy.warning.text;
+        }
+      }
+    };
+
+    const requireAdmin = function () {
+      if (!STATE.user || !STATE.user.isAdmin) {
+        throw new ApiError("This Discord account is not authorised for administration.", 403);
+      }
+    };
+
+    const runAdminAction = async function (button, action, successMessage) {
+      setBusy(button, true, "Submitting…");
+      try {
+        requireAdmin();
+        await action();
+        await refreshPublicData(true);
+        setAdminStatus(successMessage, "good");
+        showToast(successMessage);
+      } catch (error) {
+        if (error.status === 401 || error.status === 403) {
+          await loadSession(true);
+        }
+        setAdminStatus(error.message, "bad");
+        showToast(error.message, "error");
+      } finally {
+        setBusy(button, false);
+      }
+    };
+
+    const bindAdminActions = function () {
+      byId("setExactPrice").addEventListener("click", function () {
+        const button = this;
+        const price = asNumber(byId("adminExactPrice").value, NaN);
+        if (!Number.isFinite(price) || price <= 0) {
+          setAdminStatus("Enter an exact index value greater than zero.", "bad");
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.patch(CONFIG.ENDPOINTS.ADMIN_SET_PRICE, { price: price });
+        }, "Exact index value updated.");
+      });
+
+      byId("scheduleMovement").addEventListener("click", function () {
+        const button = this;
+        const percent = asNumber(byId("adminMovementPercent").value, NaN);
+        const durationMinutes = asNumber(byId("adminMovementMinutes").value, NaN);
+        if (!Number.isFinite(percent) || !Number.isFinite(durationMinutes) || durationMinutes < 1) {
+          setAdminStatus("Enter a valid percentage and movement duration.", "bad");
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.post(CONFIG.ENDPOINTS.ADMIN_SCHEDULE_MOVEMENT, {
+            percent: percent,
+            durationMinutes: durationMinutes
+          });
+        }, "Scheduled movement order issued.");
+      });
+
+      byId("freezeMovement").addEventListener("click", function () {
+        const button = this;
+        runAdminAction(button, function () {
+          return API.post(CONFIG.ENDPOINTS.ADMIN_FREEZE_MOVEMENT, {});
+        }, "Index frozen at the current official value.");
+      });
+
+      byId("openSession").addEventListener("click", function () {
+        const button = this;
+        const durationHours = asNumber(byId("adminSessionHours").value, 24);
+        runAdminAction(button, function () {
+          return API.post(CONFIG.ENDPOINTS.ADMIN_OPEN_SESSION, {
+            durationHours: durationHours
+          });
+        }, "Market session opened and percentage reference reset.");
+      });
+
+      byId("closeSession").addEventListener("click", function () {
+        const button = this;
+        if (!window.confirm("Close the market immediately?")) {
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.post(CONFIG.ENDPOINTS.ADMIN_CLOSE_SESSION, {});
+        }, "Market session closed.");
+      });
+
+      byId("publishAnnouncement").addEventListener("click", function () {
+        const button = this;
+        const title = byId("adminAnnouncementTitle").value.trim();
+        const body = byId("adminAnnouncementBody").value.trim();
+        const author = byId("adminAnnouncementAuthor").value.trim() || "Central Bank";
+        if (!title || !body) {
+          setAdminStatus("Enter both a headline and official statement.", "bad");
+          return;
+        }
+        runAdminAction(button, async function () {
+          await API.post(CONFIG.ENDPOINTS.ADMIN_ANNOUNCEMENTS, {
+            title: title,
+            body: body,
+            author: author
+          });
+          byId("adminAnnouncementTitle").value = "";
+          byId("adminAnnouncementBody").value = "";
+        }, "Official bulletin published.");
+      });
+
+      byId("saveWarning").addEventListener("click", function () {
+        const button = this;
+        const text = byId("adminWarningText").value.trim();
+        if (!text) {
+          setAdminStatus("Enter the official warning text.", "bad");
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.patch(CONFIG.ENDPOINTS.ADMIN_WARNING, {
+            enabled: true,
+            text: text,
+            author: "hyawii2.0, State Committee of Economy"
+          });
+        }, "Official market warning updated.");
+      });
+
+      byId("clearWarning").addEventListener("click", function () {
+        const button = this;
+        runAdminAction(button, function () {
+          return API.patch(CONFIG.ENDPOINTS.ADMIN_WARNING, {
+            enabled: false,
+            text: ""
+          });
+        }, "Official market warning removed.");
+      });
+
+      byId("saveEconomy").addEventListener("click", function () {
+        const button = this;
+        const body = {
+          totalRubles: asNumber(byId("adminTotalRubles").value),
+          stateBankRubles: asNumber(byId("adminStateBank").value),
+          totalShares: asNumber(byId("adminIssuedShares").value),
+          availableShares: asNumber(byId("adminAvailableShares").value),
+          accountHolders: asNumber(byId("adminAccountHolders").value)
+        };
+        runAdminAction(button, function () {
+          return API.patch(CONFIG.ENDPOINTS.ADMIN_ECONOMY, body);
+        }, "National economy record updated.");
+      });
+
+      byId("clearAnnouncements").addEventListener("click", function () {
+        const button = this;
+        if (!window.confirm("Clear every official announcement?")) {
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.delete(CONFIG.ENDPOINTS.ADMIN_CLEAR_ANNOUNCEMENTS, {});
+        }, "All official announcements cleared.");
+      });
+
+      byId("resetHistory").addEventListener("click", function () {
+        const button = this;
+        if (!window.confirm("Reset the entire graph history?")) {
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.post(CONFIG.ENDPOINTS.ADMIN_RESET_HISTORY, {});
+        }, "Graph history reset.");
+      });
+
+      byId("factoryReset").addEventListener("click", function () {
+        const button = this;
+        const confirmation = window.prompt('Type "RESET MARKET" to confirm the factory reset.');
+        if (confirmation !== "RESET MARKET") {
+          setAdminStatus("Factory reset cancelled.", "");
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.post(CONFIG.ENDPOINTS.ADMIN_FACTORY_RESET, {
+            confirmation: confirmation
+          });
+        }, "Market factory reset completed.");
+      });
+    };
+
+    /* ======================================================================
+       NAVIGATION, CLOCK, REFRESH, AND BOOTSTRAP
+       ====================================================================== */
+
+    const showPage = function (pageId) {
+      document.querySelectorAll(".site-page").forEach(function (page) {
+        page.classList.toggle("hidden", page.id !== pageId);
+      });
+      document.querySelectorAll(".nav-tab").forEach(function (tab) {
+        tab.classList.toggle("active", tab.dataset.page === pageId);
+      });
+    };
+
+    const updateClock = function () {
+      const date = new Date(getServerNow());
+      byId("cetClock").textContent = new Intl.DateTimeFormat("en-GB", {
+        timeZone: CONFIG.CET_TIME_ZONE,
+        weekday: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      }).format(date);
+      updateCountdown();
+    };
+
+    const refreshPublicData = async function (showErrors) {
+      if (STATE.publicRefreshInFlight) {
+        return;
+      }
+      STATE.publicRefreshInFlight = true;
+      const startedAt = performance.now();
+
+      try {
+        if (!isApiConfigured()) {
+          throw new ApiError("API configuration required.", 0);
+        }
+
+        const results = await Promise.allSettled([
+          loadMarket(),
+          loadEconomy(),
+          loadAnnouncements()
+        ]);
+        const failures = results.filter(function (result) {
+          return result.status === "rejected";
+        });
+
+        if (failures.length === results.length) {
+          throw failures[0].reason;
+        }
+
+        const latency = Math.round(performance.now() - startedAt);
+        setApiStatus("online", "State API online · " + latency + "ms");
+
+        if (failures.length && showErrors) {
+          showToast("Some State API records could not be refreshed.", "error");
+        }
+      } catch (error) {
+        const message = isApiConfigured() ? "State API unavailable" : "API configuration required";
+        setApiStatus("error", message);
+        if (showErrors) {
+          showToast(error.message, "error");
+        }
+      } finally {
+        STATE.publicRefreshInFlight = false;
+      }
+    };
+
+    const bindGlobalEvents = function () {
+      document.querySelectorAll(".nav-tab").forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          showPage(tab.dataset.page);
+        });
+      });
+
+      const loginButton = byId("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", startDiscordLogin);
+      }
+
+      byId("adminButton").addEventListener("click", openAdmin);
+      byId("closeAdmin").addEventListener("click", closeAdmin);
+
+      byId("adminBackdrop").addEventListener("click", function (event) {
+        if (event.target === this) {
+          closeAdmin();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && !byId("adminBackdrop").classList.contains("hidden")) {
+          closeAdmin();
+          return;
+        }
+
+        const target = event.target;
+        const isTyping =
+          target instanceof HTMLInputElement ||
+          target instanceof HTMLTextAreaElement ||
+          target instanceof HTMLSelectElement ||
+          target.isContentEditable;
+
+        if (!isTyping && event.key.toLowerCase() === "f") {
+          event.preventDefault();
+          openAdmin();
+        }
+      });
+    };
+
+    const bootstrap = async function () {
+      handleOAuthReturn();
+      bindGlobalEvents();
+      bindAdminActions();
+      renderSession();
+      renderAnnouncements();
+      updateClock();
+
+      window.setInterval(updateClock, 1000);
+
+      if (!isApiConfigured()) {
+        setApiStatus("error", "API configuration required");
+        setAdminStatus("Edit CONFIG.API_BASE_URL and endpoint paths at the top of the script.", "bad");
+        return;
+      }
+
+      await Promise.allSettled([
+        loadSession(false),
+        refreshPublicData(true)
+      ]);
+
+      STATE.refreshTimerId = window.setInterval(function () {
+        refreshPublicData(false);
+      }, CONFIG.MARKET_REFRESH_MS);
+
+      STATE.sessionRefreshTimerId = window.setInterval(function () {
+        loadSession(true);
+      }, CONFIG.SESSION_REFRESH_MS);
+    };
+
+    bootstrap();
+  </script>
+</body>
+</html>
