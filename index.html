@@ -50,6 +50,241 @@
       overflow: hidden;
     }
 
+    body.intro-active {
+      overflow: hidden;
+    }
+
+    .intro-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 100000;
+      padding: clamp(18px, 4vw, 48px);
+      display: grid;
+      place-items: center;
+      overflow: auto;
+      color: #fff3ca;
+      background:
+        radial-gradient(circle at 50% 30%, rgba(185, 31, 31, .34), transparent 38%),
+        repeating-linear-gradient(135deg, transparent 0 19px, rgba(255, 255, 255, .018) 19px 20px),
+        #240303;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity .75s ease, visibility .75s ease;
+    }
+
+    .intro-screen::before,
+    .intro-screen::after {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 7px;
+      content: "";
+      background: linear-gradient(90deg, var(--gold) 0 18%, var(--red-light) 18% 82%, var(--gold) 82%);
+      pointer-events: none;
+    }
+
+    .intro-screen::before {
+      top: 0;
+    }
+
+    .intro-screen::after {
+      bottom: 0;
+    }
+
+    .intro-screen.is-leaving {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .intro-panel {
+      width: min(880px, 100%);
+      padding: clamp(20px, 4vw, 38px);
+      text-align: center;
+      background: linear-gradient(145deg, rgba(111, 10, 10, .96), rgba(47, 3, 3, .98));
+      border: 3px double var(--gold);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, .6);
+      animation: introPanelArrival .75s cubic-bezier(.2, .8, .2, 1) both;
+    }
+
+    .intro-heading {
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .intro-seal {
+      width: 66px;
+      height: 66px;
+      padding: 5px;
+      flex: 0 0 66px;
+      object-fit: contain;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      filter: drop-shadow(0 5px 8px rgba(0, 0, 0, .32));
+      animation: introSealPulse 2.2s ease-in-out infinite;
+    }
+
+    .intro-heading-text {
+      text-align: left;
+    }
+
+    .intro-heading-text small {
+      display: block;
+      color: var(--gold);
+      font: 900 10px Arial, sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .intro-heading-text h1 {
+      margin: 3px 0 0;
+      font-size: clamp(24px, 5vw, 46px);
+      line-height: .95;
+      text-transform: uppercase;
+    }
+
+    .intro-video-shell {
+      position: relative;
+      overflow: hidden;
+      background: #050000;
+      border: 2px solid var(--gold-dark);
+      box-shadow: inset 0 0 0 5px rgba(0, 0, 0, .28), 0 14px 35px rgba(0, 0, 0, .34);
+    }
+
+    .intro-video {
+      width: 100%;
+      max-height: min(52vh, 480px);
+      display: block;
+      object-fit: contain;
+      background: #050000;
+    }
+
+    .intro-progress {
+      height: 5px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .11);
+    }
+
+    .intro-progress span {
+      width: 0;
+      height: 100%;
+      display: block;
+      background: linear-gradient(90deg, var(--gold-dark), var(--gold));
+      transition: width .15s linear;
+    }
+
+    .intro-status {
+      min-height: 20px;
+      margin: 14px 0 0;
+      color: #e8d8ae;
+      font: 700 12px/1.5 Arial, sans-serif;
+      letter-spacing: .04em;
+    }
+
+    .intro-actions {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .intro-button {
+      min-width: 190px;
+      padding: 12px 18px;
+      color: #3a0909;
+      background: var(--gold);
+      border: 1px solid #ffe89a;
+      cursor: pointer;
+      font: 900 12px Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: transform .18s ease, filter .18s ease;
+    }
+
+    .intro-button:hover {
+      filter: brightness(1.08);
+      transform: translateY(-2px);
+    }
+
+    .intro-button:disabled {
+      cursor: wait;
+      filter: grayscale(.3);
+      transform: none;
+    }
+
+    .intro-button.secondary {
+      color: #f4e5bd;
+      background: transparent;
+      border-color: rgba(239, 201, 76, .55);
+    }
+
+    .intro-sound-note {
+      margin: 12px 0 0;
+      color: #bdad86;
+      font: 10px/1.45 Arial, sans-serif;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    @keyframes introPanelArrival {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(.985);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes introSealPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(239, 201, 76, .2);
+      }
+      50% {
+        box-shadow: 0 0 0 9px rgba(239, 201, 76, 0);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .intro-screen {
+        padding: 12px;
+      }
+
+      .intro-panel {
+        padding: 17px;
+      }
+
+      .intro-heading {
+        justify-content: flex-start;
+      }
+
+      .intro-seal {
+        width: 54px;
+        height: 54px;
+        flex-basis: 54px;
+      }
+
+      .intro-button {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .intro-panel,
+      .intro-seal {
+        animation: none;
+      }
+
+      .intro-screen {
+        transition-duration: .15s;
+      }
+    }
+
     button,
     input,
     textarea,
@@ -1499,7 +1734,33 @@
     }
   </style>
 </head>
-<body>
+<body class="intro-active">
+  <div id="introScreen" class="intro-screen" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+    <section class="intro-panel">
+      <header class="intro-heading">
+        <img class="intro-seal" src="logo.png" alt="State Trust Red Star emblem">
+        <div class="intro-heading-text">
+          <small>Official State Presentation</small>
+          <h1 id="introTitle">The Exchange Is Preparing</h1>
+        </div>
+      </header>
+
+      <div class="intro-video-shell">
+        <video id="introVideo" class="intro-video" preload="metadata" playsinline>
+          <source src="dancingpoland.mp4" type="video/mp4">
+          Your browser does not support the official introduction video.
+        </video>
+        <div class="intro-progress" aria-hidden="true"><span id="introProgress"></span></div>
+      </div>
+
+      <p id="introStatus" class="intro-status">Press enter to begin the official presentation with sound.</p>
+      <div class="intro-actions">
+        <button id="startIntro" class="intro-button" type="button">Play Intro With Sound</button>
+        <button id="skipIntro" class="intro-button secondary" type="button">Continue to Exchange</button>
+      </div>
+      <p class="intro-sound-note">Sound requires one click under modern browser security rules.</p>
+    </section>
+  </div>
   <noscript>
     <div class="noscript">JavaScript is required to display the live State Exchange record.</div>
   </noscript>
@@ -3687,6 +3948,117 @@
       });
     };
 
+    /* ======================================================================
+       OPENING PRESENTATION
+
+       Browsers will not autoplay audible media until the visitor interacts
+       with the page. The opening button supplies that required gesture.
+       ====================================================================== */
+
+    const setupIntroScreen = function () {
+      const screen = byId("introScreen");
+      const video = byId("introVideo");
+      const startButton = byId("startIntro");
+      const skipButton = byId("skipIntro");
+      const status = byId("introStatus");
+      const progress = byId("introProgress");
+      let finished = false;
+
+      if (!screen || !video || !startButton || !skipButton) {
+        document.body.classList.remove("intro-active");
+        return;
+      }
+
+      const formatVideoTime = function (seconds) {
+        const safeSeconds = Math.max(0, Math.floor(Number(seconds) || 0));
+        const minutes = Math.floor(safeSeconds / 60);
+        const remainder = safeSeconds % 60;
+        return minutes + ":" + String(remainder).padStart(2, "0");
+      };
+
+      const finishIntro = function () {
+        if (finished) {
+          return;
+        }
+        finished = true;
+        video.pause();
+        screen.classList.add("is-leaving");
+        screen.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("intro-active");
+        document.removeEventListener("keydown", handleIntroKey, true);
+        window.setTimeout(function () {
+          screen.classList.add("hidden");
+          screen.hidden = true;
+        }, 800);
+      };
+
+      const beginIntro = async function () {
+        if (video.dataset.failed === "true") {
+          finishIntro();
+          return;
+        }
+
+        startButton.disabled = true;
+        startButton.textContent = "Presentation Playing";
+        status.textContent = "Official presentation in progress · sound enabled";
+        video.muted = false;
+        video.volume = 1;
+
+        try {
+          video.currentTime = 0;
+          await video.play();
+        } catch (error) {
+          startButton.disabled = false;
+          startButton.textContent = "Continue to Exchange";
+          video.dataset.failed = "true";
+          status.textContent = "The video could not be played. Select continue to open the exchange.";
+        }
+      };
+
+      const handleIntroKey = function (event) {
+        if (finished) {
+          return;
+        }
+        if (event.key === "Escape") {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          finishIntro();
+        } else if (event.key === "Enter" && !startButton.disabled) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          beginIntro();
+        }
+      };
+
+      startButton.addEventListener("click", beginIntro);
+      skipButton.addEventListener("click", finishIntro);
+      video.addEventListener("ended", finishIntro);
+      video.addEventListener("loadedmetadata", function () {
+        if (Number.isFinite(video.duration)) {
+          status.textContent = "Presentation ready · " + formatVideoTime(video.duration) + " · press play for sound";
+        }
+      });
+      video.addEventListener("timeupdate", function () {
+        if (!Number.isFinite(video.duration) || video.duration <= 0) {
+          return;
+        }
+        const completion = Math.min(100, Math.max(0, (video.currentTime / video.duration) * 100));
+        progress.style.width = completion.toFixed(2) + "%";
+        status.textContent = "Official presentation · " +
+          formatVideoTime(video.currentTime) + " / " + formatVideoTime(video.duration) + " · sound enabled";
+      });
+      video.addEventListener("error", function () {
+        video.dataset.failed = "true";
+        startButton.textContent = "Continue to Exchange";
+        startButton.disabled = false;
+        status.textContent = "Place dancingpoland.mp4 beside index.html to enable the introduction.";
+      });
+      document.addEventListener("keydown", handleIntroKey, true);
+      window.setTimeout(function () {
+        startButton.focus();
+      }, 80);
+    };
+
     const bootstrap = async function () {
       handleOAuthReturn();
       bindGlobalEvents();
@@ -3717,6 +4089,7 @@
       }, CONFIG.SESSION_REFRESH_MS);
     };
 
+    setupIntroScreen();
     bootstrap();
   </script>
 </body>
