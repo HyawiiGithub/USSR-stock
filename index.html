@@ -288,6 +288,7 @@
 
     .nav-tabs {
       display: flex;
+      flex-wrap: wrap;
     }
 
     .nav-tab {
@@ -485,13 +486,320 @@
       text-transform: uppercase;
     }
 
-.session-seal::before {
-  content: "";
-  width: 27px;
-  height: 27px;
-  flex: 0 0 27px;
-  background: url("logo2.png") center / contain no-repeat;
-}
+    .session-seal::before {
+      width: 27px;
+      height: 27px;
+      flex: 0 0 27px;
+      background: url("logo2.png") center / contain no-repeat;
+      content: "";
+    }
+
+    .institution-hero {
+      position: relative;
+      margin-bottom: 20px;
+      padding: clamp(24px, 5vw, 48px);
+      overflow: hidden;
+      color: #fff4d1;
+      background:
+        linear-gradient(115deg, rgba(81, 6, 6, .98), rgba(151, 20, 20, .93)),
+        repeating-linear-gradient(135deg, transparent 0 14px, rgba(255, 255, 255, .03) 14px 15px);
+      border: 3px double var(--gold);
+      box-shadow: var(--shadow);
+    }
+
+    .institution-hero::after {
+      position: absolute;
+      right: -18px;
+      bottom: -50px;
+      color: rgba(239, 201, 76, .1);
+      content: "★";
+      font: 220px/1 Georgia, serif;
+      pointer-events: none;
+    }
+
+    .institution-kicker {
+      position: relative;
+      z-index: 1;
+      color: var(--gold);
+      font: 900 12px Arial, sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .institution-hero h2 {
+      position: relative;
+      z-index: 1;
+      max-width: 920px;
+      margin: 9px 0 11px;
+      font-size: clamp(34px, 6vw, 70px);
+      line-height: .95;
+      letter-spacing: -.035em;
+    }
+
+    .institution-hero p {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 0;
+      color: #ecdfbc;
+      font: 15px/1.65 Arial, sans-serif;
+    }
+
+    .directory-grid,
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .office-card,
+    .leadership-card,
+    .party-card {
+      background:
+        linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)),
+        var(--cream);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--red);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .office-card,
+    .leadership-card {
+      padding: 24px;
+    }
+
+    .office-card h3,
+    .leadership-card h3 {
+      margin: 7px 0 5px;
+      color: var(--red-dark);
+      font-size: clamp(25px, 4vw, 38px);
+      line-height: 1;
+    }
+
+    .office-card p,
+    .leadership-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font: 14px/1.55 Arial, sans-serif;
+    }
+
+    .official-roster {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      list-style: none;
+    }
+
+    .official-roster li {
+      padding: 10px 12px;
+      color: #3c2a19;
+      background: rgba(255, 255, 255, .4);
+      border-left: 4px solid var(--gold);
+      font: 800 13px Arial, sans-serif;
+    }
+
+    .leadership-card {
+      position: relative;
+      min-height: 245px;
+      padding-left: 112px;
+    }
+
+    .leadership-medallion {
+      position: absolute;
+      top: 26px;
+      left: 24px;
+      width: 66px;
+      height: 66px;
+      display: grid;
+      place-items: center;
+      color: #fff2c5;
+      background: var(--red);
+      border: 3px double var(--gold);
+      border-radius: 50%;
+      font: 900 22px Georgia, serif;
+    }
+
+    .rank-ribbon {
+      width: fit-content;
+      margin-top: 15px;
+      padding: 7px 10px;
+      color: #fff6dc;
+      background: var(--red-dark);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .party-stack {
+      display: grid;
+      gap: 22px;
+    }
+
+    .party-card {
+      overflow: hidden;
+    }
+
+    .party-header {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 104px minmax(0, 1fr);
+      gap: 20px;
+      align-items: center;
+      color: #fff1c7;
+      background: linear-gradient(115deg, #650a0a, #991919);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .party-emblem {
+      width: 104px;
+      height: 104px;
+      padding: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      background: rgba(255, 255, 255, .07);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      font: 900 25px/1 Georgia, serif;
+      text-align: center;
+    }
+
+    .party-emblem img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, .28));
+    }
+
+    .party-header h3 {
+      margin: 4px 0 7px;
+      font-size: clamp(27px, 4.5vw, 48px);
+      line-height: .98;
+      letter-spacing: -.025em;
+    }
+
+    .party-abbreviation {
+      color: var(--gold);
+      font: 900 11px Arial, sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .party-leader {
+      color: #e8dab4;
+      font: 700 13px/1.5 Arial, sans-serif;
+    }
+
+    .party-body {
+      padding: 22px 24px 24px;
+    }
+
+    .party-facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .party-fact {
+      padding: 13px 14px;
+      background: rgba(255, 255, 255, .4);
+      border-left: 4px solid var(--red);
+    }
+
+    .party-fact b {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--red-dark);
+      font: 900 10px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .party-fact span {
+      font: 700 13px/1.45 Arial, sans-serif;
+    }
+
+    .party-description {
+      margin: 16px 0 0;
+      color: #473b2e;
+      font: 15px/1.7 Georgia, serif;
+    }
+
+    .member-roster {
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .25);
+    }
+
+    .member-roster summary {
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      color: #fff1ca;
+      background: #660b0b;
+      cursor: pointer;
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .member-roster summary strong {
+      color: var(--gold);
+      white-space: nowrap;
+    }
+
+    .roster-tools {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .roster-search {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: #fffaf0;
+      border: 1px solid var(--border);
+      font: 13px Arial, sans-serif;
+    }
+
+    .member-grid {
+      max-height: 560px;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 7px;
+      overflow-y: auto;
+      list-style: none;
+    }
+
+    .member-entry {
+      min-width: 0;
+      padding: 9px 10px;
+      background: rgba(255, 255, 255, .52);
+      border-left: 3px solid var(--gold);
+    }
+
+    .member-entry strong,
+    .member-entry span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .member-entry strong {
+      color: #342317;
+      font: 800 12px Arial, sans-serif;
+    }
+
+    .member-entry span {
+      margin-top: 2px;
+      color: var(--muted);
+      font: 11px Arial, sans-serif;
+    }
 
     .grid {
       display: grid;
@@ -1006,6 +1314,10 @@
       .form-grid.five {
         grid-template-columns: repeat(3, 1fr);
       }
+
+      .member-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 720px) {
@@ -1054,6 +1366,10 @@
         padding-inline: 8px;
       }
 
+      .nav-tab:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+      }
+
       .api-status {
         padding: 8px 16px;
         justify-content: center;
@@ -1078,6 +1394,38 @@
 
       .change {
         width: fit-content;
+      }
+
+      .directory-grid,
+      .leadership-grid,
+      .party-facts {
+        grid-template-columns: 1fr;
+      }
+
+      .official-roster,
+      .member-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .leadership-card {
+        min-height: 0;
+        padding: 22px;
+      }
+
+      .leadership-medallion {
+        position: static;
+        margin-bottom: 16px;
+      }
+
+      .party-header {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 14px;
+      }
+
+      .party-emblem {
+        width: 76px;
+        height: 76px;
+        font-size: 18px;
       }
 
       .chart-wrap {
@@ -1185,6 +1533,9 @@
       <div class="nav-tabs">
         <button class="nav-tab active" type="button" data-page="marketPage">Stock Market</button>
         <button class="nav-tab" type="button" data-page="economyPage">National Economy</button>
+        <button class="nav-tab" type="button" data-page="financePage">Commissariat</button>
+        <button class="nav-tab" type="button" data-page="leadershipPage">State Leadership</button>
+        <button class="nav-tab" type="button" data-page="politicsPage">Political Situation</button>
       </div>
       <div id="apiStatus" class="api-status">
         <span class="api-dot"></span>
@@ -1360,6 +1711,538 @@
               </tr>
             </tbody>
           </table>
+        </article>
+      </div>
+    </section>
+
+    <section id="financePage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Official Directory of Economic Administration</div>
+        <h2>Commissariat of Finance</h2>
+        <p>
+          The citizens listed below form the current economic administration responsible for State
+          financial policy, market supervision, national accounting, and the protection of the Union's economy.
+        </p>
+      </article>
+
+      <div class="directory-grid">
+        <article class="office-card">
+          <div class="eyebrow">Executive Office</div>
+          <h3>People's Commissar for Economy</h3>
+          <p>Senior officials entrusted with direction of national economic policy.</p>
+          <ul class="official-roster">
+            <li>erushim</li>
+            <li>desertmarshal</li>
+          </ul>
+        </article>
+
+        <article class="office-card">
+          <div class="eyebrow">Collective Economic Administration</div>
+          <h3>State Committee for Economy</h3>
+          <p>Committee members responsible for economic records, policy review, and State market oversight.</p>
+          <ul class="official-roster">
+            <li>real_lettuce</li>
+            <li>cax18</li>
+            <li>_prussianemperor45</li>
+            <li>hyawii2.0</li>
+            <li>desertmarshal</li>
+            <li>sovereign_of_bavarians</li>
+            <li>kewl07</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="leadershipPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Central Committee Leadership Register</div>
+        <h2>State Leadership</h2>
+        <p>
+          The current General Secretary and Deputy General Secretary are published here as the recognised
+          senior leadership of the Central Committee.
+        </p>
+      </article>
+
+      <div class="leadership-grid">
+        <article class="leadership-card">
+          <div class="leadership-medallion">
+          <img src="generalsecretary.png" alt="Felix Dzherzinsky"></div>
+          <div class="eyebrow">General Secretary</div>
+          <h3>Felix Dzherzinsky</h3>
+          <p>General Secretary of the Central Committee and principal political leader of the Union.</p>
+          <div class="rank-ribbon">Generalissimus of the Soviet Union</div>
+        </article>
+
+        <article class="leadership-card">
+          <div class="leadership-medallion">
+          <img src="deputysecretary.png" alt="Kewl Menzhinsky"></div>
+          <div class="eyebrow">Deputy General Secretary</div>
+          <h3>Kewl Menzhinsky</h3>
+          <p>Deputy General Secretary of the Central Committee and senior deputy of the Party leadership.</p>
+          <div class="rank-ribbon">Central Committee Leadership</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="politicsPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Current Political Register</div>
+        <h2>Political Situation</h2>
+        <p>
+          This register identifies the currently published political parties, their leadership, ideological
+          positions, platforms, and recorded membership within the Union.
+        </p>
+      </article>
+
+      <div class="party-stack">
+        <article class="party-card">
+          <header class="party-header">
+            <div class="party-emblem">
+              <img src="logo.png" alt="MorSoc Party of the Soviet Union emblem">
+            </div>
+            <div>
+              <div class="party-abbreviation">MSPSU · Registered Political Party</div>
+              <h3>MorSoc Party of the Soviet Union</h3>
+              <div class="party-leader">Party General Secretary: Gen. Sec. Felix Dzherzinsky</div>
+            </div>
+          </header>
+          <div class="party-body">
+            <div class="party-facts">
+              <div class="party-fact">
+                <b>Party Ideology</b>
+                <span>Paternalistic Conservatism</span>
+              </div>
+              <div class="party-fact">
+                <b>Party Platforms</b>
+                <span>Social Conservatism, Mixed Economy, Isolationism</span>
+              </div>
+            </div>
+            <p class="party-description">
+              The MorSoc Party of the Soviet Union serves as the unitary force between socialists within the
+              nation, adhering to the tenets of Moralistic Socialism. This includes maintaining religious
+              principles, strict anti-degeneracy, and the strengthening of family values.
+            </p>
+            <details class="member-roster">
+              <summary><span>Official MSPSU Membership Register</span><strong id="mspsuCount">324 members</strong></summary>
+              <div class="roster-tools">
+                <input class="roster-search" type="search" data-roster-target="mspsuMemberGrid" placeholder="Search MSPSU members" aria-label="Search MSPSU members">
+              </div>
+              <ul id="mspsuMemberGrid" class="member-grid">
+                <li class="member-entry" data-member-id="657278456018632714"><strong title=".sovietsky.">.sovietsky.</strong><span title="@.sovietsky.">@.sovietsky.</span></li>
+                <li class="member-entry" data-member-id="647495944681816115"><strong title="Honorable Comrade Kass">Honorable Comrade Kass</strong><span title="@funky1078">@funky1078</span></li>
+                <li class="member-entry" data-member-id="634295048959164437"><strong title="El Comrade de Swimmus">El Comrade de Swimmus</strong><span title="@swimmus">@swimmus</span></li>
+                <li class="member-entry" data-member-id="630344961904345118"><strong title="yugo___">yugo___</strong><span title="@yugo___">@yugo___</span></li>
+                <li class="member-entry" data-member-id="628427563068424213"><strong title="Comrade Kulikov">Comrade Kulikov</strong><span title="@hxrghost">@hxrghost</span></li>
+                <li class="member-entry" data-member-id="623387148665487390"><strong title="emorine_">emorine_</strong><span title="@emorine_">@emorine_</span></li>
+                <li class="member-entry" data-member-id="614485246871732279"><strong title="hyyperb">hyyperb</strong><span title="@hyyperb">@hyyperb</span></li>
+                <li class="member-entry" data-member-id="609031602106007573"><strong title="shadowhokage3731">shadowhokage3731</strong><span title="@shadowhokage3731">@shadowhokage3731</span></li>
+                <li class="member-entry" data-member-id="597752052231438336"><strong title="Honorable Comrade Joseph Stalin">Honorable Comrade Joseph Stalin</strong><span title="@josephstalin9536">@josephstalin9536</span></li>
+                <li class="member-entry" data-member-id="593039820234948620"><strong title="[MKHA/Uz. Onb] ESSR FS Karl Maks">[MKHA/Uz. Onb] ESSR FS Karl Maks</strong><span title="@karlmaks">@karlmaks</span></li>
+                <li class="member-entry" data-member-id="591632298999283713"><strong title="Gen. Sec. Felix Dzerzhinsky">Gen. Sec. Felix Dzerzhinsky</strong><span title="@dreams_are_eternal">@dreams_are_eternal</span></li>
+                <li class="member-entry" data-member-id="582281843978797066"><strong title="kenobi3">kenobi3</strong><span title="@kenobi3">@kenobi3</span></li>
+                <li class="member-entry" data-member-id="576004433805049856"><strong title="rolendegitriev">rolendegitriev</strong><span title="@rolendegitriev">@rolendegitriev</span></li>
+                <li class="member-entry" data-member-id="559281496767070208"><strong title="Dimitri Letlev">Dimitri Letlev</strong><span title="@dimitriletlev">@dimitriletlev</span></li>
+                <li class="member-entry" data-member-id="554252217624952852"><strong title="3.14ant">3.14ant</strong><span title="@3.14ant">@3.14ant</span></li>
+                <li class="member-entry" data-member-id="530644598431678464"><strong title="gamer87vi">gamer87vi</strong><span title="@gamer87vi">@gamer87vi</span></li>
+                <li class="member-entry" data-member-id="523225447413055493"><strong title="Noelle Szczęsny">Noelle Szczęsny</strong><span title="@grzegorz_brzeszcykiewicz">@grzegorz_brzeszcykiewicz</span></li>
+                <li class="member-entry" data-member-id="516170449189863424"><strong title="Vyvern &quot;BluSvr&quot;">Vyvern &quot;BluSvr&quot;</strong><span title="@ethersvr">@ethersvr</span></li>
+                <li class="member-entry" data-member-id="513931482876870668"><strong title="dailycrusader">dailycrusader</strong><span title="@dailycrusader">@dailycrusader</span></li>
+                <li class="member-entry" data-member-id="509996948871315456"><strong title="runyako">runyako</strong><span title="@runyako">@runyako</span></li>
+                <li class="member-entry" data-member-id="487293928715059233"><strong title="pvpsniper656">pvpsniper656</strong><span title="@pvpsniper656">@pvpsniper656</span></li>
+                <li class="member-entry" data-member-id="480419048518189080"><strong title="Pvt. Tesla">Pvt. Tesla</strong><span title="@cpt.tesla">@cpt.tesla</span></li>
+                <li class="member-entry" data-member-id="470446254535475216"><strong title="Pvt. Navarro">Pvt. Navarro</strong><span title="@remembernavaro">@remembernavaro</span></li>
+                <li class="member-entry" data-member-id="455019503236022273"><strong title="dinis4396">dinis4396</strong><span title="@dinis4396">@dinis4396</span></li>
+                <li class="member-entry" data-member-id="437655307976704001"><strong title="Chairman Dave Ђурђевић">Chairman Dave Ђурђевић</strong><span title="@.daveq.">@.daveq.</span></li>
+                <li class="member-entry" data-member-id="429751763067863050"><strong title="fpsfan121">fpsfan121</strong><span title="@fpsfan121">@fpsfan121</span></li>
+                <li class="member-entry" data-member-id="409764155692679168"><strong title="alexei_warcriminal">alexei_warcriminal</strong><span title="@alexei_warcriminal">@alexei_warcriminal</span></li>
+                <li class="member-entry" data-member-id="392296962747138049"><strong title="Honorable Comrade Casreor">Honorable Comrade Casreor</strong><span title="@casreor">@casreor</span></li>
+                <li class="member-entry" data-member-id="373053827710189570"><strong title="orbitista">orbitista</strong><span title="@orbitista">@orbitista</span></li>
+                <li class="member-entry" data-member-id="349608096135643136"><strong title="sugardaddy4656">sugardaddy4656</strong><span title="@sugardaddy4656">@sugardaddy4656</span></li>
+                <li class="member-entry" data-member-id="326509493271658506"><strong title="pingsky">pingsky</strong><span title="@pingsky">@pingsky</span></li>
+                <li class="member-entry" data-member-id="316632586371989505"><strong title="thegreycomrade">thegreycomrade</strong><span title="@thegreycomrade">@thegreycomrade</span></li>
+                <li class="member-entry" data-member-id="294468712637923328"><strong title="[PRP] MSN Manmohan Singh">[PRP] MSN Manmohan Singh</strong><span title="@mohanhoon">@mohanhoon</span></li>
+                <li class="member-entry" data-member-id="291558974082514945"><strong title="kana0818_">kana0818_</strong><span title="@kana0818_">@kana0818_</span></li>
+                <li class="member-entry" data-member-id="279998394934755334"><strong title="thegreatkhanofpatagonia">thegreatkhanofpatagonia</strong><span title="@thegreatkhanofpatagonia">@thegreatkhanofpatagonia</span></li>
+                <li class="member-entry" data-member-id="245556841201926144"><strong title="Ernst Thälmann">Ernst Thälmann</strong><span title="@blackfox31">@blackfox31</span></li>
+                <li class="member-entry" data-member-id="240705961126264833"><strong title="Soviet Plush Spinel">Soviet Plush Spinel</strong><span title="@kawaiikame02">@kawaiikame02</span></li>
+                <li class="member-entry" data-member-id="141722898434883584"><strong title="Dr. Thorfinn Srecko">Dr. Thorfinn Srecko</strong><span title="@thorfinnsrecko">@thorfinnsrecko</span></li>
+                <li class="member-entry" data-member-id="131945490563596290"><strong title="Bad Luck Bootsy">Bad Luck Bootsy</strong><span title="@funky1078.">@funky1078.</span></li>
+                <li class="member-entry" data-member-id="102228740989276160"><strong title="sherman3">sherman3</strong><span title="@sherman3">@sherman3</span></li>
+                <li class="member-entry" data-member-id="803234284617859123"><strong title="Kazybek Akhmedov &quot;Badger&quot;">Kazybek Akhmedov &quot;Badger&quot;</strong><span title="@default_skoles">@default_skoles</span></li>
+                <li class="member-entry" data-member-id="801248030116020265"><strong title="Анна Петровна">Анна Петровна</strong><span title="@.kellogg.">@.kellogg.</span></li>
+                <li class="member-entry" data-member-id="791192159461703700"><strong title="themissouriprospect">themissouriprospect</strong><span title="@themissouriprospect">@themissouriprospect</span></li>
+                <li class="member-entry" data-member-id="786325891659595807"><strong title="lunarthecutie">lunarthecutie</strong><span title="@lunarthecutie">@lunarthecutie</span></li>
+                <li class="member-entry" data-member-id="782340919956733982"><strong title="peanutbutterman4105">peanutbutterman4105</strong><span title="@peanutbutterman4105">@peanutbutterman4105</span></li>
+                <li class="member-entry" data-member-id="780837437987094560"><strong title="General Napoleon ★⊙☭">General Napoleon ★⊙☭</strong><span title="@napoleon87">@napoleon87</span></li>
+                <li class="member-entry" data-member-id="773246674268192789"><strong title="snoopy6347">snoopy6347</strong><span title="@snoopy6347">@snoopy6347</span></li>
+                <li class="member-entry" data-member-id="771083189640101918"><strong title="k4d3d2">k4d3d2</strong><span title="@k4d3d2">@k4d3d2</span></li>
+                <li class="member-entry" data-member-id="763439281456676874"><strong title="joesipbrozvonmises">joesipbrozvonmises</strong><span title="@joesipbrozvonmises">@joesipbrozvonmises</span></li>
+                <li class="member-entry" data-member-id="763384287037882399"><strong title="Pegawai SPRM Dato Seri Vodka">Pegawai SPRM Dato Seri Vodka</strong><span title="@vodkajackson">@vodkajackson</span></li>
+                <li class="member-entry" data-member-id="762384078095384596"><strong title="zeebas101_9806">zeebas101_9806</strong><span title="@zeebas101_9806">@zeebas101_9806</span></li>
+                <li class="member-entry" data-member-id="762342811756003348"><strong title="averagehutaoenjoyer.">averagehutaoenjoyer.</strong><span title="@averagehutaoenjoyer.">@averagehutaoenjoyer.</span></li>
+                <li class="member-entry" data-member-id="758610079531401256"><strong title="ghost_9849">ghost_9849</strong><span title="@ghost_9849">@ghost_9849</span></li>
+                <li class="member-entry" data-member-id="757467358909562882"><strong title="bhagatsingh3032">bhagatsingh3032</strong><span title="@bhagatsingh3032">@bhagatsingh3032</span></li>
+                <li class="member-entry" data-member-id="757065398632972299"><strong title="hunterbroswen33339093">hunterbroswen33339093</strong><span title="@hunterbroswen33339093">@hunterbroswen33339093</span></li>
+                <li class="member-entry" data-member-id="755236285982965860"><strong title="guy091940">guy091940</strong><span title="@guy091940">@guy091940</span></li>
+                <li class="member-entry" data-member-id="752054787427663922"><strong title="StatKom Mikhail Borodin">StatKom Mikhail Borodin</strong><span title="@touchstone7025">@touchstone7025</span></li>
+                <li class="member-entry" data-member-id="751546989153484841"><strong title="autism8690">autism8690</strong><span title="@autism8690">@autism8690</span></li>
+                <li class="member-entry" data-member-id="743346233430769716"><strong title="V. Merkulov">V. Merkulov</strong><span title="@officialmerkulov">@officialmerkulov</span></li>
+                <li class="member-entry" data-member-id="740255950450982923"><strong title="sleepyelijelly_fishi">sleepyelijelly_fishi</strong><span title="@sleepyelijelly_fishi">@sleepyelijelly_fishi</span></li>
+                <li class="member-entry" data-member-id="736500392992702545"><strong title="greentoast68666">greentoast68666</strong><span title="@greentoast68666">@greentoast68666</span></li>
+                <li class="member-entry" data-member-id="734504275459309784"><strong title="stanou9220">stanou9220</strong><span title="@stanou9220">@stanou9220</span></li>
+                <li class="member-entry" data-member-id="731456625650565140"><strong title="Former Sec. Alex Karston">Former Sec. Alex Karston</strong><span title="@alexkarston">@alexkarston</span></li>
+                <li class="member-entry" data-member-id="730302554767884288"><strong title="[PRP] Spyrow">[PRP] Spyrow</strong><span title="@crowsmology">@crowsmology</span></li>
+                <li class="member-entry" data-member-id="727709089794097242"><strong title="maineak07">maineak07</strong><span title="@maineak07">@maineak07</span></li>
+                <li class="member-entry" data-member-id="725687617504673872"><strong title="[LOA] Pvt. Vanilla">[LOA] Pvt. Vanilla</strong><span title="@vanilla7540">@vanilla7540</span></li>
+                <li class="member-entry" data-member-id="725399591347814551"><strong title="genos9159">genos9159</strong><span title="@genos9159">@genos9159</span></li>
+                <li class="member-entry" data-member-id="720861287755677697"><strong title="iowaderussr">iowaderussr</strong><span title="@iowaderussr">@iowaderussr</span></li>
+                <li class="member-entry" data-member-id="720673212354265168"><strong title="Jack Gazi">Jack Gazi</strong><span title="@jackpackage71">@jackpackage71</span></li>
+                <li class="member-entry" data-member-id="704792730798391296"><strong title="._.beau.">._.beau.</strong><span title="@._.beau.">@._.beau.</span></li>
+                <li class="member-entry" data-member-id="702871501250101362"><strong title="obviously_osa">obviously_osa</strong><span title="@obviously_osa">@obviously_osa</span></li>
+                <li class="member-entry" data-member-id="701835843098116206"><strong title="Benjamin Gianni">Benjamin Gianni</strong><span title="@thetennesseeranger">@thetennesseeranger</span></li>
+                <li class="member-entry" data-member-id="700982492232155157"><strong title="johnsimple">johnsimple</strong><span title="@johnsimple">@johnsimple</span></li>
+                <li class="member-entry" data-member-id="699561832398192700"><strong title="Fr. Kategan">Fr. Kategan</strong><span title="@kategan">@kategan</span></li>
+                <li class="member-entry" data-member-id="693579507369771058"><strong title="Yuhu">Yuhu</strong><span title="@yuhu5728">@yuhu5728</span></li>
+                <li class="member-entry" data-member-id="692845065869197373"><strong title="Patriarch John Paul Acktintin">Patriarch John Paul Acktintin</strong><span title="@ecclesiasticalromanpapisthamster">@ecclesiasticalromanpapisthamster</span></li>
+                <li class="member-entry" data-member-id="692513106626347041"><strong title="josephstalin8115">josephstalin8115</strong><span title="@josephstalin8115">@josephstalin8115</span></li>
+                <li class="member-entry" data-member-id="690119525223628833"><strong title="Viktor Reznov">Viktor Reznov</strong><span title="@beeruq">@beeruq</span></li>
+                <li class="member-entry" data-member-id="686090186085498910"><strong title="Sergei “Seryozha” Aleshkov">Sergei “Seryozha” Aleshkov</strong><span title="@killerbills435">@killerbills435</span></li>
+                <li class="member-entry" data-member-id="682362000210526299"><strong title="Commissar Gellem">Commissar Gellem</strong><span title="@iamgellem">@iamgellem</span></li>
+                <li class="member-entry" data-member-id="679515592889466890"><strong title="snow_icyy">snow_icyy</strong><span title="@snow_icyy">@snow_icyy</span></li>
+                <li class="member-entry" data-member-id="676910682096271371"><strong title="dieudonne17">dieudonne17</strong><span title="@dieudonne17">@dieudonne17</span></li>
+                <li class="member-entry" data-member-id="665302392862015509"><strong title="[OG] Vladimir Terebilov">[OG] Vladimir Terebilov</strong><span title="@alexand_rrrr">@alexand_rrrr</span></li>
+                <li class="member-entry" data-member-id="919311388684455997"><strong title="bench6172">bench6172</strong><span title="@bench6172">@bench6172</span></li>
+                <li class="member-entry" data-member-id="918547463428775977"><strong title="Vlad the Impaler">Vlad the Impaler</strong><span title="@kuzbeski">@kuzbeski</span></li>
+                <li class="member-entry" data-member-id="918102767573303296"><strong title="Nikolayev">Nikolayev</strong><span title="@elitefury">@elitefury</span></li>
+                <li class="member-entry" data-member-id="913912121908166657"><strong title="jeffthehogg360">jeffthehogg360</strong><span title="@jeffthehogg360">@jeffthehogg360</span></li>
+                <li class="member-entry" data-member-id="912099452838355026"><strong title="[П.А.Ч]Pavel Cherenkov">[П.А.Ч]Pavel Cherenkov</strong><span title="@eragon_3621">@eragon_3621</span></li>
+                <li class="member-entry" data-member-id="909184525664403506"><strong title="mrh4tz">mrh4tz</strong><span title="@mrh4tz">@mrh4tz</span></li>
+                <li class="member-entry" data-member-id="906351599851556925"><strong title="lil_bad_apple1003">lil_bad_apple1003</strong><span title="@lil_bad_apple1003">@lil_bad_apple1003</span></li>
+                <li class="member-entry" data-member-id="897648364391374878"><strong title="toper249276">toper249276</strong><span title="@toper249276">@toper249276</span></li>
+                <li class="member-entry" data-member-id="895315249882865754"><strong title="justarandomname7731">justarandomname7731</strong><span title="@justarandomname7731">@justarandomname7731</span></li>
+                <li class="member-entry" data-member-id="891101478549344266"><strong title=".comradepineapple">.comradepineapple</strong><span title="@.comradepineapple">@.comradepineapple</span></li>
+                <li class="member-entry" data-member-id="889635260395032626"><strong title="jimothy89.">jimothy89.</strong><span title="@jimothy89.">@jimothy89.</span></li>
+                <li class="member-entry" data-member-id="888698452756795432"><strong title="shirkunovmark">shirkunovmark</strong><span title="@shirkunovmark">@shirkunovmark</span></li>
+                <li class="member-entry" data-member-id="888430024015896647"><strong title="boeing_757200">boeing_757200</strong><span title="@boeing_757200">@boeing_757200</span></li>
+                <li class="member-entry" data-member-id="888408926410903562"><strong title="lord_durza">lord_durza</strong><span title="@lord_durza">@lord_durza</span></li>
+                <li class="member-entry" data-member-id="888019034967257088"><strong title="defuuuu">defuuuu</strong><span title="@defuuuu">@defuuuu</span></li>
+                <li class="member-entry" data-member-id="884764841464692736"><strong title="t0rab">t0rab</strong><span title="@t0rab">@t0rab</span></li>
+                <li class="member-entry" data-member-id="879978730284535828"><strong title="hakimo_potato">hakimo_potato</strong><span title="@hakimo_potato">@hakimo_potato</span></li>
+                <li class="member-entry" data-member-id="879835753704747029"><strong title=".maashg">.maashg</strong><span title="@.maashg">@.maashg</span></li>
+                <li class="member-entry" data-member-id="876467270203875389"><strong title="zugmegug">zugmegug</strong><span title="@zugmegug">@zugmegug</span></li>
+                <li class="member-entry" data-member-id="873494115764043807"><strong title="cya.in.hell">cya.in.hell</strong><span title="@cya.in.hell">@cya.in.hell</span></li>
+                <li class="member-entry" data-member-id="867074038144040971"><strong title="Anton Berlinguer">Anton Berlinguer</strong><span title="@bonobius.">@bonobius.</span></li>
+                <li class="member-entry" data-member-id="864428665316180008"><strong title="aviaaaaa">aviaaaaa</strong><span title="@aviaaaaa">@aviaaaaa</span></li>
+                <li class="member-entry" data-member-id="860203156222902332"><strong title="Eros">Eros</strong><span title="@erushim">@erushim</span></li>
+                <li class="member-entry" data-member-id="855139861798191134"><strong title="callisto_1422">callisto_1422</strong><span title="@callisto_1422">@callisto_1422</span></li>
+                <li class="member-entry" data-member-id="854388739618373632"><strong title="kotpn">kotpn</strong><span title="@kotpn">@kotpn</span></li>
+                <li class="member-entry" data-member-id="852931740900917249"><strong title="Protector Chaos">Protector Chaos</strong><span title="@chaosotw">@chaosotw</span></li>
+                <li class="member-entry" data-member-id="847958077302505472"><strong title="qassimaminov">qassimaminov</strong><span title="@qassimaminov">@qassimaminov</span></li>
+                <li class="member-entry" data-member-id="837781395811991623"><strong title="air08696">air08696</strong><span title="@air08696">@air08696</span></li>
+                <li class="member-entry" data-member-id="835923820892258354"><strong title="_cinaraltay">_cinaraltay</strong><span title="@_cinaraltay">@_cinaraltay</span></li>
+                <li class="member-entry" data-member-id="833304888913952768"><strong title="zohomg">zohomg</strong><span title="@zohomg">@zohomg</span></li>
+                <li class="member-entry" data-member-id="832960084274708520"><strong title="fw_kawaii">fw_kawaii</strong><span title="@fw_kawaii">@fw_kawaii</span></li>
+                <li class="member-entry" data-member-id="830841363422642186"><strong title="dima_boi">dima_boi</strong><span title="@dima_boi">@dima_boi</span></li>
+                <li class="member-entry" data-member-id="829688070423969802"><strong title="daemonlixan">daemonlixan</strong><span title="@daemonlixan">@daemonlixan</span></li>
+                <li class="member-entry" data-member-id="826750895864807434"><strong title="hydra.0029">hydra.0029</strong><span title="@hydra.0029">@hydra.0029</span></li>
+                <li class="member-entry" data-member-id="826562401075593256"><strong title="levantloosener">levantloosener</strong><span title="@levantloosener">@levantloosener</span></li>
+                <li class="member-entry" data-member-id="824016787904659476"><strong title="hewalcxn">hewalcxn</strong><span title="@hewalcxn">@hewalcxn</span></li>
+                <li class="member-entry" data-member-id="819475960671371304"><strong title="edm_nd">edm_nd</strong><span title="@edm_nd">@edm_nd</span></li>
+                <li class="member-entry" data-member-id="818713948924543016"><strong title="Солдаты исламская щия">Солдаты исламская щия</strong><span title="@iranboi">@iranboi</span></li>
+                <li class="member-entry" data-member-id="815908462227488779"><strong title="Nikovich Peludlska">Nikovich Peludlska</strong><span title="@nikopeludo">@nikopeludo</span></li>
+                <li class="member-entry" data-member-id="815651883367530508"><strong title="riskfordafundz_">riskfordafundz_</strong><span title="@riskfordafundz_">@riskfordafundz_</span></li>
+                <li class="member-entry" data-member-id="807254722251587614"><strong title="Lucky">Lucky</strong><span title="@lucky_drink">@lucky_drink</span></li>
+                <li class="member-entry" data-member-id="1031331088410357891"><strong title="leinjx">leinjx</strong><span title="@leinjx">@leinjx</span></li>
+                <li class="member-entry" data-member-id="1030550996029546647"><strong title="oceania04442">oceania04442</strong><span title="@oceania04442">@oceania04442</span></li>
+                <li class="member-entry" data-member-id="1027814521915584532"><strong title="some_weird_libyan_dictator69">some_weird_libyan_dictator69</strong><span title="@some_weird_libyan_dictator69">@some_weird_libyan_dictator69</span></li>
+                <li class="member-entry" data-member-id="1023637731001241621"><strong title="yousef241">yousef241</strong><span title="@yousef241">@yousef241</span></li>
+                <li class="member-entry" data-member-id="1017489267699753032"><strong title="Cronk">Cronk</strong><span title="@deactivatedaccount0">@deactivatedaccount0</span></li>
+                <li class="member-entry" data-member-id="1013519725344608337"><strong title="[DSPN] Jason">[DSPN] Jason</strong><span title="@_.iivann._">@_.iivann._</span></li>
+                <li class="member-entry" data-member-id="1008999935733153812"><strong title="[DSPN] King Arthur">[DSPN] King Arthur</strong><span title="@king_arthur8719">@king_arthur8719</span></li>
+                <li class="member-entry" data-member-id="1007521999528140841"><strong title="[DSF] Mohseen Rehmat Shah">[DSF] Mohseen Rehmat Shah</strong><span title="@mohseenrehmatshah5836">@mohseenrehmatshah5836</span></li>
+                <li class="member-entry" data-member-id="1006681444522938498"><strong title="borislikesvodkagaming4117">borislikesvodkagaming4117</strong><span title="@borislikesvodkagaming4117">@borislikesvodkagaming4117</span></li>
+                <li class="member-entry" data-member-id="1005791879239049266"><strong title="romeo1_.">romeo1_.</strong><span title="@romeo1_.">@romeo1_.</span></li>
+                <li class="member-entry" data-member-id="1004567761768423485"><strong title="fearlesscomrade">fearlesscomrade</strong><span title="@fearlesscomrade">@fearlesscomrade</span></li>
+                <li class="member-entry" data-member-id="1004260689675821056"><strong title="[PRP] Fanatic">[PRP] Fanatic</strong><span title="@fanatic07722">@fanatic07722</span></li>
+                <li class="member-entry" data-member-id="998486281485025401"><strong title="shadowwizard7111">shadowwizard7111</strong><span title="@shadowwizard7111">@shadowwizard7111</span></li>
+                <li class="member-entry" data-member-id="996964331860262912"><strong title="Jack Alievski">Jack Alievski</strong><span title="@keyboardjack">@keyboardjack</span></li>
+                <li class="member-entry" data-member-id="992512321660407858"><strong title="fundatur7464">fundatur7464</strong><span title="@fundatur7464">@fundatur7464</span></li>
+                <li class="member-entry" data-member-id="990840273888243793"><strong title="wechugepastal">wechugepastal</strong><span title="@wechugepastal">@wechugepastal</span></li>
+                <li class="member-entry" data-member-id="989878120842674267"><strong title="lt.coljackson">lt.coljackson</strong><span title="@lt.coljackson">@lt.coljackson</span></li>
+                <li class="member-entry" data-member-id="986372672806092862"><strong title="longlivecommunism">longlivecommunism</strong><span title="@longlivecommunism">@longlivecommunism</span></li>
+                <li class="member-entry" data-member-id="983437576713158727"><strong title="Zavera [RSFSR First Sec.]">Zavera [RSFSR First Sec.]</strong><span title="@._zavera_.">@._zavera_.</span></li>
+                <li class="member-entry" data-member-id="983175525809926146"><strong title="[AFK] Yuri Sverdlov">[AFK] Yuri Sverdlov</strong><span title="@real.minatoyellowflash">@real.minatoyellowflash</span></li>
+                <li class="member-entry" data-member-id="979666579631517758"><strong title="_kureshiop">_kureshiop</strong><span title="@_kureshiop">@_kureshiop</span></li>
+                <li class="member-entry" data-member-id="973861056491425822"><strong title="powned3042">powned3042</strong><span title="@powned3042">@powned3042</span></li>
+                <li class="member-entry" data-member-id="967953960499564695"><strong title="hashbwown451">hashbwown451</strong><span title="@hashbwown451">@hashbwown451</span></li>
+                <li class="member-entry" data-member-id="965978186175373373"><strong title="Commissar Gen. Marcus Lazarus">Commissar Gen. Marcus Lazarus</strong><span title="@kfc3832">@kfc3832</span></li>
+                <li class="member-entry" data-member-id="965038860029554758"><strong title="brallexbitraffle5941">brallexbitraffle5941</strong><span title="@brallexbitraffle5941">@brallexbitraffle5941</span></li>
+                <li class="member-entry" data-member-id="964758340561403906"><strong title="Not Premier Alexei Rykov">Not Premier Alexei Rykov</strong><span title="@capt.rykov">@capt.rykov</span></li>
+                <li class="member-entry" data-member-id="963834359994007614"><strong title="that.one.pakistani_">that.one.pakistani_</strong><span title="@that.one.pakistani_">@that.one.pakistani_</span></li>
+                <li class="member-entry" data-member-id="963666050610769930"><strong title="[DSPN] Seraph Shah">[DSPN] Seraph Shah</strong><span title="@onyxarmour">@onyxarmour</span></li>
+                <li class="member-entry" data-member-id="960101777624166481"><strong title="alakbar3439">alakbar3439</strong><span title="@alakbar3439">@alakbar3439</span></li>
+                <li class="member-entry" data-member-id="959568506834268191"><strong title="bengee5130">bengee5130</strong><span title="@bengee5130">@bengee5130</span></li>
+                <li class="member-entry" data-member-id="957531031290937354"><strong title="[JUMK] Comrade Lord Maverick">[JUMK] Comrade Lord Maverick</strong><span title="@comradelordmavrck">@comradelordmavrck</span></li>
+                <li class="member-entry" data-member-id="952415308080111676"><strong title="luminanatalia">luminanatalia</strong><span title="@luminanatalia">@luminanatalia</span></li>
+                <li class="member-entry" data-member-id="952075301175820288"><strong title="rdes.">rdes.</strong><span title="@rdes.">@rdes.</span></li>
+                <li class="member-entry" data-member-id="950213916187828274"><strong title="b0yishhgyu2487">b0yishhgyu2487</strong><span title="@b0yishhgyu2487">@b0yishhgyu2487</span></li>
+                <li class="member-entry" data-member-id="945088286072926278"><strong title="centralelite">centralelite</strong><span title="@centralelite">@centralelite</span></li>
+                <li class="member-entry" data-member-id="944379671817097266"><strong title="nationplayz">nationplayz</strong><span title="@nationplayz">@nationplayz</span></li>
+                <li class="member-entry" data-member-id="942113630936248360"><strong title="bat_ran">bat_ran</strong><span title="@bat_ran">@bat_ran</span></li>
+                <li class="member-entry" data-member-id="937601386466652220"><strong title="georgedewey">georgedewey</strong><span title="@georgedewey">@georgedewey</span></li>
+                <li class="member-entry" data-member-id="927700469684502558"><strong title="jcreidiv">jcreidiv</strong><span title="@jcreidiv">@jcreidiv</span></li>
+                <li class="member-entry" data-member-id="927271950793965569"><strong title="Kingdom of Umbria">Kingdom of Umbria</strong><span title="@k2_vitto">@k2_vitto</span></li>
+                <li class="member-entry" data-member-id="925023375053688863"><strong title="just_a_normal_guyh">just_a_normal_guyh</strong><span title="@just_a_normal_guyh">@just_a_normal_guyh</span></li>
+                <li class="member-entry" data-member-id="1143503942349750282"><strong title="torrer14704_36733">torrer14704_36733</strong><span title="@torrer14704_36733">@torrer14704_36733</span></li>
+                <li class="member-entry" data-member-id="1138560868922183681"><strong title="nbuck_">nbuck_</strong><span title="@nbuck_">@nbuck_</span></li>
+                <li class="member-entry" data-member-id="1133815251100508262"><strong title="pollo_fesso78">pollo_fesso78</strong><span title="@pollo_fesso78">@pollo_fesso78</span></li>
+                <li class="member-entry" data-member-id="1133418792261791824"><strong title="Nicolae Ceausescu">Nicolae Ceausescu</strong><span title="@borschtiomaniac">@borschtiomaniac</span></li>
+                <li class="member-entry" data-member-id="1129552106240614411"><strong title="paulinhotravecao">paulinhotravecao</strong><span title="@paulinhotravecao">@paulinhotravecao</span></li>
+                <li class="member-entry" data-member-id="1125967872636768307"><strong title="catasarana">catasarana</strong><span title="@catasarana">@catasarana</span></li>
+                <li class="member-entry" data-member-id="1124297623814287391"><strong title="anastassias">anastassias</strong><span title="@anastassias">@anastassias</span></li>
+                <li class="member-entry" data-member-id="1123564576596824166"><strong title="“The Last Bastion” Josiah">“The Last Bastion” Josiah</strong><span title="@gam3rk1ng.">@gam3rk1ng.</span></li>
+                <li class="member-entry" data-member-id="1121087626670243980"><strong title="Николай Белинский">Николай Белинский</strong><span title="@najimipilled">@najimipilled</span></li>
+                <li class="member-entry" data-member-id="1119968815393030226"><strong title=".cheeki__breeki">.cheeki__breeki</strong><span title="@.cheeki__breeki">@.cheeki__breeki</span></li>
+                <li class="member-entry" data-member-id="1119482733568200735"><strong title="no_thanks_im_fine">no_thanks_im_fine</strong><span title="@no_thanks_im_fine">@no_thanks_im_fine</span></li>
+                <li class="member-entry" data-member-id="1114489376135716864"><strong title="stellarsheriff19">stellarsheriff19</strong><span title="@stellarsheriff19">@stellarsheriff19</span></li>
+                <li class="member-entry" data-member-id="1112313914072502362"><strong title="Luden">Luden</strong><span title="@luden3_">@luden3_</span></li>
+                <li class="member-entry" data-member-id="1111538759025041408"><strong title="mubossubo">mubossubo</strong><span title="@mubossubo">@mubossubo</span></li>
+                <li class="member-entry" data-member-id="1110280112374554706"><strong title="[MKHA/Leşker] that re romanian">[MKHA/Leşker] that re romanian</strong><span title="@thatautisticromaniann">@thatautisticromaniann</span></li>
+                <li class="member-entry" data-member-id="1107289641452843121"><strong title="princess_sadia">princess_sadia</strong><span title="@princess_sadia">@princess_sadia</span></li>
+                <li class="member-entry" data-member-id="1102018949849301002"><strong title="artzao2996">artzao2996</strong><span title="@artzao2996">@artzao2996</span></li>
+                <li class="member-entry" data-member-id="1097399905808556042"><strong title="fuck.you1234">fuck.you1234</strong><span title="@fuck.you1234">@fuck.you1234</span></li>
+                <li class="member-entry" data-member-id="1093932144985911478"><strong title="helenjones3173716">helenjones3173716</strong><span title="@helenjones3173716">@helenjones3173716</span></li>
+                <li class="member-entry" data-member-id="1091724093222555699"><strong title="thatcatholicguy777">thatcatholicguy777</strong><span title="@thatcatholicguy777">@thatcatholicguy777</span></li>
+                <li class="member-entry" data-member-id="1088729373340876860"><strong title="baconbro21">baconbro21</strong><span title="@baconbro21">@baconbro21</span></li>
+                <li class="member-entry" data-member-id="1088430587905323059"><strong title="Fawad Hotak">Fawad Hotak</strong><span title="@lehighavenue">@lehighavenue</span></li>
+                <li class="member-entry" data-member-id="1087076260485812265"><strong title="moonlp">moonlp</strong><span title="@moonlp">@moonlp</span></li>
+                <li class="member-entry" data-member-id="1074844580576505856"><strong title=".minikui.4361">.minikui.4361</strong><span title="@.minikui.4361">@.minikui.4361</span></li>
+                <li class="member-entry" data-member-id="1074728172089770124"><strong title="![GEO SSR] Aleksandre Rukhadze">![GEO SSR] Aleksandre Rukhadze</strong><span title="@prison_jr">@prison_jr</span></li>
+                <li class="member-entry" data-member-id="1074444839636172922"><strong title="kisamenace1786">kisamenace1786</strong><span title="@kisamenace1786">@kisamenace1786</span></li>
+                <li class="member-entry" data-member-id="1072507849013465138"><strong title="deodatus32">deodatus32</strong><span title="@deodatus32">@deodatus32</span></li>
+                <li class="member-entry" data-member-id="1069448635147898880"><strong title=".roguewiccan97">.roguewiccan97</strong><span title="@.roguewiccan97">@.roguewiccan97</span></li>
+                <li class="member-entry" data-member-id="1067160205294579782"><strong title="dreampondji">dreampondji</strong><span title="@dreampondji">@dreampondji</span></li>
+                <li class="member-entry" data-member-id="1065701732476256336"><strong title="Vasily Krushnov">Vasily Krushnov</strong><span title="@myheartbeatsounds.">@myheartbeatsounds.</span></li>
+                <li class="member-entry" data-member-id="1062073854991806524"><strong title="UniMas Maiers">UniMas Maiers</strong><span title="@unimas.maiers">@unimas.maiers</span></li>
+                <li class="member-entry" data-member-id="1061880907788722217"><strong title="joshdickerson26">joshdickerson26</strong><span title="@joshdickerson26">@joshdickerson26</span></li>
+                <li class="member-entry" data-member-id="1060326128339931246"><strong title="sakhtgarmi">sakhtgarmi</strong><span title="@sakhtgarmi">@sakhtgarmi</span></li>
+                <li class="member-entry" data-member-id="1060135295305129984"><strong title="orwellian5665">orwellian5665</strong><span title="@orwellian5665">@orwellian5665</span></li>
+                <li class="member-entry" data-member-id="1055470323912413245"><strong title="senewasfound_">senewasfound_</strong><span title="@senewasfound_">@senewasfound_</span></li>
+                <li class="member-entry" data-member-id="1048243798616055848"><strong title="Commissar Smdeinfvot">Commissar Smdeinfvot</strong><span title="@smdeinfvot_">@smdeinfvot_</span></li>
+                <li class="member-entry" data-member-id="1045729646278361109"><strong title="foremateman">foremateman</strong><span title="@foremateman">@foremateman</span></li>
+                <li class="member-entry" data-member-id="1041530137692340254"><strong title="mdavidovich77">mdavidovich77</strong><span title="@mdavidovich77">@mdavidovich77</span></li>
+                <li class="member-entry" data-member-id="1040672053658919085"><strong title="Dimitri Ivanovitch">Dimitri Ivanovitch</strong><span title="@.moskaugreek">@.moskaugreek</span></li>
+                <li class="member-entry" data-member-id="1036099734051496046"><strong title="resigned_husky3">resigned_husky3</strong><span title="@resigned_husky3">@resigned_husky3</span></li>
+                <li class="member-entry" data-member-id="1035006230793564230"><strong title="alinasmirnova">alinasmirnova</strong><span title="@alinasmirnova">@alinasmirnova</span></li>
+                <li class="member-entry" data-member-id="1289885724103016499"><strong title="unknown.74639999">unknown.74639999</strong><span title="@unknown.74639999">@unknown.74639999</span></li>
+                <li class="member-entry" data-member-id="1283518051278655563"><strong title="skibidianuss.">skibidianuss.</strong><span title="@skibidianuss.">@skibidianuss.</span></li>
+                <li class="member-entry" data-member-id="1267780618985537579"><strong title="paper666092">paper666092</strong><span title="@paper666092">@paper666092</span></li>
+                <li class="member-entry" data-member-id="1263934700175626361"><strong title="Secretary Sceplicur J. Kennedy">Secretary Sceplicur J. Kennedy</strong><span title="@sceplicur">@sceplicur</span></li>
+                <li class="member-entry" data-member-id="1263836048618688597"><strong title="Fawad Hotak">Fawad Hotak</strong><span title="@de_reincourt">@de_reincourt</span></li>
+                <li class="member-entry" data-member-id="1258172261081284620"><strong title="Cpl. Сабрина Романова">Cpl. Сабрина Романова</strong><span title="@n.kugisaki">@n.kugisaki</span></li>
+                <li class="member-entry" data-member-id="1252973034264858658"><strong title="whitejack000">whitejack000</strong><span title="@whitejack000">@whitejack000</span></li>
+                <li class="member-entry" data-member-id="1252313264742990001"><strong title="mimil28">mimil28</strong><span title="@mimil28">@mimil28</span></li>
+                <li class="member-entry" data-member-id="1249181962468593707"><strong title="zaivanu">zaivanu</strong><span title="@zaivanu">@zaivanu</span></li>
+                <li class="member-entry" data-member-id="1248561865530019842"><strong title="sickly.victorian.child.">sickly.victorian.child.</strong><span title="@sickly.victorian.child.">@sickly.victorian.child.</span></li>
+                <li class="member-entry" data-member-id="1247993683802980374"><strong title="Kysander">Kysander</strong><span title="@the_kysander_guy">@the_kysander_guy</span></li>
+                <li class="member-entry" data-member-id="1247450383853424672"><strong title="soviet doggy">soviet doggy</strong><span title="@jets108">@jets108</span></li>
+                <li class="member-entry" data-member-id="1247118434517651466"><strong title="csc.thienlong">csc.thienlong</strong><span title="@csc.thienlong">@csc.thienlong</span></li>
+                <li class="member-entry" data-member-id="1241899758105399326"><strong title="trinitas04855">trinitas04855</strong><span title="@trinitas04855">@trinitas04855</span></li>
+                <li class="member-entry" data-member-id="1234592389771825214"><strong title="Elisha Ciric">Elisha Ciric</strong><span title="@.el.is.ha.">@.el.is.ha.</span></li>
+                <li class="member-entry" data-member-id="1231064187745210418"><strong title="Black Sea salmon">Black Sea salmon</strong><span title="@cindylouwho75_46401">@cindylouwho75_46401</span></li>
+                <li class="member-entry" data-member-id="1229741033265299506"><strong title="Chairman Erwin">Chairman Erwin</strong><span title="@desertmarshal">@desertmarshal</span></li>
+                <li class="member-entry" data-member-id="1224073767542587396"><strong title="nnallostinz">nnallostinz</strong><span title="@nnallostinz">@nnallostinz</span></li>
+                <li class="member-entry" data-member-id="1223873402784317480"><strong title="gamer_bolti_public_61695">gamer_bolti_public_61695</strong><span title="@gamer_bolti_public_61695">@gamer_bolti_public_61695</span></li>
+                <li class="member-entry" data-member-id="1219137083474448496"><strong title="ixanetjibirkirin">ixanetjibirkirin</strong><span title="@ixanetjibirkirin">@ixanetjibirkirin</span></li>
+                <li class="member-entry" data-member-id="1218668495043301577"><strong title="astralix9">astralix9</strong><span title="@astralix9">@astralix9</span></li>
+                <li class="member-entry" data-member-id="1218252527783510071"><strong title="John Petr Bashal | PCФP">John Petr Bashal | PCФP</strong><span title="@apoplectoro">@apoplectoro</span></li>
+                <li class="member-entry" data-member-id="1216890739666059298"><strong title="xalisweeeet">xalisweeeet</strong><span title="@xalisweeeet">@xalisweeeet</span></li>
+                <li class="member-entry" data-member-id="1214269597927350284"><strong title="ayxsh.4u">ayxsh.4u</strong><span title="@ayxsh.4u">@ayxsh.4u</span></li>
+                <li class="member-entry" data-member-id="1213956772113424446"><strong title="sovietspy1991">sovietspy1991</strong><span title="@sovietspy1991">@sovietspy1991</span></li>
+                <li class="member-entry" data-member-id="1211432483984244756"><strong title="RussianSolidusSnake">RussianSolidusSnake</strong><span title="@batalla.jairusnathan">@batalla.jairusnathan</span></li>
+                <li class="member-entry" data-member-id="1210954954483699794"><strong title="jinsakai_1274">jinsakai_1274</strong><span title="@jinsakai_1274">@jinsakai_1274</span></li>
+                <li class="member-entry" data-member-id="1210447615544664085"><strong title="ovocaughtu_28093">ovocaughtu_28093</strong><span title="@ovocaughtu_28093">@ovocaughtu_28093</span></li>
+                <li class="member-entry" data-member-id="1209523752543715353"><strong title="Someone">Someone</strong><span title="@somepeople19852">@somepeople19852</span></li>
+                <li class="member-entry" data-member-id="1208547721753923618"><strong title="winterfairy.5">winterfairy.5</strong><span title="@winterfairy.5">@winterfairy.5</span></li>
+                <li class="member-entry" data-member-id="1207374652259835955"><strong title="steve.n.son">steve.n.son</strong><span title="@steve.n.son">@steve.n.son</span></li>
+                <li class="member-entry" data-member-id="1206781514822590488"><strong title="chi guevara ♡">chi guevara ♡</strong><span title="@vrheadset__13593">@vrheadset__13593</span></li>
+                <li class="member-entry" data-member-id="1202426260861755532"><strong title="war1545825">war1545825</strong><span title="@war1545825">@war1545825</span></li>
+                <li class="member-entry" data-member-id="1200991887461453935"><strong title="communist_grass">communist_grass</strong><span title="@communist_grass">@communist_grass</span></li>
+                <li class="member-entry" data-member-id="1196924329498247301"><strong title="arctrooper21330">arctrooper21330</strong><span title="@arctrooper21330">@arctrooper21330</span></li>
+                <li class="member-entry" data-member-id="1196512262572232825"><strong title="morozulka_stalina">morozulka_stalina</strong><span title="@morozulka_stalina">@morozulka_stalina</span></li>
+                <li class="member-entry" data-member-id="1189195476176732260"><strong title="ziafluffy">ziafluffy</strong><span title="@ziafluffy">@ziafluffy</span></li>
+                <li class="member-entry" data-member-id="1184137681706422372"><strong title="wmbaq">wmbaq</strong><span title="@wmbaq">@wmbaq</span></li>
+                <li class="member-entry" data-member-id="1180704334430867527"><strong title="comradestalin1878_07325">comradestalin1878_07325</strong><span title="@comradestalin1878_07325">@comradestalin1878_07325</span></li>
+                <li class="member-entry" data-member-id="1180248223047241789"><strong title="asighttobehold">asighttobehold</strong><span title="@asighttobehold">@asighttobehold</span></li>
+                <li class="member-entry" data-member-id="1178691500545163342"><strong title="dont_tag">dont_tag</strong><span title="@dont_tag">@dont_tag</span></li>
+                <li class="member-entry" data-member-id="1178003219394343046"><strong title="josephthejtm">josephthejtm</strong><span title="@josephthejtm">@josephthejtm</span></li>
+                <li class="member-entry" data-member-id="1176231328866390197"><strong title="Pretzel">Pretzel</strong><span title="@whetzelbonk">@whetzelbonk</span></li>
+                <li class="member-entry" data-member-id="1173725362425966603"><strong title="agent_447">agent_447</strong><span title="@agent_447">@agent_447</span></li>
+                <li class="member-entry" data-member-id="1172164379257622551"><strong title="agent_77.">agent_77.</strong><span title="@agent_77.">@agent_77.</span></li>
+                <li class="member-entry" data-member-id="1170798719168430192"><strong title="m.tl">m.tl</strong><span title="@m.tl">@m.tl</span></li>
+                <li class="member-entry" data-member-id="1170315621007900756"><strong title="the.senator">the.senator</strong><span title="@the.senator">@the.senator</span></li>
+                <li class="member-entry" data-member-id="1168276398520156162"><strong title="plastic1028">plastic1028</strong><span title="@plastic1028">@plastic1028</span></li>
+                <li class="member-entry" data-member-id="1162259154849763398"><strong title="The Patriot">The Patriot</strong><span title="@davinzent">@davinzent</span></li>
+                <li class="member-entry" data-member-id="1160392141013528637"><strong title="shart_pants53_73890">shart_pants53_73890</strong><span title="@shart_pants53_73890">@shart_pants53_73890</span></li>
+                <li class="member-entry" data-member-id="1158294330923044884"><strong title="hyperreal64_81619">hyperreal64_81619</strong><span title="@hyperreal64_81619">@hyperreal64_81619</span></li>
+                <li class="member-entry" data-member-id="1155170668237832292"><strong title="Alexander Lukyanov">Alexander Lukyanov</strong><span title="@alexander.115">@alexander.115</span></li>
+                <li class="member-entry" data-member-id="1153383940678238238"><strong title="schof_00">schof_00</strong><span title="@schof_00">@schof_00</span></li>
+                <li class="member-entry" data-member-id="1150809206623059999"><strong title="Lammie">Lammie</strong><span title="@i_miss_arshavin">@i_miss_arshavin</span></li>
+                <li class="member-entry" data-member-id="1150771127971483669"><strong title="chicanoguntaa">chicanoguntaa</strong><span title="@chicanoguntaa">@chicanoguntaa</span></li>
+                <li class="member-entry" data-member-id="1150480039327051866"><strong title="maximnator._31948">maximnator._31948</strong><span title="@maximnator._31948">@maximnator._31948</span></li>
+                <li class="member-entry" data-member-id="1148050255233957908"><strong title="d1rtyhampster">d1rtyhampster</strong><span title="@d1rtyhampster">@d1rtyhampster</span></li>
+                <li class="member-entry" data-member-id="1146234998077280326"><strong title="[MKHA/Nefer] Donald Trump">[MKHA/Nefer] Donald Trump</strong><span title="@smokeeed">@smokeeed</span></li>
+                <li class="member-entry" data-member-id="1521043721129558017"><strong title="hamster_fed">hamster_fed</strong><span title="@hamster_fed">@hamster_fed</span></li>
+                <li class="member-entry" data-member-id="1512052788899745935"><strong title="asillyrussian">asillyrussian</strong><span title="@asillyrussian">@asillyrussian</span></li>
+                <li class="member-entry" data-member-id="1507244440480382998"><strong title="dadamandi">dadamandi</strong><span title="@dadamandi">@dadamandi</span></li>
+                <li class="member-entry" data-member-id="1502474466066829427"><strong title="Supofsos Kошка">Supofsos Kошка</strong><span title="@supofsosnewest">@supofsosnewest</span></li>
+                <li class="member-entry" data-member-id="1499270682054365386"><strong title="laura078106">laura078106</strong><span title="@laura078106">@laura078106</span></li>
+                <li class="member-entry" data-member-id="1495413593242337421"><strong title="CC Никита Менжинский ★⊙☭">CC Никита Менжинский ★⊙☭</strong><span title="@nikita_1961">@nikita_1961</span></li>
+                <li class="member-entry" data-member-id="1492138753823871109"><strong title="thesecondcoming0709">thesecondcoming0709</strong><span title="@thesecondcoming0709">@thesecondcoming0709</span></li>
+                <li class="member-entry" data-member-id="1491171623582171260"><strong title="wolfgeist333">wolfgeist333</strong><span title="@wolfgeist333">@wolfgeist333</span></li>
+                <li class="member-entry" data-member-id="1490669020628914367"><strong title="echo096649">echo096649</strong><span title="@echo096649">@echo096649</span></li>
+                <li class="member-entry" data-member-id="1489929804668207245"><strong title="bayvu_72168">bayvu_72168</strong><span title="@bayvu_72168">@bayvu_72168</span></li>
+                <li class="member-entry" data-member-id="1489726654983966991"><strong title="firecrow0118">firecrow0118</strong><span title="@firecrow0118">@firecrow0118</span></li>
+                <li class="member-entry" data-member-id="1488138522371035146"><strong title="4_on_dc_40470">4_on_dc_40470</strong><span title="@4_on_dc_40470">@4_on_dc_40470</span></li>
+                <li class="member-entry" data-member-id="1480447650154156073"><strong title="alt.exe2">alt.exe2</strong><span title="@alt.exe2">@alt.exe2</span></li>
+                <li class="member-entry" data-member-id="1478820264316895372"><strong title="salmonia3">salmonia3</strong><span title="@salmonia3">@salmonia3</span></li>
+                <li class="member-entry" data-member-id="1476102186445307978"><strong title="praisedful">praisedful</strong><span title="@praisedful">@praisedful</span></li>
+                <li class="member-entry" data-member-id="1464564219859959841"><strong title="_._universal_._">_._universal_._</strong><span title="@_._universal_._">@_._universal_._</span></li>
+                <li class="member-entry" data-member-id="1462792029074489496"><strong title="quartzyginger">quartzyginger</strong><span title="@quartzyginger">@quartzyginger</span></li>
+                <li class="member-entry" data-member-id="1462636066325528621"><strong title="number2fnaffan.">number2fnaffan.</strong><span title="@number2fnaffan.">@number2fnaffan.</span></li>
+                <li class="member-entry" data-member-id="1460786625997967461"><strong title="anonymos37012">anonymos37012</strong><span title="@anonymos37012">@anonymos37012</span></li>
+                <li class="member-entry" data-member-id="1454848414121595037"><strong title="skuuuuontop">skuuuuontop</strong><span title="@skuuuuontop">@skuuuuontop</span></li>
+                <li class="member-entry" data-member-id="1453834499216642161"><strong title="Ayatollah Hekster">Ayatollah Hekster</strong><span title="@haksteroid">@haksteroid</span></li>
+                <li class="member-entry" data-member-id="1447894725183934586"><strong title="communism1949">communism1949</strong><span title="@communism1949">@communism1949</span></li>
+                <li class="member-entry" data-member-id="1437691736473206824"><strong title="rawrvincible">rawrvincible</strong><span title="@rawrvincible">@rawrvincible</span></li>
+                <li class="member-entry" data-member-id="1431858554696110162"><strong title="John Communism">John Communism</strong><span title="@hello_people51423">@hello_people51423</span></li>
+                <li class="member-entry" data-member-id="1431744126843490397"><strong title="_onealcaraz">_onealcaraz</strong><span title="@_onealcaraz">@_onealcaraz</span></li>
+                <li class="member-entry" data-member-id="1426537050668142767"><strong title="d011l">d011l</strong><span title="@d011l">@d011l</span></li>
+                <li class="member-entry" data-member-id="1424573324888903803"><strong title="luiplayer_rock1">luiplayer_rock1</strong><span title="@luiplayer_rock1">@luiplayer_rock1</span></li>
+                <li class="member-entry" data-member-id="1416403626540273807"><strong title="ghostmodex1">ghostmodex1</strong><span title="@ghostmodex1">@ghostmodex1</span></li>
+                <li class="member-entry" data-member-id="1413238822996803634"><strong title="Private Arkady Krovomir">Private Arkady Krovomir</strong><span title="@victor_sterling1">@victor_sterling1</span></li>
+                <li class="member-entry" data-member-id="1410003561806430268"><strong title="digitalproletariat">digitalproletariat</strong><span title="@digitalproletariat">@digitalproletariat</span></li>
+                <li class="member-entry" data-member-id="1404444910152843265"><strong title="generalissimustrollsky">generalissimustrollsky</strong><span title="@generalissimustrollsky">@generalissimustrollsky</span></li>
+                <li class="member-entry" data-member-id="1404187213238898780"><strong title="sanchino_fr">sanchino_fr</strong><span title="@sanchino_fr">@sanchino_fr</span></li>
+                <li class="member-entry" data-member-id="1392481702756089917"><strong title="𝙰.𝙻.𝚃">𝙰.𝙻.𝚃</strong><span title="@dulc1a">@dulc1a</span></li>
+                <li class="member-entry" data-member-id="1385424938801954826"><strong title="stoney0591">stoney0591</strong><span title="@stoney0591">@stoney0591</span></li>
+                <li class="member-entry" data-member-id="1384938420530315284"><strong title="void_reaper1677">void_reaper1677</strong><span title="@void_reaper1677">@void_reaper1677</span></li>
+                <li class="member-entry" data-member-id="1384194188840538207"><strong title="Angel">Angel</strong><span title="@angel_lnk">@angel_lnk</span></li>
+                <li class="member-entry" data-member-id="1379131444147912817"><strong title="herr_polen">herr_polen</strong><span title="@herr_polen">@herr_polen</span></li>
+                <li class="member-entry" data-member-id="1376173884159823885"><strong title="superanton500">superanton500</strong><span title="@superanton500">@superanton500</span></li>
+                <li class="member-entry" data-member-id="1365435022747762751"><strong title="decoconuter">decoconuter</strong><span title="@decoconuter">@decoconuter</span></li>
+                <li class="member-entry" data-member-id="1361795534024736963"><strong title="astr0c0m1c0">astr0c0m1c0</strong><span title="@astr0c0m1c0">@astr0c0m1c0</span></li>
+                <li class="member-entry" data-member-id="1359903510417772626"><strong title="kill_wibu_52091">kill_wibu_52091</strong><span title="@kill_wibu_52091">@kill_wibu_52091</span></li>
+                <li class="member-entry" data-member-id="1357839721895821392"><strong title="jewsig">jewsig</strong><span title="@jewsig">@jewsig</span></li>
+                <li class="member-entry" data-member-id="1357350727479201843"><strong title="ancient_unc">ancient_unc</strong><span title="@ancient_unc">@ancient_unc</span></li>
+                <li class="member-entry" data-member-id="1354132984890134561"><strong title="alstromeriaa.">alstromeriaa.</strong><span title="@alstromeriaa.">@alstromeriaa.</span></li>
+                <li class="member-entry" data-member-id="1351755474588143658"><strong title="Commissar otyey567">Commissar otyey567</strong><span title="@immortal_soviet_otyey567">@immortal_soviet_otyey567</span></li>
+                <li class="member-entry" data-member-id="1351654219291295784"><strong title="rapscallion132">rapscallion132</strong><span title="@rapscallion132">@rapscallion132</span></li>
+                <li class="member-entry" data-member-id="1350488844302286851"><strong title="__kissnger__">__kissnger__</strong><span title="@__kissnger__">@__kissnger__</span></li>
+                <li class="member-entry" data-member-id="1346370591405637653"><strong title="necromorfosis">necromorfosis</strong><span title="@necromorfosis">@necromorfosis</span></li>
+                <li class="member-entry" data-member-id="1345550674888232970"><strong title="poetr._">poetr._</strong><span title="@poetr._">@poetr._</span></li>
+                <li class="member-entry" data-member-id="1344148153892470837"><strong title="takahirohere">takahirohere</strong><span title="@takahirohere">@takahirohere</span></li>
+                <li class="member-entry" data-member-id="1337929028794847353"><strong title="theuniformcodeofmilitaryjustice">theuniformcodeofmilitaryjustice</strong><span title="@theuniformcodeofmilitaryjustice">@theuniformcodeofmilitaryjustice</span></li>
+                <li class="member-entry" data-member-id="1337740952588255254"><strong title="jazzy_java">jazzy_java</strong><span title="@jazzy_java">@jazzy_java</span></li>
+                <li class="member-entry" data-member-id="1336191904051630093"><strong title="cyka.blyatt">cyka.blyatt</strong><span title="@cyka.blyatt">@cyka.blyatt</span></li>
+                <li class="member-entry" data-member-id="1335901026280013876"><strong title="Sgt. Alexander">Sgt. Alexander</strong><span title="@smarttrader">@smarttrader</span></li>
+                <li class="member-entry" data-member-id="1330260261994496103"><strong title="vladimirlenin2209">vladimirlenin2209</strong><span title="@vladimirlenin2209">@vladimirlenin2209</span></li>
+                <li class="member-entry" data-member-id="1328723944655683646"><strong title="molor999999999">molor999999999</strong><span title="@molor999999999">@molor999999999</span></li>
+                <li class="member-entry" data-member-id="1321701727417798808"><strong title="bittenvampires">bittenvampires</strong><span title="@bittenvampires">@bittenvampires</span></li>
+                <li class="member-entry" data-member-id="1317914871022489692"><strong title="Dep. Chairman SupSov Laika">Dep. Chairman SupSov Laika</strong><span title="@newlaika1111">@newlaika1111</span></li>
+                <li class="member-entry" data-member-id="1308433016695033960"><strong title="Aroze">Aroze</strong><span title="@ilovecelina">@ilovecelina</span></li>
+                <li class="member-entry" data-member-id="1530238617341923418"><strong title="scod3lla___">scod3lla___</strong><span title="@scod3lla___">@scod3lla___</span></li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <article class="party-card">
+          <header class="party-header">
+            <div class="party-emblem" aria-label="Culture and Progress Party emblem">CPP</div>
+            <div>
+              <div class="party-abbreviation">CPP · Registered Political Party</div>
+              <h3>Culture and Progress Party</h3>
+              <div class="party-leader">Party Chairman: Gabe</div>
+            </div>
+          </header>
+          <div class="party-body">
+            <div class="party-facts">
+              <div class="party-fact">
+                <b>Party Ideology</b>
+                <span>Classical Conservatism</span>
+              </div>
+              <div class="party-fact">
+                <b>Party Platforms</b>
+                <span>Social Conservatism, Mixed Economics, Nuristaniyat</span>
+              </div>
+            </div>
+            <p class="party-description">
+              The Culture and Progress Party is based in Nuristan and was founded on 6 March 2023 by prominent
+              officials of the First Shaahi Sabha and Fourth Majlis as-Shura. The party advocates Nuristaniyat,
+              the political unity of Nuristan and of Indian, Pakistani, Afghan, Nepali, and Bengali citizens.
+              It stands as a strong ally of the MSPSU and the Muslim Brotherhood Party.
+            </p>
+            <details class="member-roster">
+              <summary><span>Official CPP Membership Register</span><strong id="cppCount">51 members</strong></summary>
+              <div class="roster-tools">
+                <input class="roster-search" type="search" data-roster-target="cppMemberGrid" placeholder="Search CPP members" aria-label="Search CPP members">
+              </div>
+              <ul id="cppMemberGrid" class="member-grid">
+                <li class="member-entry" data-member-id="560404054568730624"><strong title="abdullahrm">abdullahrm</strong><span title="@abdullahrm">@abdullahrm</span></li>
+                <li class="member-entry" data-member-id="534510812925001748"><strong title="oneiricself">oneiricself</strong><span title="@oneiricself">@oneiricself</span></li>
+                <li class="member-entry" data-member-id="757458582730965022"><strong title="KRS">KRS</strong><span title="@krsthegr8">@krsthegr8</span></li>
+                <li class="member-entry" data-member-id="754666521153765486"><strong title="hopeful_cannon">hopeful_cannon</strong><span title="@hopeful_cannon">@hopeful_cannon</span></li>
+                <li class="member-entry" data-member-id="718459489237467146"><strong title="Onb. Sultanzade Kim Kong Un Bey">Onb. Sultanzade Kim Kong Un Bey</strong><span title="@therealdeal1657">@therealdeal1657</span></li>
+                <li class="member-entry" data-member-id="698751122784911403"><strong title="uhhhhh0150">uhhhhh0150</strong><span title="@uhhhhh0150">@uhhhhh0150</span></li>
+                <li class="member-entry" data-member-id="687792837420777508"><strong title="[DSF] Hawkus">[DSF] Hawkus</strong><span title="@prite4lyfe">@prite4lyfe</span></li>
+                <li class="member-entry" data-member-id="662278688796311552"><strong title="mr.tonk">mr.tonk</strong><span title="@mr.tonk">@mr.tonk</span></li>
+                <li class="member-entry" data-member-id="917334214314192896"><strong title="fireflyunleashedbylight">fireflyunleashedbylight</strong><span title="@fireflyunleashedbylight">@fireflyunleashedbylight</span></li>
+                <li class="member-entry" data-member-id="892347334216777728"><strong title="[DSPN] Cmdr. Brassballs S. Cody">[DSPN] Cmdr. Brassballs S. Cody</strong><span title="@ven5242">@ven5242</span></li>
+                <li class="member-entry" data-member-id="891787374898602045"><strong title="hayden_skibidi67">hayden_skibidi67</strong><span title="@hayden_skibidi67">@hayden_skibidi67</span></li>
+                <li class="member-entry" data-member-id="887543181598666753"><strong title="Your KGB Agent">Your KGB Agent</strong><span title="@yourfbiagent3445">@yourfbiagent3445</span></li>
+                <li class="member-entry" data-member-id="887419379833274388"><strong title="Dr. Dr. Toka Tokanowski">Dr. Dr. Toka Tokanowski</strong><span title="@toka2411">@toka2411</span></li>
+                <li class="member-entry" data-member-id="828519354604978186"><strong title="Panzerkampfwagen IV">Panzerkampfwagen IV</strong><span title="@bigglesof226">@bigglesof226</span></li>
+                <li class="member-entry" data-member-id="823505634451783701"><strong title="Commissar Kabby">Commissar Kabby</strong><span title="@kabbyaarko">@kabbyaarko</span></li>
+                <li class="member-entry" data-member-id="822079355298906112"><strong title="StatCom Rahul Gandhi">StatCom Rahul Gandhi</strong><span title="@cax18">@cax18</span></li>
+                <li class="member-entry" data-member-id="807944786840387675"><strong title="that.two.indian_">that.two.indian_</strong><span title="@brosquare">@brosquare</span></li>
+                <li class="member-entry" data-member-id="1023682507671076884"><strong title="mystwizarde6813">mystwizarde6813</strong><span title="@mystwizarde6813">@mystwizarde6813</span></li>
+                <li class="member-entry" data-member-id="1014594139465195681"><strong title="realest.ong">realest.ong</strong><span title="@realest.ong">@realest.ong</span></li>
+                <li class="member-entry" data-member-id="1000271630154596473"><strong title="Saint">Saint</strong><span title="@hyde666_9">@hyde666_9</span></li>
+                <li class="member-entry" data-member-id="978960020463038505"><strong title="edmonnnnn">edmonnnnn</strong><span title="@edmonnnnn">@edmonnnnn</span></li>
+                <li class="member-entry" data-member-id="977149086488731709"><strong title="shawnrao">shawnrao</strong><span title="@shawnrao">@shawnrao</span></li>
+                <li class="member-entry" data-member-id="963834359994007614"><strong title="that.one.pakistani_">that.one.pakistani_</strong><span title="@that.one.pakistani_">@that.one.pakistani_</span></li>
+                <li class="member-entry" data-member-id="929610842142539846"><strong title="vietnam8">vietnam8</strong><span title="@vietnam8">@vietnam8</span></li>
+                <li class="member-entry" data-member-id="926858801829797908"><strong title="[SSM] Antonov Brezhnev">[SSM] Antonov Brezhnev</strong><span title="@antonovbrezhnev">@antonovbrezhnev</span></li>
+                <li class="member-entry" data-member-id="1139902048746340455"><strong title="renewed.united.muttahida.bank">renewed.united.muttahida.bank</strong><span title="@renewed.united.muttahida.bank">@renewed.united.muttahida.bank</span></li>
+                <li class="member-entry" data-member-id="1137541152183169105"><strong title="satyanas">satyanas</strong><span title="@satyanas">@satyanas</span></li>
+                <li class="member-entry" data-member-id="1137534848253296730"><strong title="dr.evil4741">dr.evil4741</strong><span title="@dr.evil4741">@dr.evil4741</span></li>
+                <li class="member-entry" data-member-id="1137531515371270164"><strong title="drivemecrayzee">drivemecrayzee</strong><span title="@drivemecrayzee">@drivemecrayzee</span></li>
+                <li class="member-entry" data-member-id="1130517855805395005"><strong title="ly.ra.">ly.ra.</strong><span title="@ly.ra.">@ly.ra.</span></li>
+                <li class="member-entry" data-member-id="1097172477102268457"><strong title="Felix Crystofer [LOA]">Felix Crystofer [LOA]</strong><span title="@felix_crystofer">@felix_crystofer</span></li>
+                <li class="member-entry" data-member-id="1068744433572511775"><strong title="coolestguyeverfrfr">coolestguyeverfrfr</strong><span title="@coolestguyeverfrfr">@coolestguyeverfrfr</span></li>
+                <li class="member-entry" data-member-id="1274915930899484755"><strong title="dukebennis_48417">dukebennis_48417</strong><span title="@dukebennis_48417">@dukebennis_48417</span></li>
+                <li class="member-entry" data-member-id="1224872247135703141"><strong title="metal_crusader9409">metal_crusader9409</strong><span title="@metal_crusader9409">@metal_crusader9409</span></li>
+                <li class="member-entry" data-member-id="1190713839067615283"><strong title="zazakvng">zazakvng</strong><span title="@zazakvng">@zazakvng</span></li>
+                <li class="member-entry" data-member-id="1505893702646894612"><strong title="annalopez459624_95832">annalopez459624_95832</strong><span title="@annalopez459624_95832">@annalopez459624_95832</span></li>
+                <li class="member-entry" data-member-id="1497024743579193356"><strong title="max7534">max7534</strong><span title="@max7534">@max7534</span></li>
+                <li class="member-entry" data-member-id="1487274195778932807"><strong title="Deputy">Deputy</strong><span title="@unstablehistorian">@unstablehistorian</span></li>
+                <li class="member-entry" data-member-id="1485353116613214363"><strong title="paranoidasshole_">paranoidasshole_</strong><span title="@paranoidasshole_">@paranoidasshole_</span></li>
+                <li class="member-entry" data-member-id="1484816836062089269"><strong title="margaretwoodn381">margaretwoodn381</strong><span title="@margaretwoodn381">@margaretwoodn381</span></li>
+                <li class="member-entry" data-member-id="1479496537103925359"><strong title="5tickymanatee.">5tickymanatee.</strong><span title="@5tickymanatee.">@5tickymanatee.</span></li>
+                <li class="member-entry" data-member-id="1466109045604876351"><strong title="LAST Dep. Premier Lazarus Gazi">LAST Dep. Premier Lazarus Gazi</strong><span title="@oglazarus1">@oglazarus1</span></li>
+                <li class="member-entry" data-member-id="1459740644078653495"><strong title="too_verified">too_verified</strong><span title="@too_verified">@too_verified</span></li>
+                <li class="member-entry" data-member-id="1439277273533386782"><strong title="233robertx.q9z">233robertx.q9z</strong><span title="@233robertx.q9z">@233robertx.q9z</span></li>
+                <li class="member-entry" data-member-id="1436433525405388946"><strong title="ghostie7_chill">ghostie7_chill</strong><span title="@ghostie7_chill">@ghostie7_chill</span></li>
+                <li class="member-entry" data-member-id="1419458095418970222"><strong title="max_verstappen_no_1">max_verstappen_no_1</strong><span title="@max_verstappen_no_1">@max_verstappen_no_1</span></li>
+                <li class="member-entry" data-member-id="1382763112599650354"><strong title="Latyshskij Strelok">Latyshskij Strelok</strong><span title="@v1rus1508">@v1rus1508</span></li>
+                <li class="member-entry" data-member-id="1379035291435798609"><strong title="duckyboy0637_41461">duckyboy0637_41461</strong><span title="@duckyboy0637_41461">@duckyboy0637_41461</span></li>
+                <li class="member-entry" data-member-id="1320898028902678650"><strong title="20ramallah">20ramallah</strong><span title="@20ramallah">@20ramallah</span></li>
+                <li class="member-entry" data-member-id="1296864079394246747"><strong title="realnico_28">realnico_28</strong><span title="@realnico_28">@realnico_28</span></li>
+                <li class="member-entry" data-member-id="1295452078868529326"><strong title="kartoffelnlj">kartoffelnlj</strong><span title="@kartoffelnlj">@kartoffelnlj</span></li>
+              </ul>
+            </details>
+          </div>
         </article>
       </div>
     </section>
@@ -2741,6 +3624,19 @@
       document.querySelectorAll(".nav-tab").forEach(function (tab) {
         tab.addEventListener("click", function () {
           showPage(tab.dataset.page);
+        });
+      });
+
+      document.querySelectorAll(".roster-search").forEach(function (input) {
+        input.addEventListener("input", function () {
+          const target = byId(input.dataset.rosterTarget);
+          const query = input.value.trim().toLocaleLowerCase();
+          if (!target) {
+            return;
+          }
+          target.querySelectorAll(".member-entry").forEach(function (member) {
+            member.hidden = Boolean(query) && !member.textContent.toLocaleLowerCase().includes(query);
+          });
         });
       });
 
