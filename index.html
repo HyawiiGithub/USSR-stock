@@ -3708,7 +3708,7 @@ const CONFIG = Object.freeze({
   API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
   SITE_URL: window.location.origin + window.location.pathname,
   REQUEST_TIMEOUT_MS: 12000,
-  MARKET_REFRESH_MS: 1000,
+  MARKET_REFRESH_MS: 15000,
   SESSION_REFRESH_MS: 60000,
   CET_TIME_ZONE: "Europe/Brussels",
   CITIZEN_SHARE_LIMIT: 200000,
@@ -4318,7 +4318,7 @@ const CONFIG = Object.freeze({
         return;
       }
 
-const points = history && history.length ? history.slice(-200) :
+const points = history && history.length ? history.slice(-1000) :
   (STATE.market ? [{ timestamp: Date.now(), price: STATE.market.price }] : []);
 
 const labels = points.map(function (entry) {
