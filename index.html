@@ -3061,34 +3061,42 @@
        allow credentialed CORS only from your exact GitHub Pages origin.
        ====================================================================== */
 
-    const CONFIG = Object.freeze({
-      API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
-      SITE_URL: window.location.origin + window.location.pathname,
-      REQUEST_TIMEOUT_MS: 12000,
-      MARKET_REFRESH_MS: 15000,
-      SESSION_REFRESH_MS: 60000,
-      CET_TIME_ZONE: "Europe/Brussels",
-      OAUTH_RETURN_PARAMETER: "returnTo",
-      ENDPOINTS: Object.freeze({
-        DISCORD_LOGIN: "/auth/discord",
-        LOGOUT: "/auth/logout",
-        SESSION: "/api/session",
-        MARKET: "/api/public/market",
-        ECONOMY: "/api/public/economy",
-        ANNOUNCEMENTS: "/api/public/announcements",
-        ADMIN_SET_PRICE: "/api/admin/market/price",
-        ADMIN_SCHEDULE_MOVEMENT: "/api/admin/market/movement",
-        ADMIN_FREEZE_MOVEMENT: "/api/admin/market/freeze",
-        ADMIN_OPEN_SESSION: "/api/admin/market/open",
-        ADMIN_CLOSE_SESSION: "/api/admin/market/close",
-        ADMIN_ANNOUNCEMENTS: "/api/admin/announcements",
-        ADMIN_WARNING: "/api/admin/warning",
-        ADMIN_ECONOMY: "/api/admin/economy",
-        ADMIN_CLEAR_ANNOUNCEMENTS: "/api/admin/announcements/clear",
-        ADMIN_RESET_HISTORY: "/api/admin/market/history/reset",
-        ADMIN_FACTORY_RESET: "/api/admin/market/factory-reset"
-      })
-    });
+const CONFIG = Object.freeze({
+  API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
+  SITE_URL: window.location.origin + window.location.pathname,
+  REQUEST_TIMEOUT_MS: 12000,
+  MARKET_REFRESH_MS: 15000,
+  SESSION_REFRESH_MS: 60000,
+  CET_TIME_ZONE: "Europe/Brussels",
+  OAUTH_RETURN_PARAMETER: "returnTo",
+
+  ENDPOINTS: Object.freeze({
+    DISCORD_LOGIN: "/auth/discord",
+    LOGOUT: "/auth/logout",
+    SESSION: "/api/session",
+
+    MARKET: "/api/public/market",
+    ECONOMY: "/api/public/economy",
+    ANNOUNCEMENTS: "/api/public/announcements",
+    STATISTICS: "/api/public/statistics",
+
+    PORTFOLIO: "/api/portfolio",
+    BUY: "/api/trade/buy",
+    SELL: "/api/trade/sell",
+
+    ADMIN_SET_PRICE: "/api/admin/market/price",
+    ADMIN_SCHEDULE_MOVEMENT: "/api/admin/market/movement",
+    ADMIN_FREEZE_MOVEMENT: "/api/admin/market/freeze",
+    ADMIN_OPEN_SESSION: "/api/admin/market/open",
+    ADMIN_CLOSE_SESSION: "/api/admin/market/close",
+    ADMIN_ANNOUNCEMENTS: "/api/admin/announcements",
+    ADMIN_WARNING: "/api/admin/warning",
+    ADMIN_ECONOMY: "/api/admin/economy",
+    ADMIN_CLEAR_ANNOUNCEMENTS: "/api/admin/announcements/clear",
+    ADMIN_RESET_HISTORY: "/api/admin/market/history/reset",
+    ADMIN_FACTORY_RESET: "/api/admin/market/factory-reset"
+  })
+});
 
     /* ======================================================================
        APPLICATION STATE
