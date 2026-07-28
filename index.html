@@ -184,6 +184,56 @@
       letter-spacing: .04em;
     }
 
+    .intro-checks {
+      margin: 14px 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .intro-check {
+      padding: 9px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #cdbd95;
+      background: rgba(0, 0, 0, .2);
+      border: 1px solid rgba(239, 201, 76, .2);
+      font: 800 10px/1.25 Arial, sans-serif;
+      letter-spacing: .06em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .intro-check::before {
+      width: 9px;
+      height: 9px;
+      flex: 0 0 9px;
+      background: #766d5c;
+      border: 1px solid rgba(255, 255, 255, .35);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .intro-check.active::before {
+      background: var(--gold);
+      box-shadow: 0 0 0 4px rgba(239, 201, 76, .1);
+      animation: introCheckPulse 1s ease-in-out infinite;
+    }
+
+    .intro-check.complete {
+      color: #e8d9af;
+      border-color: rgba(91, 188, 121, .38);
+    }
+
+    .intro-check.complete::before {
+      background: #54b276;
+    }
+
+    @keyframes introCheckPulse {
+      50% { transform: scale(.72); }
+    }
+
     .intro-actions {
       margin-top: 15px;
       display: flex;
@@ -271,6 +321,10 @@
 
       .intro-button {
         width: 100%;
+      }
+
+      .intro-checks {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -537,6 +591,38 @@
     .nav-tabs {
       display: flex;
       flex-wrap: wrap;
+    }
+
+    .nav-groups {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      gap: 2px;
+    }
+
+    .nav-group {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      border-right: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .nav-group:last-child {
+      border-right: 0;
+    }
+
+    .nav-group-label {
+      padding: 8px 7px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      background: rgba(0, 0, 0, .16);
+      font: 900 8px/1.15 Arial, sans-serif;
+      letter-spacing: .12em;
+      text-align: center;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
     }
 
     .nav-tab {
@@ -1490,6 +1576,185 @@
       border-color: #9c372b;
     }
 
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .service-card {
+      padding: 22px;
+      background: var(--paper-light);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--red);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .service-card.gold-top {
+      border-top-color: var(--gold-dark);
+    }
+
+    .service-card h3 {
+      margin: 4px 0 10px;
+      color: var(--red-dark);
+      font-size: clamp(22px, 4vw, 34px);
+      line-height: 1;
+    }
+
+    .service-card p,
+    .service-note {
+      color: var(--muted);
+      font: 13px/1.6 Arial, sans-serif;
+    }
+
+    .access-gate {
+      padding: 28px;
+      color: #4d3e2d;
+      background: rgba(255, 255, 255, .3);
+      border: 1px dashed #8f7e62;
+      text-align: center;
+    }
+
+    .access-gate h3 {
+      margin: 0 0 8px;
+      color: var(--red-dark);
+    }
+
+    .access-gate p {
+      max-width: 620px;
+      margin: 0 auto 16px;
+      font: 13px/1.6 Arial, sans-serif;
+    }
+
+    .portfolio-summary {
+      margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .portfolio-stat {
+      min-height: 115px;
+      padding: 16px;
+      background: rgba(255, 255, 255, .38);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold-dark);
+    }
+
+    .portfolio-stat b {
+      display: block;
+      color: var(--red);
+      font: 900 9px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .portfolio-stat strong {
+      display: block;
+      margin-top: 10px;
+      font-size: clamp(20px, 3vw, 29px);
+    }
+
+    .trade-ticket {
+      padding: 20px;
+      background:
+        repeating-linear-gradient(0deg, transparent 0 27px, rgba(92, 58, 25, .055) 27px 28px),
+        #f8f0db;
+      border: 2px solid var(--border);
+      box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .25);
+    }
+
+    .trade-total {
+      margin: 14px 0;
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: #4c3a25;
+      background: rgba(239, 201, 76, .16);
+      border: 1px solid rgba(157, 116, 20, .4);
+      font: 800 13px Arial, sans-serif;
+    }
+
+    .trade-status {
+      min-height: 45px;
+      margin-top: 14px;
+      padding: 12px 14px;
+      color: #584b39;
+      background: #e8dec6;
+      border-left: 4px solid #827866;
+      font: 12px/1.5 Arial, sans-serif;
+    }
+
+    .trade-status.good {
+      color: #174a2c;
+      border-left-color: var(--green);
+    }
+
+    .trade-status.bad {
+      color: #6b0c0c;
+      border-left-color: var(--red);
+    }
+
+    .guide-link {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .premier-identity {
+      margin-bottom: 18px;
+      padding: 16px 18px;
+      color: #fff1cb;
+      background: linear-gradient(90deg, #520909, #8a1414);
+      border-left: 6px solid var(--gold);
+      font: 700 13px/1.55 Arial, sans-serif;
+    }
+
+    .premier-identity strong {
+      color: var(--gold);
+    }
+
+    .counter-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font: 10px Arial, sans-serif;
+    }
+
+    .changelog-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .changelog-entry {
+      padding: 18px;
+      background: rgba(255, 255, 255, .32);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--red);
+    }
+
+    .changelog-entry time {
+      color: var(--red);
+      font: 900 10px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .changelog-entry h3 {
+      margin: 6px 0 9px;
+    }
+
+    .changelog-entry ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #46392b;
+      font: 13px/1.6 Arial, sans-serif;
+    }
+
     .toast-stack {
       position: fixed;
       z-index: 1200;
@@ -1582,6 +1847,14 @@
       .leadership-grid {
         grid-template-columns: 1fr;
       }
+
+      .portfolio-summary {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .nav-groups {
+        width: 100%;
+      }
     }
 
     @media (max-width: 720px) {
@@ -1621,17 +1894,31 @@
         display: block;
       }
 
-      .nav-tabs {
+      .nav-groups,
+      .nav-group {
+        display: block;
+      }
+
+      .nav-group {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .12);
+      }
+
+      .nav-group-label {
+        padding: 7px 12px;
+        display: block;
+        text-align: left;
+        writing-mode: initial;
+        transform: none;
+      }
+
+      .nav-group .nav-tabs {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
 
       .nav-tab {
         padding-inline: 8px;
-      }
-
-      .nav-tab:last-child:nth-child(odd) {
-        grid-column: 1 / -1;
       }
 
       .api-status {
@@ -1724,6 +2011,11 @@
       .form-grid,
       .form-grid.two,
       .form-grid.five {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .portfolio-summary {
         grid-template-columns: 1fr;
       }
 
@@ -1981,7 +2273,13 @@
         <div class="intro-progress" aria-hidden="true"><span id="introProgress"></span></div>
       </div>
 
-      <p id="introStatus" class="intro-status">Press enter to begin the official presentation with sound.</p>
+      <div class="intro-checks" aria-label="Exchange startup checks">
+        <div id="introStageInterface" class="intro-check active">State interface</div>
+        <div id="introStageSecurity" class="intro-check">Discord security</div>
+        <div id="introStageData" class="intro-check">Market records</div>
+      </div>
+
+      <p id="introStatus" class="intro-status">Preparing the State Exchange interface…</p>
       <div class="intro-actions">
         <button id="startIntro" class="intro-button" type="button">Play Intro With Sound</button>
         <button id="skipIntro" class="intro-button secondary" type="button">Continue to Exchange</button>
@@ -2182,12 +2480,32 @@
 
   <nav class="section-nav" aria-label="Exchange sections">
     <div class="section-nav-inner">
-      <div class="nav-tabs">
-        <button class="nav-tab active" type="button" data-page="marketPage">Stock Market</button>
-        <button class="nav-tab" type="button" data-page="economyPage">National Economy</button>
-        <button class="nav-tab" type="button" data-page="financePage">Commissariat</button>
-        <button class="nav-tab" type="button" data-page="leadershipPage">State Leadership</button>
-        <button class="nav-tab" type="button" data-page="politicsPage">Political Situation</button>
+      <div class="nav-groups">
+        <div class="nav-group">
+          <span class="nav-group-label">Economy</span>
+          <div class="nav-tabs">
+            <button class="nav-tab active" type="button" data-page="marketPage">Stock Market</button>
+            <button class="nav-tab" type="button" data-page="portfolioPage">Buy &amp; Sell</button>
+            <button class="nav-tab" type="button" data-page="economyPage">National Economy</button>
+            <button class="nav-tab" type="button" data-page="financePage">Finance Bureau</button>
+            <button class="nav-tab" type="button" data-page="economicGuidePage">Economic Guide</button>
+          </div>
+        </div>
+        <div class="nav-group">
+          <span class="nav-group-label">Politics &amp; Government</span>
+          <div class="nav-tabs">
+            <button class="nav-tab" type="button" data-page="premierPage">Premier</button>
+            <button class="nav-tab" type="button" data-page="leadershipPage">State Leadership</button>
+            <button class="nav-tab" type="button" data-page="politicsPage">Political Parties</button>
+          </div>
+        </div>
+        <div class="nav-group">
+          <span class="nav-group-label">Citizen Services</span>
+          <div class="nav-tabs">
+            <button class="nav-tab" type="button" data-page="bugReportPage">Bug Report</button>
+            <button class="nav-tab" type="button" data-page="changelogPage">Changelog</button>
+          </div>
+        </div>
       </div>
       <div id="apiStatus" class="api-status">
         <span class="api-dot"></span>
@@ -2260,6 +2578,72 @@
             <div class="empty-state">No official announcements have been issued.</div>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <section id="portfolioPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Authenticated Citizen Trading Office</div>
+        <h2>State Trust “Red Star” Stock Desk</h2>
+        <p>
+          Authorised citizens may purchase shares from the State reserve or sell owned shares back to the
+          State at the live official price. Every order is checked against the citizen's real UnbelievaBoat
+          balance and inventory by the State API.
+        </p>
+      </article>
+
+      <div id="portfolioGate" class="access-gate">
+        <h3>Discord Authorisation Required</h3>
+        <p>Sign in to display your live ruble balance, stock inventory, and authorised trading controls.</p>
+        <button id="portfolioLoginButton" class="btn gold" type="button">Authorise with Discord</button>
+      </div>
+
+      <div id="portfolioContent" class="hidden">
+        <div class="portfolio-summary">
+          <article class="portfolio-stat"><b>Cash Balance</b><strong id="portfolioCash">₽0</strong></article>
+          <article class="portfolio-stat"><b>Bank Balance</b><strong id="portfolioBank">₽0</strong></article>
+          <article class="portfolio-stat"><b>Total Rubles</b><strong id="portfolioTotal">₽0</strong></article>
+          <article class="portfolio-stat"><b>Shares Owned</b><strong id="portfolioShares">0</strong></article>
+          <article class="portfolio-stat"><b>Current Share Value</b><strong id="portfolioMarketValue">₽0</strong></article>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="eyebrow">State Purchase &amp; Redemption Form</div>
+            <h3>Place a Market Order</h3>
+            <div class="trade-ticket">
+              <div class="field">
+                <label for="tradeQuantity">Number of shares</label>
+                <input id="tradeQuantity" type="number" min="1" max="200" step="1" value="1" inputmode="numeric">
+              </div>
+              <div class="trade-total">
+                <span>Estimated official value</span>
+                <strong id="tradeEstimate">₽0.00</strong>
+              </div>
+              <div class="button-row">
+                <button id="buySharesButton" class="btn gold" type="button">Buy Shares</button>
+                <button id="sellSharesButton" class="btn dark" type="button">Sell Shares</button>
+                <button id="refreshPortfolioButton" class="btn" type="button">Refresh Record</button>
+              </div>
+              <div id="tradeStatus" class="trade-status" aria-live="polite">Awaiting a citizen order.</div>
+            </div>
+          </article>
+
+          <article class="service-card gold-top">
+            <div class="eyebrow">Trading Rules</div>
+            <h3>Before You Submit</h3>
+            <p>
+              Purchases use your UnbelievaBoat cash balance. The API rejects orders without sufficient cash,
+              attempts to sell more stock than you own, orders during a closure, unavailable State inventory,
+              and holdings above the 200-share citizen limit.
+            </p>
+            <p class="service-note">
+              The quoted total is an estimate. The API always settles the order using the official price at
+              the moment the transaction is accepted. Trading stays disabled until the Worker has a valid
+              <code>STOCK_ITEM_ID</code>.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -2367,6 +2751,40 @@
       </div>
     </section>
 
+    <section id="economicGuidePage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Official Public Economic Document</div>
+        <h2>Reformed Economic System Guide</h2>
+        <p>
+          The official guide explains the State treasury cycle, public fees, sectoral budgets, attachment
+          maintenance, government contracts, and the minimum-wage work system used throughout the Union.
+        </p>
+      </article>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="eyebrow">Published State Guide</div>
+          <h3>USSR Reformed Economic System Guide</h3>
+          <p>
+            Read the full economic reference maintained by Hyawii. The document opens in Google Docs in a new
+            tab so the latest approved version remains available without duplicating an outdated copy here.
+          </p>
+          <a class="btn gold guide-link" href="https://docs.google.com/document/d/1ArFwUm_-Ucp5pJLZaVjxtqaYbGdihHRUXqTHwvYsYRM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Open Official Economic Guide</a>
+        </article>
+
+        <article class="service-card gold-top">
+          <div class="eyebrow">Quick Reference</div>
+          <h3>The National Money Cycle</h3>
+          <p>
+            Rubles spent on State fees and approved store items return to the treasury. Weekly national budgets
+            then fund sectors according to activity, productivity, approved contracts, and decisions of the
+            Congress. Sector spending and attachment maintenance return money to the treasury again.
+          </p>
+          <p class="service-note"><strong>Minimum wage:</strong> <code>!work</code> pays ₽10 with a three-minute cooldown, or up to ₽200 per hour when used at every available interval.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="financePage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Official Directory of Economic Administration</div>
@@ -2401,6 +2819,51 @@
             <li>sovereign_of_bavarians</li>
             <li>kewl07</li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="premierPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Office of the Premier</div>
+        <h2>Premier Announcements</h2>
+        <p>
+          Government statements issued through the Premier's authenticated Discord account are published here
+          as a separate political and administrative record.
+        </p>
+      </article>
+
+      <div class="premier-identity">
+        <strong>Office holder:</strong> Premier of the Soviet Union ·
+        <strong>Political affiliation:</strong> MorSoc Party of the Soviet Union (MSPSU)
+      </div>
+
+      <div class="service-grid">
+        <article id="premierComposer" class="service-card hidden">
+          <div class="eyebrow">Premier-Only Dispatch Console</div>
+          <h3>Issue Government Statement</h3>
+          <div class="field">
+            <label for="premierAnnouncementTitle">Headline</label>
+            <input id="premierAnnouncementTitle" type="text" maxlength="120" placeholder="Official government headline">
+          </div>
+          <div class="field" style="margin-top:12px">
+            <label for="premierAnnouncementBody">Statement</label>
+            <textarea id="premierAnnouncementBody" rows="7" maxlength="1800" placeholder="Write the Premier's statement"></textarea>
+            <div class="counter-row"><span>Published under the authenticated Premier account</span><span id="premierBodyCounter">0 / 1800</span></div>
+          </div>
+          <div class="button-row">
+            <button id="publishPremierAnnouncement" class="btn gold" type="button">Publish Premier Announcement</button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <header class="panel-header">
+            <h2>Government Wire</h2>
+            <span class="panel-tag">Office of the Premier</span>
+          </header>
+          <div id="premierAnnouncementList" class="announcement-list">
+            <div class="empty-state">No Premier announcements have been issued.</div>
+          </div>
         </article>
       </div>
     </section>
@@ -2820,7 +3283,9 @@
 
         <article class="party-card">
           <header class="party-header">
-            <div class="party-emblem" aria-label="Culture and Progress Party emblem">CPP</div>
+            <div class="party-emblem">
+              <img src="cpp.png" alt="Culture and Progress Party emblem">
+            </div>
             <div>
               <div class="party-abbreviation">CPP · Registered Political Party</div>
               <h3>Culture and Progress Party</h3>
@@ -2904,6 +3369,184 @@
               </ul>
             </details>
           </div>
+        </article>
+
+        <article class="party-card">
+          <header class="party-header">
+            <div class="party-emblem">
+              <img src="psp.png" alt="People's Socialist Party emblem">
+            </div>
+            <div>
+              <div class="party-abbreviation">PSP · Registered Political Party</div>
+              <h3>People's Socialist Party</h3>
+              <div class="party-leader">Official membership register · 19 citizens</div>
+            </div>
+          </header>
+          <div class="party-body">
+            <div class="party-facts">
+              <div class="party-fact"><b>Party Ideology</b><span>Democratic Socialism</span></div>
+              <div class="party-fact"><b>Party Platforms</b><span>Social Equality, Workers' Rights, Democratic Government</span></div>
+            </div>
+            <p class="party-description">
+              The People's Socialist Party represents a democratic socialist programme centred on public
+              participation, fair treatment of labour, social equality, and accountable government.
+            </p>
+            <details class="member-roster">
+              <summary><span>Official PSP Membership Register</span><strong id="pspCount">19 members</strong></summary>
+              <div class="roster-tools"><input class="roster-search" type="search" data-roster-target="pspMemberGrid" placeholder="Search PSP members" aria-label="Search PSP members"></div>
+              <ul id="pspMemberGrid" class="member-grid">
+                <li class="member-entry"><strong>danieltheprofessor</strong><span>@danieltheprofessor</span></li>
+                <li class="member-entry"><strong>funwalker</strong><span>@funwalker</span></li>
+                <li class="member-entry"><strong>e4nna</strong><span>@e4nna</span></li>
+                <li class="member-entry"><strong>teutonischekatze</strong><span>@teutonischekatze</span></li>
+                <li class="member-entry"><strong>masfan03</strong><span>@masfan03</span></li>
+                <li class="member-entry"><strong>itssamc</strong><span>@itssamc</span></li>
+                <li class="member-entry"><strong>axolotlrevenge</strong><span>@axolotlrevenge</span></li>
+                <li class="member-entry"><strong>sogeking..</strong><span>@sogeking..</span></li>
+                <li class="member-entry"><strong>tovarish_ivan_228</strong><span>@tovarish_ivan_228</span></li>
+                <li class="member-entry"><strong>the_real_daboi</strong><span>@the_real_daboi</span></li>
+                <li class="member-entry"><strong>hallismollen1234</strong><span>@hallismollen1234</span></li>
+                <li class="member-entry"><strong>justacooleguyhehenewacc</strong><span>@justacooleguyhehenewacc</span></li>
+                <li class="member-entry"><strong>sun097934</strong><span>@sun097934</span></li>
+                <li class="member-entry"><strong>hussenburg</strong><span>@hussenburg</span></li>
+                <li class="member-entry"><strong>tophatnicotine</strong><span>@tophatnicotine</span></li>
+                <li class="member-entry"><strong>fuweah</strong><span>@fuweah</span></li>
+                <li class="member-entry"><strong>theemperor145</strong><span>@theemperor145</span></li>
+                <li class="member-entry"><strong>dami1532</strong><span>@dami1532</span></li>
+                <li class="member-entry"><strong>halo_da_best</strong><span>@halo_da_best</span></li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <article class="party-card">
+          <header class="party-header">
+            <div class="party-emblem">
+              <img src="usf.png" alt="United Socialist Front emblem">
+            </div>
+            <div>
+              <div class="party-abbreviation">USF · Registered Political Party</div>
+              <h3>United Socialist Front</h3>
+              <div class="party-leader">Official membership register · 13 citizens</div>
+            </div>
+          </header>
+          <div class="party-body">
+            <div class="party-facts">
+              <div class="party-fact"><b>Party Ideology</b><span>Marxism–Leninism</span></div>
+              <div class="party-fact"><b>Party Platforms</b><span>Worker Unity, Planned Development, Socialist State</span></div>
+            </div>
+            <p class="party-description">
+              The United Socialist Front organises citizens around worker unity, planned national development,
+              collective responsibility, and the defence of socialist State institutions.
+            </p>
+            <details class="member-roster">
+              <summary><span>Official USF Membership Register</span><strong id="usfCount">13 members</strong></summary>
+              <div class="roster-tools"><input class="roster-search" type="search" data-roster-target="usfMemberGrid" placeholder="Search USF members" aria-label="Search USF members"></div>
+              <ul id="usfMemberGrid" class="member-grid">
+                <li class="member-entry"><strong>samwavee</strong><span>@samwavee</span></li>
+                <li class="member-entry"><strong>ludovicpowell</strong><span>@ludovicpowell</span></li>
+                <li class="member-entry"><strong>coffeenjoyer1</strong><span>@coffeenjoyer1</span></li>
+                <li class="member-entry"><strong>evanz1coolguy</strong><span>@evanz1coolguy</span></li>
+                <li class="member-entry"><strong>thefirstgentleman</strong><span>@thefirstgentleman</span></li>
+                <li class="member-entry"><strong>cblackwoodstone</strong><span>@cblackwoodstone</span></li>
+                <li class="member-entry"><strong>aspettaespena</strong><span>@aspettaespena</span></li>
+                <li class="member-entry"><strong>.universal._</strong><span>@.universal._</span></li>
+                <li class="member-entry"><strong>jaiyyx</strong><span>@jaiyyx</span></li>
+                <li class="member-entry"><strong>basharalassad1963</strong><span>@basharalassad1963</span></li>
+                <li class="member-entry"><strong>wethecollective</strong><span>@wethecollective</span></li>
+                <li class="member-entry"><strong>lunaria_xwx</strong><span>@lunaria_xwx</span></li>
+                <li class="member-entry"><strong>notanywherre</strong><span>@notanywherre</span></li>
+              </ul>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="bugReportPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Authenticated Citizen Technical Office</div>
+        <h2>Website Bug Reports</h2>
+        <p>
+          Report broken controls, incorrect public records, visual defects, or API problems. Reports are
+          delivered to the technical channel with the authenticated Discord username, avatar, and user ID.
+        </p>
+      </article>
+
+      <div id="bugReportGate" class="access-gate">
+        <h3>Discord Authorisation Required</h3>
+        <p>Anonymous reports are not accepted. Sign in so the technical office can identify and follow up with the reporter.</p>
+        <button id="bugReportLoginButton" class="btn gold" type="button">Authorise with Discord</button>
+      </div>
+
+      <div id="bugReportContent" class="service-grid hidden">
+        <article class="service-card">
+          <div class="eyebrow">New Technical Report</div>
+          <h3>Describe the Problem</h3>
+          <div class="field">
+            <label for="bugReportSubject">Short subject</label>
+            <input id="bugReportSubject" type="text" maxlength="120" placeholder="Example: Buy button does not respond">
+          </div>
+          <div class="field" style="margin-top:12px">
+            <label for="bugReportArea">Website area</label>
+            <select id="bugReportArea">
+              <option>Stock Market</option>
+              <option>Buy &amp; Sell</option>
+              <option>National Economy</option>
+              <option>Politics &amp; Government</option>
+              <option>Discord Login</option>
+              <option>Mobile Layout</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field" style="margin-top:12px">
+            <label for="bugReportDetails">What happened?</label>
+            <textarea id="bugReportDetails" rows="8" maxlength="1800" placeholder="Include what you clicked, what you expected, and what appeared instead."></textarea>
+            <div class="counter-row"><span>Do not include passwords, tokens, or private keys.</span><span id="bugReportCounter">0 / 1800</span></div>
+          </div>
+          <div class="button-row"><button id="submitBugReport" class="btn gold" type="button">Send Secure Report</button></div>
+          <div id="bugReportStatus" class="trade-status" aria-live="polite">No report submitted.</div>
+        </article>
+
+        <article class="service-card gold-top">
+          <div class="eyebrow">Reporter Identity</div>
+          <h3 id="bugReporterName">Authorised Citizen</h3>
+          <p id="bugReporterDetails">Your Discord identity will appear here after authorisation.</p>
+          <p class="service-note">
+            The browser does not send a webhook credential and cannot choose a fake reporter identity. The
+            Cloudflare Worker reads the identity from the signed-in session and forwards the report privately.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="changelogPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Public Development Record</div>
+        <h2>Website Changelog</h2>
+        <p>Major public interface, security, market, and government-information updates are recorded here.</p>
+      </article>
+
+      <div class="changelog-list">
+        <article class="changelog-entry">
+          <time datetime="2026-07-28">28 July 2026 · Citizen Trading Update</time>
+          <h3>Authenticated market and government services</h3>
+          <ul>
+            <li>Added live citizen portfolios and secured State stock purchase and sale controls.</li>
+            <li>Added the Premier's authenticated government announcement office.</li>
+            <li>Added secure signed-in bug reports with server-verified Discord identity.</li>
+            <li>Grouped public records into Economy, Politics &amp; Government, and Citizen Services.</li>
+            <li>Added the PSP and USF political registers, official guide access, and expanded startup checks.</li>
+          </ul>
+        </article>
+        <article class="changelog-entry">
+          <time datetime="2026-07-27">27 July 2026 · API Security Update</time>
+          <h3>Custom State API and Discord authorisation</h3>
+          <ul>
+            <li>Moved privileged operations out of the static GitHub Pages frontend.</li>
+            <li>Added Discord OAuth sessions, CSRF protection, live market history, and UnbelievaBoat data access.</li>
+            <li>Removed browser-exposed administrator passwords and Firebase authentication dependencies.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -3068,6 +3711,7 @@ const CONFIG = Object.freeze({
   MARKET_REFRESH_MS: 15000,
   SESSION_REFRESH_MS: 60000,
   CET_TIME_ZONE: "Europe/Brussels",
+  CITIZEN_SHARE_LIMIT: 200,
   OAUTH_RETURN_PARAMETER: "returnTo",
 
   ENDPOINTS: Object.freeze({
@@ -3078,11 +3722,14 @@ const CONFIG = Object.freeze({
     MARKET: "/api/public/market",
     ECONOMY: "/api/public/economy",
     ANNOUNCEMENTS: "/api/public/announcements",
+    PREMIER_ANNOUNCEMENTS: "/api/public/premier-announcements",
     STATISTICS: "/api/public/statistics",
 
     PORTFOLIO: "/api/portfolio",
     BUY: "/api/trade/buy",
     SELL: "/api/trade/sell",
+    PREMIER_CREATE_ANNOUNCEMENT: "/api/premier/announcements",
+    BUG_REPORTS: "/api/bug-reports",
 
     ADMIN_SET_PRICE: "/api/admin/market/price",
     ADMIN_SCHEDULE_MOVEMENT: "/api/admin/market/movement",
@@ -3108,6 +3755,8 @@ const CONFIG = Object.freeze({
       market: null,
       economy: null,
       announcements: [],
+      premierAnnouncements: [],
+      portfolio: null,
       chart: null,
       serverClockOffsetMs: 0,
       marketTimerId: null,
@@ -3399,6 +4048,7 @@ const CONFIG = Object.freeze({
         admin.addEventListener("click", openAdmin);
 
         accountBox.append(login, admin);
+        renderIdentityDependentViews();
         return;
       }
 
@@ -3433,6 +4083,7 @@ const CONFIG = Object.freeze({
       logout.textContent = "Sign Out";
       logout.addEventListener("click", logoutSession);
       accountBox.appendChild(logout);
+      renderIdentityDependentViews();
     };
 
     const loadSession = async function (silent) {
@@ -3448,10 +4099,12 @@ const CONFIG = Object.freeze({
         STATE.csrfToken = payload && payload.csrfToken ? payload.csrfToken : null;
         STATE.user = normalizeSession(payload);
         renderSession();
+        await loadPortfolio(true);
       } catch (error) {
         if (error.status === 401 || error.status === 403) {
           STATE.user = null;
           STATE.csrfToken = null;
+          STATE.portfolio = null;
           renderSession();
           return;
         }
@@ -3468,6 +4121,7 @@ const CONFIG = Object.freeze({
         await API.post(CONFIG.ENDPOINTS.LOGOUT, {});
         STATE.user = null;
         STATE.csrfToken = null;
+        STATE.portfolio = null;
         try {
           window.sessionStorage.removeItem("ussrExchangeSession");
         } catch (storageError) {
@@ -3641,6 +4295,7 @@ const CONFIG = Object.freeze({
 
       populateAdminFromState();
       renderChart(market.history);
+      renderPortfolio();
       updateCountdown();
     };
 
@@ -3863,6 +4518,300 @@ const CONFIG = Object.freeze({
       const payload = await API.get(CONFIG.ENDPOINTS.ANNOUNCEMENTS);
       STATE.announcements = normalizeAnnouncements(payload);
       renderAnnouncements();
+    };
+
+    /* ======================================================================
+       CITIZEN PORTFOLIO AND STOCK TRADING
+       ====================================================================== */
+
+    const normalizePortfolio = function (payload) {
+      const source = payload && (payload.portfolio || payload.data) ?
+        (payload.portfolio || payload.data) : (payload || {});
+      return {
+        cash: firstNumber(source.cash, source.wallet),
+        bank: firstNumber(source.bank),
+        total: firstNumber(source.total, firstNumber(source.cash) + firstNumber(source.bank)),
+        shares: firstNumber(source.shares, source.stock, source.quantity),
+        marketValue: firstNumber(source.marketValue, source.value),
+        tradingEnabled: source.tradingEnabled !== false
+      };
+    };
+
+    const setTradeStatus = function (message, mode) {
+      const status = byId("tradeStatus");
+      if (!status) {
+        return;
+      }
+      status.className = "trade-status" + (mode ? " " + mode : "");
+      status.textContent = message;
+    };
+
+    const updateTradeEstimate = function () {
+      const input = byId("tradeQuantity");
+      const estimate = byId("tradeEstimate");
+      if (!input || !estimate) {
+        return;
+      }
+      const quantity = Math.max(0, Math.floor(asNumber(input.value)));
+      const price = STATE.market ? asNumber(STATE.market.price) : 0;
+      estimate.textContent = formatMoney(price * quantity, 2);
+    };
+
+    const renderPortfolio = function () {
+      const gate = byId("portfolioGate");
+      const content = byId("portfolioContent");
+      if (!gate || !content) {
+        return;
+      }
+      const signedIn = Boolean(STATE.user);
+      gate.classList.toggle("hidden", signedIn);
+      content.classList.toggle("hidden", !signedIn);
+      if (!signedIn) {
+        return;
+      }
+
+      const portfolio = STATE.portfolio || {
+        cash: 0, bank: 0, total: 0, shares: 0, marketValue: 0, tradingEnabled: false
+      };
+      const price = STATE.market ? STATE.market.price : 0;
+      const marketValue = portfolio.marketValue || portfolio.shares * price;
+      byId("portfolioCash").textContent = formatMoney(portfolio.cash);
+      byId("portfolioBank").textContent = formatMoney(portfolio.bank);
+      byId("portfolioTotal").textContent = formatMoney(portfolio.total);
+      byId("portfolioShares").textContent = formatNumber(portfolio.shares);
+      byId("portfolioMarketValue").textContent = formatMoney(marketValue, 2);
+
+      const isOpen = Boolean(STATE.market && STATE.market.status === "open");
+      const canTrade = Boolean(STATE.portfolio && portfolio.tradingEnabled && isOpen);
+      byId("buySharesButton").disabled = !canTrade;
+      byId("sellSharesButton").disabled = !canTrade;
+      updateTradeEstimate();
+
+      if (!STATE.portfolio) {
+        setTradeStatus("Loading your live UnbelievaBoat balance and stock inventory…", "");
+      } else if (!portfolio.tradingEnabled) {
+        setTradeStatus("Trading is prepared but remains disabled until STOCK_ITEM_ID is configured in the Worker.", "bad");
+      } else if (!isOpen) {
+        setTradeStatus("The market is currently closed. Orders will be available when the next session opens.", "bad");
+      } else {
+        setTradeStatus("Market open. Orders are checked and settled by the State API.", "good");
+      }
+    };
+
+    const loadPortfolio = async function (silent) {
+      if (!STATE.user) {
+        STATE.portfolio = null;
+        renderPortfolio();
+        return;
+      }
+      try {
+        const payload = await API.get(CONFIG.ENDPOINTS.PORTFOLIO);
+        STATE.portfolio = normalizePortfolio(payload);
+        renderPortfolio();
+      } catch (error) {
+        STATE.portfolio = null;
+        renderPortfolio();
+        setTradeStatus(error.message, "bad");
+        if (!silent) {
+          showToast(error.message, "error");
+        }
+      }
+    };
+
+    const executeTrade = async function (side) {
+      if (!STATE.user) {
+        startDiscordLogin();
+        return;
+      }
+      const input = byId("tradeQuantity");
+      const quantity = Math.floor(asNumber(input.value));
+      if (!Number.isInteger(quantity) || quantity < 1) {
+        setTradeStatus("Enter a whole number of at least one share.", "bad");
+        return;
+      }
+      if (!STATE.market || STATE.market.status !== "open") {
+        setTradeStatus("The market is closed and cannot accept orders.", "bad");
+        return;
+      }
+      if (!STATE.portfolio || !STATE.portfolio.tradingEnabled) {
+        setTradeStatus("Stock inventory trading is not enabled on the State API yet.", "bad");
+        return;
+      }
+      if (side === "buy" && STATE.portfolio.shares + quantity > CONFIG.CITIZEN_SHARE_LIMIT) {
+        setTradeStatus("This purchase would exceed the 200-share citizen ownership limit.", "bad");
+        return;
+      }
+      if (side === "sell" && quantity > STATE.portfolio.shares) {
+        setTradeStatus("You cannot sell more shares than you own.", "bad");
+        return;
+      }
+
+      const total = quantity * asNumber(STATE.market.price);
+      const verb = side === "buy" ? "purchase" : "sell";
+      if (!window.confirm("Confirm " + verb + " of " + quantity + " share(s) at approximately " + formatMoney(total, 2) + "?")) {
+        return;
+      }
+
+      const button = byId(side === "buy" ? "buySharesButton" : "sellSharesButton");
+      setBusy(button, true, side === "buy" ? "Purchasing…" : "Selling…");
+      try {
+        const endpoint = side === "buy" ? CONFIG.ENDPOINTS.BUY : CONFIG.ENDPOINTS.SELL;
+        const result = await API.post(endpoint, { quantity: quantity });
+        const settledTotal = result && Number.isFinite(Number(result.total)) ? Number(result.total) : total;
+        setTradeStatus(
+          (side === "buy" ? "Purchase" : "Sale") + " completed: " + quantity +
+          " share(s), total " + formatMoney(settledTotal) + ".",
+          "good"
+        );
+        showToast("State stock " + (side === "buy" ? "purchase" : "sale") + " completed.");
+        await Promise.allSettled([loadPortfolio(true), loadMarket(), loadEconomy()]);
+      } catch (error) {
+        if (error.status === 401 || error.status === 403) {
+          await loadSession(true);
+        }
+        setTradeStatus(error.message, "bad");
+        showToast(error.message, "error");
+      } finally {
+        setBusy(button, false);
+        renderPortfolio();
+      }
+    };
+
+    /* ======================================================================
+       PREMIER ANNOUNCEMENTS
+       ====================================================================== */
+
+    const renderPremierAnnouncements = function () {
+      const list = byId("premierAnnouncementList");
+      if (!list) {
+        return;
+      }
+      list.replaceChildren();
+      if (!STATE.premierAnnouncements.length) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.textContent = "No Premier announcements have been issued.";
+        list.appendChild(empty);
+        return;
+      }
+      STATE.premierAnnouncements.forEach(function (announcement) {
+        const card = document.createElement("article");
+        card.className = "announcement-card";
+        const title = document.createElement("h3");
+        title.textContent = announcement.title;
+        const body = document.createElement("p");
+        body.textContent = announcement.body;
+        const meta = document.createElement("div");
+        meta.className = "announcement-meta";
+        meta.textContent = "Office of the Premier · " + announcement.author +
+          (announcement.createdAt ? " · " + formatDateTime(announcement.createdAt) : "");
+        card.append(title, body, meta);
+        list.appendChild(card);
+      });
+    };
+
+    const loadPremierAnnouncements = async function () {
+      const payload = await API.get(CONFIG.ENDPOINTS.PREMIER_ANNOUNCEMENTS);
+      STATE.premierAnnouncements = normalizeAnnouncements(payload);
+      renderPremierAnnouncements();
+    };
+
+    const renderPremierOffice = function () {
+      const composer = byId("premierComposer");
+      if (composer) {
+        composer.classList.toggle("hidden", !(STATE.user && STATE.user.isPremier));
+      }
+    };
+
+    const publishPremierAnnouncement = async function () {
+      const button = byId("publishPremierAnnouncement");
+      if (!STATE.user || !STATE.user.isPremier) {
+        showToast("Only the authorised Premier may issue this announcement.", "error");
+        return;
+      }
+      const title = byId("premierAnnouncementTitle").value.trim();
+      const body = byId("premierAnnouncementBody").value.trim();
+      if (!title || !body) {
+        showToast("Enter both a headline and statement.", "error");
+        return;
+      }
+      setBusy(button, true, "Publishing…");
+      try {
+        await API.post(CONFIG.ENDPOINTS.PREMIER_CREATE_ANNOUNCEMENT, { title: title, body: body });
+        byId("premierAnnouncementTitle").value = "";
+        byId("premierAnnouncementBody").value = "";
+        byId("premierBodyCounter").textContent = "0 / 1800";
+        await loadPremierAnnouncements();
+        showToast("Premier announcement published.");
+      } catch (error) {
+        showToast(error.message, "error");
+      } finally {
+        setBusy(button, false);
+      }
+    };
+
+    /* ======================================================================
+       AUTHENTICATED BUG REPORTS
+       ====================================================================== */
+
+    const setBugReportStatus = function (message, mode) {
+      const status = byId("bugReportStatus");
+      if (!status) {
+        return;
+      }
+      status.className = "trade-status" + (mode ? " " + mode : "");
+      status.textContent = message;
+    };
+
+    const renderBugReportAccess = function () {
+      const gate = byId("bugReportGate");
+      const content = byId("bugReportContent");
+      if (!gate || !content) {
+        return;
+      }
+      const signedIn = Boolean(STATE.user);
+      gate.classList.toggle("hidden", signedIn);
+      content.classList.toggle("hidden", !signedIn);
+      if (signedIn) {
+        byId("bugReporterName").textContent = STATE.user.displayName || STATE.user.username || "Authorised Citizen";
+        byId("bugReporterDetails").textContent = "Discord ID " + STATE.user.id +
+          " · @" + (STATE.user.username || "unknown") + " · attached by the Worker";
+      }
+    };
+
+    const submitBugReport = async function () {
+      if (!STATE.user) {
+        startDiscordLogin();
+        return;
+      }
+      const subject = byId("bugReportSubject").value.trim();
+      const details = byId("bugReportDetails").value.trim();
+      const page = byId("bugReportArea").value;
+      if (!subject || !details) {
+        setBugReportStatus("Enter a subject and a description of the problem.", "bad");
+        return;
+      }
+      const button = byId("submitBugReport");
+      setBusy(button, true, "Sending…");
+      try {
+        await API.post(CONFIG.ENDPOINTS.BUG_REPORTS, { subject: subject, details: details, page: page });
+        byId("bugReportSubject").value = "";
+        byId("bugReportDetails").value = "";
+        byId("bugReportCounter").textContent = "0 / 1800";
+        setBugReportStatus("Report delivered securely to the State technical office.", "good");
+        showToast("Bug report delivered.");
+      } catch (error) {
+        setBugReportStatus(error.message, "bad");
+        showToast(error.message, "error");
+      } finally {
+        setBusy(button, false);
+      }
+    };
+
+    const renderIdentityDependentViews = function () {
+      renderPortfolio();
+      renderPremierOffice();
+      renderBugReportAccess();
     };
 
     /* ======================================================================
@@ -4225,13 +5174,24 @@ const CONFIG = Object.freeze({
        NAVIGATION, CLOCK, REFRESH, AND BOOTSTRAP
        ====================================================================== */
 
-    const showPage = function (pageId) {
+    const showPage = function (pageId, updateLocation) {
+      const requested = byId(pageId);
+      const destination = requested && requested.classList.contains("site-page") ? pageId : "marketPage";
       document.querySelectorAll(".site-page").forEach(function (page) {
-        page.classList.toggle("hidden", page.id !== pageId);
+        page.classList.toggle("hidden", page.id !== destination);
       });
       document.querySelectorAll(".nav-tab").forEach(function (tab) {
-        tab.classList.toggle("active", tab.dataset.page === pageId);
+        tab.classList.toggle("active", tab.dataset.page === destination);
       });
+      if (updateLocation !== false) {
+        const url = new URL(window.location.href);
+        url.hash = destination;
+        window.history.replaceState({}, document.title, url.toString());
+      }
+      if (destination === "portfolioPage" && STATE.user) {
+        loadPortfolio(true);
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     const updateClock = function () {
@@ -4262,7 +5222,8 @@ const CONFIG = Object.freeze({
         const results = await Promise.allSettled([
           loadMarket(),
           loadEconomy(),
-          loadAnnouncements()
+          loadAnnouncements(),
+          loadPremierAnnouncements()
         ]);
         const failures = results.filter(function (result) {
           return result.status === "rejected";
@@ -4292,7 +5253,7 @@ const CONFIG = Object.freeze({
     const bindGlobalEvents = function () {
       document.querySelectorAll(".nav-tab").forEach(function (tab) {
         tab.addEventListener("click", function () {
-          showPage(tab.dataset.page);
+          showPage(tab.dataset.page, true);
         });
       });
 
@@ -4313,6 +5274,27 @@ const CONFIG = Object.freeze({
       if (loginButton) {
         loginButton.addEventListener("click", startDiscordLogin);
       }
+
+      byId("portfolioLoginButton").addEventListener("click", startDiscordLogin);
+      byId("bugReportLoginButton").addEventListener("click", startDiscordLogin);
+      byId("tradeQuantity").addEventListener("input", updateTradeEstimate);
+      byId("buySharesButton").addEventListener("click", function () {
+        executeTrade("buy");
+      });
+      byId("sellSharesButton").addEventListener("click", function () {
+        executeTrade("sell");
+      });
+      byId("refreshPortfolioButton").addEventListener("click", function () {
+        loadPortfolio(false);
+      });
+      byId("publishPremierAnnouncement").addEventListener("click", publishPremierAnnouncement);
+      byId("premierAnnouncementBody").addEventListener("input", function () {
+        byId("premierBodyCounter").textContent = this.value.length + " / 1800";
+      });
+      byId("submitBugReport").addEventListener("click", submitBugReport);
+      byId("bugReportDetails").addEventListener("input", function () {
+        byId("bugReportCounter").textContent = this.value.length + " / 1800";
+      });
 
       byId("adminButton").addEventListener("click", openAdmin);
       byId("closeAdmin").addEventListener("click", closeAdmin);
@@ -4349,6 +5331,19 @@ const CONFIG = Object.freeze({
        Browsers will not autoplay audible media until the visitor interacts
        with the page. The opening button supplies that required gesture.
        ====================================================================== */
+
+    const setIntroStage = function (id, state, message) {
+      const stage = byId(id);
+      if (stage) {
+        stage.classList.remove("active", "complete");
+        if (state) {
+          stage.classList.add(state);
+        }
+      }
+      if (message && byId("introStatus")) {
+        byId("introStatus").textContent = message;
+      }
+    };
 
     const showMemorialAnnouncement = function () {
       const backdrop = byId("memorialBackdrop");
@@ -4421,6 +5416,9 @@ const CONFIG = Object.freeze({
         showMemorialAnnouncement();
         return;
       }
+
+      setIntroStage("introStageInterface", "complete");
+      setIntroStage("introStageSecurity", "active", "Checking Discord session security…");
 
       const formatVideoTime = function (seconds) {
         const safeSeconds = Math.max(0, Math.floor(Number(seconds) || 0));
@@ -4519,20 +5517,29 @@ const CONFIG = Object.freeze({
       bindAdminActions();
       renderSession();
       renderAnnouncements();
+      renderPremierAnnouncements();
       updateClock();
+
+      const requestedPage = window.location.hash.replace(/^#/, "") || "marketPage";
+      showPage(requestedPage, false);
 
       window.setInterval(updateClock, 1000);
 
       if (!isApiConfigured()) {
         setApiStatus("error", "API configuration required");
         setAdminStatus("Edit CONFIG.API_BASE_URL and endpoint paths at the top of the script.", "bad");
+        setIntroStage("introStageSecurity", "complete");
+        setIntroStage("introStageData", "active", "State API configuration is required.");
         return;
       }
 
+      setIntroStage("introStageSecurity", "active", "Validating Discord session and State API…");
       await Promise.allSettled([
         loadSession(false),
         refreshPublicData(true)
       ]);
+      setIntroStage("introStageSecurity", "complete");
+      setIntroStage("introStageData", "complete", "Exchange records ready · choose the presentation or continue.");
 
       STATE.refreshTimerId = window.setInterval(function () {
         refreshPublicData(false);
