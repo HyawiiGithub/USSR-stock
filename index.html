@@ -4293,7 +4293,7 @@ const CONFIG = Object.freeze({
         byId("movementCompletion").textContent = "Not scheduled";
       }
 
-      populateAdminFromState();
+      populateAdminFromState(true);
       renderChart(market.history);
       renderPortfolio();
       updateCountdown();
@@ -4986,10 +4986,19 @@ labels: labels,
       document.body.classList.remove("modal-open");
     }
 
-    const populateAdminFromState = function () {
-      if (STATE.market) {
-        byId("adminExactPrice").value = STATE.market.price.toFixed(2);
-      }
+const populateAdminFromState = function (force) {
+  const backdrop = byId("adminBackdrop");
+  const adminIsOpen =
+    backdrop && !backdrop.classList.contains("hidden");
+
+  if (adminIsOpen && force !== true) {
+    return;
+  }
+
+  if (STATE.market) {
+    byId("adminExactPrice").value =
+      STATE.market.price.toFixed(2);
+  }
 
       if (STATE.economy) {
         byId("adminTotalRubles").value = String(Math.round(STATE.economy.totalRubles));
