@@ -2614,7 +2614,7 @@
             <div class="trade-ticket">
               <div class="field">
                 <label for="tradeQuantity">Number of shares</label>
-                <input id="tradeQuantity" type="number" min="1" max="200" step="1" value="1" inputmode="numeric">
+                <input id="tradeQuantity" type="number" min="1" max="200000" step="1" value="1" inputmode="numeric">
               </div>
               <div class="trade-total">
                 <span>Estimated official value</span>
@@ -3711,7 +3711,7 @@ const CONFIG = Object.freeze({
   MARKET_REFRESH_MS: 1000,
   SESSION_REFRESH_MS: 60000,
   CET_TIME_ZONE: "Europe/Brussels",
-  CITIZEN_SHARE_LIMIT: 200,
+  CITIZEN_SHARE_LIMIT: 200000,
   OAUTH_RETURN_PARAMETER: "returnTo",
 
   ENDPOINTS: Object.freeze({
