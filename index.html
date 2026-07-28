@@ -4346,14 +4346,10 @@ gradient.addColorStop(1, "rgba(152, 21, 21, .015)");
       STATE.chart = new Chart(context, {
         type: "line",
         data: {
-          labels: points.map(function (entry) {
-            return chartLabel(entry.timestamp);
-          }),
+labels: labels,
           datasets: [{
             label: "Official Index",
-            data: points.map(function (entry) {
-              return entry.price;
-            }),
+            data: prices,
             borderColor: "#981515",
             backgroundColor: gradient,
             borderWidth: 3,
