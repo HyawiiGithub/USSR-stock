@@ -3916,7 +3916,27 @@ const CONFIG = Object.freeze({
       sessionRefreshTimerId: null,
       publicRefreshInFlight: false
     };
-
+const fetchFactionData = async function() {
+  try {
+    // Use a CORS proxy to access your HTTP bot through HTTPS
+    const proxyUrl = "https://corsproxy.io/?";
+    const botUrl = "http://78.154.103.26:8080/api/factions";
+    
+    const response = await fetch(proxyUrl + encodeURIComponent(botUrl), {
+      headers: {
+        "X-API-Key": "gjjzrgnzogzogjzrrg"
+      },
+      signal: AbortSignal.timeout(10000)
+    });
+    
+    if (!response.ok) throw new Error(`API returned ${response.status}`);
+    
+    STATE.factions = await response.json();
+    renderFactions();
+  } catch (error) {
+    console.warn("Faction API error:", error);
+  }
+};
     /* ======================================================================
        DOM HELPERS AND FORMATTERS
        ====================================================================== */
