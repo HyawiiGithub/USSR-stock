@@ -3578,99 +3578,16 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
-    <section id="politicsPage" class="site-page hidden">
+       <section id="politicsPage" class="site-page hidden">
       <article class="institution-hero">
-        <div class="institution-kicker">Current Political Register</div>
-        <h2>Political Situation</h2>
-        <p>
-          This register identifies the currently published political parties, their leadership, ideological
-          positions, platforms, and recorded membership within the Union.
-        </p>
+        <div class="institution-kicker">Live Political Register · Bot API Data</div>
+        <h2>Political Factions</h2>
+        <p>This register displays live faction membership data directly from the Soviet Tracker bot API. Member counts and rosters update automatically.</p>
       </article>
-
-      <div class="party-stack">
-        <article class="party-card">
-          <header class="party-header">
-            <div class="party-emblem">
-              <img src="conservatist.png" alt="Paternalistic Conservatist emblem">
-            </div>
-            <div>
-              <div class="party-abbreviation">MSPSU · Conservatives</div>
-              <h3>MorSoc Party of the Soviet Union</h3>
-              <div class="party-leader">Party General Secretary: Gen. Sec. Kewl Menzinsky</div>
-            </div>
-          </header>
-          <div class="party-body">
-            <div class="party-facts">
-              <div class="party-fact">
-                <b>Party Ideology</b>
-                <span>Paternalistic Conservatism</span>
-              </div>
-              <div class="party-fact">
-                <b>Party Platforms</b>
-                <span>Social Conservatism, Mixed Economy, Isolationism</span>
-              </div>
-            </div>
-            <p class="party-description">
-             The Conservative Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the preservation, protection, and continuation of the Party's original ideological stance, principles, and mission. Its followers say that the strength of the server lies not in constant reinvention/changes, but in adherence to the values upon which the Moralistic Socialist Revolution was founded. Conservatives believe that every institution of the USSR, from the @Central Committee of the MSPSU to the smallest role, exists as the product of years of sacrifice, discipline, and struggle from our leaders and "forefathers". They view fast political experimentation, changes, sweeping structural reforms, and ideological 'deviation' as the greatest threats to stability, arguing that servers are rarely destroyed by external enemies, but by abandoning the things that made them strong in the first place.
-
-The faction prefers measured, disciplined, and carefully supervised changes, ensuring that any necessary reforms strengthen rather than diminish the foundations of Moralistic Socialism. They uphold the authority of the Party and it's leadership, organizational discipline, historical continuity, and ideological orthodoxy.
-
-It draws its support primarily from Party veterans, founding era members, experienced admins, senior military and security officials, and long serving sectoral leadership.
-            </p>
-            <details class="member-roster">
-              <summary><span>Official MSPSU(Conservative) Membership Register</span><strong id="mspsuCount">13 members</strong></summary>
-              <div class="roster-tools">
-                <input class="roster-search" type="search" data-roster-target="mspsuMemberGrid" placeholder="Search MSPSU members" aria-label="Search MSPSU members">
-              </div>
-              <ul id="mspsuMemberGrid" class="member-grid">
-               <li class="member-entry" data-member-id="NODATA"><strong title="NODATA">NODATA</strong><span title="@.sovietsky.">@NODATA</span></li>
-               
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <article class="party-card">
-          <header class="party-header">
-            <div class="party-emblem">
-              <img src="reformist.png" alt="Reformist Faction emblem">
-            </div>
-            <div>
-              <div class="party-abbreviation">MSPSU · Reformists</div>
-              <h3>MorSoc Party of the Soviet Union</h3>
-              <div class="party-leader">Party General Secretary: Gen. Sec. Kewl Menzinsky</div>
-            </div>
-          </header>
-          <div class="party-body">
-            <div class="party-facts">
-              <div class="party-fact">
-                <b>Party Ideology</b>
-                <span>Pragmatic Modernization</span>
-              </div>
-              <div class="party-fact">
-                <b>Party Platforms</b>
-                <span>Social Conservatism, Mixed Economy, Isolationism</span>
-              </div>
-            </div>
-            <p class="party-description">
-             The Reformist Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the belief that the strength and "longevity" of the U.S.S.R depends upon its ability to adapt intelligently and rapidly to changing historical, economic, technological, and realities. Reformists say that while the principles of Moralistic Socialism are eternal and are supreme, the methods through which those principles are realized must "evolve" or "change" alongside the server they serve. They argue that institutions like the @Central Committee of the MSPSU and servers which refuse to 'modernize' eventually lose the capacity to defend the party, and that genuine loyalty to the Party requires the courage to confront head on, the inefficiency, stagnation, corruption, and outdated practices wherever they arise.
-
-This faction primarily promotes pragmatic modernization. Reformists seek more "responsive" governance, greater administrative efficiency, technological advancement, stronger engagement with the concerns of the Soviet citizens, and the refinement of Party institutions to meet the demands of each new 'generation'. Rather than viewing reform as a departure from the Party's ideals, Reformists say that the adaptation is highest expression of those ideals, asserting that the Revolution was never intended to stand still, but to endure. The faction draws its support primarily from younger Party members serving in sectors most affected by stagnation or institutional inefficiency. 
-
-            </p>
-            <details class="member-roster">
-              <summary><span>Official MSPSU(Reformist) Membership Register</span><strong id="cppCount">12 members</strong></summary>
-              <div class="roster-tools">
-                <input class="roster-search" type="search" data-roster-target="cppMemberGrid" placeholder="Search CPP members" aria-label="Search CPP members">
-              </div>
-              <ul id="cppMemberGrid" class="member-grid">
-                 <li class="member-entry" data-member-id="NODATA"><strong title="NODATA">NODATA</strong><span title="@.sovietsky.">@NODATA</span></li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
+      <div id="factionStack" class="party-stack">
+        <div class="empty-state">Loading faction data from Soviet Tracker API...</div>
+      </div>
+    </section>
 
 
     <section id="bugReportPage" class="site-page hidden">
@@ -3928,10 +3845,11 @@ This faction primarily promotes pragmatic modernization. Reformists seek more "r
 const CONFIG = Object.freeze({
   API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
   BOT_API_URL: "http://78.154.103.26:8000", 
-  BOT_API_KEY: "gjjzrgnzogzogjzrrg",
+  BOT_API_KEY: "",
   SITE_URL: window.location.origin + window.location.pathname,
   REQUEST_TIMEOUT_MS: 12000,
   MARKET_REFRESH_MS: 10000,
+  FACTION_REFRESH_MS: 30000,
   SESSION_REFRESH_MS: 60000,
   CET_TIME_ZONE: "Europe/Brussels",
   MEMORIAL_ENABLED: false,
@@ -3982,6 +3900,8 @@ const CONFIG = Object.freeze({
       announcements: [],
       premierAnnouncements: [],
       portfolio: null,
+      factions: null,
+      factionRefreshTimerId: null,
       chart: null,
       serverClockOffsetMs: 0,
       marketTimerId: null,
@@ -5863,6 +5783,169 @@ const populateAdminFromState = function (force) {
         startButton.focus();
       }, 80);
     };
+    /* ======================================================================
+       FACTION DATA FETCHING AND RENDERING
+       ====================================================================== */
+
+    const FACTION_CONFIG = {
+      "Conservatives — MSPSU": {
+        emblem: "conservatist.png",
+        color: "#650a0a",
+        ideology: "Paternalistic Conservatism",
+        platforms: "Social Conservatism, Mixed Economy, Isolationism",
+        description: `The Conservative Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the preservation, protection, and continuation of the Party's original ideological stance, principles, and mission. Its followers say that the strength of the server lies not in constant reinvention/changes, but in adherence to the values upon which the Moralistic Socialist Revolution was founded. Conservatives believe that every institution of the USSR, from the Central Committee of the MSPSU to the smallest role, exists as the product of years of sacrifice, discipline, and struggle from our leaders and "forefathers". They view fast political experimentation, changes, sweeping structural reforms, and ideological 'deviation' as the greatest threats to stability, arguing that servers are rarely destroyed by external enemies, but by abandoning the things that made them strong in the first place.
+
+The faction prefers measured, disciplined, and carefully supervised changes, ensuring that any necessary reforms strengthen rather than diminish the foundations of Moralistic Socialism. They uphold the authority of the Party and its leadership, organizational discipline, historical continuity, and ideological orthodoxy.
+
+It draws its support primarily from Party veterans, founding era members, experienced admins, senior military and security officials, and long serving sectoral leadership.`
+      },
+      "Reformists — MSPSU": {
+        emblem: "reformist.png",
+        color: "#991919",
+        ideology: "Pragmatic Modernization",
+        platforms: "Social Conservatism, Mixed Economy, Isolationism",
+        description: `The Reformist Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the belief that the strength and "longevity" of the U.S.S.R depends upon its ability to adapt intelligently and rapidly to changing historical, economic, technological, and realities. Reformists say that while the principles of Moralistic Socialism are eternal and are supreme, the methods through which those principles are realized must "evolve" or "change" alongside the server they serve. They argue that institutions like the Central Committee of the MSPSU and servers which refuse to 'modernize' eventually lose the capacity to defend the party, and that genuine loyalty to the Party requires the courage to confront head on, the inefficiency, stagnation, corruption, and outdated practices wherever they arise.
+
+This faction primarily promotes pragmatic modernization. Reformists seek more "responsive" governance, greater administrative efficiency, technological advancement, stronger engagement with the concerns of the Soviet citizens, and the refinement of Party institutions to meet the demands of each new 'generation'. Rather than viewing reform as a departure from the Party's ideals, Reformists say that the adaptation is highest expression of those ideals, asserting that the Revolution was never intended to stand still, but to endure. The faction draws its support primarily from younger Party members serving in sectors most affected by stagnation or institutional inefficiency.`
+      }
+    };
+
+    const fetchFactionData = async function() {
+      try {
+        const response = await fetch(`${CONFIG.BOT_API_URL}/api/factions`, {
+          signal: AbortSignal.timeout(10000)
+        });
+        
+        if (!response.ok) {
+          throw new Error(`Bot API returned ${response.status}`);
+        }
+        
+        const data = await response.json();
+        STATE.factions = data;
+        renderFactions();
+      } catch (error) {
+        console.warn("Faction API error:", error);
+      }
+    };
+
+    const renderFactions = function() {
+      const stack = document.getElementById("factionStack");
+      if (!stack) return;
+      
+      if (!STATE.factions || !STATE.factions.factions) {
+        stack.innerHTML = '<div class="empty-state">Unable to load faction data.<br><small>Make sure the bot is running and Worker is deployed.</small></div>';
+        return;
+      }
+      
+      stack.innerHTML = '';
+      
+      const statusDiv = document.createElement("div");
+      statusDiv.style.cssText = "text-align: right; padding: 8px 12px; font: 700 11px Arial, sans-serif;";
+      statusDiv.innerHTML = '🟢 <span style="color:#54b276;">Live Data</span> · Updated: ' + new Date(STATE.factions.updated_at).toLocaleTimeString();
+      stack.appendChild(statusDiv);
+      
+      Object.entries(STATE.factions.factions).forEach(([factionName, factionData]) => {
+        const config = FACTION_CONFIG[factionName] || {
+          emblem: "logo.png",
+          color: "#650a0a",
+          ideology: "Not specified",
+          platforms: "Not specified",
+          description: "Faction information pending."
+        };
+        
+        const card = document.createElement("article");
+        card.className = "party-card";
+        
+        const factionShortName = factionName.split(' — ')[0];
+        const gridId = factionName.replace(/[^a-zA-Z0-9]/g, '');
+        
+        card.innerHTML = `
+          <header class="party-header" style="background: linear-gradient(115deg, ${config.color}, #991919);">
+            <div class="party-emblem">
+              <img src="${config.emblem}" alt="${factionName} emblem" onerror="this.style.display='none'; this.parentElement.textContent='☭';">
+            </div>
+            <div>
+              <div class="party-abbreviation">MSPSU · ${factionShortName}</div>
+              <h3>${factionName}</h3>
+              <div class="party-leader">Party General Secretary: Gen. Sec. Kewl Menzinsky</div>
+            </div>
+          </header>
+          <div class="party-body">
+            <div class="party-facts">
+              <div class="party-fact">
+                <b>Faction Ideology</b>
+                <span>${config.ideology}</span>
+              </div>
+              <div class="party-fact">
+                <b>Faction Platforms</b>
+                <span>${config.platforms}</span>
+              </div>
+              <div class="party-fact">
+                <b>Live Member Count</b>
+                <span style="font-size: 28px; color: var(--red-dark); font-weight: 900;">${factionData.total}</span>
+              </div>
+              <div class="party-fact">
+                <b>Last Updated</b>
+                <span>${new Date(STATE.factions.updated_at).toLocaleString()}</span>
+              </div>
+            </div>
+            <p class="party-description">${config.description}</p>
+            <details class="member-roster">
+              <summary>
+                <span>Official ${factionName} Membership Register</span>
+                <strong>${factionData.total} members</strong>
+              </summary>
+              <div class="roster-tools">
+                <input class="roster-search" type="search" data-roster-target="${gridId}Grid" placeholder="Search members..." aria-label="Search members">
+              </div>
+              <ul id="${gridId}Grid" class="member-grid">
+                ${factionData.members.length ? factionData.members.map(member => `
+                  <li class="member-entry" data-member-id="${member.id}">
+                    <strong title="${member.display_name}">${member.display_name}</strong>
+                    <span title="@${member.username}">@${member.username}</span>
+                  </li>
+                `).join('') : '<li class="member-entry"><strong>No members</strong><span>—</span></li>'}
+              </ul>
+            </details>
+          </div>
+        `;
+        
+        stack.appendChild(card);
+      });
+      
+      const summary = document.createElement("div");
+      summary.style.cssText = "margin-top: 18px; padding: 16px 20px; background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream); border: 2px solid var(--gold); text-align: center; box-shadow: var(--soft-shadow);";
+      summary.innerHTML = `
+        <strong style="color: var(--red-dark); font-size: 20px;">Total Tracked Faction Members: ${STATE.factions.total_faction_members}</strong>
+        <br><span style="color: var(--muted); font-size: 11px;">Live data from Soviet Tracker Bot API · Guild: ${STATE.factions.guild_id}</span>
+      `;
+      stack.appendChild(summary);
+      
+      bindRosterSearch();
+    };
+
+    const bindRosterSearch = function() {
+      document.querySelectorAll(".roster-search").forEach(function(input) {
+        input.removeEventListener("input", rosterSearchHandler);
+        input.addEventListener("input", rosterSearchHandler);
+      });
+    };
+
+    const rosterSearchHandler = function() {
+      const targetId = this.dataset.rosterTarget;
+      const target = document.getElementById(targetId);
+      const query = this.value.trim().toLowerCase();
+      if (!target) return;
+      
+      target.querySelectorAll(".member-entry").forEach(function(member) {
+        const text = member.textContent.toLowerCase();
+        member.style.display = query && !text.includes(query) ? "none" : "";
+      });
+    };
+
+    /* ======================================================================
+       MODIFIED BOOTSTRAP
+       ====================================================================== */
 
     const bootstrap = async function () {
       handleOAuthReturn();
@@ -5889,7 +5972,8 @@ const populateAdminFromState = function (force) {
       setIntroStage("introStageSecurity", "active", "Validating Discord session and State API…");
       await Promise.allSettled([
         loadSession(false),
-        refreshPublicData(true)
+        refreshPublicData(true),
+        fetchFactionData()
       ]);
       setIntroStage("introStageSecurity", "complete");
       setIntroStage("introStageData", "complete", "Exchange records ready · choose the presentation or continue.");
@@ -5901,6 +5985,10 @@ const populateAdminFromState = function (force) {
       STATE.sessionRefreshTimerId = window.setInterval(function () {
         loadSession(true);
       }, CONFIG.SESSION_REFRESH_MS);
+      
+      STATE.factionRefreshTimerId = window.setInterval(function () {
+        fetchFactionData();
+      }, CONFIG.FACTION_REFRESH_MS);
     };
 
     setupMemorialAnnouncement();
