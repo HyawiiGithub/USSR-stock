@@ -5820,7 +5820,7 @@ This faction primarily promotes pragmatic modernization. Reformists seek more "r
    const fetchFactionData = async function() {
   try {
     // Use a CORS proxy to access your HTTP bot through HTTPS
-    const proxyUrl = "https://corsproxy.io/?";
+    const proxyUrl = "https://api.allorigins.win/raw?url=";
     const botUrl = "http://78.154.103.26:8080/api/factions";
     
     const response = await fetch(proxyUrl + encodeURIComponent(botUrl), {
