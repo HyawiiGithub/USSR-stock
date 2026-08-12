@@ -3916,27 +3916,7 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
       sessionRefreshTimerId: null,
       publicRefreshInFlight: false
     };
-const fetchFactionData = async function() {
-  try {
-    // Use a CORS proxy to access your HTTP bot through HTTPS
-    const proxyUrl = "https://corsproxy.io/?";
-    const botUrl = "http://78.154.103.26:8080/api/factions";
-    
-    const response = await fetch(proxyUrl + encodeURIComponent(botUrl), {
-      headers: {
-        "X-API-Key": "gjjzrgnzogzogjzrrg"
-      },
-      signal: AbortSignal.timeout(10000)
-    });
-    
-    if (!response.ok) throw new Error(`API returned ${response.status}`);
-    
-    STATE.factions = await response.json();
-    renderFactions();
-  } catch (error) {
-    console.warn("Faction API error:", error);
-  }
-};
+
     /* ======================================================================
        DOM HELPERS AND FORMATTERS
        ====================================================================== */
@@ -5837,23 +5817,32 @@ This faction primarily promotes pragmatic modernization. Reformists seek more "r
       }
     };
 
-    const fetchFactionData = async function() {
-      try {
-        const response = await fetch(`${CONFIG.BOT_API_URL}/api/factions`, {
-          signal: AbortSignal.timeout(10000)
-        });
-        
-        if (!response.ok) {
-          throw new Error(`Bot API returned ${response.status}`);
-        }
-        
-        const data = await response.json();
-        STATE.factions = data;
-        renderFactions();
-      } catch (error) {
-        console.warn("Faction API error:", error);
-      }
-    };
+   const fetchFactionData = async function() {
+  try {
+    // Use a CORS proxy to access your HTTP bot through HTTPS
+    const proxyUrl = "https://corsproxy.io/?";
+    const botUrl = "http://78.154.103.26:8080/api/factions";
+    
+    const response = await fetch(proxyUrl + encodeURIComponent(botUrl), {
+      headers: {
+        "X-API-Key": "gjjzrgnzogzogjzrrg"
+      },
+      signal: AbortSignal.timeout(10000)
+    });
+    
+    if (!response.ok) throw new Error(`API returned ${response.status}`);
+    
+    STATE.factions = await response.json();
+    renderFactions();
+  } catch (error) {
+    console.warn("Faction API error:", error);
+    // Show error on page if we can't load
+    const stack = document.getElementById("factionStack");
+    if (stack && !STATE.factions) {
+      stack.innerHTML = '<div class="empty-state">Unable to load live faction data.<br><small>API connection failed. Check console for details.</small></div>';
+    }
+  }
+};
 
     const renderFactions = function() {
       const stack = document.getElementById("factionStack");
