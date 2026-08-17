@@ -6348,5 +6348,118 @@ const fetchFactionData = async function() {
     setupIntroScreen();
     bootstrap();
   </script>
+
+
+
+<!-- Add to index.html - New Market Dashboard Section -->
+<section id="marketDashboardPage" class="site-page hidden">
+  <!-- Market Overview -->
+  <div class="market-overview-grid">
+    <div class="overview-card">
+      <span class="overview-label">Red Star Index</span>
+      <span class="overview-value" id="redStarIndex">--</span>
+      <span class="overview-change" id="indexChange">0.00%</span>
+    </div>
+    <div class="overview-card">
+      <span class="overview-label">Market Cap</span>
+      <span class="overview-value" id="marketCap">₽0</span>
+    </div>
+    <div class="overview-card">
+      <span class="overview-label">Volume (24h)</span>
+      <span class="overview-value" id="dailyVolume">₽0</span>
+    </div>
+    <div class="overview-card">
+      <span class="overview-label">Market Status</span>
+      <span class="overview-value" id="marketStatusDisplay">Closed</span>
+    </div>
+  </div>
+
+  <!-- Economic Risk & Events -->
+  <div class="economic-row">
+    <div class="risk-card">
+      <h3>Economic Risk</h3>
+      <div id="riskLevel" class="risk-level low">LOW</div>
+      <div class="risk-factors">
+        <span>Inflation: <span id="inflationDisplay">0.0%</span></span>
+        <span>Liquidity: <span id="liquidityDisplay">0%</span></span>
+        <span>Treasury: <span id="treasuryDisplay">₽0</span></span>
+      </div>
+    </div>
+    <div class="events-card">
+      <h3>Market Events <span id="eventCount" class="badge">0</span></h3>
+      <div id="marketEventsList" class="events-list">
+        <div class="empty-state">No recent events</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="chart-grid">
+    <div class="chart-card large">
+      <h3>Stock Index History</h3>
+      <div class="chart-wrap">
+        <canvas id="marketIndexChart"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h3>Order Book</h3>
+      <div id="orderBookDisplay" class="order-book">
+        <div class="order-book-column">
+          <h4>Bids</h4>
+          <div id="bidList">No bids</div>
+        </div>
+        <div class="order-book-column">
+          <h4>Asks</h4>
+          <div id="askList">No asks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio & Watchlist -->
+  <div class="portfolio-row">
+    <div class="portfolio-card">
+      <h3>My Portfolio</h3>
+      <div id="portfolioSummary" class="portfolio-summary">
+        <div class="portfolio-item">
+          <span>Cash</span>
+          <strong id="portCash">₽0</strong>
+        </div>
+        <div class="portfolio-item">
+          <span>Bank</span>
+          <strong id="portBank">₽0</strong>
+        </div>
+        <div class="portfolio-item">
+          <span>Shares</span>
+          <strong id="portShares">0</strong>
+        </div>
+        <div class="portfolio-item">
+          <span>Value</span>
+          <strong id="portValue">₽0</strong>
+        </div>
+      </div>
+      <button id="refreshPortfolio" class="btn ghost">Refresh</button>
+    </div>
+    <div class="watchlist-card">
+      <h3>Watchlist</h3>
+      <div id="watchlistDisplay">
+        <div class="empty-state">No watched companies</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Market Rules -->
+  <div class="rules-card">
+    <h3>Market Rules</h3>
+    <div class="rules-grid">
+      <div class="rule-item">🔒 Circuit Breaker: ±12%</div>
+      <div class="rule-item">💰 Trading Fee: 0.50%</div>
+      <div class="rule-item">📊 Max Shares: 200</div>
+      <div class="rule-item">⏰ Max Session: 120 min</div>
+    </div>
+  </div>
+</section>
+
+  
 </body>
 </html>
