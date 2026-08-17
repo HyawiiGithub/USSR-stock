@@ -40,15 +40,8 @@
       --font-body: 'Inter', Arial, sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
       min-height: 100vh;
@@ -63,17 +56,11 @@
     body.modal-open { overflow: hidden; }
     body.intro-active { overflow: hidden; }
 
-    /* ============================================================
-       SCROLLBAR
-    ============================================================ */
     ::-webkit-scrollbar { width: 8px; height: 8px; }
     ::-webkit-scrollbar-track { background: var(--paper); }
     ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--red-dark); }
 
-    /* ============================================================
-       UTILITY
-    ============================================================ */
     .hidden { display: none !important; }
     .text-gold { color: var(--gold); }
     .text-red { color: var(--red); }
@@ -98,9 +85,6 @@
     .mt-24 { margin-top: 24px; }
     .w-full { width: 100%; }
 
-    /* ============================================================
-       GLOW ANIMATIONS
-    ============================================================ */
     @keyframes pulse-glow {
       0%, 100% { box-shadow: 0 0 20px rgba(239, 201, 76, 0.1); }
       50% { box-shadow: 0 0 40px rgba(239, 201, 76, 0.25); }
@@ -126,13 +110,13 @@
       to { opacity: 1; transform: translateX(0); }
     }
 
-    @keyframes priceFlash {
-      0% { color: var(--green); }
-      100% { color: var(--red-dark); }
-    }
-
     @keyframes spin {
       to { transform: rotate(360deg); }
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
     }
 
     .animate-fade-in { animation: fadeInUp 0.6s ease both; }
@@ -210,6 +194,499 @@
       font-size: 12px;
       color: #ad9e78;
       font-family: var(--font-body);
+    }
+
+    /* ============================================================
+       INTRO SCREEN
+    ============================================================ */
+    .intro-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 100000;
+      padding: clamp(18px, 4vw, 48px);
+      display: grid;
+      place-items: center;
+      overflow: auto;
+      color: #fff3ca;
+      background:
+        radial-gradient(circle at 50% 30%, rgba(185, 31, 31, .34), transparent 38%),
+        repeating-linear-gradient(135deg, transparent 0 19px, rgba(255, 255, 255, .018) 19px 20px),
+        #240303;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity .75s ease, visibility .75s ease;
+    }
+
+    .intro-screen::before,
+    .intro-screen::after {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 7px;
+      content: "";
+      background: linear-gradient(90deg, var(--gold) 0 18%, var(--red-light) 18% 82%, var(--gold) 82%);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .intro-screen::before { top: 0; }
+    .intro-screen::after { bottom: 0; }
+
+    .intro-screen.is-leaving {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .intro-panel {
+      width: min(1100px, 100%);
+      padding: 0;
+      overflow: hidden;
+      text-align: left;
+      background: linear-gradient(145deg, rgba(112, 10, 10, .985), rgba(31, 2, 2, .99));
+      border: 1px solid rgba(255, 232, 148, .65);
+      box-shadow:
+        0 0 0 6px rgba(68, 3, 3, .82),
+        0 0 0 7px rgba(239, 201, 76, .3),
+        0 38px 120px rgba(0, 0, 0, .74),
+        0 0 90px rgba(178, 27, 27, .16);
+      animation: fadeInUp .75s cubic-bezier(.2, .8, .2, 1) both;
+    }
+
+    .intro-heading {
+      margin: 0;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: linear-gradient(90deg, rgba(41, 2, 2, .95), rgba(105, 9, 9, .72));
+      border-bottom: 1px solid rgba(239, 201, 76, .35);
+    }
+
+    .intro-seal {
+      width: 56px;
+      height: 56px;
+      flex: 0 0 56px;
+      object-fit: contain;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .04);
+      filter: drop-shadow(0 0 20px rgba(239, 201, 76, .2));
+    }
+
+    .intro-heading-text small {
+      display: block;
+      color: var(--gold);
+      font: 700 10px var(--font-body);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .intro-heading-text h1 {
+      margin: 2px 0 0;
+      font: 900 clamp(26px, 4.5vw, 44px) var(--font-display);
+      line-height: .95;
+      text-transform: uppercase;
+      letter-spacing: -.02em;
+    }
+
+    .intro-live-badge {
+      margin-left: auto;
+      padding: 8px 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #e8dbb8;
+      background: rgba(0, 0, 0, .28);
+      border: 1px solid rgba(239, 201, 76, .25);
+      font: 800 9px var(--font-body);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-radius: 20px;
+    }
+
+    .intro-live-badge i {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(239, 201, 76, .08), 0 0 14px rgba(239, 201, 76, .55);
+      animation: pulse-glow 1.7s ease-in-out infinite;
+    }
+
+    .intro-command-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(330px, .65fr);
+      min-height: 480px;
+    }
+
+    .intro-visual-column {
+      min-width: 0;
+      padding: 20px;
+      border-right: 1px solid rgba(239, 201, 76, .24);
+    }
+
+    .intro-video-shell {
+      position: relative;
+      overflow: hidden;
+      background: #050000;
+      border: 1px solid rgba(239, 201, 76, .5);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, .45), inset 0 0 0 5px rgba(0, 0, 0, .25);
+      border-radius: 8px;
+    }
+
+    .intro-video-kicker {
+      position: absolute;
+      z-index: 2;
+      top: 12px;
+      left: 12px;
+      padding: 6px 12px;
+      color: var(--gold);
+      background: rgba(32, 1, 1, .85);
+      border-left: 3px solid var(--gold);
+      font: 800 9px var(--font-body);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      backdrop-filter: blur(7px);
+      border-radius: 4px;
+    }
+
+    .intro-video {
+      width: 100%;
+      height: clamp(220px, 40vh, 380px);
+      display: block;
+      object-fit: contain;
+      background: #050000;
+    }
+
+    .intro-progress {
+      height: 4px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .intro-progress span {
+      width: 0;
+      height: 100%;
+      display: block;
+      background: linear-gradient(90deg, var(--gold-dark), var(--gold));
+      transition: width .15s linear;
+    }
+
+    .intro-market-ribbon {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      overflow: hidden;
+      background: rgba(0, 0, 0, .24);
+      border: 1px solid rgba(239, 201, 76, .22);
+      border-radius: 8px;
+    }
+
+    .intro-market-ribbon div {
+      min-width: 0;
+      padding: 10px 14px;
+      border-right: 1px solid rgba(239, 201, 76, .18);
+    }
+
+    .intro-market-ribbon div:last-child { border-right: 0; }
+
+    .intro-market-ribbon span {
+      display: block;
+      margin-bottom: 4px;
+      color: #ad9e78;
+      font: 800 8px var(--font-body);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .intro-market-ribbon strong {
+      display: block;
+      overflow: hidden;
+      color: #fff2c9;
+      font: 800 18px var(--font-display);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .intro-guide-column {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      background:
+        linear-gradient(rgba(255, 255, 255, .018), rgba(255, 255, 255, 0)),
+        repeating-linear-gradient(0deg, transparent 0 31px, rgba(239, 201, 76, .025) 31px 32px);
+    }
+
+    .intro-guide-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .intro-guide-heading small {
+      display: block;
+      color: var(--gold);
+      font: 700 9px var(--font-body);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .intro-guide-heading h2 {
+      margin: 4px 0 0;
+      color: #fff4d1;
+      font: 700 clamp(22px, 2.8vw, 32px) var(--font-display);
+      line-height: 1;
+    }
+
+    .intro-guide-count {
+      color: #d5c394;
+      font: 800 11px var(--font-body);
+      letter-spacing: .08em;
+    }
+
+    .intro-guide-viewport {
+      position: relative;
+      min-height: 180px;
+      margin: 14px 0 12px;
+    }
+
+    .intro-guide-card {
+      position: absolute;
+      inset: 0;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      background: linear-gradient(135deg, rgba(239, 201, 76, .08), rgba(255, 255, 255, .02));
+      border: 1px solid rgba(239, 201, 76, .2);
+      border-left: 4px solid var(--gold);
+      transform: translateX(22px);
+      transition: opacity .38s ease, transform .48s cubic-bezier(.2, .8, .2, 1), visibility .38s;
+      border-radius: 8px;
+    }
+
+    .intro-guide-card.active {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+
+    .intro-guide-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      color: #3a0808;
+      background: var(--gold);
+      border-radius: 50%;
+      font: 700 16px var(--font-display);
+      box-shadow: 0 0 0 5px rgba(239, 201, 76, .08);
+    }
+
+    .intro-guide-card h3 {
+      margin: 12px 0 5px;
+      color: #fff2c7;
+      font: 700 20px var(--font-display);
+      line-height: 1;
+    }
+
+    .intro-guide-card p {
+      margin: 0;
+      color: #cbbd97;
+      font: 12px/1.6 var(--font-body);
+    }
+
+    .intro-guide-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .intro-guide-arrow {
+      width: 32px;
+      height: 32px;
+      color: #f5e8bd;
+      background: rgba(0, 0, 0, .28);
+      border: 1px solid rgba(239, 201, 76, .35);
+      cursor: pointer;
+      font: 700 16px var(--font-body);
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+
+    .intro-guide-arrow:hover {
+      background: rgba(239, 201, 76, .15);
+      transform: scale(1.05);
+    }
+
+    .intro-guide-dots {
+      display: flex;
+      gap: 6px;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .intro-guide-dot {
+      width: 7px;
+      height: 7px;
+      padding: 0;
+      background: #655b48;
+      border: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: width .25s ease, background .25s ease;
+    }
+
+    .intro-guide-dot.active {
+      width: 24px;
+      background: var(--gold);
+      border-radius: 4px;
+    }
+
+    .intro-checks {
+      margin: 10px 0 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+
+    .intro-check {
+      padding: 7px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #cdbd95;
+      background: rgba(0, 0, 0, .2);
+      border: 1px solid rgba(239, 201, 76, .15);
+      font: 700 9px var(--font-body);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      border-radius: 6px;
+    }
+
+    .intro-check::before {
+      width: 8px;
+      height: 8px;
+      flex: 0 0 8px;
+      background: #766d5c;
+      border: 1px solid rgba(255, 255, 255, .35);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .intro-check.active::before {
+      background: var(--gold);
+      box-shadow: 0 0 0 4px rgba(239, 201, 76, .1);
+      animation: pulse-glow 1s ease-in-out infinite;
+    }
+
+    .intro-check.complete {
+      color: #e8d9af;
+      border-color: rgba(91, 188, 121, .38);
+    }
+
+    .intro-check.complete::before { background: #54b276; }
+
+    .intro-command-footer {
+      padding: 14px 24px 16px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      background: rgba(10, 0, 0, .33);
+      border-top: 1px solid rgba(239, 201, 76, .23);
+    }
+
+    .intro-status {
+      min-height: 20px;
+      color: #e8d8ae;
+      font: 600 12px var(--font-body);
+      letter-spacing: .04em;
+    }
+
+    .intro-sound-note {
+      margin: 4px 0 0;
+      color: #bdad86;
+      font: 10px var(--font-body);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .intro-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .intro-button {
+      min-width: 160px;
+      padding: 10px 20px;
+      color: #3a0909;
+      background: var(--gold);
+      border: 1px solid #ffe89a;
+      cursor: pointer;
+      font: 800 11px var(--font-body);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: var(--transition);
+      border-radius: 8px;
+    }
+
+    .intro-button:hover {
+      filter: brightness(1.1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(239, 201, 76, .3);
+    }
+
+    .intro-button:disabled {
+      cursor: wait;
+      filter: grayscale(.3);
+      transform: none;
+    }
+
+    .intro-button.secondary {
+      color: #f4e5bd;
+      background: transparent;
+      border-color: rgba(239, 201, 76, .55);
+    }
+
+    .intro-button.secondary:hover {
+      background: rgba(239, 201, 76, .1);
+      box-shadow: none;
+    }
+
+    @media (max-width: 980px) {
+      .intro-command-grid { grid-template-columns: 1fr; }
+      .intro-visual-column {
+        border-right: 0;
+        border-bottom: 1px solid rgba(239, 201, 76, .24);
+      }
+      .intro-video { height: min(35vh, 300px); }
+      .intro-guide-viewport { min-height: 160px; }
+    }
+
+    @media (max-width: 620px) {
+      .intro-screen { padding: 0; place-items: stretch; }
+      .intro-panel {
+        min-height: 100vh;
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .intro-heading,
+      .intro-visual-column,
+      .intro-guide-column,
+      .intro-command-footer { padding: 16px; }
+      .intro-live-badge { display: none; }
+      .intro-command-grid { min-height: 0; }
+      .intro-video { height: min(30vh, 220px); }
+      .intro-market-ribbon { grid-template-columns: 1fr 1fr; }
+      .intro-market-ribbon div:last-child { display: none; }
+      .intro-guide-viewport { min-height: 170px; }
+      .intro-command-footer { grid-template-columns: 1fr; }
+      .intro-command-footer .intro-actions { display: grid; grid-template-columns: 1fr; }
+      .intro-button { width: 100%; }
     }
 
     /* ============================================================
@@ -1400,6 +1877,548 @@
     }
 
     /* ============================================================
+       BUG REPORT PAGE
+    ============================================================ */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .service-card {
+      padding: 22px;
+      background: var(--paper-light);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--red);
+      box-shadow: var(--soft-shadow);
+      border-radius: var(--radius);
+    }
+
+    .service-card.gold-top { border-top-color: var(--gold-dark); }
+    .service-card h3 {
+      margin: 4px 0 10px;
+      color: var(--red-dark);
+      font-size: clamp(22px, 4vw, 34px);
+      line-height: 1;
+      font-family: var(--font-display);
+    }
+    .service-card p, .service-note {
+      color: var(--muted);
+      font: 13px/1.6 var(--font-body);
+    }
+
+    .counter-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font: 10px var(--font-body);
+    }
+
+    .guide-link {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    /* ============================================================
+       CHANGELOG
+    ============================================================ */
+    .changelog-list { display: grid; gap: 12px; }
+    .changelog-entry {
+      padding: 18px;
+      background: rgba(255, 255, 255, .32);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--red);
+      border-radius: var(--radius);
+    }
+    .changelog-entry time {
+      color: var(--red);
+      font: 700 10px var(--font-body);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .changelog-entry h3 {
+      margin: 6px 0 9px;
+      font-family: var(--font-display);
+    }
+    .changelog-entry ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #46392b;
+      font: 13px/1.6 var(--font-body);
+    }
+
+    /* ============================================================
+       LEADERSHIP
+    ============================================================ */
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .leadership-card {
+      padding: 24px;
+      background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--red);
+      box-shadow: var(--soft-shadow);
+      border-radius: var(--radius);
+      position: relative;
+      min-height: 245px;
+      padding-left: 112px;
+    }
+
+    .leadership-card h3 {
+      margin: 7px 0 5px;
+      color: var(--red-dark);
+      font-size: clamp(25px, 4vw, 38px);
+      line-height: 1;
+      font-family: var(--font-display);
+    }
+
+    .leadership-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font: 14px/1.55 var(--font-body);
+    }
+
+    .leadership-medallion {
+      position: absolute;
+      top: 26px;
+      left: 24px;
+      width: 66px;
+      height: 66px;
+      overflow: hidden;
+      border: 3px double var(--gold);
+      border-radius: 50%;
+    }
+
+    .leadership-medallion img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .rank-ribbon {
+      width: fit-content;
+      margin-top: 15px;
+      padding: 7px 10px;
+      color: #fff6dc;
+      background: var(--red-dark);
+      font: 700 11px var(--font-body);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      border-radius: 4px;
+    }
+
+    .leadership-card.memorial-card {
+      border-top-color: var(--gold-dark);
+      background: linear-gradient(rgba(255, 255, 255, .18), rgba(255, 255, 255, .04)), #ddd3bd;
+    }
+
+    .memorial-dove { margin-left: 5px; }
+
+    /* ============================================================
+       PREMIER
+    ============================================================ */
+    .premier-identity {
+      margin-bottom: 18px;
+      padding: 16px 18px;
+      color: #fff1cb;
+      background: linear-gradient(90deg, #520909, #8a1414);
+      border-left: 6px solid var(--gold);
+      font: 700 13px/1.55 var(--font-body);
+      border-radius: var(--radius);
+    }
+    .premier-identity strong { color: var(--gold); }
+
+    /* ============================================================
+       POLITICAL PARTIES
+    ============================================================ */
+    .party-stack { display: grid; gap: 22px; }
+    .party-card {
+      background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream);
+      border: 1px solid var(--border);
+      box-shadow: var(--soft-shadow);
+      overflow: hidden;
+      border-radius: var(--radius);
+    }
+    .party-header {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 104px minmax(0, 1fr);
+      gap: 20px;
+      align-items: center;
+      color: #fff1c7;
+      background: linear-gradient(115deg, #650a0a, #991919);
+      border-bottom: 4px solid var(--gold);
+    }
+    .party-emblem {
+      width: 104px;
+      height: 104px;
+      padding: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      background: rgba(255, 255, 255, .07);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      font: 900 25px/1 Georgia, serif;
+      text-align: center;
+    }
+    .party-emblem img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, .28));
+    }
+    .party-header h3 {
+      margin: 4px 0 7px;
+      font-size: clamp(27px, 4.5vw, 48px);
+      line-height: .98;
+      letter-spacing: -.025em;
+      font-family: var(--font-display);
+    }
+    .party-abbreviation {
+      color: var(--gold);
+      font: 700 11px var(--font-body);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .party-leader {
+      color: #e8dab4;
+      font: 700 13px/1.5 var(--font-body);
+    }
+    .party-body { padding: 22px 24px 24px; }
+    .party-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .party-fact {
+      padding: 13px 14px;
+      background: rgba(255, 255, 255, .4);
+      border-left: 4px solid var(--red);
+      border-radius: 4px;
+    }
+    .party-fact b {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--red-dark);
+      font: 700 10px var(--font-body);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .party-fact span { font: 700 13px/1.45 var(--font-body); }
+    .party-description {
+      margin: 16px 0 0;
+      color: #473b2e;
+      font: 15px/1.7 var(--font-display);
+    }
+
+    .member-roster {
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .25);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .member-roster summary {
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      color: #fff1ca;
+      background: #660b0b;
+      cursor: pointer;
+      font: 700 12px var(--font-body);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .member-roster summary strong { color: var(--gold); white-space: nowrap; }
+    .roster-tools { padding: 12px; border-bottom: 1px solid var(--border); }
+    .roster-search {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: #fffaf0;
+      border: 1px solid var(--border);
+      font: 13px var(--font-body);
+      border-radius: 4px;
+    }
+    .member-grid {
+      max-height: 560px;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      overflow-y: auto;
+      list-style: none;
+    }
+    .member-entry {
+      min-width: 0;
+      padding: 9px 10px;
+      background: rgba(255, 255, 255, .52);
+      border-left: 3px solid var(--gold);
+      border-radius: 4px;
+    }
+    .member-entry strong, .member-entry span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .member-entry strong { color: #342317; font: 700 12px var(--font-body); }
+    .member-entry span { margin-top: 2px; color: var(--muted); font: 11px var(--font-body); }
+
+    /* ============================================================
+       FINANCE / DIRECTORY
+    ============================================================ */
+    .directory-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .office-card {
+      padding: 24px;
+      background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--red);
+      box-shadow: var(--soft-shadow);
+      border-radius: var(--radius);
+    }
+
+    .office-card h3 {
+      margin: 7px 0 5px;
+      color: var(--red-dark);
+      font-size: clamp(25px, 4vw, 38px);
+      line-height: 1;
+      font-family: var(--font-display);
+    }
+
+    .office-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font: 14px/1.55 var(--font-body);
+    }
+
+    .official-roster {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      list-style: none;
+    }
+
+    .official-roster li {
+      padding: 10px 12px;
+      color: #3c2a19;
+      background: rgba(255, 255, 255, .4);
+      border-left: 4px solid var(--gold);
+      font: 700 13px var(--font-body);
+      border-radius: 4px;
+    }
+
+    /* ============================================================
+       ECONOMY PAGE
+    ============================================================ */
+    .economy-hero {
+      margin-bottom: 18px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      background: linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)), var(--cream);
+      border: 1px solid var(--border);
+      border-top: 8px solid var(--red);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+    }
+
+    .economy-value {
+      margin: 4px 0 9px;
+      color: var(--red-dark);
+      font: 900 clamp(38px, 7vw, 72px)/.95 var(--font-display);
+      letter-spacing: -.04em;
+    }
+
+    .economy-description {
+      max-width: 750px;
+      margin: 0;
+      color: var(--muted);
+      font: 14px/1.6 var(--font-body);
+    }
+
+    .economy-rating {
+      width: 150px;
+      height: 150px;
+      padding: 12px;
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      color: #fff5d4;
+      background: var(--red);
+      border: 5px double var(--gold);
+      border-radius: 50%;
+      text-align: center;
+      transform: rotate(-3deg);
+    }
+
+    .economy-rating strong {
+      font: 700 18px var(--font-body);
+      text-transform: uppercase;
+    }
+
+    .economy-rating span {
+      margin-top: 4px;
+      color: var(--gold);
+      font: 700 9px var(--font-body);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .stat-grid {
+      margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .stat-card {
+      min-height: 150px;
+      padding: 18px;
+      background: var(--paper-light);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--gold-dark);
+      box-shadow: var(--soft-shadow);
+      border-radius: var(--radius);
+    }
+
+    .stat-card b {
+      display: block;
+      color: var(--red);
+      font: 700 10px var(--font-body);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .stat-card strong {
+      display: block;
+      margin: 11px 0 7px;
+      font-size: clamp(22px, 3vw, 31px);
+      line-height: 1;
+    }
+
+    .stat-card span {
+      color: var(--muted);
+      font: 12px/1.4 var(--font-body);
+    }
+
+    .economy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .calculation { padding: 22px; }
+    .formula-row {
+      padding: 14px 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .formula-row:last-child { border-bottom: 0; }
+    .formula-row b { color: var(--red-dark); }
+    .formula-row span { color: var(--muted); font: 13px/1.4 var(--font-body); }
+    .formula-row strong { align-self: center; font-size: 17px; text-align: right; }
+
+    .leaderboard {
+      width: 100%;
+      border-collapse: collapse;
+      font: 13px var(--font-body);
+    }
+    .leaderboard th, .leaderboard td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    .leaderboard th {
+      color: #fff4cf;
+      background: #691010;
+      font-size: 9px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .leaderboard th:last-child, .leaderboard td:last-child { text-align: right; }
+    .leaderboard tbody tr:nth-child(even) { background: rgba(109, 13, 13, .045); }
+
+    /* ============================================================
+       INSTITUTION HERO
+    ============================================================ */
+    .institution-hero {
+      position: relative;
+      margin-bottom: 20px;
+      padding: clamp(24px, 5vw, 48px);
+      overflow: hidden;
+      color: #fff4d1;
+      background:
+        linear-gradient(115deg, rgba(81, 6, 6, .98), rgba(151, 20, 20, .93)),
+        repeating-linear-gradient(135deg, transparent 0 14px, rgba(255, 255, 255, .03) 14px 15px);
+      border: 3px double var(--gold);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+    }
+
+    .institution-hero::after {
+      position: absolute;
+      right: -18px;
+      bottom: -50px;
+      color: rgba(239, 201, 76, .1);
+      content: "★";
+      font: 220px/1 var(--font-display);
+      pointer-events: none;
+    }
+
+    .institution-kicker {
+      position: relative;
+      z-index: 1;
+      color: var(--gold);
+      font: 700 12px var(--font-body);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .institution-hero h2 {
+      position: relative;
+      z-index: 1;
+      max-width: 920px;
+      margin: 9px 0 11px;
+      font-size: clamp(34px, 6vw, 70px);
+      line-height: .95;
+      letter-spacing: -.035em;
+      font-family: var(--font-display);
+    }
+
+    .institution-hero p {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 0;
+      color: #ecdfbc;
+      font: 15px/1.65 var(--font-body);
+    }
+
+    /* ============================================================
        RESPONSIVE
     ============================================================ */
     @media (max-width: 980px) {
@@ -1407,9 +2426,7 @@
         grid-template-columns: 70px 1fr;
         min-height: 100px;
       }
-
       .logo { width: 60px; height: 60px; }
-
       .clock-box {
         grid-column: 1 / -1;
         padding: 12px 0 0;
@@ -1420,37 +2437,25 @@
         border-top: 1px solid rgba(255, 255, 255, .12);
         border-left: 0;
       }
-
       .account-box {
         grid-column: 2;
         grid-row: 1 / 3;
         margin: 0;
         justify-content: flex-end;
       }
-
-      .market-command-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .trading-terminal {
-        position: static;
-      }
-
-      .market-secondary-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .announcement-list {
-        max-height: none;
-      }
-
-      .market-stats-row {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .company-modal-content {
-        max-height: 95vh;
-      }
+      .market-command-grid { grid-template-columns: 1fr; }
+      .trading-terminal { position: static; }
+      .market-secondary-grid { grid-template-columns: 1fr; }
+      .announcement-list { max-height: none; }
+      .market-stats-row { grid-template-columns: repeat(3, 1fr); }
+      .company-modal-content { max-height: 95vh; }
+      .service-grid { grid-template-columns: 1fr; }
+      .directory-grid { grid-template-columns: 1fr; }
+      .leadership-grid { grid-template-columns: 1fr; }
+      .economy-grid { grid-template-columns: 1fr; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .party-facts { grid-template-columns: 1fr; }
+      .member-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 720px) {
@@ -1460,40 +2465,26 @@
         gap: 12px;
         padding: 12px 16px;
       }
-
       .logo { width: 48px; height: 48px; }
-
-      .title-block h1 {
-        font-size: clamp(22px, 6vw, 34px);
-      }
-
+      .title-block h1 { font-size: clamp(22px, 6vw, 34px); }
       .title-block p { font-size: 11px; }
-
       .clock-box {
         min-width: 0;
         grid-template-columns: 1fr;
         padding: 8px 0 0;
       }
-
       .account-box {
         grid-column: 1;
         grid-row: auto;
         margin-top: 6px;
         justify-content: flex-start;
       }
-
-      .section-nav-inner {
-        padding: 0;
-        display: block;
-      }
-
+      .section-nav-inner { padding: 0; display: block; }
       .nav-groups, .nav-group { display: block; }
-
       .nav-group {
         border-right: 0;
         border-bottom: 1px solid rgba(255, 255, 255, .08);
       }
-
       .nav-group-label {
         padding: 5px 10px;
         display: block;
@@ -1502,112 +2493,239 @@
         transform: none;
         font-size: 8px;
       }
-
-      .nav-group .nav-tabs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .nav-tab {
-        padding: 8px 10px;
-        font-size: 9px;
-      }
-
+      .nav-group .nav-tabs { display: grid; grid-template-columns: 1fr 1fr; }
+      .nav-tab { padding: 8px 10px; font-size: 9px; }
       .api-status {
         padding: 6px 12px;
         justify-content: center;
         border-top: 1px solid rgba(255, 255, 255, .06);
         font-size: 8px;
       }
-
-      .status-row {
-        grid-template-columns: 1fr;
-      }
-
-      .status-card {
-        grid-template-columns: 1fr;
-        padding: 16px;
-      }
-
-      .change {
-        width: fit-content;
-        font-size: 18px;
-        padding: 8px 16px;
-      }
-
-      .market-stats-row {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .stat-card {
-        min-height: 70px;
-        padding: 10px;
-      }
-
+      .status-row { grid-template-columns: 1fr; }
+      .status-card { grid-template-columns: 1fr; padding: 16px; }
+      .change { width: fit-content; font-size: 18px; padding: 8px 16px; }
+      .market-stats-row { grid-template-columns: 1fr 1fr; }
+      .stat-card { min-height: 70px; padding: 10px; }
       .stat-card strong { font-size: 18px; }
-
-      .market-meta {
-        grid-template-columns: 1fr;
-      }
-
+      .market-meta { grid-template-columns: 1fr; }
       .meta-box {
         min-height: 0;
         border-right: 0;
         border-bottom: 1px solid var(--border);
         padding: 10px 14px;
       }
-
       .meta-box:last-child { border-bottom: 0; }
-
       .chart-wrap { height: 250px; padding: 10px; }
-
-      .terminal-quote {
-        grid-template-columns: 1fr 1fr;
-        padding: 10px 14px;
-      }
-
+      .terminal-quote { grid-template-columns: 1fr 1fr; padding: 10px 14px; }
       .terminal-quote div:last-child { text-align: right; }
-
-      .terminal-account-strip {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .terminal-account-strip .terminal-stat:last-child {
-        grid-column: 1 / -1;
-      }
-
-      .quantity-row {
-        grid-template-columns: 1fr;
-      }
-
-      .quick-quantity {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .terminal-actions {
-        grid-template-columns: 1fr;
-      }
-
+      .terminal-account-strip { grid-template-columns: 1fr 1fr; }
+      .terminal-account-strip .terminal-stat:last-child { grid-column: 1 / -1; }
+      .quantity-row { grid-template-columns: 1fr; }
+      .quick-quantity { grid-template-columns: repeat(4, 1fr); }
+      .terminal-actions { grid-template-columns: 1fr; }
       .company-modal-content {
         min-height: 100vh;
         max-height: 100vh;
         border-radius: 0;
         border-width: 0;
       }
-
-      .company-modal-header {
+      .company-modal-header { border-radius: 0; padding: 14px 16px; }
+      .company-modal-body .info-grid { grid-template-columns: 1fr; }
+      .company-grid { grid-template-columns: 1fr; }
+      .service-grid { grid-template-columns: 1fr; }
+      .directory-grid { grid-template-columns: 1fr; }
+      .leadership-grid { grid-template-columns: 1fr; }
+      .leadership-card {
+        min-height: 0;
+        padding: 22px;
+      }
+      .leadership-medallion {
+        position: static;
+        margin-bottom: 16px;
+      }
+      .stat-grid { grid-template-columns: 1fr; }
+      .economy-hero { grid-template-columns: 1fr; }
+      .economy-rating { width: 120px; height: 120px; }
+      .member-grid { grid-template-columns: 1fr; }
+      .official-roster { grid-template-columns: 1fr; }
+      .party-header {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 14px;
+      }
+      .party-emblem { width: 76px; height: 76px; font-size: 18px; }
+      .intro-screen { padding: 0; place-items: stretch; }
+      .intro-panel {
+        min-height: 100vh;
+        border: 0;
+        box-shadow: none;
         border-radius: 0;
-        padding: 14px 16px;
-      }
-
-      .company-modal-body .info-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .company-grid {
-        grid-template-columns: 1fr;
       }
     }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      padding: 20px clamp(16px, 3vw, 38px);
+      color: #eadfbf;
+      background: #3c0806;
+      border-top: 4px solid var(--gold);
+      text-align: center;
+      font: 12px var(--font-body);
+    }
+    .footer strong { color: var(--gold); }
+
+    /* ============================================================
+       ADMIN BACKDROP
+    ============================================================ */
+    .backdrop {
+      position: fixed;
+      z-index: 1000;
+      inset: 0;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background: rgba(18, 3, 2, .76);
+      backdrop-filter: blur(5px);
+    }
+
+    .admin-shell {
+      width: min(980px, 100%);
+      max-height: calc(100vh - 48px);
+      overflow: auto;
+      color: var(--ink);
+      background: var(--paper-light);
+      border: 2px solid var(--gold);
+      border-radius: var(--radius);
+      box-shadow: 0 28px 80px rgba(0, 0, 0, .58);
+    }
+
+    .admin-head {
+      position: sticky;
+      z-index: 2;
+      top: 0;
+      padding: 17px 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      color: #fff5d4;
+      background: linear-gradient(90deg, #4a0707, #8e1515);
+      border-bottom: 4px solid var(--gold);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    .admin-head h2 {
+      margin: 0;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: var(--font-display);
+    }
+
+    .icon-button {
+      width: 38px;
+      height: 38px;
+      color: #fff5d4;
+      background: rgba(0, 0, 0, .18);
+      border: 1px solid rgba(255, 255, 255, .34);
+      cursor: pointer;
+      font: 700 22px var(--font-body);
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+
+    .icon-button:hover {
+      background: var(--red);
+      transform: rotate(90deg);
+    }
+
+    .admin-body { padding: 20px; display: grid; gap: 16px; }
+    .admin-section {
+      padding: 17px;
+      background: #eee5cd;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--red);
+      border-radius: var(--radius);
+    }
+    .admin-section h3 {
+      margin: 0 0 14px;
+      color: var(--red-dark);
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: var(--font-display);
+    }
+
+    .admin-status {
+      min-height: 42px;
+      padding: 12px 14px;
+      color: #5c513f;
+      background: #e1d6bc;
+      border: 1px dashed #8d7d60;
+      font: 13px/1.4 var(--font-body);
+      border-radius: var(--radius);
+    }
+    .admin-status.good { color: #174a2c; background: #dceadf; border-color: #43835a; }
+    .admin-status.bad { color: #6b0c0c; background: #eed7cf; border-color: #9c372b; }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      align-items: end;
+    }
+    .form-grid.two { grid-template-columns: repeat(2, 1fr); }
+    .form-grid.five { grid-template-columns: repeat(5, 1fr); }
+    .field { display: grid; gap: 6px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label {
+      color: #5a4b37;
+      font: 700 10px var(--font-body);
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .field input, .field textarea, .field select {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: #fffaf0;
+      border: 1px solid #8e7e64;
+      border-radius: 4px;
+      font: 13px var(--font-body);
+    }
+    .button-row {
+      margin-top: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    /* ============================================================
+       TOAST
+    ============================================================ */
+    .toast-stack {
+      position: fixed;
+      z-index: 1200;
+      right: 16px;
+      bottom: 16px;
+      width: min(360px, calc(100vw - 32px));
+      display: grid;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .toast {
+      padding: 12px 16px;
+      color: #fff7df;
+      background: #3f0907;
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .3);
+      font: 13px var(--font-body);
+      animation: fadeInUp 0.3s ease both;
+      pointer-events: auto;
+    }
+
+    .toast.error { border-left-color: #ef6b5d; }
   </style>
 </head>
 <body>
@@ -1634,24 +2752,101 @@
       <div class="intro-heading">
         <img class="intro-seal" src="logo.png" alt="Red Star emblem">
         <div class="intro-heading-text">
-          <small>Commissariat of Finance</small>
-          <h1>Red Star Exchange</h1>
+          <small>Commissariat of Finance · Secure Public Terminal</small>
+          <h1>Enter the State Exchange</h1>
         </div>
-        <div class="intro-live-badge"><i></i><span id="introConnection">Connecting...</span></div>
+        <div class="intro-live-badge"><i aria-hidden="true"></i><span id="introConnection">Establishing State link</span></div>
       </div>
-      <div style="padding: 20px; text-align: center; color: #fff3ca;">
-        <h2 style="font-family: var(--font-display); font-size: 28px;">Welcome to the State Exchange</h2>
-        <p style="color: #cbbd97; max-width: 600px; margin: 12px auto;">The official trading floor of the Union. Authorise with Discord to access your portfolio and begin trading.</p>
-        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 16px;">
-          <button id="skipIntro" class="intro-button" style="min-width: 140px;">Enter Exchange</button>
+
+      <div class="intro-command-grid">
+        <div class="intro-visual-column">
+          <div class="intro-video-shell">
+            <span class="intro-video-kicker">Official opening transmission</span>
+            <video id="introVideo" class="intro-video" preload="metadata" playsinline>
+              <source src="dancingpoland.mp4" type="video/mp4">
+              Your browser does not support the official introduction video.
+            </video>
+            <div class="intro-progress" aria-hidden="true"><span id="introProgress"></span></div>
+          </div>
+
+          <div class="intro-market-ribbon" aria-label="Live market preview">
+            <div><span>Live index</span><strong id="introLivePrice">Connecting…</strong></div>
+            <div><span>Session movement</span><strong id="introLiveChange">0.00%</strong></div>
+            <div><span>Trading desk</span><strong id="introLiveStatus">Checking…</strong></div>
+          </div>
         </div>
-        <p style="color: #bdad86; font-size: 11px; margin-top: 12px;">Discord authorisation required for trading · Esc to skip</p>
+
+        <aside class="intro-guide-column" aria-label="Live exchange guide">
+          <div class="intro-guide-heading">
+            <div>
+              <small>Live orientation</small>
+              <h2>Know the Exchange</h2>
+            </div>
+            <div id="introGuideCount" class="intro-guide-count">01 / 06</div>
+          </div>
+
+          <div class="intro-guide-viewport">
+            <article class="intro-guide-card active" data-intro-guide="0">
+              <div class="intro-guide-icon" aria-hidden="true">₽</div>
+              <h3>Read the live price</h3>
+              <p>The large index figure is the current official share price. The percentage beside it measures movement from this session's opening level—not from zero.</p>
+            </article>
+            <article class="intro-guide-card" data-intro-guide="1">
+              <div class="intro-guide-icon" aria-hidden="true">↗</div>
+              <h3>Follow the graph</h3>
+              <p>The graph updates without resetting. Hover over its record to inspect prices, then compare the opening level, scheduled target and completion time below it.</p>
+            </article>
+            <article class="intro-guide-card" data-intro-guide="2">
+              <div class="intro-guide-icon" aria-hidden="true">★</div>
+              <h3>Trade beside the market</h3>
+              <p>The buy-and-sell terminal now sits directly beside the graph, so you can see price direction, enter a quantity and review the live quote without leaving the trading floor.</p>
+            </article>
+            <article class="intro-guide-card" data-intro-guide="3">
+              <div class="intro-guide-icon" aria-hidden="true">ID</div>
+              <h3>Authorise your record</h3>
+              <p>Discord authorisation opens your live UnbelievaBoat cash, bank and share records. Orders remain server-validated; the browser cannot create money or inventory.</p>
+            </article>
+            <article class="intro-guide-card" data-intro-guide="4">
+              <div class="intro-guide-icon" aria-hidden="true">24</div>
+              <h3>Watch the session clock</h3>
+              <p>The masthead shows Central European Time and the exact opening or closing countdown. When the market is closed, the State API locks every order automatically.</p>
+            </article>
+            <article class="intro-guide-card" data-intro-guide="5">
+              <div class="intro-guide-icon" aria-hidden="true">!</div>
+              <h3>Read the State wire</h3>
+              <p>Official warnings and Central Bank announcements appear on the market page. Consult them before trading whenever a scheduled movement or policy change is active.</p>
+            </article>
+          </div>
+
+          <div class="intro-guide-controls">
+            <button id="introGuidePrevious" class="intro-guide-arrow" type="button" aria-label="Previous guide item">←</button>
+            <div id="introGuideDots" class="intro-guide-dots" aria-label="Guide pages"></div>
+            <button id="introGuideNext" class="intro-guide-arrow" type="button" aria-label="Next guide item">→</button>
+          </div>
+
+          <div class="intro-checks" aria-label="Exchange startup checks">
+            <div id="introStageInterface" class="intro-check active">State interface</div>
+            <div id="introStageSecurity" class="intro-check">Discord security</div>
+            <div id="introStageData" class="intro-check">Live market records</div>
+          </div>
+        </aside>
       </div>
+
+      <footer class="intro-command-footer">
+        <div>
+          <p id="introStatus" class="intro-status">Preparing the State Exchange interface…</p>
+          <p class="intro-sound-note">Sound requires one click under modern browser security rules · Esc enters immediately</p>
+        </div>
+        <div class="intro-actions">
+          <button id="startIntro" class="intro-button" type="button">Play Opening With Sound</button>
+          <button id="skipIntro" class="intro-button secondary" type="button">Enter Exchange</button>
+        </div>
+      </footer>
     </div>
   </div>
 
   <noscript>
-    <div style="padding:14px;color:white;background:#7d1010;text-align:center;font:700 14px Arial,sans-serif;">JavaScript is required to display the live State Exchange record.</div>
+    <div style="padding:14px;color:white;background:#7d1010;text-align:center;font:700 14px var(--font-body);">JavaScript is required to display the live State Exchange record.</div>
   </noscript>
 
   <!-- TOP STRIPE -->
@@ -1712,6 +2907,7 @@
             <button class="nav-tab" type="button" data-page="premierPage">Premier</button>
             <button class="nav-tab" type="button" data-page="leadershipPage">Leadership</button>
             <button class="nav-tab" type="button" data-page="politicsPage">Parties</button>
+            <button class="nav-tab" type="button" data-page="financePage">Finance Bureau</button>
           </div>
         </div>
         <div class="nav-group">
@@ -1719,6 +2915,7 @@
           <div class="nav-tabs">
             <button class="nav-tab" type="button" data-page="bugReportPage">Bug Report</button>
             <button class="nav-tab" type="button" data-page="changelogPage">Changelog</button>
+            <button class="nav-tab" type="button" data-page="economicGuidePage">Economic Guide</button>
           </div>
         </div>
       </div>
@@ -1882,6 +3079,21 @@
     </section>
 
     <!-- ============================================================ -->
+    <!-- COMPANY MODAL -->
+    <!-- ============================================================ -->
+    <div id="companyModal" class="company-modal">
+      <div class="company-modal-content">
+        <div class="company-modal-header">
+          <h2 id="modalCompanyName">Company Name</h2>
+          <button class="company-modal-close" id="closeCompanyModal">×</button>
+        </div>
+        <div class="company-modal-body" id="modalBody">
+          <div class="private-notice"><span class="lock-icon">🔒</span>This company is private. Only the CEO can view details.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
     <!-- ECONOMY PAGE -->
     <!-- ============================================================ -->
     <section id="economyPage" class="site-page hidden">
@@ -1934,69 +3146,384 @@
     </section>
 
     <!-- ============================================================ -->
-    <!-- COMPANY MODAL -->
+    <!-- FINANCE BUREAU PAGE -->
     <!-- ============================================================ -->
-    <div id="companyModal" class="company-modal">
-      <div class="company-modal-content">
-        <div class="company-modal-header">
-          <h2 id="modalCompanyName">Company Name</h2>
-          <button class="company-modal-close" id="closeCompanyModal">×</button>
-        </div>
-        <div class="company-modal-body" id="modalBody">
-          <div class="private-notice"><span class="lock-icon">🔒</span>This company is private. Only the CEO can view details.</div>
-        </div>
+    <section id="financePage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Official Directory of Economic Administration</div>
+        <h2>Commissariat of Finance</h2>
+        <p>The citizens listed below form the current economic administration responsible for State financial policy, market supervision, national accounting, and the protection of the Union's economy.</p>
+      </article>
+
+      <div class="directory-grid">
+        <article class="office-card">
+          <div class="eyebrow">Executive Office</div>
+          <h3>People's Commissar for Economy</h3>
+          <p>Senior officials entrusted with direction of national economic policy.</p>
+          <ul class="official-roster">
+            <li>erushim</li>
+            <li>desertmarshal</li>
+          </ul>
+        </article>
+
+        <article class="office-card">
+          <div class="eyebrow">Collective Economic Administration</div>
+          <h3>State Committee for Economy</h3>
+          <p>Committee members responsible for economic records, policy review, and State market oversight.</p>
+          <ul class="official-roster">
+            <li>real_lettuce</li>
+            <li>cax18</li>
+            <li>_prussianemperor45</li>
+            <li>hyawii2.0</li>
+            <li>desertmarshal</li>
+            <li>sovereign_of_bavarians</li>
+            <li>kewl07</li>
+          </ul>
+        </article>
       </div>
-    </div>
+    </section>
 
     <!-- ============================================================ -->
-    <!-- OTHER PAGES -->
+    <!-- ECONOMIC GUIDE PAGE -->
     <!-- ============================================================ -->
-    <section id="premierPage" class="site-page hidden"><div class="panel" style="padding:20px;"><h2>Premier Office</h2><p style="color:var(--muted);">Government announcements appear here.</p></div></section>
-    <section id="leadershipPage" class="site-page hidden"><div class="panel" style="padding:20px;"><h2>State Leadership</h2><p style="color:var(--muted);">Leadership register.</p></div></section>
-    <section id="politicsPage" class="site-page hidden"><div class="panel" style="padding:20px;"><h2>Political Parties</h2><p style="color:var(--muted);">Faction register.</p></div></section>
-    <section id="bugReportPage" class="site-page hidden"><div class="panel" style="padding:20px;"><h2>Bug Report</h2><p style="color:var(--muted);">Report technical issues.</p></div></section>
-    <section id="changelogPage" class="site-page hidden"><div class="panel" style="padding:20px;"><h2>Changelog</h2><p style="color:var(--muted);">Development updates.</p></div></section>
+    <section id="economicGuidePage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Official Public Economic Document</div>
+        <h2>Reformed Economic System Guide</h2>
+        <p>The official guide explains the State treasury cycle, public fees, sectoral budgets, attachment maintenance, government contracts, and the minimum-wage work system used throughout the Union.</p>
+      </article>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="eyebrow">Published State Guide</div>
+          <h3>USSR Reformed Economic System Guide</h3>
+          <p>Read the full economic reference maintained by Hyawii. The document opens in Google Docs in a new tab so the latest approved version remains available without duplicating an outdated copy here.</p>
+          <a class="btn gold guide-link" href="https://docs.google.com/document/d/1ArFwUm_-Ucp5pJLZaVjxtqaYbGdihHRUXqTHwvYsYRM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Open Official Economic Guide</a>
+        </article>
+
+        <article class="service-card gold-top">
+          <div class="eyebrow">Quick Reference</div>
+          <h3>The National Money Cycle</h3>
+          <p>Rubles spent on State fees and approved store items return to the treasury. Weekly national budgets then fund sectors according to activity, productivity, approved contracts, and decisions of the Congress. Sector spending and attachment maintenance return money to the treasury again.</p>
+          <p class="service-note"><strong>Minimum wage:</strong> <code>!work</code> pays ₽10 with a three-minute cooldown, or up to ₽200 per hour when used at every available interval.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PREMIER PAGE -->
+    <!-- ============================================================ -->
+    <section id="premierPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Office of the Premier</div>
+        <h2>Premier Announcements</h2>
+        <p>Government statements issued through the Premier's authenticated Discord account are published here as a separate political and administrative record.</p>
+      </article>
+
+      <div class="premier-identity">
+        <strong>Office holder:</strong> Premier of the Soviet Union ·
+        <strong>Political affiliation:</strong> MorSoc Party of the Soviet Union (MSPSU)
+      </div>
+
+      <div class="service-grid">
+        <article id="premierComposer" class="service-card hidden">
+          <div class="eyebrow">Premier-Only Dispatch Console</div>
+          <h3>Issue Government Statement</h3>
+          <div class="field">
+            <label for="premierAnnouncementTitle">Headline</label>
+            <input id="premierAnnouncementTitle" type="text" maxlength="120" placeholder="Official government headline">
+          </div>
+          <div class="field" style="margin-top:12px">
+            <label for="premierAnnouncementBody">Statement</label>
+            <textarea id="premierAnnouncementBody" rows="7" maxlength="1800" placeholder="Write the Premier's statement"></textarea>
+            <div class="counter-row"><span>Published under the authenticated Premier account</span><span id="premierBodyCounter">0 / 1800</span></div>
+          </div>
+          <div class="button-row">
+            <button id="publishPremierAnnouncement" class="btn gold" type="button">Publish Premier Announcement</button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <header class="panel-header">
+            <h2>Government Wire</h2>
+            <span class="panel-tag">Office of the Premier</span>
+          </header>
+          <div id="premierAnnouncementList" class="announcement-list">
+            <div class="empty-state">No Premier announcements have been issued.</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- LEADERSHIP PAGE -->
+    <!-- ============================================================ -->
+    <section id="leadershipPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Central Committee Leadership Register</div>
+        <h2>State Leadership</h2>
+        <p>The current General Secretary and Chairman of the Central Committee are published here together with the official memorial record of former General Secretary Felix Dzherzinsky.</p>
+      </article>
+
+      <div class="leadership-grid">
+        <article class="leadership-card">
+          <div class="leadership-medallion">
+            <img src="generalsecretary.png" alt="General Secretary Kewl Menzinsky">
+          </div>
+          <div class="eyebrow">General Secretary</div>
+          <h3>Kewl Menzinsky</h3>
+          <p>General Secretary of the Central Committee and principal political leader of the Union.</p>
+          <div class="rank-ribbon">General Secretary of the Soviet Union</div>
+        </article>
+
+        <article class="leadership-card">
+          <div class="leadership-medallion">
+            <img src="Erwin.png" alt="Chairman Erwin">
+          </div>
+          <div class="eyebrow">Chairman of the Central Committee</div>
+          <h3>Erwin</h3>
+          <p>Chairman entrusted with the organisation and direction of the Central Committee.</p>
+          <div class="rank-ribbon">Central Committee Chairman</div>
+        </article>
+
+        <article class="leadership-card memorial-card">
+          <div class="leadership-medallion">
+            <img src="deputysecretary.png" alt="Former General Secretary Felix Dzherzinsky">
+          </div>
+          <div class="eyebrow">In Memoriam <span class="memorial-dove">🕊️</span></div>
+          <h3>Felix Dzherzinsky</h3>
+          <p>Former Generalissimus and General Secretary whose service remains part of the history of the Union.</p>
+          <div class="rank-ribbon">Former Generalissimus and General Secretary of the Soviet Union</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- POLITICAL PARTIES PAGE -->
+    <!-- ============================================================ -->
+    <section id="politicsPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Live Political Register · Bot API Data</div>
+        <h2>Political Factions</h2>
+        <p>This register displays live faction membership data directly from the Soviet Tracker bot API. Member counts and rosters update automatically.</p>
+      </article>
+      <div id="factionStack" class="party-stack">
+        <div class="empty-state">Loading faction data from Soviet Tracker API...</div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BUG REPORT PAGE -->
+    <!-- ============================================================ -->
+    <section id="bugReportPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Authenticated Citizen Technical Office</div>
+        <h2>Website Bug Reports</h2>
+        <p>Report broken controls, incorrect public records, visual defects, or API problems. Reports are delivered to the technical channel with the authenticated Discord username, avatar, and user ID.</p>
+      </article>
+
+      <div id="bugReportGate" class="access-gate">
+        <h3>Discord Authorisation Required</h3>
+        <p>Anonymous reports are not accepted. Sign in so the technical office can identify and follow up with the reporter.</p>
+        <button id="bugReportLoginButton" class="btn gold" type="button">Authorise with Discord</button>
+      </div>
+
+      <div id="bugReportContent" class="service-grid hidden">
+        <article class="service-card">
+          <div class="eyebrow">New Technical Report</div>
+          <h3>Describe the Problem</h3>
+          <div class="field">
+            <label for="bugReportSubject">Short subject</label>
+            <input id="bugReportSubject" type="text" maxlength="120" placeholder="Example: Buy button does not respond">
+          </div>
+          <div class="field" style="margin-top:12px">
+            <label for="bugReportArea">Website area</label>
+            <select id="bugReportArea">
+              <option>Stock Market</option>
+              <option>Buy &amp; Sell</option>
+              <option>National Economy</option>
+              <option>Politics &amp; Government</option>
+              <option>Discord Login</option>
+              <option>Mobile Layout</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field" style="margin-top:12px">
+            <label for="bugReportDetails">What happened?</label>
+            <textarea id="bugReportDetails" rows="8" maxlength="1800" placeholder="Include what you clicked, what you expected, and what appeared instead."></textarea>
+            <div class="counter-row"><span>Do not include passwords, tokens, or private keys.</span><span id="bugReportCounter">0 / 1800</span></div>
+          </div>
+          <div class="button-row"><button id="submitBugReport" class="btn gold" type="button">Send Secure Report</button></div>
+          <div id="bugReportStatus" class="trade-status" aria-live="polite">No report submitted.</div>
+        </article>
+
+        <article class="service-card gold-top">
+          <div class="eyebrow">Reporter Identity</div>
+          <h3 id="bugReporterName">Authorised Citizen</h3>
+          <p id="bugReporterDetails">Your Discord identity will appear here after authorisation.</p>
+          <p class="service-note">The browser does not send a webhook credential and cannot choose a fake reporter identity. The Cloudflare Worker reads the identity from the signed-in session and forwards the report privately.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CHANGELOG PAGE -->
+    <!-- ============================================================ -->
+    <section id="changelogPage" class="site-page hidden">
+      <article class="institution-hero">
+        <div class="institution-kicker">Public Development Record</div>
+        <h2>Website Changelog</h2>
+        <p>Major public interface, security, market, and government-information updates are recorded here.</p>
+      </article>
+
+      <div class="changelog-list">
+        <article class="changelog-entry">
+          <time datetime="2026-08-12">12 August 2026 · Political System Rework</time>
+          <h3>API Created for Factions</h3>
+          <ul>
+            <li>Faction Members and Faction Count Gathered from the API</li>
+            <li>Bug Fixes.</li>
+          </ul>
+        </article>
+        <article class="changelog-entry">
+          <time datetime="2026-07-30">30 July 2026 · Trading Floor Reform</time>
+          <h3>Unified live market and citizen order desk</h3>
+          <ul>
+            <li>Moved authenticated buying, selling and portfolio records directly beside the live graph.</li>
+            <li>Added quick quantities, a persistent settlement quote and clearer session-lock information.</li>
+            <li>Introduced a cinematic State Exchange orientation with live market telemetry and a six-part guide.</li>
+            <li>Retired the Felix memorial from automatic display while preserving it behind a configuration switch.</li>
+            <li>Kept graph updates smooth and limited the public chart to the latest 200 records.</li>
+          </ul>
+        </article>
+        <article class="changelog-entry">
+          <time datetime="2026-07-28">28 July 2026 · Citizen Trading Update</time>
+          <h3>Authenticated market and government services</h3>
+          <ul>
+            <li>Added live citizen portfolios and secured State stock purchase and sale controls.</li>
+            <li>Added the Premier's authenticated government announcement office.</li>
+            <li>Added secure signed-in bug reports with server-verified Discord identity.</li>
+            <li>Grouped public records into Economy, Politics &amp; Government, and Citizen Services.</li>
+            <li>Added the PSP and USF political registers, official guide access, and expanded startup checks.</li>
+          </ul>
+        </article>
+        <article class="changelog-entry">
+          <time datetime="2026-07-27">27 July 2026 · API Security Update</time>
+          <h3>Custom State API and Discord authorisation</h3>
+          <ul>
+            <li>Moved privileged operations out of the static GitHub Pages frontend.</li>
+            <li>Added Discord OAuth sessions, CSRF protection, live market history, and UnbelievaBoat data access.</li>
+            <li>Removed browser-exposed administrator passwords and Firebase authentication dependencies.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
-  <footer style="padding:20px clamp(16px,3vw,38px);color:#eadfbf;background:#3c0806;border-top:4px solid var(--gold);text-align:center;font:12px var(--font-body);">
-    Published by the <strong style="color:var(--gold);">Commissariat of Finance</strong>. All values centrally administered.
+  <footer class="footer">
+    Published by the <strong>Commissariat of Finance</strong>. All displayed values are centrally administered and do not represent a free-market exchange.
   </footer>
 
-  <!-- ADMIN -->
-  <div id="adminBackdrop" class="backdrop hidden" style="position:fixed;inset:0;z-index:1000;padding:20px;display:grid;place-items:center;background:rgba(18,3,2,.85);backdrop-filter:blur(5px);">
-    <div style="width:min(900px,100%);max-height:calc(100vh - 40px);overflow:auto;background:var(--paper-light);border:2px solid var(--gold);border-radius:var(--radius);box-shadow:0 30px 80px rgba(0,0,0,.6);">
-      <div style="padding:14px 20px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(90deg,#4a0707,#8e1515);border-bottom:4px solid var(--gold);border-radius:var(--radius) var(--radius) 0 0;color:#fff;">
-        <h2 style="font:700 18px var(--font-body);text-transform:uppercase;margin:0;">Administration</h2>
-        <button id="closeAdmin" style="width:34px;height:34px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:20px;cursor:pointer;border-radius:50%;">×</button>
-      </div>
-      <div style="padding:16px;">
-        <div id="adminStatus" style="padding:10px 14px;background:#e1d6bc;border:1px dashed #8d7d60;font:13px var(--font-body);border-radius:6px;margin-bottom:12px;">Sign in to use admin controls.</div>
-        <div style="display:grid;gap:12px;">
-          <div style="padding:14px;background:#eee5cd;border:1px solid var(--border);border-left:4px solid var(--red);border-radius:6px;">
-            <h3 style="font:700 14px var(--font-body);color:var(--red-dark);margin:0 0 10px;">Index Control</h3>
-            <div style="display:flex;gap:8px;flex-wrap:wrap;"><input id="adminExactPrice" type="number" step="0.01" style="padding:8px 12px;border:1px solid #8e7e64;border-radius:4px;flex:1;min-width:120px;"><button id="setExactPrice" class="btn" type="button">Set Price</button></div>
-          </div>
-          <div style="padding:14px;background:#eee5cd;border:1px solid var(--border);border-left:4px solid var(--red);border-radius:6px;">
-            <h3 style="font:700 14px var(--font-body);color:var(--red-dark);margin:0 0 10px;">Session</h3>
-            <div style="display:flex;gap:8px;flex-wrap:wrap;">
-              <input id="adminSessionHours" type="number" value="24" style="padding:8px 12px;border:1px solid #8e7e64;border-radius:4px;width:80px;">
-              <button id="openSession" class="btn gold" type="button">Open</button>
-              <button id="closeSession" class="btn dark" type="button">Close</button>
-            </div>
-          </div>
-          <div style="padding:14px;background:#eee5cd;border:1px solid var(--border);border-left:4px solid var(--red);border-radius:6px;">
-            <h3 style="font:700 14px var(--font-body);color:var(--red-dark);margin:0 0 10px;">Announcement</h3>
-            <div style="display:grid;gap:6px;"><input id="adminAnnouncementTitle" placeholder="Title" style="padding:8px 12px;border:1px solid #8e7e64;border-radius:4px;"><textarea id="adminAnnouncementBody" rows="3" placeholder="Statement" style="padding:8px 12px;border:1px solid #8e7e64;border-radius:4px;"></textarea><button id="publishAnnouncement" class="btn" type="button">Publish</button></div>
-          </div>
+  <!-- ============================================================
+       ADMIN PANEL
+  ============================================================ -->
+  <div id="adminBackdrop" class="backdrop hidden">
+    <section class="admin-shell" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <header class="admin-head">
+        <div>
+          <div class="clock-label">Authorised Personnel Only</div>
+          <h2 id="adminTitle">Central Administration Console</h2>
         </div>
+        <button id="closeAdmin" class="icon-button" type="button" aria-label="Close administration console">×</button>
+      </header>
+
+      <div class="admin-body">
+        <div id="adminStatus" class="admin-status">Sign in through Discord and the authorised State API to use administrative controls.</div>
+
+        <section class="admin-section">
+          <h3>Index Control</h3>
+          <div class="form-grid two">
+            <div class="field"><label for="adminExactPrice">Set exact index value</label><input id="adminExactPrice" type="number" min="0.01" step="0.01" inputmode="decimal"></div>
+            <button id="setExactPrice" class="btn" type="button">Set Exact Value</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Scheduled Movement</h3>
+          <div class="form-grid">
+            <div class="field"><label for="adminMovementPercent">Percentage change</label><input id="adminMovementPercent" type="number" step="0.01" inputmode="decimal"></div>
+            <div class="field"><label for="adminMovementMinutes">Movement duration in minutes</label><input id="adminMovementMinutes" type="number" min="1" step="1" value="30" inputmode="numeric"></div>
+            <button id="scheduleMovement" class="btn" type="button">Issue Movement Order</button>
+          </div>
+          <div class="button-row"><button id="freezeMovement" class="btn dark" type="button">Freeze at Current Value</button></div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Market Session Timer</h3>
+          <div class="form-grid two">
+            <div class="field"><label for="adminSessionHours">Session duration in hours</label><input id="adminSessionHours" type="number" min="1" max="168" step="1" value="24" inputmode="numeric"></div>
+            <div class="button-row"><button id="openSession" class="btn gold" type="button">Open / Reset Session</button><button id="closeSession" class="btn dark" type="button">Close Market Now</button></div>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Issue Announcement</h3>
+          <div class="form-grid two">
+            <div class="field"><label for="adminAnnouncementTitle">Headline</label><input id="adminAnnouncementTitle" type="text" maxlength="120"></div>
+            <div class="field"><label for="adminAnnouncementAuthor">Issuing authority</label><input id="adminAnnouncementAuthor" type="text" maxlength="80" value="Central Bank"></div>
+            <div class="field full"><label for="adminAnnouncementBody">Official statement</label><textarea id="adminAnnouncementBody" rows="4" maxlength="1200"></textarea></div>
+          </div>
+          <div class="button-row"><button id="publishAnnouncement" class="btn" type="button">Publish Bulletin</button></div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Official Market Warning</h3>
+          <div class="field"><label for="adminWarningText">Warning issued by hyawii2.0, State Committee of Economy</label><textarea id="adminWarningText" rows="3" maxlength="800"></textarea></div>
+          <div class="button-row"><button id="saveWarning" class="btn" type="button">Update Warning</button><button id="clearWarning" class="btn dark" type="button">Remove Warning</button></div>
+        </section>
+
+        <section class="admin-section">
+          <h3>National Economy</h3>
+          <div class="form-grid five">
+            <div class="field"><label for="adminTotalRubles">Total rubles</label><input id="adminTotalRubles" type="number" min="0" step="1"></div>
+            <div class="field"><label for="adminStateBank">State Bank rubles</label><input id="adminStateBank" type="number" min="0" step="1"></div>
+            <div class="field"><label for="adminIssuedShares">Total shares issued</label><input id="adminIssuedShares" type="number" min="0" step="1"></div>
+            <div class="field"><label for="adminAvailableShares">Shares available</label><input id="adminAvailableShares" type="number" min="0" step="1"></div>
+            <div class="field"><label for="adminAccountHolders">Account holders</label><input id="adminAccountHolders" type="number" min="1" step="1"></div>
+          </div>
+          <div class="button-row"><button id="saveEconomy" class="btn" type="button">Update National Economy</button></div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Market Controls</h3>
+          <div class="form-grid">
+            <div class="field"><label for="adminCircuitBreaker">Circuit breaker %</label><input id="adminCircuitBreaker" type="number" min="1" max="25" step="0.5" value="12" inputmode="decimal"></div>
+            <div class="field"><label for="adminTradingFee">Trading fee %</label><input id="adminTradingFee" type="number" min="0" max="5" step="0.1" value="0.5" inputmode="decimal"></div>
+            <button id="updateMarketConfig" class="btn" type="button">Update Config</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
+          <h3>Maintenance</h3>
+          <div class="button-row">
+            <button id="clearAnnouncements" class="btn dark" type="button">Clear Announcements</button>
+            <button id="resetHistory" class="btn dark" type="button">Reset Graph History</button>
+            <button id="factoryReset" class="btn dark" type="button">Factory Reset Market</button>
+          </div>
+        </section>
       </div>
-    </div>
+    </section>
   </div>
 
-  <!-- TOAST -->
-  <div id="toastStack" style="position:fixed;z-index:1200;right:16px;bottom:16px;width:min(360px,calc(100vw - 32px));display:grid;gap:8px;pointer-events:none;"></div>
+  <!-- ============================================================
+       TOAST STACK
+  ============================================================ -->
+  <div id="toastStack" class="toast-stack"></div>
 
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
   <script>
     "use strict";
 
@@ -2005,12 +3532,16 @@
     // ============================================================
     const CONFIG = {
       API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
-      MARKET_API_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
       SITE_URL: window.location.origin + window.location.pathname,
       REQUEST_TIMEOUT_MS: 12000,
       MARKET_REFRESH_MS: 10000,
+      FACTION_REFRESH_MS: 30000,
+      SESSION_REFRESH_MS: 60000,
       CET_TIME_ZONE: "Europe/Brussels",
-      CITIZEN_SHARE_LIMIT: 200
+      MEMORIAL_ENABLED: false,
+      INTRO_GUIDE_INTERVAL_MS: 4800,
+      CITIZEN_SHARE_LIMIT: 200,
+      OAUTH_RETURN_PARAMETER: "returnTo"
     };
 
     // ============================================================
@@ -2022,11 +3553,20 @@
       market: null,
       economy: null,
       announcements: [],
-      companies: [],
+      premierAnnouncements: [],
       portfolio: null,
+      factions: null,
+      companies: [],
       selectedCompanyId: null,
       chart: null,
       serverClockOffsetMs: 0,
+      marketTimerId: null,
+      refreshTimerId: null,
+      sessionRefreshTimerId: null,
+      factionRefreshTimerId: null,
+      publicRefreshInFlight: false,
+      ws: null,
+      wsReconnectAttempts: 0,
       loadingProgress: 0
     };
 
@@ -2066,709 +3606,1667 @@
     const formatPercent = (v) => (v > 0 ? '+' : '') + v.toFixed(2) + '%';
     const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
 
-    // ============================================================
-    // API
-    // ============================================================
-    async function apiRequest(endpoint, options = {}) {
-      const url = CONFIG.API_BASE_URL + endpoint;
-      const headers = { 'Accept': 'application/json', ...options.headers };
-      
-      try {
-        const sessionToken = sessionStorage.getItem('ussrExchangeSession');
-        if (sessionToken) headers['Authorization'] = 'Bearer ' + sessionToken;
-      } catch(e) {}
-      
-      if (options.csrf && STATE.csrfToken) headers['X-CSRF-Token'] = STATE.csrfToken;
-      
-      const response = await fetch(url, {
-        ...options,
-        headers,
-        credentials: 'include',
-        cache: 'no-store'
-      });
-      
-      if (!response.ok) {
-        const text = await response.text();
-        throw new Error(text || response.statusText);
+    function showToast(msg, type) {
+      const stack = $('toastStack');
+      const toast = document.createElement('div');
+      toast.className = 'toast' + (type === 'error' ? ' error' : '');
+      toast.textContent = msg;
+      stack.appendChild(toast);
+      setTimeout(() => toast.remove(), 5000);
+    }
+
+    function setBusy(button, busy, busyLabel) {
+      if (!button) return;
+      if (busy) {
+        button.dataset.originalLabel = button.textContent;
+        button.textContent = busyLabel || 'Working…';
+        button.disabled = true;
+      } else {
+        button.textContent = button.dataset.originalLabel || button.textContent;
+        button.disabled = false;
       }
-      return response.json();
     }
 
     // ============================================================
-    // SESSION
+    // API CLIENT
     // ============================================================
-    async function loadSession() {
-      updateLoading(30, 'Connecting to State API...');
+    class ApiError extends Error {
+      constructor(message, status, payload) {
+        super(message);
+        this.name = 'ApiError';
+        this.status = status || 0;
+        this.payload = payload || null;
+      }
+    }
+
+    const isApiConfigured = function() {
+      return Boolean(CONFIG.API_BASE_URL && /^https?:\/\//i.test(CONFIG.API_BASE_URL));
+    };
+
+    const apiUrl = function(endpoint) {
+      const base = CONFIG.API_BASE_URL.replace(/\/+$/, '') + '/';
+      const path = String(endpoint || '').replace(/^\/+/, '');
+      return new URL(path, base).toString();
+    };
+
+    const parseApiResponse = async function(response) {
+      if (response.status === 204) return null;
+      const contentType = response.headers.get('content-type') || '';
+      if (contentType.includes('application/json')) return response.json();
+      const text = await response.text();
+      return text ? { message: text } : null;
+    };
+
+    const apiRequest = async function(endpoint, options) {
+      if (!isApiConfigured()) {
+        throw new ApiError('Set CONFIG.API_BASE_URL at the top of index.html.', 0);
+      }
+
+      const settings = options || {};
+      const controller = new AbortController();
+      const timeoutId = window.setTimeout(function() { controller.abort(); }, CONFIG.REQUEST_TIMEOUT_MS);
+
+      const headers = new Headers(settings.headers || {});
+      headers.set('Accept', 'application/json');
+
       try {
-        const data = await apiRequest('/api/session');
-        if (data.authenticated) {
-          STATE.user = data.user;
-          STATE.csrfToken = data.csrfToken;
-          renderSession();
-          updateLoading(45, 'Loading portfolio...');
-          await loadPortfolio();
+        const sessionToken = window.sessionStorage.getItem('ussrExchangeSession');
+        if (sessionToken) headers.set('Authorization', 'Bearer ' + sessionToken);
+      } catch (storageError) {
+        console.warn('Session storage is unavailable.', storageError);
+      }
+
+      const method = String(settings.method || 'GET').toUpperCase();
+      if (method !== 'GET' && method !== 'HEAD' && STATE.csrfToken) {
+        headers.set('X-CSRF-Token', STATE.csrfToken);
+      }
+
+      let body = settings.body;
+      if (body !== undefined && body !== null && !(body instanceof FormData)) {
+        headers.set('Content-Type', 'application/json');
+        body = typeof body === 'string' ? body : JSON.stringify(body);
+      }
+
+      try {
+        const response = await fetch(apiUrl(endpoint), {
+          method: method,
+          credentials: 'include',
+          cache: settings.cache || 'no-store',
+          headers: headers,
+          body: body,
+          signal: controller.signal
+        });
+
+        const payload = await parseApiResponse(response);
+        if (!response.ok) {
+          const message = payload && (payload.error || payload.message) ? (payload.error || payload.message) : 'State API request failed (' + response.status + ').';
+          throw new ApiError(message, response.status, payload);
         }
-        updateLoading(50, 'Loading market data...');
-      } catch(e) {
-        console.warn('Session load failed:', e);
+        return payload;
+      } catch (error) {
+        if (error.name === 'AbortError') {
+          throw new ApiError('The State API did not respond in time.', 0);
+        }
+        throw error;
+      } finally {
+        window.clearTimeout(timeoutId);
       }
-    }
+    };
 
-    function renderSession() {
-      const box = $('accountBox');
-      box.innerHTML = '';
-      
-      if (!STATE.user) {
-        const login = document.createElement('button');
-        login.className = 'btn gold';
-        login.textContent = 'Authorise';
-        login.onclick = () => window.location.href = CONFIG.API_BASE_URL + '/auth/discord?returnTo=' + encodeURIComponent(CONFIG.SITE_URL);
-        box.appendChild(login);
-        
-        const admin = document.createElement('button');
-        admin.className = 'btn ghost';
-        admin.textContent = 'Admin';
-        admin.onclick = openAdmin;
-        box.appendChild(admin);
+    const API = Object.freeze({
+      get: function(endpoint) { return apiRequest(endpoint); },
+      post: function(endpoint, body) { return apiRequest(endpoint, { method: 'POST', body: body }); },
+      patch: function(endpoint, body) { return apiRequest(endpoint, { method: 'PATCH', body: body }); },
+      delete: function(endpoint, body) { return apiRequest(endpoint, { method: 'DELETE', body: body }); }
+    });
+
+    // ============================================================
+    // DISCORD OAUTH
+    // ============================================================
+    const startDiscordLogin = function() {
+      if (!isApiConfigured()) {
+        showToast('Configure CONFIG.API_BASE_URL before using Discord login.', 'error');
         return;
       }
-      
+      const loginUrl = new URL(apiUrl('/auth/discord'));
+      loginUrl.searchParams.set(CONFIG.OAUTH_RETURN_PARAMETER, CONFIG.SITE_URL);
+      window.location.assign(loginUrl.toString());
+    };
+
+    const normalizeSession = function(payload) {
+      if (!payload) return null;
+      if (payload.authenticated === false) return null;
+      return payload.user || payload.session || payload.account || (payload.id || payload.username ? payload : null);
+    };
+
+    const renderSession = function() {
+      const accountBox = $('accountBox');
+      accountBox.replaceChildren();
+
+      if (!STATE.user) {
+        const login = document.createElement('button');
+        login.id = 'loginButton';
+        login.className = 'btn gold';
+        login.type = 'button';
+        login.textContent = 'Authorise with Discord';
+        login.addEventListener('click', startDiscordLogin);
+
+        const admin = document.createElement('button');
+        admin.id = 'adminButton';
+        admin.className = 'btn ghost';
+        admin.type = 'button';
+        admin.textContent = 'Administration Panel';
+        admin.addEventListener('click', openAdmin);
+
+        accountBox.append(login, admin);
+        renderIdentityDependentViews();
+        return;
+      }
+
       if (STATE.user.avatarUrl) {
         const avatar = document.createElement('img');
         avatar.className = 'account-avatar';
         avatar.src = STATE.user.avatarUrl;
         avatar.alt = '';
-        box.appendChild(avatar);
+        avatar.referrerPolicy = 'no-referrer';
+        accountBox.appendChild(avatar);
       }
-      
+
       const identity = document.createElement('span');
       identity.className = 'account-identity';
-      identity.textContent = STATE.user.displayName || STATE.user.username;
-      box.appendChild(identity);
-      
+      identity.textContent = STATE.user.displayName || STATE.user.username || 'Authorised citizen';
+      accountBox.appendChild(identity);
+
       if (STATE.user.isAdmin) {
         const admin = document.createElement('button');
+        admin.id = 'adminButton';
         admin.className = 'btn ghost';
-        admin.textContent = 'Admin';
-        admin.onclick = openAdmin;
-        box.appendChild(admin);
+        admin.type = 'button';
+        admin.textContent = 'Administration';
+        admin.addEventListener('click', openAdmin);
+        accountBox.appendChild(admin);
       }
-      
+
       const logout = document.createElement('button');
+      logout.id = 'logoutButton';
       logout.className = 'btn dark';
+      logout.type = 'button';
       logout.textContent = 'Sign Out';
-      logout.onclick = async () => {
-        await apiRequest('/auth/logout', { method: 'POST', csrf: true });
+      logout.addEventListener('click', logoutSession);
+      accountBox.appendChild(logout);
+      renderIdentityDependentViews();
+    };
+
+    const loadSession = async function(silent) {
+      if (!isApiConfigured()) {
         STATE.user = null;
-        sessionStorage.removeItem('ussrExchangeSession');
+        STATE.csrfToken = null;
         renderSession();
-        showToast('Signed out');
-      };
-      box.appendChild(logout);
-    }
+        return;
+      }
+
+      try {
+        const payload = await API.get('/api/session');
+        STATE.csrfToken = payload && payload.csrfToken ? payload.csrfToken : null;
+        STATE.user = normalizeSession(payload);
+        renderSession();
+        await loadPortfolio(true);
+        if (STATE.user) setupWebSocket();
+        updateLoading(45, 'Loading portfolio...');
+      } catch (error) {
+        if (error.status === 401 || error.status === 403) {
+          STATE.user = null;
+          STATE.csrfToken = null;
+          STATE.portfolio = null;
+          renderSession();
+          return;
+        }
+        if (!silent) showToast(error.message, 'error');
+      }
+    };
+
+    const logoutSession = async function() {
+      const button = $('logoutButton');
+      setBusy(button, true, 'Signing Out…');
+      try {
+        await API.post('/auth/logout', {});
+        STATE.user = null;
+        STATE.csrfToken = null;
+        STATE.portfolio = null;
+        if (STATE.ws) { STATE.ws.close(); STATE.ws = null; }
+        try { window.sessionStorage.removeItem('ussrExchangeSession'); } catch (storageError) {}
+        closeAdmin();
+        renderSession();
+        showToast('Discord session closed.');
+      } catch (error) {
+        showToast(error.message, 'error');
+      } finally {
+        setBusy(button, false);
+      }
+    };
+
+    const handleOAuthReturn = function() {
+      const params = new URLSearchParams(window.location.search);
+      const fragment = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+      const sessionToken = fragment.get('session');
+      const authResult = params.get('auth');
+      const authError = params.get('auth_error') || params.get('error');
+
+      if (sessionToken) {
+        try { window.sessionStorage.setItem('ussrExchangeSession', sessionToken); } catch (storageError) {}
+        fragment.delete('session');
+      }
+
+      if (authResult === 'success') showToast('Discord authorisation completed.');
+      else if (authError) showToast('Discord authorisation failed: ' + authError, 'error');
+
+      if (authResult || authError || sessionToken) {
+        params.delete('auth');
+        params.delete('auth_error');
+        params.delete('error');
+        const query = params.toString();
+        const remainingFragment = fragment.toString();
+        const cleanUrl = window.location.pathname + (query ? '?' + query : '') + (remainingFragment ? '#' + remainingFragment : '');
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
+    };
+
+    // ============================================================
+    // WEBSOCKET
+    // ============================================================
+    const setupWebSocket = function() {
+      const wsUrl = CONFIG.API_BASE_URL.replace(/^http/, 'ws') + '/ws';
+      try {
+        STATE.ws = new WebSocket(wsUrl);
+        STATE.ws.onopen = function() {
+          console.log('Market WebSocket connected');
+          STATE.wsReconnectAttempts = 0;
+          setApiStatus('online', 'Live market feed');
+        };
+        STATE.ws.onmessage = function(event) {
+          try {
+            const data = JSON.parse(event.data);
+            handleWebSocketMessage(data);
+          } catch (e) { console.warn('WS message parse error:', e); }
+        };
+        STATE.ws.onclose = function() {
+          console.warn('Market WebSocket closed');
+          reconnectWebSocket();
+        };
+        STATE.ws.onerror = function(error) {
+          console.error('WebSocket error:', error);
+          reconnectWebSocket();
+        };
+      } catch (e) { console.warn('WebSocket not available:', e); }
+    };
+
+    const reconnectWebSocket = function() {
+      if (STATE.wsReconnectAttempts >= 5) { setApiStatus('error', 'Market feed offline'); return; }
+      STATE.wsReconnectAttempts++;
+      setTimeout(setupWebSocket, 3000 * STATE.wsReconnectAttempts);
+    };
+
+    const handleWebSocketMessage = function(data) {
+      if (data.type === 'price_update') {
+        if (STATE.market) {
+          STATE.market.price = data.price;
+          STATE.market.changePercent = data.changePercent || 0;
+          if (data.history) STATE.market.history = data.history;
+          renderPrice();
+          updateMarketStats(data.stats || {});
+        }
+        if (STATE.selectedCompanyId && data.company_id == STATE.selectedCompanyId) {
+          loadCompanyData(STATE.selectedCompanyId);
+        }
+      } else if (data.type === 'market_status') {
+        if (STATE.market) {
+          STATE.market.status = data.status;
+          STATE.market.closesAt = data.closesAt;
+          STATE.market.reopensAt = data.reopensAt;
+          renderPrice();
+        }
+      } else if (data.type === 'event_update') {
+        loadAnnouncements();
+        loadEvents();
+      } else if (data.type === 'portfolio_update' && STATE.user) {
+        loadPortfolio(true);
+        if (STATE.selectedCompanyId) loadUserShares(STATE.selectedCompanyId);
+      }
+    };
+
+    // ============================================================
+    // API STATUS
+    // ============================================================
+    const setApiStatus = function(mode, text) {
+      const status = $('apiStatus');
+      status.classList.remove('online', 'error');
+      if (mode) status.classList.add(mode);
+      $('apiStatusText').textContent = text;
+      const introConnection = $('introConnection');
+      if (introConnection) {
+        introConnection.textContent = mode === 'online' ? 'State link established' : (mode === 'error' ? 'State link unavailable' : 'Establishing State link');
+      }
+    };
 
     // ============================================================
     // MARKET DATA
     // ============================================================
-    async function loadMarket() {
-      try {
-        const data = await apiRequest('/api/public/market');
-        STATE.market = data.market || data;
-        renderMarket();
-        updateLoading(70, 'Loading companies...');
-      } catch(e) {
-        console.warn('Market load failed:', e);
+    const normalizeHistory = function(history) {
+      if (Array.isArray(history)) {
+        return history.map(function(entry) {
+          return { timestamp: entry.timestamp || entry.time || entry.createdAt || entry.date, price: entry.price || entry.value || 0 };
+        }).filter(function(entry) { return entry.timestamp && Number.isFinite(entry.price); }).sort(function(left, right) {
+          return new Date(left.timestamp) - new Date(right.timestamp);
+        });
       }
-    }
+      return [];
+    };
 
-    function renderMarket() {
-      const m = STATE.market;
-      if (!m) return;
-      
-      $('currentPrice').textContent = (m.price || 0).toFixed(2);
-      $('openingPrice').textContent = (m.openingPrice || 0).toFixed(2);
-      $('targetPrice').textContent = (m.targetPrice || 0).toFixed(2);
-      
-      const change = m.changePercent || 0;
+    const normalizeMarket = function(payload) {
+      const source = payload && (payload.market || payload.data) ? (payload.market || payload.data) : (payload || {});
+      const price = source.price || source.currentPrice || source.indexValue || 0;
+      const openingPrice = source.openingPrice || source.sessionOpeningPrice || source.sessionOpenPrice || source.openPrice || price;
+      const targetPrice = source.targetPrice || source.scheduledTarget || price;
+      let changePercent = Number(source.changePercent);
+      if (!Number.isFinite(changePercent)) {
+        changePercent = openingPrice > 0 ? ((price - openingPrice) / openingPrice) * 100 : 0;
+      }
+      return {
+        price: price,
+        openingPrice: openingPrice,
+        targetPrice: targetPrice,
+        changePercent: changePercent,
+        status: String(source.status || source.marketStatus || 'closed').toLowerCase(),
+        openedAt: source.openedAt || source.sessionOpenedAt || null,
+        closesAt: source.closesAt || source.sessionClosesAt || null,
+        reopensAt: source.reopensAt || source.opensAt || null,
+        movementStartedAt: source.movementStartedAt || source.scheduleStartedAt || null,
+        movementEndsAt: source.movementEndsAt || source.targetReachedAt || null,
+        movementActive: Boolean(source.movementActive || source.scheduledMovement),
+        movementPercent: source.movementPercent || source.scheduledPercent || changePercent,
+        serverTime: source.serverTime || payload.serverTime || null,
+        history: normalizeHistory(payload.history || source.history),
+        marketCap: source.marketCap || source.market_cap || 0,
+        volume: source.volume || source.total_volume || 0,
+        risk: source.risk || 'low',
+        liquidity: source.liquidity || '0',
+        inflation: source.inflation || source.inflation_rate || 0
+      };
+    };
+
+    const renderPrice = function() {
+      const market = STATE.market;
+      if (!market) return;
+
+      $('currentPrice').textContent = market.price.toFixed(2);
+      $('openingPrice').textContent = market.openingPrice.toFixed(2);
+      $('targetPrice').textContent = market.targetPrice.toFixed(2);
+
+      const percent = Number(market.changePercent);
       const badge = $('changeBadge');
-      badge.textContent = formatPercent(change);
-      badge.className = 'change ' + (change > 0 ? 'positive' : (change < 0 ? 'negative' : 'flat'));
-      
-      const status = m.status || 'closed';
+      badge.textContent = formatPercent(percent);
+      badge.className = 'change ' + (percent > 0 ? 'positive' : (percent < 0 ? 'negative' : 'flat'));
+
+      const status = market.status === 'open' ? 'open' : (market.status === 'settlement' ? 'settlement' : 'closed');
       const sessionState = $('sessionState');
       sessionState.textContent = status === 'open' ? 'Open' : (status === 'settlement' ? 'Settlement' : 'Closed');
       sessionState.className = 'session-state ' + status;
-      
-      $('sessionDetails').textContent = m.closesAt ? 'Closes ' + new Date(m.closesAt).toLocaleString() : 'Awaiting session';
-      
-      if (m.movementActive) {
-        $('movementLabel').textContent = formatPercent(m.movementPercent) + ' scheduled';
-        $('movementCompletion').textContent = m.movementEndsAt ? new Date(m.movementEndsAt).toLocaleString() : 'In progress';
+
+      const introPrice = $('introLivePrice');
+      const introChange = $('introLiveChange');
+      const introStatus = $('introLiveStatus');
+      if (introPrice) introPrice.textContent = market.price.toFixed(2);
+      if (introChange) { introChange.textContent = formatPercent(percent); introChange.style.color = percent > 0 ? '#69c78a' : (percent < 0 ? '#ff8071' : '#fff2c9'); }
+      if (introStatus) introStatus.textContent = status === 'open' ? 'Open for orders' : (status === 'settlement' ? 'Settlement' : 'Orders locked');
+
+      if (status === 'open') {
+        $('sessionDetails').textContent = market.closesAt ? 'Official session closes ' + formatDateTime(market.closesAt) + '.' : 'Trading is authorised. Awaiting an official closing time.';
+      } else if (market.reopensAt) {
+        $('sessionDetails').textContent = 'Trading is suspended. The next authorised opening is ' + formatDateTime(market.reopensAt) + '.';
+      } else {
+        $('sessionDetails').textContent = 'Awaiting an official market session.';
+      }
+
+      if (market.movementActive) {
+        $('movementLabel').textContent = (market.movementPercent >= 0 ? '+' : '') + market.movementPercent.toFixed(2) + '% scheduled';
+        $('targetNote').textContent = 'Official scheduled destination';
+        $('movementCompletion').textContent = formatDateTime(market.movementEndsAt);
       } else {
         $('movementLabel').textContent = 'No scheduled movement';
+        $('targetNote').textContent = 'No active order';
         $('movementCompletion').textContent = 'Not scheduled';
       }
-      
-      renderChart(m.history || []);
-      updateCountdown();
-      updateMarketStats(m);
-    }
 
-    function renderChart(history) {
+      updateMarketStats({ marketCap: market.marketCap, volume: market.volume, risk: market.risk, liquidity: market.liquidity, inflation: market.inflation });
+      populateAdminFromState();
+      renderChart(market.history);
+      renderPortfolio();
+      updateCountdown();
+    };
+
+    const updateMarketStats = function(stats) {
+      if (stats.marketCap !== undefined) $('statMarketCap').textContent = formatMoney(stats.marketCap);
+      if (stats.volume !== undefined) $('statVolume').textContent = formatMoney(stats.volume);
+      if (stats.risk !== undefined) {
+        const riskEl = $('statRisk');
+        riskEl.textContent = String(stats.risk).toUpperCase();
+        riskEl.style.color = stats.risk === 'low' ? 'var(--green)' : stats.risk === 'moderate' ? '#c98f1a' : stats.risk === 'high' ? '#b84a2d' : '#b82d2d';
+      }
+      if (stats.liquidity !== undefined) $('statLiquidity').textContent = typeof stats.liquidity === 'string' ? stats.liquidity + '%' : String(stats.liquidity);
+      if (stats.inflation !== undefined) $('statInflation').textContent = formatPercent(stats.inflation);
+    };
+
+    const formatDateTime = function(value) {
+      if (!value) return 'Not scheduled';
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return 'Not scheduled';
+      return new Intl.DateTimeFormat('en-GB', { timeZone: CONFIG.CET_TIME_ZONE, dateStyle: 'medium', timeStyle: 'short' }).format(date);
+    };
+
+    const chartLabel = function(timestamp) {
+      const date = new Date(timestamp);
+      if (Number.isNaN(date.getTime())) return String(timestamp);
+      return new Intl.DateTimeFormat('en-GB', { timeZone: CONFIG.CET_TIME_ZONE, day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }).format(date);
+    };
+
+    const renderChart = function(history) {
       if (typeof Chart === 'undefined') return;
-      const canvas = $('marketChart');
-      if (!canvas) return;
-      
-      const points = history.length ? history.slice(-200) : [];
-      const labels = points.map(p => new Date(p.timestamp).toLocaleTimeString());
-      const prices = points.map(p => p.price);
-      
+      const points = history && history.length ? history.slice(-200) : (STATE.market ? [{ timestamp: Date.now(), price: STATE.market.price }] : []);
+      const labels = points.map(function(entry) { return chartLabel(entry.timestamp); });
+      const prices = points.map(function(entry) { return entry.price; });
+
       if (STATE.chart) {
         STATE.chart.data.labels = labels;
         STATE.chart.data.datasets[0].data = prices;
+        STATE.chart.data.datasets[0].pointRadius = points.length > 50 ? 0 : 2;
         STATE.chart.update('none');
         return;
       }
-      
-      const ctx = canvas.getContext('2d');
-      STATE.chart = new Chart(ctx, {
+
+      const canvas = $('marketChart');
+      const context = canvas.getContext('2d');
+      const gradient = context.createLinearGradient(0, 0, 0, 380);
+      gradient.addColorStop(0, 'rgba(152, 21, 21, .28)');
+      gradient.addColorStop(1, 'rgba(152, 21, 21, .015)');
+
+      STATE.chart = new Chart(context, {
         type: 'line',
         data: {
-          labels: labels || ['No Data'],
+          labels: labels,
           datasets: [{
-            label: 'Index',
-            data: prices || [0],
+            label: 'Official Index',
+            data: prices,
             borderColor: '#981515',
-            backgroundColor: 'rgba(152,21,21,.1)',
+            backgroundColor: gradient,
             borderWidth: 3,
+            pointRadius: points.length > 50 ? 0 : 2,
+            pointHoverRadius: 5,
+            pointBackgroundColor: '#efc94c',
+            pointBorderColor: '#5f0909',
             fill: true,
-            tension: 0.3,
-            pointRadius: points.length > 50 ? 0 : 2
+            tension: .22
           }]
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          plugins: { legend: { display: false } },
+          animation: { duration: 450 },
+          interaction: { intersect: false, mode: 'index' },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: '#3a0505',
+              titleColor: '#efc94c',
+              bodyColor: '#fff5d4',
+              callbacks: { label: function(contextValue) { return ' Index: ' + contextValue.parsed.y.toFixed(2); } }
+            }
+          },
           scales: {
-            x: { grid: { display: false } },
-            y: { ticks: { callback: v => '₽' + v.toFixed(2) } }
+            x: { grid: { color: 'rgba(95, 9, 9, .08)' }, ticks: { color: '#6e6656', maxTicksLimit: 8, maxRotation: 0 } },
+            y: { beginAtZero: false, grid: { color: 'rgba(95, 9, 9, .1)' }, ticks: { color: '#6e6656', callback: function(value) { return value.toFixed(2); } } }
           }
         }
       });
-    }
+    };
 
-    function updateMarketStats(m) {
-      $('statMarketCap').textContent = formatMoney(m.marketCap || 0);
-      $('statVolume').textContent = formatMoney(m.volume || 0);
-      $('statRisk').textContent = (m.risk || 'LOW').toUpperCase();
-      $('statLiquidity').textContent = (m.liquidity || '0') + '%';
-      $('statInflation').textContent = formatPercent(m.inflation || 0);
-    }
+    const updateCountdown = function() {
+      if (!STATE.market) { $('marketCountdown').textContent = 'Session data loading'; return; }
+      const market = STATE.market;
+      const isOpen = market.status === 'open';
+      const destination = isOpen ? market.closesAt : market.reopensAt;
 
-    function updateCountdown() {
-      if (!STATE.market) { $('marketCountdown').textContent = 'Loading...'; return; }
-      const m = STATE.market;
-      const isOpen = m.status === 'open';
-      const target = isOpen ? m.closesAt : m.reopensAt;
-      if (!target) { $('marketCountdown').textContent = isOpen ? 'Open' : 'Closed'; return; }
-      
-      const remaining = new Date(target).getTime() - Date.now();
-      if (remaining <= 0) { $('marketCountdown').textContent = isOpen ? 'Closing...' : 'Opening...'; return; }
-      
-      const mins = Math.floor(remaining / 60000);
-      const secs = Math.floor((remaining % 60000) / 1000);
-      $('marketCountdown').textContent = (isOpen ? 'Closes in ' : 'Opens in ') + mins + 'm ' + secs + 's';
-    }
+      if (!destination) {
+        $('marketCountdown').textContent = isOpen ? 'Open · closing time pending' : 'Market closed';
+        return;
+      }
+
+      const remaining = new Date(destination).getTime() - Date.now();
+      if (!Number.isFinite(remaining) || remaining <= 0) {
+        $('marketCountdown').textContent = isOpen ? 'Closing in progress' : 'Opening in progress';
+        return;
+      }
+
+      const totalSeconds = Math.floor(remaining / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      const units = [];
+      if (days) units.push(days + 'd');
+      units.push(String(hours).padStart(2, '0') + 'h');
+      units.push(String(minutes).padStart(2, '0') + 'm');
+      units.push(String(seconds).padStart(2, '0') + 's');
+
+      $('marketCountdown').textContent = (isOpen ? 'Closes in ' : 'Opens in ') + units.join(' ');
+    };
+
+    const loadMarket = async function() {
+      try {
+        const payload = await API.get('/api/public/market');
+        STATE.market = normalizeMarket(payload || {});
+        if (STATE.market.serverTime) {
+          const serverTime = new Date(STATE.market.serverTime).getTime();
+          if (Number.isFinite(serverTime)) STATE.serverClockOffsetMs = serverTime - Date.now();
+        }
+        renderPrice();
+        updateLoading(60, 'Loading companies...');
+      } catch (error) {
+        console.warn('Market load failed:', error);
+      }
+    };
 
     // ============================================================
     // COMPANIES
     // ============================================================
-    async function loadCompanies() {
+    const loadCompanies = async function() {
       try {
-        const data = await apiRequest('/api/public/companies');
+        const data = await API.get('/api/public/companies');
         STATE.companies = data.companies || [];
         renderCompanies();
         populateCompanySelector();
-        updateLoading(90, 'Loading companies...');
-      } catch(e) {
-        console.warn('Companies load failed:', e);
+        updateLoading(70, 'Loading companies...');
+      } catch (error) {
+        console.warn('Companies load failed:', error);
       }
-    }
+    };
 
-    function renderCompanies() {
+    const renderCompanies = function() {
       const grid = $('companyGrid');
       if (!grid) return;
-      
       if (!STATE.companies.length) {
         grid.innerHTML = '<div class="empty-state">No companies registered.</div>';
         return;
       }
-      
-      grid.innerHTML = STATE.companies.map(c => {
+
+      grid.innerHTML = STATE.companies.map(function(c) {
         const isPrivate = c.public_shares === 0 || c.public_shares < 10;
         const price = c.price || 0;
         const change = c.change_percent || 0;
-        
-        return `
-          <div class="company-card" onclick="showCompany(${c.company_id})">
-            <div style="display:flex;justify-content:space-between;align-items:start;">
-              <div>
-                <div class="company-name">${c.name}</div>
-                <div class="company-type">${c.company_type || 'General'}</div>
-              </div>
-              ${isPrivate ? '<span class="private-badge">Private</span>' : '<span class="public-badge">Public</span>'}
-            </div>
-            <div style="margin-top:8px;display:flex;justify-content:space-between;align-items:end;">
-              <div>
-                <div style="font-size:11px;color:var(--muted);">Share Price</div>
-                <div class="company-price">${formatMoney(price)}</div>
-              </div>
-              <div class="company-change ${change > 0 ? 'positive' : (change < 0 ? 'negative' : '')}">${formatPercent(change)}</div>
-            </div>
-            <div class="company-details">
-              <span>Market Cap: <strong>${formatMoney(price * (c.total_shares || 0))}</strong></span>
-              <span>Public Shares: <strong>${formatNumber(c.public_shares || 0)}</strong></span>
-            </div>
-          </div>
-        `;
+        return '<div class="company-card" onclick="showCompany(' + c.company_id + ')">' +
+          '<div style="display:flex;justify-content:space-between;align-items:start;">' +
+            '<div><div class="company-name">' + c.name + '</div><div class="company-type">' + (c.company_type || 'General') + '</div></div>' +
+            (isPrivate ? '<span class="private-badge">Private</span>' : '<span class="public-badge">Public</span>') +
+          '</div>' +
+          '<div style="margin-top:8px;display:flex;justify-content:space-between;align-items:end;">' +
+            '<div><div style="font-size:11px;color:var(--muted);">Share Price</div><div class="company-price">' + formatMoney(price) + '</div></div>' +
+            '<div class="company-change ' + (change > 0 ? 'positive' : (change < 0 ? 'negative' : '')) + '">' + formatPercent(change) + '</div>' +
+          '</div>' +
+          '<div class="company-details">' +
+            '<span>Market Cap: <strong>' + formatMoney(price * (c.total_shares || 0)) + '</strong></span>' +
+            '<span>Public Shares: <strong>' + formatNumber(c.public_shares || 0) + '</strong></span>' +
+          '</div>' +
+        '</div>';
       }).join('');
-    }
+    };
 
-    function populateCompanySelector() {
+    const populateCompanySelector = function() {
       const selector = $('companySelector');
       if (!selector) return;
-      
       const currentValue = selector.value;
       selector.innerHTML = '<option value="">Select company...</option>';
-      
-      STATE.companies.forEach(c => {
+      STATE.companies.forEach(function(c) {
         const opt = document.createElement('option');
         opt.value = c.company_id;
         opt.textContent = c.name + ' (' + (c.company_type || 'General') + ')';
         selector.appendChild(opt);
       });
-      
       if (currentValue) selector.value = currentValue;
       if (selector.value && !selector.value.includes('Select')) {
         selectCompany(parseInt(selector.value));
       } else if (STATE.companies.length) {
         selectCompany(STATE.companies[0].company_id);
       }
-    }
+    };
 
-    function selectCompany(id) {
+    const selectCompany = function(id) {
       STATE.selectedCompanyId = id;
       const selector = $('companySelector');
       if (selector) selector.value = id;
       loadCompanyData(id);
-    }
+      loadUserShares(id);
+    };
 
-    async function loadCompanyData(id) {
+    const loadCompanyData = async function(id) {
       try {
-        const data = await apiRequest('/api/public/company/' + id);
+        const data = await API.get('/api/public/company/' + id);
         updateCompanyDisplay(data);
-      } catch(e) {
-        console.warn('Company data load failed:', e);
+      } catch (error) {
+        console.warn('Company data load failed:', error);
       }
-    }
+    };
 
-    function updateCompanyDisplay(data) {
+    const updateCompanyDisplay = function(data) {
       if (!data) return;
-      
       $('terminalCompanyPrice').textContent = formatMoney(data.price || 0);
       $('terminalPublicShares').textContent = data.public_shares || 0;
       $('terminalCompanyValue').textContent = formatMoney(data.funds || 0);
       $('terminalCompanyUserShares').textContent = data.userShares || 0;
       $('terminalUserShares').textContent = data.userShares || 0;
-      
+
       const change = data.change_percent || 0;
       const changeEl = $('terminalCompanyChange');
       changeEl.textContent = formatPercent(change);
       changeEl.style.color = change > 0 ? 'var(--green)' : (change < 0 ? 'var(--red)' : '');
-      
+
       updateTradeEstimate();
-    }
+    };
+
+    const loadUserShares = async function(id) {
+      if (!STATE.user) return;
+      try {
+        const data = await API.get('/api/portfolio/company/' + id);
+        const sharesEl = $('terminalUserShares');
+        const companySharesEl = $('terminalCompanyUserShares');
+        const shares = data.shares || 0;
+        if (sharesEl) sharesEl.textContent = shares;
+        if (companySharesEl) companySharesEl.textContent = shares;
+      } catch (error) {
+        console.warn('User shares load failed:', error);
+      }
+    };
 
     // ============================================================
     // COMPANY MODAL
     // ============================================================
-    async function showCompany(id) {
+    const showCompany = async function(id) {
       try {
-        const data = await apiRequest('/api/public/company/' + id);
+        const data = await API.get('/api/public/company/' + id);
         const modal = $('companyModal');
         const body = $('modalBody');
         const isCEO = STATE.user && data.owner_id === STATE.user.id;
         const isPrivate = data.public_shares < 10;
-        
+
         $('modalCompanyName').textContent = data.name;
-        
+
         if (isPrivate && !isCEO) {
-          body.innerHTML = `
-            <div class="private-notice">
-              <span class="lock-icon">🔒</span>
-              <h3 style="color:var(--red-dark);">Private Company</h3>
-              <p>This company is private. Only the CEO can view full details.</p>
-              <p style="font-size:11px;margin-top:8px;">Public information:</p>
-              <div class="info-grid" style="margin-top:8px;">
-                <div class="info-item"><label>Type</label><div class="value">${data.company_type || 'General'}</div></div>
-                <div class="info-item"><label>Share Price</label><div class="value">${formatMoney(data.price || 0)}</div></div>
-                <div class="info-item"><label>Est. Market Cap</label><div class="value">${formatMoney((data.price || 0) * (data.total_shares || 0))}</div></div>
-                <div class="info-item"><label>Est. Equity</label><div class="value">${formatMoney(data.funds || 0)}</div></div>
-              </div>
-            </div>
-          `;
+          body.innerHTML = '<div class="private-notice"><span class="lock-icon">🔒</span><h3 style="color:var(--red-dark);">Private Company</h3><p>This company is private. Only the CEO can view full details.</p><p style="font-size:11px;margin-top:8px;">Public information:</p><div class="info-grid" style="margin-top:8px;"><div class="info-item"><label>Type</label><div class="value">' + (data.company_type || 'General') + '</div></div><div class="info-item"><label>Share Price</label><div class="value">' + formatMoney(data.price || 0) + '</div></div><div class="info-item"><label>Est. Market Cap</label><div class="value">' + formatMoney((data.price || 0) * (data.total_shares || 0)) + '</div></div><div class="info-item"><label>Est. Equity</label><div class="value">' + formatMoney(data.funds || 0) + '</div></div></div></div>';
         } else {
-          body.innerHTML = `
-            ${isCEO ? '<div class="ceo-badge">👑 CEO - Full Access</div>' : ''}
-            <div style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap;">
-              <span class="${isPrivate ? 'private-badge' : 'public-badge'}">${isPrivate ? 'Private' : 'Public'}</span>
-              <span style="background:var(--paper);padding:2px 12px;border-radius:12px;font:12px var(--font-body);">${data.company_type || 'General'}</span>
-              ${data.owner_id === STATE.user?.id ? '<span style="background:var(--gold);padding:2px 12px;border-radius:12px;font:12px var(--font-body);color:#3a0909;">Your Company</span>' : ''}
-            </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-              <div class="info-item"><label>Share Price</label><div class="value">${formatMoney(data.price || 0)}</div></div>
-              <div class="info-item"><label>Change</label><div class="value" style="color:${(data.change_percent||0) > 0 ? 'var(--green)' : 'var(--red)'}">${formatPercent(data.change_percent || 0)}</div></div>
-              <div class="info-item"><label>Total Shares</label><div class="value">${formatNumber(data.total_shares || 0)}</div></div>
-              <div class="info-item"><label>Public Shares</label><div class="value">${formatNumber(data.public_shares || 0)}</div></div>
-              ${isCEO ? `
-                <div class="info-item"><label>Company Funds</label><div class="value">${formatMoney(data.funds || 0)}</div></div>
-                <div class="info-item"><label>Equity</label><div class="value">${formatMoney((data.price || 0) * (data.total_shares || 0))}</div></div>
-                <div class="info-item"><label>Factories</label><div class="value">${data.factories || 0}</div></div>
-                <div class="info-item"><label>Stores</label><div class="value">${data.stores || 0}</div></div>
-                <div class="info-item" style="grid-column:1/-1;"><label>Founded</label><div class="value">${data.founded_at ? new Date(data.founded_at).toLocaleDateString() : 'Unknown'}</div></div>
-              ` : `
-                <div class="info-item"><label>Est. Funds</label><div class="value">${formatMoney(data.funds || 0)}</div></div>
-                <div class="info-item"><label>Est. Equity</label><div class="value">${formatMoney((data.price || 0) * (data.total_shares || 0))}</div></div>
-              `}
-              ${STATE.user ? `
-                <div class="info-item" style="grid-column:1/-1;border-left-color:var(--green);">
-                  <label>Your Shares</label>
-                  <div class="value">${formatNumber(data.userShares || 0)} (${formatMoney((data.userShares || 0) * (data.price || 0))})</div>
-                </div>
-              ` : ''}
-            </div>
-          `;
+          body.innerHTML = (isCEO ? '<div class="ceo-badge">👑 CEO - Full Access</div>' : '') +
+            '<div style="margin-bottom:12px;display:flex;gap:8px;flex-wrap:wrap;">' +
+              '<span class="' + (isPrivate ? 'private-badge' : 'public-badge') + '">' + (isPrivate ? 'Private' : 'Public') + '</span>' +
+              '<span style="background:var(--paper);padding:2px 12px;border-radius:12px;font:12px var(--font-body);">' + (data.company_type || 'General') + '</span>' +
+              (data.owner_id === STATE.user?.id ? '<span style="background:var(--gold);padding:2px 12px;border-radius:12px;font:12px var(--font-body);color:#3a0909;">Your Company</span>' : '') +
+            '</div>' +
+            '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">' +
+              '<div class="info-item"><label>Share Price</label><div class="value">' + formatMoney(data.price || 0) + '</div></div>' +
+              '<div class="info-item"><label>Change</label><div class="value" style="color:' + ((data.change_percent||0) > 0 ? 'var(--green)' : 'var(--red)') + ';">' + formatPercent(data.change_percent || 0) + '</div></div>' +
+              '<div class="info-item"><label>Total Shares</label><div class="value">' + formatNumber(data.total_shares || 0) + '</div></div>' +
+              '<div class="info-item"><label>Public Shares</label><div class="value">' + formatNumber(data.public_shares || 0) + '</div></div>' +
+              (isCEO ? (
+                '<div class="info-item"><label>Company Funds</label><div class="value">' + formatMoney(data.funds || 0) + '</div></div>' +
+                '<div class="info-item"><label>Equity</label><div class="value">' + formatMoney((data.price || 0) * (data.total_shares || 0)) + '</div></div>' +
+                '<div class="info-item"><label>Factories</label><div class="value">' + (data.factories || 0) + '</div></div>' +
+                '<div class="info-item"><label>Stores</label><div class="value">' + (data.stores || 0) + '</div></div>' +
+                '<div class="info-item" style="grid-column:1/-1;"><label>Founded</label><div class="value">' + (data.founded_at ? new Date(data.founded_at).toLocaleDateString() : 'Unknown') + '</div></div>'
+              ) : (
+                '<div class="info-item"><label>Est. Funds</label><div class="value">' + formatMoney(data.funds || 0) + '</div></div>' +
+                '<div class="info-item"><label>Est. Equity</label><div class="value">' + formatMoney((data.price || 0) * (data.total_shares || 0)) + '</div></div>'
+              )) +
+              (STATE.user ? '<div class="info-item" style="grid-column:1/-1;border-left-color:var(--green);"><label>Your Shares</label><div class="value">' + formatNumber(data.userShares || 0) + ' (' + formatMoney((data.userShares || 0) * (data.price || 0)) + ')</div></div>' : '') +
+            '</div>';
         }
-        
+
         modal.classList.add('show');
         document.body.style.overflow = 'hidden';
-        
-      } catch(e) {
+      } catch (error) {
         showToast('Failed to load company details', 'error');
       }
-    }
+    };
 
-    function closeCompanyModal() {
+    const closeCompanyModal = function() {
       const modal = $('companyModal');
       modal.classList.remove('show');
       document.body.style.overflow = '';
-    }
+    };
 
     // ============================================================
     // PORTFOLIO & TRADING
     // ============================================================
-    async function loadPortfolio() {
-      if (!STATE.user) return;
-      try {
-        const data = await apiRequest('/api/portfolio');
-        STATE.portfolio = data;
-        renderPortfolio();
-      } catch(e) {
-        console.warn('Portfolio load failed:', e);
+    const normalizePortfolio = function(payload) {
+      const source = payload && (payload.portfolio || payload.data) ? (payload.portfolio || payload.data) : (payload || {});
+      return {
+        cash: source.cash || source.wallet || 0,
+        bank: source.bank || 0,
+        total: source.total || (source.cash || 0) + (source.bank || 0),
+        shares: source.shares || source.stock || source.quantity || 0,
+        marketValue: source.marketValue || source.value || 0,
+        tradingEnabled: source.tradingEnabled !== false
+      };
+    };
+
+    const renderPortfolio = function() {
+      const gate = $('portfolioGate');
+      const content = $('portfolioContent');
+      if (!gate || !content) return;
+      const signedIn = Boolean(STATE.user);
+      gate.classList.toggle('hidden', signedIn);
+      content.classList.toggle('hidden', !signedIn);
+      if (!signedIn) return;
+
+      const portfolio = STATE.portfolio || { cash: 0, bank: 0, total: 0, shares: 0, marketValue: 0, tradingEnabled: false };
+      const price = STATE.market ? STATE.market.price : 0;
+      const marketValue = portfolio.marketValue || portfolio.shares * price;
+      $('portfolioCash').textContent = formatMoney(portfolio.cash);
+      $('portfolioBank').textContent = formatMoney(portfolio.bank);
+      $('portfolioTotal').textContent = formatMoney(portfolio.total);
+
+      const isOpen = Boolean(STATE.market && STATE.market.status === 'open');
+      const canTrade = Boolean(STATE.portfolio && portfolio.tradingEnabled && isOpen && STATE.selectedCompanyId);
+      $('buySharesButton').disabled = !canTrade;
+      $('sellSharesButton').disabled = !canTrade;
+      updateTradeEstimate();
+
+      if (!STATE.portfolio) {
+        setTradeStatus('Loading your live UnbelievaBoat balance and stock inventory…', '');
+      } else if (!portfolio.tradingEnabled) {
+        setTradeStatus('Trading is prepared but remains disabled until STOCK_ITEM_ID is configured in the Worker.', 'bad');
+      } else if (!isOpen) {
+        setTradeStatus('The market is currently closed. Orders will be available when the next session opens.', 'bad');
+      } else if (!STATE.selectedCompanyId) {
+        setTradeStatus('Select a company to start trading.', '');
+      } else {
+        setTradeStatus('Market open. Orders are checked and settled by the State API.', 'good');
       }
-    }
+    };
 
-    function renderPortfolio() {
-      const p = STATE.portfolio;
-      const signedIn = !!STATE.user;
-      $('portfolioGate').classList.toggle('hidden', signedIn);
-      $('portfolioContent').classList.toggle('hidden', !signedIn);
-      
-      if (!signedIn || !p) return;
-      
-      $('portfolioCash').textContent = formatMoney(p.cash || 0);
-      $('portfolioBank').textContent = formatMoney(p.bank || 0);
-      $('portfolioTotal').textContent = formatMoney(p.total || 0);
-    }
+    const loadPortfolio = async function(silent) {
+      if (!STATE.user) { STATE.portfolio = null; renderPortfolio(); return; }
+      try {
+        const payload = await API.get('/api/portfolio');
+        STATE.portfolio = normalizePortfolio(payload);
+        renderPortfolio();
+        updateLoading(50, 'Loading portfolio...');
+      } catch (error) {
+        STATE.portfolio = null;
+        renderPortfolio();
+        setTradeStatus(error.message, 'bad');
+        if (!silent) showToast(error.message, 'error');
+      }
+    };
 
-    function updateTradeEstimate() {
-      const qty = parseInt($('tradeQuantity').value) || 0;
+    const setTradeStatus = function(message, mode) {
+      const status = $('tradeStatus');
+      if (!status) return;
+      status.className = 'trade-status' + (mode ? ' ' + mode : '');
+      status.textContent = message;
+    };
+
+    const updateTradeEstimate = function() {
+      const input = $('tradeQuantity');
+      const estimate = $('tradeEstimate');
+      if (!input || !estimate) return;
+      const quantity = Math.max(0, Math.floor(Number(input.value) || 0));
       const priceText = $('terminalCompanyPrice').textContent;
       const price = parseFloat(priceText.replace('₽', '').replace(/,/g, '')) || 0;
-      $('tradeEstimate').textContent = formatMoney(qty * price);
-    }
+      estimate.textContent = formatMoney(price * quantity, 2);
+    };
 
-    async function executeTrade(side) {
+    const executeTrade = async function(side) {
       if (!STATE.user) { showToast('Please authorise first', 'error'); return; }
       if (!STATE.selectedCompanyId) { showToast('Select a company', 'error'); return; }
-      
-      const qty = parseInt($('tradeQuantity').value) || 0;
-      if (qty < 1) { showToast('Enter a valid quantity', 'error'); return; }
-      
+
+      const input = $('tradeQuantity');
+      const quantity = Math.floor(Number(input.value) || 0);
+      if (quantity < 1) { showToast('Enter a valid quantity', 'error'); return; }
+
       const priceText = $('terminalCompanyPrice').textContent;
       const price = parseFloat(priceText.replace('₽', '').replace(/,/g, '')) || 0;
-      
+      const total = quantity * price;
+
+      if (!confirm('Confirm ' + (side === 'buy' ? 'purchase' : 'sale') + ' of ' + quantity + ' share(s) at approximately ' + formatMoney(total, 2) + '?')) return;
+
+      const button = $(side === 'buy' ? 'buySharesButton' : 'sellSharesButton');
+      setBusy(button, true, side === 'buy' ? 'Purchasing…' : 'Selling…');
       try {
-        const result = await apiRequest('/api/trade/' + side, {
-          method: 'POST',
-          body: JSON.stringify({ quantity: qty, company_id: STATE.selectedCompanyId }),
-          csrf: true
-        });
-        
-        showToast(result.message || result.success || 'Trade executed');
-        loadPortfolio();
-        loadMarket();
-        loadCompanyData(STATE.selectedCompanyId);
-        loadCompanies();
-        
-      } catch(e) {
-        showToast(e.message || 'Trade failed', 'error');
+        const endpoint = side === 'buy' ? '/api/trade/buy' : '/api/trade/sell';
+        const result = await API.post(endpoint, { quantity: quantity, company_id: STATE.selectedCompanyId });
+        const settledTotal = result && Number.isFinite(Number(result.total)) ? Number(result.total) : total;
+        setTradeStatus((side === 'buy' ? 'Purchase' : 'Sale') + ' completed: ' + quantity + ' share(s), total ' + formatMoney(settledTotal) + '.', 'good');
+        showToast('State stock ' + (side === 'buy' ? 'purchase' : 'sale') + ' completed.');
+        await Promise.allSettled([loadPortfolio(true), loadMarket(), loadCompanyData(STATE.selectedCompanyId), loadUserShares(STATE.selectedCompanyId), loadEconomy()]);
+      } catch (error) {
+        if (error.status === 401 || error.status === 403) await loadSession(true);
+        setTradeStatus(error.message, 'bad');
+        showToast(error.message, 'error');
+      } finally {
+        setBusy(button, false);
+        renderPortfolio();
       }
-    }
+    };
+
+    // ============================================================
+    // ANNOUNCEMENTS
+    // ============================================================
+    const normalizeAnnouncements = function(payload) {
+      const source = Array.isArray(payload) ? payload : (payload && Array.isArray(payload.announcements) ? payload.announcements : []);
+      return source.map(function(item, index) {
+        return {
+          id: item.id || String(index),
+          title: String(item.title || item.headline || 'Official Bulletin'),
+          body: String(item.body || item.text || item.message || ''),
+          author: String(item.author || item.authority || 'Central Bank'),
+          createdAt: item.createdAt || item.timestamp || item.date || null
+        };
+      }).sort(function(left, right) { return new Date(right.createdAt || 0) - new Date(left.createdAt || 0); });
+    };
+
+    const renderAnnouncements = function() {
+      const list = $('announcementList');
+      list.replaceChildren();
+      if (!STATE.announcements.length) {
+        const empty = document.createElement('div');
+        empty.className = 'empty-state';
+        empty.textContent = 'No official announcements have been issued.';
+        list.appendChild(empty);
+        return;
+      }
+      STATE.announcements.forEach(function(announcement) {
+        const card = document.createElement('article');
+        card.className = 'announcement-card';
+        const title = document.createElement('h3');
+        title.textContent = announcement.title;
+        const body = document.createElement('p');
+        body.textContent = announcement.body;
+        const meta = document.createElement('div');
+        meta.className = 'announcement-meta';
+        meta.textContent = announcement.author + (announcement.createdAt ? ' · ' + formatDateTime(announcement.createdAt) : '');
+        card.append(title, body, meta);
+        list.appendChild(card);
+      });
+    };
+
+    const loadAnnouncements = async function() {
+      try {
+        const payload = await API.get('/api/public/announcements');
+        STATE.announcements = normalizeAnnouncements(payload);
+        renderAnnouncements();
+      } catch (error) { console.warn('Announcements load failed:', error); }
+    };
+
+    const loadEvents = async function() {
+      try { await API.get('/api/public/market/events'); } catch (error) {}
+    };
+
+    // ============================================================
+    // PREMIER ANNOUNCEMENTS
+    // ============================================================
+    const renderPremierAnnouncements = function() {
+      const list = $('premierAnnouncementList');
+      if (!list) return;
+      list.replaceChildren();
+      if (!STATE.premierAnnouncements.length) {
+        const empty = document.createElement('div');
+        empty.className = 'empty-state';
+        empty.textContent = 'No Premier announcements have been issued.';
+        list.appendChild(empty);
+        return;
+      }
+      STATE.premierAnnouncements.forEach(function(announcement) {
+        const card = document.createElement('article');
+        card.className = 'announcement-card';
+        const title = document.createElement('h3');
+        title.textContent = announcement.title;
+        const body = document.createElement('p');
+        body.textContent = announcement.body;
+        const meta = document.createElement('div');
+        meta.className = 'announcement-meta';
+        meta.textContent = 'Office of the Premier · ' + announcement.author + (announcement.createdAt ? ' · ' + formatDateTime(announcement.createdAt) : '');
+        card.append(title, body, meta);
+        list.appendChild(card);
+      });
+    };
+
+    const loadPremierAnnouncements = async function() {
+      try {
+        const payload = await API.get('/api/public/premier-announcements');
+        STATE.premierAnnouncements = normalizeAnnouncements(payload);
+        renderPremierAnnouncements();
+      } catch (error) { console.warn('Premier announcements load failed:', error); }
+    };
+
+    const renderPremierOffice = function() {
+      const composer = $('premierComposer');
+      if (composer) composer.classList.toggle('hidden', !(STATE.user && STATE.user.isPremier));
+    };
+
+    const publishPremierAnnouncement = async function() {
+      const button = $('publishPremierAnnouncement');
+      if (!STATE.user || !STATE.user.isPremier) { showToast('Only the authorised Premier may issue this announcement.', 'error'); return; }
+      const title = $('premierAnnouncementTitle').value.trim();
+      const body = $('premierAnnouncementBody').value.trim();
+      if (!title || !body) { showToast('Enter both a headline and statement.', 'error'); return; }
+      setBusy(button, true, 'Publishing…');
+      try {
+        await API.post('/api/premier/announcements', { title: title, body: body });
+        $('premierAnnouncementTitle').value = '';
+        $('premierAnnouncementBody').value = '';
+        $('premierBodyCounter').textContent = '0 / 1800';
+        await loadPremierAnnouncements();
+        showToast('Premier announcement published.');
+      } catch (error) { showToast(error.message, 'error'); }
+      finally { setBusy(button, false); }
+    };
+
+    // ============================================================
+    // BUG REPORTS
+    // ============================================================
+    const setBugReportStatus = function(message, mode) {
+      const status = $('bugReportStatus');
+      if (!status) return;
+      status.className = 'trade-status' + (mode ? ' ' + mode : '');
+      status.textContent = message;
+    };
+
+    const renderBugReportAccess = function() {
+      const gate = $('bugReportGate');
+      const content = $('bugReportContent');
+      if (!gate || !content) return;
+      const signedIn = Boolean(STATE.user);
+      gate.classList.toggle('hidden', signedIn);
+      content.classList.toggle('hidden', !signedIn);
+      if (signedIn) {
+        $('bugReporterName').textContent = STATE.user.displayName || STATE.user.username || 'Authorised Citizen';
+        $('bugReporterDetails').textContent = 'Discord ID ' + STATE.user.id + ' · @' + (STATE.user.username || 'unknown') + ' · attached by the Worker';
+      }
+    };
+
+    const submitBugReport = async function() {
+      if (!STATE.user) { startDiscordLogin(); return; }
+      const subject = $('bugReportSubject').value.trim();
+      const details = $('bugReportDetails').value.trim();
+      const page = $('bugReportArea').value;
+      if (!subject || !details) { setBugReportStatus('Enter a subject and a description of the problem.', 'bad'); return; }
+      const button = $('submitBugReport');
+      setBusy(button, true, 'Sending…');
+      try {
+        await API.post('/api/bug-reports', { subject: subject, details: details, page: page });
+        $('bugReportSubject').value = '';
+        $('bugReportDetails').value = '';
+        $('bugReportCounter').textContent = '0 / 1800';
+        setBugReportStatus('Report delivered securely to the State technical office.', 'good');
+        showToast('Bug report delivered.');
+      } catch (error) { setBugReportStatus(error.message, 'bad'); showToast(error.message, 'error'); }
+      finally { setBusy(button, false); }
+    };
+
+    const renderIdentityDependentViews = function() {
+      renderPortfolio();
+      renderPremierOffice();
+      renderBugReportAccess();
+    };
 
     // ============================================================
     // ECONOMY
     // ============================================================
-    async function loadEconomy() {
-      try {
-        const data = await apiRequest('/api/public/economy');
-        STATE.economy = data.economy || data;
-        renderEconomy();
-        updateLoading(100, 'Ready!');
-      } catch(e) {
-        console.warn('Economy load failed:', e);
-      }
-    }
+    const normalizeLeaderboard = function(source) {
+      if (!Array.isArray(source)) return [];
+      return source.map(function(entry) {
+        return { name: String(entry.name || entry.username || entry.account || 'Citizen'), balance: entry.balance || entry.total || entry.rubles || 0 };
+      }).sort(function(left, right) { return right.balance - left.balance; }).slice(0, 15);
+    };
 
-    function renderEconomy() {
-      const e = STATE.economy;
-      if (!e) return;
-      
-      $('socialistGrossValue').textContent = formatMoney(e.socialistGrossValue || 0);
-      $('economyRating').textContent = e.rating || 'Stable';
-      $('totalRubles').textContent = formatMoney(e.totalRubles || 0);
-      $('totalStockValue').textContent = formatMoney(e.totalStockValue || 0);
-      $('totalShares').textContent = formatNumber(e.totalShares || 0);
-      $('accountHolders').textContent = formatNumber(e.accountHolders || 0);
-      $('stockFormula').textContent = (e.totalShares || 0) + ' × ' + formatMoney(e.currentPrice || 0);
-      $('grossFormula').textContent = formatMoney(e.totalRubles || 0) + ' + ' + formatMoney(e.totalStockValue || 0);
-      $('averageCitizenBalance').textContent = formatMoney((e.citizenRubles || 0) / Math.max(1, (e.accountHolders || 1) - 1));
-      
-      renderLeaderboard(e.leaderboard || []);
-    }
+    const normalizeEconomy = function(payload) {
+      const source = payload && (payload.economy || payload.data) ? (payload.economy || payload.data) : (payload || {});
+      const totalRubles = source.totalRubles || source.moneySupply || source.totalMoney || 0;
+      const stateBankRubles = source.stateBankRubles || source.stateBankBalance || source.stateBank || 0;
+      const totalShares = source.totalShares || source.issuedShares || source.sharesIssued || 0;
+      const availableShares = source.availableShares || source.purchasableShares || source.stateShares || 0;
+      const currentPrice = source.currentPrice || source.stockPrice || (STATE.market && STATE.market.price) || 0;
+      const citizenRubles = Number.isFinite(Number(source.citizenRubles)) ? Number(source.citizenRubles) : Math.max(0, totalRubles - stateBankRubles);
+      const citizenShares = Number.isFinite(Number(source.citizenShares)) ? Number(source.citizenShares) : Math.max(0, totalShares - availableShares);
+      const totalStockValue = Number.isFinite(Number(source.totalStockValue)) ? Number(source.totalStockValue) : totalShares * currentPrice;
+      const socialistGrossValue = Number.isFinite(Number(source.socialistGrossValue)) ? Number(source.socialistGrossValue) : totalRubles + totalStockValue;
 
-    function renderLeaderboard(leaders) {
+      return {
+        totalRubles: totalRubles,
+        stateBankRubles: stateBankRubles,
+        citizenRubles: citizenRubles,
+        totalShares: totalShares,
+        availableShares: availableShares,
+        citizenShares: citizenShares,
+        currentPrice: currentPrice,
+        totalStockValue: totalStockValue,
+        socialistGrossValue: socialistGrossValue,
+        accountHolders: source.accountHolders || source.recordedAccounts || source.accounts || 0,
+        rating: String(source.rating || source.economicRating || 'Stable'),
+        warning: source.warning || payload.warning || null,
+        leaderboard: normalizeLeaderboard(source.leaderboard || payload.leaderboard)
+      };
+    };
+
+    const renderWarning = function(warning) {
+      const banner = $('officialWarning');
+      const text = warning && (warning.text || warning.message || warning.body);
+      banner.classList.toggle('hidden', !text || warning.enabled === false);
+      $('warningText').textContent = text ? String(text) + ' — ' + String(warning.author || 'hyawii2.0, State Committee of Economy') : '';
+    };
+
+    const renderLeaderboard = function(leaders) {
       const body = $('leaderboardBody');
-      if (!body) return;
-      
+      body.replaceChildren();
       if (!leaders.length) {
-        body.innerHTML = '<tr><td colspan="3" style="padding:12px;text-align:center;color:var(--muted);">No data</td></tr>';
+        const row = document.createElement('tr');
+        const cell = document.createElement('td');
+        cell.colSpan = 3;
+        cell.textContent = 'No account data received.';
+        row.appendChild(cell);
+        body.appendChild(row);
         return;
       }
-      
-      body.innerHTML = leaders.map((l, i) => `
-        <tr>
-          <td style="padding:8px 12px;border-bottom:1px solid var(--border);">${i + 1}</td>
-          <td style="padding:8px 12px;border-bottom:1px solid var(--border);">${l.name || 'Citizen'}</td>
-          <td style="padding:8px 12px;border-bottom:1px solid var(--border);text-align:right;">${formatMoney(l.balance || 0)}</td>
-        </tr>
-      `).join('');
-    }
+      leaders.forEach(function(leader, index) {
+        const row = document.createElement('tr');
+        const rank = document.createElement('td');
+        const name = document.createElement('td');
+        const balance = document.createElement('td');
+        rank.textContent = String(index + 1);
+        name.textContent = leader.name;
+        balance.textContent = formatMoney(leader.balance);
+        row.append(rank, name, balance);
+        body.appendChild(row);
+      });
+    };
+
+    const renderEconomy = function() {
+      const economy = STATE.economy;
+      if (!economy) return;
+      $('socialistGrossValue').textContent = formatMoney(economy.socialistGrossValue);
+      $('economyRating').textContent = economy.rating || 'Stable';
+      $('totalRubles').textContent = formatMoney(economy.totalRubles);
+      $('totalStockValue').textContent = formatMoney(economy.totalStockValue);
+      $('citizenRubles').textContent = formatMoney(economy.citizenRubles);
+      $('stateBankRubles').textContent = formatMoney(economy.stateBankRubles);
+      $('totalShares').textContent = formatNumber(economy.totalShares);
+      $('availableShares').textContent = formatNumber(economy.availableShares);
+      $('citizenShares').textContent = formatNumber(economy.citizenShares);
+      $('accountHolders').textContent = formatNumber(economy.accountHolders);
+      $('stockFormula').textContent = formatNumber(economy.totalShares) + ' × ' + formatMoney(economy.currentPrice, 2);
+      $('grossFormula').textContent = formatMoney(economy.totalRubles) + ' + ' + formatMoney(economy.totalStockValue);
+      const citizenAccounts = Math.max(1, economy.accountHolders - 1);
+      $('averageCitizenBalance').textContent = formatMoney(economy.citizenRubles / citizenAccounts);
+      renderWarning(economy.warning);
+      renderLeaderboard(economy.leaderboard);
+      populateAdminFromState();
+    };
+
+    const loadEconomy = async function() {
+      try {
+        const payload = await API.get('/api/public/economy');
+        STATE.economy = normalizeEconomy(payload || {});
+        renderEconomy();
+        updateLoading(80, 'Loading economy data...');
+      } catch (error) { console.warn('Economy load failed:', error); }
+    };
 
     // ============================================================
-    // UI HELPERS
+    // FACTIONS
     // ============================================================
-    function showToast(msg, type) {
-      const stack = $('toastStack');
-      const toast = document.createElement('div');
-      toast.style.cssText = `
-        padding:12px 16px;
-        color:#fff7df;
-        background:${type === 'error' ? '#7d1010' : '#3f0907'};
-        border-left:4px solid ${type === 'error' ? '#ef6b5d' : 'var(--gold)'};
-        border-radius:8px;
-        box-shadow:0 8px 30px rgba(0,0,0,.3);
-        font:13px var(--font-body);
-        animation: fadeInUp 0.3s ease both;
-        pointer-events:auto;
-      `;
-      toast.textContent = msg;
-      stack.appendChild(toast);
-      setTimeout(() => toast.remove(), 5000);
-    }
+    const FACTION_CONFIG = {
+      'Conservatives — MSPSU': {
+        emblem: 'cons.png',
+        color: '#650a0a',
+        ideology: 'Paternalistic Conservatism',
+        platforms: 'Social Conservatism, Mixed Economy, Isolationism',
+        description: 'The Conservative Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the preservation, protection, and continuation of the Party\'s original ideological stance, principles, and mission.'
+      },
+      'Reformists — MSPSU': {
+        emblem: 'reformist.png',
+        color: '#991919',
+        ideology: 'Pragmatic Modernization',
+        platforms: 'Social Conservatism, Mixed Economy, Isolationism',
+        description: 'The Reformist Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the belief that the strength and "longevity" of the U.S.S.R depends upon its ability to adapt intelligently.'
+      }
+    };
 
-    function openAdmin() {
-      if (!STATE.user || !STATE.user.isAdmin) {
-        showToast('Admin access required', 'error');
+    const fetchFactionData = async function() {
+      try {
+        const response = await fetch(CONFIG.API_BASE_URL + '/api/factions', { signal: AbortSignal.timeout(10000) });
+        if (!response.ok) throw new Error('API returned ' + response.status);
+        STATE.factions = await response.json();
+        renderFactions();
+        updateLoading(90, 'Loading factions...');
+      } catch (error) {
+        console.warn('Faction API error:', error);
+        const stack = $('factionStack');
+        if (stack && !STATE.factions) {
+          stack.innerHTML = '<div class="empty-state">Loading faction data...<br><small>Waiting for bot to sync with Worker.</small></div>';
+        }
+      }
+    };
+
+    const renderFactions = function() {
+      const stack = $('factionStack');
+      if (!stack) return;
+      if (!STATE.factions || !STATE.factions.factions) {
+        stack.innerHTML = '<div class="empty-state">Unable to load faction data.<br><small>Make sure the bot is running and Worker is deployed.</small></div>';
         return;
       }
-      $('adminBackdrop').classList.remove('hidden');
+      stack.innerHTML = '';
+      const statusDiv = document.createElement('div');
+      statusDiv.style.cssText = 'text-align: right; padding: 8px 12px; font: 700 11px var(--font-body);';
+      statusDiv.innerHTML = '🟢 <span style="color:#54b276;">Live Data</span> · Updated: ' + new Date(STATE.factions.updated_at).toLocaleTimeString();
+      stack.appendChild(statusDiv);
+
+      Object.entries(STATE.factions.factions).forEach(function([factionName, factionData]) {
+        const config = FACTION_CONFIG[factionName] || { emblem: 'logo.png', color: '#650a0a', ideology: 'Not specified', platforms: 'Not specified', description: 'Faction information pending.' };
+        const card = document.createElement('article');
+        card.className = 'party-card';
+        const factionShortName = factionName.split(' — ')[0];
+        const gridId = factionName.replace(/[^a-zA-Z0-9]/g, '');
+        card.innerHTML = '<header class="party-header" style="background: linear-gradient(115deg, ' + config.color + ', #991919);">' +
+          '<div class="party-emblem"><img src="' + config.emblem + '" alt="' + factionName + ' emblem" onerror="this.style.display=\'none\'; this.parentElement.textContent=\'☭\';"></div>' +
+          '<div><div class="party-abbreviation">MSPSU · ' + factionShortName + '</div><h3>' + factionName + '</h3><div class="party-leader">Party General Secretary: Gen. Sec. Kewl Menzinsky</div></div>' +
+          '</header>' +
+          '<div class="party-body">' +
+            '<div class="party-facts">' +
+              '<div class="party-fact"><b>Faction Ideology</b><span>' + config.ideology + '</span></div>' +
+              '<div class="party-fact"><b>Faction Platforms</b><span>' + config.platforms + '</span></div>' +
+              '<div class="party-fact"><b>Live Member Count</b><span style="font-size: 28px; color: var(--red-dark); font-weight: 900;">' + factionData.total + '</span></div>' +
+              '<div class="party-fact"><b>Last Updated</b><span>' + new Date(STATE.factions.updated_at).toLocaleString() + '</span></div>' +
+            '</div>' +
+            '<p class="party-description">' + config.description + '</p>' +
+            '<details class="member-roster">' +
+              '<summary><span>Official ' + factionName + ' Membership Register</span><strong>' + factionData.total + ' members</strong></summary>' +
+              '<div class="roster-tools"><input class="roster-search" type="search" data-roster-target="' + gridId + 'Grid" placeholder="Search members..." aria-label="Search members"></div>' +
+              '<ul id="' + gridId + 'Grid" class="member-grid">' +
+                (factionData.members.length ? factionData.members.map(function(member) {
+                  return '<li class="member-entry" data-member-id="' + member.id + '"><strong title="' + member.display_name + '">' + member.display_name + '</strong><span title="@' + member.username + '">@' + member.username + '</span></li>';
+                }).join('') : '<li class="member-entry"><strong>No members</strong><span>—</span></li>') +
+              '</ul>' +
+            '</details>' +
+          '</div>';
+        stack.appendChild(card);
+      });
+
+      const summary = document.createElement('div');
+      summary.style.cssText = 'margin-top: 18px; padding: 16px 20px; background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream); border: 2px solid var(--gold); text-align: center; box-shadow: var(--soft-shadow); border-radius: var(--radius);';
+      summary.innerHTML = '<strong style="color: var(--red-dark); font-size: 20px;">Total Tracked Faction Members: ' + STATE.factions.total_faction_members + '</strong><br><span style="color: var(--muted); font-size: 11px;">Live data from Soviet Tracker Bot API · Guild: ' + STATE.factions.guild_id + '</span>';
+      stack.appendChild(summary);
+      bindRosterSearch();
+    };
+
+    const bindRosterSearch = function() {
+      document.querySelectorAll('.roster-search').forEach(function(input) {
+        input.removeEventListener('input', rosterSearchHandler);
+        input.addEventListener('input', rosterSearchHandler);
+      });
+    };
+
+    const rosterSearchHandler = function() {
+      const targetId = this.dataset.rosterTarget;
+      const target = document.getElementById(targetId);
+      const query = this.value.trim().toLowerCase();
+      if (!target) return;
+      target.querySelectorAll('.member-entry').forEach(function(member) {
+        const text = member.textContent.toLowerCase();
+        member.style.display = query && !text.includes(query) ? 'none' : '';
+      });
+    };
+
+    // ============================================================
+    // ADMIN
+    // ============================================================
+    const openAdmin = function() {
+      if (!STATE.user) { showToast('Authorise with Discord before opening administration.', 'error'); startDiscordLogin(); return; }
+      if (!STATE.user.isAdmin) { showToast('The State API has not authorised this Discord account.', 'error'); return; }
+      const backdrop = $('adminBackdrop');
+      backdrop.classList.remove('hidden');
+      backdrop.setAttribute('aria-hidden', 'false');
       document.body.classList.add('modal-open');
-    }
+      setAdminStatus('Authenticated through the authorised State API.', 'good');
+      populateAdminFromState(true);
+      $('closeAdmin').focus();
+    };
 
-    function closeAdmin() {
-      $('adminBackdrop').classList.add('hidden');
+    const closeAdmin = function() {
+      const backdrop = $('adminBackdrop');
+      backdrop.classList.add('hidden');
+      backdrop.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('modal-open');
-    }
+    };
 
-    function showPage(id) {
-      document.querySelectorAll('.site-page').forEach(p => p.classList.add('hidden'));
-      const page = $(id);
-      if (page) page.classList.remove('hidden');
-      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-      document.querySelector(`[data-page="${id}"]`)?.classList.add('active');
-      
-      if (id === 'companiesPage') loadCompanies();
-      if (id === 'marketPage') { loadMarket(); loadCompanies(); }
-      if (id === 'economyPage') loadEconomy();
-    }
+    const setAdminStatus = function(message, mode) {
+      const status = $('adminStatus');
+      status.className = 'admin-status' + (mode ? ' ' + mode : '');
+      status.textContent = message;
+    };
+
+    const populateAdminFromState = function(force) {
+      const backdrop = $('adminBackdrop');
+      const adminIsOpen = backdrop && !backdrop.classList.contains('hidden');
+      if (adminIsOpen && force !== true) return;
+
+      if (STATE.market) {
+        $('adminExactPrice').value = STATE.market.price.toFixed(2);
+        $('adminCircuitBreaker').value = 12;
+        $('adminTradingFee').value = 0.5;
+      }
+
+      if (STATE.economy) {
+        $('adminTotalRubles').value = String(Math.round(STATE.economy.totalRubles));
+        $('adminStateBank').value = String(Math.round(STATE.economy.stateBankRubles));
+        $('adminIssuedShares').value = String(Math.round(STATE.economy.totalShares));
+        $('adminAvailableShares').value = String(Math.round(STATE.economy.availableShares));
+        $('adminAccountHolders').value = String(Math.round(STATE.economy.accountHolders));
+        if (STATE.economy.warning && STATE.economy.warning.text) {
+          $('adminWarningText').value = STATE.economy.warning.text;
+        }
+      }
+    };
+
+    const requireAdmin = function() {
+      if (!STATE.user || !STATE.user.isAdmin) throw new ApiError('This Discord account is not authorised for administration.', 403);
+    };
+
+    const runAdminAction = async function(button, action, successMessage) {
+      setBusy(button, true, 'Submitting…');
+      try {
+        requireAdmin();
+        await action();
+        await refreshPublicData(true);
+        setAdminStatus(successMessage, 'good');
+        showToast(successMessage);
+      } catch (error) {
+        if (error.status === 401 || error.status === 403) await loadSession(true);
+        setAdminStatus(error.message, 'bad');
+        showToast(error.message, 'error');
+      } finally { setBusy(button, false); }
+    };
+
+    const bindAdminActions = function() {
+      $('setExactPrice').addEventListener('click', function() {
+        const button = this;
+        const price = Number($('adminExactPrice').value);
+        if (!Number.isFinite(price) || price <= 0) { setAdminStatus('Enter an exact index value greater than zero.', 'bad'); return; }
+        runAdminAction(button, function() { return API.patch('/api/admin/market/price', { price: price }); }, 'Exact index value updated.');
+      });
+
+      $('scheduleMovement').addEventListener('click', function() {
+        const button = this;
+        const percent = Number($('adminMovementPercent').value);
+        const durationMinutes = Number($('adminMovementMinutes').value);
+        if (!Number.isFinite(percent) || !Number.isFinite(durationMinutes) || durationMinutes < 1) { setAdminStatus('Enter a valid percentage and movement duration.', 'bad'); return; }
+        runAdminAction(button, function() { return API.post('/api/admin/market/movement', { percent: percent, durationMinutes: durationMinutes }); }, 'Scheduled movement order issued.');
+      });
+
+      $('freezeMovement').addEventListener('click', function() {
+        const button = this;
+        runAdminAction(button, function() { return API.post('/api/admin/market/freeze', {}); }, 'Index frozen at the current official value.');
+      });
+
+      $('openSession').addEventListener('click', function() {
+        const button = this;
+        const durationHours = Number($('adminSessionHours').value) || 24;
+        runAdminAction(button, function() { return API.post('/api/admin/market/open', { durationHours: durationHours }); }, 'Market session opened and percentage reference reset.');
+      });
+
+      $('closeSession').addEventListener('click', function() {
+        const button = this;
+        if (!window.confirm('Close the market immediately?')) return;
+        runAdminAction(button, function() { return API.post('/api/admin/market/close', {}); }, 'Market session closed.');
+      });
+
+      $('publishAnnouncement').addEventListener('click', function() {
+        const button = this;
+        const title = $('adminAnnouncementTitle').value.trim();
+        const body = $('adminAnnouncementBody').value.trim();
+        const author = $('adminAnnouncementAuthor').value.trim() || 'Central Bank';
+        if (!title || !body) { setAdminStatus('Enter both a headline and official statement.', 'bad'); return; }
+        runAdminAction(button, async function() {
+          await API.post('/api/admin/announcements', { title: title, body: body, author: author });
+          $('adminAnnouncementTitle').value = '';
+          $('adminAnnouncementBody').value = '';
+        }, 'Official bulletin published.');
+      });
+
+      $('saveWarning').addEventListener('click', function() {
+        const button = this;
+        const text = $('adminWarningText').value.trim();
+        if (!text) { setAdminStatus('Enter the official warning text.', 'bad'); return; }
+        runAdminAction(button, function() { return API.patch('/api/admin/warning', { enabled: true, text: text, author: 'hyawii2.0, State Committee of Economy' }); }, 'Official market warning updated.');
+      });
+
+      $('clearWarning').addEventListener('click', function() {
+        const button = this;
+        runAdminAction(button, function() { return API.patch('/api/admin/warning', { enabled: false, text: '' }); }, 'Official market warning removed.');
+      });
+
+      $('saveEconomy').addEventListener('click', function() {
+        const button = this;
+        const body = {
+          totalRubles: Number($('adminTotalRubles').value) || 0,
+          stateBankRubles: Number($('adminStateBank').value) || 0,
+          totalShares: Number($('adminIssuedShares').value) || 0,
+          availableShares: Number($('adminAvailableShares').value) || 0,
+          accountHolders: Number($('adminAccountHolders').value) || 0
+        };
+        runAdminAction(button, function() { return API.patch('/api/admin/economy', body); }, 'National economy record updated.');
+      });
+
+      $('updateMarketConfig').addEventListener('click', function() {
+        const button = this;
+        const circuitBreaker = Number($('adminCircuitBreaker').value) || 12;
+        const tradingFee = Number($('adminTradingFee').value) || 0.5;
+        if (circuitBreaker <= 0 || circuitBreaker > 25) { setAdminStatus('Circuit breaker must be between 1 and 25.', 'bad'); return; }
+        if (tradingFee < 0 || tradingFee > 5) { setAdminStatus('Trading fee must be between 0 and 5.', 'bad'); return; }
+        runAdminAction(button, function() { return API.post('/api/admin/market/config', { circuitBreakerPercent: circuitBreaker, tradingFeePercent: tradingFee }); }, 'Market configuration updated.');
+      });
+
+      $('clearAnnouncements').addEventListener('click', function() {
+        const button = this;
+        if (!window.confirm('Clear every official announcement?')) return;
+        runAdminAction(button, function() { return API.delete('/api/admin/announcements/clear', {}); }, 'All official announcements cleared.');
+      });
+
+      $('resetHistory').addEventListener('click', function() {
+        const button = this;
+        if (!window.confirm('Reset the entire graph history?')) return;
+        runAdminAction(button, function() { return API.post('/api/admin/market/history/reset', {}); }, 'Graph history reset.');
+      });
+
+      $('factoryReset').addEventListener('click', function() {
+        const button = this;
+        const confirmation = window.prompt('Type "RESET MARKET" to confirm the factory reset.');
+        if (confirmation !== 'RESET MARKET') { setAdminStatus('Factory reset cancelled.', ''); return; }
+        runAdminAction(button, function() { return API.post('/api/admin/market/factory-reset', { confirmation: confirmation }); }, 'Market factory reset completed.');
+      });
+    };
+
+    // ============================================================
+    // NAVIGATION
+    // ============================================================
+    const showPage = function(pageId) {
+      document.querySelectorAll('.site-page').forEach(function(page) { page.classList.add('hidden'); });
+      const target = $(pageId);
+      if (target) target.classList.remove('hidden');
+      document.querySelectorAll('.nav-tab').forEach(function(tab) { tab.classList.toggle('active', tab.dataset.page === pageId); });
+
+      if (pageId === 'companiesPage') loadCompanies();
+      if (pageId === 'marketPage') { loadMarket(); loadCompanies(); }
+      if (pageId === 'economyPage') loadEconomy();
+      if (pageId === 'politicsPage') fetchFactionData();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // ============================================================
+    // REFRESH PUBLIC DATA
+    // ============================================================
+    const refreshPublicData = async function(showErrors) {
+      if (STATE.publicRefreshInFlight) return;
+      STATE.publicRefreshInFlight = true;
+      const startedAt = performance.now();
+
+      try {
+        if (!isApiConfigured()) throw new ApiError('API configuration required.', 0);
+        const results = await Promise.allSettled([loadMarket(), loadEconomy(), loadAnnouncements(), loadPremierAnnouncements(), loadEvents(), loadCompanies()]);
+        const failures = results.filter(function(result) { return result.status === 'rejected'; });
+        if (failures.length === results.length) throw failures[0].reason;
+        const latency = Math.round(performance.now() - startedAt);
+        setApiStatus('online', 'State API online · ' + latency + 'ms');
+        if (failures.length && showErrors) showToast('Some State API records could not be refreshed.', 'error');
+        if (STATE.selectedCompanyId) { loadCompanyData(STATE.selectedCompanyId); loadUserShares(STATE.selectedCompanyId); }
+      } catch (error) {
+        const message = isApiConfigured() ? 'State API unavailable' : 'API configuration required';
+        setApiStatus('error', message);
+        if (showErrors) showToast(error.message, 'error');
+      } finally { STATE.publicRefreshInFlight = false; }
+    };
 
     // ============================================================
     // CLOCK
     // ============================================================
-    function updateClock() {
-      const now = new Date();
-      $('cetClock').textContent = now.toLocaleTimeString('en-GB', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    const updateClock = function() {
+      const date = new Date();
+      $('cetClock').textContent = new Intl.DateTimeFormat('en-GB', { timeZone: CONFIG.CET_TIME_ZONE, weekday: 'short', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }).format(date);
       updateCountdown();
-    }
+    };
 
     // ============================================================
-    // BOOTSTRAP
+    // INTRO SCREEN
     // ============================================================
-    async function bootstrap() {
-      // Handle OAuth return
-      const hash = window.location.hash;
-      if (hash.includes('session=')) {
-        const token = hash.split('session=')[1]?.split('&')[0];
-        if (token) sessionStorage.setItem('ussrExchangeSession', token);
-        window.location.hash = '';
-      }
-      
-      updateLoading(10, 'Initializing...');
-      
-      // Load session
-      await loadSession();
-      
-      // Load market data
-      await loadMarket();
-      
-      // Load companies
-      await loadCompanies();
-      
-      // Load economy
-      await loadEconomy();
-      
-      // Hide loading screen
-      setTimeout(() => {
-        hideLoading();
-        showIntro();
-      }, 500);
-      
-      // Bind events
-      $('skipIntro')?.addEventListener('click', () => {
+    const setupIntroScreen = function() {
+      const screen = $('introScreen');
+      const video = $('introVideo');
+      const startButton = $('startIntro');
+      const skipButton = $('skipIntro');
+      const status = $('introStatus');
+      const progress = $('introProgress');
+      const guideCards = Array.from(document.querySelectorAll('[data-intro-guide]'));
+      const guideDots = $('introGuideDots');
+      const guideCount = $('introGuideCount');
+      const guidePrevious = $('introGuidePrevious');
+      const guideNext = $('introGuideNext');
+      let finished = false;
+      let guideIndex = 0;
+      let guideTimerId = null;
+
+      if (!screen || !video || !startButton || !skipButton) {
         document.body.classList.remove('intro-active');
-        $('introScreen').style.display = 'none';
+        return;
+      }
+
+      const showGuide = function(nextIndex) {
+        if (!guideCards.length) return;
+        guideIndex = (nextIndex + guideCards.length) % guideCards.length;
+        guideCards.forEach(function(card, index) { card.classList.toggle('active', index === guideIndex); });
+        if (guideDots) {
+          guideDots.querySelectorAll('.intro-guide-dot').forEach(function(dot, index) {
+            dot.classList.toggle('active', index === guideIndex);
+            dot.setAttribute('aria-current', index === guideIndex ? 'step' : 'false');
+          });
+        }
+        if (guideCount) guideCount.textContent = String(guideIndex + 1).padStart(2, '0') + ' / ' + String(guideCards.length).padStart(2, '0');
+      };
+
+      const restartGuideRotation = function() {
+        if (guideTimerId) window.clearInterval(guideTimerId);
+        guideTimerId = window.setInterval(function() { showGuide(guideIndex + 1); }, CONFIG.INTRO_GUIDE_INTERVAL_MS);
+      };
+
+      if (guideDots) {
+        guideCards.forEach(function(_card, index) {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'intro-guide-dot';
+          dot.setAttribute('aria-label', 'Show guide item ' + (index + 1));
+          dot.addEventListener('click', function() { showGuide(index); restartGuideRotation(); });
+          guideDots.appendChild(dot);
+        });
+      }
+      if (guidePrevious) guidePrevious.addEventListener('click', function() { showGuide(guideIndex - 1); restartGuideRotation(); });
+      if (guideNext) guideNext.addEventListener('click', function() { showGuide(guideIndex + 1); restartGuideRotation(); });
+      showGuide(0);
+      restartGuideRotation();
+
+      const formatVideoTime = function(seconds) {
+        const safeSeconds = Math.max(0, Math.floor(Number(seconds) || 0));
+        const minutes = Math.floor(safeSeconds / 60);
+        const remainder = safeSeconds % 60;
+        return minutes + ':' + String(remainder).padStart(2, '0');
+      };
+
+      const finishIntro = function() {
+        if (finished) return;
+        finished = true;
+        if (guideTimerId) window.clearInterval(guideTimerId);
+        video.pause();
+        screen.classList.add('is-leaving');
+        screen.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('intro-active');
+        document.removeEventListener('keydown', handleIntroKey, true);
+        window.setTimeout(function() { screen.classList.add('hidden'); screen.hidden = true; }, 800);
+      };
+
+      const beginIntro = async function() {
+        if (video.dataset.failed === 'true') { finishIntro(); return; }
+        startButton.disabled = true;
+        startButton.textContent = 'Presentation Playing';
+        status.textContent = 'Official presentation in progress · sound enabled';
+        video.muted = false;
+        video.volume = 1;
+        try { video.currentTime = 0; await video.play(); } catch (error) {
+          startButton.disabled = false;
+          startButton.textContent = 'Continue to Exchange';
+          video.dataset.failed = 'true';
+          status.textContent = 'The video could not be played. Select continue to open the exchange.';
+        }
+      };
+
+      const handleIntroKey = function(event) {
+        if (finished) return;
+        if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); finishIntro(); }
+        else if (event.key === 'Enter' && !startButton.disabled) { event.preventDefault(); event.stopImmediatePropagation(); beginIntro(); }
+      };
+
+      startButton.addEventListener('click', beginIntro);
+      skipButton.addEventListener('click', finishIntro);
+      video.addEventListener('ended', finishIntro);
+      video.addEventListener('loadedmetadata', function() {
+        if (Number.isFinite(video.duration)) status.textContent = 'Presentation ready · ' + formatVideoTime(video.duration) + ' · press play for sound';
       });
-      
-      $('closeCompanyModal')?.addEventListener('click', closeCompanyModal);
-      $('companyModal')?.addEventListener('click', (e) => {
-        if (e.target === e.currentTarget) closeCompanyModal();
+      video.addEventListener('timeupdate', function() {
+        if (!Number.isFinite(video.duration) || video.duration <= 0) return;
+        const completion = Math.min(100, Math.max(0, (video.currentTime / video.duration) * 100));
+        progress.style.width = completion.toFixed(2) + '%';
+        status.textContent = 'Official presentation · ' + formatVideoTime(video.currentTime) + ' / ' + formatVideoTime(video.duration) + ' · sound enabled';
       });
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
+      video.addEventListener('error', function() {
+        video.dataset.failed = 'true';
+        startButton.textContent = 'Continue to Exchange';
+        startButton.disabled = false;
+        status.textContent = 'Place dancingpoland.mp4 beside index.html to enable the introduction.';
+      });
+      document.addEventListener('keydown', handleIntroKey, true);
+      window.setTimeout(function() { startButton.focus(); }, 80);
+    };
+
+    // ============================================================
+    // BIND EVENTS
+    // ============================================================
+    const bindGlobalEvents = function() {
+      document.querySelectorAll('.nav-tab').forEach(function(tab) {
+        tab.addEventListener('click', function() { showPage(tab.dataset.page); });
+      });
+
+      document.querySelectorAll('.roster-search').forEach(function(input) {
+        input.addEventListener('input', function() {
+          const target = $(input.dataset.rosterTarget);
+          const query = input.value.trim().toLocaleLowerCase();
+          if (!target) return;
+          target.querySelectorAll('.member-entry').forEach(function(member) {
+            member.hidden = Boolean(query) && !member.textContent.toLocaleLowerCase().includes(query);
+          });
+        });
+      });
+
+      const loginButton = $('loginButton');
+      if (loginButton) loginButton.addEventListener('click', startDiscordLogin);
+
+      $('portfolioLoginButton').addEventListener('click', startDiscordLogin);
+      $('bugReportLoginButton').addEventListener('click', startDiscordLogin);
+      $('tradeQuantity').addEventListener('input', updateTradeEstimate);
+      document.querySelectorAll('[data-trade-quantity]').forEach(function(button) {
+        button.addEventListener('click', function() { $('tradeQuantity').value = this.dataset.tradeQuantity; updateTradeEstimate(); });
+      });
+      $('buySharesButton').addEventListener('click', function() { executeTrade('buy'); });
+      $('sellSharesButton').addEventListener('click', function() { executeTrade('sell'); });
+      $('refreshPortfolioButton').addEventListener('click', function() { loadPortfolio(false); if (STATE.selectedCompanyId) { loadCompanyData(STATE.selectedCompanyId); loadUserShares(STATE.selectedCompanyId); } });
+      $('refreshCompaniesBtn').addEventListener('click', loadCompanies);
+
+      const selector = $('companySelector');
+      if (selector) {
+        selector.addEventListener('change', function() {
+          const companyId = this.value;
+          if (companyId) selectCompany(parseInt(companyId));
+          else selectCompany(null);
+        });
+      }
+
+      $('publishPremierAnnouncement').addEventListener('click', publishPremierAnnouncement);
+      $('premierAnnouncementBody').addEventListener('input', function() { $('premierBodyCounter').textContent = this.value.length + ' / 1800'; });
+      $('submitBugReport').addEventListener('click', submitBugReport);
+      $('bugReportDetails').addEventListener('input', function() { $('bugReportCounter').textContent = this.value.length + ' / 1800'; });
+
+      $('adminButton').addEventListener('click', openAdmin);
+      $('closeAdmin').addEventListener('click', closeAdmin);
+
+      $('adminBackdrop').addEventListener('click', function(event) {
+        if (event.target === this) closeAdmin();
+      });
+
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+          if (!$('adminBackdrop').classList.contains('hidden')) { closeAdmin(); return; }
           closeCompanyModal();
-          closeAdmin();
           if (document.body.classList.contains('intro-active')) {
             document.body.classList.remove('intro-active');
             $('introScreen').style.display = 'none';
           }
         }
+        const target = event.target;
+        const isTyping = target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target instanceof HTMLSelectElement || target.isContentEditable;
+        if (!isTyping && event.key.toLowerCase() === 'f') { event.preventDefault(); openAdmin(); }
       });
-      
-      $('companySelector')?.addEventListener('change', function() {
-        if (this.value) selectCompany(parseInt(this.value));
-      });
-      
-      $('tradeQuantity')?.addEventListener('input', updateTradeEstimate);
-      document.querySelectorAll('[data-trade-quantity]').forEach(b => {
-        b.addEventListener('click', function() {
-          $('tradeQuantity').value = this.dataset.tradeQuantity;
-          updateTradeEstimate();
-        });
-      });
-      
-      $('buySharesButton')?.addEventListener('click', () => executeTrade('buy'));
-      $('sellSharesButton')?.addEventListener('click', () => executeTrade('sell'));
-      $('refreshPortfolioButton')?.addEventListener('click', () => { loadPortfolio(); if (STATE.selectedCompanyId) loadCompanyData(STATE.selectedCompanyId); });
-      $('refreshCompaniesBtn')?.addEventListener('click', loadCompanies);
-      $('portfolioLoginButton')?.addEventListener('click', () => window.location.href = CONFIG.API_BASE_URL + '/auth/discord?returnTo=' + encodeURIComponent(CONFIG.SITE_URL));
-      $('loginButton')?.addEventListener('click', () => window.location.href = CONFIG.API_BASE_URL + '/auth/discord?returnTo=' + encodeURIComponent(CONFIG.SITE_URL));
-      
-      // Nav
-      document.querySelectorAll('.nav-tab').forEach(t => {
-        t.addEventListener('click', () => showPage(t.dataset.page));
-      });
-      
-      // Admin
-      $('adminButton')?.addEventListener('click', openAdmin);
-      $('closeAdmin')?.addEventListener('click', closeAdmin);
-      $('adminBackdrop')?.addEventListener('click', (e) => {
-        if (e.target === e.currentTarget) closeAdmin();
-      });
-      
-      // Admin actions
-      $('setExactPrice')?.addEventListener('click', async () => {
-        const price = parseFloat($('adminExactPrice').value);
-        if (!price || price <= 0) { showToast('Enter a valid price', 'error'); return; }
-        try {
-          await apiRequest('/api/admin/market/price', { method: 'PATCH', body: JSON.stringify({ price }), csrf: true });
-          showToast('Price updated');
-          loadMarket();
-        } catch(e) { showToast(e.message, 'error'); }
-      });
-      
-      $('openSession')?.addEventListener('click', async () => {
-        const hours = parseInt($('adminSessionHours').value) || 24;
-        try {
-          await apiRequest('/api/admin/market/open', { method: 'POST', body: JSON.stringify({ durationHours: hours }), csrf: true });
-          showToast('Market opened for ' + hours + ' hours');
-          loadMarket();
-        } catch(e) { showToast(e.message, 'error'); }
-      });
-      
-      $('closeSession')?.addEventListener('click', async () => {
-        try {
-          await apiRequest('/api/admin/market/close', { method: 'POST', body: JSON.stringify({}), csrf: true });
-          showToast('Market closed');
-          loadMarket();
-        } catch(e) { showToast(e.message, 'error'); }
-      });
-      
-      $('publishAnnouncement')?.addEventListener('click', async () => {
-        const title = $('adminAnnouncementTitle').value.trim();
-        const body = $('adminAnnouncementBody').value.trim();
-        if (!title || !body) { showToast('Enter title and body', 'error'); return; }
-        try {
-          await apiRequest('/api/admin/announcements', { method: 'POST', body: JSON.stringify({ title, body }), csrf: true });
-          showToast('Announcement published');
-          $('adminAnnouncementTitle').value = '';
-          $('adminAnnouncementBody').value = '';
-        } catch(e) { showToast(e.message, 'error'); }
-      });
-      
-      // Auto-refresh
-      setInterval(updateClock, 1000);
-      setInterval(loadMarket, 30000);
-      setInterval(loadCompanies, 60000);
-      
-      // Show initial page
-      const page = window.location.hash.replace('#', '') || 'marketPage';
-      showPage(page);
-    }
+    };
 
-    // Start
-    document.addEventListener('DOMContentLoaded', bootstrap);
+    // ============================================================
+    // BOOTSTRAP
+    // ============================================================
+    const bootstrap = async function() {
+      handleOAuthReturn();
+      bindGlobalEvents();
+      bindAdminActions();
+      renderSession();
+      renderAnnouncements();
+      renderPremierAnnouncements();
+      updateClock();
+
+      const requestedPage = window.location.hash.replace(/^#/, '') || 'marketPage';
+      showPage(requestedPage);
+
+      window.setInterval(updateClock, 1000);
+
+      if (!isApiConfigured()) {
+        setApiStatus('error', 'API configuration required');
+        setAdminStatus('Edit CONFIG.API_BASE_URL and endpoint paths at the top of the script.', 'bad');
+        updateLoading(100, 'API configuration required');
+        setTimeout(function() { hideLoading(); showIntro(); }, 500);
+        return;
+      }
+
+      updateLoading(20, 'Connecting to State API...');
+      await Promise.allSettled([loadSession(false), refreshPublicData(true), fetchFactionData()]);
+
+      updateLoading(100, 'Ready!');
+      setTimeout(function() { hideLoading(); showIntro(); }, 500);
+
+      STATE.refreshTimerId = window.setInterval(function() { refreshPublicData(false); }, CONFIG.MARKET_REFRESH_MS);
+      STATE.sessionRefreshTimerId = window.setInterval(function() { loadSession(true); }, CONFIG.SESSION_REFRESH_MS);
+      STATE.factionRefreshTimerId = window.setInterval(function() { fetchFactionData(); }, CONFIG.FACTION_REFRESH_MS);
+    };
+
+    // Initialize
+    setupIntroScreen();
+    bootstrap();
   </script>
 </body>
 </html>
