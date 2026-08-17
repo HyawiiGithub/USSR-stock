@@ -54,50 +54,6 @@
       overflow: hidden;
     }
 
-
-.terminal-company-selector select {
-  width: 100%;
-  padding: 10px 12px;
-  background: #fffaf0;
-  border: 1px solid #8e7e64;
-  font: 13px Arial, sans-serif;
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235f0909' stroke-width='2' fill='none'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-}
-
-.terminal-company-selector select:focus {
-  outline: 2px solid var(--gold);
-}
-
-.terminal-quote {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  padding: 14px 18px;
-  background: rgba(239, 201, 76, .1);
-  border-bottom: 1px solid var(--border);
-}
-
-.terminal-quote div span {
-  display: block;
-  margin-bottom: 3px;
-  color: var(--muted);
-  font: 900 9px Arial, sans-serif;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-.terminal-quote div strong {
-  display: block;
-  color: var(--red-dark);
-  font-size: 24px;
-}
-
-    
-    /* ===== INTRO SCREEN ===== */
     .intro-screen {
       position: fixed;
       inset: 0;
@@ -302,7 +258,6 @@
       .intro-screen { transition-duration: .15s; }
     }
 
-    /* ===== GENERAL ===== */
     button, input, textarea, select { font: inherit; }
     button, a { -webkit-tap-highlight-color: transparent; }
     button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
@@ -311,14 +266,12 @@
     }
     .hidden { display: none !important; }
 
-    /* ===== TOP STRIPE ===== */
     .top-stripe {
       height: 8px;
       background: linear-gradient(90deg, var(--gold) 0 18%, var(--red) 18% 82%, var(--gold) 82%);
       border-bottom: 2px solid var(--red-deep);
     }
 
-    /* ===== MASTHEAD ===== */
     .masthead {
       color: #fff5d4;
       background:
@@ -412,7 +365,6 @@
       border-radius: 50%;
     }
 
-    /* ===== BUTTONS ===== */
     .btn {
       min-height: 40px;
       padding: 10px 15px;
@@ -447,7 +399,6 @@
       font-size: 10px;
     }
 
-    /* ===== TICKER ===== */
     .ticker {
       overflow: hidden;
       color: #fff5cf;
@@ -474,7 +425,6 @@
       to { transform: translateX(-50%); }
     }
 
-    /* ===== NAV ===== */
     .section-nav {
       color: #fbefca;
       background: #520909;
@@ -548,14 +498,12 @@
     .api-status.online .api-dot { background: #54b276; }
     .api-status.error .api-dot { background: #d14e3f; }
 
-    /* ===== PAGE ===== */
     .page {
       width: min(1280px, 100%);
       margin: 0 auto;
       padding: 28px clamp(16px, 3vw, 38px) 60px;
     }
 
-    /* ===== OFFICIAL WARNING ===== */
     .official-warning {
       position: relative;
       margin-bottom: 18px;
@@ -587,7 +535,6 @@
       font: 14px/1.55 Arial, sans-serif;
     }
 
-    /* ===== STATUS ROW ===== */
     .status-row {
       margin-bottom: 18px;
       display: grid;
@@ -673,7 +620,6 @@
       content: "";
     }
 
-    /* ===== MARKET COMMAND GRID ===== */
     .market-command-grid {
       margin-bottom: 18px;
       display: grid;
@@ -744,7 +690,7 @@
       font: 11px Arial, sans-serif;
     }
 
-    /* ===== TRADING TERMINAL ===== */
+    /* ===== TRADING TERMINAL WITH COMPANY SELECTOR ===== */
     .trading-terminal {
       position: sticky;
       top: 18px;
@@ -790,27 +736,51 @@
       content: "";
       box-shadow: 0 0 8px rgba(88, 184, 120, .8);
     }
+
+    /* Company Selector */
+    .terminal-company-selector {
+      padding: 12px 18px;
+      background: rgba(0,0,0,.05);
+      border-bottom: 1px solid var(--border);
+    }
+    .terminal-company-selector select {
+      width: 100%;
+      padding: 10px 12px;
+      background: #fffaf0;
+      border: 1px solid #8e7e64;
+      font: 13px Arial, sans-serif;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235f0909' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+    }
+    .terminal-company-selector select:focus {
+      outline: 2px solid var(--gold);
+    }
+
     .terminal-quote {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
       padding: 14px 18px;
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      align-items: end;
       background: rgba(239, 201, 76, .1);
       border-bottom: 1px solid var(--border);
     }
-    .terminal-quote span, .terminal-quote strong { display: block; }
-    .terminal-quote span {
+    .terminal-quote div span {
+      display: block;
       margin-bottom: 3px;
       color: var(--muted);
       font: 900 9px Arial, sans-serif;
       letter-spacing: .1em;
       text-transform: uppercase;
     }
-    .terminal-quote strong {
+    .terminal-quote div strong {
+      display: block;
       color: var(--red-dark);
-      font-size: 27px;
+      font-size: 24px;
     }
+
     .terminal-body { padding: 16px; }
     .access-gate {
       padding: 28px;
@@ -825,16 +795,16 @@
     .terminal-account-strip {
       margin-bottom: 13px;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 7px;
     }
+    .terminal-account-strip .terminal-stat:last-child { grid-column: 1 / -1; }
     .terminal-stat {
       min-width: 0;
       padding: 10px;
       background: rgba(255, 255, 255, .36);
       border-left: 3px solid var(--gold-dark);
     }
-    .terminal-stat:last-child { grid-column: 1 / -1; }
     .terminal-stat b, .terminal-stat strong { display: block; }
     .terminal-stat b {
       color: var(--muted);
@@ -907,7 +877,6 @@
     .trade-status.good { color: #174a2c; border-left-color: var(--green); }
     .trade-status.bad { color: #6b0c0c; border-left-color: var(--red); }
 
-    /* ===== MARKET SECONDARY GRID ===== */
     .market-secondary-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
@@ -997,7 +966,6 @@
       font-size: 10px;
     }
 
-    /* ===== MARKET STATS ROW ===== */
     .market-stats-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -1031,7 +999,6 @@
       font: 11px/1.4 Arial, sans-serif;
     }
 
-    /* ===== ECONOMY PAGE ===== */
     .economy-hero {
       margin-bottom: 18px;
       padding: 28px;
@@ -1153,7 +1120,6 @@
     .leaderboard th:last-child, .leaderboard td:last-child { text-align: right; }
     .leaderboard tbody tr:nth-child(even) { background: rgba(109, 13, 13, .045); }
 
-    /* ===== POLITICS ===== */
     .institution-hero {
       position: relative;
       margin-bottom: 20px;
@@ -1277,7 +1243,6 @@
     }
     .memorial-dove { margin-left: 5px; font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif; }
 
-    /* ===== PARTY ===== */
     .party-stack { display: grid; gap: 22px; }
     .party-card {
       background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream);
@@ -1407,7 +1372,6 @@
     .member-entry strong { color: #342317; font: 800 12px Arial, sans-serif; }
     .member-entry span { margin-top: 2px; color: var(--muted); font: 11px Arial, sans-serif; }
 
-    /* ===== SERVICE GRID ===== */
     .service-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1433,7 +1397,6 @@
       font: 13px/1.6 Arial, sans-serif;
     }
 
-    /* ===== PREMIER ===== */
     .premier-identity {
       margin-bottom: 18px;
       padding: 16px 18px;
@@ -1452,7 +1415,6 @@
     }
     .guide-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 9px; }
 
-    /* ===== CHANGELOG ===== */
     .changelog-list { display: grid; gap: 12px; }
     .changelog-entry {
       padding: 18px;
@@ -1474,7 +1436,6 @@
       font: 13px/1.6 Arial, sans-serif;
     }
 
-    /* ===== FOOTER ===== */
     .footer {
       padding: 25px clamp(16px, 3vw, 38px);
       color: #eadfbf;
@@ -1485,7 +1446,6 @@
     }
     .footer strong { color: var(--gold); }
 
-    /* ===== ADMIN ===== */
     .backdrop {
       position: fixed;
       z-index: 1000;
@@ -1587,7 +1547,6 @@
       gap: 9px;
     }
 
-    /* ===== TOAST ===== */
     .toast-stack {
       position: fixed;
       z-index: 1200;
@@ -1612,7 +1571,6 @@
       from { opacity: 0; transform: translateY(8px); }
     }
 
-    /* ===== MEMORIAL ===== */
     .memorial-backdrop {
       position: fixed;
       inset: 0;
@@ -1761,7 +1719,6 @@
       to { opacity: 1; transform: none; }
     }
 
-    /* ===== RESPONSIVE ===== */
     @media (max-width: 980px) {
       .masthead-inner {
         grid-template-columns: 90px 1fr;
@@ -1794,6 +1751,7 @@
       .directory-grid, .leadership-grid { grid-template-columns: 1fr; }
       .service-grid { grid-template-columns: 1fr; }
       .nav-groups { width: 100%; }
+      .terminal-account-strip { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 720px) {
@@ -1881,6 +1839,8 @@
       .memorial-symbol { width: 42px; height: 42px; flex-basis: 42px; font-size: 22px; }
       .memorial-actions { justify-content: stretch; }
       .memorial-acknowledge { width: 100%; }
+      .terminal-quote { grid-template-columns: 1fr 1fr; }
+      .terminal-account-strip { grid-template-columns: 1fr; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1894,7 +1854,6 @@
       }
     }
 
-    /* ===== INTRO COMMAND STYLES ===== */
     .intro-atmosphere,
     .intro-atmosphere::before,
     .intro-atmosphere::after {
@@ -2472,7 +2431,7 @@
         </article>
       </div>
 
-      <!-- Market Stats Row - Red Star Exchange Stats -->
+      <!-- Market Stats Row -->
       <div class="market-stats-row">
         <div class="stat-card">
           <b>Market Cap</b>
@@ -2532,88 +2491,89 @@
           </div>
         </article>
 
-     <aside id="tradingDesk" class="trading-terminal" aria-label="Citizen stock trading terminal">
-  <header class="terminal-header">
-    <div class="terminal-header-row">
-      <div>
-        <div class="eyebrow" style="color: var(--gold); margin: 0;">Authenticated citizen desk</div>
-        <h2>Buy &amp; Sell Shares</h2>
-      </div>
-      <span class="terminal-live">Live quote</span>
-    </div>
-  </header>
+        <!-- TRADING TERMINAL WITH COMPANY SELECTOR -->
+        <aside id="tradingDesk" class="trading-terminal" aria-label="Citizen stock trading terminal">
+          <header class="terminal-header">
+            <div class="terminal-header-row">
+              <div>
+                <div class="eyebrow" style="color: var(--gold); margin: 0;">Authenticated citizen desk</div>
+                <h2>Buy &amp; Sell Shares</h2>
+              </div>
+              <span class="terminal-live">Live quote</span>
+            </div>
+          </header>
 
-  <!-- Company Selector -->
-  <div class="terminal-company-selector" style="padding: 12px 18px; background: rgba(0,0,0,.05); border-bottom: 1px solid var(--border);">
-    <div class="field" style="margin:0;">
-      <label for="companySelector" style="font-size:10px;">Select Company</label>
-      <select id="companySelector" style="width:100%; padding:10px 12px; background:#fffaf0; border:1px solid #8e7e64; font:13px Arial,sans-serif;">
-        <option value="">Loading companies...</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="terminal-quote" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;">
-    <div>
-      <span>Company Price</span>
-      <strong id="terminalCompanyPrice">₽0.00</strong>
-    </div>
-    <div style="text-align:center;">
-      <span>Change</span>
-      <strong id="terminalCompanyChange">0.00%</strong>
-    </div>
-    <div style="text-align:right;">
-      <span>Your Shares</span>
-      <strong id="terminalUserShares">0</strong>
-    </div>
-  </div>
-
-  <div class="terminal-body">
-    <div id="portfolioGate" class="access-gate">
-      <h3>Authorisation Required</h3>
-      <p>Connect Discord to display your real UnbelievaBoat balance, inventory and secured order controls.</p>
-      <button id="portfolioLoginButton" class="btn gold" type="button">Authorise with Discord</button>
-    </div>
-
-    <div id="portfolioContent" class="hidden">
-      <div class="terminal-account-strip" aria-label="Citizen portfolio summary">
-        <div class="terminal-stat"><b>Cash</b><strong id="portfolioCash">₽0</strong></div>
-        <div class="terminal-stat"><b>Bank</b><strong id="portfolioBank">₽0</strong></div>
-        <div class="terminal-stat"><b>Total Rubles</b><strong id="portfolioTotal">₽0</strong></div>
-        <div class="terminal-stat"><b>Shares in Company</b><strong id="terminalCompanyUserShares">0</strong></div>
-        <div class="terminal-stat"><b>Company Value</b><strong id="terminalCompanyValue">₽0</strong></div>
-        <div class="terminal-stat"><b>Public Shares Left</b><strong id="terminalPublicShares">0</strong></div>
-      </div>
-
-      <div class="terminal-ticket">
-        <div class="quantity-row">
-          <div class="field">
-            <label for="tradeQuantity">Number of shares</label>
-            <input id="tradeQuantity" type="number" min="1" max="200" step="1" value="1" inputmode="numeric">
+          <!-- Company Selector -->
+          <div class="terminal-company-selector">
+            <div class="field" style="margin:0;">
+              <label for="companySelector" style="font-size:10px; color: var(--muted);">Select Company</label>
+              <select id="companySelector">
+                <option value="">Loading companies...</option>
+              </select>
+            </div>
           </div>
-          <div class="quick-quantity" aria-label="Quick quantities">
-            <button type="button" data-trade-quantity="1">1</button>
-            <button type="button" data-trade-quantity="5">5</button>
-            <button type="button" data-trade-quantity="10">10</button>
-            <button type="button" data-trade-quantity="25">25</button>
+
+          <div class="terminal-quote">
+            <div>
+              <span>Company Price</span>
+              <strong id="terminalCompanyPrice">₽0.00</strong>
+            </div>
+            <div style="text-align:center;">
+              <span>Change</span>
+              <strong id="terminalCompanyChange">0.00%</strong>
+            </div>
+            <div style="text-align:right;">
+              <span>Your Shares</span>
+              <strong id="terminalUserShares">0</strong>
+            </div>
           </div>
-        </div>
 
-        <div class="trade-total">
-          <span>Estimated official value</span>
-          <strong id="tradeEstimate">₽0.00</strong>
-        </div>
+          <div class="terminal-body">
+            <div id="portfolioGate" class="access-gate">
+              <h3>Authorisation Required</h3>
+              <p>Connect Discord to display your real UnbelievaBoat balance, inventory and secured order controls.</p>
+              <button id="portfolioLoginButton" class="btn gold" type="button">Authorise with Discord</button>
+            </div>
 
-        <div class="terminal-actions">
-          <button id="buySharesButton" class="btn gold" type="button">Buy Shares</button>
-          <button id="sellSharesButton" class="btn dark" type="button">Sell Shares</button>
-        </div>
-        <button id="refreshPortfolioButton" class="btn terminal-refresh" type="button">Refresh Citizen Record</button>
-        <div id="tradeStatus" class="trade-status" aria-live="polite">Select a company to start trading.</div>
-      </div>
-    </div>
-  </div>
-</aside>
+            <div id="portfolioContent" class="hidden">
+              <div class="terminal-account-strip" aria-label="Citizen portfolio summary">
+                <div class="terminal-stat"><b>Cash</b><strong id="portfolioCash">₽0</strong></div>
+                <div class="terminal-stat"><b>Bank</b><strong id="portfolioBank">₽0</strong></div>
+                <div class="terminal-stat"><b>Total Rubles</b><strong id="portfolioTotal">₽0</strong></div>
+                <div class="terminal-stat"><b>Shares in Company</b><strong id="terminalCompanyUserShares">0</strong></div>
+                <div class="terminal-stat"><b>Company Value</b><strong id="terminalCompanyValue">₽0</strong></div>
+                <div class="terminal-stat"><b>Public Shares Left</b><strong id="terminalPublicShares">0</strong></div>
+              </div>
+
+              <div class="terminal-ticket">
+                <div class="quantity-row">
+                  <div class="field">
+                    <label for="tradeQuantity">Number of shares</label>
+                    <input id="tradeQuantity" type="number" min="1" max="200" step="1" value="1" inputmode="numeric">
+                  </div>
+                  <div class="quick-quantity" aria-label="Quick quantities">
+                    <button type="button" data-trade-quantity="1">1</button>
+                    <button type="button" data-trade-quantity="5">5</button>
+                    <button type="button" data-trade-quantity="10">10</button>
+                    <button type="button" data-trade-quantity="25">25</button>
+                  </div>
+                </div>
+
+                <div class="trade-total">
+                  <span>Estimated official value</span>
+                  <strong id="tradeEstimate">₽0.00</strong>
+                </div>
+
+                <div class="terminal-actions">
+                  <button id="buySharesButton" class="btn gold" type="button">Buy Shares</button>
+                  <button id="sellSharesButton" class="btn dark" type="button">Sell Shares</button>
+                </div>
+                <button id="refreshPortfolioButton" class="btn terminal-refresh" type="button">Refresh Citizen Record</button>
+                <div id="tradeStatus" class="trade-status" aria-live="polite">Select a company to start trading.</div>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
 
       <!-- Market Secondary Grid -->
@@ -3230,7 +3190,7 @@
       CET_TIME_ZONE: "Europe/Brussels",
       MEMORIAL_ENABLED: false,
       INTRO_GUIDE_INTERVAL_MS: 4800,
-      CITIZEN_SHARE_LIMIT: 200000,
+      CITIZEN_SHARE_LIMIT: 200,
       OAUTH_RETURN_PARAMETER: "returnTo",
 
       ENDPOINTS: Object.freeze({
@@ -3245,8 +3205,11 @@
         STATISTICS: "/api/public/statistics",
         MARKET_STATS: "/api/public/market/stats",
         MARKET_EVENTS: "/api/public/market/events",
+        COMPANIES: "/api/public/companies",
+        COMPANY: "/api/public/company",
 
         PORTFOLIO: "/api/portfolio",
+        PORTFOLIO_COMPANY: "/api/portfolio/company",
         BUY: "/api/trade/buy",
         SELL: "/api/trade/sell",
         PREMIER_CREATE_ANNOUNCEMENT: "/api/premier/announcements",
@@ -3289,6 +3252,17 @@
       publicRefreshInFlight: false,
       ws: null,
       wsReconnectAttempts: 0
+    };
+
+    /* ======================================================================
+       COMPANY TRADING STATE
+       ====================================================================== */
+
+    const COMPANY_STATE = {
+      selectedCompanyId: null,
+      selectedCompanyName: null,
+      companies: [],
+      companyPrices: {}
     };
 
     /* ======================================================================
@@ -3403,6 +3377,15 @@
         button.textContent = button.dataset.originalLabel || button.textContent;
         button.disabled = false;
       }
+    };
+
+    const setTradeStatus = function (message, mode) {
+      const status = byId("tradeStatus");
+      if (!status) {
+        return;
+      }
+      status.className = "trade-status" + (mode ? " " + mode : "");
+      status.textContent = message;
     };
 
     /* ======================================================================
@@ -3581,6 +3564,10 @@
           renderPrice();
           updateMarketStats(data.stats || {});
         }
+        // Update company price if it matches selected
+        if (COMPANY_STATE.selectedCompanyId && data.company_id == COMPANY_STATE.selectedCompanyId) {
+          loadCompanyData(COMPANY_STATE.selectedCompanyId);
+        }
       } else if (data.type === "market_status") {
         if (STATE.market) {
           STATE.market.status = data.status;
@@ -3593,6 +3580,9 @@
         loadEvents();
       } else if (data.type === "portfolio_update" && STATE.user) {
         loadPortfolio(true);
+        if (COMPANY_STATE.selectedCompanyId) {
+          loadUserShares(COMPANY_STATE.selectedCompanyId);
+        }
       }
     };
 
@@ -3858,20 +3848,10 @@
         (status === "settlement" ? "Settlement" : "Closed");
       sessionState.className = "session-state " + status;
 
-      const terminalPrice = byId("terminalLivePrice");
-      const terminalSession = byId("terminalSessionLabel");
       const introPrice = byId("introLivePrice");
       const introChange = byId("introLiveChange");
       const introStatus = byId("introLiveStatus");
 
-      if (terminalPrice) {
-        terminalPrice.textContent = formatIndex(market.price);
-      }
-      if (terminalSession) {
-        terminalSession.textContent = status === "open" ? "Open" :
-          (status === "settlement" ? "Settlement" : "Closed");
-        terminalSession.style.color = status === "open" ? "var(--green)" : "var(--red)";
-      }
       if (introPrice) {
         introPrice.textContent = formatIndex(market.price);
       }
@@ -3906,7 +3886,6 @@
         byId("movementCompletion").textContent = "Not scheduled";
       }
 
-      // Update market stats
       updateMarketStats({
         marketCap: market.marketCap,
         volume: market.volume,
@@ -4113,6 +4092,167 @@
     };
 
     /* ======================================================================
+       COMPANY TRADING FUNCTIONS
+       ====================================================================== */
+
+    const loadCompanies = async function() {
+      try {
+        const response = await fetch(apiUrl(CONFIG.ENDPOINTS.COMPANIES), {
+          credentials: 'include'
+        });
+        const data = await response.json();
+        
+        if (data && data.companies) {
+          COMPANY_STATE.companies = data.companies;
+          populateCompanySelector(data.companies);
+          
+          if (!COMPANY_STATE.selectedCompanyId && data.companies.length > 0) {
+            selectCompany(data.companies[0].company_id);
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to load companies:', e);
+      }
+    };
+
+    const populateCompanySelector = function(companies) {
+      const selector = document.getElementById('companySelector');
+      if (!selector) return;
+      
+      selector.innerHTML = '';
+      
+      if (!companies || companies.length === 0) {
+        selector.innerHTML = '<option value="">No companies available</option>';
+        return;
+      }
+      
+      companies.sort((a, b) => a.name.localeCompare(b.name));
+      
+      const defaultOption = document.createElement('option');
+      defaultOption.value = '';
+      defaultOption.textContent = '-- Select a company --';
+      selector.appendChild(defaultOption);
+      
+      companies.forEach(function(company) {
+        const option = document.createElement('option');
+        option.value = company.company_id;
+        option.textContent = company.name + ' (' + company.company_type + ')';
+        option.dataset.companyId = company.company_id;
+        selector.appendChild(option);
+      });
+      
+      if (COMPANY_STATE.selectedCompanyId) {
+        selector.value = COMPANY_STATE.selectedCompanyId;
+      }
+    };
+
+    const selectCompany = function(companyId) {
+      if (!companyId) {
+        COMPANY_STATE.selectedCompanyId = null;
+        COMPANY_STATE.selectedCompanyName = null;
+        updateCompanyDisplay(null);
+        return;
+      }
+      
+      const company = COMPANY_STATE.companies.find(c => c.company_id == companyId);
+      if (!company) return;
+      
+      COMPANY_STATE.selectedCompanyId = parseInt(companyId);
+      COMPANY_STATE.selectedCompanyName = company.name;
+      
+      const selector = document.getElementById('companySelector');
+      if (selector) {
+        selector.value = companyId;
+      }
+      
+      loadCompanyData(companyId);
+      loadUserShares(companyId);
+    };
+
+    const loadCompanyData = async function(companyId) {
+      try {
+        const response = await fetch(apiUrl(CONFIG.ENDPOINTS.COMPANY + '/' + companyId), {
+          credentials: 'include'
+        });
+        const data = await response.json();
+        
+        if (data) {
+          updateCompanyDisplay(data);
+        }
+      } catch (e) {
+        console.warn('Failed to load company data:', e);
+      }
+    };
+
+    const updateCompanyDisplay = function(data) {
+      const priceEl = document.getElementById('terminalCompanyPrice');
+      const changeEl = document.getElementById('terminalCompanyChange');
+      const sharesEl = document.getElementById('terminalUserShares');
+      const publicSharesEl = document.getElementById('terminalPublicShares');
+      const companyValueEl = document.getElementById('terminalCompanyValue');
+      
+      if (!data) {
+        if (priceEl) priceEl.textContent = '₽0.00';
+        if (changeEl) { changeEl.textContent = '0.00%'; changeEl.style.color = ''; }
+        if (sharesEl) sharesEl.textContent = '0';
+        if (publicSharesEl) publicSharesEl.textContent = '0';
+        if (companyValueEl) companyValueEl.textContent = '₽0';
+        return;
+      }
+      
+      const price = data.price || data.share_price || 0;
+      if (priceEl) priceEl.textContent = '₽' + price.toFixed(2);
+      
+      let change = data.change_percent || 0;
+      if (data.history && data.history.length >= 2) {
+        const oldPrice = data.history[data.history.length - 2].price || price;
+        if (oldPrice > 0) {
+          change = ((price - oldPrice) / oldPrice) * 100;
+        }
+      }
+      if (changeEl) {
+        changeEl.textContent = (change > 0 ? '+' : '') + change.toFixed(2) + '%';
+        changeEl.style.color = change > 0 ? 'var(--green)' : (change < 0 ? 'var(--red)' : '');
+      }
+      
+      if (publicSharesEl) publicSharesEl.textContent = data.public_shares || 0;
+      if (companyValueEl) companyValueEl.textContent = '₽' + (data.funds || 0).toFixed(2);
+      
+      updateTradeEstimate();
+    };
+
+    const loadUserShares = async function(companyId) {
+      if (!STATE.user) return;
+      
+      try {
+        const response = await fetch(apiUrl(CONFIG.ENDPOINTS.PORTFOLIO_COMPANY + '/' + companyId), {
+          credentials: 'include'
+        });
+        const data = await response.json();
+        
+        const sharesEl = document.getElementById('terminalUserShares');
+        const companySharesEl = document.getElementById('terminalCompanyUserShares');
+        const shares = data.shares || 0;
+        
+        if (sharesEl) sharesEl.textContent = shares;
+        if (companySharesEl) companySharesEl.textContent = shares;
+      } catch (e) {
+        console.warn('Failed to load user shares:', e);
+      }
+    };
+
+    const updateTradeEstimate = function() {
+      const input = byId("tradeQuantity");
+      const estimate = byId("tradeEstimate");
+      if (!input || !estimate) return;
+      
+      const quantity = Math.max(0, Math.floor(asNumber(input.value)));
+      const priceText = document.getElementById('terminalCompanyPrice').textContent;
+      const price = parseFloat(priceText.replace('₽', '')) || 0;
+      estimate.textContent = formatMoney(price * quantity, 2);
+    };
+
+    /* ======================================================================
        ANNOUNCEMENTS & EVENTS
        ====================================================================== */
 
@@ -4176,9 +4316,7 @@
 
     const loadEvents = async function () {
       try {
-        const payload = await API.get(CONFIG.ENDPOINTS.MARKET_EVENTS);
-        // Events are displayed in the announcements section
-        // or could be shown in a separate events panel
+        await API.get(CONFIG.ENDPOINTS.MARKET_EVENTS);
       } catch (e) {
         // Silent fail for events
       }
@@ -4201,26 +4339,6 @@
       };
     };
 
-    const setTradeStatus = function (message, mode) {
-      const status = byId("tradeStatus");
-      if (!status) {
-        return;
-      }
-      status.className = "trade-status" + (mode ? " " + mode : "");
-      status.textContent = message;
-    };
-
-    const updateTradeEstimate = function () {
-      const input = byId("tradeQuantity");
-      const estimate = byId("tradeEstimate");
-      if (!input || !estimate) {
-        return;
-      }
-      const quantity = Math.max(0, Math.floor(asNumber(input.value)));
-      const price = STATE.market ? asNumber(STATE.market.price) : 0;
-      estimate.textContent = formatMoney(price * quantity, 2);
-    };
-
     const renderPortfolio = function () {
       const gate = byId("portfolioGate");
       const content = byId("portfolioContent");
@@ -4237,16 +4355,12 @@
       const portfolio = STATE.portfolio || {
         cash: 0, bank: 0, total: 0, shares: 0, marketValue: 0, tradingEnabled: false
       };
-      const price = STATE.market ? STATE.market.price : 0;
-      const marketValue = portfolio.marketValue || portfolio.shares * price;
       byId("portfolioCash").textContent = formatMoney(portfolio.cash);
       byId("portfolioBank").textContent = formatMoney(portfolio.bank);
       byId("portfolioTotal").textContent = formatMoney(portfolio.total);
-      byId("portfolioShares").textContent = formatNumber(portfolio.shares);
-      byId("portfolioMarketValue").textContent = formatMoney(marketValue, 2);
 
       const isOpen = Boolean(STATE.market && STATE.market.status === "open");
-      const canTrade = Boolean(STATE.portfolio && portfolio.tradingEnabled && isOpen);
+      const canTrade = Boolean(STATE.portfolio && portfolio.tradingEnabled && isOpen && COMPANY_STATE.selectedCompanyId);
       byId("buySharesButton").disabled = !canTrade;
       byId("sellSharesButton").disabled = !canTrade;
       updateTradeEstimate();
@@ -4257,6 +4371,8 @@
         setTradeStatus("Trading is prepared but remains disabled until STOCK_ITEM_ID is configured in the Worker.", "bad");
       } else if (!isOpen) {
         setTradeStatus("The market is currently closed. Orders will be available when the next session opens.", "bad");
+      } else if (!COMPANY_STATE.selectedCompanyId) {
+        setTradeStatus("Select a company to start trading.", "");
       } else {
         setTradeStatus("Market open. Orders are checked and settled by the State API.", "good");
       }
@@ -4287,6 +4403,12 @@
         startDiscordLogin();
         return;
       }
+      
+      if (!COMPANY_STATE.selectedCompanyId) {
+        setTradeStatus('Please select a company first.', 'bad');
+        return;
+      }
+      
       const input = byId("tradeQuantity");
       const quantity = Math.floor(asNumber(input.value));
       if (!Number.isInteger(quantity) || quantity < 1) {
@@ -4301,18 +4423,20 @@
         setTradeStatus("Stock inventory trading is not enabled on the State API yet.", "bad");
         return;
       }
-      if (side === "buy" && STATE.portfolio.shares + quantity > CONFIG.CITIZEN_SHARE_LIMIT) {
-        setTradeStatus("This purchase would exceed the 200-share citizen ownership limit.", "bad");
+      
+      const priceText = document.getElementById('terminalCompanyPrice').textContent;
+      const price = parseFloat(priceText.replace('₽', '')) || 0;
+      if (price <= 0) {
+        setTradeStatus('Unable to get current price for this company.', 'bad');
         return;
       }
-      if (side === "sell" && quantity > STATE.portfolio.shares) {
-        setTradeStatus("You cannot sell more shares than you own.", "bad");
-        return;
-      }
-
-      const total = quantity * asNumber(STATE.market.price);
-      const verb = side === "buy" ? "purchase" : "sell";
-      if (!window.confirm("Confirm " + verb + " of " + quantity + " share(s) at approximately " + formatMoney(total, 2) + "?")) {
+      
+      const total = quantity * price;
+      const verb = side === 'buy' ? 'purchase' : 'sell';
+      
+      if (!window.confirm('Confirm ' + verb + ' of ' + quantity + ' share(s) of ' + 
+          (COMPANY_STATE.selectedCompanyName || 'this company') + 
+          ' at approximately ' + formatMoney(total, 2) + '?')) {
         return;
       }
 
@@ -4320,7 +4444,10 @@
       setBusy(button, true, side === "buy" ? "Purchasing…" : "Selling…");
       try {
         const endpoint = side === "buy" ? CONFIG.ENDPOINTS.BUY : CONFIG.ENDPOINTS.SELL;
-        const result = await API.post(endpoint, { quantity: quantity });
+        const result = await API.post(endpoint, { 
+          quantity: quantity,
+          company_id: COMPANY_STATE.selectedCompanyId
+        });
         const settledTotal = result && Number.isFinite(Number(result.total)) ? Number(result.total) : total;
         setTradeStatus(
           (side === "buy" ? "Purchase" : "Sale") + " completed: " + quantity +
@@ -4328,7 +4455,13 @@
           "good"
         );
         showToast("State stock " + (side === "buy" ? "purchase" : "sale") + " completed.");
-        await Promise.allSettled([loadPortfolio(true), loadMarket(), loadEconomy()]);
+        await Promise.allSettled([
+          loadPortfolio(true),
+          loadMarket(),
+          loadEconomy(),
+          loadCompanyData(COMPANY_STATE.selectedCompanyId),
+          loadUserShares(COMPANY_STATE.selectedCompanyId)
+        ]);
       } catch (error) {
         if (error.status === 401 || error.status === 403) {
           await loadSession(true);
@@ -4651,7 +4784,7 @@
 
       if (STATE.market) {
         byId("adminExactPrice").value = STATE.market.price.toFixed(2);
-        byId("adminCircuitBreaker").value = 12; // Default, could be from config
+        byId("adminCircuitBreaker").value = 12;
         byId("adminTradingFee").value = 0.5;
       }
 
@@ -4864,6 +4997,111 @@
     };
 
     /* ======================================================================
+       BIND EVENTS
+       ====================================================================== */
+
+    const bindGlobalEvents = function () {
+      document.querySelectorAll(".nav-tab").forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          showPage(tab.dataset.page, true);
+        });
+      });
+
+      document.querySelectorAll(".roster-search").forEach(function (input) {
+        input.addEventListener("input", function () {
+          const target = byId(input.dataset.rosterTarget);
+          const query = input.value.trim().toLocaleLowerCase();
+          if (!target) {
+            return;
+          }
+          target.querySelectorAll(".member-entry").forEach(function (member) {
+            member.hidden = Boolean(query) && !member.textContent.toLocaleLowerCase().includes(query);
+          });
+        });
+      });
+
+      const loginButton = byId("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", startDiscordLogin);
+      }
+
+      byId("portfolioLoginButton").addEventListener("click", startDiscordLogin);
+      byId("bugReportLoginButton").addEventListener("click", startDiscordLogin);
+      byId("tradeQuantity").addEventListener("input", updateTradeEstimate);
+      
+      document.querySelectorAll("[data-trade-quantity]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          byId("tradeQuantity").value = button.dataset.tradeQuantity;
+          updateTradeEstimate();
+        });
+      });
+      
+      byId("buySharesButton").addEventListener("click", function () {
+        executeTrade("buy");
+      });
+      byId("sellSharesButton").addEventListener("click", function () {
+        executeTrade("sell");
+      });
+      byId("refreshPortfolioButton").addEventListener("click", function () {
+        loadPortfolio(false);
+        if (COMPANY_STATE.selectedCompanyId) {
+          loadCompanyData(COMPANY_STATE.selectedCompanyId);
+          loadUserShares(COMPANY_STATE.selectedCompanyId);
+        }
+      });
+
+      // Company selector
+      const selector = document.getElementById('companySelector');
+      if (selector) {
+        selector.addEventListener('change', function() {
+          const companyId = this.value;
+          if (companyId) {
+            selectCompany(parseInt(companyId));
+          } else {
+            selectCompany(null);
+          }
+        });
+      }
+
+      byId("publishPremierAnnouncement").addEventListener("click", publishPremierAnnouncement);
+      byId("premierAnnouncementBody").addEventListener("input", function () {
+        byId("premierBodyCounter").textContent = this.value.length + " / 1800";
+      });
+      byId("submitBugReport").addEventListener("click", submitBugReport);
+      byId("bugReportDetails").addEventListener("input", function () {
+        byId("bugReportCounter").textContent = this.value.length + " / 1800";
+      });
+
+      byId("adminButton").addEventListener("click", openAdmin);
+      byId("closeAdmin").addEventListener("click", closeAdmin);
+
+      byId("adminBackdrop").addEventListener("click", function (event) {
+        if (event.target === this) {
+          closeAdmin();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && !byId("adminBackdrop").classList.contains("hidden")) {
+          closeAdmin();
+          return;
+        }
+
+        const target = event.target;
+        const isTyping =
+          target instanceof HTMLInputElement ||
+          target instanceof HTMLTextAreaElement ||
+          target instanceof HTMLSelectElement ||
+          target.isContentEditable;
+
+        if (!isTyping && event.key.toLowerCase() === "f") {
+          event.preventDefault();
+          openAdmin();
+        }
+      });
+    };
+
+    /* ======================================================================
        NAVIGATION & CLOCK
        ====================================================================== */
 
@@ -4886,6 +5124,7 @@
       }
       if (destination === "marketPage" && STATE.user) {
         loadPortfolio(true);
+        loadCompanies();
       }
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
@@ -4920,8 +5159,10 @@
           loadEconomy(),
           loadAnnouncements(),
           loadPremierAnnouncements(),
-          loadEvents()
+          loadEvents(),
+          loadCompanies()
         ]);
+        
         const failures = results.filter(function (result) {
           return result.status === "rejected";
         });
@@ -4935,6 +5176,11 @@
 
         if (failures.length && showErrors) {
           showToast("Some State API records could not be refreshed.", "error");
+        }
+        
+        if (COMPANY_STATE.selectedCompanyId) {
+          loadCompanyData(COMPANY_STATE.selectedCompanyId);
+          loadUserShares(COMPANY_STATE.selectedCompanyId);
         }
       } catch (error) {
         const message = isApiConfigured() ? "State API unavailable" : "API configuration required";
@@ -5097,91 +5343,6 @@
       target.querySelectorAll(".member-entry").forEach(function(member) {
         const text = member.textContent.toLowerCase();
         member.style.display = query && !text.includes(query) ? "none" : "";
-      });
-    };
-
-    /* ======================================================================
-       BIND EVENTS
-       ====================================================================== */
-
-    const bindGlobalEvents = function () {
-      document.querySelectorAll(".nav-tab").forEach(function (tab) {
-        tab.addEventListener("click", function () {
-          showPage(tab.dataset.page, true);
-        });
-      });
-
-      document.querySelectorAll(".roster-search").forEach(function (input) {
-        input.addEventListener("input", function () {
-          const target = byId(input.dataset.rosterTarget);
-          const query = input.value.trim().toLocaleLowerCase();
-          if (!target) {
-            return;
-          }
-          target.querySelectorAll(".member-entry").forEach(function (member) {
-            member.hidden = Boolean(query) && !member.textContent.toLocaleLowerCase().includes(query);
-          });
-        });
-      });
-
-      const loginButton = byId("loginButton");
-      if (loginButton) {
-        loginButton.addEventListener("click", startDiscordLogin);
-      }
-
-      byId("portfolioLoginButton").addEventListener("click", startDiscordLogin);
-      byId("bugReportLoginButton").addEventListener("click", startDiscordLogin);
-      byId("tradeQuantity").addEventListener("input", updateTradeEstimate);
-      document.querySelectorAll("[data-trade-quantity]").forEach(function (button) {
-        button.addEventListener("click", function () {
-          byId("tradeQuantity").value = button.dataset.tradeQuantity;
-          updateTradeEstimate();
-        });
-      });
-      byId("buySharesButton").addEventListener("click", function () {
-        executeTrade("buy");
-      });
-      byId("sellSharesButton").addEventListener("click", function () {
-        executeTrade("sell");
-      });
-      byId("refreshPortfolioButton").addEventListener("click", function () {
-        loadPortfolio(false);
-      });
-      byId("publishPremierAnnouncement").addEventListener("click", publishPremierAnnouncement);
-      byId("premierAnnouncementBody").addEventListener("input", function () {
-        byId("premierBodyCounter").textContent = this.value.length + " / 1800";
-      });
-      byId("submitBugReport").addEventListener("click", submitBugReport);
-      byId("bugReportDetails").addEventListener("input", function () {
-        byId("bugReportCounter").textContent = this.value.length + " / 1800";
-      });
-
-      byId("adminButton").addEventListener("click", openAdmin);
-      byId("closeAdmin").addEventListener("click", closeAdmin);
-
-      byId("adminBackdrop").addEventListener("click", function (event) {
-        if (event.target === this) {
-          closeAdmin();
-        }
-      });
-
-      document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape" && !byId("adminBackdrop").classList.contains("hidden")) {
-          closeAdmin();
-          return;
-        }
-
-        const target = event.target;
-        const isTyping =
-          target instanceof HTMLInputElement ||
-          target instanceof HTMLTextAreaElement ||
-          target instanceof HTMLSelectElement ||
-          target.isContentEditable;
-
-        if (!isTyping && event.key.toLowerCase() === "f") {
-          event.preventDefault();
-          openAdmin();
-        }
       });
     };
 
@@ -5443,350 +5604,6 @@
        BOOTSTRAP
        ====================================================================== */
 
-
-/* ======================================================================
-   INDIVIDUAL COMPANY TRADING
-   ====================================================================== */
-
-// State for selected company
-const COMPANY_STATE = {
-  selectedCompanyId: null,
-  selectedCompanyName: null,
-  companies: [],
-  companyPrices: {}
-};
-
-// Load company list from API
-const loadCompanies = async function() {
-  try {
-    const response = await fetch(CONFIG.API_BASE_URL + "/api/public/companies", {
-      credentials: 'include'
-    });
-    const data = await response.json();
-    
-    if (data && data.companies) {
-      COMPANY_STATE.companies = data.companies;
-      populateCompanySelector(data.companies);
-      
-      // Auto-select first company if none selected
-      if (!COMPANY_STATE.selectedCompanyId && data.companies.length > 0) {
-        selectCompany(data.companies[0].company_id);
-      }
-    }
-  } catch (e) {
-    console.warn('Failed to load companies:', e);
-  }
-};
-
-// Populate company dropdown
-const populateCompanySelector = function(companies) {
-  const selector = document.getElementById('companySelector');
-  if (!selector) return;
-  
-  selector.innerHTML = '';
-  
-  if (!companies || companies.length === 0) {
-    selector.innerHTML = '<option value="">No companies available</option>';
-    return;
-  }
-  
-  // Sort by name
-  companies.sort((a, b) => a.name.localeCompare(b.name));
-  
-  const defaultOption = document.createElement('option');
-  defaultOption.value = '';
-  defaultOption.textContent = '-- Select a company --';
-  selector.appendChild(defaultOption);
-  
-  companies.forEach(function(company) {
-    const option = document.createElement('option');
-    option.value = company.company_id;
-    option.textContent = company.name + ' (' + company.company_type + ')';
-    option.dataset.companyId = company.company_id;
-    selector.appendChild(option);
-  });
-};
-
-// Select a company
-const selectCompany = function(companyId) {
-  if (!companyId) {
-    COMPANY_STATE.selectedCompanyId = null;
-    COMPANY_STATE.selectedCompanyName = null;
-    updateCompanyDisplay(null);
-    return;
-  }
-  
-  const company = COMPANY_STATE.companies.find(c => c.company_id == companyId);
-  if (!company) return;
-  
-  COMPANY_STATE.selectedCompanyId = companyId;
-  COMPANY_STATE.selectedCompanyName = company.name;
-  
-  // Update selector
-  const selector = document.getElementById('companySelector');
-  if (selector) {
-    selector.value = companyId;
-  }
-  
-  // Load company data
-  loadCompanyData(companyId);
-  
-  // Load user's shares for this company
-  loadUserShares(companyId);
-};
-
-// Load company data (price, details)
-const loadCompanyData = async function(companyId) {
-  try {
-    const response = await fetch(CONFIG.API_BASE_URL + "/api/public/company/" + companyId, {
-      credentials: 'include'
-    });
-    const data = await response.json();
-    
-    if (data) {
-      updateCompanyDisplay(data);
-    }
-  } catch (e) {
-    console.warn('Failed to load company data:', e);
-  }
-};
-
-// Update company display
-const updateCompanyDisplay = function(data) {
-  const priceEl = document.getElementById('terminalCompanyPrice');
-  const changeEl = document.getElementById('terminalCompanyChange');
-  const sharesEl = document.getElementById('terminalUserShares');
-  const publicSharesEl = document.getElementById('terminalPublicShares');
-  const companyValueEl = document.getElementById('terminalCompanyValue');
-  
-  if (!data) {
-    if (priceEl) priceEl.textContent = '₽0.00';
-    if (changeEl) { changeEl.textContent = '0.00%'; changeEl.style.color = ''; }
-    if (sharesEl) sharesEl.textContent = '0';
-    if (publicSharesEl) publicSharesEl.textContent = '0';
-    if (companyValueEl) companyValueEl.textContent = '₽0';
-    return;
-  }
-  
-  // Price
-  const price = data.price || data.share_price || 0;
-  if (priceEl) priceEl.textContent = '₽' + price.toFixed(2);
-  
-  // Change (calculate from history if available)
-  let change = data.change_percent || 0;
-  if (data.history && data.history.length >= 2) {
-    const oldPrice = data.history[data.history.length - 2].price || price;
-    if (oldPrice > 0) {
-      change = ((price - oldPrice) / oldPrice) * 100;
-    }
-  }
-  if (changeEl) {
-    changeEl.textContent = (change > 0 ? '+' : '') + change.toFixed(2) + '%';
-    changeEl.style.color = change > 0 ? 'var(--green)' : (change < 0 ? 'var(--red)' : '');
-  }
-  
-  // Public shares
-  if (publicSharesEl) publicSharesEl.textContent = data.public_shares || 0;
-  
-  // Company funds / value
-  if (companyValueEl) companyValueEl.textContent = '₽' + (data.funds || 0).toFixed(2);
-  
-  // Update estimate
-  updateTradeEstimate();
-};
-
-// Load user's shares for a specific company
-const loadUserShares = async function(companyId) {
-  if (!STATE.user) return;
-  
-  try {
-    const response = await fetch(CONFIG.API_BASE_URL + "/api/portfolio/company/" + companyId, {
-      credentials: 'include'
-    });
-    const data = await response.json();
-    
-    const sharesEl = document.getElementById('terminalUserShares');
-    const companySharesEl = document.getElementById('terminalCompanyUserShares');
-    const shares = data.shares || 0;
-    
-    if (sharesEl) sharesEl.textContent = shares;
-    if (companySharesEl) companySharesEl.textContent = shares;
-    
-    // Update portfolio display
-    if (STATE.portfolio) {
-      STATE.portfolio.shares = data.total_shares || 0;
-    }
-  } catch (e) {
-    console.warn('Failed to load user shares:', e);
-  }
-};
-
-// Override trade functions to use selected company
-const executeCompanyTrade = async function(side) {
-  if (!STATE.user) {
-    startDiscordLogin();
-    return;
-  }
-  
-  if (!COMPANY_STATE.selectedCompanyId) {
-    setTradeStatus('Please select a company first.', 'bad');
-    return;
-  }
-  
-  const input = document.getElementById('tradeQuantity');
-  const quantity = Math.floor(asNumber(input.value));
-  
-  if (!Number.isInteger(quantity) || quantity < 1) {
-    setTradeStatus('Enter a whole number of at least one share.', 'bad');
-    return;
-  }
-  
-  if (!STATE.market || STATE.market.status !== 'open') {
-    setTradeStatus('The market is closed and cannot accept orders.', 'bad');
-    return;
-  }
-  
-  // Get current price for this company
-  const priceText = document.getElementById('terminalCompanyPrice').textContent;
-  const price = parseFloat(priceText.replace('₽', '')) || 0;
-  
-  if (price <= 0) {
-    setTradeStatus('Unable to get current price for this company.', 'bad');
-    return;
-  }
-  
-  const total = quantity * price;
-  const verb = side === 'buy' ? 'purchase' : 'sell';
-  
-  if (!window.confirm('Confirm ' + verb + ' of ' + quantity + ' share(s) of ' + 
-      (COMPANY_STATE.selectedCompanyName || 'this company') + 
-      ' at approximately ' + formatMoney(total, 2) + '?')) {
-    return;
-  }
-  
-  const button = document.getElementById(side === 'buy' ? 'buySharesButton' : 'sellSharesButton');
-  setBusy(button, true, side === 'buy' ? 'Purchasing…' : 'Selling…');
-  
-  try {
-    const endpoint = side === 'buy' ? CONFIG.ENDPOINTS.BUY : CONFIG.ENDPOINTS.SELL;
-    const result = await API.post(endpoint, { 
-      quantity: quantity,
-      company_id: COMPANY_STATE.selectedCompanyId
-    });
-    
-    const settledTotal = result && Number.isFinite(Number(result.total)) ? Number(result.total) : total;
-    setTradeStatus(
-      (side === 'buy' ? 'Purchase' : 'Sale') + ' completed: ' + quantity +
-      ' share(s), total ' + formatMoney(settledTotal) + '.',
-      'good'
-    );
-    showToast('State stock ' + (side === 'buy' ? 'purchase' : 'sale') + ' completed.');
-    
-    // Refresh all data
-    await Promise.allSettled([
-      loadPortfolio(true),
-      loadMarket(),
-      loadEconomy(),
-      loadCompanyData(COMPANY_STATE.selectedCompanyId),
-      loadUserShares(COMPANY_STATE.selectedCompanyId)
-    ]);
-  } catch (error) {
-    if (error.status === 401 || error.status === 403) {
-      await loadSession(true);
-    }
-    setTradeStatus(error.message, 'bad');
-    showToast(error.message, 'error');
-  } finally {
-    setBusy(button, false);
-    renderPortfolio();
-  }
-};
-
-// Bind company selector events
-const bindCompanyEvents = function() {
-  const selector = document.getElementById('companySelector');
-  if (!selector) return;
-  
-  selector.addEventListener('change', function() {
-    const companyId = this.value;
-    if (companyId) {
-      selectCompany(parseInt(companyId));
-    } else {
-      selectCompany(null);
-    }
-  });
-  
-  // Override trade buttons
-  const buyBtn = document.getElementById('buySharesButton');
-  const sellBtn = document.getElementById('sellSharesButton');
-  if (buyBtn) {
-    buyBtn.removeEventListener('click', buyBtn._listener);
-    buyBtn._listener = function() { executeCompanyTrade('buy'); };
-    buyBtn.addEventListener('click', buyBtn._listener);
-  }
-  if (sellBtn) {
-    sellBtn.removeEventListener('click', sellBtn._listener);
-    sellBtn._listener = function() { executeCompanyTrade('sell'); };
-    sellBtn.addEventListener('click', sellBtn._listener);
-  }
-  
-  // Refresh portfolio button
-  const refreshBtn = document.getElementById('refreshPortfolioButton');
-  if (refreshBtn) {
-    refreshBtn.removeEventListener('click', refreshBtn._listener);
-    refreshBtn._listener = function() {
-      loadPortfolio(false);
-      if (COMPANY_STATE.selectedCompanyId) {
-        loadCompanyData(COMPANY_STATE.selectedCompanyId);
-        loadUserShares(COMPANY_STATE.selectedCompanyId);
-      }
-    };
-    refreshBtn.addEventListener('click', refreshBtn._listener);
-  }
-};
-
-// Load companies on market page display
-const loadCompanyList = function() {
-  if (document.getElementById('marketPage') && !document.getElementById('marketPage').classList.contains('hidden')) {
-    loadCompanies();
-  }
-};
-
-// Add to the refresh cycle
-const originalRefreshPublicData = refreshPublicData;
-refreshPublicData = async function(showErrors) {
-  await originalRefreshPublicData(showErrors);
-  if (STATE.user) {
-    loadCompanies();
-    if (COMPANY_STATE.selectedCompanyId) {
-      loadCompanyData(COMPANY_STATE.selectedCompanyId);
-      loadUserShares(COMPANY_STATE.selectedCompanyId);
-    }
-  }
-};
-
-// Initialize company trading
-const initCompanyTrading = function() {
-  bindCompanyEvents();
-  
-  // Load companies when market page is shown
-  const observer = new MutationObserver(function() {
-    const marketPage = document.getElementById('marketPage');
-    if (marketPage && !marketPage.classList.contains('hidden')) {
-      loadCompanies();
-    }
-  });
-  
-  const marketPage = document.getElementById('marketPage');
-  if (marketPage) {
-    observer.observe(marketPage, { attributes: true, attributeFilter: ['class'] });
-  }
-  
-  // Initial load
-  setTimeout(loadCompanies, 2000);
-};
-
-    
     const bootstrap = async function () {
       handleOAuthReturn();
       bindGlobalEvents();
