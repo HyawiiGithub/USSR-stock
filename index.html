@@ -9,352 +9,6 @@
   <link rel="icon" href="logo.png">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
   <style>
-
-/* Add to index.html style section */
-
-/* ====================================================================
-   MARKET DASHBOARD CSS
-   ==================================================================== */
-
-.market-overview-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.overview-card {
-  padding: 20px;
-  background: linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)), var(--cream);
-  border: 1px solid var(--border);
-  border-top: 4px solid var(--gold);
-  text-align: center;
-}
-
-.overview-label {
-  display: block;
-  color: var(--muted);
-  font: 800 11px Arial, sans-serif;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-.overview-value {
-  display: block;
-  margin-top: 8px;
-  font: 800 clamp(24px, 4vw, 40px)/1 Georgia, serif;
-  color: var(--red-dark);
-}
-
-.overview-change {
-  display: block;
-  margin-top: 4px;
-  font: 800 14px Arial, sans-serif;
-}
-
-.overview-change.positive {
-  color: var(--green);
-}
-
-.overview-change.negative {
-  color: var(--red);
-}
-
-.status-open {
-  color: var(--green);
-}
-
-.status-closed {
-  color: var(--red);
-}
-
-.status-halted {
-  color: var(--gold-dark);
-}
-
-.economic-row {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 18px;
-  margin-bottom: 20px;
-}
-
-.risk-card, .events-card {
-  padding: 20px;
-  background: var(--paper-light);
-  border: 1px solid var(--border);
-  box-shadow: var(--soft-shadow);
-}
-
-.risk-card h3, .events-card h3 {
-  margin: 0 0 12px;
-  color: var(--red-dark);
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.risk-level {
-  display: inline-block;
-  padding: 8px 16px;
-  font: 900 18px Arial, sans-serif;
-  letter-spacing: .1em;
-}
-
-.risk-level.low {
-  color: #2d7a48;
-  background: rgba(45, 122, 72, .15);
-}
-
-.risk-level.moderate {
-  color: #c98f1a;
-  background: rgba(201, 143, 26, .15);
-}
-
-.risk-level.high {
-  color: #b84a2d;
-  background: rgba(184, 74, 45, .15);
-}
-
-.risk-level.critical {
-  color: #b82d2d;
-  background: rgba(184, 45, 45, .15);
-}
-
-.risk-factors {
-  margin-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.risk-factors span {
-  font: 13px/1.6 Arial, sans-serif;
-  color: var(--muted);
-}
-
-.risk-factors span strong {
-  color: var(--ink);
-}
-
-.events-list {
-  max-height: 120px;
-  overflow-y: auto;
-}
-
-.event-item {
-  padding: 8px 12px;
-  margin-bottom: 6px;
-  border-left: 4px solid var(--gold);
-  font: 13px/1.4 Arial, sans-serif;
-}
-
-.event-item.severity-critical {
-  border-left-color: var(--red);
-}
-
-.event-item.severity-warning {
-  border-left-color: var(--gold-dark);
-}
-
-.event-item .event-time {
-  display: block;
-  color: var(--muted);
-  font-size: 10px;
-}
-
-.badge {
-  display: inline-block;
-  padding: 2px 8px;
-  background: var(--red);
-  color: #fff;
-  border-radius: 12px;
-  font-size: 11px;
-}
-
-.chart-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 18px;
-  margin-bottom: 20px;
-}
-
-.chart-card {
-  padding: 18px;
-  background: var(--paper-light);
-  border: 1px solid var(--border);
-  box-shadow: var(--soft-shadow);
-}
-
-.chart-card h3 {
-  margin: 0 0 12px;
-  color: var(--red-dark);
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.chart-card.large .chart-wrap {
-  height: 280px;
-}
-
-.order-book {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.order-book-column h4 {
-  margin: 0 0 8px;
-  color: var(--muted);
-  font: 800 11px Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-.order-book-level {
-  display: flex;
-  justify-content: space-between;
-  padding: 4px 0;
-  border-bottom: 1px solid rgba(0,0,0,.05);
-  font: 13px Arial, sans-serif;
-}
-
-.portfolio-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin-bottom: 20px;
-}
-
-.portfolio-card, .watchlist-card {
-  padding: 18px;
-  background: var(--paper-light);
-  border: 1px solid var(--border);
-  box-shadow: var(--soft-shadow);
-}
-
-.portfolio-card h3, .watchlist-card h3 {
-  margin: 0 0 12px;
-  color: var(--red-dark);
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.portfolio-summary {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.portfolio-item {
-  text-align: center;
-  padding: 10px;
-  background: rgba(255,255,255,.4);
-  border-radius: 4px;
-}
-
-.portfolio-item span {
-  display: block;
-  color: var(--muted);
-  font: 800 9px Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-}
-
-.portfolio-item strong {
-  display: block;
-  margin-top: 4px;
-  font-size: 18px;
-}
-
-.watchlist-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(0,0,0,.05);
-  font: 13px Arial, sans-serif;
-}
-
-.watchlist-item .company-change {
-  font-weight: 800;
-}
-
-.rules-card {
-  padding: 18px;
-  background: var(--paper-light);
-  border: 1px solid var(--border);
-  border-top: 4px solid var(--gold);
-  box-shadow: var(--soft-shadow);
-}
-
-.rules-card h3 {
-  margin: 0 0 12px;
-  color: var(--red-dark);
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.rules-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
-.rule-item {
-  padding: 10px;
-  background: rgba(255,255,255,.3);
-  border: 1px solid var(--border);
-  font: 13px Arial, sans-serif;
-  text-align: center;
-}
-
-@media (max-width: 980px) {
-  .market-overview-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .economic-row {
-    grid-template-columns: 1fr;
-  }
-  
-  .chart-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .portfolio-row {
-    grid-template-columns: 1fr;
-  }
-  
-  .risk-factors {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .rules-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .portfolio-summary {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 620px) {
-  .market-overview-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .overview-value {
-    font-size: 24px;
-  }
-  
-  .risk-factors {
-    grid-template-columns: 1fr;
-  }
-  
-  .rules-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-    
     :root {
       --red-dark: #5f0909;
       --red-deep: #3a0505;
@@ -400,6 +54,50 @@
       overflow: hidden;
     }
 
+
+.terminal-company-selector select {
+  width: 100%;
+  padding: 10px 12px;
+  background: #fffaf0;
+  border: 1px solid #8e7e64;
+  font: 13px Arial, sans-serif;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235f0909' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+.terminal-company-selector select:focus {
+  outline: 2px solid var(--gold);
+}
+
+.terminal-quote {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 14px 18px;
+  background: rgba(239, 201, 76, .1);
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-quote div span {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--muted);
+  font: 900 9px Arial, sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.terminal-quote div strong {
+  display: block;
+  color: var(--red-dark);
+  font-size: 24px;
+}
+
+    
+    /* ===== INTRO SCREEN ===== */
     .intro-screen {
       position: fixed;
       inset: 0;
@@ -429,19 +127,9 @@
       pointer-events: none;
     }
 
-    .intro-screen::before {
-      top: 0;
-    }
-
-    .intro-screen::after {
-      bottom: 0;
-    }
-
-    .intro-screen.is-leaving {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
+    .intro-screen::before { top: 0; }
+    .intro-screen::after { bottom: 0; }
+    .intro-screen.is-leaving { opacity: 0; visibility: hidden; pointer-events: none; }
 
     .intro-panel {
       width: min(880px, 100%);
@@ -473,10 +161,7 @@
       animation: introSealPulse 2.2s ease-in-out infinite;
     }
 
-    .intro-heading-text {
-      text-align: left;
-    }
-
+    .intro-heading-text { text-align: left; }
     .intro-heading-text small {
       display: block;
       color: var(--gold);
@@ -484,7 +169,6 @@
       letter-spacing: .18em;
       text-transform: uppercase;
     }
-
     .intro-heading-text h1 {
       margin: 3px 0 0;
       font-size: clamp(24px, 5vw, 46px);
@@ -499,7 +183,6 @@
       border: 2px solid var(--gold-dark);
       box-shadow: inset 0 0 0 5px rgba(0, 0, 0, .28), 0 14px 35px rgba(0, 0, 0, .34);
     }
-
     .intro-video {
       width: 100%;
       max-height: min(52vh, 480px);
@@ -507,13 +190,11 @@
       object-fit: contain;
       background: #050000;
     }
-
     .intro-progress {
       height: 5px;
       overflow: hidden;
       background: rgba(255, 255, 255, .11);
     }
-
     .intro-progress span {
       width: 0;
       height: 100%;
@@ -521,7 +202,6 @@
       background: linear-gradient(90deg, var(--gold-dark), var(--gold));
       transition: width .15s linear;
     }
-
     .intro-status {
       min-height: 20px;
       margin: 14px 0 0;
@@ -529,14 +209,12 @@
       font: 700 12px/1.5 Arial, sans-serif;
       letter-spacing: .04em;
     }
-
     .intro-checks {
       margin: 14px 0;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 8px;
     }
-
     .intro-check {
       padding: 9px 10px;
       display: flex;
@@ -550,7 +228,6 @@
       text-align: left;
       text-transform: uppercase;
     }
-
     .intro-check::before {
       width: 9px;
       height: 9px;
@@ -560,21 +237,13 @@
       border-radius: 50%;
       content: "";
     }
-
     .intro-check.active::before {
       background: var(--gold);
       box-shadow: 0 0 0 4px rgba(239, 201, 76, .1);
       animation: introCheckPulse 1s ease-in-out infinite;
     }
-
-    .intro-check.complete {
-      color: #e8d9af;
-      border-color: rgba(91, 188, 121, .38);
-    }
-
-    .intro-check.complete::before {
-      background: #54b276;
-    }
+    .intro-check.complete { color: #e8d9af; border-color: rgba(91, 188, 121, .38); }
+    .intro-check.complete::before { background: #54b276; }
 
     @keyframes introCheckPulse {
       50% { transform: scale(.72); }
@@ -587,7 +256,6 @@
       gap: 10px;
       flex-wrap: wrap;
     }
-
     .intro-button {
       min-width: 190px;
       padding: 12px 18px;
@@ -600,24 +268,9 @@
       text-transform: uppercase;
       transition: transform .18s ease, filter .18s ease;
     }
-
-    .intro-button:hover {
-      filter: brightness(1.08);
-      transform: translateY(-2px);
-    }
-
-    .intro-button:disabled {
-      cursor: wait;
-      filter: grayscale(.3);
-      transform: none;
-    }
-
-    .intro-button.secondary {
-      color: #f4e5bd;
-      background: transparent;
-      border-color: rgba(239, 201, 76, .55);
-    }
-
+    .intro-button:hover { filter: brightness(1.08); transform: translateY(-2px); }
+    .intro-button:disabled { cursor: wait; filter: grayscale(.3); transform: none; }
+    .intro-button.secondary { color: #f4e5bd; background: transparent; border-color: rgba(239, 201, 76, .55); }
     .intro-sound-note {
       margin: 12px 0 0;
       color: #bdad86;
@@ -627,95 +280,45 @@
     }
 
     @keyframes introPanelArrival {
-      from {
-        opacity: 0;
-        transform: translateY(18px) scale(.985);
-      }
-      to {
-        opacity: 1;
-        transform: none;
-      }
+      from { opacity: 0; transform: translateY(18px) scale(.985); }
+      to { opacity: 1; transform: none; }
     }
-
     @keyframes introSealPulse {
-      0%, 100% {
-        box-shadow: 0 0 0 0 rgba(239, 201, 76, .2);
-      }
-      50% {
-        box-shadow: 0 0 0 9px rgba(239, 201, 76, 0);
-      }
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239, 201, 76, .2); }
+      50% { box-shadow: 0 0 0 9px rgba(239, 201, 76, 0); }
     }
 
     @media (max-width: 560px) {
-      .intro-screen {
-        padding: 12px;
-      }
-
-      .intro-panel {
-        padding: 17px;
-      }
-
-      .intro-heading {
-        justify-content: flex-start;
-      }
-
-      .intro-seal {
-        width: 54px;
-        height: 54px;
-        flex-basis: 54px;
-      }
-
-      .intro-button {
-        width: 100%;
-      }
-
-      .intro-checks {
-        grid-template-columns: 1fr;
-      }
+      .intro-screen { padding: 12px; }
+      .intro-panel { padding: 17px; }
+      .intro-heading { justify-content: flex-start; }
+      .intro-seal { width: 54px; height: 54px; flex-basis: 54px; }
+      .intro-button { width: 100%; }
+      .intro-checks { grid-template-columns: 1fr; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .intro-panel,
-      .intro-seal {
-        animation: none;
-      }
-
-      .intro-screen {
-        transition-duration: .15s;
-      }
+      .intro-panel, .intro-seal { animation: none; }
+      .intro-screen { transition-duration: .15s; }
     }
 
-    button,
-    input,
-    textarea,
-    select {
-      font: inherit;
-    }
-
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    button:focus-visible,
-    a:focus-visible,
-    input:focus-visible,
-    textarea:focus-visible,
-    select:focus-visible {
+    /* ===== GENERAL ===== */
+    button, input, textarea, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
       outline: 3px solid rgba(239, 201, 76, .8);
       outline-offset: 2px;
     }
+    .hidden { display: none !important; }
 
-    .hidden {
-      display: none !important;
-    }
-
+    /* ===== TOP STRIPE ===== */
     .top-stripe {
       height: 8px;
       background: linear-gradient(90deg, var(--gold) 0 18%, var(--red) 18% 82%, var(--gold) 82%);
       border-bottom: 2px solid var(--red-deep);
     }
 
+    /* ===== MASTHEAD ===== */
     .masthead {
       color: #fff5d4;
       background:
@@ -724,7 +327,6 @@
       border-bottom: 5px solid var(--gold);
       box-shadow: 0 8px 25px rgba(51, 5, 5, .28);
     }
-
     .masthead-inner {
       width: min(1280px, 100%);
       min-height: 160px;
@@ -735,27 +337,12 @@
       gap: 22px;
       align-items: center;
     }
-
     .logo {
       width: 104px;
       height: 104px;
       object-fit: contain;
       filter: drop-shadow(0 5px 8px rgba(0, 0, 0, .28));
     }
-
-
-    .leadership-medallion {
-  padding: 0;
-  overflow: hidden;
-}
-
-.leadership-medallion img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-    
     .title-block small {
       display: block;
       margin-bottom: 8px;
@@ -764,7 +351,6 @@
       letter-spacing: .2em;
       text-transform: uppercase;
     }
-
     .title-block h1 {
       margin: 0;
       font-size: clamp(30px, 4.5vw, 62px);
@@ -773,7 +359,6 @@
       text-transform: uppercase;
       text-shadow: 2px 3px 0 rgba(0, 0, 0, .22);
     }
-
     .title-block p {
       margin: 12px 0 0;
       color: #eadfbf;
@@ -787,19 +372,16 @@
       text-align: right;
       border-left: 1px solid rgba(255, 255, 255, .22);
     }
-
     .clock-label {
       color: var(--gold);
       font: 700 11px Arial, sans-serif;
       letter-spacing: .18em;
       text-transform: uppercase;
     }
-
     #cetClock {
       margin-top: 6px;
       font: 700 23px/1.15 "Courier New", monospace;
     }
-
     #marketCountdown {
       min-height: 17px;
       margin-top: 8px;
@@ -814,7 +396,6 @@
       gap: 8px;
       align-items: center;
     }
-
     .account-identity {
       max-width: 150px;
       overflow: hidden;
@@ -823,7 +404,6 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-
     .account-avatar {
       width: 30px;
       height: 30px;
@@ -832,6 +412,7 @@
       border-radius: 50%;
     }
 
+    /* ===== BUTTONS ===== */
     .btn {
       min-height: 40px;
       padding: 10px 15px;
@@ -846,35 +427,16 @@
       text-transform: uppercase;
       transition: transform .14s ease, filter .14s ease, box-shadow .14s ease;
     }
-
-    .btn:hover {
-      filter: brightness(1.1);
-      transform: translateY(-1px);
-    }
-
-    .btn:active {
-      box-shadow: inset 0 1px rgba(255, 255, 255, .13), 0 1px 0 #3b0505;
-      transform: translateY(1px);
-    }
-
-    .btn:disabled {
-      cursor: not-allowed;
-      filter: grayscale(.65);
-      opacity: .58;
-      transform: none;
-    }
-
+    .btn:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .btn:active { box-shadow: inset 0 1px rgba(255, 255, 255, .13), 0 1px 0 #3b0505; transform: translateY(1px); }
+    .btn:disabled { cursor: not-allowed; filter: grayscale(.65); opacity: .58; transform: none; }
     .btn.gold {
       color: #331f04;
       background: linear-gradient(#f5d96e, #c99a28);
       border-color: #78570b;
       box-shadow: inset 0 1px rgba(255, 255, 255, .45), 0 3px 0 #664708;
     }
-
-    .btn.dark {
-      background: linear-gradient(#4c1111, #250303);
-    }
-
+    .btn.dark { background: linear-gradient(#4c1111, #250303); }
     .btn.ghost {
       min-height: 34px;
       padding: 8px 11px;
@@ -885,6 +447,7 @@
       font-size: 10px;
     }
 
+    /* ===== TICKER ===== */
     .ticker {
       overflow: hidden;
       color: #fff5cf;
@@ -892,7 +455,6 @@
       border-bottom: 2px solid #7c140f;
       white-space: nowrap;
     }
-
     .ticker-track {
       min-width: max-content;
       padding: 10px 0;
@@ -902,28 +464,22 @@
       font: 700 13px Arial, sans-serif;
       letter-spacing: .04em;
     }
-
     .ticker-track span::before {
       margin-right: 12px;
       color: var(--gold);
       content: "★";
     }
-
     @keyframes ticker {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
     }
 
+    /* ===== NAV ===== */
     .section-nav {
       color: #fbefca;
       background: #520909;
       border-bottom: 1px solid #2c0303;
     }
-
     .section-nav-inner {
       width: min(1280px, 100%);
       margin: 0 auto;
@@ -933,30 +489,15 @@
       justify-content: space-between;
       gap: 16px;
     }
-
-    .nav-tabs {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .nav-groups {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: stretch;
-      gap: 2px;
-    }
-
+    .nav-tabs { display: flex; flex-wrap: wrap; }
+    .nav-groups { display: flex; flex-wrap: wrap; align-items: stretch; gap: 2px; }
     .nav-group {
       position: relative;
       display: flex;
       align-items: stretch;
       border-right: 1px solid rgba(255, 255, 255, .12);
     }
-
-    .nav-group:last-child {
-      border-right: 0;
-    }
-
+    .nav-group:last-child { border-right: 0; }
     .nav-group-label {
       padding: 8px 7px;
       display: grid;
@@ -970,7 +511,6 @@
       writing-mode: vertical-rl;
       transform: rotate(180deg);
     }
-
     .nav-tab {
       padding: 14px 18px 12px;
       color: #eadfbd;
@@ -982,7 +522,6 @@
       letter-spacing: .08em;
       text-transform: uppercase;
     }
-
     .nav-tab.active {
       color: #fff6d8;
       border-bottom-color: var(--gold);
@@ -998,7 +537,6 @@
       letter-spacing: .05em;
       text-transform: uppercase;
     }
-
     .api-dot {
       width: 9px;
       height: 9px;
@@ -1007,33 +545,26 @@
       border-radius: 50%;
       box-shadow: 0 0 0 3px rgba(255, 255, 255, .04);
     }
+    .api-status.online .api-dot { background: #54b276; }
+    .api-status.error .api-dot { background: #d14e3f; }
 
-    .api-status.online .api-dot {
-      background: #54b276;
-    }
-
-    .api-status.error .api-dot {
-      background: #d14e3f;
-    }
-
+    /* ===== PAGE ===== */
     .page {
       width: min(1280px, 100%);
       margin: 0 auto;
       padding: 28px clamp(16px, 3vw, 38px) 60px;
     }
 
+    /* ===== OFFICIAL WARNING ===== */
     .official-warning {
       position: relative;
       margin-bottom: 18px;
       padding: 17px 20px 17px 72px;
       color: #391009;
-      background:
-        linear-gradient(90deg, rgba(239, 201, 76, .22), rgba(255, 255, 255, .05)),
-        #f4e8c9;
+      background: linear-gradient(90deg, rgba(239, 201, 76, .22), rgba(255, 255, 255, .05)), #f4e8c9;
       border: 2px solid #8b2017;
       box-shadow: var(--soft-shadow);
     }
-
     .official-warning::before {
       position: absolute;
       top: 50%;
@@ -1043,7 +574,6 @@
       font: 900 39px/1 Georgia, serif;
       transform: translateY(-53%);
     }
-
     .official-warning strong {
       display: block;
       margin-bottom: 5px;
@@ -1052,40 +582,29 @@
       letter-spacing: .13em;
       text-transform: uppercase;
     }
-
     .official-warning p {
       margin: 0;
       font: 14px/1.55 Arial, sans-serif;
     }
 
+    /* ===== STATUS ROW ===== */
     .status-row {
       margin-bottom: 18px;
       display: grid;
       grid-template-columns: 1.25fr .75fr;
       gap: 18px;
     }
-
-    .status-card,
-    .session-card,
-    .panel,
-    .announcement-card,
-    .economy-hero {
-      background:
-        linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)),
-        var(--cream);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-    }
-
     .status-card {
       padding: 24px;
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 20px;
       align-items: center;
+      background: linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)), var(--cream);
+      border: 1px solid var(--border);
       border-left: 8px solid var(--red);
+      box-shadow: var(--shadow);
     }
-
     .eyebrow {
       margin-bottom: 8px;
       color: var(--red);
@@ -1093,12 +612,10 @@
       letter-spacing: .17em;
       text-transform: uppercase;
     }
-
     .price {
       font: 800 clamp(38px, 7vw, 78px)/.9 Georgia, serif;
       letter-spacing: -.05em;
     }
-
     .price-unit {
       margin-top: 10px;
       color: var(--muted);
@@ -1106,7 +623,6 @@
       letter-spacing: .12em;
       text-transform: uppercase;
     }
-
     .change {
       min-width: 125px;
       padding: 15px 12px;
@@ -1115,44 +631,28 @@
       border: 2px solid currentColor;
       font: 800 26px Arial, sans-serif;
     }
-
-    .change.positive {
-      color: var(--green);
-    }
-
-    .change.negative {
-      color: var(--red);
-    }
-
-    .change.flat {
-      color: #675d4c;
-    }
+    .change.positive { color: var(--green); }
+    .change.negative { color: var(--red); }
+    .change.flat { color: #675d4c; }
 
     .session-card {
       padding: 22px;
+      background: linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)), var(--cream);
+      border: 1px solid var(--border);
       border-top: 6px solid var(--gold);
+      box-shadow: var(--shadow);
     }
-
     .session-state {
       margin: 7px 0 11px;
       font: 900 24px/1 Arial, sans-serif;
       text-transform: uppercase;
     }
-
-    .session-state.open {
-      color: var(--green);
-    }
-
-    .session-state.closed,
-    .session-state.settlement {
-      color: var(--red);
-    }
-
+    .session-state.open { color: var(--green); }
+    .session-state.closed, .session-state.settlement { color: var(--red); }
     .session-details {
       color: var(--muted);
       font: 14px/1.6 Arial, sans-serif;
     }
-
     .session-seal {
       margin-top: 15px;
       padding-top: 13px;
@@ -1165,7 +665,6 @@
       letter-spacing: .06em;
       text-transform: uppercase;
     }
-
     .session-seal::before {
       width: 27px;
       height: 27px;
@@ -1174,332 +673,20 @@
       content: "";
     }
 
-    .institution-hero {
-      position: relative;
-      margin-bottom: 20px;
-      padding: clamp(24px, 5vw, 48px);
-      overflow: hidden;
-      color: #fff4d1;
-      background:
-        linear-gradient(115deg, rgba(81, 6, 6, .98), rgba(151, 20, 20, .93)),
-        repeating-linear-gradient(135deg, transparent 0 14px, rgba(255, 255, 255, .03) 14px 15px);
-      border: 3px double var(--gold);
-      box-shadow: var(--shadow);
-    }
-
-    .institution-hero::after {
-      position: absolute;
-      right: -18px;
-      bottom: -50px;
-      color: rgba(239, 201, 76, .1);
-      content: "★";
-      font: 220px/1 Georgia, serif;
-      pointer-events: none;
-    }
-
-    .institution-kicker {
-      position: relative;
-      z-index: 1;
-      color: var(--gold);
-      font: 900 12px Arial, sans-serif;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-    }
-
-    .institution-hero h2 {
-      position: relative;
-      z-index: 1;
-      max-width: 920px;
-      margin: 9px 0 11px;
-      font-size: clamp(34px, 6vw, 70px);
-      line-height: .95;
-      letter-spacing: -.035em;
-    }
-
-    .institution-hero p {
-      position: relative;
-      z-index: 1;
-      max-width: 780px;
-      margin: 0;
-      color: #ecdfbc;
-      font: 15px/1.65 Arial, sans-serif;
-    }
-
-    .directory-grid,
-    .leadership-grid {
+    /* ===== MARKET COMMAND GRID ===== */
+    .market-command-grid {
+      margin-bottom: 18px;
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .office-card,
-    .leadership-card,
-    .party-card {
-      background:
-        linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)),
-        var(--cream);
-      border: 1px solid var(--border);
-      border-top: 6px solid var(--red);
-      box-shadow: var(--soft-shadow);
-    }
-
-    .office-card,
-    .leadership-card {
-      padding: 24px;
-    }
-
-    .office-card h3,
-    .leadership-card h3 {
-      margin: 7px 0 5px;
-      color: var(--red-dark);
-      font-size: clamp(25px, 4vw, 38px);
-      line-height: 1;
-    }
-
-    .office-card p,
-    .leadership-card p {
-      margin: 0 0 18px;
-      color: var(--muted);
-      font: 14px/1.55 Arial, sans-serif;
-    }
-
-    .official-roster {
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-      list-style: none;
-    }
-
-    .official-roster li {
-      padding: 10px 12px;
-      color: #3c2a19;
-      background: rgba(255, 255, 255, .4);
-      border-left: 4px solid var(--gold);
-      font: 800 13px Arial, sans-serif;
-    }
-
-    .leadership-card {
-      position: relative;
-      min-height: 245px;
-      padding-left: 112px;
-    }
-
-    .leadership-medallion {
-      position: absolute;
-      top: 26px;
-      left: 24px;
-      width: 66px;
-      height: 66px;
-      display: grid;
-      place-items: center;
-      color: #fff2c5;
-      background: var(--red);
-      border: 3px double var(--gold);
-      border-radius: 50%;
-      font: 900 22px Georgia, serif;
-    }
-
-    .rank-ribbon {
-      width: fit-content;
-      margin-top: 15px;
-      padding: 7px 10px;
-      color: #fff6dc;
-      background: var(--red-dark);
-      font: 800 11px Arial, sans-serif;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-
-    .leadership-card.memorial-card {
-      border-top-color: var(--gold-dark);
-      background:
-        linear-gradient(rgba(255, 255, 255, .18), rgba(255, 255, 255, .04)),
-        #ddd3bd;
-    }
-
-    .memorial-dove {
-      margin-left: 5px;
-      font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
-    }
-
-    .party-stack {
-      display: grid;
-      gap: 22px;
-    }
-
-    .party-card {
-      overflow: hidden;
-    }
-
-    .party-header {
-      padding: 24px;
-      display: grid;
-      grid-template-columns: 104px minmax(0, 1fr);
-      gap: 20px;
-      align-items: center;
-      color: #fff1c7;
-      background: linear-gradient(115deg, #650a0a, #991919);
-      border-bottom: 4px solid var(--gold);
-    }
-
-    .party-emblem {
-      width: 104px;
-      height: 104px;
-      padding: 8px;
-      display: grid;
-      place-items: center;
-      color: var(--gold);
-      background: rgba(255, 255, 255, .07);
-      border: 2px solid var(--gold);
-      border-radius: 50%;
-      font: 900 25px/1 Georgia, serif;
-      text-align: center;
-    }
-
-    .party-emblem img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, .28));
-    }
-
-    .party-header h3 {
-      margin: 4px 0 7px;
-      font-size: clamp(27px, 4.5vw, 48px);
-      line-height: .98;
-      letter-spacing: -.025em;
-    }
-
-    .party-abbreviation {
-      color: var(--gold);
-      font: 900 11px Arial, sans-serif;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-    }
-
-    .party-leader {
-      color: #e8dab4;
-      font: 700 13px/1.5 Arial, sans-serif;
-    }
-
-    .party-body {
-      padding: 22px 24px 24px;
-    }
-
-    .party-facts {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .party-fact {
-      padding: 13px 14px;
-      background: rgba(255, 255, 255, .4);
-      border-left: 4px solid var(--red);
-    }
-
-    .party-fact b {
-      display: block;
-      margin-bottom: 3px;
-      color: var(--red-dark);
-      font: 900 10px Arial, sans-serif;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-
-    .party-fact span {
-      font: 700 13px/1.45 Arial, sans-serif;
-    }
-
-    .party-description {
-      margin: 16px 0 0;
-      color: #473b2e;
-      font: 15px/1.7 Georgia, serif;
-    }
-
-    .member-roster {
-      margin-top: 18px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, .25);
-    }
-
-    .member-roster summary {
-      padding: 14px 16px;
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-      color: #fff1ca;
-      background: #660b0b;
-      cursor: pointer;
-      font: 800 12px Arial, sans-serif;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-
-    .member-roster summary strong {
-      color: var(--gold);
-      white-space: nowrap;
-    }
-
-    .roster-tools {
-      padding: 12px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .roster-search {
-      width: 100%;
-      padding: 11px 12px;
-      color: var(--ink);
-      background: #fffaf0;
-      border: 1px solid var(--border);
-      font: 13px Arial, sans-serif;
-    }
-
-    .member-grid {
-      max-height: 560px;
-      padding: 12px;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 7px;
-      overflow-y: auto;
-      list-style: none;
-    }
-
-    .member-entry {
-      min-width: 0;
-      padding: 9px 10px;
-      background: rgba(255, 255, 255, .52);
-      border-left: 3px solid var(--gold);
-    }
-
-    .member-entry strong,
-    .member-entry span {
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .member-entry strong {
-      color: #342317;
-      font: 800 12px Arial, sans-serif;
-    }
-
-    .member-entry span {
-      margin-top: 2px;
-      color: var(--muted);
-      font: 11px Arial, sans-serif;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.8fr) minmax(290px, .8fr);
+      grid-template-columns: minmax(0, 1.65fr) minmax(330px, .75fr);
       gap: 18px;
       align-items: start;
     }
 
+    .panel {
+      background: linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)), var(--cream);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
     .panel-header {
       padding: 14px 18px;
       display: flex;
@@ -1510,13 +697,11 @@
       background: linear-gradient(90deg, #6c0d0d, #951818);
       border-bottom: 3px solid var(--gold);
     }
-
     .panel-header h2 {
       margin: 0;
       font-size: 18px;
       text-transform: uppercase;
     }
-
     .panel-tag {
       color: var(--gold);
       font: 800 10px Arial, sans-serif;
@@ -1524,7 +709,6 @@
       text-transform: uppercase;
       white-space: nowrap;
     }
-
     .chart-wrap {
       height: 410px;
       padding: 20px;
@@ -1532,40 +716,203 @@
         linear-gradient(rgba(255, 255, 255, .42), rgba(255, 255, 255, .18)),
         repeating-linear-gradient(90deg, transparent 0 79px, rgba(95, 9, 9, .035) 79px 80px);
     }
-
     .market-meta {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       border-top: 1px solid var(--border);
     }
-
     .meta-box {
       min-height: 98px;
       padding: 15px 17px;
       border-right: 1px solid var(--border);
     }
-
-    .meta-box:last-child {
-      border-right: 0;
-    }
-
+    .meta-box:last-child { border-right: 0; }
     .meta-label {
       color: var(--muted);
       font: 800 10px Arial, sans-serif;
       letter-spacing: .1em;
       text-transform: uppercase;
     }
-
     .meta-value {
       margin-top: 7px;
       font-size: 21px;
       font-weight: 800;
     }
-
     .meta-note {
       margin-top: 3px;
       color: var(--muted);
       font: 11px Arial, sans-serif;
+    }
+
+    /* ===== TRADING TERMINAL ===== */
+    .trading-terminal {
+      position: sticky;
+      top: 18px;
+      overflow: hidden;
+      background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .04)), var(--cream);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--gold-dark);
+      box-shadow: var(--shadow);
+    }
+    .terminal-header {
+      padding: 17px 18px;
+      color: #fff1c7;
+      background: linear-gradient(115deg, #3c0505, #861313);
+      border-bottom: 3px solid var(--gold);
+    }
+    .terminal-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .terminal-header h2 {
+      margin: 5px 0 0;
+      font-size: 25px;
+      line-height: 1;
+    }
+    .terminal-live {
+      padding: 6px 8px;
+      color: #ffeaa0;
+      background: rgba(0, 0, 0, .25);
+      border: 1px solid rgba(239, 201, 76, .4);
+      font: 900 8px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .terminal-live::before {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-right: 6px;
+      background: #58b878;
+      border-radius: 50%;
+      content: "";
+      box-shadow: 0 0 8px rgba(88, 184, 120, .8);
+    }
+    .terminal-quote {
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: end;
+      background: rgba(239, 201, 76, .1);
+      border-bottom: 1px solid var(--border);
+    }
+    .terminal-quote span, .terminal-quote strong { display: block; }
+    .terminal-quote span {
+      margin-bottom: 3px;
+      color: var(--muted);
+      font: 900 9px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .terminal-quote strong {
+      color: var(--red-dark);
+      font-size: 27px;
+    }
+    .terminal-body { padding: 16px; }
+    .access-gate {
+      padding: 28px;
+      color: #4d3e2d;
+      background: rgba(255, 255, 255, .3);
+      border: 1px dashed #8f7e62;
+      text-align: center;
+    }
+    .access-gate h3 { margin: 0 0 8px; color: var(--red-dark); }
+    .access-gate p { max-width: 620px; margin: 0 auto 16px; font: 13px/1.6 Arial, sans-serif; }
+
+    .terminal-account-strip {
+      margin-bottom: 13px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+    }
+    .terminal-stat {
+      min-width: 0;
+      padding: 10px;
+      background: rgba(255, 255, 255, .36);
+      border-left: 3px solid var(--gold-dark);
+    }
+    .terminal-stat:last-child { grid-column: 1 / -1; }
+    .terminal-stat b, .terminal-stat strong { display: block; }
+    .terminal-stat b {
+      color: var(--muted);
+      font: 900 8px Arial, sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .terminal-stat strong {
+      margin-top: 5px;
+      overflow: hidden;
+      color: #3b2817;
+      font-size: 17px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .terminal-ticket {
+      padding: 15px;
+      background: repeating-linear-gradient(0deg, transparent 0 27px, rgba(92, 58, 25, .055) 27px 28px), #f8f0db;
+      border: 1px solid var(--border);
+    }
+    .quantity-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: end;
+    }
+    .quick-quantity {
+      display: grid;
+      grid-template-columns: repeat(4, 35px);
+      gap: 5px;
+    }
+    .quick-quantity button {
+      height: 38px;
+      padding: 0;
+      color: #5f0909;
+      background: #eadcb9;
+      border: 1px solid #ab9367;
+      cursor: pointer;
+      font: 900 10px Arial, sans-serif;
+    }
+    .quick-quantity button:hover { color: #fff1ca; background: var(--red-dark); }
+    .trade-total {
+      margin: 14px 0;
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: #4c3a25;
+      background: rgba(239, 201, 76, .16);
+      border: 1px solid rgba(157, 116, 20, .4);
+      font: 800 13px Arial, sans-serif;
+    }
+    .terminal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .terminal-actions .btn { min-height: 44px; }
+    .terminal-refresh { width: 100%; margin-top: 8px; }
+    .trade-status {
+      min-height: 45px;
+      margin-top: 14px;
+      padding: 12px 14px;
+      color: #584b39;
+      background: #e8dec6;
+      border-left: 4px solid #827866;
+      font: 12px/1.5 Arial, sans-serif;
+    }
+    .trade-status.good { color: #174a2c; border-left-color: var(--green); }
+    .trade-status.bad { color: #6b0c0c; border-left-color: var(--red); }
+
+    /* ===== MARKET SECONDARY GRID ===== */
+    .market-secondary-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+      gap: 18px;
+      align-items: start;
     }
 
     .announcement-list {
@@ -1575,28 +922,26 @@
       gap: 12px;
       overflow: auto;
     }
-
     .announcement-card {
       position: relative;
       padding: 17px 16px 15px 20px;
+      background: linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)), var(--cream);
+      border: 1px solid var(--border);
       border-left: 5px solid var(--gold);
       box-shadow: 0 6px 14px rgba(28, 8, 4, .12);
     }
-
     .announcement-card h3 {
       margin: 0 0 7px;
       color: var(--red-dark);
       font-size: 17px;
       line-height: 1.15;
     }
-
     .announcement-card p {
       margin: 0;
       color: #3d352a;
       font: 13px/1.55 Arial, sans-serif;
       white-space: pre-wrap;
     }
-
     .announcement-meta {
       margin-top: 11px;
       color: var(--muted);
@@ -1612,6 +957,81 @@
       font: italic 15px/1.55 Georgia, serif;
     }
 
+    .market-brief {
+      padding: 20px;
+      background: var(--paper-light);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--red);
+      box-shadow: var(--soft-shadow);
+    }
+    .market-brief h3 {
+      margin: 5px 0 10px;
+      color: var(--red-dark);
+      font-size: 25px;
+    }
+    .market-brief p {
+      margin: 0;
+      color: var(--muted);
+      font: 13px/1.62 Arial, sans-serif;
+    }
+    .market-brief-list {
+      margin: 15px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+      list-style: none;
+    }
+    .market-brief-list li {
+      padding: 10px 11px 10px 34px;
+      position: relative;
+      color: #483927;
+      background: rgba(255, 255, 255, .34);
+      border-left: 3px solid var(--gold-dark);
+      font: 12px/1.45 Arial, sans-serif;
+    }
+    .market-brief-list li::before {
+      position: absolute;
+      left: 12px;
+      color: var(--red);
+      content: "★";
+      font-size: 10px;
+    }
+
+    /* ===== MARKET STATS ROW ===== */
+    .market-stats-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .stat-card {
+      min-height: 120px;
+      padding: 16px;
+      background: var(--paper-light);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--gold-dark);
+      box-shadow: var(--soft-shadow);
+      text-align: center;
+    }
+    .stat-card b {
+      display: block;
+      color: var(--muted);
+      font: 800 9px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .stat-card strong {
+      display: block;
+      margin: 8px 0 0;
+      font-size: clamp(20px, 2.5vw, 28px);
+      color: var(--red-dark);
+    }
+    .stat-card span {
+      color: var(--muted);
+      font: 11px/1.4 Arial, sans-serif;
+    }
+
+    /* ===== ECONOMY PAGE ===== */
     .economy-hero {
       margin-bottom: 18px;
       padding: 28px;
@@ -1619,23 +1039,23 @@
       grid-template-columns: 1fr auto;
       gap: 24px;
       align-items: center;
+      background: linear-gradient(rgba(255, 255, 255, .22), rgba(255, 255, 255, .06)), var(--cream);
+      border: 1px solid var(--border);
       border-top: 8px solid var(--red);
+      box-shadow: var(--shadow);
     }
-
     .economy-value {
       margin: 4px 0 9px;
       color: var(--red-dark);
       font: 900 clamp(38px, 7vw, 72px)/.95 Georgia, serif;
       letter-spacing: -.04em;
     }
-
     .economy-description {
       max-width: 750px;
       margin: 0;
       color: var(--muted);
       font: 14px/1.6 Arial, sans-serif;
     }
-
     .economy-rating {
       width: 150px;
       height: 150px;
@@ -1650,12 +1070,10 @@
       text-align: center;
       transform: rotate(-3deg);
     }
-
     .economy-rating strong {
       font: 900 18px Arial, sans-serif;
       text-transform: uppercase;
     }
-
     .economy-rating span {
       margin-top: 4px;
       color: var(--gold);
@@ -1670,7 +1088,6 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
     }
-
     .stat-card {
       min-height: 150px;
       padding: 18px;
@@ -1679,7 +1096,6 @@
       border-top: 5px solid var(--gold-dark);
       box-shadow: var(--soft-shadow);
     }
-
     .stat-card b {
       display: block;
       color: var(--red);
@@ -1687,14 +1103,12 @@
       letter-spacing: .1em;
       text-transform: uppercase;
     }
-
     .stat-card strong {
       display: block;
       margin: 11px 0 7px;
       font-size: clamp(22px, 3vw, 31px);
       line-height: 1;
     }
-
     .stat-card span {
       color: var(--muted);
       font: 12px/1.4 Arial, sans-serif;
@@ -1706,11 +1120,7 @@
       gap: 18px;
       align-items: start;
     }
-
-    .calculation {
-      padding: 22px;
-    }
-
+    .calculation { padding: 22px; }
     .formula-row {
       padding: 14px 0;
       display: grid;
@@ -1718,39 +1128,21 @@
       gap: 20px;
       border-bottom: 1px solid var(--border);
     }
-
-    .formula-row:last-child {
-      border-bottom: 0;
-    }
-
-    .formula-row b {
-      color: var(--red-dark);
-    }
-
-    .formula-row span {
-      color: var(--muted);
-      font: 13px/1.4 Arial, sans-serif;
-    }
-
-    .formula-row strong {
-      align-self: center;
-      font-size: 17px;
-      text-align: right;
-    }
+    .formula-row:last-child { border-bottom: 0; }
+    .formula-row b { color: var(--red-dark); }
+    .formula-row span { color: var(--muted); font: 13px/1.4 Arial, sans-serif; }
+    .formula-row strong { align-self: center; font-size: 17px; text-align: right; }
 
     .leaderboard {
       width: 100%;
       border-collapse: collapse;
       font: 13px Arial, sans-serif;
     }
-
-    .leaderboard th,
-    .leaderboard td {
+    .leaderboard th, .leaderboard td {
       padding: 12px 14px;
       border-bottom: 1px solid var(--border);
       text-align: left;
     }
-
     .leaderboard th {
       color: #fff4cf;
       background: #691010;
@@ -1758,16 +1150,331 @@
       letter-spacing: .1em;
       text-transform: uppercase;
     }
+    .leaderboard th:last-child, .leaderboard td:last-child { text-align: right; }
+    .leaderboard tbody tr:nth-child(even) { background: rgba(109, 13, 13, .045); }
 
-    .leaderboard th:last-child,
-    .leaderboard td:last-child {
-      text-align: right;
+    /* ===== POLITICS ===== */
+    .institution-hero {
+      position: relative;
+      margin-bottom: 20px;
+      padding: clamp(24px, 5vw, 48px);
+      overflow: hidden;
+      color: #fff4d1;
+      background:
+        linear-gradient(115deg, rgba(81, 6, 6, .98), rgba(151, 20, 20, .93)),
+        repeating-linear-gradient(135deg, transparent 0 14px, rgba(255, 255, 255, .03) 14px 15px);
+      border: 3px double var(--gold);
+      box-shadow: var(--shadow);
+    }
+    .institution-hero::after {
+      position: absolute;
+      right: -18px;
+      bottom: -50px;
+      color: rgba(239, 201, 76, .1);
+      content: "★";
+      font: 220px/1 Georgia, serif;
+      pointer-events: none;
+    }
+    .institution-kicker {
+      position: relative;
+      z-index: 1;
+      color: var(--gold);
+      font: 900 12px Arial, sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .institution-hero h2 {
+      position: relative;
+      z-index: 1;
+      max-width: 920px;
+      margin: 9px 0 11px;
+      font-size: clamp(34px, 6vw, 70px);
+      line-height: .95;
+      letter-spacing: -.035em;
+    }
+    .institution-hero p {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin: 0;
+      color: #ecdfbc;
+      font: 15px/1.65 Arial, sans-serif;
     }
 
-    .leaderboard tbody tr:nth-child(even) {
-      background: rgba(109, 13, 13, .045);
+    .directory-grid, .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .office-card, .leadership-card {
+      padding: 24px;
+      background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--red);
+      box-shadow: var(--soft-shadow);
+    }
+    .office-card h3, .leadership-card h3 {
+      margin: 7px 0 5px;
+      color: var(--red-dark);
+      font-size: clamp(25px, 4vw, 38px);
+      line-height: 1;
+    }
+    .office-card p, .leadership-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font: 14px/1.55 Arial, sans-serif;
+    }
+    .official-roster {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      list-style: none;
+    }
+    .official-roster li {
+      padding: 10px 12px;
+      color: #3c2a19;
+      background: rgba(255, 255, 255, .4);
+      border-left: 4px solid var(--gold);
+      font: 800 13px Arial, sans-serif;
     }
 
+    .leadership-card {
+      position: relative;
+      min-height: 245px;
+      padding-left: 112px;
+    }
+    .leadership-medallion {
+      position: absolute;
+      top: 26px;
+      left: 24px;
+      width: 66px;
+      height: 66px;
+      overflow: hidden;
+      border: 3px double var(--gold);
+      border-radius: 50%;
+    }
+    .leadership-medallion img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .rank-ribbon {
+      width: fit-content;
+      margin-top: 15px;
+      padding: 7px 10px;
+      color: #fff6dc;
+      background: var(--red-dark);
+      font: 800 11px Arial, sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .leadership-card.memorial-card {
+      border-top-color: var(--gold-dark);
+      background: linear-gradient(rgba(255, 255, 255, .18), rgba(255, 255, 255, .04)), #ddd3bd;
+    }
+    .memorial-dove { margin-left: 5px; font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif; }
+
+    /* ===== PARTY ===== */
+    .party-stack { display: grid; gap: 22px; }
+    .party-card {
+      background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream);
+      border: 1px solid var(--border);
+      box-shadow: var(--soft-shadow);
+      overflow: hidden;
+    }
+    .party-header {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 104px minmax(0, 1fr);
+      gap: 20px;
+      align-items: center;
+      color: #fff1c7;
+      background: linear-gradient(115deg, #650a0a, #991919);
+      border-bottom: 4px solid var(--gold);
+    }
+    .party-emblem {
+      width: 104px;
+      height: 104px;
+      padding: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      background: rgba(255, 255, 255, .07);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      font: 900 25px/1 Georgia, serif;
+      text-align: center;
+    }
+    .party-emblem img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, .28));
+    }
+    .party-header h3 {
+      margin: 4px 0 7px;
+      font-size: clamp(27px, 4.5vw, 48px);
+      line-height: .98;
+      letter-spacing: -.025em;
+    }
+    .party-abbreviation {
+      color: var(--gold);
+      font: 900 11px Arial, sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .party-leader {
+      color: #e8dab4;
+      font: 700 13px/1.5 Arial, sans-serif;
+    }
+    .party-body { padding: 22px 24px 24px; }
+    .party-facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .party-fact {
+      padding: 13px 14px;
+      background: rgba(255, 255, 255, .4);
+      border-left: 4px solid var(--red);
+    }
+    .party-fact b {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--red-dark);
+      font: 900 10px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .party-fact span { font: 700 13px/1.45 Arial, sans-serif; }
+    .party-description {
+      margin: 16px 0 0;
+      color: #473b2e;
+      font: 15px/1.7 Georgia, serif;
+    }
+
+    .member-roster {
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .25);
+    }
+    .member-roster summary {
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      color: #fff1ca;
+      background: #660b0b;
+      cursor: pointer;
+      font: 800 12px Arial, sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .member-roster summary strong { color: var(--gold); white-space: nowrap; }
+    .roster-tools { padding: 12px; border-bottom: 1px solid var(--border); }
+    .roster-search {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: #fffaf0;
+      border: 1px solid var(--border);
+      font: 13px Arial, sans-serif;
+    }
+    .member-grid {
+      max-height: 560px;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 7px;
+      overflow-y: auto;
+      list-style: none;
+    }
+    .member-entry {
+      min-width: 0;
+      padding: 9px 10px;
+      background: rgba(255, 255, 255, .52);
+      border-left: 3px solid var(--gold);
+    }
+    .member-entry strong, .member-entry span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .member-entry strong { color: #342317; font: 800 12px Arial, sans-serif; }
+    .member-entry span { margin-top: 2px; color: var(--muted); font: 11px Arial, sans-serif; }
+
+    /* ===== SERVICE GRID ===== */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+    .service-card {
+      padding: 22px;
+      background: var(--paper-light);
+      border: 1px solid var(--border);
+      border-top: 6px solid var(--red);
+      box-shadow: var(--soft-shadow);
+    }
+    .service-card.gold-top { border-top-color: var(--gold-dark); }
+    .service-card h3 {
+      margin: 4px 0 10px;
+      color: var(--red-dark);
+      font-size: clamp(22px, 4vw, 34px);
+      line-height: 1;
+    }
+    .service-card p, .service-note {
+      color: var(--muted);
+      font: 13px/1.6 Arial, sans-serif;
+    }
+
+    /* ===== PREMIER ===== */
+    .premier-identity {
+      margin-bottom: 18px;
+      padding: 16px 18px;
+      color: #fff1cb;
+      background: linear-gradient(90deg, #520909, #8a1414);
+      border-left: 6px solid var(--gold);
+      font: 700 13px/1.55 Arial, sans-serif;
+    }
+    .premier-identity strong { color: var(--gold); }
+    .counter-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font: 10px Arial, sans-serif;
+    }
+    .guide-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 9px; }
+
+    /* ===== CHANGELOG ===== */
+    .changelog-list { display: grid; gap: 12px; }
+    .changelog-entry {
+      padding: 18px;
+      background: rgba(255, 255, 255, .32);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--red);
+    }
+    .changelog-entry time {
+      color: var(--red);
+      font: 900 10px Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .changelog-entry h3 { margin: 6px 0 9px; }
+    .changelog-entry ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #46392b;
+      font: 13px/1.6 Arial, sans-serif;
+    }
+
+    /* ===== FOOTER ===== */
     .footer {
       padding: 25px clamp(16px, 3vw, 38px);
       color: #eadfbf;
@@ -1776,11 +1483,9 @@
       text-align: center;
       font: 12px/1.6 Arial, sans-serif;
     }
+    .footer strong { color: var(--gold); }
 
-    .footer strong {
-      color: var(--gold);
-    }
-
+    /* ===== ADMIN ===== */
     .backdrop {
       position: fixed;
       z-index: 1000;
@@ -1791,7 +1496,6 @@
       background: rgba(18, 3, 2, .76);
       backdrop-filter: blur(5px);
     }
-
     .admin-shell {
       width: min(980px, 100%);
       max-height: calc(100vh - 48px);
@@ -1801,7 +1505,6 @@
       border: 2px solid var(--gold);
       box-shadow: 0 28px 80px rgba(0, 0, 0, .58);
     }
-
     .admin-head {
       position: sticky;
       z-index: 2;
@@ -1815,13 +1518,11 @@
       background: linear-gradient(90deg, #4a0707, #8e1515);
       border-bottom: 4px solid var(--gold);
     }
-
     .admin-head h2 {
       margin: 0;
       font-size: 22px;
       text-transform: uppercase;
     }
-
     .icon-button {
       width: 38px;
       height: 38px;
@@ -1831,76 +1532,19 @@
       cursor: pointer;
       font: 900 22px Arial, sans-serif;
     }
-
-    .admin-body {
-      padding: 20px;
-      display: grid;
-      gap: 16px;
-    }
-
+    .admin-body { padding: 20px; display: grid; gap: 16px; }
     .admin-section {
       padding: 17px;
       background: #eee5cd;
       border: 1px solid var(--border);
       border-left: 5px solid var(--red);
     }
-
     .admin-section h3 {
       margin: 0 0 14px;
       color: var(--red-dark);
       font-size: 16px;
       text-transform: uppercase;
     }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      align-items: end;
-    }
-
-    .form-grid.two {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .form-grid.five {
-      grid-template-columns: repeat(5, 1fr);
-    }
-
-    .field {
-      display: grid;
-      gap: 6px;
-    }
-
-    .field.full {
-      grid-column: 1 / -1;
-    }
-
-    .field label {
-      color: #5a4b37;
-      font: 800 10px Arial, sans-serif;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-    }
-
-    .field input,
-    .field textarea,
-    .field select {
-      width: 100%;
-      padding: 11px 12px;
-      color: var(--ink);
-      background: #fffaf0;
-      border: 1px solid #8e7e64;
-      border-radius: 0;
-    }
-
-    .button-row {
-      margin-top: 13px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-    }
-
     .admin-status {
       min-height: 42px;
       padding: 12px 14px;
@@ -1909,198 +1553,41 @@
       border: 1px dashed #8d7d60;
       font: 13px/1.4 Arial, sans-serif;
     }
+    .admin-status.good { color: #174a2c; background: #dceadf; border-color: #43835a; }
+    .admin-status.bad { color: #6b0c0c; background: #eed7cf; border-color: #9c372b; }
 
-    .admin-status.good {
-      color: #174a2c;
-      background: #dceadf;
-      border-color: #43835a;
-    }
-
-    .admin-status.bad {
-      color: #6b0c0c;
-      background: #eed7cf;
-      border-color: #9c372b;
-    }
-
-    .service-grid {
+    .form-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      align-items: start;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      align-items: end;
     }
-
-    .service-card {
-      padding: 22px;
-      background: var(--paper-light);
-      border: 1px solid var(--border);
-      border-top: 6px solid var(--red);
-      box-shadow: var(--soft-shadow);
-    }
-
-    .service-card.gold-top {
-      border-top-color: var(--gold-dark);
-    }
-
-    .service-card h3 {
-      margin: 4px 0 10px;
-      color: var(--red-dark);
-      font-size: clamp(22px, 4vw, 34px);
-      line-height: 1;
-    }
-
-    .service-card p,
-    .service-note {
-      color: var(--muted);
-      font: 13px/1.6 Arial, sans-serif;
-    }
-
-    .access-gate {
-      padding: 28px;
-      color: #4d3e2d;
-      background: rgba(255, 255, 255, .3);
-      border: 1px dashed #8f7e62;
-      text-align: center;
-    }
-
-    .access-gate h3 {
-      margin: 0 0 8px;
-      color: var(--red-dark);
-    }
-
-    .access-gate p {
-      max-width: 620px;
-      margin: 0 auto 16px;
-      font: 13px/1.6 Arial, sans-serif;
-    }
-
-    .portfolio-summary {
-      margin-bottom: 18px;
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .portfolio-stat {
-      min-height: 115px;
-      padding: 16px;
-      background: rgba(255, 255, 255, .38);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--gold-dark);
-    }
-
-    .portfolio-stat b {
-      display: block;
-      color: var(--red);
-      font: 900 9px Arial, sans-serif;
-      letter-spacing: .1em;
+    .form-grid.two { grid-template-columns: repeat(2, 1fr); }
+    .form-grid.five { grid-template-columns: repeat(5, 1fr); }
+    .field { display: grid; gap: 6px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label {
+      color: #5a4b37;
+      font: 800 10px Arial, sans-serif;
+      letter-spacing: .09em;
       text-transform: uppercase;
     }
-
-    .portfolio-stat strong {
-      display: block;
-      margin-top: 10px;
-      font-size: clamp(20px, 3vw, 29px);
+    .field input, .field textarea, .field select {
+      width: 100%;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: #fffaf0;
+      border: 1px solid #8e7e64;
+      border-radius: 0;
     }
-
-    .trade-ticket {
-      padding: 20px;
-      background:
-        repeating-linear-gradient(0deg, transparent 0 27px, rgba(92, 58, 25, .055) 27px 28px),
-        #f8f0db;
-      border: 2px solid var(--border);
-      box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .25);
-    }
-
-    .trade-total {
-      margin: 14px 0;
-      padding: 14px;
+    .button-row {
+      margin-top: 13px;
       display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      color: #4c3a25;
-      background: rgba(239, 201, 76, .16);
-      border: 1px solid rgba(157, 116, 20, .4);
-      font: 800 13px Arial, sans-serif;
-    }
-
-    .trade-status {
-      min-height: 45px;
-      margin-top: 14px;
-      padding: 12px 14px;
-      color: #584b39;
-      background: #e8dec6;
-      border-left: 4px solid #827866;
-      font: 12px/1.5 Arial, sans-serif;
-    }
-
-    .trade-status.good {
-      color: #174a2c;
-      border-left-color: var(--green);
-    }
-
-    .trade-status.bad {
-      color: #6b0c0c;
-      border-left-color: var(--red);
-    }
-
-    .guide-link {
-      margin-top: 18px;
-      display: inline-flex;
-      align-items: center;
+      flex-wrap: wrap;
       gap: 9px;
     }
 
-    .premier-identity {
-      margin-bottom: 18px;
-      padding: 16px 18px;
-      color: #fff1cb;
-      background: linear-gradient(90deg, #520909, #8a1414);
-      border-left: 6px solid var(--gold);
-      font: 700 13px/1.55 Arial, sans-serif;
-    }
-
-    .premier-identity strong {
-      color: var(--gold);
-    }
-
-    .counter-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      color: var(--muted);
-      font: 10px Arial, sans-serif;
-    }
-
-    .changelog-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .changelog-entry {
-      padding: 18px;
-      background: rgba(255, 255, 255, .32);
-      border: 1px solid var(--border);
-      border-left: 5px solid var(--red);
-    }
-
-    .changelog-entry time {
-      color: var(--red);
-      font: 900 10px Arial, sans-serif;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-
-    .changelog-entry h3 {
-      margin: 6px 0 9px;
-    }
-
-    .changelog-entry ul {
-      margin: 0;
-      padding-left: 20px;
-      color: #46392b;
-      font: 13px/1.6 Arial, sans-serif;
-    }
-
+    /* ===== TOAST ===== */
     .toast-stack {
       position: fixed;
       z-index: 1200;
@@ -2111,7 +1598,6 @@
       gap: 10px;
       pointer-events: none;
     }
-
     .toast {
       padding: 14px 16px;
       color: #fff7df;
@@ -2121,265 +1607,12 @@
       font: 13px/1.45 Arial, sans-serif;
       animation: toastIn .18s ease-out;
     }
-
-    .toast.error {
-      border-left-color: #ef6b5d;
-    }
-
+    .toast.error { border-left-color: #ef6b5d; }
     @keyframes toastIn {
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
+      from { opacity: 0; transform: translateY(8px); }
     }
 
-    .noscript {
-      padding: 14px;
-      color: white;
-      background: #7d1010;
-      text-align: center;
-      font: 700 14px Arial, sans-serif;
-    }
-
-    @media (max-width: 980px) {
-      .masthead-inner {
-        grid-template-columns: 90px 1fr;
-      }
-
-      .logo {
-        width: 84px;
-        height: 84px;
-      }
-
-      .clock-box {
-        grid-column: 1 / -1;
-        padding: 16px 0 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px 20px;
-        text-align: left;
-        border-top: 1px solid rgba(255, 255, 255, .22);
-        border-left: 0;
-      }
-
-      .account-box {
-        grid-column: 2;
-        grid-row: 1 / 3;
-        margin: 0;
-        justify-content: flex-end;
-      }
-
-      .grid,
-      .economy-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .announcement-list {
-        max-height: none;
-      }
-
-      .stat-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .form-grid.five {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .member-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .leadership-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .portfolio-summary {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .nav-groups {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .masthead-inner {
-        min-height: 0;
-        grid-template-columns: 64px 1fr;
-        gap: 14px;
-      }
-
-      .logo {
-        width: 62px;
-        height: 62px;
-      }
-
-      .title-block h1 {
-        font-size: clamp(27px, 8vw, 43px);
-      }
-
-      .title-block p {
-        font-size: 12px;
-      }
-
-      .clock-box {
-        min-width: 0;
-        grid-template-columns: 1fr;
-      }
-
-      .account-box {
-        grid-column: 1;
-        grid-row: auto;
-        margin-top: 9px;
-        justify-content: flex-start;
-      }
-
-      .section-nav-inner {
-        padding: 0;
-        display: block;
-      }
-
-      .nav-groups,
-      .nav-group {
-        display: block;
-      }
-
-      .nav-group {
-        border-right: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .12);
-      }
-
-      .nav-group-label {
-        padding: 7px 12px;
-        display: block;
-        text-align: left;
-        writing-mode: initial;
-        transform: none;
-      }
-
-      .nav-group .nav-tabs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .nav-tab {
-        padding-inline: 8px;
-      }
-
-      .api-status {
-        padding: 8px 16px;
-        justify-content: center;
-        border-top: 1px solid rgba(255, 255, 255, .1);
-      }
-
-      .official-warning {
-        padding-left: 52px;
-      }
-
-      .official-warning::before {
-        left: 15px;
-      }
-
-      .status-row {
-        grid-template-columns: 1fr;
-      }
-
-      .status-card {
-        grid-template-columns: 1fr;
-      }
-
-      .change {
-        width: fit-content;
-      }
-
-      .directory-grid,
-      .leadership-grid,
-      .party-facts {
-        grid-template-columns: 1fr;
-      }
-
-      .official-roster,
-      .member-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .leadership-card {
-        min-height: 0;
-        padding: 22px;
-      }
-
-      .leadership-medallion {
-        position: static;
-        margin-bottom: 16px;
-      }
-
-      .party-header {
-        grid-template-columns: 76px minmax(0, 1fr);
-        gap: 14px;
-      }
-
-      .party-emblem {
-        width: 76px;
-        height: 76px;
-        font-size: 18px;
-      }
-
-      .chart-wrap {
-        height: 310px;
-        padding: 12px;
-      }
-
-      .market-meta,
-      .stat-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .meta-box {
-        min-height: 0;
-        border-right: 0;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .meta-box:last-child {
-        border-bottom: 0;
-      }
-
-      .economy-hero {
-        grid-template-columns: 1fr;
-      }
-
-      .economy-rating {
-        width: 120px;
-        height: 120px;
-      }
-
-      .form-grid,
-      .form-grid.two,
-      .form-grid.five {
-        grid-template-columns: 1fr;
-      }
-
-      .service-grid,
-      .portfolio-summary {
-        grid-template-columns: 1fr;
-      }
-
-      .backdrop {
-        padding: 0;
-        place-items: stretch;
-      }
-
-      .admin-shell {
-        max-height: 100vh;
-        border-width: 0;
-      }
-    }
-
-    body.memorial-open {
-      overflow: hidden;
-    }
-
+    /* ===== MEMORIAL ===== */
     .memorial-backdrop {
       position: fixed;
       inset: 0;
@@ -2392,12 +1625,7 @@
       opacity: 1;
       transition: opacity .45s ease;
     }
-
-    .memorial-backdrop.is-closing {
-      opacity: 0;
-      pointer-events: none;
-    }
-
+    .memorial-backdrop.is-closing { opacity: 0; pointer-events: none; }
     .memorial-dialog {
       width: min(920px, 100%);
       max-height: min(90vh, 940px);
@@ -2412,7 +1640,6 @@
       box-shadow: 0 32px 100px rgba(0, 0, 0, .68);
       animation: memorialArrival .55s cubic-bezier(.2, .8, .2, 1) both;
     }
-
     .memorial-header {
       padding: 20px 22px;
       display: flex;
@@ -2423,13 +1650,11 @@
       background: linear-gradient(115deg, #450606, #7d1010);
       border-bottom: 4px solid var(--gold);
     }
-
     .memorial-title-wrap {
       display: flex;
       align-items: center;
       gap: 14px;
     }
-
     .memorial-symbol {
       width: 50px;
       height: 50px;
@@ -2441,7 +1666,6 @@
       border-radius: 50%;
       font-size: 27px;
     }
-
     .memorial-header small {
       display: block;
       color: var(--gold);
@@ -2449,13 +1673,11 @@
       letter-spacing: .15em;
       text-transform: uppercase;
     }
-
     .memorial-header h2 {
       margin: 3px 0 0;
       font-size: clamp(22px, 4vw, 38px);
       line-height: 1;
     }
-
     .memorial-close {
       width: 40px;
       height: 40px;
@@ -2466,27 +1688,23 @@
       cursor: pointer;
       font: 700 25px/1 Arial, sans-serif;
     }
-
     .memorial-scroll {
       padding: clamp(20px, 4vw, 38px);
       overflow-y: auto;
       scrollbar-color: var(--red) var(--paper);
     }
-
     .memorial-decree {
       padding-bottom: 18px;
       margin-bottom: 21px;
       border-bottom: 3px double var(--border);
       text-align: center;
     }
-
     .memorial-decree strong {
       display: block;
       color: var(--red-dark);
       font-size: clamp(24px, 5vw, 46px);
       line-height: 1;
     }
-
     .memorial-decree span {
       display: block;
       margin-top: 7px;
@@ -2495,19 +1713,16 @@
       letter-spacing: .1em;
       text-transform: uppercase;
     }
-
     .memorial-address p {
       margin: 0 0 17px;
       color: #30271f;
       font: 15px/1.72 Georgia, "Times New Roman", serif;
     }
-
     .memorial-address .address-opening {
       color: var(--red-dark);
       font-size: 18px;
       font-weight: 700;
     }
-
     .memorial-quote {
       margin: 23px 0;
       padding: 18px 20px;
@@ -2516,7 +1731,6 @@
       border-left: 5px solid var(--gold-dark);
       font: italic 700 16px/1.6 Georgia, serif;
     }
-
     .memorial-signature {
       margin-top: 25px;
       padding-top: 17px;
@@ -2525,7 +1739,6 @@
       font: 800 12px/1.6 Arial, sans-serif;
       letter-spacing: .04em;
     }
-
     .memorial-actions {
       padding: 14px 20px;
       display: flex;
@@ -2533,7 +1746,6 @@
       background: #d6c8a7;
       border-top: 1px solid var(--border);
     }
-
     .memorial-acknowledge {
       padding: 11px 18px;
       color: #fff2cd;
@@ -2544,48 +1756,131 @@
       letter-spacing: .08em;
       text-transform: uppercase;
     }
-
     @keyframes memorialArrival {
-      from {
-        opacity: 0;
-        transform: translateY(16px) scale(.987);
-      }
-      to {
-        opacity: 1;
-        transform: none;
-      }
+      from { opacity: 0; transform: translateY(16px) scale(.987); }
+      to { opacity: 1; transform: none; }
     }
 
-    @media (max-width: 620px) {
-      .memorial-backdrop {
-        padding: 0;
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 980px) {
+      .masthead-inner {
+        grid-template-columns: 90px 1fr;
       }
+      .logo { width: 84px; height: 84px; }
+      .clock-box {
+        grid-column: 1 / -1;
+        padding: 16px 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 20px;
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, .22);
+        border-left: 0;
+      }
+      .account-box {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        margin: 0;
+        justify-content: flex-end;
+      }
+      .market-command-grid, .economy-grid, .market-secondary-grid {
+        grid-template-columns: 1fr;
+      }
+      .trading-terminal { position: static; }
+      .announcement-list { max-height: none; }
+      .stat-grid, .market-stats-row { grid-template-columns: repeat(2, 1fr); }
+      .form-grid.five { grid-template-columns: repeat(3, 1fr); }
+      .member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .directory-grid, .leadership-grid { grid-template-columns: 1fr; }
+      .service-grid { grid-template-columns: 1fr; }
+      .nav-groups { width: 100%; }
+    }
 
+    @media (max-width: 720px) {
+      .masthead-inner {
+        min-height: 0;
+        grid-template-columns: 64px 1fr;
+        gap: 14px;
+      }
+      .logo { width: 62px; height: 62px; }
+      .title-block h1 { font-size: clamp(27px, 8vw, 43px); }
+      .title-block p { font-size: 12px; }
+      .clock-box {
+        min-width: 0;
+        grid-template-columns: 1fr;
+      }
+      .account-box {
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 9px;
+        justify-content: flex-start;
+      }
+      .section-nav-inner { padding: 0; display: block; }
+      .nav-groups, .nav-group { display: block; }
+      .nav-group {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .12);
+      }
+      .nav-group-label {
+        padding: 7px 12px;
+        display: block;
+        text-align: left;
+        writing-mode: initial;
+        transform: none;
+      }
+      .nav-group .nav-tabs { display: grid; grid-template-columns: 1fr 1fr; }
+      .nav-tab { padding-inline: 8px; }
+      .api-status {
+        padding: 8px 16px;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+      }
+      .official-warning { padding-left: 52px; }
+      .official-warning::before { left: 15px; }
+      .status-row { grid-template-columns: 1fr; }
+      .status-card { grid-template-columns: 1fr; }
+      .change { width: fit-content; }
+      .market-stats-row { grid-template-columns: 1fr 1fr; }
+      .stat-card { min-height: 100px; }
+      .directory-grid, .leadership-grid, .party-facts { grid-template-columns: 1fr; }
+      .official-roster, .member-grid { grid-template-columns: 1fr; }
+      .leadership-card {
+        min-height: 0;
+        padding: 22px;
+      }
+      .leadership-medallion {
+        position: static;
+        margin-bottom: 16px;
+      }
+      .party-header {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 14px;
+      }
+      .party-emblem { width: 76px; height: 76px; font-size: 18px; }
+      .chart-wrap { height: 310px; padding: 12px; }
+      .market-meta, .stat-grid { grid-template-columns: 1fr; }
+      .meta-box {
+        min-height: 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .meta-box:last-child { border-bottom: 0; }
+      .economy-hero { grid-template-columns: 1fr; }
+      .economy-rating { width: 120px; height: 120px; }
+      .form-grid, .form-grid.two, .form-grid.five { grid-template-columns: 1fr; }
+      .backdrop { padding: 0; place-items: stretch; }
+      .admin-shell { max-height: 100vh; border-width: 0; }
+      .memorial-backdrop { padding: 0; }
       .memorial-dialog {
         width: 100%;
         max-height: 100vh;
         min-height: 100vh;
         border-width: 0;
       }
-
-      .memorial-header {
-        padding: 15px;
-      }
-
-      .memorial-symbol {
-        width: 42px;
-        height: 42px;
-        flex-basis: 42px;
-        font-size: 22px;
-      }
-
-      .memorial-actions {
-        justify-content: stretch;
-      }
-
-      .memorial-acknowledge {
-        width: 100%;
-      }
+      .memorial-header { padding: 15px; }
+      .memorial-symbol { width: 42px; height: 42px; flex-basis: 42px; font-size: 22px; }
+      .memorial-actions { justify-content: stretch; }
+      .memorial-acknowledge { width: 100%; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -2599,25 +1894,7 @@
       }
     }
 
-    /* ====================================================================
-       2026 EXCHANGE INTERFACE REFORM
-       ==================================================================== */
-
-    .intro-screen {
-      padding: clamp(12px, 2.4vw, 34px);
-      background:
-        radial-gradient(circle at 20% 16%, rgba(239, 201, 76, .16), transparent 24%),
-        radial-gradient(circle at 79% 76%, rgba(184, 32, 32, .24), transparent 31%),
-        linear-gradient(135deg, #160101, #370404 48%, #190101);
-      isolation: isolate;
-    }
-
-    .intro-screen::before,
-    .intro-screen::after {
-      z-index: 8;
-      height: 5px;
-    }
-
+    /* ===== INTRO COMMAND STYLES ===== */
     .intro-atmosphere,
     .intro-atmosphere::before,
     .intro-atmosphere::after {
@@ -2625,7 +1902,6 @@
       inset: 0;
       pointer-events: none;
     }
-
     .intro-atmosphere {
       z-index: -1;
       overflow: hidden;
@@ -2634,7 +1910,6 @@
         repeating-linear-gradient(90deg, transparent 0 119px, rgba(255, 255, 255, .015) 120px),
         repeating-linear-gradient(0deg, transparent 0 119px, rgba(255, 255, 255, .012) 120px);
     }
-
     .intro-atmosphere::before {
       content: "";
       inset: -45%;
@@ -2642,13 +1917,15 @@
       background: conic-gradient(from 16deg, transparent 0 8deg, rgba(239, 201, 76, .08) 8deg 10deg, transparent 10deg 27deg);
       animation: introAuraTurn 34s linear infinite;
     }
-
     .intro-atmosphere::after {
       content: "";
       opacity: .18;
       background-image: radial-gradient(rgba(255, 241, 189, .72) .7px, transparent .8px);
       background-size: 7px 7px;
       mix-blend-mode: soft-light;
+    }
+    @keyframes introAuraTurn {
+      to { transform: rotate(360deg); }
     }
 
     .intro-panel.intro-command {
@@ -2664,7 +1941,6 @@
         0 38px 120px rgba(0, 0, 0, .74),
         0 0 90px rgba(178, 27, 27, .16);
     }
-
     .intro-command .intro-heading {
       margin: 0;
       padding: 18px 22px;
@@ -2672,18 +1948,13 @@
       background: linear-gradient(90deg, rgba(41, 2, 2, .95), rgba(105, 9, 9, .72));
       border-bottom: 1px solid rgba(239, 201, 76, .35);
     }
-
     .intro-command .intro-seal {
       width: 58px;
       height: 58px;
       flex-basis: 58px;
       background: rgba(255, 255, 255, .04);
     }
-
-    .intro-command .intro-heading-text h1 {
-      font-size: clamp(24px, 4vw, 43px);
-    }
-
+    .intro-command .intro-heading-text h1 { font-size: clamp(24px, 4vw, 43px); }
     .intro-live-badge {
       margin-left: auto;
       padding: 9px 12px;
@@ -2697,7 +1968,6 @@
       letter-spacing: .08em;
       text-transform: uppercase;
     }
-
     .intro-live-badge i {
       width: 8px;
       height: 8px;
@@ -2706,24 +1976,23 @@
       box-shadow: 0 0 0 5px rgba(239, 201, 76, .08), 0 0 14px rgba(239, 201, 76, .55);
       animation: introSignal 1.7s ease-in-out infinite;
     }
-
+    @keyframes introSignal {
+      50% { opacity: .45; transform: scale(.72); }
+    }
     .intro-command-grid {
       display: grid;
       grid-template-columns: minmax(0, 1.35fr) minmax(330px, .65fr);
       min-height: 510px;
     }
-
     .intro-visual-column {
       min-width: 0;
       padding: 22px;
       border-right: 1px solid rgba(239, 201, 76, .24);
     }
-
     .intro-video-shell {
       border: 1px solid rgba(239, 201, 76, .5);
       box-shadow: 0 18px 48px rgba(0, 0, 0, .45), inset 0 0 0 5px rgba(0, 0, 0, .25);
     }
-
     .intro-video-kicker {
       position: absolute;
       z-index: 2;
@@ -2738,12 +2007,10 @@
       text-transform: uppercase;
       backdrop-filter: blur(7px);
     }
-
     .intro-command .intro-video {
       height: clamp(240px, 43vh, 410px);
       max-height: none;
     }
-
     .intro-market-ribbon {
       margin-top: 12px;
       display: grid;
@@ -2752,22 +2019,13 @@
       background: rgba(0, 0, 0, .24);
       border: 1px solid rgba(239, 201, 76, .22);
     }
-
     .intro-market-ribbon div {
       min-width: 0;
       padding: 12px 13px;
       border-right: 1px solid rgba(239, 201, 76, .18);
     }
-
-    .intro-market-ribbon div:last-child {
-      border-right: 0;
-    }
-
-    .intro-market-ribbon span,
-    .intro-market-ribbon strong {
-      display: block;
-    }
-
+    .intro-market-ribbon div:last-child { border-right: 0; }
+    .intro-market-ribbon span, .intro-market-ribbon strong { display: block; }
     .intro-market-ribbon span {
       margin-bottom: 5px;
       color: #ad9e78;
@@ -2775,7 +2033,6 @@
       letter-spacing: .12em;
       text-transform: uppercase;
     }
-
     .intro-market-ribbon strong {
       overflow: hidden;
       color: #fff2c9;
@@ -2792,14 +2049,12 @@
         linear-gradient(rgba(255, 255, 255, .018), rgba(255, 255, 255, 0)),
         repeating-linear-gradient(0deg, transparent 0 31px, rgba(239, 201, 76, .025) 31px 32px);
     }
-
     .intro-guide-heading {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 15px;
     }
-
     .intro-guide-heading small {
       display: block;
       color: var(--gold);
@@ -2807,26 +2062,22 @@
       letter-spacing: .16em;
       text-transform: uppercase;
     }
-
     .intro-guide-heading h2 {
       margin: 4px 0 0;
       color: #fff4d1;
       font-size: clamp(24px, 3vw, 34px);
       line-height: 1;
     }
-
     .intro-guide-count {
       color: #d5c394;
       font: 800 11px Arial, sans-serif;
       letter-spacing: .08em;
     }
-
     .intro-guide-viewport {
       position: relative;
       min-height: 205px;
       margin: 19px 0 13px;
     }
-
     .intro-guide-card {
       position: absolute;
       inset: 0;
@@ -2839,13 +2090,11 @@
       transform: translateX(22px);
       transition: opacity .38s ease, transform .48s cubic-bezier(.2, .8, .2, 1), visibility .38s;
     }
-
     .intro-guide-card.active {
       opacity: 1;
       visibility: visible;
       transform: none;
     }
-
     .intro-guide-icon {
       width: 42px;
       height: 42px;
@@ -2857,26 +2106,22 @@
       box-shadow: 0 0 0 6px rgba(239, 201, 76, .08);
       font: 900 18px Georgia, serif;
     }
-
     .intro-guide-card h3 {
       margin: 16px 0 7px;
       color: #fff2c7;
       font-size: 23px;
       line-height: 1;
     }
-
     .intro-guide-card p {
       margin: 0;
       color: #cbbd97;
       font: 12px/1.62 Arial, sans-serif;
     }
-
     .intro-guide-controls {
       display: flex;
       align-items: center;
       gap: 8px;
     }
-
     .intro-guide-arrow {
       width: 34px;
       height: 34px;
@@ -2886,14 +2131,12 @@
       cursor: pointer;
       font: 900 17px Arial, sans-serif;
     }
-
     .intro-guide-dots {
       display: flex;
       gap: 6px;
       flex: 1;
       justify-content: center;
     }
-
     .intro-guide-dot {
       width: 7px;
       height: 7px;
@@ -2904,22 +2147,16 @@
       cursor: pointer;
       transition: width .25s ease, background .25s ease;
     }
-
     .intro-guide-dot.active {
       width: 24px;
       background: var(--gold);
       border-radius: 4px;
     }
-
     .intro-command .intro-checks {
       margin: auto 0 0;
       grid-template-columns: 1fr;
     }
-
-    .intro-command .intro-check {
-      padding: 8px 9px;
-    }
-
+    .intro-command .intro-check { padding: 8px 9px; }
     .intro-command-footer {
       padding: 15px 22px 17px;
       display: grid;
@@ -2929,363 +2166,54 @@
       background: rgba(10, 0, 0, .33);
       border-top: 1px solid rgba(239, 201, 76, .23);
     }
-
     .intro-command-footer .intro-status,
     .intro-command-footer .intro-sound-note,
-    .intro-command-footer .intro-actions {
-      margin: 0;
-    }
-
-    .intro-command-footer .intro-sound-note {
-      margin-top: 3px;
-    }
-
-    @keyframes introAuraTurn {
-      to { transform: rotate(360deg); }
-    }
-
-    @keyframes introSignal {
-      50% { opacity: .45; transform: scale(.72); }
-    }
-
-    .market-command-grid {
-      margin-bottom: 18px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.65fr) minmax(330px, .75fr);
-      gap: 18px;
-      align-items: start;
-    }
-
-    .market-chart-panel {
-      min-width: 0;
-    }
-
-    .trading-terminal {
-      position: sticky;
-      top: 18px;
-      overflow: hidden;
-      background:
-        linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .04)),
-        var(--cream);
-      border: 1px solid var(--border);
-      border-top: 6px solid var(--gold-dark);
-      box-shadow: var(--shadow);
-    }
-
-    .terminal-header {
-      padding: 17px 18px;
-      color: #fff1c7;
-      background: linear-gradient(115deg, #3c0505, #861313);
-      border-bottom: 3px solid var(--gold);
-    }
-
-    .terminal-header-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .terminal-header h2 {
-      margin: 5px 0 0;
-      font-size: 25px;
-      line-height: 1;
-    }
-
-    .terminal-live {
-      padding: 6px 8px;
-      color: #ffeaa0;
-      background: rgba(0, 0, 0, .25);
-      border: 1px solid rgba(239, 201, 76, .4);
-      font: 900 8px Arial, sans-serif;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-
-    .terminal-live::before {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      margin-right: 6px;
-      background: #58b878;
-      border-radius: 50%;
-      content: "";
-      box-shadow: 0 0 8px rgba(88, 184, 120, .8);
-    }
-
-    .terminal-quote {
-      padding: 14px 18px;
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      align-items: end;
-      background: rgba(239, 201, 76, .1);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .terminal-quote span,
-    .terminal-quote strong {
-      display: block;
-    }
-
-    .terminal-quote span {
-      margin-bottom: 3px;
-      color: var(--muted);
-      font: 900 9px Arial, sans-serif;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-
-    .terminal-quote strong {
-      color: var(--red-dark);
-      font-size: 27px;
-    }
-
-    .terminal-body {
-      padding: 16px;
-    }
-
-    .trading-terminal .access-gate {
-      padding: 22px 16px;
-      background: rgba(255, 255, 255, .28);
-      border: 1px dashed #9c8969;
-    }
-
-    .terminal-account-strip {
-      margin-bottom: 13px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 7px;
-    }
-
-    .terminal-stat {
-      min-width: 0;
-      padding: 10px;
-      background: rgba(255, 255, 255, .36);
-      border-left: 3px solid var(--gold-dark);
-    }
-
-    .terminal-stat:last-child {
-      grid-column: 1 / -1;
-    }
-
-    .terminal-stat b,
-    .terminal-stat strong {
-      display: block;
-    }
-
-    .terminal-stat b {
-      color: var(--muted);
-      font: 900 8px Arial, sans-serif;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-    }
-
-    .terminal-stat strong {
-      margin-top: 5px;
-      overflow: hidden;
-      color: #3b2817;
-      font-size: 17px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .terminal-ticket {
-      padding: 15px;
-      background:
-        repeating-linear-gradient(0deg, transparent 0 27px, rgba(92, 58, 25, .055) 27px 28px),
-        #f8f0db;
-      border: 1px solid var(--border);
-    }
-
-    .quantity-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 8px;
-      align-items: end;
-    }
-
-    .quick-quantity {
-      display: grid;
-      grid-template-columns: repeat(4, 35px);
-      gap: 5px;
-    }
-
-    .quick-quantity button {
-      height: 38px;
-      padding: 0;
-      color: #5f0909;
-      background: #eadcb9;
-      border: 1px solid #ab9367;
-      cursor: pointer;
-      font: 900 10px Arial, sans-serif;
-    }
-
-    .quick-quantity button:hover {
-      color: #fff1ca;
-      background: var(--red-dark);
-    }
-
-    .terminal-actions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-
-    .terminal-actions .btn {
-      min-height: 44px;
-    }
-
-    .terminal-refresh {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    .trading-terminal .trade-status {
-      margin-top: 10px;
-      min-height: 0;
-    }
-
-    .market-secondary-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
-      gap: 18px;
-      align-items: start;
-    }
-
-    .market-brief {
-      padding: 20px;
-      background: var(--paper-light);
-      border: 1px solid var(--border);
-      border-top: 5px solid var(--red);
-      box-shadow: var(--soft-shadow);
-    }
-
-    .market-brief h3 {
-      margin: 5px 0 10px;
-      color: var(--red-dark);
-      font-size: 25px;
-    }
-
-    .market-brief p {
-      margin: 0;
-      color: var(--muted);
-      font: 13px/1.62 Arial, sans-serif;
-    }
-
-    .market-brief-list {
-      margin: 15px 0 0;
-      padding: 0;
-      display: grid;
-      gap: 8px;
-      list-style: none;
-    }
-
-    .market-brief-list li {
-      padding: 10px 11px 10px 34px;
-      position: relative;
-      color: #483927;
-      background: rgba(255, 255, 255, .34);
-      border-left: 3px solid var(--gold-dark);
-      font: 12px/1.45 Arial, sans-serif;
-    }
-
-    .market-brief-list li::before {
-      position: absolute;
-      left: 12px;
-      color: var(--red);
-      content: "★";
-      font-size: 10px;
-    }
+    .intro-command-footer .intro-actions { margin: 0; }
+    .intro-command-footer .intro-sound-note { margin-top: 3px; }
 
     @media (max-width: 980px) {
-      .intro-command-grid,
-      .market-command-grid,
-      .market-secondary-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .intro-command-grid { grid-template-columns: 1fr; }
       .intro-visual-column {
         border-right: 0;
         border-bottom: 1px solid rgba(239, 201, 76, .24);
       }
-
-      .intro-command .intro-video {
-        height: min(38vh, 330px);
-      }
-
-      .intro-guide-viewport {
-        min-height: 180px;
-      }
-
-      .trading-terminal {
-        position: static;
-      }
+      .intro-command .intro-video { height: min(38vh, 330px); }
+      .intro-guide-viewport { min-height: 180px; }
     }
-
     @media (max-width: 620px) {
-      .intro-screen {
-        padding: 0;
-        place-items: stretch;
-      }
-
+      .intro-screen { padding: 0; place-items: stretch; }
       .intro-panel.intro-command {
         min-height: 100vh;
         border: 0;
         box-shadow: none;
       }
-
       .intro-command .intro-heading,
       .intro-visual-column,
       .intro-guide-column,
-      .intro-command-footer {
-        padding-inline: 15px;
-      }
+      .intro-command-footer { padding-inline: 15px; }
+      .intro-live-badge { display: none; }
+      .intro-command-grid { min-height: 0; }
+      .intro-command .intro-video { height: min(31vh, 245px); }
+      .intro-market-ribbon { grid-template-columns: 1fr 1fr; }
+      .intro-market-ribbon div:last-child { display: none; }
+      .intro-guide-viewport { min-height: 190px; }
+      .intro-command-footer { grid-template-columns: 1fr; }
+      .intro-command-footer .intro-actions { display: grid; grid-template-columns: 1fr; }
+      .quantity-row { grid-template-columns: 1fr; }
+      .quick-quantity { grid-template-columns: repeat(4, 1fr); }
+    }
 
-      .intro-live-badge {
-        display: none;
-      }
-
-      .intro-command-grid {
-        min-height: 0;
-      }
-
-      .intro-command .intro-video {
-        height: min(31vh, 245px);
-      }
-
-      .intro-market-ribbon {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .intro-market-ribbon div:last-child {
-        display: none;
-      }
-
-      .intro-guide-viewport {
-        min-height: 190px;
-      }
-
-      .intro-command-footer {
-        grid-template-columns: 1fr;
-      }
-
-      .intro-command-footer .intro-actions {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-      .quantity-row {
-        grid-template-columns: 1fr;
-      }
-
-      .quick-quantity {
-        grid-template-columns: repeat(4, 1fr);
-      }
+    .noscript {
+      padding: 14px;
+      color: white;
+      background: #7d1010;
+      text-align: center;
+      font: 700 14px Arial, sans-serif;
     }
   </style>
 </head>
 <body class="intro-active">
+  <!-- INTRO SCREEN -->
   <div id="introScreen" class="intro-screen" role="dialog" aria-modal="true" aria-labelledby="introTitle">
     <div class="intro-atmosphere" aria-hidden="true"></div>
     <section class="intro-panel intro-command">
@@ -3385,6 +2313,7 @@
     </section>
   </div>
 
+  <!-- MEMORIAL -->
   <div id="memorialBackdrop" class="memorial-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="memorialTitle" aria-hidden="true">
     <article class="memorial-dialog">
       <header class="memorial-header">
@@ -3392,7 +2321,7 @@
           <div class="memorial-symbol" aria-hidden="true">🕊️</div>
           <div>
             <small>Commissariat of Finance</small>
-            <h2 id="memorialTitle">National Budget Failed Goverment Shutdown</h2>
+            <h2 id="memorialTitle">National Budget Failed Government Shutdown</h2>
           </div>
         </div>
         <button id="closeMemorial" class="memorial-close" type="button" aria-label="Close memorial announcement">×</button>
@@ -3400,38 +2329,24 @@
 
       <div class="memorial-scroll">
         <div class="memorial-decree">
-          <strong>GOVERMENT SHUTDOWN</strong>
+          <strong>GOVERNMENT SHUTDOWN</strong>
           <span>☆ ₽ Official Government Shutdown Notice from the State Bank of the USSR ☆ ₽</span>
         </div>
 
         <div class="memorial-address">
           <p class="address-opening">To all citizens of the Union of Soviet Socialist Republics,</p>
-
           <p>
-           The Second Weekly Budget has failed to receive approval from the All-Union Congress of Soviets. As a result, all sectoral funding is hereby suspended until an agreement between Congress and the Finance Commissariat can be reached.
+            The Second Weekly Budget has failed to receive approval from the All-Union Congress of Soviets. As a result, all sectoral funding is hereby suspended until an agreement between Congress and the Finance Commissariat can be reached.
 
-Effective immediately, the first official government shutdown is declared.
+            Effective immediately, the first official government shutdown is declared.
 
-During the shutdown, sectors will not receive budget allocations, and employees will not be paid for work completed until the budget dispute is resolved. No back pay will be issued for work performed during the shutdown period.
+            During the shutdown, sectors will not receive budget allocations, and employees will not be paid for work completed until the budget dispute is resolved. No back pay will be issued for work performed during the shutdown period.
 
-Sector leaders are instructed to inform their workers of the shutdown and to cooperate with Congress and the Finance Commissariat in negotiating a final budget settlement.
+            Sector leaders are instructed to inform their workers of the shutdown and to cooperate with Congress and the Finance Commissariat in negotiating a final budget settlement.
           </p>
-
-         
-
           <blockquote class="memorial-quote">
-           “We do not shut down the State out of weakness, but to defend the discipline of its finances. A budget without order is not a budget, but surrender.”
+            "We do not shut down the State out of weakness, but to defend the discipline of its finances. A budget without order is not a budget, but surrender."
           </blockquote>
-
-         
-
-          <p><strong>-</strong></p>
-
-          <p>
-           
-          </p>
-
-          
           <div class="memorial-signature">
             Premier of the Soviet Union<br>
             Commissariat of Finance<br>
@@ -3445,12 +2360,15 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </footer>
     </article>
   </div>
+
   <noscript>
     <div class="noscript">JavaScript is required to display the live State Exchange record.</div>
   </noscript>
 
+  <!-- TOP STRIPE -->
   <div class="top-stripe"></div>
 
+  <!-- MASTHEAD -->
   <header class="masthead">
     <div class="masthead-inner">
       <img class="logo" src="logo.png" alt="State Trust Red Star emblem">
@@ -3475,6 +2393,7 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
     </div>
   </header>
 
+  <!-- TICKER -->
   <div class="ticker" aria-label="Official market bulletin">
     <div class="ticker-track">
       <span>Official State Market Bulletin</span>
@@ -3486,6 +2405,7 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
     </div>
   </div>
 
+  <!-- NAV -->
   <nav class="section-nav" aria-label="Exchange sections">
     <div class="section-nav-inner">
       <div class="nav-groups">
@@ -3521,13 +2441,19 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
     </div>
   </nav>
 
+  <!-- PAGE -->
   <main class="page">
+    <!-- OFFICIAL WARNING -->
     <section id="officialWarning" class="official-warning hidden" aria-live="polite">
       <strong>Official Market Warning</strong>
       <p id="warningText"></p>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- MARKET PAGE -->
+    <!-- ============================================================ -->
     <section id="marketPage" class="site-page">
+      <!-- Status Row -->
       <div class="status-row">
         <article class="status-card">
           <div>
@@ -3546,6 +2472,36 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
         </article>
       </div>
 
+      <!-- Market Stats Row - Red Star Exchange Stats -->
+      <div class="market-stats-row">
+        <div class="stat-card">
+          <b>Market Cap</b>
+          <strong id="statMarketCap">₽0</strong>
+          <span>Total stock value</span>
+        </div>
+        <div class="stat-card">
+          <b>24h Volume</b>
+          <strong id="statVolume">₽0</strong>
+          <span>Total trades</span>
+        </div>
+        <div class="stat-card">
+          <b>Risk Level</b>
+          <strong id="statRisk">LOW</strong>
+          <span>Market stability</span>
+        </div>
+        <div class="stat-card">
+          <b>Liquidity</b>
+          <strong id="statLiquidity">0%</strong>
+          <span>Market depth</span>
+        </div>
+        <div class="stat-card">
+          <b>Inflation</b>
+          <strong id="statInflation">0.0%</strong>
+          <span>Ruble devaluation</span>
+        </div>
+      </div>
+
+      <!-- Market Command Grid -->
       <div class="market-command-grid">
         <article class="panel market-chart-panel">
           <header class="panel-header">
@@ -3576,69 +2532,91 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
           </div>
         </article>
 
-        <aside id="tradingDesk" class="trading-terminal" aria-label="Citizen stock trading terminal">
-          <header class="terminal-header">
-            <div class="terminal-header-row">
-              <div>
-                <div class="eyebrow" style="color: var(--gold); margin: 0;">Authenticated citizen desk</div>
-                <h2>Buy &amp; Sell Shares</h2>
-              </div>
-              <span class="terminal-live">Live quote</span>
-            </div>
-          </header>
+     <aside id="tradingDesk" class="trading-terminal" aria-label="Citizen stock trading terminal">
+  <header class="terminal-header">
+    <div class="terminal-header-row">
+      <div>
+        <div class="eyebrow" style="color: var(--gold); margin: 0;">Authenticated citizen desk</div>
+        <h2>Buy &amp; Sell Shares</h2>
+      </div>
+      <span class="terminal-live">Live quote</span>
+    </div>
+  </header>
 
-          <div class="terminal-quote">
-            <div><span>Official price</span><strong id="terminalLivePrice">0.00</strong></div>
-            <div style="text-align: right;"><span>Session</span><strong id="terminalSessionLabel">Closed</strong></div>
-          </div>
+  <!-- Company Selector -->
+  <div class="terminal-company-selector" style="padding: 12px 18px; background: rgba(0,0,0,.05); border-bottom: 1px solid var(--border);">
+    <div class="field" style="margin:0;">
+      <label for="companySelector" style="font-size:10px;">Select Company</label>
+      <select id="companySelector" style="width:100%; padding:10px 12px; background:#fffaf0; border:1px solid #8e7e64; font:13px Arial,sans-serif;">
+        <option value="">Loading companies...</option>
+      </select>
+    </div>
+  </div>
 
-          <div class="terminal-body">
-            <div id="portfolioGate" class="access-gate">
-              <h3>Authorisation Required</h3>
-              <p>Connect Discord to display your real UnbelievaBoat balance, inventory and secured order controls.</p>
-              <button id="portfolioLoginButton" class="btn gold" type="button">Authorise with Discord</button>
-            </div>
+  <div class="terminal-quote" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;">
+    <div>
+      <span>Company Price</span>
+      <strong id="terminalCompanyPrice">₽0.00</strong>
+    </div>
+    <div style="text-align:center;">
+      <span>Change</span>
+      <strong id="terminalCompanyChange">0.00%</strong>
+    </div>
+    <div style="text-align:right;">
+      <span>Your Shares</span>
+      <strong id="terminalUserShares">0</strong>
+    </div>
+  </div>
 
-            <div id="portfolioContent" class="hidden">
-              <div class="terminal-account-strip" aria-label="Citizen portfolio summary">
-                <div class="terminal-stat"><b>Cash</b><strong id="portfolioCash">₽0</strong></div>
-                <div class="terminal-stat"><b>Bank</b><strong id="portfolioBank">₽0</strong></div>
-                <div class="terminal-stat"><b>Total Rubles</b><strong id="portfolioTotal">₽0</strong></div>
-                <div class="terminal-stat"><b>Shares Owned</b><strong id="portfolioShares">0</strong></div>
-                <div class="terminal-stat"><b>Current Share Value</b><strong id="portfolioMarketValue">₽0</strong></div>
-              </div>
+  <div class="terminal-body">
+    <div id="portfolioGate" class="access-gate">
+      <h3>Authorisation Required</h3>
+      <p>Connect Discord to display your real UnbelievaBoat balance, inventory and secured order controls.</p>
+      <button id="portfolioLoginButton" class="btn gold" type="button">Authorise with Discord</button>
+    </div>
 
-              <div class="terminal-ticket">
-                <div class="quantity-row">
-                  <div class="field">
-                    <label for="tradeQuantity">Number of shares</label>
-                    <input id="tradeQuantity" type="number" min="1" max="200000" step="1" value="1" inputmode="numeric">
-                  </div>
-                  <div class="quick-quantity" aria-label="Quick quantities">
-                    <button type="button" data-trade-quantity="1">1</button>
-                    <button type="button" data-trade-quantity="5">5</button>
-                    <button type="button" data-trade-quantity="10">10</button>
-                    <button type="button" data-trade-quantity="25">25</button>
-                  </div>
-                </div>
-
-                <div class="trade-total">
-                  <span>Estimated official value</span>
-                  <strong id="tradeEstimate">₽0.00</strong>
-                </div>
-
-                <div class="terminal-actions">
-                  <button id="buySharesButton" class="btn gold" type="button">Buy Shares</button>
-                  <button id="sellSharesButton" class="btn dark" type="button">Sell Shares</button>
-                </div>
-                <button id="refreshPortfolioButton" class="btn terminal-refresh" type="button">Refresh Citizen Record</button>
-                <div id="tradeStatus" class="trade-status" aria-live="polite">Awaiting a citizen order.</div>
-              </div>
-            </div>
-          </div>
-        </aside>
+    <div id="portfolioContent" class="hidden">
+      <div class="terminal-account-strip" aria-label="Citizen portfolio summary">
+        <div class="terminal-stat"><b>Cash</b><strong id="portfolioCash">₽0</strong></div>
+        <div class="terminal-stat"><b>Bank</b><strong id="portfolioBank">₽0</strong></div>
+        <div class="terminal-stat"><b>Total Rubles</b><strong id="portfolioTotal">₽0</strong></div>
+        <div class="terminal-stat"><b>Shares in Company</b><strong id="terminalCompanyUserShares">0</strong></div>
+        <div class="terminal-stat"><b>Company Value</b><strong id="terminalCompanyValue">₽0</strong></div>
+        <div class="terminal-stat"><b>Public Shares Left</b><strong id="terminalPublicShares">0</strong></div>
       </div>
 
+      <div class="terminal-ticket">
+        <div class="quantity-row">
+          <div class="field">
+            <label for="tradeQuantity">Number of shares</label>
+            <input id="tradeQuantity" type="number" min="1" max="200" step="1" value="1" inputmode="numeric">
+          </div>
+          <div class="quick-quantity" aria-label="Quick quantities">
+            <button type="button" data-trade-quantity="1">1</button>
+            <button type="button" data-trade-quantity="5">5</button>
+            <button type="button" data-trade-quantity="10">10</button>
+            <button type="button" data-trade-quantity="25">25</button>
+          </div>
+        </div>
+
+        <div class="trade-total">
+          <span>Estimated official value</span>
+          <strong id="tradeEstimate">₽0.00</strong>
+        </div>
+
+        <div class="terminal-actions">
+          <button id="buySharesButton" class="btn gold" type="button">Buy Shares</button>
+          <button id="sellSharesButton" class="btn dark" type="button">Sell Shares</button>
+        </div>
+        <button id="refreshPortfolioButton" class="btn terminal-refresh" type="button">Refresh Citizen Record</button>
+        <div id="tradeStatus" class="trade-status" aria-live="polite">Select a company to start trading.</div>
+      </div>
+    </div>
+  </div>
+</aside>
+      </div>
+
+      <!-- Market Secondary Grid -->
       <div class="market-secondary-grid">
         <section class="panel">
           <header class="panel-header">
@@ -3659,11 +2637,16 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
             <li>You cannot sell more State Trust shares than your inventory contains.</li>
             <li>Closed sessions reject both purchases and sales automatically.</li>
             <li>The accepted API price—not a stale screen value—is the final settlement price.</li>
+            <li>Circuit breaker halts trading at ±12% movement.</li>
+            <li>Trading fee: 0.50% on all transactions.</li>
           </ul>
         </aside>
       </div>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- ECONOMY PAGE -->
+    <!-- ============================================================ -->
     <section id="economyPage" class="site-page hidden">
       <article class="economy-hero">
         <div>
@@ -3768,6 +2751,9 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- ECONOMIC GUIDE PAGE -->
+    <!-- ============================================================ -->
     <section id="economicGuidePage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Official Public Economic Document</div>
@@ -3802,6 +2788,9 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- FINANCE PAGE -->
+    <!-- ============================================================ -->
     <section id="financePage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Official Directory of Economic Administration</div>
@@ -3840,6 +2829,9 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- PREMIER PAGE -->
+    <!-- ============================================================ -->
     <section id="premierPage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Office of the Premier</div>
@@ -3885,6 +2877,9 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- LEADERSHIP PAGE -->
+    <!-- ============================================================ -->
     <section id="leadershipPage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Central Committee Leadership Register</div>
@@ -3898,7 +2893,8 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       <div class="leadership-grid">
         <article class="leadership-card">
           <div class="leadership-medallion">
-          <img src="generalsecretary.png" alt="General Secretary Kewl Menzinsky"></div>
+            <img src="generalsecretary.png" alt="General Secretary Kewl Menzinsky">
+          </div>
           <div class="eyebrow">General Secretary</div>
           <h3>Kewl Menzinsky</h3>
           <p>General Secretary of the Central Committee and principal political leader of the Union.</p>
@@ -3907,7 +2903,8 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
 
         <article class="leadership-card">
           <div class="leadership-medallion">
-          <img src="Erwin.png" alt="Chairman Erwin"></div>
+            <img src="Erwin.png" alt="Chairman Erwin">
+          </div>
           <div class="eyebrow">Chairman of the Central Committee</div>
           <h3>Erwin</h3>
           <p>Chairman entrusted with the organisation and direction of the Central Committee.</p>
@@ -3916,7 +2913,8 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
 
         <article class="leadership-card memorial-card">
           <div class="leadership-medallion">
-          <img src="deputysecretary.png" alt="Former General Secretary Felix Dzherzinsky"></div>
+            <img src="deputysecretary.png" alt="Former General Secretary Felix Dzherzinsky">
+          </div>
           <div class="eyebrow">In Memoriam <span class="memorial-dove" aria-label="peace dove">🕊️</span></div>
           <h3>Felix Dzherzinsky</h3>
           <p>Former Generalissimus and General Secretary whose service remains part of the history of the Union.</p>
@@ -3925,7 +2923,10 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
-       <section id="politicsPage" class="site-page hidden">
+    <!-- ============================================================ -->
+    <!-- POLITICS PAGE -->
+    <!-- ============================================================ -->
+    <section id="politicsPage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Live Political Register · Bot API Data</div>
         <h2>Political Factions</h2>
@@ -3936,7 +2937,9 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
-
+    <!-- ============================================================ -->
+    <!-- BUG REPORT PAGE -->
+    <!-- ============================================================ -->
     <section id="bugReportPage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Authenticated Citizen Technical Office</div>
@@ -3994,6 +2997,9 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </div>
     </section>
 
+    <!-- ============================================================ -->
+    <!-- CHANGELOG PAGE -->
+    <!-- ============================================================ -->
     <section id="changelogPage" class="site-page hidden">
       <article class="institution-hero">
         <div class="institution-kicker">Public Development Record</div>
@@ -4002,13 +3008,14 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
       </article>
 
       <div class="changelog-list">
-          <article class="changelog-entry">
+        <article class="changelog-entry">
           <time datetime="2026-08-12">12 August 2026 · Political System Rework</time>
           <h3>API Created for Factions</h3>
           <ul>
             <li>Faction Members and Faction Count Gathered from the API</li>
             <li>Bug Fixes.</li>
           </ul>
+        </article>
         <article class="changelog-entry">
           <time datetime="2026-07-30">30 July 2026 · Trading Floor Reform</time>
           <h3>Unified live market and citizen order desk</h3>
@@ -4044,11 +3051,13 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     Published by the <strong>Commissariat of Finance</strong>. All displayed values are centrally
     administered and do not represent a free-market exchange.
   </footer>
 
+  <!-- ADMIN -->
   <div id="adminBackdrop" class="backdrop hidden" aria-hidden="true">
     <section class="admin-shell" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
       <header class="admin-head">
@@ -4170,6 +3179,21 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
         </section>
 
         <section class="admin-section">
+          <h3>Market Controls</h3>
+          <div class="form-grid">
+            <div class="field">
+              <label for="adminCircuitBreaker">Circuit breaker %</label>
+              <input id="adminCircuitBreaker" type="number" min="1" max="25" step="0.5" value="12" inputmode="decimal">
+            </div>
+            <div class="field">
+              <label for="adminTradingFee">Trading fee %</label>
+              <input id="adminTradingFee" type="number" min="0" max="5" step="0.1" value="0.5" inputmode="decimal">
+            </div>
+            <button id="updateMarketConfig" class="btn" type="button">Update Config</button>
+          </div>
+        </section>
+
+        <section class="admin-section">
           <h3>Maintenance</h3>
           <div class="button-row">
             <button id="clearAnnouncements" class="btn dark" type="button">Clear Announcements</button>
@@ -4181,66 +3205,67 @@ Sector leaders are instructed to inform their workers of the shutdown and to coo
     </section>
   </div>
 
+  <!-- TOAST -->
   <div id="toastStack" class="toast-stack" aria-live="polite"></div>
 
+  <!-- ============================================================ -->
+  <!-- JAVASCRIPT -->
+  <!-- ============================================================ -->
   <script>
     "use strict";
 
     /* ======================================================================
-       CONFIGURATION — EDIT THIS BLOCK WHEN YOUR CUSTOM API IS READY
-
-       Discord's client secret, your economy-bot token, and every other secret
-       must stay on your API server. Never place those secrets in this file.
-
-       The API should set a Secure, HttpOnly, SameSite=None session cookie and
-       allow credentialed CORS only from your exact GitHub Pages origin.
+       CONFIGURATION
        ====================================================================== */
 
-const CONFIG = Object.freeze({
-  API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
-BOT_API_URL: "", // Not needed anymore
-BOT_API_KEY: "gjjzrgnzogzogjzrrg",
-  SITE_URL: window.location.origin + window.location.pathname,
-  REQUEST_TIMEOUT_MS: 12000,
-  MARKET_REFRESH_MS: 10000,
-  FACTION_REFRESH_MS: 30000,
-  SESSION_REFRESH_MS: 60000,
-  CET_TIME_ZONE: "Europe/Brussels",
-  MEMORIAL_ENABLED: false,
-  INTRO_GUIDE_INTERVAL_MS: 4800,
-  CITIZEN_SHARE_LIMIT: 200000,
-  OAUTH_RETURN_PARAMETER: "returnTo",
+    const CONFIG = Object.freeze({
+      API_BASE_URL: "https://ussr-stock-api.batuhanylz2009.workers.dev",
+      BOT_API_URL: "",
+      BOT_API_KEY: "gjjzrgnzogzogjzrrg",
+      SITE_URL: window.location.origin + window.location.pathname,
+      REQUEST_TIMEOUT_MS: 12000,
+      MARKET_REFRESH_MS: 10000,
+      FACTION_REFRESH_MS: 30000,
+      SESSION_REFRESH_MS: 60000,
+      CET_TIME_ZONE: "Europe/Brussels",
+      MEMORIAL_ENABLED: false,
+      INTRO_GUIDE_INTERVAL_MS: 4800,
+      CITIZEN_SHARE_LIMIT: 200000,
+      OAUTH_RETURN_PARAMETER: "returnTo",
 
-  ENDPOINTS: Object.freeze({
-    DISCORD_LOGIN: "/auth/discord",
-    LOGOUT: "/auth/logout",
-    SESSION: "/api/session",
+      ENDPOINTS: Object.freeze({
+        DISCORD_LOGIN: "/auth/discord",
+        LOGOUT: "/auth/logout",
+        SESSION: "/api/session",
 
-    MARKET: "/api/public/market",
-    ECONOMY: "/api/public/economy",
-    ANNOUNCEMENTS: "/api/public/announcements",
-    PREMIER_ANNOUNCEMENTS: "/api/public/premier-announcements",
-    STATISTICS: "/api/public/statistics",
+        MARKET: "/api/public/market",
+        ECONOMY: "/api/public/economy",
+        ANNOUNCEMENTS: "/api/public/announcements",
+        PREMIER_ANNOUNCEMENTS: "/api/public/premier-announcements",
+        STATISTICS: "/api/public/statistics",
+        MARKET_STATS: "/api/public/market/stats",
+        MARKET_EVENTS: "/api/public/market/events",
 
-    PORTFOLIO: "/api/portfolio",
-    BUY: "/api/trade/buy",
-    SELL: "/api/trade/sell",
-    PREMIER_CREATE_ANNOUNCEMENT: "/api/premier/announcements",
-    BUG_REPORTS: "/api/bug-reports",
+        PORTFOLIO: "/api/portfolio",
+        BUY: "/api/trade/buy",
+        SELL: "/api/trade/sell",
+        PREMIER_CREATE_ANNOUNCEMENT: "/api/premier/announcements",
+        BUG_REPORTS: "/api/bug-reports",
 
-    ADMIN_SET_PRICE: "/api/admin/market/price",
-    ADMIN_SCHEDULE_MOVEMENT: "/api/admin/market/movement",
-    ADMIN_FREEZE_MOVEMENT: "/api/admin/market/freeze",
-    ADMIN_OPEN_SESSION: "/api/admin/market/open",
-    ADMIN_CLOSE_SESSION: "/api/admin/market/close",
-    ADMIN_ANNOUNCEMENTS: "/api/admin/announcements",
-    ADMIN_WARNING: "/api/admin/warning",
-    ADMIN_ECONOMY: "/api/admin/economy",
-    ADMIN_CLEAR_ANNOUNCEMENTS: "/api/admin/announcements/clear",
-    ADMIN_RESET_HISTORY: "/api/admin/market/history/reset",
-    ADMIN_FACTORY_RESET: "/api/admin/market/factory-reset"
-  })
-});
+        ADMIN_SET_PRICE: "/api/admin/market/price",
+        ADMIN_SCHEDULE_MOVEMENT: "/api/admin/market/movement",
+        ADMIN_FREEZE_MOVEMENT: "/api/admin/market/freeze",
+        ADMIN_OPEN_SESSION: "/api/admin/market/open",
+        ADMIN_CLOSE_SESSION: "/api/admin/market/close",
+        ADMIN_ANNOUNCEMENTS: "/api/admin/announcements",
+        ADMIN_WARNING: "/api/admin/warning",
+        ADMIN_ECONOMY: "/api/admin/economy",
+        ADMIN_CLEAR_ANNOUNCEMENTS: "/api/admin/announcements/clear",
+        ADMIN_RESET_HISTORY: "/api/admin/market/history/reset",
+        ADMIN_FACTORY_RESET: "/api/admin/market/factory-reset",
+        ADMIN_MARKET_CONFIG: "/api/admin/market/config"
+      })
+    });
 
     /* ======================================================================
        APPLICATION STATE
@@ -4261,11 +3286,13 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
       marketTimerId: null,
       refreshTimerId: null,
       sessionRefreshTimerId: null,
-      publicRefreshInFlight: false
+      publicRefreshInFlight: false,
+      ws: null,
+      wsReconnectAttempts: 0
     };
 
     /* ======================================================================
-       DOM HELPERS AND FORMATTERS
+       DOM HELPERS
        ====================================================================== */
 
     const byId = function (id) {
@@ -4305,6 +3332,10 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
 
     const formatIndex = function (value) {
       return formatNumber(value, 2);
+    };
+
+    const formatPercent = function (value) {
+      return (value > 0 ? "+" : "") + value.toFixed(2) + "%";
     };
 
     const formatDateTime = function (value) {
@@ -4375,15 +3406,7 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
     };
 
     /* ======================================================================
-       CUSTOM API CLIENT
-
-       Expected session response:
-       { "authenticated": true, "user": {
-           "id": "...", "username": "...", "avatarUrl": "...", "isAdmin": true
-       }}
-
-       The public endpoints may return their resource directly or wrapped in
-       { "market": ... }, { "economy": ... }, or { "announcements": [...] }.
+       API CLIENT
        ====================================================================== */
 
     class ApiError extends Error {
@@ -4413,12 +3436,10 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
       if (response.status === 204) {
         return null;
       }
-
       const contentType = response.headers.get("content-type") || "";
       if (contentType.includes("application/json")) {
         return response.json();
       }
-
       const text = await response.text();
       return text ? { message: text } : null;
     };
@@ -4475,7 +3496,6 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
               "State API request failed (" + response.status + ").";
           throw new ApiError(message, response.status, payload);
         }
-
         return payload;
       } catch (error) {
         if (error.name === "AbortError") {
@@ -4503,11 +3523,81 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
     });
 
     /* ======================================================================
-       DISCORD OAUTH AND SERVER SESSION
+       WEBSOCKET CLIENT
+       ====================================================================== */
 
-       The browser starts OAuth at the custom API. The API performs the Discord
-       token exchange and redirects back to CONFIG.SITE_URL. The browser never
-       receives or stores Discord's client secret.
+    const setupWebSocket = function () {
+      const wsUrl = CONFIG.API_BASE_URL.replace(/^http/, 'ws') + "/ws";
+      
+      try {
+        STATE.ws = new WebSocket(wsUrl);
+        
+        STATE.ws.onopen = function () {
+          console.log("Market WebSocket connected");
+          STATE.wsReconnectAttempts = 0;
+          setApiStatus("online", "Live market feed");
+        };
+        
+        STATE.ws.onmessage = function (event) {
+          try {
+            const data = JSON.parse(event.data);
+            handleWebSocketMessage(data);
+          } catch (e) {
+            console.warn("WS message parse error:", e);
+          }
+        };
+        
+        STATE.ws.onclose = function () {
+          console.warn("Market WebSocket closed");
+          reconnectWebSocket();
+        };
+        
+        STATE.ws.onerror = function (error) {
+          console.error("WebSocket error:", error);
+          reconnectWebSocket();
+        };
+      } catch (e) {
+        console.warn("WebSocket not available:", e);
+      }
+    };
+
+    const reconnectWebSocket = function () {
+      if (STATE.wsReconnectAttempts >= 5) {
+        setApiStatus("error", "Market feed offline");
+        return;
+      }
+      STATE.wsReconnectAttempts++;
+      setTimeout(setupWebSocket, 3000 * STATE.wsReconnectAttempts);
+    };
+
+    const handleWebSocketMessage = function (data) {
+      if (data.type === "price_update") {
+        if (STATE.market) {
+          STATE.market.price = data.price;
+          STATE.market.changePercent = data.changePercent || 0;
+          if (data.history) {
+            STATE.market.history = data.history;
+          }
+          renderPrice();
+          updateMarketStats(data.stats || {});
+        }
+      } else if (data.type === "market_status") {
+        if (STATE.market) {
+          STATE.market.status = data.status;
+          STATE.market.closesAt = data.closesAt;
+          STATE.market.reopensAt = data.reopensAt;
+          renderPrice();
+        }
+      } else if (data.type === "event_update") {
+        loadAnnouncements();
+        loadEvents();
+      } else if (data.type === "portfolio_update" && STATE.user) {
+        loadPortfolio(true);
+      }
+    };
+
+    /* ======================================================================
+       DISCORD OAUTH
        ====================================================================== */
 
     const startDiscordLogin = function () {
@@ -4515,7 +3605,6 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
         showToast("Configure CONFIG.API_BASE_URL before using Discord login.", "error");
         return;
       }
-
       const loginUrl = new URL(apiUrl(CONFIG.ENDPOINTS.DISCORD_LOGIN));
       loginUrl.searchParams.set(CONFIG.OAUTH_RETURN_PARAMETER, CONFIG.SITE_URL);
       window.location.assign(loginUrl.toString());
@@ -4604,6 +3693,9 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
         STATE.user = normalizeSession(payload);
         renderSession();
         await loadPortfolio(true);
+        if (STATE.user) {
+          setupWebSocket();
+        }
       } catch (error) {
         if (error.status === 401 || error.status === 403) {
           STATE.user = null;
@@ -4626,6 +3718,10 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
         STATE.user = null;
         STATE.csrfToken = null;
         STATE.portfolio = null;
+        if (STATE.ws) {
+          STATE.ws.close();
+          STATE.ws = null;
+        }
         try {
           window.sessionStorage.removeItem("ussrExchangeSession");
         } catch (storageError) {
@@ -4677,7 +3773,7 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
     };
 
     /* ======================================================================
-       MARKET DATA NORMALISATION AND RENDERING
+       MARKET DATA
        ====================================================================== */
 
     const normalizeHistory = function (history) {
@@ -4696,24 +3792,6 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
             return new Date(left.timestamp) - new Date(right.timestamp);
           });
       }
-
-      if (history && typeof history === "object") {
-        return Object.keys(history)
-          .map(function (key) {
-            const value = history[key];
-            return {
-              timestamp: value.timestamp || value.time || value.createdAt || key,
-              price: firstNumber(value.price, value.value, value.closePrice, value.close, value)
-            };
-          })
-          .filter(function (entry) {
-            return entry.timestamp && Number.isFinite(entry.price);
-          })
-          .sort(function (left, right) {
-            return new Date(left.timestamp) - new Date(right.timestamp);
-          });
-      }
-
       return [];
     };
 
@@ -4748,7 +3826,12 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
         movementActive: Boolean(source.movementActive || source.scheduledMovement),
         movementPercent: firstNumber(source.movementPercent, source.scheduledPercent, changePercent),
         serverTime: source.serverTime || payload.serverTime || null,
-        history: normalizeHistory(payload.history || source.history)
+        history: normalizeHistory(payload.history || source.history),
+        marketCap: firstNumber(source.marketCap, source.market_cap),
+        volume: firstNumber(source.volume, source.total_volume),
+        risk: source.risk || "low",
+        liquidity: source.liquidity || "0",
+        inflation: firstNumber(source.inflation, source.inflation_rate)
       };
     };
 
@@ -4764,7 +3847,7 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
 
       const percent = asNumber(market.changePercent);
       const badge = byId("changeBadge");
-      badge.textContent = (percent > 0 ? "+" : "") + percent.toFixed(2) + "%";
+      badge.textContent = formatPercent(percent);
       badge.className =
         "change " + (percent > 0 ? "positive" : (percent < 0 ? "negative" : "flat"));
 
@@ -4780,6 +3863,7 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
       const introPrice = byId("introLivePrice");
       const introChange = byId("introLiveChange");
       const introStatus = byId("introLiveStatus");
+
       if (terminalPrice) {
         terminalPrice.textContent = formatIndex(market.price);
       }
@@ -4792,7 +3876,7 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
         introPrice.textContent = formatIndex(market.price);
       }
       if (introChange) {
-        introChange.textContent = (percent > 0 ? "+" : "") + percent.toFixed(2) + "%";
+        introChange.textContent = formatPercent(percent);
         introChange.style.color = percent > 0 ? "#69c78a" : (percent < 0 ? "#ff8071" : "#fff2c9");
       }
       if (introStatus) {
@@ -4822,10 +3906,42 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
         byId("movementCompletion").textContent = "Not scheduled";
       }
 
+      // Update market stats
+      updateMarketStats({
+        marketCap: market.marketCap,
+        volume: market.volume,
+        risk: market.risk,
+        liquidity: market.liquidity,
+        inflation: market.inflation
+      });
+
       populateAdminFromState();
       renderChart(market.history);
       renderPortfolio();
       updateCountdown();
+    };
+
+    const updateMarketStats = function (stats) {
+      if (stats.marketCap !== undefined) {
+        byId("statMarketCap").textContent = formatMoney(stats.marketCap);
+      }
+      if (stats.volume !== undefined) {
+        byId("statVolume").textContent = formatMoney(stats.volume);
+      }
+      if (stats.risk !== undefined) {
+        const riskEl = byId("statRisk");
+        riskEl.textContent = String(stats.risk).toUpperCase();
+        riskEl.style.color = stats.risk === "low" ? "var(--green)" :
+          stats.risk === "moderate" ? "#c98f1a" :
+          stats.risk === "high" ? "#b84a2d" : "#b82d2d";
+      }
+      if (stats.liquidity !== undefined) {
+        byId("statLiquidity").textContent = typeof stats.liquidity === 'string' ? 
+          stats.liquidity + '%' : String(stats.liquidity);
+      }
+      if (stats.inflation !== undefined) {
+        byId("statInflation").textContent = formatPercent(stats.inflation);
+      }
     };
 
     const chartLabel = function (timestamp) {
@@ -4847,35 +3963,35 @@ BOT_API_KEY: "gjjzrgnzogzogjzrrg",
         return;
       }
 
-const points = history && history.length ? history.slice(-200) :
-  (STATE.market ? [{ timestamp: Date.now(), price: STATE.market.price }] : []);
+      const points = history && history.length ? history.slice(-200) :
+        (STATE.market ? [{ timestamp: Date.now(), price: STATE.market.price }] : []);
 
-const labels = points.map(function (entry) {
-  return chartLabel(entry.timestamp);
-});
+      const labels = points.map(function (entry) {
+        return chartLabel(entry.timestamp);
+      });
 
-const prices = points.map(function (entry) {
-  return entry.price;
-});
+      const prices = points.map(function (entry) {
+        return entry.price;
+      });
 
-if (STATE.chart) {
-  STATE.chart.data.labels = labels;
-  STATE.chart.data.datasets[0].data = prices;
-  STATE.chart.data.datasets[0].pointRadius = points.length > 50 ? 0 : 2;
-  STATE.chart.update("none");
-  return;
-}
+      if (STATE.chart) {
+        STATE.chart.data.labels = labels;
+        STATE.chart.data.datasets[0].data = prices;
+        STATE.chart.data.datasets[0].pointRadius = points.length > 50 ? 0 : 2;
+        STATE.chart.update("none");
+        return;
+      }
 
-const canvas = byId("marketChart");
-const context = canvas.getContext("2d");
-const gradient = context.createLinearGradient(0, 0, 0, 380);
-gradient.addColorStop(0, "rgba(152, 21, 21, .28)");
-gradient.addColorStop(1, "rgba(152, 21, 21, .015)");
+      const canvas = byId("marketChart");
+      const context = canvas.getContext("2d");
+      const gradient = context.createLinearGradient(0, 0, 0, 380);
+      gradient.addColorStop(0, "rgba(152, 21, 21, .28)");
+      gradient.addColorStop(1, "rgba(152, 21, 21, .015)");
 
       STATE.chart = new Chart(context, {
         type: "line",
         data: {
-labels: labels,
+          labels: labels,
           datasets: [{
             label: "Official Index",
             data: prices,
@@ -4997,7 +4113,7 @@ labels: labels,
     };
 
     /* ======================================================================
-       ANNOUNCEMENTS
+       ANNOUNCEMENTS & EVENTS
        ====================================================================== */
 
     const normalizeAnnouncements = function (payload) {
@@ -5058,8 +4174,18 @@ labels: labels,
       renderAnnouncements();
     };
 
+    const loadEvents = async function () {
+      try {
+        const payload = await API.get(CONFIG.ENDPOINTS.MARKET_EVENTS);
+        // Events are displayed in the announcements section
+        // or could be shown in a separate events panel
+      } catch (e) {
+        // Silent fail for events
+      }
+    };
+
     /* ======================================================================
-       CITIZEN PORTFOLIO AND STOCK TRADING
+       PORTFOLIO & TRADING
        ====================================================================== */
 
     const normalizePortfolio = function (payload) {
@@ -5289,7 +4415,7 @@ labels: labels,
     };
 
     /* ======================================================================
-       AUTHENTICATED BUG REPORTS
+       BUG REPORTS
        ====================================================================== */
 
     const setBugReportStatus = function (message, mode) {
@@ -5353,7 +4479,7 @@ labels: labels,
     };
 
     /* ======================================================================
-       NATIONAL ECONOMY
+       ECONOMY
        ====================================================================== */
 
     const normalizeLeaderboard = function (source) {
@@ -5484,7 +4610,7 @@ labels: labels,
     };
 
     /* ======================================================================
-       ADMINISTRATION
+       ADMIN
        ====================================================================== */
 
     function openAdmin() {
@@ -5515,19 +4641,19 @@ labels: labels,
       document.body.classList.remove("modal-open");
     }
 
-const populateAdminFromState = function (force) {
-  const backdrop = byId("adminBackdrop");
-  const adminIsOpen =
-    backdrop && !backdrop.classList.contains("hidden");
+    const populateAdminFromState = function (force) {
+      const backdrop = byId("adminBackdrop");
+      const adminIsOpen = backdrop && !backdrop.classList.contains("hidden");
 
-  if (adminIsOpen && force !== true) {
-    return;
-  }
+      if (adminIsOpen && force !== true) {
+        return;
+      }
 
-  if (STATE.market) {
-    byId("adminExactPrice").value =
-      STATE.market.price.toFixed(2);
-  }
+      if (STATE.market) {
+        byId("adminExactPrice").value = STATE.market.price.toFixed(2);
+        byId("adminCircuitBreaker").value = 12; // Default, could be from config
+        byId("adminTradingFee").value = 0.5;
+      }
 
       if (STATE.economy) {
         byId("adminTotalRubles").value = String(Math.round(STATE.economy.totalRubles));
@@ -5682,6 +4808,26 @@ const populateAdminFromState = function (force) {
         }, "National economy record updated.");
       });
 
+      byId("updateMarketConfig").addEventListener("click", function () {
+        const button = this;
+        const circuitBreaker = asNumber(byId("adminCircuitBreaker").value, 12);
+        const tradingFee = asNumber(byId("adminTradingFee").value, 0.5);
+        if (circuitBreaker <= 0 || circuitBreaker > 25) {
+          setAdminStatus("Circuit breaker must be between 1 and 25.", "bad");
+          return;
+        }
+        if (tradingFee < 0 || tradingFee > 5) {
+          setAdminStatus("Trading fee must be between 0 and 5.", "bad");
+          return;
+        }
+        runAdminAction(button, function () {
+          return API.post(CONFIG.ENDPOINTS.ADMIN_MARKET_CONFIG, {
+            circuitBreakerPercent: circuitBreaker,
+            tradingFeePercent: tradingFee
+          });
+        }, "Market configuration updated.");
+      });
+
       byId("clearAnnouncements").addEventListener("click", function () {
         const button = this;
         if (!window.confirm("Clear every official announcement?")) {
@@ -5718,7 +4864,7 @@ const populateAdminFromState = function (force) {
     };
 
     /* ======================================================================
-       NAVIGATION, CLOCK, REFRESH, AND BOOTSTRAP
+       NAVIGATION & CLOCK
        ====================================================================== */
 
     const showPage = function (pageId, updateLocation) {
@@ -5773,7 +4919,8 @@ const populateAdminFromState = function (force) {
           loadMarket(),
           loadEconomy(),
           loadAnnouncements(),
-          loadPremierAnnouncements()
+          loadPremierAnnouncements(),
+          loadEvents()
         ]);
         const failures = results.filter(function (result) {
           return result.status === "rejected";
@@ -5799,6 +4946,163 @@ const populateAdminFromState = function (force) {
         STATE.publicRefreshInFlight = false;
       }
     };
+
+    /* ======================================================================
+       FACTION DATA
+       ====================================================================== */
+
+    const FACTION_CONFIG = {
+      "Conservatives — MSPSU": {
+        emblem: "cons.png",
+        color: "#650a0a",
+        ideology: "Paternalistic Conservatism",
+        platforms: "Social Conservatism, Mixed Economy, Isolationism",
+        description: `The Conservative Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the preservation, protection, and continuation of the Party's original ideological stance, principles, and mission.`
+      },
+      "Reformists — MSPSU": {
+        emblem: "reformist.png",
+        color: "#991919",
+        ideology: "Pragmatic Modernization",
+        platforms: "Social Conservatism, Mixed Economy, Isolationism",
+        description: `The Reformist Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the belief that the strength and "longevity" of the U.S.S.R depends upon its ability to adapt intelligently.`
+      }
+    };
+
+    const fetchFactionData = async function() {
+      try {
+        const response = await fetch(CONFIG.API_BASE_URL + "/api/factions", {
+          signal: AbortSignal.timeout(10000)
+        });
+        if (!response.ok) throw new Error(`API returned ${response.status}`);
+        STATE.factions = await response.json();
+        renderFactions();
+      } catch (error) {
+        console.warn("Faction API error:", error);
+        const stack = document.getElementById("factionStack");
+        if (stack && !STATE.factions) {
+          stack.innerHTML = '<div class="empty-state">Loading faction data...<br><small>Waiting for bot to sync with Worker.</small></div>';
+        }
+      }
+    };
+
+    const renderFactions = function() {
+      const stack = document.getElementById("factionStack");
+      if (!stack) return;
+      
+      if (!STATE.factions || !STATE.factions.factions) {
+        stack.innerHTML = '<div class="empty-state">Unable to load faction data.<br><small>Make sure the bot is running and Worker is deployed.</small></div>';
+        return;
+      }
+      
+      stack.innerHTML = '';
+      
+      const statusDiv = document.createElement("div");
+      statusDiv.style.cssText = "text-align: right; padding: 8px 12px; font: 700 11px Arial, sans-serif;";
+      statusDiv.innerHTML = '🟢 <span style="color:#54b276;">Live Data</span> · Updated: ' + new Date(STATE.factions.updated_at).toLocaleTimeString();
+      stack.appendChild(statusDiv);
+      
+      Object.entries(STATE.factions.factions).forEach(([factionName, factionData]) => {
+        const config = FACTION_CONFIG[factionName] || {
+          emblem: "logo.png",
+          color: "#650a0a",
+          ideology: "Not specified",
+          platforms: "Not specified",
+          description: "Faction information pending."
+        };
+        
+        const card = document.createElement("article");
+        card.className = "party-card";
+        
+        const factionShortName = factionName.split(' — ')[0];
+        const gridId = factionName.replace(/[^a-zA-Z0-9]/g, '');
+        
+        card.innerHTML = `
+          <header class="party-header" style="background: linear-gradient(115deg, ${config.color}, #991919);">
+            <div class="party-emblem">
+              <img src="${config.emblem}" alt="${factionName} emblem" onerror="this.style.display='none'; this.parentElement.textContent='☭';">
+            </div>
+            <div>
+              <div class="party-abbreviation">MSPSU · ${factionShortName}</div>
+              <h3>${factionName}</h3>
+              <div class="party-leader">Party General Secretary: Gen. Sec. Kewl Menzinsky</div>
+            </div>
+          </header>
+          <div class="party-body">
+            <div class="party-facts">
+              <div class="party-fact">
+                <b>Faction Ideology</b>
+                <span>${config.ideology}</span>
+              </div>
+              <div class="party-fact">
+                <b>Faction Platforms</b>
+                <span>${config.platforms}</span>
+              </div>
+              <div class="party-fact">
+                <b>Live Member Count</b>
+                <span style="font-size: 28px; color: var(--red-dark); font-weight: 900;">${factionData.total}</span>
+              </div>
+              <div class="party-fact">
+                <b>Last Updated</b>
+                <span>${new Date(STATE.factions.updated_at).toLocaleString()}</span>
+              </div>
+            </div>
+            <p class="party-description">${config.description}</p>
+            <details class="member-roster">
+              <summary>
+                <span>Official ${factionName} Membership Register</span>
+                <strong>${factionData.total} members</strong>
+              </summary>
+              <div class="roster-tools">
+                <input class="roster-search" type="search" data-roster-target="${gridId}Grid" placeholder="Search members..." aria-label="Search members">
+              </div>
+              <ul id="${gridId}Grid" class="member-grid">
+                ${factionData.members.length ? factionData.members.map(member => `
+                  <li class="member-entry" data-member-id="${member.id}">
+                    <strong title="${member.display_name}">${member.display_name}</strong>
+                    <span title="@${member.username}">@${member.username}</span>
+                  </li>
+                `).join('') : '<li class="member-entry"><strong>No members</strong><span>—</span></li>'}
+              </ul>
+            </details>
+          </div>
+        `;
+        
+        stack.appendChild(card);
+      });
+      
+      const summary = document.createElement("div");
+      summary.style.cssText = "margin-top: 18px; padding: 16px 20px; background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream); border: 2px solid var(--gold); text-align: center; box-shadow: var(--soft-shadow);";
+      summary.innerHTML = `
+        <strong style="color: var(--red-dark); font-size: 20px;">Total Tracked Faction Members: ${STATE.factions.total_faction_members}</strong>
+        <br><span style="color: var(--muted); font-size: 11px;">Live data from Soviet Tracker Bot API · Guild: ${STATE.factions.guild_id}</span>
+      `;
+      stack.appendChild(summary);
+      
+      bindRosterSearch();
+    };
+
+    const bindRosterSearch = function() {
+      document.querySelectorAll(".roster-search").forEach(function(input) {
+        input.removeEventListener("input", rosterSearchHandler);
+        input.addEventListener("input", rosterSearchHandler);
+      });
+    };
+
+    const rosterSearchHandler = function() {
+      const targetId = this.dataset.rosterTarget;
+      const target = document.getElementById(targetId);
+      const query = this.value.trim().toLowerCase();
+      if (!target) return;
+      
+      target.querySelectorAll(".member-entry").forEach(function(member) {
+        const text = member.textContent.toLowerCase();
+        member.style.display = query && !text.includes(query) ? "none" : "";
+      });
+    };
+
+    /* ======================================================================
+       BIND EVENTS
+       ====================================================================== */
 
     const bindGlobalEvents = function () {
       document.querySelectorAll(".nav-tab").forEach(function (tab) {
@@ -5882,10 +5186,7 @@ const populateAdminFromState = function (force) {
     };
 
     /* ======================================================================
-       OPENING PRESENTATION
-
-       Browsers will not autoplay audible media until the visitor interacts
-       with the page. The opening button supplies that required gesture.
+       INTRO SCREEN
        ====================================================================== */
 
     const setIntroStage = function (id, state, message) {
@@ -6137,169 +5438,355 @@ const populateAdminFromState = function (force) {
         startButton.focus();
       }, 80);
     };
+
     /* ======================================================================
-       FACTION DATA FETCHING AND RENDERING
+       BOOTSTRAP
        ====================================================================== */
 
-    const FACTION_CONFIG = {
-      "Conservatives — MSPSU": {
-        emblem: "cons.png",
-        color: "#650a0a",
-        ideology: "Paternalistic Conservatism",
-        platforms: "Social Conservatism, Mixed Economy, Isolationism",
-        description: `The Conservative Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the preservation, protection, and continuation of the Party's original ideological stance, principles, and mission. Its followers say that the strength of the server lies not in constant reinvention/changes, but in adherence to the values upon which the Moralistic Socialist Revolution was founded. Conservatives believe that every institution of the USSR, from the Central Committee of the MSPSU to the smallest role, exists as the product of years of sacrifice, discipline, and struggle from our leaders and "forefathers". They view fast political experimentation, changes, sweeping structural reforms, and ideological 'deviation' as the greatest threats to stability, arguing that servers are rarely destroyed by external enemies, but by abandoning the things that made them strong in the first place.
 
-The faction prefers measured, disciplined, and carefully supervised changes, ensuring that any necessary reforms strengthen rather than diminish the foundations of Moralistic Socialism. They uphold the authority of the Party and its leadership, organizational discipline, historical continuity, and ideological orthodoxy.
+/* ======================================================================
+   INDIVIDUAL COMPANY TRADING
+   ====================================================================== */
 
-It draws its support primarily from Party veterans, founding era members, experienced admins, senior military and security officials, and long serving sectoral leadership.`
-      },
-      "Reformists — MSPSU": {
-        emblem: "reformist.png",
-        color: "#991919",
-        ideology: "Pragmatic Modernization",
-        platforms: "Social Conservatism, Mixed Economy, Isolationism",
-        description: `The Reformist Faction is one of the main political movements within the Moralistic Socialist Party of the Soviet Union (MSPSU), dedicated to the belief that the strength and "longevity" of the U.S.S.R depends upon its ability to adapt intelligently and rapidly to changing historical, economic, technological, and realities. Reformists say that while the principles of Moralistic Socialism are eternal and are supreme, the methods through which those principles are realized must "evolve" or "change" alongside the server they serve. They argue that institutions like the Central Committee of the MSPSU and servers which refuse to 'modernize' eventually lose the capacity to defend the party, and that genuine loyalty to the Party requires the courage to confront head on, the inefficiency, stagnation, corruption, and outdated practices wherever they arise.
+// State for selected company
+const COMPANY_STATE = {
+  selectedCompanyId: null,
+  selectedCompanyName: null,
+  companies: [],
+  companyPrices: {}
+};
 
-This faction primarily promotes pragmatic modernization. Reformists seek more "responsive" governance, greater administrative efficiency, technological advancement, stronger engagement with the concerns of the Soviet citizens, and the refinement of Party institutions to meet the demands of each new 'generation'. Rather than viewing reform as a departure from the Party's ideals, Reformists say that the adaptation is highest expression of those ideals, asserting that the Revolution was never intended to stand still, but to endure. The faction draws its support primarily from younger Party members serving in sectors most affected by stagnation or institutional inefficiency.`
+// Load company list from API
+const loadCompanies = async function() {
+  try {
+    const response = await fetch(CONFIG.API_BASE_URL + "/api/public/companies", {
+      credentials: 'include'
+    });
+    const data = await response.json();
+    
+    if (data && data.companies) {
+      COMPANY_STATE.companies = data.companies;
+      populateCompanySelector(data.companies);
+      
+      // Auto-select first company if none selected
+      if (!COMPANY_STATE.selectedCompanyId && data.companies.length > 0) {
+        selectCompany(data.companies[0].company_id);
+      }
+    }
+  } catch (e) {
+    console.warn('Failed to load companies:', e);
+  }
+};
+
+// Populate company dropdown
+const populateCompanySelector = function(companies) {
+  const selector = document.getElementById('companySelector');
+  if (!selector) return;
+  
+  selector.innerHTML = '';
+  
+  if (!companies || companies.length === 0) {
+    selector.innerHTML = '<option value="">No companies available</option>';
+    return;
+  }
+  
+  // Sort by name
+  companies.sort((a, b) => a.name.localeCompare(b.name));
+  
+  const defaultOption = document.createElement('option');
+  defaultOption.value = '';
+  defaultOption.textContent = '-- Select a company --';
+  selector.appendChild(defaultOption);
+  
+  companies.forEach(function(company) {
+    const option = document.createElement('option');
+    option.value = company.company_id;
+    option.textContent = company.name + ' (' + company.company_type + ')';
+    option.dataset.companyId = company.company_id;
+    selector.appendChild(option);
+  });
+};
+
+// Select a company
+const selectCompany = function(companyId) {
+  if (!companyId) {
+    COMPANY_STATE.selectedCompanyId = null;
+    COMPANY_STATE.selectedCompanyName = null;
+    updateCompanyDisplay(null);
+    return;
+  }
+  
+  const company = COMPANY_STATE.companies.find(c => c.company_id == companyId);
+  if (!company) return;
+  
+  COMPANY_STATE.selectedCompanyId = companyId;
+  COMPANY_STATE.selectedCompanyName = company.name;
+  
+  // Update selector
+  const selector = document.getElementById('companySelector');
+  if (selector) {
+    selector.value = companyId;
+  }
+  
+  // Load company data
+  loadCompanyData(companyId);
+  
+  // Load user's shares for this company
+  loadUserShares(companyId);
+};
+
+// Load company data (price, details)
+const loadCompanyData = async function(companyId) {
+  try {
+    const response = await fetch(CONFIG.API_BASE_URL + "/api/public/company/" + companyId, {
+      credentials: 'include'
+    });
+    const data = await response.json();
+    
+    if (data) {
+      updateCompanyDisplay(data);
+    }
+  } catch (e) {
+    console.warn('Failed to load company data:', e);
+  }
+};
+
+// Update company display
+const updateCompanyDisplay = function(data) {
+  const priceEl = document.getElementById('terminalCompanyPrice');
+  const changeEl = document.getElementById('terminalCompanyChange');
+  const sharesEl = document.getElementById('terminalUserShares');
+  const publicSharesEl = document.getElementById('terminalPublicShares');
+  const companyValueEl = document.getElementById('terminalCompanyValue');
+  
+  if (!data) {
+    if (priceEl) priceEl.textContent = '₽0.00';
+    if (changeEl) { changeEl.textContent = '0.00%'; changeEl.style.color = ''; }
+    if (sharesEl) sharesEl.textContent = '0';
+    if (publicSharesEl) publicSharesEl.textContent = '0';
+    if (companyValueEl) companyValueEl.textContent = '₽0';
+    return;
+  }
+  
+  // Price
+  const price = data.price || data.share_price || 0;
+  if (priceEl) priceEl.textContent = '₽' + price.toFixed(2);
+  
+  // Change (calculate from history if available)
+  let change = data.change_percent || 0;
+  if (data.history && data.history.length >= 2) {
+    const oldPrice = data.history[data.history.length - 2].price || price;
+    if (oldPrice > 0) {
+      change = ((price - oldPrice) / oldPrice) * 100;
+    }
+  }
+  if (changeEl) {
+    changeEl.textContent = (change > 0 ? '+' : '') + change.toFixed(2) + '%';
+    changeEl.style.color = change > 0 ? 'var(--green)' : (change < 0 ? 'var(--red)' : '');
+  }
+  
+  // Public shares
+  if (publicSharesEl) publicSharesEl.textContent = data.public_shares || 0;
+  
+  // Company funds / value
+  if (companyValueEl) companyValueEl.textContent = '₽' + (data.funds || 0).toFixed(2);
+  
+  // Update estimate
+  updateTradeEstimate();
+};
+
+// Load user's shares for a specific company
+const loadUserShares = async function(companyId) {
+  if (!STATE.user) return;
+  
+  try {
+    const response = await fetch(CONFIG.API_BASE_URL + "/api/portfolio/company/" + companyId, {
+      credentials: 'include'
+    });
+    const data = await response.json();
+    
+    const sharesEl = document.getElementById('terminalUserShares');
+    const companySharesEl = document.getElementById('terminalCompanyUserShares');
+    const shares = data.shares || 0;
+    
+    if (sharesEl) sharesEl.textContent = shares;
+    if (companySharesEl) companySharesEl.textContent = shares;
+    
+    // Update portfolio display
+    if (STATE.portfolio) {
+      STATE.portfolio.shares = data.total_shares || 0;
+    }
+  } catch (e) {
+    console.warn('Failed to load user shares:', e);
+  }
+};
+
+// Override trade functions to use selected company
+const executeCompanyTrade = async function(side) {
+  if (!STATE.user) {
+    startDiscordLogin();
+    return;
+  }
+  
+  if (!COMPANY_STATE.selectedCompanyId) {
+    setTradeStatus('Please select a company first.', 'bad');
+    return;
+  }
+  
+  const input = document.getElementById('tradeQuantity');
+  const quantity = Math.floor(asNumber(input.value));
+  
+  if (!Number.isInteger(quantity) || quantity < 1) {
+    setTradeStatus('Enter a whole number of at least one share.', 'bad');
+    return;
+  }
+  
+  if (!STATE.market || STATE.market.status !== 'open') {
+    setTradeStatus('The market is closed and cannot accept orders.', 'bad');
+    return;
+  }
+  
+  // Get current price for this company
+  const priceText = document.getElementById('terminalCompanyPrice').textContent;
+  const price = parseFloat(priceText.replace('₽', '')) || 0;
+  
+  if (price <= 0) {
+    setTradeStatus('Unable to get current price for this company.', 'bad');
+    return;
+  }
+  
+  const total = quantity * price;
+  const verb = side === 'buy' ? 'purchase' : 'sell';
+  
+  if (!window.confirm('Confirm ' + verb + ' of ' + quantity + ' share(s) of ' + 
+      (COMPANY_STATE.selectedCompanyName || 'this company') + 
+      ' at approximately ' + formatMoney(total, 2) + '?')) {
+    return;
+  }
+  
+  const button = document.getElementById(side === 'buy' ? 'buySharesButton' : 'sellSharesButton');
+  setBusy(button, true, side === 'buy' ? 'Purchasing…' : 'Selling…');
+  
+  try {
+    const endpoint = side === 'buy' ? CONFIG.ENDPOINTS.BUY : CONFIG.ENDPOINTS.SELL;
+    const result = await API.post(endpoint, { 
+      quantity: quantity,
+      company_id: COMPANY_STATE.selectedCompanyId
+    });
+    
+    const settledTotal = result && Number.isFinite(Number(result.total)) ? Number(result.total) : total;
+    setTradeStatus(
+      (side === 'buy' ? 'Purchase' : 'Sale') + ' completed: ' + quantity +
+      ' share(s), total ' + formatMoney(settledTotal) + '.',
+      'good'
+    );
+    showToast('State stock ' + (side === 'buy' ? 'purchase' : 'sale') + ' completed.');
+    
+    // Refresh all data
+    await Promise.allSettled([
+      loadPortfolio(true),
+      loadMarket(),
+      loadEconomy(),
+      loadCompanyData(COMPANY_STATE.selectedCompanyId),
+      loadUserShares(COMPANY_STATE.selectedCompanyId)
+    ]);
+  } catch (error) {
+    if (error.status === 401 || error.status === 403) {
+      await loadSession(true);
+    }
+    setTradeStatus(error.message, 'bad');
+    showToast(error.message, 'error');
+  } finally {
+    setBusy(button, false);
+    renderPortfolio();
+  }
+};
+
+// Bind company selector events
+const bindCompanyEvents = function() {
+  const selector = document.getElementById('companySelector');
+  if (!selector) return;
+  
+  selector.addEventListener('change', function() {
+    const companyId = this.value;
+    if (companyId) {
+      selectCompany(parseInt(companyId));
+    } else {
+      selectCompany(null);
+    }
+  });
+  
+  // Override trade buttons
+  const buyBtn = document.getElementById('buySharesButton');
+  const sellBtn = document.getElementById('sellSharesButton');
+  if (buyBtn) {
+    buyBtn.removeEventListener('click', buyBtn._listener);
+    buyBtn._listener = function() { executeCompanyTrade('buy'); };
+    buyBtn.addEventListener('click', buyBtn._listener);
+  }
+  if (sellBtn) {
+    sellBtn.removeEventListener('click', sellBtn._listener);
+    sellBtn._listener = function() { executeCompanyTrade('sell'); };
+    sellBtn.addEventListener('click', sellBtn._listener);
+  }
+  
+  // Refresh portfolio button
+  const refreshBtn = document.getElementById('refreshPortfolioButton');
+  if (refreshBtn) {
+    refreshBtn.removeEventListener('click', refreshBtn._listener);
+    refreshBtn._listener = function() {
+      loadPortfolio(false);
+      if (COMPANY_STATE.selectedCompanyId) {
+        loadCompanyData(COMPANY_STATE.selectedCompanyId);
+        loadUserShares(COMPANY_STATE.selectedCompanyId);
       }
     };
+    refreshBtn.addEventListener('click', refreshBtn._listener);
+  }
+};
 
-const fetchFactionData = async function() {
-  try {
-    const response = await fetch("https://ussr-stock-api.batuhanylz2009.workers.dev/api/factions", {
-      signal: AbortSignal.timeout(10000)
-    });
-    if (!response.ok) throw new Error(`API returned ${response.status}`);
-    STATE.factions = await response.json();
-    renderFactions();
-  } catch (error) {
-    console.warn("Faction API error:", error);
-    const stack = document.getElementById("factionStack");
-    if (stack && !STATE.factions) {
-      stack.innerHTML = '<div class="empty-state">Loading faction data...<br><small>Waiting for bot to sync with Worker.</small></div>';
+// Load companies on market page display
+const loadCompanyList = function() {
+  if (document.getElementById('marketPage') && !document.getElementById('marketPage').classList.contains('hidden')) {
+    loadCompanies();
+  }
+};
+
+// Add to the refresh cycle
+const originalRefreshPublicData = refreshPublicData;
+refreshPublicData = async function(showErrors) {
+  await originalRefreshPublicData(showErrors);
+  if (STATE.user) {
+    loadCompanies();
+    if (COMPANY_STATE.selectedCompanyId) {
+      loadCompanyData(COMPANY_STATE.selectedCompanyId);
+      loadUserShares(COMPANY_STATE.selectedCompanyId);
     }
   }
 };
 
-    const renderFactions = function() {
-      const stack = document.getElementById("factionStack");
-      if (!stack) return;
-      
-      if (!STATE.factions || !STATE.factions.factions) {
-        stack.innerHTML = '<div class="empty-state">Unable to load faction data.<br><small>Make sure the bot is running and Worker is deployed.</small></div>';
-        return;
-      }
-      
-      stack.innerHTML = '';
-      
-      const statusDiv = document.createElement("div");
-      statusDiv.style.cssText = "text-align: right; padding: 8px 12px; font: 700 11px Arial, sans-serif;";
-      statusDiv.innerHTML = '🟢 <span style="color:#54b276;">Live Data</span> · Updated: ' + new Date(STATE.factions.updated_at).toLocaleTimeString();
-      stack.appendChild(statusDiv);
-      
-      Object.entries(STATE.factions.factions).forEach(([factionName, factionData]) => {
-        const config = FACTION_CONFIG[factionName] || {
-          emblem: "logo.png",
-          color: "#650a0a",
-          ideology: "Not specified",
-          platforms: "Not specified",
-          description: "Faction information pending."
-        };
-        
-        const card = document.createElement("article");
-        card.className = "party-card";
-        
-        const factionShortName = factionName.split(' — ')[0];
-        const gridId = factionName.replace(/[^a-zA-Z0-9]/g, '');
-        
-        card.innerHTML = `
-          <header class="party-header" style="background: linear-gradient(115deg, ${config.color}, #991919);">
-            <div class="party-emblem">
-              <img src="${config.emblem}" alt="${factionName} emblem" onerror="this.style.display='none'; this.parentElement.textContent='☭';">
-            </div>
-            <div>
-              <div class="party-abbreviation">MSPSU · ${factionShortName}</div>
-              <h3>${factionName}</h3>
-              <div class="party-leader">Party General Secretary: Gen. Sec. Kewl Menzinsky</div>
-            </div>
-          </header>
-          <div class="party-body">
-            <div class="party-facts">
-              <div class="party-fact">
-                <b>Faction Ideology</b>
-                <span>${config.ideology}</span>
-              </div>
-              <div class="party-fact">
-                <b>Faction Platforms</b>
-                <span>${config.platforms}</span>
-              </div>
-              <div class="party-fact">
-                <b>Live Member Count</b>
-                <span style="font-size: 28px; color: var(--red-dark); font-weight: 900;">${factionData.total}</span>
-              </div>
-              <div class="party-fact">
-                <b>Last Updated</b>
-                <span>${new Date(STATE.factions.updated_at).toLocaleString()}</span>
-              </div>
-            </div>
-            <p class="party-description">${config.description}</p>
-            <details class="member-roster">
-              <summary>
-                <span>Official ${factionName} Membership Register</span>
-                <strong>${factionData.total} members</strong>
-              </summary>
-              <div class="roster-tools">
-                <input class="roster-search" type="search" data-roster-target="${gridId}Grid" placeholder="Search members..." aria-label="Search members">
-              </div>
-              <ul id="${gridId}Grid" class="member-grid">
-                ${factionData.members.length ? factionData.members.map(member => `
-                  <li class="member-entry" data-member-id="${member.id}">
-                    <strong title="${member.display_name}">${member.display_name}</strong>
-                    <span title="@${member.username}">@${member.username}</span>
-                  </li>
-                `).join('') : '<li class="member-entry"><strong>No members</strong><span>—</span></li>'}
-              </ul>
-            </details>
-          </div>
-        `;
-        
-        stack.appendChild(card);
-      });
-      
-      const summary = document.createElement("div");
-      summary.style.cssText = "margin-top: 18px; padding: 16px 20px; background: linear-gradient(rgba(255, 255, 255, .26), rgba(255, 255, 255, .08)), var(--cream); border: 2px solid var(--gold); text-align: center; box-shadow: var(--soft-shadow);";
-      summary.innerHTML = `
-        <strong style="color: var(--red-dark); font-size: 20px;">Total Tracked Faction Members: ${STATE.factions.total_faction_members}</strong>
-        <br><span style="color: var(--muted); font-size: 11px;">Live data from Soviet Tracker Bot API · Guild: ${STATE.factions.guild_id}</span>
-      `;
-      stack.appendChild(summary);
-      
-      bindRosterSearch();
-    };
+// Initialize company trading
+const initCompanyTrading = function() {
+  bindCompanyEvents();
+  
+  // Load companies when market page is shown
+  const observer = new MutationObserver(function() {
+    const marketPage = document.getElementById('marketPage');
+    if (marketPage && !marketPage.classList.contains('hidden')) {
+      loadCompanies();
+    }
+  });
+  
+  const marketPage = document.getElementById('marketPage');
+  if (marketPage) {
+    observer.observe(marketPage, { attributes: true, attributeFilter: ['class'] });
+  }
+  
+  // Initial load
+  setTimeout(loadCompanies, 2000);
+};
 
-    const bindRosterSearch = function() {
-      document.querySelectorAll(".roster-search").forEach(function(input) {
-        input.removeEventListener("input", rosterSearchHandler);
-        input.addEventListener("input", rosterSearchHandler);
-      });
-    };
-
-    const rosterSearchHandler = function() {
-      const targetId = this.dataset.rosterTarget;
-      const target = document.getElementById(targetId);
-      const query = this.value.trim().toLowerCase();
-      if (!target) return;
-      
-      target.querySelectorAll(".member-entry").forEach(function(member) {
-        const text = member.textContent.toLowerCase();
-        member.style.display = query && !text.includes(query) ? "none" : "";
-      });
-    };
-
-    /* ======================================================================
-       MODIFIED BOOTSTRAP
-       ====================================================================== */
-
+    
     const bootstrap = async function () {
       handleOAuthReturn();
       bindGlobalEvents();
@@ -6344,122 +5831,10 @@ const fetchFactionData = async function() {
       }, CONFIG.FACTION_REFRESH_MS);
     };
 
+    // Initialize
     setupMemorialAnnouncement();
     setupIntroScreen();
     bootstrap();
   </script>
-
-
-
-<!-- Add to index.html - New Market Dashboard Section -->
-<section id="marketDashboardPage" class="site-page hidden">
-  <!-- Market Overview -->
-  <div class="market-overview-grid">
-    <div class="overview-card">
-      <span class="overview-label">Red Star Index</span>
-      <span class="overview-value" id="redStarIndex">--</span>
-      <span class="overview-change" id="indexChange">0.00%</span>
-    </div>
-    <div class="overview-card">
-      <span class="overview-label">Market Cap</span>
-      <span class="overview-value" id="marketCap">₽0</span>
-    </div>
-    <div class="overview-card">
-      <span class="overview-label">Volume (24h)</span>
-      <span class="overview-value" id="dailyVolume">₽0</span>
-    </div>
-    <div class="overview-card">
-      <span class="overview-label">Market Status</span>
-      <span class="overview-value" id="marketStatusDisplay">Closed</span>
-    </div>
-  </div>
-
-  <!-- Economic Risk & Events -->
-  <div class="economic-row">
-    <div class="risk-card">
-      <h3>Economic Risk</h3>
-      <div id="riskLevel" class="risk-level low">LOW</div>
-      <div class="risk-factors">
-        <span>Inflation: <span id="inflationDisplay">0.0%</span></span>
-        <span>Liquidity: <span id="liquidityDisplay">0%</span></span>
-        <span>Treasury: <span id="treasuryDisplay">₽0</span></span>
-      </div>
-    </div>
-    <div class="events-card">
-      <h3>Market Events <span id="eventCount" class="badge">0</span></h3>
-      <div id="marketEventsList" class="events-list">
-        <div class="empty-state">No recent events</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Charts -->
-  <div class="chart-grid">
-    <div class="chart-card large">
-      <h3>Stock Index History</h3>
-      <div class="chart-wrap">
-        <canvas id="marketIndexChart"></canvas>
-      </div>
-    </div>
-    <div class="chart-card">
-      <h3>Order Book</h3>
-      <div id="orderBookDisplay" class="order-book">
-        <div class="order-book-column">
-          <h4>Bids</h4>
-          <div id="bidList">No bids</div>
-        </div>
-        <div class="order-book-column">
-          <h4>Asks</h4>
-          <div id="askList">No asks</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio & Watchlist -->
-  <div class="portfolio-row">
-    <div class="portfolio-card">
-      <h3>My Portfolio</h3>
-      <div id="portfolioSummary" class="portfolio-summary">
-        <div class="portfolio-item">
-          <span>Cash</span>
-          <strong id="portCash">₽0</strong>
-        </div>
-        <div class="portfolio-item">
-          <span>Bank</span>
-          <strong id="portBank">₽0</strong>
-        </div>
-        <div class="portfolio-item">
-          <span>Shares</span>
-          <strong id="portShares">0</strong>
-        </div>
-        <div class="portfolio-item">
-          <span>Value</span>
-          <strong id="portValue">₽0</strong>
-        </div>
-      </div>
-      <button id="refreshPortfolio" class="btn ghost">Refresh</button>
-    </div>
-    <div class="watchlist-card">
-      <h3>Watchlist</h3>
-      <div id="watchlistDisplay">
-        <div class="empty-state">No watched companies</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Market Rules -->
-  <div class="rules-card">
-    <h3>Market Rules</h3>
-    <div class="rules-grid">
-      <div class="rule-item">🔒 Circuit Breaker: ±12%</div>
-      <div class="rule-item">💰 Trading Fee: 0.50%</div>
-      <div class="rule-item">📊 Max Shares: 200</div>
-      <div class="rule-item">⏰ Max Session: 120 min</div>
-    </div>
-  </div>
-</section>
-
-  
 </body>
 </html>
