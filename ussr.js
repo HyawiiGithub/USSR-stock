@@ -126,6 +126,7 @@ async function load(){
   const topGen=document.getElementById('topGen');
   // BUILD api list: on Pages try Vercel live first, then mock
   const vercelCandidates = [
+    "https://lussr-evm9epa1g-hue12.vercel.app/api/ussr/overview",
     "https://ussr-stock.vercel.app/api/ussr/overview",
     "https://ussr-stock-hyawiigithub.vercel.app/api/ussr/overview",
     "https://ussr-stock-git-main-hyawiigithub.vercel.app/api/ussr/overview"
@@ -329,11 +330,16 @@ function renderProduction(){
   }
 }
 async function refreshLoop(){
-  if(location.hostname.includes('github.io')) return; // static pages don't poll backend
-  try{
-    const r=await fetch(location.origin + '/api/ussr/overview',{cache:'no-store', signal:AbortSignal.timeout(4000)});
-    if(r.ok){ data=await r.json(); renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); }
-  }catch{}
+  const isPages = location.hostname.includes('github.io');
+  const urls = isPages
+    ? ["https://lussr-evm9epa1g-hue12.vercel.app/api/ussr/overview","https://ussr-stock.vercel.app/api/ussr/overview"]
+    : [location.origin + "/api/ussr/overview"];
+  for(const url of urls){
+    try{
+      const r=await fetch(url,{cache:"no-store", signal:AbortSignal.timeout(3500)});
+      if(r.ok){ data=await r.json(); renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); break; }
+    }catch{}
+  }
   setTimeout(refreshLoop,10000);
 }
 load().catch(e=>{
