@@ -417,8 +417,8 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 435,
-      "bank": 4212,
+      "cash": 0,
+      "bank": 4857,
       "resources": {
         "Coal": 1
       },
@@ -2244,12 +2244,12 @@
   "last_govcontract": null,
   "ai_store": {
     "Copper Ingot": 3,
-    "Timber Planks": 4
+    "Timber Planks": 2
   },
   "global_consumption": {
     "Copper Ingot": 21,
     "Steel Ingot": 5,
-    "Timber Planks": 19,
+    "Timber Planks": 21,
     "Refined Fuel": 16,
     "Fuel": 2
   },
@@ -2483,6 +2483,11 @@
       "item": "Copper Ingot",
       "qty": 2,
       "at": "2026-08-27T22:27:37.309Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-08-27T22:42:37.309Z"
     }
   ],
   "demand_history": {
@@ -2650,6 +2655,11 @@
         "demand": 1.2308780175074112,
         "at": "2026-08-27T22:12:37.309Z",
         "supply": 0
+      },
+      {
+        "demand": 1.2341226086937647,
+        "at": "2026-08-27T22:42:37.309Z",
+        "supply": 22
       }
     ],
     "Refined Fuel": [
