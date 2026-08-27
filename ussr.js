@@ -303,8 +303,85 @@ function renderWorld(){
   const tbody=document.getElementById('ssrTable');
   if(tbody) tbody.innerHTML=Object.entries(data.ssr_regions).map(([ssr,info])=>{
     const region=Object.entries(data.work_zones).find(([,z])=>z===info.work_zone)?.[0] || '—'; const comps=data.companies.filter(c=>c.hq_ssr===ssr).length;
-    return `<tr><td>${info.emoji} <b>${ssr}</b></td><td>${region}</td><td>${fmt(data.census[ssr])}</td><td style="white-space:normal;max-width:260px">${info.resources.join(' // ')}</td><td>${comps}</td></tr>`;
+    return `<tr data-ssr="${ssr}"><td>${info.emoji} <b>${ssr}</b></td><td>${region}</td><td>${fmt(data.census[ssr])}</td><td style="white-space:normal;max-width:260px">${info.resources.join(' // ')}</td><td>${comps}</td></tr>`;
   }).join('');
+  renderIRLMap();
+}
+function renderIRLMap(){
+  const el=document.getElementById('ussr-irl-map'); if(!el||!data) return;
+  // coords roughly geo-projected to 1000x600 (west 20E → 0, east 180E → 1000, north 80N → 0, south 35N → 600)
+  const pts={
+    "Estonian SSR":[258,142], "Latvian SSR":[252,168], "Lithuanian SSR":[250,190],
+    "Byelorussian SSR":[270,200], "Ukrainian SSR":[285,260], "Moldavian SSR":[282,285],
+    "Russian SFSR":[520,180],
+    "Georgian SSR":[410,340], "Armenian SSR":[425,360], "Azerbaijanian SSR":[445,360],
+    "Kazakh SSR":[520,280], "Uzbek SSR":[500,380], "Turkmen SSR":[470,400],
+    "Kirghiz SSR":[560,320], "Nuristani SSR":[545,400]
+  };
+  const regions=data.regions||{};
+  const ssrInfo=data.ssr_regions||{};
+  // build SVG
+  let svg=`<svg viewBox="0 0 1000 600" style="width:100%;height:520px;display:block;background:#f5efe0;" xmlns="http://www.w3.org/2000/svg">`;
+  // USSR outline approx (from Kola to Chukotka to Tajik to Baltics)
+  svg+=`<path d="M 210 85 L 260 80 L 320 95 L 420 90 L 520 85 L 620 90 L 750 100 L 880 140 L 940 180 L 920 280 L 880 340 L 760 420 L 620 480 L 480 520 L 380 480 L 320 400 L 260 340 L 210 260 L 190 180 L 200 120 Z" fill="#fff8e1" stroke="#111" stroke-width="3" stroke-linejoin="round"/>`;
+  // region tint
+  const regionColors={"Russian Federal Republic Region":"#e8dcc6","Western Soviet Region":"#d8e6d2","Baltic Soviet Region":"#d2e6f0","Caucasus Soviet Region":"#f0d8d8","Central Asian Soviet Region":"#f0e6d2","Nuristani Soviet Region":"#e6d2f0"};
+  // draw region halos (light)
+  for(const [reg,info] of Object.entries(regions)){
+    const c=regionColors[reg]||"#fff";
+    // find centroid of its SSRs
+    const members=Object.entries(ssrInfo).filter(([,v])=> data.work_zones[reg]===v.work_zone).map(([k])=>k);
+    if(!members.length) continue;
+    let sx=0,sy=0,cnt=0; members.forEach(m=>{ if(pts[m]){sx+=pts[m][0];sy+=pts[m][1];cnt++;}});
+    if(!cnt) continue;
+    const cx=sx/cnt, cy=sy/cnt;
+    svg+=`<circle cx="${cx}" cy="${cy}" r="70" fill="${c}" opacity="0.35" stroke="#111" stroke-dasharray="6 4" stroke-width="1.2"/>`;
+    svg+=`<text x="${cx}" y="${cy-78}" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" font-weight="700" fill="#111" opacity="0.9">${reg.replace(' Soviet Region','').replace(' Region','').toUpperCase()}</text>`;
+  }
+  // SSR dots
+  for(const [name,info] of Object.entries(ssrInfo)){
+    const p=pts[name]; if(!p) continue;
+    const region=Object.entries(data.work_zones).find(([,z])=>z===info.work_zone)?.[0]||"";
+    const comps=(data.companies||[]).filter(c=>c.hq_ssr===name).length;
+    const pop=data.census ? (data.census[name]||0) : 0;
+    const stock = (()=>{ let s=0; (data.companies||[]).filter(c=>c.hq_ssr===name).forEach(c=>{ Object.entries(c.inventory||{}).forEach(([it,qty])=>{ const fv={Fish:2,Wheat:1,Corn:1,Sunflower:1,Grapes:1,Tea:1,Citrus:1,Flour:2,Sugar:1,Bread:3,Cake:3,Wine:2,"Canned Food":4,"Canned Fish":5,"Smoked Fish":4,"Fish Stew":5}[it]; if(fv) s+=qty*fv; });}); return s; })();
+    const isBaltic = ["Estonian SSR","Latvian SSR","Lithuanian SSR"].includes(name);
+    const fill = isBaltic ? "#2a7a3a" : "#8a0f14";
+    const stroke = "#111";
+    svg+=`<g class="ssr-dot" data-ssr="${name}" style="cursor:pointer">`;
+    svg+=`<circle cx="${p[0]}" cy="${p[1]}" r="${ isBaltic ? 14 : 10}" fill="${fill}" stroke="${stroke}" stroke-width="2"/>`;
+    svg+=`<text x="${p[0]}" y="${p[1]-18}" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" font-weight="700" fill="#111">${info.emoji} ${name.replace(' SSR','')}</text>`;
+    svg+=`<text x="${p[0]}" y="${p[1]+28}" text-anchor="middle" font-family="IBM Plex Mono" font-size="7" fill="#5a5242">${comps} corps • ${pop} pop • ${stock}🍞</text>`;
+    svg+=`</g>`;
+  }
+  // legend
+  svg+=`<g><rect x="12" y="12" width="220" height="78" rx="4" fill="#fff" stroke="#111" stroke-width="2"/><text x="22" y="28" font-family="IBM Plex Mono" font-size="8" font-weight="700" fill="#111">LEGEND — CLICK SSR FOR DETAIL</text><circle cx="22" cy="42" r="6" fill="#2a7a3a" stroke="#111" stroke-width="1.5"/><text x="32" y="45" font-family="IBM Plex Mono" font-size="7" fill="#111">Baltic Fish (2🍞) — trade source</text><circle cx="22" cy="58" r="6" fill="#8a0f14" stroke="#111" stroke-width="1.5"/><text x="32" y="61" font-family="IBM Plex Mono" font-size="7" fill="#111">Inland — needs Fish via -trade</text><text x="22" y="74" font-family="IBM Plex Mono" font-size="7" fill="#5a5242">Size = corps • pop • food stock</text></g>`;
+  svg+=`</svg>`;
+  el.innerHTML=svg;
+  // click handlers
+  el.querySelectorAll('.ssr-dot').forEach(g=>{
+    g.addEventListener('click',()=>{
+      const name=g.dataset.ssr;
+      const info=data.ssr_regions[name];
+      const region=Object.entries(data.work_zones).find(([,z])=>z===info.work_zone)?.[0]||"";
+      const comps=data.companies.filter(c=>c.hq_ssr===name);
+      const pop=data.census[name]||0;
+      const regs=data.regions[region];
+      const foodStock = regs ? regs.foodStock : 0;
+      const foodDemand = regs ? regs.foodDemand : 0;
+      const detail=`${info.emoji} ${name}\nRegion: ${region}\nPop: ${pop} • Corps: ${comps.length} • Food region ${foodStock}/${foodDemand}🍞\nResources: ${info.resources.join(', ')}\nCompanies: ${comps.map(c=> c.name+' ('+c.ticker+')').join(', ')||'none'}`;
+      // show in ssrTable highlight
+      const row=document.querySelector(`#ssrTable tr[data-ssr="${name}"]`);
+      if(row){ row.scrollIntoView({behavior:'smooth', block:'center'}); row.style.background='#fff8e1'; setTimeout(()=>row.style.background='',1800); }
+      // simple toast
+      const t=document.createElement('div');
+      t.style.cssText='position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);max-width:520px;width:90%;background:#fff;border:3px solid #111;padding:14px;box-shadow:6px 6px 0 #111;z-index:9999;font-family:IBM Plex Mono;font-size:11px;white-space:pre-wrap';
+      t.innerHTML=`<b style="font-size:12px">${info.emoji} ${name}</b><br><span style="color:#5a5242">${region}</span><br><br>${detail}<br><br><button onclick="this.parentElement.remove()" style="background:#111;color:#f5e6a3;border:2px solid #111;padding:6px 10px;font:700 10px IBM Plex Mono;cursor:pointer">CLOSE</button>`;
+      document.body.appendChild(t);
+      t.querySelector('button').addEventListener('click',()=>t.remove());
+      setTimeout(()=>{ if(t.parentElement) t.remove(); },5000);
+    });
+  });
 }
 function renderProduction(){
   const fp=document.getElementById('foodPanel');
