@@ -124,26 +124,32 @@ async function load(){
   const isPages = location.hostname.includes('github.io');
   const notice=document.getElementById('connNotice');
   const topGen=document.getElementById('topGen');
-  try{
-    if(isPages){
-      throw new Error('pages-static');
-    }
-    // try backend — relative to current host (works on localhost:3001)
-    // use absolute from origin to avoid base path issues
-    const url = location.origin + '/api/ussr/overview';
-    const r=await fetch(url,{cache:'no-store', signal:AbortSignal.timeout(4000)});
-    if(!r.ok) throw new Error('http '+r.status);
-    const j=await r.json();
-    // sanity: must have gsi_history
-    if(!j.gsi_history || !j.gsi_history.length) throw new Error('bad payload');
-    data=j;
-    if(notice) { notice.textContent='● CONNECTED — LIVE GOSPLAN FEED // '+ new Date().toLocaleTimeString(); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
-    if(topGen) topGen.textContent='LIVE '+ new Date(j.generated_at).toLocaleTimeString();
-  }catch(e){
-    console.warn('fallback',e.message);
+  // BUILD api list: on Pages try Vercel live first, then mock
+  const vercelCandidates = [
+    "https://ussr-stock.vercel.app/api/ussr/overview",
+    "https://ussr-stock-hyawiigithub.vercel.app/api/ussr/overview",
+    "https://ussr-stock-git-main-hyawiigithub.vercel.app/api/ussr/overview"
+  ];
+  const localUrl = location.origin + "/api/ussr/overview";
+  const tryUrls = isPages ? vercelCandidates : [localUrl];
+  let lastErr = null;
+  for(const url of tryUrls){
+    try{
+      const r=await fetch(url,{cache:"no-store", signal:AbortSignal.timeout(3500)});
+      if(!r.ok) throw new Error("http "+r.status);
+      const j=await r.json();
+      if(!j.gsi_history || !j.gsi_history.length) throw new Error("bad payload");
+      data=j;
+      if(notice) { notice.textContent="● CONNECTED — LIVE GOSPLAN FEED // "+ new Date().toLocaleTimeString() + (isPages ? " via Vercel" : ""); notice.style.background="#111"; notice.style.color="#b6e2b6"; }
+      if(topGen) topGen.textContent="LIVE "+ new Date(j.generated_at).toLocaleTimeString();
+      lastErr=null; break;
+    }catch(e){ lastErr=e; console.warn("try",url,"failed",e.message); }
+  }
+  if(!data){
+    console.warn("fallback mock", lastErr && lastErr.message);
     data=fallbackMock();
-    if(notice) { notice.textContent='● OFFLINE MOCK — STATIC MODE (no backend, generated locally) — '+e.message; notice.style.background='#f5e6a3'; notice.style.color='#111'; }
-    if(topGen) topGen.textContent='MOCK '+ new Date(data.generated_at).toLocaleTimeString();
+    if(notice) { notice.textContent="● OFFLINE MOCK — STATIC MODE (no backend, generated locally) — "+(lastErr?lastErr.message:"vercel not yet deployed"); notice.style.background="#f5e6a3"; notice.style.color="#111"; }
+    if(topGen) topGen.textContent="MOCK "+ new Date(data.generated_at).toLocaleTimeString();
   }
   const genEl=document.getElementById('genAt');
   if(genEl) genEl.textContent=new Date(data.generated_at).toLocaleString();
