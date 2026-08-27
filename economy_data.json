@@ -1444,8 +1444,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 41478,
-      "market_cap": 41478,
+      "share_price": 41448,
+      "market_cap": 41448,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -1471,7 +1471,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-26T17:46:51.592Z",
       "price_history": [
-        38518,
         38560,
         38617,
         38630,
@@ -1570,7 +1569,8 @@
         41851,
         41908,
         41398,
-        41478
+        41478,
+        41448
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -2242,11 +2242,11 @@
   },
   "last_govcontract": null,
   "ai_store": {
-    "Copper Ingot": 5,
+    "Copper Ingot": 3,
     "Timber Planks": 4
   },
   "global_consumption": {
-    "Copper Ingot": 19,
+    "Copper Ingot": 21,
     "Steel Ingot": 5,
     "Timber Planks": 19,
     "Refined Fuel": 16,
@@ -2477,6 +2477,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-27T22:12:37.309Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 2,
+      "at": "2026-08-27T22:27:37.309Z"
     }
   ],
   "demand_history": {
@@ -2549,6 +2554,11 @@
       {
         "demand": 1.3099018693774325,
         "at": "2026-08-27T19:41:42.065Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2861003034995109,
+        "at": "2026-08-27T22:27:37.309Z",
         "supply": 0
       }
     ],
