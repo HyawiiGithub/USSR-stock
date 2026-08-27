@@ -709,15 +709,15 @@
       "ceo_of": null
     },
     "913497950213267577": {
-      "cash": 735,
+      "cash": 750,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-27T19:11:41.221Z",
-      "work_count": 49,
+      "last_work": "2026-08-27T19:42:11.197Z",
+      "work_count": 50,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1165,8 +1165,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 58157,
-      "market_cap": 58157,
+      "share_price": 58173,
+      "market_cap": 58173,
       "employees": 15,
       "level": 1,
       "buildings": {
@@ -1185,7 +1185,7 @@
         "Bread": 5,
         "Cake": 4,
         "Uranium": 11,
-        "Coal": 44,
+        "Coal": 45,
         "Canned Food": 37,
         "Gold Bar": 3,
         "Wheat": 24,
@@ -1199,7 +1199,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        54468,
         54500,
         54532,
         54548,
@@ -1298,7 +1297,8 @@
         58109,
         58117,
         58125,
-        58157
+        58157,
+        58173
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1516,11 +1516,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 624,
-      "change_percent": 1.0446423140128211,
-      "recorded_at": "2026-08-27T11:51:22.638Z"
-    },
     {
       "price": 591,
       "change_percent": -5.274582819749575,
@@ -2015,6 +2010,11 @@
       "price": 444,
       "change_percent": 5.116098157598592,
       "recorded_at": "2026-08-27T19:41:42.050Z"
+    },
+    {
+      "price": 448,
+      "change_percent": 1.1245422232799418,
+      "recorded_at": "2026-08-27T19:41:42.091Z"
     }
   ],
   "factory_names": [
@@ -2166,11 +2166,9 @@
     "Timber Planks": "2026-08-27T16:25:50.672Z"
   },
   "last_govcontract": null,
-  "ai_store": {
-    "Copper Ingot": 2
-  },
+  "ai_store": {},
   "global_consumption": {
-    "Copper Ingot": 17,
+    "Copper Ingot": 19,
     "Steel Ingot": 5,
     "Timber Planks": 17,
     "Refined Fuel": 13,
@@ -2376,6 +2374,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-27T19:26:42.053Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 2,
+      "at": "2026-08-27T19:41:42.065Z"
     }
   ],
   "demand_history": {
@@ -2443,6 +2446,11 @@
       {
         "demand": 1.299071345554732,
         "at": "2026-08-27T19:26:42.053Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3099018693774325,
+        "at": "2026-08-27T19:41:42.065Z",
         "supply": 0
       }
     ],
