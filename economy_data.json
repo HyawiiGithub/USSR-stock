@@ -1537,16 +1537,6 @@
   },
   "gsi_history": [
     {
-      "price": 573,
-      "change_percent": -0.5754408629522731,
-      "recorded_at": "2026-08-27T13:36:22.656Z"
-    },
-    {
-      "price": 571,
-      "change_percent": -0.2884665750114799,
-      "recorded_at": "2026-08-27T13:41:22.655Z"
-    },
-    {
       "price": 577,
       "change_percent": 1.2198114775824593,
       "recorded_at": "2026-08-27T13:46:22.656Z"
@@ -2035,6 +2025,16 @@
       "price": 472,
       "change_percent": 1.3152907482600875,
       "recorded_at": "2026-08-27T21:28:44.785Z"
+    },
+    {
+      "price": 429,
+      "change_percent": -8.947403410127414,
+      "recorded_at": "2026-08-27T21:33:44.779Z"
+    },
+    {
+      "price": 430,
+      "change_percent": 0.3313911852022251,
+      "recorded_at": "2026-08-27T21:33:44.791Z"
     }
   ],
   "factory_names": [
@@ -2191,13 +2191,13 @@
   },
   "last_govcontract": null,
   "ai_store": {
-    "Refined Fuel": 3
+    "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 19,
     "Steel Ingot": 5,
     "Timber Planks": 17,
-    "Refined Fuel": 13,
+    "Refined Fuel": 15,
     "Fuel": 2
   },
   "consumption_history": [
@@ -2410,6 +2410,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-08-27T21:11:42.114Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-08-27T21:33:44.786Z"
     }
   ],
   "demand_history": {
@@ -2619,6 +2624,11 @@
         "demand": 1.3583358417710019,
         "at": "2026-08-27T18:41:42.052Z",
         "supply": 1
+      },
+      {
+        "demand": 1.325206229396684,
+        "at": "2026-08-27T21:33:44.786Z",
+        "supply": 0
       }
     ],
     "Fuel": [
