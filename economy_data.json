@@ -1458,14 +1458,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 1082,
+      "funds": 1324,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 41501,
-      "market_cap": 41501,
+      "share_price": 41623,
+      "market_cap": 41623,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -1486,13 +1486,11 @@
         "Peat": 55,
         "Fish": 137,
         "Timber": 7,
-        "Timber Planks": 22
+        "Timber Planks": 12
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-26T17:46:51.592Z",
       "price_history": [
-        38700,
-        38739,
         38758,
         38771,
         38784,
@@ -1590,11 +1588,13 @@
         41402,
         41434,
         41502,
-        41501
+        41501,
+        41541,
+        41623
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
-      "last_factorydeal": "2026-08-27T22:05:24.949Z",
+      "last_factorydeal": "2026-08-27T23:12:07.838Z",
       "last_govcontract": null,
       "wage": 15,
       "specialization": "agriculture",
@@ -2103,17 +2103,18 @@
       "recorded_at": "2026-08-27T23:07:37.364Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
+  "factory_names": [
     "Red Star Steelworks",
-    "Khrushchev Agricultural",
-    "Lenin Machine Works",
-    "Volga Shipbuilding",
-    "Siberian Mining Co",
-    "Ural Heavy Industries",
     "Soviet Iron Foundry",
+    "Lenin Machine Works",
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
-    "Stalin Tractor Plant"
+    "Siberian Mining Co"
+  ],
+  "used_factory_names": [
+    "Volga Shipbuilding",
+    "Ural Heavy Industries"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2229,24 +2230,24 @@
   "transaction_log": [],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3687585825956465,
+    "Fuel": 1.3787585825956465,
     "Cake": 1.3819421945214203,
-    "Bread": 1.371593450357736,
+    "Bread": 1.381593450357736,
     "Copper Ingot": 1.312125963676011,
-    "Iron Ingot": 1.4015553882089418,
+    "Iron Ingot": 1.4115553882089418,
     "Steel Ingot": 1.404735047846471,
-    "Gold Bar": 1.3840878685536329,
+    "Gold Bar": 1.3940878685536329,
     "Aluminium Ingot": 1.4130431627279902,
-    "Timber Planks": 1.24340347070146,
+    "Timber Planks": 1.0184034707014602,
     "Bricks": 1.41,
     "Concrete": 1.4150411083359498,
     "Glass": 1.4115290826653417,
     "Steel Beam": 1.4123435275452147,
     "Machine Parts": 1.412016970522514,
     "Refined Fuel": 1.3774660118835584,
-    "Uranium Rod": 1.4184070775586544,
+    "Uranium Rod": 1.4284070775586544,
     "Reactor Core": 1.41212710002688,
-    "Circuit Board": 1.41212710002688,
+    "Circuit Board": 1.42212710002688,
     "Flour": 1.4143691619204386,
     "Sugar": 1.412012665546427,
     "Wine": 1.4115290826653417,
@@ -2262,17 +2263,17 @@
     "Copper Ingot": "2026-08-27T22:00:36.872Z",
     "Steel Ingot": "2026-08-27T13:12:57.292Z",
     "Refined Fuel": "2026-08-27T21:02:17.698Z",
-    "Timber Planks": "2026-08-27T22:05:24.949Z"
+    "Timber Planks": "2026-08-27T23:12:07.838Z"
   },
   "last_govcontract": null,
   "ai_store": {
     "Copper Ingot": 1,
-    "Timber Planks": 2
+    "Timber Planks": 10
   },
   "global_consumption": {
     "Copper Ingot": 23,
     "Steel Ingot": 5,
-    "Timber Planks": 21,
+    "Timber Planks": 23,
     "Refined Fuel": 16,
     "Fuel": 2
   },
@@ -2516,6 +2517,11 @@
       "item": "Copper Ingot",
       "qty": 2,
       "at": "2026-08-27T22:57:37.311Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-08-27T23:12:37.312Z"
     }
   ],
   "demand_history": {
@@ -2693,6 +2699,11 @@
         "demand": 1.2341226086937647,
         "at": "2026-08-27T22:42:37.309Z",
         "supply": 22
+      },
+      {
+        "demand": 1.0184034707014602,
+        "at": "2026-08-27T23:12:37.312Z",
+        "supply": 12
       }
     ],
     "Refined Fuel": [
