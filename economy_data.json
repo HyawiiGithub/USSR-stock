@@ -23,7 +23,7 @@
     },
     "780837437987094560": {
       "username": "",
-      "cash": 135,
+      "cash": 150,
       "bank": 11166,
       "resources": {
         "Coal": 34,
@@ -45,8 +45,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-27T20:51:37.384Z",
-      "work_count": 192,
+      "last_work": "2026-08-27T21:47:32.597Z",
+      "work_count": 193,
       "last_claim": "2026-08-22T01:40:34.150940",
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
@@ -1060,8 +1060,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 122732,
-      "market_cap": 122732,
+      "share_price": 123570,
+      "market_cap": 123570,
       "employees": 0,
       "level": 1,
       "buildings": {
@@ -1089,7 +1089,7 @@
       "inventory": {
         "Sunflower": 2,
         "Iron Ore": 3,
-        "Salt": 3,
+        "Salt": 6,
         "Wheat": 2,
         "Coal": 6
       },
@@ -1104,7 +1104,8 @@
         122644,
         122652,
         122700,
-        122732
+        122732,
+        123570
       ],
       "is_state_owned": true,
       "director_id": "780837437987094560",
@@ -1542,11 +1543,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 576,
-      "change_percent": -0.005981474817037702,
-      "recorded_at": "2026-08-27T13:51:22.657Z"
-    },
     {
       "price": 580,
       "change_percent": 0.7055834196958113,
@@ -2041,6 +2037,11 @@
       "price": 432,
       "change_percent": 0.4902039456835865,
       "recorded_at": "2026-08-27T21:38:44.792Z"
+    },
+    {
+      "price": 437,
+      "change_percent": 1.3380316770339231,
+      "recorded_at": "2026-08-27T21:47:37.295Z"
     }
   ],
   "factory_names": [
@@ -2652,10 +2653,15 @@
       }
     ]
   },
-  "blacklist": {},
+  "blacklist": {
+    "1526505539935146095": {
+      "by": "1082686076491137115",
+      "at": "2026-08-27T21:47:38.992Z",
+      "reason": "No reason"
+    }
+  },
   "bot_owners": [
     "1082686076491137115",
-    "860203156222902332",
-    "1229741033265299506"
+    "860203156222902332"
   ]
 }
