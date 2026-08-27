@@ -925,19 +925,19 @@
       "ceo_of": null
     },
     "1526505539935146095": {
-      "cash": 30,
+      "cash": 45,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-27T21:12:58.043Z",
-      "work_count": 2,
+      "last_work": "2026-08-27T21:18:47.329Z",
+      "work_count": 3,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
-      "employed_at": "Soviet Agriculture",
-      "is_employed": true,
+      "employed_at": null,
+      "is_employed": false,
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
@@ -1185,9 +1185,9 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 60244,
-      "market_cap": 60244,
-      "employees": 15,
+      "share_price": 60292,
+      "market_cap": 60292,
+      "employees": 14,
       "level": 1,
       "buildings": {
         "Farm": {
@@ -1205,7 +1205,7 @@
         "Bread": 5,
         "Cake": 4,
         "Uranium": 14,
-        "Coal": 57,
+        "Coal": 60,
         "Canned Food": 44,
         "Gold Bar": 3,
         "Wheat": 20,
@@ -1218,7 +1218,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        55625,
         55689,
         55609,
         55679,
@@ -1317,7 +1316,8 @@
         60076,
         60172,
         60220,
-        60244
+        60244,
+        60292
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -2634,5 +2634,11 @@
       }
     ]
   },
-  "blacklist": {}
+  "blacklist": {
+    "1526505539935146095": {
+      "by": "1082686076491137115",
+      "at": "2026-08-27T21:18:54.272Z",
+      "reason": "No reason"
+    }
+  }
 }
