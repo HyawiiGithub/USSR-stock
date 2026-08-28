@@ -2256,11 +2256,9 @@
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Copper Ingot": 1
-  },
+  "ai_store": {},
   "global_consumption": {
-    "Copper Ingot": 23,
+    "Copper Ingot": 24,
     "Steel Ingot": 5,
     "Timber Planks": 17,
     "Refined Fuel": 16,
@@ -2502,6 +2500,11 @@
       "item": "Copper Ingot",
       "qty": 2,
       "at": "2026-08-28T00:27:37.360Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-28T00:42:37.360Z"
     }
   ],
   "demand_history": {
@@ -2584,6 +2587,11 @@
       {
         "demand": 1.287166828360714,
         "at": "2026-08-28T00:27:37.360Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.291714494121521,
+        "at": "2026-08-28T00:42:37.360Z",
         "supply": 0
       }
     ],
