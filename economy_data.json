@@ -1457,7 +1457,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 1546,
+      "funds": 1826,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -1484,7 +1484,6 @@
         "Phosphorite": 45,
         "Peat": 68,
         "Fish": 219,
-        "Timber Planks": 10,
         "Timber": 16
       },
       "created_at": "2026-08-25T17:16:44.366Z",
@@ -1593,18 +1592,13 @@
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
-      "last_factorydeal": "2026-08-28T04:47:04.277Z",
+      "last_factorydeal": "2026-08-28T09:13:24.433Z",
       "last_govcontract": null,
       "wage": 15,
       "specialization": "agriculture"
     }
   },
   "gsi_history": [
-    {
-      "price": 424,
-      "change_percent": 0.06935745058606661,
-      "recorded_at": "2026-08-28T01:42:37.442Z"
-    },
     {
       "price": 424,
       "change_percent": 0.06758190782427345,
@@ -2099,10 +2093,14 @@
       "price": 274,
       "change_percent": 0.7654552823264713,
       "recorded_at": "2026-08-28T09:07:37.668Z"
+    },
+    {
+      "price": 277,
+      "change_percent": 1.2457927611889792,
+      "recorded_at": "2026-08-28T09:12:37.667Z"
     }
   ],
   "factory_names": [
-    "Lenin Machine Works",
     "Siberian Mining Co",
     "Ural Heavy Industries"
   ],
@@ -2112,18 +2110,18 @@
     "Brezhnev Auto Factory",
     "Soviet Iron Foundry",
     "Khrushchev Agricultural",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Lenin Machine Works"
   ],
   "factory_deals": [],
   "government_contracts": [],
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.5260247922892689,
+  "inflation": 0.529973923646943,
   "money_printed": 0,
   "total_bank_reserves": 113896,
   "inflation_history": [
-    0,
     0,
     0,
     0,
@@ -2222,7 +2220,8 @@
     0.7190076424412398,
     0.8070581803409232,
     0.7347271122004674,
-    0.5260247922892689
+    0.5260247922892689,
+    0.529973923646943
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2248,15 +2247,15 @@
   "transaction_log": [],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3993492129102558,
+    "Fuel": 1.4093492129102558,
     "Cake": 1.3833375567594866,
-    "Bread": 1.3783559932455813,
+    "Bread": 1.3883559932455813,
     "Copper Ingot": 1.4003593656129523,
     "Iron Ingot": 1.3906602392873062,
     "Steel Ingot": 1.4046392310931501,
     "Gold Bar": 1.3860015944389619,
-    "Aluminium Ingot": 1.41151076959715,
-    "Timber Planks": 1.3453691902524902,
+    "Aluminium Ingot": 1.42151076959715,
+    "Timber Planks": 1.1203691902524904,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4115290826653417,
     "Glass": 1.4115290826653417,
@@ -2281,11 +2280,13 @@
     "Copper Ingot": "2026-08-28T00:02:23.676Z",
     "Steel Ingot": "2026-08-27T13:12:57.292Z",
     "Refined Fuel": "2026-08-28T00:53:09.363Z",
-    "Timber Planks": "2026-08-28T04:47:04.277Z",
+    "Timber Planks": "2026-08-28T09:13:24.433Z",
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {},
+  "ai_store": {
+    "Timber Planks": 10
+  },
   "global_consumption": {
     "Copper Ingot": 24,
     "Steel Ingot": 5,
