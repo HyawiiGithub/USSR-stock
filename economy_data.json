@@ -1588,8 +1588,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 164558,
-      "market_cap": 164558,
+      "share_price": 164506,
+      "market_cap": 164506,
       "employees": 3,
       "level": 1,
       "buildings": {
@@ -1607,7 +1607,7 @@
       "inventory": {
         "Timber": 32,
         "Natural Gas": 6,
-        "Iron Ore": 22,
+        "Iron Ore": 18,
         "Coal": 25,
         "Uranium": 1,
         "Oil": 11,
@@ -1666,7 +1666,8 @@
         164406,
         164557,
         164430,
-        164558
+        164558,
+        164506
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -1688,8 +1689,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 44124,
-      "market_cap": 44124,
+      "share_price": 44232,
+      "market_cap": 44232,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -1710,12 +1711,12 @@
         "Peat": 88,
         "Fish": 223,
         "Timber": 29,
-        "Timber Planks": 5
+        "Timber Planks": 5,
+        "Iron Ore": 4
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-27T23:21:38.215Z",
       "price_history": [
-        42611,
         42736,
         42762,
         42931,
@@ -1814,7 +1815,8 @@
         44107,
         44120,
         44096,
-        44124
+        44124,
+        44232
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1826,11 +1828,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 272,
-      "change_percent": -0.9263405920228798,
-      "recorded_at": "2026-08-28T15:52:37.835Z"
-    },
     {
       "price": 273,
       "change_percent": 0.547516079032025,
@@ -2325,6 +2322,11 @@
       "price": 208,
       "change_percent": -0.9816738809408615,
       "recorded_at": "2026-08-28T23:14:15.441Z"
+    },
+    {
+      "price": 208,
+      "change_percent": 0.3699359238160174,
+      "recorded_at": "2026-08-28T23:19:15.442Z"
     }
   ],
   "factory_names": [
@@ -2345,11 +2347,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.49033462665190053,
+  "inflation": 0.5173241554037916,
   "money_printed": 0,
-  "total_bank_reserves": 147910,
+  "total_bank_reserves": 151395,
   "inflation_history": [
-    0.650181051578846,
     0.4086429277033187,
     0.7895709295298257,
     0.7015427044739272,
@@ -2448,7 +2449,8 @@
     0.4207936881707599,
     0.724192469081382,
     0.5758194090887677,
-    0.49033462665190053
+    0.49033462665190053,
+    0.5173241554037916
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2475,11 +2477,11 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3959161478575637,
-    "Cake": 1.3933375567594866,
+    "Cake": 1.3906788432452906,
     "Bread": 1.3809254715345218,
     "Copper Ingot": 1.316159259023503,
     "Iron Ingot": 1.3919140983843985,
-    "Steel Ingot": 1.4101037613619207,
+    "Steel Ingot": 1.4064967399403594,
     "Gold Bar": 1.3777675087525878,
     "Aluminium Ingot": 1.4124246179473645,
     "Timber Planks": 1.3821346951822506,
@@ -2488,14 +2490,14 @@
     "Glass": 1.4120099255926,
     "Steel Beam": 1.412418957370355,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.3486423187091863,
+    "Refined Fuel": 1.3549981981203842,
     "Uranium Rod": 1.4038368911975774,
     "Reactor Core": 1.4120099255926,
-    "Circuit Board": 1.4222177618381622,
+    "Circuit Board": 1.4204403408911093,
     "Flour": 1.411516121606788,
     "Sugar": 1.4122796906592296,
-    "Wine": 1.4222781621852998,
-    "Canned Food": 0.9795586203139407,
+    "Wine": 1.4204959092104759,
+    "Canned Food": 0.9772155523104471,
     "Canned Fish": 1.41212710002688,
     "Smoked Fish": 1.4115290826653417,
     "Fish Stew": 1.4123435275452147
