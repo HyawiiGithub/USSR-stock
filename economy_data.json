@@ -439,15 +439,15 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 315,
+      "cash": 330,
       "bank": 38392,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-28T23:04:01.443Z",
-      "work_count": 211,
+      "last_work": "2026-08-28T23:09:03.375Z",
+      "work_count": 212,
       "last_claim": "2026-08-28T20:27:07.758Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 150,
+      "cash": 165,
       "bank": 12181,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-28T22:57:20.344Z",
-      "work_count": 260,
+      "last_work": "2026-08-28T23:09:01.918Z",
+      "work_count": 261,
       "last_claim": "2026-08-28T18:25:50.914Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1433,8 +1433,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 71109,
-      "market_cap": 71109,
+      "share_price": 71076,
+      "market_cap": 71076,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1456,7 +1456,7 @@
         "Coal": 100,
         "Canned Food": 100,
         "Gold Bar": 4,
-        "Iron Ore": 18,
+        "Iron Ore": 21,
         "Fish": 25,
         "Copper Ingot": 1,
         "Copper": 8,
@@ -1468,7 +1468,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        68032,
         68064,
         68407,
         68455,
@@ -1567,7 +1566,8 @@
         70822,
         70870,
         71093,
-        71109
+        71109,
+        71076
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1687,8 +1687,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 44107,
-      "market_cap": 44107,
+      "share_price": 44120,
+      "market_cap": 44120,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -1708,13 +1708,12 @@
         "Phosphorite": 59,
         "Peat": 88,
         "Fish": 221,
-        "Timber": 27,
+        "Timber": 28,
         "Timber Planks": 5
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-27T23:21:38.215Z",
       "price_history": [
-        43236,
         43162,
         42585,
         42611,
@@ -1813,7 +1812,8 @@
         43986,
         44107,
         44068,
-        44107
+        44107,
+        44120
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1825,16 +1825,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 275,
-      "change_percent": 0.43174062229733795,
-      "recorded_at": "2026-08-28T15:37:37.825Z"
-    },
-    {
-      "price": 278,
-      "change_percent": 1.3695902729982474,
-      "recorded_at": "2026-08-28T15:42:37.823Z"
-    },
     {
       "price": 275,
       "change_percent": -1.020096218132521,
@@ -2324,6 +2314,16 @@
       "price": 211,
       "change_percent": -1.209989010243092,
       "recorded_at": "2026-08-28T23:04:15.440Z"
+    },
+    {
+      "price": 214,
+      "change_percent": 1.749647142944437,
+      "recorded_at": "2026-08-28T23:09:15.416Z"
+    },
+    {
+      "price": 211,
+      "change_percent": -1.162148314331023,
+      "recorded_at": "2026-08-28T23:09:15.439Z"
     }
   ],
   "factory_names": [
@@ -2344,11 +2344,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.5758194090887677,
+  "inflation": 0.49033462665190053,
   "money_printed": 0,
   "total_bank_reserves": 147910,
   "inflation_history": [
-    0.5980358371303032,
     0.650181051578846,
     0.4086429277033187,
     0.7895709295298257,
@@ -2447,7 +2446,8 @@
     0.6450091129038417,
     0.4207936881707599,
     0.724192469081382,
-    0.5758194090887677
+    0.5758194090887677,
+    0.49033462665190053
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2476,7 +2476,7 @@
     "Fuel": 1.3959161478575637,
     "Cake": 1.3833375567594866,
     "Bread": 1.3809254715345218,
-    "Copper Ingot": 1.3806342117109809,
+    "Copper Ingot": 1.3836592590235028,
     "Iron Ingot": 1.3919140983843985,
     "Steel Ingot": 1.4001037613619207,
     "Gold Bar": 1.3777675087525878,
@@ -2487,7 +2487,7 @@
     "Glass": 1.4120099255926,
     "Steel Beam": 1.412418957370355,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.3422672518386691,
+    "Refined Fuel": 1.3486423187091863,
     "Uranium Rod": 1.4038368911975774,
     "Reactor Core": 1.4120099255926,
     "Circuit Board": 1.4122177618381622,
