@@ -1246,8 +1246,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 61731,
-      "market_cap": 61731,
+      "share_price": 61697,
+      "market_cap": 61697,
       "employees": 15,
       "level": 1,
       "buildings": {
@@ -1272,15 +1272,11 @@
         "Wheat": 32,
         "Gold": 2,
         "Copper": 5,
-        "Oil": 3,
-        "Fuel": 1
+        "Refined Fuel": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        58277,
-        58309,
-        58357,
         58333,
         58309,
         58333,
@@ -1377,7 +1373,10 @@
         61785,
         61809,
         61825,
-        61731
+        61731,
+        61860,
+        61697,
+        61697
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1602,11 +1601,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 360,
-      "change_percent": -1.3748481478276813,
-      "recorded_at": "2026-08-28T03:17:37.501Z"
-    },
     {
       "price": 357,
       "change_percent": -0.6111295681676414,
@@ -2101,31 +2095,35 @@
       "price": 263,
       "change_percent": -0.6962063847171555,
       "recorded_at": "2026-08-28T10:47:37.711Z"
+    },
+    {
+      "price": 263,
+      "change_percent": 0.2553663315486963,
+      "recorded_at": "2026-08-28T10:52:37.707Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Ural Heavy Industries"
   ],
   "used_factory_names": [
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4730585537663372,
+  "inflation": 0.4176213644193859,
   "money_printed": 0,
   "total_bank_reserves": 113971,
   "inflation_history": [
-    0,
     0,
     0,
     0,
@@ -2224,7 +2222,8 @@
     0.5098615784728764,
     0.5099560992089978,
     0.6790371876909067,
-    0.4730585537663372
+    0.4730585537663372,
+    0.4176213644193859
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2258,22 +2257,22 @@
     "Steel Ingot": 1.4046392310931501,
     "Gold Bar": 1.3860015944389619,
     "Aluminium Ingot": 1.411999709709751,
-    "Timber Planks": 1.2376147776339912,
+    "Timber Planks": 1.2557899235985268,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4115290826653417,
     "Glass": 1.4115290826653417,
     "Steel Beam": 1.4115290826653417,
-    "Machine Parts": 1.4171443507422354,
-    "Refined Fuel": 1.3538571590481665,
+    "Machine Parts": 1.4157728026828567,
+    "Refined Fuel": 1.3562740718381932,
     "Uranium Rod": 1.4123435275452147,
     "Reactor Core": 1.4124642609007318,
     "Circuit Board": 1.41212710002688,
-    "Flour": 1.4173633845512272,
-    "Sugar": 1.417140998509016,
+    "Flour": 1.415974313787129,
+    "Sugar": 1.4157697186282947,
     "Wine": 1.4120099255926,
-    "Canned Food": 1.1607749525442912,
+    "Canned Food": 1.1595129563407478,
     "Canned Fish": 1.41,
-    "Smoked Fish": 1.4172301072657312,
+    "Smoked Fish": 1.4158516986844727,
     "Fish Stew": 1.4123435275452147
   },
   "market_last_sale": {
