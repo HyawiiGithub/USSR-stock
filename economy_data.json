@@ -439,15 +439,15 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 15,
+      "cash": 30,
       "bank": 38627,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-28T23:33:13.846Z",
-      "work_count": 216,
+      "last_work": "2026-08-28T23:39:25.591Z",
+      "work_count": 217,
       "last_claim": "2026-08-28T20:27:07.758Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -1697,8 +1697,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 44263,
-      "market_cap": 44263,
+      "share_price": 44303,
+      "market_cap": 44303,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -1717,7 +1717,7 @@
         "Oil Shale": 58,
         "Phosphorite": 59,
         "Peat": 91,
-        "Fish": 221,
+        "Fish": 223,
         "Timber": 29,
         "Timber Planks": 5,
         "Canned Fish": 2
@@ -1725,7 +1725,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-27T23:21:38.215Z",
       "price_history": [
-        42924,
         42902,
         42993,
         42975,
@@ -1824,7 +1823,8 @@
         44245,
         44217,
         44243,
-        44263
+        44263,
+        44303
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1836,11 +1836,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 273,
-      "change_percent": -1.09126749500221,
-      "recorded_at": "2026-08-28T16:17:37.844Z"
-    },
     {
       "price": 274,
       "change_percent": 0.5806879116043093,
@@ -2335,6 +2330,11 @@
       "price": 226,
       "change_percent": 1.427480059663496,
       "recorded_at": "2026-08-28T23:34:15.450Z"
+    },
+    {
+      "price": 227,
+      "change_percent": 0.8129013867172862,
+      "recorded_at": "2026-08-28T23:39:15.449Z"
     }
   ],
   "factory_names": [
@@ -2355,11 +2355,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4973179675026537,
+  "inflation": 0.5253174448982127,
   "money_printed": 0,
-  "total_bank_reserves": 151395,
+  "total_bank_reserves": 151630,
   "inflation_history": [
-    0.7895709295298257,
     0.7015427044739272,
     0.4690039729928252,
     0.5327064173816345,
@@ -2458,7 +2457,8 @@
     0.5758194090887677,
     0.49033462665190053,
     0.5173241554037916,
-    0.4973179675026537
+    0.4973179675026537,
+    0.5253174448982127
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2485,11 +2485,11 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3959161478575637,
-    "Cake": 1.3886848081096437,
+    "Cake": 1.3871892817579083,
     "Bread": 1.3809254715345218,
-    "Copper Ingot": 1.3174868603887175,
+    "Copper Ingot": 1.319893612813026,
     "Iron Ingot": 1.3919140983843985,
-    "Steel Ingot": 1.4037914738741883,
+    "Steel Ingot": 1.4017625243245602,
     "Gold Bar": 1.3777675087525878,
     "Aluminium Ingot": 1.4124246179473645,
     "Timber Planks": 1.3821346951822506,
@@ -2498,15 +2498,15 @@
     "Glass": 1.4120099255926,
     "Steel Beam": 1.412418957370355,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.361167524141222,
+    "Refined Fuel": 1.367008858763915,
     "Uranium Rod": 1.4038368911975774,
     "Reactor Core": 1.4120099255926,
-    "Circuit Board": 1.4188051136198205,
+    "Circuit Board": 1.4173007045302348,
     "Flour": 1.411516121606788,
     "Sugar": 1.4122796906592296,
-    "Wine": 1.4188562364736377,
-    "Canned Food": 0.974713983801287,
-    "Canned Fish": 1.4104650401328378,
+    "Wine": 1.4173477375557466,
+    "Canned Food": 0.9724125407728598,
+    "Canned Fish": 1.408935945030319,
     "Smoked Fish": 1.4115290826653417,
     "Fish Stew": 1.4123435275452147
   },
@@ -2521,11 +2521,9 @@
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Copper Ingot": 2
-  },
+  "ai_store": {},
   "global_consumption": {
-    "Copper Ingot": 34,
+    "Copper Ingot": 36,
     "Steel Ingot": 5,
     "Timber Planks": 52,
     "Refined Fuel": 29,
@@ -3007,6 +3005,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-28T23:24:15.436Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 2,
+      "at": "2026-08-28T23:39:15.440Z"
     }
   ],
   "demand_history": {
@@ -3134,6 +3137,11 @@
       {
         "demand": 1.316159259023503,
         "at": "2026-08-28T23:24:15.436Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.319893612813026,
+        "at": "2026-08-28T23:39:15.440Z",
         "supply": 0
       }
     ],
