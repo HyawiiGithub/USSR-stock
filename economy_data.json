@@ -1246,8 +1246,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 61809,
-      "market_cap": 61809,
+      "share_price": 61825,
+      "market_cap": 61825,
       "employees": 15,
       "level": 1,
       "buildings": {
@@ -1278,7 +1278,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        58173,
         58181,
         58277,
         58309,
@@ -1377,7 +1376,8 @@
         61649,
         61673,
         61785,
-        61809
+        61809,
+        61825
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1602,11 +1602,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 369,
-      "change_percent": 0.37429130190210247,
-      "recorded_at": "2026-08-28T03:07:37.498Z"
-    },
     {
       "price": 366,
       "change_percent": -0.7155871644780065,
@@ -2101,6 +2096,11 @@
       "price": 266,
       "change_percent": 1.0764008425631533,
       "recorded_at": "2026-08-28T10:37:37.695Z"
+    },
+    {
+      "price": 265,
+      "change_percent": -0.3341660727148585,
+      "recorded_at": "2026-08-28T10:42:37.698Z"
     }
   ],
   "factory_names": [
@@ -2121,11 +2121,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6790371876909067,
+  "inflation": 0.4730585537663372,
   "money_printed": 0,
   "total_bank_reserves": 113971,
   "inflation_history": [
-    0,
     0,
     0,
     0,
@@ -2224,7 +2223,8 @@
     0.4513798693904675,
     0.5098615784728764,
     0.5099560992089978,
-    0.6790371876909067
+    0.6790371876909067,
+    0.4730585537663372
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2250,7 +2250,7 @@
   "transaction_log": [],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3953663516141543,
+    "Fuel": 1.3940247637106158,
     "Cake": 1.3833375567594866,
     "Bread": 1.3792259197378598,
     "Copper Ingot": 1.4003593656129523,
@@ -2258,22 +2258,22 @@
     "Steel Ingot": 1.4046392310931501,
     "Gold Bar": 1.3860015944389619,
     "Aluminium Ingot": 1.411999709709751,
-    "Timber Planks": 1.2190647280823528,
+    "Timber Planks": 1.2376147776339912,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4115290826653417,
     "Glass": 1.4115290826653417,
     "Steel Beam": 1.4115290826653417,
-    "Machine Parts": 1.418635163850256,
-    "Refined Fuel": 1.351982280514338,
+    "Machine Parts": 1.4171443507422354,
+    "Refined Fuel": 1.3538571590481665,
     "Uranium Rod": 1.4123435275452147,
     "Reactor Core": 1.4124642609007318,
     "Circuit Board": 1.41212710002688,
-    "Flour": 1.418873244077421,
-    "Sugar": 1.4186315201184956,
+    "Flour": 1.4173633845512272,
+    "Sugar": 1.417140998509016,
     "Wine": 1.4120099255926,
-    "Canned Food": 1.1621466875481425,
+    "Canned Food": 1.1607749525442912,
     "Canned Fish": 1.41,
-    "Smoked Fish": 1.4187283774627513,
+    "Smoked Fish": 1.4172301072657312,
     "Fish Stew": 1.4123435275452147
   },
   "market_last_sale": {
@@ -2288,13 +2288,13 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 3,
+    "Timber Planks": 2,
     "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 24,
     "Steel Ingot": 5,
-    "Timber Planks": 49,
+    "Timber Planks": 50,
     "Refined Fuel": 17,
     "Fuel": 2,
     "Iron Ingot": 1
@@ -2664,6 +2664,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-28T10:27:37.513Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-08-28T10:42:37.514Z"
     }
   ],
   "demand_history": {
@@ -2955,6 +2960,11 @@
       {
         "demand": 1.2006485847598203,
         "at": "2026-08-28T10:27:37.513Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.2190647280823528,
+        "at": "2026-08-28T10:42:37.514Z",
         "supply": 5
       }
     ],
