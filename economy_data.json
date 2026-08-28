@@ -1396,8 +1396,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 162546,
-      "market_cap": 162546,
+      "share_price": 163119,
+      "market_cap": 163119,
       "employees": 1,
       "level": 1,
       "buildings": {
@@ -1439,7 +1439,8 @@
         161474,
         162471,
         162406,
-        162546
+        162546,
+        163119
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -1597,11 +1598,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 466,
-      "change_percent": -0.9430263032315089,
-      "recorded_at": "2026-08-27T20:51:42.133Z"
-    },
     {
       "price": 468,
       "change_percent": 0.6365570818084592,
@@ -2096,6 +2092,11 @@
       "price": 254,
       "change_percent": 0.11276323414152019,
       "recorded_at": "2026-08-28T06:22:37.546Z"
+    },
+    {
+      "price": 251,
+      "change_percent": -1.1584480612755725,
+      "recorded_at": "2026-08-28T06:27:37.547Z"
     }
   ],
   "factory_names": [
@@ -2283,12 +2284,12 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 3
+    "Timber Planks": 1
   },
   "global_consumption": {
     "Copper Ingot": 24,
     "Steel Ingot": 5,
-    "Timber Planks": 39,
+    "Timber Planks": 41,
     "Refined Fuel": 17,
     "Fuel": 2,
     "Iron Ingot": 1
@@ -2623,6 +2624,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-28T06:12:37.442Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-08-28T06:27:37.443Z"
     }
   ],
   "demand_history": {
@@ -2879,6 +2885,11 @@
       {
         "demand": 1.1153443689695655,
         "at": "2026-08-28T06:12:37.442Z",
+        "supply": 10
+      },
+      {
+        "demand": 1.168231687964292,
+        "at": "2026-08-28T06:27:37.443Z",
         "supply": 10
       }
     ],
