@@ -1283,8 +1283,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 65740,
-      "market_cap": 65740,
+      "share_price": 65804,
+      "market_cap": 65804,
       "employees": 17,
       "level": 1,
       "buildings": {
@@ -1309,14 +1309,13 @@
         "Wheat": 11,
         "Copper Ingot": 1,
         "Iron Ore": 5,
-        "Oil": 4,
-        "Copper": 4
+        "Oil": 1,
+        "Copper": 4,
+        "Fuel": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        62461,
-        62654,
         62665,
         62682,
         62581,
@@ -1414,7 +1413,9 @@
         64553,
         64768,
         65732,
-        65740
+        65740,
+        65933,
+        65804
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1639,11 +1640,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 266,
-      "change_percent": 0.7677316156511319,
-      "recorded_at": "2026-08-28T07:42:37.600Z"
-    },
     {
       "price": 262,
       "change_percent": -1.227339619174978,
@@ -2138,6 +2134,11 @@
       "price": 270,
       "change_percent": 1.4624807228840404,
       "recorded_at": "2026-08-28T15:22:37.819Z"
+    },
+    {
+      "price": 272,
+      "change_percent": 0.9600817868712215,
+      "recorded_at": "2026-08-28T15:27:37.824Z"
     }
   ],
   "factory_names": [],
@@ -2324,13 +2325,13 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Refined Fuel": 2
+    "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 27,
     "Steel Ingot": 5,
     "Timber Planks": 52,
-    "Refined Fuel": 21,
+    "Refined Fuel": 22,
     "Fuel": 2,
     "Iron Ingot": 1
   },
@@ -2749,6 +2750,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-28T14:42:37.565Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-08-28T15:27:37.578Z"
     }
   ],
   "demand_history": {
@@ -3157,6 +3163,11 @@
       {
         "demand": 1.3362079325381098,
         "at": "2026-08-28T13:42:37.554Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3319085230608552,
+        "at": "2026-08-28T15:27:37.578Z",
         "supply": 0
       }
     ],
