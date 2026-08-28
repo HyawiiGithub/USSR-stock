@@ -1316,14 +1316,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 10313,
+      "funds": 10780,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 68988,
-      "market_cap": 68988,
+      "share_price": 68685,
+      "market_cap": 68685,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1346,7 +1346,7 @@
         "Canned Food": 92,
         "Gold Bar": 4,
         "Iron Ore": 11,
-        "Oil": 14,
+        "Oil": 2,
         "Wheat": 2,
         "Fish": 25,
         "Copper Ingot": 3
@@ -1354,9 +1354,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        64752,
-        64800,
-        64872,
         64897,
         64810,
         64681,
@@ -1453,11 +1450,14 @@
         69012,
         68771,
         68964,
-        68988
+        68988,
+        68474,
+        68474,
+        68685
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-08-28T16:31:46.603Z",
+      "last_factorydeal": "2026-08-28T19:17:04.870Z",
       "last_govcontract": null,
       "specialization": "agriculture"
     },
@@ -2183,15 +2183,15 @@
   "factory_names": [
     "Soviet Iron Foundry",
     "Stalin Tractor Plant",
-    "Khrushchev Agricultural",
-    "Brezhnev Auto Factory",
-    "Siberian Mining Co"
+    "Brezhnev Auto Factory"
   ],
   "used_factory_names": [
     "Volga Shipbuilding",
     "Ural Heavy Industries",
     "Red Star Steelworks",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Khrushchev Agricultural",
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2339,15 +2339,15 @@
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4120099255926,
     "Glass": 1.4120099255926,
-    "Steel Beam": 1.4119815197758752,
+    "Steel Beam": 1.4219815197758752,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.3935126476457218,
+    "Refined Fuel": 1.3485126476457219,
     "Uranium Rod": 1.4119424899064081,
     "Reactor Core": 1.4120099255926,
-    "Circuit Board": 1.4123435275452147,
+    "Circuit Board": 1.4223435275452148,
     "Flour": 1.411516121606788,
     "Sugar": 1.4122796906592296,
-    "Wine": 1.4120099255926,
+    "Wine": 1.4220099255926,
     "Canned Food": 1.0266010245308674,
     "Canned Fish": 1.41,
     "Smoked Fish": 1.4115290826653417,
@@ -2359,12 +2359,14 @@
     "Bread": "2026-08-26T18:22:54.423Z",
     "Copper Ingot": "2026-08-28T16:31:46.603Z",
     "Steel Ingot": "2026-08-27T13:12:57.292Z",
-    "Refined Fuel": "2026-08-28T16:01:13.971Z",
+    "Refined Fuel": "2026-08-28T19:17:04.870Z",
     "Timber Planks": "2026-08-28T09:13:24.433Z",
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {},
+  "ai_store": {
+    "Refined Fuel": 2
+  },
   "global_consumption": {
     "Copper Ingot": 30,
     "Steel Ingot": 5,
