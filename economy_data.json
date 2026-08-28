@@ -493,8 +493,8 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 225,
-      "bank": 11921,
+      "cash": 0,
+      "bank": 12046,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -1323,8 +1323,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 69842,
-      "market_cap": 69842,
+      "share_price": 69866,
+      "market_cap": 69866,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1357,7 +1357,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        66296,
         66312,
         66360,
         66384,
@@ -1456,7 +1455,8 @@
         70092,
         70100,
         69842,
-        69842
+        69842,
+        69866
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1691,11 +1691,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 258,
-      "change_percent": 0.1641951717456873,
-      "recorded_at": "2026-08-28T13:02:37.753Z"
-    },
     {
       "price": 260,
       "change_percent": 0.8423981321547983,
@@ -2190,6 +2185,11 @@
       "price": 237,
       "change_percent": 0.7019153445070831,
       "recorded_at": "2026-08-28T20:37:37.959Z"
+    },
+    {
+      "price": 239,
+      "change_percent": 1.2444833786112097,
+      "recorded_at": "2026-08-28T20:42:37.960Z"
     }
   ],
   "factory_names": [
@@ -2210,11 +2210,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6999462241290156,
+  "inflation": 0.47214752756641265,
   "money_printed": 0,
-  "total_bank_reserves": 146606,
+  "total_bank_reserves": 147650,
   "inflation_history": [
-    0.7491412276431246,
     0.6955299954972985,
     0.6890742792796053,
     0.8109818734428595,
@@ -2313,7 +2312,8 @@
     0.4386494940914013,
     0.7159439237982188,
     0.4301449722352834,
-    0.6999462241290156
+    0.6999462241290156,
+    0.47214752756641265
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2339,12 +2339,12 @@
   "transaction_log": [],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.405000064670887,
+    "Fuel": 1.402607191360308,
     "Cake": 1.3833375567594866,
     "Bread": 1.3809254715345218,
     "Copper Ingot": 1.3211171079518418,
     "Iron Ingot": 1.3906602392873062,
-    "Steel Ingot": 1.4146296385986659,
+    "Steel Ingot": 1.4109722289489994,
     "Gold Bar": 1.382661442297759,
     "Aluminium Ingot": 1.4122724632897738,
     "Timber Planks": 1.3802501944498755,
@@ -2353,15 +2353,15 @@
     "Glass": 1.4120099255926,
     "Steel Beam": 1.4122623160969843,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.3195568214606226,
+    "Refined Fuel": 1.3249166244354917,
     "Uranium Rod": 1.4119424899064081,
     "Reactor Core": 1.4120099255926,
-    "Circuit Board": 1.4180579352606733,
+    "Circuit Board": 1.4166133004398194,
     "Flour": 1.411516121606788,
     "Sugar": 1.4122796906592296,
     "Wine": 1.4122781621852998,
-    "Canned Food": 1.0060119539851002,
-    "Canned Fish": 1.42,
+    "Canned Food": 1.0020567119520065,
+    "Canned Fish": 1.4183999999999999,
     "Smoked Fish": 1.4115290826653417,
     "Fish Stew": 1.4123435275452147
   },
@@ -2377,10 +2377,10 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Copper Ingot": 3
+    "Copper Ingot": 1
   },
   "global_consumption": {
-    "Copper Ingot": 30,
+    "Copper Ingot": 32,
     "Steel Ingot": 5,
     "Timber Planks": 52,
     "Refined Fuel": 27,
@@ -2842,6 +2842,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-08-28T19:57:37.676Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 2,
+      "at": "2026-08-28T20:42:37.679Z"
     }
   ],
   "demand_history": {
@@ -2955,6 +2960,11 @@
         "demand": 1.3207067206633722,
         "at": "2026-08-28T16:57:37.605Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3211171079518418,
+        "at": "2026-08-28T20:42:37.679Z",
+        "supply": 1
       }
     ],
     "Steel Ingot": [
