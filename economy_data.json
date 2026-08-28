@@ -251,7 +251,7 @@
     },
     "682362000210526299": {
       "username": "",
-      "cash": 0,
+      "cash": 20,
       "bank": 0,
       "resources": {
         "Wheat": 1,
@@ -262,8 +262,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-23T06:57:38.435961",
-      "work_count": 2,
+      "last_work": "2026-08-28T21:57:22.352Z",
+      "work_count": 3,
       "last_claim": null,
       "last_collect": null,
       "join_date": "2026-08-22T18:09:02.908345",
@@ -1353,14 +1353,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1082686076491137115>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 899,
+      "funds": 894,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 102337,
-      "market_cap": 102337,
+      "share_price": 102792,
+      "market_cap": 102792,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1379,7 +1379,7 @@
         "Natural Gas": 12,
         "Iron Ore": 4,
         "Cotton": 7,
-        "Oil": 2
+        "Oil": 4
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T15:48:10.568Z",
@@ -1402,7 +1402,8 @@
         101661,
         102192,
         102263,
-        102337
+        102337,
+        102792
       ],
       "is_state_owned": true,
       "director_id": "1082686076491137115",
@@ -1804,11 +1805,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 283,
-      "change_percent": 0.26262339468453727,
-      "recorded_at": "2026-08-28T14:22:37.798Z"
-    },
     {
       "price": 280,
       "change_percent": -0.9851729549534591,
@@ -2303,6 +2299,11 @@
       "price": 239,
       "change_percent": 1.3736071652550461,
       "recorded_at": "2026-08-28T21:52:37.979Z"
+    },
+    {
+      "price": 237,
+      "change_percent": -0.5371891738829351,
+      "recorded_at": "2026-08-28T21:57:37.977Z"
     }
   ],
   "factory_names": [
@@ -2489,14 +2490,12 @@
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Refined Fuel": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 33,
     "Steel Ingot": 5,
     "Timber Planks": 52,
-    "Refined Fuel": 27,
+    "Refined Fuel": 29,
     "Fuel": 2,
     "Iron Ingot": 1
   },
@@ -2965,6 +2964,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-28T20:57:37.703Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-08-28T21:57:37.704Z"
     }
   ],
   "demand_history": {
@@ -3423,6 +3427,11 @@
       {
         "demand": 1.3062976157582664,
         "at": "2026-08-28T19:57:37.676Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.317249853395809,
+        "at": "2026-08-28T21:57:37.704Z",
         "supply": 0
       }
     ],
