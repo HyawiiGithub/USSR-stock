@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 150,
+      "cash": 165,
       "bank": 12138,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-28T16:50:50.075Z",
-      "work_count": 213,
+      "last_work": "2026-08-28T16:57:45.779Z",
+      "work_count": 214,
       "last_claim": "2026-08-27T08:31:22.315Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1326,7 +1326,8 @@
         "Gold Bar": 4,
         "Iron Ore": 11,
         "Wheat": 3,
-        "Oil": 2
+        "Oil": 2,
+        "Copper": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
@@ -1655,11 +1656,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 277,
-      "change_percent": 1.2457927611889792,
-      "recorded_at": "2026-08-28T09:12:37.667Z"
-    },
     {
       "price": 277,
       "change_percent": 0.10527719087188997,
@@ -2154,6 +2150,11 @@
       "price": 263,
       "change_percent": 0.7104083682804367,
       "recorded_at": "2026-08-28T16:52:37.857Z"
+    },
+    {
+      "price": 259,
+      "change_percent": -1.1833289254643722,
+      "recorded_at": "2026-08-28T16:57:37.856Z"
     }
   ],
   "factory_names": [
@@ -2340,11 +2341,9 @@
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Copper Ingot": 2
-  },
+  "ai_store": {},
   "global_consumption": {
-    "Copper Ingot": 28,
+    "Copper Ingot": 30,
     "Steel Ingot": 5,
     "Timber Planks": 52,
     "Refined Fuel": 24,
@@ -2786,6 +2785,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-28T16:42:37.604Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 2,
+      "at": "2026-08-28T16:57:37.605Z"
     }
   ],
   "demand_history": {
@@ -2893,6 +2897,11 @@
       {
         "demand": 1.3172416221036185,
         "at": "2026-08-28T16:42:37.604Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3207067206633722,
+        "at": "2026-08-28T16:57:37.605Z",
         "supply": 0
       }
     ],
