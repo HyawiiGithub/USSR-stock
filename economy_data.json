@@ -439,15 +439,15 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 1365,
+      "cash": 1380,
       "bank": 35638,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-28T05:04:27.463Z",
-      "work_count": 162,
+      "last_work": "2026-08-28T05:13:21.406Z",
+      "work_count": 163,
       "last_claim": "2026-08-27T03:06:18.790Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -1459,8 +1459,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 43541,
-      "market_cap": 43541,
+      "share_price": 43600,
+      "market_cap": 43600,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -1476,7 +1476,7 @@
         }
       },
       "inventory": {
-        "Oil Shale": 48,
+        "Oil Shale": 50,
         "Phosphorite": 42,
         "Peat": 68,
         "Fish": 210,
@@ -1486,7 +1486,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-27T23:21:38.215Z",
       "price_history": [
-        40011,
         40039,
         40079,
         40118,
@@ -1585,7 +1584,8 @@
         43456,
         43532,
         43446,
-        43541
+        43541,
+        43600
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1596,11 +1596,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 444,
-      "change_percent": 5.116098157598592,
-      "recorded_at": "2026-08-27T19:41:42.050Z"
-    },
     {
       "price": 448,
       "change_percent": 1.1245422232799418,
@@ -2095,6 +2090,11 @@
       "price": 265,
       "change_percent": -6.505619564423741,
       "recorded_at": "2026-08-28T05:12:37.426Z"
+    },
+    {
+      "price": 267,
+      "change_percent": 1.052748812112737,
+      "recorded_at": "2026-08-28T05:12:37.535Z"
     }
   ],
   "factory_names": [
@@ -2115,11 +2115,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6994436353030861,
+  "inflation": 0.7473346449731247,
   "money_printed": 0,
   "total_bank_reserves": 113896,
   "inflation_history": [
-    0,
     0,
     0,
     0,
@@ -2218,7 +2217,8 @@
     0.8109818734428595,
     0.8292595477476448,
     0.5400709613722403,
-    0.6994436353030861
+    0.6994436353030861,
+    0.7473346449731247
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2249,20 +2249,20 @@
     "Bread": 1.3783559932455813,
     "Copper Ingot": 1.4003593656129523,
     "Iron Ingot": 1.3906602392873062,
-    "Steel Ingot": 1.408247521943378,
+    "Steel Ingot": 1.4061856414575336,
     "Gold Bar": 1.3860015944389619,
     "Aluminium Ingot": 1.41151076959715,
-    "Timber Planks": 0.973530677243776,
+    "Timber Planks": 1.0056209824278985,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4115290826653417,
     "Glass": 1.4115290826653417,
-    "Steel Beam": 1.4190137504263796,
+    "Steel Beam": 1.4174926503922691,
     "Machine Parts": 1.412016970522514,
     "Refined Fuel": 1.395715056181898,
-    "Uranium Rod": 1.4187283774627513,
-    "Reactor Core": 1.4189115617142698,
+    "Uranium Rod": 1.4172301072657312,
+    "Reactor Core": 1.4173986367771283,
     "Circuit Board": 1.41212710002688,
-    "Flour": 1.4186596889796381,
+    "Flour": 1.417166913861267,
     "Sugar": 1.412012665546427,
     "Wine": 1.4120099255926,
     "Canned Food": 1.1692012895501886,
@@ -2282,12 +2282,12 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 10
+    "Timber Planks": 9
   },
   "global_consumption": {
     "Copper Ingot": 24,
     "Steel Ingot": 5,
-    "Timber Planks": 32,
+    "Timber Planks": 33,
     "Refined Fuel": 17,
     "Fuel": 2,
     "Iron Ingot": 1
@@ -2597,6 +2597,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-28T04:57:37.431Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-08-28T05:12:37.441Z"
     }
   ],
   "demand_history": {
@@ -2828,6 +2833,11 @@
       {
         "demand": 0.9455924172853104,
         "at": "2026-08-28T04:57:37.431Z",
+        "supply": 10
+      },
+      {
+        "demand": 0.973530677243776,
+        "at": "2026-08-28T05:12:37.441Z",
         "supply": 10
       }
     ],
