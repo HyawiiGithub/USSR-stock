@@ -1595,11 +1595,6 @@
   },
   "gsi_history": [
     {
-      "price": 501,
-      "change_percent": -1.2834089242952647,
-      "recorded_at": "2026-08-27T16:14:06.261Z"
-    },
-    {
       "price": 507,
       "change_percent": 1.3706823687584322,
       "recorded_at": "2026-08-27T16:19:06.272Z"
@@ -2093,6 +2088,11 @@
       "price": 466,
       "change_percent": 9.364897592406528,
       "recorded_at": "2026-08-28T01:57:37.377Z"
+    },
+    {
+      "price": 461,
+      "change_percent": -0.870681808352174,
+      "recorded_at": "2026-08-28T01:57:37.443Z"
     }
   ],
   "factory_names": [
@@ -2265,13 +2265,11 @@
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Timber Planks": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 24,
     "Steel Ingot": 5,
-    "Timber Planks": 21,
+    "Timber Planks": 22,
     "Refined Fuel": 17,
     "Fuel": 2,
     "Iron Ingot": 1
@@ -2536,6 +2534,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-08-28T01:42:37.375Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-08-28T01:57:37.389Z"
     }
   ],
   "demand_history": {
@@ -2722,6 +2725,11 @@
       {
         "demand": 1.2666721719824439,
         "at": "2026-08-28T01:42:37.375Z",
+        "supply": 25
+      },
+      {
+        "demand": 1.2666721719824439,
+        "at": "2026-08-28T01:57:37.389Z",
         "supply": 25
       }
     ],
