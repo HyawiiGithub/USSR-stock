@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 150,
+      "cash": 165,
       "bank": 11921,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-28T19:55:58.076Z",
-      "work_count": 236,
+      "last_work": "2026-08-28T20:02:13.225Z",
+      "work_count": 237,
       "last_claim": "2026-08-28T18:25:50.914Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -828,8 +828,8 @@
       "work_count": 6,
       "last_claim": null,
       "ssr_region": "Estonian SSR",
-      "employed_at": "Baltic Timber & Harbour Co",
-      "is_employed": true,
+      "employed_at": null,
+      "is_employed": false,
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
@@ -1322,8 +1322,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 69610,
-      "market_cap": 69610,
+      "share_price": 69682,
+      "market_cap": 69682,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1345,7 +1345,7 @@
         "Coal": 95,
         "Canned Food": 92,
         "Gold Bar": 4,
-        "Iron Ore": 17,
+        "Iron Ore": 20,
         "Oil": 4,
         "Wheat": 9,
         "Fish": 25,
@@ -1355,7 +1355,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        66014,
         66104,
         66177,
         66260,
@@ -1454,7 +1453,8 @@
         69521,
         69537,
         69602,
-        69610
+        69610,
+        69682
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1549,7 +1549,7 @@
       "founder_shares": 0,
       "share_price": 44299,
       "market_cap": 44299,
-      "employees": 7,
+      "employees": 6,
       "level": 1,
       "buildings": {
         "Timber Camp": {
@@ -1684,11 +1684,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 260,
-      "change_percent": 1.270503093450645,
-      "recorded_at": "2026-08-28T12:17:37.733Z"
-    },
     {
       "price": 261,
       "change_percent": 0.6132057230249672,
@@ -2183,6 +2178,11 @@
       "price": 228,
       "change_percent": -1.0031482927347204,
       "recorded_at": "2026-08-28T19:57:37.949Z"
+    },
+    {
+      "price": 228,
+      "change_percent": 0.3767535350756017,
+      "recorded_at": "2026-08-28T20:02:37.947Z"
     }
   ],
   "factory_names": [
@@ -2203,11 +2203,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7731944129513594,
+  "inflation": 0.4386494940914013,
   "money_printed": 0,
   "total_bank_reserves": 117324,
   "inflation_history": [
-    0.4631698045255585,
     0.6660763392461884,
     0.6618231641334863,
     0.7106970523075858,
@@ -2306,7 +2305,8 @@
     0.6394200261795734,
     0.47198249067626885,
     0.778485722455911,
-    0.7731944129513594
+    0.7731944129513594,
+    0.4386494940914013
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2337,23 +2337,23 @@
     "Bread": 1.3809254715345218,
     "Copper Ingot": 1.388617107951842,
     "Iron Ingot": 1.3906602392873062,
-    "Steel Ingot": 1.4109739581598002,
+    "Steel Ingot": 1.4082304686198501,
     "Gold Bar": 1.382661442297759,
     "Aluminium Ingot": 1.4122724632897738,
     "Timber Planks": 1.3802501944498755,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4120099255926,
     "Glass": 1.4120099255926,
-    "Steel Beam": 1.4157474060175377,
+    "Steel Beam": 1.4144876135361346,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.3062976157582664,
+    "Refined Fuel": 1.3079195415612346,
     "Uranium Rod": 1.4119424899064081,
     "Reactor Core": 1.4120099255926,
-    "Circuit Board": 1.425206745834958,
+    "Circuit Board": 1.4231902061681614,
     "Flour": 1.411516121606788,
     "Sugar": 1.4122796906592296,
-    "Wine": 1.4157677557446624,
-    "Canned Food": 1.016535835236034,
+    "Wine": 1.4145063352850895,
+    "Canned Food": 1.0135672541314371,
     "Canned Fish": 1.41,
     "Smoked Fish": 1.4115290826653417,
     "Fish Stew": 1.4123435275452147
