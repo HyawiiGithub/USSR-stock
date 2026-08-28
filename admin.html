@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOSPLAN ADMIN — USSR Economy</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+<style>
+:root{--red:#8a0f14;--paper:#e8dcc6;--ink:#111;--border:#111;--gold:#c9a227}
+*{box-sizing:border-box;margin:0;padding:0} body{min-height:100vh;background:var(--paper);color:var(--ink);font-family:'IBM Plex Mono',monospace;padding:20px}
+.card{background:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;padding:16px;margin:12px 0;max-width:900px;margin-left:auto;margin-right:auto}
+h1{font:900 22px 'Playfair Display',serif;text-transform:uppercase}
+input,select,textarea{width:100%;padding:8px;border:2px solid #111;font-family:'IBM Plex Mono',monospace;font-size:12px;margin:4px 0}
+button{background:#111;color:#f5e6a3;border:2px solid #111;padding:8px 12px;font:700 11px 'IBM Plex Mono',monospace;cursor:pointer}
+button:hover{background:var(--red);color:#fff}
+.hidden{display:none!important}
+label{font:700 10px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="card" style="text-align:center"><h1>★ GOSPLAN ADMIN DASHBOARD ★</h1><p style="font-size:10px;color:#5a5242">Only accessible with password — manage USSR Economy live</p></div>
+
+<div id="login" class="card">
+  <h3>🔒 Administrator Login</h3>
+  <p style="font-size:11px;margin:6px 0">Enter admin password to manage recipes, items, rarities, buildings.<br><span style="color:#8a0f14">Default: <code>GOSPLAN2024</code> (change in admin.js)</span></p>
+  <input type="password" id="pw" placeholder="Password">
+  <button onclick="login()">UNLOCK</button>
+  <div id="loginMsg" style="font-size:11px;color:#8a0f14;margin-top:6px"></div>
+</div>
+
+<div id="dash" class="hidden">
+  <div class="card"><h3>📋 Quick Stats</h3><div id="stats" style="font-size:11px"></div></div>
+
+  <div class="grid2">
+    <div class="card"><h3>➕ Add Recipe</h3>
+      <label>Item name</label><input id="rName" placeholder="e.g. Canned Fish">
+      <label>Emoji</label><input id="rEmoji" placeholder="🐟">
+      <label>Value (₽)</label><input id="rValue" type="number" placeholder="62">
+      <label>Ingredients JSON e.g. {"Fish":2,"Iron Ore":2}</label><textarea id="rIng" rows="3" placeholder='{"Fish":2,"Iron Ore":2}'></textarea>
+      <button onclick="addRecipe()">ADD RECIPE</button>
+    </div>
+    <div class="card"><h3>➕ Add Item / Resource</h3>
+      <label>Item name</label><input id="iName" placeholder="e.g. Uranium Rod">
+      <label>Value</label><input id="iValue" type="number" placeholder="256">
+      <label>Food value (0 if not food)</label><input id="iFood" type="number" placeholder="0">
+      <label>Rarity weight (lower = rarer, 1-25)</label><input id="iWeight" type="number" placeholder="5">
+      <button onclick="addItem()">ADD ITEM</button>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><h3>🏗️ Add Building</h3>
+      <label>Name</label><input id="bName" placeholder="e.g. Cannery">
+      <label>Type (mine/factory/store)</label><select id="bType"><option value="mine">Mine</option><option value="factory">Factory</option><option value="store">Store</option></select>
+      <label>Cost</label><input id="bCost" type="number" placeholder="35000">
+      <label>Produces JSON e.g. ["Canned Fish"]</label><input id="bProd" placeholder='["Canned Fish"]'>
+      <label>Requires JSON (factory only) e.g. {"Fish":2}</label><input id="bReq" placeholder='{"Fish":2}'>
+      <label>Rate</label><input id="bRate" type="number" placeholder="2">
+      <button onclick="addBuilding()">ADD BUILDING</button>
+    </div>
+    <div class="card"><h3>⚙️ Rarities & World</h3>
+      <label>Set rarity weight for item</label><input id="wItem" placeholder="Gold">
+      <label>Weight</label><input id="wVal" type="number" placeholder="2">
+      <button onclick="setRarity()">SET RARITY</button>
+      <hr style="margin:10px 0">
+      <button onclick="exportData()">⬇️ EXPORT economy_data.json</button>
+      <button onclick="clearCache()">🗑️ Clear local draft</button>
+      <div id="out" style="font-size:10px;white-space:pre-wrap;margin-top:8px;max-height:200px;overflow:auto;background:#f5efe0;padding:6px;border:1px solid #111"></div>
+    </div>
+  </div>
+
+  <div class="card"><h3>📜 Current Recipes / Items (local draft)</h3><div id="list" style="font-size:11px;white-space:pre-wrap"></div></div>
+</div>
+
+<script>
+const PASS = "GOSPLAN2024";
+function login(){
+  const v=document.getElementById('pw').value;
+  if(v===PASS){ document.getElementById('login').classList.add('hidden'); document.getElementById('dash').classList.remove('hidden'); load(); }
+  else document.getElementById('loginMsg').textContent="❌ Wrong password";
+}
+let draft = JSON.parse(localStorage.getItem('gosplan_draft')||'{"recipes":{},"items":{},"buildings":{},"weights":{}}');
+function save(){ localStorage.setItem('gosplan_draft', JSON.stringify(draft)); load(); }
+function load(){
+  document.getElementById('stats').textContent = `Draft: ${Object.keys(draft.recipes).length} recipes, ${Object.keys(draft.items).length} items, ${Object.keys(draft.buildings).length} buildings`;
+  document.getElementById('list').textContent = JSON.stringify(draft,null,2);
+}
+function addRecipe(){
+  try{
+    const name=document.getElementById('rName').value.trim();
+    const emoji=document.getElementById('rEmoji').value.trim()||"📦";
+    const val=parseInt(document.getElementById('rValue').value);
+    const ing=JSON.parse(document.getElementById('rIng').value||"{}");
+    if(!name||isNaN(val)) throw "Name and value required";
+    draft.recipes[name]={ingredients:ing,value:val,emoji};
+    save(); document.getElementById('out').textContent="Added recipe "+name;
+  }catch(e){ document.getElementById('out').textContent="Error: "+e; }
+}
+function addItem(){
+  const name=document.getElementById('iName').value.trim();
+  const val=parseInt(document.getElementById('iValue').value);
+  const food=parseInt(document.getElementById('iFood').value||0);
+  const w=parseInt(document.getElementById('iWeight').value||10);
+  if(!name||isNaN(val)) return document.getElementById('out').textContent="Need name and value";
+  draft.items[name]={value:val, food, weight:w};
+  if(!isNaN(w)) draft.weights[name]=w;
+  save(); document.getElementById('out').textContent="Added item "+name;
+}
+function addBuilding(){
+  const name=document.getElementById('bName').value.trim();
+  const type=document.getElementById('bType').value;
+  const cost=parseInt(document.getElementById('bCost').value||25000);
+  const prod=JSON.parse(document.getElementById('bProd').value||"[]");
+  const req=document.getElementById('bReq').value.trim()?JSON.parse(document.getElementById('bReq').value):{};
+  const rate=parseInt(document.getElementById('bRate').value||2);
+  if(!name) return document.getElementById('out').textContent="Need name";
+  draft.buildings[name]={type,cost,produces:prod,requires:req,rate};
+  save(); document.getElementById('out').textContent="Added building "+name;
+}
+function setRarity(){
+  const item=document.getElementById('wItem').value.trim();
+  const w=parseInt(document.getElementById('wVal').value);
+  if(!item||isNaN(w)) return document.getElementById('out').textContent="Need item and weight";
+  draft.weights[item]=w;
+  save(); document.getElementById('out').textContent="Set rarity "+item+" -> "+w;
+}
+function exportData(){
+  const blob=new Blob([JSON.stringify(draft,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download='gosplan_draft.json'; a.click();
+}
+function clearCache(){ if(confirm('Clear draft?')){ draft={recipes:{},items:{},buildings:{},weights:{}}; save(); }}
+</script>
+</body>
+</html>

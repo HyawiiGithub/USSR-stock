@@ -324,19 +324,26 @@ function renderIRLMap(){
   let svg=`<svg viewBox="0 0 1000 600" style="width:100%;height:520px;display:block;background:#f5efe0;" xmlns="http://www.w3.org/2000/svg">`;
   // USSR outline approx (from Kola to Chukotka to Tajik to Baltics)
   svg+=`<path d="M 210 85 L 260 80 L 320 95 L 420 90 L 520 85 L 620 90 L 750 100 L 880 140 L 940 180 L 920 280 L 880 340 L 760 420 L 620 480 L 480 520 L 380 480 L 320 400 L 260 340 L 210 260 L 190 180 L 200 120 Z" fill="#fff8e1" stroke="#111" stroke-width="3" stroke-linejoin="round"/>`;
-  // region tint
+  // region tint - IRL shapes (not circles)
   const regionColors={"Russian Federal Republic Region":"#e8dcc6","Western Soviet Region":"#d8e6d2","Baltic Soviet Region":"#d2e6f0","Caucasus Soviet Region":"#f0d8d8","Central Asian Soviet Region":"#f0e6d2","Nuristani Soviet Region":"#e6d2f0"};
-  // draw region halos (light)
-  for(const [reg,info] of Object.entries(regions)){
+  // draw IRL region shapes (irregular polygons, not circles) - approximates actual USSR geography
+  const regionPolys={
+    "Baltic Soviet Region": [[240,120],[280,115],[285,145],[285,205],[245,210],[230,170]],
+    "Western Soviet Region": [[230,190],[310,180],[320,240],[310,310],[270,320],[220,290]],
+    "Russian Federal Republic Region": [[300,80],[620,75],[680,110],[700,170],[650,240],[520,280],[400,250],[320,180],[280,120]],
+    "Caucasus Soviet Region": [[380,320],[460,315],[480,360],[440,390],[380,380]],
+    "Central Asian Soviet Region": [[420,260],[620,260],[650,380],[580,440],[480,430],[420,360]],
+    "Nuristani Soviet Region": [[530,380],[570,370],[580,420],[540,440]]
+  };
+  for(const [reg, poly] of Object.entries(regionPolys)){
     const c=regionColors[reg]||"#fff";
-    // find centroid of its SSRs
-    const members=Object.entries(ssrInfo).filter(([,v])=> data.work_zones[reg]===v.work_zone).map(([k])=>k);
-    if(!members.length) continue;
-    let sx=0,sy=0,cnt=0; members.forEach(m=>{ if(pts[m]){sx+=pts[m][0];sy+=pts[m][1];cnt++;}});
-    if(!cnt) continue;
-    const cx=sx/cnt, cy=sy/cnt;
-    svg+=`<circle cx="${cx}" cy="${cy}" r="70" fill="${c}" opacity="0.35" stroke="#111" stroke-dasharray="6 4" stroke-width="1.2"/>`;
-    svg+=`<text x="${cx}" y="${cy-78}" text-anchor="middle" font-family="IBM Plex Mono" font-size="9" font-weight="700" fill="#111" opacity="0.9">${reg.replace(' Soviet Region','').replace(' Region','').toUpperCase()}</text>`;
+    const ptsStr=poly.map(p=>p.join(",")).join(" ");
+    const info=regions[reg];
+    const ok = info ? info.foodStock >= info.foodDemand : true;
+    svg+=`<polygon points="${ptsStr}" fill="${c}" opacity="0.28" stroke="${ok?'#111':'#8a0f14'}" stroke-width="2.2" stroke-linejoin="round"/>`;
+    // label at centroid
+    let cx=0,cy=0; poly.forEach(p=>{cx+=p[0];cy+=p[1];}); cx/=poly.length; cy/=poly.length;
+    svg+=`<text x="${cx}" y="${cy}" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" font-weight="700" fill="#111" opacity="0.95" style="paint-order:stroke;stroke:#fff;stroke-width:3px">${reg.replace(' Soviet Region','').replace(' Region','').toUpperCase()}</text>`;
   }
   // SSR dots
   for(const [name,info] of Object.entries(ssrInfo)){
