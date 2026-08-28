@@ -111,8 +111,8 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 195,
-      "bank": 19425,
+      "cash": 0,
+      "bank": 19620,
       "resources": {
         "Natural Gas": 4,
         "Oil": 2,
@@ -1427,14 +1427,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 11737,
+      "funds": 11997,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 70871,
-      "market_cap": 70871,
+      "share_price": 70827,
+      "market_cap": 70827,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1453,13 +1453,12 @@
         "Bread": 5,
         "Cake": 4,
         "Uranium": 19,
-        "Coal": 104,
+        "Coal": 100,
         "Canned Food": 104,
         "Gold Bar": 4,
         "Iron Ore": 13,
         "Fish": 25,
-        "Copper Ingot": 1,
-        "Copper": 8,
+        "Copper": 2,
         "Gold": 1,
         "Wheat": 1,
         "Steel Ingot": 1,
@@ -1468,8 +1467,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-26T17:03:07.528Z",
       "price_history": [
-        68790,
-        68899,
         68814,
         68839,
         68855,
@@ -1567,11 +1564,13 @@
         70976,
         71024,
         71000,
-        70871
+        70871,
+        70711,
+        70827
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-08-28T21:46:26.353Z",
+      "last_factorydeal": "2026-08-28T23:17:22.866Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": []
@@ -2331,15 +2330,15 @@
   "factory_names": [
     "Red Star Steelworks",
     "Khrushchev Agricultural",
-    "Brezhnev Auto Factory",
-    "Siberian Mining Co",
-    "Volga Shipbuilding"
+    "Siberian Mining Co"
   ],
   "used_factory_names": [
     "Lenin Machine Works",
     "Soviet Iron Foundry",
     "Ural Heavy Industries",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Volga Shipbuilding",
+    "Brezhnev Auto Factory"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2476,11 +2475,11 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3959161478575637,
-    "Cake": 1.3833375567594866,
+    "Cake": 1.3933375567594866,
     "Bread": 1.3809254715345218,
-    "Copper Ingot": 1.3836592590235028,
+    "Copper Ingot": 1.316159259023503,
     "Iron Ingot": 1.3919140983843985,
-    "Steel Ingot": 1.4001037613619207,
+    "Steel Ingot": 1.4101037613619207,
     "Gold Bar": 1.3777675087525878,
     "Aluminium Ingot": 1.4124246179473645,
     "Timber Planks": 1.3821346951822506,
@@ -2492,10 +2491,10 @@
     "Refined Fuel": 1.3486423187091863,
     "Uranium Rod": 1.4038368911975774,
     "Reactor Core": 1.4120099255926,
-    "Circuit Board": 1.4122177618381622,
+    "Circuit Board": 1.4222177618381622,
     "Flour": 1.411516121606788,
     "Sugar": 1.4122796906592296,
-    "Wine": 1.4122781621852998,
+    "Wine": 1.4222781621852998,
     "Canned Food": 0.9795586203139407,
     "Canned Fish": 1.41212710002688,
     "Smoked Fish": 1.4115290826653417,
@@ -2505,14 +2504,16 @@
     "Fuel": "2026-08-27T21:04:12.967Z",
     "Cake": "2026-08-26T18:56:20.225Z",
     "Bread": "2026-08-26T18:22:54.423Z",
-    "Copper Ingot": "2026-08-28T20:38:25.297Z",
+    "Copper Ingot": "2026-08-28T23:17:22.866Z",
     "Steel Ingot": "2026-08-27T13:12:57.292Z",
     "Refined Fuel": "2026-08-28T21:46:26.353Z",
     "Timber Planks": "2026-08-28T09:13:24.433Z",
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {},
+  "ai_store": {
+    "Copper Ingot": 3
+  },
   "global_consumption": {
     "Copper Ingot": 33,
     "Steel Ingot": 5,
