@@ -979,15 +979,15 @@
       "ceo_of": null
     },
     "1511756975392948224": {
-      "cash": 120,
+      "cash": 135,
       "bank": 2960,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-28T14:16:07.937Z",
-      "work_count": 8,
+      "last_work": "2026-08-28T14:28:23.856Z",
+      "work_count": 9,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1306,7 +1306,7 @@
         "Coal": 73,
         "Canned Food": 65,
         "Gold Bar": 4,
-        "Wheat": 17,
+        "Wheat": 20,
         "Copper Ingot": 1,
         "Iron Ore": 4,
         "Refined Fuel": 1
@@ -1638,11 +1638,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 249,
-      "change_percent": 0.8150822590243405,
-      "recorded_at": "2026-08-28T06:47:37.582Z"
-    },
     {
       "price": 248,
       "change_percent": -0.38876261405281565,
@@ -2137,6 +2132,11 @@
       "price": 283,
       "change_percent": 0.26262339468453727,
       "recorded_at": "2026-08-28T14:22:37.798Z"
+    },
+    {
+      "price": 280,
+      "change_percent": -0.9851729549534591,
+      "recorded_at": "2026-08-28T14:27:37.798Z"
     }
   ],
   "factory_names": [
@@ -2324,10 +2324,10 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Copper Ingot": 2
+    "Copper Ingot": 1
   },
   "global_consumption": {
-    "Copper Ingot": 25,
+    "Copper Ingot": 26,
     "Steel Ingot": 5,
     "Timber Planks": 52,
     "Refined Fuel": 21,
@@ -2739,6 +2739,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-28T14:12:37.559Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-28T14:27:37.561Z"
     }
   ],
   "demand_history": {
@@ -2831,6 +2836,11 @@
       {
         "demand": 1.3272540205071692,
         "at": "2026-08-28T14:12:37.559Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3288013817776156,
+        "at": "2026-08-28T14:27:37.561Z",
         "supply": 1
       }
     ],
