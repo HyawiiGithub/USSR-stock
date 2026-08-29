@@ -1881,11 +1881,6 @@
   },
   "gsi_history": [
     {
-      "price": 209,
-      "change_percent": 0.47752124920535366,
-      "recorded_at": "2026-08-29T04:50:08.342Z"
-    },
-    {
       "price": 210,
       "change_percent": 0.6738052872717418,
       "recorded_at": "2026-08-29T04:55:08.344Z"
@@ -2379,6 +2374,11 @@
       "price": 190,
       "change_percent": 0.28665759154789283,
       "recorded_at": "2026-08-29T12:35:08.463Z"
+    },
+    {
+      "price": 191,
+      "change_percent": 0.6340770411547367,
+      "recorded_at": "2026-08-29T12:40:08.467Z"
     }
   ],
   "factory_names": [
@@ -2399,11 +2399,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.8463082782780293,
+  "inflation": 0.5699500412303653,
   "money_printed": 0,
   "total_bank_reserves": 152300,
   "inflation_history": [
-    0.6412286838018091,
     0.6121848048680776,
     0.46563345211896223,
     0.763455724361851,
@@ -2502,7 +2501,8 @@
     0.6661756128502541,
     0.553863959178352,
     0.44671581189989146,
-    0.8463082782780293
+    0.8463082782780293,
+    0.5699500412303653
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2566,12 +2566,12 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 3
+    "Timber Planks": 2
   },
   "global_consumption": {
     "Copper Ingot": 36,
     "Steel Ingot": 7,
-    "Timber Planks": 69,
+    "Timber Planks": 70,
     "Refined Fuel": 29,
     "Fuel": 2,
     "Iron Ingot": 6
@@ -3136,6 +3136,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-29T12:25:08.356Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-08-29T12:40:08.360Z"
     }
   ],
   "demand_history": {
@@ -3547,6 +3552,11 @@
       {
         "demand": 1.2959674657696203,
         "at": "2026-08-29T12:25:08.356Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3261288692710298,
+        "at": "2026-08-29T12:40:08.360Z",
         "supply": 1
       }
     ],
