@@ -1836,11 +1836,6 @@
   "gsi_history": [
     {
       "price": 231,
-      "change_percent": -0.5899528213664776,
-      "recorded_at": "2026-08-28T18:57:37.920Z"
-    },
-    {
-      "price": 231,
       "change_percent": 0.30998536074667044,
       "recorded_at": "2026-08-28T19:02:37.919Z"
     },
@@ -2333,6 +2328,11 @@
       "price": 208,
       "change_percent": 1.4724975827454216,
       "recorded_at": "2026-08-29T04:05:08.335Z"
+    },
+    {
+      "price": 210,
+      "change_percent": 1.3651422673618498,
+      "recorded_at": "2026-08-29T04:10:08.333Z"
     }
   ],
   "factory_names": [
@@ -2353,11 +2353,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.5810290274533537,
+  "inflation": 0.6554147497761957,
   "money_printed": 0,
   "total_bank_reserves": 151455,
   "inflation_history": [
-    0.5051393657211003,
     0.4513798693904675,
     0.5098615784728764,
     0.5099560992089978,
@@ -2456,7 +2455,8 @@
     0.6046549170478513,
     0.6441644951012602,
     0.4109449328075372,
-    0.5810290274533537
+    0.5810290274533537,
+    0.6554147497761957
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2520,12 +2520,12 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 3
+    "Timber Planks": 1
   },
   "global_consumption": {
     "Copper Ingot": 36,
     "Steel Ingot": 7,
-    "Timber Planks": 59,
+    "Timber Planks": 61,
     "Refined Fuel": 29,
     "Fuel": 2,
     "Iron Ingot": 1
@@ -3040,6 +3040,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-08-29T03:55:08.311Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-08-29T04:10:08.312Z"
     }
   ],
   "demand_history": {
@@ -3421,6 +3426,11 @@
       {
         "demand": 1.3373742835013893,
         "at": "2026-08-29T03:55:08.311Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.355313575010072,
+        "at": "2026-08-29T04:10:08.312Z",
         "supply": 5
       }
     ],
