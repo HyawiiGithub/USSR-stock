@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 227,
+      "cash": 242,
       "bank": 12351,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-29T13:05:17.646Z",
-      "work_count": 283,
+      "last_work": "2026-08-29T13:10:25.492Z",
+      "work_count": 284,
       "last_claim": "2026-08-29T10:24:16.745Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1442,8 +1442,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 65658,
-      "market_cap": 65658,
+      "share_price": 65806,
+      "market_cap": 65806,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1460,7 +1460,7 @@
       },
       "inventory": {
         "Uranium": 20,
-        "Coal": 98,
+        "Coal": 99,
         "Gold Bar": 4,
         "Copper": 2,
         "Gold": 1,
@@ -1471,7 +1471,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-28T23:51:11.761Z",
       "price_history": [
-        70169,
         70048,
         69968,
         70092,
@@ -1570,7 +1569,8 @@
         65749,
         65690,
         65741,
-        65658
+        65658,
+        65806
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1880,11 +1880,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 204,
-      "change_percent": -1.0463175615605698,
-      "recorded_at": "2026-08-29T05:20:08.349Z"
-    },
     {
       "price": 201,
       "change_percent": -1.3604467716457358,
@@ -2379,6 +2374,11 @@
       "price": 188,
       "change_percent": 0.27503870546566794,
       "recorded_at": "2026-08-29T13:05:08.468Z"
+    },
+    {
+      "price": 187,
+      "change_percent": -0.2621238227033452,
+      "recorded_at": "2026-08-29T13:10:08.467Z"
     }
   ],
   "factory_names": [
@@ -2399,11 +2399,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4234275671116132,
+  "inflation": 0.6246613130532415,
   "money_printed": 0,
   "total_bank_reserves": 152300,
   "inflation_history": [
-    0.763455724361851,
     0.6802340550954983,
     0.3667673459956421,
     0.6394200261795734,
@@ -2502,7 +2501,8 @@
     0.8463082782780293,
     0.5699500412303653,
     0.5747801237853565,
-    0.4234275671116132
+    0.4234275671116132,
+    0.6246613130532415
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2565,13 +2565,11 @@
     "Iron Ingot": "2026-08-29T10:48:36.916Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Timber Planks": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 36,
     "Steel Ingot": 7,
-    "Timber Planks": 71,
+    "Timber Planks": 72,
     "Refined Fuel": 29,
     "Fuel": 2,
     "Iron Ingot": 6
@@ -3146,6 +3144,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-08-29T12:55:08.360Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-08-29T13:10:08.376Z"
     }
   ],
   "demand_history": {
@@ -3567,6 +3570,11 @@
       {
         "demand": 1.3389882447099448,
         "at": "2026-08-29T12:55:08.360Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3598561049227258,
+        "at": "2026-08-29T13:10:08.376Z",
         "supply": 1
       }
     ],
