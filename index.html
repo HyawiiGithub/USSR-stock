@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7a0f0f">
+<title>USSR ECONOMY // GOSPLAN CENTRAL</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+<style>
+/* BRUTALIST SOVIET — NO AI GLOSS */
+:root{
+  --red:#8a0f14; --red-dark:#4a0608; --red-bg:#7a0f0f;
+  --paper:#e8dcc6; --paper2:#d8cab0; --ink:#111; --muted:#5a5242; --border:#111;
+  --gold:#c9a227; --font-mono:'IBM Plex Mono', monospace; --font-display:'Playfair Display', serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scrollbar-gutter:stable}
+body{min-height:100vh;color:var(--ink);background:var(--paper);font-family:var(--font-mono);line-height:1.45;font-size:13px;border-left:6px solid var(--red);border-right:6px solid var(--red)}
+@media(max-width:700px){body{border-left:3px solid var(--red);border-right:3px solid var(--red)}}
+a{color:var(--red);text-decoration:underline;text-underline-offset:2px}
+.mono{font-family:var(--font-mono)}
+.hidden{display:none!important}
+/* TOP BAR — thick stamp */
+.top-rule{height:32px;background:var(--red);color:#f5e6a3;display:flex;align-items:center;gap:12px;padding:0 12px;font:700 10px var(--font-mono);letter-spacing:.14em;text-transform:uppercase;border-bottom:3px solid #111;overflow:hidden;white-space:nowrap}
+.top-rule span{opacity:.95}
+.top-rule b{color:#fff;background:#111;padding:2px 6px}
+/* HEADER — constructivist, flat, no gradients */
+.hdr{background:var(--paper);border-bottom:4px solid #111;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:10px 14px}
+@media(max-width:900px){.hdr{grid-template-columns:1fr;gap:8px}}
+.stamp{width:52px;height:52px;background:var(--red);border:3px solid #111;display:grid;place-items:center;color:var(--paper);font:900 18px var(--font-display);line-height:1;transform:rotate(-1deg);box-shadow:3px 3px 0 #111}
+.stamp small{font:700 7px var(--font-mono);display:block;letter-spacing:.1em;color:#f5e6a3}
+.brand h1{font:900 30px var(--font-display);letter-spacing:-.02em;line-height:.9;text-transform:uppercase}
+.brand h1 i{font-style:normal;background:var(--red);color:#fff;padding:0 6px}
+.brand p{font:600 10px var(--font-mono);color:var(--muted);margin-top:3px;letter-spacing:.06em;text-transform:uppercase}
+.nav{display:flex;flex-wrap:wrap;gap:6px}
+.nav button{appearance:none;background:#fff;border:2px solid #111;padding:7px 10px;font:700 10px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;box-shadow:2px 2px 0 #111}
+.nav button:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #111}
+.nav button.active{background:var(--red);color:#fff;border-color:#111}
+.nav a{border:2px solid #111;padding:7px 10px;font:700 10px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;background:#fff;color:#111;text-decoration:none;box-shadow:2px 2px 0 #111}
+.clock{border:2px solid #111;background:#111;color:#f5e6a3;padding:8px 10px;min-width:160px;text-align:right}
+.clock .t{font:700 14px var(--font-mono)}
+.clock .s{font:600 9px var(--font-mono);letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+.live{width:8px;height:8px;background:#3fa35a;border:1px solid #fff;display:inline-block;vertical-align:middle;margin-right:4px}
+.page{max-width:1280px;margin:0 auto;padding:14px 12px 30px}
+.kicker{font:700 10px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red);border-left:4px solid var(--red);padding-left:8px;margin-bottom:8px}
+h2{font:900 22px var(--font-display);text-transform:uppercase;line-height:1}
+.card{background:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;margin-bottom:12px}
+.card-h{padding:8px 10px;background:var(--red-bg);color:#f5e6a3;border-bottom:3px solid #111;display:flex;align-items:center;justify-content:space-between;gap:10px;font:700 11px var(--font-mono);letter-spacing:.06em;text-transform:uppercase}
+.card-h small{font:600 9px var(--font-mono);opacity:.9;letter-spacing:.04em;text-transform:none}
+.card-b{padding:10px;background:var(--paper)}
+.grid{display:grid;gap:10px}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:1000px){.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3,.grid-2{grid-template-columns:1fr}}
+@media(max-width:600px){.grid-4{grid-template-columns:1fr}}
+.stat{background:#fff;border:2px solid #111;padding:10px;box-shadow:3px 3px 0 #111}
+.stat b{display:block;font:700 8px var(--font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid #111;padding-bottom:4px;margin-bottom:6px}
+.stat strong{display:block;font:800 20px var(--font-mono);line-height:1;letter-spacing:-.02em}
+.stat span{font:600 10px var(--font-mono);color:var(--muted)}
+.badge{display:inline-block;padding:2px 6px;border:2px solid #111;font:700 9px var(--font-mono);letter-spacing:.06em;text-transform:uppercase}
+.b-good{background:#b6e2b6;border-color:#111;color:#111}
+.b-bad{background:#f0b0b0;border-color:#111;color:#111}
+.b-warn{background:#f5e6a3;border-color:#111;color:#111}
+.chart-wrap{height:240px;position:relative;background:#fff;border:2px solid #111;padding:6px}
+.chart-wrap.tall{height:300px}
+.mini{height:170px}
+.table-wrap{overflow:auto;border:2px solid #111;background:#fff}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;padding:8px 8px;background:#111;color:#f5e6a3;font:700 9px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;border-right:1px solid #333}
+td{padding:7px 8px;border-top:1px solid #111;border-right:1px solid #ddd;white-space:nowrap;font:500 12px var(--font-mono)}
+tbody tr:nth-child(even) td{background:var(--paper2)}
+.bar{height:10px;background:#fff;border:1px solid #111;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--red)}
+.gold-bar{height:22px;background:#fff;border:2px solid #111;display:flex;align-items:center;position:relative;overflow:hidden}
+.gold-bar i{display:block;height:100%;background:repeating-linear-gradient(90deg, var(--red) 0 8px, #a51a1a 8px 16px)}
+.gold-bar span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:800 11px var(--font-mono);background:#111;color:#f5e6a3;padding:1px 6px;border:1px solid #fff}
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:900px){.region-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.region-grid{grid-template-columns:1fr}}
+.region{background:#fff;border:2px solid #111;padding:10px;box-shadow:3px 3px 0 #111;border-left:6px solid var(--red)}
+.region.bad{border-left-color:#111;background:#f0b0b0}
+.region h4{font:800 12px var(--font-mono);text-transform:uppercase}
+.region .meta{font:600 10px var(--font-mono);color:var(--muted);margin-top:2px}
+.progress{height:10px;background:#fff;border:1px solid #111;margin-top:6px}
+.progress i{display:block;height:100%;background:var(--red)}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.tabs button{background:#fff;border:2px solid #111;padding:5px 8px;font:700 9px var(--font-mono);text-transform:uppercase;cursor:pointer;box-shadow:2px 2px 0 #111}
+.tabs button.active{background:#111;color:#f5e6a3}
+.skeleton{height:12px;background:repeating-linear-gradient(90deg,#ddd 0 12px,#ccc 12px 24px)}
+.notice{border:2px dashed #111;padding:8px;background:#fff;font:600 11px var(--font-mono)}
+</style>
+</head>
+<body>
+<div class="top-rule"><b>ГОСПЛАН // GOSPLAN</b> <span>★ STATE PLANNING COMMITTEE ★ CENTRAL DIRECTIVE ★ FIVE-YEAR PLAN ★</span> <span style="margin-left:auto" id="topGen">LOADING...</span></div>
+<header class="hdr">
+  <div style="display:flex;gap:10px;align-items:center">
+    <div class="stamp">★<small>CCCP</small></div>
+    <div class="brand"><h1><i>USSR</i> ECONOMY</h1><p>Official record — Red Star Exchange // Discord bot sync</p></div>
+  </div>
+  <nav class="nav" id="nav">
+    <button class="active" data-view="overview">OVERVIEW</button>
+    <button data-view="markets">MARKETS</button>
+    <button data-view="companies">ENTERPRISES</button>
+    <button data-view="world">MAP</button>
+    <button data-view="production">PRODUCTION</button>
+    <a href="./admin.html" style="background:var(--red);color:#fff">★ GOSPLAN ADMIN →</a>
+    <a href="./index-legacy.html">LEGACY →</a>
+  </nav>
+  <div class="clock"><div class="t mono" id="clock">--:-- MSK</div><div class="s"><span class="live"></span><span id="genAt">CONNECTING...</span></div></div>
+</header>
+
+<div class="page">
+  <div class="notice" id="connNotice">CONNECTING TO GOSPLAN DATABASE... (offline fallback active if no backend)</div>
+  <div class="grid grid-4" id="stats" style="margin-top:10px">
+    <div class="stat"><b>LOADING</b><strong>—</strong></div><div class="stat"><b>LOADING</b><strong>—</strong></div><div class="stat"><b>LOADING</b><strong>—</strong></div><div class="stat"><b>LOADING</b><strong>—</strong></div>
+  </div>
+
+  <div id="view-overview">
+    <div class="grid grid-2" style="margin-top:10px">
+      <div class="card"><div class="card-h"><span>GSI — STATE INDEX (100 PTS)</span><small id="gsiChange">—</small></div><div class="card-b"><div class="chart-wrap"><canvas id="chartGSI"></canvas></div></div></div>
+      <div class="card"><div class="card-h"><span>INFLATION & MONEY (100 PTS)</span><small id="inflLabel">—</small></div><div class="card-b"><div class="chart-wrap"><canvas id="chartInfl"></canvas></div></div></div>
+    </div>
+    <div class="grid grid-3" style="margin-top:10px">
+      <div class="card"><div class="card-h"><span>GOLD STANDARD</span><small id="goldStatus">—</small></div><div class="card-b" style="display:grid;gap:10px">
+        <div class="gold-bar" id="goldBar" style="--pct:0%"><i id="goldFill" style="width:0%"></i><span id="goldPct">—</span></div>
+        <div class="mono" style="font-size:11px" id="goldMeta">—</div>
+        <div class="grid grid-2"><div class="stat"><b>PRICE / UNIT</b><strong id="goldPrice">—</strong><span>inflated</span></div><div class="stat"><b>STOCK</b><strong id="goldStock">—</strong><span>units</span></div></div>
+      </div></div>
+      <div class="card"><div class="card-h"><span>AI STORE — DISTRIBUTION</span><small id="aiCount">—</small></div><div class="card-b"><div class="chart-wrap mini"><canvas id="chartAI"></canvas></div><div id="aiList" class="mono" style="font-size:10px;margin-top:6px;word-break:break-word">—</div></div></div>
+      <div class="card"><div class="card-h"><span>GLOBAL CONSUMPTION — TOP 10</span><small>STATE PULL</small></div><div class="card-b"><div class="chart-wrap mini"><canvas id="chartCons"></canvas></div></div></div>
+    </div>
+    <div class="card"><div class="card-h"><span>SUPPLY × DEMAND — 60-150% (BALANCED)</span><small id="prodCount">—</small></div><div class="card-b"><div class="tabs" id="demandTabs"></div><div id="demandTable"></div></div></div>
+  </div>
+
+  <div id="view-markets" class="hidden">
+    <div class="card"><div class="card-h"><span>DEMAND HISTORY — 60 PTS</span><small id="dmLabel">—</small></div><div class="card-b"><div class="tabs" id="dmTabs"></div><div class="chart-wrap tall"><canvas id="chartDM"></canvas></div></div></div>
+    <div class="grid grid-2" style="margin-top:10px"><div class="card"><div class="card-h"><span>GSI FULL</span></div><div class="card-b"><div class="chart-wrap"><canvas id="chartGSIFull"></canvas></div></div></div><div class="card"><div class="card-h"><span>INFLATION FULL</span></div><div class="card-b"><div class="chart-wrap"><canvas id="chartInflFull"></canvas></div></div></div></div>
+  </div>
+
+  <div id="view-companies" class="hidden">
+    <div class="grid grid-4" id="compStats"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin-top:10px" id="compGrid"></div>
+    <div class="card" style="margin-top:10px"><div class="card-h"><span>MARKET CAP RANKING</span></div><div class="card-b"><div class="chart-wrap"><canvas id="chartComps"></canvas></div></div></div>
+  </div>
+
+  <div id="view-world" class="hidden">
+    <div class="grid grid-3" id="regionStats"></div>
+    <div class="region-grid" id="regionGrid" style="margin-top:10px"></div>
+    <div class="card" style="margin-top:10px"><div class="card-h"><span>SSR CENSUS — 15 REPUBLICS</span></div><div class="card-b"><div class="table-wrap"><table><thead><tr><th>SSR</th><th>REGION</th><th>POP</th><th>RESOURCES</th><th>CORPS</th></tr></thead><tbody id="ssrTable"></tbody></table></div></div></div>
+  </div>
+
+  <div id="view-production" class="hidden">
+    <div class="grid grid-2"><div class="card"><div class="card-h"><span>FOOD SECURITY — STOCK VS DEMAND</span></div><div class="card-b" id="foodPanel"></div></div><div class="card"><div class="card-h"><span>CRAFTING — VALUE VS INGREDIENTS</span></div><div class="card-b"><div class="table-wrap"><table><thead><tr><th>ITEM</th><th>INGREDIENTS</th><th>VAL</th><th>MARGIN</th></tr></thead><tbody id="craftTable"></tbody></table></div></div></div></div>
+    <div class="card" style="margin-top:10px"><div class="card-h"><span>BUILDINGS — MINES / FACTORIES</span></div><div class="card-b"><div class="grid grid-3" id="buildGrid"></div></div></div>
+  </div>
+
+  <div style="margin-top:12px;border:2px solid #111;background:#fff;padding:8px;font:700 9px var(--font-mono);text-align:center;letter-spacing:.06em">GOSPLAN CENTRAL — STAMP № 001 // ECONOMY_DATA.JSON LIVE // <span id="footGen">—</span> // <a href="https://github.com/HyawiiGithub/USSR-stock">USSR-STOCK</a></div>
+</div>
+
+<script src="./ussr.js?v=3.0.0"></script>
+</body>
+</html>
