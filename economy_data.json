@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 362,
+      "cash": 377,
       "bank": 12351,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-29T14:47:02.161Z",
-      "work_count": 292,
+      "last_work": "2026-08-29T14:53:00.559Z",
+      "work_count": 293,
       "last_claim": "2026-08-29T10:24:16.745Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1437,14 +1437,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 12664,
+      "funds": 13139,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 66300,
-      "market_cap": 66300,
+      "share_price": 66362,
+      "market_cap": 66362,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1466,18 +1466,11 @@
         "Copper": 3,
         "Gold": 1,
         "Wheat": 18,
-        "Cake": 1,
-        "Refined Fuel": 1,
-        "Oil": 3
+        "Cake": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-28T23:51:11.761Z",
       "price_history": [
-        69772,
-        69748,
-        69929,
-        69954,
-        69978,
         70171,
         70219,
         70227,
@@ -1572,11 +1565,16 @@
         65848,
         65995,
         65909,
-        66300
+        66300,
+        66400,
+        66271,
+        66142,
+        66142,
+        66362
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-08-29T10:48:36.916Z",
+      "last_factorydeal": "2026-08-29T14:53:38.766Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": []
@@ -2384,8 +2382,6 @@
     }
   ],
   "factory_names": [
-    "Red Star Steelworks",
-    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Volga Shipbuilding"
   ],
@@ -2394,7 +2390,9 @@
     "Brezhnev Auto Factory",
     "Soviet Iron Foundry",
     "Ural Heavy Industries",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Stalin Tractor Plant",
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2534,7 +2532,7 @@
     "Cake": 1.3959466086812131,
     "Bread": 1.3954735249832897,
     "Copper Ingot": 1.3956236902288626,
-    "Iron Ingot": 1.3912691435836824,
+    "Iron Ingot": 1.4012691435836824,
     "Steel Ingot": 1.4045535377302736,
     "Gold Bar": 1.3777675087525878,
     "Aluminium Ingot": 1.4119985759179614,
@@ -2544,7 +2542,7 @@
     "Glass": 1.4120099255926,
     "Steel Beam": 1.4115058320385325,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.3962491529949885,
+    "Refined Fuel": 1.3512491529949886,
     "Uranium Rod": 1.4038368911975774,
     "Reactor Core": 1.4122781621852998,
     "Circuit Board": 1.4123941029285003,
@@ -2562,12 +2560,14 @@
     "Bread": "2026-08-26T18:22:54.423Z",
     "Copper Ingot": "2026-08-28T23:17:22.866Z",
     "Steel Ingot": "2026-08-29T00:01:25.751Z",
-    "Refined Fuel": "2026-08-28T21:46:26.353Z",
+    "Refined Fuel": "2026-08-29T14:53:38.766Z",
     "Timber Planks": "2026-08-29T10:31:41.332Z",
     "Iron Ingot": "2026-08-29T10:48:36.916Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {},
+  "ai_store": {
+    "Refined Fuel": 2
+  },
   "global_consumption": {
     "Copper Ingot": 36,
     "Steel Ingot": 7,
