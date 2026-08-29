@@ -1694,8 +1694,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 44361,
-      "market_cap": 44361,
+      "share_price": 44390,
+      "market_cap": 44390,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -1722,7 +1722,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-27T23:21:38.215Z",
       "price_history": [
-        42992,
         43055,
         43121,
         43148,
@@ -1821,7 +1820,8 @@
         44342,
         44381,
         44423,
-        44361
+        44361,
+        44390
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1833,11 +1833,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 262,
-      "change_percent": 0.30022983540389364,
-      "recorded_at": "2026-08-28T16:47:37.856Z"
-    },
     {
       "price": 263,
       "change_percent": 0.7104083682804367,
@@ -2332,6 +2327,11 @@
       "price": 201,
       "change_percent": -0.2440790002691057,
       "recorded_at": "2026-08-29T00:04:15.480Z"
+    },
+    {
+      "price": 201,
+      "change_percent": 0.3968038197795885,
+      "recorded_at": "2026-08-29T00:09:15.480Z"
     }
   ],
   "factory_names": [
@@ -2352,11 +2352,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.5732910651597363,
+  "inflation": 0.5375518792179019,
   "money_printed": 0,
   "total_bank_reserves": 151455,
   "inflation_history": [
-    0.5327064173816345,
     0.8037306518960119,
     0.5691682552630235,
     0.5382799728695516,
@@ -2455,7 +2454,8 @@
     0.4973179675026537,
     0.5253174448982127,
     0.7453454885740913,
-    0.5732910651597363
+    0.5732910651597363,
+    0.5375518792179019
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2482,28 +2482,28 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3959161478575637,
-    "Cake": 1.3903919613184312,
-    "Bread": 1.3856941036508914,
-    "Copper Ingot": 1.327580909187555,
-    "Iron Ingot": 1.4019140983843985,
+    "Cake": 1.3927939709888233,
+    "Bread": 1.3892705777381686,
+    "Copper Ingot": 1.3325900314843853,
+    "Iron Ingot": 1.4003544927072178,
     "Steel Ingot": 1.3552408121623392,
     "Gold Bar": 1.3777675087525878,
     "Aluminium Ingot": 1.4124246179473645,
-    "Timber Planks": 1.3921346951822506,
+    "Timber Planks": 1.3886956159812827,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4120099255926,
     "Glass": 1.4120099255926,
     "Steel Beam": 1.412418957370355,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.377297093438517,
+    "Refined Fuel": 1.3816202802942343,
     "Uranium Rod": 1.4038368911975774,
-    "Reactor Core": 1.4220099255926,
-    "Circuit Board": 1.4146433163143908,
-    "Flour": 1.421516121606788,
-    "Sugar": 1.4102594775686534,
-    "Wine": 1.4146831250671839,
-    "Canned Food": 1.0043533258614998,
-    "Canned Fish": 1.4055430595493377,
+    "Reactor Core": 1.420249131545192,
+    "Circuit Board": 1.4134718510092394,
+    "Flour": 1.419794831878245,
+    "Sugar": 1.4084008815253233,
+    "Wine": 1.4135084750618092,
+    "Canned Food": 1.0360050597925798,
+    "Canned Fish": 1.403715831001607,
     "Smoked Fish": 1.4115290826653417,
     "Fish Stew": 1.4123435275452147
   },
@@ -2518,12 +2518,10 @@
     "Iron Ingot": "2026-08-27T23:24:16.034Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Steel Ingot": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 36,
-    "Steel Ingot": 5,
+    "Steel Ingot": 7,
     "Timber Planks": 52,
     "Refined Fuel": 29,
     "Fuel": 2,
@@ -3009,6 +3007,11 @@
       "item": "Copper Ingot",
       "qty": 2,
       "at": "2026-08-28T23:39:15.440Z"
+    },
+    {
+      "item": "Steel Ingot",
+      "qty": 2,
+      "at": "2026-08-29T00:09:15.441Z"
     }
   ],
   "demand_history": {
@@ -3163,6 +3166,11 @@
       {
         "demand": 1.3387214647536536,
         "at": "2026-08-27T13:26:22.594Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3552408121623392,
+        "at": "2026-08-29T00:09:15.441Z",
         "supply": 0
       }
     ],
