@@ -137,7 +137,7 @@
     },
     "860203156222902332": {
       "username": "Google Giggles",
-      "cash": 931,
+      "cash": 946,
       "bank": 3140,
       "resources": {
         "Coal": 7,
@@ -155,8 +155,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-29T19:37:04.745Z",
-      "work_count": 54,
+      "last_work": "2026-08-29T19:42:52.457Z",
+      "work_count": 55,
       "last_claim": "2026-08-26T17:03:27.339Z",
       "last_collect": null,
       "join_date": "2026-08-22T09:21:45.528920",
@@ -1191,8 +1191,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 104686,
-      "market_cap": 104686,
+      "share_price": 105567,
+      "market_cap": 105567,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1219,7 +1219,7 @@
       },
       "inventory": {
         "Gold": 2,
-        "Uranium": 4,
+        "Uranium": 7,
         "Zinc": 39,
         "Coal": 2,
         "Copper": 2,
@@ -1304,7 +1304,8 @@
         102670,
         103090,
         104587,
-        104686
+        104686,
+        105567
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -1463,14 +1464,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 13139,
+      "funds": 13632,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 69379,
-      "market_cap": 69379,
+      "share_price": 69102,
+      "market_cap": 69102,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1494,14 +1495,11 @@
         "Wheat": 210,
         "Cake": 1,
         "Iron Ore": 9,
-        "Oil": 14
+        "Oil": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-28T23:51:11.761Z",
       "price_history": [
-        71093,
-        71109,
-        71076,
         70944,
         70960,
         70976,
@@ -1598,11 +1596,14 @@
         69140,
         69157,
         69314,
-        69379
+        69379,
+        68864,
+        68864,
+        69102
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-08-29T14:53:38.766Z",
+      "last_factorydeal": "2026-08-29T19:43:09.415Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": []
@@ -2410,10 +2411,7 @@
       "recorded_at": "2026-08-29T19:40:16.960Z"
     }
   ],
-  "factory_names": [
-    "Khrushchev Agricultural",
-    "Volga Shipbuilding"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Siberian Mining Co",
     "Brezhnev Auto Factory",
@@ -2421,7 +2419,9 @@
     "Ural Heavy Industries",
     "Lenin Machine Works",
     "Stalin Tractor Plant",
-    "Red Star Steelworks"
+    "Red Star Steelworks",
+    "Volga Shipbuilding",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2562,16 +2562,16 @@
     "Bread": 1.3954735249832897,
     "Copper Ingot": 1.3956236902288626,
     "Iron Ingot": 1.3998992261088143,
-    "Steel Ingot": 1.4045535377302736,
+    "Steel Ingot": 1.4145535377302736,
     "Gold Bar": 1.3777675087525878,
     "Aluminium Ingot": 1.4119985759179614,
     "Timber Planks": 1.3920104136840448,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4120099255926,
-    "Glass": 1.4120099255926,
+    "Glass": 1.4220099255926,
     "Steel Beam": 1.4115058320385325,
     "Machine Parts": 1.4124299893885452,
-    "Refined Fuel": 1.3955296736324545,
+    "Refined Fuel": 1.3505296736324546,
     "Uranium Rod": 1.4038368911975774,
     "Reactor Core": 1.4122781621852998,
     "Circuit Board": 1.4123941029285003,
@@ -2593,7 +2593,7 @@
     "Tea Pack": 1.4,
     "Citrus Juice": 1.4,
     "Antimony Alloy": 1.4,
-    "Molybdenum Rod": 1.4,
+    "Molybdenum Rod": 1.41,
     "Aluminium Sheet": 1.4
   },
   "market_last_sale": {
@@ -2602,12 +2602,14 @@
     "Bread": "2026-08-26T18:22:54.423Z",
     "Copper Ingot": "2026-08-28T23:17:22.866Z",
     "Steel Ingot": "2026-08-29T00:01:25.751Z",
-    "Refined Fuel": "2026-08-29T14:53:38.766Z",
+    "Refined Fuel": "2026-08-29T19:43:09.415Z",
     "Timber Planks": "2026-08-29T10:31:41.332Z",
     "Iron Ingot": "2026-08-29T10:48:36.916Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {},
+  "ai_store": {
+    "Refined Fuel": 2
+  },
   "global_consumption": {
     "Copper Ingot": 36,
     "Steel Ingot": 7,
