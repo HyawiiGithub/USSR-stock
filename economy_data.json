@@ -1835,11 +1835,6 @@
   },
   "gsi_history": [
     {
-      "price": 241,
-      "change_percent": -1.1124780763587905,
-      "recorded_at": "2026-08-28T18:37:37.908Z"
-    },
-    {
       "price": 228,
       "change_percent": -5.167217626471374,
       "recorded_at": "2026-08-28T18:42:37.642Z"
@@ -2333,6 +2328,11 @@
       "price": 207,
       "change_percent": 2.2172998818646072,
       "recorded_at": "2026-08-29T03:40:08.277Z"
+    },
+    {
+      "price": 204,
+      "change_percent": -1.3545565603716518,
+      "recorded_at": "2026-08-29T03:40:08.329Z"
     }
   ],
   "factory_names": [
@@ -2353,11 +2353,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6046549170478513,
+  "inflation": 0.6441644951012602,
   "money_printed": 0,
   "total_bank_reserves": 151455,
   "inflation_history": [
-    0.7222841040548084,
     0.7488522747926747,
     0.6825063506458997,
     0.5051393657211003,
@@ -2456,7 +2455,8 @@
     0.47226943761106693,
     0.4444382309012269,
     0.7055186726770399,
-    0.6046549170478513
+    0.6046549170478513,
+    0.6441644951012602
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2485,12 +2485,12 @@
     "Fuel": 1.3959161478575637,
     "Cake": 1.3959466086812131,
     "Bread": 1.3954735249832897,
-    "Copper Ingot": 1.3896265249869335,
+    "Copper Ingot": 1.3922198937402002,
     "Iron Ingot": 1.4003544927072178,
-    "Steel Ingot": 1.3930157931384262,
+    "Steel Ingot": 1.3947618448538197,
     "Gold Bar": 1.3777675087525878,
-    "Aluminium Ingot": 1.413597279245613,
-    "Timber Planks": 1.3065357441551553,
+    "Aluminium Ingot": 1.412509496905964,
+    "Timber Planks": 1.3237062518757263,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4120099255926,
     "Glass": 1.4120099255926,
@@ -2503,7 +2503,7 @@
     "Flour": 1.4120026953101374,
     "Sugar": 1.3989503591142245,
     "Wine": 1.4124277970568644,
-    "Canned Food": 1.2281356528022558,
+    "Canned Food": 1.2418848005780754,
     "Canned Fish": 1.3944248049055925,
     "Smoked Fish": 1.4115290826653417,
     "Fish Stew": 1.4123435275452147
@@ -2520,12 +2520,12 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 6
+    "Timber Planks": 4
   },
   "global_consumption": {
     "Copper Ingot": 36,
     "Steel Ingot": 7,
-    "Timber Planks": 56,
+    "Timber Planks": 58,
     "Refined Fuel": 29,
     "Fuel": 2,
     "Iron Ingot": 1
@@ -3030,6 +3030,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-08-29T03:25:08.304Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-08-29T03:40:08.313Z"
     }
   ],
   "demand_history": {
@@ -3401,6 +3406,11 @@
       {
         "demand": 1.2855982666409584,
         "at": "2026-08-29T03:25:08.304Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.3237062518757263,
+        "at": "2026-08-29T03:40:08.313Z",
         "supply": 5
       }
     ],
