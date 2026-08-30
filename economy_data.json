@@ -547,15 +547,15 @@
       "ceo_of": null
     },
     "1495413593242337421": {
-      "cash": 2353,
+      "cash": 2368,
       "bank": 28822,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T08:25:40.168Z",
-      "work_count": 120,
+      "last_work": "2026-08-30T08:30:49.070Z",
+      "work_count": 121,
       "last_claim": "2026-08-30T07:02:57.732Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -1634,14 +1634,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 738,
+      "funds": 965,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 174189,
-      "market_cap": 174189,
+      "share_price": 174390,
+      "market_cap": 174390,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1657,21 +1657,19 @@
         }
       },
       "inventory": {
-        "Timber": 90,
+        "Timber": 92,
         "Natural Gas": 49,
-        "Iron Ore": 61,
-        "Coal": 73,
+        "Iron Ore": 52,
+        "Coal": 67,
         "Uranium": 2,
         "Oil": 67,
         "Gold": 7,
-        "Wheat": 147,
-        "Iron Ingot": 1
+        "Wheat": 146,
+        "Iron Ingot": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T07:03:02.778Z",
       "price_history": [
-        168144,
-        168192,
         168280,
         168178,
         168282,
@@ -1769,11 +1767,13 @@
         174108,
         174126,
         174150,
-        174189
+        174189,
+        174273,
+        174390
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
-      "last_factorydeal": "2026-08-30T07:15:51.003Z",
+      "last_factorydeal": "2026-08-30T08:30:04.923Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [],
@@ -2436,8 +2436,7 @@
   ],
   "factory_names": [
     "Stalin Tractor Plant",
-    "Siberian Mining Co",
-    "Ural Heavy Industries"
+    "Siberian Mining Co"
   ],
   "used_factory_names": [
     "Red Star Steelworks",
@@ -2445,7 +2444,8 @@
     "Lenin Machine Works",
     "Khrushchev Agricultural",
     "Soviet Iron Foundry",
-    "Brezhnev Auto Factory"
+    "Brezhnev Auto Factory",
+    "Ural Heavy Industries"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2592,10 +2592,10 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3915479379615308,
-    "Cake": 1.4004029010389227,
+    "Cake": 1.4104029010389227,
     "Bread": 1.4041051437374672,
     "Copper Ingot": 1.3917369487873001,
-    "Iron Ingot": 1.3687676637806823,
+    "Iron Ingot": 1.3237676637806823,
     "Steel Ingot": 1.4046048302974694,
     "Gold Bar": 1.3789517636039055,
     "Aluminium Ingot": 1.4122718308078774,
@@ -2610,9 +2610,9 @@
     "Reactor Core": 1.4122781621852998,
     "Circuit Board": 1.4124924742064038,
     "Flour": 1.4119792697638105,
-    "Sugar": 1.4089503591142245,
-    "Wine": 1.4124277970568644,
-    "Canned Food": 1.4080767055854702,
+    "Sugar": 1.4189503591142245,
+    "Wine": 1.4224277970568644,
+    "Canned Food": 1.4180767055854702,
     "Canned Fish": 1.3831065326760505,
     "Smoked Fish": 1.4120099255926,
     "Fish Stew": 1.4115290826653417,
@@ -2626,7 +2626,7 @@
     "Corn Meal": 1.4,
     "Tea Pack": 1.4,
     "Citrus Juice": 1.41212710002688,
-    "Antimony Alloy": 1.41,
+    "Antimony Alloy": 1.42,
     "Molybdenum Rod": 1.41,
     "Aluminium Sheet": 1.41,
     "Shale Oil": 1.3951079928516001
@@ -2639,11 +2639,13 @@
     "Steel Ingot": "2026-08-29T00:01:25.751Z",
     "Refined Fuel": "2026-08-29T19:43:09.415Z",
     "Timber Planks": "2026-08-30T01:07:52.124Z",
-    "Iron Ingot": "2026-08-30T07:15:51.004Z",
+    "Iron Ingot": "2026-08-30T08:30:04.923Z",
     "Shale Oil": "2026-08-30T03:03:58.713Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {},
+  "ai_store": {
+    "Iron Ingot": 1
+  },
   "global_consumption": {
     "Copper Ingot": 39,
     "Steel Ingot": 7,
