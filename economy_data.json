@@ -763,15 +763,15 @@
       "ceo_of": null
     },
     "1494919466713350275": {
-      "cash": 15,
+      "cash": 30,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-26T20:51:22.196Z",
-      "work_count": 1,
+      "last_work": "2026-08-30T17:20:10.272Z",
+      "work_count": 2,
       "last_claim": null,
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -133568,12 +133568,12 @@
       "inventory": {
         "Phosphorite": 80,
         "Peat": 98,
-        "Fish": 161,
+        "Fish": 162,
         "Canned Fish": 7,
         "Iron Ore": 1,
         "Oil Shale": 4,
         "Timber": 5,
-        "Wheat": 82
+        "Wheat": 81
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
@@ -133690,11 +133690,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 42,
-      "change_percent": 0.4910956966662991,
-      "recorded_at": "2026-08-30T09:39:17.586Z"
-    },
     {
       "price": 41,
       "change_percent": -1.0745807756637253,
@@ -134189,6 +134184,11 @@
       "price": 1,
       "change_percent": -0.8633793997519179,
       "recorded_at": "2026-08-30T17:14:45.620Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -1.1345101852073654,
+      "recorded_at": "2026-08-30T17:19:45.567Z"
     }
   ],
   "factory_names": [
@@ -134209,11 +134209,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.10808210809471311,
+  "inflation": 0.08954407940127966,
   "money_printed": 223,
   "total_bank_reserves": 162618,
   "inflation_history": [
-    0.5360157309280124,
     0.5627387906730064,
     0.0711761239022455,
     0.060938112138207906,
@@ -134312,7 +134311,8 @@
     0.08876153163085054,
     0.10048400363573202,
     0.0805688566907977,
-    0.10808210809471311
+    0.10808210809471311,
+    0.08954407940127966
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134375,8 +134375,8 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.2860482404964033,
-    "Cake": 1.3562358527663703,
+    "Fuel": 1.2950531583326033,
+    "Cake": 1.3642937211705386,
     "Bread": 1.386949737850918,
     "Copper Ingot": 1.3957158754464212,
     "Iron Ingot": 1.3957664113097268,
@@ -134384,10 +134384,10 @@
     "Gold Bar": 1.3696987991185936,
     "Aluminium Ingot": 1.4122718308078774,
     "Timber Planks": 1.3954607873709333,
-    "Bricks": 1.4160067458349581,
-    "Concrete": 1.4159599185512868,
-    "Glass": 1.4160671159198464,
-    "Steel Beam": 1.415874521401623,
+    "Bricks": 1.4147262061681614,
+    "Concrete": 1.4146831250671839,
+    "Glass": 1.4147817466462587,
+    "Steel Beam": 1.4146045596894932,
     "Machine Parts": 1.4124085177189465,
     "Refined Fuel": 1.3950639202895203,
     "Uranium Rod": 1.403995465684028,
@@ -134396,13 +134396,13 @@
     "Flour": 1.412261060935401,
     "Sugar": 1.3788011942814602,
     "Wine": 1.411510368732482,
-    "Canned Food": 1.3582328733387972,
+    "Canned Food": 1.3566511665486165,
     "Canned Fish": 1.3828045657746038,
-    "Smoked Fish": 1.2112278986041052,
-    "Fish Stew": 1.4159599185512868,
+    "Smoked Fish": 1.224835061505507,
+    "Fish Stew": 1.4146831250671839,
     "Peat Fuel": 1.3960294424536,
-    "Gas Fuel": 1.4172301072657312,
-    "Fertilizer": 1.4173759796657255,
+    "Gas Fuel": 1.4158516986844727,
+    "Fertilizer": 1.4159859012924674,
     "Cotton Fabric": 1.41,
     "Manganese Alloy": 1.412074941385963,
     "Sunflower Oil": 1.4123435275452147,
@@ -136179,6 +136179,10 @@
     {
       "total": 236583,
       "at": "2026-08-30T17:14:46.436Z"
+    },
+    {
+      "total": 236628,
+      "at": "2026-08-30T17:19:45.733Z"
     }
   ],
   "gold_rush": {
