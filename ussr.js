@@ -114,7 +114,7 @@ function fallbackMock(){
   const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
   const status=backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT";
   const total_rubles = moneySupply - companies.reduce((s,c)=>s+c.funds,0) - total_bank_reserves; // citizens cash+bank mock
-  const total_rubles_history=[]; let curR=Math.max(10000, total_rubles); for(let i=0;i<100;i++){ curR=Math.max(1000, Math.floor(curR*(1+(Math.random()*0.04-0.02)))); total_rubles_history.push({total:curR, at:new Date(now-(100-i)*3600000).toISOString()}); } total_rubles_history[99].total = total_rubles;
+  const total_rubles_history=Array.from({length:100},(_,i)=>({total:Math.max(1000, total_rubles), at:new Date(now-(100-i)*3600000).toISOString()}));
   const census={}; Object.keys(SSR).forEach(k=> census[k]=Math.floor(Math.random()*14)+4);
   const regions={};
   for(const [reg,zone] of Object.entries(WZ)){
@@ -180,7 +180,7 @@ async function load(){
       const status=backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT";
       const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
       let total_rubles_history = Array.isArray(bot.total_rubles_history) && bot.total_rubles_history.length ? bot.total_rubles_history : null;
-      if(!total_rubles_history){ total_rubles_history=[]; let cur=Math.max(10000, total_rubles||200000); for(let i=0;i<100;i++){ cur=Math.max(1000, Math.floor(cur*(1+(Math.random()*0.04-0.02)))); total_rubles_history.push({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()}); } total_rubles_history[total_rubles_history.length-1].total = total_rubles; }
+      if(!total_rubles_history){ const cur=Math.max(1000, total_rubles||0); total_rubles_history=Array.from({length:100},(_,i)=>({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()})); }
       const total_citizens = Object.keys(bot.users||{}).length;
       const census={}; Object.keys(SSR).forEach(k=> census[k]=Math.floor(Math.random()*14)+4);
       const regions={}; for(const [reg,zone] of Object.entries(WZ)){ const ssrs=Object.entries(SSR).filter(([,v])=> v.work_zone===zone).map(([k])=>k); const pop=ssrs.reduce((s,k)=> s+(census[k]||0),0); const rc=companies.filter(c=> SSR[c.hq_ssr]?.work_zone===zone); const emp=rc.reduce((s,c)=> s+c.employees,0); let food=0; rc.forEach(c=>{ Object.entries(c.inventory||{}).forEach(([it,qty])=>{ const fv={Fish:2,Wheat:1,Corn:1,Sunflower:1,Grapes:1,Tea:1,Citrus:1,Flour:2,Sugar:1,Bread:3,Cake:3,Wine:2,"Canned Food":4,"Canned Fish":5,"Smoked Fish":4,"Fish Stew":5,"Sunflower Oil":1,"Corn Meal":2,"Tea Pack":1,"Citrus Juice":2}[it]; if(fv) food+= qty*fv; }); }); const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2)); regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)} }
@@ -545,7 +545,7 @@ async function refreshLoop(){
               let moneySupply=(bot.total_bank_reserves||900000)+(bot.money_printed||420000); for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
               const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
               const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
-              let total_rubles_history = bot.total_rubles_history; if(!Array.isArray(total_rubles_history)||!total_rubles_history.length){ total_rubles_history=[]; let cur=Math.max(10000,total_rubles||200000); for(let i=0;i<100;i++){ cur=Math.max(1000, Math.floor(cur*(1+(Math.random()*0.04-0.02)))); total_rubles_history.push({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()}); } total_rubles_history[total_rubles_history.length-1].total=total_rubles; }
+              let total_rubles_history = bot.total_rubles_history; if(!Array.isArray(total_rubles_history)||!total_rubles_history.length){ const cur=Math.max(1000,total_rubles||0); total_rubles_history=Array.from({length:100},(_,i)=>({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()})); }
               return {gsi_history:bot.gsi_history,inflation_history:bot.inflation_history,inflation,money_printed:bot.money_printed||420000,total_bank_reserves:bot.total_bank_reserves||900000,companies,market_demand:bot.market_demand||{},market_supply:{},demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status:backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT"},census:{},regions:{},ssr_regions:{},work_zones:{},resource_values:RV,crafting_recipes:{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github-refresh",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:[],total_rubles,total_rubles_history,total_citizens:Object.keys(bot.users||{}).length};
             }catch(e){ return null; }
           })(bot);
