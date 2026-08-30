@@ -1966,11 +1966,6 @@
   },
   "gsi_history": [
     {
-      "price": 63,
-      "change_percent": -1.2557155348165665,
-      "recorded_at": "2026-08-30T07:49:17.564Z"
-    },
-    {
       "price": 62,
       "change_percent": -0.03180767595304956,
       "recorded_at": "2026-08-30T07:54:17.567Z"
@@ -2464,6 +2459,11 @@
       "price": 13,
       "change_percent": -10.26000067452279,
       "recorded_at": "2026-08-30T15:14:17.531Z"
+    },
+    {
+      "price": 12,
+      "change_percent": -1.329646178378841,
+      "recorded_at": "2026-08-30T15:14:17.765Z"
     }
   ],
   "factory_names": [
@@ -2686,7 +2686,7 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Cake": 5
+    "Cake": 4
   },
   "global_consumption": {
     "Copper Ingot": 42,
@@ -2696,7 +2696,8 @@
     "Fuel": 3,
     "Iron Ingot": 12,
     "Shale Oil": 17,
-    "Peat Fuel": 10
+    "Peat Fuel": 10,
+    "Cake": 1
   },
   "consumption_history": [
     {
@@ -3493,6 +3494,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-30T14:29:17.536Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-08-30T15:14:17.548Z"
     }
   ],
   "demand_history": {
@@ -4279,6 +4285,13 @@
       {
         "demand": 1.3947059232714667,
         "at": "2026-08-30T13:59:17.535Z",
+        "supply": 0
+      }
+    ],
+    "Cake": [
+      {
+        "demand": 1.2837987546968832,
+        "at": "2026-08-30T15:14:17.548Z",
         "supply": 0
       }
     ]
