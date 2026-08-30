@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 120,
+      "cash": 135,
       "bank": 13867,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T12:52:48.077Z",
-      "work_count": 353,
+      "last_work": "2026-08-30T12:58:51.789Z",
+      "work_count": 354,
       "last_claim": "2026-08-30T08:20:42.999Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1506,8 +1506,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 71753,
-      "market_cap": 71753,
+      "share_price": 71761,
+      "market_cap": 71761,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -1524,9 +1524,9 @@
       },
       "inventory": {
         "Uranium": 20,
-        "Coal": 123,
+        "Coal": 124,
         "Gold Bar": 5,
-        "Wheat": 155,
+        "Wheat": 154,
         "Cake": 1,
         "Iron Ore": 1,
         "Sugar": 7,
@@ -1537,7 +1537,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T08:47:20.761Z",
       "price_history": [
-        66682,
         66587,
         66651,
         66614,
@@ -1636,7 +1635,8 @@
         71707,
         71707,
         71723,
-        71753
+        71753,
+        71761
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -2674,11 +2674,10 @@
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
     "Peat Fuel": 2,
-    "Timber Planks": 8,
-    "Copper Ingot": 1
+    "Timber Planks": 8
   },
   "global_consumption": {
-    "Copper Ingot": 41,
+    "Copper Ingot": 42,
     "Steel Ingot": 7,
     "Timber Planks": 84,
     "Refined Fuel": 34,
@@ -3447,6 +3446,11 @@
       "item": "Peat Fuel",
       "qty": 1,
       "at": "2026-08-30T12:44:17.498Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-30T12:59:17.505Z"
     }
   ],
   "demand_history": {
@@ -3594,6 +3598,11 @@
       {
         "demand": 1.345211761513581,
         "at": "2026-08-30T12:14:17.495Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3609329531799048,
+        "at": "2026-08-30T12:59:17.505Z",
         "supply": 0
       }
     ],
