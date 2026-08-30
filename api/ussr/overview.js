@@ -37,13 +37,13 @@ export default async function handler(req, res) {
           "Estonian SSR":{emoji:"🇪🇪",work_zone:"1538704231249354772",resources:["Timber","Phosphorite","Peat","Fish","Oil Shale"]},
           "Latvian SSR":{emoji:"🇱🇻",work_zone:"1538704231249354772",resources:["Timber","Peat","Limestone","Wheat","Fish"]},
           "Lithuanian SSR":{emoji:"🇱🇹",work_zone:"1538704231249354772",resources:["Timber","Peat","Clay","Limestone","Flax","Fish"]},
-          "Georgian SSR":{emoji:"🇬🇪",work_zone:"1538703028524285962",resources:["Manganese","Copper","Gold","Grapes","Tea","Citrus"]},
-          "Armenian SSR":{emoji:"🇦🇲",work_zone:"1538703028524285962",resources:["Copper","Gold","Molybdenum","Aluminium"]},
+          "Georgian SSR":{emoji:"🇬🇪",work_zone:"1538703028524285962",resources:["Manganese","Copper","Gold","Grapes","Tea","Citrus","Antimony"]},
+          "Armenian SSR":{emoji:"🇦🇲",work_zone:"1538703028524285962",resources:["Copper","Gold","Molybdenum","Aluminium Ore"]},
           "Azerbaijanian SSR":{emoji:"🇦🇿",work_zone:"1538703028524285962",resources:["Oil","Natural Gas","Iron Ore","Cotton"]},
           "Kazakh SSR":{emoji:"🇰🇿",work_zone:"1538703181733695600",resources:["Coal","Iron Ore","Copper","Gold","Uranium","Oil","Wheat"]},
           "Uzbek SSR":{emoji:"🇺🇿",work_zone:"1538703181733695600",resources:["Gold","Oil","Copper","Cotton","Natural Gas","Uranium"]},
-          "Turkmen SSR":{emoji:"🇹🇲",work_zone:"1538703181733695600",resources:["Oil","Natural Gas","Cotton","Sulphur"]},
-          "Nuristani SSR":{emoji:"🇹🇯",work_zone:"1538704555670245448",resources:["Aluminium","Lead","Zinc","Uranium","Gold"]},
+          "Turkmen SSR":{emoji:"🇹🇲",work_zone:"1538703181733695600",resources:["Oil","Natural Gas","Cotton","Sulphur","Sand"]},
+          "Nuristani SSR":{emoji:"🇹🇯",work_zone:"1538704555670245448",resources:["Aluminium Ore","Lead","Zinc","Uranium","Gold"]},
           "Kirghiz SSR":{emoji:"🇰🇬",work_zone:"1538703181733695600",resources:["Gold","Uranium","Coal","Iron Ore","Timber"]}
         };
         const WZ={"Russian Federal Republic Region":"1538704167890329621","Western Soviet Region":"1538703449095676016","Baltic Soviet Region":"1538704231249354772","Caucasus Soviet Region":"1538703028524285962","Central Asian Soviet Region":"1538703181733695600","Nuristani Soviet Region":"1538704555670245448"};
@@ -247,13 +247,13 @@ export default async function handler(req, res) {
     "Estonian SSR":{emoji:"🇪🇪",work_zone:"1538704231249354772",resources:["Timber","Phosphorite","Peat","Fish","Oil Shale"]},
     "Latvian SSR":{emoji:"🇱🇻",work_zone:"1538704231249354772",resources:["Timber","Peat","Limestone","Wheat","Fish"]},
     "Lithuanian SSR":{emoji:"🇱🇹",work_zone:"1538704231249354772",resources:["Timber","Peat","Clay","Limestone","Flax","Fish"]},
-    "Georgian SSR":{emoji:"🇬🇪",work_zone:"1538703028524285962",resources:["Manganese","Copper","Gold","Grapes","Tea","Citrus"]},
-    "Armenian SSR":{emoji:"🇦🇲",work_zone:"1538703028524285962",resources:["Copper","Gold","Molybdenum","Aluminium"]},
+    "Georgian SSR":{emoji:"🇬🇪",work_zone:"1538703028524285962",resources:["Manganese","Copper","Gold","Grapes","Tea","Citrus","Antimony"]},
+    "Armenian SSR":{emoji:"🇦🇲",work_zone:"1538703028524285962",resources:["Copper","Gold","Molybdenum","Aluminium Ore"]},
     "Azerbaijanian SSR":{emoji:"🇦🇿",work_zone:"1538703028524285962",resources:["Oil","Natural Gas","Iron Ore","Cotton"]},
     "Kazakh SSR":{emoji:"🇰🇿",work_zone:"1538703181733695600",resources:["Coal","Iron Ore","Copper","Gold","Uranium","Oil","Wheat"]},
     "Uzbek SSR":{emoji:"🇺🇿",work_zone:"1538703181733695600",resources:["Gold","Oil","Copper","Cotton","Natural Gas","Uranium"]},
-    "Turkmen SSR":{emoji:"🇹🇲",work_zone:"1538703181733695600",resources:["Oil","Natural Gas","Cotton","Sulphur"]},
-    "Nuristani SSR":{emoji:"🇹🇯",work_zone:"1538704555670245448",resources:["Aluminium","Lead","Zinc","Uranium","Gold"]},
+    "Turkmen SSR":{emoji:"🇹🇲",work_zone:"1538703181733695600",resources:["Oil","Natural Gas","Cotton","Sulphur","Sand"]},
+    "Nuristani SSR":{emoji:"🇹🇯",work_zone:"1538704555670245448",resources:["Aluminium Ore","Lead","Zinc","Uranium","Gold"]},
     "Kirghiz SSR":{emoji:"🇰🇬",work_zone:"1538703181733695600",resources:["Gold","Uranium","Coal","Iron Ore","Timber"]}
   };
   const WZ2={"Russian Federal Republic Region":"1538704167890329621","Western Soviet Region":"1538703449095676016","Baltic Soviet Region":"1538704231249354772","Caucasus Soviet Region":"1538703028524285962","Central Asian Soviet Region":"1538703181733695600","Nuristani Soviet Region":"1538704555670245448"};

@@ -4,19 +4,19 @@
  */
 export const SSR_REGIONS = {
   "Russian SFSR": { role_id: "665697828403806209", work_zone: "1538704167890329621", emoji: "🇷🇺", resources: ["Coal", "Iron Ore", "Timber", "Oil", "Natural Gas", "Gold"] },
-  "Byelorussian SSR": { role_id: "666027277770817546", work_zone: "1538703449095676016", emoji: "🇧🇾", resources: ["Timber", "Peat", "Potash", "Wheat", "Flax"] },
+  "Byelorussian SSR": { role_id: "666027277770817546", work_zone: "1538703449095676016", emoji: "🇧🇾", resources: ["Timber", "Peat", "Wheat", "Flax"] },
   "Ukrainian SSR": { role_id: "666026868201488424", work_zone: "1538703449095676016", emoji: "🇺🇦", resources: ["Coal", "Iron Ore", "Wheat", "Sunflower", "Corn", "Salt"] },
   "Moldavian SSR": { role_id: "666356420656234516", work_zone: "1538703449095676016", emoji: "🇲🇩", resources: ["Wheat", "Corn", "Sunflower", "Grapes", "Wine"] },
-  "Estonian SSR": { role_id: "666356003826171904", work_zone: "1538704231249354772", emoji: "🇪🇪", resources: ["Oil Shale", "Timber", "Phosphorite", "Peat", "Fish"] },
+  "Estonian SSR": { role_id: "666356003826171904", work_zone: "1538704231249354772", emoji: "🇪🇪", resources: ["Timber", "Phosphorite", "Peat", "Fish", "Oil Shale"] },
   "Latvian SSR": { role_id: "666355999120031749", work_zone: "1538704231249354772", emoji: "🇱🇻", resources: ["Timber", "Peat", "Limestone", "Wheat", "Fish"] },
   "Lithuanian SSR": { role_id: "666355995764719626", work_zone: "1538704231249354772", emoji: "🇱🇹", resources: ["Timber", "Peat", "Clay", "Limestone", "Flax", "Fish"] },
-  "Georgian SSR": { role_id: "666356425877880832", work_zone: "1538703028524285962", emoji: "🇬🇪", resources: ["Manganese", "Copper", "Gold", "Grapes", "Tea", "Citrus"] },
-  "Armenian SSR": { role_id: "666356429652885587", work_zone: "1538703028524285962", emoji: "🇦🇲", resources: ["Copper", "Gold", "Molybdenum", "Aluminium"] },
+  "Georgian SSR": { role_id: "666356425877880832", work_zone: "1538703028524285962", emoji: "🇬🇪", resources: ["Manganese", "Copper", "Gold", "Grapes", "Tea", "Citrus", "Antimony"] },
+  "Armenian SSR": { role_id: "666356429652885587", work_zone: "1538703028524285962", emoji: "🇦🇲", resources: ["Copper", "Gold", "Molybdenum", "Aluminium Ore"] },
   "Azerbaijanian SSR": { role_id: "666356432417062922", work_zone: "1538703028524285962", emoji: "🇦🇿", resources: ["Oil", "Natural Gas", "Iron Ore", "Cotton"] },
   "Kazakh SSR": { role_id: "666379508022116366", work_zone: "1538703181733695600", emoji: "🇰🇿", resources: ["Coal", "Iron Ore", "Copper", "Gold", "Uranium", "Oil", "Wheat"] },
   "Uzbek SSR": { role_id: "666379512896028672", work_zone: "1538703181733695600", emoji: "🇺🇿", resources: ["Gold", "Oil", "Copper", "Cotton", "Natural Gas", "Uranium"] },
-  "Turkmen SSR": { role_id: "666379517455106119", work_zone: "1538703181733695600", emoji: "🇹🇲", resources: ["Oil", "Natural Gas", "Cotton", "Sulphur"] },
-  "Nuristani SSR": { role_id: "666379522316304397", work_zone: "1538704555670245448", emoji: "🇹🇯", resources: ["Aluminium", "Lead", "Zinc", "Uranium", "Gold"] },
+  "Turkmen SSR": { role_id: "666379517455106119", work_zone: "1538703181733695600", emoji: "🇹🇲", resources: ["Oil", "Natural Gas", "Cotton", "Sulphur", "Sand"] },
+  "Nuristani SSR": { role_id: "666379522316304397", work_zone: "1538704555670245448", emoji: "🇹🇯", resources: ["Aluminium Ore", "Lead", "Zinc", "Uranium", "Gold"] },
   "Kirghiz SSR": { role_id: "666379534282522654", work_zone: "1538703181733695600", emoji: "🇰🇬", resources: ["Gold", "Uranium", "Coal", "Iron Ore", "Timber"] }
 };
 
