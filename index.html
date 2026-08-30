@@ -167,13 +167,13 @@ tbody tr:nth-child(even) td{background:var(--paper2)}
   </div>
 
   <div id="view-production" class="hidden">
-    <div class="grid grid-2"><div class="card"><div class="card-h"><span>FOOD SECURITY — STOCK VS DEMAND</span></div><div class="card-b" id="foodPanel"></div></div><div class="card"><div class="card-h"><span>CRAFTING — VALUE VS INGREDIENTS</span></div><div class="card-b"><div class="table-wrap"><table><thead><tr><th>ITEM</th><th>INGREDIENTS</th><th>VAL</th><th>MARGIN</th></tr></thead><tbody id="craftTable"></tbody></table></div></div></div></div>
-    <div class="card" style="margin-top:10px"><div class="card-h"><span>BUILDINGS — MINES / FACTORIES</span></div><div class="card-b"><div class="grid grid-3" id="buildGrid"></div></div></div>
+    <div class="grid grid-2"><div class="card"><div class="card-h"><span>FOOD SECURITY — STOCK VS DEMAND</span></div><div class="card-b" id="foodPanel"></div></div><div class="card"><div class="card-h"><span>CRAFTING — VALUE VS INGREDIENTS</span><small id="recipeCount">—</small></div><div class="card-b"><input id="recipeSearch" placeholder="Search recipes or ingredients… e.g. Fish, Steel, Uranium" style="width:100%;padding:8px;border:2px solid #111;font-family:var(--font-mono);font-size:11px;margin-bottom:8px"><div class="table-wrap"><table><thead><tr><th>ITEM</th><th>INGREDIENTS</th><th>VAL</th><th>MARGIN</th></tr></thead><tbody id="craftTable"></tbody></table></div><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">Balanced: raw fish ₽14 → Canned Fish ₽122 (≈60% profit over raw+iron). Crafting now beats raw selling.</div></div></div></div>
+    <div class="card" style="margin-top:10px"><div class="card-h"><span>BUILDINGS — MINES / FACTORIES</span><small>☢️ Nuclear Reactor powers factories +30% — without it, factories brownout at 70% if >2 factories</small></div><div class="card-b"><div class="grid grid-3" id="buildGrid"></div></div></div>
   </div>
 
   <div style="margin-top:12px;border:2px solid #111;background:#fff;padding:8px;font:700 9px var(--font-mono);text-align:center;letter-spacing:.06em">GOSPLAN CENTRAL — STAMP № 001 // ECONOMY_DATA.JSON LIVE // <span id="footGen">—</span> // <a href="https://github.com/HyawiiGithub/USSR-stock">USSR-STOCK</a></div>
 </div>
 
-<script src="./ussr.js?v=3.1.1"></script>
+<script src="./ussr.js?v=3.2.0"></script>
 </body>
 </html>

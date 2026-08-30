@@ -26,24 +26,24 @@ nav();
 
 // FULL fallback — 15 SSRs, 6 regions, matches backend exactly
 function fallbackMock(){
-  const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Peat:13, Manganese:96, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Aluminium:80, Cotton:24, Potash:56, "Oil Shale":19, Zinc:38, Amber:75 };
+  const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Peat:13, Manganese:96, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Sulfur:25, Aluminium:80, Cotton:24, Potash:56, "Oil Shale":19, Zinc:38, Amber:75 };
   const REC = {
-    "Iron Ingot": {value:40, ingredients:{"Iron Ore":3,Coal:2}}, "Steel Ingot": {value:80, ingredients:{"Iron Ingot":2,Coal:3}},
-    "Copper Ingot": {value:48, ingredients:{Copper:3,Coal:2}}, "Gold Bar": {value:560, ingredients:{Gold:3}},
-    "Aluminium Ingot": {value:55, ingredients:{"Aluminium Ore":3,Coal:2}}, "Timber Planks": {value:16, ingredients:{Timber:3}},
-    "Bricks": {value:29, ingredients:{Clay:3,Coal:2}}, "Concrete": {value:40, ingredients:{Limestone:4,Sand:2}},
-    "Glass": {value:32, ingredients:{Limestone:3,Coal:2}}, "Steel Beam": {value:128, ingredients:{"Steel Ingot":4}},
-    "Machine Parts": {value:72, ingredients:{"Iron Ingot":3,"Steel Ingot":2}}, "Fuel": {value:64, ingredients:{Oil:3}},
-    "Refined Fuel": {value:128, ingredients:{Fuel:2}}, "Uranium Rod": {value:256, ingredients:{Uranium:3,Lead:2}},
-    "Reactor Core": {value:800, ingredients:{"Uranium Rod":2,"Steel Beam":3,"Machine Parts":2}}, "Circuit Board": {value:88, ingredients:{"Copper Ingot":3,Lead:2}},
-    "Flour": {value:25, ingredients:{Wheat:3}}, "Bread": {value:28, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:45, ingredients:{Flour:3,Sugar:3,Wheat:2}},
-    "Wine": {value:35, ingredients:{Grapes:4}}, "Canned Food": {value:30, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:38, ingredients:{Fish:2,"Iron Ore":2}},
-    "Smoked Fish": {value:28, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:32, ingredients:{Fish:2,Wheat:2,Salt:1}},
-    "Peat Fuel": {value:58, ingredients:{Peat:4,Coal:1}}, "Gas Fuel": {value:64, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:52, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
-    "Cotton Fabric": {value:42, ingredients:{Cotton:3}}, "Manganese Alloy": {value:95, ingredients:{Manganese:2,"Iron Ingot":1,Coal:1}},
-    "Sunflower Oil": {value:35, ingredients:{Sunflower:3}}, "Linen": {value:34, ingredients:{Flax:3}}, "Corn Meal": {value:22, ingredients:{Corn:3}},
-    "Tea Pack": {value:32, ingredients:{Tea:2,Sugar:1}}, "Citrus Juice": {value:30, ingredients:{Citrus:3,Sugar:1}},
-    "Antimony Alloy": {value:180, ingredients:{Antimony:2,Lead:2}}, "Molybdenum Rod": {value:210, ingredients:{Molybdenum:2,"Steel Ingot":1}}, "Aluminium Sheet": {value:45, ingredients:{Aluminium:2,Coal:1}}
+    "Iron Ingot": {value:161, ingredients:{"Iron Ore":3,Coal:2}}, "Steel Ingot": {value:371, ingredients:{"Iron Ingot":2,Coal:3}},
+    "Copper Ingot": {value:194, ingredients:{Copper:3,Coal:2}}, "Gold Bar": {value:639, ingredients:{Gold:3}},
+    "Aluminium Ingot": {value:327, ingredients:{"Aluminium Ore":3,Coal:2}}, "Timber Planks": {value:71, ingredients:{Timber:3}},
+    "Bricks": {value:95, ingredients:{Clay:3,Coal:2}}, "Concrete": {value:120, ingredients:{Limestone:4,Sand:2}},
+    "Glass": {value:128, ingredients:{Limestone:3,Coal:2}}, "Steel Beam": {value:1431, ingredients:{"Steel Ingot":4}},
+    "Machine Parts": {value:1155, ingredients:{"Iron Ingot":3,"Steel Ingot":2}}, "Fuel": {value:282, ingredients:{Oil:3}},
+    "Refined Fuel": {value:547, ingredients:{Fuel:2}}, "Uranium Rod": {value:1453, ingredients:{Uranium:3,Lead:2}},
+    "Reactor Core": {value:9402, ingredients:{"Uranium Rod":2,"Steel Beam":3,"Machine Parts":2}}, "Circuit Board": {value:658, ingredients:{"Copper Ingot":3,Lead:2}},
+    "Flour": {value:51, ingredients:{Wheat:3}}, "Bread": {value:98, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:180, ingredients:{Flour:3,Sugar:3,Wheat:2}},
+    "Wine": {value:100, ingredients:{Grapes:4}}, "Canned Food": {value:117, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:122, ingredients:{Fish:2,"Iron Ore":2}},
+    "Smoked Fish": {value:100, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:89, ingredients:{Fish:2,Wheat:2,Salt:1}},
+    "Peat Fuel": {value:111, ingredients:{Peat:4,Coal:1}}, "Gas Fuel": {value:216, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:198, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
+    "Cotton Fabric": {value:117, ingredients:{Cotton:3}}, "Manganese Alloy": {value:448, ingredients:{Manganese:2,"Iron Ingot":1,Coal:1}},
+    "Sunflower Oil": {value:67, ingredients:{Sunflower:3}}, "Linen": {value:92, ingredients:{Flax:3}}, "Corn Meal": {value:59, ingredients:{Corn:3}},
+    "Tea Pack": {value:114, ingredients:{Tea:2,Sugar:1}}, "Citrus Juice": {value:114, ingredients:{Citrus:3,Sugar:1}},
+    "Antimony Alloy": {value:481, ingredients:{Antimony:2,Lead:2}}, "Molybdenum Rod": {value:812, ingredients:{Molybdenum:2,"Steel Ingot":1}}, "Aluminium Sheet": {value:260, ingredients:{Aluminium:2,Coal:1}}
   };
   const SSR = {
     "Russian SFSR": {emoji:"🇷🇺",work_zone:"1538704167890329621",resources:["Coal","Iron Ore","Timber","Oil","Natural Gas","Gold"]},
@@ -379,20 +379,32 @@ function renderProduction(){
     return `<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between"><b style="font:700 11px var(--font-mono)">${name}</b><span class="badge ${ok?'b-good':'b-bad'}">${ok?'✓ COLLECT':'✗ BLOCKED'}</span></div><div class="mono" style="font-size:10px">${fmt(r.foodStock)}🍞 / ${fmt(r.foodDemand)}🍞</div><div class="progress"><i style="width:${pct}%"></i></div></div>`;
   }).join('');
   const ct=document.getElementById('craftTable');
-  if(ct) ct.innerHTML=Object.entries(data.crafting_recipes).map(([item,rec])=>{
-    const inCost=Object.entries(rec.ingredients).reduce((s,[res,qty])=> s+((data.resource_values[res]||0)*qty),0);
-    const margin=rec.value - inCost; const cls=margin>0?'b-good':margin<0?'b-bad':'b-warn';
-    return `<tr><td><b>${item}</b></td><td style="white-space:normal;max-width:200px">${Object.entries(rec.ingredients).map(([k,v])=>k+'×'+v).join(' // ')}</td><td>₽${rec.value}</td><td><span class="badge ${cls}">${margin>=0?'+':''}₽${margin}</span></td></tr>`;
-  }).join('');
+  const searchEl=document.getElementById('recipeSearch');
+  const countEl=document.getElementById('recipeCount');
+  function drawCraft(){
+    const q=(searchEl?.value||'').toLowerCase().trim();
+    const entries=Object.entries(data.crafting_recipes).filter(([item,rec])=> !q || item.toLowerCase().includes(q) || Object.keys(rec.ingredients).some(k=>k.toLowerCase().includes(q)) || Object.keys(rec.ingredients).some(k=>k.replace('Sulphur','Sulfur').toLowerCase().includes(q)) );
+    if(countEl) countEl.textContent=entries.length+'/'+Object.keys(data.crafting_recipes).length;
+    if(ct) ct.innerHTML=entries.map(([item,rec])=>{
+      const inCost=Object.entries(rec.ingredients).reduce((s,[res,qty])=>{ const val=data.resource_values[res] ?? data.resource_values[res.replace('Sulfur','Sulphur')] ?? data.resource_values[res.replace('Sulphur','Sulfur')] ?? 0; return s+val*qty; },0);
+      const margin=rec.value - inCost; const cls=margin>0?'b-good':margin<0?'b-bad':'b-warn';
+      return `<tr><td><b>${item}</b></td><td style="white-space:normal;max-width:200px">${Object.entries(rec.ingredients).map(([k,v])=>k+'×'+v).join(' // ')}</td><td>₽${rec.value}</td><td><span class="badge ${cls}">${margin>=0?'+':''}₽${margin}</span></td></tr>`;
+    }).join('') || `<tr><td colspan=4 class="mono" style="text-align:center;padding:12px;color:var(--muted)">No recipes match “${q}”</td></tr>`;
+  }
+  if(ct){ drawCraft(); if(searchEl && !searchEl._bound){ searchEl.addEventListener('input',drawCraft); searchEl._bound=true; } }
   const bg=document.getElementById('buildGrid');
   if(bg){
-    const all={...data.mines, ...data.factories, Store:{cost:25000, emoji:"■", produces:["Retail"], rate:3}};
-    const entries=Object.entries(all);
+    const all={...data.mines, ...data.factories, Store:{cost:25000, emoji:"☢️", produces:["Retail"], rate:3}};
+    let entries=Object.entries(all);
     if(!entries.length){
-      bg.innerHTML=Object.entries({ "Iron Mine":{cost:15000,produces:["Iron Ore"],rate:2}, "Coal Mine":{cost:12000,produces:["Coal"],rate:3}, "Steel Mill":{cost:50000,produces:["Steel Ingot"],rate:2}, "Farm":{cost:12000,produces:["Wheat"],rate:3} }).map(([k,m])=>`<div class="stat" style="text-align:left"><b>${k}</b><strong style="font-size:12px">${money(m.cost)}</strong><span>${m.produces.join(' // ')} // ${m.rate}/collect</span></div>`).join('');
-    } else {
-      bg.innerHTML=entries.map(([name,meta])=>`<div class="stat" style="text-align:left"><b>${name}</b><strong style="font-size:12px">${money(meta.cost||25000)}</strong><span>${(meta.produces||[]).join(' // ')||'—'} // ${meta.rate||3}/collect</span></div>`).join('');
+      entries=Object.entries({ "Iron Mine":{cost:15000,produces:["Iron Ore"],rate:5}, "Coal Mine":{cost:12000,produces:["Coal"],rate:6}, "Steel Mill":{cost:50000,produces:["Steel Ingot"],rate:4}, "Farm":{cost:12000,produces:["Wheat","Sugar"],rate:6}, "Nuclear Reactor":{cost:180000,produces:["Power"],rate:1} });
     }
+    bg.innerHTML=entries.map(([name,meta])=>{
+      const isReactor=name==="Nuclear Reactor";
+      const extra=isReactor?'<span class="badge b-warn" style="margin-top:4px;display:inline-block">⚡ +30% factories if powered</span>':'';
+      const req=meta.requires ? Object.entries(meta.requires).map(([k,v])=>k+'×'+v).join(' // ') : '';
+      return `<div class="stat" style="text-align:left"><b>${name}${isReactor?' ☢️':''}</b><strong style="font-size:12px">${money(meta.cost||25000)}</strong><span>${(meta.produces||[]).join(' // ')||'—'} // ${meta.rate||3}/collect</span>${req?`<span style="display:block;font:600 9px var(--font-mono);color:var(--muted);margin-top:2px">Needs: ${req}</span>`:''}${extra}</div>`;
+    }).join('');
   }
 }
 function renderTicker(){
