@@ -39,7 +39,7 @@ function fallbackMock(){
     "Flour": {value:51, ingredients:{Wheat:3}}, "Bread": {value:98, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:180, ingredients:{Flour:3,Sugar:3,Wheat:2}},
     "Wine": {value:100, ingredients:{Grapes:4}}, "Canned Food": {value:117, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:122, ingredients:{Fish:2,"Iron Ore":2}},
     "Smoked Fish": {value:100, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:89, ingredients:{Fish:2,Wheat:2,Salt:1}},
-    "Peat Fuel": {value:111, ingredients:{Peat:4,Coal:1}}, "Gas Fuel": {value:216, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:198, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
+    "Peat Fuel": {value:111, ingredients:{Peat:4,Coal:1}}, "Shale Oil": {value:85, ingredients:{"Oil Shale":4}}, "Gas Fuel": {value:216, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:198, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
     "Cotton Fabric": {value:117, ingredients:{Cotton:3}}, "Manganese Alloy": {value:448, ingredients:{Manganese:2,"Iron Ingot":1,Coal:1}},
     "Sunflower Oil": {value:67, ingredients:{Sunflower:3}}, "Linen": {value:92, ingredients:{Flax:3}}, "Corn Meal": {value:59, ingredients:{Corn:3}},
     "Tea Pack": {value:114, ingredients:{Tea:2,Sugar:1}}, "Citrus Juice": {value:114, ingredients:{Citrus:3,Sugar:1}},
