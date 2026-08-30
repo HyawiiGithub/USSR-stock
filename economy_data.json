@@ -1794,8 +1794,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 52065,
-      "market_cap": 52065,
+      "share_price": 52355,
+      "market_cap": 52355,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -1812,19 +1812,18 @@
       },
       "inventory": {
         "Phosphorite": 77,
-        "Peat": 133,
+        "Peat": 93,
         "Fish": 232,
         "Timber": 14,
         "Canned Fish": 7,
         "Timber Planks": 5,
         "Iron Ore": 1,
         "Oil Shale": 2,
-        "Coal": 10
+        "Peat Fuel": 10
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        44727,
         44859,
         44944,
         44821,
@@ -1923,7 +1922,8 @@
         51861,
         51888,
         51900,
-        52065
+        52065,
+        52355
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1936,16 +1936,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 106,
-      "change_percent": 1.4294518578455273,
-      "recorded_at": "2026-08-30T02:39:17.311Z"
-    },
-    {
-      "price": 104,
-      "change_percent": -1.2652347091097116,
-      "recorded_at": "2026-08-30T02:44:17.311Z"
-    },
     {
       "price": 103,
       "change_percent": -0.7462333531422439,
@@ -2435,19 +2425,30 @@
       "price": 39,
       "change_percent": 1.4417578583937538,
       "recorded_at": "2026-08-30T10:09:17.590Z"
+    },
+    {
+      "price": 41,
+      "change_percent": 6.950645446982075,
+      "recorded_at": "2026-08-30T10:14:17.443Z"
+    },
+    {
+      "price": 41,
+      "change_percent": 0.13925807276305643,
+      "recorded_at": "2026-08-30T10:14:17.591Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
-    "Red Star Steelworks",
-    "Volga Shipbuilding",
-    "Lenin Machine Works",
-    "Khrushchev Agricultural",
+  "factory_names": [
     "Soviet Iron Foundry",
-    "Brezhnev Auto Factory",
-    "Ural Heavy Industries",
+    "Lenin Machine Works",
     "Stalin Tractor Plant",
-    "Siberian Mining Co"
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
