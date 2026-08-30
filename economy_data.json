@@ -133817,11 +133817,6 @@
   "gsi_history": [
     {
       "price": 21,
-      "change_percent": 1.0582602855698724,
-      "recorded_at": "2026-08-30T13:39:17.707Z"
-    },
-    {
-      "price": 21,
       "change_percent": 0.3556405816080084,
       "recorded_at": "2026-08-30T13:44:17.706Z"
     },
@@ -134314,6 +134309,11 @@
       "price": 1,
       "change_percent": 0.8183895305299607,
       "recorded_at": "2026-08-30T21:04:46.144Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -0.77622069276114,
+      "recorded_at": "2026-08-30T21:09:46.050Z"
     }
   ],
   "factory_names": [
@@ -134334,11 +134334,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.12460797473719902,
+  "inflation": 0.12207333321768118,
   "money_printed": 223,
   "total_bank_reserves": 164129,
   "inflation_history": [
-    0,
     0.0176415342928565,
     0.016002067152967314,
     0.010954469178661302,
@@ -134437,7 +134436,8 @@
     0.07768538906060721,
     0.1249142851202913,
     0.13376887892914027,
-    0.12460797473719902
+    0.12460797473719902,
+    0.12207333321768118
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134555,10 +134555,10 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Copper Ingot": 3
+    "Copper Ingot": 2
   },
   "global_consumption": {
-    "Copper Ingot": 42,
+    "Copper Ingot": 43,
     "Steel Ingot": 7,
     "Timber Planks": 92,
     "Refined Fuel": 37,
@@ -135439,6 +135439,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-08-30T19:54:45.567Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-30T21:09:45.727Z"
     }
   ],
   "demand_history": {
@@ -135592,6 +135597,11 @@
         "demand": 1.3609329531799048,
         "at": "2026-08-30T12:59:17.505Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3282158754464213,
+        "at": "2026-08-30T21:09:45.727Z",
+        "supply": 1
       }
     ],
     "Steel Ingot": [
@@ -136614,6 +136624,10 @@
     {
       "total": 238224,
       "at": "2026-08-30T21:04:46.379Z"
+    },
+    {
+      "total": 238239,
+      "at": "2026-08-30T21:09:46.321Z"
     }
   ],
   "gold_rush": {
