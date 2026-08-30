@@ -246,22 +246,37 @@ let economy=null;
 const SSR_LIST=["Russian SFSR","Byelorussian SSR","Ukrainian SSR","Moldavian SSR","Estonian SSR","Latvian SSR","Lithuanian SSR","Georgian SSR","Armenian SSR","Azerbaijanian SSR","Kazakh SSR","Uzbek SSR","Turkmen SSR","Nuristani SSR","Kirghiz SSR"];
 const RESOURCE_LIST=["Gold","Oil","Copper","Coal","Lead","Uranium","Cotton","Iron Ore","Timber","Wheat","Limestone","Clay","Sand","Sugar","Peat","Natural Gas","Manganese","Phosphorite","Aluminium Ore","Antimony","Molybdenum","Sunflower","Flax","Corn","Salt","Tea","Citrus","Grapes","Wine","Sulphur","Aluminium","Fish","Potash","Oil Shale","Zinc","Amber"];
 function toast(m,ok=true){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';t.style.borderColor=ok?'rgba(52,211,153,.4)':'rgba(217,58,66,.4)';setTimeout(()=>t.style.display='none',2500);}
+function authHeaders(){ return {'Content-Type':'application/json','X-Admin-Password': PW || ''}; }
 async function login(){
   const v=document.getElementById('pw').value.trim();
-  if(!v) return document.getElementById('loginMsg').textContent="Enter password";
+  const msgEl=document.getElementById('loginMsg');
+  if(!v) return msgEl.textContent="Enter password";
+  msgEl.textContent="Verifying...";
   try{
     const r=await fetch('/api/admin/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:v})});
-    if(r.ok){ const j=await r.json(); if(j.ok){ PW=v; unlock(); return;} else {document.getElementById('loginMsg').textContent="Wrong password";return;}}
-  }catch(e){}
-  const local=localStorage.getItem('gosplan_admin_pw');
-  if(local){ if(v===local) {PW=v; unlock();} else document.getElementById('loginMsg').textContent="Wrong password"; return;}
-  if(confirm('No server verification. Store this password locally for THIS browser only? (Never pushed to GitHub)')){localStorage.setItem('gosplan_admin_pw',v);PW=v;unlock();} else document.getElementById('loginMsg').textContent="No server – set local password first";
+    const j=await r.json().catch(()=>({}));
+    if(r.ok && j.ok){ PW=v; msgEl.textContent=""; unlock(); return; }
+    if(r.status===401){ msgEl.textContent="Wrong password (server rejected)"; return; }
+    if(r.status===500){
+      // server has no ADMIN_PASSWORD configured - fallback to local only
+      const local=localStorage.getItem('gosplan_admin_pw');
+      if(local){ if(v===local){ PW=v; unlock(); } else msgEl.textContent="Wrong password (local)"; return; }
+      if(confirm('No server ADMIN_PASSWORD set. Store this password locally for THIS browser only? (Never pushed to GitHub)')){
+        localStorage.setItem('gosplan_admin_pw',v); PW=v; unlock();
+      } else msgEl.textContent="No server – set ADMIN_PASSWORD in Vercel env";
+      return;
+    }
+    msgEl.textContent=j.error || `Login failed: ${r.status}`;
+    return;
+  }catch(e){
+    msgEl.textContent="Network error: "+e.message;
+  }
 }
-function logout(){document.getElementById('dash').classList.add('hidden');document.getElementById('loginWrap').classList.remove('hidden');}
+function logout(){ PW=null; document.getElementById('dash').classList.add('hidden');document.getElementById('loginWrap').classList.remove('hidden'); document.getElementById('pw').value=""; }
 function unlock(){
   document.getElementById('loginWrap').classList.add('hidden');
   document.getElementById('dash').classList.remove('hidden');
-  initNav(); loadEconomy();
+  initNav(); loadEconomy(); loadUsers();
 }
 function initNav(){
   document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{
@@ -270,12 +285,17 @@ function initNav(){
     document.querySelectorAll('[data-panel]').forEach(p=> p.classList.add('hidden'));
     const target=document.querySelector(`[data-panel="${tab}"]`);
     if(target) target.classList.remove('hidden');
+    if(tab==='users') loadUsers();
+    if(tab==='spawn') refreshSpawn();
   }));
   // populate SSR selects
   const sSSR=document.getElementById('sSSR');
   sSSR.innerHTML=SSR_LIST.map(s=>`<option value="${s}">${s}</option>`).join('');
   const sRes=document.getElementById('sRes');
   const RVpreview={Gold:150,"Iron Ore":24,Coal:16,Oil:64,"Natural Gas":48,Timber:13,Wheat:8,Fish:14,Copper:32,Lead:40,Uranium:320,Limestone:16,Clay:8,Sugar:10,Peat:13,Manganese:96,Phosphorite:40,"Aluminium Ore":64,Antimony:128,Molybdenum:160,Sunflower:12,Flax:18,Corn:10,Salt:8,Tea:30,Citrus:20,Grapes:20,Wine:60,Sulphur:25,Aluminium:80,Cotton:24,Potash:56,"Oil Shale":19,Zinc:38,Amber:75};
+  // allow Enter on password field
+  const pwEl=document.getElementById('pw');
+  if(pwEl && !pwEl._bound){ pwEl.addEventListener('keydown',e=>{ if(e.key==='Enter') login(); }); pwEl._bound=true; }
   const weights={Gold:2,Oil:15,Copper:8,Coal:20,Lead:7,Uranium:1,Cotton:20,"Iron Ore":18,Timber:25,Wheat:25,Limestone:12,Clay:8,Sand:5,Sugar:20,Peat:10,"Natural Gas":10,Manganese:4,Phosphorite:5,"Aluminium Ore":3,Antimony:3,Molybdenum:2,Sunflower:15,Flax:10,Corn:12,Salt:8,Tea:5,Citrus:8,Grapes:12,Wine:8,Sulphur:3,Aluminium:5,Fish:22,Potash:6,"Oil Shale":10,Zinc:7,Amber:2};
   sRes.innerHTML=RESOURCE_LIST.map(r=>`<option value="${r}">${r} — ₽${RVpreview[r]||0} (global ${weights[r]||5})</option>`).join('');
   document.getElementById('globalWeights').textContent=Object.entries(weights).map(([k,v])=>`${k}:${v}`).join('  ');
@@ -284,9 +304,60 @@ let draft = JSON.parse(localStorage.getItem('gosplan_draft')||'{"recipes":{},"it
 function save(){ localStorage.setItem('gosplan_draft', JSON.stringify(draft)); refreshDraft(); }
 function refreshDraft(){ const t=JSON.stringify(draft,null,2); const el=document.getElementById('list'); if(el) el.textContent=t; const el2=document.getElementById('list2'); if(el2) el2.textContent=t; }
 refreshDraft();
-function addRecipe(){ try{ const name=document.getElementById('rName').value.trim(); const emoji=document.getElementById('rEmoji').value.trim()||"📦"; const val=parseInt(document.getElementById('rValue').value); const ing=JSON.parse(document.getElementById('rIng').value||"{}"); if(!name||isNaN(val)) throw "Name and value required"; draft.recipes[name]={ingredients:ing,value:val,emoji}; save(); document.getElementById('out').textContent="Added recipe "+name; toast("Recipe added"); }catch(e){ document.getElementById('out').textContent="Error: "+e; } }
-function addItem(){ const name=document.getElementById('iName').value.trim(); const val=parseInt(document.getElementById('iValue').value); const food=parseInt(document.getElementById('iFood').value||0); const w=parseInt(document.getElementById('iWeight').value||10); if(!name||isNaN(val)) return document.getElementById('out').textContent="Need name and value"; draft.items[name]={value:val, food, weight:w}; if(!isNaN(w)) draft.weights[name]=w; save(); document.getElementById('out').textContent="Added item "+name+" (global weight "+w+")"; toast("Item added"); }
-function addBuilding(){ const name=document.getElementById('bName').value.trim(); const type=document.getElementById('bType').value; const cost=parseInt(document.getElementById('bCost').value||25000); const prod=JSON.parse(document.getElementById('bProd').value||"[]"); const req=document.getElementById('bReq').value.trim()?JSON.parse(document.getElementById('bReq').value):{}; const rate=parseInt(document.getElementById('bRate').value||2); if(!name) return document.getElementById('bOut').textContent="Need name"; draft.buildings[name]={type,cost,produces:prod,requires:req,rate}; save(); document.getElementById('bOut').textContent="Added building "+name; toast("Building added"); }
+async function addRecipe(){
+  const out=document.getElementById('out');
+  try{
+    const name=document.getElementById('rName').value.trim();
+    const emoji=document.getElementById('rEmoji').value.trim()||"📦";
+    const val=parseInt(document.getElementById('rValue').value);
+    const ing=JSON.parse(document.getElementById('rIng').value||"{}");
+    if(!name||isNaN(val)) throw "Name and value required";
+    out.textContent="Saving...";
+    const r=await fetch('/api/admin/recipe',{method:'POST',headers:authHeaders(),body:JSON.stringify({password:PW,name,value:val,emoji,ingredients:ing})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok || !j.ok) throw (j.error || `HTTP ${r.status}`);
+    draft.recipes[name]={ingredients:ing,value:val,emoji}; save();
+    out.textContent="Added recipe "+name+" (live)"+(j.github?.pushed ? " — pushed to GitHub" : j.github?.reason==="no-token"?" — local only (no GITHUB_TOKEN)":"");
+    toast("Recipe added");
+  }catch(e){ out.textContent="Error: "+e; toast(String(e),false); }
+}
+async function addItem(){
+  const out=document.getElementById('out');
+  const name=document.getElementById('iName').value.trim();
+  const val=parseInt(document.getElementById('iValue').value);
+  const food=parseInt(document.getElementById('iFood').value||0);
+  const w=parseInt(document.getElementById('iWeight').value||10);
+  if(!name||isNaN(val)) return out.textContent="Need name and value";
+  out.textContent="Saving...";
+  try{
+    const r=await fetch('/api/admin/item',{method:'POST',headers:authHeaders(),body:JSON.stringify({password:PW,name,value:val,food,weight:w})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok || !j.ok) throw (j.error || `HTTP ${r.status}`);
+    draft.items[name]={value:val, food, weight:w}; if(!isNaN(w)) draft.weights[name]=w; save();
+    out.textContent="Added item "+name+" (global weight "+w+") live"+(j.github?.pushed ? " — pushed":"");
+    toast("Item added");
+  }catch(e){ out.textContent="Error: "+e; toast(String(e),false); }
+}
+async function addBuilding(){
+  const out=document.getElementById('bOut');
+  const name=document.getElementById('bName').value.trim();
+  const type=document.getElementById('bType').value;
+  const cost=parseInt(document.getElementById('bCost').value||25000);
+  let prod, req;
+  try{ prod=JSON.parse(document.getElementById('bProd').value||"[]"); }catch(e){ return out.textContent="Produces JSON invalid: "+e; }
+  try{ req=document.getElementById('bReq').value.trim()?JSON.parse(document.getElementById('bReq').value):{}; }catch(e){ return out.textContent="Requires JSON invalid: "+e; }
+  const rate=parseInt(document.getElementById('bRate').value||2);
+  if(!name) return out.textContent="Need name";
+  out.textContent="Saving...";
+  try{
+    const r=await fetch('/api/admin/building',{method:'POST',headers:authHeaders(),body:JSON.stringify({password:PW,name,type,cost,produces:prod,requires:req,rate})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok || !j.ok) throw (j.error || `HTTP ${r.status}`);
+    draft.buildings[name]={type,cost,produces:prod,requires:req,rate}; save();
+    out.textContent="Added building "+name+" live"+(j.github?.pushed ? " — pushed":"");
+    toast("Building added");
+  }catch(e){ out.textContent="Error: "+e; toast(String(e),false); }
+}
 function exportData(){ const blob=new Blob([JSON.stringify(draft,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='gosplan_draft.json'; a.click(); }
 function clearCache(){ if(confirm('Clear draft?')){ draft={recipes:{},items:{},buildings:{},weights:{}}; save(); } }
 
@@ -300,6 +371,20 @@ async function loadEconomy(){
   }catch(e){
     document.getElementById('connBadge').textContent='OFFLINE'; document.getElementById('connBadge').className='badge b-off';
     console.warn(e);
+  }
+}
+async function loadUsers(){
+  const ut=document.getElementById('userTable');
+  if(!ut || !PW) return;
+  try{
+    ut.innerHTML='<tr><td colspan=6 style="color:var(--muted)">Loading...</td></tr>';
+    const r=await fetch('/api/admin/users',{method:'POST',headers:authHeaders(),body:JSON.stringify({password:PW})});
+    const j=await r.json();
+    if(!r.ok || !j.ok) throw new Error(j.error||`HTTP ${r.status}`);
+    if(!j.users.length){ ut.innerHTML='<tr><td colspan=6 style="color:var(--muted)">No users</td></tr>'; return; }
+    ut.innerHTML=j.users.map(u=>`<tr><td>${u.username||u.id.slice(0,6)}</td><td>₽${u.cash.toLocaleString()}</td><td>₽${u.bank.toLocaleString()}</td><td>${u.ssr_region||'—'}</td><td>${u.is_employed?u.employed_at:'—'}${u.is_state_director?' ★':''}</td><td>${u.work_count||0}</td></tr>`).join('');
+  }catch(e){
+    ut.innerHTML=`<tr><td colspan=6 style="color:var(--red)">Error: ${e.message}</td></tr>`;
   }
 }
 function renderAll(){
@@ -331,14 +416,10 @@ function renderAll(){
   // companies
   const ct=document.getElementById('compTable');
   if(ct) ct.innerHTML=economy.companies.map(c=>`<tr><td>${c.name}</td><td>${c.ticker}</td><td>${c.hq_ssr}</td><td>₽${c.funds.toLocaleString()}</td><td>₽${c.share_price}</td><td>${c.employees}</td><td>${c.is_state_owned?'🏛️':''}</td></tr>`).join('');
-  // users
-  const ut=document.getElementById('userTable');
-  if(ut && economy._rawUsers){
-    const users=Object.entries(economy._rawUsers).map(([id,u])=>({id,...u})).sort((a,b)=>(b.bank+b.cash)-(a.bank+a.cash)).slice(0,30);
-    ut.innerHTML=users.map(u=>`<tr><td>${u.username||u.id.slice(0,6)}</td><td>₽${u.cash}</td><td>₽${u.bank}</td><td>${u.ssr_region||'—'}</td><td>${u.is_employed?u.employed_at:'—'}</td><td>${u.work_count||0}</td></tr>`).join('');
-  } else if(ut){
-    // fallback from economy_data not included — show from overview? we don't have users in snapshot, fetch economy_data.json raw maybe
-    ut.innerHTML='<tr><td colspan=6 style="color:var(--muted)">User table requires economy_data.json users — overview snapshot shows live companies only. Check bot dashboard for full citizens.</td></tr>';
+  // users are loaded via authenticated /api/admin/users (see loadUsers); don't overwrite here
+  // if table still empty, trigger load
+  if(document.getElementById('userTable') && document.getElementById('userTable').innerHTML.trim()===""){
+    loadUsers();
   }
   // world
   const ws=document.getElementById('worldStats');
@@ -376,24 +457,32 @@ async function setSSRWeight(){
   const res=document.getElementById('sRes').value;
   const w=parseInt(document.getElementById('sWeight').value);
   if(isNaN(w)||w<0||w>50) return showSOut('Weight 0-50 required',false);
-  // For Vercel admin, we store locally and also try to call bot if available — but we persist draft locally for now and guide to use Discord -setspawnrate for live bot
-  // Try Discord-style API if exists, else local draft
-  draft.weights = draft.weights || {};
-  draft.ssr_weights = draft.ssr_weights || {};
-  if(!draft.ssr_weights[ssr]) draft.ssr_weights[ssr]={};
-  draft.ssr_weights[ssr][res]=w;
-  save();
-  showSOut(`Set ${ssr} ${res} → ${w} (local draft). To apply LIVE to bot, also run in Discord: -setspawnrate ${ssr} ${res} ${w}`,true);
-  toast('Per-SSR weight saved (local draft)');
+  showSOut('Saving...',true);
+  try{
+    const r=await fetch('/api/admin/spawn',{method:'POST',headers:authHeaders(),body:JSON.stringify({password:PW,ssr,resource:res,weight:w})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok || !j.ok) throw new Error(j.error || `HTTP ${r.status}`);
+    showSOut(`Set ${ssr} ${res} → ${w} live! ${j.github?.pushed ? '(pushed to GitHub)' : j.github?.reason==='no-token' ? '(local file only — set GITHUB_TOKEN for GitHub sync)' : ''}`,true);
+    toast(`Per-SSR weight set: ${ssr} ${res}=${w}`);
+    // also keep local draft for backup
+    draft.ssr_weights = draft.ssr_weights || {};
+    if(!draft.ssr_weights[ssr]) draft.ssr_weights[ssr]={};
+    draft.ssr_weights[ssr][res]=w; save();
+    await loadEconomy();
+  }catch(e){ showSOut('Error: '+e.message,false); toast(String(e),false); }
 }
-function resetSSRWeight(){
+async function resetSSRWeight(){
   const ssr=document.getElementById('sSSR').value;
   const res=document.getElementById('sRes').value;
-  if(draft.ssr_weights && draft.ssr_weights[ssr] && draft.ssr_weights[ssr][res]!==undefined){
-    delete draft.ssr_weights[ssr][res];
-    if(Object.keys(draft.ssr_weights[ssr]).length===0) delete draft.ssr_weights[ssr];
-    save(); showSOut(`Reset ${ssr} ${res} → now uses global`,true); toast('Reset');
-  } else showSOut('No override for that SSR/resource',false);
+  showSOut('Resetting...',true);
+  try{
+    const r=await fetch('/api/admin/spawn',{method:'DELETE',headers:authHeaders(),body:JSON.stringify({password:PW,ssr,resource:res})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok || !j.ok) throw new Error(j.error || `HTTP ${r.status}`);
+    showSOut(`Reset ${ssr} ${res} → now uses global`,true); toast('Reset');
+    if(draft.ssr_weights && draft.ssr_weights[ssr]){ delete draft.ssr_weights[ssr][res]; if(Object.keys(draft.ssr_weights[ssr]).length===0) delete draft.ssr_weights[ssr]; save(); }
+    await loadEconomy();
+  }catch(e){ showSOut('Error: '+e.message,false); toast(String(e),false); }
 }
 function showSOut(m,ok){ const el=document.getElementById('sOut'); el.textContent=m; el.style.display='block'; el.className='notice '+(ok?'ok':'err'); }
 let charts={};

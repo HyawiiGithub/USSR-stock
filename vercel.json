@@ -6,14 +6,29 @@
       "source": "/api/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, DELETE, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Admin-Password" }
       ]
     }
   ],
   "functions": {
     "api/admin/verify.js": {
       "includeFiles": "admin.html"
+    },
+    "api/admin/spawn.js": {
+      "includeFiles": "economy_data.json"
+    },
+    "api/admin/users.js": {
+      "includeFiles": "economy_data.json"
+    },
+    "api/admin/recipe.js": {
+      "includeFiles": "economy_data.json"
+    },
+    "api/admin/item.js": {
+      "includeFiles": "economy_data.json"
+    },
+    "api/admin/building.js": {
+      "includeFiles": "economy_data.json"
     },
     "api/ussr/overview.js": {
       "includeFiles": "economy_data.json"
