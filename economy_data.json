@@ -439,15 +439,15 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 365,
+      "cash": 380,
       "bank": 39825,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T17:04:31.463Z",
-      "work_count": 301,
+      "last_work": "2026-08-30T17:09:54.991Z",
+      "work_count": 302,
       "last_claim": "2026-08-29T10:33:23.146Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -979,15 +979,15 @@
       "ceo_of": null
     },
     "1511756975392948224": {
-      "cash": 150,
+      "cash": 165,
       "bank": 3618,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T16:50:49.816Z",
-      "work_count": 45,
+      "last_work": "2026-08-30T17:09:17.427Z",
+      "work_count": 46,
       "last_claim": "2026-08-30T08:50:50.230Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -133219,8 +133219,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 77139,
-      "market_cap": 77139,
+      "share_price": 77155,
+      "market_cap": 77155,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -133239,8 +133239,8 @@
         "Uranium": 23,
         "Coal": 124,
         "Gold Bar": 5,
-        "Wheat": 10,
-        "Iron Ore": 10,
+        "Wheat": 9,
+        "Iron Ore": 11,
         "Sugar": 8,
         "Canned Food": 15,
         "Copper": 6,
@@ -133254,7 +133254,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T14:56:34.105Z",
       "price_history": [
-        70470,
         70316,
         70324,
         70348,
@@ -133353,7 +133352,8 @@
         77130,
         77115,
         77123,
-        77139
+        77139,
+        77155
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133552,8 +133552,8 @@
         "Canned Fish": 7,
         "Iron Ore": 1,
         "Oil Shale": 4,
-        "Timber": 3,
-        "Wheat": 86
+        "Timber": 5,
+        "Wheat": 85
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
@@ -133670,11 +133670,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 43,
-      "change_percent": -1.0498210682685793,
-      "recorded_at": "2026-08-30T09:29:17.586Z"
-    },
     {
       "price": 42,
       "change_percent": -1.455742824630384,
@@ -134169,6 +134164,11 @@
       "price": 1,
       "change_percent": 0.39515437366367745,
       "recorded_at": "2026-08-30T17:04:45.503Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -0.45481850602177065,
+      "recorded_at": "2026-08-30T17:09:45.500Z"
     }
   ],
   "factory_names": [
@@ -134189,11 +134189,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.0805688566907977,
+  "inflation": 0.10808210809471311,
   "money_printed": 223,
   "total_bank_reserves": 162618,
   "inflation_history": [
-    0.7339609137888629,
     0.5360157309280124,
     0.5627387906730064,
     0.0711761239022455,
@@ -134292,7 +134291,8 @@
     0.13667876234433607,
     0.08876153163085054,
     0.10048400363573202,
-    0.0805688566907977
+    0.0805688566907977,
+    0.10808210809471311
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134355,19 +134355,19 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.277882299651329,
-    "Cake": 1.3472220751852468,
+    "Fuel": 1.2860482404964033,
+    "Cake": 1.3562358527663703,
     "Bread": 1.386949737850918,
     "Copper Ingot": 1.3957158754464212,
-    "Iron Ingot": 1.3971622326234954,
+    "Iron Ingot": 1.3957664113097268,
     "Steel Ingot": 1.4046261946347305,
     "Gold Bar": 1.3696987991185936,
     "Aluminium Ingot": 1.4122718308078774,
     "Timber Planks": 1.3954607873709333,
-    "Bricks": 1.4173986367771283,
-    "Concrete": 1.4173477375557466,
-    "Glass": 1.4174642564346156,
-    "Steel Beam": 1.4172549145669815,
+    "Bricks": 1.4160067458349581,
+    "Concrete": 1.4159599185512868,
+    "Glass": 1.4160671159198464,
+    "Steel Beam": 1.415874521401623,
     "Machine Parts": 1.4124085177189465,
     "Refined Fuel": 1.3950639202895203,
     "Uranium Rod": 1.403995465684028,
@@ -134376,13 +134376,13 @@
     "Flour": 1.412261060935401,
     "Sugar": 1.3788011942814602,
     "Wine": 1.411510368732482,
-    "Canned Food": 1.360092940127983,
+    "Canned Food": 1.3582328733387972,
     "Canned Fish": 1.3828045657746038,
-    "Smoked Fish": 1.1994455094696375,
-    "Fish Stew": 1.4173477375557466,
+    "Smoked Fish": 1.2112278986041052,
+    "Fish Stew": 1.4159599185512868,
     "Peat Fuel": 1.3960294424536,
-    "Gas Fuel": 1.4187283774627513,
-    "Fertilizer": 1.418886934419267,
+    "Gas Fuel": 1.4172301072657312,
+    "Fertilizer": 1.4173759796657255,
     "Cotton Fabric": 1.41,
     "Manganese Alloy": 1.412074941385963,
     "Sunflower Oil": 1.4123435275452147,
@@ -134410,7 +134410,7 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Fuel": 4,
+    "Fuel": 2,
     "Smoked Fish": 10
   },
   "global_consumption": {
@@ -134418,7 +134418,7 @@
     "Steel Ingot": 7,
     "Timber Planks": 92,
     "Refined Fuel": 34,
-    "Fuel": 5,
+    "Fuel": 7,
     "Iron Ingot": 12,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -135239,6 +135239,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-08-30T16:54:44.812Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-08-30T17:09:44.923Z"
     }
   ],
   "demand_history": {
@@ -135885,6 +135890,11 @@
         "demand": 1.2708191788679548,
         "at": "2026-08-30T16:54:44.812Z",
         "supply": 2
+      },
+      {
+        "demand": 1.2860482404964033,
+        "at": "2026-08-30T17:09:44.923Z",
+        "supply": 2
       }
     ],
     "Iron Ingot": [
@@ -136137,6 +136147,10 @@
     {
       "total": 236453,
       "at": "2026-08-30T17:04:45.664Z"
+    },
+    {
+      "total": 236498,
+      "at": "2026-08-30T17:09:45.660Z"
     }
   ],
   "gold_rush": {
