@@ -1960,16 +1960,6 @@
   },
   "gsi_history": [
     {
-      "price": 86,
-      "change_percent": -0.5121964212660217,
-      "recorded_at": "2026-08-30T05:54:17.520Z"
-    },
-    {
-      "price": 79,
-      "change_percent": -7.799689922017357,
-      "recorded_at": "2026-08-30T05:59:17.382Z"
-    },
-    {
       "price": 78,
       "change_percent": -0.7491879411280289,
       "recorded_at": "2026-08-30T05:59:17.518Z"
@@ -2458,6 +2448,16 @@
       "price": 24,
       "change_percent": 0.6112138060901551,
       "recorded_at": "2026-08-30T13:24:17.696Z"
+    },
+    {
+      "price": 22,
+      "change_percent": -4.802510816678014,
+      "recorded_at": "2026-08-30T13:29:17.510Z"
+    },
+    {
+      "price": 21,
+      "change_percent": -1.3478389046077672,
+      "recorded_at": "2026-08-30T13:29:17.693Z"
     }
   ],
   "factory_names": [
@@ -2478,11 +2478,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0,
+  "inflation": 0.020248278724839513,
   "money_printed": 46,
   "total_bank_reserves": 162021,
   "inflation_history": [
-    0.733999115245379,
     0.7583179592305139,
     0.410378306317466,
     0.5751534302625012,
@@ -2581,7 +2580,8 @@
     0.019688101181446625,
     0,
     0,
-    0
+    0,
+    0.020248278724839513
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2629,29 +2629,29 @@
     "Fuel": 1.4001083218922008,
     "Cake": 1.4004870557273594,
     "Bread": 1.4044629556356831,
-    "Copper Ingot": 1.3740685416450666,
-    "Iron Ingot": 1.3665052343084179,
+    "Copper Ingot": 1.3780694083913623,
+    "Iron Ingot": 1.3714183305413212,
     "Steel Ingot": 1.4046210595863085,
-    "Gold Bar": 1.3730536480831779,
+    "Gold Bar": 1.371840935183892,
     "Aluminium Ingot": 1.4122718308078774,
-    "Timber Planks": 1.3357504035719407,
+    "Timber Planks": 1.3478488253112786,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4122781621852998,
     "Glass": 1.4122781621852998,
-    "Steel Beam": 1.4143654983999732,
+    "Steel Beam": 1.4132162585279753,
     "Machine Parts": 1.4124085177189465,
-    "Refined Fuel": 1.3900046734073475,
+    "Refined Fuel": 1.3919654035387379,
     "Uranium Rod": 1.403995465684028,
     "Reactor Core": 1.4122781621852998,
     "Circuit Board": 1.4115435622662862,
     "Flour": 1.412261060935401,
     "Sugar": 1.3823496885549285,
     "Wine": 1.411510368732482,
-    "Canned Food": 1.366694907838867,
+    "Canned Food": 1.365654052053863,
     "Canned Fish": 1.3825363987727073,
-    "Smoked Fish": 1.414522368699906,
+    "Smoked Fish": 1.4133605792039134,
     "Fish Stew": 1.4120099255926,
-    "Peat Fuel": 1.3874510773842172,
+    "Peat Fuel": 1.390588308038163,
     "Gas Fuel": 1.41212710002688,
     "Fertilizer": 1.4123144310246538,
     "Cotton Fabric": 1.41,
@@ -2681,12 +2681,12 @@
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
     "Peat Fuel": 2,
-    "Timber Planks": 6
+    "Timber Planks": 4
   },
   "global_consumption": {
     "Copper Ingot": 42,
     "Steel Ingot": 7,
-    "Timber Planks": 86,
+    "Timber Planks": 88,
     "Refined Fuel": 34,
     "Fuel": 3,
     "Iron Ingot": 12,
@@ -3463,6 +3463,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-30T13:14:17.505Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-08-30T13:29:17.519Z"
     }
   ],
   "demand_history": {
@@ -3646,11 +3651,6 @@
       }
     ],
     "Timber Planks": [
-      {
-        "demand": 1.1993166371071187,
-        "at": "2026-08-27T00:51:22.043Z",
-        "supply": 20
-      },
       {
         "demand": 1.2324423289234157,
         "at": "2026-08-27T12:41:22.592Z",
@@ -3944,6 +3944,11 @@
       {
         "demand": 1.3221245205490024,
         "at": "2026-08-30T13:14:17.505Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3357504035719407,
+        "at": "2026-08-30T13:29:17.519Z",
         "supply": 0
       }
     ],
