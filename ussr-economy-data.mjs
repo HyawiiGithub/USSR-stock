@@ -33,19 +33,43 @@ export const RESOURCE_VALUES = {
   "Gold": 150, "Oil": 64, "Copper": 32, "Coal": 16,
   "Lead": 40, "Uranium": 320, "Cotton": 24, "Iron Ore": 24,
   "Timber": 13, "Wheat": 8, "Limestone": 16, "Clay": 8,
-  "Sand": 5, "Sugar": 10, "Potash": 56, "Peat": 13,
-  "Natural Gas": 48, "Manganese": 96, "Oil Shale": 19,
-  "Phosphorite": 40, "Aluminium Ore": 64, "Antimony": 128,
+  "Sand": 5, "Sugar": 10, "Peat": 13,
+  "Natural Gas": 48, "Manganese": 96, "Phosphorite": 40, "Aluminium Ore": 64, "Antimony": 128,
   "Molybdenum": 160, "Sunflower": 12, "Flax": 18,
   "Corn": 10, "Salt": 8, "Tea": 30, "Citrus": 20,
   "Grapes": 20, "Wine": 60, "Sulphur": 25, "Aluminium": 80,
-  "Fish": 14
+  "Fish": 14,
+  "Potash": 56, "Oil Shale": 19, "Zinc": 38, "Amber": 75
 };
+
+export const RESOURCE_WEIGHTS = {
+  "Gold": 2, "Oil": 15, "Copper": 8, "Coal": 20,
+  "Lead": 7, "Uranium": 1, "Cotton": 20, "Iron Ore": 18,
+  "Timber": 25, "Wheat": 25, "Limestone": 12, "Clay": 8,
+  "Sand": 5, "Sugar": 20, "Peat": 10,
+  "Natural Gas": 10, "Manganese": 4, "Phosphorite": 5, "Aluminium Ore": 3, "Antimony": 3,
+  "Molybdenum": 2, "Sunflower": 15, "Flax": 10,
+  "Corn": 12, "Salt": 8, "Tea": 5, "Citrus": 8,
+  "Grapes": 12, "Wine": 8, "Sulphur": 3, "Aluminium": 5,
+  "Fish": 22,
+  "Potash": 6, "Oil Shale": 10, "Zinc": 7, "Amber": 2
+};
+
+// Per-SSR overrides — admin can set e.g. { "Russian SFSR": { "Gold": 4 } } without affecting others
+export let SSR_RESOURCE_WEIGHTS = {};
+
+// Helper: per-SSR weight (falls back to global)
+export function getResourceWeight(ssr, resource) {
+  const per = SSR_RESOURCE_WEIGHTS[ssr];
+  if (per && per[resource] !== undefined) return per[resource];
+  return RESOURCE_WEIGHTS[resource] || 5;
+}
 
 export const FOOD_VALUES = {
   "Fish": 2, "Wheat": 1, "Corn": 1, "Sunflower": 1, "Grapes": 1, "Tea": 1, "Citrus": 1,
   "Flour": 2, "Sugar": 1, "Bread": 3, "Cake": 3, "Wine": 2, "Canned Food": 4,
-  "Canned Fish": 5, "Smoked Fish": 4, "Fish Stew": 5
+  "Canned Fish": 5, "Smoked Fish": 4, "Fish Stew": 5,
+  "Sunflower Oil": 1, "Corn Meal": 2, "Tea Pack": 1, "Citrus Juice": 2
 };
 
 export const CRAFTING_RECIPES = {
@@ -67,34 +91,47 @@ export const CRAFTING_RECIPES = {
   "Circuit Board": {"ingredients": {"Copper Ingot": 3, "Lead": 2}, "value": 88, "emoji": "💻"},
   "Flour": {"ingredients": {"Wheat": 3}, "value": 25, "emoji": "🌾"},
   "Sugar": {"ingredients": {"Sugar": 2}, "value": 20, "emoji": "🍬"},
-  "Bread": {"ingredients": {"Flour": 2, "Sugar": 1}, "value": 45, "emoji": "🍞"},
-  "Cake": {"ingredients": {"Flour": 3, "Sugar": 3, "Wheat": 2}, "value": 80, "emoji": "🎂"},
-  "Wine": {"ingredients": {"Grapes": 4}, "value": 60, "emoji": "🍷"},
-  "Canned Food": {"ingredients": {"Wheat": 3, "Iron Ore": 2}, "value": 48, "emoji": "🥫"},
-  "Canned Fish": {"ingredients": {"Fish": 2, "Iron Ore": 2}, "value": 62, "emoji": "🐟"},
-  "Smoked Fish": {"ingredients": {"Fish": 2, "Coal": 2}, "value": 48, "emoji": "🔥🐟"},
-  "Fish Stew": {"ingredients": {"Fish": 2, "Wheat": 2, "Salt": 1}, "value": 55, "emoji": "🍲"}
+  "Bread": {"ingredients": {"Flour": 2, "Sugar": 1}, "value": 28, "emoji": "🍞"},
+  "Cake": {"ingredients": {"Flour": 3, "Sugar": 3, "Wheat": 2}, "value": 45, "emoji": "🎂"},
+  "Wine": {"ingredients": {"Grapes": 4}, "value": 35, "emoji": "🍷"},
+  "Canned Food": {"ingredients": {"Wheat": 3, "Iron Ore": 2}, "value": 30, "emoji": "🥫"},
+  "Canned Fish": {"ingredients": {"Fish": 2, "Iron Ore": 2}, "value": 38, "emoji": "🐟"},
+  "Smoked Fish": {"ingredients": {"Fish": 2, "Coal": 2}, "value": 28, "emoji": "🔥🐟"},
+  "Fish Stew": {"ingredients": {"Fish": 2, "Wheat": 2, "Salt": 1}, "value": 32, "emoji": "🍲"},
+  "Peat Fuel": {"ingredients": {"Peat": 4, "Coal": 1}, "value": 58, "emoji": "🔥"},
+  "Gas Fuel": {"ingredients": {"Natural Gas": 3}, "value": 64, "emoji": "⛽"},
+  "Fertilizer": {"ingredients": {"Phosphorite": 2, "Peat": 2, "Sulphur": 1}, "value": 52, "emoji": "🧪"},
+  "Cotton Fabric": {"ingredients": {"Cotton": 3}, "value": 42, "emoji": "🧵"},
+  "Manganese Alloy": {"ingredients": {"Manganese": 2, "Iron Ingot": 1, "Coal": 1}, "value": 95, "emoji": "⚙️"},
+  "Sunflower Oil": {"ingredients": {"Sunflower": 3}, "value": 35, "emoji": "🌻"},
+  "Linen": {"ingredients": {"Flax": 3}, "value": 34, "emoji": "🧶"},
+  "Corn Meal": {"ingredients": {"Corn": 3}, "value": 22, "emoji": "🌽"},
+  "Tea Pack": {"ingredients": {"Tea": 2, "Sugar": 1}, "value": 32, "emoji": "🍵"},
+  "Citrus Juice": {"ingredients": {"Citrus": 3, "Sugar": 1}, "value": 30, "emoji": "🍊"},
+  "Antimony Alloy": {"ingredients": {"Antimony": 2, "Lead": 2}, "value": 180, "emoji": "🔩"},
+  "Molybdenum Rod": {"ingredients": {"Molybdenum": 2, "Steel Ingot": 1}, "value": 210, "emoji": "🔬"},
+  "Aluminium Sheet": {"ingredients": {"Aluminium": 2, "Coal": 1}, "value": 45, "emoji": "📄"}
 };
 
 export const MINES = {
-  "Iron Mine": {"cost": 15000, "upgrade_mult": 2.0, "emoji": "⛏️", "produces": ["Iron Ore"], "rate": 2, "max_level": 10},
-  "Coal Mine": {"cost": 12000, "upgrade_mult": 2.0, "emoji": "🪨", "produces": ["Coal"], "rate": 3, "max_level": 10},
-  "Copper Mine": {"cost": 18000, "upgrade_mult": 2.0, "emoji": "🟫", "produces": ["Copper"], "rate": 2, "max_level": 10},
-  "Gold Mine": {"cost": 50000, "upgrade_mult": 2.5, "emoji": "💎", "produces": ["Gold"], "rate": 1, "max_level": 8, "rare": true},
-  "Uranium Mine": {"cost": 60000, "upgrade_mult": 2.5, "emoji": "☢️", "produces": ["Uranium"], "rate": 1, "max_level": 8, "rare": true},
-  "Oil Rig": {"cost": 45000, "upgrade_mult": 2.0, "emoji": "🛢️", "produces": ["Oil", "Natural Gas"], "rate": 2, "max_level": 10},
-  "Timber Camp": {"cost": 10000, "upgrade_mult": 1.8, "emoji": "🌲", "produces": ["Timber"], "rate": 3, "max_level": 10},
-  "Farm": {"cost": 12000, "upgrade_mult": 1.8, "emoji": "🌾", "produces": ["Wheat", "Sugar"], "rate": 3, "max_level": 10}
+  "Iron Mine": {"cost": 15000, "upgrade_mult": 2.0, "emoji": "⛏️", "produces": ["Iron Ore"], "rate": 5, "max_level": 10},
+  "Coal Mine": {"cost": 12000, "upgrade_mult": 2.0, "emoji": "🪨", "produces": ["Coal"], "rate": 6, "max_level": 10},
+  "Copper Mine": {"cost": 18000, "upgrade_mult": 2.0, "emoji": "🟫", "produces": ["Copper"], "rate": 5, "max_level": 10},
+  "Gold Mine": {"cost": 50000, "upgrade_mult": 2.5, "emoji": "💎", "produces": ["Gold"], "rate": 2, "max_level": 8, "rare": true},
+  "Uranium Mine": {"cost": 60000, "upgrade_mult": 2.5, "emoji": "☢️", "produces": ["Uranium"], "rate": 2, "max_level": 8, "rare": true},
+  "Oil Rig": {"cost": 45000, "upgrade_mult": 2.0, "emoji": "🛢️", "produces": ["Oil", "Natural Gas"], "rate": 5, "max_level": 10},
+  "Timber Camp": {"cost": 10000, "upgrade_mult": 1.8, "emoji": "🌲", "produces": ["Timber"], "rate": 6, "max_level": 10},
+  "Farm": {"cost": 12000, "upgrade_mult": 1.8, "emoji": "🌾", "produces": ["Wheat", "Sugar"], "rate": 6, "max_level": 10}
 };
 
 export const FACTORIES = {
-  "Steel Mill": {"cost": 50000, "upgrade_mult": 2.0, "emoji": "🏭", "produces": ["Steel Ingot"], "requires": {"Iron Ore": 2, "Coal": 3}, "rate": 2, "max_level": 10},
-  "Machine Shop": {"cost": 45000, "upgrade_mult": 2.0, "emoji": "🔩", "produces": ["Machine Parts"], "requires": {"Steel Ingot": 2, "Iron Ore": 3}, "rate": 2, "max_level": 10},
-  "Refinery": {"cost": 55000, "upgrade_mult": 2.0, "emoji": "🛢️", "produces": ["Fuel"], "requires": {"Oil": 3}, "rate": 2, "max_level": 10},
-  "Nuclear Processing": {"cost": 100000, "upgrade_mult": 2.5, "emoji": "⚛️", "produces": ["Uranium Rod"], "requires": {"Uranium": 2, "Lead": 2}, "rate": 1, "max_level": 8},
-  "Electronics Factory": {"cost": 60000, "upgrade_mult": 2.0, "emoji": "💻", "produces": ["Circuit Board"], "requires": {"Copper Ingot": 3, "Lead": 2}, "rate": 2, "max_level": 10},
-  "Bakery": {"cost": 30000, "upgrade_mult": 1.8, "emoji": "🍞", "produces": ["Bread", "Cake"], "requires": {"Wheat": 3, "Sugar": 2}, "rate": 3, "max_level": 10},
-  "Winery": {"cost": 35000, "upgrade_mult": 1.8, "emoji": "🍷", "produces": ["Wine"], "requires": {"Grapes": 4}, "rate": 2, "max_level": 10}
+  "Steel Mill": {"cost": 50000, "upgrade_mult": 2.0, "emoji": "🏭", "produces": ["Steel Ingot"], "requires": {"Iron Ore": 2, "Coal": 3}, "rate": 4, "max_level": 10},
+  "Machine Shop": {"cost": 45000, "upgrade_mult": 2.0, "emoji": "🔩", "produces": ["Machine Parts"], "requires": {"Steel Ingot": 2, "Iron Ore": 3}, "rate": 4, "max_level": 10},
+  "Refinery": {"cost": 55000, "upgrade_mult": 2.0, "emoji": "🛢️", "produces": ["Fuel"], "requires": {"Oil": 3}, "rate": 4, "max_level": 10},
+  "Nuclear Processing": {"cost": 100000, "upgrade_mult": 2.5, "emoji": "⚛️", "produces": ["Uranium Rod"], "requires": {"Uranium": 2, "Lead": 2}, "rate": 3, "max_level": 8},
+  "Electronics Factory": {"cost": 60000, "upgrade_mult": 2.0, "emoji": "💻", "produces": ["Circuit Board"], "requires": {"Copper Ingot": 3, "Lead": 2}, "rate": 4, "max_level": 10},
+  "Bakery": {"cost": 30000, "upgrade_mult": 1.8, "emoji": "🍞", "produces": ["Bread", "Cake"], "requires": {"Wheat": 3, "Sugar": 2}, "rate": 5, "max_level": 10},
+  "Winery": {"cost": 35000, "upgrade_mult": 1.8, "emoji": "🍷", "produces": ["Wine"], "requires": {"Grapes": 4}, "rate": 4, "max_level": 10}
 };
 
 export const STORE = {"cost": 25000, "upgrade_mult": 1.5, "emoji": "🏪", "rate": 3, "max_level": 10};

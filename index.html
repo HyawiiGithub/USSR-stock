@@ -90,10 +90,17 @@ tbody tr:nth-child(even) td{background:var(--paper2)}
 .tabs button.active{background:#111;color:#f5e6a3}
 .skeleton{height:12px;background:repeating-linear-gradient(90deg,#ddd 0 12px,#ccc 12px 24px)}
 .notice{border:2px dashed #111;padding:8px;background:#fff;font:600 11px var(--font-mono)}
+.ticker{overflow:hidden;white-space:nowrap;background:#111;color:#f5e6a3;border-bottom:3px solid var(--red);padding:6px 0;font:700 10px var(--font-mono);letter-spacing:.06em;text-transform:uppercase}
+.ticker span{display:inline-block;padding-left:100%;animation:ticker 45s linear infinite}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.fivebar{height:16px;background:#fff;border:2px solid #111;position:relative;overflow:hidden}
+.fivebar i{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--red) 0 12px,#a51a1a 12px 24px)}
+.fivebar span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:800 10px var(--font-mono);background:#111;color:#f5e6a3;padding:1px 6px;border:1px solid #fff}
 </style>
 </head>
 <body>
 <div class="top-rule"><b>ГОСПЛАН // GOSPLAN</b> <span>★ STATE PLANNING COMMITTEE ★ CENTRAL DIRECTIVE ★ FIVE-YEAR PLAN ★</span> <span style="margin-left:auto" id="topGen">LOADING...</span></div>
+<div class="ticker" id="pravdaTicker"><span id="tickerText">★ PRAVDA ★ Loading directives from Central Committee… ★</span></div>
 <header class="hdr">
   <div style="display:flex;gap:10px;align-items:center">
     <div class="stamp">★<small>CCCP</small></div>
@@ -132,6 +139,14 @@ tbody tr:nth-child(even) td{background:var(--paper2)}
       <div class="card"><div class="card-h"><span>GLOBAL CONSUMPTION — TOP 10</span><small>STATE PULL</small></div><div class="card-b"><div class="chart-wrap mini"><canvas id="chartCons"></canvas></div></div></div>
     </div>
     <div class="card"><div class="card-h"><span>SUPPLY × DEMAND — 60-150% (BALANCED)</span><small id="prodCount">—</small></div><div class="card-b"><div class="tabs" id="demandTabs"></div><div id="demandTable"></div></div></div>
+    <div class="grid grid-2" style="margin-top:10px">
+      <div class="card"><div class="card-h"><span>★ FIVE-YEAR PLAN — PLAN FULFILLMENT</span><small id="planPct">—</small></div><div class="card-b">
+        <div class="fivebar"><i id="planFill" style="width:0%"></i><span id="planLabel">—</span></div>
+        <div class="mono" style="font-size:11px;margin-top:6px" id="planText">Calculating plan targets from GSI & production…</div>
+        <div class="mono" style="font-size:10px;color:var(--muted);margin-top:4px">Targets are realistic: steel, fuel, timber, bread — reflecting actual Soviet quotas. Exceeding 100% = shock-worker bonus prestige.</div>
+      </div></div>
+      <div class="card"><div class="card-h"><span>★ STAKHANOVITE LEADERBOARD — SHOCK WORKERS</span><small>TOP 5 • MOST SHIFTS</small></div><div class="card-b"><div id="stakhanovite" class="mono" style="font-size:11px;line-height:1.6">— loading —</div><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">Realistic prestige: most -work shifts, not luck. Updated live from economy.</div></div></div>
+    </div>
   </div>
 
   <div id="view-markets" class="hidden">

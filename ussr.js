@@ -26,7 +26,7 @@ nav();
 
 // FULL fallback — 15 SSRs, 6 regions, matches backend exactly
 function fallbackMock(){
-  const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Potash:56, Peat:13, Manganese:96, "Oil Shale":19, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Aluminium:80, Cotton:24 };
+  const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Peat:13, Manganese:96, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Aluminium:80, Cotton:24, Potash:56, "Oil Shale":19, Zinc:38, Amber:75 };
   const REC = {
     "Iron Ingot": {value:40, ingredients:{"Iron Ore":3,Coal:2}}, "Steel Ingot": {value:80, ingredients:{"Iron Ingot":2,Coal:3}},
     "Copper Ingot": {value:48, ingredients:{Copper:3,Coal:2}}, "Gold Bar": {value:560, ingredients:{Gold:3}},
@@ -36,16 +36,21 @@ function fallbackMock(){
     "Machine Parts": {value:72, ingredients:{"Iron Ingot":3,"Steel Ingot":2}}, "Fuel": {value:64, ingredients:{Oil:3}},
     "Refined Fuel": {value:128, ingredients:{Fuel:2}}, "Uranium Rod": {value:256, ingredients:{Uranium:3,Lead:2}},
     "Reactor Core": {value:800, ingredients:{"Uranium Rod":2,"Steel Beam":3,"Machine Parts":2}}, "Circuit Board": {value:88, ingredients:{"Copper Ingot":3,Lead:2}},
-    "Flour": {value:25, ingredients:{Wheat:3}}, "Bread": {value:45, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:80, ingredients:{Flour:3,Sugar:3,Wheat:2}},
-    "Wine": {value:60, ingredients:{Grapes:4}}, "Canned Food": {value:48, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:62, ingredients:{Fish:2,"Iron Ore":2}},
-    "Smoked Fish": {value:48, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:55, ingredients:{Fish:2,Wheat:2,Salt:1}}
+    "Flour": {value:25, ingredients:{Wheat:3}}, "Bread": {value:28, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:45, ingredients:{Flour:3,Sugar:3,Wheat:2}},
+    "Wine": {value:35, ingredients:{Grapes:4}}, "Canned Food": {value:30, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:38, ingredients:{Fish:2,"Iron Ore":2}},
+    "Smoked Fish": {value:28, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:32, ingredients:{Fish:2,Wheat:2,Salt:1}},
+    "Peat Fuel": {value:58, ingredients:{Peat:4,Coal:1}}, "Gas Fuel": {value:64, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:52, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
+    "Cotton Fabric": {value:42, ingredients:{Cotton:3}}, "Manganese Alloy": {value:95, ingredients:{Manganese:2,"Iron Ingot":1,Coal:1}},
+    "Sunflower Oil": {value:35, ingredients:{Sunflower:3}}, "Linen": {value:34, ingredients:{Flax:3}}, "Corn Meal": {value:22, ingredients:{Corn:3}},
+    "Tea Pack": {value:32, ingredients:{Tea:2,Sugar:1}}, "Citrus Juice": {value:30, ingredients:{Citrus:3,Sugar:1}},
+    "Antimony Alloy": {value:180, ingredients:{Antimony:2,Lead:2}}, "Molybdenum Rod": {value:210, ingredients:{Molybdenum:2,"Steel Ingot":1}}, "Aluminium Sheet": {value:45, ingredients:{Aluminium:2,Coal:1}}
   };
   const SSR = {
     "Russian SFSR": {emoji:"🇷🇺",work_zone:"1538704167890329621",resources:["Coal","Iron Ore","Timber","Oil","Natural Gas","Gold"]},
-    "Byelorussian SSR": {emoji:"🇧🇾",work_zone:"1538703449095676016",resources:["Timber","Peat","Potash","Wheat","Flax"]},
+    "Byelorussian SSR": {emoji:"🇧🇾",work_zone:"1538703449095676016",resources:["Timber","Peat","Wheat","Flax"]},
     "Ukrainian SSR": {emoji:"🇺🇦",work_zone:"1538703449095676016",resources:["Coal","Iron Ore","Wheat","Sunflower","Corn","Salt"]},
     "Moldavian SSR": {emoji:"🇲🇩",work_zone:"1538703449095676016",resources:["Wheat","Corn","Sunflower","Grapes","Wine"]},
-    "Estonian SSR": {emoji:"🇪🇪",work_zone:"1538704231249354772",resources:["Oil Shale","Timber","Phosphorite","Peat","Fish"]},
+    "Estonian SSR": {emoji:"🇪🇪",work_zone:"1538704231249354772",resources:["Timber","Phosphorite","Peat","Fish","Oil Shale"]},
     "Latvian SSR": {emoji:"🇱🇻",work_zone:"1538704231249354772",resources:["Timber","Peat","Limestone","Wheat","Fish"]},
     "Lithuanian SSR": {emoji:"🇱🇹",work_zone:"1538704231249354772",resources:["Timber","Peat","Clay","Limestone","Flax","Fish"]},
     "Georgian SSR": {emoji:"🇬🇪",work_zone:"1538703028524285962",resources:["Manganese","Copper","Gold","Grapes","Tea","Citrus"]},
@@ -115,11 +120,11 @@ function fallbackMock(){
     const pop=ssrs.reduce((s,k)=> s+(census[k]||0),0);
     const rc=companies.filter(c=> SSR[c.hq_ssr]?.work_zone===zone);
     const emp=rc.reduce((s,c)=> s+c.employees,0);
-    let food=0; rc.forEach(c=>{ Object.entries(c.inventory).forEach(([it,qty])=>{ const fv={Fish:2,Wheat:1,Corn:1,Sunflower:1,Grapes:1,Tea:1,Citrus:1,Flour:2,Sugar:1,Bread:3,Cake:3,Wine:2,"Canned Food":4,"Canned Fish":5,"Smoked Fish":4,"Fish Stew":5}[it]; if(fv) food+= qty*fv; }); });
+    let food=0; rc.forEach(c=>{ Object.entries(c.inventory).forEach(([it,qty])=>{ const fv={Fish:2,Wheat:1,Corn:1,Sunflower:1,Grapes:1,Tea:1,Citrus:1,Flour:2,Sugar:1,Bread:3,Cake:3,Wine:2,"Canned Food":4,"Canned Fish":5,"Smoked Fish":4,"Fish Stew":5,"Sunflower Oil":1,"Corn Meal":2,"Tea Pack":1,"Citrus Juice":2}[it]; if(fv) food+= qty*fv; }); });
     const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2)); // balanced: 1 per emp + 0.2 per pop (was 2 + 0.5)
     regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)}
   }
-  return {gsi_history:gsi,inflation_history:infl,inflation,money_printed,total_bank_reserves,companies,market_demand,market_supply,demand_history,ai_store,global_consumption,consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:Object.fromEntries(Object.entries(REC).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString()}
+  return {gsi_history:gsi,inflation_history:infl,inflation,money_printed,total_bank_reserves,companies,market_demand,market_supply,demand_history,ai_store,global_consumption,consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:Object.fromEntries(Object.entries(REC).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString(), ssr_resource_weights:{}, compensation_log:[], top_workers:[]}
 }
 
 async function load(){
@@ -151,7 +156,7 @@ async function load(){
   if(genEl) genEl.textContent=new Date(data.generated_at).toLocaleString();
   const foot=document.getElementById('footGen');
   if(foot) foot.textContent=new Date(data.generated_at).toLocaleString();
-  renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction();
+  renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTicker(); renderFiveYearPlan(); renderStakhanovite();
   setTimeout(refreshLoop, 10000);
 }
 
@@ -324,11 +329,55 @@ function renderProduction(){
     }
   }
 }
+function renderTicker(){
+  const el=document.getElementById('tickerText');
+  if(!el || !data) return;
+  const headlines=[
+    `GSI ${fmt(data.gsi_history[data.gsi_history.length-1].price)} (${(data.gsi_history[data.gsi_history.length-1].change_percent>=0?'+':'')+data.gsi_history[data.gsi_history.length-1].change_percent.toFixed(2)}%)`,
+    `INFLATION ${data.inflation.toFixed(2)}%`,
+    `GOLD ${data.gold.status} ${data.gold.backing.toFixed(1)}%`,
+    `${data.companies.length} ENTERPRISES • CAP ${money(data.companies.reduce((s,c)=>s+c.market_cap,0))}`,
+    `PLAN FULFILLMENT ${Math.min(100,Math.round(data.companies.reduce((s,c)=>s+Object.values(c.inventory).reduce((a,b)=>a+b,0),0)/20))}%`,
+  ];
+  // add random realistic Soviet directives from recent GSI moves
+  const dir=data.gsi_history[data.gsi_history.length-1].change_percent>0 ? "PLAN OVERFULFILLED — STAKHANOVITE MOVEMENT HONOURED" : "CENTRAL COMMITTEE CALLS FOR INCREASED OUTPUT — MEET QUOTAS";
+  headlines.push(dir);
+  // per-SSR weights hint
+  if(data.ssr_resource_weights && Object.keys(data.ssr_resource_weights).length) headlines.push(`${Object.keys(data.ssr_resource_weights).length} SSR(s) WITH CUSTOM SPAWN RATES`);
+  // compensation notice
+  if(data.compensation_log && data.compensation_log.length) headlines.push(`COMPENSATION: ${data.compensation_log.length} GRANTS FOR LOST RESOURCES`);
+  el.textContent='  ★  ' + headlines.join('  ★  ') + '  ★  PRAVDA ★  ALL POWER TO THE SOVIETS  ★  ';
+}
+function renderFiveYearPlan(){
+  const fill=document.getElementById('planFill'), label=document.getElementById('planLabel'), text=document.getElementById('planText'), pctEl=document.getElementById('planPct');
+  if(!fill || !data) return;
+  // Realistic plan: target based on total production + employed
+  const totalInventory = data.companies.reduce((s,c)=> s+Object.values(c.inventory).reduce((a,b)=>a+b,0),0);
+  const totalEmployees = data.companies.reduce((s,c)=>s+c.employees,0);
+  const target = Math.max(500, totalEmployees*25);
+  const pct = Math.min(120, Math.round(totalInventory/target*100));
+  fill.style.width=Math.min(100,pct)+'%';
+  if(pctEl) pctEl.textContent=pct+'%';
+  if(label) label.textContent=pct>=100 ? 'PLAN FULFILLED ★' : pct+'% COMPLETE';
+  if(text) text.textContent=`Produced ${fmt(totalInventory)} units vs plan target ${fmt(target)} (all crafted + raw). ${pct>=100?'Shock workers honoured!':'Central Committee urges: meet quota through trade and -collect.'} Per-SSR spawn rates now independent — geology matters.`;
+}
+function renderStakhanovite(){
+  const el=document.getElementById('stakhanovite');
+  if(!el) return;
+  const workers=data.top_workers || [];
+  if(!workers.length){
+    // fallback: rank companies by employees as proxy
+    const sorted=data.companies.slice().sort((a,b)=>b.employees-a.employees).slice(0,5);
+    el.innerHTML=sorted.map((c,i)=>`${i+1}. ${c.name} — ${c.employees} workers • ${c.hq_ssr}`).join('<br>');
+    return;
+  }
+  el.innerHTML=workers.map((w,i)=>`${i+1}. ${w.username} — ${w.work_count} shifts • ${w.ssr_region||'—'} @ ${w.employed_at||'—'}`).join('<br>');
+}
 async function refreshLoop(){
   if(location.hostname.includes('github.io')) return; // static pages don't poll backend
   try{
     const r=await fetch(location.origin + '/api/ussr/overview',{cache:'no-store', signal:AbortSignal.timeout(4000)});
-    if(r.ok){ data=await r.json(); renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); }
+    if(r.ok){ data=await r.json(); renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTicker(); renderFiveYearPlan(); renderStakhanovite(); }
   }catch{}
   setTimeout(refreshLoop,10000);
 }

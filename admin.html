@@ -4,161 +4,414 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GOSPLAN ADMIN — USSR Economy</title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 <style>
-:root{--red:#8a0f14;--paper:#e8dcc6;--ink:#111;--border:#111;--gold:#c9a227}
-*{box-sizing:border-box;margin:0;padding:0} body{min-height:100vh;background:var(--paper);color:var(--ink);font-family:'IBM Plex Mono',monospace;padding:20px}
-.card{background:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;padding:16px;margin:12px 0;max-width:900px;margin-left:auto;margin-right:auto}
-h1{font:900 22px 'Playfair Display',serif;text-transform:uppercase}
-input,select,textarea{width:100%;padding:8px;border:2px solid #111;font-family:'IBM Plex Mono',monospace;font-size:12px;margin:4px 0}
-button{background:#111;color:#f5e6a3;border:2px solid #111;padding:8px 12px;font:700 11px 'IBM Plex Mono',monospace;cursor:pointer}
-button:hover{background:var(--red);color:#fff}
+:root{--bg:#0f1115;--sidebar:#151821;--card:#1b1e2a;--card2:#232636;--border:#2a2f45;--accent:#6b7cff;--accent2:#8a5cff;--red:#d93a42;--gold:#e9c46a;--green:#34d399;--text:#e6e8f0;--muted:#9aa0b8;--paper:#e8dcc6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;display:flex}
+a{color:var(--accent);text-decoration:none}
 .hidden{display:none!important}
-label{font:700 10px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+/* sidebar — unbelievaboat style */
+.sidebar{width:260px;background:var(--sidebar);border-right:1px solid var(--border);display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow:auto}
+.side-head{padding:22px 18px;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:center}
+.side-logo{width:44px;height:44px;background:linear-gradient(135deg,var(--red),#8a0f14);border-radius:10px;display:grid;place-items:center;font:900 18px 'Playfair Display',serif;color:#fff;box-shadow:0 4px 16px rgba(217,58,66,.35)}
+.side-title{font:800 13px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;line-height:1.1}
+.side-title small{display:block;font:600 10px 'JetBrains Mono',monospace;color:var(--muted);letter-spacing:.06em}
+.nav{padding:12px 10px;flex:1}
+.nav button{width:100%;text-align:left;background:transparent;border:0;color:var(--muted);padding:10px 12px;border-radius:8px;font:600 13px 'Inter',sans-serif;cursor:pointer;display:flex;gap:10px;align-items:center}
+.nav button:hover{background:rgba(107,124,255,.1);color:var(--text)}
+.nav button.active{background:linear-gradient(135deg,rgba(107,124,255,.15),rgba(138,92,255,.15));color:#fff;border:1px solid rgba(107,124,255,.3)}
+.nav .dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.nav button.active .dot{background:var(--accent)}
+.side-foot{padding:14px;border-top:1px solid var(--border);font:500 11px 'JetBrains Mono',monospace;color:var(--muted)}
+/* main */
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
+.topbar{height:64px;background:rgba(21,24,33,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:16px;padding:0 22px;position:sticky;top:0;z-index:10}
+.topbar h1{font:800 18px 'Inter',sans-serif;letter-spacing:-.02em}
+.topbar small{font:500 11px 'JetBrains Mono',monospace;color:var(--muted)}
+.badge{padding:4px 8px;border-radius:999px;font:700 10px 'JetBrains Mono',monospace;letter-spacing:.08em}
+.b-live{background:rgba(52,211,153,.15);color:var(--green);border:1px solid rgba(52,211,153,.3)}
+.b-off{background:rgba(217,58,66,.15);color:var(--red);border:1px solid rgba(217,58,66,.25)}
+.btn{background:var(--accent);color:#fff;border:0;padding:9px 14px;border-radius:8px;font:700 12px 'Inter',sans-serif;cursor:pointer}
+.btn:hover{background:#5a6af0}
+.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn-ghost:hover{background:var(--card2)}
+.btn-danger{background:var(--red)}
+.btn-danger:hover{background:#c92f37}
+.content{padding:22px;max-width:1400px;width:100%;margin:0 auto}
+.grid{display:grid;gap:16px}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){body{flex-direction:column}.sidebar{width:100%;height:auto;position:relative}.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.card-h{font:800 11px 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat .k{font:700 10px 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.stat .v{font:800 22px 'Inter',sans-serif;letter-spacing:-.03em}
+.stat .s{font:500 11px 'JetBrains Mono',monospace;color:var(--muted)}
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:10px 12px;background:var(--sidebar);color:var(--muted);font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+td{padding:10px 12px;border-top:1px solid var(--border);font:500 13px 'Inter',sans-serif;white-space:nowrap}
+tbody tr:hover td{background:rgba(107,124,255,.05)}
+input,select,textarea{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font:500 13px 'Inter',sans-serif}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(107,124,255,.15)}
+label{font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin:8px 0 4px}
+.login-card{max-width:420px;margin:80px auto;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.progress{height:8px;background:var(--card2);border-radius:999px;overflow:hidden;border:1px solid var(--border)}
+.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.notice{padding:10px 12px;border-radius:8px;font:600 12px 'JetBrains Mono',monospace;border:1px solid var(--border);margin-bottom:12px}
+.notice.ok{background:rgba(52,211,153,.08);color:var(--green);border-color:rgba(52,211,153,.25)}
+.notice.warn{background:rgba(233,196,106,.08);color:var(--gold);border-color:rgba(233,196,106,.25)}
+.notice.err{background:rgba(217,58,66,.08);color:#ff8a8a;border-color:rgba(217,58,66,.25)}
+#toast{position:fixed;bottom:18px;right:18px;background:var(--card2);border:1px solid var(--border);padding:12px 14px;border-radius:10px;font:600 13px 'Inter',sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.4);display:none;z-index:99}
 </style>
 </head>
 <body>
-<div class="card" style="text-align:center"><h1>★ GOSPLAN ADMIN DASHBOARD ★</h1><p style="font-size:10px;color:#5a5242">Only accessible with password — manage USSR Economy live</p></div>
-
-<div id="login" class="card">
-  <h3>🔒 Administrator Login</h3>
-  <p style="font-size:11px;margin:6px 0">Enter admin password to manage recipes, items, rarities, buildings.<br><span style="color:#8a0f14">Password is set via server env <code>ADMIN_PASSWORD</code> – never committed to GitHub. For local dev, first entry is stored in your browser only (localStorage).</span></p>
-  <input type="password" id="pw" placeholder="Password">
-  <button onclick="login()">UNLOCK</button>
-  <div id="loginMsg" style="font-size:11px;color:#8a0f14;margin-top:6px"></div>
+<div class="sidebar" id="sidebar">
+  <div class="side-head">
+    <div class="side-logo">★</div>
+    <div class="side-title">GOSPLAN<br><small>CCCP  STATE COMMITTEE</small></div>
+  </div>
+  <div class="nav" id="nav">
+    <button class="active" data-tab="overview"><span class="dot"></span> Overview</button>
+    <button data-tab="economy"><span class="dot"></span> Economy & GSI</button>
+    <button data-tab="companies"><span class="dot"></span> Enterprises</button>
+    <button data-tab="spawn"><span class="dot"></span> SSR Spawn Rates ★</button>
+    <button data-tab="recipes"><span class="dot"></span> Recipes & Items</button>
+    <button data-tab="buildings"><span class="dot"></span> Buildings</button>
+    <button data-tab="users"><span class="dot"></span> Citizens</button>
+    <button data-tab="world"><span class="dot"></span> World Map</button>
+    <button data-tab="logs"><span class="dot"></span> Compensation Log</button>
+  </div>
+  <div class="side-foot">
+    <div>усСР-stock • GOSPLAN</div>
+    <div style="margin-top:6px;opacity:.7">Admin via <code>ADMIN_PASSWORD</code> env</div>
+    <button onclick="logout()" style="margin-top:10px;width:100%" class="btn btn-ghost">Lock</button>
+  </div>
 </div>
 
-<div id="dash" class="hidden">
-  <div class="card"><h3>📋 Quick Stats</h3><div id="stats" style="font-size:11px"></div></div>
-
-  <div class="grid2">
-    <div class="card"><h3>➕ Add Recipe</h3>
-      <label>Item name</label><input id="rName" placeholder="e.g. Canned Fish">
-      <label>Emoji</label><input id="rEmoji" placeholder="🐟">
-      <label>Value (₽)</label><input id="rValue" type="number" placeholder="62">
-      <label>Ingredients JSON e.g. {"Fish":2,"Iron Ore":2}</label><textarea id="rIng" rows="3" placeholder='{"Fish":2,"Iron Ore":2}'></textarea>
-      <button onclick="addRecipe()">ADD RECIPE</button>
+<div class="main">
+  <div class="topbar">
+    <div>
+      <h1>GOSPLAN ADMIN DASHBOARD</h1>
+      <small id="topSub">UnbelievaBoat-style • Live Gosplan feed • per-SSR spawn control</small>
     </div>
-    <div class="card"><h3>➕ Add Item / Resource</h3>
-      <label>Item name</label><input id="iName" placeholder="e.g. Uranium Rod">
-      <label>Value</label><input id="iValue" type="number" placeholder="256">
-      <label>Food value (0 if not food)</label><input id="iFood" type="number" placeholder="0">
-      <label>Rarity weight (lower = rarer, 1-25)</label><input id="iWeight" type="number" placeholder="5">
-      <button onclick="addItem()">ADD ITEM</button>
+    <div style="margin-left:auto;display:flex;gap:10px;align-items:center">
+      <span class="badge b-off" id="connBadge">OFFLINE</span>
+      <a href="./" class="btn btn-ghost">← View Site</a>
     </div>
   </div>
 
-  <div class="grid2">
-    <div class="card"><h3>🏗️ Add Building</h3>
-      <label>Name</label><input id="bName" placeholder="e.g. Cannery">
-      <label>Type (mine/factory/store)</label><select id="bType"><option value="mine">Mine</option><option value="factory">Factory</option><option value="store">Store</option></select>
-      <label>Cost</label><input id="bCost" type="number" placeholder="35000">
-      <label>Produces JSON e.g. ["Canned Fish"]</label><input id="bProd" placeholder='["Canned Fish"]'>
-      <label>Requires JSON (factory only) e.g. {"Fish":2}</label><input id="bReq" placeholder='{"Fish":2}'>
-      <label>Rate</label><input id="bRate" type="number" placeholder="2">
-      <button onclick="addBuilding()">ADD BUILDING</button>
-    </div>
-    <div class="card"><h3>⚙️ Rarities & World</h3>
-      <label>Set rarity weight for item</label><input id="wItem" placeholder="Gold">
-      <label>Weight</label><input id="wVal" type="number" placeholder="2">
-      <button onclick="setRarity()">SET RARITY</button>
-      <hr style="margin:10px 0">
-      <button onclick="exportData()">⬇️ EXPORT economy_data.json</button>
-      <button onclick="clearCache()">🗑️ Clear local draft</button>
-      <div id="out" style="font-size:10px;white-space:pre-wrap;margin-top:8px;max-height:200px;overflow:auto;background:#f5efe0;padding:6px;border:1px solid #111"></div>
+  <!-- LOGIN -->
+  <div id="loginWrap" class="content">
+    <div class="login-card">
+      <h3 style="font:800 16px 'Inter',sans-serif">🔒 Administrator Login</h3>
+      <p style="font:500 12px 'Inter',sans-serif;color:var(--muted);margin:8px 0">Password is <b>never</b> in GitHub. Set via Vercel env <code>ADMIN_PASSWORD</code>. For local dev, first entry is stored in this browser only (localStorage).</p>
+      <label>Password</label>
+      <input type="password" id="pw" placeholder="Enter ADMIN_PASSWORD">
+      <button onclick="login()" class="btn" style="width:100%;margin-top:10px">Unlock Dashboard</button>
+      <div id="loginMsg" style="font:600 12px 'JetBrains Mono',monospace;color:var(--red);margin-top:8px"></div>
+      <div class="notice warn" style="margin-top:12px">New: per-SSR spawn rates — changing <b>Russian SFSR Gold 2→5</b> only affects that SSR, others stay at global.</div>
     </div>
   </div>
 
-  <div class="card"><h3>📜 Current Recipes / Items (local draft)</h3><div id="list" style="font-size:11px;white-space:pre-wrap"></div></div>
+  <!-- DASH -->
+  <div id="dash" class="content hidden">
+    <!-- OVERVIEW -->
+    <div data-panel="overview">
+      <div class="grid grid-4">
+        <div class="card stat"><span class="k">GSI Price</span><span class="v" id="oGSI">—</span><span class="s" id="oGSIChange">—</span></div>
+        <div class="card stat"><span class="k">Inflation</span><span class="v" id="oInfl">—</span><span class="s" id="oInflSub">—</span></div>
+        <div class="card stat"><span class="k">Gold Backing</span><span class="v" id="oGold">—</span><span class="s" id="oGoldStatus">—</span></div>
+        <div class="card stat"><span class="k">Enterprises</span><span class="v" id="oComps">—</span><span class="s" id="oCompsSub">—</span></div>
+      </div>
+      <div class="grid grid-3" style="margin-top:16px">
+        <div class="card"><div class="card-h">Money</div><div id="oMoney" style="font:500 13px 'JetBrains Mono',monospace">—</div></div>
+        <div class="card"><div class="card-h">Regions</div><div id="oRegions" style="font:600 13px 'Inter',sans-serif">—</div></div>
+        <div class="card"><div class="card-h">Per-SSR Overrides</div><div id="oSSRWeights" style="font:500 12px 'JetBrains Mono',monospace">—</div></div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Live Economy Source</div><div id="oSource" class="notice">—</div></div>
+    </div>
+
+    <!-- SPAWN RATES — NEW CORE FEATURE -->
+    <div data-panel="spawn" class="hidden">
+      <div class="notice ok">★ Per-SSR spawn rates: weight is per SSR, not global. 0=never spawns, 1=rarest, 2=Gold-rare, 10=common, 25=very common. Example: set <b>Nuristani Zinc 7→15</b> only Nuristani chances up; Russian stays 7.</div>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-h">Set / Override per-SSR weight</div>
+          <label>SSR (15)</label>
+          <select id="sSSR"></select>
+          <label>Resource (value & global weight shown)</label>
+          <select id="sRes"></select>
+          <label>Weight 0-50 (0 never, 2 rare, 25 common)</label>
+          <input type="number" id="sWeight" min="0" max="50" placeholder="e.g. 7">
+          <div style="display:flex;gap:8px;margin-top:10px">
+            <button class="btn" onclick="setSSRWeight()">Set Override</button>
+            <button class="btn btn-ghost" onclick="resetSSRWeight()">Reset to Global</button>
+          </div>
+          <div id="sOut" class="notice" style="margin-top:10px;display:none"></div>
+          <hr style="margin:14px 0;border:0;border-top:1px solid var(--border)">
+          <div style="font:600 11px 'Inter',sans-serif;color:var(--muted)">Global weights (read-only reference)</div>
+          <div id="globalWeights" style="font:500 11px 'JetBrains Mono',monospace;margin-top:6px;max-height:160px;overflow:auto;color:var(--muted)"></div>
+        </div>
+        <div class="card">
+          <div class="card-h">Current per-SSR overrides <button class="btn btn-ghost" style="padding:4px 8px;font-size:11px" onclick="refreshSpawn()">↻ Refresh</button></div>
+          <div id="spawnTable" style="font-size:12px">— loading —</div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <div class="card-h">How it works (realistic)</div>
+        <p style="font:500 13px 'Inter',sans-serif;line-height:1.6;color:var(--muted)">Each SSR has its own resource table (e.g. Russian: Coal/Iron/Timber/Oil/Gas/Gold). When a citizen works in their zone, the game rolls weighted random among <b>that SSR's resources only</b> using <b>that SSR's weights</b> (or global if no per-SSR override). Changing <code>Estonian Oil Shale 10→2</code> makes Oil Shale rare <b>only in Estonia</b> — Latvian peat stays 10. This is how real Soviet geology worked: Donbas coal ≠ Baltic oil shale rarity. Use <code>-spawnrates</code> and <code>-setspawnrate</code> in Discord too (admin only).</p>
+      </div>
+    </div>
+
+    <!-- ECONOMY -->
+    <div data-panel="economy" class="hidden">
+      <div class="grid grid-2">
+        <div class="card"><div class="card-h">GSI History (100 pts)</div><canvas id="cGSI" height="160"></canvas></div>
+        <div class="card"><div class="card-h">Inflation History (100 pts)</div><canvas id="cInfl" height="160"></canvas></div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Gold Standard</div><div class="progress" style="height:16px"><i id="goldFill" style="width:0%"></i></div><div style="display:flex;gap:12px;margin-top:8px;font:600 12px 'JetBrains Mono',monospace"><span id="goldPct">—</span><span id="goldPrice">—</span><span id="goldStock">—</span><span id="goldBacking">—</span></div><div id="goldMeta" style="font:500 12px 'JetBrains Mono',monospace;color:var(--muted);margin-top:6px">—</div></div>
+    </div>
+
+    <!-- COMPANIES -->
+    <div data-panel="companies" class="hidden">
+      <div class="card"><div class="card-h">Enterprises</div><div class="table-wrap"><table><thead><tr><th>Name</th><th>Ticker</th><th>SSR</th><th>Funds</th><th>Price</th><th>Emp</th><th>State</th></tr></thead><tbody id="compTable"></tbody></table></div></div>
+    </div>
+
+    <!-- RECIPES & ITEMS -->
+    <div data-panel="recipes" class="hidden">
+      <div class="grid grid-2">
+        <div class="card"><div class="card-h">Add Recipe</div>
+          <label>Item name</label><input id="rName" placeholder="e.g. Canned Fish">
+          <label>Emoji</label><input id="rEmoji" placeholder="🐟">
+          <label>Value (₽)</label><input id="rValue" type="number" placeholder="62">
+          <label>Ingredients JSON e.g. {"Fish":2,"Iron Ore":2}</label><textarea id="rIng" rows="3" placeholder='{"Fish":2,"Iron Ore":2}'></textarea>
+          <button class="btn" onclick="addRecipe()" style="margin-top:8px">Add Recipe</button>
+        </div>
+        <div class="card"><div class="card-h">Add Item / Resource</div>
+          <label>Item name</label><input id="iName" placeholder="e.g. Uranium Rod">
+          <label>Value</label><input id="iValue" type="number" placeholder="256">
+          <label>Food value (0 if not food)</label><input id="iFood" type="number" placeholder="0">
+          <label>Global rarity weight 1-25 (fallback)</label><input id="iWeight" type="number" placeholder="5">
+          <button class="btn" onclick="addItem()" style="margin-top:8px">Add Item (global)</button>
+          <p style="font:500 11px 'Inter',sans-serif;color:var(--muted);margin-top:6px">For per-SSR rarity use left panel — this sets global fallback only.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Current Draft (local)</div><pre id="list" style="font:500 11px 'JetBrains Mono',monospace;white-space:pre-wrap;max-height:300px;overflow:auto;color:var(--muted)">—</pre><div style="display:flex;gap:8px;margin-top:10px"><button class="btn btn-ghost" onclick="exportData()">⬇ Export draft</button><button class="btn btn-danger" onclick="clearCache()">🗑 Clear draft</button></div><div id="out" style="font:500 11px 'JetBrains Mono',monospace;margin-top:8px;white-space:pre-wrap"></div></div>
+    </div>
+
+    <!-- BUILDINGS -->
+    <div data-panel="buildings" class="hidden">
+      <div class="card"><div class="card-h">Add Building</div>
+        <label>Name</label><input id="bName" placeholder="e.g. Cannery">
+        <label>Type</label><select id="bType"><option value="mine">Mine</option><option value="factory">Factory</option><option value="store">Store</option></select>
+        <label>Cost</label><input id="bCost" type="number" placeholder="35000">
+        <label>Produces JSON e.g. ["Canned Fish"]</label><input id="bProd" placeholder='["Canned Fish"]'>
+        <label>Requires JSON (factory only) e.g. {"Fish":2}</label><input id="bReq" placeholder='{"Fish":2}'>
+        <label>Rate</label><input id="bRate" type="number" placeholder="2">
+        <button class="btn" onclick="addBuilding()" style="margin-top:8px">Add Building</button>
+        <div id="bOut" style="font:500 11px 'JetBrains Mono',monospace;margin-top:8px"></div>
+      </div>
+    </div>
+
+    <!-- USERS -->
+    <div data-panel="users" class="hidden">
+      <div class="card"><div class="card-h">Citizens (top 30 by bank+cash)</div><div class="table-wrap"><table><thead><tr><th>User</th><th>Cash</th><th>Bank</th><th>SSR</th><th>Employed</th><th>Shifts</th></tr></thead><tbody id="userTable"></tbody></table></div></div>
+    </div>
+
+    <!-- WORLD -->
+    <div data-panel="world" class="hidden">
+      <div class="grid grid-3" id="worldStats"></div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Regions</div><div id="worldGrid" class="grid grid-3"></div></div>
+    </div>
+
+    <!-- LOGS -->
+    <div data-panel="logs" class="hidden">
+      <div class="card"><div class="card-h">Compensation Log (removed resources)</div><div id="compLog" style="font:500 12px 'JetBrains Mono',monospace;white-space:pre-wrap">—</div></div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Local Draft</div><pre id="list2" style="font:500 11px 'JetBrains Mono',monospace;white-space:pre-wrap;max-height:200px;overflow:auto"></pre></div>
+    </div>
+
+  </div>
 </div>
 
+<div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
 <script>
-// NO hardcoded password — verified via server env ADMIN_PASSWORD. GitHub is public!
+let PW=null;
+let economy=null;
+const SSR_LIST=["Russian SFSR","Byelorussian SSR","Ukrainian SSR","Moldavian SSR","Estonian SSR","Latvian SSR","Lithuanian SSR","Georgian SSR","Armenian SSR","Azerbaijanian SSR","Kazakh SSR","Uzbek SSR","Turkmen SSR","Nuristani SSR","Kirghiz SSR"];
+const RESOURCE_LIST=["Gold","Oil","Copper","Coal","Lead","Uranium","Cotton","Iron Ore","Timber","Wheat","Limestone","Clay","Sand","Sugar","Peat","Natural Gas","Manganese","Phosphorite","Aluminium Ore","Antimony","Molybdenum","Sunflower","Flax","Corn","Salt","Tea","Citrus","Grapes","Wine","Sulphur","Aluminium","Fish","Potash","Oil Shale","Zinc","Amber"];
+function toast(m,ok=true){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';t.style.borderColor=ok?'rgba(52,211,153,.4)':'rgba(217,58,66,.4)';setTimeout(()=>t.style.display='none',2500);}
 async function login(){
   const v=document.getElementById('pw').value.trim();
-  if(!v) return document.getElementById('loginMsg').textContent="❌ Enter password";
-  // Try server-side verify (private backend) — never exposes password in JS
+  if(!v) return document.getElementById('loginMsg').textContent="Enter password";
   try{
     const r=await fetch('/api/admin/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:v})});
-    if(r.ok){
-      const j=await r.json();
-      if(j.ok){ unlock(); return; }
-      else { document.getElementById('loginMsg').textContent="❌ Wrong password"; return; }
-    }
+    if(r.ok){ const j=await r.json(); if(j.ok){ PW=v; unlock(); return;} else {document.getElementById('loginMsg').textContent="Wrong password";return;}}
   }catch(e){}
-  // Offline/dev fallback: local browser-only password (never committed)
-  const local = localStorage.getItem('gosplan_admin_pw');
-  if(local){
-    if(v===local) unlock();
-    else document.getElementById('loginMsg').textContent="❌ Wrong password";
-    return;
-  }
-  // First-time local setup if no server
-  if(confirm('No server verification available. Store this password locally for THIS browser only? (Never pushed to GitHub)')){
-    localStorage.setItem('gosplan_admin_pw', v);
-    unlock();
-  } else {
-    document.getElementById('loginMsg').textContent="❌ No server – set local password first";
-  }
+  const local=localStorage.getItem('gosplan_admin_pw');
+  if(local){ if(v===local) {PW=v; unlock();} else document.getElementById('loginMsg').textContent="Wrong password"; return;}
+  if(confirm('No server verification. Store this password locally for THIS browser only? (Never pushed to GitHub)')){localStorage.setItem('gosplan_admin_pw',v);PW=v;unlock();} else document.getElementById('loginMsg').textContent="No server – set local password first";
 }
+function logout(){document.getElementById('dash').classList.add('hidden');document.getElementById('loginWrap').classList.remove('hidden');}
 function unlock(){
-  document.getElementById('login').classList.add('hidden');
+  document.getElementById('loginWrap').classList.add('hidden');
   document.getElementById('dash').classList.remove('hidden');
-  load();
+  initNav(); loadEconomy();
+}
+function initNav(){
+  document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+    const tab=b.dataset.tab;
+    document.querySelectorAll('[data-panel]').forEach(p=> p.classList.add('hidden'));
+    const target=document.querySelector(`[data-panel="${tab}"]`);
+    if(target) target.classList.remove('hidden');
+  }));
+  // populate SSR selects
+  const sSSR=document.getElementById('sSSR');
+  sSSR.innerHTML=SSR_LIST.map(s=>`<option value="${s}">${s}</option>`).join('');
+  const sRes=document.getElementById('sRes');
+  const RVpreview={Gold:150,"Iron Ore":24,Coal:16,Oil:64,"Natural Gas":48,Timber:13,Wheat:8,Fish:14,Copper:32,Lead:40,Uranium:320,Limestone:16,Clay:8,Sugar:10,Peat:13,Manganese:96,Phosphorite:40,"Aluminium Ore":64,Antimony:128,Molybdenum:160,Sunflower:12,Flax:18,Corn:10,Salt:8,Tea:30,Citrus:20,Grapes:20,Wine:60,Sulphur:25,Aluminium:80,Cotton:24,Potash:56,"Oil Shale":19,Zinc:38,Amber:75};
+  const weights={Gold:2,Oil:15,Copper:8,Coal:20,Lead:7,Uranium:1,Cotton:20,"Iron Ore":18,Timber:25,Wheat:25,Limestone:12,Clay:8,Sand:5,Sugar:20,Peat:10,"Natural Gas":10,Manganese:4,Phosphorite:5,"Aluminium Ore":3,Antimony:3,Molybdenum:2,Sunflower:15,Flax:10,Corn:12,Salt:8,Tea:5,Citrus:8,Grapes:12,Wine:8,Sulphur:3,Aluminium:5,Fish:22,Potash:6,"Oil Shale":10,Zinc:7,Amber:2};
+  sRes.innerHTML=RESOURCE_LIST.map(r=>`<option value="${r}">${r} — ₽${RVpreview[r]||0} (global ${weights[r]||5})</option>`).join('');
+  document.getElementById('globalWeights').textContent=Object.entries(weights).map(([k,v])=>`${k}:${v}`).join('  ');
 }
 let draft = JSON.parse(localStorage.getItem('gosplan_draft')||'{"recipes":{},"items":{},"buildings":{},"weights":{}}');
-function save(){ localStorage.setItem('gosplan_draft', JSON.stringify(draft)); load(); }
-function load(){
-  document.getElementById('stats').textContent = `Draft: ${Object.keys(draft.recipes).length} recipes, ${Object.keys(draft.items).length} items, ${Object.keys(draft.buildings).length} buildings`;
-  document.getElementById('list').textContent = JSON.stringify(draft,null,2);
-}
-function addRecipe(){
+function save(){ localStorage.setItem('gosplan_draft', JSON.stringify(draft)); refreshDraft(); }
+function refreshDraft(){ const t=JSON.stringify(draft,null,2); const el=document.getElementById('list'); if(el) el.textContent=t; const el2=document.getElementById('list2'); if(el2) el2.textContent=t; }
+refreshDraft();
+function addRecipe(){ try{ const name=document.getElementById('rName').value.trim(); const emoji=document.getElementById('rEmoji').value.trim()||"📦"; const val=parseInt(document.getElementById('rValue').value); const ing=JSON.parse(document.getElementById('rIng').value||"{}"); if(!name||isNaN(val)) throw "Name and value required"; draft.recipes[name]={ingredients:ing,value:val,emoji}; save(); document.getElementById('out').textContent="Added recipe "+name; toast("Recipe added"); }catch(e){ document.getElementById('out').textContent="Error: "+e; } }
+function addItem(){ const name=document.getElementById('iName').value.trim(); const val=parseInt(document.getElementById('iValue').value); const food=parseInt(document.getElementById('iFood').value||0); const w=parseInt(document.getElementById('iWeight').value||10); if(!name||isNaN(val)) return document.getElementById('out').textContent="Need name and value"; draft.items[name]={value:val, food, weight:w}; if(!isNaN(w)) draft.weights[name]=w; save(); document.getElementById('out').textContent="Added item "+name+" (global weight "+w+")"; toast("Item added"); }
+function addBuilding(){ const name=document.getElementById('bName').value.trim(); const type=document.getElementById('bType').value; const cost=parseInt(document.getElementById('bCost').value||25000); const prod=JSON.parse(document.getElementById('bProd').value||"[]"); const req=document.getElementById('bReq').value.trim()?JSON.parse(document.getElementById('bReq').value):{}; const rate=parseInt(document.getElementById('bRate').value||2); if(!name) return document.getElementById('bOut').textContent="Need name"; draft.buildings[name]={type,cost,produces:prod,requires:req,rate}; save(); document.getElementById('bOut').textContent="Added building "+name; toast("Building added"); }
+function exportData(){ const blob=new Blob([JSON.stringify(draft,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='gosplan_draft.json'; a.click(); }
+function clearCache(){ if(confirm('Clear draft?')){ draft={recipes:{},items:{},buildings:{},weights:{}}; save(); } }
+
+async function loadEconomy(){
   try{
-    const name=document.getElementById('rName').value.trim();
-    const emoji=document.getElementById('rEmoji').value.trim()||"📦";
-    const val=parseInt(document.getElementById('rValue').value);
-    const ing=JSON.parse(document.getElementById('rIng').value||"{}");
-    if(!name||isNaN(val)) throw "Name and value required";
-    draft.recipes[name]={ingredients:ing,value:val,emoji};
-    save(); document.getElementById('out').textContent="Added recipe "+name;
-  }catch(e){ document.getElementById('out').textContent="Error: "+e; }
+    const r=await fetch('/api/ussr/overview',{cache:'no-store'});
+    if(!r.ok) throw new Error('http '+r.status);
+    economy=await r.json();
+    document.getElementById('connBadge').textContent='LIVE'; document.getElementById('connBadge').className='badge b-live';
+    renderAll();
+  }catch(e){
+    document.getElementById('connBadge').textContent='OFFLINE'; document.getElementById('connBadge').className='badge b-off';
+    console.warn(e);
+  }
 }
-function addItem(){
-  const name=document.getElementById('iName').value.trim();
-  const val=parseInt(document.getElementById('iValue').value);
-  const food=parseInt(document.getElementById('iFood').value||0);
-  const w=parseInt(document.getElementById('iWeight').value||10);
-  if(!name||isNaN(val)) return document.getElementById('out').textContent="Need name and value";
-  draft.items[name]={value:val, food, weight:w};
-  if(!isNaN(w)) draft.weights[name]=w;
-  save(); document.getElementById('out').textContent="Added item "+name;
+function renderAll(){
+  if(!economy) return;
+  // overview
+  const lastGSI = economy.gsi_history[economy.gsi_history.length-1];
+  const prev = economy.gsi_history[economy.gsi_history.length-2];
+  const ch = prev ? ((lastGSI.price-prev.price)/prev.price*100) : lastGSI.change_percent;
+  document.getElementById('oGSI').textContent='₽'+lastGSI.price.toLocaleString();
+  document.getElementById('oGSIChange').textContent=(ch>=0?'+':'')+ch.toFixed(2)+'%';
+  document.getElementById('oGSIChange').style.color=ch>=0?'var(--green)':'var(--red)';
+  document.getElementById('oInfl').textContent=economy.inflation.toFixed(2)+'%';
+  document.getElementById('oInflSub').textContent='Printed ₽'+(economy.money_printed||0).toLocaleString();
+  document.getElementById('oGold').textContent=economy.gold.backing.toFixed(1)+'%';
+  document.getElementById('oGoldStatus').textContent=economy.gold.status;
+  document.getElementById('oGoldStatus').style.color=economy.gold.backing>=100?'var(--green)':economy.gold.backing>=50?'var(--gold)':'var(--red)';
+  document.getElementById('oComps').textContent=economy.companies.length;
+  document.getElementById('oCompsSub').textContent=economy.companies.filter(c=>c.is_state_owned).length+' state';
+  document.getElementById('oMoney').textContent=`Printed ₽${(economy.money_printed||0).toLocaleString()} • Reserves ₽${(economy.total_bank_reserves||0).toLocaleString()} • Supply ₽${(economy.gold.moneySupply||0).toLocaleString()}`;
+  document.getElementById('oSource').textContent=`Source: ${economy._source||'unknown'} • Generated ${new Date(economy.generated_at).toLocaleString()} • Resource values synced with bot.js (Potash 56, Zinc 38, Oil Shale 19, Amber 75 restored)`;
+  document.getElementById('oSource').className='notice '+(economy._source==='github-live'?'ok':economy._source?.includes('local')?'warn':'err');
+  const regs = Object.entries(economy.regions||{});
+  document.getElementById('oRegions').textContent=regs.map(([n,r])=>`${n}: ${r.foodStock}🍞/${r.foodDemand}🍞`).join(' • ');
+  const overrides = economy.ssr_resource_weights || {};
+  const totalOverrides = Object.values(overrides).reduce((s,o)=>s+Object.keys(o).length,0);
+  document.getElementById('oSSRWeights').textContent= totalOverrides ? `${totalOverrides} overrides across ${Object.keys(overrides).length} SSRs` : 'No overrides — all using global';
+  // per-SSR table
+  renderSpawnTable();
+  // companies
+  const ct=document.getElementById('compTable');
+  if(ct) ct.innerHTML=economy.companies.map(c=>`<tr><td>${c.name}</td><td>${c.ticker}</td><td>${c.hq_ssr}</td><td>₽${c.funds.toLocaleString()}</td><td>₽${c.share_price}</td><td>${c.employees}</td><td>${c.is_state_owned?'🏛️':''}</td></tr>`).join('');
+  // users
+  const ut=document.getElementById('userTable');
+  if(ut && economy._rawUsers){
+    const users=Object.entries(economy._rawUsers).map(([id,u])=>({id,...u})).sort((a,b)=>(b.bank+b.cash)-(a.bank+a.cash)).slice(0,30);
+    ut.innerHTML=users.map(u=>`<tr><td>${u.username||u.id.slice(0,6)}</td><td>₽${u.cash}</td><td>₽${u.bank}</td><td>${u.ssr_region||'—'}</td><td>${u.is_employed?u.employed_at:'—'}</td><td>${u.work_count||0}</td></tr>`).join('');
+  } else if(ut){
+    // fallback from economy_data not included — show from overview? we don't have users in snapshot, fetch economy_data.json raw maybe
+    ut.innerHTML='<tr><td colspan=6 style="color:var(--muted)">User table requires economy_data.json users — overview snapshot shows live companies only. Check bot dashboard for full citizens.</td></tr>';
+  }
+  // world
+  const ws=document.getElementById('worldStats');
+  if(ws) ws.innerHTML=regs.map(([n,r])=>`<div class="card stat"><span class="k">${n}</span><span class="v">${r.foodStock} / ${r.foodDemand} 🍞</span><span class="s">${r.companies} corps • ${r.employees} workers • pop ${r.pop}</span></div>`).join('');
+  const wg=document.getElementById('worldGrid');
+  if(wg) wg.innerHTML=regs.map(([n,r])=>`<div class="card"><div class="card-h">${n}</div><div style="font:500 12px 'Inter',sans-serif">${r.ssrs.join(', ')}</div><div class="progress" style="margin-top:8px"><i style="width:${Math.min(100,Math.round(r.foodStock/Math.max(1,r.foodDemand)*100))}%"></i></div><div style="font:600 11px 'JetBrains Mono',monospace;margin-top:4px">${r.foodStock}🍞 / ${r.foodDemand}🍞 • ${r.foodStock>=r.foodDemand?'Fed':'Hungry'}</div></div>`).join('');
+  // compensation log
+  const cl=document.getElementById('compLog');
+  if(cl){
+    const logs=economy.compensation_log||[];
+    cl.textContent= logs.length ? logs.map(e=>`${new Date(e.at).toLocaleString()} • ${e.company} (${e.ssr}) lost ${e.resources.join(',')} → +₽${e.grant.toLocaleString()}`).join('\n') : 'No compensations yet — companies with lost SSR resources get ₽ grant on startup (Byelorussian Potash, Estonian Oil Shale, Nuristani Zinc).';
+  }
+  // charts
+  drawCharts();
 }
-function addBuilding(){
-  const name=document.getElementById('bName').value.trim();
-  const type=document.getElementById('bType').value;
-  const cost=parseInt(document.getElementById('bCost').value||25000);
-  const prod=JSON.parse(document.getElementById('bProd').value||"[]");
-  const req=document.getElementById('bReq').value.trim()?JSON.parse(document.getElementById('bReq').value):{};
-  const rate=parseInt(document.getElementById('bRate').value||2);
-  if(!name) return document.getElementById('out').textContent="Need name";
-  draft.buildings[name]={type,cost,produces:prod,requires:req,rate};
-  save(); document.getElementById('out').textContent="Added building "+name;
+function renderSpawnTable(){
+  if(!economy) return;
+  const div=document.getElementById('spawnTable');
+  const overrides=economy.ssr_resource_weights||{};
+  if(!Object.keys(overrides).length){ div.innerHTML='<div class="notice warn">No per-SSR overrides yet. Global weights apply everywhere. Use left form to set one SSR only.</div>'; return; }
+  let html='<table><thead><tr><th>SSR</th><th>Resource</th><th>Per-SSR Weight</th><th>Global</th><th>Value</th></tr></thead><tbody>';
+  for(const [ssr, map] of Object.entries(overrides)){
+    for(const [res, w] of Object.entries(map)){
+      const gv={Gold:2,Oil:15,Copper:8,Coal:20,Lead:7,Uranium:1,Cotton:20,"Iron Ore":18,Timber:25,Wheat:25,Limestone:12,Clay:8,Sand:5,Sugar:20,Peat:10,"Natural Gas":10,Manganese:4,Phosphorite:5,"Aluminium Ore":3,Antimony:3,Molybdenum:2,Sunflower:15,Flax:10,Corn:12,Salt:8,Tea:5,Citrus:8,Grapes:12,Wine:8,Sulphur:3,Aluminium:5,Fish:22,Potash:6,"Oil Shale":10,Zinc:7,Amber:2}[res]||5;
+      const vals={Gold:150,Oil:64,Copper:32,Coal:16,Lead:40,Uranium:320,Cotton:24,"Iron Ore":24,Timber:13,Wheat:8,Limestone:16,Clay:8,Sand:5,Sugar:10,Peat:13,"Natural Gas":48,Manganese:96,Phosphorite:40,"Aluminium Ore":64,Antimony:128,Molybdenum:160,Sunflower:12,Flax:18,Corn:10,Salt:8,Tea:30,Citrus:20,Grapes:20,Wine:60,Sulphur:25,Aluminium:80,Cotton:24,Potash:56,"Oil Shale":19,Zinc:38,Amber:75}[res]||0;
+      html+=`<tr><td>${ssr}</td><td>${res}</td><td><b>${w}</b></td><td>${gv}</td><td>₽${vals}</td></tr>`;
+    }
+  }
+  html+='</tbody></table>';
+  div.innerHTML=html;
 }
-function setRarity(){
-  const item=document.getElementById('wItem').value.trim();
-  const w=parseInt(document.getElementById('wVal').value);
-  if(!item||isNaN(w)) return document.getElementById('out').textContent="Need item and weight";
-  draft.weights[item]=w;
-  save(); document.getElementById('out').textContent="Set rarity "+item+" -> "+w;
+function refreshSpawn(){ loadEconomy().then(()=>toast('Refreshed')); }
+async function setSSRWeight(){
+  const ssr=document.getElementById('sSSR').value;
+  const res=document.getElementById('sRes').value;
+  const w=parseInt(document.getElementById('sWeight').value);
+  if(isNaN(w)||w<0||w>50) return showSOut('Weight 0-50 required',false);
+  // For Vercel admin, we store locally and also try to call bot if available — but we persist draft locally for now and guide to use Discord -setspawnrate for live bot
+  // Try Discord-style API if exists, else local draft
+  draft.weights = draft.weights || {};
+  draft.ssr_weights = draft.ssr_weights || {};
+  if(!draft.ssr_weights[ssr]) draft.ssr_weights[ssr]={};
+  draft.ssr_weights[ssr][res]=w;
+  save();
+  showSOut(`Set ${ssr} ${res} → ${w} (local draft). To apply LIVE to bot, also run in Discord: -setspawnrate ${ssr} ${res} ${w}`,true);
+  toast('Per-SSR weight saved (local draft)');
 }
-function exportData(){
-  const blob=new Blob([JSON.stringify(draft,null,2)],{type:'application/json'});
-  const url=URL.createObjectURL(blob);
-  const a=document.createElement('a'); a.href=url; a.download='gosplan_draft.json'; a.click();
+function resetSSRWeight(){
+  const ssr=document.getElementById('sSSR').value;
+  const res=document.getElementById('sRes').value;
+  if(draft.ssr_weights && draft.ssr_weights[ssr] && draft.ssr_weights[ssr][res]!==undefined){
+    delete draft.ssr_weights[ssr][res];
+    if(Object.keys(draft.ssr_weights[ssr]).length===0) delete draft.ssr_weights[ssr];
+    save(); showSOut(`Reset ${ssr} ${res} → now uses global`,true); toast('Reset');
+  } else showSOut('No override for that SSR/resource',false);
 }
-function clearCache(){ if(confirm('Clear draft?')){ draft={recipes:{},items:{},buildings:{},weights:{}}; save(); }}
+function showSOut(m,ok){ const el=document.getElementById('sOut'); el.textContent=m; el.style.display='block'; el.className='notice '+(ok?'ok':'err'); }
+let charts={};
+function drawCharts(){
+  if(!economy || typeof Chart==='undefined') return;
+  const gsi=economy.gsi_history.map(x=>x.price);
+  const infl=economy.inflation_history;
+  const c1=document.getElementById('cGSI'); if(c1){ if(charts.gsi) charts.gsi.destroy(); charts.gsi=new Chart(c1,{type:'line',data:{labels:gsi.map((_,i)=>i),datasets:[{data:gsi,borderColor:'#6b7cff',backgroundColor:'rgba(107,124,255,.1)',borderWidth:2,fill:true,pointRadius:0,tension:.25}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{display:false},y:{grid:{color:'rgba(255,255,255,.06)'}}}}});}
+  const c2=document.getElementById('cInfl'); if(c2){ if(charts.infl) charts.infl.destroy(); charts.infl=new Chart(c2,{type:'line',data:{labels:infl.map((_,i)=>i),datasets:[{data:infl,borderColor:'#e9c46a',borderWidth:2,fill:false,pointRadius:0,tension:.25}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{display:false},y:{grid:{color:'rgba(255,255,255,.06)'}}}}});}
+  const fill=document.getElementById('goldFill'), pct=document.getElementById('goldPct'), price=document.getElementById('goldPrice'), stock=document.getElementById('goldStock'), backing=document.getElementById('goldBacking'), meta=document.getElementById('goldMeta');
+  if(fill){ const p=Math.min(100,economy.gold.backing); fill.style.width=p+'%'; fill.style.background=p>=100?'var(--green)':p>=50?'var(--gold)':'var(--red)'; }
+  if(pct) pct.textContent=economy.gold.backing.toFixed(1)+'%';
+  if(price) price.textContent='Price ₽'+economy.gold.price;
+  if(stock) stock.textContent='Stock '+economy.gold.stock;
+  if(backing) backing.textContent=economy.gold.status;
+  if(meta) meta.textContent=`Supply ₽${(economy.gold.moneySupply||0).toLocaleString()} • Backed ${((economy.gold.stock*economy.gold.price)||0).toLocaleString()} / ${(economy.gold.moneySupply||0).toLocaleString()}`;
+}
+setInterval(loadEconomy,15000);
 </script>
 </body>
 </html>
