@@ -2639,7 +2639,7 @@
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
     "Timber Planks": 8,
-    "Shale Oil": 10
+    "Shale Oil": 8
   },
   "global_consumption": {
     "Copper Ingot": 39,
@@ -2647,7 +2647,8 @@
     "Timber Planks": 74,
     "Refined Fuel": 33,
     "Fuel": 3,
-    "Iron Ingot": 6
+    "Iron Ingot": 6,
+    "Shale Oil": 2
   },
   "consumption_history": [
     {
@@ -3264,6 +3265,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-08-30T02:44:17.288Z"
+    },
+    {
+      "item": "Shale Oil",
+      "qty": 2,
+      "at": "2026-08-30T02:59:17.298Z"
     }
   ],
   "demand_history": {
@@ -3892,6 +3898,13 @@
         "demand": 1.3351921911477713,
         "at": "2026-08-29T12:10:08.351Z",
         "supply": 1
+      }
+    ],
+    "Shale Oil": [
+      {
+        "demand": 1.149021416896567,
+        "at": "2026-08-30T02:59:17.298Z",
+        "supply": 5
       }
     ]
   },
