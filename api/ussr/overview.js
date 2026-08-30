@@ -115,7 +115,7 @@ export default async function handler(req, res) {
         }
         for(const c of companies){ goldStock += (c.inventory && c.inventory.Gold) || 0; goldStock += ((c.inventory && c.inventory["Gold Bar"]) || 0)*3; }
         if (!goldStock) goldStock = 420 + Math.floor(Math.random()*380);
-        let moneySupply = total_bank_reserves + money_printed;
+        let moneySupply = 0;
         for(const c of companies) moneySupply += c.funds || 0;
         if (bot.users) for(const u of Object.values(bot.users)) moneySupply += (u.cash||0)+(u.bank||0);
         const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
@@ -312,7 +312,7 @@ export default async function handler(req, res) {
   const global_consumption2={}; Object.keys(REC2).forEach(k=>{ if(Math.random()<0.6) global_consumption2[k]=Math.floor(Math.random()*220)+5; });
   const goldPrice2=Math.max(1,Math.floor(RV2.Gold*(1+inflation2/100)));
   const goldStock2=420+Math.floor(Math.random()*380);
-  const moneySupply2=total_bank_reserves2+money_printed2+companies2.reduce((s,c)=>s+c.funds,0);
+  const moneySupply2=companies2.reduce((s,c)=>s+c.funds,0);
   const backing2=(goldStock2*goldPrice2/Math.max(1,moneySupply2))*100;
   const status2=backing2>=100?"FULL GOLD STANDARD":backing2>=50?"PARTIAL":backing2>=20?"WEAK":"FIAT";
   const census2={}; Object.keys(SSR2).forEach(k=> census2[k]=Math.floor(Math.random()*14)+4);

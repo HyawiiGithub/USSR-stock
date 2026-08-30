@@ -110,7 +110,7 @@ function fallbackMock(){
   const global_consumption={}; Object.keys(REC).forEach(k=>{ if(Math.random()<0.6) global_consumption[k]=Math.floor(Math.random()*220)+5; });
   const goldPrice=Math.max(1,Math.floor(RV.Gold*(1+inflation/100)));
   const goldStock=420+Math.floor(Math.random()*380);
-  const moneySupply=total_bank_reserves+money_printed+companies.reduce((s,c)=>s+c.funds,0);
+  const moneySupply=companies.reduce((s,c)=>s+c.funds,0); // bot getMoneySupply: only users+companies, not reserves/printed
   const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
   const status=backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT";
   const total_rubles = moneySupply - companies.reduce((s,c)=>s+c.funds,0) - total_bank_reserves; // citizens cash+bank mock
@@ -175,7 +175,7 @@ async function load(){
       const market_supply={}; if(market_demand) for(const k of Object.keys(market_demand)){ let sup=0; companies.forEach(c=> sup+=(c.inventory[k]||0)); market_supply[k]=sup; }
       const goldPrice=Math.max(1,Math.floor(RV.Gold*(1+inflation/100)));
       let goldStock=0; if(bot.users) for(const u of Object.values(bot.users)){ goldStock+=(u.resources&&u.resources.Gold)||0; goldStock+=((u.inventory&&u.inventory["Gold Bar"])||0)*3; } for(const c of companies){ goldStock+=(c.inventory&&c.inventory.Gold)||0; goldStock+=((c.inventory&&c.inventory["Gold Bar"])||0)*3; } if(!goldStock) goldStock=420;
-      let moneySupply=total_bank_reserves+money_printed; for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
+      let moneySupply=0; for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
       const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
       const status=backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT";
       const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
@@ -542,7 +542,7 @@ async function refreshLoop(){
               const inflation=bot.inflation||3.1;
               const goldPrice=Math.max(1,Math.floor(RV.Gold*(1+inflation/100)));
               let goldStock=0; if(bot.users) for(const u of Object.values(bot.users)){ goldStock+=(u.resources&&u.resources.Gold)||0; goldStock+=((u.inventory&&u.inventory["Gold Bar"])||0)*3; } for(const c of companies){ goldStock+=(c.inventory&&c.inventory.Gold)||0; goldStock+=((c.inventory&&c.inventory["Gold Bar"])||0)*3; } if(!goldStock) goldStock=420;
-              let moneySupply=(bot.total_bank_reserves||900000)+(bot.money_printed||420000); for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
+              let moneySupply=0; for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
               const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
               const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
               let total_rubles_history = bot.total_rubles_history; if(!Array.isArray(total_rubles_history)||!total_rubles_history.length){ const cur=Math.max(1000,total_rubles||0); total_rubles_history=Array.from({length:100},(_,i)=>({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()})); }
