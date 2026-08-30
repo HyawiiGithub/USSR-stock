@@ -231,7 +231,8 @@ label{font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:upper
 
     <!-- LOGS -->
     <div data-panel="logs" class="hidden">
-      <div class="card"><div class="card-h">Compensation Log (removed resources)</div><div id="compLog" style="font:500 12px 'JetBrains Mono',monospace;white-space:pre-wrap">—</div></div>
+      <div class="card"><div class="card-h">Owner Audit Log (500) <button class="btn btn-ghost" style="padding:4px 8px;font-size:11px" onclick="loadOwnerLogs()">↻ Refresh</button></div><div id="ownerLog" style="font:500 12px 'JetBrains Mono',monospace;white-space:pre-wrap;max-height:300px;overflow:auto">—</div></div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Compensation Log (removed resources)</div><div id="compLog" style="font:500 12px 'JetBrains Mono',monospace;white-space:pre-wrap">—</div></div>
       <div class="card" style="margin-top:16px"><div class="card-h">Local Draft</div><pre id="list2" style="font:500 11px 'JetBrains Mono',monospace;white-space:pre-wrap;max-height:200px;overflow:auto"></pre></div>
     </div>
 
@@ -276,7 +277,7 @@ function logout(){ PW=null; document.getElementById('dash').classList.add('hidde
 function unlock(){
   document.getElementById('loginWrap').classList.add('hidden');
   document.getElementById('dash').classList.remove('hidden');
-  initNav(); loadEconomy(); loadUsers();
+  initNav(); loadEconomy(); loadUsers(); loadOwnerLogs();
 }
 function initNav(){
   document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{
@@ -287,6 +288,7 @@ function initNav(){
     if(target) target.classList.remove('hidden');
     if(tab==='users') loadUsers();
     if(tab==='spawn') refreshSpawn();
+    if(tab==='logs') loadOwnerLogs();
   }));
   // populate SSR selects
   const sSSR=document.getElementById('sSSR');
@@ -420,6 +422,19 @@ async function loadUsers(){
   }catch(e){
     ut.innerHTML=`<tr><td colspan=6 style="color:var(--red)">Error: ${e.message}</td></tr>`;
   }
+}
+async function loadOwnerLogs(){
+  const el=document.getElementById('ownerLog');
+  if(!el || !PW) return;
+  el.textContent='Loading...';
+  try{
+    const r=await fetch('/api/admin/logs',{method:'POST',headers:authHeaders(),body:JSON.stringify({password:PW})});
+    const j=await r.json();
+    if(!r.ok || !j.ok) throw new Error(j.error||`HTTP ${r.status}`);
+    const logs=j.owner_logs||[];
+    if(!logs.length){ el.textContent='No owner logs yet — actions by Primary/Co-Primary/Owners will appear here.\nExample: Speer gave 500 money to example'; return; }
+    el.textContent=logs.map(e=>`[${new Date(e.at).toLocaleString()}] ${e.username} (${e.by}) — ${e.action} ${e.details}`).join('\n');
+  }catch(e){ el.textContent='Error: '+e.message; }
 }
 function renderAll(){
   if(!economy) return;

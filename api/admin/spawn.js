@@ -1,4 +1,4 @@
-import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub } from './_lib.js';
+import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub, logOwnerAction } from './_lib.js';
 
 const SSR_LIST = ["Russian SFSR","Byelorussian SSR","Ukrainian SSR","Moldavian SSR","Estonian SSR","Latvian SSR","Lithuanian SSR","Georgian SSR","Armenian SSR","Azerbaijanian SSR","Kazakh SSR","Uzbek SSR","Turkmen SSR","Nuristani SSR","Kirghiz SSR"];
 
@@ -34,6 +34,7 @@ export default async function handler(req, res) {
       }
       delete data.ssr_resource_weights[ssr][resource];
       if (Object.keys(data.ssr_resource_weights[ssr]).length === 0) delete data.ssr_resource_weights[ssr];
+      logOwnerAction(data, 'resetspawnrate', `${ssr} ${resource}`, req.headers['x-admin-username'] || 'admin-panel');
       saveEconomy(data);
       const gh = await pushToGitHub(`reset-spawn ${ssr} ${resource}`);
       return res.status(200).json({ ok: true, deleted: true, ssr, resource, github: gh });
@@ -57,6 +58,7 @@ export default async function handler(req, res) {
     if (!data.ssr_resource_weights[ssr]) data.ssr_resource_weights[ssr] = {};
     const old = data.ssr_resource_weights[ssr][resName];
     data.ssr_resource_weights[ssr][resName] = w;
+    logOwnerAction(data, 'setspawnrate', `${ssr} ${resName} ${old ?? 'global'}→${w}`, req.headers['x-admin-username'] || 'admin-panel');
     saveEconomy(data);
     const gh = await pushToGitHub(`set-spawn ${ssr} ${resName} ${w}`);
     return res.status(200).json({ ok: true, ssr, resource: resName, weight: w, old: old ?? null, github: gh });

@@ -1,4 +1,4 @@
-import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub } from './_lib.js';
+import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub, logOwnerAction } from './_lib.js';
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -30,6 +30,7 @@ export default async function handler(req, res) {
     // we store in data.custom_buildings
     if (!data.custom_buildings) data.custom_buildings = {};
     data.custom_buildings[name.trim()] = { type: t, cost: c, produces: prod, requires: reqs, rate: r };
+    logOwnerAction(data, 'add-building', `${name.trim()} type=${t} cost=${c}`, req.headers['x-admin-username'] || 'admin-panel');
     saveEconomy(data);
     const gh = await pushToGitHub(`add-building ${name.trim()}`);
     return res.status(200).json({ ok: true, name: name.trim(), github: gh });

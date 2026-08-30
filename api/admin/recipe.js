@@ -1,4 +1,4 @@
-import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub } from './_lib.js';
+import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub, logOwnerAction } from './_lib.js';
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -25,6 +25,7 @@ export default async function handler(req, res) {
     data.crafting_recipes[name.trim()] = { value: v, ingredients: ing, emoji: emoji || '📦' };
     if (!data.market_demand) data.market_demand = {};
     if (data.market_demand[name.trim()] === undefined) data.market_demand[name.trim()] = 1.0;
+    logOwnerAction(data, 'add-recipe', `${name.trim()} value=${v}`, req.headers['x-admin-username'] || 'admin-panel');
     saveEconomy(data);
     const gh = await pushToGitHub(`add-recipe ${name.trim()}`);
     return res.status(200).json({ ok: true, name: name.trim(), github: gh });

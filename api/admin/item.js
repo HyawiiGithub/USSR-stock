@@ -1,4 +1,4 @@
-import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub } from './_lib.js';
+import { verifyPassword, loadEconomy, saveEconomy, pushToGitHub, logOwnerAction } from './_lib.js';
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -30,6 +30,7 @@ export default async function handler(req, res) {
     // global weights stored separately? bot uses RESOURCE_WEIGHTS constant, but we persist in resource_weights
     if (!data.resource_weights) data.resource_weights = {};
     data.resource_weights[name.trim()] = w;
+    logOwnerAction(data, 'add-item', `${name.trim()} value=${v} food=${fv} weight=${w}`, req.headers['x-admin-username'] || 'admin-panel');
     saveEconomy(data);
     const gh = await pushToGitHub(`add-item ${name.trim()}`);
     return res.status(200).json({ ok: true, name: name.trim(), github: gh });

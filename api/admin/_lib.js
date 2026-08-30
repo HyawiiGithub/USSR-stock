@@ -32,6 +32,20 @@ export function saveEconomy(data) {
   fs.writeFileSync(p, JSON.stringify(data, null, 2), 'utf8');
 }
 
+export function logOwnerAction(data, action, details, username) {
+  if (!data.owner_logs) data.owner_logs = [];
+  // username from header if provided, else generic
+  let who = username || 'admin-panel';
+  data.owner_logs.push({
+    at: new Date().toISOString(),
+    by: 'panel',
+    username: who,
+    action,
+    details: details || ''
+  });
+  if (data.owner_logs.length > 500) data.owner_logs = data.owner_logs.slice(-500);
+}
+
 export async function pushToGitHub(reason = 'admin-update') {
   const token = process.env.GITHUB_TOKEN;
   const repo = process.env.GITHUB_REPO || 'HyawiiGithub/USSR-stock';
