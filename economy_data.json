@@ -979,15 +979,15 @@
       "ceo_of": null
     },
     "1511756975392948224": {
-      "cash": 165,
+      "cash": 180,
       "bank": 3618,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T17:09:17.427Z",
-      "work_count": 46,
+      "last_work": "2026-08-30T17:29:58.951Z",
+      "work_count": 47,
       "last_claim": "2026-08-30T08:50:50.230Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -133239,8 +133239,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 77155,
-      "market_cap": 77155,
+      "share_price": 77315,
+      "market_cap": 77315,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -133259,7 +133259,7 @@
         "Uranium": 23,
         "Coal": 124,
         "Gold Bar": 5,
-        "Wheat": 8,
+        "Wheat": 9,
         "Iron Ore": 11,
         "Sugar": 8,
         "Canned Food": 15,
@@ -133274,8 +133274,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T14:56:34.105Z",
       "price_history": [
-        70316,
-        70324,
         70348,
         70365,
         70373,
@@ -133373,7 +133371,9 @@
         77115,
         77123,
         77139,
-        77155
+        77155,
+        77282,
+        77315
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133690,11 +133690,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 40,
-      "change_percent": -1.331807965840037,
-      "recorded_at": "2026-08-30T09:54:17.586Z"
-    },
     {
       "price": 40,
       "change_percent": 0.05928985727447327,
@@ -134189,6 +134184,11 @@
       "price": 1,
       "change_percent": 0.34731414226117757,
       "recorded_at": "2026-08-30T17:24:45.439Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -0.07045450213714594,
+      "recorded_at": "2026-08-30T17:29:45.544Z"
     }
   ],
   "factory_names": [
@@ -134209,11 +134209,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.08954407940127966,
+  "inflation": 0.12209977351741853,
   "money_printed": 223,
   "total_bank_reserves": 162618,
   "inflation_history": [
-    0.5627387906730064,
     0.0711761239022455,
     0.060938112138207906,
     0.05927676992386588,
@@ -134312,7 +134311,8 @@
     0.10048400363573202,
     0.0805688566907977,
     0.10808210809471311,
-    0.08954407940127966
+    0.08954407940127966,
+    0.12209977351741853
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134375,8 +134375,8 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.2950531583326033,
-    "Cake": 1.3642937211705386,
+    "Fuel": 1.3045811486501568,
+    "Cake": 1.371344056848438,
     "Bread": 1.386949737850918,
     "Copper Ingot": 1.3957158754464212,
     "Iron Ingot": 1.3957664113097268,
@@ -134384,10 +134384,10 @@
     "Gold Bar": 1.3696987991185936,
     "Aluminium Ingot": 1.4122718308078774,
     "Timber Planks": 1.3954607873709333,
-    "Bricks": 1.4147262061681614,
-    "Concrete": 1.4146831250671839,
-    "Glass": 1.4147817466462587,
-    "Steel Beam": 1.4146045596894932,
+    "Bricks": 1.4135481096747085,
+    "Concrete": 1.4135084750618092,
+    "Glass": 1.413599206914558,
+    "Steel Beam": 1.4134361949143337,
     "Machine Parts": 1.4124085177189465,
     "Refined Fuel": 1.3950639202895203,
     "Uranium Rod": 1.403995465684028,
@@ -134396,13 +134396,13 @@
     "Flour": 1.412261060935401,
     "Sugar": 1.3788011942814602,
     "Wine": 1.411510368732482,
-    "Canned Food": 1.3566511665486165,
+    "Canned Food": 1.3551959963016502,
     "Canned Fish": 1.3828045657746038,
-    "Smoked Fish": 1.224835061505507,
-    "Fish Stew": 1.4146831250671839,
+    "Smoked Fish": 1.2397969226440733,
+    "Fish Stew": 1.4135084750618092,
     "Peat Fuel": 1.3960294424536,
-    "Gas Fuel": 1.4158516986844727,
-    "Fertilizer": 1.4159859012924674,
+    "Gas Fuel": 1.414583562789715,
+    "Fertilizer": 1.41470702918907,
     "Cotton Fabric": 1.41,
     "Manganese Alloy": 1.412074941385963,
     "Sunflower Oil": 1.4123435275452147,
@@ -136196,6 +136196,10 @@
     {
       "total": 236673,
       "at": "2026-08-30T17:24:45.740Z"
+    },
+    {
+      "total": 236688,
+      "at": "2026-08-30T17:29:45.752Z"
     }
   ],
   "gold_rush": {
