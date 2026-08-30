@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 30,
+      "cash": 45,
       "bank": 14557,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T19:46:58.198Z",
-      "work_count": 393,
+      "last_work": "2026-08-30T19:54:47.637Z",
+      "work_count": 394,
       "last_claim": "2026-08-30T08:20:42.999Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -133312,8 +133312,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 79100,
-      "market_cap": 79100,
+      "share_price": 79138,
+      "market_cap": 79138,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -133332,8 +133332,8 @@
         "Uranium": 23,
         "Coal": 133,
         "Gold Bar": 5,
-        "Iron Ore": 17,
-        "Sugar": 4,
+        "Iron Ore": 19,
+        "Sugar": 3,
         "Canned Food": 15,
         "Copper": 7,
         "Bread": 4,
@@ -133344,7 +133344,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T14:56:34.105Z",
       "price_history": [
-        71606,
         71613,
         71669,
         71691,
@@ -133443,7 +133442,8 @@
         78968,
         78976,
         79002,
-        79100
+        79100,
+        79138
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133760,11 +133760,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 29,
-      "change_percent": 0.14494402576114665,
-      "recorded_at": "2026-08-30T12:24:17.677Z"
-    },
     {
       "price": 28,
       "change_percent": -1.293845750384231,
@@ -134259,6 +134254,11 @@
       "price": 1,
       "change_percent": -7.656127776961267,
       "recorded_at": "2026-08-30T19:54:45.304Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 1.2313322671420288,
+      "recorded_at": "2026-08-30T19:54:46.105Z"
     }
   ],
   "factory_names": [
@@ -134499,14 +134499,12 @@
     "Smoked Fish": "2026-08-30T16:25:40.680Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Refined Fuel": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 42,
     "Steel Ingot": 7,
     "Timber Planks": 92,
-    "Refined Fuel": 36,
+    "Refined Fuel": 37,
     "Fuel": 9,
     "Iron Ingot": 12,
     "Shale Oil": 17,
@@ -135379,6 +135377,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-08-30T19:39:45.571Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-08-30T19:54:45.567Z"
     }
   ],
   "demand_history": {
@@ -136008,6 +136011,11 @@
         "demand": 1.3285653716271868,
         "at": "2026-08-30T19:39:45.571Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3305054599368555,
+        "at": "2026-08-30T19:54:45.567Z",
+        "supply": 0
       }
     ],
     "Fuel": [
@@ -136481,6 +136489,10 @@
     {
       "total": 237844,
       "at": "2026-08-30T19:49:46.168Z"
+    },
+    {
+      "total": 237844,
+      "at": "2026-08-30T19:54:46.249Z"
     }
   ],
   "gold_rush": {
