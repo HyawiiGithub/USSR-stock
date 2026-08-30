@@ -128,24 +128,30 @@ function fallbackMock(){
 }
 
 async function load(){
-  const isPages = location.hostname.includes('github.io');
   const notice=document.getElementById('connNotice');
   const topGen=document.getElementById('topGen');
+  const VERCEL_FALLBACKS=[
+    location.origin + '/api/ussr/overview',
+    'https://ussr-stock-l6ycclr1f-hue12.vercel.app/api/ussr/overview',
+    'https://ussr-stock-hxprrwyds-hue12.vercel.app/api/ussr/overview'
+  ];
   try{
-    if(isPages){
-      throw new Error('pages-static');
+    let lastErr=null;
+    let j=null;
+    for(const url of VERCEL_FALLBACKS){
+      try{
+        const r=await fetch(url,{cache:'no-store', signal:AbortSignal.timeout(7000)});
+        if(!r.ok) throw new Error('http '+r.status+' @ '+url);
+        j=await r.json();
+        if(!j.gsi_history || !j.gsi_history.length) throw new Error('bad payload @ '+url);
+        // got valid live payload
+        data=j;
+        if(notice) { notice.textContent='● CONNECTED — LIVE GOSPLAN FEED // '+ new Date().toLocaleTimeString()+' • '+ (j._source||'live'); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
+        if(topGen) topGen.textContent='LIVE '+ new Date(j.generated_at).toLocaleTimeString()+' • '+ (j._source||'');
+        break;
+      }catch(e){ lastErr=e; console.warn('fetch try failed',url,e.message); continue; }
     }
-    // try backend — relative to current host (works on localhost:3001)
-    // use absolute from origin to avoid base path issues
-    const url = location.origin + '/api/ussr/overview';
-    const r=await fetch(url,{cache:'no-store', signal:AbortSignal.timeout(4000)});
-    if(!r.ok) throw new Error('http '+r.status);
-    const j=await r.json();
-    // sanity: must have gsi_history
-    if(!j.gsi_history || !j.gsi_history.length) throw new Error('bad payload');
-    data=j;
-    if(notice) { notice.textContent='● CONNECTED — LIVE GOSPLAN FEED // '+ new Date().toLocaleTimeString(); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
-    if(topGen) topGen.textContent='LIVE '+ new Date(j.generated_at).toLocaleTimeString();
+    if(!data) throw lastErr||new Error('all endpoints failed');
   }catch(e){
     console.warn('fallback',e.message);
     data=fallbackMock();
@@ -374,10 +380,21 @@ function renderStakhanovite(){
   el.innerHTML=workers.map((w,i)=>`${i+1}. ${w.username} — ${w.work_count} shifts • ${w.ssr_region||'—'} @ ${w.employed_at||'—'}`).join('<br>');
 }
 async function refreshLoop(){
-  if(location.hostname.includes('github.io')) return; // static pages don't poll backend
   try{
-    const r=await fetch(location.origin + '/api/ussr/overview',{cache:'no-store', signal:AbortSignal.timeout(4000)});
-    if(r.ok){ data=await r.json(); renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTicker(); renderFiveYearPlan(); renderStakhanovite(); }
+    const urls=[location.origin + '/api/ussr/overview','https://ussr-stock-l6ycclr1f-hue12.vercel.app/api/ussr/overview','https://ussr-stock-hxprrwyds-hue12.vercel.app/api/ussr/overview'];
+    for(const url of urls){
+      try{
+        const r=await fetch(url,{cache:'no-store', signal:AbortSignal.timeout(7000)});
+        if(!r.ok) continue;
+        const j=await r.json();
+        if(!j.gsi_history) continue;
+        data=j;
+        renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTicker(); renderFiveYearPlan(); renderStakhanovite();
+        const topGen=document.getElementById('topGen'); if(topGen) topGen.textContent='LIVE '+ new Date(j.generated_at).toLocaleTimeString()+' • '+ (j._source||'');
+        const notice=document.getElementById('connNotice'); if(notice){ notice.textContent='● CONNECTED — LIVE GOSPLAN FEED // '+ new Date().toLocaleTimeString()+' • '+ (j._source||'live'); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
+        break;
+      }catch{}
+    }
   }catch{}
   setTimeout(refreshLoop,10000);
 }
