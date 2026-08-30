@@ -11,7 +11,7 @@
       "gsi_shares": 0,
       "share_holdings": {},
       "last_work": "2026-08-22T21:49:45.717917",
-      "work_count": 0,
+      "work_count": null,
       "last_claim": null,
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
@@ -1185,7 +1185,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2412,
+      "funds": 576,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -1767,7 +1767,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 3991,
+      "funds": 2385,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -1912,11 +1912,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 154,
-      "change_percent": -0.49278039902985526,
-      "recorded_at": "2026-08-29T16:35:08.518Z"
-    },
     {
       "price": 146,
       "change_percent": -4.680144134232036,
@@ -2411,6 +2406,11 @@
       "price": 113,
       "change_percent": -0.3793458738555625,
       "recorded_at": "2026-08-30T00:20:17.153Z"
+    },
+    {
+      "price": 107,
+      "change_percent": -5.052953992013289,
+      "recorded_at": "2026-08-30T00:25:17.005Z"
     }
   ],
   "factory_names": [
@@ -3850,28 +3850,5 @@
     "1173662113340854353",
     "1379734184259747851",
     "874346333882945547"
-  ],
-  "ssr_resource_weights": {},
-  "compensation_log": [
-    {
-      "id": "ssr_lost_state_23",
-      "at": "2026-08-30T00:00:00Z",
-      "company": "State Mining Corp",
-      "ssr": "Nuristani SSR",
-      "resources": [
-        "Zinc"
-      ],
-      "grant": 1836
-    },
-    {
-      "id": "ssr_lost_state_28",
-      "at": "2026-08-30T00:00:00Z",
-      "company": "Baltic Timber & Harbour Co",
-      "ssr": "Estonian SSR",
-      "resources": [
-        "Oil Shale"
-      ],
-      "grant": 1606
-    }
   ]
 }
