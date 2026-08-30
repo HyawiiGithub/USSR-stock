@@ -439,8 +439,8 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 45,
-      "bank": 40681,
+      "cash": 15,
+      "bank": 40961,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 315,
+      "cash": 330,
       "bank": 14182,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T18:38:46.656Z",
-      "work_count": 387,
+      "last_work": "2026-08-30T18:49:22.585Z",
+      "work_count": 388,
       "last_claim": "2026-08-30T08:20:42.999Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -133294,8 +133294,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 77781,
-      "market_cap": 77781,
+      "share_price": 77761,
+      "market_cap": 77761,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -133314,7 +133314,7 @@
         "Uranium": 23,
         "Coal": 128,
         "Gold Bar": 5,
-        "Wheat": 2,
+        "Wheat": 3,
         "Iron Ore": 14,
         "Sugar": 8,
         "Canned Food": 15,
@@ -133329,7 +133329,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T14:56:34.105Z",
       "price_history": [
-        70662,
         70996,
         71020,
         71015,
@@ -133428,7 +133427,8 @@
         77595,
         77621,
         77661,
-        77781
+        77781,
+        77761
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133604,8 +133604,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 53515,
-      "market_cap": 53515,
+      "share_price": 53533,
+      "market_cap": 53533,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -133633,7 +133633,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        45896,
         45885,
         46062,
         46013,
@@ -133732,7 +133731,8 @@
         53502,
         53507,
         53511,
-        53515
+        53515,
+        53533
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -133745,11 +133745,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 35,
-      "change_percent": -0.6103617571921576,
-      "recorded_at": "2026-08-30T11:14:17.625Z"
-    },
     {
       "price": 34,
       "change_percent": -0.4238888893109798,
@@ -134244,6 +134239,11 @@
       "price": 1,
       "change_percent": 0.9804734110512927,
       "recorded_at": "2026-08-30T18:44:45.888Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -1.347078255279003,
+      "recorded_at": "2026-08-30T18:49:45.839Z"
     }
   ],
   "factory_names": [
@@ -134264,11 +134264,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.08752872229474645,
+  "inflation": 0.13425597713332785,
   "money_printed": 223,
-  "total_bank_reserves": 163474,
+  "total_bank_reserves": 163754,
   "inflation_history": [
-    0,
     0,
     0.017313901094155024,
     0.014483371967931223,
@@ -134367,7 +134366,8 @@
     0.08906541340036414,
     0.11169991038168038,
     0.12464344379868295,
-    0.08752872229474645
+    0.08752872229474645,
+    0.13425597713332785
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134430,7 +134430,7 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3643484919125402,
+    "Fuel": 1.3699792991113469,
     "Cake": 1.395766378509532,
     "Bread": 1.386949737850918,
     "Copper Ingot": 1.3957158754464212,
@@ -134453,7 +134453,7 @@
     "Wine": 1.411510368732482,
     "Canned Food": 1.3504499862476111,
     "Canned Fish": 1.3828045657746038,
-    "Smoked Fish": 1.3438802072078009,
+    "Smoked Fish": 1.354659895297261,
     "Fish Stew": 1.4124277970568644,
     "Peat Fuel": 1.3960294424536,
     "Gas Fuel": 1.4123435275452147,
@@ -136380,6 +136380,10 @@
     {
       "total": 237404,
       "at": "2026-08-30T18:44:45.990Z"
+    },
+    {
+      "total": 237684,
+      "at": "2026-08-30T18:49:45.994Z"
     }
   ],
   "gold_rush": {
