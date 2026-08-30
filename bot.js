@@ -209,8 +209,20 @@ const pendingTrades = new Map(); // in-memory pending trade requests (source mus
 function getResourceWeight(ssrName, resource, data) {
   resource=canonRes(resource);
     const perSSR = data && data.ssr_resource_weights && data.ssr_resource_weights[ssrName];
-    if (perSSR && perSSR[resource] !== undefined && perSSR[resource] !== null) return perSSR[resource];
-    return RESOURCE_WEIGHTS[resource] || 5;
+    let base = perSSR && perSSR[resource] !== undefined && perSSR[resource] !== null ? perSSR[resource] : (RESOURCE_WEIGHTS[resource] || 5);
+    // gold rush 50% boost for Gold in that SSR
+    const rush = getActiveGoldRush(data);
+    if (rush && rush.ssr === ssrName && resource === "Gold") {
+        base = Math.max(1, Math.floor(base * (rush.factor || 1.5)));
+    }
+    return base;
+}
+function getActiveGoldRush(data) {
+    if (!data?.gold_rush) return null;
+    try {
+        if (Date.now() > new Date(data.gold_rush.expiresAt).getTime()) return null;
+        return data.gold_rush;
+    } catch { return null; }
 }
 
 // Compensation for removed resources — one-time payout when resource was delisted but holdings remained
@@ -397,7 +409,8 @@ function defaultData() {
         "compensation_log": [], // one-time compensation for removed resources
         "trade_schedules": [], // recurring trades: {id, fromCompanyId, toCompanyId, item, qty, interval: 'hourly'|'daily'|'weekly', nextAt, createdBy}
         "owner_logs": [], // audit: {at, by, username, action, details}
-        "total_rubles_history": [] // 100 pts: total rubles of all citizens (cash+bank) even those with 0
+        "total_rubles_history": [], // 100 pts: total rubles of all citizens (cash+bank) even those with 0
+        "gold_rush": null // {ssr, factor, expiresAt, startedBy, startedAt, durationHours, percent} — configurable 24-48h, 25-100% gold boost
     };
 }
 
@@ -1389,6 +1402,23 @@ function repairCompanyState(data) {
         data.total_rubles_history.push({ total: cur, at: new Date().toISOString() });
         changed = true;
     }
+    if (!data.ssr_resource_weights || typeof data.ssr_resource_weights !== 'object' || Array.isArray(data.ssr_resource_weights)) {
+        data.ssr_resource_weights = {};
+        changed = true;
+    }
+    // revert permanent Nuristani Gold 3 if it was our old permanent bonus (user wants 0 goldrush RN, no permanent)
+    if (data.ssr_resource_weights["Nuristani SSR"]?.Gold === 3) {
+        // if Gold 3 was the only override for Nuristani, remove the whole SSR entry to fall back to global 2
+        if (Object.keys(data.ssr_resource_weights["Nuristani SSR"]).length === 1) delete data.ssr_resource_weights["Nuristani SSR"];
+        else delete data.ssr_resource_weights["Nuristani SSR"]["Gold"];
+        changed = true;
+    }
+    if (data.gold_rush === undefined) { data.gold_rush = null; changed = true; }
+    // clear expired rush
+    if (data.gold_rush && Date.now() > new Date(data.gold_rush.expiresAt).getTime()) {
+        data.gold_rush = null;
+        changed = true;
+    }
 
     for (const [userId] of Object.entries(data.users || {})) {
         ensureUserRecord(data, userId);
@@ -1654,7 +1684,7 @@ function generateHelpPages() {
     // Page 5 - Economy Graphs
     let ssrText = '';
     for (const [name, data] of Object.entries(SSR_REGIONS)) {
-        ssrText += `${data.emoji} **${name}**: ${data.resources.slice(0, 4).join(', ')}\n`;
+        ssrText += `${data.emoji} **${name}**: ${data.resources.join(', ')}\n`;
     }
     const p5 = new EmbedBuilder()
         .setTitle('📚 USSR Economy - Page 5/8')
@@ -3544,6 +3574,13 @@ if (command === 'foundcompany') {
                     prod = Math.max(1, Math.floor(prod * specMult));
                     if (specMult > 1) penalties.push(`✨ ${bName} +25% spec bonus (${company.specialization}) ${before}→${prod}`);
                     else penalties.push(`⚠️ ${bName} -15% off-spec (${company.specialization}) ${before}→${prod}`);
+                }
+                // Gold Rush 50% boost for Gold Mine in active SSR (both -work and -collect)
+                const rush = getActiveGoldRush(data);
+                if (rush && rush.ssr === company.hq_ssr && bName === "Gold Mine") {
+                    const beforeRush = prod;
+                    prod = Math.max(1, Math.floor(prod * (rush.factor || 1.5)));
+                    penalties.push(`⛏️ GOLD RUSH +${rush.percent||50}% for ${rush.ssr} ${beforeRush}→${prod}`);
                 }
                 for (const r of config.produces) {
                     const native = isResourceNative(company.hq_ssr, r);
@@ -6436,6 +6473,76 @@ if (command === 'foundcompany') {
         return;
     }
 
+    // ============================================================
+    // GOLDRUSH — secret, Primary/Co-Primary only, 24-48h configurable boost for Gold SSRs
+    // No permanent bonus: 0 RN, menu lets you pick SSR (gold only), duration 24-48h, boost %
+    // ============================================================
+    if (command === 'goldrush') {
+        if (!isPrimaryOwner(userId)) { await message.reply('❌ Secret — Primary/Co-Primary only.'); return; }
+        const goldSSRs = Object.entries(SSR_REGIONS).filter(([,v])=>v.resources.includes('Gold')).map(([name, v])=>({name, emoji: v.emoji, work_zone: v.work_zone}));
+        if (!goldSSRs.length) { await message.reply('❌ No gold SSRs found.'); return; }
+        const active = getActiveGoldRush(loadData());
+        const activeText = active ? `Currently: **${active.ssr}** +${active.percent}% until <t:${Math.floor(new Date(active.expiresAt).getTime()/1000)}:R>` : 'Currently: **none** — 0 gold rush active';
+        const ssrOptions = goldSSRs.map(s=> new StringSelectMenuOptionBuilder().setLabel(s.name).setDescription(`Gold SSR • ${SSR_REGIONS[s.name].resources.join(', ').slice(0,50)}`).setValue(s.name).setEmoji(s.emoji));
+        const ssrMenu = new StringSelectMenuBuilder().setCustomId('goldrush_ssr').setPlaceholder('Which SSR gets Gold Rush? (gold SSRs only)').addOptions(ssrOptions);
+        const row1 = new ActionRowBuilder().addComponents(ssrMenu);
+        const embed1 = new EmbedBuilder().setTitle('⛏️ GOLD RUSH — Step 1/3').setDescription(`**Which SSR** do you want to give Gold Rush? Only gold SSRs listed.\n${activeText}`).setColor(0xFFD700).setFooter({text: 'Step 1: SSR • Step 2: duration 24-48h • Step 3: boost %'});
+        const reply = await message.reply({ embeds: [embed1], components: [row1], fetchReply: true });
+        let selectedSSR = null, selectedHours = null, selectedPercent = null;
+        const collector = reply.createMessageComponentCollector({ filter: i=>i.user.id===userId, time: 120000 });
+        collector.on('collect', async (interaction) => {
+            if (interaction.customId === 'goldrush_ssr') {
+                selectedSSR = interaction.values[0];
+                const durOptions = [
+                    new StringSelectMenuOptionBuilder().setLabel('24 hours — minimum').setValue('24').setEmoji('⏱️'),
+                    new StringSelectMenuOptionBuilder().setLabel('30 hours').setValue('30').setEmoji('⏱️'),
+                    new StringSelectMenuOptionBuilder().setLabel('36 hours').setValue('36').setEmoji('⏱️'),
+                    new StringSelectMenuOptionBuilder().setLabel('48 hours — maximum').setValue('48').setEmoji('⏱️'),
+                ];
+                const durMenu = new StringSelectMenuBuilder().setCustomId('goldrush_dur').setPlaceholder(`Duration for ${selectedSSR}? (24-48h)`).addOptions(durOptions);
+                const rowDur = new ActionRowBuilder().addComponents(durMenu);
+                const embedDur = new EmbedBuilder().setTitle('⛏️ GOLD RUSH — Step 2/3').setDescription(`**${selectedSSR}** selected.\n**How long?** 24h min — 48h max.`).setColor(0xFFD700).setFooter({text: `SSR: ${selectedSSR} • Next: boost %`});
+                await interaction.update({ embeds: [embedDur], components: [rowDur] });
+            } else if (interaction.customId === 'goldrush_dur') {
+                selectedHours = parseInt(interaction.values[0]);
+                const boostOptions = [
+                    new StringSelectMenuOptionBuilder().setLabel('25% — modest').setValue('25').setEmoji('📈'),
+                    new StringSelectMenuOptionBuilder().setLabel('50% — standard').setValue('50').setEmoji('📈'),
+                    new StringSelectMenuOptionBuilder().setLabel('75% — high').setValue('75').setEmoji('📈'),
+                    new StringSelectMenuOptionBuilder().setLabel('100% — double').setValue('100').setEmoji('🚀'),
+                    new StringSelectMenuOptionBuilder().setLabel('150% — insane').setValue('150').setEmoji('🚀'),
+                ];
+                const boostMenu = new StringSelectMenuBuilder().setCustomId('goldrush_boost').setPlaceholder(`Boost % for ${selectedSSR}? (${selectedHours}h)`).addOptions(boostOptions);
+                const rowBoost = new ActionRowBuilder().addComponents(boostMenu);
+                const embedBoost = new EmbedBuilder().setTitle('⛏️ GOLD RUSH — Step 3/3').setDescription(`**${selectedSSR}** • **${selectedHours}h**\n**How big % boost?**`).setColor(0xFFD700).setFooter({text: `SSR: ${selectedSSR} • Duration: ${selectedHours}h`});
+                await interaction.update({ embeds: [embedBoost], components: [rowBoost] });
+            } else if (interaction.customId === 'goldrush_boost') {
+                selectedPercent = parseInt(interaction.values[0]);
+                const factor = 1 + selectedPercent/100;
+                const expiresAt = new Date(Date.now() + selectedHours*3600*1000).toISOString();
+                const data = loadData();
+                data.gold_rush = { ssr: selectedSSR, factor, percent: selectedPercent, durationHours: selectedHours, expiresAt, startedBy: userId, startedAt: new Date().toISOString() };
+                logOwnerAction(data, userId, message.author.username, 'goldrush', `${selectedSSR} +${selectedPercent}% for ${selectedHours}h until ${expiresAt}`);
+                saveData(data);
+                const workZone = SSR_REGIONS[selectedSSR]?.work_zone || '1538704555670245448';
+                const endTime = Math.floor(new Date(expiresAt).getTime()/1000);
+                const announceEmbed = new EmbedBuilder().setTitle('⛏️ GOLD RUSH!').setDescription(`**${selectedSSR}** has a **Gold Rush!**\n**+${selectedPercent}%** higher chance of **Gold** for **${selectedHours} hours** (<t:${endTime}:R>)\nVia \`-work\` and \`-collect\` (Gold Mine)\nStarted by <@${userId}>`).setColor(0xFFD700).setFooter({text: `${selectedSSR} Gold Rush • factor x${factor.toFixed(2)}`});
+                try {
+                    const ch = await client.channels.fetch(workZone);
+                    if (ch) await ch.send({ embeds: [announceEmbed] });
+                } catch {}
+                try {
+                    const nurCh = await client.channels.fetch('1538704555670245448');
+                    if (nurCh && workZone !== '1538704555670245448') await nurCh.send({ embeds: [announceEmbed] });
+                } catch {}
+                await interaction.update({ embeds: [new EmbedBuilder().setTitle('✅ Gold Rush Started').setDescription(`**${selectedSSR}** now has **+${selectedPercent}% Gold** for **${selectedHours}h** until <t:${endTime}:F> (<t:${endTime}:R>)\nAnnounced in <#${workZone}>`).setColor(0x00FF00)], components: [] });
+                collector.stop();
+            }
+        });
+        collector.on('end', async (collected) => { if (collected.size===0) { try{await reply.edit({components:[]});}catch{}} });
+        return;
+    }
+
 });
 
 // ============================================================
@@ -6734,16 +6841,16 @@ client.on(Events.MessageCreate, async message => {
     const args = message.content.slice(1).trim().split(/ +/);
     const command = args.shift().toLowerCase();
     const validCommands = [
-        'addbotowner', 'addmanager', 'addowner', 'aistore', 'appointdirector', 'appointmanager', 'autotrade', 'bal',
+        'addbotowner', 'addmanager', 'addowner', 'adminlogs', 'aistore', 'appointdirector', 'appointmanager', 'audit', 'autotrade', 'bal',
         'balance', 'blacklist', 'botowners', 'build', 'buygsi', 'buyshares', 'cancelschedule', 'cancelschedulemarket',
         'changelogs', 'collect', 'companies', 'company', 'companygraph', 'companyinventory', 'companyrankings', 'companytrade',
         'consumption', 'consumptiongraph', 'craft', 'craftcompany', 'craftpersonal', 'daily', 'delmanager', 'delowner',
         'delspawnrate', 'demand', 'demandgraph', 'dep', 'deposit', 'econstats', 'employees', 'export',
         'exportoutside', 'factorydeal', 'fire', 'food', 'fooddemand', 'foodstatus', 'foreignsell', 'formstatecompanies',
-        'foundcompany', 'globalcons', 'globalconsumption', 'globaldemand', 'goldstandard', 'govcontract', 'gsi', 'gsigraph',
+        'foundcompany', 'globalcons', 'globalconsumption', 'globaldemand', 'goldrush', 'goldstandard', 'govcontract', 'gsi', 'gsigraph',
         'help', 'hire', 'inflation', 'inventory', 'invest', 'lb', 'leaderboard', 'leave',
-        'listmanagers', 'listowners', 'listschedules', 'managers', 'managers_add', 'managers_remove', 'map', 'market',
-        'marketdemand', 'minwage', 'nationalminimumwage', 'owneradd', 'ownerremove', 'owners', 'pay', 'portfolio',
+        'listmanagers', 'listowners', 'listschedules', 'logs', 'managers', 'managers_add', 'managers_remove', 'map', 'market',
+        'marketdemand', 'minwage', 'nationalminimumwage', 'owneradd', 'ownerlogs', 'ownerremove', 'owners', 'pay', 'portfolio',
         'printmoney', 'quit', 'quitjob', 'recipes', 'removebotowner', 'removedirector', 'removemanager', 'removeowner',
         'removeschedule', 'resetspawnrate', 'resetssrweight', 'resign', 'resources', 'schedulemarket', 'schedules', 'scheduletrade',
         'sellgsi', 'sellitem', 'sellshares', 'serverconsumption', 'setspawnrate', 'setssrweight', 'setwage', 'setwagefood',
