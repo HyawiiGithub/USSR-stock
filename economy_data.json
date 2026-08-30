@@ -133817,11 +133817,6 @@
   },
   "gsi_history": [
     {
-      "price": 20,
-      "change_percent": 1.3447795318851283,
-      "recorded_at": "2026-08-30T14:09:17.724Z"
-    },
-    {
       "price": 19,
       "change_percent": -0.1736598707424916,
       "recorded_at": "2026-08-30T14:14:17.723Z"
@@ -134315,6 +134310,11 @@
       "price": 1,
       "change_percent": 1.289090221311259,
       "recorded_at": "2026-08-30T21:34:46.166Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -0.19438987176967015,
+      "recorded_at": "2026-08-30T21:39:46.065Z"
     }
   ],
   "factory_names": [
@@ -134335,11 +134335,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.1177578676827354,
+  "inflation": 0.13044599520856343,
   "money_printed": 223,
   "total_bank_reserves": 164129,
   "inflation_history": [
-    0.010954469178661302,
     0,
     0.004594465063840335,
     0,
@@ -134438,7 +134437,8 @@
     0.12460797473719902,
     0.12207333321768118,
     0.08580716646147933,
-    0.1177578676827354
+    0.1177578676827354,
+    0.13044599520856343
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134555,11 +134555,9 @@
     "Smoked Fish": "2026-08-30T16:25:40.680Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Copper Ingot": 1
-  },
+  "ai_store": {},
   "global_consumption": {
-    "Copper Ingot": 44,
+    "Copper Ingot": 45,
     "Steel Ingot": 7,
     "Timber Planks": 92,
     "Refined Fuel": 37,
@@ -135450,6 +135448,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-30T21:24:45.720Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-30T21:39:45.731Z"
     }
   ],
   "demand_history": {
@@ -135612,6 +135615,11 @@
       {
         "demand": 1.3294555955811331,
         "at": "2026-08-30T21:24:45.720Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3344526890310293,
+        "at": "2026-08-30T21:39:45.731Z",
         "supply": 1
       }
     ],
@@ -136659,6 +136667,10 @@
     {
       "total": 238314,
       "at": "2026-08-30T21:34:46.331Z"
+    },
+    {
+      "total": 238329,
+      "at": "2026-08-30T21:39:46.326Z"
     }
   ],
   "gold_rush": {
