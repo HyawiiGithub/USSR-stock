@@ -137,7 +137,7 @@
     },
     "860203156222902332": {
       "username": "Google Giggles",
-      "cash": 1076,
+      "cash": 1101,
       "bank": 3140,
       "resources": {
         "Coal": 7,
@@ -155,8 +155,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T13:02:37.214Z",
-      "work_count": 61,
+      "last_work": "2026-08-30T13:14:33.057Z",
+      "work_count": 62,
       "last_claim": "2026-08-26T17:03:27.339Z",
       "last_collect": null,
       "join_date": "2026-08-22T09:21:45.528920",
@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 165,
+      "cash": 180,
       "bank": 13867,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T13:08:55.752Z",
-      "work_count": 356,
+      "last_work": "2026-08-30T13:14:14.512Z",
+      "work_count": 357,
       "last_claim": "2026-08-30T08:20:42.999Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1203,7 +1203,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2371,
+      "funds": 2361,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -1237,7 +1237,7 @@
       },
       "inventory": {
         "Gold": 4,
-        "Uranium": 8,
+        "Uranium": 10,
         "Zinc": 43,
         "Coal": 8,
         "Copper": 8,
@@ -1245,7 +1245,7 @@
         "Gold Bar": 4,
         "Aluminium": 16,
         "Uranium Rod": 2,
-        "Wheat": 173,
+        "Wheat": 172,
         "Iron Ore": 5,
         "Aluminium Ore": 2
       },
@@ -1510,8 +1510,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 71827,
-      "market_cap": 71827,
+      "share_price": 72459,
+      "market_cap": 72459,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -1527,10 +1527,10 @@
         }
       },
       "inventory": {
-        "Uranium": 20,
+        "Uranium": 22,
         "Coal": 129,
         "Gold Bar": 5,
-        "Wheat": 154,
+        "Wheat": 153,
         "Cake": 1,
         "Iron Ore": 1,
         "Sugar": 7,
@@ -1541,7 +1541,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T08:47:20.761Z",
       "price_history": [
-        68488,
         68651,
         68829,
         68646,
@@ -1640,7 +1639,8 @@
         71803,
         71811,
         71819,
-        71827
+        71827,
+        72459
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1956,11 +1956,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 89,
-      "change_percent": 0.31553479750549823,
-      "recorded_at": "2026-08-30T05:39:17.511Z"
-    },
     {
       "price": 88,
       "change_percent": -0.7142625286577396,
@@ -2455,6 +2450,11 @@
       "price": 25,
       "change_percent": 1.1650869751630586,
       "recorded_at": "2026-08-30T13:09:17.691Z"
+    },
+    {
+      "price": 25,
+      "change_percent": 0.692595369392191,
+      "recorded_at": "2026-08-30T13:14:17.692Z"
     }
   ],
   "factory_names": [
@@ -2678,12 +2678,12 @@
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
     "Peat Fuel": 2,
-    "Timber Planks": 8
+    "Timber Planks": 6
   },
   "global_consumption": {
     "Copper Ingot": 42,
     "Steel Ingot": 7,
-    "Timber Planks": 84,
+    "Timber Planks": 86,
     "Refined Fuel": 34,
     "Fuel": 3,
     "Iron Ingot": 12,
@@ -3455,6 +3455,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-30T12:59:17.505Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-08-30T13:14:17.505Z"
     }
   ],
   "demand_history": {
@@ -3638,11 +3643,6 @@
       }
     ],
     "Timber Planks": [
-      {
-        "demand": 1.2443166371071186,
-        "at": "2026-08-27T00:12:36.553Z",
-        "supply": 21
-      },
       {
         "demand": 1.1993166371071187,
         "at": "2026-08-27T00:51:22.043Z",
@@ -3936,6 +3936,11 @@
       {
         "demand": 1.1637890205200423,
         "at": "2026-08-30T11:29:17.473Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3221245205490024,
+        "at": "2026-08-30T13:14:17.505Z",
         "supply": 0
       }
     ],
