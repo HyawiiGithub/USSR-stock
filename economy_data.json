@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 16,
+      "cash": 31,
       "bank": 13291,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T08:12:55.336Z",
-      "work_count": 323,
+      "last_work": "2026-08-30T08:29:32.263Z",
+      "work_count": 324,
       "last_claim": "2026-08-30T08:20:42.999Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1487,8 +1487,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 69437,
-      "market_cap": 69437,
+      "share_price": 69445,
+      "market_cap": 69445,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -1505,10 +1505,10 @@
       },
       "inventory": {
         "Uranium": 20,
-        "Coal": 121,
+        "Coal": 122,
         "Gold Bar": 4,
         "Gold": 2,
-        "Wheat": 215,
+        "Wheat": 214,
         "Cake": 1,
         "Iron Ore": 12,
         "Oil": 2,
@@ -1518,7 +1518,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-28T23:51:11.761Z",
       "price_history": [
-        71069,
         71380,
         71283,
         65193,
@@ -1617,7 +1616,8 @@
         69431,
         69433,
         69429,
-        69437
+        69437,
+        69445
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1640,8 +1640,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 174126,
-      "market_cap": 174126,
+      "share_price": 174189,
+      "market_cap": 174189,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1659,18 +1659,17 @@
       "inventory": {
         "Timber": 90,
         "Natural Gas": 49,
-        "Iron Ore": 64,
-        "Coal": 75,
+        "Iron Ore": 61,
+        "Coal": 73,
         "Uranium": 2,
         "Oil": 67,
         "Gold": 7,
-        "Wheat": 147
+        "Wheat": 147,
+        "Iron Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T07:03:02.778Z",
       "price_history": [
-        168075,
-        168123,
         168144,
         168192,
         168280,
@@ -1768,7 +1767,9 @@
         174028,
         174052,
         174108,
-        174126
+        174126,
+        174150,
+        174189
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -1932,11 +1933,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 113,
-      "change_percent": -0.3793458738555625,
-      "recorded_at": "2026-08-30T00:20:17.153Z"
-    },
     {
       "price": 107,
       "change_percent": -5.052953992013289,
@@ -2431,11 +2427,15 @@
       "price": 53,
       "change_percent": -1.046670773211687,
       "recorded_at": "2026-08-30T08:24:17.574Z"
+    },
+    {
+      "price": 53,
+      "change_percent": 0.7292362661351499,
+      "recorded_at": "2026-08-30T08:29:17.573Z"
     }
   ],
   "factory_names": [
     "Stalin Tractor Plant",
-    "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Ural Heavy Industries"
   ],
@@ -2444,7 +2444,8 @@
     "Volga Shipbuilding",
     "Lenin Machine Works",
     "Khrushchev Agricultural",
-    "Soviet Iron Foundry"
+    "Soviet Iron Foundry",
+    "Brezhnev Auto Factory"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2453,9 +2454,8 @@
   "admin_log": [],
   "inflation": 0,
   "money_printed": 30,
-  "total_bank_reserves": 157086,
+  "total_bank_reserves": 158026,
   "inflation_history": [
-    0.7259564267723607,
     0.7214309516842821,
     0.6637525750200329,
     0.6072255790610537,
@@ -2554,6 +2554,7 @@
     0.010469376188469999,
     0,
     0,
+    0,
     0
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
@@ -2594,7 +2595,7 @@
     "Cake": 1.4004029010389227,
     "Bread": 1.4041051437374672,
     "Copper Ingot": 1.3917369487873001,
-    "Iron Ingot": 1.3658226876216606,
+    "Iron Ingot": 1.3687676637806823,
     "Steel Ingot": 1.4046048302974694,
     "Gold Bar": 1.3789517636039055,
     "Aluminium Ingot": 1.4122718308078774,
