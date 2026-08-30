@@ -99,7 +99,7 @@ export const CRAFTING_RECIPES = {
   "Smoked Fish": {"ingredients": {"Fish": 2, "Coal": 2}, "value": 86, "emoji": "🔥🐟"},
   "Fish Stew": {"ingredients": {"Fish": 2, "Wheat": 2, "Salt": 1}, "value": 76, "emoji": "🍲"},
   "Peat Fuel": {"ingredients": {"Peat": 4, "Coal": 1}, "value": 97, "emoji": "🔥"},
-  "Shale Oil": {"ingredients": {"Oil Shale": 4}, "value": 107, "emoji": "🪨"},
+  "Shale Oil": {"ingredients": {"Oil Shale": 4}, "value": 95, "emoji": "🪨"},
   "Gas Fuel": {"ingredients": {"Natural Gas": 3}, "value": 194, "emoji": "⛽"},
   "Fertilizer": {"ingredients": {"Phosphorite": 2, "Peat": 2, "Sulphur": 1}, "value": 177, "emoji": "🧪"},
   "Cotton Fabric": {"ingredients": {"Cotton": 3}, "value": 102, "emoji": "🧵"},
