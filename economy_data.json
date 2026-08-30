@@ -1968,11 +1968,6 @@
   "gsi_history": [
     {
       "price": 53,
-      "change_percent": -1.046670773211687,
-      "recorded_at": "2026-08-30T08:24:17.574Z"
-    },
-    {
-      "price": 53,
       "change_percent": 0.7292362661351499,
       "recorded_at": "2026-08-30T08:29:17.573Z"
     },
@@ -2465,6 +2460,11 @@
       "price": 9,
       "change_percent": -5.672865984000397,
       "recorded_at": "2026-08-30T15:44:17.539Z"
+    },
+    {
+      "price": 8,
+      "change_percent": -0.1273520777406918,
+      "recorded_at": "2026-08-30T15:44:17.782Z"
     }
   ],
   "factory_names": [
@@ -2686,9 +2686,7 @@
     "Peat Fuel": "2026-08-30T10:15:06.364Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Cake": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 42,
     "Steel Ingot": 7,
@@ -2698,7 +2696,7 @@
     "Iron Ingot": 12,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 3
+    "Cake": 5
   },
   "consumption_history": [
     {
@@ -3505,6 +3503,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-08-30T15:29:17.550Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-08-30T15:44:17.557Z"
     }
   ],
   "demand_history": {
@@ -4303,6 +4306,11 @@
       {
         "demand": 1.286532536180883,
         "at": "2026-08-30T15:29:17.550Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2962002605679335,
+        "at": "2026-08-30T15:44:17.557Z",
         "supply": 0
       }
     ]
