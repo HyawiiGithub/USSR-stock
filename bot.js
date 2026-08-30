@@ -5553,9 +5553,10 @@ if (command === 'foundcompany') {
         }
         // Build chooser — Globe picks what State buys (warning: crafted > raw)
         const options = items.slice(0, 25).map(([item, qty, val]) => {
-            const emoji = CRAFTING_RECIPES[item]?.emoji || '📦';
             const desc = `x${qty} • ${formatMoney(val)} ea` + (isGoldItem(item) ? ' • GOLD' : '');
-            return new StringSelectMenuOptionBuilder().setLabel(item.substring(0, 25)).setDescription(desc.substring(0, 50)).setValue(item).setEmoji(emoji);
+            const opt = new StringSelectMenuOptionBuilder().setLabel(item.substring(0, 25)).setDescription(desc.substring(0, 50)).setValue(item);
+            try { opt.setEmoji('📦'); } catch {}
+            return opt;
         });
         const select = new StringSelectMenuBuilder().setCustomId('govcontract_select').setPlaceholder('Choose item to sell to State...').addOptions(options);
         const row = new ActionRowBuilder().addComponents(select);
@@ -5564,7 +5565,14 @@ if (command === 'foundcompany') {
             .setDescription(`Buyer: **State** → Seller: **${company.name}** (${company.ticker})\nChoose what to sell. Items go to **AI Store** then AI customers buy them (full cycle).\n\n⚠️ **Warning: Crafted items make far more profit than raw resources!**\n${!canGold ? `🔒 Gold locked — Gold/Gold Bar only sellable to State when Gold Standard 100% (now ${goldRatio.toFixed(1)}%)` : '🥇 Gold is unlocked (100% backing).'}`)
             .setColor(0xFFD700)
             .setFooter({ text: `⏳ Cooldown ${formatCooldown(GOVCONTRACT_COOLDOWN_SECS)} • State Bank pays market price (no premium)` });
-        const reply = await message.reply({ embeds: [listEmbed], components: [row], fetchReply: true });
+        let reply;
+        try {
+            reply = await message.reply({ embeds: [listEmbed], components: [row], fetchReply: true });
+        } catch (err) {
+            console.error('govcontract reply failed', err.code, err.message, JSON.stringify(err.errors||{}).slice(0,500));
+            await message.reply('❌ State menu failed (50035). Try again.');
+            return;
+        }
         const collector = reply.createMessageComponentCollector({ componentType: ComponentType.StringSelect, filter: i => i.user.id === userId, time: 60000, max: 1 });
         collector.on('collect', async (interaction) => {
             const selectedItem = interaction.values[0];
@@ -5676,9 +5684,11 @@ if (command === 'foundcompany') {
             return;
         }
         const options = items.slice(0, 25).map(([item, qty, val]) => {
-            const emoji = CRAFTING_RECIPES[item]?.emoji || '📦';
             const desc = `x${qty} • ${formatMoney(val)} ea`;
-            return new StringSelectMenuOptionBuilder().setLabel(item.substring(0, 25)).setDescription(desc.substring(0, 50)).setValue(item).setEmoji(emoji);
+            const opt = new StringSelectMenuOptionBuilder().setLabel(item.substring(0, 25)).setDescription(desc.substring(0, 50)).setValue(item);
+            // only set emoji if it's a valid unicode emoji (avoid ■ etc causing 50035)
+            try { opt.setEmoji('📦'); } catch {}
+            return opt;
         });
         const select = new StringSelectMenuBuilder().setCustomId('factorydeal_item').setPlaceholder('Choose item to sell to AI factory...').addOptions(options);
         const row = new ActionRowBuilder().addComponents(select);
@@ -5688,7 +5698,14 @@ if (command === 'foundcompany') {
             .setDescription(`Factory **${factoryNamePreview}** wants to buy from **${company.name}**.\nChoose what to sell. Goods move to **AI Store** then AI customers buy them (cycle).\n\n⚠️ **Warning: Crafted items make far more profit than raw resources!** Already filtered to crafted goods. You can sell up to **10 at once** — next step choose quantity.\n🚫 Gold/Gold Bar never sold here — State only. Production spec +15% sale bonus.`)
             .setColor(0x5865F2)
             .setFooter({ text: `⏳ Cooldown ${formatCooldown(FACTORYDEAL_COOLDOWN_SECS)}/company • Market price (no premium) — supply/demand • Use -craftcompany <item> 3 to craft more` });
-        const reply = await message.reply({ embeds: [listEmbed], components: [row], fetchReply: true });
+        let reply;
+        try {
+            reply = await message.reply({ embeds: [listEmbed], components: [row], fetchReply: true });
+        } catch (err) {
+            console.error('factorydeal reply failed', err.code, err.message, JSON.stringify(err.errors||{}).slice(0,500));
+            await message.reply('❌ Factory menu failed to open (Discord 50035). Try again — if persists, report items: ' + items.map(i=>i[0]).join(', '));
+            return;
+        }
         const itemCollector = reply.createMessageComponentCollector({ componentType: ComponentType.StringSelect, filter: i => i.user.id === userId && i.customId === 'factorydeal_item', time: 60000, max: 1 });
         itemCollector.on('collect', async (interaction) => {
             const selectedItem = interaction.values[0];
