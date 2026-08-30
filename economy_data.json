@@ -2656,7 +2656,7 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Peat Fuel": 10
+    "Peat Fuel": 8
   },
   "global_consumption": {
     "Copper Ingot": 39,
@@ -2665,7 +2665,8 @@
     "Refined Fuel": 33,
     "Fuel": 3,
     "Iron Ingot": 11,
-    "Shale Oil": 17
+    "Shale Oil": 17,
+    "Peat Fuel": 2
   },
   "consumption_history": [
     {
@@ -3377,6 +3378,11 @@
       "item": "Iron Ingot",
       "qty": 1,
       "at": "2026-08-30T09:29:17.439Z"
+    },
+    {
+      "item": "Peat Fuel",
+      "qty": 2,
+      "at": "2026-08-30T10:29:17.449Z"
     }
   ],
   "demand_history": {
@@ -4101,6 +4107,13 @@
       {
         "demand": 1.3725134961867695,
         "at": "2026-08-30T06:14:17.402Z",
+        "supply": 0
+      }
+    ],
+    "Peat Fuel": [
+      {
+        "demand": 1.1883151957172278,
+        "at": "2026-08-30T10:29:17.449Z",
         "supply": 0
       }
     ]
