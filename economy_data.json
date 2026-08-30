@@ -228,7 +228,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 0,
+      "cash": 25,
       "bank": 7767,
       "resources": {
         "Coal": 1
@@ -238,8 +238,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T15:01:57.321Z",
-      "work_count": 16,
+      "last_work": "2026-08-30T16:19:33.925Z",
+      "work_count": 17,
       "last_claim": "2026-08-30T15:03:13.572Z",
       "last_collect": null,
       "join_date": "2026-08-22T17:23:44.884271",
@@ -1203,14 +1203,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2281,
+      "funds": 2271,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 113049,
-      "market_cap": 113049,
+      "share_price": 113200,
+      "market_cap": 113200,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1238,16 +1238,17 @@
       "inventory": {
         "Gold": 2,
         "Uranium": 10,
-        "Zinc": 52,
-        "Coal": 8,
+        "Zinc": 54,
+        "Coal": 6,
         "Copper": 8,
         "Lead": 36,
         "Gold Bar": 5,
         "Aluminium": 16,
         "Uranium Rod": 2,
-        "Wheat": 164,
-        "Iron Ore": 5,
-        "Aluminium Ore": 2
+        "Wheat": 163,
+        "Iron Ore": 2,
+        "Aluminium Ore": 2,
+        "Iron Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T13:02:14.419Z",
@@ -1345,7 +1346,8 @@
         112790,
         112923,
         112991,
-        113049
+        113049,
+        113200
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -1522,8 +1524,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 76236,
-      "market_cap": 76236,
+      "share_price": 76361,
+      "market_cap": 76361,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -1549,15 +1551,14 @@
         "Copper": 6,
         "Refined Fuel": 1,
         "Bread": 4,
-        "Oil": 3,
         "Gold": 1,
         "Fish": 55,
-        "Smoked Fish": 10
+        "Smoked Fish": 10,
+        "Fuel": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T14:56:34.105Z",
       "price_history": [
-        70157,
         70165,
         70168,
         70208,
@@ -1656,7 +1657,8 @@
         75912,
         75920,
         76180,
-        76236
+        76236,
+        76361
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1973,11 +1975,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 51,
-      "change_percent": -0.27066263206996055,
-      "recorded_at": "2026-08-30T08:54:17.577Z"
-    },
     {
       "price": 50,
       "change_percent": -0.20109958904208414,
@@ -2472,6 +2469,11 @@
       "price": 7,
       "change_percent": 1.2724889739355036,
       "recorded_at": "2026-08-30T16:14:17.801Z"
+    },
+    {
+      "price": 7,
+      "change_percent": 0.5433475673283412,
+      "recorded_at": "2026-08-30T16:19:17.798Z"
     }
   ],
   "factory_names": [],
@@ -2491,11 +2493,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.014910370528881816,
+  "inflation": 0.09665021206841988,
   "money_printed": 223,
   "total_bank_reserves": 162618,
   "inflation_history": [
-    0.6708828919383696,
     0.6687207522624206,
     0.6163077900869612,
     0.4482342810175006,
@@ -2594,7 +2595,8 @@
     0,
     0.019822749660392793,
     0.006004753349067967,
-    0.014910370528881816
+    0.014910370528881816,
+    0.09665021206841988
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
