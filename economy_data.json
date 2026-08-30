@@ -1927,11 +1927,6 @@
   },
   "gsi_history": [
     {
-      "price": 131,
-      "change_percent": -1.3610801188238224,
-      "recorded_at": "2026-08-29T19:45:16.960Z"
-    },
-    {
       "price": 130,
       "change_percent": -0.7004591214144437,
       "recorded_at": "2026-08-29T19:50:16.963Z"
@@ -2425,6 +2420,11 @@
       "price": 94,
       "change_percent": 0.515730941459322,
       "recorded_at": "2026-08-30T03:54:17.405Z"
+    },
+    {
+      "price": 93,
+      "change_percent": -0.37982416814427866,
+      "recorded_at": "2026-08-30T03:59:17.401Z"
     }
   ],
   "factory_names": [
@@ -2445,11 +2445,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.004082886223652674,
+  "inflation": 0,
   "money_printed": 30,
   "total_bank_reserves": 153168,
   "inflation_history": [
-    0.553863959178352,
     0.44671581189989146,
     0.8463082782780293,
     0.5699500412303653,
@@ -2548,7 +2547,8 @@
     0.012243450498480413,
     0,
     0,
-    0.004082886223652674
+    0.004082886223652674,
+    0
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2584,15 +2584,15 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.380873723721663,
+    "Fuel": 1.3831723283143373,
     "Cake": 1.4004029010389227,
     "Bread": 1.4041051437374672,
     "Copper Ingot": 1.3917369487873001,
     "Iron Ingot": 1.400327689831505,
     "Steel Ingot": 1.4046048302974694,
-    "Gold Bar": 1.3810881313482233,
+    "Gold Bar": 1.3799754398147244,
     "Aluminium Ingot": 1.4122718308078774,
-    "Timber Planks": 1.336834122582636,
+    "Timber Planks": 1.3465829479217952,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4120099255926,
     "Glass": 1.4122781621852998,
@@ -2602,16 +2602,16 @@
     "Uranium Rod": 1.4038368911975774,
     "Reactor Core": 1.4122781621852998,
     "Circuit Board": 1.4124924742064038,
-    "Flour": 1.4153839146921623,
+    "Flour": 1.4141532015167892,
     "Sugar": 1.4089503591142245,
     "Wine": 1.4124277970568644,
     "Canned Food": 1.3980767055854701,
-    "Canned Fish": 1.3864671849864352,
-    "Smoked Fish": 1.414189420596172,
-    "Fish Stew": 1.4148057792920166,
+    "Canned Fish": 1.3852523742900844,
+    "Smoked Fish": 1.4130542669484782,
+    "Fish Stew": 1.4136213169486553,
     "Peat Fuel": 1.41,
     "Gas Fuel": 1.4,
-    "Fertilizer": 1.4131249362890903,
+    "Fertilizer": 1.412074941385963,
     "Cotton Fabric": 1.4,
     "Manganese Alloy": 1.41,
     "Sunflower Oil": 1.41,
@@ -2622,7 +2622,7 @@
     "Antimony Alloy": 1.41,
     "Molybdenum Rod": 1.41,
     "Aluminium Sheet": 1.41,
-    "Shale Oil": 1.0728684029547706
+    "Shale Oil": 1.096993674895298
   },
   "market_last_sale": {
     "Fuel": "2026-08-30T02:04:32.439Z",
