@@ -1937,11 +1937,6 @@
   "gsi_history": [
     {
       "price": 105,
-      "change_percent": -2.5693244692691035,
-      "recorded_at": "2026-08-30T01:38:19.430Z"
-    },
-    {
-      "price": 105,
       "change_percent": 0.8316102339828826,
       "recorded_at": "2026-08-30T01:38:19.445Z"
     },
@@ -2434,6 +2429,11 @@
       "price": 44,
       "change_percent": -2.899714301177247,
       "recorded_at": "2026-08-30T09:29:17.424Z"
+    },
+    {
+      "price": 43,
+      "change_percent": -1.0498210682685793,
+      "recorded_at": "2026-08-30T09:29:17.586Z"
     }
   ],
   "factory_names": [],
@@ -2453,11 +2453,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.004784027257904881,
+  "inflation": 0,
   "money_printed": 30,
   "total_bank_reserves": 161615,
   "inflation_history": [
-    0.8200733327757118,
     0.6812145190781642,
     0.761414751083251,
     0.5750797577741579,
@@ -2556,7 +2555,8 @@
     0,
     0,
     0,
-    0.004784027257904881
+    0.004784027257904881,
+    0
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2596,7 +2596,7 @@
     "Cake": 1.4004870557273594,
     "Bread": 1.4041051437374672,
     "Copper Ingot": 1.3917369487873001,
-    "Iron Ingot": 1.262078803068163,
+    "Iron Ingot": 1.2658421220305252,
     "Steel Ingot": 1.4046048302974694,
     "Gold Bar": 1.3754384708971978,
     "Aluminium Ingot": 1.4122718308078774,
@@ -2611,23 +2611,23 @@
     "Reactor Core": 1.4122781621852998,
     "Circuit Board": 1.4124924742064038,
     "Flour": 1.4119792697638105,
-    "Sugar": 1.4043452191194208,
-    "Wine": 1.4147817466462587,
-    "Canned Food": 1.4093934072670942,
-    "Canned Fish": 1.389754292333932,
+    "Sugar": 1.4017001656924313,
+    "Wine": 1.413599206914558,
+    "Canned Food": 1.406672703916496,
+    "Canned Fish": 1.3882765130497816,
     "Smoked Fish": 1.4120099255926,
     "Fish Stew": 1.4115290826653417,
-    "Peat Fuel": 1.416928,
+    "Peat Fuel": 1.41557376,
     "Gas Fuel": 1.41,
     "Fertilizer": 1.412074941385963,
     "Cotton Fabric": 1.4,
     "Manganese Alloy": 1.41,
-    "Sunflower Oil": 1.416928,
+    "Sunflower Oil": 1.41557376,
     "Linen": 1.41,
     "Corn Meal": 1.4,
     "Tea Pack": 1.4,
     "Citrus Juice": 1.41212710002688,
-    "Antimony Alloy": 1.413181630464,
+    "Antimony Alloy": 1.41212710002688,
     "Molybdenum Rod": 1.41,
     "Aluminium Sheet": 1.41,
     "Shale Oil": 1.3951079928516001
@@ -2644,16 +2644,14 @@
     "Shale Oil": "2026-08-30T03:03:58.713Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Iron Ingot": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 39,
     "Steel Ingot": 7,
     "Timber Planks": 82,
     "Refined Fuel": 33,
     "Fuel": 3,
-    "Iron Ingot": 10,
+    "Iron Ingot": 11,
     "Shale Oil": 17
   },
   "consumption_history": [
@@ -3361,6 +3359,11 @@
       "item": "Iron Ingot",
       "qty": 2,
       "at": "2026-08-30T09:14:17.434Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 1,
+      "at": "2026-08-30T09:29:17.439Z"
     }
   ],
   "demand_history": {
@@ -4028,6 +4031,11 @@
       {
         "demand": 1.2600700243127547,
         "at": "2026-08-30T09:14:17.434Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.262078803068163,
+        "at": "2026-08-30T09:29:17.439Z",
         "supply": 1
       }
     ],
