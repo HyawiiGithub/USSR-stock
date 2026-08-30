@@ -1933,11 +1933,6 @@
   },
   "gsi_history": [
     {
-      "price": 97,
-      "change_percent": 0.21555286314912636,
-      "recorded_at": "2026-08-30T04:19:17.424Z"
-    },
-    {
       "price": 96,
       "change_percent": -0.624879510410141,
       "recorded_at": "2026-08-30T04:24:17.431Z"
@@ -2431,6 +2426,11 @@
       "price": 32,
       "change_percent": -4.5912672517069115,
       "recorded_at": "2026-08-30T11:44:17.475Z"
+    },
+    {
+      "price": 32,
+      "change_percent": 0.5211205740154505,
+      "recorded_at": "2026-08-30T11:44:17.630Z"
     }
   ],
   "factory_names": [
@@ -2653,7 +2653,7 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Peat Fuel": 5,
+    "Peat Fuel": 4,
     "Timber Planks": 8,
     "Iron Ingot": 1,
     "Copper Ingot": 3
@@ -2666,7 +2666,7 @@
     "Fuel": 3,
     "Iron Ingot": 11,
     "Shale Oil": 17,
-    "Peat Fuel": 5
+    "Peat Fuel": 6
   },
   "consumption_history": [
     {
@@ -3403,6 +3403,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-30T11:29:17.473Z"
+    },
+    {
+      "item": "Peat Fuel",
+      "qty": 1,
+      "at": "2026-08-30T11:44:17.493Z"
     }
   ],
   "demand_history": {
@@ -4149,6 +4154,11 @@
       {
         "demand": 1.2081776992247968,
         "at": "2026-08-30T10:59:17.450Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3011562250889515,
+        "at": "2026-08-30T11:44:17.493Z",
         "supply": 0
       }
     ]
