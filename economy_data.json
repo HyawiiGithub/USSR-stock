@@ -133361,14 +133361,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 21759,
+      "funds": 24584,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 80812,
-      "market_cap": 80812,
+      "share_price": 81969,
+      "market_cap": 81969,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -133394,14 +133394,11 @@
         "Refined Fuel": 1,
         "Wheat": 11,
         "Sugar": 4,
-        "Copper Ingot": 1,
-        "Steel Ingot": 5
+        "Copper Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T20:57:56.542Z",
       "price_history": [
-        73340,
-        73466,
         73457,
         73480,
         74346,
@@ -133499,11 +133496,13 @@
         80695,
         80749,
         80773,
-        80812
+        80812,
+        80828,
+        81969
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-08-30T21:06:00.186Z",
+      "last_factorydeal": "2026-08-30T22:04:45.084Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [],
@@ -133816,11 +133815,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 17,
-      "change_percent": -0.8043664884841616,
-      "recorded_at": "2026-08-30T14:34:17.740Z"
-    },
     {
       "price": 17,
       "change_percent": 0.8910473267015502,
@@ -134315,12 +134309,14 @@
       "price": 1,
       "change_percent": 0.07499648444872634,
       "recorded_at": "2026-08-30T21:59:46.080Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -1.2433342741225648,
+      "recorded_at": "2026-08-30T22:04:46.079Z"
     }
   ],
-  "factory_names": [
-    "Lenin Machine Works",
-    "Brezhnev Auto Factory"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Soviet Iron Foundry",
     "Red Star Steelworks",
@@ -134328,7 +134324,9 @@
     "Ural Heavy Industries",
     "Stalin Tractor Plant",
     "Volga Shipbuilding",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Lenin Machine Works",
+    "Brezhnev Auto Factory"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -134506,20 +134504,20 @@
     "Bread": 1.386949737850918,
     "Copper Ingot": 1.3421817333123036,
     "Iron Ingot": 1.3721242111815475,
-    "Steel Ingot": 1.4046261946347305,
-    "Gold Bar": 1.3715407269058701,
-    "Aluminium Ingot": 1.4122718308078774,
+    "Steel Ingot": 1.2921261946347304,
+    "Gold Bar": 1.3815407269058702,
+    "Aluminium Ingot": 1.4222718308078774,
     "Timber Planks": 1.3954607873709333,
     "Bricks": 1.4124642609007318,
     "Concrete": 1.4124277970568644,
     "Glass": 1.4119994860887584,
     "Steel Beam": 1.412361299321187,
-    "Machine Parts": 1.4124085177189465,
+    "Machine Parts": 1.4224085177189465,
     "Refined Fuel": 1.387606461199646,
     "Uranium Rod": 1.405256312932369,
-    "Reactor Core": 1.4122781621852998,
-    "Circuit Board": 1.4130630467269287,
-    "Flour": 1.412261060935401,
+    "Reactor Core": 1.4222781621852998,
+    "Circuit Board": 1.4230630467269287,
+    "Flour": 1.422261060935401,
     "Sugar": 1.395793134993722,
     "Wine": 1.411510368732482,
     "Canned Food": 1.3504499862476111,
@@ -134531,7 +134529,7 @@
     "Fertilizer": 1.4124480295056288,
     "Cotton Fabric": 1.41,
     "Manganese Alloy": 1.412074941385963,
-    "Sunflower Oil": 1.4123435275452147,
+    "Sunflower Oil": 1.4223435275452148,
     "Linen": 1.41212710002688,
     "Corn Meal": 1.41,
     "Tea Pack": 1.41,
@@ -134539,14 +134537,14 @@
     "Antimony Alloy": 1.4123435275452147,
     "Molybdenum Rod": 1.41212710002688,
     "Aluminium Sheet": 1.4118972502642253,
-    "Shale Oil": 1.4043762131474011
+    "Shale Oil": 1.4143762131474011
   },
   "market_last_sale": {
     "Fuel": "2026-08-30T16:15:52.390Z",
     "Cake": "2026-08-30T15:01:38.978Z",
     "Bread": "2026-08-26T18:22:54.423Z",
     "Copper Ingot": "2026-08-30T21:06:00.187Z",
-    "Steel Ingot": "2026-08-29T00:01:25.751Z",
+    "Steel Ingot": "2026-08-30T22:04:45.084Z",
     "Refined Fuel": "2026-08-30T19:29:22.302Z",
     "Timber Planks": "2026-08-30T11:08:03.962Z",
     "Iron Ingot": "2026-08-30T11:23:27.846Z",
@@ -134555,7 +134553,9 @@
     "Smoked Fish": "2026-08-30T16:25:40.680Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {},
+  "ai_store": {
+    "Steel Ingot": 5
+  },
   "global_consumption": {
     "Copper Ingot": 45,
     "Steel Ingot": 7,
@@ -136687,6 +136687,10 @@
     {
       "total": 238404,
       "at": "2026-08-30T21:59:46.366Z"
+    },
+    {
+      "total": 238434,
+      "at": "2026-08-30T22:04:46.354Z"
     }
   ],
   "gold_rush": {
