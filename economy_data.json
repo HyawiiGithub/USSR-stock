@@ -1927,11 +1927,6 @@
   },
   "gsi_history": [
     {
-      "price": 133,
-      "change_percent": 0.018854617874161272,
-      "recorded_at": "2026-08-29T20:35:17.029Z"
-    },
-    {
       "price": 131,
       "change_percent": -1.1845509878592464,
       "recorded_at": "2026-08-29T20:40:17.027Z"
@@ -2425,6 +2420,11 @@
       "price": 88,
       "change_percent": -4.669819884785404,
       "recorded_at": "2026-08-30T04:44:17.348Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 1.2354335053692829,
+      "recorded_at": "2026-08-30T04:44:17.450Z"
     }
   ],
   "factory_names": [
@@ -2638,7 +2638,7 @@
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
     "Timber Planks": 4,
-    "Shale Oil": 9
+    "Shale Oil": 7
   },
   "global_consumption": {
     "Copper Ingot": 39,
@@ -2647,7 +2647,7 @@
     "Refined Fuel": 33,
     "Fuel": 3,
     "Iron Ingot": 6,
-    "Shale Oil": 8
+    "Shale Oil": 10
   },
   "consumption_history": [
     {
@@ -3299,6 +3299,11 @@
       "item": "Shale Oil",
       "qty": 1,
       "at": "2026-08-30T04:29:17.352Z"
+    },
+    {
+      "item": "Shale Oil",
+      "qty": 2,
+      "at": "2026-08-30T04:44:17.362Z"
     }
   ],
   "demand_history": {
@@ -3963,6 +3968,11 @@
       {
         "demand": 1.1511566494327523,
         "at": "2026-08-30T04:29:17.352Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2074884963488524,
+        "at": "2026-08-30T04:44:17.362Z",
         "supply": 0
       }
     ]
