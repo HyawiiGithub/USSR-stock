@@ -5629,12 +5629,23 @@ if (command === 'foundcompany') {
     // ============================================================
     
     if (command === 'factorydeal') {
-        const data = loadData();
+        let data = loadData();
         const user = getUser(userId);
-        const managed = getManagedCompany(userId, data);
-        const companyId = managed?.companyId;
+        let managed = getManagedCompany(userId, data);
+        let companyId = managed?.companyId;
+        // allow any employed worker to do factorydeal for their employer (not just managers)
         if (!managed) {
-            await message.reply('❌ You do not own or direct a company!');
+            const empUser = data.users?.[userId];
+            if (empUser?.is_employed && empUser.employed_at) {
+                const match = getCompanyByIdentifier(data, empUser.employed_at);
+                if (match) {
+                    managed = { company: match.company, companyId: match.companyId, role: 'worker' };
+                    companyId = match.companyId;
+                }
+            }
+        }
+        if (!managed) {
+            await message.reply('❌ You do not own, direct, or work for a company! Be hired first (or be manager).');
             return;
         }
         const company = managed.company;
