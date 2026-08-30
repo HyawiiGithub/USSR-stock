@@ -979,15 +979,15 @@
       "ceo_of": null
     },
     "1511756975392948224": {
-      "cash": 15,
+      "cash": 30,
       "bank": 3618,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T08:53:07.356Z",
-      "work_count": 36,
+      "last_work": "2026-08-30T12:40:02.445Z",
+      "work_count": 37,
       "last_claim": "2026-08-30T08:50:50.230Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1487,8 +1487,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 71606,
-      "market_cap": 71606,
+      "share_price": 71613,
+      "market_cap": 71613,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -1507,7 +1507,7 @@
         "Uranium": 20,
         "Coal": 122,
         "Gold Bar": 5,
-        "Wheat": 161,
+        "Wheat": 162,
         "Cake": 1,
         "Iron Ore": 1,
         "Sugar": 7,
@@ -1517,7 +1517,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T08:47:20.761Z",
       "price_history": [
-        66142,
         66362,
         66402,
         66396,
@@ -1616,7 +1615,8 @@
         71559,
         71589,
         71598,
-        71606
+        71606,
+        71613
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1932,11 +1932,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 87,
-      "change_percent": 0.04325863756466044,
-      "recorded_at": "2026-08-30T05:09:17.502Z"
-    },
     {
       "price": 85,
       "change_percent": -1.155176792817974,
@@ -2431,6 +2426,11 @@
       "price": 28,
       "change_percent": 1.0527032491602166,
       "recorded_at": "2026-08-30T12:34:17.689Z"
+    },
+    {
+      "price": 27,
+      "change_percent": -1.32268014873961,
+      "recorded_at": "2026-08-30T12:39:17.689Z"
     }
   ],
   "factory_names": [
@@ -2451,11 +2451,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.001626979956764748,
+  "inflation": 0,
   "money_printed": 46,
   "total_bank_reserves": 162021,
   "inflation_history": [
-    0.5235470465424096,
     0.4346068729675765,
     0.6769961052304456,
     0.8036279843362336,
@@ -2554,7 +2553,8 @@
     0.009960202484299605,
     0.021388252492569978,
     0.008097644680659401,
-    0.001626979956764748
+    0.001626979956764748,
+    0
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
