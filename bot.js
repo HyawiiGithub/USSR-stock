@@ -1253,6 +1253,14 @@ function getManagedCompany(userId, data = loadData()) {
             return { company, companyId: user.company_id, role: 'owner' };
         }
     }
+    // Fallback for private CEO via ceo_of (repair)
+    if (user.ceo_of) {
+        for (const [cid, comp] of Object.entries(data.companies || {})) {
+            if (comp.name === user.ceo_of && comp.owner_id === userId && !comp.is_state_owned) {
+                return { company: comp, companyId: cid, role: 'owner' };
+            }
+        }
+    }
 
     // State company administered by an appointed director.
     if (user.director_of && data.companies[user.director_of]) {
@@ -1268,6 +1276,13 @@ function getManagedCompany(userId, data = loadData()) {
         const company = data.companies[mappedCompanyId];
         if (company.is_state_owned && company.director_id === userId) {
             return { company, companyId: mappedCompanyId, role: 'director' };
+        }
+    }
+
+    // Fallback for state director via direct search (if director_of/state_directors stale)
+    for (const [cid, comp] of Object.entries(data.companies || {})) {
+        if (comp.is_state_owned && comp.director_id === userId) {
+            return { company: comp, companyId: cid, role: 'director' };
         }
     }
 
@@ -5629,23 +5644,12 @@ if (command === 'foundcompany') {
     // ============================================================
     
     if (command === 'factorydeal') {
-        let data = loadData();
+        const data = loadData();
         const user = getUser(userId);
-        let managed = getManagedCompany(userId, data);
-        let companyId = managed?.companyId;
-        // allow any employed worker to do factorydeal for their employer (not just managers)
+        const managed = getManagedCompany(userId, data);
+        const companyId = managed?.companyId;
         if (!managed) {
-            const empUser = data.users?.[userId];
-            if (empUser?.is_employed && empUser.employed_at) {
-                const match = getCompanyByIdentifier(data, empUser.employed_at);
-                if (match) {
-                    managed = { company: match.company, companyId: match.companyId, role: 'worker' };
-                    companyId = match.companyId;
-                }
-            }
-        }
-        if (!managed) {
-            await message.reply('❌ You do not own, direct, or work for a company! Be hired first (or be manager).');
+            await message.reply('❌ You do not own or direct a company! (CEOs/Directors/Managers only — workers cannot `factorydeal`)');
             return;
         }
         const company = managed.company;
