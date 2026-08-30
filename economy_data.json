@@ -1936,16 +1936,6 @@
   },
   "gsi_history": [
     {
-      "price": 109,
-      "change_percent": -1.0478294437509903,
-      "recorded_at": "2026-08-30T01:07:27.622Z"
-    },
-    {
-      "price": 107,
-      "change_percent": -0.9767318433791626,
-      "recorded_at": "2026-08-30T01:12:27.632Z"
-    },
-    {
       "price": 106,
       "change_percent": -0.24265342416796096,
       "recorded_at": "2026-08-30T01:21:16.345Z"
@@ -2434,6 +2424,16 @@
       "price": 49,
       "change_percent": 0.08508919692713901,
       "recorded_at": "2026-08-30T09:09:17.579Z"
+    },
+    {
+      "price": 46,
+      "change_percent": -4.987749455754239,
+      "recorded_at": "2026-08-30T09:14:17.425Z"
+    },
+    {
+      "price": 46,
+      "change_percent": 0.1468451637199457,
+      "recorded_at": "2026-08-30T09:14:17.579Z"
     }
   ],
   "factory_names": [],
@@ -2645,7 +2645,7 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Iron Ingot": 3
+    "Iron Ingot": 1
   },
   "global_consumption": {
     "Copper Ingot": 39,
@@ -2653,7 +2653,7 @@
     "Timber Planks": 82,
     "Refined Fuel": 33,
     "Fuel": 3,
-    "Iron Ingot": 8,
+    "Iron Ingot": 10,
     "Shale Oil": 17
   },
   "consumption_history": [
@@ -3356,6 +3356,11 @@
       "item": "Iron Ingot",
       "qty": 1,
       "at": "2026-08-30T08:44:17.431Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 2,
+      "at": "2026-08-30T09:14:17.434Z"
     }
   ],
   "demand_history": {
@@ -4019,6 +4024,11 @@
         "demand": 1.3237676637806823,
         "at": "2026-08-30T08:44:17.431Z",
         "supply": 4
+      },
+      {
+        "demand": 1.2600700243127547,
+        "at": "2026-08-30T09:14:17.434Z",
+        "supply": 1
       }
     ],
     "Shale Oil": [
