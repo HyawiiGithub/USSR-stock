@@ -371,7 +371,7 @@
     },
     "1225275427145121903": {
       "username": "",
-      "cash": 535,
+      "cash": 550,
       "bank": 3642,
       "resources": {
         "Gold": 1
@@ -381,8 +381,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T23:15:27.418Z",
-      "work_count": 10,
+      "last_work": "2026-08-30T23:20:29.535Z",
+      "work_count": 11,
       "last_claim": null,
       "last_collect": null,
       "join_date": "2026-08-23T11:31:59.744636",
@@ -133422,8 +133422,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 83028,
-      "market_cap": 83028,
+      "share_price": 83052,
+      "market_cap": 83052,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -133452,12 +133452,11 @@
         "Iron Ore": 7,
         "Oil": 3,
         "Canned Fish": 1,
-        "Copper": 1
+        "Copper": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T20:57:56.542Z",
       "price_history": [
-        77022,
         77105,
         77122,
         77130,
@@ -133556,7 +133555,8 @@
         82806,
         82956,
         83020,
-        83028
+        83028,
+        83052
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133876,11 +133876,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 9,
-      "change_percent": -5.672865984000397,
-      "recorded_at": "2026-08-30T15:44:17.539Z"
-    },
     {
       "price": 8,
       "change_percent": -0.1273520777406918,
@@ -134375,6 +134370,11 @@
       "price": 1,
       "change_percent": 0.0520664395876259,
       "recorded_at": "2026-08-30T23:14:46.265Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -0.033587893880508396,
+      "recorded_at": "2026-08-30T23:19:46.120Z"
     }
   ],
   "factory_names": [
@@ -134395,11 +134395,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.09245802928730883,
+  "inflation": 0.08222291048020884,
   "money_printed": 223,
-  "total_bank_reserves": 178128,
+  "total_bank_reserves": 178083,
   "inflation_history": [
-    0,
     0.0016133568687708155,
     0,
     0,
@@ -134498,7 +134497,8 @@
     0.11865206314211031,
     0.07414885301558719,
     0.09717595479511598,
-    0.09245802928730883
+    0.09245802928730883,
+    0.08222291048020884
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -136871,6 +136871,10 @@
     {
       "total": 245809,
       "at": "2026-08-30T23:14:47.156Z"
+    },
+    {
+      "total": 246370,
+      "at": "2026-08-30T23:19:47.151Z"
     }
   ],
   "gold_rush": {
