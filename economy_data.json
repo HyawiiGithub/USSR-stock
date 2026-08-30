@@ -439,8 +439,8 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 130,
-      "bank": 39925,
+      "cash": 230,
+      "bank": 39825,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -547,15 +547,15 @@
       "ceo_of": null
     },
     "1495413593242337421": {
-      "cash": 120,
+      "cash": 135,
       "bank": 31495,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T10:07:39.832Z",
-      "work_count": 132,
+      "last_work": "2026-08-30T10:13:09.712Z",
+      "work_count": 133,
       "last_claim": "2026-08-30T07:02:57.732Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -1481,7 +1481,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 13891,
+      "funds": 13900,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -1505,7 +1505,7 @@
       },
       "inventory": {
         "Uranium": 20,
-        "Coal": 125,
+        "Coal": 115,
         "Gold Bar": 5,
         "Wheat": 174,
         "Cake": 1,
@@ -1641,8 +1641,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 175568,
-      "market_cap": 175568,
+      "share_price": 175578,
+      "market_cap": 175578,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1660,17 +1660,16 @@
       "inventory": {
         "Timber": 99,
         "Natural Gas": 55,
-        "Iron Ore": 57,
+        "Iron Ore": 58,
         "Coal": 75,
         "Uranium": 2,
         "Oil": 73,
         "Gold": 7,
-        "Wheat": 128
+        "Wheat": 127
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T07:03:02.778Z",
       "price_history": [
-        169455,
         169494,
         169459,
         169523,
@@ -1769,7 +1768,8 @@
         175328,
         175475,
         175480,
-        175568
+        175568,
+        175578
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -1788,7 +1788,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 7617,
+      "funds": 7624,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -1818,7 +1818,8 @@
         "Canned Fish": 7,
         "Timber Planks": 5,
         "Iron Ore": 1,
-        "Oil Shale": 2
+        "Oil Shale": 2,
+        "Coal": 10
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
@@ -2454,7 +2455,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0.012526670075417586,
-  "money_printed": 30,
+  "money_printed": 46,
   "total_bank_reserves": 161841,
   "inflation_history": [
     0.7200848449773641,
@@ -2587,6 +2588,15 @@
       "item": "Iron Ore",
       "qty": 7,
       "bonus": 30,
+      "crossRegion": true
+    },
+    {
+      "at": "2026-08-30T10:13:25.224Z",
+      "from": "Soviet Agriculture",
+      "to": "Baltic Timber & Harbour Co",
+      "item": "Coal",
+      "qty": 10,
+      "bonus": 16,
       "crossRegion": true
     }
   ],
@@ -4131,7 +4141,7 @@
       "grant": 1605
     }
   ],
-  "trade_volume": 7,
+  "trade_volume": 17,
   "trade_schedules": [],
   "owner_logs": []
 }
