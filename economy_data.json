@@ -1521,8 +1521,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 75920,
-      "market_cap": 75920,
+      "share_price": 76180,
+      "market_cap": 76180,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -1539,7 +1539,7 @@
       },
       "inventory": {
         "Uranium": 23,
-        "Coal": 142,
+        "Coal": 122,
         "Gold Bar": 5,
         "Wheat": 13,
         "Iron Ore": 7,
@@ -1550,12 +1550,12 @@
         "Bread": 4,
         "Oil": 3,
         "Gold": 1,
-        "Fish": 75
+        "Fish": 55,
+        "Smoked Fish": 10
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T14:56:34.105Z",
       "price_history": [
-        70037,
         70157,
         70157,
         70165,
@@ -1654,7 +1654,8 @@
         74820,
         75912,
         75912,
-        75920
+        75920,
+        76180
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1971,11 +1972,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 52,
-      "change_percent": -0.10709002632901841,
-      "recorded_at": "2026-08-30T08:49:17.576Z"
-    },
     {
       "price": 51,
       "change_percent": -0.27066263206996055,
@@ -2470,20 +2466,25 @@
       "price": 7,
       "change_percent": -0.25173023964563557,
       "recorded_at": "2026-08-30T16:09:17.799Z"
+    },
+    {
+      "price": 7,
+      "change_percent": 1.2724889739355036,
+      "recorded_at": "2026-08-30T16:14:17.801Z"
     }
   ],
   "factory_names": [
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
-    "Siberian Mining Co",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
     "Soviet Iron Foundry",
     "Red Star Steelworks",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
