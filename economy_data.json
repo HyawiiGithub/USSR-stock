@@ -1776,8 +1776,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 51200,
-      "market_cap": 51200,
+      "share_price": 51007,
+      "market_cap": 51007,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -1806,7 +1806,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        44331,
         44273,
         44370,
         44342,
@@ -1905,7 +1904,8 @@
         50886,
         51067,
         51161,
-        51200
+        51200,
+        51007
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1917,16 +1917,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 138,
-      "change_percent": -5.463908103002151,
-      "recorded_at": "2026-08-29T17:40:08.360Z"
-    },
-    {
-      "price": 137,
-      "change_percent": -0.26209101669400303,
-      "recorded_at": "2026-08-29T17:40:08.531Z"
-    },
     {
       "price": 135,
       "change_percent": -1.297701829682434,
@@ -2416,6 +2406,16 @@
       "price": 108,
       "change_percent": 1.2557561602909237,
       "recorded_at": "2026-08-30T01:33:19.432Z"
+    },
+    {
+      "price": 105,
+      "change_percent": -2.5693244692691035,
+      "recorded_at": "2026-08-30T01:38:19.430Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 0.8316102339828826,
+      "recorded_at": "2026-08-30T01:38:19.445Z"
     }
   ],
   "factory_names": [
@@ -2627,12 +2627,12 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 10
+    "Timber Planks": 9
   },
   "global_consumption": {
     "Copper Ingot": 39,
     "Steel Ingot": 7,
-    "Timber Planks": 72,
+    "Timber Planks": 73,
     "Refined Fuel": 33,
     "Fuel": 2,
     "Iron Ingot": 6
@@ -3237,6 +3237,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-29T20:40:16.941Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-08-30T01:38:19.437Z"
     }
   ],
   "demand_history": {
@@ -3674,6 +3679,11 @@
         "demand": 1.3598561049227258,
         "at": "2026-08-29T13:10:08.376Z",
         "supply": 1
+      },
+      {
+        "demand": 1.1773962820912376,
+        "at": "2026-08-30T01:38:19.437Z",
+        "supply": 5
       }
     ],
     "Refined Fuel": [
