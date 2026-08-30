@@ -133764,16 +133764,6 @@
   },
   "gsi_history": [
     {
-      "price": 35,
-      "change_percent": 1.4254709318599919,
-      "recorded_at": "2026-08-30T11:29:17.632Z"
-    },
-    {
-      "price": 35,
-      "change_percent": 0.5127191413784598,
-      "recorded_at": "2026-08-30T11:34:17.627Z"
-    },
-    {
       "price": 34,
       "change_percent": -0.8628403963728076,
       "recorded_at": "2026-08-30T11:39:17.630Z"
@@ -134262,6 +134252,16 @@
       "price": 1,
       "change_percent": -1.2590155273753016,
       "recorded_at": "2026-08-30T19:04:45.927Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 2.929049709250668,
+      "recorded_at": "2026-08-30T19:09:45.179Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -1.0653810180681949,
+      "recorded_at": "2026-08-30T19:09:45.863Z"
     }
   ],
   "factory_names": [
@@ -134282,11 +134282,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.10261469373216792,
+  "inflation": 0.13418274667128108,
   "money_printed": 223,
   "total_bank_reserves": 163754,
   "inflation_history": [
-    0.017313901094155024,
     0.014483371967931223,
     0,
     0.012243450498480413,
@@ -134385,7 +134384,8 @@
     0.12464344379868295,
     0.08752872229474645,
     0.13425597713332785,
-    0.10261469373216792
+    0.10261469373216792,
+    0.13418274667128108
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134502,9 +134502,7 @@
     "Smoked Fish": "2026-08-30T16:25:40.680Z"
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
-  "ai_store": {
-    "Smoked Fish": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 42,
     "Steel Ingot": 7,
@@ -134515,7 +134513,7 @@
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 5,
-    "Smoked Fish": 9
+    "Smoked Fish": 10
   },
   "consumption_history": [
     {
@@ -135372,6 +135370,11 @@
       "item": "Smoked Fish",
       "qty": 1,
       "at": "2026-08-30T18:54:45.442Z"
+    },
+    {
+      "item": "Smoked Fish",
+      "qty": 1,
+      "at": "2026-08-30T19:09:45.524Z"
     }
   ],
   "demand_history": {
@@ -136223,6 +136226,11 @@
         "demand": 1.354659895297261,
         "at": "2026-08-30T18:54:45.442Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3718543249078288,
+        "at": "2026-08-30T19:09:45.524Z",
+        "supply": 0
       }
     ]
   },
@@ -136428,6 +136436,10 @@
     {
       "total": 237699,
       "at": "2026-08-30T19:04:46.027Z"
+    },
+    {
+      "total": 237699,
+      "at": "2026-08-30T19:09:46.136Z"
     }
   ],
   "gold_rush": {
