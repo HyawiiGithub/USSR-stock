@@ -799,15 +799,15 @@
       "ceo_of": null
     },
     "1473965687922757747": {
-      "cash": 3845,
+      "cash": 3860,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T03:55:03.579Z",
-      "work_count": 65,
+      "last_work": "2026-08-30T07:19:18.152Z",
+      "work_count": 66,
       "last_claim": "2026-08-27T05:18:33.320Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -1788,8 +1788,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 51838,
-      "market_cap": 51838,
+      "share_price": 51850,
+      "market_cap": 51850,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -1807,8 +1807,8 @@
       "inventory": {
         "Phosphorite": 76,
         "Peat": 133,
-        "Fish": 237,
-        "Timber": 9,
+        "Fish": 236,
+        "Timber": 11,
         "Canned Fish": 7,
         "Timber Planks": 5,
         "Iron Ore": 1,
@@ -1817,7 +1817,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        44566,
         44636,
         44603,
         44642,
@@ -1916,7 +1915,8 @@
         51820,
         51834,
         51828,
-        51838
+        51838,
+        51850
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1929,11 +1929,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 116,
-      "change_percent": -1.2346864835909581,
-      "recorded_at": "2026-08-29T23:10:17.114Z"
-    },
     {
       "price": 117,
       "change_percent": 1.3386267224647812,
@@ -2428,6 +2423,11 @@
       "price": 65,
       "change_percent": 0.6005992563611189,
       "recorded_at": "2026-08-30T07:14:17.546Z"
+    },
+    {
+      "price": 65,
+      "change_percent": 0.34486560116823894,
+      "recorded_at": "2026-08-30T07:19:17.546Z"
     }
   ],
   "factory_names": [
@@ -2448,11 +2448,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.0016133568687708155,
+  "inflation": 0,
   "money_printed": 30,
   "total_bank_reserves": 157086,
   "inflation_history": [
-    0.5347623975915596,
     0.41642081650163365,
     0.6307461545435249,
     0.4738649167978865,
@@ -2551,7 +2550,8 @@
     0,
     0,
     0,
-    0.0016133568687708155
+    0.0016133568687708155,
+    0
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
