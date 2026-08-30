@@ -1394,14 +1394,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1082686076491137115>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 879,
+      "funds": 897,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 105445,
-      "market_cap": 105445,
+      "share_price": 105767,
+      "market_cap": 105767,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1418,7 +1418,6 @@
       },
       "inventory": {
         "Natural Gas": 27,
-        "Iron Ore": 7,
         "Cotton": 7,
         "Oil": 15,
         "Wheat": 200,
@@ -1451,7 +1450,8 @@
         102741,
         103667,
         105321,
-        105445
+        105445,
+        105767
       ],
       "is_state_owned": true,
       "director_id": "1082686076491137115",
@@ -1770,14 +1770,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 5239,
+      "funds": 5251,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 50886,
-      "market_cap": 50886,
+      "share_price": 51067,
+      "market_cap": 51067,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -1799,12 +1799,12 @@
         "Timber": 4,
         "Canned Fish": 4,
         "Timber Planks": 5,
-        "Shale Oil": 15
+        "Shale Oil": 15,
+        "Iron Ore": 7
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        44243,
         44263,
         44303,
         44331,
@@ -1903,7 +1903,8 @@
         50588,
         50547,
         51014,
-        50886
+        50886,
+        51067
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -1915,11 +1916,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 148,
-      "change_percent": 1.4122966028459154,
-      "recorded_at": "2026-08-29T17:30:08.525Z"
-    },
     {
       "price": 146,
       "change_percent": -0.9447338358925851,
@@ -2414,6 +2410,11 @@
       "price": 106,
       "change_percent": -0.24265342416796096,
       "recorded_at": "2026-08-30T01:21:16.345Z"
+    },
+    {
+      "price": 107,
+      "change_percent": 1.4368489067934762,
+      "recorded_at": "2026-08-30T01:28:19.433Z"
     }
   ],
   "factory_names": [
@@ -2435,7 +2436,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0.5627387906730064,
-  "money_printed": 0,
+  "money_printed": 30,
   "total_bank_reserves": 152703,
   "inflation_history": [
     0.5952887926631913,
@@ -2560,7 +2561,17 @@
     "1495413593242337421": "state_27",
     "780837437987094560": "state_24"
   },
-  "transaction_log": [],
+  "transaction_log": [
+    {
+      "at": "2026-08-30T01:28:22.640Z",
+      "from": "State Oil & Gas",
+      "to": "Baltic Timber & Harbour Co",
+      "item": "Iron Ore",
+      "qty": 7,
+      "bonus": 30,
+      "crossRegion": true
+    }
+  ],
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3959161478575637,
@@ -3878,5 +3889,6 @@
       ],
       "grant": 1605
     }
-  ]
+  ],
+  "trade_volume": 7
 }
