@@ -2655,7 +2655,6 @@
   "ai_store": {
     "Peat Fuel": 4,
     "Timber Planks": 8,
-    "Iron Ingot": 1,
     "Copper Ingot": 3
   },
   "global_consumption": {
@@ -2664,7 +2663,7 @@
     "Timber Planks": 84,
     "Refined Fuel": 34,
     "Fuel": 3,
-    "Iron Ingot": 11,
+    "Iron Ingot": 12,
     "Shale Oil": 17,
     "Peat Fuel": 6
   },
@@ -3408,6 +3407,11 @@
       "item": "Peat Fuel",
       "qty": 1,
       "at": "2026-08-30T11:44:17.493Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 1,
+      "at": "2026-08-30T11:59:17.493Z"
     }
   ],
   "demand_history": {
@@ -4085,6 +4089,11 @@
       {
         "demand": 1.262078803068163,
         "at": "2026-08-30T09:29:17.439Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3188540093106067,
+        "at": "2026-08-30T11:59:17.493Z",
         "supply": 1
       }
     ],
