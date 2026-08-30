@@ -133549,8 +133549,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 53455,
-      "market_cap": 53455,
+      "share_price": 53460,
+      "market_cap": 53460,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -133578,7 +133578,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        45666,
         45680,
         45678,
         45735,
@@ -133677,7 +133676,8 @@
         53397,
         53429,
         53425,
-        53455
+        53455,
+        53460
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -133690,16 +133690,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 41,
-      "change_percent": -1.0745807756637253,
-      "recorded_at": "2026-08-30T09:44:17.586Z"
-    },
-    {
-      "price": 41,
-      "change_percent": 0.7855247665892099,
-      "recorded_at": "2026-08-30T09:49:17.585Z"
-    },
     {
       "price": 40,
       "change_percent": -1.331807965840037,
@@ -134189,6 +134179,16 @@
       "price": 1,
       "change_percent": -1.1345101852073654,
       "recorded_at": "2026-08-30T17:19:45.567Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 4.908969063822803,
+      "recorded_at": "2026-08-30T17:24:44.985Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 0.34731414226117757,
+      "recorded_at": "2026-08-30T17:24:45.439Z"
     }
   ],
   "factory_names": [
@@ -134430,7 +134430,6 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Fuel": 2,
     "Smoked Fish": 10
   },
   "global_consumption": {
@@ -134438,7 +134437,7 @@
     "Steel Ingot": 7,
     "Timber Planks": 92,
     "Refined Fuel": 34,
-    "Fuel": 7,
+    "Fuel": 9,
     "Iron Ingot": 12,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -135264,6 +135263,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-08-30T17:09:44.923Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-08-30T17:24:45.213Z"
     }
   ],
   "demand_history": {
@@ -135915,6 +135919,11 @@
         "demand": 1.2860482404964033,
         "at": "2026-08-30T17:09:44.923Z",
         "supply": 2
+      },
+      {
+        "demand": 1.2950531583326033,
+        "at": "2026-08-30T17:24:45.213Z",
+        "supply": 2
       }
     ],
     "Iron Ingot": [
@@ -136183,6 +136192,10 @@
     {
       "total": 236628,
       "at": "2026-08-30T17:19:45.733Z"
+    },
+    {
+      "total": 236673,
+      "at": "2026-08-30T17:24:45.740Z"
     }
   ],
   "gold_rush": {
