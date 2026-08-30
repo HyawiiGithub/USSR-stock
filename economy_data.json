@@ -547,15 +547,15 @@
       "ceo_of": null
     },
     "1495413593242337421": {
-      "cash": 75,
+      "cash": 90,
       "bank": 31495,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T09:13:04.419Z",
-      "work_count": 129,
+      "last_work": "2026-08-30T09:19:39.597Z",
+      "work_count": 130,
       "last_claim": "2026-08-30T07:02:57.732Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -1641,8 +1641,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 175166,
-      "market_cap": 175166,
+      "share_price": 175192,
+      "market_cap": 175192,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1658,19 +1658,18 @@
         }
       },
       "inventory": {
-        "Timber": 96,
+        "Timber": 98,
         "Natural Gas": 53,
         "Iron Ore": 57,
         "Coal": 73,
         "Uranium": 2,
         "Oil": 69,
         "Gold": 7,
-        "Wheat": 134
+        "Wheat": 133
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T07:03:02.778Z",
       "price_history": [
-        169069,
         169058,
         169107,
         169273,
@@ -1769,7 +1768,8 @@
         174740,
         174860,
         175126,
-        175166
+        175166,
+        175192
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -1935,11 +1935,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 106,
-      "change_percent": -0.24265342416796096,
-      "recorded_at": "2026-08-30T01:21:16.345Z"
-    },
     {
       "price": 107,
       "change_percent": 1.4368489067934762,
@@ -2434,6 +2429,11 @@
       "price": 46,
       "change_percent": 0.1468451637199457,
       "recorded_at": "2026-08-30T09:14:17.579Z"
+    },
+    {
+      "price": 46,
+      "change_percent": 1.4777172694512584,
+      "recorded_at": "2026-08-30T09:19:17.580Z"
     }
   ],
   "factory_names": [],
@@ -2453,11 +2453,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0,
+  "inflation": 0.004784027257904881,
   "money_printed": 30,
   "total_bank_reserves": 161615,
   "inflation_history": [
-    0.45938523222147765,
     0.8200733327757118,
     0.6812145190781642,
     0.761414751083251,
@@ -2556,7 +2555,8 @@
     0,
     0,
     0,
-    0
+    0,
+    0.004784027257904881
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
