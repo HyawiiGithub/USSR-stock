@@ -2446,11 +2446,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.0009145213294400947,
+  "inflation": 0,
   "money_printed": 30,
   "total_bank_reserves": 152703,
   "inflation_history": [
-    0.6603429775481169,
     0.6204475387585044,
     0.6304911070999881,
     0.7290681966184159,
@@ -2549,7 +2548,8 @@
     0,
     0,
     0,
-    0.0009145213294400947
+    0.0009145213294400947,
+    0
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -3925,5 +3925,6 @@
     }
   ],
   "trade_volume": 7,
-  "trade_schedules": []
+  "trade_schedules": [],
+  "owner_logs": []
 }
