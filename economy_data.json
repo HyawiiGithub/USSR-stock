@@ -111,7 +111,7 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 423,
+      "cash": 438,
       "bank": 19620,
       "resources": {
         "Natural Gas": 4,
@@ -124,8 +124,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T07:40:26.361Z",
-      "work_count": 48,
+      "last_work": "2026-08-30T07:49:49.893Z",
+      "work_count": 49,
       "last_claim": "2026-08-30T06:49:43.328Z",
       "last_collect": null,
       "join_date": "2026-08-22T05:47:50.692471",
@@ -1637,8 +1637,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 173824,
-      "market_cap": 173824,
+      "share_price": 173866,
+      "market_cap": 173866,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1657,16 +1657,15 @@
         "Timber": 84,
         "Natural Gas": 47,
         "Iron Ore": 63,
-        "Coal": 65,
+        "Coal": 67,
         "Uranium": 2,
         "Oil": 66,
         "Gold": 7,
-        "Wheat": 159
+        "Wheat": 158
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T07:03:02.778Z",
       "price_history": [
-        167201,
         167225,
         167354,
         167820,
@@ -1765,7 +1764,8 @@
         173710,
         173766,
         173784,
-        173824
+        173824,
+        173866
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -1929,11 +1929,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 116,
-      "change_percent": 3.45554531323136,
-      "recorded_at": "2026-08-29T23:40:16.998Z"
-    },
     {
       "price": 117,
       "change_percent": 0.9262359644104927,
@@ -2428,6 +2423,11 @@
       "price": 64,
       "change_percent": 0.03794943973732057,
       "recorded_at": "2026-08-30T07:44:17.560Z"
+    },
+    {
+      "price": 63,
+      "change_percent": -1.2557155348165665,
+      "recorded_at": "2026-08-30T07:49:17.564Z"
     }
   ],
   "factory_names": [
@@ -2448,11 +2448,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0,
+  "inflation": 0.010469376188469999,
   "money_printed": 30,
   "total_bank_reserves": 157086,
   "inflation_history": [
-    0.4738649167978865,
     0.4567213530109625,
     0.39358469100754,
     0.7538874086853394,
@@ -2551,7 +2550,8 @@
     0.0016133568687708155,
     0,
     0,
-    0
+    0,
+    0.010469376188469999
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
