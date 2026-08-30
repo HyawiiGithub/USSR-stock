@@ -439,15 +439,15 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 275,
+      "cash": 290,
       "bank": 39825,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T11:02:19.601Z",
-      "work_count": 295,
+      "last_work": "2026-08-30T11:07:37.744Z",
+      "work_count": 296,
       "last_claim": "2026-08-29T10:33:23.146Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -547,15 +547,15 @@
       "ceo_of": null
     },
     "1495413593242337421": {
-      "cash": 270,
+      "cash": 285,
       "bank": 31495,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-30T11:02:43.976Z",
-      "work_count": 142,
+      "last_work": "2026-08-30T11:07:51.104Z",
+      "work_count": 143,
       "last_claim": "2026-08-30T07:02:57.732Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -1640,8 +1640,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 176098,
-      "market_cap": 176098,
+      "share_price": 176103,
+      "market_cap": 176103,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -1657,19 +1657,18 @@
         }
       },
       "inventory": {
-        "Timber": 103,
+        "Timber": 104,
         "Natural Gas": 56,
         "Iron Ore": 62,
         "Coal": 75,
         "Uranium": 2,
         "Oil": 79,
         "Gold": 7,
-        "Wheat": 118
+        "Wheat": 117
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T07:03:02.778Z",
       "price_history": [
-        170194,
         170000,
         170090,
         170138,
@@ -1768,7 +1767,8 @@
         175887,
         176007,
         176047,
-        176098
+        176098,
+        176103
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -1787,14 +1787,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 9258,
+      "funds": 9982,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 53077,
-      "market_cap": 53077,
+      "share_price": 53394,
+      "market_cap": 53394,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -1814,16 +1814,13 @@
         "Peat": 94,
         "Fish": 234,
         "Canned Fish": 7,
-        "Timber Planks": 10,
         "Iron Ore": 1,
-        "Oil Shale": 2
+        "Oil Shale": 2,
+        "Timber": 1
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        44846,
-        44964,
-        44993,
         45014,
         45047,
         45212,
@@ -1920,11 +1917,14 @@
         53033,
         53040,
         53054,
-        53077
+        53077,
+        53107,
+        53120,
+        53394
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
-      "last_factorydeal": "2026-08-30T10:15:06.364Z",
+      "last_factorydeal": "2026-08-30T11:08:03.962Z",
       "last_govcontract": null,
       "wage": 15,
       "specialization": "agriculture",
@@ -2435,8 +2435,6 @@
     }
   ],
   "factory_names": [
-    "Soviet Iron Foundry",
-    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Ural Heavy Industries"
@@ -2445,7 +2443,9 @@
     "Red Star Steelworks",
     "Siberian Mining Co",
     "Volga Shipbuilding",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Soviet Iron Foundry",
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -2608,9 +2608,9 @@
     "Steel Ingot": 1.4046048302974694,
     "Gold Bar": 1.3754384708971978,
     "Aluminium Ingot": 1.4122718308078774,
-    "Timber Planks": 1.3750475263783957,
+    "Timber Planks": 1.1500475263783958,
     "Bricks": 1.4123435275452147,
-    "Concrete": 1.4120099255926,
+    "Concrete": 1.4220099255926,
     "Glass": 1.4122781621852998,
     "Steel Beam": 1.4215058320385325,
     "Machine Parts": 1.424177828151734,
@@ -2625,7 +2625,7 @@
     "Canned Fish": 1.3958969947506243,
     "Smoked Fish": 1.4220099255926,
     "Fish Stew": 1.4115290826653417,
-    "Peat Fuel": 1.219478965490299,
+    "Peat Fuel": 1.2294789654902991,
     "Gas Fuel": 1.42,
     "Fertilizer": 1.412074941385963,
     "Cotton Fabric": 1.41,
@@ -2638,7 +2638,7 @@
     "Antimony Alloy": 1.414583562789715,
     "Molybdenum Rod": 1.413181630464,
     "Aluminium Sheet": 1.423181630464,
-    "Shale Oil": 1.3951079928516001
+    "Shale Oil": 1.4051079928516002
   },
   "market_last_sale": {
     "Fuel": "2026-08-30T02:04:32.439Z",
@@ -2647,7 +2647,7 @@
     "Copper Ingot": "2026-08-29T20:17:53.070Z",
     "Steel Ingot": "2026-08-29T00:01:25.751Z",
     "Refined Fuel": "2026-08-30T11:02:10.207Z",
-    "Timber Planks": "2026-08-30T01:07:52.124Z",
+    "Timber Planks": "2026-08-30T11:08:03.962Z",
     "Iron Ingot": "2026-08-30T09:08:11.984Z",
     "Shale Oil": "2026-08-30T03:03:58.713Z",
     "Peat Fuel": "2026-08-30T10:15:06.364Z"
@@ -2655,7 +2655,8 @@
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
     "Peat Fuel": 5,
-    "Refined Fuel": 1
+    "Refined Fuel": 1,
+    "Timber Planks": 10
   },
   "global_consumption": {
     "Copper Ingot": 39,
