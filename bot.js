@@ -396,7 +396,8 @@ function defaultData() {
         "ssr_resource_weights": {}, // per-SSR overrides: { "Russian SFSR": { "Gold": 2 }, ... }
         "compensation_log": [], // one-time compensation for removed resources
         "trade_schedules": [], // recurring trades: {id, fromCompanyId, toCompanyId, item, qty, interval: 'hourly'|'daily'|'weekly', nextAt, createdBy}
-        "owner_logs": [] // audit: {at, by, username, action, details}
+        "owner_logs": [], // audit: {at, by, username, action, details}
+        "total_rubles_history": [] // 100 pts: total rubles of all citizens (cash+bank) even those with 0
     };
 }
 
@@ -624,6 +625,24 @@ function getGoldStandardStatus(ratio) {
     if (ratio >= 50) return { label: "PARTIAL GOLD BACKING", color: 0xb8974a, note: "The ruble is majority gold-backed, but printing is outpacing bullion." };
     if (ratio >= 20) return { label: "WEAK BACKING", color: 0xd4b05c, note: "Warning: the ruble is drifting towards fiat money." };
     return { label: "FIAT CURRENCY", color: 0xb84545, note: "The ruble has effectively abandoned the gold standard." };
+}
+
+// Total rubles in circulation — sum of all citizens cash+bank (even those with 0, they are 0), includes state bank
+function getTotalRubles(data) {
+    let total = 0;
+    for (const u of Object.values(data.users || {})) {
+        total += (u.cash || 0) + (u.bank || 0);
+    }
+    return total;
+}
+function updateTotalRublesHistory(data) {
+    if (!data.total_rubles_history) data.total_rubles_history = [];
+    const total = getTotalRubles(data);
+    const last = data.total_rubles_history[data.total_rubles_history.length-1];
+    // push if changed significantly or time passed (avoid spam if same value within 5 min we still push every interval)
+    data.total_rubles_history.push({ total, at: new Date().toISOString() });
+    if (data.total_rubles_history.length > 100) data.total_rubles_history = data.total_rubles_history.slice(-100);
+    return total;
 }
 
 function calculateCompanyValue(company) {
@@ -1345,6 +1364,16 @@ function repairCompanyState(data) {
         data.owner_logs = [];
         changed = true;
     }
+    if (!data.total_rubles_history || !Array.isArray(data.total_rubles_history)) {
+        data.total_rubles_history = [];
+        changed = true;
+    }
+    // seed history if empty
+    if (data.total_rubles_history.length === 0) {
+        const cur = getTotalRubles(data);
+        data.total_rubles_history.push({ total: cur, at: new Date().toISOString() });
+        changed = true;
+    }
 
     for (const [userId] of Object.entries(data.users || {})) {
         ensureUserRecord(data, userId);
@@ -1824,6 +1853,27 @@ client.once(Events.ClientReady, async () => {    console.log(`✅ Logged in as $
     setInterval(() => {
         try { updateInflation(); } catch (err) { console.error('Inflation tick error:', err); }
     }, 600000);
+
+    // Total rubles in circulation — every 5 min snapshot (all citizens cash+bank, even those with 0 are 0)
+    setInterval(() => {
+        try {
+            const data = loadData();
+            // optionally ensure guild members with 0 are counted — they contribute 0, so sum is same as DB sum
+            // if bot can fetch guild, ensure every guild member has a user record (0 rubles if new)
+            try {
+                const guild = client.guilds.cache.get(GUILD_ID);
+                if (guild) {
+                    guild.members.fetch().then(members => {
+                        let changed=false;
+                        members.forEach(m=>{ if(!m.user.bot && !data.users[m.id]){ ensureUserRecord(data, m.id); changed=true; }});
+                        if(changed) { updateTotalRublesHistory(data); saveData(data); }
+                    }).catch(()=>{});
+                }
+            } catch {}
+            updateTotalRublesHistory(data);
+            saveData(data);
+        } catch (err) { console.error('Total rubles tick error:', err); }
+    }, 300000);
 
     // Scheduled trades — hourly check
     setInterval(() => {

@@ -113,6 +113,8 @@ function fallbackMock(){
   const moneySupply=total_bank_reserves+money_printed+companies.reduce((s,c)=>s+c.funds,0);
   const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
   const status=backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT";
+  const total_rubles = moneySupply - companies.reduce((s,c)=>s+c.funds,0) - total_bank_reserves; // citizens cash+bank mock
+  const total_rubles_history=[]; let curR=Math.max(10000, total_rubles); for(let i=0;i<100;i++){ curR=Math.max(1000, Math.floor(curR*(1+(Math.random()*0.04-0.02)))); total_rubles_history.push({total:curR, at:new Date(now-(100-i)*3600000).toISOString()}); } total_rubles_history[99].total = total_rubles;
   const census={}; Object.keys(SSR).forEach(k=> census[k]=Math.floor(Math.random()*14)+4);
   const regions={};
   for(const [reg,zone] of Object.entries(WZ)){
@@ -124,7 +126,7 @@ function fallbackMock(){
     const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2)); // balanced: 1 per emp + 0.2 per pop (was 2 + 0.5)
     regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)}
   }
-  return {gsi_history:gsi,inflation_history:infl,inflation,money_printed,total_bank_reserves,companies,market_demand,market_supply,demand_history,ai_store,global_consumption,consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:Object.fromEntries(Object.entries(REC).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString(), ssr_resource_weights:{}, compensation_log:[], top_workers:[]}
+  return {gsi_history:gsi,inflation_history:infl,inflation,money_printed,total_bank_reserves,companies,market_demand,market_supply,demand_history,ai_store,global_consumption,consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:Object.fromEntries(Object.entries(REC).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString(), ssr_resource_weights:{}, compensation_log:[], top_workers:[], total_rubles, total_rubles_history, total_citizens: 60}
 }
 
 async function load(){
@@ -176,9 +178,13 @@ async function load(){
       let moneySupply=total_bank_reserves+money_printed; for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
       const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
       const status=backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT";
+      const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
+      let total_rubles_history = Array.isArray(bot.total_rubles_history) && bot.total_rubles_history.length ? bot.total_rubles_history : null;
+      if(!total_rubles_history){ total_rubles_history=[]; let cur=Math.max(10000, total_rubles||200000); for(let i=0;i<100;i++){ cur=Math.max(1000, Math.floor(cur*(1+(Math.random()*0.04-0.02)))); total_rubles_history.push({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()}); } total_rubles_history[total_rubles_history.length-1].total = total_rubles; }
+      const total_citizens = Object.keys(bot.users||{}).length;
       const census={}; Object.keys(SSR).forEach(k=> census[k]=Math.floor(Math.random()*14)+4);
       const regions={}; for(const [reg,zone] of Object.entries(WZ)){ const ssrs=Object.entries(SSR).filter(([,v])=> v.work_zone===zone).map(([k])=>k); const pop=ssrs.reduce((s,k)=> s+(census[k]||0),0); const rc=companies.filter(c=> SSR[c.hq_ssr]?.work_zone===zone); const emp=rc.reduce((s,c)=> s+c.employees,0); let food=0; rc.forEach(c=>{ Object.entries(c.inventory||{}).forEach(([it,qty])=>{ const fv={Fish:2,Wheat:1,Corn:1,Sunflower:1,Grapes:1,Tea:1,Citrus:1,Flour:2,Sugar:1,Bread:3,Cake:3,Wine:2,"Canned Food":4,"Canned Fish":5,"Smoked Fish":4,"Fish Stew":5,"Sunflower Oil":1,"Corn Meal":2,"Tea Pack":1,"Citrus Juice":2}[it]; if(fv) food+= qty*fv; }); }); const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2)); regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)} }
-      return {gsi_history:gsi,inflation_history:inflHist,inflation,money_printed,total_bank_reserves,companies,market_demand:market_demand||{},market_supply,demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:bot.consumption_history||[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:bot.crafting_recipes||{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:Object.entries(bot.users||{}).map(([id,u])=>({id,username:u.username||id.slice(0,6),work_count:u.work_count||0,ssr_region:u.ssr_region,employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5)};
+      return {gsi_history:gsi,inflation_history:inflHist,inflation,money_printed,total_bank_reserves,companies,market_demand:market_demand||{},market_supply,demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:bot.consumption_history||[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:bot.crafting_recipes||{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:Object.entries(bot.users||{}).map(([id,u])=>({id,username:u.username||id.slice(0,6),work_count:u.work_count||0,ssr_region:u.ssr_region,employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5),total_rubles,total_rubles_history,total_citizens};
     }catch(e){ console.warn('buildFromBot failed',e); return null; }
   }
   try{
@@ -222,7 +228,7 @@ async function load(){
   if(genEl) genEl.textContent=new Date(data.generated_at).toLocaleString();
   const foot=document.getElementById('footGen');
   if(foot) foot.textContent=new Date(data.generated_at).toLocaleString();
-  renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTradePanel(); renderTicker(); renderFiveYearPlan(); renderStakhanovite();
+  renderStats(); renderGSI(); renderInfl(); renderGold(); renderRubles(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTradePanel(); renderTicker(); renderFiveYearPlan(); renderStakhanovite();
   setTimeout(refreshLoop, 10000);
 }
 
@@ -290,6 +296,27 @@ function renderGold(){
   const meta=document.getElementById('goldMeta'); if(meta) meta.textContent=`SUPPLY ₽${fmt(g.moneySupply)} // BACKING ${money(g.stock*g.price)} / ${money(g.moneySupply)}`;
   // legacy circular gauge
   const gauge=document.getElementById('goldGauge'); if(gauge) gauge.style.setProperty('--pct',pct+'%');
+}
+function renderRubles(){
+  const total = data.total_rubles ?? 0;
+  const hist = data.total_rubles_history || [];
+  const el=document.getElementById('rublesTotal'); if(el) el.textContent=money(total);
+  const cnt=document.getElementById('rublesCitizens'); if(cnt) cnt.textContent=fmt(data.total_citizens||0)+ ' CITIZENS // '+fmt(hist.length)+' PTS';
+  const avgEl=document.getElementById('rublesAvg'); if(avgEl){ const avg = data.total_citizens? Math.round(total/(data.total_citizens||1)) : 0; avgEl.textContent=money(avg)+' AVG'; }
+  const chEl=document.getElementById('rublesChange'); const sub=document.getElementById('rublesChangeSub');
+  if(hist.length>=2 && chEl){
+    const last=hist[hist.length-1].total, prev=hist[hist.length-2].total;
+    const ch = prev? ((last-prev)/prev*100):0;
+    chEl.textContent=(ch>=0?'+':'')+ch.toFixed(2)+'%';
+    chEl.className = ch>=0?'b-good':'b-bad';
+    if(sub) sub.textContent=`${money(prev)} → ${money(last)}`;
+  }
+  if(hist.length){
+    const labels=hist.map((_,i)=>i);
+    const vals=hist.map(x=>x.total);
+    mkChart('chartRubles',{type:'line',data:{labels,datasets:[{data:vals,borderColor:'#111',backgroundColor:'rgba(17,17,17,.07)',borderWidth:2,fill:true,pointRadius:0,tension:.25}]},options:{plugins:{legend:{display:false}},scales:{x:{display:false},y:{ticks:{callback:v=>'₽'+(v/1000).toFixed(0)+'K'}}}}});
+    mkChart('chartRublesFull',{type:'line',data:{labels,datasets:[{label:'Rubles',data:vals,borderColor:'#8a0f14',backgroundColor:'rgba(138,15,20,.07)',borderWidth:2,fill:false,pointRadius:0,tension:.25}]},options:{plugins:{legend:{display:false}},scales:{y:{ticks:{callback:v=>'₽'+(v/1000).toFixed(0)+'K'}}}}});
+  }
 }
 function renderAI(){
   const entries=Object.entries(data.ai_store).sort((a,b)=>b[1]-a[1]).slice(0,10);
@@ -496,7 +523,7 @@ async function refreshLoop(){
         const j=await r.json();
         if(!j.gsi_history) continue;
         data=j; updated=true;
-        renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTradePanel(); renderTicker(); renderFiveYearPlan(); renderStakhanovite();
+        renderStats(); renderGSI(); renderInfl(); renderGold(); renderRubles(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTradePanel(); renderTicker(); renderFiveYearPlan(); renderStakhanovite();
         const topGen=document.getElementById('topGen'); if(topGen) topGen.textContent='LIVE '+ new Date(j.generated_at).toLocaleTimeString()+' • '+ (j._source||'');
         const notice=document.getElementById('connNotice'); if(notice){ notice.textContent='● CONNECTED — LIVE GOSPLAN FEED // '+ new Date().toLocaleTimeString()+' • '+ (j._source||'live'); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
         break;
@@ -517,10 +544,12 @@ async function refreshLoop(){
               let goldStock=0; if(bot.users) for(const u of Object.values(bot.users)){ goldStock+=(u.resources&&u.resources.Gold)||0; goldStock+=((u.inventory&&u.inventory["Gold Bar"])||0)*3; } for(const c of companies){ goldStock+=(c.inventory&&c.inventory.Gold)||0; goldStock+=((c.inventory&&c.inventory["Gold Bar"])||0)*3; } if(!goldStock) goldStock=420;
               let moneySupply=(bot.total_bank_reserves||900000)+(bot.money_printed||420000); for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
               const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
-              return {gsi_history:bot.gsi_history,inflation_history:bot.inflation_history,inflation,money_printed:bot.money_printed||420000,total_bank_reserves:bot.total_bank_reserves||900000,companies,market_demand:bot.market_demand||{},market_supply:{},demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status:backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT"},census:{},regions:{},ssr_regions:{},work_zones:{},resource_values:RV,crafting_recipes:{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github-refresh",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:[]};
+              const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
+              let total_rubles_history = bot.total_rubles_history; if(!Array.isArray(total_rubles_history)||!total_rubles_history.length){ total_rubles_history=[]; let cur=Math.max(10000,total_rubles||200000); for(let i=0;i<100;i++){ cur=Math.max(1000, Math.floor(cur*(1+(Math.random()*0.04-0.02)))); total_rubles_history.push({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()}); } total_rubles_history[total_rubles_history.length-1].total=total_rubles; }
+              return {gsi_history:bot.gsi_history,inflation_history:bot.inflation_history,inflation,money_printed:bot.money_printed||420000,total_bank_reserves:bot.total_bank_reserves||900000,companies,market_demand:bot.market_demand||{},market_supply:{},demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status:backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT"},census:{},regions:{},ssr_regions:{},work_zones:{},resource_values:RV,crafting_recipes:{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github-refresh",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:[],total_rubles,total_rubles_history,total_citizens:Object.keys(bot.users||{}).length};
             }catch(e){ return null; }
           })(bot);
-          if(built){ data=built; renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTradePanel(); renderTicker(); renderFiveYearPlan(); renderStakhanovite(); }
+           if(built){ data=built; renderStats(); renderGSI(); renderInfl(); renderGold(); renderRubles(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTradePanel(); renderTicker(); renderFiveYearPlan(); renderStakhanovite(); }
         }
       }catch{}
     }

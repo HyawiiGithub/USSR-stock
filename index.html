@@ -138,6 +138,7 @@ tbody tr:nth-child(even) td{background:var(--paper2)}
       <div class="card"><div class="card-h"><span>AI STORE — DISTRIBUTION</span><small id="aiCount">—</small></div><div class="card-b"><div class="chart-wrap mini"><canvas id="chartAI"></canvas></div><div id="aiList" class="mono" style="font-size:10px;margin-top:6px;word-break:break-word">—</div></div></div>
       <div class="card"><div class="card-h"><span>GLOBAL CONSUMPTION — TOP 10</span><small>STATE PULL</small></div><div class="card-b"><div class="chart-wrap mini"><canvas id="chartCons"></canvas></div></div></div>
     </div>
+    <div class="card" style="margin-top:10px"><div class="card-h"><span>TOTAL RUBLES IN CIRCULATION — ALL CITIZENS</span><small id="rublesCitizens">—</small></div><div class="card-b"><div class="grid grid-3" style="margin-bottom:8px"><div class="stat"><b>TOTAL</b><strong id="rublesTotal">—</strong><span>cash + bank of every citizen</span></div><div class="stat"><b>AVG / CITIZEN</b><strong id="rublesAvg">—</strong><span>even 0-balance counted</span></div><div class="stat"><b>CHANGE</b><strong id="rublesChange">—</strong><span id="rublesChangeSub">100 pts history</span></div></div><div class="chart-wrap"><canvas id="chartRubles"></canvas></div><div class="mono" style="font-size:10px;color:var(--muted);margin-top:6px">Counts every ruble held by every citizen (cash + bank), even those with 0 who never used bot — they contribute 0. History 100 pts, updates every 5 min via bot. Formula: Σ(cash+bank) for all users in economy_data.json.</div></div></div>
     <div class="card"><div class="card-h"><span>SUPPLY × DEMAND — 60-150% (BALANCED)</span><small id="prodCount">—</small></div><div class="card-b"><div class="tabs" id="demandTabs"></div><div id="demandTable"></div></div></div>
     <div class="grid grid-2" style="margin-top:10px">
       <div class="card"><div class="card-h"><span>★ FIVE-YEAR PLAN — PLAN FULFILLMENT</span><small id="planPct">—</small></div><div class="card-b">
@@ -175,6 +176,6 @@ tbody tr:nth-child(even) td{background:var(--paper2)}
   <div style="margin-top:12px;border:2px solid #111;background:#fff;padding:8px;font:700 9px var(--font-mono);text-align:center;letter-spacing:.06em">GOSPLAN CENTRAL — STAMP № 001 // ECONOMY_DATA.JSON LIVE // <span id="footGen">—</span> // <a href="https://github.com/HyawiiGithub/USSR-stock">USSR-STOCK</a></div>
 </div>
 
-<script src="./ussr.js?v=3.4.2"></script>
+<script src="./ussr.js?v=3.5.0"></script>
 </body>
 </html>

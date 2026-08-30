@@ -131,6 +131,14 @@ export default async function handler(req, res) {
           const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2));
           regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)}
         }
+        // total rubles in circulation (all citizens cash+bank, even 0-balance members counted via 0)
+        const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
+        let total_rubles_history = Array.isArray(bot.total_rubles_history) && bot.total_rubles_history.length ? bot.total_rubles_history : null;
+        if (!total_rubles_history) {
+          // mock history around current total
+          total_rubles_history=[]; let cur=Math.max(10000, total_rubles||200000); for(let i=0;i<100;i++){ cur=Math.max(1000, Math.floor(cur*(1+(Math.random()*0.04-0.02)))); total_rubles_history.push({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()}); }
+          total_rubles_history[total_rubles_history.length-1].total = total_rubles || cur;
+        }
         let finalGsi = gsi;
         if (!finalGsi) {
           finalGsi=[]; let p0=100; const now=Date.now(); for(let i=0;i<100;i++){ const d=(Math.random()*2-1)*0.015; p0=Math.max(1,Math.floor(p0*(1+d))); finalGsi.push({price:p0, change_percent:+(d*100).toFixed(2), recorded_at:new Date(now-(100-i)*3600000).toISOString()}); } finalGsi[0].change_percent=0;
@@ -165,7 +173,10 @@ export default async function handler(req, res) {
           mines:{}, factories:{}, generated_at: new Date().toISOString(), _source:"github-live",
           ssr_resource_weights: bot.ssr_resource_weights || {},
           compensation_log: bot.compensation_log || [],
-          top_workers: Object.entries(bot.users||{}).map(([id,u])=>({id, username:u.username||id.slice(0,6), work_count:u.work_count||0, ssr_region:u.ssr_region, employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5)
+          top_workers: Object.entries(bot.users||{}).map(([id,u])=>({id, username:u.username||id.slice(0,6), work_count:u.work_count||0, ssr_region:u.ssr_region, employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5),
+          total_rubles,
+          total_rubles_history,
+          total_citizens: Object.keys(bot.users||{}).length
         };
   }
 
@@ -315,6 +326,8 @@ export default async function handler(req, res) {
     const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2));
     regions2[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)}
   }
-  const data2={gsi_history:gsi2,inflation_history:infl2,inflation:inflation2,money_printed:money_printed2,total_bank_reserves:total_bank_reserves2,companies:companies2,market_demand:market_demand2,market_supply:market_supply2,demand_history:demand_history2,ai_store:ai_store2,global_consumption:global_consumption2,consumption_history:[],gold:{price:goldPrice2,stock:goldStock2,moneySupply:moneySupply2,backing:+backing2.toFixed(2),status:status2},census:census2,regions:regions2,ssr_regions:SSR2,work_zones:WZ2,resource_values:RV2,crafting_recipes:Object.fromEntries(Object.entries(REC2).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString(), _source:"mock", ssr_resource_weights:{}, compensation_log:[], top_workers:[] };
+  const mockTotal = 200000 + Math.floor(Math.random()*80000);
+  const totalRublesHist2=[]; let curR=mockTotal; for(let i=0;i<100;i++){ curR=Math.max(10000, Math.floor(curR*(1+(Math.random()*0.04-0.02)))); totalRublesHist2.push({total:curR, at:new Date(now2-(100-i)*3600000).toISOString()}); }
+  const data2={gsi_history:gsi2,inflation_history:infl2,inflation:inflation2,money_printed:money_printed2,total_bank_reserves:total_bank_reserves2,companies:companies2,market_demand:market_demand2,market_supply:market_supply2,demand_history:demand_history2,ai_store:ai_store2,global_consumption:global_consumption2,consumption_history:[],gold:{price:goldPrice2,stock:goldStock2,moneySupply:moneySupply2,backing:+backing2.toFixed(2),status:status2},census:census2,regions:regions2,ssr_regions:SSR2,work_zones:WZ2,resource_values:RV2,crafting_recipes:Object.fromEntries(Object.entries(REC2).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString(), _source:"mock", ssr_resource_weights:{}, compensation_log:[], top_workers:[], total_rubles: mockTotal, total_rubles_history: totalRublesHist2, total_citizens: 60 };
   res.status(200).json(data2);
 }
