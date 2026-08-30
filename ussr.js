@@ -135,6 +135,52 @@ async function load(){
     'https://ussr-stock-l6ycclr1f-hue12.vercel.app/api/ussr/overview',
     'https://ussr-stock-hxprrwyds-hue12.vercel.app/api/ussr/overview'
   ];
+  const RAW_GITHUB='https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json';
+  function buildFromBot(bot){
+    // reuse the same build logic as API — minimal client-side transform for raw economy_data.json
+    try{
+      const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Peat:13, Manganese:96, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Aluminium:80, Cotton:24, Potash:56, "Oil Shale":19, Zinc:38, Amber:75 };
+      const SSR={
+        "Russian SFSR":{emoji:"🇷🇺",work_zone:"1538704167890329621",resources:["Coal","Iron Ore","Timber","Oil","Natural Gas","Gold"]},
+        "Byelorussian SSR":{emoji:"🇧🇾",work_zone:"1538703449095676016",resources:["Timber","Peat","Wheat","Flax"]},
+        "Ukrainian SSR":{emoji:"🇺🇦",work_zone:"1538703449095676016",resources:["Coal","Iron Ore","Wheat","Sunflower","Corn","Salt"]},
+        "Moldavian SSR":{emoji:"🇲🇩",work_zone:"1538703449095676016",resources:["Wheat","Corn","Sunflower","Grapes","Wine"]},
+        "Estonian SSR":{emoji:"🇪🇪",work_zone:"1538704231249354772",resources:["Timber","Phosphorite","Peat","Fish","Oil Shale"]},
+        "Latvian SSR":{emoji:"🇱🇻",work_zone:"1538704231249354772",resources:["Timber","Peat","Limestone","Wheat","Fish"]},
+        "Lithuanian SSR":{emoji:"🇱🇹",work_zone:"1538704231249354772",resources:["Timber","Peat","Clay","Limestone","Flax","Fish"]},
+        "Georgian SSR":{emoji:"🇬🇪",work_zone:"1538703028524285962",resources:["Manganese","Copper","Gold","Grapes","Tea","Citrus"]},
+        "Armenian SSR":{emoji:"🇦🇲",work_zone:"1538703028524285962",resources:["Copper","Gold","Molybdenum","Aluminium"]},
+        "Azerbaijanian SSR":{emoji:"🇦🇿",work_zone:"1538703028524285962",resources:["Oil","Natural Gas","Iron Ore","Cotton"]},
+        "Kazakh SSR":{emoji:"🇰🇿",work_zone:"1538703181733695600",resources:["Coal","Iron Ore","Copper","Gold","Uranium","Oil","Wheat"]},
+        "Uzbek SSR":{emoji:"🇺🇿",work_zone:"1538703181733695600",resources:["Gold","Oil","Copper","Cotton","Natural Gas","Uranium"]},
+        "Turkmen SSR":{emoji:"🇹🇲",work_zone:"1538703181733695600",resources:["Oil","Natural Gas","Cotton","Sulphur"]},
+        "Nuristani SSR":{emoji:"🇹🇯",work_zone:"1538704555670245448",resources:["Aluminium","Lead","Zinc","Uranium","Gold"]},
+        "Kirghiz SSR":{emoji:"🇰🇬",work_zone:"1538703181733695600",resources:["Gold","Uranium","Coal","Iron Ore","Timber"]}
+      };
+      const WZ={"Russian Federal Republic Region":"1538704167890329621","Western Soviet Region":"1538703449095676016","Baltic Soviet Region":"1538704231249354772","Caucasus Soviet Region":"1538703028524285962","Central Asian Soviet Region":"1538703181733695600","Nuristani Soviet Region":"1538704555670245448"};
+      let companies=[];
+      if(bot.companies && typeof bot.companies==="object"){
+        const isArr=Array.isArray(bot.companies);
+        const entries=isArr?bot.companies:Object.entries(bot.companies);
+        companies=entries.map(([id,c])=>{ const comp=isArr?c:c; const cid=isArr?comp.id||id:id; const price=comp.share_price||comp.price||100; const hist=Array.isArray(comp.price_history)?comp.price_history:Array.from({length:100},()=>price); return {id:cid,name:comp.name||cid,ticker:comp.ticker||cid.slice(0,3).toUpperCase(),specialization:comp.specialization||null,hq_ssr:comp.hq_ssr||"Russian SFSR",employees:comp.employees||0,funds:comp.funds||0,share_price:price,price_history:hist,market_cap:comp.market_cap||price*(comp.shares_total||1000),buildings:comp.buildings||{},inventory:comp.inventory||{},is_state_owned:!!comp.is_state_owned,shares_total:comp.shares_total||1000,wage:comp.wage||18};});
+      }
+      const inflation = typeof bot.inflation==="number" ? bot.inflation : (bot.inflation_history?bot.inflation_history[bot.inflation_history.length-1]:3.1);
+      const gsi=bot.gsi_history;
+      const inflHist=bot.inflation_history;
+      const money_printed=bot.money_printed||420000;
+      const total_bank_reserves=bot.total_bank_reserves||900000;
+      const market_demand=bot.market_demand;
+      const market_supply={}; if(market_demand) for(const k of Object.keys(market_demand)){ let sup=0; companies.forEach(c=> sup+=(c.inventory[k]||0)); market_supply[k]=sup; }
+      const goldPrice=Math.max(1,Math.floor(RV.Gold*(1+inflation/100)));
+      let goldStock=0; if(bot.users) for(const u of Object.values(bot.users)){ goldStock+=(u.resources&&u.resources.Gold)||0; goldStock+=((u.inventory&&u.inventory["Gold Bar"])||0)*3; } for(const c of companies){ goldStock+=(c.inventory&&c.inventory.Gold)||0; goldStock+=((c.inventory&&c.inventory["Gold Bar"])||0)*3; } if(!goldStock) goldStock=420;
+      let moneySupply=total_bank_reserves+money_printed; for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
+      const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
+      const status=backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT";
+      const census={}; Object.keys(SSR).forEach(k=> census[k]=Math.floor(Math.random()*14)+4);
+      const regions={}; for(const [reg,zone] of Object.entries(WZ)){ const ssrs=Object.entries(SSR).filter(([,v])=> v.work_zone===zone).map(([k])=>k); const pop=ssrs.reduce((s,k)=> s+(census[k]||0),0); const rc=companies.filter(c=> SSR[c.hq_ssr]?.work_zone===zone); const emp=rc.reduce((s,c)=> s+c.employees,0); let food=0; rc.forEach(c=>{ Object.entries(c.inventory||{}).forEach(([it,qty])=>{ const fv={Fish:2,Wheat:1,Corn:1,Sunflower:1,Grapes:1,Tea:1,Citrus:1,Flour:2,Sugar:1,Bread:3,Cake:3,Wine:2,"Canned Food":4,"Canned Fish":5,"Smoked Fish":4,"Fish Stew":5,"Sunflower Oil":1,"Corn Meal":2,"Tea Pack":1,"Citrus Juice":2}[it]; if(fv) food+= qty*fv; }); }); const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2)); regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)} }
+      return {gsi_history:gsi,inflation_history:inflHist,inflation,money_printed,total_bank_reserves,companies,market_demand:market_demand||{},market_supply,demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:bot.consumption_history||[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:bot.crafting_recipes||{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:Object.entries(bot.users||{}).map(([id,u])=>({id,username:u.username||id.slice(0,6),work_count:u.work_count||0,ssr_region:u.ssr_region,employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5)};
+    }catch(e){ console.warn('buildFromBot failed',e); return null; }
+  }
   try{
     let lastErr=null;
     let j=null;
@@ -144,12 +190,26 @@ async function load(){
         if(!r.ok) throw new Error('http '+r.status+' @ '+url);
         j=await r.json();
         if(!j.gsi_history || !j.gsi_history.length) throw new Error('bad payload @ '+url);
-        // got valid live payload
         data=j;
         if(notice) { notice.textContent='● CONNECTED — LIVE GOSPLAN FEED // '+ new Date().toLocaleTimeString()+' • '+ (j._source||'live'); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
         if(topGen) topGen.textContent='LIVE '+ new Date(j.generated_at).toLocaleTimeString()+' • '+ (j._source||'');
         break;
       }catch(e){ lastErr=e; console.warn('fetch try failed',url,e.message); continue; }
+    }
+    if(!data){
+      // last resort: fetch raw GitHub directly (works from Pages without Vercel CORS if deployment protection blocks API)
+      try{
+        const r2=await fetch(RAW_GITHUB+'?t='+Date.now(),{cache:'no-store', signal:AbortSignal.timeout(7000)});
+        if(r2.ok){
+          const bot=await r2.json();
+          const built=buildFromBot(bot);
+          if(built && built.gsi_history && built.gsi_history.length){
+            data=built;
+            if(notice) { notice.textContent='● CONNECTED — LIVE GOSPLAN FEED (via GitHub raw) // '+ new Date().toLocaleTimeString()+' • '+ (built._source||'raw'); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
+            if(topGen) topGen.textContent='LIVE '+ new Date(built.generated_at).toLocaleTimeString()+' • raw-github';
+          } else throw new Error('build failed');
+        } else throw new Error('raw http '+r2.status);
+      }catch(e){ lastErr=e; console.warn('raw fetch failed',e.message); }
     }
     if(!data) throw lastErr||new Error('all endpoints failed');
   }catch(e){
@@ -382,17 +442,40 @@ function renderStakhanovite(){
 async function refreshLoop(){
   try{
     const urls=[location.origin + '/api/ussr/overview','https://ussr-stock-l6ycclr1f-hue12.vercel.app/api/ussr/overview','https://ussr-stock-hxprrwyds-hue12.vercel.app/api/ussr/overview'];
+    let updated=false;
     for(const url of urls){
       try{
         const r=await fetch(url,{cache:'no-store', signal:AbortSignal.timeout(7000)});
         if(!r.ok) continue;
         const j=await r.json();
         if(!j.gsi_history) continue;
-        data=j;
+        data=j; updated=true;
         renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTicker(); renderFiveYearPlan(); renderStakhanovite();
         const topGen=document.getElementById('topGen'); if(topGen) topGen.textContent='LIVE '+ new Date(j.generated_at).toLocaleTimeString()+' • '+ (j._source||'');
         const notice=document.getElementById('connNotice'); if(notice){ notice.textContent='● CONNECTED — LIVE GOSPLAN FEED // '+ new Date().toLocaleTimeString()+' • '+ (j._source||'live'); notice.style.background='#111'; notice.style.color='#b6e2b6'; }
         break;
+      }catch{}
+    }
+    if(!updated){
+      try{
+        const r2=await fetch('https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json?t='+Date.now(),{cache:'no-store', signal:AbortSignal.timeout(7000)});
+        if(r2.ok){
+          const bot=await r2.json();
+          // minimal build — reuse if possible
+          const built=(function(bot){
+            try{
+              const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Peat:13, Manganese:96, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Aluminium:80, Cotton:24, Potash:56, "Oil Shale":19, Zinc:38, Amber:75 };
+              let companies=[]; if(bot.companies){ const isArr=Array.isArray(bot.companies); const entries=isArr?bot.companies:Object.entries(bot.companies); companies=entries.map(([id,c])=>{ const comp=isArr?c:c; const cid=isArr?comp.id||id:id; const price=comp.share_price||100; const hist=comp.price_history||Array.from({length:100},()=>price); return {id:cid,name:comp.name||cid,ticker:comp.ticker||cid.slice(0,3).toUpperCase(),specialization:comp.specialization||null,hq_ssr:comp.hq_ssr||"Russian SFSR",employees:comp.employees||0,funds:comp.funds||0,share_price:price,price_history:hist,market_cap:comp.market_cap||price*(comp.shares_total||1000),buildings:comp.buildings||{},inventory:comp.inventory||{},is_state_owned:!!comp.is_state_owned,shares_total:comp.shares_total||1000,wage:comp.wage||18};});}
+              const inflation=bot.inflation||3.1;
+              const goldPrice=Math.max(1,Math.floor(RV.Gold*(1+inflation/100)));
+              let goldStock=0; if(bot.users) for(const u of Object.values(bot.users)){ goldStock+=(u.resources&&u.resources.Gold)||0; goldStock+=((u.inventory&&u.inventory["Gold Bar"])||0)*3; } for(const c of companies){ goldStock+=(c.inventory&&c.inventory.Gold)||0; goldStock+=((c.inventory&&c.inventory["Gold Bar"])||0)*3; } if(!goldStock) goldStock=420;
+              let moneySupply=(bot.total_bank_reserves||900000)+(bot.money_printed||420000); for(const c of companies) moneySupply+=c.funds||0; if(bot.users) for(const u of Object.values(bot.users)) moneySupply+=(u.cash||0)+(u.bank||0);
+              const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
+              return {gsi_history:bot.gsi_history,inflation_history:bot.inflation_history,inflation,money_printed:bot.money_printed||420000,total_bank_reserves:bot.total_bank_reserves||900000,companies,market_demand:bot.market_demand||{},market_supply:{},demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status:backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT"},census:{},regions:{},ssr_regions:{},work_zones:{},resource_values:RV,crafting_recipes:{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github-refresh",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:[]};
+            }catch(e){ return null; }
+          })(bot);
+          if(built){ data=built; renderStats(); renderGSI(); renderInfl(); renderGold(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTicker(); renderFiveYearPlan(); renderStakhanovite(); }
+        }
       }catch{}
     }
   }catch{}
