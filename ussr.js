@@ -28,22 +28,22 @@ nav();
 function fallbackMock(){
   const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Peat:13, Manganese:96, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Sulfur:25, Aluminium:80, Cotton:24, Potash:56, "Oil Shale":19, Zinc:38, Amber:75 };
   const REC = {
-    "Iron Ingot": {value:161, ingredients:{"Iron Ore":3,Coal:2}}, "Steel Ingot": {value:371, ingredients:{"Iron Ingot":2,Coal:3}},
-    "Copper Ingot": {value:194, ingredients:{Copper:3,Coal:2}}, "Gold Bar": {value:639, ingredients:{Gold:3}},
-    "Aluminium Ingot": {value:327, ingredients:{"Aluminium Ore":3,Coal:2}}, "Timber Planks": {value:71, ingredients:{Timber:3}},
-    "Bricks": {value:95, ingredients:{Clay:3,Coal:2}}, "Concrete": {value:120, ingredients:{Limestone:4,Sand:2}},
-    "Glass": {value:128, ingredients:{Limestone:3,Coal:2}}, "Steel Beam": {value:1431, ingredients:{"Steel Ingot":4}},
-    "Machine Parts": {value:1155, ingredients:{"Iron Ingot":3,"Steel Ingot":2}}, "Fuel": {value:282, ingredients:{Oil:3}},
-    "Refined Fuel": {value:547, ingredients:{Fuel:2}}, "Uranium Rod": {value:1453, ingredients:{Uranium:3,Lead:2}},
-    "Reactor Core": {value:9402, ingredients:{"Uranium Rod":2,"Steel Beam":3,"Machine Parts":2}}, "Circuit Board": {value:658, ingredients:{"Copper Ingot":3,Lead:2}},
-    "Flour": {value:51, ingredients:{Wheat:3}}, "Bread": {value:98, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:180, ingredients:{Flour:3,Sugar:3,Wheat:2}},
-    "Wine": {value:100, ingredients:{Grapes:4}}, "Canned Food": {value:117, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:122, ingredients:{Fish:2,"Iron Ore":2}},
-    "Smoked Fish": {value:100, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:89, ingredients:{Fish:2,Wheat:2,Salt:1}},
-    "Peat Fuel": {value:111, ingredients:{Peat:4,Coal:1}}, "Shale Oil": {value:85, ingredients:{"Oil Shale":4}}, "Gas Fuel": {value:216, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:198, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
-    "Cotton Fabric": {value:117, ingredients:{Cotton:3}}, "Manganese Alloy": {value:448, ingredients:{Manganese:2,"Iron Ingot":1,Coal:1}},
-    "Sunflower Oil": {value:67, ingredients:{Sunflower:3}}, "Linen": {value:92, ingredients:{Flax:3}}, "Corn Meal": {value:59, ingredients:{Corn:3}},
-    "Tea Pack": {value:114, ingredients:{Tea:2,Sugar:1}}, "Citrus Juice": {value:114, ingredients:{Citrus:3,Sugar:1}},
-    "Antimony Alloy": {value:481, ingredients:{Antimony:2,Lead:2}}, "Molybdenum Rod": {value:812, ingredients:{Molybdenum:2,"Steel Ingot":1}}, "Aluminium Sheet": {value:260, ingredients:{Aluminium:2,Coal:1}}
+    "Iron Ingot": {value:143, ingredients:{"Iron Ore":3,Coal:2}}, "Steel Ingot": {value:337, ingredients:{"Iron Ingot":2,Coal:3}},
+    "Copper Ingot": {value:173, ingredients:{Copper:3,Coal:2}}, "Gold Bar": {value:586, ingredients:{Gold:3}},
+    "Aluminium Ingot": {value:296, ingredients:{"Aluminium Ore":3,Coal:2}}, "Timber Planks": {value:59, ingredients:{Timber:3}},
+    "Bricks": {value:81, ingredients:{Clay:3,Coal:2}}, "Concrete": {value:104, ingredients:{Limestone:4,Sand:2}},
+    "Glass": {value:112, ingredients:{Limestone:3,Coal:2}}, "Steel Beam": {value:1320, ingredients:{"Steel Ingot":4}},
+    "Machine Parts": {value:1064, ingredients:{"Iron Ingot":3,"Steel Ingot":2}}, "Fuel": {value:255, ingredients:{Oil:3}},
+    "Refined Fuel": {value:501, ingredients:{Fuel:2}}, "Uranium Rod": {value:1341, ingredients:{Uranium:3,Lead:2}},
+    "Reactor Core": {value:8714, ingredients:{"Uranium Rod":2,"Steel Beam":3,"Machine Parts":2}}, "Circuit Board": {value:603, ingredients:{"Copper Ingot":3,Lead:2}},
+    "Flour": {value:40, ingredients:{Wheat:3}}, "Bread": {value:84, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:161, ingredients:{Flour:3,Sugar:3,Wheat:2}},
+    "Wine": {value:86, ingredients:{Grapes:4}}, "Canned Food": {value:102, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:107, ingredients:{Fish:2,"Iron Ore":2}},
+    "Smoked Fish": {value:86, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:76, ingredients:{Fish:2,Wheat:2,Salt:1}},
+    "Peat Fuel": {value:97, ingredients:{Peat:4,Coal:1}}, "Shale Oil": {value:107, ingredients:{"Oil Shale":4}}, "Gas Fuel": {value:194, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:177, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
+    "Cotton Fabric": {value:102, ingredients:{Cotton:3}}, "Manganese Alloy": {value:409, ingredients:{Manganese:2,"Iron Ingot":1,Coal:1}},
+    "Sunflower Oil": {value:56, ingredients:{Sunflower:3}}, "Linen": {value:79, ingredients:{Flax:3}}, "Corn Meal": {value:48, ingredients:{Corn:3}},
+    "Tea Pack": {value:99, ingredients:{Tea:2,Sugar:1}}, "Citrus Juice": {value:99, ingredients:{Citrus:3,Sugar:1}},
+    "Antimony Alloy": {value:440, ingredients:{Antimony:2,Lead:2}}, "Molybdenum Rod": {value:747, ingredients:{Molybdenum:2,"Steel Ingot":1}}, "Aluminium Sheet": {value:235, ingredients:{Aluminium:2,Coal:1}}
   };
   const SSR = {
     "Russian SFSR": {emoji:"🇷🇺",work_zone:"1538704167890329621",resources:["Coal","Iron Ore","Timber","Oil","Natural Gas","Gold"]},
