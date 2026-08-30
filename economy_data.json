@@ -133820,11 +133820,6 @@
   },
   "gsi_history": [
     {
-      "price": 17,
-      "change_percent": 0.8910473267015502,
-      "recorded_at": "2026-08-30T14:39:17.743Z"
-    },
-    {
       "price": 18,
       "change_percent": 6.025120716596822,
       "recorded_at": "2026-08-30T14:44:17.522Z"
@@ -134318,6 +134313,11 @@
       "price": 1,
       "change_percent": -1.2433342741225648,
       "recorded_at": "2026-08-30T22:04:46.079Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 1.294398049418402,
+      "recorded_at": "2026-08-30T22:09:46.075Z"
     }
   ],
   "factory_names": [],
@@ -134337,11 +134337,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.1338054679897652,
+  "inflation": 0.09834339673899509,
   "money_printed": 223,
   "total_bank_reserves": 164129,
   "inflation_history": [
-    0,
     0.018495468226126438,
     0,
     0,
@@ -134440,7 +134439,8 @@
     0.1177578676827354,
     0.13044599520856343,
     0.09585291741935648,
-    0.1338054679897652
+    0.1338054679897652,
+    0.09834339673899509
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134558,11 +134558,11 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Steel Ingot": 5
+    "Steel Ingot": 4
   },
   "global_consumption": {
     "Copper Ingot": 45,
-    "Steel Ingot": 7,
+    "Steel Ingot": 8,
     "Timber Planks": 92,
     "Refined Fuel": 37,
     "Fuel": 9,
@@ -135457,6 +135457,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-30T21:39:45.731Z"
+    },
+    {
+      "item": "Steel Ingot",
+      "qty": 1,
+      "at": "2026-08-30T22:09:45.724Z"
     }
   ],
   "demand_history": {
@@ -135651,6 +135656,11 @@
       {
         "demand": 1.3552408121623392,
         "at": "2026-08-29T00:09:15.441Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2921261946347304,
+        "at": "2026-08-30T22:09:45.724Z",
         "supply": 0
       }
     ],
@@ -136695,6 +136705,10 @@
     {
       "total": 238434,
       "at": "2026-08-30T22:04:46.354Z"
+    },
+    {
+      "total": 238464,
+      "at": "2026-08-30T22:09:47.137Z"
     }
   ],
   "gold_rush": {
