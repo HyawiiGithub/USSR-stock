@@ -1518,8 +1518,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 75299,
-      "market_cap": 75299,
+      "share_price": 75307,
+      "market_cap": 75307,
       "employees": 18,
       "level": 1,
       "buildings": {
@@ -1551,7 +1551,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-30T14:56:34.105Z",
       "price_history": [
-        69429,
         69437,
         69445,
         69501,
@@ -1650,7 +1649,8 @@
         75139,
         75155,
         75275,
-        75299
+        75299,
+        75307
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -1966,16 +1966,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 56,
-      "change_percent": -0.6996911192686892,
-      "recorded_at": "2026-08-30T07:59:17.570Z"
-    },
-    {
-      "price": 55,
-      "change_percent": -0.5660461228887919,
-      "recorded_at": "2026-08-30T08:04:17.569Z"
-    },
     {
       "price": 55,
       "change_percent": 0.764182730652523,
@@ -2465,6 +2455,16 @@
       "price": 10,
       "change_percent": -0.6151705512631697,
       "recorded_at": "2026-08-30T15:24:17.774Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 3.7710919218328613,
+      "recorded_at": "2026-08-30T15:29:17.532Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 0.8611854335072281,
+      "recorded_at": "2026-08-30T15:29:17.782Z"
     }
   ],
   "factory_names": [
@@ -2485,11 +2485,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.007792165868615402,
+  "inflation": 0.017044772814945378,
   "money_printed": 46,
   "total_bank_reserves": 162618,
   "inflation_history": [
-    0.7962115993509229,
     0.7472397850414055,
     0.5087629439576284,
     0.5409348919829183,
@@ -2588,7 +2587,8 @@
     0,
     0.008857815046444457,
     0.01378578871295007,
-    0.007792165868615402
+    0.007792165868615402,
+    0.017044772814945378
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -2634,17 +2634,17 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.4001083218922008,
-    "Cake": 1.286532536180883,
-    "Bread": 1.3921459673035406,
+    "Cake": 1.2907149040317694,
+    "Bread": 1.3898989491618658,
     "Copper Ingot": 1.3957158754464212,
     "Iron Ingot": 1.3915047878218867,
-    "Steel Ingot": 1.4082243460172985,
+    "Steel Ingot": 1.4061682595129739,
     "Gold Bar": 1.3696987991185936,
     "Aluminium Ingot": 1.4122718308078774,
     "Timber Planks": 1.3954607873709333,
     "Bricks": 1.4123435275452147,
     "Concrete": 1.4122781621852998,
-    "Glass": 1.4188562364736377,
+    "Glass": 1.4173477375557466,
     "Steel Beam": 1.4121589578457372,
     "Machine Parts": 1.4124085177189465,
     "Refined Fuel": 1.3950639202895203,
@@ -2654,20 +2654,20 @@
     "Flour": 1.412261060935401,
     "Sugar": 1.3788011942814602,
     "Wine": 1.411510368732482,
-    "Canned Food": 1.365654052053863,
-    "Canned Fish": 1.3891556500264826,
+    "Canned Food": 1.3633490963106065,
+    "Canned Fish": 1.387665303287522,
     "Smoked Fish": 1.4122917328676003,
-    "Fish Stew": 1.4186292010215766,
+    "Fish Stew": 1.4171388649398504,
     "Peat Fuel": 1.3960294424536,
     "Gas Fuel": 1.41212710002688,
     "Fertilizer": 1.4123144310246538,
     "Cotton Fabric": 1.41,
     "Manganese Alloy": 1.412074941385963,
     "Sunflower Oil": 1.4123435275452147,
-    "Linen": 1.416928,
+    "Linen": 1.41557376,
     "Corn Meal": 1.41,
     "Tea Pack": 1.41,
-    "Citrus Juice": 1.4189115617142698,
+    "Citrus Juice": 1.4173986367771283,
     "Antimony Alloy": 1.4123435275452147,
     "Molybdenum Rod": 1.41212710002688,
     "Aluminium Sheet": 1.4118972502642253,
@@ -2687,7 +2687,7 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Cake": 4
+    "Cake": 2
   },
   "global_consumption": {
     "Copper Ingot": 42,
@@ -2698,7 +2698,7 @@
     "Iron Ingot": 12,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 1
+    "Cake": 3
   },
   "consumption_history": [
     {
@@ -3500,6 +3500,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-08-30T15:14:17.548Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-08-30T15:29:17.550Z"
     }
   ],
   "demand_history": {
@@ -4293,6 +4298,11 @@
       {
         "demand": 1.2837987546968832,
         "at": "2026-08-30T15:14:17.548Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.286532536180883,
+        "at": "2026-08-30T15:29:17.550Z",
         "supply": 0
       }
     ]
