@@ -133820,8 +133820,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 76303,
-      "market_cap": 76303,
+      "share_price": 76363,
+      "market_cap": 76363,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -133857,7 +133857,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T20:27:32.342Z",
       "price_history": [
-        95067,
         95126,
         95137,
         95140,
@@ -133956,7 +133955,8 @@
         76249,
         76252,
         76300,
-        76303
+        76303,
+        76363
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -134291,16 +134291,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 10,
-      "change_percent": 5.670351677484476,
-      "recorded_at": "2026-08-31T15:19:58.298Z"
-    },
-    {
-      "price": 10,
-      "change_percent": 4.887031043913488,
-      "recorded_at": "2026-08-31T15:20:16.493Z"
-    },
     {
       "price": 10,
       "change_percent": 5.932012253159852,
@@ -134790,6 +134780,16 @@
       "price": 10,
       "change_percent": 5.33492624366029,
       "recorded_at": "2026-08-31T21:02:23.668Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.583424250711286,
+      "recorded_at": "2026-08-31T21:05:52.807Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.076282545499791,
+      "recorded_at": "2026-08-31T21:06:11.773Z"
     }
   ],
   "factory_names": [
@@ -135046,12 +135046,11 @@
     "Canned Fish": 7,
     "Canned Food": 8,
     "Fuel": 6,
-    "Copper Ingot": 1,
     "Uranium Rod": 8,
     "Cake": 8
   },
   "global_consumption": {
-    "Copper Ingot": 51,
+    "Copper Ingot": 52,
     "Steel Ingot": 18,
     "Timber Planks": 102,
     "Refined Fuel": 43,
@@ -136144,6 +136143,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-08-31T20:51:10.635Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-31T21:06:10.630Z"
     }
   ],
   "demand_history": {
@@ -136337,6 +136341,11 @@
         "demand": 1.3795919392263802,
         "at": "2026-08-31T16:10:59.035Z",
         "supply": 0
+      },
+      {
+        "demand": 1.393542762020847,
+        "at": "2026-08-31T21:06:10.630Z",
+        "supply": 2
       }
     ],
     "Steel Ingot": [
@@ -137326,10 +137335,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 248413,
-      "at": "2026-08-31T09:29:47.304Z"
-    },
-    {
       "total": 248438,
       "at": "2026-08-31T09:34:47.305Z"
     },
@@ -137724,6 +137729,10 @@
     {
       "total": 219982,
       "at": "2026-08-31T21:01:11.880Z"
+    },
+    {
+      "total": 220042,
+      "at": "2026-08-31T21:06:11.962Z"
     }
   ],
   "gold_rush": null,
