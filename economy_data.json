@@ -134239,11 +134239,6 @@
   "gsi_history": [
     {
       "price": 10,
-      "change_percent": 5.038489885470694,
-      "recorded_at": "2026-08-31T14:50:15.200Z"
-    },
-    {
-      "price": 10,
       "change_percent": 5.7680175061251004,
       "recorded_at": "2026-08-31T14:52:32.290Z"
     },
@@ -134736,6 +134731,11 @@
       "price": 11,
       "change_percent": 10.561106577601425,
       "recorded_at": "2026-08-31T16:57:32.623Z"
+    },
+    {
+      "price": 11,
+      "change_percent": 5.112109861952174,
+      "recorded_at": "2026-08-31T16:57:33.338Z"
     }
   ],
   "factory_names": [
@@ -134993,12 +134993,11 @@
     "Steel Ingot": 1,
     "Canned Food": 9,
     "Fuel": 6,
-    "Copper Ingot": 1,
     "Uranium Rod": 8,
     "Refined Fuel": 2
   },
   "global_consumption": {
-    "Copper Ingot": 51,
+    "Copper Ingot": 52,
     "Steel Ingot": 17,
     "Timber Planks": 102,
     "Refined Fuel": 41,
@@ -136076,6 +136075,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-08-31T16:10:59.035Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-31T16:57:32.885Z"
     }
   ],
   "demand_history": {
@@ -136268,6 +136272,11 @@
       {
         "demand": 1.3795919392263802,
         "at": "2026-08-31T16:10:59.035Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.384044896454941,
+        "at": "2026-08-31T16:57:32.885Z",
         "supply": 0
       }
     ],
@@ -137243,10 +137252,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 248109,
-      "at": "2026-08-31T08:29:47.223Z"
-    },
-    {
       "total": 248263,
       "at": "2026-08-31T08:34:47.345Z"
     },
@@ -137641,6 +137646,10 @@
     {
       "total": 263626,
       "at": "2026-08-31T16:52:33.404Z"
+    },
+    {
+      "total": 263661,
+      "at": "2026-08-31T16:57:33.636Z"
     }
   ],
   "gold_rush": null,
