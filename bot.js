@@ -4248,8 +4248,12 @@ if (command === 'foundcompany') {
             rand -= weights[i];
             if (rand <= 0) { resource = resources[i]; break; }
         }
-        // Gold is deliberately scarce: when it does drop, only ever 1 unit.
+        // Gold is deliberately scarce: when it does drop, only ever 1 unit — except during Gold Rush (up to 2)
         let quantity = resource === 'Gold' ? 1 : (Math.floor(Math.random() * 2) + 1); // nerfed 1-3 -> 1-2 (free resources balanced)
+        const rushQty = getActiveGoldRush(data);
+        if (rushQty && rushQty.ssr === userSSR && resource === 'Gold') {
+            quantity = rushQty.percent >= 50 ? 2 : Math.max(1, quantity);
+        }
         
         const wage = Math.max(company.wage || 10, data.national_minimum_wage || 0);
         const companyTopUp = Math.max(0, wage - BASE_WAGE_PRINT);
@@ -6343,9 +6347,11 @@ if (command === 'foundcompany') {
                     lines.push(`${emoji} ${ssr} — (global) ${SSR_REGIONS[ssr].resources.join(', ')}`);
                 }
             }
+            const rushAll = getActiveGoldRush(data);
             const embed = new EmbedBuilder().setTitle('⚖️ Per-SSR Spawn Rates').setDescription(lines.join('\n').substring(0,3800)).setColor(0x5865F2)
                 .setFooter({text: 'Global weights used when no override • -setspawnrate <SSR> <resource> <weight> • -resetspawnrate <SSR> <resource>'})
                 .addFields({name:'ℹ️ Note', value:'Changing **one SSR** does not affect others. Weight 0 = never spawns, 1 = rarest, 25 = common. Gold default 2 is rare.', inline:false});
+            if (rushAll) embed.addFields({name:'⛏️ Active Gold Rush', value:`**${rushAll.ssr}** +${rushAll.percent}% Gold until <t:${Math.floor(new Date(rushAll.expiresAt).getTime()/1000)}:R>`, inline:false});
             await message.reply({embeds:[embed]});
             return;
         }
@@ -6357,9 +6363,14 @@ if (command === 'foundcompany') {
         }
         const resources = SSR_REGIONS[ssrMatch].resources;
         const overrides = data.ssr_resource_weights[ssrMatch] || {};
+        const rush = getActiveGoldRush(data);
         const lines = resources.map(r => {
-            const w = overrides[r] !== undefined ? overrides[r] : RESOURCE_WEIGHTS[r] || 5;
-            const src = overrides[r] !== undefined ? '🔧 SSR' : '🌐 global';
+            let w = overrides[r] !== undefined ? overrides[r] : RESOURCE_WEIGHTS[r] || 5;
+            let src = overrides[r] !== undefined ? '🔧 SSR' : '🌐 global';
+            if (rush && rush.ssr === ssrMatch && r === 'Gold') {
+                w = Math.max(1, Math.floor(w * (rush.factor||1.5)));
+                src = `⛏️ GOLD RUSH +${rush.percent}%`;
+            }
             return `• ${r}: **${w}** ${src} (value ₽${RESOURCE_VALUES[r]||0})`;
         });
         const embed = new EmbedBuilder().setTitle(`${SSR_REGIONS[ssrMatch].emoji} ${ssrMatch} — Spawn Weights`).setDescription(lines.join('\n')).setColor(0x5865F2)
@@ -6613,11 +6624,11 @@ if (command === 'foundcompany') {
     }
 
     // ============================================================
-    // GOLDRUSH — secret, Primary/Co-Primary only, 24-48h configurable boost for Gold SSRs
+    // GOLDRUSH — secret, Bot Owners only, 24-48h configurable boost for Gold SSRs
     // No permanent bonus: 0 RN, menu lets you pick SSR (gold only), duration 24-48h, boost %
     // ============================================================
     if (command === 'goldrush') {
-        if (!isPrimaryOwner(userId)) { await message.reply('❌ Secret — Primary/Co-Primary only.'); return; }
+        if (!isBotOwner(userId)) { await message.reply('❌ Secret — Bot owners only.'); return; }
         const goldSSRs = Object.entries(SSR_REGIONS).filter(([,v])=>v.resources.includes('Gold')).map(([name, v])=>({name, emoji: v.emoji, work_zone: v.work_zone}));
         if (!goldSSRs.length) { await message.reply('❌ No gold SSRs found.'); return; }
         const active = getActiveGoldRush(loadData());

@@ -178,7 +178,8 @@ export default async function handler(req, res) {
           total_rubles_history,
           total_citizens: Object.keys(bot.users||{}).length,
           five_year_plan: bot.five_year_plan || null,
-          owner_logs: (bot.owner_logs||[]).slice(-20)
+          owner_logs: (bot.owner_logs||[]).slice(-20),
+          gold_rush: bot.gold_rush || null
         };
   }
 
