@@ -1374,9 +1374,12 @@ async function updateInflation() {
     }
     // NOTE: loop already includes STATE_BANK_USER_ID, don't double-count
     const moneyPrinted = data.money_printed || 0;
-    let baseInflation = totalBank > 0 ? (moneyPrinted / totalBank) * 100 : 0;
-    // add small natural fluctuation so inflation is never stuck at 0 (market breathes)
-    const fluctuation = (Math.random() * 0.06 - 0.06); // ±0.06%
+    // money printing now actually moves inflation — 5× more sensitive (was /totalBank*100 → always ~0.02% with 30 printed)
+    let baseInflation = totalBank > 0 ? (moneyPrinted / totalBank) * 500 : 0; // ×5 sensitivity, 30/152k → ~0.1% → 10% with 5×
+    // also add money supply pressure: if printed >10% of bank, extra boost
+    if (moneyPrinted > totalBank * 0.1) baseInflation += (moneyPrinted / totalBank - 0.1) * 50;
+    // natural fluctuation ±0.06% (was -0.06→0 biased)
+    const fluctuation = (Math.random() * 0.12 - 0.06);
     // if no money printed yet, keep a tiny baseline 0.3-0.8% so it wiggles
     if (baseInflation < 0.01) baseInflation = 0.4 + Math.random() * 0.4;
     const inflation = baseInflation + fluctuation;
