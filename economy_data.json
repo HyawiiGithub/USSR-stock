@@ -133295,6 +133295,42 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "823485434465091625": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
+    },
+    "1531623492502421544": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -134096,11 +134132,6 @@
   "gsi_history": [
     {
       "price": 1,
-      "change_percent": 6.702719064299785,
-      "recorded_at": "2026-08-31T05:24:45.815Z"
-    },
-    {
-      "price": 1,
       "change_percent": -1.375449236961954,
       "recorded_at": "2026-08-31T05:24:46.740Z"
     },
@@ -134593,6 +134624,11 @@
       "price": 1,
       "change_percent": -0.5372824490077694,
       "recorded_at": "2026-08-31T13:04:47.052Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -0.7197206741940749,
+      "recorded_at": "2026-08-31T13:09:47.046Z"
     }
   ],
   "factory_names": [
@@ -134613,11 +134649,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.0664725245471135,
+  "inflation": 0.10365843115904783,
   "money_printed": 223,
   "total_bank_reserves": 179445,
   "inflation_history": [
-    0.1250836769009136,
     0.07768538906060721,
     0.1249142851202913,
     0.13376887892914027,
@@ -134716,7 +134751,8 @@
     0.101944895852951,
     0.1223530437401187,
     0.11667586023496804,
-    0.0664725245471135
+    0.0664725245471135,
+    0.10365843115904783
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134837,13 +134873,13 @@
   "ai_store": {
     "Canned Fish": 7,
     "Steel Ingot": 3,
-    "Refined Fuel": 2
+    "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 50,
     "Steel Ingot": 12,
     "Timber Planks": 102,
-    "Refined Fuel": 39,
+    "Refined Fuel": 40,
     "Fuel": 9,
     "Iron Ingot": 12,
     "Shale Oil": 17,
@@ -135866,6 +135902,11 @@
       "item": "Smoked Fish",
       "qty": 2,
       "at": "2026-08-31T12:54:46.605Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-08-31T13:09:46.497Z"
     }
   ],
   "demand_history": {
@@ -136560,6 +136601,11 @@
         "demand": 1.3470714178058154,
         "at": "2026-08-31T00:09:45.727Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3556317537953155,
+        "at": "2026-08-31T13:09:46.497Z",
+        "supply": 0
       }
     ],
     "Fuel": [
@@ -136908,14 +136954,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 247914,
-      "at": "2026-08-31T05:09:47.200Z"
-    },
-    {
-      "total": 247929,
-      "at": "2026-08-31T05:14:47.206Z"
-    },
     {
       "total": 247944,
       "at": "2026-08-31T05:19:47.207Z"
@@ -137307,6 +137345,14 @@
     {
       "total": 247218,
       "at": "2026-08-31T13:04:48.908Z"
+    },
+    {
+      "total": 247233,
+      "at": "2026-08-31T13:09:48.916Z"
+    },
+    {
+      "total": 247233,
+      "at": "2026-08-31T13:09:49.262Z"
     }
   ],
   "gold_rush": {
