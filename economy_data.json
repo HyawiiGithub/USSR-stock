@@ -137,7 +137,7 @@
     },
     "860203156222902332": {
       "username": "Google Giggles",
-      "cash": 1650,
+      "cash": 1856,
       "bank": 3140,
       "resources": {
         "Coal": 7,
@@ -133395,14 +133395,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2075,
+      "funds": 1869,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 116262,
-      "market_cap": 116262,
+      "share_price": 116213,
+      "market_cap": 116213,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -133428,24 +133428,23 @@
         }
       },
       "inventory": {
-        "Gold": 4,
+        "Gold": 5,
         "Uranium": 13,
         "Zinc": 67,
-        "Coal": 7,
-        "Copper": 9,
+        "Coal": 8,
+        "Copper": 10,
         "Lead": 35,
         "Gold Bar": 5,
         "Aluminium": 16,
         "Uranium Rod": 2,
-        "Wheat": 196,
-        "Iron Ore": 3,
+        "Wheat": 200,
+        "Iron Ore": 4,
         "Aluminium Ore": 10,
         "Iron Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-08-30T19:36:07.400Z",
+      "last_collect": "2026-08-31T15:25:32.662Z",
       "price_history": [
-        98010,
         98120,
         98120,
         98440,
@@ -133544,7 +133543,8 @@
         116403,
         116583,
         116641,
-        116262
+        116262,
+        116213
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -133747,8 +133747,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 98660,
-      "market_cap": 98660,
+      "share_price": 100258,
+      "market_cap": 100258,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -133764,25 +133764,24 @@
         }
       },
       "inventory": {
-        "Uranium": 24,
+        "Uranium": 9,
         "Coal": 64,
         "Gold Bar": 7,
         "Canned Food": 5,
         "Bread": 15,
         "Fish": 22,
-        "Wheat": 65,
+        "Wheat": 76,
         "Sugar": 7,
         "Canned Fish": 1,
         "Cake": 1,
         "Refined Fuel": 2,
         "Iron Ore": 5,
         "Oil": 1,
-        "Lead": 10
+        "Uranium Rod": 5
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T11:43:25.337Z",
       "price_history": [
-        91649,
         91635,
         91643,
         91651,
@@ -133881,7 +133880,8 @@
         98187,
         98251,
         98242,
-        98660
+        98660,
+        100258
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133937,7 +133937,7 @@
         "Uranium": 4,
         "Oil": 77,
         "Gold": 8,
-        "Wheat": 190
+        "Wheat": 200
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T13:28:14.075Z",
@@ -134217,16 +134217,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 1,
-      "change_percent": 1.3314868908174902,
-      "recorded_at": "2026-08-31T10:54:46.879Z"
-    },
-    {
-      "price": 1,
-      "change_percent": 0.606103583923662,
-      "recorded_at": "2026-08-31T10:59:47.010Z"
-    },
     {
       "price": 1,
       "change_percent": 0.1782162229734926,
@@ -134716,30 +134706,40 @@
       "price": 10,
       "change_percent": 5.723619422314082,
       "recorded_at": "2026-08-31T15:24:34.079Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.729180457703356,
+      "recorded_at": "2026-08-31T15:25:16.564Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.568257882910226,
+      "recorded_at": "2026-08-31T15:25:33.216Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
-    "Brezhnev Auto Factory",
-    "Stalin Tractor Plant",
-    "Red Star Steelworks",
+  "factory_names": [
     "Soviet Iron Foundry",
+    "Lenin Machine Works",
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Ural Heavy Industries",
-    "Khrushchev Agricultural",
-    "Volga Shipbuilding",
-    "Lenin Machine Works"
+    "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6640816616858431,
+  "inflation": 0.7467414214907875,
   "money_printed": 263,
-  "total_bank_reserves": 181549,
+  "total_bank_reserves": 181569,
   "inflation_history": [
-    0.07414885301558719,
     0.09717595479511598,
     0.09245802928730883,
     0.08222291048020884,
@@ -134838,7 +134838,8 @@
     0.6144410620507302,
     0.6433730968441669,
     0.5627542911654996,
-    0.6640816616858431
+    0.6640816616858431,
+    0.7467414214907875
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134910,37 +134911,37 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3049639497367307,
+    "Fuel": 1.3159083712561448,
     "Cake": 1.3962349940209222,
     "Bread": 1.3461933250004359,
-    "Copper Ingot": 1.3591813915859565,
-    "Iron Ingot": 1.3653624459347182,
-    "Steel Ingot": 1.316950371515941,
-    "Gold Bar": 1.375579493164989,
-    "Aluminium Ingot": 1.4135046018312474,
+    "Copper Ingot": 1.3633377137328297,
+    "Iron Ingot": 1.3698301774446058,
+    "Steel Ingot": 1.3203859187172924,
+    "Gold Bar": 1.373961040688534,
+    "Aluminium Ingot": 1.4124242336847477,
     "Timber Planks": 1.4038525905162802,
     "Bricks": 1.4120099255926,
-    "Concrete": 1.4240270224673164,
+    "Concrete": 1.4221048606699311,
     "Glass": 1.412272338543563,
     "Steel Beam": 1.4124741748255558,
     "Machine Parts": 1.4119939664643604,
-    "Refined Fuel": 1.3825358681282662,
+    "Refined Fuel": 1.384390266289484,
     "Uranium Rod": 1.404675091745794,
     "Reactor Core": 1.4124161427201836,
     "Circuit Board": 1.4121813564202343,
-    "Flour": 1.41303995092126,
+    "Flour": 1.4119967548475592,
     "Sugar": 1.3807466801940396,
-    "Wine": 1.413504943867516,
-    "Canned Food": 1.2566526094295634,
-    "Canned Fish": 1.3515264267400962,
-    "Smoked Fish": 1.3902260278499292,
-    "Fish Stew": 1.420828293631814,
+    "Wine": 1.4124245483581148,
+    "Canned Food": 1.2746597339222583,
+    "Canned Fish": 1.361754988396599,
+    "Smoked Fish": 1.3926695208874469,
+    "Fish Stew": 1.4191620301412688,
     "Peat Fuel": 1.4046179104454581,
     "Gas Fuel": 1.4120099255926,
-    "Fertilizer": 1.4154119163852623,
-    "Cotton Fabric": 1.4134648242376096,
-    "Manganese Alloy": 1.4171894919579526,
-    "Sunflower Oil": 1.4138378196690737,
+    "Fertilizer": 1.4141789630744412,
+    "Cotton Fabric": 1.4123876382986007,
+    "Manganese Alloy": 1.4158143326013164,
+    "Sunflower Oil": 1.4127307940955478,
     "Linen": 1.4115290826653417,
     "Corn Meal": 1.41212710002688,
     "Tea Pack": 1.41212710002688,
@@ -137140,13 +137141,16 @@
       "username": "seniormanulos",
       "action": "setsalary",
       "details": "Soviet Agriculture director=0%"
+    },
+    {
+      "at": "2026-08-31T15:25:32.662Z",
+      "by": "860203156222902332",
+      "username": "erushim",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽206 salaries ceo 860203156222902332 ₽103, director 860203156222902332 ₽103"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 248064,
-      "at": "2026-08-31T07:29:47.229Z"
-    },
     {
       "total": 248064,
       "at": "2026-08-31T07:34:47.228Z"
@@ -137542,6 +137546,10 @@
     {
       "total": 249796,
       "at": "2026-08-31T15:20:16.696Z"
+    },
+    {
+      "total": 249886,
+      "at": "2026-08-31T15:25:16.754Z"
     }
   ],
   "gold_rush": {
