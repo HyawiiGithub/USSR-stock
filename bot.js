@@ -910,8 +910,21 @@ function getGSIPrice() {
 function updateGSI(eventImpact = 0) {
     const data = loadData();
     const current = getGSIPrice();
-    const change = (Math.random() * 2 - 1) * 0.015 + eventImpact + (getInflation() / 1000);
-    const newPrice = Math.max(1, Math.floor(current * (1 + change)));
+    // Work activity boost: recent work in last hour pushes GSI up (0.1% per 10 works)
+    let workBoost = 0;
+    try {
+        const hourAgo = Date.now() - 3600000;
+        let recentWorks = 0;
+        for (const u of Object.values(data.users || {})) {
+            if (u.last_work && new Date(u.last_work).getTime() > hourAgo) recentWorks++;
+        }
+        // also count total work_count delta? use recentWorks
+        workBoost = Math.min(0.01, recentWorks * 0.0005); // max 1% per 5min if 20+ workers active
+    } catch {}
+    // Reduced volatility 1.5%→0.5% + work boost + inflation bias, with mean reversion to 100
+    const reversion = (100 - current) * 0.0005; // pulls slowly to 100
+    const change = (Math.random() * 2 - 1) * 0.005 + eventImpact + (getInflation() / 2000) + workBoost + reversion;
+    const newPrice = Math.max(10, Math.floor(current * (1 + change)));
     data.gsi_history.push({
         "price": newPrice,
         "change_percent": change * 100,
@@ -3973,6 +3986,7 @@ if (command === 'foundcompany') {
         data.companies[companyId] = company;
         saveData(data);
         const newPrice = updateCompanyPrice(companyId);
+        try { updateGSI(0.001); } catch {}
         
         const embed = new EmbedBuilder()
             .setTitle(`📦 Collected! ${event.emoji}`)
@@ -4485,6 +4499,8 @@ if (command === 'foundcompany') {
         saveData(data);
 
         updateCompanyPrice(companyId);
+        // GSI boost from work activity (0.2% per work, keeps GSI from flatlining to 1)
+        try { updateGSI(0.002); } catch {}
 
         const ssrEmoji = SSR_REGIONS[userSSR]?.emoji || '🌍';
         const foodNote = workEfficiency < 1 ? `⚠️ No food — 60% yield (need 1🍞)` : `🍞 -1 food (${Object.entries(workFoodConsumed).map(([k,v])=>k+' x'+v).join(', ')||'Wheat x1'})`;
@@ -5419,6 +5435,7 @@ if (command === 'foundcompany') {
             saveData(curData);
             updateCompanyPrice(sourceId);
             updateCompanyPrice(targetId);
+            try { updateGSI(0.001); } catch {}
             const bonusText2 = bonus2 > 0 ? `\n💰 Trade subsidy **+₽${bonus2.toLocaleString()}** (${isCrossRegion2 ? '10% cross-region' : isCrossSSR2 ? '6% cross-SSR' : '3% intra-SSR'})` : '';
             const doneEmbed = new EmbedBuilder()
                 .setTitle('✅ Trade Accepted — Completed')
