@@ -2026,6 +2026,22 @@ client.once(Events.ClientReady, async () => {    console.log(`✅ Logged in as $
     let startupChanged = false;
     if (repairCompanyState(startupData)) startupChanged = true;
     if (applyRemovedResourceCompensation(startupData)) startupChanged = true;
+    // Ensure weekly taxes start NEXT Monday 12:00 CET, not this Monday (user request)
+    if (!startupData.last_weekly_tax) {
+        // set last_weekly_tax to this Monday 12:00 CET so this week's check is skipped
+        const now = new Date();
+        const berlinNow = new Date(now.toLocaleString('en-US', {timeZone: 'Europe/Berlin'}));
+        // find this Monday 12:00 CET
+        const day = berlinNow.getDay(); // 0 Sun
+        const diffToMonday = day === 0 ? -6 : 1 - day; // days to Monday
+        const thisMonday = new Date(berlinNow);
+        thisMonday.setDate(berlinNow.getDate() + diffToMonday);
+        thisMonday.setHours(12,0,0,0);
+        // store as ISO (UTC) but it represents Berlin Monday 12:00
+        startupData.last_weekly_tax = thisMonday.toISOString();
+        startupChanged = true;
+        console.log(`[tax] first weekly tax will be NEXT Monday (skipping this Monday ${thisMonday.toLocaleDateString('en-GB', {timeZone: 'Europe/Berlin'})} 12:00 CET)`);
+    }
     if (startupChanged) {
         saveData(startupData);
         console.log('🔧 Company/state-director data repaired and migrated (incl. compensation)');
