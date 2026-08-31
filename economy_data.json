@@ -134927,7 +134927,7 @@
     "Steel Ingot": 2,
     "Refined Fuel": 1,
     "Iron Ingot": 1,
-    "Canned Food": 10,
+    "Canned Food": 9,
     "Fuel": 6
   },
   "global_consumption": {
@@ -134940,7 +134940,8 @@
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 15,
-    "Smoked Fish": 20
+    "Smoked Fish": 20,
+    "Canned Food": 1
   },
   "consumption_history": [
     {
@@ -135972,6 +135973,11 @@
       "item": "Steel Ingot",
       "qty": 1,
       "at": "2026-08-31T13:49:22.596Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 1,
+      "at": "2026-08-31T14:04:22.523Z"
     }
   ],
   "demand_history": {
@@ -136968,6 +136974,13 @@
         "demand": 1.2284635626482,
         "at": "2026-08-31T12:54:46.605Z",
         "supply": 0
+      }
+    ],
+    "Canned Food": [
+      {
+        "demand": 1.1494197543973146,
+        "at": "2026-08-31T14:04:22.523Z",
+        "supply": 5
       }
     ]
   },
