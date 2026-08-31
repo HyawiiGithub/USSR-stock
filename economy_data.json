@@ -133690,8 +133690,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 178289,
-      "market_cap": 178289,
+      "share_price": 178275,
+      "market_cap": 178275,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -133719,7 +133719,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T01:36:05.168Z",
       "price_history": [
-        172922,
         173082,
         173087,
         173111,
@@ -133818,7 +133817,8 @@
         178275,
         178206,
         178267,
-        178289
+        178289,
+        178275
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -133984,11 +133984,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 1,
-      "change_percent": 1.433298118337055,
-      "recorded_at": "2026-08-30T19:39:45.982Z"
-    },
     {
       "price": 1,
       "change_percent": -0.35434731971324285,
@@ -134483,6 +134478,11 @@
       "price": 1,
       "change_percent": 1.0386006216824097,
       "recorded_at": "2026-08-31T03:19:46.266Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -1.0120202498956148,
+      "recorded_at": "2026-08-31T03:24:46.374Z"
     }
   ],
   "factory_names": [
@@ -134724,12 +134724,12 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Timber Planks": 6
+    "Timber Planks": 5
   },
   "global_consumption": {
     "Copper Ingot": 47,
     "Steel Ingot": 12,
-    "Timber Planks": 96,
+    "Timber Planks": 97,
     "Refined Fuel": 39,
     "Fuel": 9,
     "Iron Ingot": 12,
@@ -135668,6 +135668,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-08-31T03:09:46.031Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-08-31T03:24:45.930Z"
     }
   ],
   "demand_history": {
@@ -135896,11 +135901,6 @@
       }
     ],
     "Timber Planks": [
-      {
-        "demand": 1.0171818834134265,
-        "at": "2026-08-27T16:44:06.272Z",
-        "supply": 6
-      },
       {
         "demand": 1.0302667598639126,
         "at": "2026-08-27T16:59:06.272Z",
@@ -136194,6 +136194,11 @@
       {
         "demand": 1.1956552072553976,
         "at": "2026-08-31T03:09:46.031Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2063310783454637,
+        "at": "2026-08-31T03:24:45.930Z",
         "supply": 0
       }
     ],
@@ -136639,10 +136644,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 237844,
-      "at": "2026-08-30T19:54:46.249Z"
-    },
-    {
       "total": 237859,
       "at": "2026-08-30T19:59:46.230Z"
     },
@@ -137037,6 +137038,10 @@
     {
       "total": 247794,
       "at": "2026-08-31T03:19:47.187Z"
+    },
+    {
+      "total": 247809,
+      "at": "2026-08-31T03:24:47.190Z"
     }
   ],
   "gold_rush": {
