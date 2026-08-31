@@ -417,7 +417,7 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 405,
+      "cash": 425,
       "bank": 3805,
       "resources": {
         "Coal": 1
@@ -427,8 +427,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-31T12:08:54.592Z",
-      "work_count": 96,
+      "last_work": "2026-08-31T17:57:29.875Z",
+      "work_count": 97,
       "last_claim": "2026-08-27T08:31:17.592Z",
       "last_collect": null,
       "join_date": "2026-08-23T17:33:27.267416",
@@ -133796,14 +133796,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 5903,
+      "funds": 5898,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 76628,
-      "market_cap": 76628,
+      "share_price": 76693,
+      "market_cap": 76693,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -133825,13 +133825,13 @@
         "Canned Food": 5,
         "Bread": 25,
         "Fish": 22,
-        "Wheat": 72,
+        "Wheat": 71,
         "Sugar": 19,
         "Canned Fish": 1,
         "Cake": 1,
         "Iron Ore": 9,
         "Uranium Rod": 2,
-        "Copper": 5,
+        "Copper": 6,
         "Fuel": 1,
         "Oil": 5,
         "Gold": 1
@@ -133839,7 +133839,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T17:43:33.433Z",
       "price_history": [
-        94016,
         94024,
         94088,
         94214,
@@ -133938,7 +133937,8 @@
         72820,
         75600,
         76633,
-        76628
+        76628,
+        76693
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133970,8 +133970,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 183663,
-      "market_cap": 183663,
+      "share_price": 183793,
+      "market_cap": 183793,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -133999,7 +133999,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T13:28:14.075Z",
       "price_history": [
-        176075,
         176114,
         176204,
         176257,
@@ -134098,7 +134097,8 @@
         183647,
         183683,
         183650,
-        183663
+        183663,
+        183793
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -134273,21 +134273,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 10,
-      "change_percent": 5.5056813923307635,
-      "recorded_at": "2026-08-31T15:28:53.239Z"
-    },
-    {
-      "price": 10,
-      "change_percent": 5.581147630416887,
-      "recorded_at": "2026-08-31T15:29:32.850Z"
-    },
-    {
-      "price": 10,
-      "change_percent": 5.44109100106135,
-      "recorded_at": "2026-08-31T15:29:40.222Z"
-    },
     {
       "price": 10,
       "change_percent": 5.265427226465387,
@@ -134772,6 +134757,21 @@
       "price": 12,
       "change_percent": 4.607912028807363,
       "recorded_at": "2026-08-31T17:52:33.824Z"
+    },
+    {
+      "price": 12,
+      "change_percent": 5.387382033118902,
+      "recorded_at": "2026-08-31T17:57:04.506Z"
+    },
+    {
+      "price": 12,
+      "change_percent": 5.678518696529731,
+      "recorded_at": "2026-08-31T17:57:30.463Z"
+    },
+    {
+      "price": 12,
+      "change_percent": 4.576812234285452,
+      "recorded_at": "2026-08-31T17:57:33.765Z"
     }
   ],
   "factory_names": [
@@ -135029,7 +135029,7 @@
     "Steel Ingot": 1,
     "Canned Food": 8,
     "Fuel": 6,
-    "Uranium Rod": 6,
+    "Uranium Rod": 4,
     "Refined Fuel": 2,
     "Cake": 10
   },
@@ -135045,7 +135045,7 @@
     "Cake": 15,
     "Smoked Fish": 20,
     "Canned Food": 2,
-    "Uranium Rod": 3,
+    "Uranium Rod": 5,
     "Canned Fish": 2
   },
   "consumption_history": [
@@ -136133,6 +136133,11 @@
       "item": "Uranium Rod",
       "qty": 2,
       "at": "2026-08-31T17:42:33.348Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 2,
+      "at": "2026-08-31T17:57:33.294Z"
     }
   ],
   "demand_history": {
@@ -137183,6 +137188,11 @@
         "demand": 1.2879909358015218,
         "at": "2026-08-31T17:42:33.349Z",
         "supply": 2
+      },
+      {
+        "demand": 1.302546462837073,
+        "at": "2026-08-31T17:57:33.294Z",
+        "supply": 2
       }
     ],
     "Canned Fish": [
@@ -137321,10 +137331,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 231829,
-      "at": "2026-08-31T09:39:47.340Z"
-    },
     {
       "total": 231971,
       "at": "2026-08-31T09:44:47.300Z"
@@ -137720,6 +137726,10 @@
     {
       "total": 264116,
       "at": "2026-08-31T17:52:33.949Z"
+    },
+    {
+      "total": 264156,
+      "at": "2026-08-31T17:57:33.940Z"
     }
   ],
   "gold_rush": null,
