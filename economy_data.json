@@ -134275,11 +134275,6 @@
   "gsi_history": [
     {
       "price": 10,
-      "change_percent": 4.887031043913488,
-      "recorded_at": "2026-08-31T15:20:16.493Z"
-    },
-    {
-      "price": 10,
       "change_percent": 5.932012253159852,
       "recorded_at": "2026-08-31T15:22:40.702Z"
     },
@@ -134772,6 +134767,11 @@
       "price": 12,
       "change_percent": 7.996209634123986,
       "recorded_at": "2026-08-31T17:42:32.646Z"
+    },
+    {
+      "price": 12,
+      "change_percent": 4.669547196221925,
+      "recorded_at": "2026-08-31T17:42:33.739Z"
     }
   ],
   "factory_names": [
@@ -134792,11 +134792,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6769819706333168,
+  "inflation": 0.657643412443522,
   "money_printed": 263,
   "total_bank_reserves": 194702,
   "inflation_history": [
-    0.08065234385798396,
     0.09239978229991261,
     0.06751865507329505,
     0.11606364858877895,
@@ -134895,7 +134894,8 @@
     0.6451304248516081,
     0.6589616693573622,
     0.7271260080765334,
-    0.6769819706333168
+    0.6769819706333168,
+    0.657643412443522
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134967,28 +134967,28 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3570622684709452,
+    "Fuel": 1.3584943757718135,
     "Cake": 1.3962349940209222,
     "Bread": 1.3461933250004359,
-    "Copper Ingot": 1.3947919488726543,
+    "Copper Ingot": 1.3960939616544907,
     "Iron Ingot": 1.3844294940424529,
-    "Steel Ingot": 1.3790637011327032,
-    "Gold Bar": 1.3603311989763347,
+    "Steel Ingot": 1.383762166702865,
+    "Gold Bar": 1.359039586779158,
     "Aluminium Ingot": 1.4124242336847477,
     "Timber Planks": 1.4043830462180418,
     "Bricks": 1.4120099255926,
-    "Concrete": 1.4212222247954793,
+    "Concrete": 1.4195244468118409,
     "Glass": 1.4124245483581148,
     "Steel Beam": 1.4115341706786682,
     "Machine Parts": 1.4119939664643604,
-    "Refined Fuel": 1.3656957837669292,
-    "Uranium Rod": 1.2729346046486967,
-    "Reactor Core": 1.4147740654882874,
-    "Circuit Board": 1.4134497764020029,
-    "Flour": 1.4133378423151555,
+    "Refined Fuel": 1.3703117270859828,
+    "Uranium Rod": 1.2879909358015218,
+    "Reactor Core": 1.4135921402492244,
+    "Circuit Board": 1.4123737942898427,
+    "Flour": 1.412270814929943,
     "Sugar": 1.3807466801940396,
     "Wine": 1.4124245483581148,
-    "Canned Food": 1.3698748474248432,
+    "Canned Food": 1.3727549727779347,
     "Canned Fish": 1.3916266392242198,
     "Smoked Fish": 1.402669520887447,
     "Fish Stew": 1.4116189928120628,
@@ -135002,7 +135002,7 @@
     "Corn Meal": 1.41212710002688,
     "Tea Pack": 1.41212710002688,
     "Citrus Juice": 1.4120099255926,
-    "Antimony Alloy": 1.414683928080763,
+    "Antimony Alloy": 1.413509213834302,
     "Molybdenum Rod": 1.41212710002688,
     "Aluminium Sheet": 1.4122153066363228,
     "Shale Oil": 1.403835026518533
@@ -135029,7 +135029,7 @@
     "Steel Ingot": 1,
     "Canned Food": 8,
     "Fuel": 6,
-    "Uranium Rod": 8,
+    "Uranium Rod": 6,
     "Refined Fuel": 2
   },
   "global_consumption": {
@@ -135044,7 +135044,7 @@
     "Cake": 15,
     "Smoked Fish": 20,
     "Canned Food": 2,
-    "Uranium Rod": 1,
+    "Uranium Rod": 3,
     "Canned Fish": 2
   },
   "consumption_history": [
@@ -136127,6 +136127,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-08-31T17:27:32.900Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 2,
+      "at": "2026-08-31T17:42:33.348Z"
     }
   ],
   "demand_history": {
@@ -137172,6 +137177,11 @@
         "demand": 1.3383837792356519,
         "at": "2026-08-31T15:55:59.026Z",
         "supply": 8
+      },
+      {
+        "demand": 1.2879909358015218,
+        "at": "2026-08-31T17:42:33.349Z",
+        "supply": 2
       }
     ],
     "Canned Fish": [
@@ -137310,10 +137320,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 248398,
-      "at": "2026-08-31T09:24:47.464Z"
-    },
     {
       "total": 248413,
       "at": "2026-08-31T09:29:47.304Z"
@@ -137709,6 +137715,10 @@
     {
       "total": 264016,
       "at": "2026-08-31T17:37:33.610Z"
+    },
+    {
+      "total": 264036,
+      "at": "2026-08-31T17:42:33.836Z"
     }
   ],
   "gold_rush": null,
