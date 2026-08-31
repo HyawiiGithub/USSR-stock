@@ -410,7 +410,20 @@ function defaultData() {
         "trade_schedules": [], // recurring trades: {id, fromCompanyId, toCompanyId, item, qty, interval: 'hourly'|'daily'|'weekly', nextAt, createdBy}
         "owner_logs": [], // audit: {at, by, username, action, details}
         "total_rubles_history": [], // 100 pts: total rubles of all citizens (cash+bank) even those with 0
-        "gold_rush": null // {ssr, factor, expiresAt, startedBy, startedAt, durationHours, percent} — configurable 24-48h, 25-100% gold boost
+        "gold_rush": null, // {ssr, factor, expiresAt, startedBy, startedAt, durationHours, percent} — configurable 24-48h, 25-100% gold boost
+        "five_year_plan": {
+            startAt: new Date().toISOString(),
+            endAt: new Date(Date.now() + 5*24*3600*1000).toISOString(), // 5 days for game (represents 5 years)
+            targets: {
+                circulation: 600000, // total rubles in circulation
+                goldBacking: 60, // % gold backing
+                production: 3000, // total inventory units
+                gsi: 150, // GSI index
+                growth: 10 // % growth vs plan start (overall economy growth)
+            },
+            startValues: null, // set on creation: {circulation, goldBacking, production, gsi}
+            rewards: { bonus: "Shock workers honoured + 10% production boost if fulfilled" }
+        }
     };
 }
 
@@ -656,6 +669,84 @@ function updateTotalRublesHistory(data) {
     data.total_rubles_history.push({ total, at: new Date().toISOString() });
     if (data.total_rubles_history.length > 100) data.total_rubles_history = data.total_rubles_history.slice(-100);
     return total;
+}
+function getTotalProduction(data) {
+    let total = 0;
+    for (const c of Object.values(data.companies||{})) {
+        for (const qty of Object.values(c.inventory||{})) total += qty;
+    }
+    return total;
+}
+function getFiveYearPlanProgress(data) {
+    const plan = data.five_year_plan;
+    if (!plan || !plan.targets) return null;
+    const totalRubles = getTotalRubles(data);
+    const goldBacking = getGoldBackingRatio(data);
+    const production = getTotalProduction(data);
+    const gsi = getGSIPrice ? getGSIPrice() : (data.gsi_history?.[data.gsi_history.length-1]?.price||100);
+    const targets = plan.targets;
+    const start = plan.startValues || { circulation: totalRubles, goldBacking, production, gsi };
+    // growth % vs start (overall economy growth)
+    const growthCurrent = start.circulation ? ((totalRubles - start.circulation)/start.circulation*100) : 0;
+    const growthTarget = targets.growth ?? 10;
+    const growthPct = Math.min(120, Math.round(growthCurrent/growthTarget*100));
+    const progress = {
+        circulation: { current: totalRubles, target: targets.circulation, pct: Math.min(120, Math.round(totalRubles/targets.circulation*100)) },
+        goldBacking: { current: goldBacking, target: targets.goldBacking, pct: Math.min(120, Math.round(goldBacking/targets.goldBacking*100)) },
+        production: { current: production, target: targets.production, pct: Math.min(120, Math.round(production/targets.production*100)) },
+        gsi: { current: gsi, target: targets.gsi, pct: Math.min(120, Math.round(gsi/targets.gsi*100)) },
+        growth: { current: growthCurrent, target: growthTarget, pct: growthPct },
+    };
+    const overall = Math.round((progress.circulation.pct + progress.goldBacking.pct + progress.production.pct + progress.gsi.pct + progress.growth.pct)/5);
+    return { progress, overall, plan };
+}
+function payCompanySalaries(data, companyId) {
+    const company = data.companies[companyId];
+    if (!company || !company.salary_config) return { paid: [], totalPaid: 0 };
+    const cfg = company.salary_config;
+    let totalPaid = 0;
+    const paid = [];
+    const fundsBefore = company.funds || 0;
+    if (fundsBefore <= 0) return { paid, totalPaid };
+    // CEO
+    if (cfg.ceo > 0) {
+        const ceoId = company.owner_id && !company.is_state_owned ? company.owner_id : (company.director_id || null);
+        if (ceoId) {
+            const amt = Math.floor(fundsBefore * cfg.ceo / 100);
+            if (amt > 0 && company.funds >= amt) {
+                const u = ensureUserRecord(data, ceoId);
+                u.cash = (u.cash||0) + amt;
+                company.funds -= amt;
+                totalPaid += amt;
+                paid.push({ role: 'ceo', userId: ceoId, amount: amt });
+            }
+        }
+    }
+    // Director (state only, if different from CEO)
+    if (cfg.director > 0 && company.is_state_owned && company.director_id) {
+        const amt = Math.floor(fundsBefore * cfg.director / 100);
+        if (amt > 0 && company.funds >= amt) {
+            const u = ensureUserRecord(data, company.director_id);
+            u.cash = (u.cash||0) + amt;
+            company.funds -= amt;
+            totalPaid += amt;
+            paid.push({ role: 'director', userId: company.director_id, amount: amt });
+        }
+    }
+    // Managers
+    if (cfg.manager > 0 && Array.isArray(company.managers) && company.managers.length) {
+        for (const mid of company.managers) {
+            const amt = Math.floor(fundsBefore * cfg.manager / 100);
+            if (amt > 0 && company.funds >= amt) {
+                const u = ensureUserRecord(data, mid);
+                u.cash = (u.cash||0) + amt;
+                company.funds -= amt;
+                totalPaid += amt;
+                paid.push({ role: 'manager', userId: mid, amount: amt });
+            }
+        }
+    }
+    return { paid, totalPaid };
 }
 
 function calculateCompanyValue(company) {
@@ -1419,6 +1510,29 @@ function repairCompanyState(data) {
         data.gold_rush = null;
         changed = true;
     }
+    if (!data.five_year_plan || typeof data.five_year_plan !== 'object' || !data.five_year_plan.targets) {
+        data.five_year_plan = {
+            startAt: new Date().toISOString(),
+            endAt: new Date(Date.now() + 5*24*3600*1000).toISOString(),
+            targets: { circulation: 600000, goldBacking: 60, production: 3000, gsi: 150, growth: 10 },
+            startValues: null,
+            rewards: { bonus: "Shock workers honoured + 10% production boost if fulfilled" }
+        };
+        changed = true;
+    }
+    if (data.five_year_plan.targets.growth === undefined) { data.five_year_plan.targets.growth = 10; changed = true; }
+    if (!data.five_year_plan.startValues) {
+        // snapshot start values for growth calc
+        try {
+            data.five_year_plan.startValues = {
+                circulation: getTotalRubles(data),
+                goldBacking: getGoldBackingRatio(data),
+                production: getTotalProduction(data),
+                gsi: getGSIPrice ? getGSIPrice() : (data.gsi_history?.[data.gsi_history.length-1]?.price||100)
+            };
+            changed = true;
+        } catch {}
+    }
 
     for (const [userId] of Object.entries(data.users || {})) {
         ensureUserRecord(data, userId);
@@ -1458,6 +1572,17 @@ function repairCompanyState(data) {
         if (company.work_food === undefined) { company.work_food = "auto"; changed = true; }
         if (company.work_food && company.work_food !== "auto" && !FOOD_VALUES[canonRes(company.work_food)] && !FOOD_VALUES[company.work_food]) {
             company.work_food = "auto"; changed = true;
+        }
+        if (!company.salary_config || typeof company.salary_config !== 'object') {
+            company.salary_config = { ceo: 5, director: 5, manager: 2 };
+            changed = true;
+        }
+        // normalize salary_config 0-20
+        for (const role of ['ceo','director','manager']) {
+            if (company.salary_config[role] === undefined) company.salary_config[role] = role==='manager'?2:5;
+            let v = parseInt(company.salary_config[role]);
+            if (isNaN(v) || v<0) v=0; if(v>20) v=20;
+            if (company.salary_config[role] !== v) { company.salary_config[role]=v; changed=true; }
         }
         // FOOD SEED: every company starts with 200 food (200 Wheat = 200🍞) so -collect doesn't instantly starve. Was 0 before -> weird/unbalanced
         const foodNow = getFoodStock(company.inventory);
@@ -1639,7 +1764,7 @@ function generateHelpPages() {
         .setColor(0x5865F2)
         .addFields(
             { name: '🏢 Company', value: '`-foundcompany <name>` - Start a company\n`-company [name|ticker]` - View company\n`-companies` - List all companies\n`-companyinventory [name]` - Company inventory\n`-companyrankings` - Rankings by market cap\n`-companygraph <name>` - Price graph (100)\n`-specialize <extraction|agriculture|production>` - Set spec (+25% bonus)', inline: false },
-            { name: '👷 Employment', value: '`-hire @user` - Hire (CEO/Director/Manager)\n`-fire @user` - Fire (Owner/Director)\n`-employees [all|company]` - List workers\n`-resign` / `-quit` / `-leave` / `-quitjob` - Quit job\n`-setwage <amount>` - Set wage (CEO/Director; base 15 printed)', inline: false },
+            { name: '👷 Employment', value: '`-hire @user` - Hire (CEO/Director/Manager)\n`-fire @user` - Fire (Owner/Director)\n`-employees [all|company]` - List workers\n`-resign` / `-quit` / `-leave` / `-quitjob` - Quit job\n`-setwage <amount>` - Set wage (CEO/Director; base 15 printed)\n`-setsalary <ceo|director|manager> <0-20>` - CEO/Director sets % salary from funds\n`-paysalaries` - Pay CEO/Director/Manager salaries now (also on -collect)', inline: false },
             { name: '🤝 Management', value: '`-appointmanager @user` / `-addmanager` - Appoint helper (hire/fire/collect)\n`-removemanager @user` / `-delmanager` - Remove helper\n`-managers [company]` / `-listmanagers` - List managers', inline: false }
         )
         .setFooter({ text: 'Page 1/8' });
@@ -1681,7 +1806,7 @@ function generateHelpPages() {
         )
         .setFooter({ text: 'Page 4/8' });
     pages.push(p4);
-    // Page 5 - Economy Graphs
+    // Page 5 - Economy Graphs + Five Year Plan
     let ssrText = '';
     for (const [name, data] of Object.entries(SSR_REGIONS)) {
         ssrText += `${data.emoji} **${name}**: ${data.resources.join(', ')}\n`;
@@ -1693,6 +1818,7 @@ function generateHelpPages() {
         .addFields(
             { name: '📈 Indices', value: '`-gsi` - GSI index\n`-gsigraph` - GSI graph\n`-inflation` - Inflation rate\n`-goldstandard` - Gold backing\n`-econstats` - Full stats\n`-changelogs` - Bot log', inline: false },
             { name: '📦 Market & Demand', value: '`-market [item]` / `-aistore` / `-store` / `-supply` - Market + AI Store stock\n`-demand [item]` / `-globaldemand` / `-demandgraph` - Demand 60-150% balanced by employed\n`-consumption [item]` / `-serverconsumption` / `-consumptiongraph` - Server consumption', inline: false },
+            { name: '📜 Five Year Plan', value: '`-plan` / `-fiveyearplan` - View plan (circulation, gold, production, GSI)\n`-setplan <circ> <gold%> <prod> <gsi>` - Owner sets targets (5 days)', inline: false },
             { name: '💡 Tip', value: 'Demand recovers 6h half-life; low supply+many employed = high demand (1.4×). AI Store 1-2 bought/15m → consumption.', inline: false }
         )
         .setFooter({ text: 'Page 5/8' });
@@ -3658,6 +3784,15 @@ if (command === 'foundcompany') {
             company.inventory[r] = (company.inventory[r] || 0) + qty;
         }
         if (totalRevenue > 0) company.funds = (company.funds || 0) + totalRevenue;
+        // Salaries: % from company funds to CEO/Director/Managers (set via -setsalary)
+        let salaryInfo = null;
+        try {
+            const sal = payCompanySalaries(data, companyId);
+            if (sal.totalPaid > 0) {
+                salaryInfo = sal;
+                logOwnerAction(data, userId, message.author.username, 'collect-salaries', `${company.name} paid ₽${sal.totalPaid} salaries ${sal.paid.map(p=>`${p.role} ${p.userId} ₽${p.amount}`).join(', ')}`);
+            }
+        } catch {}
         company.last_collect = new Date().toISOString();
         data.companies[companyId] = company;
         saveData(data);
@@ -3674,6 +3809,9 @@ if (command === 'foundcompany') {
         
         if (Object.keys(totalResources).length > 0) {
             embed.addFields({ name: 'Produced', value: Object.entries(totalResources).map(([r, qty]) => `• ${qty}x ${r}`).join('\n'), inline: false });
+        }
+        if (salaryInfo && salaryInfo.totalPaid > 0) {
+            embed.addFields({ name: '💼 Salaries Paid', value: salaryInfo.paid.map(p=>`• ${p.role} <@${p.userId}> ₽${p.amount.toLocaleString()}`).join('\n') + `\nTotal ₽${salaryInfo.totalPaid.toLocaleString()} from funds`, inline: false });
         }
         if (Object.keys(consumed).length > 0) {
             embed.addFields({ name: 'Consumed', value: Object.entries(consumed).map(([r, qty]) => `• ${qty}x ${r}`).join('\n'), inline: false });
@@ -5929,6 +6067,7 @@ if (command === 'foundcompany') {
                 "price_history": [100], "is_state_owned": true,
                 "director_id": null,
                 "specialization": specMap[sc.name] || "extraction",
+                "salary_config": { "ceo": 5, "director": 5, "manager": 2 },
                 "managers": []
             };
             for (const b of sc.buildings) {
@@ -6543,6 +6682,108 @@ if (command === 'foundcompany') {
         return;
     }
 
+    // ============================================================
+    // SALARIES — % from company funds, setable by CEO/Director
+    // ============================================================
+    if (command === 'setsalary' || command === 'setsalaries' || command === 'salary') {
+        const managed = getManagedCompany(userId, loadData());
+        if (!managed || !['owner','director'].includes(managed.role)) {
+            await message.reply('❌ Only **CEO** (private) or **Director** (state) can set salaries!');
+            return;
+        }
+        if (args.length < 2) {
+            const cfg = managed.company.salary_config || { ceo:5, director:5, manager:2 };
+            await message.reply(`💼 **${managed.company.name}** salaries: CEO ${cfg.ceo}% | Director ${cfg.director}% | Manager ${cfg.manager}% (each manager)\nUsage: \`-setsalary <ceo|director|manager> <0-20>\` e.g. \`-setsalary ceo 7\` — % of company funds paid on \`-collect\` and \`-paysalaries\``);
+            return;
+        }
+        const role = args[0].toLowerCase();
+        if (!['ceo','director','manager'].includes(role)) { await message.reply('❌ Role must be `ceo`, `director`, or `manager`'); return; }
+        const pct = parseInt(args[1]);
+        if (isNaN(pct) || pct < 0 || pct > 20) { await message.reply('❌ Percent must be 0-20'); return; }
+        const data = loadData();
+        const fresh = getManagedCompany(userId, data);
+        if (!fresh) { await message.reply('❌ Company not found'); return; }
+        if (!fresh.company.salary_config) fresh.company.salary_config = { ceo:5, director:5, manager:2 };
+        fresh.company.salary_config[role] = pct;
+        data.companies[fresh.companyId] = fresh.company;
+        logOwnerAction(data, userId, message.author.username, 'setsalary', `${fresh.company.name} ${role}=${pct}%`);
+        saveData(data);
+        await message.reply(`✅ **${fresh.company.name}** salary for **${role}** set to **${pct}%** of funds (paid on \`-collect\`/\`-paysalaries\`)`);
+        return;
+    }
+    if (command === 'paysalaries' || command === 'paysalary') {
+        const managed = getManagedCompany(userId, loadData());
+        if (!managed || !['owner','director','manager'].includes(managed.role)) {
+            await message.reply('❌ Only CEO/Director/Manager can pay salaries!');
+            return;
+        }
+        const data = loadData();
+        const fresh = getManagedCompany(userId, data);
+        if (!fresh) { await message.reply('❌ Company not found'); return; }
+        const result = payCompanySalaries(data, fresh.companyId);
+        if (result.totalPaid === 0) {
+            await message.reply(`💼 **${fresh.company.name}** has no salaries to pay (funds ₽${(fresh.company.funds||0).toLocaleString()} or all 0%) — set with \`-setsalary\``);
+            return;
+        }
+        data.companies[fresh.companyId] = data.companies[fresh.companyId]; // already updated in pay
+        logOwnerAction(data, userId, message.author.username, 'paysalaries', `${fresh.company.name} paid ₽${result.totalPaid} to ${result.paid.map(p=>`${p.role} <@${p.userId}> ₽${p.amount}`).join(', ')}`);
+        saveData(data);
+        const lines = result.paid.map(p=> `• ${p.role} <@${p.userId}> — ₽${p.amount.toLocaleString()}`).join('\n');
+        await message.reply({ embeds: [new EmbedBuilder().setTitle(`💼 Salaries Paid — ${fresh.company.name}`).setDescription(lines).setColor(0xFFD700).addFields({name:'Total Paid', value: `₽${result.totalPaid.toLocaleString()} from funds`, inline:true}, {name:'Remaining Funds', value: `₽${(data.companies[fresh.companyId].funds||0).toLocaleString()}`, inline:true}).setFooter({text: `CEO ${fresh.company.salary_config?.ceo||5}% | Director ${fresh.company.salary_config?.director||5}% | Manager ${fresh.company.salary_config?.manager||2}%`})] });
+        return;
+    }
+
+    // ============================================================
+    // FIVE YEAR PLAN — updated with circulation, gold, production, gsi
+    // ============================================================
+    if (command === 'plan' || command === 'fiveyearplan' || command === 'fiveyear') {
+        const data = loadData();
+        const prog = getFiveYearPlanProgress(data);
+        if (!prog) { await message.reply('❌ No plan data'); return; }
+        const p = prog.progress;
+        const bar = (pct)=> '█'.repeat(Math.min(20, Math.round(pct/5))) + '░'.repeat(20 - Math.min(20, Math.round(pct/5)));
+        const chk = (pct)=> pct>=100 ? '✅' : '⬜';
+        const embed = new EmbedBuilder().setTitle('📜 Five Year Plan — ЦК КПСС').setDescription(`**${new Date(prog.plan.startAt).toLocaleDateString()} → ${new Date(prog.plan.endAt).toLocaleDateString()}**\nOverall **${prog.overall}%** ${prog.overall>=100?'✅ ALL MET':''}`).setColor(prog.overall>=100?0x00FF00:0xFFD700)
+            .addFields(
+                { name: `${chk(p.circulation.pct)} 💰 Circulation ${p.circulation.pct}%`, value: `${bar(p.circulation.pct)}\n${p.circulation.current.toLocaleString()} / ${p.circulation.target.toLocaleString()} ₽ ${p.circulation.pct>=100?'✅':''}`, inline: false },
+                { name: `${chk(p.goldBacking.pct)} 🥇 Gold Backing ${p.goldBacking.pct}%`, value: `${bar(p.goldBacking.pct)}\n${p.goldBacking.current.toFixed(1)}% / ${p.goldBacking.target}% ${p.goldBacking.pct>=100?'✅':''}`, inline: false },
+                { name: `${chk(p.production.pct)} 🏭 Production ${p.production.pct}%`, value: `${bar(p.production.pct)}\n${p.production.current} / ${p.production.target} units ${p.production.pct>=100?'✅':''}`, inline: false },
+                { name: `${chk(p.gsi.pct)} 📈 GSI ${p.gsi.pct}%`, value: `${bar(p.gsi.pct)}\n${p.gsi.current} / ${p.gsi.target} ${p.gsi.pct>=100?'✅':''}`, inline: false },
+                { name: `${chk(p.growth.pct)} 📊 Growth ${p.growth.pct}%`, value: `${bar(p.growth.pct)}\n${p.growth.current.toFixed(1)}% / ${p.growth.target}% required ${p.growth.pct>=100?'✅':''} (vs start)`, inline: false }
+            ).setFooter({text: prog.overall>=100 ? '✅ PLAN FULFILLED — Shock workers honoured!' : 'Central Committee urges: meet quotas! Requirements show ✅ when met.'});
+        await message.reply({ embeds: [embed] });
+        return;
+    }
+    if (command === 'setplan' || command === 'setfiveyearplan') {
+        if (!isBotOwner(userId)) { await message.reply('❌ Owner only!'); return; }
+        if (args.length < 4) {
+            const data = loadData();
+            const plan = data.five_year_plan;
+            await message.reply(`📜 Current plan: circulation ${plan.targets.circulation} ₽, gold ${plan.targets.goldBacking}%, production ${plan.targets.production}, gsi ${plan.targets.gsi}, growth ${plan.targets.growth||10}%\nUsage: \`-setplan <circulation> <gold%> <production> <gsi> [growth%]\` e.g. \`-setplan 800000 70 5000 180 15\``);
+            return;
+        }
+        const circ = parseInt(args[0]), gold = parseInt(args[1]), prod = parseInt(args[2]), gsi = parseInt(args[3]), growth = args[4] ? parseInt(args[4]) : 10;
+        if ([circ,gold,prod,gsi,growth].some(v=>isNaN(v)||v<=0)) { await message.reply('❌ All targets must be positive numbers'); return; }
+        const data = loadData();
+        const startVals = {
+            circulation: getTotalRubles(data),
+            goldBacking: getGoldBackingRatio(data),
+            production: getTotalProduction(data),
+            gsi: getGSIPrice ? getGSIPrice() : (data.gsi_history?.[data.gsi_history.length-1]?.price||100)
+        };
+        data.five_year_plan = {
+            startAt: new Date().toISOString(),
+            endAt: new Date(Date.now() + 5*24*3600*1000).toISOString(),
+            targets: { circulation: circ, goldBacking: gold, production: prod, gsi: gsi, growth: growth },
+            startValues: startVals,
+            rewards: { bonus: "Shock workers honoured" }
+        };
+        logOwnerAction(data, userId, message.author.username, 'setplan', `circulation ${circ}, gold ${gold}%, prod ${prod}, gsi ${gsi}, growth ${growth}%`);
+        saveData(data);
+        await message.reply(`✅ Five Year Plan updated — targets: circulation ${circ.toLocaleString()} ₽, gold ${gold}%, production ${prod}, GSI ${gsi}, growth ${growth}% (5 days) — start snapshot saved`);
+        return;
+    }
+
 });
 
 // ============================================================
@@ -6626,6 +6867,7 @@ client.on(Events.InteractionCreate, async interaction => {
             "price_history": [sharePrice],
             "is_state_owned": false,
             "specialization": null,
+            "salary_config": { "ceo": 5, "director": 5, "manager": 2 },
             "managers": []
         };
         
@@ -6846,14 +7088,14 @@ client.on(Events.MessageCreate, async message => {
         'changelogs', 'collect', 'companies', 'company', 'companygraph', 'companyinventory', 'companyrankings', 'companytrade',
         'consumption', 'consumptiongraph', 'craft', 'craftcompany', 'craftpersonal', 'daily', 'delmanager', 'delowner',
         'delspawnrate', 'demand', 'demandgraph', 'dep', 'deposit', 'econstats', 'employees', 'export',
-        'exportoutside', 'factorydeal', 'fire', 'food', 'fooddemand', 'foodstatus', 'foreignsell', 'formstatecompanies',
+        'exportoutside', 'factorydeal', 'fire', 'fiveyear', 'fiveyearplan', 'food', 'fooddemand', 'foodstatus', 'foreignsell', 'formstatecompanies',
         'foundcompany', 'globalcons', 'globalconsumption', 'globaldemand', 'goldrush', 'goldstandard', 'govcontract', 'gsi', 'gsigraph',
         'help', 'hire', 'inflation', 'inventory', 'invest', 'lb', 'leaderboard', 'leave',
         'listmanagers', 'listowners', 'listschedules', 'logs', 'managers', 'managers_add', 'managers_remove', 'map', 'market',
-        'marketdemand', 'minwage', 'nationalminimumwage', 'owneradd', 'ownerlogs', 'ownerremove', 'owners', 'pay', 'portfolio',
+        'marketdemand', 'minwage', 'nationalminimumwage', 'owneradd', 'ownerlogs', 'ownerremove', 'owners', 'pay', 'paysalaries', 'paysalary', 'plan', 'portfolio',
         'printmoney', 'quit', 'quitjob', 'recipes', 'removebotowner', 'removedirector', 'removemanager', 'removeowner',
-        'removeschedule', 'resetspawnrate', 'resetssrweight', 'resign', 'resources', 'schedulemarket', 'schedules', 'scheduletrade',
-        'sellgsi', 'sellitem', 'sellshares', 'serverconsumption', 'setspawnrate', 'setssrweight', 'setwage', 'setwagefood',
+        'removeschedule', 'resetspawnrate', 'resetssrweight', 'resign', 'resources', 'salary', 'salaries', 'schedulemarket', 'schedules', 'scheduletrade',
+        'sellgsi', 'sellitem', 'sellshares', 'serverconsumption', 'setfiveyearplan', 'setplan', 'setsalary', 'setsalaries', 'setspawnrate', 'setssrweight', 'setwage', 'setwagefood',
         'setweight', 'setworkfood', 'spawnrate', 'spawnrates', 'specialize', 'ssrtrade', 'ssrweights', 'store',
         'supply', 'supplygraph', 'trade', 'trademarket', 'trademenu', 'tradeschedules', 'tradeui', 'transferitem',
         'unblacklist', 'upgrade', 'viewspawnrates', 'with', 'withdraw', 'work', 'work_food', 'workfood',

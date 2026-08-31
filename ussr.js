@@ -93,7 +93,7 @@ function fallbackMock(){
     // SEED: every SSR/company gets 200 food (200 Wheat = 200🍞) — balanced start, not weird starvation
     inv["Wheat"] = (inv["Wheat"]||0) + 200;
     const isState=idx<6;
-    return {id:"comp_"+idx,name:c.name,ticker:c.ticker,specialization:c.spec,hq_ssr:c.ssr,employees:c.emp,funds:c.funds,share_price:hist[hist.length-1],price_history:hist,market_cap:hist[hist.length-1]*1000,buildings:isState?{"Iron Mine":{level:3},"Store":{level:2}}:{"Farm":{level:3},"Store":{level:2}},inventory:inv,is_state_owned:isState,shares_total:1000,wage:c.emp>15?22:18}
+    return {id:"comp_"+idx,name:c.name,ticker:c.ticker,specialization:c.spec,hq_ssr:c.ssr,employees:c.emp,funds:c.funds,share_price:hist[hist.length-1],price_history:hist,market_cap:hist[hist.length-1]*1000,buildings:isState?{"Iron Mine":{level:3},"Store":{level:2}}:{"Farm":{level:3},"Store":{level:2}},inventory:inv,is_state_owned:isState,shares_total:1000,wage:c.emp>15?22:18,salary_config:{ceo:5,director:5,manager:2}}
   });
   const employed=companies.reduce((s,c)=>s+c.employees,0);
   const market_demand={}, market_supply={}, demand_history={};
@@ -126,7 +126,8 @@ function fallbackMock(){
     const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2)); // balanced: 1 per emp + 0.2 per pop (was 2 + 0.5)
     regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)}
   }
-  return {gsi_history:gsi,inflation_history:infl,inflation,money_printed,total_bank_reserves,companies,market_demand,market_supply,demand_history,ai_store,global_consumption,consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:Object.fromEntries(Object.entries(REC).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString(), ssr_resource_weights:{}, compensation_log:[], top_workers:[], total_rubles, total_rubles_history, total_citizens: 60}
+  const five_year_plan={startAt:new Date(Date.now()-2*24*3600*1000).toISOString(), endAt:new Date(Date.now()+3*24*3600*1000).toISOString(), targets:{circulation:600000,goldBacking:60,production:3000,gsi:150}};
+  return {gsi_history:gsi,inflation_history:infl,inflation,money_printed,total_bank_reserves,companies,market_demand,market_supply,demand_history,ai_store,global_consumption,consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:Object.fromEntries(Object.entries(REC).map(([k,v])=>[k,{value:v.value,ingredients:v.ingredients,emoji:"■"}])),mines:{},factories:{},generated_at:new Date().toISOString(), ssr_resource_weights:{}, compensation_log:[], top_workers:[], total_rubles, total_rubles_history, total_citizens: 60, five_year_plan}
 }
 
 async function load(){
@@ -164,7 +165,7 @@ async function load(){
       if(bot.companies && typeof bot.companies==="object"){
         const isArr=Array.isArray(bot.companies);
         const entries=isArr?bot.companies:Object.entries(bot.companies);
-        companies=entries.map(([id,c])=>{ const comp=isArr?c:c; const cid=isArr?comp.id||id:id; const price=comp.share_price||comp.price||100; const hist=Array.isArray(comp.price_history)?comp.price_history:Array.from({length:100},()=>price); return {id:cid,name:comp.name||cid,ticker:comp.ticker||cid.slice(0,3).toUpperCase(),specialization:comp.specialization||null,hq_ssr:comp.hq_ssr||"Russian SFSR",employees:comp.employees||0,funds:comp.funds||0,share_price:price,price_history:hist,market_cap:comp.market_cap||price*(comp.shares_total||1000),buildings:comp.buildings||{},inventory:comp.inventory||{},is_state_owned:!!comp.is_state_owned,shares_total:comp.shares_total||1000,wage:comp.wage||18};});
+        companies=entries.map(([id,c])=>{ const comp=isArr?c:c; const cid=isArr?comp.id||id:id; const price=comp.share_price||comp.price||100; const hist=Array.isArray(comp.price_history)?comp.price_history:Array.from({length:100},()=>price); return {id:cid,name:comp.name||cid,ticker:comp.ticker||cid.slice(0,3).toUpperCase(),specialization:comp.specialization||null,hq_ssr:comp.hq_ssr||"Russian SFSR",employees:comp.employees||0,funds:comp.funds||0,share_price:price,price_history:hist,market_cap:comp.market_cap||price*(comp.shares_total||1000),buildings:comp.buildings||{},inventory:comp.inventory||{},is_state_owned:!!comp.is_state_owned,shares_total:comp.shares_total||1000,wage:comp.wage||18,salary_config:comp.salary_config||{ceo:5,director:5,manager:2}};});
       }
       const inflation = typeof bot.inflation==="number" ? bot.inflation : (bot.inflation_history?bot.inflation_history[bot.inflation_history.length-1]:3.1);
       const gsi=bot.gsi_history;
@@ -184,7 +185,7 @@ async function load(){
       const total_citizens = Object.keys(bot.users||{}).length;
       const census={}; Object.keys(SSR).forEach(k=> census[k]=Math.floor(Math.random()*14)+4);
       const regions={}; for(const [reg,zone] of Object.entries(WZ)){ const ssrs=Object.entries(SSR).filter(([,v])=> v.work_zone===zone).map(([k])=>k); const pop=ssrs.reduce((s,k)=> s+(census[k]||0),0); const rc=companies.filter(c=> SSR[c.hq_ssr]?.work_zone===zone); const emp=rc.reduce((s,c)=> s+c.employees,0); let food=0; rc.forEach(c=>{ Object.entries(c.inventory||{}).forEach(([it,qty])=>{ const fv={Fish:2,Wheat:1,Corn:1,Sunflower:1,Grapes:1,Tea:1,Citrus:1,Flour:2,Sugar:1,Bread:3,Cake:3,Wine:2,"Canned Food":4,"Canned Fish":5,"Smoked Fish":4,"Fish Stew":5,"Sunflower Oil":1,"Corn Meal":2,"Tea Pack":1,"Citrus Juice":2}[it]; if(fv) food+= qty*fv; }); }); const dem=Math.max(4, Math.ceil(Math.max(1,emp)*1 + pop*0.2)); regions[reg]={ssrs,pop,employees:emp,companies:rc.length,foodStock:food,foodDemand:dem,zone,foodRatio:food/Math.max(1,dem)} }
-      return {gsi_history:gsi,inflation_history:inflHist,inflation,money_printed,total_bank_reserves,companies,market_demand:market_demand||{},market_supply,demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:bot.consumption_history||[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:bot.crafting_recipes||{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:Object.entries(bot.users||{}).map(([id,u])=>({id,username:u.username||id.slice(0,6),work_count:u.work_count||0,ssr_region:u.ssr_region,employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5),total_rubles,total_rubles_history,total_citizens};
+      return {gsi_history:gsi,inflation_history:inflHist,inflation,money_printed,total_bank_reserves,companies,market_demand:market_demand||{},market_supply,demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:bot.consumption_history||[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status},census,regions,ssr_regions:SSR,work_zones:WZ,resource_values:RV,crafting_recipes:bot.crafting_recipes||{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:Object.entries(bot.users||{}).map(([id,u])=>({id,username:u.username||id.slice(0,6),work_count:u.work_count||0,ssr_region:u.ssr_region,employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5),total_rubles,total_rubles_history,total_citizens,five_year_plan:bot.five_year_plan||null};
     }catch(e){ console.warn('buildFromBot failed',e); return null; }
   }
   try{
@@ -376,6 +377,7 @@ function renderCompanies(){
         <div class="grid grid-2" style="margin-top:8px"><div class="stat" style="padding:8px"><b>SHARE</b><strong>₽${fmt(c.share_price)}</strong><span>CAP ${money(c.market_cap)}</span></div><div class="stat" style="padding:8px"><b>FUNDS</b><strong>₽${fmt(c.funds)}</strong><span>WAGE ₽${c.wage}</span></div></div>
         <div class="mono" style="font-size:9px;margin-top:6px;word-break:break-word">${Object.entries(c.buildings).map(([k,v])=>k+' LV'+v.level).join(' // ')}</div>
         <div class="mono" style="font-size:9px;color:var(--muted);margin-top:4px;word-break:break-word">${Object.entries(c.inventory).slice(0,5).map(([k,v])=>k+'×'+v).join(' // ')}</div>
+        <div class="mono" style="font-size:9px;color:var(--ink);margin-top:4px">💼 Salaries: CEO ${c.salary_config?.ceo||5}% | Director ${c.salary_config?.director||5}% | Manager ${c.salary_config?.manager||2}% (from funds)</div>
       </div>
     </div>`).join('');
   const sorted=data.companies.slice().sort((a,b)=>b.market_cap-a.market_cap).slice(0,10);
@@ -490,7 +492,26 @@ function renderTradePanel(){
 function renderFiveYearPlan(){
   const fill=document.getElementById('planFill'), label=document.getElementById('planLabel'), text=document.getElementById('planText'), pctEl=document.getElementById('planPct');
   if(!fill || !data) return;
-  // Realistic plan: target based on total production + employed
+  const plan = data.five_year_plan;
+  if(plan && plan.targets){
+    // New multi-target plan: circulation, gold, production, gsi
+    const totalRubles = data.total_rubles ?? 0;
+    const goldBacking = data.gold?.backing ?? 0;
+    const totalInventory = data.companies.reduce((s,c)=> s+Object.values(c.inventory).reduce((a,b)=>a+b,0),0);
+    const gsi = data.gsi_history?.[data.gsi_history.length-1]?.price||0;
+    const t = plan.targets;
+    const pCirc = Math.min(120, Math.round(totalRubles/(t.circulation||600000)*100));
+    const pGold = Math.min(120, Math.round(goldBacking/(t.goldBacking||60)*100));
+    const pProd = Math.min(120, Math.round(totalInventory/(t.production||3000)*100));
+    const pGsi = Math.min(120, Math.round(gsi/(t.gsi||150)*100));
+    const overall = Math.round((pCirc+pGold+pProd+pGsi)/4);
+    fill.style.width=Math.min(100,overall)+'%';
+    if(pctEl) pctEl.textContent=overall+'%';
+    if(label) label.textContent=overall>=100 ? 'PLAN FULFILLED ★' : overall+'% COMPLETE';
+    if(text) text.innerHTML=`<b>Circulation</b> ${fmt(totalRubles)}/${fmt(t.circulation)} ₽ ${pCirc}%<br><b>Gold</b> ${goldBacking.toFixed(1)}%/${t.goldBacking}% ${pGold}%<br><b>Production</b> ${fmt(totalInventory)}/${fmt(t.production)} ${pProd}%<br><b>GSI</b> ${fmt(gsi)}/${fmt(t.gsi)} ${pGsi}%<br>Overall ${overall}% — ${overall>=100?'Shock workers honoured!':'Central Committee urges: meet quotas.'}`;
+    return;
+  }
+  // Fallback old single-target
   const totalInventory = data.companies.reduce((s,c)=> s+Object.values(c.inventory).reduce((a,b)=>a+b,0),0);
   const totalEmployees = data.companies.reduce((s,c)=>s+c.employees,0);
   const target = Math.max(500, totalEmployees*25);
@@ -538,7 +559,7 @@ async function refreshLoop(){
           const built=(function(bot){
             try{
               const RV={ Gold:150, "Iron Ore":24, Coal:16, Oil:64, "Natural Gas":48, Timber:13, Wheat:8, Fish:14, Copper:32, Lead:40, Uranium:320, Limestone:16, Clay:8, Sugar:10, Peat:13, Manganese:96, Phosphorite:40, "Aluminium Ore":64, Antimony:128, Molybdenum:160, Sunflower:12, Flax:18, Corn:10, Salt:8, Tea:30, Citrus:20, Grapes:20, Wine:60, Sulphur:25, Aluminium:80, Cotton:24, Potash:56, "Oil Shale":19, Zinc:38, Amber:75 };
-              let companies=[]; if(bot.companies){ const isArr=Array.isArray(bot.companies); const entries=isArr?bot.companies:Object.entries(bot.companies); companies=entries.map(([id,c])=>{ const comp=isArr?c:c; const cid=isArr?comp.id||id:id; const price=comp.share_price||100; const hist=comp.price_history||Array.from({length:100},()=>price); return {id:cid,name:comp.name||cid,ticker:comp.ticker||cid.slice(0,3).toUpperCase(),specialization:comp.specialization||null,hq_ssr:comp.hq_ssr||"Russian SFSR",employees:comp.employees||0,funds:comp.funds||0,share_price:price,price_history:hist,market_cap:comp.market_cap||price*(comp.shares_total||1000),buildings:comp.buildings||{},inventory:comp.inventory||{},is_state_owned:!!comp.is_state_owned,shares_total:comp.shares_total||1000,wage:comp.wage||18};});}
+               let companies=[]; if(bot.companies){ const isArr=Array.isArray(bot.companies); const entries=isArr?bot.companies:Object.entries(bot.companies); companies=entries.map(([id,c])=>{ const comp=isArr?c:c; const cid=isArr?comp.id||id:id; const price=comp.share_price||100; const hist=comp.price_history||Array.from({length:100},()=>price); return {id:cid,name:comp.name||cid,ticker:comp.ticker||cid.slice(0,3).toUpperCase(),specialization:comp.specialization||null,hq_ssr:comp.hq_ssr||"Russian SFSR",employees:comp.employees||0,funds:comp.funds||0,share_price:price,price_history:hist,market_cap:comp.market_cap||price*(comp.shares_total||1000),buildings:comp.buildings||{},inventory:comp.inventory||{},is_state_owned:!!comp.is_state_owned,shares_total:comp.shares_total||1000,wage:comp.wage||18,salary_config:comp.salary_config||{ceo:5,director:5,manager:2}};});}
               const inflation=bot.inflation||3.1;
               const goldPrice=Math.max(1,Math.floor(RV.Gold*(1+inflation/100)));
               let goldStock=0; if(bot.users) for(const u of Object.values(bot.users)){ goldStock+=(u.resources&&u.resources.Gold)||0; goldStock+=((u.inventory&&u.inventory["Gold Bar"])||0)*3; } for(const c of companies){ goldStock+=(c.inventory&&c.inventory.Gold)||0; goldStock+=((c.inventory&&c.inventory["Gold Bar"])||0)*3; } if(!goldStock) goldStock=420;
@@ -546,7 +567,7 @@ async function refreshLoop(){
               const backing=(goldStock*goldPrice/Math.max(1,moneySupply))*100;
               const total_rubles = Object.values(bot.users||{}).reduce((s,u)=> s+(u.cash||0)+(u.bank||0), 0);
               let total_rubles_history = bot.total_rubles_history; if(!Array.isArray(total_rubles_history)||!total_rubles_history.length){ const cur=Math.max(1000,total_rubles||0); total_rubles_history=Array.from({length:100},(_,i)=>({total:cur, at:new Date(Date.now()-(100-i)*3600000).toISOString()})); }
-              return {gsi_history:bot.gsi_history,inflation_history:bot.inflation_history,inflation,money_printed:bot.money_printed||420000,total_bank_reserves:bot.total_bank_reserves||900000,companies,market_demand:bot.market_demand||{},market_supply:{},demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status:backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT"},census:{},regions:{},ssr_regions:{},work_zones:{},resource_values:RV,crafting_recipes:{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github-refresh",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:[],total_rubles,total_rubles_history,total_citizens:Object.keys(bot.users||{}).length};
+              return {gsi_history:bot.gsi_history,inflation_history:bot.inflation_history,inflation,money_printed:bot.money_printed||420000,total_bank_reserves:bot.total_bank_reserves||900000,companies,market_demand:bot.market_demand||{},market_supply:{},demand_history:bot.demand_history||{},ai_store:bot.ai_store||{},global_consumption:bot.global_consumption||{},consumption_history:[],gold:{price:goldPrice,stock:goldStock,moneySupply,backing:+backing.toFixed(2),status:backing>=100?"FULL GOLD STANDARD":backing>=50?"PARTIAL":backing>=20?"WEAK":"FIAT"},census:{},regions:{},ssr_regions:{},work_zones:{},resource_values:RV,crafting_recipes:{},mines:{},factories:{},generated_at:bot.generated_at||new Date().toISOString(),_source:"raw-github-refresh",ssr_resource_weights:bot.ssr_resource_weights||{},compensation_log:bot.compensation_log||[],top_workers:[],total_rubles,total_rubles_history,total_citizens:Object.keys(bot.users||{}).length,five_year_plan:bot.five_year_plan||null};
             }catch(e){ return null; }
           })(bot);
            if(built){ data=built; renderStats(); renderGSI(); renderInfl(); renderGold(); renderRubles(); renderAI(); renderCons(); renderDemand(); renderCompanies(); renderWorld(); renderProduction(); renderTradePanel(); renderTicker(); renderFiveYearPlan(); renderStakhanovite(); }

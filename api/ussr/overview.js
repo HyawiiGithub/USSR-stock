@@ -176,7 +176,9 @@ export default async function handler(req, res) {
           top_workers: Object.entries(bot.users||{}).map(([id,u])=>({id, username:u.username||id.slice(0,6), work_count:u.work_count||0, ssr_region:u.ssr_region, employed_at:u.employed_at})).filter(u=>u.work_count>0).sort((a,b)=>b.work_count-a.work_count).slice(0,5),
           total_rubles,
           total_rubles_history,
-          total_citizens: Object.keys(bot.users||{}).length
+          total_citizens: Object.keys(bot.users||{}).length,
+          five_year_plan: bot.five_year_plan || null,
+          owner_logs: (bot.owner_logs||[]).slice(-20)
         };
   }
 
