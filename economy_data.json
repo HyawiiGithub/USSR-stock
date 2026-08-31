@@ -457,8 +457,8 @@
       "ceo_of": null
     },
     "1528783188728483944": {
-      "cash": 225,
-      "bank": 3919,
+      "cash": 0,
+      "bank": 4144,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -133880,8 +133880,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 54450,
-      "market_cap": 54450,
+      "share_price": 54480,
+      "market_cap": 54480,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -133909,7 +133909,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        51551,
         51565,
         51577,
         51584,
@@ -134008,7 +134007,8 @@
         54426,
         54460,
         54454,
-        54450
+        54450,
+        54480
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -134021,11 +134021,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 1,
-      "change_percent": 5.47920260835362,
-      "recorded_at": "2026-08-30T22:54:45.393Z"
-    },
     {
       "price": 1,
       "change_percent": 0.5908082233830749,
@@ -134520,6 +134515,11 @@
       "price": 1,
       "change_percent": 1.3164292076682107,
       "recorded_at": "2026-08-31T06:34:46.613Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 1.0906394332165348,
+      "recorded_at": "2026-08-31T06:39:46.695Z"
     }
   ],
   "factory_names": [
@@ -134540,11 +134540,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.08396605039017796,
+  "inflation": 0.08608111546016914,
   "money_printed": 223,
-  "total_bank_reserves": 180813,
+  "total_bank_reserves": 181038,
   "inflation_history": [
-    0.021716479738099332,
     0,
     0.023840005787905957,
     0,
@@ -134643,7 +134642,8 @@
     0.12145019101252069,
     0.10246923357302916,
     0.09981638243541724,
-    0.08396605039017796
+    0.08396605039017796,
+    0.08608111546016914
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -134707,15 +134707,15 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3966017537183935,
-    "Cake": 1.2080751190217138,
-    "Bread": 1.3568375613789354,
+    "Cake": 1.2224155883235093,
+    "Bread": 1.3536281710342015,
     "Copper Ingot": 1.3951462654022635,
     "Iron Ingot": 1.3964020040291103,
     "Steel Ingot": 1.388224201581508,
     "Gold Bar": 1.3683451713229684,
     "Aluminium Ingot": 1.4115085560755616,
     "Timber Planks": 1.3951367873550402,
-    "Bricks": 1.414189420596172,
+    "Bricks": 1.4130542669484782,
     "Concrete": 1.4115532088077694,
     "Glass": 1.4119994860887584,
     "Steel Beam": 1.412361299321187,
@@ -134725,7 +134725,7 @@
     "Reactor Core": 1.4122572705339835,
     "Circuit Board": 1.4118363908523133,
     "Flour": 1.4124182571827315,
-    "Sugar": 1.3865579075900167,
+    "Sugar": 1.3850732749828154,
     "Wine": 1.412272338543563,
     "Canned Food": 1.3504499862476111,
     "Canned Fish": 1.3803408681027498,
@@ -134734,11 +134734,11 @@
     "Peat Fuel": 1.4045220818402,
     "Gas Fuel": 1.4115290826653417,
     "Fertilizer": 1.4124480295056288,
-    "Cotton Fabric": 1.413181630464,
+    "Cotton Fabric": 1.41212710002688,
     "Manganese Alloy": 1.412074941385963,
     "Sunflower Oil": 1.4124642609007318,
     "Linen": 1.4123435275452147,
-    "Corn Meal": 1.413181630464,
+    "Corn Meal": 1.41212710002688,
     "Tea Pack": 1.41,
     "Citrus Juice": 1.4124642609007318,
     "Antimony Alloy": 1.4123435275452147,
@@ -134761,7 +134761,7 @@
   },
   "last_govcontract": "2026-08-27T23:24:16.034Z",
   "ai_store": {
-    "Cake": 5
+    "Cake": 4
   },
   "global_consumption": {
     "Copper Ingot": 47,
@@ -134772,7 +134772,7 @@
     "Iron Ingot": 12,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 10,
+    "Cake": 11,
     "Smoked Fish": 10
   },
   "consumption_history": [
@@ -135740,6 +135740,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-08-31T06:24:46.190Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-08-31T06:39:46.132Z"
     }
   ],
   "demand_history": {
@@ -136634,6 +136639,11 @@
         "demand": 1.1955231048819268,
         "at": "2026-08-31T06:24:46.190Z",
         "supply": 0
+      },
+      {
+        "demand": 1.2224155883235093,
+        "at": "2026-08-31T06:39:46.132Z",
+        "supply": 0
       }
     ],
     "Smoked Fish": [
@@ -136725,10 +136735,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 245629,
-      "at": "2026-08-30T22:54:47.751Z"
-    },
     {
       "total": 245659,
       "at": "2026-08-30T22:59:47.139Z"
@@ -137124,6 +137130,10 @@
     {
       "total": 248034,
       "at": "2026-08-31T06:34:47.206Z"
+    },
+    {
+      "total": 248049,
+      "at": "2026-08-31T06:39:47.212Z"
     }
   ],
   "gold_rush": {
