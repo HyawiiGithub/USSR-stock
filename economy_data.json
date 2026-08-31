@@ -133529,6 +133529,24 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "816178249871785985": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -134366,11 +134384,6 @@
   "gsi_history": [
     {
       "price": 10,
-      "change_percent": 5.612193701261395,
-      "recorded_at": "2026-08-31T16:05:59.710Z"
-    },
-    {
-      "price": 10,
       "change_percent": 5.649759322247315,
       "recorded_at": "2026-08-31T16:06:06.632Z"
     },
@@ -134863,6 +134876,11 @@
       "price": 10,
       "change_percent": 0.8857541545891232,
       "recorded_at": "2026-08-31T22:36:10.941Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 4.491777926191747,
+      "recorded_at": "2026-08-31T22:36:12.111Z"
     }
   ],
   "factory_names": [
@@ -135120,7 +135138,7 @@
     "Canned Food": 8,
     "Fuel": 5,
     "Uranium Rod": 7,
-    "Cake": 8
+    "Cake": 6
   },
   "global_consumption": {
     "Copper Ingot": 52,
@@ -135131,7 +135149,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 15,
+    "Cake": 17,
     "Smoked Fish": 20,
     "Canned Food": 2,
     "Uranium Rod": 2,
@@ -136247,6 +136265,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-08-31T22:21:10.710Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-08-31T22:36:11.172Z"
     }
   ],
   "demand_history": {
@@ -137226,6 +137249,11 @@
         "demand": 1.2711665550664246,
         "at": "2026-08-31T07:09:46.133Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3418726408519586,
+        "at": "2026-08-31T22:36:11.172Z",
+        "supply": 0
       }
     ],
     "Smoked Fish": [
@@ -137460,14 +137488,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 232496,
-      "at": "2026-08-31T11:09:48.036Z"
-    },
-    {
-      "total": 232571,
-      "at": "2026-08-31T11:14:48.214Z"
-    },
     {
       "total": 232601,
       "at": "2026-08-31T11:19:48.276Z"
@@ -137859,6 +137879,14 @@
     {
       "total": 220632,
       "at": "2026-08-31T22:31:12.367Z"
+    },
+    {
+      "total": 220652,
+      "at": "2026-08-31T22:36:12.376Z"
+    },
+    {
+      "total": 220652,
+      "at": "2026-08-31T22:36:12.800Z"
     }
   ],
   "gold_rush": null,
