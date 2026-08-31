@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 300,
+      "cash": 320,
       "bank": 14207,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-31T21:26:39.269Z",
-      "work_count": 514,
+      "last_work": "2026-08-31T21:36:31.716Z",
+      "work_count": 515,
       "last_claim": "2026-08-31T09:08:44.392Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -133850,14 +133850,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 5271,
+      "funds": 5266,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 76576,
-      "market_cap": 76576,
+      "share_price": 76692,
+      "market_cap": 76692,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -133879,11 +133879,11 @@
         "Canned Food": 5,
         "Bread": 22,
         "Fish": 22,
-        "Wheat": 76,
+        "Wheat": 75,
         "Sugar": 19,
         "Canned Fish": 1,
         "Uranium Rod": 2,
-        "Oil": 7,
+        "Oil": 9,
         "Gold": 2,
         "Iron Ingot": 2,
         "Iron Ore": 9,
@@ -133893,7 +133893,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T20:27:32.342Z",
       "price_history": [
-        95484,
         95503,
         95506,
         95525,
@@ -133992,7 +133991,8 @@
         76549,
         76552,
         76541,
-        76576
+        76576,
+        76692
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -134327,16 +134327,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 10,
-      "change_percent": 5.851761376517999,
-      "recorded_at": "2026-08-31T15:31:44.589Z"
-    },
-    {
-      "price": 10,
-      "change_percent": 5.765601492865548,
-      "recorded_at": "2026-08-31T15:34:05.917Z"
-    },
     {
       "price": 10,
       "change_percent": 6.057520191515959,
@@ -134826,6 +134816,16 @@
       "price": 10,
       "change_percent": 5.489932948753516,
       "recorded_at": "2026-08-31T21:35:16.256Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 4.970831708530321,
+      "recorded_at": "2026-08-31T21:36:11.904Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 4.793862140602796,
+      "recorded_at": "2026-08-31T21:36:32.268Z"
     }
   ],
   "factory_names": [
@@ -135079,7 +135079,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Canned Fish": 6,
+    "Canned Fish": 4,
     "Canned Food": 8,
     "Fuel": 6,
     "Uranium Rod": 8,
@@ -135098,7 +135098,7 @@
     "Smoked Fish": 20,
     "Canned Food": 2,
     "Uranium Rod": 1,
-    "Canned Fish": 1
+    "Canned Fish": 3
   },
   "consumption_history": [
     {
@@ -136190,6 +136190,11 @@
       "item": "Canned Fish",
       "qty": 1,
       "at": "2026-08-31T21:21:10.688Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 2,
+      "at": "2026-08-31T21:36:10.680Z"
     }
   ],
   "demand_history": {
@@ -137252,6 +137257,11 @@
         "demand": 1.3916755292876446,
         "at": "2026-08-31T21:21:10.688Z",
         "supply": 1
+      },
+      {
+        "demand": 1.3916755292876446,
+        "at": "2026-08-31T21:36:10.680Z",
+        "supply": 1
       }
     ]
   },
@@ -137383,10 +137393,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 232081,
-      "at": "2026-08-31T10:04:47.494Z"
-    },
     {
       "total": 232106,
       "at": "2026-08-31T10:09:47.501Z"
@@ -137782,6 +137788,10 @@
     {
       "total": 220192,
       "at": "2026-08-31T21:31:12.178Z"
+    },
+    {
+      "total": 220232,
+      "at": "2026-08-31T21:36:12.160Z"
     }
   ],
   "gold_rush": null,
