@@ -5362,7 +5362,10 @@ if (command === 'foundcompany') {
                 pendingTrades.set(tradeId, { sourceId, targetId: selectedCompanyId, itemName: selectedItem, qty, markup, requesterId: userId, createdAt: Date.now() });
                 const targetAuthIds = [targetCompany.owner_id, targetCompany.director_id, ...(targetCompany.managers||[])].filter(Boolean);
                 const targetMention = targetAuthIds.length ? targetAuthIds.map(id=>`<@${id}>`).join(' ') : targetCompany.name;
-                const embedReq = new EmbedBuilder().setTitle('🤝 Trade Request — Awaiting Approval (via Menu)').setDescription(`**${sourceCompany.name}** → **${targetCompany.name}**\n**${qty}x ${selectedItem}**\n\n${targetMention} — **Accept/Decline** within 5 min`).setColor(0xFFD700);
+                const basePriceMenu2 = (CRAFTING_RECIPES[selectedItem]?.value ?? RESOURCE_VALUES[canonRes(selectedItem)] ?? 10) * qty * getInflationMultiplier();
+                const totalPriceMenu2 = markup>0 ? Math.floor(basePriceMenu2*(1+markup/100)) : 0;
+                const priceLineMenu = markup>0 ? `Market **${formatMoney(basePriceMenu2)}** + ${markup}% markup = **${formatMoney(totalPriceMenu2)}**\nBuyer **${targetCompany.name}** pays **from company funds** → Seller **${sourceCompany.name}** receives` : `Market **${formatMoney(basePriceMenu2)}** *(no markup — only subsidy 3-10%)*\nBuyer pays nothing extra (subsidy from state)`;
+                const embedReq = new EmbedBuilder().setTitle('🤝 Trade Request — Awaiting Approval (via Menu)').setDescription(`**${sourceCompany.name}** → **${targetCompany.name}**\n**${qty}x ${selectedItem}**\n${priceLineMenu}\n\n${targetMention} — **Accept/Decline** within 5 min`).setColor(0xFFD700);
                 const acceptBtn = new ButtonBuilder().setCustomId(`trade_accept_${tradeId}`).setLabel('✅ Accept').setStyle(ButtonStyle.Success);
                 const declineBtn = new ButtonBuilder().setCustomId(`trade_decline_${tradeId}`).setLabel('❌ Decline').setStyle(ButtonStyle.Danger);
                 const row = new ActionRowBuilder().addComponents(acceptBtn, declineBtn);
