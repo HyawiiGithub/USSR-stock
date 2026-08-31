@@ -133419,8 +133419,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 122891,
-      "market_cap": 122891,
+      "share_price": 123175,
+      "market_cap": 123175,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -133462,7 +133462,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T15:25:32.662Z",
       "price_history": [
-        100276,
         100276,
         100426,
         100973,
@@ -133561,7 +133560,8 @@
         118246,
         122617,
         122754,
-        122891
+        122891,
+        123175
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -134241,16 +134241,6 @@
   "gsi_history": [
     {
       "price": 10,
-      "change_percent": 5.496331386425958,
-      "recorded_at": "2026-08-31T14:37:17.845Z"
-    },
-    {
-      "price": 10,
-      "change_percent": 4.475846605038464,
-      "recorded_at": "2026-08-31T14:39:06.413Z"
-    },
-    {
-      "price": 10,
       "change_percent": 5.260080761539291,
       "recorded_at": "2026-08-31T14:39:27.978Z"
     },
@@ -134738,6 +134728,16 @@
       "price": 10,
       "change_percent": 5.42163578294684,
       "recorded_at": "2026-08-31T16:10:03.240Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.447240673828484,
+      "recorded_at": "2026-08-31T16:10:51.836Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.614471027880327,
+      "recorded_at": "2026-08-31T16:10:59.603Z"
     }
   ],
   "factory_names": [
@@ -134995,12 +134995,12 @@
     "Steel Ingot": 1,
     "Canned Food": 9,
     "Fuel": 6,
-    "Copper Ingot": 2,
+    "Copper Ingot": 1,
     "Uranium Rod": 8,
     "Refined Fuel": 2
   },
   "global_consumption": {
-    "Copper Ingot": 50,
+    "Copper Ingot": 51,
     "Steel Ingot": 17,
     "Timber Planks": 102,
     "Refined Fuel": 41,
@@ -136073,6 +136073,11 @@
       "item": "Uranium Rod",
       "qty": 1,
       "at": "2026-08-31T15:55:59.026Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-08-31T16:10:59.035Z"
     }
   ],
   "demand_history": {
@@ -136260,6 +136265,11 @@
       {
         "demand": 1.3291743746691067,
         "at": "2026-08-31T10:54:46.419Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3795919392263802,
+        "at": "2026-08-31T16:10:59.035Z",
         "supply": 0
       }
     ],
@@ -137236,10 +137246,6 @@
   "total_rubles_history": [
     {
       "total": 248079,
-      "at": "2026-08-31T08:14:47.227Z"
-    },
-    {
-      "total": 248079,
       "at": "2026-08-31T08:19:47.223Z"
     },
     {
@@ -137633,6 +137639,10 @@
     {
       "total": 252506,
       "at": "2026-08-31T16:05:59.994Z"
+    },
+    {
+      "total": 252646,
+      "at": "2026-08-31T16:10:59.987Z"
     }
   ],
   "gold_rush": {
