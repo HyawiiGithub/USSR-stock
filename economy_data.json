@@ -439,8 +439,8 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 195,
-      "bank": 41530,
+      "cash": 0,
+      "bank": 41725,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -133860,8 +133860,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 180081,
-      "market_cap": 180081,
+      "share_price": 180374,
+      "market_cap": 180374,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -133882,16 +133882,14 @@
         "Iron Ore": 68,
         "Coal": 89,
         "Uranium": 4,
-        "Oil": 79,
+        "Oil": 70,
         "Gold": 7,
         "Wheat": 198,
-        "Fuel": 3
+        "Fuel": 6
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T13:28:14.075Z",
       "price_history": [
-        174108,
-        174126,
         174150,
         174189,
         174273,
@@ -133989,7 +133987,9 @@
         179313,
         179302,
         180076,
-        180081
+        180081,
+        180185,
+        180374
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -134164,11 +134164,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 1,
-      "change_percent": -0.8003302644910192,
-      "recorded_at": "2026-08-31T05:59:46.603Z"
-    },
     {
       "price": 1,
       "change_percent": -1.0079858422624588,
@@ -134663,6 +134658,11 @@
       "price": 1,
       "change_percent": -1.1574170888678648,
       "recorded_at": "2026-08-31T13:44:23.448Z"
+    },
+    {
+      "price": 1,
+      "change_percent": -1.1005189688447419,
+      "recorded_at": "2026-08-31T13:49:23.445Z"
     }
   ],
   "factory_names": [
@@ -134907,14 +134907,14 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Canned Fish": 7,
-    "Steel Ingot": 3,
+    "Steel Ingot": 2,
     "Refined Fuel": 1,
     "Iron Ingot": 1,
     "Canned Food": 10
   },
   "global_consumption": {
     "Copper Ingot": 50,
-    "Steel Ingot": 12,
+    "Steel Ingot": 13,
     "Timber Planks": 102,
     "Refined Fuel": 40,
     "Fuel": 9,
@@ -135949,6 +135949,11 @@
       "item": "Iron Ingot",
       "qty": 2,
       "at": "2026-08-31T13:24:46.502Z"
+    },
+    {
+      "item": "Steel Ingot",
+      "qty": 1,
+      "at": "2026-08-31T13:49:22.596Z"
     }
   ],
   "demand_history": {
@@ -136183,6 +136188,11 @@
       {
         "demand": 1.3224855292685205,
         "at": "2026-08-30T23:09:45.729Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3536734987886572,
+        "at": "2026-08-31T13:49:22.596Z",
         "supply": 0
       }
     ],
@@ -137002,10 +137012,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 247959,
-      "at": "2026-08-31T05:49:47.206Z"
-    },
-    {
       "total": 247974,
       "at": "2026-08-31T05:54:47.214Z"
     },
@@ -137400,6 +137406,10 @@
     {
       "total": 247811,
       "at": "2026-08-31T13:44:23.563Z"
+    },
+    {
+      "total": 248161,
+      "at": "2026-08-31T13:49:23.580Z"
     }
   ],
   "gold_rush": {
