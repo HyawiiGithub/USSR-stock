@@ -5160,7 +5160,7 @@ if (command === 'foundcompany') {
         const totalPrice = Math.floor(basePrice + markupPrice);
         const embedReq = new EmbedBuilder()
             .setTitle('🤝 Trade Request — Awaiting Approval')
-            .setDescription(`**${sourceCompany.name}** (${regionFrom2}) wants to send **${qty}x ${itemName}**${isFood2} to **${targetCompany.name}** (${regionTo2})\nMarket: ${formatMoney(basePrice)}${markup>0 ? ` + ${markup}% markup = **${formatMoney(totalPrice)}** (profit ${formatMoney(markupPrice)})` : ''}\n\n${targetMention} — **Accept** or **Decline** within 5 minutes.`)
+            .setDescription(`**${sourceCompany.name}** (${regionFrom2}) wants to send **${qty}x ${itemName}**${isFood2} to **${targetCompany.name}** (${regionTo2})\nMarket: ${formatMoney(basePrice)}${markup>0 ? ` + ${markup}% markup = **${formatMoney(totalPrice)}** (profit ${formatMoney(markupPrice)})` : ' *(no markup — just subsidy)*'}\nBuyer **${targetCompany.name}** pays **from company funds** (not CEO personal) → Seller **${sourceCompany.name}** receives ${markup>0?`market + markup`:'market'}\n\n${targetMention} — **Accept** or **Decline** within 5 minutes.`)
             .setColor(0xFFD700)
             .addFields(
                 { name: '📤 From', value: `${sourceCompany.name}\n${ssrFrom2}`, inline: true },
@@ -5314,11 +5314,14 @@ if (command === 'foundcompany') {
                 const have = sourceCompany.inventory[selectedItem]||0;
                 if (have < qty) { await interaction.update({ content: `❌ Not enough ${selectedItem} (have ${have}, need ${qty})`, embeds: [], components: [] }); collector.stop('no_qty'); return; }
                 // Step 4: markup selection
-                const markupOptions = [0,2,5,10,20].map(m=> new StringSelectMenuOptionBuilder().setLabel(`${m}% markup`).setDescription(m===0?`Market price`:`+${m}% profit for you`).setValue(String(m)));
-                const markupMenu = new StringSelectMenuBuilder().setCustomId('trademenu_markup').setPlaceholder('Select markup % above market...').addOptions(markupOptions);
+                const basePriceMenu = (CRAFTING_RECIPES[selectedItem]?.value ?? RESOURCE_VALUES[canonRes(selectedItem)] ?? 10) * qty * getInflationMultiplier();
+                const markupOptions = [0,2,5,10,20].map(m=> {
+                    const total = m===0 ? basePriceMenu : Math.floor(basePriceMenu*(1+m/100));
+                    return new StringSelectMenuOptionBuilder().setLabel(`${m}% ${m===0?'(market)': `→ ${formatMoney(total)}`}`).setDescription(m===0?`Market ${formatMoney(basePriceMenu)}`:`+${m}% = ${formatMoney(total)} profit`).setValue(String(m));
+                });
+                const markupMenu = new StringSelectMenuBuilder().setCustomId('trademenu_markup').setPlaceholder('Select markup % above market (company funds pay you)...').addOptions(markupOptions);
                 const rowMarkup = new ActionRowBuilder().addComponents(markupMenu);
-                const embedMarkup = new EmbedBuilder().setTitle('🤝 Trade Menu — Step 4/4').setDescription(`**${sourceCompany.name}** → **${targetCompany.name}**
-**${qty}x ${selectedItem}** — select **markup %** above market price for your profit`).setColor(0x5865F2);
+                const embedMarkup = new EmbedBuilder().setTitle('🤝 Trade Menu — Step 4/4 — Set Price').setDescription(`**${sourceCompany.name}** → **${targetCompany.name}**\n**${qty}x ${selectedItem}** — Market **${formatMoney(basePriceMenu)}**\nSelect **markup % above market** — buyer **${targetCompany.name}** pays from **company funds** (not CEO personal), you receive **market + markup**\n*Example: Bread 50 + 5% = 52*`).setColor(0x5865F2);
                 // store qty/item for next step via closure vars
                 collector._pendingQty = qty;
                 await interaction.update({ embeds: [embedMarkup], components: [rowMarkup] });
@@ -5372,7 +5375,8 @@ if (command === 'foundcompany') {
                     const isCrossSSR=curSource.hq_ssr!==curTarget.hq_ssr; const isCrossRegion=getRegionNameForSSR(curSource.hq_ssr)!==getRegionNameForSSR(curTarget.hq_ssr); const bonusRate=isCrossRegion?0.10:isCrossSSR?0.06:0.06; const bonus=Math.floor(baseVal*qty*bonusRate*getInflationMultiplier());
                     if(bonus>0){ curSource.funds=(curSource.funds||0)+Math.floor(bonus*0.6); curTarget.funds=(curTarget.funds||0)+Math.floor(bonus*0.4); curData.money_printed=(curData.money_printed||0)+bonus; }
                     curData.companies[sourceId]=curSource; curData.companies[selectedCompanyId]=curTarget; saveData(curData); updateCompanyPrice(sourceId); updateCompanyPrice(selectedCompanyId);
-                    const doneEmbed=new EmbedBuilder().setTitle('✅ Trade Accepted (Menu)').setDescription(`**${curSource.name}** → **${curTarget.name}** **${qty}x ${selectedItem}**`+(bonus>0?`\n💰 +₽${bonus}`:'')).setColor(0x00FF00);
+                    const priceText = (()=>{ const base=(CRAFTING_RECIPES[selectedItem]?.value??RESOURCE_VALUES[canonRes(selectedItem)]??10)*qty*getInflationMultiplier(); const mk=markup; const tot=mk?Math.floor(base*(1+mk/100)):0; return tot?`💰 Paid **${formatMoney(tot)}** from **${curTarget.name}** funds → **${curSource.name}** (${mk}% markup)`:'No markup — only subsidy'; })();
+                    const doneEmbed=new EmbedBuilder().setTitle('✅ Trade Accepted (Menu)').setDescription(`**${curSource.name}** → **${curTarget.name}** **${qty}x ${selectedItem}**\n${priceText}`+(bonus>0?`\n💰 Subsidy +₽${bonus} (state)`:'')).setColor(0x00FF00);
                     await inter2.update({ content: `✅ Trade **${tradeId}** accepted by <@${inter2.user.id}>`, embeds: [doneEmbed], components: [] });
                 });
                 collector2.on('end', async (c,reason)=>{ if(reason==='time' && pendingTrades.has(tradeId)){ pendingTrades.delete(tradeId); try{ await tradeMsg.edit({ content:`⏰ Trade **${tradeId}** expired`, embeds:[], components:[]}); }catch{}}});
