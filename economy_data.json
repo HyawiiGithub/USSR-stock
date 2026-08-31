@@ -134054,8 +134054,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 55186,
-      "market_cap": 55186,
+      "share_price": 55202,
+      "market_cap": 55202,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -134082,7 +134082,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        51900,
         52065,
         52355,
         53019,
@@ -134181,7 +134180,8 @@
         55128,
         55149,
         55168,
-        55186
+        55186,
+        55202
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -134199,16 +134199,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 1,
-      "change_percent": -0.12460682599112391,
-      "recorded_at": "2026-08-31T06:59:46.646Z"
-    },
-    {
-      "price": 1,
-      "change_percent": -1.3724613001746118,
-      "recorded_at": "2026-08-31T07:04:46.637Z"
-    },
     {
       "price": 1,
       "change_percent": -0.5994235879845109,
@@ -134698,6 +134688,16 @@
       "price": 10,
       "change_percent": 5.375183484540666,
       "recorded_at": "2026-08-31T14:30:35.268Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.475017624395144,
+      "recorded_at": "2026-08-31T14:33:49.489Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.041869729223028,
+      "recorded_at": "2026-08-31T14:34:06.232Z"
     }
   ],
   "factory_names": [
@@ -134944,7 +134944,6 @@
     "Canned Fish": 7,
     "Steel Ingot": 2,
     "Refined Fuel": 1,
-    "Iron Ingot": 1,
     "Canned Food": 9,
     "Fuel": 6,
     "Copper Ingot": 2
@@ -134955,7 +134954,7 @@
     "Timber Planks": 102,
     "Refined Fuel": 40,
     "Fuel": 9,
-    "Iron Ingot": 14,
+    "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 15,
@@ -135997,6 +135996,11 @@
       "item": "Canned Food",
       "qty": 1,
       "at": "2026-08-31T14:04:22.523Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 1,
+      "at": "2026-08-31T14:34:05.302Z"
     }
   ],
   "demand_history": {
@@ -136790,6 +136794,11 @@
         "demand": 1.3291902682336771,
         "at": "2026-08-31T13:24:46.502Z",
         "supply": 2
+      },
+      {
+        "demand": 1.3454421066837603,
+        "at": "2026-08-31T14:34:05.302Z",
+        "supply": 2
       }
     ],
     "Shale Oil": [
@@ -137061,10 +137070,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 248049,
-      "at": "2026-08-31T06:39:47.212Z"
-    },
     {
       "total": 248064,
       "at": "2026-08-31T06:44:47.209Z"
@@ -137460,6 +137465,10 @@
     {
       "total": 248691,
       "at": "2026-08-31T14:29:06.353Z"
+    },
+    {
+      "total": 248726,
+      "at": "2026-08-31T14:34:06.386Z"
     }
   ],
   "gold_rush": {
