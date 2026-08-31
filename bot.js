@@ -421,6 +421,7 @@ function defaultData() {
                 gsi: 150, // GSI index
                 growth: 10 // % growth vs plan start (overall economy growth)
             },
+            announced: false,
             startValues: null, // set on creation: {circulation, goldBacking, production, gsi}
             rewards: { bonus: "Shock workers honoured + 10% production boost if fulfilled" }
         }
@@ -1516,11 +1517,13 @@ function repairCompanyState(data) {
             endAt: new Date(Date.now() + 5*24*3600*1000).toISOString(),
             targets: { circulation: 600000, goldBacking: 60, production: 3000, gsi: 150, growth: 10 },
             startValues: null,
+            announced: false,
             rewards: { bonus: "Shock workers honoured + 10% production boost if fulfilled" }
         };
         changed = true;
     }
     if (data.five_year_plan.targets.growth === undefined) { data.five_year_plan.targets.growth = 10; changed = true; }
+    if (data.five_year_plan_announced === undefined) { data.five_year_plan_announced = false; changed = true; }
     if (!data.five_year_plan.startValues) {
         // snapshot start values for growth calc
         try {
@@ -2257,7 +2260,32 @@ client.on(Events.MessageCreate, async message => {
     
     if (command === 'changelogs') {
         const pages = [];
-        pages.push(new EmbedBuilder().setTitle('📋 Changelog — v4.20 Work Food Setting (current)').setColor(0xFFD700).setFooter({ text: 'Page 1/20 • Use buttons/menu to navigate' }).setDescription(
+        pages.push(new EmbedBuilder().setTitle('📋 Changelog — v4.25 Five Year Plan + Growth + Salaries (current)').setColor(0xFFD700).setFooter({ text: 'Page 1/25 • Use buttons/menu to navigate' }).setDescription(
+            '**v4.25 — Five Year Plan + Growth + Salaries (current)**\n' +
+            '- **Five Year Plan updated:** now 5 targets: **circulation 600k ₽**, **gold 60%**, **production 3000**, **GSI 150**, **growth 10%** vs start — `-plan`/`-fiveyearplan` shows ✅ when met, `-setplan <circ> <gold%> <prod> <gsi> [growth%]` (owner, saves start snapshot for growth)\n' +
+            '- **Growth%** requirement: e.g. 10% growth = (current - start)/start*100 must reach 10% — overall progress = avg of 5\n' +
+            '- **Website:** `TOTAL RUBLES` card + `Five Year Plan` now 5 bars (circulation/gold/production/gsi/growth), company cards show salaries `CEO 5% | Director 5% | Manager 2%`\n' +
+            '- **First -fiveyearplan** now announces in **every workzone** (6 channels) with plan embed'
+        ));
+        pages.push(new EmbedBuilder().setTitle('📋 Changelog — v4.24 Salaries % + Collect Pay').setColor(0xFFD700).setFooter({ text: 'Page 2/25 • Use buttons/menu to navigate' }).setDescription(
+            '**v4.24 — Salaries % + Collect Pay**\n' +
+            '- **Salaries % from company funds:** CEO/Director/Manager salaries as **% of company funds** — setable by CEO/Director via `-setsalary <ceo|director|manager> <0-20>` (default 5/5/2)\n' +
+            '- **Payout:** `-paysalaries` (CEO/Director/Manager) pays `funds*%` to each role (CEO gets ceo%, each Manager gets manager%), also **auto-paid on `-collect`** with embed field `💼 Salaries Paid`\n' +
+            '- **Example:** `-setsalary ceo 7` → CEO gets 7% of funds on next collect\n' +
+            '- **Trade:** now clearly uses **company funds** (not CEO personal) — trademenu Step4 shows `Market 50 +5% = 52` from buyer company funds → seller'
+        ));
+        pages.push(new EmbedBuilder().setTitle('📋 Changelog — v4.23 Gold Rush Configurable').setColor(0xFFD700).setFooter({ text: 'Page 3/25 • Use buttons/menu to navigate' }).setDescription(
+            '**v4.23 — Gold Rush Configurable (secret)**\n' +
+            '- **No permanent bonus:** 0 RN — `-goldrush` (Primary/Co-Primary) menu Step1 SSR (gold SSRs only: Russian, Georgian, Armenian, Kazakh, Uzbek, Nuristani, Kirghiz) → Step2 duration 24/30/36/48h → Step3 boost 25/50/75/100/150%\n' +
+            '- **Effect:** +XX% Gold weight for that SSR for YY hours via `-work` (Gold qty 2 during rush) and `-collect` Gold Mine (+50% prod), announced in chosen SSR work_zone + Nuristani workzone `1538704555670245448`\n' +
+            '- **Visible:** `-spawnrates <SSR>` shows `⛏️ GOLD RUSH +XX%` weight, `gold_rush` exposed via API/website'
+        ));
+        pages.push(new EmbedBuilder().setTitle('📋 Changelog — v4.22 Total Rubles + Gold Fix').setColor(0xFFD700).setFooter({ text: 'Page 4/25 • Use buttons/menu to navigate' }).setDescription(
+            '**v4.22 — Total Rubles + Gold Fix**\n' +
+            '- **Total Rubles in Circulation:** new `total_rubles_history[100]` (Σ cash+bank for every citizen, even 0) — `api/ussr/overview` + `ussr.js` + website card `TOTAL RUBLES` with history graph (100 pts, 5min), `change %` now flat 0% until real data (was random)\n' +
+            '- **Gold Standard % fix:** `moneySupply` now only `users+companies` (was incorrectly `+reserves+printed` → always ~0.3% FIAT) — matches `bot:getMoneySupply()`'
+        ));
+        pages.push(new EmbedBuilder().setTitle('📋 Changelog — v4.20 Work Food Setting (current)').setColor(0xFFD700).setFooter({ text: 'Page 5/25 • Use buttons/menu to navigate' }).setDescription(
             '**v4.20 — Work Food Setting (current)**\n' +
             '- **Company setting:** CEO/Director/Manager can now set **which food is consumed per -work** via `-setworkfood <item|auto>` / `-workfood` to view. Was always lowest food (Wheat 1🍞) — now you can choose Fish 2🍞 (wasteful if you have fish surplus) or Bread 3🍞 etc.\n' +
             '- **Why Fish 2🍞 is wasteful:** 1 work needs 1🍞, but Fish is 2🍞 — consuming 1 Fish wastes 1🍞 vs Wheat 1🍞. Set to `Wheat` to save fish for trade. `auto` = lowest first (most efficient).\n' +
@@ -6767,6 +6795,20 @@ if (command === 'foundcompany') {
                 { name: `${chk(p.growth.pct)} 📊 Growth ${p.growth.pct}%`, value: `${bar(p.growth.pct)}\n${p.growth.current.toFixed(1)}% / ${p.growth.target}% required ${p.growth.pct>=100?'✅':''} (vs start)`, inline: false }
             ).setFooter({text: prog.overall>=100 ? '✅ PLAN FULFILLED — Shock workers honoured!' : 'Central Committee urges: meet quotas! Requirements show ✅ when met.'});
         await message.reply({ embeds: [embed] });
+        // First time announcement in every workzone
+        if (!data.five_year_plan || !data.five_year_plan.announced) {
+            if (data.five_year_plan) data.five_year_plan.announced = true;
+            else data.five_year_plan_announced = true;
+            saveData(data);
+            const workZones = Object.values(WORK_ZONES);
+            const zones = workZones.length ? workZones : ["1538704167890329621","1538703449095676016","1538704231249354772","1538703028524285962","1538703181733695600","1538704555670245448"];
+            for (const zid of zones) {
+                try {
+                    const ch = await client.channels.fetch(zid);
+                    if (ch) await ch.send({ embeds: [embed] });
+                } catch {}
+            }
+        }
         return;
     }
     if (command === 'setplan' || command === 'setfiveyearplan') {
@@ -6796,6 +6838,23 @@ if (command === 'foundcompany') {
         logOwnerAction(data, userId, message.author.username, 'setplan', `circulation ${circ}, gold ${gold}%, prod ${prod}, gsi ${gsi}, growth ${growth}%`);
         saveData(data);
         await message.reply(`✅ Five Year Plan updated — targets: circulation ${circ.toLocaleString()} ₽, gold ${gold}%, production ${prod}, GSI ${gsi}, growth ${growth}% (5 days) — start snapshot saved`);
+        // Announce new plan in every workzone
+        try {
+            const prog2 = getFiveYearPlanProgress(data);
+            const p2 = prog2.progress;
+            const bar2 = (pct)=> '█'.repeat(Math.min(20, Math.round(pct/5))) + '░'.repeat(20 - Math.min(20, Math.round(pct/5)));
+            const embedAnn = new EmbedBuilder().setTitle('📜 New Five Year Plan — ЦК КПСС').setDescription(`**${new Date(data.five_year_plan.startAt).toLocaleDateString()} → ${new Date(data.five_year_plan.endAt).toLocaleDateString()}**\nTargets: circulation ${circ.toLocaleString()} ₽, gold ${gold}%, production ${prod}, GSI ${gsi}, growth ${growth}%\nOverall **${prog2.overall}%**`).setColor(0xFFD700)
+                .addFields(
+                    { name: `💰 Circulation`, value: `${bar2(p2.circulation.pct)}\n${p2.circulation.current.toLocaleString()} / ${p2.circulation.target.toLocaleString()} ₽`, inline: false },
+                    { name: `🥇 Gold`, value: `${bar2(p2.goldBacking.pct)}\n${p2.goldBacking.current.toFixed(1)}% / ${p2.goldBacking.target}%`, inline: false },
+                    { name: `🏭 Production`, value: `${bar2(p2.production.pct)}\n${p2.production.current} / ${p2.production.target}`, inline: false },
+                    { name: `📈 GSI`, value: `${bar2(p2.gsi.pct)}\n${p2.gsi.current} / ${p2.gsi.target}`, inline: false },
+                    { name: `📊 Growth`, value: `${bar2(p2.growth.pct)}\n${p2.growth.current.toFixed(1)}% / ${p2.growth.target}%`, inline: false }
+                ).setFooter({text: `Set by ${message.author.username} — Central Committee`});
+            const zones = Object.values(WZ || WORK_ZONES || {});
+            const list = zones.length ? zones : ["1538704167890329621","1538703449095676016","1538704231249354772","1538703028524285962","1538703181733695600","1538704555670245448"];
+            for (const zid of list) { try { const ch = await client.channels.fetch(zid); if (ch) await ch.send({ embeds: [embedAnn] }); } catch {} }
+        } catch {}
         return;
     }
 
