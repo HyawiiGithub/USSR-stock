@@ -547,15 +547,15 @@
       "ceo_of": null
     },
     "1495413593242337421": {
-      "cash": 135,
+      "cash": 150,
       "bank": 32180,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-31T13:17:38.750Z",
-      "work_count": 158,
+      "last_work": "2026-08-31T13:33:09.079Z",
+      "work_count": 159,
       "last_claim": "2026-08-30T07:02:57.732Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -133383,7 +133383,7 @@
         "Gold Bar": 5,
         "Aluminium": 16,
         "Uranium Rod": 2,
-        "Wheat": 165,
+        "Wheat": 200,
         "Iron Ore": 3,
         "Aluminium Ore": 10,
         "Iron Ingot": 1
@@ -133499,7 +133499,12 @@
       "specialization": "extraction",
       "managers": [],
       "work_food": "auto",
-      "wage": 25
+      "wage": 25,
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      }
     },
     "state_24": {
       "id": "state_24",
@@ -133578,7 +133583,12 @@
       "last_govcontract": null,
       "specialization": "production",
       "managers": [],
-      "work_food": "auto"
+      "work_food": "auto",
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      }
     },
     "state_25": {
       "id": "state_25",
@@ -133613,7 +133623,7 @@
         "Natural Gas": 42,
         "Cotton": 8,
         "Oil": 26,
-        "Wheat": 197,
+        "Wheat": 200,
         "Iron Ore": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
@@ -133662,7 +133672,12 @@
       "specialization": "extraction",
       "wage": 20,
       "managers": [],
-      "work_food": "Wheat"
+      "work_food": "Wheat",
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      }
     },
     "state_26": {
       "id": "state_26",
@@ -133700,7 +133715,7 @@
         "Canned Food": 15,
         "Bread": 15,
         "Fish": 22,
-        "Wheat": 21,
+        "Wheat": 36,
         "Sugar": 7,
         "Canned Fish": 1,
         "Gold": 2,
@@ -133823,7 +133838,12 @@
         "1536339779140976711",
         "1229741033265299506"
       ],
-      "work_food": "Citrus"
+      "work_food": "Citrus",
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      }
     },
     "state_27": {
       "id": "state_27",
@@ -133838,8 +133858,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 179313,
-      "market_cap": 179313,
+      "share_price": 179302,
+      "market_cap": 179302,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -133857,17 +133877,16 @@
       "inventory": {
         "Timber": 126,
         "Natural Gas": 61,
-        "Iron Ore": 65,
+        "Iron Ore": 66,
         "Coal": 89,
         "Uranium": 4,
         "Oil": 88,
         "Gold": 7,
-        "Wheat": 124
+        "Wheat": 200
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T13:28:14.075Z",
       "price_history": [
-        174012,
         174028,
         174052,
         174108,
@@ -133966,7 +133985,8 @@
         178786,
         178825,
         179105,
-        179313
+        179313,
+        179302
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -133976,7 +133996,12 @@
       "managers": [
         "730223629849199093"
       ],
-      "work_food": "auto"
+      "work_food": "auto",
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      }
     },
     "state_28": {
       "id": "state_28",
@@ -134127,7 +134152,12 @@
       "wage": 15,
       "specialization": "agriculture",
       "managers": [],
-      "work_food": "Wheat"
+      "work_food": "Wheat",
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      }
     }
   },
   "gsi_history": [
@@ -137374,5 +137404,27 @@
     "expiresAt": "2026-08-31T16:40:11.999Z",
     "startedBy": "1082686076491137115",
     "startedAt": "2026-08-30T16:40:12.037Z"
-  }
+  },
+  "five_year_plan": {
+    "startAt": "2026-08-31T13:34:21.908Z",
+    "endAt": "2026-09-05T13:34:21.908Z",
+    "targets": {
+      "circulation": 600000,
+      "goldBacking": 60,
+      "production": 3000,
+      "gsi": 150,
+      "growth": 10
+    },
+    "announced": false,
+    "startValues": {
+      "circulation": 247599,
+      "goldBacking": 2.6670090974643657,
+      "production": 2022,
+      "gsi": 1
+    },
+    "rewards": {
+      "bonus": "Shock workers honoured + 10% production boost if fulfilled"
+    }
+  },
+  "five_year_plan_announced": false
 }
