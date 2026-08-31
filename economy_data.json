@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 15,
+      "cash": 30,
       "bank": 14072,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-31T09:14:42.655Z",
-      "work_count": 442,
+      "last_work": "2026-08-31T09:20:27.448Z",
+      "work_count": 443,
       "last_claim": "2026-08-31T09:08:44.392Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -133603,8 +133603,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 89284,
-      "market_cap": 89284,
+      "share_price": 89318,
+      "market_cap": 89318,
       "employees": 19,
       "level": 1,
       "buildings": {
@@ -133632,12 +133632,12 @@
         "Canned Fish": 1,
         "Steel Ingot": 2,
         "Refined Fuel": 1,
-        "Copper Ingot": 2
+        "Copper Ingot": 2,
+        "Oil": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T05:43:16.162Z",
       "price_history": [
-        79664,
         79672,
         79694,
         79719,
@@ -133736,7 +133736,8 @@
         89153,
         89243,
         89251,
-        89284
+        89284,
+        89318
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -134056,11 +134057,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 1,
-      "change_percent": 0.1612053820832845,
-      "recorded_at": "2026-08-31T01:29:46.165Z"
-    },
     {
       "price": 1,
       "change_percent": -0.8773936029677154,
@@ -134555,6 +134551,11 @@
       "price": 1,
       "change_percent": -0.20277411838579956,
       "recorded_at": "2026-08-31T09:14:46.652Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 0.5919923060972343,
+      "recorded_at": "2026-08-31T09:19:46.751Z"
     }
   ],
   "factory_names": [
@@ -134575,11 +134576,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.11367275210862501,
+  "inflation": 0.08039500267004883,
   "money_printed": 223,
   "total_bank_reserves": 181282,
   "inflation_history": [
-    0.13667876234433607,
     0.08876153163085054,
     0.10048400363573202,
     0.0805688566907977,
@@ -134678,7 +134678,8 @@
     0.088105580412291,
     0.11608623991685646,
     0.08570834604250507,
-    0.11367275210862501
+    0.11367275210862501,
+    0.08039500267004883
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -136789,10 +136790,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 247000,
-      "at": "2026-08-31T01:29:47.167Z"
-    },
-    {
       "total": 247030,
       "at": "2026-08-31T01:34:47.170Z"
     },
@@ -137187,6 +137184,10 @@
     {
       "total": 248368,
       "at": "2026-08-31T09:14:47.240Z"
+    },
+    {
+      "total": 248383,
+      "at": "2026-08-31T09:19:47.233Z"
     }
   ],
   "gold_rush": {
