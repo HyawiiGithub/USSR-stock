@@ -41,6 +41,98 @@ const GOVCONTRACT_COOLDOWN_SECS = (() => {
     const v = parseInt(process.env.GOVCONTRACT_COOLDOWN);
     return Number.isFinite(v) && v > 0 ? v : 3600; // 1h global
 })();
+// ============================================================
+// TAXATION CODE No. 001-2026 — increased 5% for balance (original in Google Doc)
+// ============================================================
+// WHERE WE INCREASED (tell user to edit Google Doc here):
+// - Individual: 351-1000 5%→10% (+5), 1001-5000 10%→15% (+5), 5001-200k 15%→20% (+5), >200k 25%→30% (+5) [0-350 stays 0%]
+// - Corporate: 5001-15000 5%→10% (+5), 15001-30000 8%→13% (+5), >30000 12%→17% (+5) [0-5000 stays 0%]
+// - Stock: Buy 2%→7% (+5), Sell 5%→10% (+5)
+// - Luxury: 5%→10% (+5)
+const TAX_BRACKETS_INDIVIDUAL = [
+    { upTo: 350, rate: 0 },          // 0-350 0% (unchanged)
+    { upTo: 1000, rate: 10 },         // 351-1000 10% (was 5% +5)
+    { upTo: 5000, rate: 15 },         // 1001-5000 15% (was 10% +5)
+    { upTo: 200000, rate: 20 },       // 5001-200k 20% (was 15% +5)
+    { upTo: Infinity, rate: 30 },     // >200k 30% (was 25% +5)
+];
+const TAX_BRACKETS_CORPORATE = [
+    { upTo: 5000, rate: 0 },          // 0-5k 0% (unchanged)
+    { upTo: 15000, rate: 10 },        // 5k-15k 10% (was 5% +5)
+    { upTo: 30000, rate: 13 },        // 15k-30k 13% (was 8% +5)
+    { upTo: Infinity, rate: 17 },     // >30k 17% (was 12% +5)
+];
+const TAX_STOCK_BUY = 7;  // was 2% +5
+const TAX_STOCK_SELL = 10; // was 5% +5
+const TAX_LUXURY = 10; // was 5% +5
+function calculateIndividualTax(amount) {
+    for (const b of TAX_BRACKETS_INDIVIDUAL) {
+        if (amount <= b.upTo) return Math.floor(amount * b.rate / 100);
+    }
+    return 0;
+}
+function calculateCorporateTax(amount) {
+    for (const b of TAX_BRACKETS_CORPORATE) {
+        if (amount <= b.upTo) return Math.floor(amount * b.rate / 100);
+    }
+    return 0;
+}
+async function collectWeeklyTaxes(manual=false) {
+    const data = loadData();
+    // prevent double collection within same week unless manual
+    if (!manual && data.last_weekly_tax) {
+        const last = new Date(data.last_weekly_tax);
+        const now = new Date();
+        // same ISO week?
+        const getWeek = (d) => { const dd = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())); const dayNum = dd.getUTCDay() || 7; dd.setUTCDate(dd.getUTCDate() + 4 - dayNum); const yearStart = new Date(Date.UTC(dd.getUTCFullYear(),0,1)); return Math.ceil((((dd - yearStart) / 86400000) + 1)/7); };
+        if (getWeek(last) === getWeek(now) && last.getUTCFullYear() === now.getUTCFullYear()) {
+            return null; // already collected this week
+        }
+    }
+    let totalFromUsers = 0, totalFromCompanies = 0, usersTaxed = 0, companiesTaxed = 0;
+    // Individual: tax on total cash+bank (if >=100)
+    for (const [uid, u] of Object.entries(data.users || {})) {
+        if (uid === STATE_BANK_USER_ID) continue;
+        const total = (u.cash||0) + (u.bank||0);
+        if (total < 100) continue; // skip <100 to reduce lag
+        const tax = calculateIndividualTax(total);
+        if (tax <= 0) continue;
+        // deduct proportionally from bank first, then cash
+        let remaining = tax;
+        if ((u.bank||0) >= remaining) {
+            u.bank -= remaining;
+        } else {
+            remaining -= (u.bank||0);
+            u.bank = 0;
+            u.cash = Math.max(0, (u.cash||0) - remaining);
+        }
+        totalFromUsers += tax;
+        usersTaxed++;
+    }
+    // Corporate: tax on company funds (if >=100)
+    for (const [cid, c] of Object.entries(data.companies || {})) {
+        const funds = c.funds || 0;
+        if (funds < 100) continue;
+        const tax = calculateCorporateTax(funds);
+        if (tax <= 0) continue;
+        c.funds = Math.max(0, funds - tax);
+        totalFromCompanies += tax;
+        companiesTaxed++;
+    }
+    const totalCollected = totalFromUsers + totalFromCompanies;
+    if (totalCollected > 0) {
+        // send to state bank
+        const stateUser = ensureUserRecord(data, STATE_BANK_USER_ID);
+        stateUser.bank = (stateUser.bank||0) + totalCollected;
+        // also via UnbelievaBoat if available
+        try { await addToStateBank(totalCollected, `Weekly taxes ${new Date().toISOString().slice(0,10)}`); } catch {}
+    }
+    data.last_weekly_tax = new Date().toISOString();
+    // log
+    logOwnerAction(data, 'SYSTEM', 'GOSBANK', 'weekly_taxes', `collected ${formatMoney(totalCollected)} from ${usersTaxed} users + ${companiesTaxed} companies (individual ${formatMoney(totalFromUsers)}, corporate ${formatMoney(totalFromCompanies)})`);
+    saveData(data);
+    return { totalCollected, totalFromUsers, totalFromCompanies, usersTaxed, companiesTaxed };
+}
 const DATA_FILE = path.join(__dirname, 'economy_data.json');
 // GitHub sync — pushes economy_data.json to USSR-stock so Vercel/Pages show LIVE bot data (no mock)
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
@@ -314,7 +406,8 @@ const MINES = {
     "Uranium Mine": {"cost": 60000, "upgrade_mult": 2.5, "emoji": "☢️", "produces": ["Uranium"], "rate": 2, "max_level": 8, "rare": true},
     "Oil Rig": {"cost": 45000, "upgrade_mult": 2.0, "emoji": "🛢️", "produces": ["Oil", "Natural Gas"], "rate": 5, "max_level": 10},
     "Timber Camp": {"cost": 10000, "upgrade_mult": 1.8, "emoji": "🌲", "produces": ["Timber"], "rate": 6, "max_level": 10},
-    "Farm": {"cost": 12000, "upgrade_mult": 1.8, "emoji": "🌾", "produces": ["Wheat", "Sugar"], "rate": 6, "max_level": 10}
+    "Farm": {"cost": 12000, "upgrade_mult": 1.8, "emoji": "🌾", "produces": ["Wheat", "Sugar"], "rate": 6, "max_level": 10},
+    "Sulfur Mine": {"cost": 14000, "upgrade_mult": 2.0, "emoji": "🟡", "produces": ["Sulphur"], "rate": 4, "max_level": 10}
 };
 
 const FACTORIES = {
@@ -325,7 +418,8 @@ const FACTORIES = {
     "Electronics Factory": {"cost": 60000, "upgrade_mult": 2.0, "emoji": "💻", "produces": ["Circuit Board"], "requires": {"Copper Ingot": 3, "Lead": 2}, "rate": 4, "max_level": 10},
     "Bakery": {"cost": 30000, "upgrade_mult": 1.8, "emoji": "🍞", "produces": ["Bread", "Cake"], "requires": {"Wheat": 3, "Sugar": 2}, "rate": 5, "max_level": 10},
     "Winery": {"cost": 35000, "upgrade_mult": 1.8, "emoji": "🍷", "produces": ["Wine"], "requires": {"Grapes": 4}, "rate": 4, "max_level": 10},
-    "Nuclear Reactor": {"cost": 180000, "upgrade_mult": 2.4, "emoji": "☢️", "produces": ["Power"], "requires": {"Uranium Rod": 2, "Steel Beam": 2}, "rate": 1, "max_level": 5, "power": 10, "desc": "Provides 10 power; factories need power — without it, factories run at 70%"}
+    "Nuclear Reactor": {"cost": 180000, "upgrade_mult": 2.4, "emoji": "☢️", "produces": ["Power"], "requires": {"Uranium Rod": 2, "Steel Beam": 2}, "rate": 1, "max_level": 5, "power": 10, "desc": "Provides 10 power; factories need power — without it, factories run at 70%"},
+    "Buildslot": {"cost": 75000, "upgrade_mult": 1.8, "emoji": "🏗️", "produces": [], "rate": 0, "max_level": 10, "desc": "Fake build — adds +1 slot for chosen building (extra Farm/Mine/etc)"}
 };
 
 const STORE = {"cost": 25000, "upgrade_mult": 1.5, "emoji": "🏪", "rate": 3, "max_level": 10};
@@ -2048,6 +2142,44 @@ client.once(Events.ClientReady, async () => {    console.log(`✅ Logged in as $
             saveData(data);
         } catch (err) { console.error('Total rubles tick error:', err); }
     }, 300000);
+
+    // Weekly taxes — every Monday 12:00 CET (Europe/Berlin = 11:00 UTC winter, 10:00 UTC summer)
+    setInterval(async () => {
+        try {
+            const now = new Date();
+            // get Berlin time
+            const berlinStr = now.toLocaleString('en-US', { timeZone: 'Europe/Berlin', hour12: false });
+            const berlin = new Date(berlinStr);
+            const day = berlin.getDay(); // 0 Sun, 1 Mon
+            const hour = berlin.getHours();
+            if (day !== 1 || hour !== 12) return;
+            // check if already collected this ISO week
+            const dataCheck = loadData();
+            if (dataCheck.last_weekly_tax) {
+                const last = new Date(dataCheck.last_weekly_tax);
+                const lastBerlinStr = last.toLocaleString('en-US', { timeZone: 'Europe/Berlin' });
+                const lastBerlin = new Date(lastBerlinStr);
+                // same week?
+                const getWeek = (d) => {
+                    const dd = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+                    const dayNum = dd.getUTCDay() || 7;
+                    dd.setUTCDate(dd.getUTCDate() + 4 - dayNum);
+                    const yearStart = new Date(Date.UTC(dd.getUTCFullYear(),0,1));
+                    return Math.ceil((((dd - yearStart) / 86400000) + 1)/7);
+                };
+                if (getWeek(berlin) === getWeek(lastBerlin) && berlin.getFullYear() === lastBerlin.getFullYear()) return;
+            }
+            const result = await collectWeeklyTaxes(false);
+            if (!result || result.totalCollected === 0) return;
+            const embed = new EmbedBuilder().setTitle('🏛️ Weekly Taxes Collected — State Bank').setDescription(`**${new Date().toLocaleDateString('en-GB', {timeZone: 'Europe/Berlin'})} 12:00 CET**\nCollected **${formatMoney(result.totalCollected)}** from **${result.usersTaxed}** citizens + **${result.companiesTaxed}** companies\n\n• From users: **${formatMoney(result.totalFromUsers)}**\n• From companies: **${formatMoney(result.totalFromCompanies)}**\n\nSent to **State Bank** (<@${STATE_BANK_USER_ID}>)\n*Skipped <100 ₽ balances for performance*`).setColor(0xFFD700).setFooter({text: 'Tax brackets: Individual 0-350 0% | 351-1k 10% (+5) | 1k-5k 15% (+5) | 5k-200k 20% (+5) | >200k 30% (+5) • Corporate 0-5k 0% | 5k-15k 10% (+5) | 15k-30k 13% (+5) | >30k 17% (+5)'});
+            const ch = client.channels.cache.get(EVENT_CHANNEL_ID);
+            if (ch) await ch.send({ embeds: [embed] });
+            // also announce in every workzone
+            for (const zid of Object.values(WORK_ZONES)) {
+                try { const c = await client.channels.fetch(zid); if (c) await c.send({ embeds: [embed] }); } catch {}
+            }
+        } catch (err) { console.error('Weekly tax tick error', err); }
+    }, 3600000); // every hour check
 
     // Scheduled trades — hourly check
     setInterval(() => {
@@ -6854,10 +6986,33 @@ if (command === 'foundcompany') {
                     { name: `📈 GSI`, value: `${bar2(p2.gsi.pct)}\n${p2.gsi.current} / ${p2.gsi.target}`, inline: false },
                     { name: `📊 Growth`, value: `${bar2(p2.growth.pct)}\n${p2.growth.current.toFixed(1)}% / ${p2.growth.target}%`, inline: false }
                 ).setFooter({text: `Set by ${message.author.username} — Central Committee`});
-            const zones = Object.values(WZ || WORK_ZONES || {});
+            const zones = Object.values(WORK_ZONES);
             const list = zones.length ? zones : ["1538704167890329621","1538703449095676016","1538704231249354772","1538703028524285962","1538703181733695600","1538704555670245448"];
             for (const zid of list) { try { const ch = await client.channels.fetch(zid); if (ch) await ch.send({ embeds: [embedAnn] }); } catch {} }
         } catch {}
+        return;
+    }
+
+    // ============================================================
+    // TAXES — weekly Monday 12:00 CET to State Bank, increased 5% for balance
+    // ============================================================
+    if (command === 'tax' || command === 'taxes' || command === 'taxinfo' || command === 'taxbrackets') {
+        const embed = new EmbedBuilder().setTitle('🏛️ Taxation Code No. 001-2026 — +5% Balanced').setColor(0xFFD700)
+            .addFields(
+                { name: '👤 Individual', value: `0–350 **0%**\n351–1k **10%** *(was 5% +5)*\n1k–5k **15%** *(was 10% +5)*\n5k–200k **20%** *(was 15% +5)*\n>200k **30%** *(was 25% +5)*`, inline: true },
+                { name: '🏢 Corporate', value: `0–5k **0%**\n5k–15k **10%** *(was 5% +5)*\n15k–30k **13%** *(was 8% +5)*\n>30k **17%** *(was 12% +5)*`, inline: true },
+                { name: '📈 Stock / Luxury', value: `Buy **7%** *(was 2% +5)*\nSell **10%** *(was 5% +5)*\nLuxury **10%** *(was 5% +5)*`, inline: true },
+                { name: '⏰ Weekly', value: `Every **Monday 12:00 CET** (11:00 UTC) → State Bank\nSkips <100 ₽ (lag) • Auto to <@${STATE_BANK_USER_ID}>`, inline: false },
+                { name: '📍 Where increased', value: `All brackets **+5%** except 0% stays 0% — see Google Doc: increase each rate by 5 (Individual 5→10, 10→15, 15→20, 25→30; Corporate 5→10, 8→13, 12→17; Stock 2→7, 5→10; Luxury 5→10)`, inline: false }
+            ).setFooter({text: 'Edit Google Doc: https://docs.google.com/document/d/18ydFdo2c0ybihok_sBCiNpCwJqpTbNkExyETRXhQ7x4/edit'});
+        await message.reply({ embeds: [embed] });
+        return;
+    }
+    if (command === 'collecttaxes' || command === 'collecttax' || command === 'runtaxes') {
+        if (!isBotOwner(userId)) { await message.reply('❌ Owner only!'); return; }
+        const result = await collectWeeklyTaxes(true);
+        if (!result || result.totalCollected===0) { await message.reply('📭 No taxes collected (all <100 ₽ or already collected this week)'); return; }
+        await message.reply(`✅ Manual weekly taxes: **${formatMoney(result.totalCollected)}** from ${result.usersTaxed} users + ${result.companiesTaxed} companies (individual ${formatMoney(result.totalFromUsers)}, corporate ${formatMoney(result.totalFromCompanies)}) → State Bank`);
         return;
     }
 
@@ -7162,7 +7317,7 @@ client.on(Events.MessageCreate, async message => {
     const validCommands = [
         'addbotowner', 'addmanager', 'addowner', 'adminlogs', 'aistore', 'appointdirector', 'appointmanager', 'audit', 'autotrade', 'bal',
         'balance', 'blacklist', 'botowners', 'build', 'buygsi', 'buyshares', 'cancelschedule', 'cancelschedulemarket',
-        'changelogs', 'collect', 'companies', 'company', 'companygraph', 'companyinventory', 'companyrankings', 'companytrade',
+        'changelogs', 'collect', 'collecttax', 'collecttaxes', 'companies', 'company', 'companygraph', 'companyinventory', 'companyrankings', 'companytrade',
         'consumption', 'consumptiongraph', 'craft', 'craftcompany', 'craftpersonal', 'daily', 'delmanager', 'delowner',
         'delspawnrate', 'demand', 'demandgraph', 'dep', 'deposit', 'econstats', 'employees', 'export',
         'exportoutside', 'factorydeal', 'fire', 'fiveyear', 'fiveyearplan', 'food', 'fooddemand', 'foodstatus', 'foreignsell', 'formstatecompanies',
@@ -7171,10 +7326,10 @@ client.on(Events.MessageCreate, async message => {
         'listmanagers', 'listowners', 'listschedules', 'logs', 'managers', 'managers_add', 'managers_remove', 'map', 'market',
         'marketdemand', 'minwage', 'nationalminimumwage', 'owneradd', 'ownerlogs', 'ownerremove', 'owners', 'pay', 'paysalaries', 'paysalary', 'plan', 'portfolio',
         'printmoney', 'quit', 'quitjob', 'recipes', 'removebotowner', 'removedirector', 'removemanager', 'removeowner',
-        'removeschedule', 'resetspawnrate', 'resetssrweight', 'resign', 'resources', 'salary', 'salaries', 'schedulemarket', 'schedules', 'scheduletrade',
+        'removeschedule', 'resetspawnrate', 'resetssrweight', 'resign', 'resources', 'runtaxes', 'salary', 'salaries', 'schedulemarket', 'schedules', 'scheduletrade',
         'sellgsi', 'sellitem', 'sellshares', 'serverconsumption', 'setfiveyearplan', 'setplan', 'setsalary', 'setsalaries', 'setspawnrate', 'setssrweight', 'setwage', 'setwagefood',
         'setweight', 'setworkfood', 'spawnrate', 'spawnrates', 'specialize', 'ssrtrade', 'ssrweights', 'store',
-        'supply', 'supplygraph', 'trade', 'trademarket', 'trademenu', 'tradeschedules', 'tradeui', 'transferitem',
+        'supply', 'supplygraph', 'tax', 'taxbrackets', 'taxes', 'taxinfo', 'trade', 'trademarket', 'trademenu', 'tradeschedules', 'tradeui', 'transferitem',
         'unblacklist', 'upgrade', 'viewspawnrates', 'with', 'withdraw', 'work', 'work_food', 'workfood',
         'world', 'worldmap'
     ];
