@@ -457,15 +457,15 @@
       "ceo_of": null
     },
     "1528783188728483944": {
-      "cash": 15,
+      "cash": 30,
       "bank": 4144,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-08-31T12:21:19.536Z",
-      "work_count": 22,
+      "last_work": "2026-08-31T12:54:55.456Z",
+      "work_count": 23,
       "last_claim": "2026-08-27T11:08:16.433Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -133641,8 +133641,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 92762,
-      "market_cap": 92762,
+      "share_price": 92773,
+      "market_cap": 92773,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -133676,7 +133676,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-08-31T11:43:25.337Z",
       "price_history": [
-        84811,
         84845,
         84877,
         84968,
@@ -133775,7 +133774,8 @@
         92747,
         92738,
         92746,
-        92762
+        92762,
+        92773
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -133954,8 +133954,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 55089,
-      "market_cap": 55089,
+      "share_price": 55108,
+      "market_cap": 55108,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -133975,14 +133975,13 @@
         "Peat": 115,
         "Fish": 181,
         "Iron Ore": 1,
-        "Oil Shale": 23,
+        "Oil Shale": 24,
         "Timber": 16,
-        "Wheat": 14
+        "Wheat": 13
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        51850,
         51855,
         51849,
         51861,
@@ -134081,7 +134080,8 @@
         54601,
         54620,
         54609,
-        55089
+        55089,
+        55108
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -134094,11 +134094,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 1,
-      "change_percent": -0.024049616955120375,
-      "recorded_at": "2026-08-31T05:09:46.600Z"
-    },
     {
       "price": 1,
       "change_percent": 0.32267011631066617,
@@ -134593,6 +134588,11 @@
       "price": 1,
       "change_percent": 1.1167698153199659,
       "recorded_at": "2026-08-31T12:49:47.024Z"
+    },
+    {
+      "price": 1,
+      "change_percent": 0.9831169378101311,
+      "recorded_at": "2026-08-31T12:54:47.029Z"
     }
   ],
   "factory_names": [
@@ -134835,7 +134835,6 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Smoked Fish": 2,
     "Canned Fish": 7,
     "Steel Ingot": 3
   },
@@ -134849,7 +134848,7 @@
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 15,
-    "Smoked Fish": 18
+    "Smoked Fish": 20
   },
   "consumption_history": [
     {
@@ -135861,6 +135860,11 @@
       "item": "Smoked Fish",
       "qty": 2,
       "at": "2026-08-31T12:39:46.539Z"
+    },
+    {
+      "item": "Smoked Fish",
+      "qty": 2,
+      "at": "2026-08-31T12:54:46.605Z"
     }
   ],
   "demand_history": {
@@ -136837,6 +136841,11 @@
         "demand": 1.2122228185447956,
         "at": "2026-08-31T12:39:46.539Z",
         "supply": 0
+      },
+      {
+        "demand": 1.2284635626482,
+        "at": "2026-08-31T12:54:46.605Z",
+        "supply": 0
       }
     ]
   },
@@ -136898,10 +136907,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 247899,
-      "at": "2026-08-31T04:54:47.201Z"
-    },
     {
       "total": 247899,
       "at": "2026-08-31T04:59:47.202Z"
@@ -137297,6 +137302,10 @@
     {
       "total": 247228,
       "at": "2026-08-31T12:49:48.914Z"
+    },
+    {
+      "total": 247243,
+      "at": "2026-08-31T12:54:48.932Z"
     }
   ],
   "gold_rush": {
