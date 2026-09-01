@@ -134069,6 +134069,24 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "1478215187805900834": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -134926,11 +134944,6 @@
   "gsi_history": [
     {
       "price": 14,
-      "change_percent": 4.878974264657146,
-      "recorded_at": "2026-09-01T16:56:13.993Z"
-    },
-    {
-      "price": 14,
       "change_percent": 5.025024190520032,
       "recorded_at": "2026-09-01T16:56:21.131Z"
     },
@@ -135423,6 +135436,11 @@
       "price": 15,
       "change_percent": 4.980230800062701,
       "recorded_at": "2026-09-01T19:51:29.064Z"
+    },
+    {
+      "price": 15,
+      "change_percent": 5.067113937920665,
+      "recorded_at": "2026-09-01T19:52:32.039Z"
     }
   ],
   "factory_names": [
@@ -135694,7 +135712,6 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 1,
     "Bread": 16
   },
   "global_consumption": {
@@ -135702,7 +135719,7 @@
     "Steel Ingot": 18,
     "Timber Planks": 102,
     "Refined Fuel": 49,
-    "Fuel": 23,
+    "Fuel": 24,
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -137098,6 +137115,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-01T19:37:31.571Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-01T19:52:31.575Z"
     }
   ],
   "demand_history": {
@@ -137964,6 +137986,11 @@
         "demand": 1.3697895050469262,
         "at": "2026-09-01T19:37:31.571Z",
         "supply": 6
+      },
+      {
+        "demand": 1.3720087954518614,
+        "at": "2026-09-01T19:52:31.575Z",
+        "supply": 6
       }
     ],
     "Iron Ingot": [
@@ -138624,14 +138651,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 266632,
-      "at": "2026-09-01T12:21:13.914Z"
-    },
-    {
-      "total": 266632,
-      "at": "2026-09-01T12:26:13.956Z"
-    },
-    {
       "total": 266652,
       "at": "2026-09-01T12:31:13.928Z"
     },
@@ -139022,6 +139041,14 @@
     {
       "total": 295609,
       "at": "2026-09-01T19:47:32.713Z"
+    },
+    {
+      "total": 295629,
+      "at": "2026-09-01T19:52:32.238Z"
+    },
+    {
+      "total": 295629,
+      "at": "2026-09-01T19:52:32.728Z"
     }
   ],
   "gold_rush": null,
