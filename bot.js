@@ -137,10 +137,7 @@ async function collectWeeklyTaxes(manual=false) {
     }
     const totalCollected = totalFromUsers + totalFromCompanies;
     if (totalCollected > 0) {
-        // send to state bank
-        const stateUser = ensureUserRecord(data, STATE_BANK_USER_ID);
-        stateUser.bank = (stateUser.bank||0) + totalCollected;
-        // also via UnbelievaBoat if available
+        // send to state bank — addToStateBank handles both UnbelievaBoat (bank) and data.users bank
         try { await addToStateBank(totalCollected, `Weekly taxes ${new Date().toISOString().slice(0,10)}`); } catch {}
     }
     data.last_weekly_tax = new Date().toISOString();
@@ -1414,22 +1411,22 @@ async function updateInflation() {
 // ============================================================
 
 async function addToStateBank(amount, reason = "") {
-    const success = await updateUnbBalance(STATE_BANK_USER_ID, amount, 0, `State Bank: ${reason}`);
+    const success = await updateUnbBalance(STATE_BANK_USER_ID, 0, amount, `State Bank: ${reason}`);
     try {
         const data = loadData();
         const u = ensureUserRecord(data, STATE_BANK_USER_ID);
-        u.cash = (u.cash||0) + amount;
+        u.bank = (u.bank||0) + amount;
         saveData(data);
     } catch {}
     return success;
 }
 
 async function removeFromStateBank(amount, reason = "") {
-    const success = await updateUnbBalance(STATE_BANK_USER_ID, -amount, 0, `State Bank: ${reason}`);
+    const success = await updateUnbBalance(STATE_BANK_USER_ID, 0, -amount, `State Bank: ${reason}`);
     try {
         const data = loadData();
         const u = ensureUserRecord(data, STATE_BANK_USER_ID);
-        u.cash = Math.max(0, (u.cash||0) - amount);
+        u.bank = Math.max(0, (u.bank||0) - amount);
         saveData(data);
     } catch {}
     return success;
