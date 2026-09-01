@@ -118897,15 +118897,15 @@
       "ceo_of": null
     },
     "1287498720744702038": {
-      "cash": 1120,
+      "cash": 1140,
       "bank": 489,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T20:14:12.103Z",
-      "work_count": 83,
+      "last_work": "2026-09-01T20:21:55.298Z",
+      "work_count": 84,
       "last_claim": null,
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -134631,14 +134631,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 3051,
+      "funds": 3046,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 187191,
-      "market_cap": 187191,
+      "share_price": 187202,
+      "market_cap": 187202,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -134656,17 +134656,16 @@
       "inventory": {
         "Timber": 177,
         "Natural Gas": 94,
-        "Iron Ore": 110,
+        "Iron Ore": 111,
         "Coal": 125,
         "Uranium": 6,
         "Oil": 102,
         "Gold": 10,
-        "Wheat": 169
+        "Wheat": 168
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T13:51:25.948Z",
       "price_history": [
-        183797,
         183800,
         183991,
         184035,
@@ -134765,7 +134764,8 @@
         187256,
         187147,
         187158,
-        187191
+        187191,
+        187202
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -134942,11 +134942,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 14,
-      "change_percent": 4.832718082382784,
-      "recorded_at": "2026-09-01T17:34:18.158Z"
-    },
     {
       "price": 14,
       "change_percent": 5.058057060121692,
@@ -135441,6 +135436,11 @@
       "price": 14,
       "change_percent": 5.144481965161965,
       "recorded_at": "2026-09-01T20:21:25.573Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 5.143911687963758,
+      "recorded_at": "2026-09-01T20:21:55.915Z"
     }
   ],
   "factory_names": [
@@ -135712,7 +135712,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 14
+    "Bread": 12
   },
   "global_consumption": {
     "Copper Ingot": 58,
@@ -135728,7 +135728,7 @@
     "Canned Food": 10,
     "Uranium Rod": 12,
     "Canned Fish": 7,
-    "Bread": 6
+    "Bread": 8
   },
   "consumption_history": [
     {
@@ -137125,6 +137125,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-01T20:07:31.810Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-01T20:22:31.801Z"
     }
   ],
   "demand_history": {
@@ -138493,6 +138498,11 @@
       {
         "demand": 1.0209299161637786,
         "at": "2026-09-01T20:07:31.810Z",
+        "supply": 23
+      },
+      {
+        "demand": 1.0537055076362996,
+        "at": "2026-09-01T20:22:31.801Z",
         "supply": 23
       }
     ]
