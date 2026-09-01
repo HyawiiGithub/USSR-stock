@@ -90,22 +90,25 @@ async function collectWeeklyTaxes(manual=false) {
         }
     }
     let totalFromUsers = 0, totalFromCompanies = 0, usersTaxed = 0, companiesTaxed = 0;
-    // Individual: tax on total cash+bank (if >=100)
+    // Individual: tax on total cash+bank (if >=100) — MUST deduct from UnbelievaBoat too, otherwise it just prints
     for (const [uid, u] of Object.entries(data.users || {})) {
         if (uid === STATE_BANK_USER_ID) continue;
         const total = (u.cash||0) + (u.bank||0);
         if (total < 100) continue; // skip <100 to reduce lag
         const tax = calculateIndividualTax(total);
         if (tax <= 0) continue;
-        // deduct proportionally from bank first, then cash
+        // deduct proportionally from bank first, then cash (both data.users AND UnbelievaBoat)
         let remaining = tax;
-        if ((u.bank||0) >= remaining) {
-            u.bank -= remaining;
-        } else {
-            remaining -= (u.bank||0);
-            u.bank = 0;
-            u.cash = Math.max(0, (u.cash||0) - remaining);
-        }
+        const bankDeduct = Math.min(u.bank||0, remaining);
+        const cashDeduct = tax - bankDeduct;
+        if (bankDeduct > 0) u.bank -= bankDeduct;
+        if (cashDeduct > 0) u.cash = Math.max(0, (u.cash||0) - cashDeduct);
+        // actually remove from UnbelievaBoat (otherwise it just prints to state bank)
+        try {
+            if (UNBELIEVABOAT_TOKEN) {
+                await updateUnbBalance(uid, -cashDeduct, -bankDeduct, `Weekly tax ${tax}`);
+            }
+        } catch {}
         totalFromUsers += tax;
         usersTaxed++;
     }
@@ -1398,11 +1401,23 @@ async function updateInflation() {
 
 async function addToStateBank(amount, reason = "") {
     const success = await updateUnbBalance(STATE_BANK_USER_ID, amount, 0, `State Bank: ${reason}`);
+    try {
+        const data = loadData();
+        const u = ensureUserRecord(data, STATE_BANK_USER_ID);
+        u.cash = (u.cash||0) + amount;
+        saveData(data);
+    } catch {}
     return success;
 }
 
 async function removeFromStateBank(amount, reason = "") {
     const success = await updateUnbBalance(STATE_BANK_USER_ID, -amount, 0, `State Bank: ${reason}`);
+    try {
+        const data = loadData();
+        const u = ensureUserRecord(data, STATE_BANK_USER_ID);
+        u.cash = Math.max(0, (u.cash||0) - amount);
+        saveData(data);
+    } catch {}
     return success;
 }
 
@@ -2686,23 +2701,34 @@ pages.push(new EmbedBuilder().setTitle('📋 Changelog — v4.18 Work Balanced �
             totalCompanyValue += calculateCompanyValue(company);
             totalMarketCap += company.market_cap || 0;
         }
+        // State bank — now correctly counted (was missing live UnbelievaBoat sync, now fixed via addToStateBank sync)
         const stateBank = data.users[STATE_BANK_USER_ID] || {};
-        const stateBankBalance = stateBank.bank || 0;
-        const totalRubles = totalCash + totalBank; // totalBank already includes state bank (fixed 55k vs 110k double-count)
+        const stateBankCash = stateBank.cash || 0;
+        const stateBankBank = stateBank.bank || 0;
+        const stateBankTotal = stateBankCash + stateBankBank;
+        // Try live fetch for most accurate (if token available, else use cached)
+        let liveStateBank = stateBankTotal;
+        try {
+            const [liveCash, liveBank] = await getUnbBalance(STATE_BANK_USER_ID);
+            if (liveCash + liveBank > 0) liveStateBank = liveCash + liveBank;
+        } catch {}
+        const totalRubles = totalCash + totalBank; // includes state bank cash+bank (now synced)
+        const totalRublesLive = totalRubles - stateBankTotal + liveStateBank; // use live if available
         const inflation = data.inflation || 0;
         const moneyPrinted = data.money_printed || 0;
         const gsi = getGSIPrice();
         
-        const citizenDeposits = Math.max(0, totalBank - stateBankBalance);
+        const citizenDeposits = Math.max(0, totalBank - stateBankBank);
+        const citizenCash = Math.max(0, totalCash - stateBankCash);
         const embed = new EmbedBuilder()
             .setTitle('📊 Economic Statistics')
             .setColor(0x5865F2)
-            .setFooter({ text: '🇺🇸🇸🇷 USSR Economy' })
+            .setFooter({ text: '🇺🇸🇸🇷 USSR Economy — State Bank now counted in circulation & total' })
             .addFields(
-                { name: '💰 Total Rubles', value: formatMoney(totalRubles), inline: true },
-                { name: '💵 Total Cash', value: formatMoney(totalCash), inline: true },
+                { name: '💰 Total Rubles', value: `${formatMoney(totalRublesLive)}${totalRublesLive!==totalRubles?` (${formatMoney(totalRubles)} cached)`:''}`, inline: true },
+                { name: '💵 Total Cash', value: `${formatMoney(totalCash)} (citizen ${formatMoney(citizenCash)} + state ${formatMoney(stateBankCash)})`, inline: true },
                 { name: '🏦 Citizen Deposits', value: formatMoney(citizenDeposits), inline: true },
-                { name: '🏛️ State Bank (1513968015048184039)', value: formatMoney(stateBankBalance), inline: true },
+                { name: '🏛️ State Bank', value: `${formatMoney(liveStateBank)} (cash ${formatMoney(stateBankCash)} + bank ${formatMoney(stateBankBank)}${liveStateBank!==stateBankTotal?` live ${formatMoney(liveStateBank)}`:''})`, inline: true },
                 { name: '📈 GSI Price', value: formatMoney(gsi), inline: true },
                 { name: '🏢 Companies', value: `${Object.keys(data.companies).length}`, inline: true },
                 { name: '👤 Citizens', value: `${Object.keys(data.users).length}`, inline: true },
