@@ -118897,15 +118897,15 @@
       "ceo_of": null
     },
     "1287498720744702038": {
-      "cash": 1080,
+      "cash": 1100,
       "bank": 489,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T19:59:28.621Z",
-      "work_count": 81,
+      "last_work": "2026-09-01T20:08:04.638Z",
+      "work_count": 82,
       "last_claim": null,
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -134631,14 +134631,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 3066,
+      "funds": 3061,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 187256,
-      "market_cap": 187256,
+      "share_price": 187147,
+      "market_cap": 187147,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -134656,17 +134656,16 @@
       "inventory": {
         "Timber": 175,
         "Natural Gas": 94,
-        "Iron Ore": 107,
+        "Iron Ore": 109,
         "Coal": 125,
         "Uranium": 6,
         "Oil": 102,
         "Gold": 10,
-        "Wheat": 172
+        "Wheat": 171
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T13:51:25.948Z",
       "price_history": [
-        183422,
         183433,
         183870,
         183797,
@@ -134765,7 +134764,8 @@
         187041,
         187256,
         187256,
-        187256
+        187256,
+        187147
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -134942,21 +134942,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 14,
-      "change_percent": 4.623595925364956,
-      "recorded_at": "2026-09-01T17:17:31.218Z"
-    },
-    {
-      "price": 14,
-      "change_percent": 4.652922243410768,
-      "recorded_at": "2026-09-01T17:20:55.274Z"
-    },
-    {
-      "price": 14,
-      "change_percent": 4.539037672926029,
-      "recorded_at": "2026-09-01T17:21:54.147Z"
-    },
     {
       "price": 14,
       "change_percent": 4.532485838938751,
@@ -135441,6 +135426,21 @@
       "price": 15,
       "change_percent": 4.414988415421458,
       "recorded_at": "2026-09-01T20:06:42.772Z"
+    },
+    {
+      "price": 14,
+      "change_percent": -2.22466381842631,
+      "recorded_at": "2026-09-01T20:07:31.442Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 4.164573203157753,
+      "recorded_at": "2026-09-01T20:07:32.203Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 5.070228463089201,
+      "recorded_at": "2026-09-01T20:08:05.235Z"
     }
   ],
   "factory_names": [
@@ -135461,11 +135461,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.8139802661319495,
+  "inflation": 0.7362244897081591,
   "money_printed": 354,
   "total_bank_reserves": 225103,
   "inflation_history": [
-    0.8759451047246337,
     0.8288573006969988,
     0.815494454688435,
     0.8331471497197991,
@@ -135564,7 +135563,8 @@
     0.7314991636802718,
     0.7756511991781787,
     0.8416198551247255,
-    0.8139802661319495
+    0.8139802661319495,
+    0.7362244897081591
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -135712,7 +135712,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 16
+    "Bread": 14
   },
   "global_consumption": {
     "Copper Ingot": 58,
@@ -135728,7 +135728,7 @@
     "Canned Food": 10,
     "Uranium Rod": 12,
     "Canned Fish": 7,
-    "Bread": 4
+    "Bread": 6
   },
   "consumption_history": [
     {
@@ -137120,6 +137120,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-01T19:52:31.575Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-01T20:07:31.810Z"
     }
   ],
   "demand_history": {
@@ -138484,6 +138489,11 @@
         "demand": 0.8698788486366783,
         "at": "2026-09-01T19:22:31.575Z",
         "supply": 23
+      },
+      {
+        "demand": 1.0209299161637786,
+        "at": "2026-09-01T20:07:31.810Z",
+        "supply": 23
       }
     ]
   },
@@ -138650,10 +138660,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 266652,
-      "at": "2026-09-01T12:41:13.917Z"
-    },
     {
       "total": 266667,
       "at": "2026-09-01T12:46:13.937Z"
@@ -139049,6 +139055,10 @@
     {
       "total": 295689,
       "at": "2026-09-01T20:02:32.225Z"
+    },
+    {
+      "total": 295724,
+      "at": "2026-09-01T20:07:32.337Z"
     }
   ],
   "gold_rush": null,
