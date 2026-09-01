@@ -135212,7 +135212,6 @@
     "Canned Fish": 2,
     "Canned Food": 7,
     "Fuel": 4,
-    "Uranium Rod": 1,
     "Cake": 2
   },
   "global_consumption": {
@@ -135227,7 +135226,7 @@
     "Cake": 21,
     "Smoked Fish": 20,
     "Canned Food": 3,
-    "Uranium Rod": 8,
+    "Uranium Rod": 9,
     "Canned Fish": 5
   },
   "consumption_history": [
@@ -136400,6 +136399,11 @@
       "item": "Uranium Rod",
       "qty": 1,
       "at": "2026-09-01T01:21:11.938Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 1,
+      "at": "2026-09-01T01:36:11.924Z"
     }
   ],
   "demand_history": {
@@ -137519,6 +137523,11 @@
       {
         "demand": 1.3880647217099362,
         "at": "2026-09-01T01:21:11.938Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.3880647217099362,
+        "at": "2026-09-01T01:36:11.924Z",
         "supply": 2
       }
     ],
