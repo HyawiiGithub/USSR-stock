@@ -394,7 +394,7 @@
     },
     "1517676669618491552": {
       "username": "",
-      "cash": 483,
+      "cash": 503,
       "bank": 0,
       "resources": {
         "Gold": 2
@@ -404,8 +404,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T12:48:20.330Z",
-      "work_count": 26,
+      "last_work": "2026-09-01T13:09:15.212Z",
+      "work_count": 27,
       "last_claim": "2026-08-31T13:23:36.788Z",
       "last_collect": null,
       "join_date": "2026-08-23T14:37:31.585926",
@@ -997,8 +997,8 @@
       "ceo_of": null
     },
     "1456863215815364796": {
-      "cash": 20,
-      "bank": 1280,
+      "cash": 0,
+      "bank": 3325,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -134197,14 +134197,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 10838,
+      "funds": 17561,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 84991,
-      "market_cap": 84991,
+      "share_price": 88639,
+      "market_cap": 88639,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134220,7 +134220,6 @@
         }
       },
       "inventory": {
-        "Uranium": 9,
         "Coal": 73,
         "Gold Bar": 8,
         "Canned Food": 5,
@@ -134236,16 +134235,11 @@
         "Copper": 5,
         "Cake": 3,
         "Steel Beam": 1,
-        "Iron Ore": 2,
-        "Lead": 6
+        "Iron Ore": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T09:03:43.511Z",
       "price_history": [
-        77020,
-        76998,
-        77058,
-        77160,
         77219,
         77230,
         77215,
@@ -134341,11 +134335,15 @@
         85342,
         85377,
         85629,
-        84991
+        84991,
+        85010,
+        85005,
+        85914,
+        88639
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-01T10:39:11.211Z",
+      "last_factorydeal": "2026-09-01T13:09:52.324Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -134678,16 +134676,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 13,
-      "change_percent": 4.420001441870689,
-      "recorded_at": "2026-09-01T09:51:13.586Z"
-    },
-    {
-      "price": 13,
-      "change_percent": 5.235025686836636,
-      "recorded_at": "2026-09-01T09:51:40.317Z"
-    },
     {
       "price": 13,
       "change_percent": 4.23064464237336,
@@ -135177,12 +135165,19 @@
       "price": 14,
       "change_percent": 5.402807101756036,
       "recorded_at": "2026-09-01T13:09:02.953Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 4.75025790203477,
+      "recorded_at": "2026-09-01T13:09:09.153Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 5.265256106925249,
+      "recorded_at": "2026-09-01T13:09:15.810Z"
     }
   ],
-  "factory_names": [
-    "Lenin Machine Works",
-    "Volga Shipbuilding"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Ural Heavy Industries",
     "Brezhnev Auto Factory",
@@ -135190,7 +135185,9 @@
     "Stalin Tractor Plant",
     "Siberian Mining Co",
     "Khrushchev Agricultural",
-    "Soviet Iron Foundry"
+    "Soviet Iron Foundry",
+    "Volga Shipbuilding",
+    "Lenin Machine Works"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -135391,31 +135388,31 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3641352572116918,
-    "Cake": 1.3845175755216301,
+    "Cake": 1.3945175755216301,
     "Bread": 1.2801550062480347,
     "Copper Ingot": 1.3914907482291203,
-    "Iron Ingot": 1.390706802109004,
+    "Iron Ingot": 1.4007068021090041,
     "Steel Ingot": 1.3956382404836218,
     "Gold Bar": 1.3551845443231312,
     "Aluminium Ingot": 1.4124242336847477,
     "Timber Planks": 1.4043830462180418,
     "Bricks": 1.4120099255926,
     "Concrete": 1.4118387459728345,
-    "Glass": 1.4124245483581148,
+    "Glass": 1.4224245483581148,
     "Steel Beam": 1.4081946331863195,
     "Machine Parts": 1.4124228306905748,
     "Refined Fuel": 1.380941425842742,
-    "Uranium Rod": 1.3880647217099362,
+    "Uranium Rod": 1.3205647217099363,
     "Reactor Core": 1.4115043875069435,
     "Circuit Board": 1.4124811451013526,
-    "Flour": 1.412270814929943,
+    "Flour": 1.422270814929943,
     "Sugar": 1.3163788067943591,
     "Wine": 1.4115087014389704,
     "Canned Food": 1.386737269296151,
     "Canned Fish": 1.3916755292876446,
     "Smoked Fish": 1.402669520887447,
     "Fish Stew": 1.4124448795639677,
-    "Peat Fuel": 1.4046179104454581,
+    "Peat Fuel": 1.4146179104454581,
     "Gas Fuel": 1.4122781621852998,
     "Fertilizer": 1.412001074346207,
     "Cotton Fabric": 1.4123876382986007,
@@ -135444,10 +135441,12 @@
     "Smoked Fish": "2026-08-31T11:44:52.987Z",
     "Canned Fish": "2026-08-31T12:33:50.529Z",
     "Canned Food": "2026-08-31T13:36:59.692Z",
-    "Uranium Rod": "2026-08-31T16:08:08.974Z"
+    "Uranium Rod": "2026-09-01T13:09:52.324Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Uranium Rod": 3
+  },
   "global_consumption": {
     "Copper Ingot": 55,
     "Steel Ingot": 18,
