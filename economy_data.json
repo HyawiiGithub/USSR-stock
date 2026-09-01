@@ -111,7 +111,7 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 720,
+      "cash": 796,
       "bank": 16086,
       "resources": {
         "Natural Gas": 4,
@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 1380,
+      "cash": 1400,
       "bank": 14207,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T13:44:16.463Z",
-      "work_count": 561,
+      "last_work": "2026-09-01T13:51:57.787Z",
+      "work_count": 562,
       "last_claim": "2026-09-01T13:29:08.719Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -547,15 +547,15 @@
       "ceo_of": null
     },
     "1495413593242337421": {
-      "cash": 763,
+      "cash": 1163,
       "bank": 25972,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T04:13:54.509Z",
-      "work_count": 176,
+      "last_work": "2026-09-01T13:51:15.925Z",
+      "work_count": 177,
       "last_claim": "2026-09-01T02:44:19.385Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -133871,6 +133871,24 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "1541152830860173382": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -134233,7 +134251,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 3244,
+      "funds": 3239,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -134405,14 +134423,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 3817,
+      "funds": 3356,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 184813,
-      "market_cap": 184813,
+      "share_price": 184724,
+      "market_cap": 184724,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -134432,16 +134450,14 @@
         "Natural Gas": 81,
         "Iron Ore": 86,
         "Coal": 102,
-        "Uranium": 5,
-        "Oil": 91,
+        "Uranium": 6,
+        "Oil": 93,
         "Gold": 9,
-        "Wheat": 145
+        "Wheat": 129
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-01T02:17:32.058Z",
+      "last_collect": "2026-09-01T13:51:25.948Z",
       "price_history": [
-        178109,
-        178162,
         178275,
         178206,
         178267,
@@ -134539,7 +134555,9 @@
         184293,
         184533,
         184584,
-        184813
+        184813,
+        184982,
+        184724
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -134716,21 +134734,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 12,
-      "change_percent": 4.3206838029255,
-      "recorded_at": "2026-09-01T10:41:13.456Z"
-    },
-    {
-      "price": 12,
-      "change_percent": 4.8822258508885525,
-      "recorded_at": "2026-09-01T10:46:13.557Z"
-    },
-    {
-      "price": 12,
-      "change_percent": 4.736901605124256,
-      "recorded_at": "2026-09-01T10:46:56.338Z"
-    },
     {
       "price": 12,
       "change_percent": 4.608957923977801,
@@ -135215,6 +135218,21 @@
       "price": 14,
       "change_percent": 5.520172093273372,
       "recorded_at": "2026-09-01T13:50:15.756Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 5.140122642373142,
+      "recorded_at": "2026-09-01T13:51:13.592Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 5.419870646118682,
+      "recorded_at": "2026-09-01T13:51:16.590Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 5.363172157976613,
+      "recorded_at": "2026-09-01T13:51:26.641Z"
     }
   ],
   "factory_names": [
@@ -135235,11 +135253,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.8194562192089929,
+  "inflation": 0.8486211301696901,
   "money_printed": 354,
   "total_bank_reserves": 202963,
   "inflation_history": [
-    0.9195756194853213,
     0.8426488397099776,
     0.8232874551063658,
     0.8570652742162311,
@@ -135338,7 +135355,8 @@
     0.8494462082728814,
     0.9205368839141979,
     0.8386567660152664,
-    0.8194562192089929
+    0.8194562192089929,
+    0.8486211301696901
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -135431,22 +135449,22 @@
     "Fuel": 1.3641352572116918,
     "Cake": 1.393221514974556,
     "Bread": 1.2801550062480347,
-    "Copper Ingot": 1.3239907482291202,
+    "Copper Ingot": 1.3250062808165193,
     "Iron Ingot": 1.3972864650752035,
     "Steel Ingot": 1.3956382404836218,
     "Gold Bar": 1.3551845443231312,
-    "Aluminium Ingot": 1.4206302949899678,
+    "Aluminium Ingot": 1.4189798713907704,
     "Timber Planks": 1.4043830462180418,
     "Bricks": 1.4120099255926,
     "Concrete": 1.4118387459728345,
-    "Glass": 1.416064788574933,
+    "Glass": 1.4147796054889383,
     "Steel Beam": 1.4081946331863195,
     "Machine Parts": 1.4088866220736713,
     "Refined Fuel": 1.3885304245637853,
-    "Uranium Rod": 1.3265746679961716,
-    "Reactor Core": 1.419784036506388,
+    "Uranium Rod": 1.3302292034473875,
+    "Reactor Core": 1.418201313585877,
     "Circuit Board": 1.4124811451013526,
-    "Flour": 1.415954655029274,
+    "Flour": 1.4146782826269322,
     "Sugar": 1.3163788067943591,
     "Wine": 1.4115087014389704,
     "Canned Food": 1.386737269296151,
@@ -135460,7 +135478,7 @@
     "Manganese Alloy": 1.4124480295056288,
     "Sunflower Oil": 1.412335187618783,
     "Linen": 1.4120099255926,
-    "Corn Meal": 1.4206671200286733,
+    "Corn Meal": 1.4190137504263796,
     "Tea Pack": 1.41212710002688,
     "Citrus Juice": 1.4122781621852998,
     "Antimony Alloy": 1.412428476727558,
@@ -135486,10 +135504,10 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Copper Ingot": 3
+    "Copper Ingot": 1
   },
   "global_consumption": {
-    "Copper Ingot": 55,
+    "Copper Ingot": 57,
     "Steel Ingot": 18,
     "Timber Planks": 102,
     "Refined Fuel": 46,
@@ -136798,6 +136816,11 @@
       "item": "Uranium Rod",
       "qty": 2,
       "at": "2026-09-01T13:36:12.834Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 2,
+      "at": "2026-09-01T13:51:12.826Z"
     }
   ],
   "demand_history": {
@@ -137011,6 +137034,11 @@
         "demand": 1.3461744015395587,
         "at": "2026-09-01T11:06:12.324Z",
         "supply": 1
+      },
+      {
+        "demand": 1.3250062808165193,
+        "at": "2026-09-01T13:51:12.827Z",
+        "supply": 0
       }
     ],
     "Steel Ingot": [
@@ -138207,17 +138235,16 @@
       "username": "erushim",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽1408 salaries ceo 860203156222902332 ₽704, director 860203156222902332 ₽704"
+    },
+    {
+      "at": "2026-09-01T13:51:25.948Z",
+      "by": "1495413593242337421",
+      "username": "nikita_1961",
+      "action": "collect-salaries",
+      "details": "State Nuclear Energy paid ₽456 salaries ceo 1495413593242337421 ₽190, director 1495413593242337421 ₽190, manager 730223629849199093 ₽76"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 222245,
-      "at": "2026-09-01T06:21:13.600Z"
-    },
-    {
-      "total": 222245,
-      "at": "2026-09-01T06:26:13.581Z"
-    },
     {
       "total": 222245,
       "at": "2026-09-01T06:31:13.591Z"
@@ -138609,6 +138636,14 @@
     {
       "total": 275275,
       "at": "2026-09-01T13:46:14.000Z"
+    },
+    {
+      "total": 275300,
+      "at": "2026-09-01T13:51:14.003Z"
+    },
+    {
+      "total": 275300,
+      "at": "2026-09-01T13:51:14.534Z"
     }
   ],
   "gold_rush": null,
