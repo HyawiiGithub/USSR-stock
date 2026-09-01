@@ -439,15 +439,15 @@
       "director_of": null
     },
     "1456622719985782864": {
-      "cash": 15,
+      "cash": 30,
       "bank": 27275,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T08:42:03.245Z",
-      "work_count": 364,
+      "last_work": "2026-09-01T20:37:31.039Z",
+      "work_count": 365,
       "last_claim": "2026-08-31T01:55:10.076Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -134796,8 +134796,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 52704,
-      "market_cap": 52704,
+      "share_price": 52731,
+      "market_cap": 52731,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -134813,7 +134813,7 @@
         }
       },
       "inventory": {
-        "Phosphorite": 83,
+        "Phosphorite": 84,
         "Peat": 119,
         "Fish": 192,
         "Iron Ore": 1,
@@ -134823,7 +134823,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-08-30T00:43:38.569Z",
       "price_history": [
-        53397,
         53429,
         53425,
         53455,
@@ -134922,7 +134921,8 @@
         54675,
         54751,
         54804,
-        52704
+        52704,
+        52731
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -134942,16 +134942,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 14,
-      "change_percent": 4.3198656079535676,
-      "recorded_at": "2026-09-01T17:42:31.437Z"
-    },
-    {
-      "price": 14,
-      "change_percent": 4.773117420887168,
-      "recorded_at": "2026-09-01T17:43:13.910Z"
-    },
     {
       "price": 14,
       "change_percent": 5.305814592071599,
@@ -135441,6 +135431,16 @@
       "price": 14,
       "change_percent": 4.664015651704675,
       "recorded_at": "2026-09-01T20:32:32.268Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 4.645467999979927,
+      "recorded_at": "2026-09-01T20:37:31.564Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 4.747784923199716,
+      "recorded_at": "2026-09-01T20:37:32.689Z"
     }
   ],
   "factory_names": [
@@ -135461,11 +135461,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7880318813639856,
+  "inflation": 0.7091445789537936,
   "money_printed": 354,
   "total_bank_reserves": 236351,
   "inflation_history": [
-    0.8331471497197991,
     0.9151664215531491,
     0.8854371402554718,
     0.890743234340498,
@@ -135564,7 +135563,8 @@
     0.8139802661319495,
     0.7362244897081591,
     0.7465091567061823,
-    0.7880318813639856
+    0.7880318813639856,
+    0.7091445789537936
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -135656,7 +135656,7 @@
   "market_demand": {
     "Fuel": 1.3736732632555626,
     "Cake": 1.3922054582278043,
-    "Bread": 1.1181350526654787,
+    "Bread": 1.0863946184222597,
     "Copper Ingot": 1.3970546267452197,
     "Iron Ingot": 1.3895322983757346,
     "Steel Ingot": 1.4042286803627164,
@@ -135668,7 +135668,7 @@
     "Glass": 1.4115087014389704,
     "Steel Beam": 1.4048072883043665,
     "Machine Parts": 1.407962193558069,
-    "Refined Fuel": 1.392926233652369,
+    "Refined Fuel": 1.3907348686747767,
     "Uranium Rod": 1.3885746763761548,
     "Reactor Core": 1.4119961494824205,
     "Circuit Board": 1.4120147594954078,
@@ -135712,7 +135712,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 12
+    "Bread": 11
   },
   "global_consumption": {
     "Copper Ingot": 58,
@@ -135728,7 +135728,7 @@
     "Canned Food": 10,
     "Uranium Rod": 12,
     "Canned Fish": 7,
-    "Bread": 8
+    "Bread": 9
   },
   "consumption_history": [
     {
@@ -137130,6 +137130,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-01T20:22:31.801Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 1,
+      "at": "2026-09-01T20:37:32.056Z"
     }
   ],
   "demand_history": {
@@ -138504,6 +138509,11 @@
         "demand": 1.0537055076362996,
         "at": "2026-09-01T20:22:31.801Z",
         "supply": 23
+      },
+      {
+        "demand": 1.0863946184222597,
+        "at": "2026-09-01T20:37:32.056Z",
+        "supply": 23
       }
     ]
   },
@@ -138677,10 +138687,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 270495,
-      "at": "2026-09-01T13:11:13.957Z"
-    },
     {
       "total": 270865,
       "at": "2026-09-01T13:16:13.976Z"
@@ -139076,6 +139082,10 @@
     {
       "total": 306240,
       "at": "2026-09-01T20:32:32.360Z"
+    },
+    {
+      "total": 306255,
+      "at": "2026-09-01T20:37:32.830Z"
     }
   ],
   "gold_rush": null,
