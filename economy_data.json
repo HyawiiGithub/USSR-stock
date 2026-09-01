@@ -111,7 +111,7 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 285,
+      "cash": 375,
       "bank": 16086,
       "resources": {
         "Natural Gas": 4,
@@ -547,15 +547,15 @@
       "ceo_of": null
     },
     "1495413593242337421": {
-      "cash": 80,
+      "cash": 550,
       "bank": 25972,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T01:32:44.167Z",
-      "work_count": 171,
+      "last_work": "2026-09-01T02:17:27.311Z",
+      "work_count": 172,
       "last_claim": "2026-08-30T07:02:57.732Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -134148,14 +134148,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 4512,
+      "funds": 3967,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 184219,
-      "market_cap": 184219,
+      "share_price": 183658,
+      "market_cap": 183658,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -134171,20 +134171,18 @@
         }
       },
       "inventory": {
-        "Timber": 137,
+        "Timber": 139,
         "Natural Gas": 71,
         "Iron Ore": 78,
         "Coal": 94,
-        "Uranium": 4,
+        "Uranium": 5,
         "Oil": 85,
         "Gold": 8,
-        "Wheat": 196
+        "Wheat": 175
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-08-31T13:28:14.075Z",
+      "last_collect": "2026-09-01T02:17:32.058Z",
       "price_history": [
-        176098,
-        176103,
         176075,
         176114,
         176204,
@@ -134282,7 +134280,9 @@
         183800,
         183991,
         184035,
-        184219
+        184219,
+        184041,
+        183658
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -134457,16 +134457,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 10,
-      "change_percent": 5.426516122496975,
-      "recorded_at": "2026-08-31T22:02:45.683Z"
-    },
-    {
-      "price": 10,
-      "change_percent": 5.028383961397122,
-      "recorded_at": "2026-08-31T22:03:04.576Z"
-    },
     {
       "price": 10,
       "change_percent": 4.439186023276352,
@@ -134956,6 +134946,16 @@
       "price": 10,
       "change_percent": 4.8989273747968385,
       "recorded_at": "2026-09-01T02:16:13.060Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 4.721828391087668,
+      "recorded_at": "2026-09-01T02:17:27.816Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 5.181922910554014,
+      "recorded_at": "2026-09-01T02:17:32.596Z"
     }
   ],
   "factory_names": [
@@ -137699,6 +137699,13 @@
       "username": "GOSBANK",
       "action": "weekly_taxes",
       "details": "collected ₽39,604 from 28 users + 2 companies (individual ₽37,897, corporate ₽1,707)"
+    },
+    {
+      "at": "2026-09-01T02:17:32.058Z",
+      "by": "1495413593242337421",
+      "username": "nikita_1961",
+      "action": "collect-salaries",
+      "details": "State Nuclear Energy paid ₽540 salaries ceo 1495413593242337421 ₽225, director 1495413593242337421 ₽225, manager 730223629849199093 ₽90"
     }
   ],
   "total_rubles_history": [
