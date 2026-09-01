@@ -133619,6 +133619,24 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "1544194367949111348": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -134460,11 +134478,6 @@
   "gsi_history": [
     {
       "price": 10,
-      "change_percent": 5.260950787494104,
-      "recorded_at": "2026-08-31T23:06:12.276Z"
-    },
-    {
-      "price": 10,
       "change_percent": 4.836425889906155,
       "recorded_at": "2026-08-31T23:11:12.245Z"
     },
@@ -134957,6 +134970,11 @@
       "price": 10,
       "change_percent": 4.984011635472392,
       "recorded_at": "2026-09-01T04:19:04.059Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 4.988378706782578,
+      "recorded_at": "2026-09-01T04:21:13.086Z"
     }
   ],
   "factory_names": [
@@ -134977,11 +134995,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.8331471497197991,
+  "inflation": 0.9151664215531491,
   "money_printed": 263,
   "total_bank_reserves": 152683,
   "inflation_history": [
-    0.08432971134509855,
     0.07584420524435355,
     0.088105580412291,
     0.11608623991685646,
@@ -135080,7 +135097,8 @@
     0.8759451047246337,
     0.8288573006969988,
     0.815494454688435,
-    0.8331471497197991
+    0.8331471497197991,
+    0.9151664215531491
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -135209,9 +135227,7 @@
     "Uranium Rod": "2026-08-31T16:08:08.974Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Canned Food": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 52,
     "Steel Ingot": 18,
@@ -135223,7 +135239,7 @@
     "Peat Fuel": 10,
     "Cake": 23,
     "Smoked Fish": 20,
-    "Canned Food": 8,
+    "Canned Food": 10,
     "Uranium Rod": 9,
     "Canned Fish": 7
   },
@@ -136452,6 +136468,11 @@
       "item": "Canned Food",
       "qty": 1,
       "at": "2026-09-01T04:06:11.933Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 2,
+      "at": "2026-09-01T04:21:11.984Z"
     }
   ],
   "demand_history": {
@@ -137580,6 +137601,11 @@
         "demand": 1.3769156392425401,
         "at": "2026-09-01T04:06:11.933Z",
         "supply": 5
+      },
+      {
+        "demand": 1.3769156392425401,
+        "at": "2026-09-01T04:21:11.984Z",
+        "supply": 5
       }
     ],
     "Uranium Rod": [
@@ -137787,14 +137813,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 219822,
-      "at": "2026-08-31T20:46:11.696Z"
-    },
-    {
-      "total": 219822,
-      "at": "2026-08-31T20:46:12.591Z"
-    },
     {
       "total": 219862,
       "at": "2026-08-31T20:51:11.754Z"
@@ -138186,6 +138204,14 @@
     {
       "total": 222150,
       "at": "2026-09-01T04:16:13.500Z"
+    },
+    {
+      "total": 222170,
+      "at": "2026-09-01T04:21:13.488Z"
+    },
+    {
+      "total": 222170,
+      "at": "2026-09-01T04:21:13.947Z"
     }
   ],
   "gold_rush": null,
