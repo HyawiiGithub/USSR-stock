@@ -111,7 +111,7 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 700,
+      "cash": 720,
       "bank": 16086,
       "resources": {
         "Natural Gas": 4,
@@ -124,8 +124,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T09:30:26.919Z",
-      "work_count": 86,
+      "last_work": "2026-09-01T09:36:14.178Z",
+      "work_count": 87,
       "last_claim": "2026-09-01T02:38:01.428Z",
       "last_collect": null,
       "join_date": "2026-08-22T05:47:50.692471",
@@ -134093,8 +134093,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 82452,
-      "market_cap": 82452,
+      "share_price": 82441,
+      "market_cap": 82441,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134133,7 +134133,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T09:03:43.511Z",
       "price_history": [
-        72370,
         72540,
         72529,
         72556,
@@ -134232,7 +134231,8 @@
         82392,
         82411,
         82400,
-        82452
+        82452,
+        82441
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -134258,14 +134258,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 3842,
+      "funds": 3837,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 184219,
-      "market_cap": 184219,
+      "share_price": 184337,
+      "market_cap": 184337,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -134281,19 +134281,18 @@
         }
       },
       "inventory": {
-        "Timber": 150,
+        "Timber": 152,
         "Natural Gas": 79,
         "Iron Ore": 86,
         "Coal": 102,
         "Uranium": 5,
         "Oil": 88,
         "Gold": 9,
-        "Wheat": 150
+        "Wheat": 149
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T02:17:32.058Z",
       "price_history": [
-        177845,
         178013,
         178077,
         178117,
@@ -134392,7 +134391,8 @@
         184410,
         184316,
         184219,
-        184219
+        184219,
+        184337
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -134569,16 +134569,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 10,
-      "change_percent": 4.564591063838272,
-      "recorded_at": "2026-09-01T04:31:13.162Z"
-    },
-    {
-      "price": 11,
-      "change_percent": 11.441825947639787,
-      "recorded_at": "2026-09-01T04:36:11.028Z"
-    },
     {
       "price": 11,
       "change_percent": 5.041473737303284,
@@ -135068,6 +135058,16 @@
       "price": 13,
       "change_percent": 5.041991655382122,
       "recorded_at": "2026-09-01T09:31:26.222Z"
+    },
+    {
+      "price": 13,
+      "change_percent": 5.262527504623774,
+      "recorded_at": "2026-09-01T09:36:05.413Z"
+    },
+    {
+      "price": 13,
+      "change_percent": 4.775335006052414,
+      "recorded_at": "2026-09-01T09:36:14.716Z"
     }
   ],
   "factory_names": [
@@ -135321,7 +135321,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 8
+    "Cake": 6
   },
   "global_consumption": {
     "Copper Ingot": 52,
@@ -135332,7 +135332,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 25,
+    "Cake": 27,
     "Smoked Fish": 20,
     "Canned Food": 10,
     "Uranium Rod": 9,
@@ -136578,6 +136578,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-01T09:21:12.130Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-01T09:36:12.106Z"
     }
   ],
   "demand_history": {
@@ -137616,6 +137621,11 @@
       {
         "demand": 1.1717149380046317,
         "at": "2026-09-01T09:21:12.130Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.1794806359340433,
+        "at": "2026-09-01T09:36:12.106Z",
         "supply": 3
       }
     ],
