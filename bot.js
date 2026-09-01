@@ -98,7 +98,12 @@ async function collectWeeklyTaxes(manual=false) {
         const total = (u.cash||0) + (u.bank||0);
         if (total < 100) continue; // skip <100 to reduce lag
         const tax = calculateIndividualTax(total);
-        if (tax <= 0) continue;
+        // even 0% bracket we still record (user had ≥100 but paid 0) — so "everyone" is listed
+        if (tax <= 0) {
+            userDetails.push({ uid, username: u.username || uid.slice(0,6), total, tax: 0 });
+            usersTaxed++; // count as processed even if 0
+            continue;
+        }
         // deduct proportionally from bank first, then cash (both data.users AND UnbelievaBoat)
         const bankDeduct = Math.min(u.bank||0, tax);
         const cashDeduct = tax - bankDeduct;
@@ -119,7 +124,11 @@ async function collectWeeklyTaxes(manual=false) {
         const funds = c.funds || 0;
         if (funds < 100) continue;
         const tax = calculateCorporateTax(funds);
-        if (tax <= 0) continue;
+        if (tax <= 0) {
+            companyDetails.push({ cid, name: c.name, funds, tax: 0 });
+            companiesTaxed++;
+            continue;
+        }
         c.funds = Math.max(0, funds - tax);
         totalFromCompanies += tax;
         companiesTaxed++;
