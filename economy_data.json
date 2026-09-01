@@ -133979,6 +133979,24 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "1402662772109480049": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -134348,8 +134366,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 93519,
-      "market_cap": 93519,
+      "share_price": 93556,
+      "market_cap": 93556,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134391,7 +134409,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T15:04:16.321Z",
       "price_history": [
-        82392,
         82411,
         82400,
         82452,
@@ -134490,7 +134507,8 @@
         92152,
         92178,
         92453,
-        93519
+        93519,
+        93556
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -134827,21 +134845,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 14,
-      "change_percent": 5.24986645845829,
-      "recorded_at": "2026-09-01T13:01:42.728Z"
-    },
-    {
-      "price": 14,
-      "change_percent": 5.293304785552158,
-      "recorded_at": "2026-09-01T13:02:15.153Z"
-    },
-    {
-      "price": 14,
-      "change_percent": 4.625859286883909,
-      "recorded_at": "2026-09-01T13:03:10.562Z"
-    },
     {
       "price": 14,
       "change_percent": 5.100160814782684,
@@ -135326,6 +135329,21 @@
       "price": 14,
       "change_percent": 5.135205369542321,
       "recorded_at": "2026-09-01T15:33:54.296Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 4.86082517731623,
+      "recorded_at": "2026-09-01T15:35:31.784Z"
+    },
+    {
+      "price": 13,
+      "change_percent": -1.1995288301708886,
+      "recorded_at": "2026-09-01T15:36:11.689Z"
+    },
+    {
+      "price": 13,
+      "change_percent": 5.144731969198131,
+      "recorded_at": "2026-09-01T15:36:13.626Z"
     }
   ],
   "factory_names": [
@@ -135597,7 +135615,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 10
+    "Cake": 8
   },
   "global_consumption": {
     "Copper Ingot": 58,
@@ -135608,7 +135626,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 33,
+    "Cake": 35,
     "Smoked Fish": 20,
     "Canned Food": 10,
     "Uranium Rod": 12,
@@ -136919,6 +136937,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-09-01T14:06:12.836Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-01T15:36:13.011Z"
     }
   ],
   "demand_history": {
@@ -138013,6 +138036,11 @@
         "demand": 1.2642590894735994,
         "at": "2026-09-01T10:36:12.122Z",
         "supply": 3
+      },
+      {
+        "demand": 1.1540759910620766,
+        "at": "2026-09-01T15:36:13.011Z",
+        "supply": 1
       }
     ],
     "Smoked Fish": [
@@ -138348,14 +138376,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 222465,
-      "at": "2026-09-01T08:16:14.200Z"
-    },
-    {
-      "total": 222465,
-      "at": "2026-09-01T08:21:13.617Z"
-    },
     {
       "total": 222465,
       "at": "2026-09-01T08:26:13.713Z"
@@ -138747,6 +138767,14 @@
     {
       "total": 280546,
       "at": "2026-09-01T15:31:14.041Z"
+    },
+    {
+      "total": 280586,
+      "at": "2026-09-01T15:36:14.044Z"
+    },
+    {
+      "total": 280586,
+      "at": "2026-09-01T15:36:14.556Z"
     }
   ],
   "gold_rush": null,
