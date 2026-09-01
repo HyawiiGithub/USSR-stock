@@ -134159,6 +134159,24 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "1198413714672591031": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -135015,11 +135033,6 @@
   "gsi_history": [
     {
       "price": 15,
-      "change_percent": 4.207451247661135,
-      "recorded_at": "2026-09-01T19:17:31.944Z"
-    },
-    {
-      "price": 15,
       "change_percent": 4.138044571765055,
       "recorded_at": "2026-09-01T19:22:32.015Z"
     },
@@ -135512,6 +135525,11 @@
       "price": 17,
       "change_percent": 4.357203143376374,
       "recorded_at": "2026-09-01T23:03:44.417Z"
+    },
+    {
+      "price": 17,
+      "change_percent": 4.126378105145764,
+      "recorded_at": "2026-09-01T23:07:32.859Z"
     }
   ],
   "factory_names": [],
@@ -135531,11 +135549,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6984725388421198,
+  "inflation": 0.7207749963194108,
   "money_printed": 354,
   "total_bank_reserves": 236351,
   "inflation_history": [
-    0.8798971867512151,
     0.8980503810145039,
     0.8786568284536249,
     0.8846796348922379,
@@ -135634,7 +135651,8 @@
     0.7742709774355645,
     0.6964636281055605,
     0.7672474820553199,
-    0.6984725388421198
+    0.6984725388421198,
+    0.7207749963194108
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -135783,7 +135801,7 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Bread": 19,
-    "Cake": 7
+    "Cake": 6
   },
   "global_consumption": {
     "Copper Ingot": 58,
@@ -135794,7 +135812,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 45,
+    "Cake": 46,
     "Smoked Fish": 20,
     "Canned Food": 10,
     "Uranium Rod": 12,
@@ -137251,6 +137269,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-01T22:52:32.431Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-09-01T23:07:32.424Z"
     }
   ],
   "demand_history": {
@@ -138420,6 +138443,11 @@
         "demand": 1.1732534608010778,
         "at": "2026-09-01T22:07:32.429Z",
         "supply": 0
+      },
+      {
+        "demand": 1.2392574305531878,
+        "at": "2026-09-01T23:07:32.424Z",
+        "supply": 0
       }
     ],
     "Smoked Fish": [
@@ -138849,14 +138877,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 280546,
-      "at": "2026-09-01T15:31:14.041Z"
-    },
-    {
-      "total": 280586,
-      "at": "2026-09-01T15:36:14.044Z"
-    },
-    {
       "total": 280586,
       "at": "2026-09-01T15:36:14.556Z"
     },
@@ -139247,6 +139267,14 @@
     {
       "total": 306865,
       "at": "2026-09-01T23:02:33.208Z"
+    },
+    {
+      "total": 306885,
+      "at": "2026-09-01T23:07:33.121Z"
+    },
+    {
+      "total": 306885,
+      "at": "2026-09-01T23:07:33.615Z"
     }
   ],
   "gold_rush": null,
