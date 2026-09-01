@@ -134528,14 +134528,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 12351,
+      "funds": 13520,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 98928,
-      "market_cap": 98928,
+      "share_price": 99280,
+      "market_cap": 99280,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134559,7 +134559,7 @@
         "Coal": 57,
         "Gold Bar": 8,
         "Canned Food": 5,
-        "Bread": 21,
+        "Bread": 11,
         "Fish": 22,
         "Wheat": 51,
         "Sugar": 45,
@@ -134577,8 +134577,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T21:13:19.139Z",
       "price_history": [
-        89035,
-        89126,
         89455,
         89458,
         89477,
@@ -134676,11 +134674,13 @@
         98886,
         98889,
         98909,
-        98928
+        98928,
+        98949,
+        99280
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-01T22:00:55.204Z",
+      "last_factorydeal": "2026-09-01T22:58:46.833Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -135013,11 +135013,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 15,
-      "change_percent": 4.950453835819935,
-      "recorded_at": "2026-09-01T19:10:38.754Z"
-    },
     {
       "price": 15,
       "change_percent": 4.427629217430241,
@@ -135512,12 +135507,14 @@
       "price": 17,
       "change_percent": 4.762918289318381,
       "recorded_at": "2026-09-01T22:57:32.903Z"
+    },
+    {
+      "price": 17,
+      "change_percent": 4.252355560121319,
+      "recorded_at": "2026-09-01T22:58:20.453Z"
     }
   ],
-  "factory_names": [
-    "Soviet Iron Foundry",
-    "Lenin Machine Works"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Stalin Tractor Plant",
     "Ural Heavy Industries",
@@ -135525,7 +135522,9 @@
     "Khrushchev Agricultural",
     "Siberian Mining Co",
     "Brezhnev Auto Factory",
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Lenin Machine Works",
+    "Soviet Iron Foundry"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -135727,7 +135726,7 @@
   "market_demand": {
     "Fuel": 1.3736732632555626,
     "Cake": 1.2235954635470339,
-    "Bread": 1.207148613396907,
+    "Bread": 0.982148613396907,
     "Copper Ingot": 1.3970546267452197,
     "Iron Ingot": 1.3936360217105963,
     "Steel Ingot": 1.4045020433960156,
@@ -135763,12 +135762,12 @@
     "Antimony Alloy": 1.4133384033015615,
     "Molybdenum Rod": 1.41212710002688,
     "Aluminium Sheet": 1.4119182954762413,
-    "Shale Oil": 1.404549127334413
+    "Shale Oil": 1.414549127334413
   },
   "market_last_sale": {
     "Fuel": "2026-09-01T16:11:22.261Z",
     "Cake": "2026-09-01T22:00:55.205Z",
-    "Bread": "2026-09-01T20:53:44.169Z",
+    "Bread": "2026-09-01T22:58:46.833Z",
     "Copper Ingot": "2026-09-01T13:41:11.017Z",
     "Steel Ingot": "2026-08-31T14:54:14.093Z",
     "Refined Fuel": "2026-09-01T17:40:07.159Z",
@@ -135783,7 +135782,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 9,
+    "Bread": 19,
     "Cake": 7
   },
   "global_consumption": {
