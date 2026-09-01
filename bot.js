@@ -90,6 +90,8 @@ async function collectWeeklyTaxes(manual=false) {
         }
     }
     let totalFromUsers = 0, totalFromCompanies = 0, usersTaxed = 0, companiesTaxed = 0;
+    const userDetails = []; // {uid, username, total, tax}
+    const companyDetails = []; // {cid, name, funds, tax}
     // Individual: tax on total cash+bank (if >=100) — MUST deduct from UnbelievaBoat too, otherwise it just prints
     for (const [uid, u] of Object.entries(data.users || {})) {
         if (uid === STATE_BANK_USER_ID) continue;
@@ -98,8 +100,7 @@ async function collectWeeklyTaxes(manual=false) {
         const tax = calculateIndividualTax(total);
         if (tax <= 0) continue;
         // deduct proportionally from bank first, then cash (both data.users AND UnbelievaBoat)
-        let remaining = tax;
-        const bankDeduct = Math.min(u.bank||0, remaining);
+        const bankDeduct = Math.min(u.bank||0, tax);
         const cashDeduct = tax - bankDeduct;
         if (bankDeduct > 0) u.bank -= bankDeduct;
         if (cashDeduct > 0) u.cash = Math.max(0, (u.cash||0) - cashDeduct);
@@ -111,6 +112,7 @@ async function collectWeeklyTaxes(manual=false) {
         } catch {}
         totalFromUsers += tax;
         usersTaxed++;
+        userDetails.push({ uid, username: u.username || uid.slice(0,6), total, tax });
     }
     // Corporate: tax on company funds (if >=100)
     for (const [cid, c] of Object.entries(data.companies || {})) {
@@ -121,6 +123,7 @@ async function collectWeeklyTaxes(manual=false) {
         c.funds = Math.max(0, funds - tax);
         totalFromCompanies += tax;
         companiesTaxed++;
+        companyDetails.push({ cid, name: c.name, funds, tax });
     }
     const totalCollected = totalFromUsers + totalFromCompanies;
     if (totalCollected > 0) {
@@ -131,10 +134,11 @@ async function collectWeeklyTaxes(manual=false) {
         try { await addToStateBank(totalCollected, `Weekly taxes ${new Date().toISOString().slice(0,10)}`); } catch {}
     }
     data.last_weekly_tax = new Date().toISOString();
-    // log
-    logOwnerAction(data, 'SYSTEM', 'GOSBANK', 'weekly_taxes', `collected ${formatMoney(totalCollected)} from ${usersTaxed} users + ${companiesTaxed} companies (individual ${formatMoney(totalFromUsers)}, corporate ${formatMoney(totalFromCompanies)})`);
+    // log with per-entity details (for audit)
+    const detailStr = `collected ${formatMoney(totalCollected)} from ${usersTaxed} users + ${companiesTaxed} companies (individual ${formatMoney(totalFromUsers)}, corporate ${formatMoney(totalFromCompanies)}) | users: ${userDetails.slice(0,10).map(u=>`${u.username} ${formatMoney(u.tax)}`).join(', ')}${userDetails.length>10?' …':''} | companies: ${companyDetails.slice(0,10).map(c=>`${c.name} ${formatMoney(c.tax)}`).join(', ')}${companyDetails.length>10?' …':''}`;
+    logOwnerAction(data, 'SYSTEM', 'GOSBANK', 'weekly_taxes', detailStr);
     saveData(data);
-    return { totalCollected, totalFromUsers, totalFromCompanies, usersTaxed, companiesTaxed };
+    return { totalCollected, totalFromUsers, totalFromCompanies, usersTaxed, companiesTaxed, userDetails, companyDetails };
 }
 const DATA_FILE = path.join(__dirname, 'economy_data.json');
 // GitHub sync — pushes economy_data.json to USSR-stock so Vercel/Pages show LIVE bot data (no mock)
@@ -2218,7 +2222,9 @@ client.once(Events.ClientReady, async () => {    console.log(`✅ Logged in as $
             }
             const result = await collectWeeklyTaxes(false);
             if (!result || result.totalCollected === 0) return;
-            const embed = new EmbedBuilder().setTitle('🏛️ Weekly Taxes Collected — State Bank').setDescription(`**${new Date().toLocaleDateString('en-GB', {timeZone: 'Europe/Berlin'})} 12:00 CET**\nCollected **${formatMoney(result.totalCollected)}** from **${result.usersTaxed}** citizens + **${result.companiesTaxed}** companies\n\n• From users: **${formatMoney(result.totalFromUsers)}**\n• From companies: **${formatMoney(result.totalFromCompanies)}**\n\nSent to **State Bank** (<@${STATE_BANK_USER_ID}>)\n*Skipped <100 ₽ balances for performance*`).setColor(0xFFD700).setFooter({text: 'Tax brackets: Individual 0-350 0% | 351-1k 10% (+5) | 1k-5k 15% (+5) | 5k-200k 20% (+5) | >200k 30% (+5) • Corporate 0-5k 0% | 5k-15k 10% (+5) | 15k-30k 13% (+5) | >30k 17% (+5)'});
+            const topUsers = (result.userDetails||[]).sort((a,b)=>b.tax-a.tax).slice(0,10).map(u=>`• ${u.username} (\`${u.uid}\`) — ${formatMoney(u.tax)} from ${formatMoney(u.total)}`).join('\n').slice(0,1000) || 'None';
+            const topCompanies = (result.companyDetails||[]).sort((a,b)=>b.tax-a.tax).slice(0,10).map(c=>`• ${c.name} — ${formatMoney(c.tax)} from ${formatMoney(c.funds)}`).join('\n').slice(0,1000) || 'None';
+            const embed = new EmbedBuilder().setTitle('🏛️ Weekly Taxes Collected — State Bank').setDescription(`**${new Date().toLocaleDateString('en-GB', {timeZone: 'Europe/Berlin'})} 12:00 CET**\nCollected **${formatMoney(result.totalCollected)}** from **${result.usersTaxed}** citizens + **${result.companiesTaxed}** companies\n\n• From users: **${formatMoney(result.totalFromUsers)}**\n• From companies: **${formatMoney(result.totalFromCompanies)}**\n\nSent to **State Bank** (<@${STATE_BANK_USER_ID}>)\n*Skipped <100 ₽ balances for performance*`).setColor(0xFFD700).addFields({name: `👥 Top Payers — Citizens (${result.usersTaxed})`, value: topUsers, inline: false}, {name: `🏢 Top Payers — Companies (${result.companiesTaxed})`, value: topCompanies, inline: false}).setFooter({text: 'Tax brackets: Individual 0-350 0% | 351-1k 10% (+5) | 1k-5k 15% (+5) | 5k-200k 20% (+5) | >200k 30% (+5) • Corporate 0-5k 0% | 5k-15k 10% (+5) | 15k-30k 13% (+5) | >30k 17% (+5)'});
             const ch = client.channels.cache.get(EVENT_CHANNEL_ID);
             if (ch) await ch.send({ embeds: [embed] });
             // also announce in every workzone
@@ -7074,7 +7080,11 @@ if (command === 'foundcompany') {
         if (!isBotOwner(userId)) { await message.reply('❌ Owner only!'); return; }
         const result = await collectWeeklyTaxes(true);
         if (!result || result.totalCollected===0) { await message.reply('📭 No taxes collected (all <100 ₽ or already collected this week)'); return; }
-        await message.reply(`✅ Manual weekly taxes: **${formatMoney(result.totalCollected)}** from ${result.usersTaxed} users + ${result.companiesTaxed} companies (individual ${formatMoney(result.totalFromUsers)}, corporate ${formatMoney(result.totalFromCompanies)}) → State Bank`);
+        const topU = (result.userDetails||[]).sort((a,b)=>b.tax-a.tax).slice(0,10).map(u=>`• ${u.username} — ${formatMoney(u.tax)} from ${formatMoney(u.total)}`).join('\n').slice(0,1000) || 'None';
+        const topC = (result.companyDetails||[]).sort((a,b)=>b.tax-a.tax).slice(0,10).map(c=>`• ${c.name} — ${formatMoney(c.tax)} from ${formatMoney(c.funds)}`).join('\n').slice(0,1000) || 'None';
+        const embed = new EmbedBuilder().setTitle('✅ Manual Weekly Taxes — State Bank').setDescription(`Collected **${formatMoney(result.totalCollected)}** from **${result.usersTaxed}** users + **${result.companiesTaxed}** companies\n\n• From users: **${formatMoney(result.totalFromUsers)}**\n• From companies: **${formatMoney(result.totalFromCompanies)}**`).setColor(0xFFD700)
+            .addFields({name: `👥 Citizens (${result.usersTaxed})`, value: topU, inline:false}, {name: `🏢 Companies (${result.companiesTaxed})`, value: topC, inline:false}).setFooter({text: `Sent to State Bank <@${STATE_BANK_USER_ID}>`});
+        await message.reply({ embeds: [embed] });
         return;
     }
 
