@@ -133851,8 +133851,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 123400,
-      "market_cap": 123400,
+      "share_price": 123440,
+      "market_cap": 123440,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -133880,24 +133880,21 @@
       "inventory": {
         "Uranium": 1,
         "Zinc": 75,
-        "Coal": 16,
+        "Coal": 12,
         "Copper": 16,
         "Lead": 30,
         "Gold Bar": 8,
         "Aluminium": 16,
         "Wheat": 174,
-        "Iron Ore": 9,
+        "Iron Ore": 3,
         "Aluminium Ore": 13,
-        "Iron Ingot": 2,
+        "Iron Ingot": 1,
         "Gold": 2,
-        "Steel Ingot": 2
+        "Machine Parts": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T13:03:14.918Z",
       "price_history": [
-        102103,
-        102213,
-        101426,
         100638,
         100789,
         101201,
@@ -133994,7 +133991,10 @@
         122859,
         122632,
         122694,
-        123400
+        123400,
+        123440,
+        123479,
+        123440
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -134197,14 +134197,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 17561,
+      "funds": 2453,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 88639,
-      "market_cap": 88639,
+      "share_price": 88530,
+      "market_cap": 88530,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134217,6 +134217,11 @@
           "level": 1,
           "built_at": "2026-08-25T17:15:02.477Z",
           "type": "factory"
+        },
+        "Iron Mine": {
+          "level": 1,
+          "built_at": "2026-09-01T13:10:07.062Z",
+          "type": "mine"
         }
       },
       "inventory": {
@@ -134240,7 +134245,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T09:03:43.511Z",
       "price_history": [
-        77219,
         77230,
         77215,
         77234,
@@ -134339,7 +134343,8 @@
         85010,
         85005,
         85914,
-        88639
+        88639,
+        88530
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
