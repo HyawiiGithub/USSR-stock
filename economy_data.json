@@ -134405,11 +134405,6 @@
   "gsi_history": [
     {
       "price": 10,
-      "change_percent": 5.361071425340931,
-      "recorded_at": "2026-08-31T21:10:53.954Z"
-    },
-    {
-      "price": 10,
       "change_percent": 5.30216252324163,
       "recorded_at": "2026-08-31T21:11:11.828Z"
     },
@@ -134902,6 +134897,11 @@
       "price": 10,
       "change_percent": -1.0910368386260645,
       "recorded_at": "2026-09-01T00:36:10.933Z"
+    },
+    {
+      "price": 10,
+      "change_percent": 4.7896288219750565,
+      "recorded_at": "2026-09-01T00:36:12.817Z"
     }
   ],
   "factory_names": [
@@ -135158,7 +135158,7 @@
     "Canned Fish": 2,
     "Canned Food": 8,
     "Fuel": 4,
-    "Uranium Rod": 5,
+    "Uranium Rod": 3,
     "Cake": 2
   },
   "global_consumption": {
@@ -135173,7 +135173,7 @@
     "Cake": 21,
     "Smoked Fish": 20,
     "Canned Food": 2,
-    "Uranium Rod": 4,
+    "Uranium Rod": 6,
     "Canned Fish": 5
   },
   "consumption_history": [
@@ -136326,6 +136326,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-01T00:21:11.971Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 2,
+      "at": "2026-09-01T00:36:12.009Z"
     }
   ],
   "demand_history": {
@@ -137426,6 +137431,11 @@
         "demand": 1.3880647217099362,
         "at": "2026-08-31T23:36:11.802Z",
         "supply": 2
+      },
+      {
+        "demand": 1.3880647217099362,
+        "at": "2026-09-01T00:36:12.009Z",
+        "supply": 2
       }
     ],
     "Canned Fish": [
@@ -137579,10 +137589,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 247233,
-      "at": "2026-08-31T13:09:49.262Z"
-    },
     {
       "total": 247263,
       "at": "2026-08-31T13:14:48.911Z"
@@ -137978,6 +137984,10 @@
     {
       "total": 221077,
       "at": "2026-09-01T00:31:12.974Z"
+    },
+    {
+      "total": 221077,
+      "at": "2026-09-01T00:36:13.027Z"
     }
   ],
   "gold_rush": null,
