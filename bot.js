@@ -109,10 +109,11 @@ async function collectWeeklyTaxes(manual=false) {
         const cashDeduct = tax - bankDeduct;
         if (bankDeduct > 0) u.bank -= bankDeduct;
         if (cashDeduct > 0) u.cash = Math.max(0, (u.cash||0) - cashDeduct);
-        // actually remove from UnbelievaBoat (otherwise it just prints to state bank)
+        // actually remove from UnbelievaBoat (otherwise it just prints to state bank) — 5s delay to avoid API limit
         try {
             if (UNBELIEVABOAT_TOKEN) {
                 await updateUnbBalance(uid, -cashDeduct, -bankDeduct, `Weekly tax ${tax}`);
+                await new Promise(r => setTimeout(r, 5000));
             }
         } catch {}
         totalFromUsers += tax;
