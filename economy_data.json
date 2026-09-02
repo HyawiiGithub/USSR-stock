@@ -172489,14 +172489,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 25988,
+      "funds": 28483,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 118248,
-      "market_cap": 118248,
+      "share_price": 118718,
+      "market_cap": 118718,
       "employees": 21,
       "level": 1,
       "buildings": {
@@ -172529,17 +172529,13 @@
         "Bread": 16,
         "Copper Ingot": 3,
         "Iron Ingot": 2,
-        "Oil": 19,
+        "Oil": 1,
         "Iron Ore": 5,
         "Reactor Core": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-02T21:41:27.141Z",
       "price_history": [
-        106728,
-        106749,
-        106867,
-        106873,
         106779,
         106830,
         106919,
@@ -172635,11 +172631,15 @@
         118112,
         118132,
         118132,
-        118248
+        118248,
+        118364,
+        118555,
+        118745,
+        118718
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-02T21:41:44.524Z",
+      "last_factorydeal": "2026-09-02T22:41:20.418Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -172991,11 +172991,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 16,
-      "change_percent": 4.640872663115052,
-      "recorded_at": "2026-09-02T18:53:59.361Z"
-    },
     {
       "price": 16,
       "change_percent": 5.012039684789795,
@@ -173490,20 +173485,25 @@
       "price": 17,
       "change_percent": 4.563141256695273,
       "recorded_at": "2026-09-02T22:40:08.961Z"
+    },
+    {
+      "price": 17,
+      "change_percent": 5.2139579423391975,
+      "recorded_at": "2026-09-02T22:40:36.070Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -173714,24 +173714,24 @@
     "Timber Planks": 1.4043830462180418,
     "Bricks": 1.4121548133751083,
     "Concrete": 1.4121826702162124,
-    "Glass": 1.4124242589195246,
+    "Glass": 1.4224242589195246,
     "Steel Beam": 1.401507132898005,
     "Machine Parts": 1.4051813431090312,
-    "Refined Fuel": 1.3958596200847533,
-    "Uranium Rod": 1.3940797830237266,
+    "Refined Fuel": 1.3283596200847532,
+    "Uranium Rod": 1.4040797830237266,
     "Reactor Core": 1.4089513867497818,
-    "Circuit Board": 1.4115111407552625,
+    "Circuit Board": 1.4215111407552625,
     "Flour": 1.411508265232346,
     "Sugar": 1.2490287336204018,
     "Wine": 1.4115085528936233,
-    "Canned Food": 1.3868471976133727,
+    "Canned Food": 1.3968471976133727,
     "Canned Fish": 1.3955049078475177,
     "Smoked Fish": 1.404608936656929,
     "Fish Stew": 1.41242607030187,
     "Peat Fuel": 1.404628464577847,
     "Gas Fuel": 1.413504943867516,
     "Fertilizer": 1.4115089550996212,
-    "Cotton Fabric": 1.412016970522514,
+    "Cotton Fabric": 1.422016970522514,
     "Manganese Alloy": 1.4116233452555782,
     "Sunflower Oil": 1.4115705301778716,
     "Linen": 1.4124277970568644,
@@ -173749,7 +173749,7 @@
     "Bread": "2026-09-02T12:05:47.948Z",
     "Copper Ingot": "2026-09-02T09:31:56.472Z",
     "Steel Ingot": "2026-08-31T14:54:14.093Z",
-    "Refined Fuel": "2026-09-02T18:10:56.154Z",
+    "Refined Fuel": "2026-09-02T22:41:20.419Z",
     "Timber Planks": "2026-08-31T02:40:33.765Z",
     "Iron Ingot": "2026-08-31T13:22:02.988Z",
     "Shale Oil": "2026-08-30T03:03:58.713Z",
@@ -173761,7 +173761,8 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 4
+    "Cake": 4,
+    "Refined Fuel": 3
   },
   "global_consumption": {
     "Copper Ingot": 60,
