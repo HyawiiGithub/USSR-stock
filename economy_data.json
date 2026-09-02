@@ -417,7 +417,7 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 425,
+      "cash": 445,
       "bank": 2638,
       "resources": {
         "Coal": 1
@@ -427,8 +427,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T17:34:50.885Z",
-      "work_count": 97,
+      "last_work": "2026-09-02T17:59:34.656Z",
+      "work_count": 98,
       "last_claim": "2026-08-27T08:31:17.592Z",
       "last_collect": null,
       "join_date": "2026-08-23T17:33:27.267416",
@@ -134838,14 +134838,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 22107,
+      "funds": 22102,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 110848,
-      "market_cap": 110848,
+      "share_price": 111142,
+      "market_cap": 111142,
       "employees": 21,
       "level": 1,
       "buildings": {
@@ -134870,27 +134870,23 @@
         "Gold Bar": 9,
         "Canned Food": 5,
         "Fish": 22,
-        "Wheat": 71,
+        "Wheat": 70,
         "Sugar": 42,
         "Uranium Rod": 2,
         "Steel Beam": 3,
         "Uranium": 3,
         "Copper": 1,
-        "Oil": 4,
         "Iron Ingot": 1,
         "Gold": 1,
         "Bread": 7,
         "Machine Parts": 1,
-        "Refined Fuel": 1,
+        "Refined Fuel": 2,
         "Iron Ore": 4,
         "Copper Ingot": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-02T15:38:19.493Z",
       "price_history": [
-        100180,
-        100303,
-        100541,
         100714,
         100778,
         100760,
@@ -134987,7 +134983,10 @@
         110466,
         110549,
         110712,
-        110848
+        110848,
+        110900,
+        111015,
+        111142
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -135325,21 +135324,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 15,
-      "change_percent": 4.8445112685455705,
-      "recorded_at": "2026-09-02T13:34:39.979Z"
-    },
-    {
-      "price": 15,
-      "change_percent": 4.806088627561057,
-      "recorded_at": "2026-09-02T13:37:34.152Z"
-    },
-    {
-      "price": 15,
-      "change_percent": 4.976285867052545,
-      "recorded_at": "2026-09-02T13:42:34.364Z"
-    },
     {
       "price": 15,
       "change_percent": 4.580133287509287,
@@ -135824,6 +135808,21 @@
       "price": 16,
       "change_percent": 4.4175156219983,
       "recorded_at": "2026-09-02T17:54:16.272Z"
+    },
+    {
+      "price": 16,
+      "change_percent": 4.361240071441928,
+      "recorded_at": "2026-09-02T17:59:09.396Z"
+    },
+    {
+      "price": 16,
+      "change_percent": 4.984557453582078,
+      "recorded_at": "2026-09-02T17:59:17.299Z"
+    },
+    {
+      "price": 16,
+      "change_percent": 4.774516461290928,
+      "recorded_at": "2026-09-02T17:59:35.171Z"
     }
   ],
   "factory_names": [
@@ -135844,11 +135843,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7650708884101923,
+  "inflation": 0.7648746497349084,
   "money_printed": 354,
-  "total_bank_reserves": 221220,
+  "total_bank_reserves": 221219,
   "inflation_history": [
-    0.8253687115447097,
     0.7986540556572577,
     0.7352931197617882,
     0.8079952683384992,
@@ -135947,7 +135945,8 @@
     0.7887380700185649,
     0.8546546272262943,
     0.8298188931713552,
-    0.7650708884101923
+    0.7650708884101923,
+    0.7648746497349084
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -136038,9 +136037,9 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3751760166315927,
-    "Cake": 1.3545934353323865,
+    "Cake": 1.363100622617078,
     "Bread": 1.379413551825344,
-    "Copper Ingot": 1.4042738605069136,
+    "Copper Ingot": 1.4006522038908233,
     "Iron Ingot": 1.388359201926493,
     "Steel Ingot": 1.3910611175443803,
     "Gold Bar": 1.3460741776478367,
@@ -139487,10 +139486,6 @@
   "total_rubles_history": [
     {
       "total": 309787,
-      "at": "2026-09-02T10:12:34.932Z"
-    },
-    {
-      "total": 309787,
       "at": "2026-09-02T10:17:34.941Z"
     },
     {
@@ -139884,6 +139879,10 @@
     {
       "total": 296087,
       "at": "2026-09-02T17:54:16.411Z"
+    },
+    {
+      "total": 296107,
+      "at": "2026-09-02T17:59:17.576Z"
     }
   ],
   "gold_rush": null,
