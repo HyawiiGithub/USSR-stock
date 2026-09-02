@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 100,
+      "cash": 120,
       "bank": 14115,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-02T10:11:24.513Z",
-      "work_count": 621,
+      "last_work": "2026-09-02T10:17:59.472Z",
+      "work_count": 622,
       "last_claim": "2026-09-02T09:19:06.095Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -134339,6 +134339,24 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
+    },
+    "737771033473450115": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null
     }
   },
   "companies": {
@@ -134710,14 +134728,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 16912,
+      "funds": 16907,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 104790,
-      "market_cap": 104790,
+      "share_price": 104905,
+      "market_cap": 104905,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134744,10 +134762,10 @@
         "Bread": 10,
         "Fish": 22,
         "Wheat": 37,
-        "Sugar": 51,
+        "Sugar": 50,
         "Uranium Rod": 2,
         "Steel Beam": 3,
-        "Gold": 1,
+        "Gold": 2,
         "Uranium": 3,
         "Copper": 1,
         "Oil": 5,
@@ -134758,7 +134776,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-02T09:37:26.549Z",
       "price_history": [
-        92574,
         92892,
         92962,
         92965,
@@ -134857,7 +134874,8 @@
         104622,
         104700,
         104770,
-        104790
+        104790,
+        104905
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -135194,16 +135212,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 13,
-      "change_percent": 4.965701844177742,
-      "recorded_at": "2026-09-02T05:37:34.079Z"
-    },
-    {
-      "price": 13,
-      "change_percent": 4.680694112270784,
-      "recorded_at": "2026-09-02T05:38:18.925Z"
-    },
     {
       "price": 13,
       "change_percent": 4.919314796814208,
@@ -135693,6 +135701,16 @@
       "price": 15,
       "change_percent": 4.588649355485575,
       "recorded_at": "2026-09-02T10:12:34.171Z"
+    },
+    {
+      "price": 15,
+      "change_percent": 4.780747186278115,
+      "recorded_at": "2026-09-02T10:17:34.151Z"
+    },
+    {
+      "price": 15,
+      "change_percent": 4.408434525953459,
+      "recorded_at": "2026-09-02T10:18:00.035Z"
     }
   ],
   "factory_names": [
@@ -135713,11 +135731,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7104606917478389,
+  "inflation": 0.7023709959316763,
   "money_printed": 354,
   "total_bank_reserves": 237931,
   "inflation_history": [
-    0.8061905874292594,
     0.7919164675423997,
     0.8015221035943326,
     0.7836236606102582,
@@ -135816,7 +135833,8 @@
     0.8228526566214218,
     0.7069967064177608,
     0.7115048475474146,
-    0.7104606917478389
+    0.7104606917478389,
+    0.7023709959316763
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -139220,14 +139238,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 293476,
-      "at": "2026-09-02T02:22:34.245Z"
-    },
-    {
-      "total": 293496,
-      "at": "2026-09-02T02:27:34.245Z"
-    },
-    {
       "total": 293516,
       "at": "2026-09-02T02:32:34.323Z"
     },
@@ -139618,6 +139628,14 @@
     {
       "total": 309787,
       "at": "2026-09-02T10:12:34.932Z"
+    },
+    {
+      "total": 309787,
+      "at": "2026-09-02T10:17:34.941Z"
+    },
+    {
+      "total": 309787,
+      "at": "2026-09-02T10:17:35.520Z"
     }
   ],
   "gold_rush": null,
