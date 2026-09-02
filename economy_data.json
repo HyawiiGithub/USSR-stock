@@ -493,15 +493,15 @@
       "ceo_of": null
     },
     "874346333882945547": {
-      "cash": 220,
+      "cash": 240,
       "bank": 14115,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-02T11:21:23.903Z",
-      "work_count": 627,
+      "last_work": "2026-09-02T11:47:45.577Z",
+      "work_count": 628,
       "last_claim": "2026-09-02T09:19:06.095Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -40643,9 +40643,9 @@
       "last_work": null,
       "work_count": 0,
       "last_claim": null,
-      "ssr_region": null,
-      "employed_at": null,
-      "is_employed": false,
+      "ssr_region": "Kazakh SSR",
+      "employed_at": "Soviet Agriculture",
+      "is_employed": true,
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null
@@ -134764,15 +134764,15 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 19155,
+      "funds": 19150,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 105796,
-      "market_cap": 105796,
-      "employees": 20,
+      "share_price": 105854,
+      "market_cap": 105854,
+      "employees": 21,
       "level": 1,
       "buildings": {
         "Farm": {
@@ -134798,20 +134798,19 @@
         "Bread": 10,
         "Fish": 22,
         "Wheat": 45,
-        "Sugar": 36,
+        "Sugar": 35,
         "Uranium Rod": 2,
         "Steel Beam": 3,
         "Gold": 2,
         "Uranium": 3,
         "Copper": 5,
         "Oil": 5,
-        "Iron Ore": 7,
+        "Iron Ore": 8,
         "Iron Ingot": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-02T09:37:26.549Z",
       "price_history": [
-        94141,
         94180,
         94280,
         94283,
@@ -134910,7 +134909,8 @@
         105800,
         105769,
         105791,
-        105796
+        105796,
+        105854
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -135247,16 +135247,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 14,
-      "change_percent": 4.9820956017006575,
-      "recorded_at": "2026-09-02T07:52:34.113Z"
-    },
-    {
-      "price": 14,
-      "change_percent": 4.4301167224719755,
-      "recorded_at": "2026-09-02T07:57:22.098Z"
-    },
     {
       "price": 14,
       "change_percent": 4.762982314467705,
@@ -135746,6 +135736,16 @@
       "price": 15,
       "change_percent": 5.174039817744041,
       "recorded_at": "2026-09-02T11:45:43.857Z"
+    },
+    {
+      "price": 15,
+      "change_percent": 4.631900552695134,
+      "recorded_at": "2026-09-02T11:47:34.144Z"
+    },
+    {
+      "price": 15,
+      "change_percent": 4.781054315952508,
+      "recorded_at": "2026-09-02T11:47:46.077Z"
     }
   ],
   "factory_names": [
@@ -135766,11 +135766,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6959083799707253,
+  "inflation": 0.754227661795673,
   "money_printed": 354,
-  "total_bank_reserves": 234282,
+  "total_bank_reserves": 234377,
   "inflation_history": [
-    0.7683970269710629,
     0.8063014984106671,
     0.7385673542947654,
     0.7314991636802718,
@@ -135869,7 +135868,8 @@
     0.7325821919168959,
     0.7064727575190963,
     0.7962587689391998,
-    0.6959083799707253
+    0.6959083799707253,
+    0.754227661795673
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -139286,10 +139286,6 @@
   "total_rubles_history": [
     {
       "total": 293596,
-      "at": "2026-09-02T04:02:34.841Z"
-    },
-    {
-      "total": 293596,
       "at": "2026-09-02T04:07:34.846Z"
     },
     {
@@ -139683,6 +139679,10 @@
     {
       "total": 305259,
       "at": "2026-09-02T11:42:34.958Z"
+    },
+    {
+      "total": 305294,
+      "at": "2026-09-02T11:47:34.944Z"
     }
   ],
   "gold_rush": null,
