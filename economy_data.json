@@ -134564,14 +134564,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 14487,
+      "funds": 16228,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 100714,
-      "market_cap": 100714,
+      "share_price": 101504,
+      "market_cap": 101504,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134606,16 +134606,11 @@
         "Uranium": 3,
         "Iron Ingot": 6,
         "Copper Ingot": 2,
-        "Copper": 1,
-        "Fuel": 3,
-        "Oil": 3
+        "Copper": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-01T21:13:19.139Z",
       "price_history": [
-        89729,
-        89692,
-        89704,
         89715,
         89734,
         92033,
@@ -134712,11 +134707,14 @@
         100180,
         100303,
         100541,
-        100714
+        100714,
+        100778,
+        100760,
+        101504
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-01T23:45:21.376Z",
+      "last_factorydeal": "2026-09-02T00:22:32.851Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -135049,11 +135047,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 15,
-      "change_percent": 4.414988415421458,
-      "recorded_at": "2026-09-01T20:06:42.772Z"
-    },
     {
       "price": 14,
       "change_percent": -2.22466381842631,
@@ -135548,20 +135541,25 @@
       "price": 17,
       "change_percent": 4.327700682532388,
       "recorded_at": "2026-09-02T00:21:54.853Z"
+    },
+    {
+      "price": 17,
+      "change_percent": 4.188278308415972,
+      "recorded_at": "2026-09-02T00:22:33.525Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
-    "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
-    "Siberian Mining Co",
-    "Volga Shipbuilding"
+    "Siberian Mining Co"
   ],
   "used_factory_names": [
     "Brezhnev Auto Factory",
-    "Ural Heavy Industries"
+    "Ural Heavy Industries",
+    "Volga Shipbuilding",
+    "Lenin Machine Works"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -135774,8 +135772,8 @@
     "Concrete": 1.4121826702162124,
     "Glass": 1.4115087014389704,
     "Steel Beam": 1.4048072883043665,
-    "Machine Parts": 1.407962193558069,
-    "Refined Fuel": 1.404567870838355,
+    "Machine Parts": 1.417962193558069,
+    "Refined Fuel": 1.3595678708383552,
     "Uranium Rod": 1.3885746763761548,
     "Reactor Core": 1.412270477229058,
     "Circuit Board": 1.4122808587615518,
@@ -135786,12 +135784,12 @@
     "Canned Fish": 1.4010024104591872,
     "Smoked Fish": 1.4044324451681907,
     "Fish Stew": 1.4115191357975276,
-    "Peat Fuel": 1.4046275041264749,
+    "Peat Fuel": 1.4146275041264749,
     "Gas Fuel": 1.4124277970568644,
     "Fertilizer": 1.4124250426124458,
     "Cotton Fabric": 1.412488867934586,
     "Manganese Alloy": 1.4115207524070374,
-    "Sunflower Oil": 1.4124596085011172,
+    "Sunflower Oil": 1.4224596085011172,
     "Linen": 1.4120099255926,
     "Corn Meal": 1.4115290826653417,
     "Tea Pack": 1.4123435275452147,
@@ -135807,7 +135805,7 @@
     "Bread": "2026-09-01T23:45:21.376Z",
     "Copper Ingot": "2026-09-01T13:41:11.017Z",
     "Steel Ingot": "2026-08-31T14:54:14.093Z",
-    "Refined Fuel": "2026-09-01T17:40:07.159Z",
+    "Refined Fuel": "2026-09-02T00:22:32.851Z",
     "Timber Planks": "2026-08-31T02:40:33.765Z",
     "Iron Ingot": "2026-08-31T13:22:02.988Z",
     "Shale Oil": "2026-08-30T03:03:58.713Z",
@@ -135820,7 +135818,7 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Bread": 26,
-    "Cake": 2
+    "Refined Fuel": 2
   },
   "global_consumption": {
     "Copper Ingot": 58,
@@ -135831,7 +135829,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 50,
+    "Cake": 52,
     "Smoked Fish": 20,
     "Canned Food": 10,
     "Uranium Rod": 12,
@@ -137313,6 +137311,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-02T00:07:32.428Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-02T00:22:32.430Z"
     }
   ],
   "demand_history": {
@@ -138497,6 +138500,11 @@
         "demand": 1.2887760353616686,
         "at": "2026-09-01T23:37:32.426Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3452158635640767,
+        "at": "2026-09-02T00:22:32.430Z",
+        "supply": 0
       }
     ],
     "Smoked Fish": [
@@ -138936,10 +138944,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 280931,
-      "at": "2026-09-01T16:51:14.215Z"
-    },
-    {
       "total": 280951,
       "at": "2026-09-01T16:56:14.210Z"
     },
@@ -139334,6 +139338,10 @@
     {
       "total": 306985,
       "at": "2026-09-02T00:17:33.244Z"
+    },
+    {
+      "total": 307281,
+      "at": "2026-09-02T00:22:33.719Z"
     }
   ],
   "gold_rush": null,
