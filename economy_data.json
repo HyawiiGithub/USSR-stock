@@ -135893,9 +135893,7 @@
     "Uranium Rod": "2026-09-01T13:09:52.324Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Bread": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 58,
     "Steel Ingot": 18,
@@ -135910,14 +135908,9 @@
     "Canned Food": 10,
     "Uranium Rod": 12,
     "Canned Fish": 7,
-    "Bread": 49
+    "Bread": 50
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-08-27T01:36:22.053Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 2,
@@ -137412,6 +137405,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-02T05:07:32.792Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 1,
+      "at": "2026-09-02T05:22:32.724Z"
     }
   ],
   "demand_history": {
@@ -138955,6 +138953,11 @@
       {
         "demand": 1.3889315479231392,
         "at": "2026-09-02T05:07:32.792Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.3889315479231392,
+        "at": "2026-09-02T05:22:32.724Z",
         "supply": 2
       }
     ]
