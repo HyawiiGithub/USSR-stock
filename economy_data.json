@@ -134789,8 +134789,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 110193,
-      "market_cap": 110193,
+      "share_price": 110196,
+      "market_cap": 110196,
       "employees": 21,
       "level": 1,
       "buildings": {
@@ -134831,7 +134831,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-02T15:38:19.493Z",
       "price_history": [
-        97878,
         97946,
         97886,
         98816,
@@ -134930,7 +134929,8 @@
         110114,
         110075,
         110202,
-        110193
+        110193,
+        110196
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -135267,16 +135267,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 15,
-      "change_percent": 4.648691289094228,
-      "recorded_at": "2026-09-02T11:42:20.574Z"
-    },
-    {
-      "price": 15,
-      "change_percent": 5.259506146995147,
-      "recorded_at": "2026-09-02T11:42:34.120Z"
-    },
     {
       "price": 15,
       "change_percent": 5.174039817744041,
@@ -135766,6 +135756,16 @@
       "price": 16,
       "change_percent": 4.3377368236903395,
       "recorded_at": "2026-09-02T15:47:34.219Z"
+    },
+    {
+      "price": 16,
+      "change_percent": 4.585141927520147,
+      "recorded_at": "2026-09-02T15:52:20.459Z"
+    },
+    {
+      "price": 16,
+      "change_percent": 4.641671751527003,
+      "recorded_at": "2026-09-02T15:52:34.252Z"
     }
   ],
   "factory_names": [
@@ -136037,7 +136037,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 7
+    "Cake": 6
   },
   "global_consumption": {
     "Copper Ingot": 60,
@@ -136048,7 +136048,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 61,
+    "Cake": 62,
     "Smoked Fish": 20,
     "Canned Food": 10,
     "Uranium Rod": 12,
@@ -136056,11 +136056,6 @@
     "Bread": 60
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-27T16:59:06.272Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -137555,6 +137550,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-02T14:37:33.293Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-09-02T15:52:33.242Z"
     }
   ],
   "demand_history": {
@@ -138784,6 +138784,11 @@
         "demand": 1.3131017882486704,
         "at": "2026-09-02T13:07:32.973Z",
         "supply": 0
+      },
+      {
+        "demand": 1.2402167504153632,
+        "at": "2026-09-02T15:52:33.242Z",
+        "supply": 0
       }
     ],
     "Smoked Fish": [
@@ -139398,10 +139403,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 295332,
-      "at": "2026-09-02T08:02:34.905Z"
-    },
-    {
       "total": 295352,
       "at": "2026-09-02T08:07:34.902Z"
     },
@@ -139796,6 +139797,10 @@
     {
       "total": 307135,
       "at": "2026-09-02T15:47:35.398Z"
+    },
+    {
+      "total": 307155,
+      "at": "2026-09-02T15:52:35.416Z"
     }
   ],
   "gold_rush": null,
