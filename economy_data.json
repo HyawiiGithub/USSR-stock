@@ -173483,14 +173483,12 @@
     "Uranium Rod": "2026-09-01T13:09:52.324Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Refined Fuel": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 60,
     "Steel Ingot": 18,
     "Timber Planks": 102,
-    "Refined Fuel": 52,
+    "Refined Fuel": 53,
     "Fuel": 24,
     "Iron Ingot": 15,
     "Shale Oil": 17,
@@ -173503,11 +173501,6 @@
     "Bread": 60
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-27T18:56:42.053Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -175002,6 +174995,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-02T18:25:05.633Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-09-02T18:43:58.035Z"
     }
   ],
   "demand_history": {
@@ -175805,6 +175803,11 @@
       {
         "demand": 1.3541102504475098,
         "at": "2026-09-02T18:25:05.633Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3558253777974896,
+        "at": "2026-09-02T18:43:58.035Z",
         "supply": 0
       }
     ],
