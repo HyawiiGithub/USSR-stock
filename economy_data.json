@@ -524,7 +524,7 @@
       "total_heat_generated": 0
     },
     "1456622719985782864": {
-      "cash": 15,
+      "cash": 583,
       "bank": 35879,
       "resources": {},
       "inventory": {},
@@ -961,7 +961,7 @@
       "total_heat_generated": 0
     },
     "1379734184259747851": {
-      "cash": 15,
+      "cash": 128,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -172529,14 +172529,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 5679,
+      "funds": 5003,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 52935,
-      "market_cap": 52935,
+      "share_price": 61101,
+      "market_cap": 61101,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -172559,16 +172559,16 @@
       "inventory": {
         "Phosphorite": 86,
         "Peat": 123,
-        "Fish": 193,
+        "Fish": 180,
         "Iron Ore": 1,
         "Oil Shale": 31,
-        "Timber": 32
+        "Timber": 35,
+        "Wheat": 1,
+        "Sugar": 1
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-08-30T00:43:38.569Z",
+      "last_collect": "2026-09-02T18:23:50.198Z",
       "price_history": [
-        53578,
-        53573,
         53604,
         53608,
         53630,
@@ -172666,7 +172666,9 @@
         52869,
         52958,
         52922,
-        52935
+        52935,
+        61896,
+        61101
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -172690,11 +172692,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 16,
-      "change_percent": 4.18536456240433,
-      "recorded_at": "2026-09-02T14:37:34.217Z"
-    },
     {
       "price": 16,
       "change_percent": 4.0763189107000635,
@@ -173189,6 +173186,11 @@
       "price": 17,
       "change_percent": 4.999109589726346,
       "recorded_at": "2026-09-02T18:20:06.554Z"
+    },
+    {
+      "price": 17,
+      "change_percent": 4.839497538573704,
+      "recorded_at": "2026-09-02T18:23:50.848Z"
     }
   ],
   "factory_names": [
@@ -176863,6 +176865,13 @@
       "username": "erushim",
       "action": "renamecompany",
       "details": "Erus Aquarium→State Mining Corp"
+    },
+    {
+      "at": "2026-09-02T18:23:50.198Z",
+      "by": "1456622719985782864",
+      "username": "nos_seren",
+      "action": "collect-salaries",
+      "details": "Baltic Timber & Harbour Co paid ₽681 salaries ceo 1456622719985782864 ₽284, director 1456622719985782864 ₽284, manager 1379734184259747851 ₽113"
     }
   ],
   "total_rubles_history": [
