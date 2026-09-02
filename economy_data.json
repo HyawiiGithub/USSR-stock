@@ -134624,8 +134624,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 101602,
-      "market_cap": 101602,
+      "share_price": 101814,
+      "market_cap": 101814,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -134649,10 +134649,10 @@
         "Coal": 48,
         "Gold Bar": 8,
         "Canned Food": 5,
-        "Bread": 1,
+        "Bread": 2,
         "Fish": 22,
-        "Wheat": 49,
-        "Sugar": 45,
+        "Wheat": 35,
+        "Sugar": 46,
         "Canned Fish": 1,
         "Uranium Rod": 2,
         "Steel Beam": 2,
@@ -134661,13 +134661,13 @@
         "Iron Ingot": 6,
         "Copper Ingot": 2,
         "Copper": 1,
-        "Oil": 1
+        "Oil": 1,
+        "Cake": 1,
+        "Iron Ore": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-01T21:13:19.139Z",
+      "last_collect": "2026-09-02T03:36:58.387Z",
       "price_history": [
-        92033,
-        92044,
         92063,
         92130,
         92149,
@@ -134765,7 +134765,9 @@
         100760,
         101504,
         101556,
-        101602
+        101602,
+        101634,
+        101814
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -135102,16 +135104,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 16,
-      "change_percent": 9.314035313361613,
-      "recorded_at": "2026-09-01T22:07:32.309Z"
-    },
-    {
-      "price": 16,
-      "change_percent": 4.763698835007525,
-      "recorded_at": "2026-09-01T22:07:32.811Z"
-    },
     {
       "price": 16,
       "change_percent": 4.458444622730915,
@@ -135601,6 +135593,16 @@
       "price": 14,
       "change_percent": 4.943655700572948,
       "recorded_at": "2026-09-02T03:34:13.273Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 4.399981375851883,
+      "recorded_at": "2026-09-02T03:36:48.593Z"
+    },
+    {
+      "price": 14,
+      "change_percent": 4.232187736368967,
+      "recorded_at": "2026-09-02T03:36:58.940Z"
     }
   ],
   "factory_names": [
@@ -135621,11 +135623,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.8357892495246623,
+  "inflation": 0.8181376719709865,
   "money_printed": 354,
   "total_bank_reserves": 223639,
   "inflation_history": [
-    0.6376003262718439,
     0.6883944469955754,
     0.6362970529681065,
     0.6514353030717582,
@@ -135724,7 +135725,8 @@
     0.8231101951371449,
     0.7364477838969182,
     0.7872287851600976,
-    0.8357892495246623
+    0.8357892495246623,
+    0.8181376719709865
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -135816,7 +135818,7 @@
   "market_demand": {
     "Fuel": 1.3738578772479206,
     "Cake": 1.3950701960215803,
-    "Bread": 1.383508525118223,
+    "Bread": 1.3858536160608894,
     "Copper Ingot": 1.3970546267452197,
     "Iron Ingot": 1.3754854041461375,
     "Steel Ingot": 1.4045020433960156,
@@ -135833,7 +135835,7 @@
     "Reactor Core": 1.412270477229058,
     "Circuit Board": 1.4122808587615518,
     "Flour": 1.411508265232346,
-    "Sugar": 1.2524435429633534,
+    "Sugar": 1.2511636150818406,
     "Wine": 1.4124242589195246,
     "Canned Food": 1.3868471976133727,
     "Canned Fish": 1.4010024104591872,
@@ -135872,7 +135874,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 12
+    "Bread": 10
   },
   "global_consumption": {
     "Copper Ingot": 58,
@@ -135888,14 +135890,9 @@
     "Canned Food": 10,
     "Uranium Rod": 12,
     "Canned Fish": 7,
-    "Bread": 38
+    "Bread": 40
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-08-26T21:42:36.540Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -137390,6 +137387,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-02T03:22:32.702Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-02T03:37:32.703Z"
     }
   ],
   "demand_history": {
@@ -138899,6 +138901,11 @@
         "demand": 1.3791965520094827,
         "at": "2026-09-02T03:22:32.702Z",
         "supply": 1
+      },
+      {
+        "demand": 1.3858536160608894,
+        "at": "2026-09-02T03:37:32.703Z",
+        "supply": 2
       }
     ]
   },
