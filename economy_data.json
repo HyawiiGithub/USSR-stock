@@ -469,7 +469,7 @@
     },
     "1517676669618491552": {
       "username": "",
-      "cash": 768,
+      "cash": 933,
       "bank": 635,
       "resources": {
         "Gold": 2
@@ -479,9 +479,9 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-01T15:09:57.301Z",
-      "work_count": 32,
-      "last_claim": "2026-09-01T13:20:34.937Z",
+      "last_work": "2026-09-03T14:04:59.588Z",
+      "work_count": 33,
+      "last_claim": "2026-09-03T14:05:04.535Z",
       "last_collect": null,
       "join_date": "2026-08-23T14:37:31.585926",
       "ssr_region": "Kazakh SSR",
@@ -172699,14 +172699,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 32907,
+      "funds": 32902,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 123507,
-      "market_cap": 123507,
+      "share_price": 123481,
+      "market_cap": 123481,
       "employees": 21,
       "level": 1,
       "buildings": {
@@ -172731,7 +172731,7 @@
         "Gold Bar": 10,
         "Canned Food": 5,
         "Fish": 22,
-        "Wheat": 36,
+        "Wheat": 37,
         "Sugar": 32,
         "Uranium": 5,
         "Iron Ingot": 2,
@@ -172745,7 +172745,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-03T07:57:56.069Z",
       "price_history": [
-        112116,
         112221,
         112273,
         112276,
@@ -172844,7 +172843,8 @@
         123458,
         123509,
         123512,
-        123507
+        123507,
+        123481
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -173200,11 +173200,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 43,
-      "change_percent": 3.0762329941586555,
-      "recorded_at": "2026-09-03T10:09:02.529Z"
-    },
     {
       "price": 40,
       "change_percent": -6.167525931354527,
@@ -173699,6 +173694,11 @@
       "price": 92,
       "change_percent": 0.7354237974693085,
       "recorded_at": "2026-09-03T14:04:03.659Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.49418863722412687,
+      "recorded_at": "2026-09-03T14:05:00.249Z"
     }
   ],
   "factory_names": [
@@ -177570,6 +177570,13 @@
       "username": "nos_seren",
       "action": "collect-salaries",
       "details": "Baltic Timber & Harbour Co paid ₽528 salaries ceo 1456622719985782864 ₽220, director 1456622719985782864 ₽220, manager 1379734184259747851 ₽88"
+    },
+    {
+      "at": "2026-09-03T14:05:04.982Z",
+      "by": "860203156222902332",
+      "username": "erushim",
+      "action": "goldrush",
+      "details": "Nuristani SSR +75% for 24h until 2026-09-04T14:05:04.919Z"
     }
   ],
   "total_rubles_history": [
@@ -177974,7 +177981,15 @@
       "at": "2026-09-03T14:04:04.217Z"
     }
   ],
-  "gold_rush": null,
+  "gold_rush": {
+    "ssr": "Nuristani SSR",
+    "factor": 1.75,
+    "percent": 75,
+    "durationHours": 24,
+    "expiresAt": "2026-09-04T14:05:04.919Z",
+    "startedBy": "860203156222902332",
+    "startedAt": "2026-09-03T14:05:04.981Z"
+  },
   "five_year_plan": {
     "startAt": "2026-08-31T13:34:21.908Z",
     "endAt": "2026-09-05T13:34:21.908Z",
