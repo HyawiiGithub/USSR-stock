@@ -172401,6 +172401,29 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0
+    },
+    "1175520486688555061": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0
     }
   },
   "companies": {
@@ -173294,11 +173317,6 @@
   },
   "gsi_history": [
     {
-      "price": 89,
-      "change_percent": 0.4902011573311333,
-      "recorded_at": "2026-09-03T13:40:20.566Z"
-    },
-    {
       "price": 90,
       "change_percent": 1.3865409803337148,
       "recorded_at": "2026-09-03T13:41:22.426Z"
@@ -173792,6 +173810,11 @@
       "price": 103,
       "change_percent": -0.18070691013504964,
       "recorded_at": "2026-09-03T16:54:03.763Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.6718823228121871,
+      "recorded_at": "2026-09-03T16:59:03.758Z"
     }
   ],
   "factory_names": [
@@ -173812,11 +173835,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.763257992511368,
+  "inflation": 0.6975654995313006,
   "money_printed": 354,
   "total_bank_reserves": 250734,
   "inflation_history": [
-    0.8778570238245492,
     0.8239143578070326,
     0.8854582998250401,
     0.8700807778800825,
@@ -173915,7 +173937,8 @@
     0.6658059692421713,
     0.7026282326484524,
     0.7260817530115743,
-    0.763257992511368
+    0.763257992511368,
+    0.6975654995313006
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -174063,9 +174086,7 @@
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Cake": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 67,
     "Steel Ingot": 18,
@@ -174075,7 +174096,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 86,
+    "Cake": 87,
     "Smoked Fish": 20,
     "Canned Food": 10,
     "Uranium Rod": 12,
@@ -174084,11 +174105,6 @@
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-08-28T14:12:37.559Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -175583,6 +175599,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-03T16:44:01.947Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-09-03T16:59:01.912Z"
     }
   ],
   "demand_history": {
@@ -176952,6 +176973,11 @@
         "demand": 1.3274347722298323,
         "at": "2026-09-03T16:44:01.947Z",
         "supply": 1
+      },
+      {
+        "demand": 1.3509113916804492,
+        "at": "2026-09-03T16:59:01.912Z",
+        "supply": 1
       }
     ],
     "Smoked Fish": [
@@ -177744,14 +177770,6 @@
   "total_rubles_history": [
     {
       "total": 327636,
-      "at": "2026-09-03T09:04:02.371Z"
-    },
-    {
-      "total": 327636,
-      "at": "2026-09-03T09:09:02.499Z"
-    },
-    {
-      "total": 327636,
       "at": "2026-09-03T09:14:02.380Z"
     },
     {
@@ -178141,6 +178159,14 @@
     {
       "total": 332532,
       "at": "2026-09-03T16:54:04.381Z"
+    },
+    {
+      "total": 332532,
+      "at": "2026-09-03T16:59:04.359Z"
+    },
+    {
+      "total": 332532,
+      "at": "2026-09-03T16:59:05.054Z"
     }
   ],
   "gold_rush": {
