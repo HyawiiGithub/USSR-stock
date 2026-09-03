@@ -593,15 +593,15 @@
       "total_heat_generated": 0
     },
     "874346333882945547": {
-      "cash": 740,
+      "cash": 760,
       "bank": 15095,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-03T12:34:47.933Z",
-      "work_count": 705,
+      "last_work": "2026-09-03T14:33:27.375Z",
+      "work_count": 706,
       "last_claim": "2026-09-02T09:19:06.095Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -172721,14 +172721,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 32902,
+      "funds": 32897,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 123481,
-      "market_cap": 123481,
+      "share_price": 125687,
+      "market_cap": 125687,
       "employees": 21,
       "level": 1,
       "buildings": {
@@ -172753,22 +172753,21 @@
         "Gold Bar": 10,
         "Canned Food": 5,
         "Fish": 22,
-        "Wheat": 37,
-        "Sugar": 32,
+        "Wheat": 39,
+        "Sugar": 40,
         "Uranium": 5,
         "Iron Ingot": 2,
-        "Iron Ore": 23,
+        "Iron Ore": 32,
         "Reactor Core": 1,
         "Refined Fuel": 1,
         "Oil": 4,
-        "Cake": 4,
-        "Copper": 2
+        "Cake": 11,
+        "Copper": 2,
+        "Bread": 7
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-03T07:57:56.069Z",
+      "last_collect": "2026-09-03T14:33:34.466Z",
       "price_history": [
-        112221,
-        112273,
         112276,
         112295,
         112341,
@@ -172866,7 +172865,9 @@
         123509,
         123512,
         123507,
-        123481
+        123481,
+        123565,
+        125687
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -173222,16 +173223,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 55,
-      "change_percent": 2.619102809269375,
-      "recorded_at": "2026-09-03T10:41:26.989Z"
-    },
-    {
-      "price": 59,
-      "change_percent": 8.788444857929237,
-      "recorded_at": "2026-09-03T10:43:58.731Z"
-    },
     {
       "price": 60,
       "change_percent": 1.951135779761543,
@@ -173721,11 +173712,20 @@
       "price": 100,
       "change_percent": 0.15509077133886365,
       "recorded_at": "2026-09-03T14:32:06.402Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.4180014020212739,
+      "recorded_at": "2026-09-03T14:33:28.041Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.3204967745681709,
+      "recorded_at": "2026-09-03T14:33:35.272Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
-    "Soviet Iron Foundry",
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
@@ -173734,7 +173734,8 @@
   ],
   "used_factory_names": [
     "Ural Heavy Industries",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Soviet Iron Foundry"
   ],
   "factory_deals": [],
   "government_contracts": [],
