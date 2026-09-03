@@ -173201,11 +173201,6 @@
   },
   "gsi_history": [
     {
-      "price": 40,
-      "change_percent": 3.291548734968512,
-      "recorded_at": "2026-09-03T09:59:17.712Z"
-    },
-    {
       "price": 41,
       "change_percent": 2.9874115917220934,
       "recorded_at": "2026-09-03T10:04:02.537Z"
@@ -173699,6 +173694,11 @@
       "price": 92,
       "change_percent": 1.2393723650635848,
       "recorded_at": "2026-09-03T13:57:24.949Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.3607513889375055,
+      "recorded_at": "2026-09-03T13:59:03.563Z"
     }
   ],
   "factory_names": [
@@ -173719,11 +173719,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.757660306163449,
+  "inflation": 0.6558616798854257,
   "money_printed": 354,
   "total_bank_reserves": 249515,
   "inflation_history": [
-    0.8650865975271316,
     0.8981036148346913,
     0.8672755001157947,
     0.8415997886092084,
@@ -173822,7 +173821,8 @@
     0.6607754243784563,
     0.6992820190522326,
     0.7570822689444976,
-    0.757660306163449
+    0.757660306163449,
+    0.6558616798854257
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -173971,7 +173971,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Aluminium Sheet": 8
+    "Aluminium Sheet": 6
   },
   "global_consumption": {
     "Copper Ingot": 67,
@@ -173987,14 +173987,10 @@
     "Canned Food": 10,
     "Uranium Rod": 12,
     "Canned Fish": 8,
-    "Bread": 80
+    "Bread": 80,
+    "Aluminium Sheet": 2
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 1,
-      "at": "2026-08-28T09:27:37.513Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -175489,6 +175485,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-09-03T12:59:01.842Z"
+    },
+    {
+      "item": "Aluminium Sheet",
+      "qty": 2,
+      "at": "2026-09-03T13:59:01.851Z"
     }
   ],
   "demand_history": {
@@ -177304,6 +177305,13 @@
         "at": "2026-09-03T12:29:01.851Z",
         "supply": 0
       }
+    ],
+    "Aluminium Sheet": [
+      {
+        "demand": 1.2084745597886826,
+        "at": "2026-09-03T13:59:01.851Z",
+        "supply": 0
+      }
     ]
   },
   "blacklist": {
@@ -177565,10 +177573,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 290072,
-      "at": "2026-09-03T05:59:02.195Z"
-    },
     {
       "total": 290092,
       "at": "2026-09-03T06:04:02.160Z"
@@ -177964,6 +177968,10 @@
     {
       "total": 329928,
       "at": "2026-09-03T13:54:04.162Z"
+    },
+    {
+      "total": 329948,
+      "at": "2026-09-03T13:59:04.180Z"
     }
   ],
   "gold_rush": null,
