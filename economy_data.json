@@ -173478,11 +173478,6 @@
   "gsi_history": [
     {
       "price": 106,
-      "change_percent": 0.5785030941697472,
-      "recorded_at": "2026-09-03T18:24:24.163Z"
-    },
-    {
-      "price": 106,
       "change_percent": 0.043587882464374415,
       "recorded_at": "2026-09-03T18:27:12.095Z"
     },
@@ -173975,6 +173970,11 @@
       "price": 103,
       "change_percent": -0.07021707809922259,
       "recorded_at": "2026-09-03T22:45:38.587Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.4023146445054469,
+      "recorded_at": "2026-09-03T22:50:38.520Z"
     }
   ],
   "factory_names": [],
@@ -173994,11 +173994,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.8590674679409995,
+  "inflation": 0.8697350788258348,
   "money_printed": 429,
   "total_bank_reserves": 253169,
   "inflation_history": [
-    0.7786740593247287,
     0.8790492289309602,
     0.8097052983935699,
     0.76959475672373,
@@ -174097,7 +174096,8 @@
     0.8700301031362091,
     0.8719932231505272,
     0.858758967779254,
-    0.8590674679409995
+    0.8590674679409995,
+    0.8697350788258348
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -174266,7 +174266,7 @@
   "ai_store": {
     "Bread": 10,
     "Timber Planks": 6,
-    "Cake": 8
+    "Cake": 6
   },
   "global_consumption": {
     "Copper Ingot": 67,
@@ -174277,7 +174277,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 88,
+    "Cake": 90,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 12,
@@ -174286,11 +174286,6 @@
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-08-28T23:24:15.436Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 2,
@@ -175785,6 +175780,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-09-03T22:35:36.962Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-03T22:50:37.506Z"
     }
   ],
   "demand_history": {
@@ -177179,6 +177179,11 @@
         "demand": 1.208678138752873,
         "at": "2026-09-03T22:05:36.249Z",
         "supply": 0
+      },
+      {
+        "demand": 1.268071868418721,
+        "at": "2026-09-03T22:50:37.506Z",
+        "supply": 0
       }
     ],
     "Smoked Fish": [
@@ -178001,10 +178006,6 @@
   "total_rubles_history": [
     {
       "total": 329833,
-      "at": "2026-09-03T13:29:04.177Z"
-    },
-    {
-      "total": 329833,
       "at": "2026-09-03T13:34:04.188Z"
     },
     {
@@ -178398,6 +178399,10 @@
     {
       "total": 333750,
       "at": "2026-09-03T22:45:38.825Z"
+    },
+    {
+      "total": 333750,
+      "at": "2026-09-03T22:50:38.774Z"
     }
   ],
   "gold_rush": {
