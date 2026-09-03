@@ -173202,11 +173202,6 @@
   "gsi_history": [
     {
       "price": 20,
-      "change_percent": 4.007029648762783,
-      "recorded_at": "2026-09-03T08:54:01.691Z"
-    },
-    {
-      "price": 20,
       "change_percent": 4.853933537350756,
       "recorded_at": "2026-09-03T08:54:57.137Z"
     },
@@ -173699,6 +173694,11 @@
       "price": 88,
       "change_percent": 1.0620065055236168,
       "recorded_at": "2026-09-03T12:40:00.392Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 0.8026956705434397,
+      "recorded_at": "2026-09-03T12:44:03.601Z"
     }
   ],
   "factory_names": [],
@@ -173969,10 +173969,10 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Copper Ingot": 2
+    "Copper Ingot": 1
   },
   "global_consumption": {
-    "Copper Ingot": 65,
+    "Copper Ingot": 66,
     "Steel Ingot": 18,
     "Timber Planks": 102,
     "Refined Fuel": 56,
@@ -173988,11 +173988,6 @@
     "Bread": 80
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-28T06:27:37.443Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -175487,6 +175482,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-03T12:29:01.851Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-09-03T12:44:01.945Z"
     }
   ],
   "demand_history": {
@@ -175729,6 +175729,11 @@
       {
         "demand": 1.245715392826672,
         "at": "2026-09-03T11:14:01.636Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3507689613819303,
+        "at": "2026-09-03T12:44:01.958Z",
         "supply": 0
       }
     ],
@@ -177555,10 +177560,6 @@
   "total_rubles_history": [
     {
       "total": 289932,
-      "at": "2026-09-03T04:49:02.058Z"
-    },
-    {
-      "total": 289932,
       "at": "2026-09-03T04:54:02.199Z"
     },
     {
@@ -177952,6 +177953,10 @@
     {
       "total": 328466,
       "at": "2026-09-03T12:39:03.805Z"
+    },
+    {
+      "total": 329648,
+      "at": "2026-09-03T12:44:03.842Z"
     }
   ],
   "gold_rush": null,
