@@ -172463,8 +172463,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 127665,
-      "market_cap": 127665,
+      "share_price": 127724,
+      "market_cap": 127724,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -172507,7 +172507,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-03T14:07:40.982Z",
       "price_history": [
-        123568,
         123606,
         123720,
         123740,
@@ -172606,7 +172605,8 @@
         127057,
         127461,
         127594,
-        127665
+        127665,
+        127724
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -173341,21 +173341,6 @@
   },
   "gsi_history": [
     {
-      "price": 95,
-      "change_percent": 0.598520769753634,
-      "recorded_at": "2026-09-03T14:22:07.637Z"
-    },
-    {
-      "price": 95,
-      "change_percent": 0.8123410823170316,
-      "recorded_at": "2026-09-03T14:24:03.690Z"
-    },
-    {
-      "price": 100,
-      "change_percent": 5.732225002528262,
-      "recorded_at": "2026-09-03T14:28:58.764Z"
-    },
-    {
       "price": 100,
       "change_percent": 0.1179495272497459,
       "recorded_at": "2026-09-03T14:29:03.657Z"
@@ -173839,6 +173824,21 @@
       "price": 101,
       "change_percent": 0.9633677468226471,
       "recorded_at": "2026-09-03T17:41:44.976Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.8018122302672421,
+      "recorded_at": "2026-09-03T17:43:40.050Z"
+    },
+    {
+      "price": 97,
+      "change_percent": -3.7579747683887916,
+      "recorded_at": "2026-09-03T17:43:58.737Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 1.0032664489699599,
+      "recorded_at": "2026-09-03T17:44:03.762Z"
     }
   ],
   "factory_names": [
@@ -174110,14 +174110,12 @@
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Refined Fuel": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 67,
     "Steel Ingot": 18,
     "Timber Planks": 102,
-    "Refined Fuel": 57,
+    "Refined Fuel": 59,
     "Fuel": 24,
     "Iron Ingot": 15,
     "Shale Oil": 17,
@@ -174131,11 +174129,6 @@
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-08-28T14:42:37.565Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -175630,6 +175623,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-03T17:29:01.933Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-03T17:44:01.936Z"
     }
   ],
   "demand_history": {
@@ -176483,6 +176481,11 @@
       {
         "demand": 1.333809906262669,
         "at": "2026-09-03T17:29:01.933Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3355143732500627,
+        "at": "2026-09-03T17:44:01.936Z",
         "supply": 0
       }
     ],
@@ -177800,10 +177803,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 327816,
-      "at": "2026-09-03T09:59:02.657Z"
-    },
-    {
       "total": 327836,
       "at": "2026-09-03T10:04:02.737Z"
     },
@@ -178198,6 +178197,10 @@
     {
       "total": 332752,
       "at": "2026-09-03T17:39:04.364Z"
+    },
+    {
+      "total": 332822,
+      "at": "2026-09-03T17:44:04.356Z"
     }
   ],
   "gold_rush": {
