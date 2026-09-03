@@ -173830,9 +173830,7 @@
     "Uranium Rod": "2026-09-01T13:09:52.324Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Bread": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 60,
     "Steel Ingot": 18,
@@ -173847,14 +173845,9 @@
     "Canned Food": 10,
     "Uranium Rod": 12,
     "Canned Fish": 8,
-    "Bread": 68
+    "Bread": 70
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 1,
-      "at": "2026-08-28T03:42:37.417Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -175349,6 +175342,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-03T01:43:58.796Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-03T01:58:58.858Z"
     }
   ],
   "demand_history": {
@@ -177097,6 +177095,11 @@
       {
         "demand": 1.3270845599582408,
         "at": "2026-09-03T01:43:58.796Z",
+        "supply": 6
+      },
+      {
+        "demand": 1.337949094825966,
+        "at": "2026-09-03T01:58:58.858Z",
         "supply": 6
       }
     ]
