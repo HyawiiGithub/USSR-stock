@@ -1053,8 +1053,8 @@
       "total_heat_generated": 0
     },
     "1325111649816023092": {
-      "cash": 660,
-      "bank": 3343,
+      "cash": 0,
+      "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -173879,11 +173879,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 1.2191316444195643,
-      "recorded_at": "2026-09-04T13:53:57.963Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.9444286201868473,
       "recorded_at": "2026-09-04T13:54:01.373Z"
     },
@@ -174376,6 +174371,11 @@
       "price": 109,
       "change_percent": 0.30312018494013077,
       "recorded_at": "2026-09-04T16:21:04.769Z"
+    },
+    {
+      "price": 108,
+      "change_percent": -0.017990480784182625,
+      "recorded_at": "2026-09-04T16:21:41.780Z"
     }
   ],
   "factory_names": [
@@ -174396,11 +174396,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.3429114824551742,
+  "inflation": 0.358474404278796,
   "money_printed": 430,
   "total_bank_reserves": 566196,
   "inflation_history": [
-    0.8864072568794461,
     0.8919986679936192,
     0.857609654765061,
     0.84228231789303,
@@ -174499,7 +174498,8 @@
     0.86,
     0.41241440763612935,
     0.4386124954020292,
-    0.3429114824551742
+    0.3429114824551742,
+    0.358474404278796
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -174666,13 +174666,13 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Refined Fuel": 3
+    "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 67,
     "Steel Ingot": 18,
     "Timber Planks": 112,
-    "Refined Fuel": 63,
+    "Refined Fuel": 65,
     "Fuel": 24,
     "Iron Ingot": 15,
     "Shale Oil": 17,
@@ -174686,11 +174686,6 @@
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-30T03:44:17.314Z"
-    },
     {
       "item": "Shale Oil",
       "qty": 1,
@@ -176185,6 +176180,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-09-04T15:36:40.628Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-04T16:21:40.731Z"
     }
   ],
   "demand_history": {
@@ -177058,6 +177058,11 @@
       {
         "demand": 1.3500332750577662,
         "at": "2026-09-04T02:35:37.824Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3381783290343985,
+        "at": "2026-09-04T16:21:40.731Z",
         "supply": 0
       }
     ],
@@ -178523,10 +178528,6 @@
   "total_rubles_history": [
     {
       "total": 342814,
-      "at": "2026-09-04T08:20:39.914Z"
-    },
-    {
-      "total": 342814,
       "at": "2026-09-04T08:25:39.942Z"
     },
     {
@@ -178920,6 +178921,10 @@
     {
       "total": 649315,
       "at": "2026-09-04T16:16:42.558Z"
+    },
+    {
+      "total": 645387,
+      "at": "2026-09-04T16:21:42.640Z"
     }
   ],
   "gold_rush": null,
