@@ -173878,16 +173878,6 @@
   "gsi_history": [
     {
       "price": 101,
-      "change_percent": 0.027036492880400227,
-      "recorded_at": "2026-09-04T12:00:39.525Z"
-    },
-    {
-      "price": 101,
-      "change_percent": 0.1703441039099677,
-      "recorded_at": "2026-09-04T12:03:12.785Z"
-    },
-    {
-      "price": 101,
       "change_percent": 0.6136364892855017,
       "recorded_at": "2026-09-04T12:05:39.601Z"
     },
@@ -174375,6 +174365,16 @@
       "price": 104,
       "change_percent": 0.9578765916816457,
       "recorded_at": "2026-09-04T15:35:49.176Z"
+    },
+    {
+      "price": 110,
+      "change_percent": 6.599395072076369,
+      "recorded_at": "2026-09-04T15:36:40.099Z"
+    },
+    {
+      "price": 109,
+      "change_percent": -0.03896244045031687,
+      "recorded_at": "2026-09-04T15:36:41.461Z"
     }
   ],
   "factory_names": [
@@ -174664,9 +174664,7 @@
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Canned Fish": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 67,
     "Steel Ingot": 18,
@@ -174680,16 +174678,11 @@
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 12,
-    "Canned Fish": 16,
+    "Canned Fish": 18,
     "Bread": 102,
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-30T03:29:17.301Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -176184,6 +176177,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-09-04T15:21:40.634Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 2,
+      "at": "2026-09-04T15:36:40.628Z"
     }
   ],
   "demand_history": {
@@ -177821,6 +177819,11 @@
         "demand": 1.2407564800337278,
         "at": "2026-09-04T15:21:40.634Z",
         "supply": 0
+      },
+      {
+        "demand": 1.2407564800337278,
+        "at": "2026-09-04T15:36:40.628Z",
+        "supply": 0
       }
     ],
     "Bread": [
@@ -178484,13 +178487,16 @@
       "username": "hyawii2.0",
       "action": "setinflation",
       "details": "3.43%"
+    },
+    {
+      "at": "2026-09-04T15:37:25.733Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "createevent",
+      "details": "Economic Shenanigans Israel Hicom trolling 0.15 <:Troll:767454751813664800>"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 342858,
-      "at": "2026-09-04T07:35:39.881Z"
-    },
     {
       "total": 342878,
       "at": "2026-09-04T07:40:39.988Z"
@@ -178886,6 +178892,10 @@
     {
       "total": 348312,
       "at": "2026-09-04T15:26:41.841Z"
+    },
+    {
+      "total": 648493,
+      "at": "2026-09-04T15:36:41.942Z"
     }
   ],
   "gold_rush": null,
@@ -178916,5 +178926,14 @@
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
-  "dirty_printed_total": 0
+  "dirty_printed_total": 0,
+  "custom_events": [
+    {
+      "name": "Economic Shenanigans Israel Hicom trolling",
+      "impact": 0.15,
+      "emoji": "<:Troll:767454751813664800>",
+      "by": "1082686076491137115",
+      "at": "2026-09-04T15:37:25.728Z"
+    }
+  ]
 }
