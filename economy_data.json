@@ -173970,11 +173970,6 @@
   "gsi_history": [
     {
       "price": 101,
-      "change_percent": 0.5199731996276941,
-      "recorded_at": "2026-09-04T12:15:39.670Z"
-    },
-    {
-      "price": 101,
       "change_percent": 0.07546842759911618,
       "recorded_at": "2026-09-04T12:20:39.862Z"
     },
@@ -174467,6 +174462,11 @@
       "price": 110,
       "change_percent": -0.38242923090964204,
       "recorded_at": "2026-09-04T19:20:13.602Z"
+    },
+    {
+      "price": 109,
+      "change_percent": -0.6240797358934695,
+      "recorded_at": "2026-09-04T19:21:42.195Z"
     }
   ],
   "factory_names": [
@@ -174487,11 +174487,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.33069194574563987,
+  "inflation": 0.33848349240973485,
   "money_printed": 430,
   "total_bank_reserves": 566091,
   "inflation_history": [
-    0.8728098266503576,
     0.8229099460015455,
     0.899416879304152,
     0.8539043216317397,
@@ -174590,7 +174589,8 @@
     0.7604434221467655,
     0.7899997946543331,
     0.856930294691989,
-    0.33069194574563987
+    0.33069194574563987,
+    0.33848349240973485
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -174720,7 +174720,7 @@
     "Sugar": 1.3103939193442298,
     "Wine": 1.4124434444855096,
     "Canned Food": 1.4044632721210586,
-    "Canned Fish": 1.2805673600252958,
+    "Canned Fish": 1.3104255200189718,
     "Smoked Fish": 1.404608936656929,
     "Fish Stew": 1.41242607030187,
     "Peat Fuel": 1.404628560731434,
@@ -174756,9 +174756,7 @@
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Canned Fish": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 67,
     "Steel Ingot": 18,
@@ -174772,16 +174770,11 @@
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 12,
-    "Canned Fish": 17,
+    "Canned Fish": 18,
     "Bread": 102,
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-30T03:44:17.314Z"
-    },
     {
       "item": "Shale Oil",
       "qty": 1,
@@ -176276,6 +176269,11 @@
       "item": "Canned Fish",
       "qty": 1,
       "at": "2026-09-04T19:06:41.494Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 1,
+      "at": "2026-09-04T19:21:41.448Z"
     }
   ],
   "demand_history": {
@@ -177918,6 +177916,11 @@
         "demand": 1.2407564800337278,
         "at": "2026-09-04T19:06:41.498Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3104255200189718,
+        "at": "2026-09-04T19:21:41.449Z",
+        "supply": 0
       }
     ],
     "Bread": [
@@ -178572,10 +178575,6 @@
   "total_rubles_history": [
     {
       "total": 342754,
-      "at": "2026-09-04T08:00:39.931Z"
-    },
-    {
-      "total": 342754,
       "at": "2026-09-04T08:05:39.894Z"
     },
     {
@@ -178969,6 +178968,10 @@
     {
       "total": 648448,
       "at": "2026-09-04T19:16:42.834Z"
+    },
+    {
+      "total": 648518,
+      "at": "2026-09-04T19:21:42.739Z"
     }
   ],
   "gold_rush": null,
