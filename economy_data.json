@@ -55,9 +55,9 @@
       "last_claim": "2026-08-22T01:40:34.150940",
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
-      "ssr_region": "Ukrainian SSR",
-      "employed_at": null,
-      "is_employed": false,
+      "ssr_region": "Kazakh SSR",
+      "employed_at": "Soviet Agriculture",
+      "is_employed": true,
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
@@ -90,10 +90,10 @@
       "last_collect": null,
       "join_date": "2026-08-22T01:11:07.515351",
       "ssr_region": "Azerbaijanian SSR",
-      "employed_at": "State Oil & Gas",
-      "is_employed": true,
-      "is_state_director": true,
-      "director_of": "state_25",
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
       "dirty_cash": 0,
       "heat": 0,
       "wanted": 0,
@@ -593,15 +593,15 @@
       "total_heat_generated": 0
     },
     "874346333882945547": {
-      "cash": 1076,
+      "cash": 1096,
       "bank": 16232,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-04T19:47:32.031Z",
-      "work_count": 772,
+      "last_work": "2026-09-04T19:58:21.972Z",
+      "work_count": 773,
       "last_claim": "2026-09-04T15:10:01.833Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -53158,11 +53158,11 @@
       "last_work": "2026-09-04T19:19:32.732Z",
       "work_count": 26,
       "last_claim": "2026-09-03T18:39:55.252Z",
-      "ssr_region": "Nuristani SSR",
-      "employed_at": "State Mining Corp",
+      "ssr_region": "Azerbaijanian SSR",
+      "employed_at": "State Oil & Gas",
       "is_employed": true,
-      "is_state_director": false,
-      "director_of": null,
+      "is_state_director": true,
+      "director_of": "state_25",
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -173109,7 +173109,7 @@
       "founder_shares": 0,
       "share_price": 130890,
       "market_cap": 130890,
-      "employees": 7,
+      "employees": 6,
       "level": 1,
       "buildings": {
         "Iron Mine": {
@@ -173383,7 +173383,7 @@
       "name": "State Oil & Gas",
       "ticker": "ST25",
       "owner_id": "1513968015048184039",
-      "ceo": "<@1082686076491137115>",
+      "ceo": "<@807254722251587614>",
       "hq_ssr": "Azerbaijanian SSR",
       "funds": 5461,
       "invested_capital": 500,
@@ -173462,7 +173462,7 @@
         114805
       ],
       "is_state_owned": true,
-      "director_id": "1082686076491137115",
+      "director_id": "807254722251587614",
       "last_factorydeal": "2026-09-01T16:11:22.261Z",
       "last_govcontract": null,
       "specialization": "extraction",
@@ -173486,7 +173486,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 38582,
+      "funds": 38577,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -173494,7 +173494,7 @@
       "founder_shares": 0,
       "share_price": 146757,
       "market_cap": 146757,
-      "employees": 23,
+      "employees": 24,
       "level": 1,
       "buildings": {
         "Farm": {
@@ -173521,7 +173521,7 @@
       "inventory": {
         "Gold Bar": 12,
         "Fish": 2,
-        "Wheat": 153,
+        "Wheat": 152,
         "Sugar": 29,
         "Iron Ore": 7,
         "Reactor Core": 1,
@@ -173530,7 +173530,7 @@
         "Circuit Board": 1,
         "Oil": 15,
         "Copper": 10,
-        "Coal": 5,
+        "Coal": 7,
         "Bread": 1,
         "Cake": 1
       },
@@ -174630,12 +174630,12 @@
     "Baltic Timber & Harbour Co"
   ],
   "state_directors": {
-    "1082686076491137115": "state_25",
     "860203156222902332": "state_23",
     "1456622719985782864": "state_28",
     "874346333882945547": "state_26",
     "1495413593242337421": "state_27",
-    "887419379833274388": "state_24"
+    "887419379833274388": "state_24",
+    "807254722251587614": "state_25"
   },
   "transaction_log": [
     {
@@ -178608,6 +178608,20 @@
       "username": "hyawii2.0",
       "action": "appointdirector",
       "details": "appointed <@887419379833274388> (887419379833274388) as director of Soviet Steel Works (state_24)"
+    },
+    {
+      "at": "2026-09-04T19:58:07.916Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "removedirector",
+      "details": "removed <@1082686076491137115> (1082686076491137115) from State Oil & Gas (state_25)"
+    },
+    {
+      "at": "2026-09-04T19:58:15.265Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointdirector",
+      "details": "appointed <@807254722251587614> (807254722251587614) as director of State Oil & Gas (state_25)"
     }
   ],
   "total_rubles_history": [
