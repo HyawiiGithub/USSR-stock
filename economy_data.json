@@ -56,10 +56,10 @@
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
       "ssr_region": "Ukrainian SSR",
-      "employed_at": "Soviet Steel Works",
-      "is_employed": true,
-      "is_state_director": true,
-      "director_of": "state_24",
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
       "dirty_cash": 0,
       "heat": 0,
       "wanted": 0,
@@ -157578,11 +157578,11 @@
       "last_work": null,
       "work_count": 0,
       "last_claim": null,
-      "ssr_region": null,
-      "employed_at": null,
-      "is_employed": false,
-      "is_state_director": false,
-      "director_of": null,
+      "ssr_region": "Ukrainian SSR",
+      "employed_at": "Soviet Steel Works",
+      "is_employed": true,
+      "is_state_director": true,
+      "director_of": "state_24",
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -173280,7 +173280,7 @@
       "name": "Soviet Steel Works",
       "ticker": "ST24",
       "owner_id": "1513968015048184039",
-      "ceo": "<@780837437987094560>",
+      "ceo": "<@887419379833274388>",
       "hq_ssr": "Ukrainian SSR",
       "funds": 500,
       "invested_capital": 500,
@@ -173362,7 +173362,7 @@
         125102
       ],
       "is_state_owned": true,
-      "director_id": "780837437987094560",
+      "director_id": "887419379833274388",
       "last_factorydeal": null,
       "last_govcontract": null,
       "specialization": "production",
@@ -173994,11 +173994,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.8772969132147822,
-      "recorded_at": "2026-09-04T13:05:40.272Z"
-    },
-    {
-      "price": 93,
       "change_percent": 0.49032511160995734,
       "recorded_at": "2026-09-04T13:09:18.531Z"
     },
@@ -174491,6 +174486,11 @@
       "price": 110,
       "change_percent": 0.46261940176775235,
       "recorded_at": "2026-09-04T19:54:44.987Z"
+    },
+    {
+      "price": 110,
+      "change_percent": 0.08283679218761232,
+      "recorded_at": "2026-09-04T19:56:42.550Z"
     }
   ],
   "factory_names": [
@@ -174635,7 +174635,7 @@
     "1456622719985782864": "state_28",
     "874346333882945547": "state_26",
     "1495413593242337421": "state_27",
-    "780837437987094560": "state_24"
+    "887419379833274388": "state_24"
   },
   "transaction_log": [
     {
@@ -178594,13 +178594,23 @@
       "username": "erushim",
       "action": "removeowner",
       "details": "removed <@1397601108616024075> (1397601108616024075)"
+    },
+    {
+      "at": "2026-09-04T19:56:50.379Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "removedirector",
+      "details": "removed <@780837437987094560> (780837437987094560) from Soviet Steel Works (state_24)"
+    },
+    {
+      "at": "2026-09-04T19:57:22.921Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointdirector",
+      "details": "appointed <@887419379833274388> (887419379833274388) as director of Soviet Steel Works (state_24)"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 342859,
-      "at": "2026-09-04T08:35:39.995Z"
-    },
     {
       "total": 342859,
       "at": "2026-09-04T08:40:40.059Z"
@@ -178996,6 +179006,10 @@
     {
       "total": 648663,
       "at": "2026-09-04T19:51:42.823Z"
+    },
+    {
+      "total": 648703,
+      "at": "2026-09-04T19:56:42.818Z"
     }
   ],
   "gold_rush": null,
