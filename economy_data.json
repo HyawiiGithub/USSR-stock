@@ -173283,8 +173283,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 144512,
-      "market_cap": 144512,
+      "share_price": 144518,
+      "market_cap": 144518,
       "employees": 22,
       "level": 1,
       "buildings": {
@@ -173328,7 +173328,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-04T06:42:16.268Z",
       "price_history": [
-        129982,
         130003,
         130474,
         130486,
@@ -173427,7 +173426,8 @@
         144408,
         144448,
         144501,
-        144512
+        144512,
+        144518
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -173783,16 +173783,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 91,
-      "change_percent": 0.40867071726046617,
-      "recorded_at": "2026-09-04T06:05:39.412Z"
-    },
-    {
-      "price": 91,
-      "change_percent": 0.4080537604126415,
-      "recorded_at": "2026-09-04T06:10:39.416Z"
-    },
     {
       "price": 91,
       "change_percent": 0.8181218849430087,
@@ -174282,6 +174272,16 @@
       "price": 90,
       "change_percent": 1.2238801067610592,
       "recorded_at": "2026-09-04T10:32:28.968Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.044858519318116,
+      "recorded_at": "2026-09-04T10:35:19.752Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.692931669983945,
+      "recorded_at": "2026-09-04T10:35:39.586Z"
     }
   ],
   "factory_names": [
@@ -174572,7 +174572,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 5
+    "Bread": 3
   },
   "global_consumption": {
     "Copper Ingot": 67,
@@ -174588,15 +174588,10 @@
     "Canned Food": 15,
     "Uranium Rod": 12,
     "Canned Fish": 8,
-    "Bread": 97,
+    "Bread": 99,
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 2,
-      "at": "2026-08-29T20:25:16.927Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -176091,6 +176086,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-04T10:20:38.246Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-04T10:35:38.281Z"
     }
   ],
   "demand_history": {
@@ -177712,11 +177712,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.0233248239407406,
-        "at": "2026-09-01T21:52:32.289Z",
-        "supply": 21
-      },
-      {
         "demand": 1.104013550448996,
         "at": "2026-09-01T22:22:32.434Z",
         "supply": 21
@@ -178009,6 +178004,11 @@
       {
         "demand": 1.2258280493551748,
         "at": "2026-09-04T10:20:38.246Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2298807829354612,
+        "at": "2026-09-04T10:35:38.281Z",
         "supply": 0
       }
     ],
@@ -178332,10 +178332,6 @@
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 333980,
-      "at": "2026-09-04T02:45:40.134Z"
-    },
     {
       "total": 333980,
       "at": "2026-09-04T02:50:39.371Z"
@@ -178731,6 +178727,10 @@
     {
       "total": 343364,
       "at": "2026-09-04T10:30:40.013Z"
+    },
+    {
+      "total": 343409,
+      "at": "2026-09-04T10:35:39.993Z"
     }
   ],
   "gold_rush": {
