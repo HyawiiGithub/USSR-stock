@@ -173120,8 +173120,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 139646,
-      "market_cap": 139646,
+      "share_price": 139747,
+      "market_cap": 139747,
       "employees": 22,
       "level": 1,
       "buildings": {
@@ -173150,18 +173150,15 @@
         "Iron Ingot": 3,
         "Iron Ore": 21,
         "Reactor Core": 1,
-        "Oil": 12,
         "Gold": 4,
         "Steel Beam": 1,
         "Uranium Rod": 3,
-        "Circuit Board": 1
+        "Circuit Board": 1,
+        "Refined Fuel": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-03T21:36:38.760Z",
       "price_history": [
-        126704,
-        126727,
-        126730,
         126711,
         126870,
         126951,
@@ -173258,7 +173255,10 @@
         139570,
         139640,
         139643,
-        139646
+        139646,
+        139511,
+        139765,
+        139747
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -173614,11 +173614,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": -0.402536726606429,
-      "recorded_at": "2026-09-03T21:25:36.450Z"
-    },
     {
       "price": 101,
       "change_percent": 0.02352334563145656,
@@ -174113,18 +174108,24 @@
       "price": 90,
       "change_percent": 0.5157422764096702,
       "recorded_at": "2026-09-04T02:15:38.925Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.0108503064506325,
+      "recorded_at": "2026-09-04T02:18:14.594Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
-    "Brezhnev Auto Factory",
-    "Khrushchev Agricultural",
+  "factory_names": [
     "Red Star Steelworks",
-    "Stalin Tractor Plant",
-    "Lenin Machine Works",
-    "Ural Heavy Industries",
-    "Volga Shipbuilding",
     "Soviet Iron Foundry",
+    "Lenin Machine Works",
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
     "Siberian Mining Co"
   ],
   "factory_deals": [],
