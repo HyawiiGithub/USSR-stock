@@ -174066,14 +174066,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 54617,
+      "funds": 55592,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 167239,
-      "market_cap": 167239,
+      "share_price": 167646,
+      "market_cap": 167646,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174106,7 +174106,6 @@
         "Reactor Core": 2,
         "Uranium Rod": 1,
         "Copper": 8,
-        "Bread": 7,
         "Lead": 6,
         "Iron Ore": 23,
         "Gold": 2,
@@ -174117,8 +174116,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T22:20:21.602Z",
       "price_history": [
-        159188,
-        159239,
         159258,
         159161,
         159180,
@@ -174216,11 +174213,13 @@
         167261,
         167312,
         167302,
-        167239
+        167239,
+        167258,
+        167646
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-05T22:25:00.300Z",
+      "last_factorydeal": "2026-09-05T22:59:50.835Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -174572,11 +174571,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": 0.5499038393422204,
-      "recorded_at": "2026-09-05T20:08:16.103Z"
-    },
     {
       "price": 102,
       "change_percent": -0.18227212011194593,
@@ -175071,11 +175065,14 @@
       "price": 92,
       "change_percent": 0.6566125535277265,
       "recorded_at": "2026-09-05T22:56:46.934Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.5739237853988252,
+      "recorded_at": "2026-09-05T22:59:20.725Z"
     }
   ],
   "factory_names": [
-    "Red Star Steelworks",
-    "Soviet Iron Foundry",
     "Lenin Machine Works"
   ],
   "used_factory_names": [
@@ -175084,7 +175081,9 @@
     "Khrushchev Agricultural",
     "Ural Heavy Industries",
     "Brezhnev Auto Factory",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Soviet Iron Foundry",
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -175339,7 +175338,7 @@
   "market_demand": {
     "Fuel": 1.3825201783045669,
     "Cake": 1.2440781037312587,
-    "Bread": 1.382401656002485,
+    "Bread": 1.224901656002485,
     "Copper Ingot": 1.388738294401309,
     "Iron Ingot": 1.3737672593205705,
     "Steel Ingot": 1.3978763287571785,
@@ -175351,8 +175350,8 @@
     "Glass": 1.4122717734675287,
     "Steel Beam": 1.4054022604265624,
     "Machine Parts": 1.399599578907434,
-    "Refined Fuel": 1.357431246678368,
-    "Uranium Rod": 1.3915925148432695,
+    "Refined Fuel": 1.367431246678368,
+    "Uranium Rod": 1.4015925148432695,
     "Reactor Core": 1.4055555484885462,
     "Circuit Board": 1.3857272503903646,
     "Flour": 1.4167484217732742,
@@ -175363,10 +175362,10 @@
     "Smoked Fish": 1.4061688076457948,
     "Fish Stew": 1.4115094825292294,
     "Peat Fuel": 1.4061714240585736,
-    "Gas Fuel": 1.4124374504473134,
+    "Gas Fuel": 1.4224374504473134,
     "Fertilizer": 1.4122718986311518,
     "Cotton Fabric": 1.4115114938784767,
-    "Manganese Alloy": 1.4197910509976985,
+    "Manganese Alloy": 1.4297910509976985,
     "Sunflower Oil": 1.4122734876891336,
     "Linen": 1.411510368732482,
     "Corn Meal": 1.417130735823483,
@@ -175380,7 +175379,7 @@
   "market_last_sale": {
     "Fuel": "2026-09-01T16:11:22.261Z",
     "Cake": "2026-09-05T22:25:00.301Z",
-    "Bread": "2026-09-05T09:32:54.150Z",
+    "Bread": "2026-09-05T22:59:50.835Z",
     "Copper Ingot": "2026-09-05T14:42:28.635Z",
     "Steel Ingot": "2026-08-31T14:54:14.093Z",
     "Refined Fuel": "2026-09-05T21:42:14.992Z",
@@ -175397,7 +175396,8 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 3
+    "Cake": 3,
+    "Bread": 7
   },
   "global_consumption": {
     "Copper Ingot": 76,
