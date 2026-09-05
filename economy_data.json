@@ -593,15 +593,15 @@
       "total_heat_generated": 0
     },
     "874346333882945547": {
-      "cash": 220,
+      "cash": 240,
       "bank": 18931,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-05T21:35:31.507Z",
-      "work_count": 866,
+      "last_work": "2026-09-05T21:41:37.604Z",
+      "work_count": 867,
       "last_claim": "2026-09-05T11:49:20.397Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -174020,14 +174020,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 50326,
+      "funds": 50321,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 163052,
-      "market_cap": 163052,
+      "share_price": 163079,
+      "market_cap": 163079,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174060,7 +174060,7 @@
         "Reactor Core": 1,
         "Steel Beam": 2,
         "Uranium Rod": 3,
-        "Copper": 6,
+        "Copper": 7,
         "Machine Parts": 2,
         "Coal": 11,
         "Bread": 2,
@@ -174076,7 +174076,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T16:19:56.010Z",
       "price_history": [
-        158510,
         158626,
         158621,
         158624,
@@ -174175,7 +174174,8 @@
         162887,
         163046,
         163049,
-        163052
+        163052,
+        163079
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -174531,16 +174531,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 111,
-      "change_percent": -0.37972430018252307,
-      "recorded_at": "2026-09-05T18:52:51.227Z"
-    },
-    {
-      "price": 111,
-      "change_percent": 0.1932166117619866,
-      "recorded_at": "2026-09-05T18:56:46.871Z"
-    },
     {
       "price": 111,
       "change_percent": 0.3900178091952379,
@@ -175030,6 +175020,16 @@
       "price": 93,
       "change_percent": 0.7259347123856834,
       "recorded_at": "2026-09-05T21:40:17.049Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.5369063010626631,
+      "recorded_at": "2026-09-05T21:41:38.454Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.4168545085149226,
+      "recorded_at": "2026-09-05T21:41:46.929Z"
     }
   ],
   "factory_names": [
@@ -175037,24 +175037,23 @@
     "Soviet Iron Foundry",
     "Lenin Machine Works",
     "Stalin Tractor Plant",
-    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Ural Heavy Industries"
   ],
   "used_factory_names": [
     "Volga Shipbuilding",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.5031916916081708,
+  "inflation": 0.4362124220803513,
   "money_printed": 504,
   "total_bank_reserves": 561900,
   "inflation_history": [
-    0.3272441439771443,
     0.34299865148814634,
     0.3262784692600252,
     0.4235126532893961,
@@ -175153,7 +175152,8 @@
     0.44748190360035917,
     0.40483977308171065,
     0.4219439956713159,
-    0.5031916916081708
+    0.5031916916081708,
+    0.4362124220803513
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -175300,7 +175300,7 @@
     "Cake": 1.3950038541733703,
     "Bread": 1.3927756041560018,
     "Copper Ingot": 1.388738294401309,
-    "Iron Ingot": 1.3574201996836905,
+    "Iron Ingot": 1.3560651497627678,
     "Steel Ingot": 1.3978763287571785,
     "Gold Bar": 1.3159161768597147,
     "Aluminium Ingot": 1.4124242308841104,
@@ -175313,14 +175313,14 @@
     "Refined Fuel": 1.3946979398781427,
     "Uranium Rod": 1.3850089152769236,
     "Reactor Core": 1.408953451560248,
-    "Circuit Board": 1.3664530103723533,
+    "Circuit Board": 1.3690629442760134,
     "Flour": 1.4115085140303616,
     "Sugar": 1.294254796279052,
     "Wine": 1.4124434444855096,
     "Canned Food": 1.4044632721210586,
     "Canned Fish": 1.404662607239747,
     "Smoked Fish": 1.4046223588641065,
-    "Fish Stew": 1.4125103070969884,
+    "Fish Stew": 1.4115094825292294,
     "Peat Fuel": 1.404628560731434,
     "Gas Fuel": 1.4124374504473134,
     "Fertilizer": 1.4122718986311518,
@@ -179367,10 +179367,6 @@
   "total_rubles_history": [
     {
       "total": 654797,
-      "at": "2026-09-05T13:56:47.428Z"
-    },
-    {
-      "total": 654797,
       "at": "2026-09-05T14:01:47.449Z"
     },
     {
@@ -179764,6 +179760,10 @@
     {
       "total": 649363,
       "at": "2026-09-05T21:36:48.359Z"
+    },
+    {
+      "total": 649423,
+      "at": "2026-09-05T21:41:48.346Z"
     }
   ],
   "gold_rush": null,
