@@ -174551,11 +174551,6 @@
   "gsi_history": [
     {
       "price": 107,
-      "change_percent": 0.5737580800845875,
-      "recorded_at": "2026-09-05T19:08:45.894Z"
-    },
-    {
-      "price": 107,
       "change_percent": 0.12100596912266158,
       "recorded_at": "2026-09-05T19:10:45.186Z"
     },
@@ -175048,6 +175043,11 @@
       "price": 89,
       "change_percent": -5.2342337541067625,
       "recorded_at": "2026-09-05T22:06:42.762Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.35629029129906653,
+      "recorded_at": "2026-09-05T22:06:46.872Z"
     }
   ],
   "factory_names": [
@@ -175373,14 +175373,12 @@
     "Circuit Board": "2026-09-05T20:29:35.204Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Refined Fuel": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 18,
     "Timber Planks": 112,
-    "Refined Fuel": 70,
+    "Refined Fuel": 72,
     "Fuel": 24,
     "Iron Ingot": 15,
     "Shale Oil": 17,
@@ -175395,11 +175393,6 @@
     "Circuit Board": 2
   },
   "consumption_history": [
-    {
-      "item": "Peat Fuel",
-      "qty": 1,
-      "at": "2026-08-30T12:44:17.498Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -176894,6 +176887,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-05T21:51:43.373Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-05T22:06:43.398Z"
     }
   ],
   "demand_history": {
@@ -177827,6 +177825,11 @@
       {
         "demand": 1.3271979398781428,
         "at": "2026-09-05T21:51:43.373Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3290850453142087,
+        "at": "2026-09-05T22:06:43.410Z",
         "supply": 0
       }
     ],
@@ -179392,10 +179395,6 @@
   "total_rubles_history": [
     {
       "total": 655249,
-      "at": "2026-09-05T14:26:47.549Z"
-    },
-    {
-      "total": 655249,
       "at": "2026-09-05T14:31:47.434Z"
     },
     {
@@ -179789,6 +179788,10 @@
     {
       "total": 649503,
       "at": "2026-09-05T22:01:48.346Z"
+    },
+    {
+      "total": 649503,
+      "at": "2026-09-05T22:06:48.354Z"
     }
   ],
   "gold_rush": null,
