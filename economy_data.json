@@ -173794,8 +173794,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 154343,
-      "market_cap": 154343,
+      "share_price": 154425,
+      "market_cap": 154425,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -173834,16 +173834,14 @@
         "Machine Parts": 1,
         "Steel Ingot": 2,
         "Copper Ingot": 3,
-        "Iron Ore": 6,
-        "Coal": 7,
+        "Coal": 3,
         "Bread": 1,
-        "Cake": 1
+        "Cake": 1,
+        "Iron Ingot": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T10:12:40.479Z",
       "price_history": [
-        147289,
-        146637,
         146640,
         146646,
         146791,
@@ -173941,7 +173939,9 @@
         153960,
         154076,
         154094,
-        154343
+        154343,
+        154346,
+        154425
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -174297,16 +174297,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 78,
-      "change_percent": 1.4394295847391507,
-      "recorded_at": "2026-09-05T06:56:45.568Z"
-    },
-    {
-      "price": 78,
-      "change_percent": 0.8853861243335328,
-      "recorded_at": "2026-09-05T07:01:45.595Z"
-    },
     {
       "price": 79,
       "change_percent": 1.4244943818728162,
@@ -174796,6 +174786,16 @@
       "price": 95,
       "change_percent": 1.0470914581400628,
       "recorded_at": "2026-09-05T10:12:41.124Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.6774953688129522,
+      "recorded_at": "2026-09-05T10:16:14.973Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.44681788285158147,
+      "recorded_at": "2026-09-05T10:16:46.315Z"
     }
   ],
   "factory_names": [
@@ -178971,10 +178971,6 @@
   "total_rubles_history": [
     {
       "total": 650531,
-      "at": "2026-09-05T02:21:43.754Z"
-    },
-    {
-      "total": 650531,
       "at": "2026-09-05T02:26:43.750Z"
     },
     {
@@ -179368,6 +179364,10 @@
     {
       "total": 653107,
       "at": "2026-09-05T10:11:47.375Z"
+    },
+    {
+      "total": 653127,
+      "at": "2026-09-05T10:16:47.377Z"
     }
   ],
   "gold_rush": null,
