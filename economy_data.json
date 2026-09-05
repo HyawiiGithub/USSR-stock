@@ -53148,15 +53148,15 @@
       "total_heat_generated": 0
     },
     "807254722251587614": {
-      "cash": 1740,
+      "cash": 1765,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-05T20:41:50.765Z",
-      "work_count": 39,
+      "last_work": "2026-09-05T22:37:05.235Z",
+      "work_count": 40,
       "last_claim": "2026-09-05T12:38:27.561Z",
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -173653,14 +173653,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 3002,
+      "funds": 2992,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 134349,
-      "market_cap": 134349,
+      "share_price": 134443,
+      "market_cap": 134443,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -173688,9 +173688,9 @@
       "inventory": {
         "Zinc": 146,
         "Copper": 36,
-        "Lead": 105,
+        "Lead": 106,
         "Gold Bar": 17,
-        "Wheat": 99,
+        "Wheat": 98,
         "Aluminium Ore": 54,
         "Machine Parts": 2,
         "Uranium Rod": 3,
@@ -173706,7 +173706,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T21:15:24.517Z",
       "price_history": [
-        129483,
         129490,
         129513,
         130195,
@@ -173805,7 +173804,8 @@
         134586,
         134633,
         134268,
-        134349
+        134349,
+        134443
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -174550,21 +174550,6 @@
   },
   "gsi_history": [
     {
-      "price": 105,
-      "change_percent": 0.12327277279643904,
-      "recorded_at": "2026-09-05T19:43:55.290Z"
-    },
-    {
-      "price": 105,
-      "change_percent": 0.6576373141957559,
-      "recorded_at": "2026-09-05T19:46:46.875Z"
-    },
-    {
-      "price": 104,
-      "change_percent": -0.018120740495114605,
-      "recorded_at": "2026-09-05T19:51:46.811Z"
-    },
-    {
       "price": 104,
       "change_percent": 0.5464584479070996,
       "recorded_at": "2026-09-05T19:52:35.569Z"
@@ -175048,6 +175033,21 @@
       "price": 92,
       "change_percent": 0.9570153958736135,
       "recorded_at": "2026-09-05T22:35:41.514Z"
+    },
+    {
+      "price": 88,
+      "change_percent": -4.201428811893279,
+      "recorded_at": "2026-09-05T22:36:42.686Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 0.9085296830420359,
+      "recorded_at": "2026-09-05T22:36:46.860Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 1.3394993845130718,
+      "recorded_at": "2026-09-05T22:37:06.089Z"
     }
   ],
   "factory_names": [
@@ -175374,7 +175374,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 7
+    "Cake": 5
   },
   "global_consumption": {
     "Copper Ingot": 76,
@@ -175385,7 +175385,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 111,
+    "Cake": 113,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 12,
@@ -175395,11 +175395,6 @@
     "Circuit Board": 2
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-08-30T12:59:17.505Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -176894,6 +176889,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-09-05T22:06:43.398Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-05T22:36:43.307Z"
     }
   ],
   "demand_history": {
@@ -178076,11 +178076,6 @@
     "Cake": [
       {
         "demand": 1.3955505479119794,
-        "at": "2026-09-01T02:06:11.930Z",
-        "supply": 0
-      },
-      {
-        "demand": 1.3955505479119794,
         "at": "2026-09-01T02:36:11.932Z",
         "supply": 0
       },
@@ -178372,6 +178367,11 @@
       {
         "demand": 1.2730014661195872,
         "at": "2026-09-05T05:21:42.519Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2346424163450713,
+        "at": "2026-09-05T22:36:43.307Z",
         "supply": 0
       }
     ],
@@ -179396,10 +179396,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 655504,
-      "at": "2026-09-05T14:56:47.451Z"
-    },
-    {
       "total": 655524,
       "at": "2026-09-05T15:01:47.451Z"
     },
@@ -179794,6 +179790,10 @@
     {
       "total": 649683,
       "at": "2026-09-05T22:31:48.373Z"
+    },
+    {
+      "total": 649723,
+      "at": "2026-09-05T22:36:48.355Z"
     }
   ],
   "gold_rush": null,
