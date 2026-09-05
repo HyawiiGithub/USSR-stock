@@ -173482,6 +173482,29 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0
+    },
+    "1035840995176222830": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0
     }
   },
   "companies": {
@@ -173887,8 +173910,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 158693,
-      "market_cap": 158693,
+      "share_price": 158688,
+      "market_cap": 158688,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -173934,7 +173957,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T16:19:56.010Z",
       "price_history": [
-        149981,
         149992,
         150031,
         150034,
@@ -174033,7 +174055,8 @@
         158659,
         158654,
         158689,
-        158693
+        158693,
+        158688
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -174389,16 +174412,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 93,
-      "change_percent": 0.6568866336338738,
-      "recorded_at": "2026-09-05T13:35:24.027Z"
-    },
-    {
-      "price": 87,
-      "change_percent": -5.941174791584193,
-      "recorded_at": "2026-09-05T13:36:42.541Z"
-    },
     {
       "price": 88,
       "change_percent": 1.2231044181374222,
@@ -174888,6 +174901,16 @@
       "price": 100,
       "change_percent": 1.1019607302251921,
       "recorded_at": "2026-09-05T16:32:21.390Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.6608092135854277,
+      "recorded_at": "2026-09-05T16:36:04.210Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.41642927702458166,
+      "recorded_at": "2026-09-05T16:36:46.399Z"
     }
   ],
   "factory_names": [],
@@ -175212,11 +175235,10 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Copper Ingot": 1,
     "Refined Fuel": 1
   },
   "global_consumption": {
-    "Copper Ingot": 75,
+    "Copper Ingot": 76,
     "Steel Ingot": 18,
     "Timber Planks": 112,
     "Refined Fuel": 68,
@@ -175233,11 +175255,6 @@
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Peat Fuel",
-      "qty": 1,
-      "at": "2026-08-30T11:44:17.493Z"
-    },
     {
       "item": "Iron Ingot",
       "qty": 1,
@@ -176732,6 +176749,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-09-05T16:21:43.406Z"
+    },
+    {
+      "item": "Copper Ingot",
+      "qty": 1,
+      "at": "2026-09-05T16:36:43.277Z"
     }
   ],
   "demand_history": {
@@ -177014,6 +177036,11 @@
       {
         "demand": 1.2663275093209474,
         "at": "2026-09-05T16:06:43.350Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.2963294587312943,
+        "at": "2026-09-05T16:36:43.277Z",
         "supply": 2
       }
     ],
@@ -179140,14 +179167,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 652607,
-      "at": "2026-09-05T08:41:46.626Z"
-    },
-    {
-      "total": 652607,
-      "at": "2026-09-05T08:46:46.778Z"
-    },
-    {
       "total": 652647,
       "at": "2026-09-05T08:51:46.679Z"
     },
@@ -179538,6 +179557,14 @@
     {
       "total": 644248,
       "at": "2026-09-05T16:31:47.468Z"
+    },
+    {
+      "total": 644288,
+      "at": "2026-09-05T16:36:47.461Z"
+    },
+    {
+      "total": 644288,
+      "at": "2026-09-05T16:36:48.006Z"
     }
   ],
   "gold_rush": null,
