@@ -173949,14 +173949,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 48378,
+      "funds": 50436,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 160674,
-      "market_cap": 160674,
+      "share_price": 161706,
+      "market_cap": 161706,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -173989,13 +173989,12 @@
         "Reactor Core": 1,
         "Steel Beam": 2,
         "Uranium Rod": 3,
-        "Circuit Board": 1,
-        "Copper": 10,
+        "Copper": 1,
         "Machine Parts": 2,
-        "Coal": 29,
+        "Coal": 23,
         "Bread": 2,
         "Cake": 2,
-        "Lead": 8,
+        "Lead": 6,
         "Iron Ore": 23,
         "Oil": 17,
         "Gold": 2,
@@ -174004,10 +174003,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T16:19:56.010Z",
       "price_history": [
-        156387,
-        156390,
-        156305,
-        156308,
         156359,
         156379,
         156369,
@@ -174103,11 +174098,15 @@
         160324,
         160640,
         160669,
-        160674
+        160674,
+        160711,
+        160847,
+        160851,
+        161706
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-05T16:20:54.905Z",
+      "last_factorydeal": "2026-09-05T20:29:35.204Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -174459,11 +174458,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": 0.8025263738552011,
-      "recorded_at": "2026-09-05T17:38:55.730Z"
-    },
     {
       "price": 102,
       "change_percent": -0.11561414511351244,
@@ -174958,19 +174952,25 @@
       "price": 96,
       "change_percent": 0.9978071847066098,
       "recorded_at": "2026-09-05T20:26:59.941Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.8613572839738773,
+      "recorded_at": "2026-09-05T20:28:52.842Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
-    "Brezhnev Auto Factory",
-    "Stalin Tractor Plant",
-    "Ural Heavy Industries",
+  "factory_names": [
+    "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Siberian Mining Co",
+    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Ural Heavy Industries"
+  ],
+  "used_factory_names": [
     "Volga Shipbuilding",
-    "Red Star Steelworks"
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -175232,22 +175232,22 @@
     "Gold Bar": 1.3159161768597147,
     "Aluminium Ingot": 1.4124242308841104,
     "Timber Planks": 1.4046238576132537,
-    "Bricks": 1.4122795395558192,
+    "Bricks": 1.4222795395558192,
     "Concrete": 1.412481553945242,
-    "Glass": 1.4119984731292228,
-    "Steel Beam": 1.401507132898005,
+    "Glass": 1.4219984731292228,
+    "Steel Beam": 1.4115071328980051,
     "Machine Parts": 1.399599578907434,
     "Refined Fuel": 1.3961305865041904,
     "Uranium Rod": 1.3850089152769236,
     "Reactor Core": 1.408953451560248,
-    "Circuit Board": 1.4023244869396905,
+    "Circuit Board": 1.3573244869396905,
     "Flour": 1.4115085140303616,
-    "Sugar": 1.284254796279052,
+    "Sugar": 1.294254796279052,
     "Wine": 1.4124434444855096,
     "Canned Food": 1.4044632721210586,
     "Canned Fish": 1.404662607239747,
     "Smoked Fish": 1.4046223588641065,
-    "Fish Stew": 1.41242607030187,
+    "Fish Stew": 1.42242607030187,
     "Peat Fuel": 1.404628560731434,
     "Gas Fuel": 1.4124374504473134,
     "Fertilizer": 1.4122718986311518,
@@ -175278,10 +175278,13 @@
     "Canned Fish": "2026-09-04T14:11:58.037Z",
     "Canned Food": "2026-09-03T18:04:45.489Z",
     "Uranium Rod": "2026-09-01T13:09:52.324Z",
-    "Aluminium Sheet": "2026-09-03T13:50:43.149Z"
+    "Aluminium Sheet": "2026-09-03T13:50:43.149Z",
+    "Circuit Board": "2026-09-05T20:29:35.204Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Circuit Board": 2
+  },
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 18,
