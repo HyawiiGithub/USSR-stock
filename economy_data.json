@@ -173492,14 +173492,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 3676,
+      "funds": 3692,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 133244,
-      "market_cap": 133244,
+      "share_price": 133595,
+      "market_cap": 133595,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -173527,7 +173527,7 @@
       "inventory": {
         "Zinc": 136,
         "Copper": 35,
-        "Lead": 95,
+        "Lead": 93,
         "Gold Bar": 16,
         "Wheat": 131,
         "Aluminium Ore": 51,
@@ -173540,14 +173540,11 @@
         "Steel Ingot": 2,
         "Coal": 6,
         "Gold": 2,
-        "Iron Ingot": 1
+        "Iron Ingot": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T13:54:33.159Z",
       "price_history": [
-        126946,
-        127057,
-        127461,
         127594,
         127665,
         127724,
@@ -173644,7 +173641,10 @@
         133238,
         132982,
         133209,
-        133244
+        133244,
+        133372,
+        133671,
+        133595
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -173881,14 +173881,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 46172,
+      "funds": 46192,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 157072,
-      "market_cap": 157072,
+      "share_price": 156750,
+      "market_cap": 156750,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -173928,16 +173928,12 @@
         "Coal": 4,
         "Bread": 1,
         "Cake": 1,
-        "Lead": 6,
-        "Iron Ingot": 2,
+        "Lead": 8,
         "Iron Ore": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T10:12:40.479Z",
       "price_history": [
-        149365,
-        149385,
-        149404,
         149412,
         149364,
         149415,
@@ -174034,7 +174030,10 @@
         156794,
         156829,
         157058,
-        157072
+        157072,
+        156937,
+        156666,
+        156750
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -174390,21 +174389,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 105,
-      "change_percent": -0.4779415889595704,
-      "recorded_at": "2026-09-05T12:36:46.396Z"
-    },
-    {
-      "price": 104,
-      "change_percent": -0.24573805834796864,
-      "recorded_at": "2026-09-05T12:38:16.897Z"
-    },
-    {
-      "price": 103,
-      "change_percent": -0.2761923528732986,
-      "recorded_at": "2026-09-05T12:41:46.417Z"
-    },
     {
       "price": 103,
       "change_percent": 0.164934532068778,
@@ -174889,6 +174873,21 @@
       "price": 96,
       "change_percent": 1.0274096792170992,
       "recorded_at": "2026-09-05T16:16:46.568Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.3670885305692334,
+      "recorded_at": "2026-09-05T16:18:23.360Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.36146783861133486,
+      "recorded_at": "2026-09-05T16:18:30.531Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.32836134244382265,
+      "recorded_at": "2026-09-05T16:19:04.767Z"
     }
   ],
   "factory_names": [
@@ -174910,7 +174909,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0.4069927460947881,
-  "money_printed": 468,
+  "money_printed": 504,
   "total_bank_reserves": 571261,
   "inflation_history": [
     0.40929175053706635,
@@ -175132,6 +175131,24 @@
       "item": "Iron Ingot",
       "qty": 1,
       "bonus": 14,
+      "crossRegion": true
+    },
+    {
+      "at": "2026-09-05T16:18:29.384Z",
+      "from": "Soviet Agriculture",
+      "to": "State Mining Corp",
+      "item": "Iron Ingot",
+      "qty": 2,
+      "bonus": 28,
+      "crossRegion": true
+    },
+    {
+      "at": "2026-09-05T16:19:03.447Z",
+      "from": "State Mining Corp",
+      "to": "Soviet Agriculture",
+      "item": "Lead",
+      "qty": 2,
+      "bonus": 8,
       "crossRegion": true
     }
   ],
@@ -178783,7 +178800,7 @@
       "grant": 1605
     }
   ],
-  "trade_volume": 218,
+  "trade_volume": 222,
   "trade_schedules": [],
   "owner_logs": [
     {
