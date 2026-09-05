@@ -174389,11 +174389,6 @@
   },
   "gsi_history": [
     {
-      "price": 103,
-      "change_percent": 0.05854984287068949,
-      "recorded_at": "2026-09-05T12:51:46.413Z"
-    },
-    {
       "price": 102,
       "change_percent": -0.2473707726749138,
       "recorded_at": "2026-09-05T12:56:46.408Z"
@@ -174887,6 +174882,11 @@
       "price": 97,
       "change_percent": 0.5383197160719994,
       "recorded_at": "2026-09-05T16:19:56.930Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.5285052762210086,
+      "recorded_at": "2026-09-05T16:21:46.458Z"
     }
   ],
   "factory_names": [],
@@ -174906,11 +174906,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4069927460947881,
+  "inflation": 0.39243226464646264,
   "money_printed": 504,
   "total_bank_reserves": 571261,
   "inflation_history": [
-    0.40929175053706635,
     0.4141859625164004,
     0.34963517056301835,
     0.3802320602691578,
@@ -175009,7 +175008,8 @@
     0.3502308758724951,
     0.41377754773741077,
     0.4230947516723021,
-    0.4069927460947881
+    0.4069927460947881,
+    0.39243226464646264
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -175152,14 +175152,14 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3922012703811246,
+    "Fuel": 1.388660756707412,
     "Cake": 1.3950038541733703,
     "Bread": 1.3927756041560018,
-    "Copper Ingot": 1.281481484990713,
+    "Copper Ingot": 1.2963294587312943,
     "Iron Ingot": 1.392339894145675,
     "Steel Ingot": 1.3978763287571785,
     "Gold Bar": 1.3193028900660018,
-    "Aluminium Ingot": 1.422271769437282,
+    "Aluminium Ingot": 1.4204900278822994,
     "Timber Planks": 1.4046238576132537,
     "Bricks": 1.4122795395558192,
     "Concrete": 1.412481553945242,
@@ -175171,18 +175171,18 @@
     "Reactor Core": 1.408953451560248,
     "Circuit Board": 1.4023244869396905,
     "Flour": 1.4115085140303616,
-    "Sugar": 1.2948847179513907,
+    "Sugar": 1.293254724829005,
     "Wine": 1.4124434444855096,
     "Canned Food": 1.4044632721210586,
     "Canned Fish": 1.404662607239747,
     "Smoked Fish": 1.4046223588641065,
     "Fish Stew": 1.41242607030187,
     "Peat Fuel": 1.404628560731434,
-    "Gas Fuel": 1.4222954669253978,
+    "Gas Fuel": 1.420511829571366,
     "Fertilizer": 1.4122718986311518,
     "Cotton Fabric": 1.4115114938784767,
     "Manganese Alloy": 1.4115187669353744,
-    "Sunflower Oil": 1.4220015460557243,
+    "Sunflower Oil": 1.4202414223712663,
     "Linen": 1.411510368732482,
     "Corn Meal": 1.4119994860887584,
     "Tea Pack": 1.4124277970568644,
@@ -175212,13 +175212,13 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Copper Ingot": 1,
-    "Refined Fuel": 3
+    "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 75,
     "Steel Ingot": 18,
     "Timber Planks": 112,
-    "Refined Fuel": 66,
+    "Refined Fuel": 68,
     "Fuel": 24,
     "Iron Ingot": 15,
     "Shale Oil": 17,
@@ -175232,11 +175232,6 @@
     "Aluminium Sheet": 8
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-30T11:29:17.473Z"
-    },
     {
       "item": "Peat Fuel",
       "qty": 1,
@@ -176731,6 +176726,11 @@
       "item": "Copper Ingot",
       "qty": 1,
       "at": "2026-09-05T16:06:43.350Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-05T16:21:43.406Z"
     }
   ],
   "demand_history": {
@@ -177644,6 +177644,11 @@
       {
         "demand": 1.3370789856559826,
         "at": "2026-09-04T22:06:41.649Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3370439859747605,
+        "at": "2026-09-05T16:21:43.406Z",
         "supply": 0
       }
     ],
@@ -179135,10 +179140,6 @@
   "total_rubles_history": [
     {
       "total": 652507,
-      "at": "2026-09-05T08:31:46.621Z"
-    },
-    {
-      "total": 652507,
       "at": "2026-09-05T08:31:47.571Z"
     },
     {
@@ -179532,6 +179533,10 @@
     {
       "total": 652442,
       "at": "2026-09-05T16:16:47.504Z"
+    },
+    {
+      "total": 652462,
+      "at": "2026-09-05T16:21:47.478Z"
     }
   ],
   "gold_rush": null,
