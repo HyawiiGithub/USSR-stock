@@ -175282,9 +175282,7 @@
     "Circuit Board": "2026-09-05T20:29:35.204Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Circuit Board": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 18,
@@ -175300,14 +175298,10 @@
     "Uranium Rod": 12,
     "Canned Fish": 18,
     "Bread": 110,
-    "Aluminium Sheet": 8
+    "Aluminium Sheet": 8,
+    "Circuit Board": 2
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 2,
-      "at": "2026-08-30T12:14:17.495Z"
-    },
     {
       "item": "Peat Fuel",
       "qty": 1,
@@ -176802,6 +176796,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-05T16:51:43.279Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-09-05T20:36:43.292Z"
     }
   ],
   "demand_history": {
@@ -178838,6 +178837,13 @@
         "demand": 1.345113389826752,
         "at": "2026-09-03T15:59:01.901Z",
         "supply": 0
+      }
+    ],
+    "Circuit Board": [
+      {
+        "demand": 1.3573244869396905,
+        "at": "2026-09-05T20:36:43.292Z",
+        "supply": 2
       }
     ]
   },
