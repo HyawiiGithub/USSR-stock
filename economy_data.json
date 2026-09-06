@@ -28,7 +28,7 @@
     },
     "780837437987094560": {
       "username": "",
-      "cash": 795,
+      "cash": 815,
       "bank": 10099,
       "resources": {
         "Coal": 34,
@@ -50,8 +50,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-06T03:33:04.489Z",
-      "work_count": 237,
+      "last_work": "2026-09-06T13:42:02.683Z",
+      "work_count": 238,
       "last_claim": "2026-09-05T16:02:07.524Z",
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
@@ -1214,16 +1214,16 @@
       "total_heat_generated": 0
     },
     "1511756975392948224": {
-      "cash": 0,
+      "cash": 94,
       "bank": 10371,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-06T09:42:07.628Z",
-      "work_count": 147,
-      "last_claim": "2026-09-05T14:22:54.467Z",
+      "last_work": "2026-09-06T13:41:40.381Z",
+      "work_count": 148,
+      "last_claim": "2026-09-06T13:41:47.380Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
       "is_employed": true,
@@ -174318,14 +174318,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 2299,
+      "funds": 2289,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 126350,
-      "market_cap": 126350,
+      "share_price": 126404,
+      "market_cap": 126404,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174353,10 +174353,10 @@
       "inventory": {
         "Gold Bar": 13,
         "Fish": 2,
-        "Wheat": 46,
+        "Wheat": 44,
         "Sugar": 60,
         "Reactor Core": 2,
-        "Copper": 10,
+        "Copper": 13,
         "Lead": 4,
         "Gold": 2,
         "Uranium": 1,
@@ -174368,8 +174368,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T12:07:30.957Z",
       "price_history": [
-        162239,
-        162234,
         162285,
         162159,
         162539,
@@ -174467,7 +174465,9 @@
         123523,
         125554,
         126194,
-        126350
+        126350,
+        126455,
+        126404
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -174823,21 +174823,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 89,
-      "change_percent": 0.710123894173626,
-      "recorded_at": "2026-09-06T09:00:57.432Z"
-    },
-    {
-      "price": 90,
-      "change_percent": 1.2804164307851231,
-      "recorded_at": "2026-09-06T09:01:49.225Z"
-    },
-    {
-      "price": 87,
-      "change_percent": -2.931215541053191,
-      "recorded_at": "2026-09-06T09:06:45.570Z"
-    },
     {
       "price": 88,
       "change_percent": 1.2859058170361413,
@@ -175322,6 +175307,21 @@
       "price": 106,
       "change_percent": 0.28520369097105114,
       "recorded_at": "2026-09-06T13:36:49.420Z"
+    },
+    {
+      "price": 106,
+      "change_percent": 0.4867354184549369,
+      "recorded_at": "2026-09-06T13:41:41.002Z"
+    },
+    {
+      "price": 105,
+      "change_percent": -0.5729838609999826,
+      "recorded_at": "2026-09-06T13:41:49.363Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 0.4005594837521689,
+      "recorded_at": "2026-09-06T13:42:03.531Z"
     }
   ],
   "factory_names": [
@@ -175342,11 +175342,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4688220535952776,
+  "inflation": 0.3878797461600455,
   "money_printed": 504,
-  "total_bank_reserves": 562671,
+  "total_bank_reserves": 563030,
   "inflation_history": [
-    0.44748190360035917,
     0.40483977308171065,
     0.4219439956713159,
     0.5031916916081708,
@@ -175445,7 +175444,8 @@
     0.4620007776558862,
     0.441551219488603,
     0.43947524278686023,
-    0.4688220535952776
+    0.4688220535952776,
+    0.3878797461600455
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -175589,7 +175589,7 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3822378084706282,
-    "Cake": 1.3190469457503173,
+    "Cake": 1.329170517356814,
     "Bread": 1.3854177749150633,
     "Copper Ingot": 1.3974537208009816,
     "Iron Ingot": 1.3472022787845481,
@@ -175607,7 +175607,7 @@
     "Reactor Core": 1.4051016841633555,
     "Circuit Board": 1.3981466640376503,
     "Flour": 1.4119984514494843,
-    "Sugar": 1.227280402809944,
+    "Sugar": 1.2254819705851485,
     "Wine": 1.4115183992881786,
     "Canned Food": 1.4046233353495172,
     "Canned Fish": 1.404639340571951,
@@ -179708,10 +179708,6 @@
   "total_rubles_history": [
     {
       "total": 649972,
-      "at": "2026-09-06T05:41:48.457Z"
-    },
-    {
-      "total": 649972,
       "at": "2026-09-06T05:46:48.464Z"
     },
     {
@@ -180105,6 +180101,10 @@
     {
       "total": 651839,
       "at": "2026-09-06T13:36:50.184Z"
+    },
+    {
+      "total": 651932,
+      "at": "2026-09-06T13:41:50.195Z"
     }
   ],
   "gold_rush": null,
