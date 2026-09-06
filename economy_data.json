@@ -174319,14 +174319,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 696,
+      "funds": 2299,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 125554,
-      "market_cap": 125554,
+      "share_price": 126350,
+      "market_cap": 126350,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174359,20 +174359,16 @@
         "Reactor Core": 2,
         "Copper": 10,
         "Lead": 4,
-        "Iron Ore": 12,
         "Gold": 2,
         "Uranium": 1,
         "Oil": 9,
-        "Iron Ingot": 7,
-        "Coal": 10,
-        "Bread": 6,
-        "Cake": 6
+        "Iron Ingot": 11,
+        "Coal": 2,
+        "Bread": 6
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T12:07:30.957Z",
       "price_history": [
-        161906,
-        161925,
         162239,
         162234,
         162285,
@@ -174470,11 +174466,13 @@
         123482,
         123616,
         123523,
-        125554
+        125554,
+        126194,
+        126350
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-06T09:13:48.477Z",
+      "last_factorydeal": "2026-09-06T12:07:58.730Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -175327,17 +175325,18 @@
       "recorded_at": "2026-09-06T12:07:31.800Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
-    "Ural Heavy Industries",
-    "Brezhnev Auto Factory",
-    "Lenin Machine Works",
+  "factory_names": [
     "Red Star Steelworks",
-    "Volga Shipbuilding",
-    "Stalin Tractor Plant",
     "Soviet Iron Foundry",
-    "Khrushchev Agricultural",
-    "Siberian Mining Co"
+    "Lenin Machine Works",
+    "Stalin Tractor Plant",
+    "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries"
+  ],
+  "used_factory_names": [
+    "Volga Shipbuilding",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -175590,8 +175589,8 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3822577650429726,
-    "Cake": 1.3957502834031938,
+    "Fuel": 1.3922577650429726,
+    "Cake": 1.2607502834031938,
     "Bread": 1.3953944491142747,
     "Copper Ingot": 1.3974537208009816,
     "Iron Ingot": 1.3575775724548684,
@@ -175606,21 +175605,21 @@
     "Machine Parts": 1.399599578907434,
     "Refined Fuel": 1.3951999523374135,
     "Uranium Rod": 1.3856116910545766,
-    "Reactor Core": 1.4060108752919391,
+    "Reactor Core": 1.4160108752919391,
     "Circuit Board": 1.3981466640376503,
     "Flour": 1.4119984514494843,
     "Sugar": 1.2524116949795843,
     "Wine": 1.4115183992881786,
-    "Canned Food": 1.4046120228330425,
+    "Canned Food": 1.4146120228330425,
     "Canned Fish": 1.404639340571951,
     "Smoked Fish": 1.4046279494706329,
     "Fish Stew": 1.4119989917232856,
     "Peat Fuel": 1.404628571089725,
     "Gas Fuel": 1.4124254084143828,
     "Fertilizer": 1.411508575493189,
-    "Cotton Fabric": 1.4115114938784767,
+    "Cotton Fabric": 1.4215114938784768,
     "Manganese Alloy": 1.4122199742732515,
-    "Sunflower Oil": 1.4122734876891336,
+    "Sunflower Oil": 1.4222734876891336,
     "Linen": 1.4119994860887584,
     "Corn Meal": 1.4115087014389704,
     "Tea Pack": 1.4119994860887584,
@@ -175632,7 +175631,7 @@
   },
   "market_last_sale": {
     "Fuel": "2026-09-01T16:11:22.261Z",
-    "Cake": "2026-09-06T06:07:24.074Z",
+    "Cake": "2026-09-06T12:07:58.735Z",
     "Bread": "2026-09-06T06:57:21.054Z",
     "Copper Ingot": "2026-09-05T14:42:28.635Z",
     "Steel Ingot": "2026-09-06T08:33:45.954Z",
@@ -175649,7 +175648,9 @@
     "Circuit Board": "2026-09-05T20:29:35.204Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Cake": 6
+  },
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 20,
