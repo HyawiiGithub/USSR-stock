@@ -105,10 +105,12 @@
       "cash": 1625,
       "bank": 0,
       "resources": {
-        "Natural Gas": 4,
+        "Natural Gas": 1,
         "Copper": 1
       },
-      "inventory": {},
+      "inventory": {
+        "Gas Fuel": 1
+      },
       "company_id": null,
       "ceo_of": null,
       "gsi_shares": 0,
@@ -174011,6 +174013,29 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0
+    },
+    "852909311649906770": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0
     }
   },
   "companies": {
@@ -174312,8 +174337,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 116139,
-      "market_cap": 116139,
+      "share_price": 117294,
+      "market_cap": 117294,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -174329,12 +174354,12 @@
         }
       },
       "inventory": {
-        "Natural Gas": 69,
         "Oil": 2,
         "Wheat": 159,
         "Iron Ore": 2,
         "Fuel": 19,
-        "Cotton Fabric": 1
+        "Cotton Fabric": 1,
+        "Gas Fuel": 23
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T16:10:34.193Z",
@@ -174388,7 +174413,8 @@
         115367,
         115483,
         115633,
-        116139
+        116139,
+        117294
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
@@ -174922,11 +174948,6 @@
   },
   "gsi_history": [
     {
-      "price": 93,
-      "change_percent": 0.6425584435148337,
-      "recorded_at": "2026-09-06T12:25:14.085Z"
-    },
-    {
       "price": 94,
       "change_percent": 1.119851846356334,
       "recorded_at": "2026-09-06T12:26:49.406Z"
@@ -175420,6 +175441,11 @@
       "price": 101,
       "change_percent": 0.8398798168045014,
       "recorded_at": "2026-09-06T16:21:49.520Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.42416009097555174,
+      "recorded_at": "2026-09-06T16:26:49.498Z"
     }
   ],
   "factory_names": [
@@ -179833,14 +179859,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 650929,
-      "at": "2026-09-06T08:31:49.140Z"
-    },
-    {
-      "total": 650949,
-      "at": "2026-09-06T08:36:49.143Z"
-    },
-    {
       "total": 650949,
       "at": "2026-09-06T08:41:49.143Z"
     },
@@ -180231,6 +180249,14 @@
     {
       "total": 667920,
       "at": "2026-09-06T16:21:50.213Z"
+    },
+    {
+      "total": 667920,
+      "at": "2026-09-06T16:26:50.209Z"
+    },
+    {
+      "total": 667920,
+      "at": "2026-09-06T16:26:50.600Z"
     }
   ],
   "gold_rush": null,
