@@ -175776,7 +175776,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cotton Fabric": 3
+    "Cotton Fabric": 1
   },
   "global_consumption": {
     "Copper Ingot": 76,
@@ -175794,14 +175794,10 @@
     "Canned Fish": 18,
     "Bread": 131,
     "Aluminium Sheet": 8,
-    "Circuit Board": 2
+    "Circuit Board": 2,
+    "Cotton Fabric": 2
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-31T03:54:46.140Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -177296,6 +177292,11 @@
       "item": "Steel Ingot",
       "qty": 2,
       "at": "2026-09-06T15:51:47.891Z"
+    },
+    {
+      "item": "Cotton Fabric",
+      "qty": 2,
+      "at": "2026-09-06T16:36:47.906Z"
     }
   ],
   "demand_history": {
@@ -179384,6 +179385,13 @@
         "demand": 1.3573244869396905,
         "at": "2026-09-05T20:36:43.292Z",
         "supply": 2
+      }
+    ],
+    "Cotton Fabric": [
+      {
+        "demand": 1.3425161046478173,
+        "at": "2026-09-06T16:36:47.906Z",
+        "supply": 1
       }
     ]
   },
