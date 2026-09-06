@@ -174594,11 +174594,6 @@
   },
   "gsi_history": [
     {
-      "price": 95,
-      "change_percent": 1.3781204012464834,
-      "recorded_at": "2026-09-05T21:03:06.531Z"
-    },
-    {
       "price": 96,
       "change_percent": 1.0891515230862174,
       "recorded_at": "2026-09-05T21:04:45.907Z"
@@ -175092,6 +175087,11 @@
       "price": 93,
       "change_percent": 0.3058518395080034,
       "recorded_at": "2026-09-06T01:16:47.056Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.7858042902401456,
+      "recorded_at": "2026-09-06T01:21:46.922Z"
     }
   ],
   "factory_names": [
@@ -175112,11 +175112,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.43192878541025465,
+  "inflation": 0.4834281559043075,
   "money_printed": 504,
   "total_bank_reserves": 562240,
   "inflation_history": [
-    0.33603719839359497,
     0.349029876478212,
     0.422272415403804,
     0.3886427156134048,
@@ -175215,7 +175214,8 @@
     0.4013831017492037,
     0.4057905772312614,
     0.495950263862104,
-    0.43192878541025465
+    0.43192878541025465,
+    0.4834281559043075
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -175417,9 +175417,7 @@
     "Circuit Board": "2026-09-05T20:29:35.204Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Uranium Rod": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 18,
@@ -175432,18 +175430,13 @@
     "Cake": 118,
     "Smoked Fish": 20,
     "Canned Food": 15,
-    "Uranium Rod": 13,
+    "Uranium Rod": 14,
     "Canned Fish": 18,
     "Bread": 117,
     "Aluminium Sheet": 8,
     "Circuit Board": 2
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 2,
-      "at": "2026-08-30T17:09:44.923Z"
-    },
     {
       "item": "Fuel",
       "qty": 2,
@@ -176938,6 +176931,11 @@
       "item": "Uranium Rod",
       "qty": 1,
       "at": "2026-09-06T01:06:43.351Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 1,
+      "at": "2026-09-06T01:21:43.434Z"
     }
   ],
   "demand_history": {
@@ -178593,6 +178591,11 @@
         "demand": 1.3467538816496283,
         "at": "2026-09-06T01:06:43.351Z",
         "supply": 3
+      },
+      {
+        "demand": 1.3479248730579878,
+        "at": "2026-09-06T01:21:43.434Z",
+        "supply": 3
       }
     ],
     "Canned Fish": [
@@ -179446,10 +179449,6 @@
   "total_rubles_history": [
     {
       "total": 644588,
-      "at": "2026-09-05T17:36:47.911Z"
-    },
-    {
-      "total": 644588,
       "at": "2026-09-05T17:36:48.391Z"
     },
     {
@@ -179843,6 +179842,10 @@
     {
       "total": 649892,
       "at": "2026-09-06T01:16:48.402Z"
+    },
+    {
+      "total": 649892,
+      "at": "2026-09-06T01:21:48.405Z"
     }
   ],
   "gold_rush": null,
