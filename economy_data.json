@@ -175101,11 +175101,6 @@
   "gsi_history": [
     {
       "price": 101,
-      "change_percent": 0.12752357416489488,
-      "recorded_at": "2026-09-06T16:16:49.541Z"
-    },
-    {
-      "price": 101,
       "change_percent": 0.5889979156339576,
       "recorded_at": "2026-09-06T16:17:42.867Z"
     },
@@ -175598,6 +175593,11 @@
       "price": 88,
       "change_percent": 0.7929113938685558,
       "recorded_at": "2026-09-06T20:49:44.923Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 0.9808290901322023,
+      "recorded_at": "2026-09-06T20:51:49.670Z"
     }
   ],
   "factory_names": [
@@ -175618,11 +175618,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4019621939000097,
+  "inflation": 0.41773345150226504,
   "money_printed": 504,
   "total_bank_reserves": 579683,
   "inflation_history": [
-    0.4165041187462014,
     0.44173761427512975,
     0.4990578367735982,
     0.39948066216611766,
@@ -175721,7 +175720,8 @@
     0.4328350723343223,
     0.4729819818423471,
     0.4846917777806274,
-    0.4019621939000097
+    0.4019621939000097,
+    0.41773345150226504
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -175926,12 +175926,10 @@
     "Reactor Core": "2026-09-06T17:24:19.850Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Steel Ingot": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 76,
-    "Steel Ingot": 24,
+    "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 77,
     "Fuel": 34,
@@ -175950,11 +175948,6 @@
     "Reactor Core": 1
   },
   "consumption_history": [
-    {
-      "item": "Smoked Fish",
-      "qty": 2,
-      "at": "2026-08-31T12:39:46.539Z"
-    },
     {
       "item": "Smoked Fish",
       "qty": 2,
@@ -177449,6 +177442,11 @@
       "item": "Steel Ingot",
       "qty": 1,
       "at": "2026-09-06T20:36:48.285Z"
+    },
+    {
+      "item": "Steel Ingot",
+      "qty": 2,
+      "at": "2026-09-06T20:51:48.280Z"
     }
   ],
   "demand_history": {
@@ -177828,6 +177826,11 @@
       {
         "demand": 1.3180035896454267,
         "at": "2026-09-06T20:36:48.285Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.3195574973791482,
+        "at": "2026-09-06T20:51:48.280Z",
         "supply": 2
       }
     ],
@@ -180084,10 +180087,6 @@
   "total_rubles_history": [
     {
       "total": 651819,
-      "at": "2026-09-06T13:26:50.181Z"
-    },
-    {
-      "total": 651819,
       "at": "2026-09-06T13:31:50.186Z"
     },
     {
@@ -180481,6 +180480,10 @@
     {
       "total": 668695,
       "at": "2026-09-06T20:46:50.432Z"
+    },
+    {
+      "total": 668715,
+      "at": "2026-09-06T20:51:50.264Z"
     }
   ],
   "gold_rush": null,
