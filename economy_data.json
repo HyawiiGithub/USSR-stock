@@ -173919,6 +173919,29 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0
+    },
+    "502479888846946305": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0
     }
   },
   "companies": {
@@ -174824,16 +174847,6 @@
   "gsi_history": [
     {
       "price": 94,
-      "change_percent": 0.3355326150148642,
-      "recorded_at": "2026-09-06T10:08:30.151Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.7240149749947004,
-      "recorded_at": "2026-09-06T10:11:49.336Z"
-    },
-    {
-      "price": 94,
       "change_percent": 0.9270803725590474,
       "recorded_at": "2026-09-06T10:12:08.686Z"
     },
@@ -175321,6 +175334,16 @@
       "price": 99,
       "change_percent": 0.88144710420171,
       "recorded_at": "2026-09-06T14:35:33.462Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 6.490325556270237,
+      "recorded_at": "2026-09-06T14:36:45.603Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 0.04512170139023475,
+      "recorded_at": "2026-09-06T14:36:49.453Z"
     }
   ],
   "factory_names": [
@@ -175647,7 +175670,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 3
+    "Bread": 1
   },
   "global_consumption": {
     "Copper Ingot": 76,
@@ -175663,16 +175686,11 @@
     "Canned Food": 15,
     "Uranium Rod": 14,
     "Canned Fish": 18,
-    "Bread": 128,
+    "Bread": 130,
     "Aluminium Sheet": 8,
     "Circuit Board": 2
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-08-31T02:54:45.791Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -177167,6 +177185,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-06T14:21:47.888Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-06T14:36:47.897Z"
     }
   ],
   "demand_history": {
@@ -178908,11 +178931,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.3889315479231392,
-        "at": "2026-09-02T05:22:32.724Z",
-        "supply": 2
-      },
-      {
         "demand": 1.1439874618063843,
         "at": "2026-09-02T12:07:32.927Z",
         "supply": 0
@@ -179205,6 +179223,11 @@
       {
         "demand": 1.2551970488233761,
         "at": "2026-09-06T14:21:47.888Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2604217195010567,
+        "at": "2026-09-06T14:36:47.897Z",
         "supply": 0
       }
     ],
@@ -179708,14 +179731,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 650052,
-      "at": "2026-09-06T06:26:48.812Z"
-    },
-    {
-      "total": 650092,
-      "at": "2026-09-06T06:31:48.508Z"
-    },
-    {
       "total": 650112,
       "at": "2026-09-06T06:36:48.476Z"
     },
@@ -180106,6 +180121,14 @@
     {
       "total": 652272,
       "at": "2026-09-06T14:31:50.196Z"
+    },
+    {
+      "total": 652292,
+      "at": "2026-09-06T14:36:50.194Z"
+    },
+    {
+      "total": 652292,
+      "at": "2026-09-06T14:36:50.767Z"
     }
   ],
   "gold_rush": null,
