@@ -869,16 +869,16 @@
       "total_heat_generated": 0
     },
     "913497950213267577": {
-      "cash": 1262,
+      "cash": 1334,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-05T23:28:48.690Z",
-      "work_count": 127,
-      "last_claim": null,
+      "last_work": "2026-09-06T00:41:55.854Z",
+      "work_count": 128,
+      "last_claim": "2026-09-06T00:41:58.967Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
       "is_employed": true,
@@ -174089,14 +174089,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 55567,
+      "funds": 55562,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 168454,
-      "market_cap": 168454,
+      "share_price": 168352,
+      "market_cap": 168352,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174124,13 +174124,13 @@
       "inventory": {
         "Gold Bar": 13,
         "Fish": 2,
-        "Wheat": 27,
+        "Wheat": 26,
         "Sugar": 43,
         "Reactor Core": 2,
         "Uranium Rod": 1,
         "Copper": 8,
         "Lead": 6,
-        "Iron Ore": 27,
+        "Iron Ore": 28,
         "Gold": 2,
         "Uranium": 4,
         "Oil": 9,
@@ -174139,7 +174139,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-05T22:20:21.602Z",
       "price_history": [
-        159453,
         159464,
         159467,
         159478,
@@ -174238,7 +174237,8 @@
         167797,
         167867,
         168497,
-        168454
+        168454,
+        168352
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -174594,16 +174594,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.2396461826545449,
-      "recorded_at": "2026-09-05T20:45:15.919Z"
-    },
-    {
-      "price": 99,
-      "change_percent": 0.9324168346744031,
-      "recorded_at": "2026-09-05T20:46:46.878Z"
-    },
     {
       "price": 99,
       "change_percent": 0.5271444363583495,
@@ -175093,6 +175083,16 @@
       "price": 87,
       "change_percent": 1.1251362916022645,
       "recorded_at": "2026-09-06T00:36:46.838Z"
+    },
+    {
+      "price": 87,
+      "change_percent": 0.7014929381462832,
+      "recorded_at": "2026-09-06T00:41:46.962Z"
+    },
+    {
+      "price": 87,
+      "change_percent": 0.7819332067556812,
+      "recorded_at": "2026-09-06T00:41:56.591Z"
     }
   ],
   "factory_names": [
@@ -175113,11 +175113,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4143985292492645,
+  "inflation": 0.4013831017492037,
   "money_printed": 504,
   "total_bank_reserves": 562240,
   "inflation_history": [
-    0.3912535083375931,
     0.37323617990211555,
     0.429946389379262,
     0.4089193263099018,
@@ -175216,7 +175215,8 @@
     0.40219713364280585,
     0.3889051590855245,
     0.41540343257176626,
-    0.4143985292492645
+    0.4143985292492645,
+    0.4013831017492037
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -179441,10 +179441,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 644463,
-      "at": "2026-09-05T17:01:47.772Z"
-    },
-    {
       "total": 644503,
       "at": "2026-09-05T17:06:47.776Z"
     },
@@ -179839,6 +179835,10 @@
     {
       "total": 649653,
       "at": "2026-09-06T00:36:48.404Z"
+    },
+    {
+      "total": 649653,
+      "at": "2026-09-06T00:41:48.390Z"
     }
   ],
   "gold_rush": null,
