@@ -1216,15 +1216,15 @@
       "total_heat_generated": 0
     },
     "1511756975392948224": {
-      "cash": 174,
+      "cash": 194,
       "bank": 10371,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-06T18:18:07.660Z",
-      "work_count": 152,
+      "last_work": "2026-09-06T18:46:45.496Z",
+      "work_count": 153,
       "last_claim": "2026-09-06T13:41:47.380Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -174495,14 +174495,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 9092,
+      "funds": 11663,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 134926,
-      "market_cap": 134926,
+      "share_price": 136166,
+      "market_cap": 136166,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174535,18 +174535,16 @@
       "inventory": {
         "Gold Bar": 14,
         "Fish": 2,
-        "Wheat": 33,
+        "Wheat": 32,
         "Sugar": 41,
         "Reactor Core": 1,
         "Copper": 18,
         "Lead": 4,
         "Uranium": 1,
         "Iron Ingot": 4,
-        "Refined Fuel": 2,
         "Iron Ore": 12,
         "Steel Ingot": 1,
-        "Coal": 7,
-        "Oil": 6,
+        "Coal": 9,
         "Gold": 1,
         "Bread": 1,
         "Cake": 1,
@@ -174555,11 +174553,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T18:10:24.130Z",
       "price_history": [
-        170467,
-        170580,
-        170854,
-        170764,
-        170810,
         170803,
         170867,
         173506,
@@ -174654,11 +174647,16 @@
         134421,
         134732,
         134805,
-        134926
+        134926,
+        134952,
+        134971,
+        135098,
+        135089,
+        136166
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-06T17:24:19.845Z",
+      "last_factorydeal": "2026-09-06T18:47:23.731Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -175010,21 +175008,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 105,
-      "change_percent": 0.965971208892385,
-      "recorded_at": "2026-09-06T14:59:47.405Z"
-    },
-    {
-      "price": 105,
-      "change_percent": 0.4638702003353701,
-      "recorded_at": "2026-09-06T15:01:49.436Z"
-    },
-    {
-      "price": 104,
-      "change_percent": -0.03247901201636088,
-      "recorded_at": "2026-09-06T15:04:04.992Z"
-    },
     {
       "price": 104,
       "change_percent": 0.05445406496856404,
@@ -175509,12 +175492,25 @@
       "price": 92,
       "change_percent": 0.20983494891909119,
       "recorded_at": "2026-09-06T18:41:49.619Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.5863121150648357,
+      "recorded_at": "2026-09-06T18:46:43.584Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.712258767901819,
+      "recorded_at": "2026-09-06T18:46:46.580Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.25153969970101886,
+      "recorded_at": "2026-09-06T18:46:49.418Z"
     }
   ],
   "factory_names": [
-    "Red Star Steelworks",
     "Soviet Iron Foundry",
-    "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Brezhnev Auto Factory",
     "Volga Shipbuilding"
@@ -175522,7 +175518,9 @@
   "used_factory_names": [
     "Ural Heavy Industries",
     "Khrushchev Agricultural",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Red Star Steelworks",
+    "Lenin Machine Works"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -175790,9 +175788,9 @@
     "Glass": 1.4115085396591687,
     "Steel Beam": 1.4054022604265624,
     "Machine Parts": 1.399599578907434,
-    "Refined Fuel": 1.398493729892346,
+    "Refined Fuel": 1.330993729892346,
     "Uranium Rod": 1.3856116910545766,
-    "Reactor Core": 1.3730866825185848,
+    "Reactor Core": 1.3830866825185848,
     "Circuit Board": 1.3982203714409032,
     "Flour": 1.2889356036825004,
     "Sugar": 1.2598619170710146,
@@ -175804,8 +175802,8 @@
     "Peat Fuel": 1.404628571089725,
     "Gas Fuel": 1.3509663073979798,
     "Fertilizer": 1.411508575493189,
-    "Cotton Fabric": 1.384226852577616,
-    "Manganese Alloy": 1.4122199742732515,
+    "Cotton Fabric": 1.394226852577616,
+    "Manganese Alloy": 1.4222199742732515,
     "Sunflower Oil": 1.412425189405066,
     "Linen": 1.4119994860887584,
     "Corn Meal": 1.41199855599474,
@@ -175822,7 +175820,7 @@
     "Bread": "2026-09-06T14:04:42.471Z",
     "Copper Ingot": "2026-09-05T14:42:28.635Z",
     "Steel Ingot": "2026-09-06T15:26:37.817Z",
-    "Refined Fuel": "2026-09-06T09:13:48.477Z",
+    "Refined Fuel": "2026-09-06T18:47:23.731Z",
     "Timber Planks": "2026-09-03T19:16:37.572Z",
     "Iron Ingot": "2026-08-31T13:22:02.988Z",
     "Shale Oil": "2026-08-30T03:03:58.713Z",
@@ -175838,7 +175836,8 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 1
+    "Fuel": 1,
+    "Refined Fuel": 3
   },
   "global_consumption": {
     "Copper Ingot": 76,
@@ -179974,10 +179973,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 651524,
-      "at": "2026-09-06T11:01:50.167Z"
-    },
-    {
       "total": 651539,
       "at": "2026-09-06T11:06:50.252Z"
     },
@@ -180372,6 +180367,10 @@
     {
       "total": 668535,
       "at": "2026-09-06T18:41:50.239Z"
+    },
+    {
+      "total": 668575,
+      "at": "2026-09-06T18:46:50.240Z"
     }
   ],
   "gold_rush": null,
