@@ -175859,13 +175859,13 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Refined Fuel": 3
+    "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 23,
     "Timber Planks": 112,
-    "Refined Fuel": 74,
+    "Refined Fuel": 76,
     "Fuel": 34,
     "Iron Ingot": 15,
     "Shale Oil": 17,
@@ -175882,11 +175882,6 @@
     "Reactor Core": 1
   },
   "consumption_history": [
-    {
-      "item": "Smoked Fish",
-      "qty": 2,
-      "at": "2026-08-31T11:54:46.530Z"
-    },
     {
       "item": "Smoked Fish",
       "qty": 2,
@@ -177381,6 +177376,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-06T18:51:48.011Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-06T19:06:47.906Z"
     }
   ],
   "demand_history": {
@@ -178344,6 +178344,11 @@
       {
         "demand": 1.3595042422196821,
         "at": "2026-09-06T09:36:47.868Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3323170723350364,
+        "at": "2026-09-06T19:06:47.906Z",
         "supply": 0
       }
     ],
