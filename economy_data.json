@@ -593,15 +593,15 @@
       "total_heat_generated": 0
     },
     "874346333882945547": {
-      "cash": 20,
+      "cash": 40,
       "bank": 19860,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-06T14:04:18.531Z",
-      "work_count": 903,
+      "last_work": "2026-09-06T14:11:13.512Z",
+      "work_count": 904,
       "last_claim": "2026-09-06T01:00:28.069Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -174318,14 +174318,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 3060,
+      "funds": 3055,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 127127,
-      "market_cap": 127127,
+      "share_price": 127343,
+      "market_cap": 127343,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174353,22 +174353,19 @@
       "inventory": {
         "Gold Bar": 14,
         "Fish": 2,
-        "Wheat": 42,
-        "Sugar": 56,
+        "Wheat": 43,
+        "Sugar": 55,
         "Reactor Core": 2,
         "Copper": 13,
         "Lead": 4,
         "Uranium": 1,
-        "Oil": 12,
         "Iron Ingot": 11,
-        "Coal": 7
+        "Coal": 7,
+        "Refined Fuel": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T12:07:30.957Z",
       "price_history": [
-        162817,
-        162820,
-        162847,
         162837,
         162884,
         162887,
@@ -174465,7 +174462,10 @@
         126844,
         126717,
         127025,
-        127127
+        127127,
+        127108,
+        127361,
+        127343
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -174821,11 +174821,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.23173775444104935,
-      "recorded_at": "2026-09-06T09:41:49.331Z"
-    },
     {
       "price": 100,
       "change_percent": 0.8486018547845612,
@@ -175320,6 +175315,11 @@
       "price": 98,
       "change_percent": 1.2680274361183441,
       "recorded_at": "2026-09-06T14:10:06.519Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.9451122087719147,
+      "recorded_at": "2026-09-06T14:11:14.215Z"
     }
   ],
   "factory_names": [
@@ -175587,14 +175587,14 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3822378084706282,
-    "Cake": 1.3482316365271958,
-    "Bread": 1.2504177749150633,
+    "Cake": 1.356776168276329,
+    "Bread": 1.2518260284072986,
     "Copper Ingot": 1.3974537208009816,
-    "Iron Ingot": 1.3572022787845481,
+    "Iron Ingot": 1.3535017090884112,
     "Steel Ingot": 1.3894665583398114,
-    "Gold Bar": 1.3113731226844145,
+    "Gold Bar": 1.3102712728696613,
     "Aluminium Ingot": 1.4124242308841104,
-    "Timber Planks": 1.4146270799479435,
+    "Timber Planks": 1.4109703099609576,
     "Bricks": 1.411510763070086,
     "Concrete": 1.412481553945242,
     "Glass": 1.4115085396591687,
@@ -175603,14 +175603,14 @@
     "Refined Fuel": 1.3951999523374135,
     "Uranium Rod": 1.3856116910545766,
     "Reactor Core": 1.4051016841633555,
-    "Circuit Board": 1.4081466640376503,
+    "Circuit Board": 1.4045099980282378,
     "Flour": 1.4119984514494843,
     "Sugar": 1.2328172199032696,
-    "Wine": 1.4215183992881786,
-    "Canned Food": 1.4146233353495172,
+    "Wine": 1.4197969273451243,
+    "Canned Food": 1.410967501512138,
     "Canned Fish": 1.404639340571951,
     "Smoked Fish": 1.4046279494706329,
-    "Fish Stew": 1.4219989917232856,
+    "Fish Stew": 1.4202390723854228,
     "Peat Fuel": 1.404628571089725,
     "Gas Fuel": 1.4124254084143828,
     "Fertilizer": 1.411508575493189,
@@ -175620,8 +175620,8 @@
     "Linen": 1.4119994860887584,
     "Corn Meal": 1.4115087014389704,
     "Tea Pack": 1.4119994860887584,
-    "Citrus Juice": 1.4224245483581148,
-    "Antimony Alloy": 1.4224242088458479,
+    "Citrus Juice": 1.4206305844894656,
+    "Antimony Alloy": 1.42063027213818,
     "Molybdenum Rod": 1.4124277970568644,
     "Aluminium Sheet": 1.4046175610674494,
     "Shale Oil": 1.404628568903538
