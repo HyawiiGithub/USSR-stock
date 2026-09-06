@@ -175647,9 +175647,7 @@
     "Circuit Board": "2026-09-05T20:29:35.204Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Cake": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 20,
@@ -175659,7 +175657,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 131,
+    "Cake": 132,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 14,
@@ -175669,11 +175667,6 @@
     "Circuit Board": 2
   },
   "consumption_history": [
-    {
-      "item": "Steel Ingot",
-      "qty": 1,
-      "at": "2026-08-30T23:09:45.729Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -177168,6 +177161,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-06T12:51:47.881Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-09-06T13:06:47.964Z"
     }
   ],
   "demand_history": {
@@ -178364,11 +178362,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.2158959636891986,
-        "at": "2026-09-01T16:36:13.167Z",
-        "supply": 1
-      },
-      {
         "demand": 1.25051774829775,
         "at": "2026-09-01T16:51:13.057Z",
         "supply": 1
@@ -178661,6 +178654,11 @@
       {
         "demand": 1.280988651590696,
         "at": "2026-09-06T12:51:47.881Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.289524010619083,
+        "at": "2026-09-06T13:06:47.964Z",
         "supply": 0
       }
     ],
