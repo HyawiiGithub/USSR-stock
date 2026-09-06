@@ -174656,14 +174656,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 13195,
+      "funds": 545,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 137558,
-      "market_cap": 137558,
+      "share_price": 138222,
+      "market_cap": 138222,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174691,6 +174691,11 @@
           "level": 1,
           "built_at": "2026-09-06T17:24:32.451Z",
           "type": "mine"
+        },
+        "Sulfur Mine": {
+          "level": 1,
+          "built_at": "2026-09-06T23:14:23.374Z",
+          "type": "mine"
         }
       },
       "inventory": {
@@ -174708,15 +174713,11 @@
         "Bread": 1,
         "Cake": 1,
         "Timber": 1,
-        "Copper Ingot": 5,
-        "Fuel": 2
+        "Refined Fuel": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T18:10:24.130Z",
       "price_history": [
-        123102,
-        123101,
-        123217,
         123268,
         123245,
         123420,
@@ -174813,11 +174814,14 @@
         137384,
         137250,
         137332,
-        137558
+        137558,
+        137685,
+        137676,
+        138222
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-06T20:36:21.714Z",
+      "last_factorydeal": "2026-09-06T23:13:48.920Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -175670,10 +175674,7 @@
       "recorded_at": "2026-09-06T23:12:57.790Z"
     }
   ],
-  "factory_names": [
-    "Stalin Tractor Plant",
-    "Brezhnev Auto Factory"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Ural Heavy Industries",
     "Khrushchev Agricultural",
@@ -175681,7 +175682,9 @@
     "Red Star Steelworks",
     "Lenin Machine Works",
     "Soviet Iron Foundry",
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Brezhnev Auto Factory",
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -175938,7 +175941,7 @@
     "Fuel": 1.364087316917452,
     "Cake": 1.3956358537114768,
     "Bread": 1.395761082744071,
-    "Copper Ingot": 1.3974537208009816,
+    "Copper Ingot": 1.2849537208009816,
     "Iron Ingot": 1.3729919936764032,
     "Steel Ingot": 1.3816600362359375,
     "Gold Bar": 1.309681602395751,
@@ -175947,7 +175950,7 @@
     "Bricks": 1.411510763070086,
     "Concrete": 1.4115379577821585,
     "Glass": 1.4115085396591687,
-    "Steel Beam": 1.411993555367039,
+    "Steel Beam": 1.421993555367039,
     "Machine Parts": 1.399599578907434,
     "Refined Fuel": 1.3962181407467498,
     "Uranium Rod": 1.3856116910545766,
@@ -175968,18 +175971,18 @@
     "Sunflower Oil": 1.412425189405066,
     "Linen": 1.4119994860887584,
     "Corn Meal": 1.412271819693776,
-    "Tea Pack": 1.4119994860887584,
+    "Tea Pack": 1.4219994860887584,
     "Citrus Juice": 1.41199855599474,
     "Antimony Alloy": 1.4122518470397498,
     "Molybdenum Rod": 1.4124277970568644,
     "Aluminium Sheet": 1.4046250876814976,
-    "Shale Oil": 1.4046285711757829
+    "Shale Oil": 1.414628571175783
   },
   "market_last_sale": {
     "Fuel": "2026-09-06T17:04:44.678Z",
     "Cake": "2026-09-06T12:07:58.735Z",
     "Bread": "2026-09-06T14:04:42.471Z",
-    "Copper Ingot": "2026-09-05T14:42:28.635Z",
+    "Copper Ingot": "2026-09-06T23:13:48.920Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-09-06T18:47:23.731Z",
     "Timber Planks": "2026-09-03T19:16:37.572Z",
@@ -175996,7 +175999,9 @@
     "Reactor Core": "2026-09-06T17:24:19.850Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Copper Ingot": 5
+  },
   "global_consumption": {
     "Copper Ingot": 76,
     "Steel Ingot": 26,
