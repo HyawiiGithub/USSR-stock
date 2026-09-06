@@ -162,7 +162,7 @@
     },
     "860203156222902332": {
       "username": "Google Giggles",
-      "cash": 4059,
+      "cash": 4303,
       "bank": 2459,
       "resources": {
         "Coal": 7,
@@ -268,7 +268,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 225,
+      "cash": 274,
       "bank": 10056,
       "resources": {
         "Coal": 1
@@ -53148,7 +53148,7 @@
       "total_heat_generated": 0
     },
     "807254722251587614": {
-      "cash": 1874,
+      "cash": 1923,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -173998,14 +173998,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2456,
+      "funds": 2114,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 135350,
-      "market_cap": 135350,
+      "share_price": 135364,
+      "market_cap": 135364,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -174032,26 +174032,24 @@
       },
       "inventory": {
         "Zinc": 148,
-        "Copper": 40,
+        "Copper": 41,
         "Lead": 113,
         "Gold Bar": 18,
-        "Wheat": 76,
+        "Wheat": 68,
         "Aluminium Ore": 56,
         "Machine Parts": 2,
         "Uranium Rod": 4,
-        "Iron Ore": 18,
+        "Iron Ore": 19,
         "Copper Ingot": 2,
         "Circuit Board": 2,
         "Steel Ingot": 2,
         "Iron Ingot": 6,
-        "Coal": 6,
-        "Gold": 1
+        "Coal": 7,
+        "Gold": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-06T08:26:08.726Z",
+      "last_collect": "2026-09-06T15:46:09.302Z",
       "price_history": [
-        130193,
-        130216,
         130279,
         130416,
         130479,
@@ -174149,7 +174147,9 @@
         135103,
         135405,
         135385,
-        135350
+        135350,
+        135549,
+        135364
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -174893,21 +174893,6 @@
   },
   "gsi_history": [
     {
-      "price": 90,
-      "change_percent": 1.2339373809595215,
-      "recorded_at": "2026-09-06T11:33:21.658Z"
-    },
-    {
-      "price": 91,
-      "change_percent": 1.2273384527079219,
-      "recorded_at": "2026-09-06T11:35:56.803Z"
-    },
-    {
-      "price": 92,
-      "change_percent": 1.153150520134437,
-      "recorded_at": "2026-09-06T11:36:49.248Z"
-    },
-    {
       "price": 92,
       "change_percent": 0.7129809216982445,
       "recorded_at": "2026-09-06T11:41:49.401Z"
@@ -175391,6 +175376,21 @@
       "price": 101,
       "change_percent": 0.21988552139912387,
       "recorded_at": "2026-09-06T15:43:18.501Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.1679117248912966,
+      "recorded_at": "2026-09-06T15:46:07.906Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.9539776867114254,
+      "recorded_at": "2026-09-06T15:46:10.028Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.09927830021559735,
+      "recorded_at": "2026-09-06T15:46:49.503Z"
     }
   ],
   "factory_names": [
@@ -179779,13 +179779,16 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽416 salaries ceo 860203156222902332 ₽149, director 860203156222902332 ₽149, manager 1186597507720019988 ₽59, manager 807254722251587614 ₽59"
+    },
+    {
+      "at": "2026-09-06T15:46:09.302Z",
+      "by": "1186597507720019988",
+      "username": "imdivit",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽342 salaries ceo 860203156222902332 ₽122, director 860203156222902332 ₽122, manager 1186597507720019988 ₽49, manager 807254722251587614 ₽49"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 650152,
-      "at": "2026-09-06T07:46:48.678Z"
-    },
     {
       "total": 650152,
       "at": "2026-09-06T07:51:48.581Z"
@@ -180181,6 +180184,10 @@
     {
       "total": 653721,
       "at": "2026-09-06T15:41:50.203Z"
+    },
+    {
+      "total": 667739,
+      "at": "2026-09-06T15:46:50.219Z"
     }
   ],
   "gold_rush": null,
