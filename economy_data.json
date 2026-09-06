@@ -102,7 +102,7 @@
     },
     "918518877414100993": {
       "username": "",
-      "cash": 1605,
+      "cash": 1625,
       "bank": 0,
       "resources": {
         "Natural Gas": 4,
@@ -113,16 +113,16 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-06T15:49:20.269Z",
-      "work_count": 14,
+      "last_work": "2026-09-06T16:08:25.110Z",
+      "work_count": 15,
       "last_claim": "2026-09-06T15:49:13.215Z",
       "last_collect": null,
       "join_date": "2026-08-22T01:39:30.028689",
-      "ssr_region": "Russian SFSR",
-      "employed_at": "State Nuclear Energy",
+      "ssr_region": "Azerbaijanian SSR",
+      "employed_at": "State Oil & Gas",
       "is_employed": true,
-      "is_state_director": false,
-      "director_of": null,
+      "is_state_director": true,
+      "director_of": "state_25",
       "dirty_cash": 0,
       "heat": 0,
       "wanted": 0,
@@ -174304,9 +174304,9 @@
       "name": "State Oil & Gas",
       "ticker": "ST25",
       "owner_id": "1513968015048184039",
-      "ceo": "State Appointed",
+      "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 5451,
+      "funds": 5446,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -174331,8 +174331,8 @@
       "inventory": {
         "Natural Gas": 62,
         "Cotton": 12,
-        "Oil": 20,
-        "Wheat": 178,
+        "Oil": 22,
+        "Wheat": 177,
         "Iron Ore": 2,
         "Fuel": 6
       },
@@ -174386,7 +174386,7 @@
         113452
       ],
       "is_state_owned": true,
-      "director_id": null,
+      "director_id": "918518877414100993",
       "last_factorydeal": "2026-09-01T16:11:22.261Z",
       "last_govcontract": null,
       "specialization": "extraction",
@@ -174599,7 +174599,7 @@
       "founder_shares": 0,
       "share_price": 197917,
       "market_cap": 197917,
-      "employees": 6,
+      "employees": 5,
       "level": 1,
       "buildings": {
         "Uranium Mine": {
@@ -175558,7 +175558,8 @@
     "1456622719985782864": "state_28",
     "874346333882945547": "state_26",
     "1495413593242337421": "state_27",
-    "887419379833274388": "state_24"
+    "887419379833274388": "state_24",
+    "918518877414100993": "state_25"
   },
   "transaction_log": [
     {
@@ -179813,6 +179814,13 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽342 salaries ceo 860203156222902332 ₽122, director 860203156222902332 ₽122, manager 1186597507720019988 ₽49, manager 807254722251587614 ₽49"
+    },
+    {
+      "at": "2026-09-06T16:07:47.118Z",
+      "by": "860203156222902332",
+      "username": "erushim",
+      "action": "appointdirector",
+      "details": "appointed <@918518877414100993> (918518877414100993) as director of State Oil & Gas (state_25)"
     }
   ],
   "total_rubles_history": [
