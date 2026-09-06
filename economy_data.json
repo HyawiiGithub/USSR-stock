@@ -174501,8 +174501,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 134459,
-      "market_cap": 134459,
+      "share_price": 134493,
+      "market_cap": 134493,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174552,7 +174552,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T12:07:30.957Z",
       "price_history": [
-        167646,
         167762,
         167797,
         167867,
@@ -174651,7 +174650,8 @@
         128610,
         128544,
         134502,
-        134459
+        134459,
+        134493
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -175007,11 +175007,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.4758175992964563,
-      "recorded_at": "2026-09-06T14:00:34.876Z"
-    },
     {
       "price": 96,
       "change_percent": 0.6969233183726072,
@@ -175506,6 +175501,11 @@
       "price": 98,
       "change_percent": 0.38762846764302317,
       "recorded_at": "2026-09-06T17:32:25.836Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.5001074344538445,
+      "recorded_at": "2026-09-06T17:35:59.637Z"
     }
   ],
   "factory_names": [
@@ -175835,8 +175835,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 7,
-    "Reactor Core": 1
+    "Fuel": 7
   },
   "global_consumption": {
     "Copper Ingot": 76,
@@ -175855,14 +175854,10 @@
     "Bread": 131,
     "Aluminium Sheet": 8,
     "Circuit Board": 2,
-    "Cotton Fabric": 3
+    "Cotton Fabric": 3,
+    "Reactor Core": 1
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-08-31T06:24:46.190Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -177357,6 +177352,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-06T17:21:47.905Z"
+    },
+    {
+      "item": "Reactor Core",
+      "qty": 1,
+      "at": "2026-09-06T17:36:47.922Z"
     }
   ],
   "demand_history": {
@@ -179466,6 +179466,13 @@
       {
         "demand": 1.3459043436283642,
         "at": "2026-09-06T16:51:47.896Z",
+        "supply": 1
+      }
+    ],
+    "Reactor Core": [
+      {
+        "demand": 1.3601016841633555,
+        "at": "2026-09-06T17:36:47.922Z",
         "supply": 1
       }
     ]
