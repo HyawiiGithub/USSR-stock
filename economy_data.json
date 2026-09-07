@@ -164,7 +164,7 @@
     },
     "860203156222902332": {
       "username": "Google Giggles",
-      "cash": 4403,
+      "cash": 4603,
       "bank": 2459,
       "resources": {
         "Coal": 7,
@@ -270,7 +270,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 374,
+      "cash": 439,
       "bank": 10056,
       "resources": {
         "Coal": 1
@@ -280,8 +280,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-06T17:24:12.391Z",
-      "work_count": 117,
+      "last_work": "2026-09-07T01:07:54.470Z",
+      "work_count": 118,
       "last_claim": "2026-09-06T08:26:54.639Z",
       "last_collect": null,
       "join_date": "2026-08-22T17:23:44.884271",
@@ -53150,7 +53150,7 @@
       "total_heat_generated": 0
     },
     "807254722251587614": {
-      "cash": 1948,
+      "cash": 1988,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -174253,14 +174253,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2014,
+      "funds": 1724,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 135599,
-      "market_cap": 135599,
+      "share_price": 135942,
+      "market_cap": 135942,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -174287,26 +174287,24 @@
       },
       "inventory": {
         "Zinc": 154,
-        "Copper": 41,
+        "Copper": 46,
         "Lead": 120,
         "Gold Bar": 18,
-        "Wheat": 58,
+        "Wheat": 51,
         "Aluminium Ore": 56,
         "Machine Parts": 2,
         "Uranium Rod": 4,
-        "Iron Ore": 19,
+        "Iron Ore": 25,
         "Copper Ingot": 2,
         "Circuit Board": 2,
         "Steel Ingot": 2,
         "Iron Ingot": 6,
-        "Coal": 7,
-        "Gold": 2
+        "Coal": 12,
+        "Gold": 4
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-06T15:46:09.302Z",
+      "last_collect": "2026-09-07T01:07:52.593Z",
       "price_history": [
-        130627,
-        130760,
         130736,
         130839,
         130841,
@@ -174404,7 +174402,9 @@
         135502,
         135556,
         135577,
-        135599
+        135599,
+        135810,
+        135942
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -175176,16 +175176,6 @@
   },
   "gsi_history": [
     {
-      "price": 95,
-      "change_percent": 0.639960118062794,
-      "recorded_at": "2026-09-06T19:46:49.563Z"
-    },
-    {
-      "price": 95,
-      "change_percent": 0.631194638250281,
-      "recorded_at": "2026-09-06T19:48:09.542Z"
-    },
-    {
       "price": 87,
       "change_percent": -7.447812706419887,
       "recorded_at": "2026-09-06T19:51:46.307Z"
@@ -175674,6 +175664,16 @@
       "price": 89,
       "change_percent": 1.0136226243564417,
       "recorded_at": "2026-09-07T01:06:50.154Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.8748565584589174,
+      "recorded_at": "2026-09-07T01:07:53.421Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.8947554040577523,
+      "recorded_at": "2026-09-07T01:07:55.122Z"
     }
   ],
   "factory_names": [],
@@ -180172,6 +180172,13 @@
       "username": "erushim",
       "action": "appointdirector",
       "details": "appointed <@918518877414100993> (918518877414100993) as director of State Oil & Gas (state_25)"
+    },
+    {
+      "at": "2026-09-07T01:07:52.593Z",
+      "by": "1186597507720019988",
+      "username": "imdivit",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽280 salaries ceo 860203156222902332 ₽100, director 860203156222902332 ₽100, manager 1186597507720019988 ₽40, manager 807254722251587614 ₽40"
     }
   ],
   "total_rubles_history": [
