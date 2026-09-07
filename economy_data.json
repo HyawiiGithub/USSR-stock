@@ -176468,7 +176468,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 8,
+    "Gas Fuel": 7,
     "Bread": 3
   },
   "global_consumption": {
@@ -176490,14 +176490,9 @@
     "Circuit Board": 2,
     "Cotton Fabric": 4,
     "Reactor Core": 1,
-    "Gas Fuel": 2
+    "Gas Fuel": 3
   },
   "consumption_history": [
-    {
-      "item": "Canned Fish",
-      "qty": 1,
-      "at": "2026-09-01T00:06:11.916Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -177992,6 +177987,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-07T14:21:48.386Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-07T14:36:48.398Z"
     }
   ],
   "demand_history": {
@@ -180220,6 +180220,11 @@
       {
         "demand": 1.1165855186139657,
         "at": "2026-09-07T14:06:48.389Z",
+        "supply": 14
+      },
+      {
+        "demand": 1.1569177070569217,
+        "at": "2026-09-07T14:36:48.398Z",
         "supply": 14
       }
     ]
