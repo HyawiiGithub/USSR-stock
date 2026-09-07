@@ -595,16 +595,16 @@
       "total_heat_generated": 0
     },
     "874346333882945547": {
-      "cash": 40,
+      "cash": 170,
       "bank": 20640,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-07T00:58:36.776Z",
-      "work_count": 943,
-      "last_claim": "2026-09-06T01:00:28.069Z",
+      "last_work": "2026-09-07T06:57:10.995Z",
+      "work_count": 944,
+      "last_claim": "2026-09-07T06:57:15.319Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
       "is_employed": true,
@@ -174886,14 +174886,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 495,
+      "funds": 490,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 138767,
-      "market_cap": 138767,
+      "share_price": 140844,
+      "market_cap": 140844,
       "employees": 24,
       "level": 1,
       "buildings": {
@@ -174931,27 +174931,25 @@
       "inventory": {
         "Gold Bar": 14,
         "Fish": 2,
-        "Wheat": 22,
-        "Sugar": 33,
+        "Wheat": 37,
+        "Sugar": 42,
         "Reactor Core": 1,
         "Copper": 3,
         "Lead": 4,
         "Uranium": 1,
-        "Iron Ore": 23,
-        "Coal": 7,
+        "Iron Ore": 31,
+        "Coal": 13,
         "Gold": 1,
-        "Bread": 2,
-        "Cake": 2,
-        "Timber": 2,
+        "Bread": 8,
+        "Cake": 8,
+        "Timber": 8,
         "Refined Fuel": 1,
         "Oil": 5,
-        "Sulphur": 1
+        "Sulphur": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-07T00:50:50.229Z",
+      "last_collect": "2026-09-07T06:57:33.040Z",
       "price_history": [
-        126350,
-        126455,
         126404,
         126407,
         126659,
@@ -175049,7 +175047,9 @@
         138595,
         138690,
         138645,
-        138767
+        138767,
+        138617,
+        140844
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -175405,21 +175405,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 93,
-      "change_percent": 0.9816441345784678,
-      "recorded_at": "2026-09-07T00:31:50.268Z"
-    },
-    {
-      "price": 98,
-      "change_percent": 5.543191757996775,
-      "recorded_at": "2026-09-07T00:36:46.282Z"
-    },
-    {
-      "price": 97,
-      "change_percent": -0.15555075278160355,
-      "recorded_at": "2026-09-07T00:36:50.153Z"
-    },
     {
       "price": 96,
       "change_percent": -0.03969952461137013,
@@ -175904,6 +175889,21 @@
       "price": 96,
       "change_percent": 0.37299131508741606,
       "recorded_at": "2026-09-07T06:51:50.347Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.8084718671992736,
+      "recorded_at": "2026-09-07T06:56:50.479Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.7271764313887824,
+      "recorded_at": "2026-09-07T06:57:11.784Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.6405549098614561,
+      "recorded_at": "2026-09-07T06:57:33.743Z"
     }
   ],
   "factory_names": [],
@@ -180413,10 +180413,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 669055,
-      "at": "2026-09-06T23:16:51.006Z"
-    },
-    {
       "total": 669075,
       "at": "2026-09-06T23:21:51.023Z"
     },
@@ -180811,6 +180807,10 @@
     {
       "total": 670027,
       "at": "2026-09-07T06:51:51.105Z"
+    },
+    {
+      "total": 670027,
+      "at": "2026-09-07T06:56:51.094Z"
     }
   ],
   "gold_rush": null,
