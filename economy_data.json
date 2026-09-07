@@ -174680,6 +174680,29 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0
+    },
+    "1096689850096291901": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0
     }
   },
   "companies": {
@@ -175618,11 +175641,6 @@
   "gsi_history": [
     {
       "price": 87,
-      "change_percent": 0.4911983366186489,
-      "recorded_at": "2026-09-07T09:11:50.364Z"
-    },
-    {
-      "price": 87,
       "change_percent": 0.5559468193746184,
       "recorded_at": "2026-09-07T09:14:05.484Z"
     },
@@ -176115,6 +176133,11 @@
       "price": 91,
       "change_percent": -3.5242102407705715,
       "recorded_at": "2026-09-07T14:06:46.802Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 1.2843032053461478,
+      "recorded_at": "2026-09-07T14:06:51.216Z"
     }
   ],
   "factory_names": [
@@ -176446,7 +176469,7 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Cake": 1,
-    "Gas Fuel": 10
+    "Gas Fuel": 8
   },
   "global_consumption": {
     "Copper Ingot": 81,
@@ -176466,14 +176489,10 @@
     "Aluminium Sheet": 8,
     "Circuit Board": 2,
     "Cotton Fabric": 4,
-    "Reactor Core": 1
+    "Reactor Core": 1,
+    "Gas Fuel": 2
   },
   "consumption_history": [
-    {
-      "item": "Uranium Rod",
-      "qty": 1,
-      "at": "2026-08-31T23:36:11.802Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -177968,6 +177987,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-07T13:51:48.516Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-09-07T14:06:48.389Z"
     }
   ],
   "demand_history": {
@@ -180191,6 +180215,13 @@
         "at": "2026-09-06T17:36:47.922Z",
         "supply": 1
       }
+    ],
+    "Gas Fuel": [
+      {
+        "demand": 1.1165855186139657,
+        "at": "2026-09-07T14:06:48.389Z",
+        "supply": 14
+      }
     ]
   },
   "blacklist": {
@@ -180689,14 +180720,6 @@
   "total_rubles_history": [
     {
       "total": 669987,
-      "at": "2026-09-07T06:21:51.772Z"
-    },
-    {
-      "total": 669987,
-      "at": "2026-09-07T06:26:51.093Z"
-    },
-    {
-      "total": 669987,
       "at": "2026-09-07T06:31:51.095Z"
     },
     {
@@ -181086,6 +181109,14 @@
     {
       "total": 624055,
       "at": "2026-09-07T14:01:52.587Z"
+    },
+    {
+      "total": 624055,
+      "at": "2026-09-07T14:06:52.589Z"
+    },
+    {
+      "total": 624055,
+      "at": "2026-09-07T14:06:53.111Z"
     }
   ],
   "gold_rush": null,
