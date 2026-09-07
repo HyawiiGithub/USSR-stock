@@ -175708,11 +175708,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.8931615715741162,
-      "recorded_at": "2026-09-07T12:18:00.808Z"
-    },
-    {
-      "price": 93,
       "change_percent": 0.234973550672619,
       "recorded_at": "2026-09-07T12:21:51.107Z"
     },
@@ -176205,6 +176200,11 @@
       "price": 91,
       "change_percent": -3.682861656249255,
       "recorded_at": "2026-09-07T16:21:46.849Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.4566852591722346,
+      "recorded_at": "2026-09-07T16:21:51.199Z"
     }
   ],
   "factory_names": [],
@@ -176224,11 +176224,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.4163002939468198,
+  "inflation": 0.4410794236795974,
   "money_printed": 504,
   "total_bank_reserves": 538032,
   "inflation_history": [
-    0.461244923825245,
     0.4725130618443772,
     0.44826726906673475,
     0.4423895702286408,
@@ -176327,7 +176326,8 @@
     0.4778561597638824,
     0.458366534365388,
     0.4550467639334005,
-    0.4163002939468198
+    0.4163002939468198,
+    0.4410794236795974
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -176472,8 +176472,8 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.4015687398935683,
-    "Cake": 1.387825706470665,
-    "Bread": 1.3686454849063183,
+    "Cake": 1.3896889912100883,
+    "Bread": 1.3731933842603126,
     "Copper Ingot": 1.389598793538187,
     "Iron Ingot": 1.343419632944677,
     "Steel Ingot": 1.3895746201605483,
@@ -176488,8 +176488,8 @@
     "Refined Fuel": 1.395454756825214,
     "Uranium Rod": 1.3856116910545766,
     "Reactor Core": 1.3926517183756584,
-    "Circuit Board": 1.3642535969268894,
-    "Flour": 1.2492957862082659,
+    "Circuit Board": 1.3675490721247607,
+    "Flour": 1.2503089860567027,
     "Sugar": 1.3194337825119296,
     "Wine": 1.4120639584917138,
     "Canned Food": 1.4046285189494676,
@@ -176497,13 +176497,13 @@
     "Smoked Fish": 1.4046283746371924,
     "Fish Stew": 1.411508622483844,
     "Peat Fuel": 1.4046285713946487,
-    "Gas Fuel": 1.308087917025581,
+    "Gas Fuel": 1.3179648693118156,
     "Fertilizer": 1.4124242370556062,
     "Cotton Fabric": 1.4039494111285218,
     "Manganese Alloy": 1.4119191762281926,
     "Sunflower Oil": 1.4115090304363644,
     "Linen": 1.412272338543563,
-    "Corn Meal": 1.4130418186187204,
+    "Corn Meal": 1.4119984731292228,
     "Tea Pack": 1.4116649956949021,
     "Citrus Juice": 1.412271819693776,
     "Antimony Alloy": 1.41187064026441,
@@ -176535,7 +176535,7 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Gas Fuel": 3,
-    "Circuit Board": 2
+    "Circuit Board": 1
   },
   "global_consumption": {
     "Copper Ingot": 81,
@@ -176553,17 +176553,12 @@
     "Canned Fish": 18,
     "Bread": 142,
     "Aluminium Sheet": 8,
-    "Circuit Board": 2,
+    "Circuit Board": 3,
     "Cotton Fabric": 4,
     "Reactor Core": 1,
     "Gas Fuel": 7
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-01T01:51:11.957Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -178058,6 +178053,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-09-07T16:06:48.402Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 1,
+      "at": "2026-09-07T16:21:48.393Z"
     }
   ],
   "demand_history": {
@@ -180256,6 +180256,11 @@
         "demand": 1.3573244869396905,
         "at": "2026-09-05T20:36:43.292Z",
         "supply": 2
+      },
+      {
+        "demand": 1.3675490721247607,
+        "at": "2026-09-07T16:21:48.393Z",
+        "supply": 0
       }
     ],
     "Cotton Fabric": [
@@ -180812,10 +180817,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 670522,
-      "at": "2026-09-07T08:46:51.118Z"
-    },
-    {
       "total": 670542,
       "at": "2026-09-07T08:51:51.111Z"
     },
@@ -181210,6 +181211,10 @@
     {
       "total": 624732,
       "at": "2026-09-07T16:16:52.623Z"
+    },
+    {
+      "total": 624732,
+      "at": "2026-09-07T16:21:52.622Z"
     }
   ],
   "gold_rush": null,
