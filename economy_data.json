@@ -175297,14 +175297,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 15537,
+      "funds": 18627,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 121542,
-      "market_cap": 121542,
+      "share_price": 122825,
+      "market_cap": 122825,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -175322,7 +175322,7 @@
       "inventory": {
         "Oil": 3,
         "Iron Ore": 2,
-        "Gas Fuel": 13,
+        "Gas Fuel": 3,
         "Flour": 39,
         "Natural Gas": 10,
         "Cotton": 2,
@@ -175395,11 +175395,13 @@
         120706,
         120685,
         121512,
-        121542
+        121542,
+        121668,
+        122825
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
-      "last_factorydeal": "2026-09-07T13:47:25.762Z",
+      "last_factorydeal": "2026-09-07T23:56:46.780Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "wage": 20,
@@ -175941,11 +175943,6 @@
   "gsi_history": [
     {
       "price": 95,
-      "change_percent": 1.1045369282474202,
-      "recorded_at": "2026-09-07T19:05:52.600Z"
-    },
-    {
-      "price": 95,
       "change_percent": 0.9349884819650378,
       "recorded_at": "2026-09-07T19:06:38.155Z"
     },
@@ -176438,12 +176435,15 @@
       "price": 83,
       "change_percent": 1.42650903171498,
       "recorded_at": "2026-09-07T23:54:53.022Z"
+    },
+    {
+      "price": 84,
+      "change_percent": 1.4484005668524826,
+      "recorded_at": "2026-09-07T23:56:51.261Z"
     }
   ],
   "factory_names": [
-    "Stalin Tractor Plant",
-    "Brezhnev Auto Factory",
-    "Siberian Mining Co"
+    "Brezhnev Auto Factory"
   ],
   "used_factory_names": [
     "Khrushchev Agricultural",
@@ -176451,7 +176451,9 @@
     "Soviet Iron Foundry",
     "Ural Heavy Industries",
     "Red Star Steelworks",
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Stalin Tractor Plant",
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -176710,7 +176712,7 @@
     "Bread": 1.354223611409368,
     "Copper Ingot": 1.389598793538187,
     "Iron Ingot": 1.3621076446329758,
-    "Steel Ingot": 1.3912869757876245,
+    "Steel Ingot": 1.4012869757876245,
     "Gold Bar": 1.3056276355087295,
     "Aluminium Ingot": 1.4115521878217672,
     "Timber Planks": 1.404628422112098,
@@ -176724,23 +176726,23 @@
     "Reactor Core": 1.3926517183756584,
     "Circuit Board": 1.4044986944341162,
     "Flour": 1.2603089860567027,
-    "Sugar": 1.2977706501087942,
+    "Sugar": 1.3077706501087942,
     "Wine": 1.4124446117076803,
     "Canned Food": 1.404628554823855,
     "Canned Fish": 1.4046319788528439,
     "Smoked Fish": 1.4046285091625492,
     "Fish Stew": 1.411508622483844,
-    "Peat Fuel": 1.4046285713946487,
-    "Gas Fuel": 1.3519902604317418,
+    "Peat Fuel": 1.4146285713946487,
+    "Gas Fuel": 1.1269902604317417,
     "Fertilizer": 1.4124242370556062,
-    "Cotton Fabric": 1.404413680864884,
+    "Cotton Fabric": 1.414413680864884,
     "Manganese Alloy": 1.4119191762281926,
     "Sunflower Oil": 1.4119987395248177,
-    "Linen": 1.412272338543563,
+    "Linen": 1.422272338543563,
     "Corn Meal": 1.4119984731292228,
     "Tea Pack": 1.412085744214204,
     "Citrus Juice": 1.412271819693776,
-    "Antimony Alloy": 1.41187064026441,
+    "Antimony Alloy": 1.42187064026441,
     "Molybdenum Rod": 1.4122423209058115,
     "Aluminium Sheet": 1.4046282226604965,
     "Shale Oil": 1.404628571420564
@@ -176764,10 +176766,12 @@
     "Circuit Board": "2026-09-07T15:12:38.668Z",
     "Cotton Fabric": "2026-09-07T07:56:36.024Z",
     "Reactor Core": "2026-09-06T17:24:19.850Z",
-    "Gas Fuel": "2026-09-07T13:47:25.763Z"
+    "Gas Fuel": "2026-09-07T23:56:46.780Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Gas Fuel": 10
+  },
   "global_consumption": {
     "Copper Ingot": 81,
     "Steel Ingot": 26,
@@ -181064,10 +181068,6 @@
   "total_rubles_history": [
     {
       "total": 624732,
-      "at": "2026-09-07T16:26:52.611Z"
-    },
-    {
-      "total": 624732,
       "at": "2026-09-07T16:31:52.613Z"
     },
     {
@@ -181461,6 +181461,10 @@
     {
       "total": 634588,
       "at": "2026-09-07T23:51:52.709Z"
+    },
+    {
+      "total": 634588,
+      "at": "2026-09-07T23:56:52.719Z"
     }
   ],
   "gold_rush": null,
