@@ -175309,8 +175309,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 149105,
-      "market_cap": 149105,
+      "share_price": 149100,
+      "market_cap": 149100,
       "employees": 25,
       "level": 1,
       "buildings": {
@@ -175366,7 +175366,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-07T19:05:51.774Z",
       "price_history": [
-        136915,
         136939,
         136950,
         137016,
@@ -175465,7 +175464,8 @@
         146095,
         145981,
         148393,
-        149105
+        149105,
+        149100
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -175821,16 +175821,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": 1.031027113768331,
-      "recorded_at": "2026-09-07T14:25:49.895Z"
-    },
-    {
-      "price": 95,
-      "change_percent": 0.8200915044936222,
-      "recorded_at": "2026-09-07T14:26:51.223Z"
-    },
     {
       "price": 95,
       "change_percent": 0.24041755292827813,
@@ -176320,6 +176310,16 @@
       "price": 95,
       "change_percent": 1.1045369282474202,
       "recorded_at": "2026-09-07T19:05:52.600Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.9349884819650378,
+      "recorded_at": "2026-09-07T19:06:38.155Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.471452792398099,
+      "recorded_at": "2026-09-07T19:06:51.270Z"
     }
   ],
   "factory_names": [
@@ -176650,7 +176650,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 7
+    "Cake": 5
   },
   "global_consumption": {
     "Copper Ingot": 81,
@@ -176661,7 +176661,7 @@
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 143,
+    "Cake": 145,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 14,
@@ -176674,11 +176674,6 @@
     "Gas Fuel": 10
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 2,
-      "at": "2026-09-01T02:51:11.958Z"
-    },
     {
       "item": "Canned Fish",
       "qty": 2,
@@ -178173,6 +178168,11 @@
       "item": "Circuit Board",
       "qty": 1,
       "at": "2026-09-07T17:06:48.398Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-07T19:06:48.495Z"
     }
   ],
   "demand_history": {
@@ -179489,11 +179489,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.1810398419063461,
-        "at": "2026-09-02T11:37:32.770Z",
-        "supply": 0
-      },
-      {
         "demand": 1.19058582845563,
         "at": "2026-09-02T11:52:32.755Z",
         "supply": 0
@@ -179787,6 +179782,11 @@
         "demand": 1.340913708340272,
         "at": "2026-09-07T14:21:48.386Z",
         "supply": 1
+      },
+      {
+        "demand": 1.235067471247992,
+        "at": "2026-09-07T19:06:48.495Z",
+        "supply": 0
       }
     ],
     "Smoked Fish": [
@@ -180948,10 +180948,6 @@
   "total_rubles_history": [
     {
       "total": 606648,
-      "at": "2026-09-07T11:36:51.654Z"
-    },
-    {
-      "total": 606648,
       "at": "2026-09-07T11:41:51.743Z"
     },
     {
@@ -181345,6 +181341,10 @@
     {
       "total": 633747,
       "at": "2026-09-07T19:01:52.657Z"
+    },
+    {
+      "total": 633767,
+      "at": "2026-09-07T19:06:52.749Z"
     }
   ],
   "gold_rush": null,
