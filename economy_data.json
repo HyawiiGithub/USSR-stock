@@ -28,7 +28,7 @@
     },
     "780837437987094560": {
       "username": "",
-      "cash": 1497,
+      "cash": 1517,
       "bank": 7836,
       "resources": {
         "Coal": 34,
@@ -50,8 +50,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-07T23:57:39.430Z",
-      "work_count": 262,
+      "last_work": "2026-09-08T00:22:13.798Z",
+      "work_count": 263,
       "last_claim": "2026-09-07T05:34:46.438Z",
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
@@ -175424,14 +175424,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 11044,
+      "funds": 11039,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 152607,
-      "market_cap": 152607,
+      "share_price": 152464,
+      "market_cap": 152464,
       "employees": 25,
       "level": 1,
       "buildings": {
@@ -175486,7 +175486,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-07T19:05:51.774Z",
       "price_history": [
-        141803,
         141808,
         142121,
         142520,
@@ -175585,7 +175584,8 @@
         152197,
         152500,
         152519,
-        152607
+        152607,
+        152464
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -175941,16 +175941,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.4024941725582074,
-      "recorded_at": "2026-09-07T19:26:51.282Z"
-    },
-    {
-      "price": 96,
-      "change_percent": 0.6559672751845563,
-      "recorded_at": "2026-09-07T19:28:48.352Z"
-    },
     {
       "price": 96,
       "change_percent": 0.7407242782835483,
@@ -176440,6 +176430,16 @@
       "price": 88,
       "change_percent": 1.132668105399968,
       "recorded_at": "2026-09-08T00:16:51.322Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 0.4440483081869719,
+      "recorded_at": "2026-09-08T00:21:51.413Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 1.0289572134369318,
+      "recorded_at": "2026-09-08T00:22:14.541Z"
     }
   ],
   "factory_names": [
@@ -176460,11 +176460,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.5332122231686311,
+  "inflation": 0.44206042816126984,
   "money_printed": 544,
   "total_bank_reserves": 546439,
   "inflation_history": [
-    0.3992426821972864,
     0.3751658766110998,
     0.4148027577996417,
     0.38303329041195877,
@@ -176563,7 +176562,8 @@
     0.4967384567466265,
     0.5536387963709399,
     0.4770427977625858,
-    0.5332122231686311
+    0.5332122231686311,
+    0.44206042816126984
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -176770,7 +176770,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 9
+    "Gas Fuel": 8
   },
   "global_consumption": {
     "Copper Ingot": 81,
@@ -176791,14 +176791,9 @@
     "Circuit Board": 4,
     "Cotton Fabric": 4,
     "Reactor Core": 1,
-    "Gas Fuel": 11
+    "Gas Fuel": 12
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-09-01T10:51:12.327Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -178293,6 +178288,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-09-08T00:06:48.465Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-08T00:21:48.504Z"
     }
   ],
   "demand_history": {
@@ -180567,6 +180567,11 @@
         "demand": 1.1287341253927616,
         "at": "2026-09-08T00:06:48.465Z",
         "supply": 4
+      },
+      {
+        "demand": 1.1423828674305052,
+        "at": "2026-09-08T00:21:48.504Z",
+        "supply": 4
       }
     ]
   },
@@ -181073,10 +181078,6 @@
   "total_rubles_history": [
     {
       "total": 624752,
-      "at": "2026-09-07T16:46:52.623Z"
-    },
-    {
-      "total": 624752,
       "at": "2026-09-07T16:51:52.624Z"
     },
     {
@@ -181470,6 +181471,10 @@
     {
       "total": 634668,
       "at": "2026-09-08T00:16:52.727Z"
+    },
+    {
+      "total": 634668,
+      "at": "2026-09-08T00:21:52.724Z"
     }
   ],
   "gold_rush": null,
