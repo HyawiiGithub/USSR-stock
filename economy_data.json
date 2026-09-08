@@ -177095,7 +177095,6 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 2,
     "Refined Fuel": 1,
     "Copper Ingot": 2,
     "Bread": 6,
@@ -177106,7 +177105,7 @@
     "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 83,
-    "Fuel": 52,
+    "Fuel": 54,
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -177123,11 +177122,6 @@
     "Gas Fuel": 30
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-02T00:07:32.428Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -178622,6 +178616,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-08T15:51:48.734Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-09-08T16:06:48.734Z"
     }
   ],
   "demand_history": {
@@ -179802,6 +179801,11 @@
       {
         "demand": 1.2589794983142393,
         "at": "2026-09-08T15:51:48.734Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.2760482548230407,
+        "at": "2026-09-08T16:06:48.734Z",
         "supply": 1
       }
     ],
