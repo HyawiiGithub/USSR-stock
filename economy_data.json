@@ -176770,7 +176770,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 8
+    "Gas Fuel": 7
   },
   "global_consumption": {
     "Copper Ingot": 81,
@@ -176791,14 +176791,9 @@
     "Circuit Board": 4,
     "Cotton Fabric": 4,
     "Reactor Core": 1,
-    "Gas Fuel": 12
+    "Gas Fuel": 13
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-09-01T11:06:12.324Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 2,
@@ -178293,6 +178288,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-09-08T00:21:48.504Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-08T00:36:48.497Z"
     }
   ],
   "demand_history": {
@@ -180571,6 +180571,11 @@
       {
         "demand": 1.1423828674305052,
         "at": "2026-09-08T00:21:48.504Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.1538368503638885,
+        "at": "2026-09-08T00:36:48.497Z",
         "supply": 4
       }
     ]
