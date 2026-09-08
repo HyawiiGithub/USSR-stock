@@ -176222,16 +176222,6 @@
   },
   "gsi_history": [
     {
-      "price": 89,
-      "change_percent": 1.0752504411978934,
-      "recorded_at": "2026-09-08T09:16:54.295Z"
-    },
-    {
-      "price": 90,
-      "change_percent": 1.2760229413447517,
-      "recorded_at": "2026-09-08T09:21:54.295Z"
-    },
-    {
       "price": 90,
       "change_percent": 0.887660627886204,
       "recorded_at": "2026-09-08T09:26:54.309Z"
@@ -176720,6 +176710,16 @@
       "price": 94,
       "change_percent": 0.5896786446814675,
       "recorded_at": "2026-09-08T14:35:41.095Z"
+    },
+    {
+      "price": 87,
+      "change_percent": -6.6542487156479275,
+      "recorded_at": "2026-09-08T14:36:47.373Z"
+    },
+    {
+      "price": 87,
+      "change_percent": 0.9826422920598494,
+      "recorded_at": "2026-09-08T14:36:55.005Z"
     }
   ],
   "factory_names": [
@@ -177050,14 +177050,14 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 10
+    "Fuel": 9
   },
   "global_consumption": {
     "Copper Ingot": 81,
     "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 82,
-    "Fuel": 44,
+    "Fuel": 45,
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -177074,11 +177074,6 @@
     "Gas Fuel": 30
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-01T22:37:32.423Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -178573,6 +178568,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-08T14:21:48.822Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-08T14:36:48.787Z"
     }
   ],
   "demand_history": {
@@ -179728,6 +179728,11 @@
       {
         "demand": 1.3401114298030592,
         "at": "2026-09-07T12:36:48.379Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.14737531054142,
+        "at": "2026-09-08T14:36:48.787Z",
         "supply": 1
       }
     ],
@@ -181432,10 +181437,6 @@
   "total_rubles_history": [
     {
       "total": 635549,
-      "at": "2026-09-08T06:46:55.691Z"
-    },
-    {
-      "total": 635549,
       "at": "2026-09-08T06:51:55.709Z"
     },
     {
@@ -181829,6 +181830,10 @@
     {
       "total": 646601,
       "at": "2026-09-08T14:31:55.934Z"
+    },
+    {
+      "total": 646616,
+      "at": "2026-09-08T14:36:55.838Z"
     }
   ],
   "gold_rush": null,
