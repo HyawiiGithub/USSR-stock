@@ -176772,7 +176772,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 3,
+    "Gas Fuel": 1,
     "Cake": 5
   },
   "global_consumption": {
@@ -176794,14 +176794,9 @@
     "Circuit Board": 4,
     "Cotton Fabric": 4,
     "Reactor Core": 1,
-    "Gas Fuel": 17
+    "Gas Fuel": 19
   },
   "consumption_history": [
-    {
-      "item": "Uranium Rod",
-      "qty": 2,
-      "at": "2026-09-01T13:36:12.834Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 2,
@@ -178296,6 +178291,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-08T01:21:48.528Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-09-08T01:36:48.535Z"
     }
   ],
   "demand_history": {
@@ -180589,6 +180589,11 @@
       {
         "demand": 1.2016557976378865,
         "at": "2026-09-08T01:06:48.493Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.2580491017451865,
+        "at": "2026-09-08T01:36:48.535Z",
         "supply": 4
       }
     ]
