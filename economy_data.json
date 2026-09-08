@@ -175430,8 +175430,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 152765,
-      "market_cap": 152765,
+      "share_price": 155240,
+      "market_cap": 155240,
       "employees": 25,
       "level": 1,
       "buildings": {
@@ -175469,25 +175469,26 @@
       "inventory": {
         "Gold Bar": 14,
         "Fish": 2,
-        "Wheat": 48,
-        "Sugar": 36,
+        "Wheat": 81,
+        "Sugar": 56,
         "Reactor Core": 1,
         "Copper": 22,
         "Lead": 8,
-        "Iron Ore": 34,
-        "Coal": 5,
+        "Iron Ore": 39,
+        "Coal": 10,
         "Gold": 1,
-        "Timber": 14,
-        "Sulphur": 7,
+        "Timber": 17,
+        "Sulphur": 9,
         "Steel Beam": 1,
         "Oil": 1,
         "Uranium Rod": 1,
-        "Iron Ingot": 5
+        "Iron Ingot": 5,
+        "Bread": 6,
+        "Cake": 6
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-07T19:05:51.774Z",
+      "last_collect": "2026-09-08T01:06:51.974Z",
       "price_history": [
-        142514,
         142476,
         142552,
         142544,
@@ -175586,7 +175587,8 @@
         152464,
         152596,
         152792,
-        152765
+        152765,
+        155240
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -175942,11 +175944,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.07275085210148996,
-      "recorded_at": "2026-09-07T20:11:51.243Z"
-    },
     {
       "price": 96,
       "change_percent": 0.08371775952990529,
@@ -176441,11 +176438,14 @@
       "price": 90,
       "change_percent": 0.6131920255741328,
       "recorded_at": "2026-09-08T01:05:18.758Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.978271276622152,
+      "recorded_at": "2026-09-08T01:06:52.689Z"
     }
   ],
-  "factory_names": [
-    "Brezhnev Auto Factory"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Khrushchev Agricultural",
     "Lenin Machine Works",
@@ -176454,7 +176454,8 @@
     "Red Star Steelworks",
     "Volga Shipbuilding",
     "Stalin Tractor Plant",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Brezhnev Auto Factory"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -176771,7 +176772,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 5
+    "Gas Fuel": 3
   },
   "global_consumption": {
     "Copper Ingot": 81,
@@ -176792,14 +176793,9 @@
     "Circuit Board": 4,
     "Cotton Fabric": 4,
     "Reactor Core": 1,
-    "Gas Fuel": 15
+    "Gas Fuel": 17
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-01T11:36:12.342Z"
-    },
     {
       "item": "Uranium Rod",
       "qty": 1,
@@ -178294,6 +178290,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-09-08T00:51:48.492Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-09-08T01:06:48.493Z"
     }
   ],
   "demand_history": {
@@ -180583,6 +180584,11 @@
         "demand": 1.183997523998801,
         "at": "2026-09-08T00:51:48.492Z",
         "supply": 4
+      },
+      {
+        "demand": 1.2016557976378865,
+        "at": "2026-09-08T01:06:48.493Z",
+        "supply": 4
       }
     ]
   },
@@ -181088,10 +181094,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 624832,
-      "at": "2026-09-07T17:21:53.275Z"
-    },
-    {
       "total": 624877,
       "at": "2026-09-07T17:26:52.624Z"
     },
@@ -181486,6 +181488,10 @@
     {
       "total": 634708,
       "at": "2026-09-08T01:01:52.809Z"
+    },
+    {
+      "total": 634728,
+      "at": "2026-09-08T01:06:52.885Z"
     }
   ],
   "gold_rush": null,
