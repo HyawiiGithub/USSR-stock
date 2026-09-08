@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USSR BOT DASHBOARD // FULL CONTROL</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0f1115;--sidebar:#151821;--card:#1b1e2a;--card2:#232636;--border:#2a2f45;--accent:#6b7cff;--accent2:#8a5cff;--red:#d93a42;--gold:#e9c46a;--green:#34d399;--text:#e6e8f0;--muted:#9aa0b8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;display:flex}
+a{color:var(--accent);text-decoration:none}
+.hidden{display:none!important}
+.sidebar{width:260px;background:var(--sidebar);border-right:1px solid var(--border);display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow:auto}
+.side-head{padding:22px 18px;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:center}
+.side-logo{width:44px;height:44px;background:linear-gradient(135deg,var(--red),#8a0f14);border-radius:10px;display:grid;place-items:center;font:900 18px 'Playfair Display',serif;color:#fff;box-shadow:0 4px 16px rgba(217,58,66,.35)}
+.side-title{font:800 13px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;line-height:1.1}
+.side-title small{display:block;font:600 10px 'JetBrains Mono',monospace;color:var(--muted);letter-spacing:.06em}
+.nav{padding:12px 10px;flex:1}
+.nav button{width:100%;text-align:left;background:transparent;border:0;color:var(--muted);padding:10px 12px;border-radius:8px;font:600 13px 'Inter',sans-serif;cursor:pointer;display:flex;gap:10px;align-items:center}
+.nav button:hover{background:rgba(107,124,255,.1);color:var(--text)}
+.nav button.active{background:linear-gradient(135deg,rgba(107,124,255,.15),rgba(138,92,255,.15));color:#fff;border:1px solid rgba(107,124,255,.3)}
+.nav button.locked{opacity:.4;cursor:not-allowed}
+.nav .dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.nav button.active .dot{background:var(--accent)}
+.side-foot{padding:14px;border-top:1px solid var(--border);font:500 11px 'JetBrains Mono',monospace;color:var(--muted)}
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
+.topbar{height:64px;background:rgba(21,24,33,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:16px;padding:0 22px;position:sticky;top:0;z-index:10}
+.topbar h1{font:800 18px 'Inter',sans-serif;letter-spacing:-.02em}
+.topbar small{font:500 11px 'JetBrains Mono',monospace;color:var(--muted)}
+.badge{padding:4px 8px;border-radius:999px;font:700 10px 'JetBrains Mono',monospace;letter-spacing:.08em}
+.b-live{background:rgba(52,211,153,.15);color:var(--green);border:1px solid rgba(52,211,153,.3)}
+.b-off{background:rgba(217,58,66,.15);color:var(--red);border:1px solid rgba(217,58,66,.25)}
+.btn{background:var(--accent);color:#fff;border:0;padding:9px 14px;border-radius:8px;font:700 12px 'Inter',sans-serif;cursor:pointer}
+.btn:hover{background:#5a6af0}
+.btn-ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn-danger{background:var(--red)}
+.content{padding:22px;max-width:1400px;width:100%;margin:0 auto}
+.grid{display:grid;gap:16px}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){body{flex-direction:column}.sidebar{width:100%;height:auto;position:relative}.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.card-h{font:800 11px 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.stat .k{font:700 10px 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.stat .v{font:800 22px 'Inter',sans-serif;letter-spacing:-.03em}
+.stat .s{font:500 11px 'JetBrains Mono',monospace;color:var(--muted)}
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:10px 12px;background:var(--sidebar);color:var(--muted);font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+td{padding:10px 12px;border-top:1px solid var(--border);font:500 13px 'Inter',sans-serif;white-space:nowrap}
+tbody tr:hover td{background:rgba(107,124,255,.05)}
+input,select,textarea{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font:500 13px 'Inter',sans-serif}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(107,124,255,.15)}
+label{font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin:8px 0 4px}
+.progress{height:8px;background:var(--card2);border-radius:999px;overflow:hidden;border:1px solid var(--border)}
+.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.notice{padding:10px 12px;border-radius:8px;font:600 12px 'JetBrains Mono',monospace;border:1px solid var(--border);margin-bottom:12px}
+.notice.ok{background:rgba(52,211,153,.08);color:var(--green);border-color:rgba(52,211,153,.25)}
+.notice.warn{background:rgba(233,196,106,.08);color:var(--gold);border-color:rgba(233,196,106,.25)}
+.notice.err{background:rgba(217,58,66,.08);color:#ff8a8a;border-color:rgba(217,58,66,.25)}
+.login-card{max-width:520px;margin:60px auto;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+#toast{position:fixed;bottom:18px;right:18px;background:var(--card2);border:1px solid var(--border);padding:12px 14px;border-radius:10px;font:600 13px 'Inter',sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.4);display:none;z-index:99}
+.perm-chip{display:inline-block;padding:3px 7px;border-radius:999px;font:700 9px 'JetBrains Mono',monospace;background:rgba(107,124,255,.15);color:var(--accent);border:1px solid rgba(107,124,255,.3);margin:2px}
+.perm-chip.admin{background:rgba(233,196,106,.15);color:var(--gold);border-color:rgba(233,196,106,.3)}
+</style>
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+  <div class="side-head">
+    <div class="side-logo">★</div>
+    <div class="side-title">USSR BOT<br><small>FULL DASHBOARD</small></div>
+  </div>
+  <div class="nav" id="nav">
+    <button class="active" data-tab="overview"><span class="dot"></span> Overview</button>
+    <button data-tab="economy"><span class="dot"></span> Economy</button>
+    <button data-tab="companies"><span class="dot"></span> Companies</button>
+    <button data-tab="levels"><span class="dot"></span> Levels (MEE6)</button>
+    <button data-tab="premier"><span class="dot"></span> Premier Approval 📊</button>
+    <button data-tab="spawn"><span class="dot"></span> Spawn Rates</button>
+    <button data-tab="world"><span class="dot"></span> World Map</button>
+    <button data-tab="users"><span class="dot"></span> Citizens</button>
+    <button data-tab="codes"><span class="dot"></span> Access Codes 🔑</button>
+    <button data-tab="logs"><span class="dot"></span> Logs</button>
+  </div>
+  <div class="side-foot">
+    <div>Owner: <a href="https://github.com/HyawiiGithub" target="_blank" style="color:var(--accent)">HyawiiGithub</a></div>
+    <div style="margin-top:6px">Bot: <span id="botStatus">—</span></div>
+    <div style="margin-top:6px">Code: <span id="codeInfo">—</span></div>
+    <button onclick="logout()" style="margin-top:10px;width:100%" class="btn btn-ghost">Lock</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="topbar">
+    <div>
+      <h1>FULL BOT DASHBOARD</h1>
+      <small id="topSub">Economy + Levels + World + Permissions • Live GitHub sync</small>
+    </div>
+    <div style="margin-left:auto;display:flex;gap:10px;align-items:center">
+      <span class="badge b-off" id="connBadge">OFFLINE</span>
+      <a href="./" class="btn btn-ghost">← GOSPLAN</a>
+      <a href="./admin.html" class="btn btn-ghost">Admin →</a>
+    </div>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="loginWrap" class="content">
+    <div class="login-card">
+      <h3 style="font:800 16px 'Inter',sans-serif">🔑 Enter Access Code</h3>
+      <p style="font:500 12px 'Inter',sans-serif;color:var(--muted);margin:8px 0">Owner (<a href="https://github.com/HyawiiGithub" target="_blank">HyawiiGithub</a>) gives you a code like <code>XK7P-9QM2</code>. Each code has permissions you can see after login.<br>Owner login: use <code>ADMIN_PASSWORD</code> or any <code>admin</code> code.</p>
+      <label>Access Code or ADMIN_PASSWORD</label>
+      <input type="text" id="codeInput" placeholder="e.g. A1B2C3D4 or ADMIN_PASSWORD" style="text-transform:uppercase">
+      <button onclick="loginWithCode()" class="btn" style="width:100%;margin-top:10px">Unlock Dashboard</button>
+      <div id="loginMsg" style="font:600 12px 'JetBrains Mono',monospace;color:var(--red);margin-top:8px"></div>
+      <div class="notice warn" style="margin-top:12px">No code? Ask owner. Owner manages codes in <b>Access Codes</b> tab (needs admin). Codes are stored in <code>economy_data.json → access_codes</code> and synced to GitHub via bot.</div>
+      <div style="margin-top:12px;font:500 11px 'JetBrains Mono',monospace;color:var(--muted)">Owner: <a href="https://github.com/HyawiiGithub">HyawiiGithub</a> • Bot file split: <code>bot.js</code> + <code>economy_core.js</code> • New primary cmds: <code>-addrecipe / -additem / -addbuilding / -createcode</code></div>
+    </div>
+  </div>
+
+  <!-- DASH -->
+  <div id="dash" class="content hidden">
+    <!-- OVERVIEW -->
+    <div data-panel="overview">
+      <div class="grid grid-4">
+        <div class="card stat"><span class="k">GSI Price</span><span class="v" id="oGSI">—</span><span class="s" id="oGSIChange">—</span></div>
+        <div class="card stat"><span class="k">Inflation</span><span class="v" id="oInfl">—</span><span class="s" id="oInflSub">—</span></div>
+        <div class="card stat"><span class="k">Gold Backing</span><span class="v" id="oGold">—</span><span class="s" id="oGoldStatus">—</span></div>
+        <div class="card stat"><span class="k">Enterprises</span><span class="v" id="oComps">—</span><span class="s" id="oCompsSub">—</span></div>
+      </div>
+      <div class="grid grid-4" style="margin-top:16px">
+        <div class="card stat"><span class="k">Citizens</span><span class="v" id="oUsers">—</span><span class="s">total tracked</span></div>
+        <div class="card stat"><span class="k">MEE6 Synced</span><span class="v" id="oMee6">—</span><span class="s" id="oMee6Sub">—</span></div>
+        <div class="card stat"><span class="k">5-Year Plan</span><span class="v" id="oPlan">—</span><span class="s" id="oPlanSub">—</span></div>
+        <div class="card stat"><span class="k">Money Printed</span><span class="v" id="oPrinted">—</span><span class="s">₽ total</span></div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Why this dashboard is full</div><div style="font:500 13px 'Inter',sans-serif;line-height:1.6;color:var(--muted)">This is the <b>entire bot</b> — not just spawn rates. Economy + Companies + Levels (full MEE6 import) + World + Users + Logs + Access control. Owner at <a href="https://github.com/HyawiiGithub">HyawiiGithub</a> creates a code like <code>economy,levels</code> and gives it to a Commissar — they only see those tabs. Bot is split: <code>bot.js</code> (Discord) + <code>economy_core.js</code> (data, 3k lines) so it's not chonky.</div></div>
+    </div>
+
+    <div data-panel="economy" class="hidden">
+      <div class="grid grid-2">
+        <div class="card"><div class="card-h">GSI History</div><canvas id="cGSI" height="160"></canvas></div>
+        <div class="card"><div class="card-h">Inflation History</div><canvas id="cInfl" height="160"></canvas></div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Gold Standard</div><div class="progress"><i id="goldFill" style="width:0%"></i></div><div style="display:flex;gap:12px;margin-top:8px;font:600 12px 'JetBrains Mono',monospace"><span id="goldPct">—</span><span id="goldPrice">—</span><span id="goldStock">—</span><span id="goldBacking">—</span></div></div>
+    </div>
+
+    <div data-panel="companies" class="hidden">
+      <div class="card"><div class="card-h">Enterprises</div><div class="table-wrap"><table><thead><tr><th>Name</th><th>Ticker</th><th>SSR</th><th>Funds</th><th>Price</th><th>Emp</th><th>State</th></tr></thead><tbody id="compTable"></tbody></table></div></div>
+    </div>
+
+    <div data-panel="levels" class="hidden">
+      <div class="grid grid-3">
+        <div class="card"><div class="card-h">Top Levels (Bot + MEE6)</div><div id="levelTop" style="font:500 12px 'JetBrains Mono',monospace"></div></div>
+        <div class="card"><div class="card-h">MEE6 Full Leaderboard (Live)</div><div style="max-height:400px;overflow:auto"><table><thead><tr><th>#</th><th>User</th><th>Lvl</th><th>XP</th></tr></thead><tbody id="mee6Table"></tbody></table></div><div style="font:500 10px 'Inter',sans-serif;color:var(--muted);margin-top:6px">Synced via bot <code>-syncmee6</code> → stored in <code>mee6_cache</code> → shown here. Same XP formula as MEE6: 5×lvl²+50×lvl+100.</div></div>
+        <div class="card"><div class="card-h">How it works</div><div style="font:500 12px 'Inter',sans-serif;line-height:1.6;color:var(--muted)">Every message = 15-25 XP (60s cooldown) + Tag 15% + Status 10% (MEE6-like). Bot imports all MEE6 levels via <code>/api/plugins/levels/leaderboard/{guildId}</code> every sync. Use <code>-level</code> in Discord, see here for full board. Congress = Level 10+ (CC exempt).</div></div>
+      </div>
+    </div>
+
+    <div data-panel="premier" class="hidden">
+      <div class="grid grid-3">
+        <div class="card"><div class="card-h">Current Quarter — Premier <span style="text-transform:none;font:600 10px 'JetBrains Mono',monospace" id="premierQuarter">—</span></div>
+          <div style="text-align:center;padding:10px">
+            <div style="font:800 42px 'Inter',sans-serif" id="premierPct">—</div>
+            <div style="font:600 11px 'JetBrains Mono',monospace;color:var(--muted)" id="premierSub">—</div>
+            <div class="progress" style="height:16px;margin-top:10px"><i id="premierBar" style="width:0%"></i></div>
+          </div>
+          <div class="grid grid-3" style="margin-top:10px;font:600 11px 'JetBrains Mono',monospace;text-align:center">
+            <div><div style="font:800 18px 'Inter',sans-serif;color:var(--green)" id="premierPos">—</div>👍 Positive</div>
+            <div><div style="font:800 18px 'Inter',sans-serif;color:var(--red)" id="premierNeg">—</div>👎 Negative</div>
+            <div><div style="font:800 18px 'Inter',sans-serif;color:var(--gold)" id="premierNeu">—</div>😐 Neutral</div>
+          </div>
+        </div>
+        <div class="card"><div class="card-h">All Quarters</div><div id="premierQuarters" style="font:500 12px 'JetBrains Mono',monospace"></div><div style="font:500 10px 'Inter',sans-serif;color:var(--muted);margin-top:6px">Quarterly = Jan-Mar Q1, Apr-Jun Q2, Jul-Sep Q3, Oct-Dec Q4. Scans every msg for <code>premier</code>, username, <code>&lt;@1082686076491137115&gt;</code> + sentiment + image OCR.</div></div>
+        <div class="card"><div class="card-h">How it scans</div><div style="font:500 12px 'Inter',sans-serif;line-height:1.6;color:var(--muted)">Every message (text + embeds + images) is run through <code>analyzePremierSentiment</code> with all keywords (<code>bad premier, shit premier, good premier...</code> + any username mention). Images are OCR'd via <code>performOCRFromUrl</code> (tesseract.js if available). Result stored per quarter with user/channel/message. Use Discord <code>-approval</code> for live, <code>-approvalmentions 10</code> for recent.</div><div style="margin-top:8px"><span class="perm-chip">text</span><span class="perm-chip">image_ocr</span><span class="perm-chip">username</span><span class="perm-chip">&lt;@id&gt;</span></div></div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Recent Mentions (last 20) <button class="btn btn-ghost" style="padding:4px 8px;font-size:11px" onclick="loadEconomy()">↻ Refresh</button></div><div id="premierMentions" style="font:500 11px 'JetBrains Mono',monospace;white-space:pre-wrap;max-height:300px;overflow:auto">—</div></div>
+    </div>
+
+    <div data-panel="spawn" class="hidden">
+      <div class="notice ok">Per-SSR spawn: 0=never, 2=Gold-rare, 10=common, 25=very common. Changing one SSR never touches others.</div>
+      <div id="spawnTable">— loading —</div>
+    </div>
+
+    <div data-panel="world" class="hidden">
+      <div class="grid grid-3" id="worldStats"></div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Regions</div><div id="worldGrid" class="grid grid-3"></div></div>
+    </div>
+
+    <div data-panel="users" class="hidden">
+      <div class="card"><div class="card-h">Citizens (top 30)</div><div class="table-wrap"><table><thead><tr><th>User</th><th>Cash</th><th>Bank</th><th>Lvl</th><th>Shifts</th></tr></thead><tbody id="userTable"></tbody></table></div></div>
+    </div>
+
+    <div data-panel="codes" class="hidden">
+      <div class="notice warn" id="codesNotice">Owner only: manage codes here. Codes are stored in <code>access_codes</code> and work on this dashboard. Give a Commissar <code>economy,companies</code> and they won't see levels.</div>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-h">Create Code (Owner / admin perm)</div>
+          <label>Permissions (comma)</label>
+          <input id="permInput" placeholder="e.g. economy,levels,companies or admin for all">
+          <label>Expires in days (0 = permanent)</label>
+          <input id="expireInput" type="number" placeholder="0">
+          <button class="btn" onclick="createCode()" style="margin-top:10px">Generate Code</button>
+          <div id="codeOut" style="font:600 13px 'JetBrains Mono',monospace;margin-top:10px;word-break:break-all"></div>
+          <div style="font:500 11px 'Inter',sans-serif;color:var(--muted);margin-top:6px">Owner: <a href="https://github.com/HyawiiGithub">HyawiiGithub</a> — you choose what each code can see. Example: Finance Commissar gets <code>economy,companies</code>, HR gets <code>users,levels</code>.</div>
+        </div>
+        <div class="card">
+          <div class="card-h">Existing Codes <button class="btn btn-ghost" style="padding:4px 8px;font-size:11px" onclick="refreshCodes()">↻ Refresh</button></div>
+          <div id="codesList" style="font-size:12px"></div>
+        </div>
+      </div>
+    </div>
+
+    <div data-panel="logs" class="hidden">
+      <div class="card"><div class="card-h">Compensation Log</div><div id="compLog" style="font:500 12px 'JetBrains Mono',monospace;white-space:pre-wrap">—</div></div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Owner Logs (audit)</div><div id="ownerLogs" style="font:500 11px 'JetBrains Mono',monospace;white-space:pre-wrap;max-height:300px;overflow:auto">—</div></div>
+    </div>
+
+  </div>
+</div>
+
+<div id="toast"></div>
+<script>
+let economy=null;
+let currentCode=null;
+let currentPerms=[];
+const OWNER_GITHUB="https://github.com/HyawiiGithub";
+
+function toast(m,ok=true){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';t.style.borderColor=ok?'rgba(52,211,153,.4)':'rgba(217,58,66,.4)';setTimeout(()=>t.style.display='none',2500);}
+
+async function loginWithCode(){
+  const raw=document.getElementById('codeInput').value.trim().toUpperCase();
+  if(!raw) return document.getElementById('loginMsg').textContent="Enter code";
+  // try dashboard codes first, then ADMIN_PASSWORD fallback
+  try{
+    const r=await fetch('/api/ussr/overview',{cache:'no-store'});
+    const j=await r.json();
+    // j._access_codes is not exposed, so we check local economy_data.json directly if available, else check via admin verify
+    // Try to fetch access_codes via bot's economy_data.json raw
+    let codes=null;
+    try{
+      const cr=await fetch('./economy_data.json',{cache:'no-store'});
+      if(cr.ok){ const jd=await cr.json(); codes=jd.access_codes; }
+    }catch{}
+    if(!codes){
+      // fallback: try GitHub raw
+      try{
+        const gr=await fetch('https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json',{cache:'no-store'});
+        if(gr.ok){ const jd=await gr.json(); codes=jd.access_codes; }
+      }catch{}
+    }
+    if(codes && codes[raw]){
+      const entry=codes[raw];
+      if(entry.expiresAt && new Date(entry.expiresAt).getTime()<Date.now()){ document.getElementById('loginMsg').textContent="Code expired"; return; }
+      currentCode=raw; currentPerms=entry.permissions||[];
+      unlock();
+      return;
+    }
+  }catch(e){}
+  // fallback: try ADMIN_PASSWORD via admin verify (owner)
+  try{
+    const r=await fetch('/api/admin/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:raw})});
+    if(r.ok){ const j=await r.json(); if(j.ok){ currentCode="ADMIN"; currentPerms=["admin"]; unlock(); return; }}
+  }catch{}
+  // localStorage fallback for locally created codes
+  const localCodes=JSON.parse(localStorage.getItem('ussr_access_codes')||'{}');
+  if(localCodes[raw]){
+    currentCode=raw; currentPerms=localCodes[raw].permissions||[];
+    unlock(); return;
+  }
+  document.getElementById('loginMsg').textContent="Invalid code — ask owner for a new one";
+}
+function hasPerm(p){
+  if(currentPerms.includes('admin')||currentPerms.includes('*')) return true;
+  return currentPerms.includes(p);
+}
+function applyPerms(){
+  const map={overview:'overview', economy:'economy', companies:'companies', levels:'levels', premier:'premier', spawn:'spawn', world:'world', users:'users', codes:'admin', logs:'admin'};
+  document.querySelectorAll('.nav button').forEach(b=>{
+    const tab=b.dataset.tab;
+    const need=map[tab];
+    if(need && !hasPerm(need) && !hasPerm('admin')){
+      b.classList.add('locked'); b.title='No permission for this tab';
+    } else {
+      b.classList.remove('locked');
+    }
+  });
+  document.getElementById('codeInfo').textContent=currentCode+' — '+currentPerms.join(', ');
+  document.getElementById('codesNotice').style.display = hasPerm('admin') ? 'block' : 'none';
+  // if locked tab is active, switch to first allowed
+  const active=document.querySelector('.nav button.active');
+  if(active && active.classList.contains('locked')){
+    const first=document.querySelector('.nav button:not(.locked)');
+    if(first) first.click();
+  }
+}
+function logout(){document.getElementById('dash').classList.add('hidden');document.getElementById('loginWrap').classList.remove('hidden');}
+function unlock(){
+  document.getElementById('loginWrap').classList.add('hidden');
+  document.getElementById('dash').classList.remove('hidden');
+  document.getElementById('codeInfo').textContent=currentCode;
+  initNav(); loadEconomy(); applyPerms();
+}
+function initNav(){
+  document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{
+    if(b.classList.contains('locked')){ toast('No permission for this tab', false); return; }
+    document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+    const tab=b.dataset.tab;
+    document.querySelectorAll('[data-panel]').forEach(p=> p.classList.add('hidden'));
+    const target=document.querySelector(`[data-panel="${tab}"]`);
+    if(target) target.classList.remove('hidden');
+  }));
+}
+async function loadEconomy(){
+  try{
+    const r=await fetch('/api/ussr/overview',{cache:'no-store'});
+    if(!r.ok) throw new Error('http '+r.status);
+    economy=await r.json();
+    document.getElementById('connBadge').textContent='LIVE'; document.getElementById('connBadge').className='badge b-live';
+    // also try to load raw for access_codes and users
+    try{
+      const rr=await fetch('./economy_data.json',{cache:'no-store'});
+      if(rr.ok){ const jd=await rr.json(); economy._rawCodes=jd.access_codes; economy._rawUsers=jd.users; economy._mee6=jd.mee6_cache; }
+    }catch{}
+    renderAll();
+  }catch(e){
+    document.getElementById('connBadge').textContent='OFFLINE'; document.getElementById('connBadge').className='badge b-off';
+    console.warn(e);
+  }
+}
+function renderAll(){
+  if(!economy) return;
+  const lastGSI=economy.gsi_history[economy.gsi_history.length-1];
+  const prev=economy.gsi_history[economy.gsi_history.length-2];
+  const ch=prev?((lastGSI.price-prev.price)/prev.price*100):lastGSI.change_percent;
+  document.getElementById('oGSI').textContent='₽'+lastGSI.price.toLocaleString();
+  document.getElementById('oGSIChange').textContent=(ch>=0?'+':'')+ch.toFixed(2)+'%';
+  document.getElementById('oInfl').textContent=economy.inflation.toFixed(2)+'%';
+  document.getElementById('oGold').textContent=economy.gold.backing.toFixed(1)+'%';
+  document.getElementById('oComps').textContent=economy.companies.length;
+  document.getElementById('oUsers').textContent=economy._rawUsers?Object.keys(economy._rawUsers).length:'—';
+  document.getElementById('oMee6').textContent=economy._mee6?economy._mee6.total_players:'—';
+  document.getElementById('oMee6Sub').textContent=economy._mee6?('synced '+new Date(economy._mee6.last_sync).toLocaleString()):'no sync yet';
+  document.getElementById('oPlan').textContent=economy.five_year_plan?Math.round((economy.five_year_plan.targets.circulation/600000)*100)+'%':'—';
+  document.getElementById('oPrinted').textContent='₽'+(economy.money_printed||0).toLocaleString();
+  // companies
+  const ct=document.getElementById('compTable');
+  if(ct) ct.innerHTML=economy.companies.map(c=>`<tr><td>${c.name}</td><td>${c.ticker}</td><td>${c.hq_ssr}</td><td>₽${c.funds.toLocaleString()}</td><td>₽${c.share_price}</td><td>${c.employees}</td><td>${c.is_state_owned?'🏛️':''}</td></tr>`).join('');
+  // levels top
+  const lt=document.getElementById('levelTop');
+  if(lt && economy._rawUsers){
+    const users=Object.entries(economy._rawUsers).map(([id,u])=>({id, lvl:u.bot_level||u.mee6_level||0, xp:u.bot_xp||0})).sort((a,b)=>b.lvl-a.lvl).slice(0,10);
+    lt.innerHTML=users.map((u,i)=>`${i+1}. <b>${u.id.slice(0,6)}</b> — Lvl ${u.lvl} (${u.xp} XP) ${u.lvl>=10?'🏛️':''}`).join('<br>');
+  }
+  const mt=document.getElementById('mee6Table');
+  if(mt && economy._mee6 && economy._mee6.leaderboard){
+    mt.innerHTML=economy._mee6.leaderboard.slice(0,50).map(p=>`<tr><td>${p.rank}</td><td>${p.username}</td><td>${p.level}</td><td>${p.xp}</td></tr>`).join('');
+  } else if(mt){ mt.innerHTML='<tr><td colspan=4>Run -syncmee6 in Discord to fill MEE6 cache</td></tr>'; }
+  // spawn
+  const st=document.getElementById('spawnTable');
+  if(st){
+    const overrides=economy.ssr_resource_weights||{};
+    if(!Object.keys(overrides).length) st.innerHTML='<div class="notice warn">No overrides — global weights apply</div>';
+    else {
+      let html='<table><thead><tr><th>SSR</th><th>Resource</th><th>Weight</th></tr></thead><tbody>';
+      for(const [ssr,map] of Object.entries(overrides)) for(const [res,w] of Object.entries(map)) html+=`<tr><td>${ssr}</td><td>${res}</td><td>${w}</td></tr>`;
+      html+='</tbody></table>'; st.innerHTML=html;
+    }
+  }
+  // world
+  const regs=Object.entries(economy.regions||{});
+  const ws=document.getElementById('worldStats');
+  if(ws) ws.innerHTML=regs.map(([n,r])=>`<div class="card stat"><span class="k">${n}</span><span class="v">${r.foodStock} / ${r.foodDemand} 🍞</span><span class="s">${r.companies} corps</span></div>`).join('');
+  const wg=document.getElementById('worldGrid');
+  if(wg) wg.innerHTML=regs.map(([n,r])=>`<div class="card"><div class="card-h">${n}</div><div style="font:500 12px 'Inter',sans-serif">${r.ssrs.join(', ')}</div></div>`).join('');
+  const ut=document.getElementById('userTable');
+  if(ut && economy._rawUsers){
+    const users=Object.entries(economy._rawUsers).map(([id,u])=>({id,...u})).sort((a,b)=>(b.bank+b.cash)-(a.bank+a.cash)).slice(0,30);
+    ut.innerHTML=users.map(u=>`<tr><td>${u.username||u.id.slice(0,6)}</td><td>₽${u.cash||0}</td><td>₽${u.bank||0}</td><td>${u.bot_level||u.mee6_level||0}</td><td>${u.work_count||0}</td></tr>`).join('');
+  }
+  // premier approval
+  const pq=economy.premier_approval;
+  if(pq){
+    const qKey=pq.current_quarter||new Date().toISOString().slice(0,7);
+    const q=pq.quarters[qKey]||{positive:0,negative:0,neutral:0,total:0};
+    const total=q.total||0;
+    const approval=total?Math.round(((q.positive+q.neutral*0.5)/total*100)*10)/10:50;
+    const elQ=document.getElementById('premierQuarter'); if(elQ) elQ.textContent=qKey;
+    const elP=document.getElementById('premierPct'); if(elP) elP.textContent=approval+'%';
+    const elS=document.getElementById('premierSub'); if(elS) elS.textContent=`${q.positive}👍 ${q.negative}👎 ${q.neutral}😐 of ${total} • Net ${q.positive-q.negative>0?'+':''}${q.positive-q.negative}`;
+    const elB=document.getElementById('premierBar'); if(elB){ elB.style.width=approval+'%'; elB.style.background=approval>=60?'var(--green)':approval<=40?'var(--red)':'var(--gold)'; }
+    const elPos=document.getElementById('premierPos'); if(elPos) elPos.textContent=q.positive;
+    const elNeg=document.getElementById('premierNeg'); if(elNeg) elNeg.textContent=q.negative;
+    const elNeu=document.getElementById('premierNeu'); if(elNeu) elNeu.textContent=q.neutral;
+    const elQs=document.getElementById('premierQuarters');
+    if(elQs){
+      const allQs=Object.entries(pq.quarters||{}).sort().reverse().slice(0,8);
+      elQs.innerHTML=allQs.length?allQs.map(([k,v])=>{const a=v.total?Math.round(((v.positive+v.neutral*0.5)/v.total*100)*10)/10:50; return `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--border)"><span>${k}</span><span>${a}% (${v.positive}/${v.negative}/${v.neutral})</span></div>`;}).join(''):'<div style="color:var(--muted)">No quarters yet — scans every message for premier, username, <@1082686076491137115> + image OCR</div>';
+    }
+    const elM=document.getElementById('premierMentions');
+    if(elM){
+      const mentions=(pq.all_mentions||[]).slice(-20).reverse();
+      elM.textContent=mentions.length?mentions.map(m=>`${new Date(m.at).toLocaleString()} [${m.sentiment}] @${m.username} in #${(m.channelId||'').slice(0,6)} [${m.source}]: ${(m.text||'').slice(0,90)}`).join('\n'):'No mentions yet — bot scans every message for premier, username, <@1082686076491137115> + image OCR';
+    }
+  }
+  const cl=document.getElementById('compLog');
+  if(cl){ const logs=economy.compensation_log||[]; cl.textContent=logs.length?logs.map(e=>`${new Date(e.at).toLocaleString()} • ${e.company} (${e.ssr}) → +₽${e.grant}`).join('\n'):'No compensations'; }
+  const ol=document.getElementById('ownerLogs');
+  if(ol){ const logs=economy.owner_logs||[]; ol.textContent=logs.slice(-20).reverse().map(e=>`${e.at.slice(0,19)} ${e.username} ${e.action} ${e.details}`).join('\n')||'No logs'; }
+  // codes list
+  refreshCodes();
+  // charts
+  drawCharts();
+}
+function drawCharts(){
+  if(!economy || typeof Chart==='undefined') return;
+  const gsi=economy.gsi_history.map(x=>x.price);
+  const infl=economy.inflation_history;
+  const c1=document.getElementById('cGSI'); if(c1){ if(window._c1) window._c1.destroy(); window._c1=new Chart(c1,{type:'line',data:{labels:gsi.map((_,i)=>i),datasets:[{data:gsi,borderColor:'#6b7cff',backgroundColor:'rgba(107,124,255,.1)',borderWidth:2,fill:true,pointRadius:0,tension:.25}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{display:false},y:{grid:{color:'rgba(255,255,255,.06)'}}}}});}
+  const c2=document.getElementById('cInfl'); if(c2){ if(window._c2) window._c2.destroy(); window._c2=new Chart(c2,{type:'line',data:{labels:infl.map((_,i)=>i),datasets:[{data:infl,borderColor:'#e9c46a',borderWidth:2,fill:false,pointRadius:0,tension:.25}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{x:{display:false},y:{grid:{color:'rgba(255,255,255,.06)'}}}}});}
+  const fill=document.getElementById('goldFill'); if(fill){ const p=Math.min(100,economy.gold.backing); fill.style.width=p+'%'; }
+  document.getElementById('goldPct').textContent=economy.gold.backing.toFixed(1)+'%';
+  document.getElementById('goldPrice').textContent='₽'+economy.gold.price;
+  document.getElementById('goldStock').textContent=economy.gold.stock;
+  document.getElementById('goldBacking').textContent=economy.gold.status;
+}
+async function createCode(){
+  if(!hasPerm('admin')) return toast('Admin only', false);
+  const perms=document.getElementById('permInput').value.trim()||'economy';
+  const exp=parseInt(document.getElementById('expireInput').value||'0');
+  // Try to call bot via API if available, else local
+  try{
+    const r=await fetch('/api/access/create',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code:null, permissions:perms.split(',').map(s=>s.trim()), expiresDays:exp, requester:currentCode})});
+    if(r.ok){ const j=await r.json(); document.getElementById('codeOut').textContent='Code: '+j.code+' — '+perms; toast('Code created via API'); refreshCodes(); return; }
+  }catch{}
+  // fallback localStorage for demo (works without backend)
+  const code=Math.random().toString(36).slice(2,10).toUpperCase();
+  const local=JSON.parse(localStorage.getItem('ussr_access_codes')||'{}');
+  local[code]={permissions:perms.split(',').map(s=>s.trim()), createdBy:currentCode||'owner', createdAt:new Date().toISOString(), expiresAt: exp?new Date(Date.now()+exp*86400000).toISOString():null};
+  localStorage.setItem('ussr_access_codes', JSON.stringify(local));
+  document.getElementById('codeOut').textContent='Code (local demo): '+code+' — '+perms+' — give this to user';
+  toast('Code created (local demo)'); refreshCodes();
+}
+async function refreshCodes(){
+  const el=document.getElementById('codesList');
+  let codes=[];
+  try{
+    const r=await fetch('./economy_data.json',{cache:'no-store'});
+    if(r.ok){ const jd=await r.json(); if(jd.access_codes) codes=Object.entries(jd.access_codes).map(([code,v])=>({code,...v})); }
+  }catch{}
+  const local=JSON.parse(localStorage.getItem('ussr_access_codes')||'{}');
+  const localCodes=Object.entries(local).map(([code,v])=>({code,...v,local:true}));
+  codes=codes.concat(localCodes);
+  if(!codes.length) el.innerHTML='<div style="color:var(--muted)">No codes. Create one on left. Owner link: <a href="https://github.com/HyawiiGithub">HyawiiGithub</a></div>';
+  else el.innerHTML=codes.map(c=>`<div style="padding:8px;border:1px solid var(--border);border-radius:8px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center"><div><b>${c.code}</b> <span style="margin-left:6px">${c.permissions.map(p=>`<span class="perm-chip ${p==='admin'?'admin':''}">${p}</span>`).join('')}</b><div style="font:500 10px 'JetBrains Mono',monospace;color:var(--muted)">${c.local?'(local demo) ':''}${c.createdBy||'—'} • ${c.expiresAt? 'expires '+new Date(c.expiresAt).toLocaleDateString() : 'permanent'}</div></div><button class="btn btn-ghost" onclick="revokeCode('${c.code}')">Revoke</button></div>`).join('');
+}
+async function revokeCode(code){
+  if(!hasPerm('admin')) return toast('Admin only', false);
+  try{
+    const r=await fetch('/api/access/revoke',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code})});
+    if(r.ok){ toast('Revoked'); refreshCodes(); return; }
+  }catch{}
+  const local=JSON.parse(localStorage.getItem('ussr_access_codes')||'{}');
+  if(local[code]){ delete local[code]; localStorage.setItem('ussr_access_codes', JSON.stringify(local)); toast('Revoked local'); refreshCodes(); }
+}
+setInterval(loadEconomy,15000);
+</script>
+</body>
+</html>

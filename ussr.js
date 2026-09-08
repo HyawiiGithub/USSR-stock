@@ -30,7 +30,7 @@ function fallbackMock(){
   const REC = {
     "Iron Ingot": {value:143, ingredients:{"Iron Ore":3,Coal:2}}, "Steel Ingot": {value:337, ingredients:{"Iron Ingot":2,Coal:3}},
     "Copper Ingot": {value:173, ingredients:{Copper:3,Coal:2}}, "Gold Bar": {value:586, ingredients:{Gold:3}},
-    "Aluminium Ingot": {value:296, ingredients:{"Aluminium Ore":3,Coal:2}}, "Timber Planks": {value:59, ingredients:{Timber:3}},
+    "Aluminium Ingot": {value:296, ingredients:{"Aluminium Ore":3,Coal:2}}, "Timber Planks": {value:45, ingredients:{Timber:3}},
     "Bricks": {value:81, ingredients:{Clay:3,Coal:2}}, "Concrete": {value:104, ingredients:{Limestone:4,Sand:2}},
     "Glass": {value:112, ingredients:{Limestone:3,Coal:2}}, "Steel Beam": {value:1320, ingredients:{"Steel Ingot":4}},
     "Machine Parts": {value:1064, ingredients:{"Iron Ingot":3,"Steel Ingot":2}}, "Fuel": {value:255, ingredients:{Oil:3}},
@@ -39,7 +39,7 @@ function fallbackMock(){
     "Flour": {value:40, ingredients:{Wheat:3}}, "Bread": {value:84, ingredients:{Flour:2,Sugar:1}}, "Cake": {value:161, ingredients:{Flour:3,Sugar:3,Wheat:2}},
     "Wine": {value:86, ingredients:{Grapes:4}}, "Canned Food": {value:102, ingredients:{Wheat:3,"Iron Ore":2}}, "Canned Fish": {value:107, ingredients:{Fish:2,"Iron Ore":2}},
     "Smoked Fish": {value:86, ingredients:{Fish:2,Coal:2}}, "Fish Stew": {value:76, ingredients:{Fish:2,Wheat:2,Salt:1}},
-    "Peat Fuel": {value:97, ingredients:{Peat:4,Coal:1}},     "Shale Oil": {value:95, ingredients:{"Oil Shale":4}}, "Gas Fuel": {value:194, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:177, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
+    "Peat Fuel": {value:97, ingredients:{Peat:4,Coal:1}},     "Shale Oil": {value:80, ingredients:{"Oil Shale":4}}, "Gas Fuel": {value:194, ingredients:{"Natural Gas":3}}, "Fertilizer": {value:177, ingredients:{Phosphorite:2,Peat:2,Sulphur:1}},
     "Cotton Fabric": {value:102, ingredients:{Cotton:3}}, "Manganese Alloy": {value:409, ingredients:{Manganese:2,"Iron Ingot":1,Coal:1}},
     "Sunflower Oil": {value:56, ingredients:{Sunflower:3}}, "Linen": {value:79, ingredients:{Flax:3}}, "Corn Meal": {value:48, ingredients:{Corn:3}},
     "Tea Pack": {value:99, ingredients:{Tea:2,Sugar:1}}, "Citrus Juice": {value:99, ingredients:{Citrus:3,Sugar:1}},
@@ -100,7 +100,7 @@ function fallbackMock(){
   for(const k of Object.keys(REC)){
     let sup=0; companies.forEach(c=> sup+=(c.inventory[k]||0));
     market_supply[k]=sup;
-    const ideal=employed*2.5; const ratio=sup/Math.max(1,ideal); let tgt=1.4 - Math.min(ratio,2)*0.4; tgt=Math.max(0.6,Math.min(1.4,tgt));
+    const ideal=employed*2.5; const ratio=sup/Math.max(1,ideal); let tgt=1.2 - Math.min(ratio,2)*0.25; tgt=Math.max(0.8,Math.min(1.2,tgt));
     market_demand[k]=+(tgt + (Math.random()*0.08-0.04)).toFixed(3);
   }
   Object.keys(REC).slice(0,8).forEach(k=>{
@@ -352,7 +352,7 @@ function renderDemand(){
 function renderDemandTable(){
   const table=document.getElementById('demandTable'); if(!table) return;
   const rows=Object.keys(data.market_demand).sort().map(item=>{
-    const dem=data.market_demand[item]; const sup=data.market_supply[item]; const sFac=(1.35 - (Math.min(sup,120)/120)*0.75);
+    const dem=data.market_demand[item]; const sup=data.market_supply[item]; const sFac=(1.2 - (Math.min(sup,120)/120)*0.4);
     const barPct=Math.round(((dem-0.6)/0.9)*100); const supPct=Math.round(((sFac-0.6)/0.8)*100);
     return `<tr><td><b>${item}</b></td><td>${(dem*100).toFixed(0)}%<div class="bar" style="margin-top:4px"><i style="width:${barPct}%"></i></div></td><td>${(sFac*100).toFixed(0)}%<div class="bar"><i style="width:${supPct}%;background:#111"></i></div></td><td>${fmt(sup)}</td><td>₽${data.crafting_recipes[item]?.value||0}</td></tr>`;
   }).join('');

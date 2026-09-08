@@ -78,7 +78,7 @@ export const CRAFTING_RECIPES = {
   "Copper Ingot": {"ingredients": {"Copper": 3, "Coal": 2}, "value": 173, "emoji": "🟠"},
   "Gold Bar": {"ingredients": {"Gold": 3}, "value": 586, "emoji": "🥇"},
   "Aluminium Ingot": {"ingredients": {"Aluminium Ore": 3, "Coal": 2}, "value": 296, "emoji": "🔘"},
-  "Timber Planks": {"ingredients": {"Timber": 3}, "value": 59, "emoji": "🪵"},
+  "Timber Planks": {"ingredients": {"Timber": 3}, "value": 45, "emoji": "🪵"},
   "Bricks": {"ingredients": {"Clay": 3, "Coal": 2}, "value": 81, "emoji": "🧱"},
   "Concrete": {"ingredients": {"Limestone": 4, "Sand": 2}, "value": 104, "emoji": "🏗️"},
   "Glass": {"ingredients": {"Limestone": 3, "Coal": 2}, "value": 112, "emoji": "🪟"},
@@ -99,7 +99,7 @@ export const CRAFTING_RECIPES = {
   "Smoked Fish": {"ingredients": {"Fish": 2, "Coal": 2}, "value": 86, "emoji": "🔥🐟"},
   "Fish Stew": {"ingredients": {"Fish": 2, "Wheat": 2, "Salt": 1}, "value": 76, "emoji": "🍲"},
   "Peat Fuel": {"ingredients": {"Peat": 4, "Coal": 1}, "value": 97, "emoji": "🔥"},
-  "Shale Oil": {"ingredients": {"Oil Shale": 4}, "value": 95, "emoji": "🪨"},
+  "Shale Oil": {"ingredients": {"Oil Shale": 4}, "value": 80, "emoji": "🪨"},
   "Gas Fuel": {"ingredients": {"Natural Gas": 3}, "value": 194, "emoji": "⛽"},
   "Fertilizer": {"ingredients": {"Phosphorite": 2, "Peat": 2, "Sulphur": 1}, "value": 177, "emoji": "🧪"},
   "Cotton Fabric": {"ingredients": {"Cotton": 3}, "value": 102, "emoji": "🧵"},
@@ -151,14 +151,14 @@ export function getGoldBackingRatio(goldStock, moneySupply, inflation) {
   return (goldValue / Math.max(1, moneySupply)) * 100;
 }
 export function getSupplyFactor(supply) {
-  const factor = 1.35 - (Math.min(supply, 120) / 120) * 0.75;
-  return Math.max(0.6, Math.min(1.4, factor));
+  const factor = 1.2 - (Math.min(supply, 120) / 120) * 0.4;
+  return Math.max(0.8, Math.min(1.2, factor));
 }
 export function getBalancedDemandTarget(supply, employed) {
   const ideal = Math.max(1, employed) * 2.5;
   const ratio = supply / Math.max(1, ideal);
-  let target = 1.4 - Math.min(ratio, 2.0) * 0.4;
-  return Math.max(0.6, Math.min(1.4, target));
+  let target = 1.2 - Math.min(ratio, 2.0) * 0.25;
+  return Math.max(0.8, Math.min(1.2, target));
 }
 
 // Generate synthetic economy_data.json equivalent
