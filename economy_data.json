@@ -176359,11 +176359,6 @@
   "gsi_history": [
     {
       "price": 94,
-      "change_percent": 0.9476519639466878,
-      "recorded_at": "2026-09-08T14:06:54.206Z"
-    },
-    {
-      "price": 94,
       "change_percent": 0.2787156336086082,
       "recorded_at": "2026-09-08T14:08:57.780Z"
     },
@@ -176856,6 +176851,11 @@
       "price": 104,
       "change_percent": 0.2622786152751147,
       "recorded_at": "2026-09-08T18:05:32.555Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 0.3259157720629655,
+      "recorded_at": "2026-09-08T18:06:55.070Z"
     }
   ],
   "factory_names": [
@@ -177187,8 +177187,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 2,
-    "Steel Beam": 2
+    "Bread": 2
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -177209,14 +177208,10 @@
     "Circuit Board": 4,
     "Cotton Fabric": 5,
     "Reactor Core": 1,
-    "Gas Fuel": 30
+    "Gas Fuel": 30,
+    "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-02T02:22:32.695Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -178711,6 +178706,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-08T17:51:48.756Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 2,
+      "at": "2026-09-08T18:06:48.752Z"
     }
   ],
   "demand_history": {
@@ -181086,6 +181086,13 @@
         "at": "2026-09-08T12:51:48.787Z",
         "supply": 1
       }
+    ],
+    "Steel Beam": [
+      {
+        "demand": 1.355740582880278,
+        "at": "2026-09-08T18:06:48.752Z",
+        "supply": 2
+      }
     ]
   },
   "blacklist": {
@@ -181623,10 +181630,6 @@
   "total_rubles_history": [
     {
       "total": 637812,
-      "at": "2026-09-08T10:36:55.861Z"
-    },
-    {
-      "total": 637812,
       "at": "2026-09-08T10:36:56.403Z"
     },
     {
@@ -182020,6 +182023,10 @@
     {
       "total": 638328,
       "at": "2026-09-08T18:01:56.200Z"
+    },
+    {
+      "total": 638353,
+      "at": "2026-09-08T18:06:56.200Z"
     }
   ],
   "gold_rush": null,
