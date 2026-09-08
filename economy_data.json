@@ -176243,11 +176243,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.15014615747912455,
-      "recorded_at": "2026-09-08T11:26:54.255Z"
-    },
-    {
-      "price": 93,
       "change_percent": 0.44140418335529436,
       "recorded_at": "2026-09-08T11:31:54.317Z"
     },
@@ -176740,6 +176735,11 @@
       "price": 96,
       "change_percent": 0.4958142456220511,
       "recorded_at": "2026-09-08T15:50:52.186Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.16650142809122676,
+      "recorded_at": "2026-09-08T15:51:54.971Z"
     }
   ],
   "factory_names": [
@@ -176747,24 +176747,23 @@
     "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Brezhnev Auto Factory",
-    "Ural Heavy Industries",
-    "Volga Shipbuilding"
+    "Ural Heavy Industries"
   ],
   "used_factory_names": [
     "Siberian Mining Co",
     "Khrushchev Agricultural",
-    "Soviet Iron Foundry"
+    "Soviet Iron Foundry",
+    "Volga Shipbuilding"
   ],
   "factory_deals": [],
   "government_contracts": [],
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.5567455897489146,
+  "inflation": 0.49184091980507677,
   "money_printed": 610,
   "total_bank_reserves": 553175,
   "inflation_history": [
-    0.5114027585830199,
     0.5387400989323549,
     0.5471725454007581,
     0.4967384567466265,
@@ -176863,7 +176862,8 @@
     0.5479094268534181,
     0.5284251626596796,
     0.5810501851651393,
-    0.5567455897489146
+    0.5567455897489146,
+    0.49184091980507677
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -177007,39 +177007,39 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.241865345233083,
-    "Cake": 1.3639147555275994,
+    "Fuel": 1.2589794983142393,
+    "Cake": 1.3706292837132399,
     "Bread": 1.2515518087034703,
     "Copper Ingot": 1.3632445496990948,
-    "Iron Ingot": 1.362001050528155,
+    "Iron Ingot": 1.3605916969870253,
     "Steel Ingot": 1.3958928127478467,
-    "Gold Bar": 1.3176590718791792,
+    "Gold Bar": 1.3163336188561177,
     "Aluminium Ingot": 1.4120228147255833,
     "Timber Planks": 1.4046285241839058,
     "Bricks": 1.412260542009468,
-    "Concrete": 1.422280924058023,
-    "Glass": 1.4224242308348969,
-    "Steel Beam": 1.402986682815245,
-    "Machine Parts": 1.4156638137406232,
-    "Refined Fuel": 1.3541330197769224,
+    "Concrete": 1.420498450133381,
+    "Glass": 1.4206302923681051,
+    "Steel Beam": 1.4018168390991164,
+    "Machine Parts": 1.4139452540959188,
+    "Refined Fuel": 1.3568559762523715,
     "Uranium Rod": 1.3891199058710164,
     "Reactor Core": 1.401248048041003,
-    "Circuit Board": 1.4144986944341162,
+    "Circuit Board": 1.4108740208255872,
     "Flour": 1.3042772585626037,
     "Sugar": 1.1839578008815999,
-    "Wine": 1.4215189983286258,
+    "Wine": 1.4197974784623357,
     "Canned Food": 1.4046285661747353,
     "Canned Fish": 1.4046296495589077,
-    "Smoked Fish": 1.414628551727213,
+    "Smoked Fish": 1.4109714137954097,
     "Fish Stew": 1.411508622483844,
     "Peat Fuel": 1.4046285714251754,
     "Gas Fuel": 1.392491057345102,
-    "Fertilizer": 1.4224242370556062,
+    "Fertilizer": 1.4206302980911576,
     "Cotton Fabric": 1.4010736792256737,
     "Manganese Alloy": 1.4122275379608007,
-    "Sunflower Oil": 1.422271922075406,
+    "Sunflower Oil": 1.4204901683093736,
     "Linen": 1.4115087014389704,
-    "Corn Meal": 1.4219984731292228,
+    "Corn Meal": 1.420238595278885,
     "Tea Pack": 1.412320457345672,
     "Citrus Juice": 1.4119984731292228,
     "Antimony Alloy": 1.4123844524613365,
@@ -177070,7 +177070,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 4,
+    "Fuel": 2,
     "Refined Fuel": 1,
     "Copper Ingot": 2,
     "Bread": 6
@@ -177080,7 +177080,7 @@
     "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 83,
-    "Fuel": 50,
+    "Fuel": 52,
     "Iron Ingot": 15,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -177097,11 +177097,6 @@
     "Gas Fuel": 30
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-01T23:52:32.426Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -178596,6 +178591,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-08T15:36:48.853Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-09-08T15:51:48.734Z"
     }
   ],
   "demand_history": {
@@ -179771,6 +179771,11 @@
       {
         "demand": 1.2141330581197702,
         "at": "2026-09-08T15:36:48.853Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.2589794983142393,
+        "at": "2026-09-08T15:51:48.734Z",
         "supply": 1
       }
     ],
@@ -180983,7 +180988,11 @@
     "1379734184259747851",
     "874346333882945547"
   ],
-  "ssr_resource_weights": {},
+  "ssr_resource_weights": {
+    "Nuristani SSR": {
+      "Coal": 30
+    }
+  },
   "compensation_log": [
     {
       "id": "ssr_lost_state_23_Zinc",
@@ -181477,13 +181486,16 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽312 salaries ceo 860203156222902332 ₽112, director 860203156222902332 ₽112, manager 1186597507720019988 ₽44, manager 807254722251587614 ₽44"
+    },
+    {
+      "at": "2026-09-08T15:51:57.845Z",
+      "by": "860203156222902332",
+      "username": "erushim",
+      "action": "setspawnrate",
+      "details": "Nuristani SSR Coal 20→30"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 635689,
-      "at": "2026-09-08T08:06:55.727Z"
-    },
     {
       "total": 635689,
       "at": "2026-09-08T08:11:55.809Z"
@@ -181879,6 +181891,10 @@
     {
       "total": 639092,
       "at": "2026-09-08T15:46:55.852Z"
+    },
+    {
+      "total": 639152,
+      "at": "2026-09-08T15:51:55.860Z"
     }
   ],
   "gold_rush": null,
