@@ -871,15 +871,15 @@
       "total_heat_generated": 0
     },
     "913497950213267577": {
-      "cash": 1222,
+      "cash": 1242,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-08T00:03:59.893Z",
-      "work_count": 133,
+      "last_work": "2026-09-08T18:37:09.566Z",
+      "work_count": 134,
       "last_claim": "2026-09-06T00:41:58.967Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -175840,14 +175840,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 26289,
+      "funds": 26284,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 167337,
-      "market_cap": 167337,
+      "share_price": 167388,
+      "market_cap": 167388,
       "employees": 26,
       "level": 1,
       "buildings": {
@@ -175885,7 +175885,7 @@
       "inventory": {
         "Gold Bar": 14,
         "Fish": 2,
-        "Wheat": 73,
+        "Wheat": 72,
         "Sugar": 52,
         "Reactor Core": 1,
         "Copper": 27,
@@ -175896,12 +175896,11 @@
         "Timber": 29,
         "Sulphur": 15,
         "Uranium Rod": 1,
-        "Oil": 1
+        "Oil": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-08T13:31:46.722Z",
       "price_history": [
-        149528,
         149492,
         149511,
         149530,
@@ -176000,7 +175999,8 @@
         166199,
         166353,
         166471,
-        167337
+        167337,
+        167388
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -176356,16 +176356,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.5896786446814675,
-      "recorded_at": "2026-09-08T14:35:41.095Z"
-    },
-    {
-      "price": 87,
-      "change_percent": -6.6542487156479275,
-      "recorded_at": "2026-09-08T14:36:47.373Z"
-    },
     {
       "price": 87,
       "change_percent": 0.9826422920598494,
@@ -176855,6 +176845,16 @@
       "price": 89,
       "change_percent": -6.7526622638624385,
       "recorded_at": "2026-09-08T18:36:47.404Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 1.097902864856262,
+      "recorded_at": "2026-09-08T18:36:55.100Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.3221455891589307,
+      "recorded_at": "2026-09-08T18:37:10.340Z"
     }
   ],
   "factory_names": [],
@@ -177185,7 +177185,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Iron Ingot": 10
+    "Iron Ingot": 8
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -177193,7 +177193,7 @@
     "Timber Planks": 112,
     "Refined Fuel": 84,
     "Fuel": 54,
-    "Iron Ingot": 15,
+    "Iron Ingot": 17,
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 168,
@@ -177210,11 +177210,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-02T02:52:32.701Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -178709,6 +178704,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-08T18:21:48.976Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 2,
+      "at": "2026-09-08T18:36:49.100Z"
     }
   ],
   "demand_history": {
@@ -179957,6 +179957,11 @@
         "demand": 1.3454421066837603,
         "at": "2026-08-31T14:34:05.302Z",
         "supply": 2
+      },
+      {
+        "demand": 1.1355916969870252,
+        "at": "2026-09-08T18:36:49.100Z",
+        "supply": 8
       }
     ],
     "Shale Oil": [
@@ -181628,10 +181633,6 @@
   "total_rubles_history": [
     {
       "total": 637832,
-      "at": "2026-09-08T11:01:55.874Z"
-    },
-    {
-      "total": 637832,
       "at": "2026-09-08T11:06:55.772Z"
     },
     {
@@ -182025,6 +182026,10 @@
     {
       "total": 638393,
       "at": "2026-09-08T18:31:56.203Z"
+    },
+    {
+      "total": 638393,
+      "at": "2026-09-08T18:36:56.201Z"
     }
   ],
   "gold_rush": null,
