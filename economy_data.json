@@ -664,15 +664,15 @@
       "total_heat_generated": 0
     },
     "1495413593242337421": {
-      "cash": 354,
+      "cash": 374,
       "bank": 25803,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-08T18:51:16.238Z",
-      "work_count": 230,
+      "last_work": "2026-09-08T19:07:03.479Z",
+      "work_count": 231,
       "last_claim": "2026-09-08T18:51:22.883Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -176031,14 +176031,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 6480,
+      "funds": 6475,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 202073,
-      "market_cap": 202073,
+      "share_price": 202169,
+      "market_cap": 202169,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -176054,20 +176054,20 @@
         }
       },
       "inventory": {
-        "Timber": 271,
+        "Timber": 241,
         "Natural Gas": 149,
-        "Iron Ore": 214,
-        "Coal": 212,
+        "Iron Ore": 195,
+        "Coal": 198,
         "Uranium": 7,
         "Oil": 157,
         "Gold": 17,
-        "Wheat": 65
+        "Wheat": 64,
+        "Timber Planks": 10,
+        "Iron Ingot": 7
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        194775,
-        194775,
         194775,
         194813,
         194928,
@@ -176165,7 +176165,9 @@
         199216,
         200006,
         199952,
-        202073
+        202073,
+        202134,
+        202169
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -176356,21 +176358,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.6477634558625855,
-      "recorded_at": "2026-09-08T15:15:57.419Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.15466247133398991,
-      "recorded_at": "2026-09-08T15:16:54.993Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.1888637341221811,
-      "recorded_at": "2026-09-08T15:19:21.768Z"
-    },
     {
       "price": 97,
       "change_percent": 0.9867465856691515,
@@ -176855,6 +176842,21 @@
       "price": 98,
       "change_percent": 1.1131435718994607,
       "recorded_at": "2026-09-08T19:02:17.021Z"
+    },
+    {
+      "price": 89,
+      "change_percent": -8.262619795467579,
+      "recorded_at": "2026-09-08T19:06:47.418Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.287677580520142,
+      "recorded_at": "2026-09-08T19:06:55.135Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 1.2473252105936958,
+      "recorded_at": "2026-09-08T19:07:04.288Z"
     }
   ],
   "factory_names": [
@@ -177187,13 +177189,13 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Iron Ingot": 6,
-    "Refined Fuel": 6
+    "Refined Fuel": 4
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 112,
-    "Refined Fuel": 84,
+    "Refined Fuel": 86,
     "Fuel": 54,
     "Iron Ingot": 19,
     "Shale Oil": 17,
@@ -177212,11 +177214,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-02T03:22:32.702Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -178711,6 +178708,11 @@
       "item": "Iron Ingot",
       "qty": 2,
       "at": "2026-09-08T18:51:48.962Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-08T19:06:49.002Z"
     }
   ],
   "demand_history": {
@@ -179417,11 +179419,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.331518548398489,
-        "at": "2026-08-27T09:41:22.578Z",
-        "supply": 0
-      },
-      {
         "demand": 1.3277702904089819,
         "at": "2026-08-27T11:41:22.590Z",
         "supply": 0
@@ -179714,6 +179711,11 @@
       {
         "demand": 1.3813777819423902,
         "at": "2026-09-08T17:06:48.746Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2707472894693654,
+        "at": "2026-09-08T19:06:49.002Z",
         "supply": 0
       }
     ],
@@ -181640,10 +181642,6 @@
   "total_rubles_history": [
     {
       "total": 637832,
-      "at": "2026-09-08T11:31:55.856Z"
-    },
-    {
-      "total": 637832,
       "at": "2026-09-08T11:36:55.785Z"
     },
     {
@@ -182037,6 +182035,10 @@
     {
       "total": 638851,
       "at": "2026-09-08T19:01:56.207Z"
+    },
+    {
+      "total": 638871,
+      "at": "2026-09-08T19:06:56.206Z"
     }
   ],
   "gold_rush": null,
