@@ -408,8 +408,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 37,
-      "bot_total_xp": 137,
+      "bot_xp": 54,
+      "bot_total_xp": 154,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 1
@@ -1043,15 +1043,15 @@
       "last_daily_work_date": "2026-09-09"
     },
     "913497950213267577": {
-      "cash": 1302,
+      "cash": 1322,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-08T19:02:16.237Z",
-      "work_count": 137,
+      "last_work": "2026-09-09T17:38:44.682Z",
+      "work_count": 138,
       "last_claim": "2026-09-06T00:41:58.967Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1065,10 +1065,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 48,
-      "bot_total_xp": 48,
-      "daily_work_count": 0,
-      "shock_worker": false
+      "bot_xp": 83,
+      "bot_total_xp": 83,
+      "daily_work_count": 1,
+      "shock_worker": false,
+      "last_daily_work_date": "2026-09-09"
     },
     "1405587743542870188": {
       "cash": 15,
@@ -62555,8 +62556,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 25,
-      "bot_total_xp": 280,
+      "bot_xp": 45,
+      "bot_total_xp": 300,
       "daily_work_count": 5,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-09",
@@ -214371,14 +214372,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 1792,
+      "funds": 1787,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 142880,
-      "market_cap": 142880,
+      "share_price": 142900,
+      "market_cap": 142900,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214421,7 +214422,7 @@
       "inventory": {
         "Gold Bar": 14,
         "Fish": 2,
-        "Wheat": 119,
+        "Wheat": 118,
         "Sugar": 13,
         "Reactor Core": 1,
         "Copper": 34,
@@ -214431,7 +214432,7 @@
         "Timber": 36,
         "Sulphur": 19,
         "Uranium Rod": 1,
-        "Coal": 7,
+        "Coal": 9,
         "Contraband: Cocaine": 2,
         "Contraband: Coca Paste": 1,
         "Contraband: Synthetic": 4,
@@ -214442,7 +214443,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-09T15:24:26.834Z",
       "price_history": [
-        162956,
         162976,
         163251,
         163262,
@@ -214541,7 +214541,8 @@
         142842,
         142893,
         142912,
-        142880
+        142880,
+        142900
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -214899,16 +214900,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.4230364201669726,
-      "recorded_at": "2026-09-08T19:11:54.997Z"
-    },
-    {
-      "price": 92,
-      "change_percent": 0.6433279008138542,
-      "recorded_at": "2026-09-08T19:15:36.329Z"
-    },
     {
       "price": 92,
       "change_percent": 0.4279323655041708,
@@ -215398,6 +215389,16 @@
       "price": 105,
       "change_percent": -3.906068663910184,
       "recorded_at": "2026-09-09T17:38:13.468Z"
+    },
+    {
+      "price": 104,
+      "change_percent": -0.047259148091738284,
+      "recorded_at": "2026-09-09T17:38:16.886Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 0.9192455324490889,
+      "recorded_at": "2026-09-09T17:38:45.417Z"
     }
   ],
   "factory_names": [
@@ -215731,7 +215732,7 @@
   "ai_store": {
     "Iron Ingot": 8,
     "Cake": 6,
-    "Bread": 5,
+    "Bread": 3,
     "Fuel": 4
   },
   "global_consumption": {
@@ -215748,7 +215749,7 @@
     "Canned Food": 15,
     "Uranium Rod": 14,
     "Canned Fish": 18,
-    "Bread": 169,
+    "Bread": 171,
     "Aluminium Sheet": 8,
     "Circuit Board": 4,
     "Cotton Fabric": 5,
@@ -215757,11 +215758,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-02T11:52:32.755Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -217256,6 +217252,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-09T17:23:14.752Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-09T17:38:14.752Z"
     }
   ],
   "demand_history": {
@@ -219192,11 +219193,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.3139360113524927,
-        "at": "2026-09-04T00:20:37.860Z",
-        "supply": 0
-      },
-      {
         "demand": 1.3519101692907853,
         "at": "2026-09-04T00:50:37.750Z",
         "supply": 0
@@ -219489,6 +219485,11 @@
       {
         "demand": 1.2465845038077314,
         "at": "2026-09-09T16:38:14.490Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3147252834566965,
+        "at": "2026-09-09T17:38:14.752Z",
         "supply": 0
       }
     ],
@@ -220241,10 +220242,6 @@
   "total_rubles_history": [
     {
       "total": 646736,
-      "at": "2026-09-08T14:56:55.851Z"
-    },
-    {
-      "total": 646736,
       "at": "2026-09-08T15:01:55.966Z"
     },
     {
@@ -220638,6 +220635,10 @@
     {
       "total": 613452,
       "at": "2026-09-09T17:33:17.161Z"
+    },
+    {
+      "total": 613497,
+      "at": "2026-09-09T17:38:17.160Z"
     }
   ],
   "gold_rush": null,
@@ -220691,7 +220692,8 @@
         "1325111649816023092": 2,
         "1397601108616024075": 4,
         "1229741033265299506": 1,
-        "1186597507720019988": 1
+        "1186597507720019988": 1,
+        "913497950213267577": 1
       }
     },
     "collect_daily": {
@@ -220730,14 +220732,14 @@
       "874346333882945547": 1788975487264,
       "870686833976172574": 1788970669929,
       "1186597507720019988": 1788973817794,
-      "1521043721129558017": 1788974769169,
+      "1521043721129558017": 1788975513007,
       "1397601108616024075": 1788974418090,
       "860203156222902332": 1788975131242,
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1788966098890,
       "1309104161278918706": 1788966436063,
       "1325111649816023092": 1788971254554,
-      "1506785783506534426": 1788974974338,
+      "1506785783506534426": 1788975545083,
       "807254722251587614": 1788971341718,
       "1353373037994705078": 1788970587870,
       "1192563739778625607": 1788969865072,
@@ -220750,7 +220752,7 @@
       "887419379833274388": 1788973760919,
       "807944786840387675": 1788973894844,
       "1529673877767196783": 1788974725612,
-      "913497950213267577": 1788975389405
+      "913497950213267577": 1788975520103
     }
   },
   "mee6_cache": {
