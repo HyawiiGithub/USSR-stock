@@ -924,8 +924,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 57,
-      "bot_total_xp": 157,
+      "bot_xp": 80,
+      "bot_total_xp": 180,
       "daily_work_count": 2,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-09",
@@ -1352,8 +1352,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 15,
-      "bot_total_xp": 15,
+      "bot_xp": 40,
+      "bot_total_xp": 40,
       "daily_work_count": 0,
       "shock_worker": false
     },
@@ -78076,8 +78076,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 15,
-      "bot_total_xp": 15,
+      "bot_xp": 30,
+      "bot_total_xp": 30,
       "daily_work_count": 0,
       "shock_worker": false
     },
@@ -214594,8 +214594,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 41.48474999999998,
-      "underground_heat": 79,
+      "heat": 40.284749999999974,
+      "underground_heat": 78,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -214933,11 +214933,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.0071909529841635185,
-      "recorded_at": "2026-09-09T15:28:13.175Z"
-    },
     {
       "price": 96,
       "change_percent": 0.8677631960950801,
@@ -215432,6 +215427,11 @@
       "price": 102,
       "change_percent": 0.3774753252993749,
       "recorded_at": "2026-09-09T18:20:32.672Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.42278004512500456,
+      "recorded_at": "2026-09-09T18:23:16.821Z"
     }
   ],
   "factory_names": [
@@ -215452,11 +215452,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6837434481875219,
+  "inflation": 0.6731705571258356,
   "money_printed": 742,
   "total_bank_reserves": 527783,
   "inflation_history": [
-    0.47646783086166045,
     0.5046184671318956,
     0.5380944149599403,
     0.5537663640931709,
@@ -215555,7 +215554,8 @@
     0.6447254443706054,
     0.6574540729521232,
     0.7299817945624564,
-    0.6837434481875219
+    0.6837434481875219,
+    0.6731705571258356
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -215763,7 +215763,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Iron Ingot": 8,
+    "Iron Ingot": 7,
     "Cake": 5,
     "Bread": 3,
     "Fuel": 2
@@ -215774,7 +215774,7 @@
     "Timber Planks": 112,
     "Refined Fuel": 90,
     "Fuel": 58,
-    "Iron Ingot": 25,
+    "Iron Ingot": 26,
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 170,
@@ -215791,11 +215791,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-02T12:37:32.928Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -217290,6 +217285,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-09T18:08:15.164Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 1,
+      "at": "2026-09-09T18:23:15.235Z"
     }
   ],
   "demand_history": {
@@ -218587,6 +218587,11 @@
       {
         "demand": 1.183737443755092,
         "at": "2026-09-09T17:08:14.598Z",
+        "supply": 8
+      },
+      {
+        "demand": 1.2987721963524526,
+        "at": "2026-09-09T18:23:15.235Z",
         "supply": 8
       }
     ],
@@ -220279,10 +220284,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 639067,
-      "at": "2026-09-08T15:41:55.851Z"
-    },
-    {
       "total": 639092,
       "at": "2026-09-08T15:46:55.852Z"
     },
@@ -220677,6 +220678,10 @@
     {
       "total": 613687,
       "at": "2026-09-09T18:18:17.236Z"
+    },
+    {
+      "total": 613752,
+      "at": "2026-09-09T18:23:17.175Z"
     }
   ],
   "gold_rush": null,
@@ -220703,7 +220708,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 7.200000000000003,
+  "heat_global": 6.600000000000003,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
@@ -220762,7 +220767,7 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1788898506036,
-      "791747702689103893": 1788978159269,
+      "791747702689103893": 1788978220750,
       "1456622719985782864": 1788977979384,
       "1082686076491137115": 1788967739563,
       "1229741033265299506": 1788972968375,
@@ -220793,8 +220798,8 @@
       "1529673877767196783": 1788974725612,
       "913497950213267577": 1788977723386,
       "822079355298906112": 1788976567616,
-      "1000271630154596473": 1788978141194,
-      "437626060876546069": 1788978176979
+      "1000271630154596473": 1788978210138,
+      "437626060876546069": 1788978239711
     }
   },
   "mee6_cache": {
