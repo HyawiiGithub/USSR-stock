@@ -419,7 +419,7 @@
     },
     "1470136693821800521": {
       "username": "",
-      "cash": 4202,
+      "cash": 4217,
       "bank": 0,
       "resources": {
         "Wheat": 1,
@@ -432,8 +432,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-09T20:13:37.112Z",
-      "work_count": 28,
+      "last_work": "2026-09-09T21:31:03.129Z",
+      "work_count": 29,
       "last_claim": "2026-09-09T20:14:13.020Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:48:46.526698",
@@ -447,12 +447,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 80,
-      "bot_total_xp": 80,
-      "daily_work_count": 1,
+      "bot_level": 1,
+      "bot_xp": 4,
+      "bot_total_xp": 104,
+      "daily_work_count": 2,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-09"
+      "last_daily_work_date": "2026-09-09",
+      "mee6_level": 1
     },
     "885213266450731018": {
       "username": "",
@@ -616,8 +617,8 @@
       "last_illegal": "2026-09-09T20:49:03.254Z",
       "total_heat_generated": 31,
       "bot_level": 6,
-      "bot_xp": 114,
-      "bot_total_xp": 1739,
+      "bot_xp": 130,
+      "bot_total_xp": 1755,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 6,
@@ -902,8 +903,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 28,
-      "bot_total_xp": 503,
+      "bot_xp": 47,
+      "bot_total_xp": 522,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 3
@@ -1161,8 +1162,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 45,
-      "bot_total_xp": 45,
+      "bot_xp": 60,
+      "bot_total_xp": 60,
       "daily_work_count": 0,
       "shock_worker": false
     },
@@ -213979,6 +213980,34 @@
       "bot_total_xp": 0,
       "daily_work_count": 0,
       "shock_worker": false
+    },
+    "1511912848291528732": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 21,
+      "bot_total_xp": 21,
+      "daily_work_count": 0,
+      "shock_worker": false
     }
   },
   "companies": {
@@ -214790,8 +214819,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 61319,
-      "market_cap": 61319,
+      "share_price": 61327,
+      "market_cap": 61327,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -214814,7 +214843,7 @@
       "inventory": {
         "Phosphorite": 90,
         "Peat": 138,
-        "Fish": 180,
+        "Fish": 181,
         "Iron Ore": 1,
         "Oil Shale": 44,
         "Timber": 35,
@@ -214823,7 +214852,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-09-03T08:51:55.944Z",
       "price_history": [
-        54589,
         54647,
         54625,
         54653,
@@ -214922,7 +214950,8 @@
         61275,
         61233,
         61243,
-        61319
+        61319,
+        61327
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -214946,11 +214975,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": 0.294489825603401,
-      "recorded_at": "2026-09-09T17:53:16.820Z"
-    },
     {
       "price": 103,
       "change_percent": 0.6876419482022087,
@@ -215445,6 +215469,11 @@
       "price": 97,
       "change_percent": 0.7236470446936054,
       "recorded_at": "2026-09-09T21:28:35.716Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.4871600659729341,
+      "recorded_at": "2026-09-09T21:31:03.949Z"
     }
   ],
   "factory_names": [
@@ -220792,7 +220821,7 @@
         "791747702689103893": 3,
         "1456622719985782864": 4,
         "1490511870967283733": 1,
-        "1470136693821800521": 1,
+        "1470136693821800521": 2,
         "780837437987094560": 1
       }
     },
@@ -220826,7 +220855,7 @@
       "791747702689103893": 1788988347820,
       "1456622719985782864": 1788988484674,
       "1082686076491137115": 1788988365321,
-      "1229741033265299506": 1788989411086,
+      "1229741033265299506": 1788989486305,
       "1536339779140976711": 1788989403387,
       "780837437987094560": 1788987219032,
       "874346333882945547": 1788989290084,
@@ -220859,7 +220888,7 @@
       "1365483598962102305": 1788978313959,
       "1544296111097909309": 1788980427512,
       "1343006572850184217": 1788987617835,
-      "503918799683321866": 1788989270312,
+      "503918799683321866": 1788989499211,
       "1247430843299921973": 1788983108414,
       "1496968738447032410": 1788982614438,
       "1254134534987845877": 1788983786977,
@@ -220867,7 +220896,8 @@
       "1225275427145121903": 1788987497836,
       "1520173521244913684": 1788989021864,
       "930716306603405363": 1788988506798,
-      "1494919466713350275": 1788989008210
+      "1494919466713350275": 1788989465775,
+      "1511912848291528732": 1788989492172
     }
   },
   "mee6_cache": {
@@ -221914,6 +221944,13 @@
       "to": 2,
       "at": "2026-09-09T21:30:02.339Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1470136693821800521",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-09T21:31:03.129Z",
+      "reason": "work"
     }
   ],
   "_lastCollectXP": {
