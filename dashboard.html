@@ -231,40 +231,74 @@ const OWNER_GITHUB="https://github.com/HyawiiGithub";
 
 function toast(m,ok=true){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';t.style.borderColor=ok?'rgba(52,211,153,.4)':'rgba(217,58,66,.4)';setTimeout(()=>t.style.display='none',2500);}
 
+async function hashCode(str){
+  try{
+    const enc=new TextEncoder().encode(str);
+    const buf=await crypto.subtle.digest('SHA-256', enc);
+    const arr=Array.from(new Uint8Array(buf));
+    return arr.map(b=>b.toString(16).padStart(2,'0')).join('').slice(0,16);
+  }catch{
+    // fallback simple hash if subtle not available
+    let h=0; for(let i=0;i<str.length;i++) h=Math.imul(31,h)+str.charCodeAt(i); return Math.abs(h).toString(16).padStart(16,'0').slice(0,16);
+  }
+}
 async function loginWithCode(){
   const raw=document.getElementById('codeInput').value.trim().toUpperCase();
   if(!raw) return document.getElementById('loginMsg').textContent="Enter code";
-  // On GitHub Pages (static) there is no /api — check economy_data.json directly first (works on both Vercel and Pages)
-  let codes=null;
+  // 1) Try Vercel API first (private, never exposes list) — works on Vercel, 404 on GitHub Pages (that's ok)
   try{
-    const cr=await fetch('./economy_data.json',{cache:'no-store'});
-    if(cr.ok){ const jd=await cr.json(); codes=jd.access_codes; }
+    const r=await fetch('/api/access/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code:raw})});
+    if(r.ok){
+      const j=await r.json();
+      if(j.ok){
+        currentCode=raw; currentPerms=j.permissions||[];
+        unlock();
+        return;
+      }
+    }
   }catch{}
-  if(!codes){
+  // 2) GitHub Pages fallback — check economy_data.json (now hashed, not plain) — hash input and compare
+  try{
+    let jd=null;
     try{
-      const gr=await fetch('https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json',{cache:'no-store'});
-      if(gr.ok){ const jd=await gr.json(); codes=jd.access_codes; }
+      const cr=await fetch('./economy_data.json',{cache:'no-store'});
+      if(cr.ok) jd=await cr.json();
     }catch{}
-  }
-  if(codes && codes[raw]){
-    const entry=codes[raw];
-    if(entry.expiresAt && new Date(entry.expiresAt).getTime()<Date.now()){ document.getElementById('loginMsg').textContent="Code expired"; return; }
-    currentCode=raw; currentPerms=entry.permissions||[];
-    unlock();
-    return;
-  }
-  // localStorage fallback for locally created codes (dashboard demo)
+    if(!jd){
+      const gr=await fetch('https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json',{cache:'no-store'});
+      if(gr.ok) jd=await gr.json();
+    }
+    if(jd){
+      // Check plain (local dev) and hashed (public)
+      if(jd.access_codes && jd.access_codes[raw]){
+        const entry=jd.access_codes[raw];
+        if(entry.expiresAt && new Date(entry.expiresAt).getTime()<Date.now()){ document.getElementById('loginMsg').textContent="Code expired"; return; }
+        currentCode=raw; currentPerms=entry.permissions||[];
+        unlock(); return;
+      }
+      if(jd.access_codes_hashed){
+        const h=await hashCode(raw);
+        const entry=jd.access_codes_hashed[h];
+        if(entry){
+          if(entry.expiresAt && new Date(entry.expiresAt).getTime()<Date.now()){ document.getElementById('loginMsg').textContent="Code expired"; return; }
+          currentCode=raw; currentPerms=entry.permissions||[];
+          unlock(); return;
+        }
+      }
+    }
+  }catch{}
+  // 3) localStorage fallback for dashboard demo codes
   const localCodes=JSON.parse(localStorage.getItem('ussr_access_codes')||'{}');
   if(localCodes[raw]){
     currentCode=raw; currentPerms=localCodes[raw].permissions||[];
     unlock(); return;
   }
-  // Vercel only: try ADMIN_PASSWORD via /api/admin/verify (will 404 on GitHub Pages — that's fine)
+  // 4) Vercel ADMIN_PASSWORD fallback
   try{
     const r=await fetch('/api/admin/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:raw})});
     if(r.ok){ const j=await r.json(); if(j.ok){ currentCode="ADMIN"; currentPerms=["admin"]; unlock(); return; }}
   }catch{}
-  document.getElementById('loginMsg').textContent="Invalid code — ask owner for a new one. Your code is case-insensitive, 8 chars like ZZ4P6KLQ";
+  document.getElementById('loginMsg').textContent="Invalid code — ask owner for a new one. Codes are 8 chars like ZZ4P6KLQ (case-insensitive)";
 }
 function hasPerm(p){
   if(currentPerms.includes('admin')||currentPerms.includes('*')) return true;
