@@ -306,8 +306,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 18,
-      "bot_total_xp": 18,
+      "bot_xp": 41,
+      "bot_total_xp": 41,
       "daily_work_count": 0,
       "shock_worker": false
     },
@@ -1284,11 +1284,12 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 99,
-      "bot_total_xp": 99,
+      "bot_level": 1,
+      "bot_xp": 16,
+      "bot_total_xp": 116,
       "daily_work_count": 0,
-      "shock_worker": false
+      "shock_worker": false,
+      "mee6_level": 1
     },
     "1504373498498383912": {
       "cash": 0,
@@ -213899,6 +213900,34 @@
       "bot_total_xp": 0,
       "daily_work_count": 0,
       "shock_worker": false
+    },
+    "1371822687231414293": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false
     }
   },
   "companies": {
@@ -214847,11 +214876,6 @@
   },
   "gsi_history": [
     {
-      "price": 102,
-      "change_percent": 0.6627781152556261,
-      "recorded_at": "2026-09-08T16:51:55.008Z"
-    },
-    {
       "price": 101,
       "change_percent": -0.1963324496128595,
       "recorded_at": "2026-09-08T16:56:55.101Z"
@@ -215345,6 +215369,11 @@
       "price": 103,
       "change_percent": 0.20892285522607976,
       "recorded_at": "2026-09-09T16:13:15.286Z"
+    },
+    {
+      "price": 102,
+      "change_percent": -0.2608276310330043,
+      "recorded_at": "2026-09-09T16:18:15.296Z"
     }
   ],
   "factory_names": [
@@ -220153,14 +220182,6 @@
   "total_rubles_history": [
     {
       "total": 638002,
-      "at": "2026-09-08T13:36:56.337Z"
-    },
-    {
-      "total": 638002,
-      "at": "2026-09-08T13:41:55.921Z"
-    },
-    {
-      "total": 638002,
       "at": "2026-09-08T13:46:55.817Z"
     },
     {
@@ -220550,6 +220571,14 @@
     {
       "total": 639558,
       "at": "2026-09-09T16:13:15.708Z"
+    },
+    {
+      "total": 639558,
+      "at": "2026-09-09T16:18:15.789Z"
+    },
+    {
+      "total": 639558,
+      "at": "2026-09-09T16:18:16.286Z"
     }
   ],
   "gold_rush": null,
@@ -220635,7 +220664,7 @@
       "1536339779140976711": 1788969872072,
       "780837437987094560": 1788899341654,
       "874346333882945547": 1788970521131,
-      "870686833976172574": 1788964034203,
+      "870686833976172574": 1788970669929,
       "1186597507720019988": 1788969935674,
       "1521043721129558017": 1788966071148,
       "1397601108616024075": 1788970666966,
@@ -220643,7 +220672,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1788966098890,
       "1309104161278918706": 1788966436063,
-      "1325111649816023092": 1788970593096,
+      "1325111649816023092": 1788970691547,
       "1506785783506534426": 1788967877437,
       "807254722251587614": 1788970508404,
       "1353373037994705078": 1788970587870,
@@ -220845,6 +220874,13 @@
       "from": 1,
       "to": 2,
       "at": "2026-09-09T16:14:58.764Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1325111649816023092",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-09T16:18:11.552Z",
       "reason": "chat"
     }
   ],
