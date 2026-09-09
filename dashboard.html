@@ -234,44 +234,37 @@ function toast(m,ok=true){const t=document.getElementById('toast');t.textContent
 async function loginWithCode(){
   const raw=document.getElementById('codeInput').value.trim().toUpperCase();
   if(!raw) return document.getElementById('loginMsg').textContent="Enter code";
-  // try dashboard codes first, then ADMIN_PASSWORD fallback
+  // On GitHub Pages (static) there is no /api — check economy_data.json directly first (works on both Vercel and Pages)
+  let codes=null;
   try{
-    const r=await fetch('/api/ussr/overview',{cache:'no-store'});
-    const j=await r.json();
-    // j._access_codes is not exposed, so we check local economy_data.json directly if available, else check via admin verify
-    // Try to fetch access_codes via bot's economy_data.json raw
-    let codes=null;
-    try{
-      const cr=await fetch('./economy_data.json',{cache:'no-store'});
-      if(cr.ok){ const jd=await cr.json(); codes=jd.access_codes; }
-    }catch{}
-    if(!codes){
-      // fallback: try GitHub raw
-      try{
-        const gr=await fetch('https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json',{cache:'no-store'});
-        if(gr.ok){ const jd=await gr.json(); codes=jd.access_codes; }
-      }catch{}
-    }
-    if(codes && codes[raw]){
-      const entry=codes[raw];
-      if(entry.expiresAt && new Date(entry.expiresAt).getTime()<Date.now()){ document.getElementById('loginMsg').textContent="Code expired"; return; }
-      currentCode=raw; currentPerms=entry.permissions||[];
-      unlock();
-      return;
-    }
-  }catch(e){}
-  // fallback: try ADMIN_PASSWORD via admin verify (owner)
-  try{
-    const r=await fetch('/api/admin/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:raw})});
-    if(r.ok){ const j=await r.json(); if(j.ok){ currentCode="ADMIN"; currentPerms=["admin"]; unlock(); return; }}
+    const cr=await fetch('./economy_data.json',{cache:'no-store'});
+    if(cr.ok){ const jd=await cr.json(); codes=jd.access_codes; }
   }catch{}
-  // localStorage fallback for locally created codes
+  if(!codes){
+    try{
+      const gr=await fetch('https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json',{cache:'no-store'});
+      if(gr.ok){ const jd=await gr.json(); codes=jd.access_codes; }
+    }catch{}
+  }
+  if(codes && codes[raw]){
+    const entry=codes[raw];
+    if(entry.expiresAt && new Date(entry.expiresAt).getTime()<Date.now()){ document.getElementById('loginMsg').textContent="Code expired"; return; }
+    currentCode=raw; currentPerms=entry.permissions||[];
+    unlock();
+    return;
+  }
+  // localStorage fallback for locally created codes (dashboard demo)
   const localCodes=JSON.parse(localStorage.getItem('ussr_access_codes')||'{}');
   if(localCodes[raw]){
     currentCode=raw; currentPerms=localCodes[raw].permissions||[];
     unlock(); return;
   }
-  document.getElementById('loginMsg').textContent="Invalid code — ask owner for a new one";
+  // Vercel only: try ADMIN_PASSWORD via /api/admin/verify (will 404 on GitHub Pages — that's fine)
+  try{
+    const r=await fetch('/api/admin/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:raw})});
+    if(r.ok){ const j=await r.json(); if(j.ok){ currentCode="ADMIN"; currentPerms=["admin"]; unlock(); return; }}
+  }catch{}
+  document.getElementById('loginMsg').textContent="Invalid code — ask owner for a new one. Your code is case-insensitive, 8 chars like ZZ4P6KLQ";
 }
 function hasPerm(p){
   if(currentPerms.includes('admin')||currentPerms.includes('*')) return true;
@@ -315,20 +308,63 @@ function initNav(){
   }));
 }
 async function loadEconomy(){
+  // Try Vercel API first, fallback to static economy_data.json for GitHub Pages (no 404 error shown)
   try{
-    const r=await fetch('/api/ussr/overview',{cache:'no-store'});
-    if(!r.ok) throw new Error('http '+r.status);
-    economy=await r.json();
-    document.getElementById('connBadge').textContent='LIVE'; document.getElementById('connBadge').className='badge b-live';
-    // also try to load raw for access_codes and users
+    let data=null;
     try{
-      const rr=await fetch('./economy_data.json',{cache:'no-store'});
-      if(rr.ok){ const jd=await rr.json(); economy._rawCodes=jd.access_codes; economy._rawUsers=jd.users; economy._mee6=jd.mee6_cache; }
+      const r=await fetch('/api/ussr/overview',{cache:'no-store'});
+      if(r.ok) data=await r.json();
     }catch{}
+    if(!data){
+      // GitHub Pages fallback — fetch economy_data.json directly and build overview client-side
+      const candidates=['./economy_data.json','https://raw.githubusercontent.com/HyawiiGithub/USSR-stock/main/economy_data.json'];
+      for(const url of candidates){
+        try{
+          const rr=await fetch(url,{cache:'no-store'});
+          if(rr.ok){ 
+            const jd=await rr.json();
+            // Build minimal overview from raw if API not available
+            data={
+              gsi_history: jd.gsi_history||[{price:100,change_percent:0}],
+              inflation: jd.inflation||0,
+              inflation_history: jd.inflation_history||[0],
+              gold: { backing: jd.gold_backing||0, price: 150, stock: 0, moneySupply: 0, status: jd.gold_status||"—" },
+              companies: Object.values(jd.companies||{}),
+              regions: jd.regions||{},
+              ssr_resource_weights: jd.ssr_resource_weights||{},
+              compensation_log: jd.compensation_log||[],
+              owner_logs: jd.owner_logs||[],
+              gsi: jd.gsi_history?jd.gsi_history[0]?.price:100,
+              money_printed: jd.money_printed||0,
+              five_year_plan: jd.five_year_plan,
+              _rawCodes: jd.access_codes,
+              _rawUsers: jd.users,
+              _mee6: jd.mee6_cache,
+              premier_approval: jd.premier_approval,
+              _source: url.includes('raw.githubusercontent')?'github-raw':'local-json'
+            };
+            // Try to enrich gold from raw if available
+            if(jd.gold_rush) data.gold_rush=jd.gold_rush;
+            break;
+          }
+        }catch{}
+      }
+    } else {
+      // API succeeded — also load raw for codes/users
+      try{
+        const rr=await fetch('./economy_data.json',{cache:'no-store'});
+        if(rr.ok){ const jd=await rr.json(); data._rawCodes=jd.access_codes; data._rawUsers=jd.users; data._mee6=jd.mee6_cache; data.premier_approval=jd.premier_approval; }
+      }catch{}
+    }
+    if(!data) throw new Error('no data');
+    economy=data;
+    document.getElementById('connBadge').textContent=data._source?.includes('local')?'LIVE (local)':data._source?.includes('github')?'LIVE (GitHub)':'LIVE';
+    document.getElementById('connBadge').className='badge b-live';
     renderAll();
   }catch(e){
-    document.getElementById('connBadge').textContent='OFFLINE'; document.getElementById('connBadge').className='badge b-off';
-    console.warn(e);
+    document.getElementById('connBadge').textContent='OFFLINE — no economy_data.json';
+    document.getElementById('connBadge').className='badge b-off';
+    console.warn('loadEconomy fallback failed', e);
   }
 }
 function renderAll(){
