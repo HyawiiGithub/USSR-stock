@@ -698,15 +698,15 @@
       "shock_worker": false
     },
     "874346333882945547": {
-      "cash": 460,
+      "cash": 480,
       "bank": 26066,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-08T19:46:54.389Z",
-      "work_count": 1024,
+      "last_work": "2026-09-09T15:24:21.392Z",
+      "work_count": 1025,
       "last_claim": "2026-09-08T01:45:06.873Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -719,11 +719,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 76,
-      "bot_total_xp": 76,
-      "daily_work_count": 0,
-      "shock_worker": false
+      "bot_level": 1,
+      "bot_xp": 38,
+      "bot_total_xp": 138,
+      "daily_work_count": 1,
+      "shock_worker": false,
+      "last_daily_work_date": "2026-09-09",
+      "mee6_level": 1
     },
     "": {
       "cash": 0,
@@ -214007,14 +214009,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 26224,
+      "funds": 26219,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 168079,
-      "market_cap": 168079,
+      "share_price": 171090,
+      "market_cap": 171090,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214052,26 +214054,24 @@
       "inventory": {
         "Gold Bar": 14,
         "Fish": 2,
-        "Wheat": 134,
-        "Sugar": 56,
+        "Wheat": 148,
+        "Sugar": 73,
         "Reactor Core": 1,
         "Copper": 28,
         "Lead": 8,
-        "Iron Ore": 42,
-        "Coal": 8,
+        "Iron Ore": 49,
+        "Coal": 15,
         "Gold": 2,
-        "Timber": 30,
-        "Sulphur": 16,
+        "Timber": 36,
+        "Sulphur": 19,
         "Uranium Rod": 1,
-        "Oil": 2,
-        "Bread": 1,
-        "Cake": 1
+        "Oil": 4,
+        "Bread": 7,
+        "Cake": 7
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-08T19:33:48.224Z",
+      "last_collect": "2026-09-09T15:24:26.834Z",
       "price_history": [
-        150183,
-        150563,
         150536,
         151395,
         151447,
@@ -214169,7 +214169,9 @@
         167350,
         167488,
         167990,
-        168079
+        168079,
+        168679,
+        171090
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -214527,16 +214529,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.16650142809122676,
-      "recorded_at": "2026-09-08T15:51:54.971Z"
-    },
-    {
-      "price": 96,
-      "change_percent": 1.0057272095220988,
-      "recorded_at": "2026-09-08T15:54:14.898Z"
-    },
     {
       "price": 96,
       "change_percent": 0.3197151617568353,
@@ -215026,6 +215018,16 @@
       "price": 96,
       "change_percent": 0.3222360409163606,
       "recorded_at": "2026-09-08T20:11:55.902Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.6707618808619635,
+      "recorded_at": "2026-09-09T15:24:21.992Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.07719412614097879,
+      "recorded_at": "2026-09-09T15:24:27.541Z"
     }
   ],
   "factory_names": [
@@ -215034,12 +215036,12 @@
     "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
-    "Brezhnev Auto Factory",
-    "Volga Shipbuilding"
+    "Brezhnev Auto Factory"
   ],
   "used_factory_names": [
     "Ural Heavy Industries",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Volga Shipbuilding"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -220254,8 +220256,16 @@
       "winners": [],
       "announced": false
     },
-    "work_daily": {},
-    "collect_daily": {},
+    "work_daily": {
+      "2026-09-09": {
+        "874346333882945547": 1
+      }
+    },
+    "collect_daily": {
+      "2026-09-09": {
+        "Kazakh SSR": 0
+      }
+    },
     "qotd": {
       "date": null,
       "question": null,
@@ -220282,7 +220292,7 @@
       "1229741033265299506": 1788966970592,
       "1536339779140976711": 1788966193957,
       "780837437987094560": 1788899341654,
-      "874346333882945547": 1788967227545,
+      "874346333882945547": 1788967455245,
       "870686833976172574": 1788964034203,
       "1186597507720019988": 1788964105314,
       "1521043721129558017": 1788966071148,
@@ -220434,8 +220444,21 @@
       "to": 1,
       "at": "2026-09-09T15:23:14.188Z",
       "reason": "chat"
+    },
+    {
+      "userId": "874346333882945547",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-09T15:24:21.393Z",
+      "reason": "work"
     }
   ],
+  "_lastCollectXP": {
+    "xpGainC": 21,
+    "beforeLvlC": 1,
+    "afterLvl": 1,
+    "leveled": []
+  },
   "access_codes_hashed": {
     "7dd45665a3df9024": {
       "permissions": [
