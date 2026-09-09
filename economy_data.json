@@ -214933,11 +214933,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.36512996083381943,
-      "recorded_at": "2026-09-08T19:51:55.999Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.625661972057769,
       "recorded_at": "2026-09-08T19:56:56.041Z"
     },
@@ -215430,6 +215425,11 @@
       "price": 103,
       "change_percent": 0.7986077298250374,
       "recorded_at": "2026-09-09T18:07:15.277Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.6712166941908326,
+      "recorded_at": "2026-09-09T18:08:16.882Z"
     }
   ],
   "factory_names": [
@@ -215764,14 +215764,14 @@
     "Iron Ingot": 8,
     "Cake": 5,
     "Bread": 3,
-    "Fuel": 4
+    "Fuel": 2
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 90,
-    "Fuel": 56,
+    "Fuel": 58,
     "Iron Ingot": 25,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -215789,11 +215789,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-02T12:22:32.932Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -217288,6 +217283,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-09T17:53:15.162Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-09-09T18:08:15.164Z"
     }
   ],
   "demand_history": {
@@ -218483,6 +218483,11 @@
       {
         "demand": 1.2616725922753402,
         "at": "2026-09-09T17:23:14.752Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.279475529322754,
+        "at": "2026-09-09T18:08:15.164Z",
         "supply": 1
       }
     ],
@@ -220272,10 +220277,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 638957,
-      "at": "2026-09-08T15:26:56.017Z"
-    },
-    {
       "total": 639002,
       "at": "2026-09-08T15:31:55.864Z"
     },
@@ -220670,6 +220671,10 @@
     {
       "total": 613617,
       "at": "2026-09-09T18:03:17.720Z"
+    },
+    {
+      "total": 613642,
+      "at": "2026-09-09T18:08:17.174Z"
     }
   ],
   "gold_rush": null,
