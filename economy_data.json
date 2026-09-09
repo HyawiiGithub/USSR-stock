@@ -699,15 +699,15 @@
       "shock_worker": false
     },
     "874346333882945547": {
-      "cash": 580,
+      "cash": 600,
       "bank": 26066,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-09T16:11:22.445Z",
-      "work_count": 1030,
+      "last_work": "2026-09-09T16:22:51.559Z",
+      "work_count": 1031,
       "last_claim": "2026-09-08T01:45:06.873Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -720,13 +720,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 2,
-      "bot_xp": 200,
-      "bot_total_xp": 455,
-      "daily_work_count": 6,
+      "bot_level": 3,
+      "bot_xp": 5,
+      "bot_total_xp": 480,
+      "daily_work_count": 7,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-09",
-      "mee6_level": 2
+      "mee6_level": 3
     },
     "": {
       "cash": 0,
@@ -214357,14 +214357,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 29155,
+      "funds": 29150,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 171546,
-      "market_cap": 171546,
+      "share_price": 171541,
+      "market_cap": 171541,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214419,7 +214419,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-09T15:24:26.834Z",
       "price_history": [
-        155843,
         155878,
         155885,
         155898,
@@ -214518,7 +214517,8 @@
         171928,
         171719,
         171511,
-        171546
+        171546,
+        171541
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -214876,16 +214876,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.04284527125736595,
-      "recorded_at": "2026-09-08T16:58:59.079Z"
-    },
-    {
-      "price": 101,
-      "change_percent": 0.796292376326255,
-      "recorded_at": "2026-09-08T16:59:04.256Z"
-    },
     {
       "price": 100,
       "change_percent": -0.07834054651089192,
@@ -215375,6 +215365,16 @@
       "price": 102,
       "change_percent": 0.03848990541682894,
       "recorded_at": "2026-09-09T16:20:43.014Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.09340823047910432,
+      "recorded_at": "2026-09-09T16:22:52.352Z"
+    },
+    {
+      "price": 107,
+      "change_percent": 5.61390276834736,
+      "recorded_at": "2026-09-09T16:23:13.303Z"
     }
   ],
   "factory_names": [
@@ -220624,7 +220624,7 @@
     },
     "work_daily": {
       "2026-09-09": {
-        "874346333882945547": 6,
+        "874346333882945547": 7,
         "860203156222902332": 1,
         "1536339779140976711": 1,
         "1506785783506534426": 1,
@@ -220898,6 +220898,13 @@
       "to": 2,
       "at": "2026-09-09T16:22:00.403Z",
       "reason": "chat"
+    },
+    {
+      "userId": "874346333882945547",
+      "from": 2,
+      "to": 3,
+      "at": "2026-09-09T16:22:51.559Z",
+      "reason": "work"
     }
   ],
   "_lastCollectXP": {
