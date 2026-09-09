@@ -26672,11 +26672,12 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 77,
-      "bot_total_xp": 77,
+      "bot_level": 1,
+      "bot_xp": 0,
+      "bot_total_xp": 100,
       "daily_work_count": 0,
-      "shock_worker": false
+      "shock_worker": false,
+      "mee6_level": 1
     },
     "1277085999121301556": {
       "cash": 0,
@@ -180067,8 +180068,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 21,
+      "bot_total_xp": 21,
       "daily_work_count": 0,
       "shock_worker": false
     },
@@ -204679,8 +204680,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 17,
+      "bot_total_xp": 17,
       "daily_work_count": 0,
       "shock_worker": false
     },
@@ -214849,8 +214850,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 61327,
-      "market_cap": 61327,
+      "share_price": 61290,
+      "market_cap": 61290,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -214882,7 +214883,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-09-03T08:51:55.944Z",
       "price_history": [
-        54647,
         54625,
         54653,
         54682,
@@ -214981,7 +214981,8 @@
         61233,
         61243,
         61319,
-        61327
+        61327,
+        61290
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -215005,11 +215006,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.30407688052803095,
-      "recorded_at": "2026-09-09T19:18:16.884Z"
-    },
     {
       "price": 101,
       "change_percent": 0.43979467837301256,
@@ -215504,6 +215500,11 @@
       "price": 98,
       "change_percent": 0.3432012986894751,
       "recorded_at": "2026-09-09T23:18:17.416Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.8131237987807464,
+      "recorded_at": "2026-09-09T23:21:18.575Z"
     }
   ],
   "factory_names": [
@@ -220931,9 +220932,11 @@
       "1456863215815364796": 1788992814116,
       "963834359994007614": 1788995614809,
       "1339755726117011519": 1788994069140,
-      "983175525809926146": 1788995737200,
+      "983175525809926146": 1788996121210,
       "730223629849199093": 1788996050980,
-      "418231502627667979": 1788996055750
+      "418231502627667979": 1788996055750,
+      "710945531794554970": 1788996095386,
+      "925564822781845595": 1788996135260
     }
   },
   "mee6_cache": {
@@ -222092,6 +222095,13 @@
       "from": 1,
       "to": 2,
       "at": "2026-09-09T23:09:38.816Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "983175525809926146",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-09T23:22:01.210Z",
       "reason": "chat"
     }
   ],
