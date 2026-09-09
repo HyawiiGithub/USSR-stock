@@ -615,12 +615,12 @@
       "wanted": 0,
       "last_illegal": "2026-09-09T20:49:03.254Z",
       "total_heat_generated": 31,
-      "bot_level": 5,
-      "bot_xp": 459,
-      "bot_total_xp": 1609,
+      "bot_level": 6,
+      "bot_xp": 1,
+      "bot_total_xp": 1626,
       "daily_work_count": 1,
       "shock_worker": false,
-      "mee6_level": 5,
+      "mee6_level": 6,
       "last_daily_work_date": "2026-09-09"
     },
     "1456622719985782864": {
@@ -1279,15 +1279,15 @@
       "shock_worker": false
     },
     "1325111649816023092": {
-      "cash": 20,
+      "cash": 40,
       "bank": 4215,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-09T16:25:53.234Z",
-      "work_count": 162,
+      "last_work": "2026-09-09T21:22:06.634Z",
+      "work_count": 163,
       "last_claim": "2026-09-01T22:44:05.083Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1301,9 +1301,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 77,
-      "bot_total_xp": 332,
-      "daily_work_count": 2,
+      "bot_xp": 96,
+      "bot_total_xp": 351,
+      "daily_work_count": 3,
       "shock_worker": false,
       "mee6_level": 2,
       "last_daily_work_date": "2026-09-09"
@@ -214415,14 +214415,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 1617,
+      "funds": 1612,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 143626,
-      "market_cap": 143626,
+      "share_price": 143645,
+      "market_cap": 143645,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214465,7 +214465,7 @@
       "inventory": {
         "Gold Bar": 15,
         "Fish": 2,
-        "Wheat": 95,
+        "Wheat": 94,
         "Sugar": 13,
         "Reactor Core": 1,
         "Copper": 38,
@@ -214474,7 +214474,7 @@
         "Timber": 36,
         "Sulphur": 19,
         "Uranium Rod": 1,
-        "Coal": 10,
+        "Coal": 12,
         "Contraband: Cocaine": 2,
         "Contraband: Coca Paste": 4,
         "Contraband: Synthetic": 9,
@@ -214487,7 +214487,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-09T15:24:26.834Z",
       "price_history": [
-        166471,
         167337,
         167388,
         167399,
@@ -214586,7 +214585,8 @@
         143443,
         143450,
         143587,
-        143626
+        143626,
+        143645
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -214944,11 +214944,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": -0.028723904701445212,
-      "recorded_at": "2026-09-09T17:40:05.702Z"
-    },
     {
       "price": 103,
       "change_percent": 0.6983086543413243,
@@ -215443,6 +215438,11 @@
       "price": 97,
       "change_percent": 0.2621335421298552,
       "recorded_at": "2026-09-09T21:18:17.201Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.4841895260223135,
+      "recorded_at": "2026-09-09T21:22:07.418Z"
     }
   ],
   "factory_names": [
@@ -220783,7 +220783,7 @@
         "1506785783506534426": 10,
         "807254722251587614": 14,
         "947911397398954005": 1,
-        "1325111649816023092": 2,
+        "1325111649816023092": 3,
         "1397601108616024075": 5,
         "1229741033265299506": 1,
         "1186597507720019988": 1,
@@ -220825,7 +220825,7 @@
       "791747702689103893": 1788988347820,
       "1456622719985782864": 1788988484674,
       "1082686076491137115": 1788988365321,
-      "1229741033265299506": 1788988837309,
+      "1229741033265299506": 1788988951153,
       "1536339779140976711": 1788988654936,
       "780837437987094560": 1788987219032,
       "874346333882945547": 1788988854305,
@@ -221884,6 +221884,13 @@
       "from": 0,
       "to": 1,
       "at": "2026-09-09T21:18:38.717Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1229741033265299506",
+      "from": 5,
+      "to": 6,
+      "at": "2026-09-09T21:22:31.154Z",
       "reason": "chat"
     }
   ],
