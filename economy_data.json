@@ -214754,8 +214754,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 100.08474999999984,
-      "underground_heat": 223,
+      "heat": 98.88474999999984,
+      "underground_heat": 222,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215093,11 +215093,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 93,
-      "change_percent": 1.4784096061660392,
-      "recorded_at": "2026-09-09T20:28:36.373Z"
-    },
     {
       "price": 93,
       "change_percent": 0.5436377779577437,
@@ -215592,6 +215587,11 @@
       "price": 93,
       "change_percent": 0.10507770501833164,
       "recorded_at": "2026-09-10T01:18:17.893Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.48229035084700456,
+      "recorded_at": "2026-09-10T01:23:17.939Z"
     }
   ],
   "factory_names": [
@@ -215612,11 +215612,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7429795486235423,
+  "inflation": 0.6923565694194177,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.543372782657528,
     0.4960753366090719,
     0.4634189014296591,
     0.4874663130134251,
@@ -215715,7 +215714,8 @@
     0.7336563667772299,
     0.7523128543025804,
     0.7438076941493063,
-    0.7429795486235423
+    0.7429795486235423,
+    0.6923565694194177
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -215922,9 +215922,7 @@
     "Steel Beam": "2026-09-08T17:58:34.489Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Gas Fuel": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -215944,15 +215942,10 @@
     "Circuit Board": 4,
     "Cotton Fabric": 5,
     "Reactor Core": 1,
-    "Gas Fuel": 32,
+    "Gas Fuel": 33,
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-02T18:43:58.035Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -217447,6 +217440,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-09-10T01:08:15.759Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-10T01:23:16.006Z"
     }
   ],
   "demand_history": {
@@ -219916,6 +219914,11 @@
         "demand": 1.3249910573451018,
         "at": "2026-09-10T01:08:15.759Z",
         "supply": 1
+      },
+      {
+        "demand": 1.3285615679555527,
+        "at": "2026-09-10T01:23:16.006Z",
+        "supply": 1
       }
     ],
     "Steel Beam": [
@@ -220488,10 +220491,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 613412,
-      "at": "2026-09-09T17:28:17.142Z"
-    },
-    {
       "total": 613452,
       "at": "2026-09-09T17:33:17.161Z"
     },
@@ -220886,6 +220885,10 @@
     {
       "total": 608289,
       "at": "2026-09-10T01:18:18.466Z"
+    },
+    {
+      "total": 608289,
+      "at": "2026-09-10T01:23:18.353Z"
     }
   ],
   "gold_rush": null,
@@ -220912,7 +220915,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 10.500000000000014,
+  "heat_global": 9.900000000000015,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
