@@ -1510,8 +1510,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 170,
-      "bot_total_xp": 940,
+      "bot_xp": 194,
+      "bot_total_xp": 964,
       "daily_work_count": 5,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -34023,11 +34023,12 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 90,
-      "bot_total_xp": 90,
+      "bot_level": 1,
+      "bot_xp": 10,
+      "bot_total_xp": 110,
       "daily_work_count": 0,
-      "shock_worker": false
+      "shock_worker": false,
+      "mee6_level": 1
     },
     "1401625435527450808": {
       "cash": 0,
@@ -211317,15 +211318,15 @@
       "shock_worker": false
     },
     "1490511870967283733": {
-      "cash": 306,
+      "cash": 321,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-09T20:07:23.762Z",
-      "work_count": 2,
+      "last_work": "2026-09-10T16:09:57.627Z",
+      "work_count": 3,
       "last_claim": "2026-09-10T16:09:51.087Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -211339,11 +211340,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 57,
-      "bot_total_xp": 57,
-      "daily_work_count": 1,
+      "bot_xp": 76,
+      "bot_total_xp": 76,
+      "daily_work_count": 2,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-09"
+      "last_daily_work_date": "2026-09-10"
     },
     "1523731931005718558": {
       "cash": 0,
@@ -215529,8 +215530,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 61365,
-      "market_cap": 61365,
+      "share_price": 61395,
+      "market_cap": 61395,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -215555,14 +215556,13 @@
         "Peat": 138,
         "Fish": 181,
         "Iron Ore": 1,
-        "Oil Shale": 46,
+        "Oil Shale": 47,
         "Timber": 37,
         "Sugar": 1
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-09-03T08:51:55.944Z",
       "price_history": [
-        54601,
         54622,
         54615,
         54627,
@@ -215661,7 +215661,8 @@
         61290,
         61356,
         61388,
-        61365
+        61365,
+        61395
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -215685,11 +215686,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 1.3706959836853128,
-      "recorded_at": "2026-09-10T11:15:59.751Z"
-    },
     {
       "price": 92,
       "change_percent": 0.5768439556326557,
@@ -216184,6 +216180,11 @@
       "price": 88,
       "change_percent": 1.1114029224749067,
       "recorded_at": "2026-09-10T16:08:20.143Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 1.4791735030441715,
+      "recorded_at": "2026-09-10T16:09:58.560Z"
     }
   ],
   "factory_names": [
@@ -221632,7 +221633,8 @@
         "780837437987094560": 1,
         "860203156222902332": 3,
         "1511756975392948224": 5,
-        "1521043721129558017": 1
+        "1521043721129558017": 1,
+        "1490511870967283733": 1
       }
     },
     "collect_daily": {
@@ -221700,7 +221702,7 @@
       "822079355298906112": 1788976567616,
       "1000271630154596473": 1788978774195,
       "437626060876546069": 1788978658531,
-      "1365483598962102305": 1789046989420,
+      "1365483598962102305": 1789056621420,
       "1544296111097909309": 1788980427512,
       "1343006572850184217": 1789035951512,
       "503918799683321866": 1789040690540,
@@ -221747,7 +221749,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789045275826,
-      "1511756975392948224": 1789056373497,
+      "1511756975392948224": 1789056599342,
       "1391043482541494282": 1789046830080,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789048984990,
@@ -223670,6 +223672,13 @@
       "from": 3,
       "to": 4,
       "at": "2026-09-10T15:55:15.202Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1365483598962102305",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-10T16:10:21.420Z",
       "reason": "chat"
     }
   ],
