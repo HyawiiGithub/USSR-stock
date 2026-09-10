@@ -940,8 +940,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 28,
-      "bot_total_xp": 1178,
+      "bot_xp": 50,
+      "bot_total_xp": 1200,
       "daily_work_count": 5,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -1508,8 +1508,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 71,
-      "bot_total_xp": 326,
+      "bot_xp": 86,
+      "bot_total_xp": 341,
       "daily_work_count": 1,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -117749,8 +117749,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 36,
-      "bot_total_xp": 291,
+      "bot_xp": 54,
+      "bot_total_xp": 309,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 2
@@ -180082,8 +180082,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 246,
-      "bot_total_xp": 1016,
+      "bot_xp": 268,
+      "bot_total_xp": 1038,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 4
@@ -215248,8 +215248,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 37.93474999999963,
-      "underground_heat": 201,
+      "heat": 36.73474999999963,
+      "underground_heat": 200,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215586,11 +215586,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.938612861889633,
-      "recorded_at": "2026-09-10T09:15:17.131Z"
-    },
     {
       "price": 92,
       "change_percent": 0.9030950764418526,
@@ -216085,6 +216080,11 @@
       "price": 93,
       "change_percent": 0.7865837090313849,
       "recorded_at": "2026-09-10T13:58:19.764Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.49124120246722996,
+      "recorded_at": "2026-09-10T14:03:19.770Z"
     }
   ],
   "factory_names": [
@@ -216105,11 +216105,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6838936160096053,
+  "inflation": 0.6651450026983734,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.7494772920649744,
     0.6839130314060127,
     0.6699317212130543,
     0.6798352458203456,
@@ -216208,7 +216207,8 @@
     0.7198354427274605,
     0.7492188633047769,
     0.6943370001944821,
-    0.6838936160096053
+    0.6838936160096053,
+    0.6651450026983734
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -216365,7 +216365,7 @@
     "Concrete": 1.4123553225473866,
     "Glass": 1.4121022218863641,
     "Steel Beam": 1.3956648976849868,
-    "Machine Parts": 1.3871368171536318,
+    "Machine Parts": 1.3886355750697967,
     "Refined Fuel": 1.4046113124326765,
     "Uranium Rod": 1.3905920051341234,
     "Reactor Core": 1.4017420607543296,
@@ -221040,10 +221040,6 @@
   "total_rubles_history": [
     {
       "total": 608367,
-      "at": "2026-09-10T06:23:18.766Z"
-    },
-    {
-      "total": 608367,
       "at": "2026-09-10T06:28:18.772Z"
     },
     {
@@ -221437,6 +221433,10 @@
     {
       "total": 614670,
       "at": "2026-09-10T13:58:20.536Z"
+    },
+    {
+      "total": 614670,
+      "at": "2026-09-10T14:03:20.571Z"
     }
   ],
   "gold_rush": null,
@@ -221550,7 +221550,7 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1788898506036,
-      "791747702689103893": 1789048905346,
+      "791747702689103893": 1789049002134,
       "1456622719985782864": 1789022931774,
       "1082686076491137115": 1789048949190,
       "1229741033265299506": 1789039531727,
@@ -221604,7 +221604,7 @@
       "983175525809926146": 1788996121210,
       "730223629849199093": 1789019124703,
       "418231502627667979": 1788996489687,
-      "710945531794554970": 1789048934364,
+      "710945531794554970": 1789048996471,
       "925564822781845595": 1788996135260,
       "930627006566129744": 1788998973205,
       "1486485728551501827": 1788999024601,
@@ -221630,10 +221630,10 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789045275826,
-      "1511756975392948224": 1789048935980,
+      "1511756975392948224": 1789049004300,
       "1391043482541494282": 1789046830080,
       "832236870577422356": 1789047386911,
-      "1011353559301890119": 1789048923726
+      "1011353559301890119": 1789048984990
     }
   },
   "mee6_cache": {
@@ -221650,8 +221650,8 @@
       "2026-Q3": {
         "positive": 3,
         "negative": 1,
-        "neutral": 25,
-        "total": 29,
+        "neutral": 26,
+        "total": 30,
         "mentions": [
           {
             "at": "2026-09-09T14:27:39.760Z",
@@ -221968,6 +221968,17 @@
             "channelId": "605951687974453248",
             "messageId": "1547608330586034347",
             "text": "be honest did you get baker acted <@1082686076491137115>",
+            "sentiment": "neutral",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-10T14:03:16.888Z",
+            "userId": "710945531794554970",
+            "username": "miss_steak_",
+            "channelId": "605951687974453248",
+            "messageId": "1547608402664882317",
+            "text": "were u in the psych unit be honest bro <@1082686076491137115>",
             "sentiment": "neutral",
             "source": "text",
             "quarter": "2026-Q3"
@@ -222295,6 +222306,17 @@
         "sentiment": "neutral",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-10T14:03:16.888Z",
+        "userId": "710945531794554970",
+        "username": "miss_steak_",
+        "channelId": "605951687974453248",
+        "messageId": "1547608402664882317",
+        "text": "were u in the psych unit be honest bro <@1082686076491137115>",
+        "sentiment": "neutral",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
     "keywords_negative": [
@@ -222348,7 +222370,7 @@
       "premier is goat",
       "premier is peak"
     ],
-    "last_scan": "2026-09-10T14:02:59.511Z",
+    "last_scan": "2026-09-10T14:03:16.889Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
