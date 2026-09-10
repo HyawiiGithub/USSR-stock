@@ -184922,15 +184922,15 @@
       "shock_worker": false
     },
     "1287498720744702038": {
-      "cash": 1795,
+      "cash": 1813,
       "bank": 1354,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-08T18:10:59.981Z",
-      "work_count": 167,
+      "last_work": "2026-09-10T06:08:20.857Z",
+      "work_count": 168,
       "last_claim": "2026-09-05T07:11:36.139Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -184944,10 +184944,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
-      "daily_work_count": 0,
-      "shock_worker": false
+      "bot_xp": 40,
+      "bot_total_xp": 40,
+      "daily_work_count": 1,
+      "shock_worker": false,
+      "last_daily_work_date": "2026-09-10"
     },
     "1069429269392015390": {
       "cash": 0,
@@ -214910,14 +214911,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 6465,
+      "funds": 6462,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 202522,
-      "market_cap": 202522,
+      "share_price": 203913,
+      "market_cap": 203913,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -214933,21 +214934,20 @@
         }
       },
       "inventory": {
-        "Timber": 242,
+        "Timber": 244,
         "Natural Gas": 149,
         "Iron Ore": 195,
         "Coal": 194,
         "Uranium": 7,
         "Oil": 158,
         "Gold": 17,
-        "Wheat": 200,
+        "Wheat": 199,
         "Timber Planks": 10,
         "Machine Parts": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        195274,
         195277,
         195415,
         195426,
@@ -215046,7 +215046,8 @@
         202410,
         202576,
         202576,
-        202522
+        202522,
+        203913
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -215237,16 +215238,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 0.45455253976412235,
-      "recorded_at": "2026-09-09T23:13:17.409Z"
-    },
-    {
-      "price": 98,
-      "change_percent": 0.3432012986894751,
-      "recorded_at": "2026-09-09T23:18:17.416Z"
-    },
     {
       "price": 98,
       "change_percent": 0.8131237987807464,
@@ -215736,6 +215727,16 @@
       "price": 91,
       "change_percent": -0.05277573616934098,
       "recorded_at": "2026-09-10T06:03:18.288Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.1321843613174849,
+      "recorded_at": "2026-09-10T06:08:18.216Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.40129684377694114,
+      "recorded_at": "2026-09-10T06:08:21.542Z"
     }
   ],
   "factory_names": [],
@@ -220645,10 +220646,6 @@
   "total_rubles_history": [
     {
       "total": 608099,
-      "at": "2026-09-09T22:33:17.886Z"
-    },
-    {
-      "total": 608099,
       "at": "2026-09-09T22:33:18.420Z"
     },
     {
@@ -221042,6 +221039,10 @@
     {
       "total": 608324,
       "at": "2026-09-10T06:03:19.286Z"
+    },
+    {
+      "total": 608324,
+      "at": "2026-09-10T06:08:18.761Z"
     }
   ],
   "gold_rush": null,
@@ -221106,7 +221107,8 @@
       "2026-09-10": {
         "1470136693821800521": 1,
         "682362000210526299": 1,
-        "1528783188728483944": 1
+        "1528783188728483944": 1,
+        "1287498720744702038": 1
       }
     },
     "collect_daily": {
@@ -221208,7 +221210,8 @@
       "1180248109515808798": 1789012076229,
       "1321576779072409731": 1789018893347,
       "654010925635862539": 1789019241333,
-      "1341044205803278406": 1789020218229
+      "1341044205803278406": 1789020218229,
+      "1287498720744702038": 1789020518887
     }
   },
   "mee6_cache": {
