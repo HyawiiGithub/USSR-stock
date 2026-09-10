@@ -1512,15 +1512,15 @@
       "shock_worker": false
     },
     "1456863215815364796": {
-      "cash": 100,
+      "cash": 120,
       "bank": 2027,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-07T15:57:56.733Z",
-      "work_count": 18,
+      "last_work": "2026-09-10T10:43:28.811Z",
+      "work_count": 19,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1534,10 +1534,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 36,
-      "bot_total_xp": 36,
-      "daily_work_count": 0,
-      "shock_worker": false
+      "bot_xp": 59,
+      "bot_total_xp": 59,
+      "daily_work_count": 1,
+      "shock_worker": false,
+      "last_daily_work_date": "2026-09-10"
     },
     "1382051097614614619": {
       "cash": 0,
@@ -214853,14 +214854,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 5487,
+      "funds": 5482,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 148789,
-      "market_cap": 148789,
+      "share_price": 148617,
+      "market_cap": 148617,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214927,7 +214928,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-10T06:51:31.949Z",
       "price_history": [
-        142100,
         142114,
         142133,
         142323,
@@ -215026,7 +215026,8 @@
         148577,
         148715,
         148718,
-        148789
+        148789,
+        148617
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -215045,8 +215046,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 51.73474999999969,
-      "underground_heat": 204,
+      "heat": 50.53474999999969,
+      "underground_heat": 203,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215384,16 +215385,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 91,
-      "change_percent": -0.05277573616934098,
-      "recorded_at": "2026-09-10T06:03:18.288Z"
-    },
-    {
-      "price": 91,
-      "change_percent": 0.1321843613174849,
-      "recorded_at": "2026-09-10T06:08:18.216Z"
-    },
     {
       "price": 91,
       "change_percent": 0.40129684377694114,
@@ -215883,6 +215874,16 @@
       "price": 89,
       "change_percent": 0.9361138866584517,
       "recorded_at": "2026-09-10T10:38:19.728Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.7182233352408147,
+      "recorded_at": "2026-09-10T10:43:19.685Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 1.0420160830802523,
+      "recorded_at": "2026-09-10T10:43:29.480Z"
     }
   ],
   "factory_names": [
@@ -215903,11 +215904,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7738841473799868,
+  "inflation": 0.6604941441255066,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.7299817945624564,
     0.6837434481875219,
     0.6731705571258356,
     0.6836725927207021,
@@ -216006,7 +216006,8 @@
     0.7016736552866799,
     0.7603642381334444,
     0.7735342397760108,
-    0.7738841473799868
+    0.7738841473799868,
+    0.6604941441255066
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -220829,10 +220830,6 @@
   "total_rubles_history": [
     {
       "total": 608289,
-      "at": "2026-09-10T03:03:18.599Z"
-    },
-    {
-      "total": 608289,
       "at": "2026-09-10T03:08:18.619Z"
     },
     {
@@ -221226,6 +221223,10 @@
     {
       "total": 613827,
       "at": "2026-09-10T10:38:20.427Z"
+    },
+    {
+      "total": 613827,
+      "at": "2026-09-10T10:43:20.421Z"
     }
   ],
   "gold_rush": null,
@@ -221298,7 +221299,8 @@
         "1186597507720019988": 1,
         "1506785783506534426": 7,
         "1536339779140976711": 3,
-        "730696111198699600": 1
+        "730696111198699600": 1,
+        "1456863215815364796": 1
       }
     },
     "collect_daily": {
