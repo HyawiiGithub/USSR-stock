@@ -214866,8 +214866,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 82.0847499999998,
-      "underground_heat": 208,
+      "heat": 80.8847499999998,
+      "underground_heat": 207,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215205,11 +215205,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.41102194493037003,
-      "recorded_at": "2026-09-09T21:23:17.103Z"
-    },
     {
       "price": 97,
       "change_percent": 0.3863602654437133,
@@ -215704,6 +215699,11 @@
       "price": 92,
       "change_percent": 0.6693310304363305,
       "recorded_at": "2026-09-10T03:48:18.294Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.7944982151971415,
+      "recorded_at": "2026-09-10T03:53:18.240Z"
     }
   ],
   "factory_names": [],
@@ -215723,11 +215723,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7450330529144524,
+  "inflation": 0.673123249773645,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.5080853387346472,
     0.5456506963718767,
     0.519471880065719,
     0.5663093992197389,
@@ -215826,7 +215825,8 @@
     0.703904145344283,
     0.7675576665361473,
     0.7078607455123906,
-    0.7450330529144524
+    0.7450330529144524,
+    0.673123249773645
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -216033,9 +216033,7 @@
     "Steel Beam": "2026-09-08T17:58:34.489Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Cotton Fabric": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -216053,17 +216051,12 @@
     "Bread": 174,
     "Aluminium Sheet": 8,
     "Circuit Board": 4,
-    "Cotton Fabric": 5,
+    "Cotton Fabric": 6,
     "Reactor Core": 1,
     "Gas Fuel": 33,
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-02T21:58:58.776Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -217558,6 +217551,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-10T01:38:15.876Z"
+    },
+    {
+      "item": "Cotton Fabric",
+      "qty": 1,
+      "at": "2026-09-10T03:53:15.925Z"
     }
   ],
   "demand_history": {
@@ -219913,6 +219911,11 @@
         "demand": 1.3588443202814402,
         "at": "2026-09-08T16:21:48.870Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3570043210979335,
+        "at": "2026-09-10T03:53:15.925Z",
+        "supply": 0
       }
     ],
     "Reactor Core": [
@@ -220609,10 +220612,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 614165,
-      "at": "2026-09-09T20:13:17.257Z"
-    },
-    {
       "total": 614331,
       "at": "2026-09-09T20:18:17.252Z"
     },
@@ -221007,6 +221006,10 @@
     {
       "total": 608289,
       "at": "2026-09-10T03:48:18.787Z"
+    },
+    {
+      "total": 608289,
+      "at": "2026-09-10T03:53:18.705Z"
     }
   ],
   "gold_rush": null,
@@ -221033,7 +221036,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 1.5000000000000173,
+  "heat_global": 0.9000000000000173,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
