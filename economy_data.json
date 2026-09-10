@@ -62554,15 +62554,15 @@
       "shock_worker": false
     },
     "1506785783506534426": {
-      "cash": 300,
+      "cash": 320,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-10T09:24:37.870Z",
-      "work_count": 15,
+      "last_work": "2026-09-10T09:33:29.578Z",
+      "work_count": 16,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -62576,9 +62576,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 148,
-      "bot_total_xp": 623,
-      "daily_work_count": 12,
+      "bot_xp": 196,
+      "bot_total_xp": 671,
+      "daily_work_count": 13,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
       "mee6_level": 3
@@ -214794,14 +214794,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 5542,
+      "funds": 5537,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 148575,
-      "market_cap": 148575,
+      "share_price": 148553,
+      "market_cap": 148553,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214844,7 +214844,7 @@
       "inventory": {
         "Gold Bar": 15,
         "Fish": 2,
-        "Wheat": 87,
+        "Wheat": 86,
         "Sugar": 32,
         "Reactor Core": 1,
         "Copper": 39,
@@ -214860,16 +214860,14 @@
         "Contraband: Opium": 4,
         "Contraband: LSD Sheets": 1,
         "Contraband: Cannabis": 5,
-        "Steel Ingot": 4,
-        "Coal": 1,
+        "Coal": 2,
         "Timber Planks": 10,
-        "Oil": 1
+        "Oil": 1,
+        "Steel Beam": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-10T06:51:31.949Z",
       "price_history": [
-        142042,
-        142029,
         142016,
         142179,
         142209,
@@ -214967,7 +214965,9 @@
         148502,
         148505,
         148524,
-        148575
+        148575,
+        148581,
+        148553
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -214986,8 +214986,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 60.88474999999971,
-      "underground_heat": 211,
+      "heat": 59.68474999999971,
+      "underground_heat": 210,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215325,11 +215325,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 93,
-      "change_percent": 5.00360979863744,
-      "recorded_at": "2026-09-10T04:23:14.215Z"
-    },
     {
       "price": 93,
       "change_percent": 0.6005669534535775,
@@ -215824,6 +215819,11 @@
       "price": 93,
       "change_percent": 0.46840138063746023,
       "recorded_at": "2026-09-10T09:31:52.623Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.3915123172388403,
+      "recorded_at": "2026-09-10T09:33:19.593Z"
     }
   ],
   "factory_names": [
@@ -215844,11 +215844,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6964743363068963,
+  "inflation": 0.7666330224696216,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.6768776335060118,
     0.6103734023193056,
     0.6210831326755198,
     0.6847113822466854,
@@ -215947,7 +215946,8 @@
     0.6824853733298474,
     0.7020322045076846,
     0.742350042581994,
-    0.6964743363068963
+    0.6964743363068963,
+    0.7666330224696216
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -216091,26 +216091,26 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3359576750443183,
-    "Cake": 1.3472835513976809,
-    "Bread": 1.3758590833095103,
+    "Fuel": 1.3404815857872427,
+    "Cake": 1.3563877617317126,
+    "Bread": 1.381052063258507,
     "Copper Ingot": 1.4040364753606682,
-    "Iron Ingot": 1.3682228441543751,
+    "Iron Ingot": 1.370553098028062,
     "Steel Ingot": 1.3993461900162738,
     "Gold Bar": 1.3084475310516979,
     "Aluminium Ingot": 1.4124318080626401,
-    "Timber Planks": 1.3496746227879046,
+    "Timber Planks": 1.3482208793716302,
     "Bricks": 1.4121041134118064,
     "Concrete": 1.4123553225473866,
     "Glass": 1.4116945336935625,
-    "Steel Beam": 1.3988428590423156,
+    "Steel Beam": 1.397026881123842,
     "Machine Parts": 1.4039978602822758,
     "Refined Fuel": 1.4046113124326765,
     "Uranium Rod": 1.3905920051341234,
     "Reactor Core": 1.4017420607543296,
     "Circuit Board": 1.4046272697239577,
     "Flour": 1.3132223506048681,
-    "Sugar": 1.143708228713391,
+    "Sugar": 1.1419799914689512,
     "Wine": 1.4120043000796372,
     "Canned Food": 1.4046285713759143,
     "Canned Fish": 1.404628679363342,
@@ -216120,9 +216120,9 @@
     "Gas Fuel": 1.3931670239580234,
     "Fertilizer": 1.4124242311844322,
     "Cotton Fabric": 1.404122373384162,
-    "Manganese Alloy": 1.4146497595761904,
+    "Manganese Alloy": 1.4134777788100952,
     "Sunflower Oil": 1.4123758329370217,
-    "Linen": 1.4144988417932136,
+    "Linen": 1.4133389344497564,
     "Corn Meal": 1.4122717734675287,
     "Tea Pack": 1.4115224777271012,
     "Citrus Juice": 1.412155724817908,
@@ -220755,10 +220755,6 @@
   "total_rubles_history": [
     {
       "total": 608289,
-      "at": "2026-09-10T01:53:18.432Z"
-    },
-    {
-      "total": 608289,
       "at": "2026-09-10T01:58:18.534Z"
     },
     {
@@ -221152,6 +221148,10 @@
     {
       "total": 611602,
       "at": "2026-09-10T09:28:20.508Z"
+    },
+    {
+      "total": 611642,
+      "at": "2026-09-10T09:33:20.443Z"
     }
   ],
   "gold_rush": null,
@@ -221222,7 +221222,7 @@
         "874346333882945547": 10,
         "730223629849199093": 1,
         "1186597507720019988": 1,
-        "1506785783506534426": 2,
+        "1506785783506534426": 3,
         "1536339779140976711": 2
       }
     },
@@ -221274,7 +221274,7 @@
       "1470136693821800521": 1788986968590,
       "1309104161278918706": 1788966436063,
       "1325111649816023092": 1788996373565,
-      "1506785783506534426": 1789032608623,
+      "1506785783506534426": 1789032770689,
       "807254722251587614": 1789027475426,
       "1353373037994705078": 1788970587870,
       "1192563739778625607": 1788999342892,
