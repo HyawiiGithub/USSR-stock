@@ -214393,14 +214393,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 27405,
+      "funds": 28367,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 131671,
-      "market_cap": 131671,
+      "share_price": 132054,
+      "market_cap": 132054,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -214423,7 +214423,6 @@
         "Wheat": 94,
         "Natural Gas": 2,
         "Cotton Fabric": 1,
-        "Gas Fuel": 3,
         "Fuel": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
@@ -214507,11 +214506,12 @@
         130955,
         131106,
         131583,
-        131671
+        131671,
+        132054
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
-      "last_factorydeal": "2026-09-09T16:48:07.165Z",
+      "last_factorydeal": "2026-09-10T00:59:29.271Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "wage": 20,
@@ -215567,17 +215567,17 @@
     }
   ],
   "factory_names": [
-    "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Khrushchev Agricultural",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Red Star Steelworks",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -215831,7 +215831,7 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3925860920641595,
+    "Fuel": 1.4025860920641595,
     "Cake": 1.396008580272615,
     "Bread": 1.396113488124789,
     "Copper Ingot": 1.3953819671475578,
@@ -215841,12 +215841,12 @@
     "Aluminium Ingot": 1.4122853523443273,
     "Timber Planks": 1.3764749210880325,
     "Bricks": 1.4116979244562524,
-    "Concrete": 1.4119558393291236,
+    "Concrete": 1.4219558393291236,
     "Glass": 1.4116945336935625,
     "Steel Beam": 1.3988428590423156,
     "Machine Parts": 1.4038411837723501,
-    "Refined Fuel": 1.3960986993047773,
-    "Uranium Rod": 1.3905468061389334,
+    "Refined Fuel": 1.4060986993047773,
+    "Uranium Rod": 1.4005468061389335,
     "Reactor Core": 1.4017420607543296,
     "Circuit Board": 1.404624457399175,
     "Flour": 1.3132223506048681,
@@ -215856,8 +215856,8 @@
     "Canned Fish": 1.4046296495589077,
     "Smoked Fish": 1.404628569456211,
     "Fish Stew": 1.4119985119498908,
-    "Peat Fuel": 1.4046285714274969,
-    "Gas Fuel": 1.392491057345102,
+    "Peat Fuel": 1.4146285714274969,
+    "Gas Fuel": 1.3249910573451018,
     "Fertilizer": 1.4122717699756417,
     "Cotton Fabric": 1.4020043210979334,
     "Manganese Alloy": 1.4122275379608007,
@@ -215865,7 +215865,7 @@
     "Linen": 1.41199855599474,
     "Corn Meal": 1.4122717734675287,
     "Tea Pack": 1.412451391268327,
-    "Citrus Juice": 1.4119779558513805,
+    "Citrus Juice": 1.4219779558513805,
     "Antimony Alloy": 1.4123844524613365,
     "Molybdenum Rod": 1.4119937618768,
     "Aluminium Sheet": 1.40462856793301,
@@ -215890,11 +215890,13 @@
     "Circuit Board": "2026-09-07T15:12:38.668Z",
     "Cotton Fabric": "2026-09-08T15:52:46.630Z",
     "Reactor Core": "2026-09-06T17:24:19.850Z",
-    "Gas Fuel": "2026-09-08T11:20:01.233Z",
+    "Gas Fuel": "2026-09-10T00:59:29.271Z",
     "Steel Beam": "2026-09-08T17:58:34.489Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Gas Fuel": 3
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
