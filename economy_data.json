@@ -716,7 +716,7 @@
       "shock_worker": false
     },
     "874346333882945547": {
-      "cash": 3440,
+      "cash": 6040,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -732,14 +732,14 @@
       "is_state_director": true,
       "director_of": "state_26",
       "ceo_of": null,
-      "dirty_cash": 4260,
-      "heat": 10,
+      "dirty_cash": 260,
+      "heat": 8,
       "wanted": 0,
       "last_illegal": "2026-09-10T08:45:11.885Z",
       "total_heat_generated": 212,
       "bot_level": 9,
-      "bot_xp": 38,
-      "bot_total_xp": 3758,
+      "bot_xp": 56,
+      "bot_total_xp": 3776,
       "daily_work_count": 27,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -214799,8 +214799,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 148460,
-      "market_cap": 148460,
+      "share_price": 148533,
+      "market_cap": 148533,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214867,7 +214867,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-10T06:51:31.949Z",
       "price_history": [
-        171541,
         171615,
         171618,
         171729,
@@ -214966,7 +214965,8 @@
         147760,
         147951,
         148473,
-        148460
+        148460,
+        148533
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -214985,7 +214985,7 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 66.68474999999972,
+      "heat": 65.68474999999972,
       "underground_heat": 215,
       "dirty_cash": 0,
       "last_illegal": null
@@ -215324,11 +215324,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.4025258379443619,
-      "recorded_at": "2026-09-10T03:03:18.265Z"
-    },
     {
       "price": 92,
       "change_percent": 0.7350089838803047,
@@ -215823,6 +215818,11 @@
       "price": 87,
       "change_percent": 0.7218400599905059,
       "recorded_at": "2026-09-10T08:43:19.295Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 1.192134817881,
+      "recorded_at": "2026-09-10T08:45:12.985Z"
     }
   ],
   "factory_names": [
@@ -220744,6 +220744,13 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽252 salaries ceo 860203156222902332 ₽90, director 860203156222902332 ₽90, manager 1186597507720019988 ₽36, manager 807254722251587614 ₽36"
+    },
+    {
+      "at": "2026-09-10T08:45:26.807Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "launder",
+      "details": "₽4,000 dirty → ₽2,600 clean fee ₽1,400"
     }
   ],
   "total_rubles_history": [
@@ -221256,7 +221263,7 @@
       "1229741033265299506": 1789028016001,
       "1536339779140976711": 1789029651884,
       "780837437987094560": 1789012572461,
-      "874346333882945547": 1789029506033,
+      "874346333882945547": 1789029937550,
       "870686833976172574": 1788986532830,
       "1186597507720019988": 1789027172101,
       "1521043721129558017": 1788988682666,
