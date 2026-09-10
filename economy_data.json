@@ -194,7 +194,7 @@
     },
     "860203156222902332": {
       "username": "Google Giggles",
-      "cash": 4471,
+      "cash": 4619,
       "bank": 1008,
       "resources": {
         "Coal": 7,
@@ -319,7 +319,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 901,
+      "cash": 930,
       "bank": 8500,
       "resources": {
         "Coal": 1
@@ -1310,8 +1310,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 3,
-      "bot_total_xp": 773,
+      "bot_xp": 25,
+      "bot_total_xp": 795,
       "daily_work_count": 3,
       "shock_worker": false,
       "mee6_level": 4,
@@ -64719,15 +64719,15 @@
       "shock_worker": false
     },
     "807254722251587614": {
-      "cash": 2514,
+      "cash": 2568,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-10T06:20:19.469Z",
-      "work_count": 64,
+      "last_work": "2026-09-10T14:45:34.296Z",
+      "work_count": 65,
       "last_claim": "2026-09-05T12:38:27.561Z",
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -64741,9 +64741,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 44,
-      "bot_total_xp": 2249,
-      "daily_work_count": 15,
+      "bot_xp": 95,
+      "bot_total_xp": 2300,
+      "daily_work_count": 16,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
       "mee6_level": 7
@@ -214655,14 +214655,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 1490,
+      "funds": 1274,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 146739,
-      "market_cap": 146739,
+      "share_price": 146702,
+      "market_cap": 146702,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -214689,26 +214689,24 @@
       },
       "inventory": {
         "Zinc": 197,
-        "Copper": 76,
-        "Lead": 161,
+        "Copper": 77,
+        "Lead": 162,
         "Gold Bar": 22,
         "Aluminium Ore": 81,
         "Machine Parts": 2,
         "Uranium Rod": 4,
-        "Iron Ore": 16,
+        "Iron Ore": 17,
         "Iron Ingot": 7,
-        "Gold": 3,
+        "Gold": 4,
         "Sugar": 66,
         "Steel Beam": 2,
         "Uranium": 1,
-        "Wheat": 120,
-        "Coal": 7
+        "Wheat": 100,
+        "Coal": 8
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-10T07:59:49.382Z",
+      "last_collect": "2026-09-10T14:45:45.284Z",
       "price_history": [
-        137046,
-        137041,
         137061,
         137067,
         137380,
@@ -214806,7 +214804,9 @@
         146561,
         146575,
         146688,
-        146739
+        146739,
+        146839,
+        146702
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -215616,16 +215616,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.08112883957253166,
-      "recorded_at": "2026-09-10T09:43:19.678Z"
-    },
-    {
-      "price": 93,
-      "change_percent": 0.48700859561970206,
-      "recorded_at": "2026-09-10T09:44:20.703Z"
-    },
-    {
-      "price": 93,
       "change_percent": 0.7987161547423013,
       "recorded_at": "2026-09-10T09:48:19.576Z"
     },
@@ -216113,6 +216103,16 @@
       "price": 93,
       "change_percent": 0.8617813890473712,
       "recorded_at": "2026-09-10T14:43:20.009Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 1.1314848967416204,
+      "recorded_at": "2026-09-10T14:45:35.116Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.516891743285973,
+      "recorded_at": "2026-09-10T14:45:46.068Z"
     }
   ],
   "factory_names": [
@@ -221063,6 +221063,13 @@
       "username": "scod3llarp",
       "action": "launder",
       "details": "₽3,000 dirty → ₽1,950 clean fee ₽1,050"
+    },
+    {
+      "at": "2026-09-10T14:45:45.284Z",
+      "by": "807254722251587614",
+      "username": "lucky_drink",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽206 salaries ceo 860203156222902332 ₽74, director 860203156222902332 ₽74, manager 1186597507720019988 ₽29, manager 807254722251587614 ₽29"
     }
   ],
   "total_rubles_history": [
@@ -221531,7 +221538,7 @@
         "682362000210526299": 1,
         "1528783188728483944": 1,
         "1287498720744702038": 1,
-        "807254722251587614": 1,
+        "807254722251587614": 2,
         "874346333882945547": 20,
         "730223629849199093": 1,
         "1186597507720019988": 2,
@@ -221555,7 +221562,7 @@
       "2026-09-10": {
         "Azerbaijanian SSR": 0,
         "Kazakh SSR": 0,
-        "Nuristani SSR": 1
+        "Nuristani SSR": 2
       }
     },
     "qotd": {
@@ -221593,7 +221600,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1788986968590,
       "1309104161278918706": 1788966436063,
-      "1325111649816023092": 1789049270241,
+      "1325111649816023092": 1789051577418,
       "1506785783506534426": 1789047884305,
       "807254722251587614": 1789051489991,
       "1353373037994705078": 1788970587870,
@@ -223252,9 +223259,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 23,
-    "beforeLvlC": 1,
-    "afterLvl": 1,
+    "xpGainC": 29,
+    "beforeLvlC": 7,
+    "afterLvl": 7,
     "leveled": []
   },
   "access_codes_hashed": {
