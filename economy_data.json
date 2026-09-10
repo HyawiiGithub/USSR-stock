@@ -63626,12 +63626,12 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 2,
-      "bot_xp": 211,
-      "bot_total_xp": 466,
+      "bot_level": 3,
+      "bot_xp": 8,
+      "bot_total_xp": 483,
       "daily_work_count": 0,
       "shock_worker": false,
-      "mee6_level": 2
+      "mee6_level": 3
     },
     "105126567125999616": {
       "cash": 0,
@@ -64726,15 +64726,15 @@
       "shock_worker": false
     },
     "807254722251587614": {
-      "cash": 2593,
+      "cash": 2618,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-10T17:31:36.450Z",
-      "work_count": 66,
+      "last_work": "2026-09-10T18:09:07.774Z",
+      "work_count": 67,
       "last_claim": "2026-09-05T12:38:27.561Z",
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -64748,9 +64748,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 61,
-      "bot_total_xp": 2961,
-      "daily_work_count": 17,
+      "bot_xp": 78,
+      "bot_total_xp": 2978,
+      "daily_work_count": 18,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
       "mee6_level": 8
@@ -214808,14 +214808,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@860203156222902332>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 1204,
+      "funds": 1194,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 146949,
-      "market_cap": 146949,
+      "share_price": 147633,
+      "market_cap": 147633,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -214849,18 +214849,18 @@
         "Machine Parts": 2,
         "Uranium Rod": 4,
         "Iron Ore": 17,
-        "Iron Ingot": 7,
+        "Iron Ingot": 3,
         "Gold": 5,
         "Sugar": 66,
         "Steel Beam": 2,
-        "Uranium": 1,
-        "Wheat": 93,
-        "Coal": 8
+        "Uranium": 3,
+        "Wheat": 92,
+        "Coal": 2,
+        "Steel Ingot": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-10T14:45:45.284Z",
       "price_history": [
-        138612,
         138423,
         138385,
         138447,
@@ -214959,7 +214959,8 @@
         146853,
         146874,
         146959,
-        146949
+        146949,
+        147633
       ],
       "is_state_owned": true,
       "director_id": "860203156222902332",
@@ -215779,11 +215780,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.16787973635214903,
-      "recorded_at": "2026-09-10T13:08:19.795Z"
-    },
-    {
-      "price": 93,
       "change_percent": 0.7081182519680315,
       "recorded_at": "2026-09-10T13:08:25.428Z"
     },
@@ -216276,6 +216272,11 @@
       "price": 95,
       "change_percent": 0.42431426221357205,
       "recorded_at": "2026-09-10T18:08:20.183Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.3596768058337026,
+      "recorded_at": "2026-09-10T18:09:08.504Z"
     }
   ],
   "factory_names": [
@@ -221711,7 +221712,7 @@
         "682362000210526299": 1,
         "1528783188728483944": 1,
         "1287498720744702038": 2,
-        "807254722251587614": 3,
+        "807254722251587614": 4,
         "874346333882945547": 24,
         "730223629849199093": 1,
         "1186597507720019988": 7,
@@ -221781,7 +221782,7 @@
       "1506785783506534426": 1789059467040,
       "807254722251587614": 1789063659736,
       "1353373037994705078": 1788970587870,
-      "1192563739778625607": 1789063657956,
+      "1192563739778625607": 1789063783672,
       "997903130543005767": 1788970364999,
       "1369015006955442326": 1788982982968,
       "914436541072425021": 1789035052745,
@@ -224247,6 +224248,13 @@
       "from": 0,
       "to": 1,
       "at": "2026-09-10T18:04:05.698Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1192563739778625607",
+      "from": 2,
+      "to": 3,
+      "at": "2026-09-10T18:09:43.673Z",
       "reason": "chat"
     }
   ],
