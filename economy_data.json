@@ -214988,8 +214988,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 58.48474999999971,
-      "underground_heat": 209,
+      "heat": 57.284749999999704,
+      "underground_heat": 208,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215327,11 +215327,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 0.09565084786236036,
-      "recorded_at": "2026-09-10T04:43:18.274Z"
-    },
     {
       "price": 98,
       "change_percent": 0.5243352395300627,
@@ -215826,6 +215821,11 @@
       "price": 93,
       "change_percent": 0.2688854498704928,
       "recorded_at": "2026-09-10T09:49:00.052Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.21257699758251253,
+      "recorded_at": "2026-09-10T09:53:19.551Z"
     }
   ],
   "factory_names": [
@@ -215846,11 +215846,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7046288079499538,
+  "inflation": 0.7612697511504026,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.6210831326755198,
     0.6847113822466854,
     0.6601047890296865,
     0.6447254443706054,
@@ -215949,7 +215948,8 @@
     0.742350042581994,
     0.6964743363068963,
     0.7666330224696216,
-    0.7046288079499538
+    0.7046288079499538,
+    0.7612697511504026
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -216156,15 +216156,13 @@
     "Steel Beam": "2026-09-08T17:58:34.489Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Fuel": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 90,
-    "Fuel": 63,
+    "Fuel": 64,
     "Iron Ingot": 33,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -216182,11 +216180,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-03T01:13:58.785Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -217681,6 +217674,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-10T09:38:17.721Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-10T09:53:17.723Z"
     }
   ],
   "demand_history": {
@@ -218906,6 +218904,11 @@
       {
         "demand": 1.3404815857872427,
         "at": "2026-09-10T09:38:17.721Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.350632339741362,
+        "at": "2026-09-10T09:53:17.723Z",
         "supply": 1
       }
     ],
@@ -220762,10 +220765,6 @@
   "total_rubles_history": [
     {
       "total": 608289,
-      "at": "2026-09-10T02:13:18.509Z"
-    },
-    {
-      "total": 608289,
       "at": "2026-09-10T02:18:18.610Z"
     },
     {
@@ -221159,6 +221158,10 @@
     {
       "total": 611682,
       "at": "2026-09-10T09:48:20.397Z"
+    },
+    {
+      "total": 611702,
+      "at": "2026-09-10T09:53:20.404Z"
     }
   ],
   "gold_rush": null,
