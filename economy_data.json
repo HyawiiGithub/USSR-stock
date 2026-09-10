@@ -215059,14 +215059,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 6456,
+      "funds": 8257,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 204240,
-      "market_cap": 204240,
+      "share_price": 204983,
+      "market_cap": 204983,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -215090,13 +215090,11 @@
         "Oil": 159,
         "Gold": 17,
         "Wheat": 196,
-        "Timber Planks": 10,
-        "Machine Parts": 1
+        "Timber Planks": 10
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        195477,
         195536,
         195571,
         195517,
@@ -215195,11 +215193,12 @@
         203913,
         204001,
         204101,
-        204240
+        204240,
+        204983
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
-      "last_factorydeal": "2026-09-08T19:06:10.001Z",
+      "last_factorydeal": "2026-09-10T11:28:13.366Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -215386,11 +215385,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 85,
-      "change_percent": 0.8485283658062658,
-      "recorded_at": "2026-09-10T06:52:11.505Z"
-    },
     {
       "price": 91,
       "change_percent": 7.456670262859652,
@@ -215885,10 +215879,14 @@
       "price": 88,
       "change_percent": 1.3474836625003275,
       "recorded_at": "2026-09-10T11:26:07.855Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 0.8022962876256718,
+      "recorded_at": "2026-09-10T11:28:19.731Z"
     }
   ],
   "factory_names": [
-    "Khrushchev Agricultural",
     "Siberian Mining Co"
   ],
   "used_factory_names": [
@@ -215898,7 +215896,8 @@
     "Soviet Iron Foundry",
     "Volga Shipbuilding",
     "Brezhnev Auto Factory",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -216152,20 +216151,20 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3882910176146235,
+    "Fuel": 1.3982910176146235,
     "Cake": 1.3958320335047314,
-    "Bread": 1.395323645999868,
-    "Copper Ingot": 1.4040364753606682,
+    "Bread": 1.405323645999868,
+    "Copper Ingot": 1.4140364753606682,
     "Iron Ingot": 1.3736115562372762,
     "Steel Ingot": 1.3993461900162738,
     "Gold Bar": 1.3084475310516979,
     "Aluminium Ingot": 1.4124318080626401,
     "Timber Planks": 1.3482208793716302,
-    "Bricks": 1.4121041134118064,
+    "Bricks": 1.4221041134118064,
     "Concrete": 1.4123553225473866,
-    "Glass": 1.4116945336935625,
+    "Glass": 1.4216945336935625,
     "Steel Beam": 1.3956648976849868,
-    "Machine Parts": 1.4039978602822758,
+    "Machine Parts": 1.3589978602822759,
     "Refined Fuel": 1.4046113124326765,
     "Uranium Rod": 1.3905920051341234,
     "Reactor Core": 1.4017420607543296,
@@ -216173,22 +216172,22 @@
     "Flour": 1.3132223506048681,
     "Sugar": 1.1341564040696568,
     "Wine": 1.4120043000796372,
-    "Canned Food": 1.4046285713759143,
+    "Canned Food": 1.4146285713759144,
     "Canned Fish": 1.404628679363342,
     "Smoked Fish": 1.4046285712311126,
     "Fish Stew": 1.4119985119498908,
     "Peat Fuel": 1.4046285714284639,
-    "Gas Fuel": 1.3931670239580234,
+    "Gas Fuel": 1.4031670239580234,
     "Fertilizer": 1.4124242311844322,
     "Cotton Fabric": 1.404122373384162,
     "Manganese Alloy": 1.4123995565052876,
     "Sunflower Oil": 1.4123758329370217,
     "Linen": 1.412271819693776,
     "Corn Meal": 1.4122717734675287,
-    "Tea Pack": 1.4115224777271012,
+    "Tea Pack": 1.4215224777271012,
     "Citrus Juice": 1.412155724817908,
     "Antimony Alloy": 1.4124870907260962,
-    "Molybdenum Rod": 1.4122691453113771,
+    "Molybdenum Rod": 1.4222691453113772,
     "Aluminium Sheet": 1.40462856793301,
     "Shale Oil": 1.404628571428491
   },
@@ -216212,10 +216211,13 @@
     "Cotton Fabric": "2026-09-10T03:41:14.590Z",
     "Reactor Core": "2026-09-06T17:24:19.850Z",
     "Gas Fuel": "2026-09-10T00:59:29.271Z",
-    "Steel Beam": "2026-09-08T17:58:34.489Z"
+    "Steel Beam": "2026-09-08T17:58:34.489Z",
+    "Machine Parts": "2026-09-10T11:28:13.366Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Machine Parts": 1
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -220831,10 +220833,6 @@
   "total_rubles_history": [
     {
       "total": 608289,
-      "at": "2026-09-10T03:38:18.678Z"
-    },
-    {
-      "total": 608289,
       "at": "2026-09-10T03:43:18.795Z"
     },
     {
@@ -221228,6 +221226,10 @@
     {
       "total": 614099,
       "at": "2026-09-10T11:23:20.532Z"
+    },
+    {
+      "total": 614218,
+      "at": "2026-09-10T11:28:20.437Z"
     }
   ],
   "gold_rush": null,
