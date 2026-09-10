@@ -738,8 +738,8 @@
       "last_illegal": "2026-09-10T07:41:36.122Z",
       "total_heat_generated": 202,
       "bot_level": 9,
-      "bot_xp": 22,
-      "bot_total_xp": 3742,
+      "bot_xp": 38,
+      "bot_total_xp": 3758,
       "daily_work_count": 27,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -1029,15 +1029,15 @@
       "shock_worker": false
     },
     "1536339779140976711": {
-      "cash": 160,
+      "cash": 180,
       "bank": 582,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-09T20:49:20.756Z",
-      "work_count": 145,
+      "last_work": "2026-09-10T08:38:49.708Z",
+      "work_count": 146,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1045,11 +1045,11 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null,
-      "dirty_cash": 2523,
-      "heat": 0,
+      "dirty_cash": 3146,
+      "heat": 6,
       "wanted": 0,
-      "last_illegal": "2026-09-09T20:49:20.756Z",
-      "total_heat_generated": 41,
+      "last_illegal": "2026-09-10T08:38:49.708Z",
+      "total_heat_generated": 47,
       "bot_level": 6,
       "bot_xp": 112,
       "bot_total_xp": 1737,
@@ -214793,14 +214793,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 5587,
+      "funds": 5582,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 148473,
-      "market_cap": 148473,
+      "share_price": 148460,
+      "market_cap": 148460,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -214843,7 +214843,7 @@
       "inventory": {
         "Gold Bar": 15,
         "Fish": 2,
-        "Wheat": 94,
+        "Wheat": 93,
         "Sugar": 32,
         "Reactor Core": 1,
         "Copper": 38,
@@ -214855,7 +214855,7 @@
         "Contraband: Cocaine": 4,
         "Contraband: Coca Paste": 6,
         "Contraband: Synthetic": 14,
-        "Contraband: Heroin": 5,
+        "Contraband: Heroin": 6,
         "Contraband: Opium": 3,
         "Contraband: LSD Sheets": 1,
         "Contraband: Cannabis": 5,
@@ -214867,7 +214867,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-10T06:51:31.949Z",
       "price_history": [
-        171546,
         171541,
         171615,
         171618,
@@ -214966,7 +214965,8 @@
         147727,
         147760,
         147951,
-        148473
+        148473,
+        148460
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -214985,8 +214985,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 58.28474999999972,
-      "underground_heat": 200,
+      "heat": 61.88474999999972,
+      "underground_heat": 206,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215324,21 +215324,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.613017981461481,
-      "recorded_at": "2026-09-10T02:43:17.998Z"
-    },
-    {
-      "price": 92,
-      "change_percent": 0.24605717166403476,
-      "recorded_at": "2026-09-10T02:48:17.988Z"
-    },
-    {
-      "price": 92,
-      "change_percent": 0.029414311087593622,
-      "recorded_at": "2026-09-10T02:53:18.060Z"
-    },
     {
       "price": 92,
       "change_percent": 0.37866773408465526,
@@ -215823,6 +215808,21 @@
       "price": 90,
       "change_percent": 1.269886537834732,
       "recorded_at": "2026-09-10T08:37:17.007Z"
+    },
+    {
+      "price": 86,
+      "change_percent": -3.996648650558509,
+      "recorded_at": "2026-09-10T08:38:14.645Z"
+    },
+    {
+      "price": 86,
+      "change_percent": 1.0986056808585145,
+      "recorded_at": "2026-09-10T08:38:19.416Z"
+    },
+    {
+      "price": 87,
+      "change_percent": 1.3298070324552491,
+      "recorded_at": "2026-09-10T08:38:50.435Z"
     }
   ],
   "factory_names": [
@@ -216156,14 +216156,14 @@
   "ai_store": {
     "Bread": 3,
     "Cake": 1,
-    "Fuel": 3
+    "Fuel": 2
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 90,
-    "Fuel": 61,
+    "Fuel": 62,
     "Iron Ingot": 33,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -216181,11 +216181,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-02T23:58:58.783Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -217680,6 +217675,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-10T08:23:17.808Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-10T08:38:17.720Z"
     }
   ],
   "demand_history": {
@@ -218895,6 +218895,11 @@
       {
         "demand": 1.3539985364352125,
         "at": "2026-09-10T01:38:15.876Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3248974492898333,
+        "at": "2026-09-10T08:38:17.720Z",
         "supply": 1
       }
     ],
@@ -220744,10 +220749,6 @@
   "total_rubles_history": [
     {
       "total": 608274,
-      "at": "2026-09-10T01:03:18.350Z"
-    },
-    {
-      "total": 608274,
       "at": "2026-09-10T01:08:18.334Z"
     },
     {
@@ -221141,6 +221142,10 @@
     {
       "total": 608842,
       "at": "2026-09-10T08:33:19.621Z"
+    },
+    {
+      "total": 608862,
+      "at": "2026-09-10T08:38:19.693Z"
     }
   ],
   "gold_rush": null,
@@ -221167,7 +221172,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 0,
+  "heat_global": 0.8999999999999999,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
@@ -221251,7 +221256,7 @@
       "1229741033265299506": 1789028016001,
       "1536339779140976711": 1788993740735,
       "780837437987094560": 1789012572461,
-      "874346333882945547": 1788995067356,
+      "874346333882945547": 1789029506033,
       "870686833976172574": 1788986532830,
       "1186597507720019988": 1789027172101,
       "1521043721129558017": 1788988682666,
