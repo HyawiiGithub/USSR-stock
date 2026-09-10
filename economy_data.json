@@ -416,8 +416,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 79,
-      "bot_total_xp": 849,
+      "bot_xp": 99,
+      "bot_total_xp": 869,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 4,
@@ -1116,8 +1116,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 20,
+      "bot_total_xp": 20,
       "daily_work_count": 0,
       "shock_worker": false
     },
@@ -64743,8 +64743,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 458,
-      "bot_total_xp": 2663,
+      "bot_xp": 473,
+      "bot_total_xp": 2678,
       "daily_work_count": 16,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -215004,14 +215004,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 28971,
+      "funds": 29814,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 133487,
-      "market_cap": 133487,
+      "share_price": 133950,
+      "market_cap": 133950,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -215027,7 +215027,7 @@
         }
       },
       "inventory": {
-        "Oil": 11,
+        "Oil": 5,
         "Iron Ore": 2,
         "Flour": 33,
         "Cotton": 3,
@@ -215121,11 +215121,13 @@
         132249,
         132327,
         133286,
-        133487
+        133487,
+        133614,
+        133950
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
-      "last_factorydeal": "2026-09-10T03:41:14.590Z",
+      "last_factorydeal": "2026-09-10T15:35:15.379Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "wage": 20,
@@ -216182,17 +216184,17 @@
     }
   ],
   "factory_names": [
-    "Siberian Mining Co"
+    "Soviet Iron Foundry",
+    "Lenin Machine Works",
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
   ],
   "used_factory_names": [
-    "Ural Heavy Industries",
-    "Lenin Machine Works",
-    "Red Star Steelworks",
-    "Soviet Iron Foundry",
-    "Volga Shipbuilding",
-    "Brezhnev Auto Factory",
-    "Stalin Tractor Plant",
-    "Khrushchev Agricultural"
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -216446,11 +216448,11 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3982910176146235,
+    "Fuel": 1.3532910176146236,
     "Cake": 1.3958320335047314,
     "Bread": 1.4022927964889609,
     "Copper Ingot": 1.4044412285320864,
-    "Iron Ingot": 1.3736115562372762,
+    "Iron Ingot": 1.3836115562372762,
     "Steel Ingot": 1.3993461900162738,
     "Gold Bar": 1.3084475310516979,
     "Aluminium Ingot": 1.4124318080626401,
@@ -216458,7 +216460,7 @@
     "Bricks": 1.4123307045401219,
     "Concrete": 1.4123553225473866,
     "Glass": 1.4121022218863641,
-    "Steel Beam": 1.3956648976849868,
+    "Steel Beam": 1.4056648976849868,
     "Machine Parts": 1.389901136072917,
     "Refined Fuel": 1.4046113124326765,
     "Uranium Rod": 1.3905920051341234,
@@ -216466,7 +216468,7 @@
     "Circuit Board": 1.4046272697239577,
     "Flour": 1.3132223506048681,
     "Sugar": 1.132967751393207,
-    "Wine": 1.4120043000796372,
+    "Wine": 1.4220043000796372,
     "Canned Food": 1.4046285714119102,
     "Canned Fish": 1.404628679363342,
     "Smoked Fish": 1.4046285712311126,
@@ -216475,10 +216477,10 @@
     "Gas Fuel": 1.4016735135825527,
     "Fertilizer": 1.4124242311844322,
     "Cotton Fabric": 1.404122373384162,
-    "Manganese Alloy": 1.4123995565052876,
+    "Manganese Alloy": 1.4223995565052876,
     "Sunflower Oil": 1.4123758329370217,
     "Linen": 1.412271819693776,
-    "Corn Meal": 1.4122717734675287,
+    "Corn Meal": 1.4222717734675288,
     "Tea Pack": 1.412006241050251,
     "Citrus Juice": 1.412155724817908,
     "Antimony Alloy": 1.4124870907260962,
@@ -216487,7 +216489,7 @@
     "Shale Oil": 1.404628571428491
   },
   "market_last_sale": {
-    "Fuel": "2026-09-10T08:37:52.287Z",
+    "Fuel": "2026-09-10T15:35:15.379Z",
     "Cake": "2026-09-10T07:23:45.206Z",
     "Bread": "2026-09-10T06:51:56.773Z",
     "Copper Ingot": "2026-09-08T15:46:21.969Z",
@@ -216510,7 +216512,9 @@
     "Machine Parts": "2026-09-10T11:28:13.366Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Fuel": 2
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -221661,7 +221665,7 @@
       "874346333882945547": 1789038075705,
       "870686833976172574": 1789053326096,
       "1186597507720019988": 1789053797832,
-      "1521043721129558017": 1789053786253,
+      "1521043721129558017": 1789054493192,
       "1397601108616024075": 1789001713728,
       "860203156222902332": 1789054492577,
       "1254680549692407941": 1788965219385,
@@ -221669,7 +221673,7 @@
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789053296266,
       "1506785783506534426": 1789047884305,
-      "807254722251587614": 1789054447793,
+      "807254722251587614": 1789054522960,
       "1353373037994705078": 1788970587870,
       "1192563739778625607": 1788999342892,
       "997903130543005767": 1788970364999,
@@ -221742,7 +221746,8 @@
       "1522851408611770409": 1789052573587,
       "1283436444161151019": 1789054157167,
       "1225880714986393622": 1789054457034,
-      "673726585194676274": 1789054487755
+      "673726585194676274": 1789054487755,
+      "1405587743542870188": 1789054495100
     }
   },
   "mee6_cache": {
