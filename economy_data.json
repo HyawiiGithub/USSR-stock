@@ -112,8 +112,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 394,
-      "bot_total_xp": 2019,
+      "bot_xp": 412,
+      "bot_total_xp": 2037,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 6
@@ -63627,8 +63627,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 113,
-      "bot_total_xp": 883,
+      "bot_xp": 134,
+      "bot_total_xp": 904,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 4
@@ -64748,8 +64748,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 248,
-      "bot_total_xp": 3148,
+      "bot_xp": 267,
+      "bot_total_xp": 3167,
       "daily_work_count": 18,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -215470,8 +215470,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 1.5347499999996315,
-      "underground_heat": 173,
+      "heat": 0.3347499999996315,
+      "underground_heat": 172,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215808,11 +215808,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 93,
-      "change_percent": 0.1069481729218105,
-      "recorded_at": "2026-09-10T13:53:19.804Z"
-    },
     {
       "price": 93,
       "change_percent": 0.7865837090313849,
@@ -216307,6 +216302,11 @@
       "price": 91,
       "change_percent": 0.719625673253827,
       "recorded_at": "2026-09-10T18:58:20.250Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.5095576391187354,
+      "recorded_at": "2026-09-10T19:03:20.290Z"
     }
   ],
   "factory_names": [
@@ -216327,11 +216327,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7209792643752899,
+  "inflation": 0.6862635053263326,
   "money_printed": 742,
   "total_bank_reserves": 519345,
   "inflation_history": [
-    0.6727613472876511,
     0.6687494491028614,
     0.7623127426748771,
     0.6811957570579174,
@@ -216430,7 +216429,8 @@
     0.7078325870242922,
     0.7704473606212716,
     0.7595317690624631,
-    0.7209792643752899
+    0.7209792643752899,
+    0.6862635053263326
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -221278,10 +221278,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 614281,
-      "at": "2026-09-10T11:33:20.438Z"
-    },
-    {
       "total": 614299,
       "at": "2026-09-10T11:38:20.445Z"
     },
@@ -221676,6 +221672,10 @@
     {
       "total": 615624,
       "at": "2026-09-10T18:58:21.968Z"
+    },
+    {
+      "total": 615624,
+      "at": "2026-09-10T19:03:21.882Z"
     }
   ],
   "gold_rush": null,
@@ -221795,7 +221795,7 @@
       "1544820489191559270": 1788898506036,
       "791747702689103893": 1789057552290,
       "1456622719985782864": 1789059179493,
-      "1082686076491137115": 1789066902558,
+      "1082686076491137115": 1789066994710,
       "1229741033265299506": 1789066938036,
       "1536339779140976711": 1789066689282,
       "780837437987094560": 1789041551475,
@@ -221810,9 +221810,9 @@
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789061697547,
       "1506785783506534426": 1789059467040,
-      "807254722251587614": 1789066857115,
+      "807254722251587614": 1789066991779,
       "1353373037994705078": 1788970587870,
-      "1192563739778625607": 1789066946184,
+      "1192563739778625607": 1789067019450,
       "997903130543005767": 1788970364999,
       "1369015006955442326": 1788982982968,
       "914436541072425021": 1789035052745,
@@ -221910,8 +221910,8 @@
       "2026-Q3": {
         "positive": 5,
         "negative": 3,
-        "neutral": 52,
-        "total": 60,
+        "neutral": 53,
+        "total": 61,
         "mentions": [
           {
             "at": "2026-09-09T14:27:39.760Z",
@@ -222569,6 +222569,17 @@
             "channelId": "605951687974453248",
             "messageId": "1547683315492855859",
             "text": "Le Premier Google Giggle J’ai une question",
+            "sentiment": "neutral",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-10T19:03:12.158Z",
+            "userId": "807254722251587614",
+            "username": "lucky_drink",
+            "channelId": "605951687974453248",
+            "messageId": "1547683880167800992",
+            "text": "Mf premier",
             "sentiment": "neutral",
             "source": "text",
             "quarter": "2026-Q3"
@@ -223237,6 +223248,17 @@
         "sentiment": "neutral",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-10T19:03:12.158Z",
+        "userId": "807254722251587614",
+        "username": "lucky_drink",
+        "channelId": "605951687974453248",
+        "messageId": "1547683880167800992",
+        "text": "Mf premier",
+        "sentiment": "neutral",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
     "keywords_negative": [
@@ -223290,7 +223312,7 @@
       "premier is goat",
       "premier is peak"
     ],
-    "last_scan": "2026-09-10T19:00:57.517Z",
+    "last_scan": "2026-09-10T19:03:12.158Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
