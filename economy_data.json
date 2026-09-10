@@ -824,8 +824,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 79,
-      "bot_total_xp": 179,
+      "bot_xp": 99,
+      "bot_total_xp": 199,
       "daily_work_count": 3,
       "shock_worker": false,
       "mee6_level": 1,
@@ -215387,16 +215387,6 @@
   "gsi_history": [
     {
       "price": 91,
-      "change_percent": 0.7574529529786964,
-      "recorded_at": "2026-09-10T07:08:18.376Z"
-    },
-    {
-      "price": 91,
-      "change_percent": 1.0066837771342974,
-      "recorded_at": "2026-09-10T07:13:18.384Z"
-    },
-    {
-      "price": 91,
       "change_percent": 0.45466299620005635,
       "recorded_at": "2026-09-10T07:13:36.511Z"
     },
@@ -215884,6 +215874,16 @@
       "price": 90,
       "change_percent": 1.2203895137017264,
       "recorded_at": "2026-09-10T11:37:20.683Z"
+    },
+    {
+      "price": 85,
+      "change_percent": -4.687396788479452,
+      "recorded_at": "2026-09-10T11:38:14.677Z"
+    },
+    {
+      "price": 85,
+      "change_percent": 0.7464562225606663,
+      "recorded_at": "2026-09-10T11:38:19.732Z"
     }
   ],
   "factory_names": [
@@ -216215,9 +216215,7 @@
     "Machine Parts": "2026-09-10T11:28:13.366Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Machine Parts": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -216238,14 +216236,10 @@
     "Cotton Fabric": 6,
     "Reactor Core": 1,
     "Gas Fuel": 33,
-    "Steel Beam": 2
+    "Steel Beam": 2,
+    "Machine Parts": 1
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-03T01:28:58.828Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -217740,6 +217734,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-10T09:53:17.723Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-09-10T11:38:17.822Z"
     }
   ],
   "demand_history": {
@@ -220247,6 +220246,13 @@
         "at": "2026-09-08T18:06:48.752Z",
         "supply": 2
       }
+    ],
+    "Machine Parts": [
+      {
+        "demand": 1.3589978602822759,
+        "at": "2026-09-10T11:38:17.822Z",
+        "supply": 2
+      }
     ]
   },
   "blacklist": {
@@ -220833,10 +220839,6 @@
   "total_rubles_history": [
     {
       "total": 608289,
-      "at": "2026-09-10T03:43:19.195Z"
-    },
-    {
-      "total": 608289,
       "at": "2026-09-10T03:48:18.787Z"
     },
     {
@@ -221230,6 +221232,10 @@
     {
       "total": 614281,
       "at": "2026-09-10T11:33:20.438Z"
+    },
+    {
+      "total": 614299,
+      "at": "2026-09-10T11:38:20.445Z"
     }
   ],
   "gold_rush": null,
@@ -221364,7 +221370,7 @@
       "1369015006955442326": 1788982982968,
       "914436541072425021": 1789035052745,
       "1107232271880159292": 1788989402324,
-      "1495413593242337421": 1789033552934,
+      "1495413593242337421": 1789040305083,
       "1447308947072614555": 1788973711995,
       "887419379833274388": 1789023304114,
       "807944786840387675": 1788973894844,
