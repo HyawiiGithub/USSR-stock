@@ -214208,6 +214208,34 @@
       "bot_total_xp": 0,
       "daily_work_count": 0,
       "shock_worker": false
+    },
+    "1142955242128932936": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false
     }
   },
   "companies": {
@@ -214838,8 +214866,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 83.2847499999998,
-      "underground_heat": 209,
+      "heat": 82.0847499999998,
+      "underground_heat": 208,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215177,11 +215205,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.2621335421298552,
-      "recorded_at": "2026-09-09T21:18:17.201Z"
-    },
     {
       "price": 97,
       "change_percent": 0.4841895260223135,
@@ -215676,6 +215699,11 @@
       "price": 92,
       "change_percent": 0.5279330003024135,
       "recorded_at": "2026-09-10T03:38:18.137Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.40739259514013804,
+      "recorded_at": "2026-09-10T03:43:18.421Z"
     }
   ],
   "factory_names": [],
@@ -215695,11 +215723,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7078607455123906,
+  "inflation": 0.7450330529144524,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.5072504637710886,
     0.5080853387346472,
     0.5456506963718767,
     0.519471880065719,
@@ -215798,7 +215825,8 @@
     0.6872055971228861,
     0.703904145344283,
     0.7675576665361473,
-    0.7078607455123906
+    0.7078607455123906,
+    0.7450330529144524
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -215942,13 +215970,13 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3825814480480638,
+    "Fuel": 1.3851071368421002,
     "Cake": 1.396008580272615,
     "Bread": 1.396113488124789,
-    "Copper Ingot": 1.4053819671475578,
+    "Copper Ingot": 1.4040364753606682,
     "Iron Ingot": 1.3726012191064183,
     "Steel Ingot": 1.4045624545876236,
-    "Gold Bar": 1.3182022943348133,
+    "Gold Bar": 1.3164373388582036,
     "Aluminium Ingot": 1.4122853523443273,
     "Timber Planks": 1.3764749210880325,
     "Bricks": 1.4116979244562524,
@@ -215963,12 +215991,12 @@
     "Flour": 1.3132223506048681,
     "Sugar": 1.1791003824550699,
     "Wine": 1.4120043000796372,
-    "Canned Food": 1.4146285709025945,
+    "Canned Food": 1.4109714281769459,
     "Canned Fish": 1.4046296495589077,
     "Smoked Fish": 1.404628569456211,
     "Fish Stew": 1.4119985119498908,
     "Peat Fuel": 1.4046285714284639,
-    "Gas Fuel": 1.3853538976887894,
+    "Gas Fuel": 1.3879389560597435,
     "Fertilizer": 1.4124242311844322,
     "Cotton Fabric": 1.3570043210979335,
     "Manganese Alloy": 1.4122275379608007,
@@ -215977,7 +216005,7 @@
     "Corn Meal": 1.4122717734675287,
     "Tea Pack": 1.412451391268327,
     "Citrus Juice": 1.412155724817908,
-    "Antimony Alloy": 1.4223844524613365,
+    "Antimony Alloy": 1.4205936962644297,
     "Molybdenum Rod": 1.4119937618768,
     "Aluminium Sheet": 1.40462856793301,
     "Shale Oil": 1.4046285714283178
@@ -220581,14 +220609,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 614065,
-      "at": "2026-09-09T19:58:17.217Z"
-    },
-    {
-      "total": 614110,
-      "at": "2026-09-09T20:03:17.309Z"
-    },
-    {
       "total": 614145,
       "at": "2026-09-09T20:08:17.351Z"
     },
@@ -220979,6 +220999,14 @@
     {
       "total": 608289,
       "at": "2026-09-10T03:38:18.678Z"
+    },
+    {
+      "total": 608289,
+      "at": "2026-09-10T03:43:18.795Z"
+    },
+    {
+      "total": 608289,
+      "at": "2026-09-10T03:43:19.195Z"
     }
   ],
   "gold_rush": null,
@@ -221005,7 +221033,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 2.1000000000000174,
+  "heat_global": 1.5000000000000173,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
