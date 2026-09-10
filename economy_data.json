@@ -66,7 +66,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 1824,
-      "heat": 5,
+      "heat": 2.6523557772926267,
       "wanted": 0,
       "last_illegal": "2026-09-10T00:22:14.212Z",
       "total_heat_generated": 24,
@@ -728,7 +728,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 2343,
-      "heat": 3.8445644116465694,
+      "heat": 1.4483843149684064,
       "wanted": 0,
       "last_illegal": "2026-09-09T23:50:12.060Z",
       "total_heat_generated": 177,
@@ -214068,6 +214068,34 @@
       "bot_total_xp": 19,
       "daily_work_count": 0,
       "shock_worker": false
+    },
+    "1251253739625386008": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false
     }
   },
   "companies": {
@@ -214696,8 +214724,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 107.28474999999986,
-      "underground_heat": 229,
+      "heat": 106.08474999999986,
+      "underground_heat": 228,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -215035,16 +215063,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": -0.08437137601260626,
-      "recorded_at": "2026-09-09T20:03:16.922Z"
-    },
-    {
-      "price": 96,
-      "change_percent": 0.7070464652802464,
-      "recorded_at": "2026-09-09T20:06:45.677Z"
-    },
     {
       "price": 96,
       "change_percent": 0.5623689620499916,
@@ -215534,6 +215552,16 @@
       "price": 94,
       "change_percent": 0.3161096622144896,
       "recorded_at": "2026-09-10T00:22:15.230Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 4.895538354197908,
+      "recorded_at": "2026-09-10T00:23:14.259Z"
+    },
+    {
+      "price": 97,
+      "change_percent": -0.1297218812354683,
+      "recorded_at": "2026-09-10T00:23:17.835Z"
     }
   ],
   "factory_names": [
@@ -215554,11 +215582,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.7197033821015957,
+  "inflation": 0.7123498633039385,
   "money_printed": 742,
   "total_bank_reserves": 518383,
   "inflation_history": [
-    0.5175043474578648,
     0.4357453831351891,
     0.5470106482776848,
     0.4912699954856929,
@@ -215657,7 +215684,8 @@
     0.6645846525054687,
     0.7686927594186433,
     0.7241831461160498,
-    0.7197033821015957
+    0.7197033821015957,
+    0.7123498633039385
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -220423,14 +220451,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 639558,
-      "at": "2026-09-09T16:18:16.286Z"
-    },
-    {
-      "total": 639618,
-      "at": "2026-09-09T16:23:15.758Z"
-    },
-    {
       "total": 639753,
       "at": "2026-09-09T16:28:15.749Z"
     },
@@ -220821,6 +220841,14 @@
     {
       "total": 608254,
       "at": "2026-09-10T00:18:18.210Z"
+    },
+    {
+      "total": 608274,
+      "at": "2026-09-10T00:23:18.172Z"
+    },
+    {
+      "total": 608274,
+      "at": "2026-09-10T00:23:18.697Z"
     }
   ],
   "gold_rush": null,
@@ -220847,7 +220875,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 14.100000000000012,
+  "heat_global": 13.500000000000012,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
