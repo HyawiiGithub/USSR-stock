@@ -215922,15 +215922,13 @@
     "Steel Beam": "2026-09-08T17:58:34.489Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Fuel": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 112,
     "Refined Fuel": 90,
-    "Fuel": 60,
+    "Fuel": 61,
     "Iron Ingot": 33,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -215948,11 +215946,6 @@
     "Steel Beam": 2
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-02T21:43:58.793Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -217447,6 +217440,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-09-10T01:23:16.006Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-10T01:38:15.876Z"
     }
   ],
   "demand_history": {
@@ -218657,6 +218655,11 @@
       {
         "demand": 1.3606274172128143,
         "at": "2026-09-09T19:38:15.247Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3539985364352125,
+        "at": "2026-09-10T01:38:15.876Z",
         "supply": 1
       }
     ],
