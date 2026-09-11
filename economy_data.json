@@ -114,8 +114,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 205,
-      "bot_total_xp": 4880,
+      "bot_xp": 229,
+      "bot_total_xp": 4904,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 10,
@@ -638,14 +638,14 @@
       "is_employed": true,
       "is_state_director": false,
       "director_of": null,
-      "dirty_cash": 0,
-      "heat": 15.768738362604148,
+      "dirty_cash": 290,
+      "heat": 37.47873836260415,
       "wanted": 0,
-      "last_illegal": "2026-09-11T18:09:30.025Z",
-      "total_heat_generated": 79.502,
+      "last_illegal": "2026-09-11T18:44:54.195Z",
+      "total_heat_generated": 101.21199999999999,
       "bot_level": 11,
-      "bot_xp": 1159,
-      "bot_total_xp": 6934,
+      "bot_xp": 1179,
+      "bot_total_xp": 6954,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 11,
@@ -766,8 +766,8 @@
       "last_illegal": "2026-09-11T18:43:49.923Z",
       "total_heat_generated": 279.181,
       "bot_level": 12,
-      "bot_xp": 228,
-      "bot_total_xp": 7258,
+      "bot_xp": 246,
+      "bot_total_xp": 7276,
       "daily_work_count": 93,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
@@ -974,8 +974,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 486,
-      "bot_total_xp": 2691,
+      "bot_xp": 503,
+      "bot_total_xp": 2708,
       "daily_work_count": 28,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
@@ -223206,6 +223206,35 @@
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
+    },
+    "1041052684758831235": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null
     }
   },
   "companies": {
@@ -223732,7 +223761,7 @@
         "Uranium Rod": 2,
         "Contraband: Cocaine": 5,
         "Contraband: Coca Paste": 11,
-        "Contraband: Synthetic": 16,
+        "Contraband: Synthetic": 15,
         "Contraband: Heroin": 10,
         "Contraband: Opium": 6,
         "Contraband: LSD Sheets": 4,
@@ -223868,7 +223897,7 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 89.10354999999998,
+      "heat": 104.30054999999999,
       "underground_heat": 311.402,
       "dirty_cash": 0,
       "last_illegal": null
@@ -224206,11 +224235,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.8503154081824011,
-      "recorded_at": "2026-09-11T15:54:06.807Z"
-    },
     {
       "price": 100,
       "change_percent": 0.5749197560141651,
@@ -224705,6 +224729,11 @@
       "price": 104,
       "change_percent": 0.904482128430333,
       "recorded_at": "2026-09-11T18:33:13.249Z"
+    },
+    {
+      "price": 103,
+      "change_percent": -0.21797775365645944,
+      "recorded_at": "2026-09-11T18:44:55.050Z"
     }
   ],
   "factory_names": [
@@ -229907,14 +229936,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 628595,
-      "at": "2026-09-11T09:49:05.003Z"
-    },
-    {
-      "total": 628613,
-      "at": "2026-09-11T09:54:05.075Z"
-    },
-    {
       "total": 628631,
       "at": "2026-09-11T09:59:04.983Z"
     },
@@ -230305,6 +230326,14 @@
     {
       "total": 661816,
       "at": "2026-09-11T18:12:21.002Z"
+    },
+    {
+      "total": 661854,
+      "at": "2026-09-11T18:44:55.384Z"
+    },
+    {
+      "total": 661854,
+      "at": "2026-09-11T18:44:56.191Z"
     }
   ],
   "gold_rush": null,
@@ -230331,11 +230360,12 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 20.702449999999992,
+  "heat_global": 23.95894999999999,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
-    "Contraband: Cocaine": 1
+    "Contraband: Cocaine": 1,
+    "Contraband: Synthetic": 1
   },
   "dirty_printed_total": 0,
   "engagement": {
@@ -230452,13 +230482,13 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1789072459850,
-      "791747702689103893": 1789146776797,
+      "791747702689103893": 1789152262820,
       "1456622719985782864": 1789059179493,
-      "1082686076491137115": 1789152192756,
-      "1229741033265299506": 1789152072934,
+      "1082686076491137115": 1789152269283,
+      "1229741033265299506": 1789152252475,
       "1536339779140976711": 1789152088845,
       "780837437987094560": 1789148950015,
-      "874346333882945547": 1789152206024,
+      "874346333882945547": 1789152279466,
       "870686833976172574": 1789151579058,
       "1186597507720019988": 1789150259284,
       "1521043721129558017": 1789152151634,
