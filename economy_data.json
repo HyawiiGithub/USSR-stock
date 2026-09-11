@@ -916,8 +916,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 9,
-      "bot_total_xp": 11834,
+      "bot_xp": 21,
+      "bot_total_xp": 11846,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 15
@@ -179225,8 +179225,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 289,
-      "bot_total_xp": 10334,
+      "bot_xp": 308,
+      "bot_total_xp": 10353,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 14
@@ -180094,8 +180094,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 357,
-      "bot_total_xp": 10402,
+      "bot_xp": 371,
+      "bot_total_xp": 10416,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 14
@@ -216297,11 +216297,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.4887655386096803,
-      "recorded_at": "2026-09-10T23:48:57.820Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.5299321235601664,
       "recorded_at": "2026-09-10T23:53:57.844Z"
     },
@@ -216794,6 +216789,11 @@
       "price": 94,
       "change_percent": 1.1438770385893084,
       "recorded_at": "2026-09-11T06:19:50.536Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.5308784018398516,
+      "recorded_at": "2026-09-11T06:23:59.631Z"
     }
   ],
   "factory_names": [],
@@ -216813,11 +216813,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6771189277375579,
+  "inflation": 0.6628261665489387,
   "money_printed": 742,
   "total_bank_reserves": 535803,
   "inflation_history": [
-    0.7198354427274605,
     0.7492188633047769,
     0.6943370001944821,
     0.6838936160096053,
@@ -216916,7 +216915,8 @@
     0.6808530970097205,
     0.6979917378195662,
     0.7349972371594073,
-    0.6771189277375579
+    0.6771189277375579,
+    0.6628261665489387
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -217062,13 +217062,13 @@
   "market_demand": {
     "Fuel": 1.3933260873259872,
     "Cake": 1.401880503436912,
-    "Bread": 1.2490739109753106,
+    "Bread": 1.258984722624839,
     "Copper Ingot": 1.4044412285320864,
-    "Iron Ingot": 1.2716799654501036,
+    "Iron Ingot": 1.2845564757863372,
     "Steel Ingot": 1.3901044004720564,
     "Gold Bar": 1.3084475310516979,
     "Aluminium Ingot": 1.4124318080626401,
-    "Timber Planks": 1.323173698453694,
+    "Timber Planks": 1.333170496364276,
     "Bricks": 1.4115254114722713,
     "Concrete": 1.4123553225473866,
     "Glass": 1.4123296493590827,
@@ -217087,13 +217087,13 @@
     "Fish Stew": 1.4124242452130833,
     "Peat Fuel": 1.4046285714285376,
     "Gas Fuel": 1.3906276951157355,
-    "Fertilizer": 1.4147793964456243,
+    "Fertilizer": 1.4135970447299744,
     "Cotton Fabric": 1.4044684072035825,
     "Manganese Alloy": 1.4115451236111634,
     "Sunflower Oil": 1.4123758329370217,
     "Linen": 1.412271819693776,
     "Corn Meal": 1.4115085396591687,
-    "Tea Pack": 1.4145039068713057,
+    "Tea Pack": 1.4133435943216013,
     "Citrus Juice": 1.412155724817908,
     "Antimony Alloy": 1.4115407993625892,
     "Molybdenum Rod": 1.411507787224885,
@@ -217125,7 +217125,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Iron Ingot": 6,
+    "Iron Ingot": 5,
     "Bread": 5
   },
   "global_consumption": {
@@ -217134,7 +217134,7 @@
     "Timber Planks": 122,
     "Refined Fuel": 90,
     "Fuel": 66,
-    "Iron Ingot": 37,
+    "Iron Ingot": 38,
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 189,
@@ -217152,11 +217152,6 @@
     "Machine Parts": 1
   },
   "consumption_history": [
-    {
-      "item": "Aluminium Sheet",
-      "qty": 1,
-      "at": "2026-09-03T14:44:01.868Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -218651,6 +218646,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-09-11T06:08:59.151Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 1,
+      "at": "2026-09-11T06:23:59.155Z"
     }
   ],
   "demand_history": {
@@ -220029,6 +220029,11 @@
         "demand": 1.1545057534550824,
         "at": "2026-09-11T04:53:58.876Z",
         "supply": 15
+      },
+      {
+        "demand": 1.2716799654501036,
+        "at": "2026-09-11T06:23:59.155Z",
+        "supply": 17
       }
     ],
     "Shale Oil": [
@@ -221785,10 +221790,6 @@
   "total_rubles_history": [
     {
       "total": 615919,
-      "at": "2026-09-10T22:43:58.333Z"
-    },
-    {
-      "total": 615919,
       "at": "2026-09-10T22:43:58.941Z"
     },
     {
@@ -222182,6 +222183,10 @@
     {
       "total": 627986,
       "at": "2026-09-11T06:19:01.326Z"
+    },
+    {
+      "total": 628006,
+      "at": "2026-09-11T06:24:01.316Z"
     }
   ],
   "gold_rush": null,
