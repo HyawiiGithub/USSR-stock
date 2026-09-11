@@ -3279,12 +3279,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 88,
-      "bot_total_xp": 88,
+      "bot_level": 1,
+      "bot_xp": 7,
+      "bot_total_xp": 107,
       "daily_work_count": 0,
       "shock_worker": false,
-      "last_laylow": null
+      "last_laylow": null,
+      "mee6_level": 1
     },
     "1274337924896526413": {
       "cash": 0,
@@ -41709,8 +41710,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 119,
-      "bot_total_xp": 219,
+      "bot_xp": 143,
+      "bot_total_xp": 243,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -223289,8 +223290,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 47,
-      "bot_total_xp": 47,
+      "bot_xp": 65,
+      "bot_total_xp": 65,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
@@ -225184,7 +225185,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 2,
+    "Cake": 1,
     "Bread": 9
   },
   "global_consumption": {
@@ -225196,7 +225197,7 @@
     "Iron Ingot": 53,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 196,
+    "Cake": 197,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 14,
@@ -225211,11 +225212,6 @@
     "Machine Parts": 4
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-04T02:20:37.825Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -226710,6 +226706,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-11T21:51:27.164Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-09-11T22:06:27.157Z"
     }
   ],
   "demand_history": {
@@ -228271,11 +228272,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.2483332673519745,
-        "at": "2026-09-05T05:06:42.424Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2730014661195872,
         "at": "2026-09-05T05:21:42.519Z",
         "supply": 0
@@ -228568,6 +228564,11 @@
       {
         "demand": 1.2436410548701926,
         "at": "2026-09-11T21:51:27.164Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2745160057440008,
+        "at": "2026-09-11T22:06:27.157Z",
         "supply": 0
       }
     ],
@@ -230748,12 +230749,12 @@
       "849657806772371535": 1789146591935,
       "653204645581291530": 1789146228830,
       "872464195306782770": 1789147541664,
-      "1214587968296067083": 1789164278248,
+      "1214587968296067083": 1789164362492,
       "1473761822858281192": 1789161331592,
       "1379734184259747851": 1789161462241,
       "1173662113340854353": 1789162985113,
-      "1500583869173465119": 1789164195570,
-      "1457941149476983011": 1789164257440
+      "1500583869173465119": 1789164349090,
+      "1457941149476983011": 1789164354882
     }
   },
   "mee6_cache": {
@@ -230770,8 +230771,8 @@
       "2026-Q3": {
         "positive": 8,
         "negative": 7,
-        "neutral": 145,
-        "total": 160,
+        "neutral": 146,
+        "total": 161,
         "mentions": [
           {
             "at": "2026-09-09T14:27:39.760Z",
@@ -232529,6 +232530,17 @@
             "channelId": "1538703181733695600",
             "messageId": "1548089975671890082",
             "text": "I pinged hyawii",
+            "sentiment": "neutral",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-11T22:05:31.988Z",
+            "userId": "1214587968296067083",
+            "username": "not_haussmann",
+            "channelId": "605951687974453248",
+            "messageId": "1548092153526362122",
+            "text": "hello premier nice to meet you",
             "sentiment": "neutral",
             "source": "text",
             "quarter": "2026-Q3"
@@ -234297,6 +234309,17 @@
         "sentiment": "neutral",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-11T22:05:31.988Z",
+        "userId": "1214587968296067083",
+        "username": "not_haussmann",
+        "channelId": "605951687974453248",
+        "messageId": "1548092153526362122",
+        "text": "hello premier nice to meet you",
+        "sentiment": "neutral",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
     "keywords_negative": [
@@ -234350,7 +234373,7 @@
       "premier is goat",
       "premier is peak"
     ],
-    "last_scan": "2026-09-11T21:56:52.718Z",
+    "last_scan": "2026-09-11T22:05:31.988Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -234359,13 +234382,6 @@
   "race_history": [],
   "giveaways": [],
   "level_ups": [
-    {
-      "userId": "1495413593242337421",
-      "from": 0,
-      "to": 1,
-      "at": "2026-09-10T09:45:52.934Z",
-      "reason": "chat"
-    },
     {
       "userId": "771077238266658837",
       "from": 1,
@@ -235757,6 +235773,13 @@
       "from": 10,
       "to": 11,
       "at": "2026-09-11T22:05:13.185Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1457941149476983011",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-11T22:05:54.882Z",
       "reason": "chat"
     }
   ],
