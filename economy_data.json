@@ -33,7 +33,7 @@
     },
     "780837437987094560": {
       "username": "",
-      "cash": 232,
+      "cash": 2137,
       "bank": 0,
       "resources": {
         "Coal": 34,
@@ -55,8 +55,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-10T11:59:02.945Z",
-      "work_count": 271,
+      "last_work": "2026-09-11T00:00:49.163Z",
+      "work_count": 272,
       "last_claim": "2026-09-10T10:58:43.415Z",
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
@@ -65,11 +65,11 @@
       "is_employed": true,
       "is_state_director": false,
       "director_of": null,
-      "dirty_cash": 2299,
-      "heat": 0,
+      "dirty_cash": 0,
+      "heat": 3.5495,
       "wanted": 0,
-      "last_illegal": "2026-09-10T10:58:37.013Z",
-      "total_heat_generated": 32,
+      "last_illegal": "2026-09-11T00:00:49.163Z",
+      "total_heat_generated": 37,
       "bot_level": 3,
       "bot_xp": 48,
       "bot_total_xp": 523,
@@ -916,8 +916,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 134,
-      "bot_total_xp": 5909,
+      "bot_xp": 145,
+      "bot_total_xp": 5920,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 11
@@ -179224,8 +179224,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 834,
-      "bot_total_xp": 4554,
+      "bot_xp": 852,
+      "bot_total_xp": 4572,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 9
@@ -180093,8 +180093,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 873,
-      "bot_total_xp": 4593,
+      "bot_xp": 886,
+      "bot_total_xp": 4606,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 9
@@ -215588,14 +215588,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 7192,
+      "funds": 7187,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 154252,
-      "market_cap": 154252,
+      "share_price": 154149,
+      "market_cap": 154149,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -215638,7 +215638,7 @@
       "inventory": {
         "Gold Bar": 15,
         "Fish": 2,
-        "Wheat": 158,
+        "Wheat": 157,
         "Sugar": 46,
         "Reactor Core": 1,
         "Copper": 50,
@@ -215650,7 +215650,7 @@
         "Contraband: Cocaine": 5,
         "Contraband: Coca Paste": 6,
         "Contraband: Synthetic": 14,
-        "Contraband: Heroin": 7,
+        "Contraband: Heroin": 8,
         "Contraband: Opium": 4,
         "Contraband: LSD Sheets": 2,
         "Contraband: Cannabis": 6,
@@ -215665,7 +215665,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-10T22:05:36.337Z",
       "price_history": [
-        143450,
         143587,
         143626,
         143645,
@@ -215764,7 +215763,8 @@
         154056,
         154075,
         154201,
-        154252
+        154252,
+        154149
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -215784,8 +215784,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 0,
-      "underground_heat": 170,
+      "heat": 2.27475,
+      "underground_heat": 175,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -216122,11 +216122,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 88,
-      "change_percent": 0.4233322470412068,
-      "recorded_at": "2026-09-10T17:43:20.242Z"
-    },
     {
       "price": 88,
       "change_percent": 0.4980339475108982,
@@ -216621,6 +216616,11 @@
       "price": 96,
       "change_percent": 0.2770311359782871,
       "recorded_at": "2026-09-10T23:58:57.813Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.9290042299799083,
+      "recorded_at": "2026-09-11T00:00:49.999Z"
     }
   ],
   "factory_names": [
@@ -221588,6 +221588,13 @@
       "username": "lucky_drink",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽206 salaries ceo 860203156222902332 ₽74, director 860203156222902332 ₽74, manager 1186597507720019988 ₽29, manager 807254722251587614 ₽29"
+    },
+    {
+      "at": "2026-09-11T00:01:14.067Z",
+      "by": "780837437987094560",
+      "username": "napoleon87",
+      "action": "launder",
+      "details": "₽2,901 dirty → ₽1,885 clean fee ₽1,016"
     }
   ],
   "total_rubles_history": [
@@ -222016,7 +222023,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 0,
+  "heat_global": 0.75,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {},
