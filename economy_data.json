@@ -916,8 +916,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 1435,
-      "bot_total_xp": 15235,
+      "bot_xp": 1448,
+      "bot_total_xp": 15248,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 16
@@ -179225,8 +179225,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1861,
-      "bot_total_xp": 13686,
+      "bot_xp": 1871,
+      "bot_total_xp": 13696,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 15
@@ -180094,8 +180094,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 14,
-      "bot_total_xp": 13814,
+      "bot_xp": 30,
+      "bot_total_xp": 13830,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 16
@@ -215311,6 +215311,34 @@
       "bot_total_xp": 0,
       "daily_work_count": 0,
       "shock_worker": false
+    },
+    "1398234285449678871": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false
     }
   },
   "companies": {
@@ -216302,11 +216330,6 @@
   "gsi_history": [
     {
       "price": 95,
-      "change_percent": 0.4999883799243321,
-      "recorded_at": "2026-09-11T04:48:59.300Z"
-    },
-    {
-      "price": 95,
       "change_percent": 0.47572939733777075,
       "recorded_at": "2026-09-11T04:53:59.362Z"
     },
@@ -216799,6 +216822,11 @@
       "price": 97,
       "change_percent": 0.31893471851712435,
       "recorded_at": "2026-09-11T10:04:30.556Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.33740976799161126,
+      "recorded_at": "2026-09-11T10:09:03.009Z"
     }
   ],
   "factory_names": [
@@ -217132,14 +217160,14 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Iron Ingot": 4,
-    "Fuel": 8
+    "Fuel": 7
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 122,
     "Refined Fuel": 92,
-    "Fuel": 66,
+    "Fuel": 67,
     "Iron Ingot": 49,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -217158,11 +217186,6 @@
     "Machine Parts": 1
   },
   "consumption_history": [
-    {
-      "item": "Canned Food",
-      "qty": 2,
-      "at": "2026-09-03T18:14:02.049Z"
-    },
     {
       "item": "Canned Food",
       "qty": 2,
@@ -218657,6 +218680,11 @@
       "item": "Iron Ingot",
       "qty": 2,
       "at": "2026-09-11T09:54:01.813Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-11T10:09:01.955Z"
     }
   ],
   "demand_history": {
@@ -219897,6 +219925,11 @@
       {
         "demand": 1.3543463506062698,
         "at": "2026-09-10T15:53:18.141Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.2133260873259872,
+        "at": "2026-09-11T10:09:01.955Z",
         "supply": 1
       }
     ],
@@ -221833,14 +221866,6 @@
   "total_rubles_history": [
     {
       "total": 627646,
-      "at": "2026-09-11T02:08:58.369Z"
-    },
-    {
-      "total": 627646,
-      "at": "2026-09-11T02:13:58.461Z"
-    },
-    {
-      "total": 627646,
       "at": "2026-09-11T02:18:58.388Z"
     },
     {
@@ -222230,6 +222255,14 @@
     {
       "total": 628651,
       "at": "2026-09-11T10:04:05.105Z"
+    },
+    {
+      "total": 628671,
+      "at": "2026-09-11T10:09:04.998Z"
+    },
+    {
+      "total": 628671,
+      "at": "2026-09-11T10:09:05.742Z"
     }
   ],
   "gold_rush": null,
