@@ -346,13 +346,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 2,
-      "bot_xp": 215,
-      "bot_total_xp": 470,
+      "bot_level": 3,
+      "bot_xp": 13,
+      "bot_total_xp": 488,
       "daily_work_count": 9,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
-      "mee6_level": 2
+      "mee6_level": 3
     },
     "682362000210526299": {
       "username": "",
@@ -916,8 +916,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 764,
-      "bot_total_xp": 14564,
+      "bot_xp": 781,
+      "bot_total_xp": 14581,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 16
@@ -179225,8 +179225,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1213,
-      "bot_total_xp": 13038,
+      "bot_xp": 1223,
+      "bot_total_xp": 13048,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 15
@@ -180094,8 +180094,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1339,
-      "bot_total_xp": 13164,
+      "bot_xp": 1350,
+      "bot_total_xp": 13175,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 15
@@ -215967,14 +215967,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 11119,
+      "funds": 13325,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 207453,
-      "market_cap": 207453,
+      "share_price": 208234,
+      "market_cap": 208234,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -215998,12 +215998,11 @@
         "Oil": 163,
         "Gold": 19,
         "Wheat": 191,
-        "Iron Ingot": 11
+        "Iron Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        196479,
         196490,
         196631,
         196609,
@@ -216102,11 +216101,12 @@
         207200,
         207382,
         207499,
-        207453
+        207453,
+        208234
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
-      "last_factorydeal": "2026-09-11T04:24:10.805Z",
+      "last_factorydeal": "2026-09-11T09:23:45.878Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -216293,16 +216293,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.44675003108130196,
-      "recorded_at": "2026-09-11T03:43:58.022Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.5436480193872476,
-      "recorded_at": "2026-09-11T03:48:58.160Z"
-    },
     {
       "price": 94,
       "change_percent": 0.5465292046301435,
@@ -216792,31 +216782,40 @@
       "price": 98,
       "change_percent": 0.3552279804700252,
       "recorded_at": "2026-09-11T09:21:42.646Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 3.9771399690001235,
+      "recorded_at": "2026-09-11T09:24:01.246Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.032337668854243336,
+      "recorded_at": "2026-09-11T09:24:02.571Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
-    "Brezhnev Auto Factory",
-    "Volga Shipbuilding"
+    "Brezhnev Auto Factory"
   ],
   "used_factory_names": [
     "Ural Heavy Industries",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Stalin Tractor Plant",
+    "Volga Shipbuilding"
   ],
   "factory_deals": [],
   "government_contracts": [],
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.689898971323532,
+  "inflation": 0.6991388619905904,
   "money_printed": 742,
   "total_bank_reserves": 535803,
   "inflation_history": [
-    0.7631031300853601,
     0.7143714423736939,
     0.7138358227067868,
     0.7566347268523861,
@@ -216915,7 +216914,8 @@
     0.7035631094217741,
     0.7102881223980745,
     0.6858282256509785,
-    0.689898971323532
+    0.689898971323532,
+    0.6991388619905904
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -217063,9 +217063,9 @@
     "Cake": 1.4018402058914625,
     "Bread": 1.392782025014864,
     "Copper Ingot": 1.4044412285320864,
-    "Iron Ingot": 1.3538374148537342,
+    "Iron Ingot": 1.1288374148537343,
     "Steel Ingot": 1.3901044004720564,
-    "Gold Bar": 1.3084475310516979,
+    "Gold Bar": 1.3168062113261827,
     "Aluminium Ingot": 1.4124318080626401,
     "Timber Planks": 1.3677600554836953,
     "Bricks": 1.4120078776300231,
@@ -217073,10 +217073,10 @@
     "Glass": 1.4123296493590827,
     "Steel Beam": 1.3928578737214923,
     "Machine Parts": 1.3985223432827578,
-    "Refined Fuel": 1.3821184264304802,
-    "Uranium Rod": 1.3905920051341234,
+    "Refined Fuel": 1.3848469626282993,
+    "Uranium Rod": 1.3969957279885237,
     "Reactor Core": 1.4017420607543296,
-    "Circuit Board": 1.4046272697239577,
+    "Circuit Board": 1.4109704522929682,
     "Flour": 1.3224498260877202,
     "Sugar": 1.0972974524642878,
     "Wine": 1.4115094702816162,
@@ -217089,9 +217089,9 @@
     "Fertilizer": 1.4115085386594504,
     "Cotton Fabric": 1.4044684072035825,
     "Manganese Alloy": 1.4115451236111634,
-    "Sunflower Oil": 1.4123758329370217,
-    "Linen": 1.412271819693776,
-    "Corn Meal": 1.4115085396591687,
+    "Sunflower Oil": 1.42058576630206,
+    "Linen": 1.420490074118274,
+    "Corn Meal": 1.4197878564864352,
     "Tea Pack": 1.4122761067758731,
     "Citrus Juice": 1.412155724817908,
     "Antimony Alloy": 1.4115407993625892,
@@ -217107,7 +217107,7 @@
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-09-11T07:29:36.350Z",
     "Timber Planks": "2026-09-11T03:50:13.204Z",
-    "Iron Ingot": "2026-09-11T04:24:10.805Z",
+    "Iron Ingot": "2026-09-11T09:23:45.878Z",
     "Shale Oil": "2026-08-30T03:03:58.713Z",
     "Peat Fuel": "2026-08-30T10:15:06.364Z",
     "Smoked Fish": "2026-08-31T11:44:52.987Z",
@@ -217123,14 +217123,16 @@
     "Machine Parts": "2026-09-10T11:28:13.366Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Iron Ingot": 8
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 122,
     "Refined Fuel": 92,
     "Fuel": 66,
-    "Iron Ingot": 43,
+    "Iron Ingot": 45,
     "Shale Oil": 17,
     "Peat Fuel": 10,
     "Cake": 189,
@@ -217148,11 +217150,6 @@
     "Machine Parts": 1
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-03T16:59:01.912Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -218647,6 +218644,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-11T08:24:00.778Z"
+    },
+    {
+      "item": "Iron Ingot",
+      "qty": 2,
+      "at": "2026-09-11T09:24:01.740Z"
     }
   ],
   "demand_history": {
@@ -220045,6 +220047,11 @@
         "demand": 1.3300893268379017,
         "at": "2026-09-11T07:24:00.803Z",
         "supply": 17
+      },
+      {
+        "demand": 1.1288374148537343,
+        "at": "2026-09-11T09:24:01.740Z",
+        "supply": 5
       }
     ],
     "Shale Oil": [
@@ -221808,10 +221815,6 @@
   "total_rubles_history": [
     {
       "total": 627646,
-      "at": "2026-09-11T01:23:58.358Z"
-    },
-    {
-      "total": 627646,
       "at": "2026-09-11T01:28:58.373Z"
     },
     {
@@ -222205,6 +222208,10 @@
     {
       "total": 628445,
       "at": "2026-09-11T09:19:04.937Z"
+    },
+    {
+      "total": 628483,
+      "at": "2026-09-11T09:24:04.977Z"
     }
   ],
   "gold_rush": null,
@@ -222348,7 +222355,7 @@
       "780837437987094560": 1789090341410,
       "874346333882945547": 1789116433287,
       "870686833976172574": 1789069965348,
-      "1186597507720019988": 1789059916107,
+      "1186597507720019988": 1789118625370,
       "1521043721129558017": 1789114250358,
       "1397601108616024075": 1789089876456,
       "860203156222902332": 1789068529761,
@@ -224171,13 +224178,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1397601108616024075",
-      "from": 3,
-      "to": 4,
-      "at": "2026-09-09T17:20:18.091Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1506785783506534426",
       "from": 1,
       "to": 2,
@@ -225568,6 +225568,13 @@
       "from": 7,
       "to": 8,
       "at": "2026-09-11T08:34:59.477Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1186597507720019988",
+      "from": 2,
+      "to": 3,
+      "at": "2026-09-11T09:23:45.375Z",
       "reason": "chat"
     }
   ],
