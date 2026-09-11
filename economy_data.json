@@ -917,8 +917,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 1630,
-      "bot_total_xp": 20005,
+      "bot_xp": 1644,
+      "bot_total_xp": 20019,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 18
@@ -1085,7 +1085,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 498,
-      "heat": 2.06946038861114,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-11T14:34:55.564Z",
       "total_heat_generated": 11,
@@ -179229,8 +179229,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 69,
-      "bot_total_xp": 18444,
+      "bot_xp": 79,
+      "bot_total_xp": 18454,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 18
@@ -180098,8 +180098,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 229,
-      "bot_total_xp": 18604,
+      "bot_xp": 249,
+      "bot_total_xp": 18624,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 18
@@ -216110,8 +216110,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 1.7999999999999992,
-      "underground_heat": 172,
+      "heat": 0.5999999999999992,
+      "underground_heat": 171,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -216448,11 +216448,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 4.105487573891887,
-      "recorded_at": "2026-09-11T11:09:02.634Z"
-    },
     {
       "price": 98,
       "change_percent": -0.10860798683493371,
@@ -216947,6 +216942,11 @@
       "price": 97,
       "change_percent": 0.5265317529312854,
       "recorded_at": "2026-09-11T15:21:39.637Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.5067306715917163,
+      "recorded_at": "2026-09-11T15:24:04.068Z"
     }
   ],
   "factory_names": [
@@ -216967,11 +216967,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.6194384105237345,
+  "inflation": 0.6585023420240252,
   "money_printed": 742,
   "total_bank_reserves": 571809,
   "inflation_history": [
-    0.7171490820806192,
     0.7436866990536037,
     0.7378349893463007,
     0.6890199505287883,
@@ -217070,7 +217069,8 @@
     0.645951533187219,
     0.5945519349322408,
     0.6631748361149875,
-    0.6194384105237345
+    0.6194384105237345,
+    0.6585023420240252
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -217227,27 +217227,27 @@
     "Concrete": 1.412470840702605,
     "Glass": 1.4123296493590827,
     "Steel Beam": 1.3928578737214923,
-    "Machine Parts": 1.3679360713420081,
+    "Machine Parts": 1.3720619887449592,
     "Refined Fuel": 1.404511540181965,
     "Uranium Rod": 1.3908110942050613,
     "Reactor Core": 1.4018294855484805,
     "Circuit Board": 1.4046284411111278,
     "Flour": 1.3224498260877202,
-    "Sugar": 1.1008126408404009,
+    "Sugar": 1.099809698538686,
     "Wine": 1.4115094702816162,
     "Canned Food": 1.4046285714232996,
     "Canned Fish": 1.4046286055798074,
     "Smoked Fish": 1.4046285713660942,
-    "Fish Stew": 1.4147794056916492,
+    "Fish Stew": 1.4135970532363171,
     "Peat Fuel": 1.4046285714285376,
-    "Gas Fuel": 1.2176564037371822,
+    "Gas Fuel": 1.2319020976570632,
     "Fertilizer": 1.4115085386594504,
     "Cotton Fabric": 1.4013065825002908,
-    "Manganese Alloy": 1.4145122330016944,
+    "Manganese Alloy": 1.4133512543615587,
     "Sunflower Oil": 1.4124822823537526,
     "Linen": 1.4124242589195246,
     "Corn Meal": 1.4119984657464273,
-    "Tea Pack": 1.4146817703848082,
+    "Tea Pack": 1.4135072287540236,
     "Citrus Juice": 1.412155724817908,
     "Antimony Alloy": 1.4115407993625892,
     "Molybdenum Rod": 1.411507787224885,
@@ -217279,7 +217279,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 5
+    "Gas Fuel": 3
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -217300,16 +217300,11 @@
     "Circuit Board": 4,
     "Cotton Fabric": 6,
     "Reactor Core": 1,
-    "Gas Fuel": 37,
+    "Gas Fuel": 39,
     "Steel Beam": 2,
     "Machine Parts": 4
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-03T23:20:37.663Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -218804,6 +218799,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-09-11T15:09:03.094Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-09-11T15:24:03.536Z"
     }
   ],
   "demand_history": {
@@ -221413,6 +221413,11 @@
         "demand": 1.2049696804108339,
         "at": "2026-09-11T15:09:03.094Z",
         "supply": 1
+      },
+      {
+        "demand": 1.2176564037371822,
+        "at": "2026-09-11T15:24:03.536Z",
+        "supply": 1
       }
     ],
     "Steel Beam": [
@@ -222051,10 +222056,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 628061,
-      "at": "2026-09-11T07:19:03.104Z"
-    },
-    {
       "total": 628101,
       "at": "2026-09-11T07:24:03.322Z"
     },
@@ -222449,6 +222450,10 @@
     {
       "total": 659130,
       "at": "2026-09-11T15:19:06.193Z"
+    },
+    {
+      "total": 659150,
+      "at": "2026-09-11T15:24:06.306Z"
     }
   ],
   "gold_rush": null,
