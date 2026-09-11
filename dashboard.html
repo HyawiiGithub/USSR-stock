@@ -80,6 +80,7 @@ label{font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:upper
     <button data-tab="companies"><span class="dot"></span> Companies</button>
     <button data-tab="levels"><span class="dot"></span> Levels (MEE6)</button>
     <button data-tab="premier"><span class="dot"></span> Premier Approval 📊</button>
+    <button data-tab="bank"><span class="dot"></span> Central Bank 🏦</button>
     <button data-tab="spawn"><span class="dot"></span> Spawn Rates</button>
     <button data-tab="world"><span class="dot"></span> World Map</button>
     <button data-tab="users"><span class="dot"></span> Citizens</button>
@@ -150,6 +151,15 @@ label{font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:upper
 
     <div data-panel="companies" class="hidden">
       <div class="card"><div class="card-h">Enterprises</div><div class="table-wrap"><table><thead><tr><th>Name</th><th>Ticker</th><th>SSR</th><th>Funds</th><th>Price</th><th>Emp</th><th>State</th></tr></thead><tbody id="compTable"></tbody></table></div></div>
+    </div>
+
+    <div data-panel="bank" class="hidden">
+      <div class="grid grid-3">
+        <div class="card"><div class="card-h">Central Bank — Reserves</div><div style="font:800 28px 'Inter',sans-serif" id="cbReserves">—</div><div style="font:500 11px 'JetBrains Mono',monospace;color:var(--muted)" id="cbRates">—</div><div class="progress" style="margin-top:8px"><i id="cbBar" style="width:0%"></i></div><div style="font:500 10px 'Inter',sans-serif;color:var(--muted);margin-top:6px">Primary only controls rates. Starts at ₽0. <code>-centralbank</code> in Discord.</div></div>
+        <div class="card"><div class="card-h">Government Bonds</div><div id="bondStats" style="font:500 12px 'JetBrains Mono',monospace">—</div><div style="font:500 10px 'Inter',sans-serif;color:var(--muted);margin-top:6px">Buy via <code>-buybond &lt;amt&gt;</code> min 100 max 1M, 7d @Central rate. Claim via <code>-claimbond bond_1</code>.</div></div>
+        <div class="card"><div class="card-h">Recent Ops</div><div id="cbHistory" style="font:500 11px 'JetBrains Mono',monospace;white-space:pre-wrap;max-height:300px;overflow:auto">—</div></div>
+      </div>
+      <div class="card" style="margin-top:16px"><div class="card-h">Active Bonds</div><div class="table-wrap"><table><thead><tr><th>ID</th><th>User</th><th>Amount</th><th>Rate</th><th>Matures</th><th>Status</th></tr></thead><tbody id="bondTable"></tbody></table></div></div>
     </div>
 
     <div data-panel="levels" class="hidden">
@@ -305,7 +315,7 @@ function hasPerm(p){
   return currentPerms.includes(p);
 }
 function applyPerms(){
-  const map={overview:'overview', economy:'economy', companies:'companies', levels:'levels', premier:'premier', spawn:'spawn', world:'world', users:'users', codes:'admin', logs:'admin'};
+  const map={overview:'overview', economy:'economy', companies:'companies', levels:'levels', premier:'premier', bank:'economy', spawn:'spawn', world:'world', users:'users', codes:'admin', logs:'admin'};
   document.querySelectorAll('.nav button').forEach(b=>{
     const tab=b.dataset.tab;
     const need=map[tab];
@@ -375,6 +385,8 @@ async function loadEconomy(){
               _rawUsers: jd.users,
               _mee6: jd.mee6_cache,
               premier_approval: jd.premier_approval,
+              central_bank: jd.central_bank,
+              government_bonds: jd.government_bonds,
               _source: url.includes('raw.githubusercontent')?'github-raw':'local-json'
             };
             // Try to enrich gold from raw if available
@@ -387,7 +399,7 @@ async function loadEconomy(){
       // API succeeded — also load raw for codes/users
       try{
         const rr=await fetch('./economy_data.json',{cache:'no-store'});
-        if(rr.ok){ const jd=await rr.json(); data._rawCodes=jd.access_codes; data._rawUsers=jd.users; data._mee6=jd.mee6_cache; data.premier_approval=jd.premier_approval; }
+        if(rr.ok){ const jd=await rr.json(); data._rawCodes=jd.access_codes; data._rawUsers=jd.users; data._mee6=jd.mee6_cache; data.premier_approval=jd.premier_approval; data.central_bank=jd.central_bank; data.government_bonds=jd.government_bonds; }
       }catch{}
     }
     if(!data) throw new Error('no data');
@@ -475,6 +487,19 @@ function renderAll(){
       const mentions=(pq.all_mentions||[]).slice(-20).reverse();
       elM.textContent=mentions.length?mentions.map(m=>`${new Date(m.at).toLocaleString()} [${m.sentiment}] @${m.username} in #${(m.channelId||'').slice(0,6)} [${m.source}]: ${(m.text||'').slice(0,90)}`).join('\n'):'No mentions yet — bot scans every message for premier, username, <@1082686076491137115> + image OCR';
     }
+  }
+  // central bank + bonds
+  const cb=economy.central_bank;
+  if(cb){
+    const elR=document.getElementById('cbReserves'); if(elR) elR.textContent='₽'+(cb.reserves||0).toLocaleString();
+    const elRt=document.getElementById('cbRates'); if(elRt) elRt.textContent=`Interest ${cb.interest_rate}% • Prime ${cb.prime_rate}% • Discount ${cb.discount_rate}% • Req ${cb.reserve_requirement}%`;
+    const elB=document.getElementById('cbBar'); if(elB) elB.style.width=Math.min(100, (cb.reserves||0)/10000)+'%';
+    const elH=document.getElementById('cbHistory'); if(elH) elH.textContent=(cb.history||[]).slice(-10).reverse().map(h=>`${new Date(h.at).toLocaleString()} ${h.by}: ${h.action} ${h.amount!==undefined?('₽'+h.amount):''} → ₽${h.reserves_after}`).join('\n')||'No ops yet — Primary: -addcentralfunds';
+  }
+  const gb=economy.government_bonds;
+  if(gb){
+    const elS=document.getElementById('bondStats'); if(elS) elS.textContent=`Issued ₽${(gb.total_issued||0).toLocaleString()} • Redeemed ₽${(gb.total_redeemed||0).toLocaleString()} • Interest ₽${(gb.total_interest_paid||0).toLocaleString()} • Active ${(gb.bonds||[]).filter(b=>!b.claimed).length}`;
+    const elT=document.getElementById('bondTable'); if(elT) elT.innerHTML=(gb.bonds||[]).slice(-20).reverse().map(b=>`<tr><td>${b.id}</td><td>${b.username}</td><td>₽${b.amount}</td><td>${b.interestRate}%</td><td>${new Date(b.maturityAt).toLocaleDateString()}</td><td>${b.claimed?'✅':'⏳'}</td></tr>`).join('')||'<tr><td colspan=6>No bonds — buy via -buybond</td></tr>';
   }
   const cl=document.getElementById('compLog');
   if(cl){ const logs=economy.compensation_log||[]; cl.textContent=logs.length?logs.map(e=>`${new Date(e.at).toLocaleString()} • ${e.company} (${e.ssr}) → +₽${e.grant}`).join('\n'):'No compensations'; }
