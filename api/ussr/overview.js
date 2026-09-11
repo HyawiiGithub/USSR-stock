@@ -179,7 +179,11 @@ export default async function handler(req, res) {
           total_citizens: Object.keys(bot.users||{}).length,
           five_year_plan: bot.five_year_plan || null,
           owner_logs: (bot.owner_logs||[]).slice(-20),
-          gold_rush: bot.gold_rush || null
+          gold_rush: bot.gold_rush || null,
+          premier_approval: bot.premier_approval || null,
+          central_bank: bot.central_bank ? { reserves: bot.central_bank.reserves||0, interest_rate: bot.central_bank.interest_rate, prime_rate: bot.central_bank.prime_rate, discount_rate: bot.central_bank.discount_rate, reserve_requirement: bot.central_bank.reserve_requirement, total_added: bot.central_bank.total_added||0, total_removed: bot.central_bank.total_removed||0, history: (bot.central_bank.history||[]).slice(-10), chair_id: bot.central_bank.chair_id||null } : null,
+          government_bonds: bot.government_bonds ? { total_issued: bot.government_bonds.total_issued||0, total_redeemed: bot.government_bonds.total_redeemed||0, total_interest_paid: bot.government_bonds.total_interest_paid||0, active: (bot.government_bonds.bonds||[]).filter(b=>!b.claimed).slice(-20) } : null,
+          mee6_cache: bot.mee6_cache ? { total_players: bot.mee6_cache.total_players||0, last_sync: bot.mee6_cache.last_sync||null, leaderboard: (bot.mee6_cache.leaderboard||[]).slice(0,50) } : null
         };
   }
 
