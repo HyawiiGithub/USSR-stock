@@ -917,8 +917,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 152,
-      "bot_total_xp": 16132,
+      "bot_xp": 172,
+      "bot_total_xp": 16152,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 17
@@ -179227,8 +179227,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 789,
-      "bot_total_xp": 14589,
+      "bot_xp": 800,
+      "bot_total_xp": 14600,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 16
@@ -180096,8 +180096,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 909,
-      "bot_total_xp": 14709,
+      "bot_xp": 923,
+      "bot_total_xp": 14723,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 16
@@ -215365,8 +215365,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 112,
-      "bot_total_xp": 212,
+      "bot_xp": 137,
+      "bot_total_xp": 237,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 1
@@ -216389,16 +216389,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.5132052352416508,
-      "recorded_at": "2026-09-11T06:03:59.588Z"
-    },
-    {
-      "price": 93,
-      "change_percent": 0.8597562581158988,
-      "recorded_at": "2026-09-11T06:06:37.500Z"
-    },
-    {
-      "price": 93,
       "change_percent": 1.031620059614303,
       "recorded_at": "2026-09-11T06:08:42.319Z"
     },
@@ -216886,6 +216876,16 @@
       "price": 96,
       "change_percent": 0.17351509807444185,
       "recorded_at": "2026-09-11T11:04:03.215Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 4.105487573891887,
+      "recorded_at": "2026-09-11T11:09:02.634Z"
+    },
+    {
+      "price": 98,
+      "change_percent": -0.10860798683493371,
+      "recorded_at": "2026-09-11T11:09:03.496Z"
     }
   ],
   "factory_names": [
@@ -217218,14 +217218,14 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 5
+    "Fuel": 4
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 122,
     "Refined Fuel": 92,
-    "Fuel": 69,
+    "Fuel": 70,
     "Iron Ingot": 53,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -217244,11 +217244,6 @@
     "Machine Parts": 1
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-03T19:14:01.951Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -218743,6 +218738,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-11T10:54:02.183Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-11T11:09:02.951Z"
     }
   ],
   "demand_history": {
@@ -219993,6 +219993,11 @@
       {
         "demand": 1.238424290104214,
         "at": "2026-09-11T10:54:02.183Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.2616260407917357,
+        "at": "2026-09-11T11:09:02.951Z",
         "supply": 1
       }
     ],
@@ -221939,10 +221944,6 @@
   "total_rubles_history": [
     {
       "total": 627646,
-      "at": "2026-09-11T03:13:58.402Z"
-    },
-    {
-      "total": 627646,
       "at": "2026-09-11T03:18:58.459Z"
     },
     {
@@ -222336,6 +222337,10 @@
     {
       "total": 658696,
       "at": "2026-09-11T11:04:05.118Z"
+    },
+    {
+      "total": 658696,
+      "at": "2026-09-11T11:09:05.017Z"
     }
   ],
   "gold_rush": null,
@@ -222592,7 +222597,7 @@
       "879978730284535828": 1789104597194,
       "665302392862015509": 1789118536803,
       "1404850371943206922": 1789121474206,
-      "1096547818069561386": 1789124872316,
+      "1096547818069561386": 1789124952059,
       "1199480925709402246": 1789124232837
     }
   },
