@@ -1359,8 +1359,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 154,
-      "bot_total_xp": 1304,
+      "bot_xp": 169,
+      "bot_total_xp": 1319,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 5,
@@ -230545,7 +230545,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1789088485919,
       "1309104161278918706": 1789052535895,
-      "1325111649816023092": 1789160085928,
+      "1325111649816023092": 1789160320565,
       "1506785783506534426": 1789159156793,
       "807254722251587614": 1789159726533,
       "1353373037994705078": 1789068315659,
@@ -235166,9 +235166,9 @@
   "central_bank": {
     "reserves": 150000,
     "interest_rate": 15,
-    "prime_rate": 100,
+    "prime_rate": 2.5,
     "discount_rate": 6,
-    "reserve_requirement": 10,
+    "reserve_requirement": 100,
     "history": [
       {
         "at": "2026-09-11T19:05:50.282Z",
@@ -235177,12 +235177,28 @@
         "amount": 100,
         "old": 7.5,
         "reserves_after": 150000
+      },
+      {
+        "at": "2026-09-11T20:58:58.277Z",
+        "by": "hyawii2.0",
+        "action": "set_prime_rate",
+        "amount": 2.5,
+        "old": 100,
+        "reserves_after": 150000
+      },
+      {
+        "at": "2026-09-11T20:59:24.247Z",
+        "by": "hyawii2.0",
+        "action": "set_reserve_requirement",
+        "amount": 100,
+        "old": 10,
+        "reserves_after": 150000
       }
     ],
     "total_added": 0,
     "total_removed": 0,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-09-11T19:05:50.282Z",
+    "last_update": "2026-09-11T20:59:24.247Z",
     "chair_id": null,
     "chair_set_by": null,
     "chair_set_at": null,
