@@ -114,8 +114,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 288,
-      "bot_total_xp": 4963,
+      "bot_xp": 310,
+      "bot_total_xp": 4985,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 10,
@@ -618,7 +618,7 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 0,
+      "cash": 145,
       "bank": 6331,
       "resources": {
         "Coal": 1
@@ -638,17 +638,17 @@
       "is_employed": true,
       "is_state_director": false,
       "director_of": null,
-      "dirty_cash": 290,
-      "heat": 37.378738362604146,
+      "dirty_cash": 0,
+      "heat": 35.262738362604146,
       "wanted": 0,
       "last_illegal": "2026-09-11T18:44:54.195Z",
       "total_heat_generated": 101.21199999999999,
-      "bot_level": 11,
-      "bot_xp": 1249,
-      "bot_total_xp": 7024,
+      "bot_level": 12,
+      "bot_xp": 13,
+      "bot_total_xp": 7043,
       "daily_work_count": 1,
       "shock_worker": false,
-      "mee6_level": 11,
+      "mee6_level": 12,
       "last_daily_work_date": "2026-09-09",
       "last_laylow": "2026-09-11T17:07:35.931Z"
     },
@@ -766,8 +766,8 @@
       "last_illegal": "2026-09-11T18:43:49.923Z",
       "total_heat_generated": 279.181,
       "bot_level": 12,
-      "bot_xp": 331,
-      "bot_total_xp": 7361,
+      "bot_xp": 348,
+      "bot_total_xp": 7378,
       "daily_work_count": 94,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
@@ -223897,7 +223897,7 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 104.20054999999999,
+      "heat": 103.14254999999999,
       "underground_heat": 311.30199999999996,
       "dirty_cash": 0,
       "last_illegal": null
@@ -224754,11 +224754,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0.680396149070677,
+  "inflation": 0.6822904862901167,
   "money_printed": 744,
   "total_bank_reserves": 578047,
   "inflation_history": [
-    0.7104365041524532,
     0.6869805680532812,
     0.7126742239037103,
     0.6977451380643789,
@@ -224857,7 +224856,8 @@
     0.6356315415871925,
     0.6688969311104104,
     0.681907737376664,
-    0.680396149070677
+    0.680396149070677,
+    0.6822904862901167
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 28,
@@ -229932,6 +229932,13 @@
       "username": "desertmarshal",
       "action": "launder",
       "details": "₽2,188 dirty → ₽1,094 clean fee ₽1,094"
+    },
+    {
+      "at": "2026-09-11T18:50:16.793Z",
+      "by": "1229741033265299506",
+      "username": "desertmarshal",
+      "action": "launder",
+      "details": "₽290 dirty → ₽145 clean fee ₽145"
     }
   ],
   "total_rubles_history": [
@@ -230484,11 +230491,11 @@
       "1544820489191559270": 1789072459850,
       "791747702689103893": 1789152262820,
       "1456622719985782864": 1789059179493,
-      "1082686076491137115": 1789152531557,
-      "1229741033265299506": 1789152504349,
+      "1082686076491137115": 1789152609765,
+      "1229741033265299506": 1789152602761,
       "1536339779140976711": 1789152088845,
       "780837437987094560": 1789148950015,
-      "874346333882945547": 1789152525510,
+      "874346333882945547": 1789152614030,
       "870686833976172574": 1789151579058,
       "1186597507720019988": 1789150259284,
       "1521043721129558017": 1789152151634,
@@ -233181,13 +233188,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1229741033265299506",
-      "from": 6,
-      "to": 7,
-      "at": "2026-09-09T22:01:01.115Z",
-      "reason": "chat"
-    },
-    {
       "userId": "874346333882945547",
       "from": 7,
       "to": 8,
@@ -234578,6 +234578,13 @@
       "from": 4,
       "to": 5,
       "at": "2026-09-11T18:06:28.461Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1229741033265299506",
+      "from": 11,
+      "to": 12,
+      "at": "2026-09-11T18:50:02.762Z",
       "reason": "chat"
     }
   ],
