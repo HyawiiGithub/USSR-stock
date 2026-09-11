@@ -644,8 +644,8 @@
       "last_illegal": "2026-09-11T18:44:54.195Z",
       "total_heat_generated": 101.21199999999999,
       "bot_level": 12,
-      "bot_xp": 116,
-      "bot_total_xp": 7146,
+      "bot_xp": 140,
+      "bot_total_xp": 7170,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 12,
@@ -744,15 +744,15 @@
       "last_laylow": null
     },
     "874346333882945547": {
-      "cash": 220,
+      "cash": 240,
       "bank": 29404,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-11T18:52:27.524Z",
-      "work_count": 1151,
+      "last_work": "2026-09-11T18:59:12.912Z",
+      "work_count": 1152,
       "last_claim": "2026-09-11T10:35:20.198Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -766,9 +766,9 @@
       "last_illegal": "2026-09-11T18:43:49.923Z",
       "total_heat_generated": 279.181,
       "bot_level": 12,
-      "bot_xp": 461,
-      "bot_total_xp": 7491,
-      "daily_work_count": 95,
+      "bot_xp": 501,
+      "bot_total_xp": 7531,
+      "daily_work_count": 96,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
       "mee6_level": 12,
@@ -1543,8 +1543,8 @@
       "last_laylow": null
     },
     "1511756975392948224": {
-      "cash": 60,
-      "bank": 8343,
+      "cash": 0,
+      "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -1564,13 +1564,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 7,
-      "bot_xp": 683,
-      "bot_total_xp": 2888,
+      "bot_level": 8,
+      "bot_xp": 9,
+      "bot_total_xp": 2909,
       "daily_work_count": 13,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
-      "mee6_level": 7,
+      "mee6_level": 8,
       "last_laylow": null
     },
     "1456863215815364796": {
@@ -64823,8 +64823,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 6,
-      "bot_xp": 63,
-      "bot_total_xp": 1688,
+      "bot_xp": 83,
+      "bot_total_xp": 1708,
       "daily_work_count": 35,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
@@ -223700,14 +223700,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 0,
+      "funds": 1260,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 160180,
-      "market_cap": 160180,
+      "share_price": 151261,
+      "market_cap": 151261,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -223750,7 +223750,7 @@
       "inventory": {
         "Gold Bar": 16,
         "Fish": 2,
-        "Wheat": 139,
+        "Wheat": 138,
         "Sugar": 46,
         "Reactor Core": 1,
         "Copper": 68,
@@ -223771,15 +223771,12 @@
         "Uranium": 1,
         "Bread": 2,
         "Cake": 2,
-        "Fuel": 3,
         "Oil": 2,
-        "Coal": 6
+        "Coal": 7
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-11T13:02:11.174Z",
       "price_history": [
-        156322,
-        156325,
         156475,
         156263,
         156291,
@@ -223877,11 +223874,13 @@
         160144,
         160179,
         160177,
-        160180
+        160180,
+        151258,
+        151261
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-11T07:29:36.349Z",
+      "last_factorydeal": "2026-09-11T18:58:52.876Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -224235,11 +224234,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.5167228871732629,
-      "recorded_at": "2026-09-11T16:09:06.956Z"
-    },
     {
       "price": 100,
       "change_percent": 0.6805394236475684,
@@ -224734,12 +224728,14 @@
       "price": 103,
       "change_percent": 0.5750010107271806,
       "recorded_at": "2026-09-11T18:57:16.950Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.5548021443797788,
+      "recorded_at": "2026-09-11T18:59:13.749Z"
     }
   ],
-  "factory_names": [
-    "Khrushchev Agricultural",
-    "Volga Shipbuilding"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Soviet Iron Foundry",
     "Ural Heavy Industries",
@@ -224747,7 +224743,9 @@
     "Red Star Steelworks",
     "Lenin Machine Works",
     "Stalin Tractor Plant",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Volga Shipbuilding",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -225001,20 +224999,20 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3916786224806381,
+    "Fuel": 1.324178622480638,
     "Cake": 1.3986213227104993,
     "Bread": 1.3991510959674127,
     "Copper Ingot": 1.4046098159850924,
-    "Iron Ingot": 1.3854050313452135,
+    "Iron Ingot": 1.3954050313452135,
     "Steel Ingot": 1.3957483804379456,
     "Gold Bar": 1.3070076156105437,
     "Aluminium Ingot": 1.414784390226055,
     "Timber Planks": 1.3764234898886336,
     "Bricks": 1.412277019736337,
-    "Concrete": 1.4115324595438445,
+    "Concrete": 1.4215324595438446,
     "Glass": 1.4123296493590827,
     "Steel Beam": 1.3928578737214923,
-    "Machine Parts": 1.395229693656646,
+    "Machine Parts": 1.405229693656646,
     "Refined Fuel": 1.404511540181965,
     "Uranium Rod": 1.3908277559654751,
     "Reactor Core": 1.3662167209488376,
@@ -225042,7 +225040,7 @@
     "Shale Oil": 1.4046285714285687
   },
   "market_last_sale": {
-    "Fuel": "2026-09-11T10:02:07.733Z",
+    "Fuel": "2026-09-11T18:58:52.880Z",
     "Cake": "2026-09-10T22:06:05.320Z",
     "Bread": "2026-09-11T05:33:48.858Z",
     "Copper Ingot": "2026-09-08T15:46:21.969Z",
@@ -225065,7 +225063,9 @@
     "Machine Parts": "2026-09-11T13:27:30.368Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Fuel": 3
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -230435,7 +230435,7 @@
         "1495413593242337421": 15,
         "791747702689103893": 22,
         "730223629849199093": 2,
-        "874346333882945547": 42,
+        "874346333882945547": 43,
         "1287498720744702038": 1,
         "1536339779140976711": 16,
         "730696111198699600": 2,
@@ -230492,10 +230492,10 @@
       "791747702689103893": 1789152262820,
       "1456622719985782864": 1789059179493,
       "1082686076491137115": 1789153029357,
-      "1229741033265299506": 1789153047725,
+      "1229741033265299506": 1789153120299,
       "1536339779140976711": 1789153042330,
       "780837437987094560": 1789148950015,
-      "874346333882945547": 1789153045124,
+      "874346333882945547": 1789153113723,
       "870686833976172574": 1789151579058,
       "1186597507720019988": 1789150259284,
       "1521043721129558017": 1789152151634,
@@ -230505,7 +230505,7 @@
       "1470136693821800521": 1789088485919,
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789152018076,
-      "1506785783506534426": 1789149583571,
+      "1506785783506534426": 1789153123151,
       "807254722251587614": 1789150288540,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789150283923,
@@ -230569,7 +230569,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789134851367,
-      "1511756975392948224": 1789153072357,
+      "1511756975392948224": 1789153146977,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
@@ -230632,8 +230632,8 @@
       "2026-Q3": {
         "positive": 7,
         "negative": 5,
-        "neutral": 106,
-        "total": 118,
+        "neutral": 108,
+        "total": 120,
         "mentions": [
           {
             "at": "2026-09-09T14:27:39.760Z",
@@ -231929,6 +231929,28 @@
             "channelId": "1538703181733695600",
             "messageId": "1548045078285778995",
             "text": "Can a Manager do smth <@1082686076491137115>",
+            "sentiment": "neutral",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-11T18:58:43.563Z",
+            "userId": "1506785783506534426",
+            "username": "yuktobanian1",
+            "channelId": "605951687974453248",
+            "messageId": "1548045141087092737",
+            "text": "Premier shiekh",
+            "sentiment": "neutral",
+            "source": "text+reply",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-11T18:58:53.968Z",
+            "userId": "1506785783506534426",
+            "username": "yuktobanian1",
+            "channelId": "605951687974453248",
+            "messageId": "1548045184518983772",
+            "text": "I've made your pro premier propaganda",
             "sentiment": "neutral",
             "source": "text",
             "quarter": "2026-Q3"
@@ -233235,6 +233257,28 @@
         "sentiment": "neutral",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-11T18:58:43.563Z",
+        "userId": "1506785783506534426",
+        "username": "yuktobanian1",
+        "channelId": "605951687974453248",
+        "messageId": "1548045141087092737",
+        "text": "Premier shiekh",
+        "sentiment": "neutral",
+        "source": "text+reply",
+        "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-11T18:58:53.968Z",
+        "userId": "1506785783506534426",
+        "username": "yuktobanian1",
+        "channelId": "605951687974453248",
+        "messageId": "1548045184518983772",
+        "text": "I've made your pro premier propaganda",
+        "sentiment": "neutral",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
     "keywords_negative": [
@@ -233288,7 +233332,7 @@
       "premier is goat",
       "premier is peak"
     ],
-    "last_scan": "2026-09-11T18:58:28.315Z",
+    "last_scan": "2026-09-11T18:58:53.968Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -233297,13 +233341,6 @@
   "race_history": [],
   "giveaways": [],
   "level_ups": [
-    {
-      "userId": "874346333882945547",
-      "from": 7,
-      "to": 8,
-      "at": "2026-09-09T22:14:16.613Z",
-      "reason": "chat"
-    },
     {
       "userId": "503918799683321866",
       "from": 4,
@@ -234695,6 +234732,13 @@
       "from": 11,
       "to": 12,
       "at": "2026-09-11T18:50:02.762Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1511756975392948224",
+      "from": 7,
+      "to": 8,
+      "at": "2026-09-11T18:59:06.978Z",
       "reason": "chat"
     }
   ],
