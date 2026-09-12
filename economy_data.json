@@ -67,7 +67,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 185,
-      "heat": 5.685000000000022,
+      "heat": 5.585000000000022,
       "wanted": 0,
       "last_illegal": "2026-09-11T20:27:22.068Z",
       "total_heat_generated": 49.085,
@@ -639,7 +639,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
-      "heat": 5.614123958365168,
+      "heat": 5.514123958365168,
       "wanted": 0,
       "last_illegal": "2026-09-11T18:44:54.195Z",
       "total_heat_generated": 101.21199999999999,
@@ -761,7 +761,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 564,
-      "heat": 5.372605490664926,
+      "heat": 5.272605490664926,
       "wanted": 0,
       "last_illegal": "2026-09-11T18:43:49.923Z",
       "total_heat_generated": 279.181,
@@ -1089,7 +1089,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 90,
-      "heat": 5.629032161318438,
+      "heat": 5.5290321613184386,
       "wanted": 0,
       "last_illegal": "2026-09-11T17:19:00.605Z",
       "total_heat_generated": 113,
@@ -224264,8 +224264,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 95.79355000000037,
-      "underground_heat": 308.78699999999844,
+      "heat": 95.69355000000037,
+      "underground_heat": 308.6869999999984,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -224602,11 +224602,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 93,
-      "change_percent": -0.12490096471431253,
-      "recorded_at": "2026-09-12T00:51:31.924Z"
-    },
     {
       "price": 93,
       "change_percent": 0.10701059014062161,
@@ -225101,6 +225096,11 @@
       "price": 94,
       "change_percent": 0.25667261676547515,
       "recorded_at": "2026-09-12T07:10:20.867Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.9082800550215816,
+      "recorded_at": "2026-09-12T07:11:33.383Z"
     }
   ],
   "factory_names": [
@@ -225125,7 +225125,6 @@
   "money_printed": 744,
   "total_bank_reserves": 580367,
   "inflation_history": [
-    0.5992735936595,
     0.6219632383186308,
     0.6268097219303439,
     0.5971320674417786,
@@ -225159,6 +225158,7 @@
     0.673223481707208,
     0.6580839765441535,
     0.6484160381809292,
+    0,
     0,
     0,
     0,
@@ -225368,41 +225368,41 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.2662022402092155,
+    "Fuel": 1.26748906560028,
     "Cake": 1.401679654811135,
     "Bread": 1.3954727038131787,
     "Copper Ingot": 1.4046098159850924,
     "Iron Ingot": 1.3936577066234415,
     "Steel Ingot": 1.3961614959117368,
-    "Gold Bar": 1.3170076156105437,
+    "Gold Bar": 1.3152607994651484,
     "Aluminium Ingot": 1.4115124272563464,
     "Timber Planks": 1.3764234898886336,
     "Bricks": 1.4124271597455937,
     "Concrete": 1.4120118093727958,
     "Glass": 1.4124565190017666,
     "Steel Beam": 1.3928578737214923,
-    "Machine Parts": 1.4039222702424845,
+    "Machine Parts": 1.4022520475094495,
     "Refined Fuel": 1.3959126848851726,
     "Uranium Rod": 1.3927188037126754,
     "Reactor Core": 1.393424132386585,
     "Circuit Board": 1.4046285301953176,
     "Flour": 1.3324498260877202,
-    "Sugar": 1.0281772100333104,
+    "Sugar": 1.0268057918513351,
     "Wine": 1.4115094702816162,
     "Canned Food": 1.4046285714269033,
     "Canned Fish": 1.4046286055798074,
     "Smoked Fish": 1.4046285713660942,
     "Fish Stew": 1.4119984692051042,
     "Peat Fuel": 1.4046285714285607,
-    "Gas Fuel": 1.40073680722142,
+    "Gas Fuel": 1.397104329553996,
     "Fertilizer": 1.4122717690379563,
     "Cotton Fabric": 1.3950858745110237,
     "Manganese Alloy": 1.4115117978796894,
     "Sunflower Oil": 1.4121152782979576,
-    "Linen": 1.4224242589195246,
+    "Linen": 1.4206303182059627,
     "Corn Meal": 1.4119984657464273,
     "Tea Pack": 1.4124266504537017,
-    "Citrus Juice": 1.4224731687304746,
+    "Citrus Juice": 1.4206753152320366,
     "Antimony Alloy": 1.4115407993625892,
     "Molybdenum Rod": 1.4119980460035193,
     "Aluminium Sheet": 1.4046285713935367,
@@ -230335,10 +230335,6 @@
   "total_rubles_history": [
     {
       "total": 665798,
-      "at": "2026-09-11T23:16:31.216Z"
-    },
-    {
-      "total": 665798,
       "at": "2026-09-11T23:21:31.264Z"
     },
     {
@@ -230732,6 +230728,10 @@
     {
       "total": 666848,
       "at": "2026-09-12T07:06:33.751Z"
+    },
+    {
+      "total": 666888,
+      "at": "2026-09-12T07:11:33.748Z"
     }
   ],
   "gold_rush": null,
@@ -230758,7 +230758,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 19.071699999999897,
+  "heat_global": 18.971699999999895,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -231058,8 +231058,8 @@
       "2026-Q3": {
         "positive": 12,
         "negative": 7,
-        "neutral": 179,
-        "total": 198,
+        "neutral": 180,
+        "total": 199,
         "mentions": [
           {
             "at": "2026-09-09T14:27:39.760Z",
@@ -233235,6 +233235,17 @@
             "channelId": "605951687974453248",
             "messageId": "1548216680021499985",
             "text": "<@1173662113340854353> since you vetoed premier removing Congress could you give me the role back?",
+            "sentiment": "neutral",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-12T07:11:26.671Z",
+            "userId": "1506785783506534426",
+            "username": "yuktobanian1",
+            "channelId": "1538703181733695600",
+            "messageId": "1548229536628605049",
+            "text": "Premier removed it, but it got vetoed",
             "sentiment": "neutral",
             "source": "text",
             "quarter": "2026-Q3"
@@ -235421,6 +235432,17 @@
         "sentiment": "neutral",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-12T07:11:26.671Z",
+        "userId": "1506785783506534426",
+        "username": "yuktobanian1",
+        "channelId": "1538703181733695600",
+        "messageId": "1548229536628605049",
+        "text": "Premier removed it, but it got vetoed",
+        "sentiment": "neutral",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
     "keywords_negative": [
@@ -235474,7 +235496,7 @@
       "premier is goat",
       "premier is peak"
     ],
-    "last_scan": "2026-09-12T06:20:21.611Z",
+    "last_scan": "2026-09-12T07:11:26.672Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
