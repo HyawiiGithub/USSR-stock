@@ -6,6 +6,8 @@
 <title>USSR BOT DASHBOARD // FULL CONTROL</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <style>
 :root{--bg:#0f1115;--sidebar:#151821;--card:#1b1e2a;--card2:#232636;--border:#2a2f45;--accent:#6b7cff;--accent2:#8a5cff;--red:#d93a42;--gold:#e9c46a;--green:#34d399;--text:#e6e8f0;--muted:#9aa0b8}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -83,6 +85,7 @@ label{font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:upper
     <button data-tab="bank"><span class="dot"></span> Central Bank 🏦</button>
     <button data-tab="spawn"><span class="dot"></span> Spawn Rates</button>
     <button data-tab="world"><span class="dot"></span> World Map</button>
+    <button data-tab="war"><span class="dot"></span> War Map ⚔️</button>
     <button data-tab="users"><span class="dot"></span> Citizens</button>
     <button data-tab="codes"><span class="dot"></span> Access Codes 🔑</button>
     <button data-tab="logs"><span class="dot"></span> Logs</button>
@@ -200,6 +203,11 @@ label{font:700 10px 'Inter',sans-serif;letter-spacing:.08em;text-transform:upper
       <div class="card" style="margin-top:16px"><div class="card-h">Regions</div><div id="worldGrid" class="grid grid-3"></div></div>
     </div>
 
+    <div data-panel="war" class="hidden">
+      <div class="card"><div class="card-h"><span>🗺️ THEATER MAP — LARP WARS (d3 + world-atlas gist)</span><small id="warMapSub">—</small></div><div class="card-b"><div id="warMap" style="width:100%;overflow:hidden;background:#0d1117;border:2px solid #111"></div><div class="mono" style="font-size:10px;margin-top:6px;word-break:break-word">🔴 USSR (you) • 🟠 active front • 🟢 beaten • ⚪ untouched — atlas: jasondavies/4188334 world-110m TopoJSON, vendored as <code>war-countries-110m.json</code></div></div></div>
+      <div class="card" style="margin-top:10px"><div class="card-h"><span>FRONTS — LIVE FROM BOT</span><small id="warFrontCount">—</small></div><div class="card-b"><div id="warFronts" class="mono" style="font-size:11px;line-height:1.6">— loading —</div></div></div>
+    </div>
+
     <div data-panel="users" class="hidden">
       <div class="card"><div class="card-h">Citizens (top 30)</div><div class="table-wrap"><table><thead><tr><th>User</th><th>Cash</th><th>Bank</th><th>Lvl</th><th>Shifts</th></tr></thead><tbody id="userTable"></tbody></table></div></div>
     </div>
@@ -315,7 +323,7 @@ function hasPerm(p){
   return currentPerms.includes(p);
 }
 function applyPerms(){
-  const map={overview:'overview', economy:'economy', companies:'companies', levels:'levels', premier:'premier', bank:'economy', spawn:'spawn', world:'world', users:'users', codes:'admin', logs:'admin'};
+  const map={overview:'overview', economy:'economy', companies:'companies', levels:'levels', premier:'premier', bank:'economy', spawn:'spawn', world:'world', war:'overview', users:'users', codes:'admin', logs:'admin'};
   document.querySelectorAll('.nav button').forEach(b=>{
     const tab=b.dataset.tab;
     const need=map[tab];
@@ -387,6 +395,7 @@ async function loadEconomy(){
               premier_approval: jd.premier_approval,
               central_bank: jd.central_bank,
               government_bonds: jd.government_bonds,
+              war: jd.war||null,
               _source: url.includes('raw.githubusercontent')?'github-raw':'local-json'
             };
             // Try to enrich gold from raw if available
@@ -399,7 +408,7 @@ async function loadEconomy(){
       // API succeeded — also load raw for codes/users
       try{
         const rr=await fetch('./economy_data.json',{cache:'no-store'});
-        if(rr.ok){ const jd=await rr.json(); data._rawCodes=jd.access_codes; data._rawUsers=jd.users; data._mee6=jd.mee6_cache; data.premier_approval=jd.premier_approval; data.central_bank=jd.central_bank; data.government_bonds=jd.government_bonds; }
+        if(rr.ok){ const jd=await rr.json(); data._rawCodes=jd.access_codes; data._rawUsers=jd.users; data._mee6=jd.mee6_cache; data.premier_approval=jd.premier_approval; data.central_bank=jd.central_bank; data.government_bonds=jd.government_bonds; if(!data.war) data.war=jd.war||null; }
       }catch{}
     }
     if(!data) throw new Error('no data');
@@ -507,8 +516,71 @@ function renderAll(){
   if(ol){ const logs=economy.owner_logs||[]; ol.textContent=logs.slice(-20).reverse().map(e=>`${e.at.slice(0,19)} ${e.username} ${e.action} ${e.details}`).join('\n')||'No logs'; }
   // codes list
   refreshCodes();
+  // war theater map (async topojson load, cached)
+  renderWarMap();
   // charts
   drawCharts();
+}
+// WAR THEATER MAP — d3 + vendored world-atlas TopoJSON (jasondavies/4188334 lineage: world-110m).
+// Fictional war nations mapped onto real geography for LARP fronts.
+const WAR_GEO=[
+  {war:"Veymar Republic", country:"Germany", lon:10.4, lat:51.1},
+  {war:"Nordmark Confederacy", country:"Sweden", lon:18.6, lat:62.0},
+  {war:"Caspian Khanate", country:"Kazakhstan", lon:66.9, lat:48.2},
+  {war:"Pacific Directorate", country:"Japan", lon:138.2, lat:36.2},
+  {war:"Atlantic Pact", country:"United Kingdom", lon:-3.4, lat:55.3}
+];
+let _warTopo=null;
+async function renderWarMap(){
+  const box=document.getElementById('warMap'); if(!box) return;
+  const w=economy?.war||null;
+  const fronts=(w?.wars||[]).filter(x=>x.status==='active');
+  const past=(w?.wars||[]).filter(x=>x.status!=='active');
+  document.getElementById('warMapSub').textContent=w?`vault ₽${(w.vault||0).toLocaleString()} • ${fronts.length} active front(s)`:'no war data — enlist in Discord';
+  document.getElementById('warFrontCount').textContent=`${fronts.length} active • ${past.length} past`;
+  document.getElementById('warFronts').textContent=fronts.length?fronts.map(x=>`⚔️ ${x.nation} — enemy ${x.enemy_power} • round ${x.rounds} • since ${new Date(x.startedAt).toLocaleDateString()}`).join('\n')+'\n\n'+past.slice(-5).reverse().map(x=>`${x.status==='won'?'🏆':'💀'} ${x.nation} (${x.rounds}r)`).join('\n'):(past.length?past.slice(-5).reverse().map(x=>`${x.status==='won'?'🏆':'💀'} ${x.nation} (${x.rounds}r)`).join('\n'):'No wars yet — `-war declare <nation>` (Colonel+) in Discord');
+  if(typeof d3==='undefined'||typeof topojson==='undefined'){ box.innerHTML='<div class="mono" style="padding:12px">map libs offline (d3/topojson CDN blocked)</div>'; return; }
+  try{
+    if(!_warTopo){
+      const urls=['./war-countries-110m.json','https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'];
+      for(const u of urls){ try{ const r=await fetch(u,{cache:'force-cache'}); if(r.ok){ _warTopo=await r.json(); break; } }catch{} }
+      if(!_warTopo){ box.innerHTML='<div class="mono" style="padding:12px">atlas offline</div>'; return; }
+    }
+    const countries=topojson.feature(_warTopo,_warTopo.objects.countries).features;
+    const statusByCountry={};
+    for(const g of WAR_GEO){
+      const aw=w?.wars?.find(x=>x.nation===g.war && x.status==='active');
+      const pw=[...(w?.wars||[])].reverse().find(x=>x.nation===g.war && x.status!=='active');
+      statusByCountry[g.country]=aw?'active':(pw?(pw.status==='won'?'beaten':'survived'):'untouched');
+    }
+    const colorFor=s=>s==='active'?'#ff5a5a':s==='beaten'?'#3fa35a':s==='survived'?'#8a8f9e':'#3a3f4a';
+    const width=box.clientWidth||900, height=Math.round(width*0.5);
+    const projection=d3.geoNaturalEarth1().fitSize([width,height],{type:"Sphere"});
+    const path=d3.geoPath(projection);
+    box.innerHTML='';
+    const svg=d3.select(box).append('svg').attr('width',width).attr('height',height).attr('viewBox',`0 0 ${width} ${height}`);
+    svg.append('path').datum({type:'Sphere'}).attr('fill','#0d1117').attr('d',path);
+    svg.selectAll('country').data(countries).join('path')
+      .attr('d',path)
+      .attr('fill',d=>{
+        const n=d.properties?.name;
+        if(n==='Russia') return '#c0392b';
+        return colorFor(statusByCountry[n])||'#2a2f3a';
+      })
+      .attr('stroke','#0d1117').attr('stroke-width',0.5);
+    for(const g of WAR_GEO){
+      const st=statusByCountry[g.country]||'untouched';
+      const [x,y]=projection([g.lon,g.lat]);
+      svg.append('circle').attr('cx',x).attr('cy',y).attr('r',st==='active'?7:5)
+        .attr('fill',st==='active'?'#ff5a5a':st==='beaten'?'#3fa35a':'#e9c46a')
+        .attr('stroke','#fff').attr('stroke-width',1.5);
+      svg.append('text').attr('x',x+9).attr('y',y+4).text(g.war)
+        .attr('fill','#f5e6a3').attr('font-size','11px').attr('font-family','JetBrains Mono, monospace');
+    }
+    const [rx,ry]=projection([60,60]);
+    svg.append('circle').attr('cx',rx).attr('cy',ry).attr('r',8).attr('fill','#c0392b').attr('stroke','#f5e6a3').attr('stroke-width',2);
+    svg.append('text').attr('x',rx+11).attr('y',ry+4).text('USSR (you)').attr('fill','#fff').attr('font-size','12px').attr('font-weight','bold').attr('font-family','JetBrains Mono, monospace');
+  }catch(e){ box.innerHTML='<div class="mono" style="padding:12px">map error</div>'; }
 }
 function drawCharts(){
   if(!economy || typeof Chart==='undefined') return;
