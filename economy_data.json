@@ -223683,12 +223683,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 82,
-      "bot_total_xp": 82,
+      "bot_level": 1,
+      "bot_xp": 6,
+      "bot_total_xp": 106,
       "daily_work_count": 0,
       "shock_worker": false,
-      "last_laylow": null
+      "last_laylow": null,
+      "mee6_level": 1
     }
   },
   "companies": {
@@ -224370,8 +224371,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 211576,
-      "market_cap": 211576,
+      "share_price": 211591,
+      "market_cap": 211591,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -224400,7 +224401,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        198989,
         198929,
         199089,
         198997,
@@ -224499,7 +224499,8 @@
         211529,
         211534,
         211536,
-        211576
+        211576,
+        211591
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -224690,11 +224691,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.8495381850775167,
-      "recorded_at": "2026-09-12T08:27:39.604Z"
-    },
     {
       "price": 101,
       "change_percent": 0.6269705714849136,
@@ -225189,6 +225185,11 @@
       "price": 98,
       "change_percent": 0.490263929960047,
       "recorded_at": "2026-09-12T12:06:33.835Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.9054174932405883,
+      "recorded_at": "2026-09-12T12:08:06.838Z"
     }
   ],
   "factory_names": [
@@ -231167,7 +231168,7 @@
       "1528090451633115206": 1789200178876,
       "1542775023662534727": 1789202714164,
       "951376052364660766": 1789212489736,
-      "981456416466432021": 1789214543882
+      "981456416466432021": 1789214905870
     }
   },
   "mee6_cache": {
@@ -235764,13 +235765,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1082686076491137115",
-      "from": 5,
-      "to": 6,
-      "at": "2026-09-10T18:01:10.166Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1541073090019074150",
       "from": 0,
       "to": 1,
@@ -237161,6 +237155,13 @@
       "from": 6,
       "to": 7,
       "at": "2026-09-12T11:57:31.643Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "981456416466432021",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-12T12:08:25.871Z",
       "reason": "chat"
     }
   ],
