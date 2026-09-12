@@ -114,8 +114,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 16,
-      "bot_total_xp": 8466,
+      "bot_xp": 31,
+      "bot_total_xp": 8481,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 13,
@@ -639,7 +639,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 108,
-      "heat": 7.459073943712536,
+      "heat": 6.516003139548785,
       "wanted": 0,
       "last_illegal": "2026-09-12T20:45:39.611Z",
       "total_heat_generated": 121.25999999999999,
@@ -761,13 +761,13 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 826,
-      "heat": 7.185546329663266,
+      "heat": 6.338710547237972,
       "wanted": 0,
       "last_illegal": "2026-09-12T17:03:44.211Z",
       "total_heat_generated": 311.00300000000004,
       "bot_level": 14,
-      "bot_xp": 1276,
-      "bot_total_xp": 11321,
+      "bot_xp": 1294,
+      "bot_total_xp": 11339,
       "daily_work_count": 177,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-12",
@@ -1089,7 +1089,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 524,
-      "heat": 11.8846975641139,
+      "heat": 10.89850714051132,
       "wanted": 0,
       "last_illegal": "2026-09-12T19:51:26.568Z",
       "total_heat_generated": 147.984,
@@ -1563,7 +1563,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 151,
-      "heat": 0.13129843794677776,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-12T10:29:03.621Z",
       "total_heat_generated": 12.361,
@@ -217036,8 +217036,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 253,
-      "bot_total_xp": 1403,
+      "bot_xp": 270,
+      "bot_total_xp": 1420,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -224586,8 +224586,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 177052,
-      "market_cap": 177052,
+      "share_price": 176288,
+      "market_cap": 176288,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -224658,7 +224658,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-12T19:18:50.533Z",
       "price_history": [
-        168975,
         168970,
         169005,
         169120,
@@ -224757,7 +224756,8 @@
         177000,
         177035,
         177046,
-        177052
+        177052,
+        176288
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -224777,8 +224777,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 137.37828431284493,
-      "underground_heat": 389.95904673531675,
+      "heat": 136.83233410892512,
+      "underground_heat": 389.24497553743464,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225115,11 +225115,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": 0.45126610479304613,
-      "recorded_at": "2026-09-12T17:31:36.175Z"
-    },
     {
       "price": 95,
       "change_percent": 0.7789450698062963,
@@ -225614,10 +225609,14 @@
       "price": 100,
       "change_percent": 0.9527615370021173,
       "recorded_at": "2026-09-12T21:11:04.988Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.5807681974129792,
+      "recorded_at": "2026-09-12T21:13:00.281Z"
     }
   ],
   "factory_names": [
-    "Lenin Machine Works",
     "Brezhnev Auto Factory",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
@@ -225627,7 +225626,8 @@
     "Red Star Steelworks",
     "Khrushchev Agricultural",
     "Siberian Mining Co",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Lenin Machine Works"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -225882,12 +225882,12 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3932430855966182,
-    "Cake": 1.2718935491591814,
+    "Cake": 1.2908411188083093,
     "Bread": 1.3734184828701552,
     "Copper Ingot": 1.4046098159850924,
     "Iron Ingot": 1.3895822417871706,
     "Steel Ingot": 1.3961614959117368,
-    "Gold Bar": 1.3032875713711003,
+    "Gold Bar": 1.3015349104889984,
     "Aluminium Ingot": 1.4115124272563464,
     "Timber Planks": 1.3764234898886336,
     "Bricks": 1.4124271597455937,
@@ -225900,7 +225900,7 @@
     "Reactor Core": 1.393424132386585,
     "Circuit Board": 1.4046285583821123,
     "Flour": 1.3468256223522976,
-    "Sugar": 0.9701586946485299,
+    "Sugar": 0.9657046197663026,
     "Wine": 1.4115094702816162,
     "Canned Food": 1.4046285714280435,
     "Canned Fish": 1.4046285822342357,
@@ -230896,10 +230896,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 666954,
-      "at": "2026-09-12T13:21:35.289Z"
-    },
-    {
       "total": 666974,
       "at": "2026-09-12T13:26:35.256Z"
     },
@@ -231294,6 +231290,10 @@
     {
       "total": 670636,
       "at": "2026-09-12T21:08:00.770Z"
+    },
+    {
+      "total": 670741,
+      "at": "2026-09-12T21:13:00.892Z"
     }
   ],
   "gold_rush": null,
@@ -231320,7 +231320,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 25.053949999999777,
+  "heat_global": 24.753949999999776,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -231472,14 +231472,14 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1789247382417,
+      "1544820489191559270": 1789247612517,
       "791747702689103893": 1789241039048,
       "1456622719985782864": 1789241872580,
-      "1082686076491137115": 1789247399151,
+      "1082686076491137115": 1789247581888,
       "1229741033265299506": 1789247550988,
       "1536339779140976711": 1789246516966,
       "780837437987094560": 1789246493038,
-      "874346333882945547": 1789247531222,
+      "874346333882945547": 1789247591508,
       "870686833976172574": 1789237474560,
       "1186597507720019988": 1789236176531,
       "1521043721129558017": 1789236228722,
