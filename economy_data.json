@@ -72,8 +72,8 @@
       "last_illegal": "2026-09-11T20:27:22.068Z",
       "total_heat_generated": 49.085,
       "bot_level": 6,
-      "bot_xp": 108,
-      "bot_total_xp": 1733,
+      "bot_xp": 131,
+      "bot_total_xp": 1756,
       "daily_work_count": 9,
       "shock_worker": false,
       "mee6_level": 6,
@@ -114,8 +114,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1336,
-      "bot_total_xp": 8366,
+      "bot_xp": 1360,
+      "bot_total_xp": 8390,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 12,
@@ -766,8 +766,8 @@
       "last_illegal": "2026-09-12T17:03:44.211Z",
       "total_heat_generated": 311.00300000000004,
       "bot_level": 14,
-      "bot_xp": 968,
-      "bot_total_xp": 11013,
+      "bot_xp": 985,
+      "bot_total_xp": 11030,
       "daily_work_count": 174,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-12",
@@ -1094,8 +1094,8 @@
       "last_illegal": "2026-09-12T19:51:26.568Z",
       "total_heat_generated": 147.984,
       "bot_level": 12,
-      "bot_xp": 1340,
-      "bot_total_xp": 8370,
+      "bot_xp": 1359,
+      "bot_total_xp": 8389,
       "daily_work_count": 30,
       "shock_worker": false,
       "mee6_level": 12,
@@ -224587,8 +224587,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 176739,
-      "market_cap": 176739,
+      "share_price": 176742,
+      "market_cap": 176742,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -224658,7 +224658,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-12T19:18:50.533Z",
       "price_history": [
-        167811,
         167846,
         167857,
         167844,
@@ -224757,7 +224756,8 @@
         176602,
         176717,
         176720,
-        176739
+        176739,
+        176742
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225115,11 +225115,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 91,
-      "change_percent": 1.3713309818758264,
-      "recorded_at": "2026-09-12T17:03:45.135Z"
-    },
     {
       "price": 91,
       "change_percent": 0.9894654441066597,
@@ -225614,6 +225609,11 @@
       "price": 95,
       "change_percent": 0.8693399686014507,
       "recorded_at": "2026-09-12T20:52:31.239Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.7264260609910927,
+      "recorded_at": "2026-09-12T20:54:33.606Z"
     }
   ],
   "factory_names": [
@@ -231476,11 +231476,11 @@
       "1544820489191559270": 1789246355933,
       "791747702689103893": 1789241039048,
       "1456622719985782864": 1789241872580,
-      "1082686076491137115": 1789246414457,
+      "1082686076491137115": 1789246501067,
       "1229741033265299506": 1789245867687,
-      "1536339779140976711": 1789246313531,
-      "780837437987094560": 1789244440143,
-      "874346333882945547": 1789246439175,
+      "1536339779140976711": 1789246516966,
+      "780837437987094560": 1789246493038,
+      "874346333882945547": 1789246502247,
       "870686833976172574": 1789237474560,
       "1186597507720019988": 1789236176531,
       "1521043721129558017": 1789236228722,
@@ -246846,7 +246846,7 @@
   "jarvis": {
     "1082686076491137115": {
       "date": "2026-09-12",
-      "used": 2,
+      "used": 3,
       "history": [
         {
           "role": "user",
@@ -246863,6 +246863,14 @@
         {
           "role": "assistant",
           "content": "I am Jarvis, the Soviet Union economy management bot. I don't have physical form or the ability to interact with individuals directly. My function is to provide economic analysis based on the official Soviet statistics.\n\nIf you'd like information about:\n- Current GDP (670,056 million rubles)\n- GSI index (95)\n- Inflation rate (0.00%)\n- Gold backing (3.2%)\n- Top companies (State Nuclear Energy, Soviet Agriculture, State Mining Corp)\n- Economic indicators\n\nplease ask. I can also help analyze trends"
+        },
+        {
+          "role": "user",
+          "content": "system report"
+        },
+        {
+          "role": "assistant",
+          "content": "**SYSTEM REPORT - USSR ECONOMY**\n\n**Core Metrics:**\n- **GDP:** 670,506 rubles\n- **GSI (Generalized Price Index):** 95\n- **Inflation:** 0.00%\n- **Gold Backing Ratio:** 3.2%\n\n**Industrial Landscape (6 Companies):**\n| Rank | Company | Value (Rubles) |\n|------|---------|----------------|\n| 1 | State Nuclear Energy | 212,243 |\n| 2 | Soviet Agriculture | 176,742 |\n| 3 | State Mining Corp | 157,984 |\n\n**Additional Context:**\n- Total corporate count: 6\n- Current monetary level: 12\n- Available funds: Cas"
         }
       ]
     },
@@ -246963,14 +246971,16 @@
       "1511756975392948224": 0,
       "1536339779140976711": 0,
       "1325111649816023092": 0,
-      "913497950213267577": 0
+      "913497950213267577": 0,
+      "780837437987094560": 0
     },
     "power": {
       "874346333882945547": 19,
       "1511756975392948224": 18,
       "1536339779140976711": 19,
       "1325111649816023092": 19,
-      "913497950213267577": 19
+      "913497950213267577": 19,
+      "780837437987094560": 10
     },
     "last_train": {
       "874346333882945547": "2026-09-12T20:49:08.480Z",
