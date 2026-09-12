@@ -163,7 +163,7 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 228,
+      "cash": 246,
       "bank": 16832,
       "resources": {
         "Natural Gas": 4,
@@ -176,8 +176,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-12T07:17:34.285Z",
-      "work_count": 163,
+      "last_work": "2026-09-12T07:31:59.213Z",
+      "work_count": 164,
       "last_claim": "2026-09-06T08:01:16.625Z",
       "last_collect": null,
       "join_date": "2026-08-22T05:47:50.692471",
@@ -192,9 +192,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 20,
-      "bot_total_xp": 790,
-      "daily_work_count": 6,
+      "bot_xp": 43,
+      "bot_total_xp": 813,
+      "daily_work_count": 7,
       "shock_worker": false,
       "mee6_level": 4,
       "last_daily_work_date": "2026-09-12",
@@ -675,8 +675,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 332,
-      "bot_total_xp": 1482,
+      "bot_xp": 351,
+      "bot_total_xp": 1501,
       "daily_work_count": 4,
       "shock_worker": false,
       "mee6_level": 5,
@@ -833,15 +833,15 @@
       "last_laylow": null
     },
     "1495413593242337421": {
-      "cash": 1164,
+      "cash": 1182,
       "bank": 25803,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-12T07:25:51.360Z",
-      "work_count": 260,
+      "last_work": "2026-09-12T07:32:18.017Z",
+      "work_count": 261,
       "last_claim": "2026-09-12T06:19:53.425Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -855,9 +855,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 12,
-      "bot_total_xp": 1637,
-      "daily_work_count": 26,
+      "bot_xp": 28,
+      "bot_total_xp": 1653,
+      "daily_work_count": 27,
       "shock_worker": false,
       "mee6_level": 6,
       "last_daily_work_date": "2026-09-12",
@@ -224277,14 +224277,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 18674,
+      "funds": 18668,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 210719,
-      "market_cap": 210719,
+      "share_price": 210745,
+      "market_cap": 210745,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -224302,19 +224302,17 @@
       "inventory": {
         "Timber": 260,
         "Natural Gas": 158,
-        "Iron Ore": 81,
+        "Iron Ore": 83,
         "Coal": 101,
         "Uranium": 7,
         "Oil": 168,
         "Gold": 19,
-        "Wheat": 192,
+        "Wheat": 190,
         "Iron Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        197583,
-        197542,
         197620,
         197558,
         197721,
@@ -224412,7 +224410,9 @@
         210448,
         210485,
         210602,
-        210719
+        210719,
+        210732,
+        210745
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -224603,16 +224603,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 88,
-      "change_percent": 0.8986781447665402,
-      "recorded_at": "2026-09-12T01:26:31.794Z"
-    },
-    {
-      "price": 88,
-      "change_percent": 1.0926799918892511,
-      "recorded_at": "2026-09-12T01:31:31.923Z"
-    },
     {
       "price": 88,
       "change_percent": 0.585408522400049,
@@ -225102,6 +225092,16 @@
       "price": 95,
       "change_percent": 0.1915482651507883,
       "recorded_at": "2026-09-12T07:31:33.381Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.9110445954460952,
+      "recorded_at": "2026-09-12T07:31:59.998Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.4045441161795005,
+      "recorded_at": "2026-09-12T07:32:18.824Z"
     }
   ],
   "factory_names": [
@@ -230854,9 +230854,9 @@
         "918518877414100993": 5,
         "1186597507720019988": 3,
         "1506785783506534426": 3,
-        "1495413593242337421": 6,
+        "1495413593242337421": 7,
         "874346333882945547": 4,
-        "730223629849199093": 2
+        "730223629849199093": 3
       }
     },
     "collect_daily": {
@@ -230901,7 +230901,7 @@
     "cooldowns": {
       "1544820489191559270": 1789072459850,
       "791747702689103893": 1789175923145,
-      "1456622719985782864": 1789198270213,
+      "1456622719985782864": 1789198334944,
       "1082686076491137115": 1789173531515,
       "1229741033265299506": 1789198299012,
       "1536339779140976711": 1789161486621,
