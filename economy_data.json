@@ -224663,11 +224663,6 @@
   "gsi_history": [
     {
       "price": 90,
-      "change_percent": -5.282736425671242,
-      "recorded_at": "2026-09-12T07:36:28.045Z"
-    },
-    {
-      "price": 90,
       "change_percent": 0.3450679135209039,
       "recorded_at": "2026-09-12T07:36:33.438Z"
     },
@@ -225160,6 +225155,11 @@
       "price": 100,
       "change_percent": 0.5219722298342154,
       "recorded_at": "2026-09-12T10:49:54.257Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 4.376643316744877,
+      "recorded_at": "2026-09-12T10:51:28.048Z"
     }
   ],
   "factory_names": [
@@ -225492,7 +225492,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 3
+    "Gas Fuel": 2
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -225513,16 +225513,11 @@
     "Circuit Board": 4,
     "Cotton Fabric": 7,
     "Reactor Core": 2,
-    "Gas Fuel": 43,
+    "Gas Fuel": 44,
     "Steel Beam": 2,
     "Machine Parts": 4
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-04T11:05:38.572Z"
-    },
     {
       "item": "Canned Fish",
       "qty": 2,
@@ -227017,6 +227012,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-12T07:51:28.795Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-12T10:51:29.127Z"
     }
   ],
   "demand_history": {
@@ -229686,6 +229686,11 @@
         "demand": 1.2497967958999756,
         "at": "2026-09-11T16:24:04.845Z",
         "supply": 1
+      },
+      {
+        "demand": 1.3233042510995574,
+        "at": "2026-09-12T10:51:29.127Z",
+        "supply": 2
       }
     ],
     "Steel Beam": [
