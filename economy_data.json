@@ -1568,8 +1568,8 @@
       "last_illegal": "2026-09-12T10:29:03.621Z",
       "total_heat_generated": 12.361,
       "bot_level": 10,
-      "bot_xp": 70,
-      "bot_total_xp": 4745,
+      "bot_xp": 87,
+      "bot_total_xp": 4762,
       "daily_work_count": 22,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-12",
@@ -67069,8 +67069,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 700,
-      "bot_total_xp": 6475,
+      "bot_xp": 723,
+      "bot_total_xp": 6498,
       "daily_work_count": 20,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-11",
@@ -224112,7 +224112,7 @@
         "Gold": 10,
         "Sugar": 74,
         "Uranium": 4,
-        "Wheat": 91,
+        "Wheat": 126,
         "Contraband: Cocaine": 1,
         "Coal": 12
       },
@@ -224386,7 +224386,7 @@
         "Oil": 5,
         "Iron Ore": 9,
         "Flour": 19,
-        "Wheat": 113,
+        "Wheat": 155,
         "Cotton": 4,
         "Fuel": 3,
         "Sugar": 7,
@@ -224761,7 +224761,7 @@
         "Uranium": 7,
         "Oil": 177,
         "Gold": 19,
-        "Wheat": 155,
+        "Wheat": 200,
         "Iron Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
@@ -231417,7 +231417,7 @@
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789241864034,
       "1506785783506534426": 1789209344465,
-      "807254722251587614": 1789244921526,
+      "807254722251587614": 1789245013057,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789242829548,
       "997903130543005767": 1788970364999,
@@ -231480,7 +231480,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789134851367,
-      "1511756975392948224": 1789244961544,
+      "1511756975392948224": 1789245029662,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
@@ -246653,7 +246653,8 @@
     "chair_id": null,
     "chair_set_by": null,
     "chair_set_at": null,
-    "chair_history": []
+    "chair_history": [],
+    "shutdown": false
   },
   "fca": {
     "agents": [],
@@ -246761,6 +246762,27 @@
         }
       ]
     }
+  },
+  "depression": {
+    "active": false,
+    "startedAt": null,
+    "startedBy": null,
+    "history": []
+  },
+  "realestate": {
+    "plots": [],
+    "houses": [],
+    "next_plot_id": 1,
+    "next_house_id": 1,
+    "plots_seeded": false
+  },
+  "war": {
+    "ranks": {},
+    "power": {},
+    "last_train": {},
+    "vault": 0,
+    "wars": [],
+    "next_war_id": 1
   },
   "access_codes_hashed": {
     "7dd45665a3df9024": {
