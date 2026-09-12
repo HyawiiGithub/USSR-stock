@@ -744,15 +744,15 @@
       "last_laylow": null
     },
     "874346333882945547": {
-      "cash": 20,
+      "cash": 40,
       "bank": 29039,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-12T19:47:10.787Z",
-      "work_count": 1228,
+      "last_work": "2026-09-12T20:06:43.054Z",
+      "work_count": 1229,
       "last_claim": "2026-09-12T13:56:22.791Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -766,9 +766,9 @@
       "last_illegal": "2026-09-12T17:03:44.211Z",
       "total_heat_generated": 311.00300000000004,
       "bot_level": 14,
-      "bot_xp": 714,
-      "bot_total_xp": 10759,
-      "daily_work_count": 169,
+      "bot_xp": 735,
+      "bot_total_xp": 10780,
+      "daily_work_count": 170,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-12",
       "mee6_level": 14,
@@ -224523,14 +224523,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 19836,
+      "funds": 19831,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 176343,
-      "market_cap": 176343,
+      "share_price": 176378,
+      "market_cap": 176378,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -224573,7 +224573,7 @@
       "inventory": {
         "Gold Bar": 17,
         "Fish": 2,
-        "Wheat": 79,
+        "Wheat": 78,
         "Sugar": 89,
         "Reactor Core": 2,
         "Copper": 74,
@@ -224591,7 +224591,7 @@
         "Coal": 21,
         "Bread": 11,
         "Cake": 1,
-        "Iron Ore": 6,
+        "Iron Ore": 8,
         "Uranium Rod": 1,
         "Oil": 10,
         "Gold": 2,
@@ -224600,7 +224600,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-12T19:18:50.533Z",
       "price_history": [
-        167541,
         167576,
         167627,
         167630,
@@ -224699,7 +224698,8 @@
         176302,
         176289,
         176292,
-        176343
+        176343,
+        176378
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225057,16 +225057,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.36110998049215676,
-      "recorded_at": "2026-09-12T16:21:35.125Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.03681318305951869,
-      "recorded_at": "2026-09-12T16:26:35.226Z"
-    },
     {
       "price": 96,
       "change_percent": -0.24872500433309527,
@@ -225556,6 +225546,16 @@
       "price": 91,
       "change_percent": -7.511754498452074,
       "recorded_at": "2026-09-12T20:06:28.851Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.7723204482078962,
+      "recorded_at": "2026-09-12T20:06:38.057Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.9404287008707136,
+      "recorded_at": "2026-09-12T20:06:44.066Z"
     }
   ],
   "factory_names": [
@@ -225888,7 +225888,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Cake": 4
+    "Cake": 2
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -225899,7 +225899,7 @@
     "Iron Ingot": 53,
     "Shale Oil": 17,
     "Peat Fuel": 10,
-    "Cake": 204,
+    "Cake": 206,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 14,
@@ -225914,11 +225914,6 @@
     "Machine Parts": 4
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 2,
-      "at": "2026-09-04T21:51:41.641Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -227413,6 +227408,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-12T19:51:29.485Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-12T20:06:29.600Z"
     }
   ],
   "demand_history": {
@@ -228999,11 +228999,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.367929423772597,
-        "at": "2026-09-06T00:51:43.352Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2198110103792001,
         "at": "2026-09-06T06:21:46.868Z",
         "supply": 0
@@ -229296,6 +229291,11 @@
       {
         "demand": 1.1835499282074606,
         "at": "2026-09-12T19:51:29.485Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.2040734959718618,
+        "at": "2026-09-12T20:06:29.600Z",
         "supply": 1
       }
     ],
@@ -230827,10 +230827,6 @@
   "total_rubles_history": [
     {
       "total": 666467,
-      "at": "2026-09-12T12:26:34.595Z"
-    },
-    {
-      "total": 666467,
       "at": "2026-09-12T12:31:34.424Z"
     },
     {
@@ -231224,6 +231220,10 @@
     {
       "total": 669896,
       "at": "2026-09-12T20:01:39.796Z"
+    },
+    {
+      "total": 669916,
+      "at": "2026-09-12T20:06:39.877Z"
     }
   ],
   "gold_rush": null,
@@ -231341,7 +231341,7 @@
         "1186597507720019988": 11,
         "1506785783506534426": 11,
         "1495413593242337421": 21,
-        "874346333882945547": 55,
+        "874346333882945547": 56,
         "730223629849199093": 13,
         "1287498720744702038": 1,
         "1536339779140976711": 6,
