@@ -22,12 +22,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 91,
-      "bot_total_xp": 91,
+      "bot_level": 1,
+      "bot_xp": 10,
+      "bot_total_xp": 110,
       "daily_work_count": 0,
       "shock_worker": false,
-      "last_laylow": null
+      "last_laylow": null,
+      "mee6_level": 1
     },
     "1495413593242337421": {
       "cash": 0,
@@ -109,12 +110,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 82,
-      "bot_total_xp": 82,
+      "bot_level": 1,
+      "bot_xp": 6,
+      "bot_total_xp": 106,
       "daily_work_count": 0,
       "shock_worker": false,
-      "last_laylow": null
+      "last_laylow": null,
+      "mee6_level": 1
     },
     "1343006572850184217": {
       "cash": 0,
@@ -459,8 +461,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 22,
-      "bot_total_xp": 22,
+      "bot_xp": 39,
+      "bot_total_xp": 39,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
@@ -217800,10 +217802,10 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1456622719985782864": 1789320703809,
+      "1456622719985782864": 1789320778193,
       "1495413593242337421": 1789320756261,
       "780837437987094560": 1789320414469,
-      "1520829167619543061": 1789320667221,
+      "1520829167619543061": 1789320771770,
       "1343006572850184217": 1789320746773,
       "894318687807475783": 1789320683293,
       "963834359994007614": 1789320468455,
@@ -217815,7 +217817,7 @@
       "1325111649816023092": 1789320668037,
       "503918799683321866": 1789320662614,
       "722566466603319368": 1789320669090,
-      "874346333882945547": 1789320737411
+      "874346333882945547": 1789320799307
     }
   },
   "mee6_cache": {
@@ -217832,8 +217834,8 @@
       "2026-Q3": {
         "positive": 0,
         "negative": 0,
-        "neutral": 2,
-        "total": 2,
+        "neutral": 3,
+        "total": 3,
         "mentions": [
           {
             "at": "2026-09-13T17:29:30.210Z",
@@ -217854,6 +217856,18 @@
             "channelId": "1538703181733695600",
             "messageId": "1548748198032711822",
             "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-13T17:33:19.782Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "605951687974453248",
+            "messageId": "1548748426236268567",
+            "text": "Hyawii zuked companies",
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text",
@@ -217887,9 +217901,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-13T17:33:19.782Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "605951687974453248",
+        "messageId": "1548748426236268567",
+        "text": "Hyawii zuked companies",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-13T17:32:25.886Z",
+    "last_scan": "2026-09-13T17:33:19.782Z",
     "report_channel_id": null,
     "last_report": null,
     "report_schedule": "quarterly",
@@ -217969,6 +217995,20 @@
       "from": 0,
       "to": 1,
       "at": "2026-09-13T17:32:26.773Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1520829167619543061",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-13T17:32:51.770Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1456622719985782864",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-13T17:32:58.193Z",
       "reason": "chat"
     }
   ],
