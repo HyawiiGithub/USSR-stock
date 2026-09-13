@@ -224977,8 +224977,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 139.6119093372717,
-      "underground_heat": 394.32113924334953,
+      "heat": 139.0282509185254,
+      "underground_heat": 393.80807520119265,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225315,11 +225315,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.33976658687032746,
-      "recorded_at": "2026-09-12T21:41:10.216Z"
-    },
     {
       "price": 101,
       "change_percent": 0.40573160644811496,
@@ -225814,6 +225809,11 @@
       "price": 86,
       "change_percent": 3.8802992594698797,
       "recorded_at": "2026-09-13T03:34:14.902Z"
+    },
+    {
+      "price": 86,
+      "change_percent": 0.5285237459112636,
+      "recorded_at": "2026-09-13T03:34:18.161Z"
     }
   ],
   "factory_names": [
@@ -226147,14 +226147,14 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 4
+    "Fuel": 3
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 122,
     "Refined Fuel": 93,
-    "Fuel": 94,
+    "Fuel": 95,
     "Iron Ingot": 53,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -226174,11 +226174,6 @@
     "Sugar": 10
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-05T21:51:43.373Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 2,
@@ -227673,6 +227668,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-13T03:19:15.517Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 1,
+      "at": "2026-09-13T03:34:15.513Z"
     }
   ],
   "demand_history": {
@@ -228682,11 +228682,6 @@
     "Fuel": [
       {
         "demand": 1.3628470096155891,
-        "at": "2026-08-31T23:21:11.791Z",
-        "supply": 9
-      },
-      {
-        "demand": 1.3628470096155891,
         "at": "2026-09-01T01:51:11.957Z",
         "supply": 9
       },
@@ -228978,6 +228973,11 @@
       {
         "demand": 1.316910018611961,
         "at": "2026-09-13T03:19:15.517Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3382421454227107,
+        "at": "2026-09-13T03:34:15.513Z",
         "supply": 1
       }
     ],
@@ -231557,10 +231557,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 669678,
-      "at": "2026-09-12T18:56:39.489Z"
-    },
-    {
       "total": 669698,
       "at": "2026-09-12T19:01:39.493Z"
     },
@@ -231955,6 +231951,10 @@
     {
       "total": 675664,
       "at": "2026-09-13T03:29:18.637Z"
+    },
+    {
+      "total": 675664,
+      "at": "2026-09-13T03:34:18.570Z"
     }
   ],
   "gold_rush": null,
@@ -231981,7 +231981,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 28.116349999999915,
+  "heat_global": 27.816349999999915,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
