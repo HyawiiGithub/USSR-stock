@@ -654,15 +654,15 @@
       "last_laylow": "2026-09-13T18:39:16.114Z"
     },
     "1456622719985782864": {
-      "cash": 54,
+      "cash": 72,
       "bank": 29793,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-13T18:13:07.561Z",
-      "work_count": 411,
+      "last_work": "2026-09-13T19:48:57.416Z",
+      "work_count": 412,
       "last_claim": "2026-09-13T07:30:15.480Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -676,9 +676,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 87,
-      "bot_total_xp": 5862,
-      "daily_work_count": 17,
+      "bot_xp": 110,
+      "bot_total_xp": 5885,
+      "daily_work_count": 18,
       "shock_worker": false,
       "mee6_level": 11,
       "last_daily_work_date": "2026-09-13",
@@ -976,8 +976,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 877,
-      "bot_total_xp": 9327,
+      "bot_xp": 902,
+      "bot_total_xp": 9352,
       "daily_work_count": 35,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -225960,14 +225960,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 6337,
+      "funds": 6334,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 62106,
-      "market_cap": 62106,
+      "share_price": 62107,
+      "market_cap": 62107,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -225993,14 +225993,13 @@
         "Fish": 188,
         "Iron Ore": 1,
         "Oil Shale": 12,
-        "Timber": 12,
-        "Sugar": 3,
+        "Timber": 14,
+        "Sugar": 2,
         "Gold": 1
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-09-03T08:51:55.944Z",
       "price_history": [
-        60666,
         60712,
         60726,
         60715,
@@ -226099,7 +226098,8 @@
         61940,
         61955,
         61943,
-        62106
+        62106,
+        62107
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -226179,11 +226179,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": 0.5987537594021464,
-      "recorded_at": "2026-09-13T16:50:34.150Z"
-    },
     {
       "price": 95,
       "change_percent": 0.8204105627463721,
@@ -226678,6 +226673,11 @@
       "price": 105,
       "change_percent": 0.8158032758387329,
       "recorded_at": "2026-09-13T19:47:46.874Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 0.6570255320274178,
+      "recorded_at": "2026-09-13T19:48:58.432Z"
     }
   ],
   "factory_names": [
@@ -232642,6 +232642,13 @@
       "username": "hyawii2.0",
       "action": "collect-salaries",
       "details": "Soviet National Defense Industry paid ₽2500 salaries ceo 1082686076491137115 ₽1250, director 1082686076491137115 ₽1250"
+    },
+    {
+      "at": "2026-09-13T19:49:17.394Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "ccvote",
+      "details": "APPROVED war on Veymar Republic"
     }
   ],
   "total_rubles_history": [
@@ -233193,7 +233200,7 @@
         "1511756975392948224": 18,
         "1495413593242337421": 3,
         "874346333882945547": 52,
-        "1456622719985782864": 12,
+        "1456622719985782864": 13,
         "730696111198699600": 2,
         "807254722251587614": 16,
         "1536339779140976711": 11,
@@ -233263,7 +233270,7 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1789326884052,
-      "791747702689103893": 1789328880831,
+      "791747702689103893": 1789328941205,
       "1456622719985782864": 1789328917059,
       "1082686076491137115": 1789328571582,
       "1229741033265299506": 1789327159900,
@@ -250476,8 +250483,21 @@
       "1225275427145121903": "2026-09-13T19:02:14.996Z"
     },
     "vault": 0,
-    "wars": [],
-    "next_war_id": 1,
+    "wars": [
+      {
+        "id": "war_1",
+        "nation": "Veymar Republic",
+        "enemy_power": 60,
+        "status": "active",
+        "rounds": 0,
+        "log": [
+          "CC approved <t:1789328957:R>"
+        ],
+        "startedBy": "1082686076491137115",
+        "startedAt": "2026-09-13T19:49:17.394Z"
+      }
+    ],
+    "next_war_id": 2,
     "armory": {
       "Rifle": 1
     },
@@ -250504,13 +250524,7 @@
       }
     },
     "conscripted": false,
-    "declaration": {
-      "nation": "Veymar Republic",
-      "enemy_power": 60,
-      "status": "pending-cc",
-      "proposedBy": "1082686076491137115",
-      "proposedAt": "2026-09-13T19:37:14.339Z"
-    },
+    "declaration": null,
     "warehouse": {
       "level": 1,
       "log": [
