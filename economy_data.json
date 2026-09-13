@@ -226478,9 +226478,7 @@
     "Sugar": "2026-09-12T22:58:19.067Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Shale Oil": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -226488,7 +226486,7 @@
     "Refined Fuel": 93,
     "Fuel": 98,
     "Iron Ingot": 53,
-    "Shale Oil": 26,
+    "Shale Oil": 27,
     "Peat Fuel": 10,
     "Cake": 208,
     "Smoked Fish": 20,
@@ -226506,11 +226504,6 @@
     "Sugar": 10
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-06T07:51:47.662Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -228005,6 +227998,11 @@
       "item": "Shale Oil",
       "qty": 1,
       "at": "2026-09-13T11:34:16.632Z"
+    },
+    {
+      "item": "Shale Oil",
+      "qty": 1,
+      "at": "2026-09-13T11:49:16.657Z"
     }
   ],
   "demand_history": {
@@ -229584,6 +229582,11 @@
       {
         "demand": 1.3503947117160813,
         "at": "2026-09-13T11:34:16.632Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3608264613274466,
+        "at": "2026-09-13T11:49:16.657Z",
         "supply": 0
       }
     ],
