@@ -744,15 +744,15 @@
       "last_laylow": null
     },
     "874346333882945547": {
-      "cash": 280,
+      "cash": 300,
       "bank": 31707,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-13T11:15:18.686Z",
-      "work_count": 1285,
+      "last_work": "2026-09-13T11:21:40.218Z",
+      "work_count": 1286,
       "last_claim": "2026-09-12T13:56:22.791Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -765,13 +765,13 @@
       "wanted": 0,
       "last_illegal": "2026-09-13T10:18:52.706Z",
       "total_heat_generated": 444.39099999999996,
-      "bot_level": 15,
-      "bot_xp": 1960,
-      "bot_total_xp": 13785,
-      "daily_work_count": 219,
+      "bot_level": 16,
+      "bot_xp": 0,
+      "bot_total_xp": 13800,
+      "daily_work_count": 220,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
-      "mee6_level": 15,
+      "mee6_level": 16,
       "last_laylow": "2026-09-13T09:20:24.360Z"
     },
     "": {
@@ -224994,14 +224994,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 23862,
+      "funds": 23857,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 182376,
-      "market_cap": 182376,
+      "share_price": 182395,
+      "market_cap": 182395,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -225044,7 +225044,7 @@
       "inventory": {
         "Gold Bar": 18,
         "Fish": 2,
-        "Wheat": 47,
+        "Wheat": 46,
         "Sugar": 70,
         "Reactor Core": 2,
         "Copper": 89,
@@ -225053,7 +225053,7 @@
         "Sulphur": 37,
         "Contraband: Opium": 4,
         "Timber Planks": 8,
-        "Coal": 5,
+        "Coal": 1,
         "Bread": 2,
         "Cake": 2,
         "Uranium Rod": 1,
@@ -225065,15 +225065,14 @@
         "Contraband: Cannabis": 1,
         "Contraband: LSD Sheets": 2,
         "Contraband: Cocaine": 4,
-        "Iron Ingot": 4,
         "Uranium": 2,
         "Contraband: Synthetic": 2,
-        "Contraband: Coca Paste": 2
+        "Contraband: Coca Paste": 2,
+        "Steel Ingot": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T06:54:07.879Z",
       "price_history": [
-        177946,
         177933,
         177936,
         177939,
@@ -225172,7 +225171,8 @@
         182343,
         182338,
         182357,
-        182376
+        182376,
+        182395
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225531,11 +225531,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 87,
-      "change_percent": 0.832824155345639,
-      "recorded_at": "2026-09-13T08:29:43.937Z"
-    },
     {
       "price": 88,
       "change_percent": 1.547087224272499,
@@ -226030,6 +226025,11 @@
       "price": 97,
       "change_percent": 0.5759081294208261,
       "recorded_at": "2026-09-13T11:19:20.792Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.2788882017701557,
+      "recorded_at": "2026-09-13T11:21:41.159Z"
     }
   ],
   "factory_names": [
@@ -232398,7 +232398,7 @@
         "1186597507720019988": 10,
         "1511756975392948224": 8,
         "1495413593242337421": 2,
-        "874346333882945547": 26,
+        "874346333882945547": 27,
         "1456622719985782864": 8,
         "730696111198699600": 2,
         "807254722251587614": 8,
@@ -246712,13 +246712,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1536339779140976711",
-      "from": 10,
-      "to": 11,
-      "at": "2026-09-11T14:34:32.609Z",
-      "reason": "chat"
-    },
-    {
       "userId": "874346333882945547",
       "from": 10,
       "to": 11,
@@ -248110,6 +248103,13 @@
       "to": 3,
       "at": "2026-09-13T10:47:08.530Z",
       "reason": "chat"
+    },
+    {
+      "userId": "874346333882945547",
+      "from": 15,
+      "to": 16,
+      "at": "2026-09-13T11:21:40.219Z",
+      "reason": "work"
     }
   ],
   "_lastCollectXP": {
