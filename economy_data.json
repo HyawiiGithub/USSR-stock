@@ -1568,8 +1568,8 @@
       "last_illegal": "2026-09-12T10:29:03.621Z",
       "total_heat_generated": 12.361,
       "bot_level": 10,
-      "bot_xp": 1029,
-      "bot_total_xp": 5704,
+      "bot_xp": 1053,
+      "bot_total_xp": 5728,
       "daily_work_count": 35,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -64832,8 +64832,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 10,
-      "bot_xp": 95,
-      "bot_total_xp": 4770,
+      "bot_xp": 112,
+      "bot_total_xp": 4787,
       "daily_work_count": 63,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -67070,8 +67070,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 836,
-      "bot_total_xp": 9286,
+      "bot_xp": 856,
+      "bot_total_xp": 9306,
       "daily_work_count": 32,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -225264,8 +225264,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 187860,
-      "market_cap": 187860,
+      "share_price": 187911,
+      "market_cap": 187911,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -225334,7 +225334,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T13:19:02.195Z",
       "price_history": [
-        180570,
         180581,
         180659,
         180662,
@@ -225433,7 +225432,8 @@
         187755,
         187790,
         187825,
-        187860
+        187860,
+        187911
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225847,11 +225847,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.6612341668950603,
-      "recorded_at": "2026-09-13T10:49:20.820Z"
-    },
     {
       "price": 92,
       "change_percent": 1.0831883963515228,
@@ -226346,6 +226341,11 @@
       "price": 99,
       "change_percent": 0.7667765759964388,
       "recorded_at": "2026-09-13T14:51:09.047Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 1.1364023717677614,
+      "recorded_at": "2026-09-13T14:51:17.483Z"
     }
   ],
   "factory_names": [
@@ -232889,8 +232889,8 @@
       "1470136693821800521": 1789088485919,
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789295881293,
-      "1506785783506534426": 1789310994276,
-      "807254722251587614": 1789311032676,
+      "1506785783506534426": 1789311098123,
+      "807254722251587614": 1789311095920,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789309736057,
       "997903130543005767": 1788970364999,
@@ -232953,7 +232953,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789253948737,
-      "1511756975392948224": 1789310762436,
+      "1511756975392948224": 1789311128995,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
@@ -233085,20 +233085,9 @@
       "2026-Q3": {
         "positive": 27,
         "negative": 11,
-        "neutral": 750,
-        "total": 788,
+        "neutral": 751,
+        "total": 789,
         "mentions": [
-          {
-            "at": "2026-09-12T17:29:49.119Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "1016433654270009354",
-            "messageId": "1548385131750887465",
-            "text": "<@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:29:49.866Z",
             "userId": "807944786840387675",
@@ -238595,6 +238584,18 @@
             "channelId": "605951687974453248",
             "messageId": "1548707312435462256",
             "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-13T14:51:36.747Z",
+            "userId": "807254722251587614",
+            "username": "lucky_drink",
+            "channelId": "1538704555670245448",
+            "messageId": "1548707727331561603",
+            "text": "<@1082686076491137115>  help I cannot train anymore",
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text",
@@ -247284,9 +247285,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-13T14:51:36.747Z",
+        "userId": "807254722251587614",
+        "username": "lucky_drink",
+        "channelId": "1538704555670245448",
+        "messageId": "1548707727331561603",
+        "text": "<@1082686076491137115>  help I cannot train anymore",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-13T14:49:57.591Z",
+    "last_scan": "2026-09-13T14:51:36.747Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
