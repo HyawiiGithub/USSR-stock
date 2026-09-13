@@ -34,7 +34,7 @@
     },
     "780837437987094560": {
       "username": "",
-      "cash": 540,
+      "cash": 901,
       "bank": 11811,
       "resources": {
         "Coal": 34,
@@ -66,8 +66,8 @@
       "is_employed": true,
       "is_state_director": false,
       "director_of": null,
-      "dirty_cash": 722,
-      "heat": 15.626986478801895,
+      "dirty_cash": 0,
+      "heat": 15.145653145468561,
       "wanted": 0,
       "last_illegal": "2026-09-13T21:18:41.041Z",
       "total_heat_generated": 104.16199999999999,
@@ -767,8 +767,8 @@
       "last_illegal": "2026-09-13T21:14:09.703Z",
       "total_heat_generated": 557.156,
       "bot_level": 17,
-      "bot_xp": 2118,
-      "bot_total_xp": 18098,
+      "bot_xp": 2142,
+      "bot_total_xp": 18122,
       "daily_work_count": 254,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -1549,15 +1549,15 @@
       "last_laylow": null
     },
     "1511756975392948224": {
-      "cash": 80,
+      "cash": 100,
       "bank": 2443,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-13T21:11:12.275Z",
-      "work_count": 222,
+      "last_work": "2026-09-13T21:19:56.829Z",
+      "work_count": 223,
       "last_claim": "2026-09-12T13:53:06.966Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1565,11 +1565,11 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null,
-      "dirty_cash": 548,
-      "heat": 10.720885881157542,
+      "dirty_cash": 600,
+      "heat": 17.892885881157543,
       "wanted": 0,
-      "last_illegal": "2026-09-13T21:11:12.275Z",
-      "total_heat_generated": 45.698,
+      "last_illegal": "2026-09-13T21:19:56.829Z",
+      "total_heat_generated": 52.87,
       "bot_level": 12,
       "bot_xp": 1211,
       "bot_total_xp": 8241,
@@ -111864,8 +111864,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 158,
-      "bot_total_xp": 413,
+      "bot_xp": 181,
+      "bot_total_xp": 436,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -225600,14 +225600,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 32176,
+      "funds": 32171,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 198265,
-      "market_cap": 198265,
+      "share_price": 198252,
+      "market_cap": 198252,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -225650,7 +225650,7 @@
       "inventory": {
         "Gold Bar": 21,
         "Fish": 2,
-        "Wheat": 70,
+        "Wheat": 69,
         "Sugar": 105,
         "Reactor Core": 3,
         "Copper": 104,
@@ -225658,7 +225658,7 @@
         "Timber": 9,
         "Sulphur": 42,
         "Coal": 6,
-        "Contraband: Cannabis": 6,
+        "Contraband: Cannabis": 7,
         "Contraband: LSD Sheets": 1,
         "Uranium": 2,
         "Contraband: Heroin": 1,
@@ -225673,7 +225673,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T19:21:55.791Z",
       "price_history": [
-        190176,
         190163,
         190214,
         190201,
@@ -225772,7 +225771,8 @@
         198157,
         198267,
         198254,
-        198265
+        198265,
+        198252
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225793,8 +225793,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 264.15354351420996,
-      "underground_heat": 646.6735492078946,
+      "heat": 268.2160768475433,
+      "underground_heat": 653.8455492078946,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226187,11 +226187,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 102,
-      "change_percent": 0.14974228038274498,
-      "recorded_at": "2026-09-13T19:28:15.818Z"
-    },
     {
       "price": 102,
       "change_percent": 0.2636528556232852,
@@ -226686,6 +226681,11 @@
       "price": 107,
       "change_percent": 0.42411010957591566,
       "recorded_at": "2026-09-13T21:19:15.179Z"
+    },
+    {
+      "price": 107,
+      "change_percent": 0.919595662039137,
+      "recorded_at": "2026-09-13T21:19:57.866Z"
     }
   ],
   "factory_names": [],
@@ -232757,6 +232757,13 @@
       "username": "hyawii2.0",
       "action": "appointdirector",
       "details": "appointed <@1379734184259747851> (1379734184259747851) as director of Kewlian Industrial Group (state_24)"
+    },
+    {
+      "at": "2026-09-13T21:19:59.214Z",
+      "by": "780837437987094560",
+      "username": "napoleon87",
+      "action": "launder",
+      "details": "₽722 dirty → ₽361 clean fee ₽361"
     }
   ],
   "total_rubles_history": [
@@ -233185,7 +233192,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 35.75479999999978,
+  "heat_global": 36.830599999999784,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -233389,7 +233396,7 @@
       "1229741033265299506": 1789333006509,
       "1536339779140976711": 1789331790212,
       "780837437987094560": 1789334335126,
-      "874346333882945547": 1789334314742,
+      "874346333882945547": 1789334379313,
       "870686833976172574": 1789327497024,
       "1186597507720019988": 1789323262674,
       "1521043721129558017": 1789325824030,
@@ -233543,7 +233550,7 @@
       "1437736217687887902": 1789220879594,
       "1517676669618491552": 1789315849036,
       "801248030116020265": 1789242452112,
-      "866844815157100594": 1789334355934,
+      "866844815157100594": 1789334424895,
       "804335380425736213": 1789233836420,
       "1410911007311790080": 1789235009954,
       "1351898152478834749": 1789233673477,
