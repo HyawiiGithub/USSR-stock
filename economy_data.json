@@ -639,7 +639,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
-      "heat": 5.69069226830299,
+      "heat": 4.717272017804873,
       "wanted": 0,
       "last_illegal": "2026-09-13T10:16:43.083Z",
       "total_heat_generated": 222.717,
@@ -761,7 +761,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 62,
-      "heat": 1.4324675946996175,
+      "heat": 0.5097163394887563,
       "wanted": 0,
       "last_illegal": "2026-09-13T10:18:52.706Z",
       "total_heat_generated": 444.39099999999996,
@@ -1089,13 +1089,13 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 1294,
-      "heat": 12.566136564117546,
+      "heat": 11.726231577428445,
       "wanted": 0,
       "last_illegal": "2026-09-13T11:23:15.419Z",
       "total_heat_generated": 202.425,
       "bot_level": 13,
-      "bot_xp": 1505,
-      "bot_total_xp": 9955,
+      "bot_xp": 1528,
+      "bot_total_xp": 9978,
       "daily_work_count": 37,
       "shock_worker": false,
       "mee6_level": 13,
@@ -224438,7 +224438,7 @@
       "last_laylow": null
     },
     "1494027370208825436": {
-      "cash": 126,
+      "cash": 160,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -224454,8 +224454,8 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null,
-      "dirty_cash": 68,
-      "heat": 11.228,
+      "dirty_cash": 0,
+      "heat": 10.210814806125802,
       "wanted": 0,
       "last_illegal": "2026-09-13T11:24:03.451Z",
       "total_heat_generated": 23.131,
@@ -225000,8 +225000,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 182388,
-      "market_cap": 182388,
+      "share_price": 182375,
+      "market_cap": 182375,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -225073,7 +225073,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T06:54:07.879Z",
       "price_history": [
-        177939,
         177934,
         177940,
         177938,
@@ -225172,7 +225171,8 @@
         182376,
         182395,
         182401,
-        182388
+        182388,
+        182375
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225193,8 +225193,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 174.29165203628628,
-      "underground_heat": 493.2740190100391,
+      "heat": 173.52111651417704,
+      "underground_heat": 492.7217467330786,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225531,16 +225531,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 88,
-      "change_percent": 0.40131956846163674,
-      "recorded_at": "2026-09-13T08:34:19.235Z"
-    },
-    {
-      "price": 88,
-      "change_percent": 0.6019363056368171,
-      "recorded_at": "2026-09-13T08:36:14.104Z"
-    },
     {
       "price": 88,
       "change_percent": 0.6876753971312062,
@@ -226030,6 +226020,16 @@
       "price": 97,
       "change_percent": 0.7225918633930689,
       "recorded_at": "2026-09-13T11:23:16.669Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.5346368805588843,
+      "recorded_at": "2026-09-13T11:24:04.842Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.6558211307768775,
+      "recorded_at": "2026-09-13T11:24:20.797Z"
     }
   ],
   "factory_names": [
@@ -231849,13 +231849,16 @@
       "username": "desertmarshal",
       "action": "launder",
       "details": "₽387 dirty → ₽193 clean fee ₽194"
+    },
+    {
+      "at": "2026-09-13T11:24:19.660Z",
+      "by": "1494027370208825436",
+      "username": "wilhelmthe3rd.",
+      "action": "launder",
+      "details": "₽68 dirty → ₽34 clean fee ₽34"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 675664,
-      "at": "2026-09-13T03:29:18.637Z"
-    },
     {
       "total": 675664,
       "at": "2026-09-13T03:34:18.570Z"
@@ -232251,6 +232254,10 @@
     {
       "total": 678555,
       "at": "2026-09-13T11:19:21.423Z"
+    },
+    {
+      "total": 678649,
+      "at": "2026-09-13T11:24:21.398Z"
     }
   ],
   "gold_rush": null,
@@ -232277,7 +232284,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 25.11649999999985,
+  "heat_global": 24.81649999999985,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -232462,7 +232469,7 @@
       "1456622719985782864": 1789292439802,
       "1082686076491137115": 1789297715195,
       "1229741033265299506": 1789294773430,
-      "1536339779140976711": 1789294779755,
+      "1536339779140976711": 1789298645182,
       "780837437987094560": 1789298382853,
       "874346333882945547": 1789298575655,
       "870686833976172574": 1789295993782,
