@@ -761,7 +761,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 137,
-      "heat": 4.73260385566592,
+      "heat": 3.753168121757442,
       "wanted": 0,
       "last_illegal": "2026-09-13T11:26:42.634Z",
       "total_heat_generated": 454.97099999999995,
@@ -1089,7 +1089,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 1294,
-      "heat": 1.512498097935778,
+      "heat": 0.546746750525459,
       "wanted": 0,
       "last_illegal": "2026-09-13T11:23:15.419Z",
       "total_heat_generated": 202.425,
@@ -224455,7 +224455,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 3.8465128067048715,
+      "heat": 3.0069734215745596,
       "wanted": 0,
       "last_illegal": "2026-09-13T11:24:03.451Z",
       "total_heat_generated": 23.131,
@@ -224638,6 +224638,35 @@
       "bot_level": 0,
       "bot_xp": 20,
       "bot_total_xp": 20,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null
+    },
+    "1309255567272837200": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
@@ -225116,8 +225145,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 182435,
-      "market_cap": 182435,
+      "share_price": 182550,
+      "market_cap": 182550,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -225189,7 +225218,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T06:54:07.879Z",
       "price_history": [
-        177968,
         177987,
         177982,
         177985,
@@ -225288,7 +225316,8 @@
         182362,
         182397,
         182432,
-        182435
+        182435,
+        182550
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225309,8 +225338,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 175.15075818878,
-      "underground_heat": 498.4265535118569,
+      "heat": 174.60508389748495,
+      "underground_heat": 497.7891294822892,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225647,21 +225676,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 90,
-      "change_percent": 0.6060463096691905,
-      "recorded_at": "2026-09-13T09:07:21.863Z"
-    },
-    {
-      "price": 90,
-      "change_percent": 0.9100703715372447,
-      "recorded_at": "2026-09-13T09:07:28.469Z"
-    },
-    {
-      "price": 90,
-      "change_percent": 0.8584191206019008,
-      "recorded_at": "2026-09-13T09:08:14.062Z"
-    },
     {
       "price": 91,
       "change_percent": 1.1739070965608494,
@@ -226146,6 +226160,21 @@
       "price": 97,
       "change_percent": 0.18600358308915216,
       "recorded_at": "2026-09-13T11:59:20.769Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.6483518112610384,
+      "recorded_at": "2026-09-13T12:04:03.946Z"
+    },
+    {
+      "price": 92,
+      "change_percent": -5.0826486098425185,
+      "recorded_at": "2026-09-13T12:04:16.014Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.5838666136104347,
+      "recorded_at": "2026-09-13T12:04:20.799Z"
     }
   ],
   "factory_names": [
@@ -231985,14 +232014,6 @@
   "total_rubles_history": [
     {
       "total": 675679,
-      "at": "2026-09-13T04:19:18.956Z"
-    },
-    {
-      "total": 675679,
-      "at": "2026-09-13T04:24:18.880Z"
-    },
-    {
-      "total": 675679,
       "at": "2026-09-13T04:29:18.962Z"
     },
     {
@@ -232382,6 +232403,14 @@
     {
       "total": 678754,
       "at": "2026-09-13T11:59:21.418Z"
+    },
+    {
+      "total": 678774,
+      "at": "2026-09-13T12:04:21.418Z"
+    },
+    {
+      "total": 678774,
+      "at": "2026-09-13T12:04:21.937Z"
     }
   ],
   "gold_rush": null,
@@ -232408,7 +232437,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 24.303499999999843,
+  "heat_global": 24.003499999999843,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
