@@ -744,15 +744,15 @@
       "last_laylow": null
     },
     "874346333882945547": {
-      "cash": 580,
+      "cash": 892,
       "bank": 31015,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-13T09:11:29.469Z",
-      "work_count": 1270,
+      "last_work": "2026-09-13T09:20:31.041Z",
+      "work_count": 1271,
       "last_claim": "2026-09-12T13:56:22.791Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -760,11 +760,11 @@
       "is_state_director": true,
       "director_of": "state_26",
       "ceo_of": null,
-      "dirty_cash": 502,
-      "heat": 10.918563456504227,
+      "dirty_cash": 0,
+      "heat": 16.246116788945095,
       "wanted": 0,
-      "last_illegal": "2026-09-13T08:20:24.678Z",
-      "total_heat_generated": 424.466,
+      "last_illegal": "2026-09-13T09:20:31.041Z",
+      "total_heat_generated": 434.099,
       "bot_level": 15,
       "bot_xp": 1287,
       "bot_total_xp": 13112,
@@ -772,7 +772,7 @@
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
       "mee6_level": 15,
-      "last_laylow": "2026-09-13T07:09:39.735Z"
+      "last_laylow": "2026-09-13T09:20:24.360Z"
     },
     "": {
       "cash": 0,
@@ -944,8 +944,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 422,
-      "bot_total_xp": 24272,
+      "bot_xp": 446,
+      "bot_total_xp": 24296,
       "daily_work_count": 4,
       "shock_worker": false,
       "mee6_level": 20,
@@ -224458,8 +224458,8 @@
       "last_illegal": "2026-09-13T09:20:03.229Z",
       "total_heat_generated": 11.903000000000002,
       "bot_level": 2,
-      "bot_xp": 31,
-      "bot_total_xp": 286,
+      "bot_xp": 47,
+      "bot_total_xp": 302,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -224961,14 +224961,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 23987,
+      "funds": 23982,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 181729,
-      "market_cap": 181729,
+      "share_price": 181716,
+      "market_cap": 181716,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -225011,14 +225011,14 @@
       "inventory": {
         "Gold Bar": 18,
         "Fish": 2,
-        "Wheat": 69,
+        "Wheat": 68,
         "Sugar": 70,
         "Reactor Core": 2,
         "Copper": 86,
         "Lead": 4,
         "Timber": 36,
         "Sulphur": 37,
-        "Contraband: Opium": 3,
+        "Contraband: Opium": 4,
         "Timber Planks": 8,
         "Coal": 8,
         "Bread": 2,
@@ -225040,7 +225040,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T06:54:07.879Z",
       "price_history": [
-        176739,
         176742,
         176788,
         176823,
@@ -225139,7 +225138,8 @@
         181640,
         181755,
         181742,
-        181729
+        181729,
+        181716
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225159,8 +225159,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 143.77022074806715,
-      "underground_heat": 431.9227367688764,
+      "heat": 149.35502074806715,
+      "underground_heat": 441.5557367688764,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225497,11 +225497,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.44382854878107686,
-      "recorded_at": "2026-09-13T05:09:18.473Z"
-    },
     {
       "price": 94,
       "change_percent": 0.5644355606600733,
@@ -225996,6 +225991,11 @@
       "price": 88,
       "change_percent": 0.6493901143970822,
       "recorded_at": "2026-09-13T09:20:04.376Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 0.6098021751077625,
+      "recorded_at": "2026-09-13T09:20:31.998Z"
     }
   ],
   "factory_names": [
@@ -231760,6 +231760,13 @@
       "username": "seniormanulos",
       "action": "mafia-hire",
       "details": "cosa nostra +1494027370208825436 as Associate"
+    },
+    {
+      "at": "2026-09-13T09:21:11.504Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "launder",
+      "details": "₽585 dirty → ₽292 clean fee ₽293"
     }
   ],
   "total_rubles_history": [
@@ -232188,7 +232195,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 20.556199999999862,
+  "heat_global": 22.00114999999986,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -232400,7 +232407,7 @@
       "1365483598962102305": 1789267381538,
       "1544296111097909309": 1789228224637,
       "1343006572850184217": 1789214964749,
-      "503918799683321866": 1789258253955,
+      "503918799683321866": 1789291244207,
       "1247430843299921973": 1788983108414,
       "1496968738447032410": 1789119736749,
       "1254134534987845877": 1788983786977,
@@ -232545,7 +232552,7 @@
       "1466109045604876351": 1789286771799,
       "1004404258415845468": 1789288141681,
       "1439573866300309658": 1789288548983,
-      "1494027370208825436": 1789291125593,
+      "1494027370208825436": 1789291224589,
       "1199062694649675950": 1789290780307
     }
   },
