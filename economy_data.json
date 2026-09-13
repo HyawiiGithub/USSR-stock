@@ -640,7 +640,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 71,
-      "heat": 5.524462742057156,
+      "heat": 4.606167078089561,
       "wanted": 0,
       "last_illegal": "2026-09-13T16:03:06.224Z",
       "total_heat_generated": 249.018,
@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 461,
-      "heat": 12.032858426481276,
+      "heat": 11.173882001993638,
       "wanted": 0,
       "last_illegal": "2026-09-13T16:03:26.835Z",
       "total_heat_generated": 492.23499999999996,
@@ -1569,8 +1569,8 @@
       "last_illegal": "2026-09-12T10:29:03.621Z",
       "total_heat_generated": 12.361,
       "bot_level": 11,
-      "bot_xp": 229,
-      "bot_total_xp": 6004,
+      "bot_xp": 244,
+      "bot_total_xp": 6019,
       "daily_work_count": 36,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -224814,8 +224814,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 32,
-      "bot_total_xp": 507,
+      "bot_xp": 57,
+      "bot_total_xp": 532,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -225543,8 +225543,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 183.50732352387948,
-      "underground_heat": 513.905097223404,
+      "heat": 182.81517380728036,
+      "underground_heat": 513.396518341059,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225936,16 +225936,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 1.0318947807942416,
-      "recorded_at": "2026-09-13T12:34:20.967Z"
-    },
-    {
-      "price": 93,
-      "change_percent": 1.3237628630987586,
-      "recorded_at": "2026-09-13T12:35:12.754Z"
-    },
     {
       "price": 93,
       "change_percent": 0.3133793511432879,
@@ -226435,6 +226425,16 @@
       "price": 100,
       "change_percent": 0.29977170307799356,
       "recorded_at": "2026-09-13T16:08:59.425Z"
+    },
+    {
+      "price": 92,
+      "change_percent": -7.925044439981107,
+      "recorded_at": "2026-09-13T16:10:32.510Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.6783708330824882,
+      "recorded_at": "2026-09-13T16:10:33.729Z"
     }
   ],
   "factory_names": [
@@ -226704,21 +226704,21 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3934421756739999,
-    "Cake": 1.3737324145202863,
-    "Bread": 1.3338859997329338,
+    "Cake": 1.3797221886882605,
+    "Bread": 1.3449900429505883,
     "Copper Ingot": 1.4014065808136484,
-    "Iron Ingot": 1.3616961724742895,
+    "Iron Ingot": 1.3631365361353782,
     "Steel Ingot": 1.398759880643409,
     "Gold Bar": 1.285599560837837,
     "Aluminium Ingot": 1.4122729791414312,
     "Timber Planks": 1.3745544889618124,
     "Bricks": 1.4115100416523099,
     "Concrete": 1.4115106695910808,
-    "Glass": 1.4162676545631254,
-    "Steel Beam": 1.3972554760264566,
+    "Glass": 1.4149662421980753,
+    "Steel Beam": 1.3959077087147578,
     "Machine Parts": 1.4046403636314246,
     "Refined Fuel": 1.395896921208538,
-    "Uranium Rod": 1.348091500039277,
+    "Uranium Rod": 1.3509151575119784,
     "Reactor Core": 1.3982724342842552,
     "Circuit Board": 1.4046285673005903,
     "Flour": 1.3468256223522976,
@@ -226732,9 +226732,9 @@
     "Gas Fuel": 1.3899768373987513,
     "Fertilizer": 1.4124242306613477,
     "Cotton Fabric": 1.399135933639494,
-    "Manganese Alloy": 1.4141760716259906,
+    "Manganese Alloy": 1.4130419858959113,
     "Sunflower Oil": 1.411527194616616,
-    "Linen": 1.4146789143813443,
+    "Linen": 1.4135046012308368,
     "Corn Meal": 1.4124242308348969,
     "Tea Pack": 1.4117616960575685,
     "Citrus Juice": 1.4115336543316843,
@@ -226768,9 +226768,7 @@
     "Sugar": "2026-09-12T22:58:19.067Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Bread": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -226785,7 +226783,7 @@
     "Canned Food": 15,
     "Uranium Rod": 17,
     "Canned Fish": 18,
-    "Bread": 212,
+    "Bread": 214,
     "Aluminium Sheet": 8,
     "Circuit Board": 4,
     "Cotton Fabric": 7,
@@ -226796,11 +226794,6 @@
     "Sugar": 10
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-06T12:36:47.897Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -228295,6 +228288,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-13T15:55:32.165Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-13T16:10:32.808Z"
     }
   ],
   "demand_history": {
@@ -230486,11 +230484,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.2551970488233761,
-        "at": "2026-09-06T14:21:47.888Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2604217195010567,
         "at": "2026-09-06T14:36:47.897Z",
         "supply": 0
@@ -230783,6 +230776,11 @@
       {
         "demand": 1.3217937718540913,
         "at": "2026-09-13T15:55:32.165Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3449900429505883,
+        "at": "2026-09-13T16:10:32.808Z",
         "supply": 0
       }
     ],
@@ -232359,10 +232357,6 @@
   "total_rubles_history": [
     {
       "total": 676911,
-      "at": "2026-09-13T08:24:20.233Z"
-    },
-    {
-      "total": 676911,
       "at": "2026-09-13T08:29:19.643Z"
     },
     {
@@ -232756,6 +232750,10 @@
     {
       "total": 679426,
       "at": "2026-09-13T16:05:34.047Z"
+    },
+    {
+      "total": 679466,
+      "at": "2026-09-13T16:10:34.072Z"
     }
   ],
   "gold_rush": null,
@@ -232782,7 +232780,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 21.238249999999812,
+  "heat_global": 20.93824999999981,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -233047,7 +233045,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789253948737,
-      "1511756975392948224": 1789314400135,
+      "1511756975392948224": 1789315796121,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
@@ -233163,7 +233161,7 @@
       "1424367085869465672": 1789304926729,
       "1405393814960734290": 1789305490799,
       "1548662922459353140": 1789308786706,
-      "1211857264189644833": 1789315726368,
+      "1211857264189644833": 1789315795062,
       "1097843158269825066": 1789312642249,
       "1502750979160801410": 1789313349525,
       "1455538859264839914": 1789314846047
@@ -233183,20 +233181,9 @@
       "2026-Q3": {
         "positive": 27,
         "negative": 11,
-        "neutral": 759,
-        "total": 797,
+        "neutral": 760,
+        "total": 798,
         "mentions": [
-          {
-            "at": "2026-09-12T17:29:56.220Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "1016433654270009354",
-            "messageId": "1548385168446722139",
-            "text": "<@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:29:57.883Z",
             "userId": "807944786840387675",
@@ -238705,6 +238692,18 @@
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text+reply",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-13T16:09:54.692Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "1538703181733695600",
+            "messageId": "1548727430410141799",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
             "quarter": "2026-Q3"
           }
         ]
@@ -247499,9 +247498,21 @@
         "method": "keyword",
         "source": "text+reply",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-13T16:09:54.692Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "1538703181733695600",
+        "messageId": "1548727430410141799",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-13T15:55:37.280Z",
+    "last_scan": "2026-09-13T16:09:54.692Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
