@@ -226120,7 +226120,7 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Bread": 3,
-    "Fuel": 4,
+    "Fuel": 2,
     "Sugar": 6
   },
   "global_consumption": {
@@ -226128,7 +226128,7 @@
     "Steel Ingot": 26,
     "Timber Planks": 122,
     "Refined Fuel": 93,
-    "Fuel": 88,
+    "Fuel": 90,
     "Iron Ingot": 53,
     "Shale Oil": 17,
     "Peat Fuel": 10,
@@ -226148,11 +226148,6 @@
     "Sugar": 4
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-09-05T15:06:43.223Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -227647,6 +227642,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-13T01:04:14.329Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-09-13T01:19:14.507Z"
     }
   ],
   "demand_history": {
@@ -228655,11 +228655,6 @@
     ],
     "Fuel": [
       {
-        "demand": 1.2860482404964033,
-        "at": "2026-08-30T17:09:44.923Z",
-        "supply": 2
-      },
-      {
         "demand": 1.2950531583326033,
         "at": "2026-08-30T17:24:45.213Z",
         "supply": 2
@@ -228952,6 +228947,11 @@
       {
         "demand": 1.3341784130239789,
         "at": "2026-09-13T00:34:14.326Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.3685446273997321,
+        "at": "2026-09-13T01:19:14.507Z",
         "supply": 4
       }
     ],
