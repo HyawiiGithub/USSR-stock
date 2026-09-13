@@ -67,7 +67,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 301,
-      "heat": 4.770537298939593,
+      "heat": 3.8059487596819634,
       "wanted": 0,
       "last_illegal": "2026-09-13T18:19:28.389Z",
       "total_heat_generated": 71.341,
@@ -114,8 +114,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 1314,
-      "bot_total_xp": 11359,
+      "bot_xp": 1330,
+      "bot_total_xp": 11375,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 14,
@@ -640,7 +640,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
-      "heat": 3.8927352306776846,
+      "heat": 2.9674090891481515,
       "wanted": 0,
       "last_illegal": "2026-09-13T18:39:36.275Z",
       "total_heat_generated": 265.01800000000003,
@@ -676,8 +676,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 7,
-      "bot_total_xp": 5782,
+      "bot_xp": 29,
+      "bot_total_xp": 5804,
       "daily_work_count": 17,
       "shock_worker": false,
       "mee6_level": 11,
@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 50,
-      "heat": 15.87726447215403,
+      "heat": 15.058323488909865,
       "wanted": 0,
       "last_illegal": "2026-09-13T19:05:08.436Z",
       "total_heat_generated": 531.805,
@@ -976,8 +976,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 731,
-      "bot_total_xp": 9181,
+      "bot_xp": 746,
+      "bot_total_xp": 9196,
       "daily_work_count": 34,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -1565,7 +1565,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 369,
-      "heat": 0.18456909589518844,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-13T18:28:55.411Z",
       "total_heat_generated": 28.859,
@@ -225782,8 +225782,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 219.01139103898512,
-      "underground_heat": 561.7453967238648,
+      "heat": 218.23155146090716,
+      "underground_heat": 561.1438415693871,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226177,11 +226177,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.7321559273340491,
-      "recorded_at": "2026-09-13T16:30:34.178Z"
-    },
     {
       "price": 94,
       "change_percent": 0.8454659353142886,
@@ -226676,6 +226671,11 @@
       "price": 103,
       "change_percent": 0.46147427234842114,
       "recorded_at": "2026-09-13T19:36:02.540Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.2200303677859681,
+      "recorded_at": "2026-09-13T19:37:08.153Z"
     }
   ],
   "factory_names": [
@@ -227010,14 +227010,14 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Refined Fuel": 2,
+    "Refined Fuel": 1,
     "Cake": 6
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 132,
-    "Refined Fuel": 96,
+    "Refined Fuel": 97,
     "Fuel": 105,
     "Iron Ingot": 53,
     "Shale Oil": 27,
@@ -227038,11 +227038,6 @@
     "Sugar": 10
   },
   "consumption_history": [
-    {
-      "item": "Steel Ingot",
-      "qty": 2,
-      "at": "2026-09-06T15:51:47.891Z"
-    },
     {
       "item": "Cotton Fabric",
       "qty": 2,
@@ -228537,6 +228532,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-13T19:22:06.841Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-09-13T19:37:06.829Z"
     }
   ],
   "demand_history": {
@@ -229243,11 +229243,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.3494806473592487,
-        "at": "2026-08-28T00:57:37.374Z",
-        "supply": 0
-      },
-      {
         "demand": 1.3112740718381932,
         "at": "2026-08-28T10:57:37.532Z",
         "supply": 0
@@ -229540,6 +229535,11 @@
       {
         "demand": 1.3008845301641976,
         "at": "2026-09-13T19:22:06.841Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.308122483602843,
+        "at": "2026-09-13T19:37:06.829Z",
         "supply": 0
       }
     ],
@@ -232644,10 +232644,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 678669,
-      "at": "2026-09-13T11:29:21.893Z"
-    },
-    {
       "total": 678689,
       "at": "2026-09-13T11:34:21.508Z"
     },
@@ -233042,6 +233038,10 @@
     {
       "total": 697652,
       "at": "2026-09-13T19:32:08.760Z"
+    },
+    {
+      "total": 700197,
+      "at": "2026-09-13T19:37:08.994Z"
     }
   ],
   "gold_rush": null,
@@ -233068,7 +233068,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 26.986849999999787,
+  "heat_global": 26.686849999999787,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -233261,9 +233261,9 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1789326884052,
-      "791747702689103893": 1789327969760,
-      "1456622719985782864": 1789327829150,
-      "1082686076491137115": 1789328058910,
+      "791747702689103893": 1789328235466,
+      "1456622719985782864": 1789328239566,
+      "1082686076491137115": 1789328228530,
       "1229741033265299506": 1789327159900,
       "1536339779140976711": 1789327281585,
       "780837437987094560": 1789327559417,
@@ -250475,7 +250475,13 @@
       }
     },
     "conscripted": false,
-    "declaration": null,
+    "declaration": {
+      "nation": "Veymar Republic",
+      "enemy_power": 60,
+      "status": "pending-cc",
+      "proposedBy": "1082686076491137115",
+      "proposedAt": "2026-09-13T19:37:14.339Z"
+    },
     "warehouse": {
       "level": 1,
       "log": [
