@@ -639,13 +639,13 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
-      "heat": 4.774822388562209,
+      "heat": 3.844366515483791,
       "wanted": 0,
       "last_illegal": "2026-09-13T13:52:25.826Z",
       "total_heat_generated": 238.717,
       "bot_level": 14,
-      "bot_xp": 539,
-      "bot_total_xp": 10584,
+      "bot_xp": 555,
+      "bot_total_xp": 10600,
       "daily_work_count": 8,
       "shock_worker": false,
       "mee6_level": 14,
@@ -761,7 +761,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 276,
-      "heat": 7.915412640901373,
+      "heat": 7.007213808066368,
       "wanted": 0,
       "last_illegal": "2026-09-13T13:43:30.897Z",
       "total_heat_generated": 474.93999999999994,
@@ -64832,8 +64832,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 9,
-      "bot_xp": 815,
-      "bot_total_xp": 4535,
+      "bot_xp": 832,
+      "bot_total_xp": 4552,
       "daily_work_count": 61,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -185646,8 +185646,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 1678,
-      "bot_total_xp": 22673,
+      "bot_xp": 1703,
+      "bot_total_xp": 22698,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 19,
@@ -225423,8 +225423,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 176.2993876240828,
-      "underground_heat": 496.0589170337832,
+      "heat": 175.6749157709641,
+      "underground_heat": 495.48926522065585,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225758,14 +225758,53 @@
       "underground_heat": 0,
       "dirty_cash": 0,
       "last_illegal": null
+    },
+    "comp_29": {
+      "id": "comp_29",
+      "name": "Soviet National Defense Industry",
+      "ticker": "SNBI",
+      "owner_id": "1082686076491137115",
+      "ceo": "Hyawii",
+      "hq_ssr": "Russian SFSR",
+      "funds": 250000,
+      "invested_capital": 250000,
+      "shares_total": 100000,
+      "shares_available": 0,
+      "state_shares": 100000,
+      "founder_shares": 0,
+      "share_price": 2,
+      "market_cap": 250000,
+      "employees": 0,
+      "level": 1,
+      "buildings": {
+        "Steel Mill": {
+          "level": 1,
+          "built_at": "2026-09-13T14:30:58.242Z",
+          "type": "factory"
+        },
+        "Machine Shop": {
+          "level": 1,
+          "built_at": "2026-09-13T14:30:58.242Z",
+          "type": "factory"
+        }
+      },
+      "inventory": {},
+      "created_at": "2026-09-13T14:30:58.242Z",
+      "last_collect": null,
+      "price_history": [
+        2
+      ],
+      "is_state_owned": true,
+      "specialization": "production",
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      },
+      "managers": []
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": 1.0349608450216508,
-      "recorded_at": "2026-09-13T10:28:33.044Z"
-    },
     {
       "price": 96,
       "change_percent": 1.362201616325519,
@@ -226260,6 +226299,11 @@
       "price": 98,
       "change_percent": 1.2674676953118584,
       "recorded_at": "2026-09-13T14:29:29.187Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.8849587067182547,
+      "recorded_at": "2026-09-13T14:30:12.130Z"
     }
   ],
   "factory_names": [
@@ -226386,7 +226430,7 @@
     0
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
-  "company_id_counter": 28,
+  "company_id_counter": 29,
   "total_rubles_in_circulation": 0,
   "total_company_value": 0,
   "total_market_cap": 0,
@@ -232160,13 +232204,23 @@
       "username": "hyawii2.0",
       "action": "set-executive",
       "details": "Turkmen SSR → 874346333882945547"
+    },
+    {
+      "at": "2026-09-13T14:30:13.401Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "set-executive",
+      "details": "Nuristani SSR → 807254722251587614"
+    },
+    {
+      "at": "2026-09-13T14:30:58.242Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "found-national-defense",
+      "details": "Soviet National Defense Industry SNBI Russian SFSR"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 676175,
-      "at": "2026-09-13T06:44:19.401Z"
-    },
     {
       "total": 676175,
       "at": "2026-09-13T06:49:19.619Z"
@@ -232562,6 +232616,10 @@
     {
       "total": 678712,
       "at": "2026-09-13T14:23:43.880Z"
+    },
+    {
+      "total": 678755,
+      "at": "2026-09-13T14:30:12.503Z"
     }
   ],
   "gold_rush": null,
@@ -232588,7 +232646,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 21.598849999999825,
+  "heat_global": 21.298849999999824,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -232775,7 +232833,7 @@
       "791747702689103893": 1789308225716,
       "1456622719985782864": 1789309754129,
       "1082686076491137115": 1789309680341,
-      "1229741033265299506": 1789309743079,
+      "1229741033265299506": 1789309818527,
       "1536339779140976711": 1789309652315,
       "780837437987094560": 1789303363043,
       "874346333882945547": 1789309332696,
@@ -232788,7 +232846,7 @@
       "1470136693821800521": 1789088485919,
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789295881293,
-      "1506785783506534426": 1789309749272,
+      "1506785783506534426": 1789309827551,
       "807254722251587614": 1789308465554,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789309736057,
@@ -232821,7 +232879,7 @@
       "1532459782265639083": 1789304749688,
       "1407392503090642986": 1789276258976,
       "1456863215815364796": 1789308274254,
-      "963834359994007614": 1789309778076,
+      "963834359994007614": 1789309841960,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1788996121210,
       "730223629849199093": 1789297873460,
@@ -249074,7 +249132,9 @@
   },
   "mod": {
     "ministerId": null,
-    "approved": [],
+    "approved": [
+      "comp_29"
+    ],
     "setBy": null,
     "setAt": null
   },
@@ -249113,7 +249173,17 @@
       "executiveId": "874346333882945547",
       "setBy": "hyawii2.0",
       "setAt": "2026-09-13T14:29:23.992Z"
+    },
+    "Nuristani SSR": {
+      "executiveId": "807254722251587614",
+      "setBy": "hyawii2.0",
+      "setAt": "2026-09-13T14:30:13.401Z"
     }
+  },
+  "national_defense_formed": {
+    "companyId": "comp_29",
+    "by": "1082686076491137115",
+    "at": "2026-09-13T14:30:58.242Z"
   },
   "access_codes_hashed": {
     "7dd45665a3df9024": {
