@@ -226985,45 +226985,45 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3905062455659887,
-    "Cake": 1.3940747982893305,
-    "Bread": 1.3826948506476269,
-    "Copper Ingot": 1.3791727128159255,
-    "Iron Ingot": 1.3636702386327086,
-    "Steel Ingot": 1.3821394917843086,
-    "Gold Bar": 1.1642325955177302,
-    "Aluminium Ingot": 1.2824534151207043,
-    "Timber Planks": 1.3418219147312145,
-    "Bricks": 1.2824534151207043,
-    "Concrete": 1.2824534151207043,
-    "Glass": 1.2824534151207043,
-    "Steel Beam": 1.395197052501724,
-    "Machine Parts": 1.395392238773289,
-    "Refined Fuel": 1.3437467872743667,
-    "Uranium Rod": 1.389991380091446,
-    "Reactor Core": 1.3876325267257634,
-    "Circuit Board": 1.3953212814126164,
-    "Flour": 1.2448887409798868,
-    "Sugar": 0.8592591059803961,
-    "Wine": 1.2824534151207043,
-    "Canned Food": 1.3954898319090716,
-    "Canned Fish": 1.3954898319090716,
-    "Smoked Fish": 1.3954898319090716,
-    "Fish Stew": 1.2824534151207043,
-    "Peat Fuel": 1.3954898319090716,
-    "Gas Fuel": 1.3794415525617076,
-    "Fertilizer": 1.2824534151207043,
-    "Cotton Fabric": 1.3901865663630109,
-    "Manganese Alloy": 1.2824534151207043,
-    "Sunflower Oil": 1.2824534151207043,
-    "Linen": 1.2824534151207043,
-    "Corn Meal": 1.2824534151207043,
-    "Tea Pack": 1.2858359458871291,
-    "Citrus Juice": 1.2824534151207043,
-    "Antimony Alloy": 1.2824534151207043,
-    "Molybdenum Rod": 1.2824534151207043,
-    "Aluminium Sheet": 1.3954898319090716,
-    "Shale Oil": 1.3954898319090716
+    "Fuel": 1,
+    "Cake": 1,
+    "Bread": 1,
+    "Copper Ingot": 1,
+    "Iron Ingot": 1,
+    "Steel Ingot": 1,
+    "Gold Bar": 1,
+    "Aluminium Ingot": 1,
+    "Timber Planks": 1,
+    "Bricks": 1,
+    "Concrete": 1,
+    "Glass": 1,
+    "Steel Beam": 1,
+    "Machine Parts": 1,
+    "Refined Fuel": 1,
+    "Uranium Rod": 1,
+    "Reactor Core": 1,
+    "Circuit Board": 1,
+    "Flour": 1,
+    "Sugar": 1,
+    "Wine": 1,
+    "Canned Food": 1,
+    "Canned Fish": 1,
+    "Smoked Fish": 1,
+    "Fish Stew": 1,
+    "Peat Fuel": 1,
+    "Gas Fuel": 1,
+    "Fertilizer": 1,
+    "Cotton Fabric": 1,
+    "Manganese Alloy": 1,
+    "Sunflower Oil": 1,
+    "Linen": 1,
+    "Corn Meal": 1,
+    "Tea Pack": 1,
+    "Citrus Juice": 1,
+    "Antimony Alloy": 1,
+    "Molybdenum Rod": 1,
+    "Aluminium Sheet": 1,
+    "Shale Oil": 1
   },
   "market_last_sale": {
     "Fuel": "2026-09-13T16:58:25.066Z",
@@ -232797,6 +232797,13 @@
       "username": "napoleon87",
       "action": "launder",
       "details": "₽722 dirty → ₽361 clean fee ₽361"
+    },
+    {
+      "at": "2026-09-13T23:50:01.226Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "depressionlift",
+      "details": "END"
     }
   ],
   "total_rubles_history": [
@@ -250696,12 +250703,12 @@
     "total_added": 0,
     "total_removed": 112500,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-09-13T20:07:23.819Z",
+    "last_update": "2026-09-13T23:50:01.226Z",
     "chair_id": null,
     "chair_set_by": null,
     "chair_set_at": null,
     "chair_history": [],
-    "shutdown": true
+    "shutdown": false
   },
   "fca": {
     "agents": [],
@@ -251196,7 +251203,7 @@
     }
   },
   "depression": {
-    "active": true,
+    "active": false,
     "startedAt": "2026-09-13T20:07:24.642Z",
     "startedBy": "hyawii2.0",
     "history": [
@@ -251204,8 +251211,14 @@
         "at": "2026-09-13T20:07:24.642Z",
         "by": "hyawii2.0",
         "action": "start"
+      },
+      {
+        "at": "2026-09-13T23:50:01.226Z",
+        "by": "hyawii2.0",
+        "action": "lift"
       }
-    ]
+    ],
+    "endedAt": "2026-09-13T23:50:01.225Z"
   },
   "realestate": {
     "plots": [
