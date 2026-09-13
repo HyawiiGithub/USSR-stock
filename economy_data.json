@@ -330,7 +330,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 226,
+      "cash": 266,
       "bank": 10173,
       "resources": {
         "Coal": 1
@@ -356,8 +356,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 374,
-      "bot_total_xp": 2579,
+      "bot_xp": 401,
+      "bot_total_xp": 2606,
       "daily_work_count": 29,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -67047,7 +67047,7 @@
       "last_laylow": null
     },
     "807254722251587614": {
-      "cash": 3136,
+      "cash": 3376,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -224386,14 +224386,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@807254722251587614>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2016,
+      "funds": 1736,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 158252,
-      "market_cap": 158252,
+      "share_price": 158490,
+      "market_cap": 158490,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -224425,23 +224425,22 @@
       },
       "inventory": {
         "Zinc": 231,
-        "Copper": 95,
+        "Copper": 100,
         "Lead": 202,
         "Gold Bar": 26,
         "Aluminium Ore": 99,
         "Uranium Rod": 2,
-        "Iron Ore": 37,
-        "Sugar": 79,
+        "Iron Ore": 43,
+        "Sugar": 82,
         "Uranium": 4,
-        "Wheat": 120,
+        "Wheat": 103,
         "Contraband: Cocaine": 1,
-        "Coal": 18
+        "Coal": 22,
+        "Gold": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-12T20:50:38.664Z",
+      "last_collect": "2026-09-13T05:01:59.223Z",
       "price_history": [
-        145655,
-        145732,
         145931,
         146031,
         145929,
@@ -224539,7 +224538,9 @@
         157496,
         157904,
         158116,
-        158252
+        158252,
+        158322,
+        158490
       ],
       "is_state_owned": true,
       "director_id": "807254722251587614",
@@ -225376,16 +225377,6 @@
   "gsi_history": [
     {
       "price": 102,
-      "change_percent": 0.26031515461243365,
-      "recorded_at": "2026-09-12T22:16:29.832Z"
-    },
-    {
-      "price": 102,
-      "change_percent": 0.44817582640292164,
-      "recorded_at": "2026-09-12T22:20:52.604Z"
-    },
-    {
-      "price": 102,
       "change_percent": 0.3726581804522795,
       "recorded_at": "2026-09-12T22:25:52.988Z"
     },
@@ -225873,6 +225864,16 @@
       "price": 90,
       "change_percent": 0.9831162020444248,
       "recorded_at": "2026-09-13T04:59:18.437Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.3467042964245604,
+      "recorded_at": "2026-09-13T05:01:46.541Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.25171590754773165,
+      "recorded_at": "2026-09-13T05:02:00.175Z"
     }
   ],
   "factory_names": [
@@ -231610,6 +231611,13 @@
       "username": "desertmarshal",
       "action": "launder",
       "details": "₽1,814 dirty → ₽907 clean fee ₽907"
+    },
+    {
+      "at": "2026-09-13T05:01:59.223Z",
+      "by": "1186597507720019988",
+      "username": "imdivit",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽280 salaries ceo 807254722251587614 ₽100, director 807254722251587614 ₽100, manager 1186597507720019988 ₽40, manager 807254722251587614 ₽40"
     }
   ],
   "total_rubles_history": [
@@ -232181,7 +232189,8 @@
         "Azerbaijanian SSR": 0
       },
       "2026-09-13": {
-        "Azerbaijanian SSR": 0
+        "Azerbaijanian SSR": 0,
+        "Nuristani SSR": 1
       }
     },
     "qotd": {
@@ -247794,9 +247803,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 28,
-    "beforeLvlC": 3,
-    "afterLvl": 3,
+    "xpGainC": 27,
+    "beforeLvlC": 7,
+    "afterLvl": 7,
     "leveled": []
   },
   "central_bank": {
