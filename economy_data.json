@@ -226072,7 +226072,7 @@
     "Reactor Core": 1.393424132386585,
     "Circuit Board": 1.4046285583821123,
     "Flour": 1.3468256223522976,
-    "Sugar": 0.8437875951375498,
+    "Sugar": 0.8637875951375498,
     "Wine": 1.4115094702816162,
     "Canned Food": 1.4046285714284044,
     "Canned Fish": 1.404628574847551,
@@ -226121,7 +226121,7 @@
   "ai_store": {
     "Bread": 4,
     "Fuel": 4,
-    "Sugar": 7
+    "Sugar": 6
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -226145,14 +226145,9 @@
     "Gas Fuel": 46,
     "Steel Beam": 2,
     "Machine Parts": 4,
-    "Sugar": 3
+    "Sugar": 4
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-05T10:51:42.998Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 2,
@@ -227647,6 +227642,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-13T00:34:14.326Z"
+    },
+    {
+      "item": "Sugar",
+      "qty": 1,
+      "at": "2026-09-13T00:49:14.333Z"
     }
   ],
   "demand_history": {
@@ -230366,6 +230366,11 @@
       {
         "demand": 0.7809943820156021,
         "at": "2026-09-12T23:56:17.732Z",
+        "supply": 166
+      },
+      {
+        "demand": 0.8437875951375498,
+        "at": "2026-09-13T00:49:14.333Z",
         "supply": 166
       }
     ]
