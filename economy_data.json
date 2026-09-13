@@ -639,7 +639,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 81,
-      "heat": 0.9346308232964498,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-13T06:42:22.817Z",
       "total_heat_generated": 197.911,
@@ -744,15 +744,15 @@
       "last_laylow": null
     },
     "874346333882945547": {
-      "cash": 260,
+      "cash": 280,
       "bank": 31015,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-12T23:32:09.077Z",
-      "work_count": 1254,
+      "last_work": "2026-09-13T06:53:59.553Z",
+      "work_count": 1255,
       "last_claim": "2026-09-12T13:56:22.791Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -766,11 +766,11 @@
       "last_illegal": "2026-09-12T23:07:08.694Z",
       "total_heat_generated": 384.48900000000003,
       "bot_level": 15,
-      "bot_xp": 601,
-      "bot_total_xp": 12426,
-      "daily_work_count": 193,
+      "bot_xp": 647,
+      "bot_total_xp": 12472,
+      "daily_work_count": 194,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-12",
+      "last_daily_work_date": "2026-09-13",
       "mee6_level": 15,
       "last_laylow": "2026-09-12T21:28:37.545Z"
     },
@@ -224873,14 +224873,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 23877,
+      "funds": 23872,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 180392,
-      "market_cap": 180392,
+      "share_price": 180596,
+      "market_cap": 180596,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -224923,32 +224923,30 @@
       "inventory": {
         "Gold Bar": 18,
         "Fish": 2,
-        "Wheat": 109,
-        "Sugar": 79,
+        "Wheat": 92,
+        "Sugar": 80,
         "Reactor Core": 2,
         "Copper": 82,
         "Lead": 4,
-        "Timber": 35,
-        "Sulphur": 36,
+        "Timber": 36,
+        "Sulphur": 37,
         "Contraband: Opium": 3,
         "Timber Planks": 8,
-        "Coal": 5,
-        "Bread": 1,
-        "Cake": 1,
+        "Coal": 6,
+        "Bread": 2,
+        "Cake": 2,
         "Uranium Rod": 1,
         "Gold": 1,
         "Steel Beam": 1,
         "Rifle": 1,
-        "Iron Ore": 6,
+        "Iron Ore": 7,
         "Oil": 7,
         "Steel Ingot": 2,
         "Contraband: Cannabis": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-12T19:18:50.533Z",
+      "last_collect": "2026-09-13T06:54:07.879Z",
       "price_history": [
-        171348,
-        171463,
         171458,
         175101,
         175104,
@@ -225046,7 +225044,9 @@
         180119,
         180386,
         180405,
-        180392
+        180392,
+        180387,
+        180596
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225066,8 +225066,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 119.95333199298197,
-      "underground_heat": 377.6818299766731,
+      "heat": 115.37478639240615,
+      "underground_heat": 373.13113462625853,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225404,21 +225404,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 104,
-      "change_percent": -0.5901308566623673,
-      "recorded_at": "2026-09-12T23:35:55.186Z"
-    },
-    {
-      "price": 103,
-      "change_percent": -0.47857279554955007,
-      "recorded_at": "2026-09-12T23:51:18.871Z"
-    },
-    {
-      "price": 102,
-      "change_percent": -0.16129220727073415,
-      "recorded_at": "2026-09-12T23:56:07.487Z"
-    },
     {
       "price": 101,
       "change_percent": -0.12220783203587714,
@@ -225903,6 +225888,21 @@
       "price": 81,
       "change_percent": 0.9894579823180634,
       "recorded_at": "2026-09-13T06:52:54.014Z"
+    },
+    {
+      "price": 82,
+      "change_percent": 1.3038767708693972,
+      "recorded_at": "2026-09-13T06:54:00.469Z"
+    },
+    {
+      "price": 82,
+      "change_percent": 0.749564037312671,
+      "recorded_at": "2026-09-13T06:54:08.992Z"
+    },
+    {
+      "price": 83,
+      "change_percent": 1.3333806244165285,
+      "recorded_at": "2026-09-13T06:54:19.179Z"
     }
   ],
   "factory_names": [
@@ -231651,10 +231651,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 674532,
-      "at": "2026-09-12T22:45:54.198Z"
-    },
-    {
       "total": 674552,
       "at": "2026-09-12T22:50:54.385Z"
     },
@@ -232049,6 +232045,10 @@
     {
       "total": 676175,
       "at": "2026-09-13T06:49:19.619Z"
+    },
+    {
+      "total": 676213,
+      "at": "2026-09-13T06:54:19.585Z"
     }
   ],
   "gold_rush": null,
@@ -232075,7 +232075,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 17.874499999999887,
+  "heat_global": 17.574499999999887,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -232195,7 +232195,8 @@
         "1528783188728483944": 1,
         "1186597507720019988": 2,
         "1511756975392948224": 1,
-        "1495413593242337421": 1
+        "1495413593242337421": 1,
+        "874346333882945547": 1
       }
     },
     "collect_daily": {
@@ -232221,7 +232222,8 @@
       },
       "2026-09-13": {
         "Azerbaijanian SSR": 0,
-        "Nuristani SSR": 1
+        "Nuristani SSR": 1,
+        "Kazakh SSR": 0
       }
     },
     "qotd": {
@@ -247834,9 +247836,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 27,
-    "beforeLvlC": 7,
-    "afterLvl": 7,
+    "xpGainC": 26,
+    "beforeLvlC": 15,
+    "afterLvl": 15,
     "leveled": []
   },
   "central_bank": {
@@ -248243,7 +248245,7 @@
       "1506785783506534426": 0
     },
     "power": {
-      "874346333882945547": 38,
+      "874346333882945547": 43,
       "1511756975392948224": 31,
       "1536339779140976711": 26,
       "1325111649816023092": 24,
@@ -248255,7 +248257,7 @@
       "1506785783506534426": 17
     },
     "last_train": {
-      "874346333882945547": "2026-09-12T22:54:58.996Z",
+      "874346333882945547": "2026-09-13T06:53:53.554Z",
       "1511756975392948224": "2026-09-13T06:29:25.844Z",
       "1325111649816023092": "2026-09-12T22:12:43.863Z",
       "1536339779140976711": "2026-09-12T21:53:38.452Z",
