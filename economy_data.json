@@ -675,8 +675,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 230,
-      "bot_total_xp": 3950,
+      "bot_xp": 245,
+      "bot_total_xp": 3965,
       "daily_work_count": 8,
       "shock_worker": false,
       "mee6_level": 9,
@@ -766,8 +766,8 @@
       "last_illegal": "2026-09-13T08:20:24.678Z",
       "total_heat_generated": 424.466,
       "bot_level": 15,
-      "bot_xp": 1069,
-      "bot_total_xp": 12894,
+      "bot_xp": 1094,
+      "bot_total_xp": 12919,
       "daily_work_count": 205,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -975,8 +975,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1088,
-      "bot_total_xp": 8118,
+      "bot_xp": 1104,
+      "bot_total_xp": 8134,
       "daily_work_count": 30,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-12",
@@ -224458,8 +224458,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 27,
-      "bot_total_xp": 127,
+      "bot_xp": 51,
+      "bot_total_xp": 151,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -224938,8 +224938,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 181570,
-      "market_cap": 181570,
+      "share_price": 181589,
+      "market_cap": 181589,
       "employees": 27,
       "level": 1,
       "buildings": {
@@ -225010,7 +225010,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T06:54:07.879Z",
       "price_history": [
-        176484,
         176599,
         176602,
         176717,
@@ -225109,7 +225108,8 @@
         181513,
         181532,
         181567,
-        181570
+        181570,
+        181589
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225467,11 +225467,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 90,
-      "change_percent": 0.893712505714459,
-      "recorded_at": "2026-09-13T04:34:18.454Z"
-    },
     {
       "price": 90,
       "change_percent": 0.2856703590513771,
@@ -225966,6 +225961,11 @@
       "price": 90,
       "change_percent": 0.9100703715372447,
       "recorded_at": "2026-09-13T09:07:28.469Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.8584191206019008,
+      "recorded_at": "2026-09-13T09:08:14.062Z"
     }
   ],
   "factory_names": [
@@ -232327,13 +232327,13 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1789260779478,
-      "791747702689103893": 1789290422586,
-      "1456622719985782864": 1789290455508,
+      "791747702689103893": 1789290507087,
+      "1456622719985782864": 1789290518851,
       "1082686076491137115": 1789259636898,
       "1229741033265299506": 1789258616669,
       "1536339779140976711": 1789290408552,
       "780837437987094560": 1789255670836,
-      "874346333882945547": 1789290434834,
+      "874346333882945547": 1789290534714,
       "870686833976172574": 1789237474560,
       "1186597507720019988": 1789286820508,
       "1521043721129558017": 1789236228722,
@@ -232508,7 +232508,7 @@
       "1466109045604876351": 1789286771799,
       "1004404258415845468": 1789288141681,
       "1439573866300309658": 1789288548983,
-      "1494027370208825436": 1789290451461
+      "1494027370208825436": 1789290519407
     }
   },
   "mee6_cache": {
@@ -232525,20 +232525,9 @@
       "2026-Q3": {
         "positive": 27,
         "negative": 9,
-        "neutral": 732,
-        "total": 768,
+        "neutral": 733,
+        "total": 769,
         "mentions": [
-          {
-            "at": "2026-09-12T17:29:38.008Z",
-            "userId": "963834359994007614",
-            "username": "that.one.pakistani_",
-            "channelId": "1016433654270009354",
-            "messageId": "1548385103887990828",
-            "text": "<@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:29:38.469Z",
             "userId": "963834359994007614",
@@ -238024,6 +238013,17 @@
             "channelId": "1538704231249354772",
             "messageId": "1548620979259973694",
             "text": "<@1082686076491137115> give me a sulfur mine",
+            "sentiment": "neutral",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-13T09:08:16.072Z",
+            "userId": "1456622719985782864",
+            "username": "seren_menzhinsky",
+            "channelId": "1538704231249354772",
+            "messageId": "1548621324229021697",
+            "text": "HYAWII",
             "sentiment": "neutral",
             "source": "text",
             "quarter": "2026-Q3"
@@ -246480,6 +246480,17 @@
         "sentiment": "neutral",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-13T09:08:16.072Z",
+        "userId": "1456622719985782864",
+        "username": "seren_menzhinsky",
+        "channelId": "1538704231249354772",
+        "messageId": "1548621324229021697",
+        "text": "HYAWII",
+        "sentiment": "neutral",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
     "keywords_negative": [
@@ -246533,7 +246544,7 @@
       "premier is goat",
       "premier is peak"
     ],
-    "last_scan": "2026-09-13T09:06:53.837Z",
+    "last_scan": "2026-09-13T09:08:16.072Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -248384,7 +248395,7 @@
       "1397601108616024075": 17,
       "1229741033265299506": 25,
       "503918799683321866": 16,
-      "1506785783506534426": 17
+      "1506785783506534426": 23
     },
     "last_train": {
       "874346333882945547": "2026-09-13T08:55:44.461Z",
@@ -248396,7 +248407,7 @@
       "1229741033265299506": "2026-09-12T22:04:48.908Z",
       "780837437987094560": "2026-09-12T21:09:03.154Z",
       "503918799683321866": "2026-09-12T21:19:18.943Z",
-      "1506785783506534426": "2026-09-12T21:52:57.294Z"
+      "1506785783506534426": "2026-09-13T09:08:21.539Z"
     },
     "vault": 0,
     "wars": [],
