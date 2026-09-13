@@ -67,7 +67,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
-      "heat": 9.697633177092483,
+      "heat": 8.813889044157944,
       "wanted": 0,
       "last_illegal": "2026-09-13T21:18:41.041Z",
       "total_heat_generated": 104.16199999999999,
@@ -640,7 +640,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 242,
-      "heat": 2.5031719427592956,
+      "heat": 1.6711881275860452,
       "wanted": 0,
       "last_illegal": "2026-09-13T20:37:37.806Z",
       "total_heat_generated": 286.46000000000004,
@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 597,
-      "heat": 25.1184062928834,
+      "heat": 24.16599520147751,
       "wanted": 0,
       "last_illegal": "2026-09-13T21:50:59.471Z",
       "total_heat_generated": 568.0519999999999,
@@ -1091,7 +1091,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 1357,
-      "heat": 5.774248591474316,
+      "heat": 4.867043286703448,
       "wanted": 0,
       "last_illegal": "2026-09-13T21:37:27.712Z",
       "total_heat_generated": 210.858,
@@ -1566,7 +1566,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 671,
-      "heat": 25.545722232867938,
+      "heat": 24.65470362179755,
       "wanted": 0,
       "last_illegal": "2026-09-13T21:25:13.983Z",
       "total_heat_generated": 65.961,
@@ -15411,12 +15411,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 88,
-      "bot_total_xp": 88,
+      "bot_level": 1,
+      "bot_xp": 10,
+      "bot_total_xp": 110,
       "daily_work_count": 0,
       "shock_worker": false,
-      "last_laylow": null
+      "last_laylow": null,
+      "mee6_level": 1
     },
     "961548198911021066": {
       "cash": 0,
@@ -225653,11 +225654,11 @@
         "Wheat": 57,
         "Sugar": 105,
         "Reactor Core": 3,
-        "Copper": 104,
+        "Copper": 89,
         "Lead": 12,
         "Timber": 9,
         "Sulphur": 42,
-        "Coal": 11,
+        "Coal": 1,
         "Contraband: Cannabis": 7,
         "Contraband: LSD Sheets": 1,
         "Uranium": 2,
@@ -225668,7 +225669,8 @@
         "Oil": 2,
         "Timber Planks": 10,
         "Iron Ore": 4,
-        "Fuel": 1
+        "Fuel": 1,
+        "Copper Ingot": 5
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-13T19:21:55.791Z",
@@ -225793,8 +225795,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 283.306858161046,
-      "underground_heat": 682.7095255811334,
+      "heat": 282.67112059089027,
+      "underground_heat": 682.1191296194593,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226187,11 +226189,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 105,
-      "change_percent": 0.37234763614668376,
-      "recorded_at": "2026-09-13T19:52:51.781Z"
-    },
     {
       "price": 105,
       "change_percent": 0.8670616845605486,
@@ -226686,6 +226683,11 @@
       "price": 105,
       "change_percent": 0.695283927499788,
       "recorded_at": "2026-09-13T21:51:00.523Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 0.5629742944795972,
+      "recorded_at": "2026-09-13T21:53:35.514Z"
     }
   ],
   "factory_names": [
@@ -232771,10 +232773,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 679783,
-      "at": "2026-09-13T13:19:21.733Z"
-    },
-    {
       "total": 679859,
       "at": "2026-09-13T13:24:22.082Z"
     },
@@ -233169,6 +233167,10 @@
     {
       "total": 663634,
       "at": "2026-09-13T21:48:36.490Z"
+    },
+    {
+      "total": 663674,
+      "at": "2026-09-13T21:53:36.598Z"
     }
   ],
   "gold_rush": null,
@@ -233195,7 +233197,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 39.8935999999998,
+  "heat_global": 39.5935999999998,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -233605,7 +233607,7 @@
       "1067307629673713704": 1789329674157,
       "1423048564459835463": 1789331819151,
       "502479888846946305": 1789332371265,
-      "841317929219653683": 1789336340036
+      "841317929219653683": 1789336432325
     }
   },
   "mee6_cache": {
@@ -249163,13 +249165,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "807944786840387675",
-      "from": 1,
-      "to": 2,
-      "at": "2026-09-12T02:17:18.548Z",
-      "reason": "chat"
-    },
-    {
       "userId": "516170449189863424",
       "from": 2,
       "to": 3,
@@ -250560,6 +250555,13 @@
       "from": 4,
       "to": 5,
       "at": "2026-09-13T21:47:54.688Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "841317929219653683",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-13T21:53:52.326Z",
       "reason": "chat"
     }
   ],
