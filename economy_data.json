@@ -618,7 +618,7 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 273,
+      "cash": 1026,
       "bank": 8826,
       "resources": {
         "Coal": 1
@@ -638,11 +638,11 @@
       "is_employed": true,
       "is_state_director": false,
       "director_of": null,
-      "dirty_cash": 839,
-      "heat": 8,
+      "dirty_cash": 0,
+      "heat": 11.152986221900159,
       "wanted": 0,
-      "last_illegal": "2026-09-13T13:51:43.041Z",
-      "total_heat_generated": 230.717,
+      "last_illegal": "2026-09-13T13:52:25.826Z",
+      "total_heat_generated": 238.717,
       "bot_level": 14,
       "bot_xp": 205,
       "bot_total_xp": 10250,
@@ -650,7 +650,7 @@
       "shock_worker": false,
       "mee6_level": 14,
       "last_daily_work_date": "2026-09-13",
-      "last_laylow": "2026-09-13T09:51:40.232Z"
+      "last_laylow": "2026-09-13T13:52:10.398Z"
     },
     "1456622719985782864": {
       "cash": 194,
@@ -224729,6 +224729,35 @@
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
+    },
+    "1548662922459353140": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 18,
+      "bot_total_xp": 18,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null
     }
   },
   "companies": {
@@ -225266,7 +225295,6 @@
         "Iron Ore": 15,
         "Oil": 19,
         "Contraband: Cannabis": 1,
-        "Contraband: LSD Sheets": 3,
         "Uranium": 2,
         "Contraband: Synthetic": 2,
         "Contraband: Coca Paste": 4,
@@ -225395,7 +225423,7 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 175.78038263203646,
+      "heat": 180.87804929870313,
       "underground_heat": 500.937471802545,
       "dirty_cash": 0,
       "last_illegal": null
@@ -232075,6 +232103,13 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽826 salaries ceo 807254722251587614 ₽295, director 807254722251587614 ₽295, manager 1186597507720019988 ₽118, manager 807254722251587614 ₽118"
+    },
+    {
+      "at": "2026-09-13T13:52:56.608Z",
+      "by": "1229741033265299506",
+      "username": "desertmarshal",
+      "action": "launder",
+      "details": "₽1,507 dirty → ₽753 clean fee ₽754"
     }
   ],
   "total_rubles_history": [
@@ -232503,7 +232538,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 22.49884999999983,
+  "heat_global": 23.69884999999983,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
@@ -232512,7 +232547,7 @@
     "Contraband: Coca Paste": 9,
     "Contraband: Cannabis": 5,
     "Contraband: Heroin": 4,
-    "Contraband: LSD Sheets": 3
+    "Contraband: LSD Sheets": 6
   },
   "dirty_printed_total": 0,
   "engagement": {
@@ -232881,7 +232916,8 @@
       "1168265657457053736": 1789299593388,
       "1309255567272837200": 1789301476487,
       "1424367085869465672": 1789304926729,
-      "1405393814960734290": 1789305490799
+      "1405393814960734290": 1789305490799,
+      "1548662922459353140": 1789307547438
     }
   },
   "mee6_cache": {
@@ -248905,12 +248941,14 @@
       "power": {
         "1397601108616024075": 2,
         "1506785783506534426": 2,
-        "874346333882945547": 2
+        "874346333882945547": 2,
+        "780837437987094560": 2
       },
       "last_train": {
         "1397601108616024075": "2026-09-13T13:46:17.796Z",
         "1506785783506534426": "2026-09-13T13:46:55.788Z",
-        "874346333882945547": "2026-09-13T13:49:23.930Z"
+        "874346333882945547": "2026-09-13T13:49:23.930Z",
+        "780837437987094560": "2026-09-13T13:52:15.686Z"
       }
     },
     "conscripted": false,
