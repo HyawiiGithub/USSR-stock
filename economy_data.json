@@ -104,18 +104,18 @@
       "last_collect": null,
       "join_date": "2026-08-22T01:11:07.515351",
       "ssr_region": "Russian SFSR",
-      "employed_at": "Soviet National Defense Industry",
-      "is_employed": true,
-      "is_state_director": true,
-      "director_of": "comp_29",
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
       "dirty_cash": 0,
       "heat": 0,
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 63,
-      "bot_total_xp": 11888,
+      "bot_xp": 83,
+      "bot_total_xp": 11908,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 15,
@@ -767,8 +767,8 @@
       "last_illegal": "2026-09-13T20:20:53.283Z",
       "total_heat_generated": 542.6949999999999,
       "bot_level": 17,
-      "bot_xp": 1343,
-      "bot_total_xp": 17323,
+      "bot_xp": 1365,
+      "bot_total_xp": 17345,
       "daily_work_count": 248,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -1234,11 +1234,11 @@
       "last_work": "2026-08-26T20:31:17.199Z",
       "work_count": 1,
       "last_claim": null,
-      "ssr_region": "Estonian SSR",
-      "employed_at": null,
-      "is_employed": false,
-      "is_state_director": false,
-      "director_of": null,
+      "ssr_region": "Russian SFSR",
+      "employed_at": "Soviet National Defense Industry",
+      "is_employed": true,
+      "is_state_director": true,
+      "director_of": "comp_29",
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -1246,8 +1246,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 301,
-      "bot_total_xp": 1451,
+      "bot_xp": 316,
+      "bot_total_xp": 1466,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -226126,7 +226126,7 @@
       "name": "Soviet National Defense Industry",
       "ticker": "SNBI",
       "owner_id": "1513968015048184039",
-      "ceo": "<@1082686076491137115>",
+      "ceo": "<@1379734184259747851>",
       "hq_ssr": "Russian SFSR",
       "funds": 22500,
       "invested_capital": 25000,
@@ -226175,7 +226175,7 @@
       "underground_heat": 0,
       "dirty_cash": 0,
       "last_illegal": null,
-      "director_id": "1082686076491137115"
+      "director_id": "1379734184259747851"
     }
   },
   "gsi_history": [
@@ -226822,7 +226822,7 @@
     "887419379833274388": "state_24",
     "918518877414100993": "state_25",
     "807254722251587614": "state_23",
-    "1082686076491137115": "comp_29"
+    "1379734184259747851": "comp_29"
   },
   "transaction_log": [
     {
@@ -232689,6 +232689,13 @@
       "username": "seniormanulos",
       "action": "mafia-hire",
       "details": "cosa nostra +1379734184259747851 as Associate"
+    },
+    {
+      "at": "2026-09-13T20:30:44.909Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointdirector",
+      "details": "appointed <@1379734184259747851> (1379734184259747851) as director of Soviet National Defense Industry (comp_29)"
     }
   ],
   "total_rubles_history": [
@@ -233312,11 +233319,11 @@
       "1544820489191559270": 1789326884052,
       "791747702689103893": 1789330508537,
       "1456622719985782864": 1789330392456,
-      "1082686076491137115": 1789331355906,
+      "1082686076491137115": 1789331426345,
       "1229741033265299506": 1789331312345,
       "1536339779140976711": 1789330773898,
       "780837437987094560": 1789331344955,
-      "874346333882945547": 1789331368609,
+      "874346333882945547": 1789331432258,
       "870686833976172574": 1789327497024,
       "1186597507720019988": 1789323262674,
       "1521043721129558017": 1789325824030,
@@ -233439,7 +233446,7 @@
       "872464195306782770": 1789234862495,
       "1214587968296067083": 1789243357880,
       "1473761822858281192": 1789161331592,
-      "1379734184259747851": 1789331399456,
+      "1379734184259747851": 1789331463101,
       "1173662113340854353": 1789259600263,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
@@ -233536,20 +233543,9 @@
       "2026-Q3": {
         "positive": 29,
         "negative": 12,
-        "neutral": 822,
-        "total": 863,
+        "neutral": 823,
+        "total": 864,
         "mentions": [
-          {
-            "at": "2026-09-12T17:30:38.266Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "1016433654270009354",
-            "messageId": "1548385321962573847",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:30:38.789Z",
             "userId": "807944786840387675",
@@ -239122,6 +239118,18 @@
             "messageId": "1548791562987769907",
             "text": "<@1082686076491137115> what use is all the buildings and shit that you said corporations can buy",
             "sentiment": "negative",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-13T20:30:58.170Z",
+            "userId": "1379734184259747851",
+            "username": ".kewl1",
+            "channelId": "1016433654270009354",
+            "messageId": "1548793130780987443",
+            "text": "<@1082686076491137115> which SSR does not have a leader",
+            "sentiment": "neutral",
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
@@ -248710,9 +248718,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-13T20:30:58.170Z",
+        "userId": "1379734184259747851",
+        "username": ".kewl1",
+        "channelId": "1016433654270009354",
+        "messageId": "1548793130780987443",
+        "text": "<@1082686076491137115> which SSR does not have a leader",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-13T20:24:44.975Z",
+    "last_scan": "2026-09-13T20:30:58.170Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
