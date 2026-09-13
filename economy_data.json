@@ -114,8 +114,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 83,
-      "bot_total_xp": 11908,
+      "bot_xp": 104,
+      "bot_total_xp": 11929,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 15,
@@ -645,8 +645,8 @@
       "last_illegal": "2026-09-13T20:18:35.917Z",
       "total_heat_generated": 277.10200000000003,
       "bot_level": 14,
-      "bot_xp": 1267,
-      "bot_total_xp": 11312,
+      "bot_xp": 1285,
+      "bot_total_xp": 11330,
       "daily_work_count": 8,
       "shock_worker": false,
       "mee6_level": 14,
@@ -767,8 +767,8 @@
       "last_illegal": "2026-09-13T20:20:53.283Z",
       "total_heat_generated": 542.6949999999999,
       "bot_level": 17,
-      "bot_xp": 1365,
-      "bot_total_xp": 17345,
+      "bot_xp": 1387,
+      "bot_total_xp": 17367,
       "daily_work_count": 248,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -845,10 +845,10 @@
       "work_count": 278,
       "last_claim": "2026-09-12T06:19:53.425Z",
       "ssr_region": "Russian SFSR",
-      "employed_at": "State Nuclear Energy",
-      "is_employed": true,
-      "is_state_director": true,
-      "director_of": "state_27",
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -1235,10 +1235,10 @@
       "work_count": 1,
       "last_claim": null,
       "ssr_region": "Russian SFSR",
-      "employed_at": "Soviet National Defense Industry",
+      "employed_at": "State Nuclear Energy",
       "is_employed": true,
       "is_state_director": true,
-      "director_of": "comp_29",
+      "director_of": "state_27",
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -225795,7 +225795,7 @@
       "name": "State Nuclear Energy",
       "ticker": "ST27",
       "owner_id": "1513968015048184039",
-      "ceo": "<@1495413593242337421>",
+      "ceo": "<@1379734184259747851>",
       "hq_ssr": "Russian SFSR",
       "funds": 18575,
       "invested_capital": 500,
@@ -225935,7 +225935,7 @@
         212501
       ],
       "is_state_owned": true,
-      "director_id": "1495413593242337421",
+      "director_id": "1379734184259747851",
       "last_factorydeal": "2026-09-11T13:27:30.363Z",
       "last_govcontract": null,
       "specialization": "extraction",
@@ -226126,7 +226126,7 @@
       "name": "Soviet National Defense Industry",
       "ticker": "SNBI",
       "owner_id": "1513968015048184039",
-      "ceo": "<@1379734184259747851>",
+      "ceo": "State Appointed",
       "hq_ssr": "Russian SFSR",
       "funds": 22500,
       "invested_capital": 25000,
@@ -226175,7 +226175,7 @@
       "underground_heat": 0,
       "dirty_cash": 0,
       "last_illegal": null,
-      "director_id": "1379734184259747851"
+      "director_id": null
     }
   },
   "gsi_history": [
@@ -226818,11 +226818,10 @@
   "state_directors": {
     "1456622719985782864": "state_28",
     "874346333882945547": "state_26",
-    "1495413593242337421": "state_27",
     "887419379833274388": "state_24",
     "918518877414100993": "state_25",
     "807254722251587614": "state_23",
-    "1379734184259747851": "comp_29"
+    "1379734184259747851": "state_27"
   },
   "transaction_log": [
     {
@@ -232696,6 +232695,13 @@
       "username": "hyawii2.0",
       "action": "appointdirector",
       "details": "appointed <@1379734184259747851> (1379734184259747851) as director of Soviet National Defense Industry (comp_29)"
+    },
+    {
+      "at": "2026-09-13T20:31:37.646Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointdirector",
+      "details": "appointed <@1379734184259747851> (1379734184259747851) as director of State Nuclear Energy (state_27)"
     }
   ],
   "total_rubles_history": [
@@ -233319,11 +233325,11 @@
       "1544820489191559270": 1789326884052,
       "791747702689103893": 1789330508537,
       "1456622719985782864": 1789330392456,
-      "1082686076491137115": 1789331426345,
-      "1229741033265299506": 1789331312345,
+      "1082686076491137115": 1789331527173,
+      "1229741033265299506": 1789331505493,
       "1536339779140976711": 1789330773898,
       "780837437987094560": 1789331344955,
-      "874346333882945547": 1789331432258,
+      "874346333882945547": 1789331493981,
       "870686833976172574": 1789327497024,
       "1186597507720019988": 1789323262674,
       "1521043721129558017": 1789325824030,
@@ -233543,20 +233549,9 @@
       "2026-Q3": {
         "positive": 29,
         "negative": 12,
-        "neutral": 823,
-        "total": 864,
+        "neutral": 824,
+        "total": 865,
         "mentions": [
-          {
-            "at": "2026-09-12T17:30:38.789Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "1016433654270009354",
-            "messageId": "1548385324797792477",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:30:39.269Z",
             "userId": "807944786840387675",
@@ -239129,6 +239124,18 @@
             "channelId": "1016433654270009354",
             "messageId": "1548793130780987443",
             "text": "<@1082686076491137115> which SSR does not have a leader",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-13T20:31:27.534Z",
+            "userId": "1082686076491137115",
+            "username": "hyawii2.0",
+            "channelId": "1016433654270009354",
+            "messageId": "1548793248611442781",
+            "text": "-appointdirector <@1082686076491137115> SNBI",
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text",
@@ -248730,9 +248737,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-13T20:31:27.534Z",
+        "userId": "1082686076491137115",
+        "username": "hyawii2.0",
+        "channelId": "1016433654270009354",
+        "messageId": "1548793248611442781",
+        "text": "-appointdirector <@1082686076491137115> SNBI",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-13T20:30:58.170Z",
+    "last_scan": "2026-09-13T20:31:27.534Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -250696,7 +250715,7 @@
     },
     "1229741033265299506": {
       "date": "2026-09-13",
-      "used": 3,
+      "used": 3.5,
       "history": [
         {
           "role": "user",
@@ -250721,6 +250740,14 @@
         {
           "role": "assistant",
           "content": "As Jarvis, I observe that many people begin relationships driven primarily by physical attraction (lust), then attempt to build something deeper (love) afterward—or fail to develop it at all. This path often leads to:\n\n- **Inconsistent commitment**: When initial chemistry fades, there's little foundation for long-term investment.\n- **Emotional instability**: Without genuine affection, vulnerability becomes hard; fear of being alone drives repeated cycles.\n- **Unfulfilled potential**: The relatio"
+        },
+        {
+          "role": "user",
+          "content": "what do you have to say about kewl, he is a 20 year old brown pakistani boy, who says he hates women but he really does not, and he really wants to have a woman in his life"
+        },
+        {
+          "role": "assistant",
+          "content": "A person who denies their feelings while simultaneously expressing desire contradicts fundamental truth-telling. This inconsistency suggests either:\n\n1. **Insecurity**: Defending against perceived criticism by rejecting reality (\"I hate women\" when they clearly don't)\n2. **Growth opportunity**: Someone still learning to accept their authentic desires and engage constructively\n\nThe key insight: **wanting companionship ≠ hating your partner**. Genuine attraction requires honesty about what you wan"
         }
       ]
     }
