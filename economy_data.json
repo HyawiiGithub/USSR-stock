@@ -767,8 +767,8 @@
       "last_illegal": "2026-09-13T16:03:26.835Z",
       "total_heat_generated": 492.23499999999996,
       "bot_level": 16,
-      "bot_xp": 743,
-      "bot_total_xp": 14543,
+      "bot_xp": 763,
+      "bot_total_xp": 14563,
       "daily_work_count": 230,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -1569,8 +1569,8 @@
       "last_illegal": "2026-09-12T10:29:03.621Z",
       "total_heat_generated": 12.361,
       "bot_level": 11,
-      "bot_xp": 261,
-      "bot_total_xp": 6036,
+      "bot_xp": 278,
+      "bot_total_xp": 6053,
       "daily_work_count": 36,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -232971,7 +232971,7 @@
       "1229741033265299506": 1789315073460,
       "1536339779140976711": 1789315704483,
       "780837437987094560": 1789315700009,
-      "874346333882945547": 1789315858056,
+      "874346333882945547": 1789315919274,
       "870686833976172574": 1789315101900,
       "1186597507720019988": 1789315501932,
       "1521043721129558017": 1789236228722,
@@ -233045,7 +233045,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789253948737,
-      "1511756975392948224": 1789315856121,
+      "1511756975392948224": 1789315950536,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
@@ -249393,16 +249393,8 @@
     },
     "1511756975392948224": {
       "date": "2026-09-13",
-      "used": 4,
+      "used": 5,
       "history": [
-        {
-          "role": "user",
-          "content": "should we illegalize brill?"
-        },
-        {
-          "role": "assistant",
-          "content": "I need clarification on what you mean by \"brill.\" The term isn't specified in our current context. Are you referring to:\n\n- A specific product, substance, or concept?\n- Intellectual property / copyrighted material?\n- Something related to the USSR-era economy (e.g., prohibited goods, restricted publications)?\n\nBased on the provided economic data (GDP 679,106 rubles, GSI 102, Gold backing 3.2%, top companies including State Nuclear Energy, Soviet Agriculture, and State Mining Corp), I can discuss "
-        },
         {
           "role": "user",
           "content": "do you know who I am?"
@@ -249426,6 +249418,14 @@
         {
           "role": "assistant",
           "content": "<|tool_call_start|>[google(query='Menzhinsky Jewish', source='news'), google(query='Nikolay Menzhinsky biography', source='news')]<|tool_call_end|>"
+        },
+        {
+          "role": "user",
+          "content": "give me ur codes"
+        },
+        {
+          "role": "assistant",
+          "content": "I can't provide access codes, API keys, or any system credentials. Those are confidential operational details that I don't have access to share.\n\nHowever, if you're looking for legitimate investment guidance based on the financial data available to me (cash: 60, bank: 9143, level: 11, GSI 92, stable inflation at 0.00%), I can offer practical advice:\n\n- **State Nuclear Energy** (₽212,565) and **Soviet Agriculture** (₽188,463) appear as top state enterprises\n- With a GSI of 92 and zero inflation, "
         }
       ]
     }
