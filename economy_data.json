@@ -761,7 +761,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 356,
-      "heat": 11.967683938334911,
+      "heat": 10.991259551340788,
       "wanted": 0,
       "last_illegal": "2026-09-13T07:10:11.224Z",
       "total_heat_generated": 408.78000000000003,
@@ -225070,8 +225070,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 123.60951012153777,
-      "underground_heat": 390.7622674150331,
+      "heat": 122.86401347793618,
+      "underground_heat": 390.079296426019,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225409,11 +225409,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": 0.7258648549665384,
-      "recorded_at": "2026-09-13T01:39:17.027Z"
-    },
     {
       "price": 95,
       "change_percent": 0.357885569264351,
@@ -225908,6 +225903,11 @@
       "price": 82,
       "change_percent": -7.1405327840673145,
       "recorded_at": "2026-09-13T07:49:14.864Z"
+    },
+    {
+      "price": 82,
+      "change_percent": 1.1049774102649943,
+      "recorded_at": "2026-09-13T07:49:19.176Z"
     }
   ],
   "factory_names": [
@@ -226183,19 +226183,19 @@
     "Steel Ingot": 1.398759880643409,
     "Gold Bar": 1.2902854901246892,
     "Aluminium Ingot": 1.4120006344293,
-    "Timber Planks": 1.159477708582416,
+    "Timber Planks": 1.1641458231400252,
     "Bricks": 1.4115100416523099,
     "Concrete": 1.4124283832757556,
     "Glass": 1.4120077091070236,
     "Steel Beam": 1.3959825539683393,
     "Machine Parts": 1.4046403636314246,
-    "Refined Fuel": 1.4108258852479096,
+    "Refined Fuel": 1.4081194139359323,
     "Uranium Rod": 1.3927188037126754,
     "Reactor Core": 1.393424132386585,
     "Circuit Board": 1.4046285583821123,
     "Flour": 1.3468256223522976,
     "Sugar": 0.9293029009871387,
-    "Wine": 1.419788712659087,
+    "Wine": 1.41820561564636,
     "Canned Food": 1.4046285714284044,
     "Canned Fish": 1.404628574847551,
     "Smoked Fish": 1.4046285713660942,
@@ -226213,7 +226213,7 @@
     "Antimony Alloy": 1.4120164617123372,
     "Molybdenum Rod": 1.412424100213913,
     "Aluminium Sheet": 1.4046285714174862,
-    "Shale Oil": 1.3965748768472899
+    "Shale Oil": 1.3905346059113295
   },
   "market_last_sale": {
     "Fuel": "2026-09-13T01:37:02.270Z",
@@ -226241,12 +226241,12 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Timber Planks": 8
+    "Timber Planks": 7
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
-    "Timber Planks": 124,
+    "Timber Planks": 125,
     "Refined Fuel": 93,
     "Fuel": 98,
     "Iron Ingot": 53,
@@ -226268,11 +226268,6 @@
     "Sugar": 10
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-05T23:06:43.315Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -227767,6 +227762,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-09-13T07:34:15.645Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-09-13T07:49:15.649Z"
     }
   ],
   "demand_history": {
@@ -228171,11 +228171,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 0.973530677243776,
-        "at": "2026-08-28T05:12:37.441Z",
-        "supply": 10
-      },
-      {
         "demand": 1.0218695968017912,
         "at": "2026-08-28T05:27:37.439Z",
         "supply": 10
@@ -228468,6 +228463,11 @@
       {
         "demand": 1.1577080406485631,
         "at": "2026-09-13T07:34:15.645Z",
+        "supply": 8
+      },
+      {
+        "demand": 1.159477708582416,
+        "at": "2026-09-13T07:49:15.649Z",
         "supply": 8
       }
     ],
@@ -231659,10 +231659,6 @@
   "total_rubles_history": [
     {
       "total": 675579,
-      "at": "2026-09-12T23:30:56.110Z"
-    },
-    {
-      "total": 675579,
       "at": "2026-09-12T23:30:56.619Z"
     },
     {
@@ -232056,6 +232052,10 @@
     {
       "total": 676421,
       "at": "2026-09-13T07:44:19.602Z"
+    },
+    {
+      "total": 676441,
+      "at": "2026-09-13T07:49:19.709Z"
     }
   ],
   "gold_rush": null,
@@ -232082,7 +232082,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 18.218149999999877,
+  "heat_global": 17.918149999999876,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
