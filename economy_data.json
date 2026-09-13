@@ -64832,8 +64832,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 9,
-      "bot_xp": 266,
-      "bot_total_xp": 3986,
+      "bot_xp": 290,
+      "bot_total_xp": 4010,
       "daily_work_count": 58,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -67048,8 +67048,8 @@
       "last_laylow": null
     },
     "807254722251587614": {
-      "cash": 4410,
-      "bank": 0,
+      "cash": 401,
+      "bank": 1804,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -67070,8 +67070,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 700,
-      "bot_total_xp": 9150,
+      "bot_xp": 718,
+      "bot_total_xp": 9168,
       "daily_work_count": 31,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -217039,8 +217039,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 491,
-      "bot_total_xp": 2116,
+      "bot_xp": 508,
+      "bot_total_xp": 2133,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -232657,7 +232657,7 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1789306623912,
+      "1544820489191559270": 1789306938433,
       "791747702689103893": 1789306514717,
       "1456622719985782864": 1789292439802,
       "1082686076491137115": 1789306572845,
@@ -232674,8 +232674,8 @@
       "1470136693821800521": 1789088485919,
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789295881293,
-      "1506785783506534426": 1789306904138,
-      "807254722251587614": 1789306751519,
+      "1506785783506534426": 1789306966879,
+      "807254722251587614": 1789306910657,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789305155873,
       "997903130543005767": 1788970364999,
@@ -232868,21 +232868,10 @@
     "quarters": {
       "2026-Q3": {
         "positive": 27,
-        "negative": 9,
+        "negative": 10,
         "neutral": 741,
-        "total": 777,
+        "total": 778,
         "mentions": [
-          {
-            "at": "2026-09-12T17:29:42.309Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "1016433654270009354",
-            "messageId": "1548385115430977618",
-            "text": "<@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:29:42.876Z",
             "userId": "963834359994007614",
@@ -238369,6 +238358,18 @@
             "messageId": "1548688668586152037",
             "text": "nikanor needs to be dep premier",
             "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-13T13:41:45.440Z",
+            "userId": "1506785783506534426",
+            "username": "yuktobanian1",
+            "channelId": "605951687974453248",
+            "messageId": "1548690145555910758",
+            "text": "<@1082686076491137115> your pro propaganda newspaper is done",
+            "sentiment": "negative",
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
@@ -246925,9 +246926,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-13T13:41:45.440Z",
+        "userId": "1506785783506534426",
+        "username": "yuktobanian1",
+        "channelId": "605951687974453248",
+        "messageId": "1548690145555910758",
+        "text": "<@1082686076491137115> your pro propaganda newspaper is done",
+        "sentiment": "negative",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-13T13:35:52.439Z",
+    "last_scan": "2026-09-13T13:41:45.440Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
