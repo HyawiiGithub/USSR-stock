@@ -67,7 +67,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 124,
-      "heat": 2.5316217258641998,
+      "heat": 1.6802711107563755,
       "wanted": 0,
       "last_illegal": "2026-09-14T01:51:10.706Z",
       "total_heat_generated": 116.056,
@@ -225855,8 +225855,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 260.0267420411466,
-      "underground_heat": 670.024592477371,
+      "heat": 259.3310405872475,
+      "underground_heat": 669.5160876977317,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225873,8 +225873,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 216188,
-      "market_cap": 216188,
+      "share_price": 216241,
+      "market_cap": 216241,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -225903,7 +225903,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        204946,
         204994,
         205035,
         205210,
@@ -226002,7 +226001,8 @@
         212850,
         213858,
         213786,
-        216188
+        216188,
+        216241
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -226249,21 +226249,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 107,
-      "change_percent": 0.4591771404748339,
-      "recorded_at": "2026-09-13T21:42:22.865Z"
-    },
-    {
-      "price": 106,
-      "change_percent": -0.2246536881006516,
-      "recorded_at": "2026-09-13T21:43:35.522Z"
-    },
-    {
-      "price": 105,
-      "change_percent": -0.023975384285286356,
-      "recorded_at": "2026-09-13T21:44:30.237Z"
-    },
     {
       "price": 105,
       "change_percent": 0.5562312490372602,
@@ -226748,6 +226733,21 @@
       "price": 80,
       "change_percent": 1.5187271996435954,
       "recorded_at": "2026-09-14T02:38:36.909Z"
+    },
+    {
+      "price": 81,
+      "change_percent": 1.41519639006072,
+      "recorded_at": "2026-09-14T02:43:03.098Z"
+    },
+    {
+      "price": 78,
+      "change_percent": -2.7792378276983616,
+      "recorded_at": "2026-09-14T02:43:32.026Z"
+    },
+    {
+      "price": 79,
+      "change_percent": 1.3349850797279574,
+      "recorded_at": "2026-09-14T02:43:36.799Z"
     }
   ],
   "factory_names": [
@@ -227081,13 +227081,13 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Refined Fuel": 5
+    "Refined Fuel": 4
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 132,
-    "Refined Fuel": 104,
+    "Refined Fuel": 105,
     "Fuel": 105,
     "Iron Ingot": 53,
     "Shale Oil": 27,
@@ -227108,11 +227108,6 @@
     "Sugar": 10
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-06T18:51:48.011Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 2,
@@ -228607,6 +228602,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-09-14T02:28:34.326Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-09-14T02:43:34.339Z"
     }
   ],
   "demand_history": {
@@ -229313,11 +229313,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.3319085230608552,
-        "at": "2026-08-28T15:42:37.579Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2910527302837322,
         "at": "2026-08-28T16:12:37.591Z",
         "supply": 0
@@ -229610,6 +229605,11 @@
       {
         "demand": 1.2144823573214707,
         "at": "2026-09-14T02:28:34.326Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.231160585935864,
+        "at": "2026-09-14T02:43:34.339Z",
         "supply": 0
       }
     ],
@@ -232840,10 +232840,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 680723,
-      "at": "2026-09-13T18:32:06.942Z"
-    },
-    {
       "total": 648236,
       "at": "2026-09-13T18:37:07.838Z"
     },
@@ -233238,6 +233234,10 @@
     {
       "total": 664316,
       "at": "2026-09-14T02:38:37.368Z"
+    },
+    {
+      "total": 664334,
+      "at": "2026-09-14T02:43:37.465Z"
     }
   ],
   "gold_rush": null,
@@ -233264,7 +233264,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 26.26759999999987,
+  "heat_global": 25.96759999999987,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
