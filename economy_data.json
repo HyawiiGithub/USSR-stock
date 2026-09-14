@@ -676,8 +676,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 808,
-      "bot_total_xp": 6583,
+      "bot_xp": 824,
+      "bot_total_xp": 6599,
       "daily_work_count": 27,
       "shock_worker": false,
       "mee6_level": 11,
@@ -745,15 +745,15 @@
       "last_laylow": null
     },
     "874346333882945547": {
-      "cash": 816,
+      "cash": 836,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-13T23:19:57.270Z",
-      "work_count": 1343,
+      "last_work": "2026-09-14T06:36:47.946Z",
+      "work_count": 1344,
       "last_claim": "2026-09-12T13:56:22.791Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -767,11 +767,11 @@
       "last_illegal": "2026-09-13T23:19:57.270Z",
       "total_heat_generated": 581.3179999999999,
       "bot_level": 18,
-      "bot_xp": 208,
-      "bot_total_xp": 18583,
-      "daily_work_count": 265,
+      "bot_xp": 253,
+      "bot_total_xp": 18628,
+      "daily_work_count": 266,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-13",
+      "last_daily_work_date": "2026-09-14",
       "mee6_level": 18,
       "last_laylow": "2026-09-13T23:19:50.215Z"
     },
@@ -225720,14 +225720,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 34346,
+      "funds": 34341,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 200597,
-      "market_cap": 200597,
+      "share_price": 202169,
+      "market_cap": 202169,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -225770,14 +225770,14 @@
       "inventory": {
         "Gold Bar": 21,
         "Fish": 2,
-        "Wheat": 46,
-        "Sugar": 105,
+        "Wheat": 51,
+        "Sugar": 115,
         "Reactor Core": 3,
         "Copper": 95,
         "Lead": 12,
-        "Timber": 9,
-        "Sulphur": 42,
-        "Coal": 3,
+        "Timber": 12,
+        "Sulphur": 44,
+        "Coal": 6,
         "Contraband: Cannabis": 8,
         "Contraband: LSD Sheets": 1,
         "Uranium": 2,
@@ -225785,18 +225785,18 @@
         "Contraband: Synthetic": 8,
         "Gold": 4,
         "Contraband: Coca Paste": 3,
-        "Oil": 6,
+        "Oil": 8,
         "Timber Planks": 10,
-        "Iron Ore": 7,
+        "Iron Ore": 10,
         "Fuel": 1,
         "Copper Ingot": 5,
-        "Contraband: Cocaine": 1
+        "Contraband: Cocaine": 1,
+        "Bread": 4,
+        "Cake": 4
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-13T19:21:55.791Z",
+      "last_collect": "2026-09-14T06:36:56.015Z",
       "price_history": [
-        196626,
-        196787,
         196790,
         196793,
         196788,
@@ -225894,7 +225894,9 @@
         200240,
         200259,
         200546,
-        200597
+        200597,
+        200712,
+        202169
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -225915,8 +225917,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 241.68667779023482,
-      "underground_heat": 659.1502617743265,
+      "heat": 237.68667779023482,
+      "underground_heat": 655.1502617743265,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226309,16 +226311,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 89,
-      "change_percent": 0.19448013293145947,
-      "recorded_at": "2026-09-14T00:38:36.409Z"
-    },
-    {
-      "price": 83,
-      "change_percent": -6.483588950939626,
-      "recorded_at": "2026-09-14T00:43:31.954Z"
-    },
     {
       "price": 83,
       "change_percent": 1.1796053823495956,
@@ -226808,6 +226800,16 @@
       "price": 90,
       "change_percent": 1.1871500353358055,
       "recorded_at": "2026-09-14T06:33:39.232Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.0451858356624826,
+      "recorded_at": "2026-09-14T06:36:49.017Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 1.152060448916531,
+      "recorded_at": "2026-09-14T06:36:57.106Z"
     }
   ],
   "factory_names": [
@@ -233484,7 +233486,8 @@
         "1522851408611770409": 1,
         "1545521924166131823": 3,
         "730223629849199093": 1,
-        "807254722251587614": 1
+        "807254722251587614": 1,
+        "874346333882945547": 1
       }
     },
     "collect_daily": {
@@ -233516,7 +233519,8 @@
         "Ukrainian SSR": 0
       },
       "2026-09-14": {
-        "Nuristani SSR": 2
+        "Nuristani SSR": 2,
+        "Kazakh SSR": 0
       }
     },
     "qotd": {
@@ -233540,7 +233544,7 @@
     "cooldowns": {
       "1544820489191559270": 1789343155368,
       "791747702689103893": 1789360750379,
-      "1456622719985782864": 1789367768082,
+      "1456622719985782864": 1789367840870,
       "1082686076491137115": 1789342934502,
       "1229741033265299506": 1789336114548,
       "1536339779140976711": 1789337059377,
@@ -250728,9 +250732,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 28,
-    "beforeLvlC": 14,
-    "afterLvl": 14,
+    "xpGainC": 29,
+    "beforeLvlC": 18,
+    "afterLvl": 18,
     "leveled": []
   },
   "central_bank": {
@@ -251425,7 +251429,7 @@
       "1000271630154596473": 0,
       "1522851408611770409": 16,
       "1082686076491137115": 13,
-      "874346333882945547": 43,
+      "874346333882945547": 52,
       "1511756975392948224": 40,
       "1325111649816023092": 20,
       "1536339779140976711": 0,
@@ -251447,7 +251451,7 @@
       "1494027370208825436": "2026-09-13T09:26:38.723Z",
       "1000271630154596473": "2026-09-13T09:31:01.131Z",
       "1522851408611770409": "2026-09-14T05:01:45.154Z",
-      "874346333882945547": "2026-09-13T22:38:57.636Z",
+      "874346333882945547": "2026-09-14T06:36:39.338Z",
       "1511756975392948224": "2026-09-14T04:38:28.917Z",
       "1325111649816023092": "2026-09-13T21:23:18.063Z",
       "1536339779140976711": "2026-09-13T19:16:30.030Z",
@@ -251558,7 +251562,7 @@
       ]
     },
     "last_ngtrain": {
-      "874346333882945547": "2026-09-13T22:23:40.947Z",
+      "874346333882945547": "2026-09-14T06:36:42.916Z",
       "780837437987094560": "2026-09-13T21:17:11.788Z",
       "1511756975392948224": "2026-09-14T04:38:46.686Z",
       "807254722251587614": "2026-09-14T05:58:15.449Z",
