@@ -1573,8 +1573,8 @@
       "last_illegal": "2026-09-14T17:25:38.049Z",
       "total_heat_generated": 207.336,
       "bot_level": 14,
-      "bot_xp": 1076,
-      "bot_total_xp": 11121,
+      "bot_xp": 1098,
+      "bot_total_xp": 11143,
       "daily_work_count": 57,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-14",
@@ -226139,14 +226139,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 35278,
+      "funds": 37388,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 208207,
-      "market_cap": 208207,
+      "share_price": 209029,
+      "market_cap": 209029,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -226201,7 +226201,6 @@
         "Iron Ore": 46,
         "Copper Ingot": 26,
         "Bread": 8,
-        "Cake": 8,
         "Contraband: Cannabis": 4,
         "Contraband: Opium": 4,
         "Uranium Rod": 1,
@@ -226216,7 +226215,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-14T18:48:18.846Z",
       "price_history": [
-        201110,
         201107,
         201088,
         201061,
@@ -226315,11 +226313,12 @@
         208158,
         208177,
         208172,
-        208207
+        208207,
+        209029
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-14T18:41:50.787Z",
+      "last_factorydeal": "2026-09-14T19:13:59.662Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -227231,10 +227230,7 @@
       "recorded_at": "2026-09-14T19:12:15.410Z"
     }
   ],
-  "factory_names": [
-    "Red Star Steelworks",
-    "Soviet Iron Foundry"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Siberian Mining Co",
     "Brezhnev Auto Factory",
@@ -227242,7 +227238,9 @@
     "Khrushchev Agricultural",
     "Lenin Machine Works",
     "Ural Heavy Industries",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Soviet Iron Foundry",
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -227497,35 +227495,35 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3989341505881856,
-    "Cake": 1.3898786106114518,
+    "Cake": 1.2098786106114519,
     "Bread": 1.3874339246729253,
     "Copper Ingot": 1.3446927607697514,
-    "Iron Ingot": 1.3957219893024033,
+    "Iron Ingot": 1.4057219893024033,
     "Steel Ingot": 1.3709952751953112,
     "Gold Bar": 1.251417919629481,
     "Aluminium Ingot": 1.4078657063084565,
-    "Timber Planks": 1.3453933891050955,
+    "Timber Planks": 1.3553933891050955,
     "Bricks": 1.4079455128083742,
     "Concrete": 1.3879455128083742,
     "Glass": 1.3979455128083742,
     "Steel Beam": 1.4045857457933197,
-    "Machine Parts": 1.3865787374466485,
+    "Machine Parts": 1.3965787374466485,
     "Refined Fuel": 1.3493348224702122,
     "Uranium Rod": 1.3508234576511713,
-    "Reactor Core": 1.3967294495147318,
+    "Reactor Core": 1.4067294495147318,
     "Circuit Board": 1.4045857457933197,
     "Flour": 1.361197168036485,
     "Sugar": 1.0285238360300362,
     "Wine": 1.3979455128083742,
-    "Canned Food": 1.3959909616969526,
+    "Canned Food": 1.4059909616969526,
     "Canned Fish": 1.4108699159545357,
-    "Smoked Fish": 1.3959909616969526,
+    "Smoked Fish": 1.4059909616969526,
     "Fish Stew": 1.3879455128083742,
     "Peat Fuel": 1.4045857457933197,
     "Gas Fuel": 1.3860154159603937,
     "Fertilizer": 1.3979455128083742,
     "Cotton Fabric": 1.402995381130689,
-    "Manganese Alloy": 1.3979455128083742,
+    "Manganese Alloy": 1.4079455128083742,
     "Sunflower Oil": 1.4068972965308415,
     "Linen": 1.3979455128083742,
     "Corn Meal": 1.3879455128083742,
@@ -227534,11 +227532,11 @@
     "Antimony Alloy": 1.3968972965308415,
     "Molybdenum Rod": 1.3979455128083742,
     "Aluminium Sheet": 1.4044932212727144,
-    "Shale Oil": 1.4045857457933197
+    "Shale Oil": 1.4145857457933197
   },
   "market_last_sale": {
     "Fuel": "2026-09-13T16:58:25.066Z",
-    "Cake": "2026-09-14T06:46:40.838Z",
+    "Cake": "2026-09-14T19:13:59.662Z",
     "Bread": "2026-09-14T10:35:21.493Z",
     "Copper Ingot": "2026-09-08T15:46:21.969Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
@@ -227561,7 +227559,9 @@
     "Sugar": "2026-09-14T12:40:01.500Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Cake": 8
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -234180,7 +234180,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789409383403,
-      "1511756975392948224": 1789413027604,
+      "1511756975392948224": 1789413217682,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
@@ -252156,7 +252156,7 @@
     },
     "1495413593242337421": {
       "date": "2026-09-14",
-      "used": 3,
+      "used": 4,
       "history": [
         {
           "role": "user",
@@ -252181,6 +252181,14 @@
         {
           "role": "assistant",
           "content": "Based on the web information, **Armando León Reséndez** is a **Mexican professional footballer** who plays as a **forward** for **NK Osijek** in the Croatian Football League. He is listed among the top companies (though he's actually an athlete, not a corporate entity).\n\nIf you were referring to \"Leon\" more broadly, there are several notable people with similar names globally, but based on the specific context of your previous question about Discord bots and the provided data, you're likely aski"
+        },
+        {
+          "role": "user",
+          "content": "who is Leon Gazi ?"
+        },
+        {
+          "role": "assistant",
+          "content": "<|tool_call_start|>[google(query='Leon Gazi Turkey historical figure'), google(query='Seyyid Battal Ghazi Abdallah al-Battal')]<|tool_call_end|>"
         }
       ]
     }
