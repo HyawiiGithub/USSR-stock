@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 410,
-      "heat": 12.237472574973097,
+      "heat": 11.298756242529956,
       "wanted": 0,
       "last_illegal": "2026-09-14T19:57:14.086Z",
       "total_heat_generated": 756.8240000000001,
@@ -1568,7 +1568,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 5.688475820514322,
+      "heat": 4.766659207053631,
       "wanted": 0,
       "last_illegal": "2026-09-14T19:52:11.761Z",
       "total_heat_generated": 224.192,
@@ -226263,8 +226263,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 245653,
-      "market_cap": 245653,
+      "share_price": 245861,
+      "market_cap": 245861,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -226331,7 +226331,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-14T18:48:18.846Z",
       "price_history": [
-        202959,
         202964,
         202961,
         202982,
@@ -226430,7 +226429,8 @@
         245418,
         245440,
         245574,
-        245653
+        245653,
+        245861
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -226451,8 +226451,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 376.9392172116907,
-      "underground_heat": 914.0043949319448,
+      "heat": 376.4057285012409,
+      "underground_heat": 913.4475646909249,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226845,16 +226845,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": 0.6904868077257024,
-      "recorded_at": "2026-09-14T18:26:06.917Z"
-    },
-    {
-      "price": 95,
-      "change_percent": 0.6449401575641596,
-      "recorded_at": "2026-09-14T18:29:15.323Z"
-    },
     {
       "price": 95,
       "change_percent": 0.7534844551005008,
@@ -227344,6 +227334,16 @@
       "price": 114,
       "change_percent": 0.48032393246495,
       "recorded_at": "2026-09-14T21:50:58.619Z"
+    },
+    {
+      "price": 114,
+      "change_percent": 0.39067043481481767,
+      "recorded_at": "2026-09-14T21:55:17.153Z"
+    },
+    {
+      "price": 113,
+      "change_percent": -0.05117416044443075,
+      "recorded_at": "2026-09-14T21:55:58.623Z"
     }
   ],
   "factory_names": [
@@ -227364,11 +227364,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 15.193528511042903,
+  "inflation": 15.19722751369429,
   "money_printed": 21392,
   "total_bank_reserves": 512356,
   "inflation_history": [
-    0,
     0,
     0,
     0,
@@ -227467,7 +227466,8 @@
     15.037517840340842,
     15.058424681728857,
     15.093400404824157,
-    15.193528511042903
+    15.193528511042903,
+    15.19722751369429
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 29,
@@ -227611,45 +227611,45 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.385538401130646,
-    "Cake": 1.3304257378538071,
-    "Bread": 1.195586280102836,
-    "Copper Ingot": 1.3880177477617113,
+    "Fuel": 1.3878839595781431,
+    "Cake": 1.345448104309783,
+    "Bread": 1.2119480584639142,
+    "Copper Ingot": 1.390378390186363,
     "Iron Ingot": 1.367494353093798,
-    "Steel Ingot": 1.3582655881889283,
-    "Gold Bar": 1.1702190375894381,
-    "Aluminium Ingot": 1.2707623193564435,
-    "Timber Planks": 1.3431122982880426,
-    "Bricks": 1.2646987693430034,
-    "Concrete": 1.2646987693430034,
-    "Glass": 1.2646987693430034,
-    "Steel Beam": 1.3922768795490263,
-    "Machine Parts": 1.3731416679753197,
-    "Refined Fuel": 1.3627705229657272,
-    "Uranium Rod": 1.3495555398852048,
-    "Reactor Core": 1.3830590544995807,
-    "Circuit Board": 1.208392781430611,
-    "Flour": 1.237808735631968,
+    "Steel Ingot": 1.360445222887728,
+    "Gold Bar": 1.1766142129949815,
+    "Aluminium Ingot": 1.281101333807928,
+    "Timber Planks": 1.344635811017619,
+    "Bricks": 1.2755228677955632,
+    "Concrete": 1.2755228677955632,
+    "Glass": 1.2755228677955632,
+    "Steel Beam": 1.3942076596617698,
+    "Machine Parts": 1.3754118065370453,
+    "Refined Fuel": 1.3720778922242953,
+    "Uranium Rod": 1.3601990234002463,
+    "Reactor Core": 1.3853895289699236,
+    "Circuit Board": 1.2367525062399316,
+    "Flour": 1.247533243130617,
     "Sugar": 0.9983215525793651,
-    "Wine": 1.2646987693430034,
-    "Canned Food": 1.3909194457530976,
-    "Canned Fish": 1.3904970943927766,
-    "Smoked Fish": 1.3904970943927766,
-    "Fish Stew": 1.2707623193564435,
-    "Peat Fuel": 1.3904970943927766,
-    "Gas Fuel": 1.3731416679753197,
-    "Fertilizer": 1.2686951431218607,
-    "Cotton Fabric": 1.3873181862868962,
-    "Manganese Alloy": 1.2646987693430034,
-    "Sunflower Oil": 1.2747586931353005,
-    "Linen": 1.2686951431218607,
-    "Corn Meal": 1.2646987693430034,
-    "Tea Pack": 1.2646987693430034,
-    "Citrus Juice": 1.2686951431218607,
-    "Antimony Alloy": 1.2646987693430034,
-    "Molybdenum Rod": 1.2646987693430034,
-    "Aluminium Sheet": 1.3904970943927766,
-    "Shale Oil": 1.3904970943927766
+    "Wine": 1.2755228677955632,
+    "Canned Food": 1.3931895843148232,
+    "Canned Fish": 1.3928728207945824,
+    "Smoked Fish": 1.3928728207945824,
+    "Fish Stew": 1.281101333807928,
+    "Peat Fuel": 1.3928728207945824,
+    "Gas Fuel": 1.3754118065370453,
+    "Fertilizer": 1.2791995316721119,
+    "Cotton Fabric": 1.3892187984453308,
+    "Manganese Alloy": 1.2755228677955632,
+    "Sunflower Oil": 1.2847779976844764,
+    "Linen": 1.2791995316721119,
+    "Corn Meal": 1.2755228677955632,
+    "Tea Pack": 1.2755228677955632,
+    "Citrus Juice": 1.2791995316721119,
+    "Antimony Alloy": 1.2755228677955632,
+    "Molybdenum Rod": 1.2755228677955632,
+    "Aluminium Sheet": 1.3928728207945824,
+    "Shale Oil": 1.3928728207945824
   },
   "market_last_sale": {
     "Fuel": "2026-09-13T16:58:25.066Z",
@@ -233674,10 +233674,6 @@
   "total_rubles_history": [
     {
       "total": 636213,
-      "at": "2026-09-14T13:43:41.033Z"
-    },
-    {
-      "total": 636213,
       "at": "2026-09-14T13:48:41.024Z"
     },
     {
@@ -234071,6 +234067,10 @@
     {
       "total": 598813,
       "at": "2026-09-14T21:50:59.968Z"
+    },
+    {
+      "total": 598833,
+      "at": "2026-09-14T21:55:58.929Z"
     }
   ],
   "gold_rush": null,
@@ -234097,7 +234097,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 28.97404999999976,
+  "heat_global": 28.67404999999976,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
