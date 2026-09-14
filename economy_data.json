@@ -139,8 +139,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 23,
-      "bot_total_xp": 23,
+      "bot_xp": 44,
+      "bot_total_xp": 44,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
@@ -197,8 +197,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 22,
-      "bot_total_xp": 22,
+      "bot_xp": 39,
+      "bot_total_xp": 39,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
@@ -226,8 +226,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 18,
-      "bot_total_xp": 18,
+      "bot_xp": 35,
+      "bot_total_xp": 35,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
@@ -376,10 +376,10 @@
       "1225275427145121903": 1789401008554,
       "1082686076491137115": 1789401144445,
       "730696111198699600": 1789401039114,
-      "1483005845867593831": 1789401066813,
+      "1483005845867593831": 1789401165744,
       "1397601108616024075": 1789401101910,
-      "807254722251587614": 1789401111239,
-      "1456622719985782864": 1789401112411,
+      "807254722251587614": 1789401171609,
+      "1456622719985782864": 1789401187647,
       "874346333882945547": 1789401147304
     }
   },
@@ -396,9 +396,9 @@
     "quarters": {
       "2026-Q3": {
         "positive": 0,
-        "negative": 0,
-        "neutral": 3,
-        "total": 3,
+        "negative": 1,
+        "neutral": 4,
+        "total": 5,
         "mentions": [
           {
             "at": "2026-09-14T15:51:51.659Z",
@@ -432,6 +432,30 @@
             "messageId": "1549085400151105649",
             "text": "<@1082686076491137115> please romove the RGES role from <@1397601108616024075>",
             "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-14T15:52:45.867Z",
+            "userId": "1483005845867593831",
+            "username": "cloobulus",
+            "channelId": "605951687974453248",
+            "messageId": "1549085507903037551",
+            "text": "<@1082686076491137115> hire me, please",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-14T15:53:07.807Z",
+            "userId": "1456622719985782864",
+            "username": "seren_menzhinsky",
+            "channelId": "605951687974453248",
+            "messageId": "1549085599800098897",
+            "text": "<@1082686076491137115> i may kill you",
+            "sentiment": "negative",
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
@@ -476,9 +500,33 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-14T15:52:45.867Z",
+        "userId": "1483005845867593831",
+        "username": "cloobulus",
+        "channelId": "605951687974453248",
+        "messageId": "1549085507903037551",
+        "text": "<@1082686076491137115> hire me, please",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-14T15:53:07.807Z",
+        "userId": "1456622719985782864",
+        "username": "seren_menzhinsky",
+        "channelId": "605951687974453248",
+        "messageId": "1549085599800098897",
+        "text": "<@1082686076491137115> i may kill you",
+        "sentiment": "negative",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-14T15:52:20.259Z",
+    "last_scan": "2026-09-14T15:53:07.807Z",
     "report_channel_id": null,
     "last_report": null,
     "report_schedule": "quarterly",
