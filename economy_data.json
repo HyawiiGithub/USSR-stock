@@ -1551,15 +1551,15 @@
       "last_laylow": null
     },
     "1511756975392948224": {
-      "cash": 797,
+      "cash": 915,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-14T19:33:41.035Z",
-      "work_count": 245,
+      "last_work": "2026-09-14T19:52:11.761Z",
+      "work_count": 246,
       "last_claim": "2026-09-12T13:53:06.966Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1568,10 +1568,10 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 8.551648452260956,
+      "heat": 25.27698178559429,
       "wanted": 0,
-      "last_illegal": "2026-09-14T17:25:38.049Z",
-      "total_heat_generated": 207.336,
+      "last_illegal": "2026-09-14T19:52:11.761Z",
+      "total_heat_generated": 224.192,
       "bot_level": 14,
       "bot_xp": 1254,
       "bot_total_xp": 11299,
@@ -226198,14 +226198,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 37333,
+      "funds": 37328,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 226393,
-      "market_cap": 226393,
+      "share_price": 226379,
+      "market_cap": 226379,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -226248,7 +226248,7 @@
       "inventory": {
         "Gold Bar": 23,
         "Fish": 2,
-        "Wheat": 141,
+        "Wheat": 140,
         "Sugar": 56,
         "Reactor Core": 3,
         "Copper": 31,
@@ -226262,7 +226262,7 @@
         "Contraband: Cannabis": 4,
         "Contraband: Opium": 4,
         "Uranium Rod": 1,
-        "Contraband: Synthetic": 2,
+        "Contraband: Synthetic": 3,
         "Oil": 4,
         "Contraband: Coca Paste": 1,
         "Gold": 2,
@@ -226274,7 +226274,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-14T18:48:18.846Z",
       "price_history": [
-        201367,
         201356,
         201345,
         201468,
@@ -226373,7 +226372,8 @@
         345066,
         397282,
         226620,
-        226393
+        226393,
+        226379
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -226394,8 +226394,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 368.9936286490101,
-      "underground_heat": 891.1040329069061,
+      "heat": 379.04189531567675,
+      "underground_heat": 907.9600329069061,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226788,11 +226788,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.43636905508852347,
-      "recorded_at": "2026-09-14T17:05:43.959Z"
-    },
     {
       "price": 100,
       "change_percent": 0.12436582036872963,
@@ -227287,6 +227282,11 @@
       "price": 116,
       "change_percent": -0.40210519921949306,
       "recorded_at": "2026-09-14T19:50:57.098Z"
+    },
+    {
+      "price": 116,
+      "change_percent": 0.1581208177855181,
+      "recorded_at": "2026-09-14T19:52:12.711Z"
     }
   ],
   "factory_names": [],
@@ -233571,6 +233571,13 @@
       "username": "hyawii2.0",
       "action": "setinflation",
       "details": "offset→9.21% (target ~10%)"
+    },
+    {
+      "at": "2026-09-14T19:52:34.679Z",
+      "by": "1511756975392948224",
+      "username": "localmanandwoman",
+      "action": "launder",
+      "details": "₽196 dirty → ₽98 clean fee ₽98"
     }
   ],
   "total_rubles_history": [
@@ -233999,7 +234006,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 29.99524999999974,
+  "heat_global": 32.52364999999974,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
