@@ -124,7 +124,7 @@
     },
     "918518877414100993": {
       "username": "",
-      "cash": 1828,
+      "cash": 1848,
       "bank": 0,
       "resources": {
         "Natural Gas": 1,
@@ -137,8 +137,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-14T12:39:25.127Z",
-      "work_count": 37,
+      "last_work": "2026-09-14T16:36:12.729Z",
+      "work_count": 38,
       "last_claim": "2026-09-07T13:51:17.121Z",
       "last_collect": null,
       "join_date": "2026-08-22T01:39:30.028689",
@@ -153,9 +153,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 149,
-      "bot_total_xp": 919,
-      "daily_work_count": 16,
+      "bot_xp": 171,
+      "bot_total_xp": 941,
+      "daily_work_count": 17,
       "shock_worker": false,
       "mee6_level": 4,
       "last_daily_work_date": "2026-09-14",
@@ -640,7 +640,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
-      "heat": 12.36825000509022,
+      "heat": 11.537880242126633,
       "wanted": 0,
       "last_illegal": "2026-09-14T15:33:30.359Z",
       "total_heat_generated": 349.26300000000003,
@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 997,
-      "heat": 17.10896810864309,
+      "heat": 16.17881575252111,
       "wanted": 0,
       "last_illegal": "2026-09-14T15:41:18.447Z",
       "total_heat_generated": 708.2810000000001,
@@ -940,7 +940,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 142,
-      "heat": 11.810729340362297,
+      "heat": 10.973902475043666,
       "wanted": 0,
       "last_illegal": "2026-09-14T15:41:50.942Z",
       "total_heat_generated": 14.572000000000001,
@@ -225851,14 +225851,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 28772,
+      "funds": 28767,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 144660,
-      "market_cap": 144660,
+      "share_price": 144891,
+      "market_cap": 144891,
       "employees": 4,
       "level": 1,
       "buildings": {
@@ -225880,21 +225880,19 @@
       },
       "inventory": {
         "Oil": 2,
-        "Iron Ore": 11,
-        "Flour": 17,
+        "Iron Ore": 12,
+        "Flour": 16,
         "Wheat": 136,
         "Cotton": 1,
         "Sugar": 12,
-        "Gas Fuel": 5,
+        "Gas Fuel": 6,
         "Cotton Fabric": 2,
-        "Natural Gas": 4,
+        "Natural Gas": 1,
         "Fuel": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-14T16:35:26.759Z",
       "price_history": [
-        109385,
-        109387,
         109518,
         109489,
         112803,
@@ -225992,7 +225990,9 @@
         147154,
         147205,
         144665,
-        144660
+        144660,
+        144841,
+        144891
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
@@ -226214,8 +226214,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 348.09785263384504,
-      "underground_heat": 839.3125991660178,
+      "heat": 347.34711253391873,
+      "underground_heat": 838.5993635025162,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226608,16 +226608,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 84,
-      "change_percent": 1.259685159536938,
-      "recorded_at": "2026-09-14T12:38:59.491Z"
-    },
-    {
-      "price": 85,
-      "change_percent": 1.3957320207665653,
-      "recorded_at": "2026-09-14T12:39:26.267Z"
-    },
     {
       "price": 85,
       "change_percent": 0.8480347234088769,
@@ -227107,6 +227097,16 @@
       "price": 102,
       "change_percent": -0.31321917399276133,
       "recorded_at": "2026-09-14T16:31:04.059Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.04730087134785404,
+      "recorded_at": "2026-09-14T16:35:28.268Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.5799466321342037,
+      "recorded_at": "2026-09-14T16:36:04.052Z"
     }
   ],
   "factory_names": [
@@ -227374,7 +227374,7 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.4020557738851696,
+    "Fuel": 1.4002719891440358,
     "Cake": 1.3932773009210893,
     "Bread": 1.3900177196697205,
     "Copper Ingot": 1.361707275491188,
@@ -227388,12 +227388,12 @@
     "Glass": 1.3879455128083742,
     "Steel Beam": 1.4045857457933197,
     "Machine Parts": 1.3959909616969526,
-    "Refined Fuel": 1.3609570935608857,
+    "Refined Fuel": 1.367484860448246,
     "Uranium Rod": 1.3964815965345014,
     "Reactor Core": 1.3881789485593248,
     "Circuit Board": 1.4045857457933197,
     "Flour": 1.361197168036485,
-    "Sugar": 1.020305233374088,
+    "Sugar": 1.026340036141677,
     "Wine": 1.3879455128083742,
     "Canned Food": 1.3959909616969526,
     "Canned Fish": 1.4044932212727144,
@@ -233272,10 +233272,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 667193,
-      "at": "2026-09-14T08:08:40.085Z"
-    },
-    {
       "total": 667211,
       "at": "2026-09-14T08:13:40.086Z"
     },
@@ -233670,6 +233666,10 @@
     {
       "total": 637493,
       "at": "2026-09-14T16:31:05.037Z"
+    },
+    {
+      "total": 637493,
+      "at": "2026-09-14T16:36:04.875Z"
     }
   ],
   "gold_rush": null,
@@ -233696,7 +233696,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 28.142149999999752,
+  "heat_global": 27.84214999999975,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -233859,7 +233859,7 @@
         "791747702689103893": 1,
         "1333502314866282617": 1,
         "1511756975392948224": 3,
-        "918518877414100993": 1,
+        "918518877414100993": 2,
         "1536339779140976711": 2,
         "780837437987094560": 1,
         "1225275427145121903": 6,
