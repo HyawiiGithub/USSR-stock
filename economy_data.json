@@ -745,15 +745,15 @@
       "last_laylow": null
     },
     "874346333882945547": {
-      "cash": 978,
+      "cash": 998,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-14T19:57:14.086Z",
-      "work_count": 1409,
+      "last_work": "2026-09-14T20:04:14.028Z",
+      "work_count": 1410,
       "last_claim": "2026-09-14T07:27:08.248Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -767,9 +767,9 @@
       "last_illegal": "2026-09-14T19:57:14.086Z",
       "total_heat_generated": 756.8240000000001,
       "bot_level": 19,
-      "bot_xp": 506,
-      "bot_total_xp": 21501,
-      "daily_work_count": 317,
+      "bot_xp": 523,
+      "bot_total_xp": 21518,
+      "daily_work_count": 318,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-14",
       "mee6_level": 19,
@@ -226198,14 +226198,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 37323,
+      "funds": 46057,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 226452,
-      "market_cap": 226452,
+      "share_price": 226472,
+      "market_cap": 226472,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -226248,7 +226248,7 @@
       "inventory": {
         "Gold Bar": 23,
         "Fish": 2,
-        "Wheat": 139,
+        "Wheat": 138,
         "Sugar": 56,
         "Reactor Core": 3,
         "Copper": 31,
@@ -226268,13 +226268,11 @@
         "Gold": 2,
         "Contraband: Cocaine": 1,
         "Contraband: Heroin": 1,
-        "Circuit Board": 10,
-        "Coal": 2
+        "Coal": 4
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-14T18:48:18.846Z",
       "price_history": [
-        201345,
         201468,
         201604,
         201641,
@@ -226373,11 +226371,12 @@
         226620,
         226393,
         226379,
-        226452
+        226452,
+        226472
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-14T19:13:59.662Z",
+      "last_factorydeal": "2026-09-14T20:04:55.556Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -226788,11 +226787,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.6960505332345996,
-      "recorded_at": "2026-09-14T17:12:56.898Z"
-    },
     {
       "price": 100,
       "change_percent": 0.07456241339462541,
@@ -227287,19 +227281,25 @@
       "price": 116,
       "change_percent": 0.2515569843864054,
       "recorded_at": "2026-09-14T20:00:57.484Z"
+    },
+    {
+      "price": 116,
+      "change_percent": 0.5293056738557524,
+      "recorded_at": "2026-09-14T20:04:15.014Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
-    "Siberian Mining Co",
-    "Brezhnev Auto Factory",
-    "Volga Shipbuilding",
-    "Khrushchev Agricultural",
+  "factory_names": [
+    "Red Star Steelworks",
     "Lenin Machine Works",
-    "Ural Heavy Industries",
     "Stalin Tractor Plant",
-    "Soviet Iron Foundry",
-    "Red Star Steelworks"
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
+    "Soviet Iron Foundry"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -227307,7 +227307,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 8.176484326938123,
-  "money_printed": 11201,
+  "money_printed": 19955,
   "total_bank_reserves": 536604,
   "inflation_history": [
     0,
@@ -227554,14 +227554,14 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.1727777777777777,
-    "Cake": 1.0384294319463623,
+    "Cake": 1.0484294319463623,
     "Bread": 1.166111111111111,
     "Copper Ingot": 1.1738888888888888,
     "Iron Ingot": 1.1683333333333332,
     "Steel Ingot": 1.1605555555555556,
-    "Gold Bar": 1.0388144761904763,
+    "Gold Bar": 1.0488144761904763,
     "Aluminium Ingot": 1.06144,
-    "Timber Planks": 1.1527777777777777,
+    "Timber Planks": 1.1627777777777777,
     "Bricks": 1.06144,
     "Concrete": 1.06144,
     "Glass": 1.06144,
@@ -227570,24 +227570,24 @@
     "Refined Fuel": 1.070297597537449,
     "Uranium Rod": 1.0616140443843758,
     "Reactor Core": 1.1716666666666666,
-    "Circuit Board": 1.163888888888889,
+    "Circuit Board": 0.938888888888889,
     "Flour": 1.0551984761904762,
     "Sugar": 0.9984126984126984,
     "Wine": 1.06144,
-    "Canned Food": 1.175,
+    "Canned Food": 1.185,
     "Canned Fish": 1.175,
     "Smoked Fish": 1.175,
     "Fish Stew": 1.06144,
     "Peat Fuel": 1.175,
     "Gas Fuel": 1.1672222222222222,
-    "Fertilizer": 1.06144,
+    "Fertilizer": 1.07144,
     "Cotton Fabric": 1.1727777777777777,
     "Manganese Alloy": 1.06144,
-    "Sunflower Oil": 1.06144,
-    "Linen": 1.06144,
+    "Sunflower Oil": 1.07144,
+    "Linen": 1.07144,
     "Corn Meal": 1.06144,
     "Tea Pack": 1.06144,
-    "Citrus Juice": 1.06144,
+    "Citrus Juice": 1.07144,
     "Antimony Alloy": 1.06144,
     "Molybdenum Rod": 1.06144,
     "Aluminium Sheet": 1.175,
@@ -227609,7 +227609,7 @@
     "Canned Food": "2026-09-03T18:04:45.489Z",
     "Uranium Rod": "2026-09-14T18:49:32.054Z",
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z",
-    "Circuit Board": "2026-09-07T15:12:38.668Z",
+    "Circuit Board": "2026-09-14T20:04:55.556Z",
     "Cotton Fabric": "2026-09-11T15:25:42.374Z",
     "Reactor Core": "2026-09-11T17:00:53.189Z",
     "Gas Fuel": "2026-09-12T10:42:34.437Z",
@@ -227618,7 +227618,9 @@
     "Sugar": "2026-09-14T12:40:01.500Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Circuit Board": 10
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -234162,7 +234164,7 @@
         "1545521924166131823": 14,
         "730223629849199093": 5,
         "807254722251587614": 7,
-        "874346333882945547": 52,
+        "874346333882945547": 53,
         "1309104161278918706": 1,
         "1325111649816023092": 10,
         "1483005845867593831": 6,
