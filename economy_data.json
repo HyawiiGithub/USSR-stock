@@ -429,8 +429,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 659,
-      "bot_total_xp": 2864,
+      "bot_xp": 683,
+      "bot_total_xp": 2888,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 7,
@@ -439,7 +439,7 @@
     },
     "1470136693821800521": {
       "username": "",
-      "cash": 4305,
+      "cash": 205,
       "bank": 0,
       "resources": {
         "Wheat": 1,
@@ -233681,6 +233681,20 @@
       "username": "localmanandwoman",
       "action": "launder",
       "details": "₽154 dirty → ₽77 clean fee ₽77"
+    },
+    {
+      "at": "2026-09-14T22:52:30.423Z",
+      "by": "1470136693821800521",
+      "username": "alonglongtimeago.",
+      "action": "buy_bond",
+      "details": "bond_3 ₽100 @2% matures 2026-09-21"
+    },
+    {
+      "at": "2026-09-14T22:53:14.401Z",
+      "by": "1470136693821800521",
+      "username": "alonglongtimeago.",
+      "action": "buy_bond",
+      "details": "bond_4 ₽4,000 @2% matures 2026-09-21"
     }
   ],
   "total_rubles_history": [
@@ -234349,7 +234363,7 @@
       "874346333882945547": 1789416787102,
       "870686833976172574": 1789425471617,
       "1186597507720019988": 1789415449337,
-      "1521043721129558017": 1789426283113,
+      "1521043721129558017": 1789426351094,
       "1397601108616024075": 1789421989284,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -252095,7 +252109,7 @@
     "leveled": []
   },
   "central_bank": {
-    "reserves": 10744,
+    "reserves": 14844,
     "interest_rate": 2,
     "prime_rate": 3.5,
     "discount_rate": 6,
@@ -252188,7 +252202,7 @@
         "reserves_after": 10744
       }
     ],
-    "total_added": 5474,
+    "total_added": 9574,
     "total_removed": 144730,
     "created_at": "2026-09-11T19:05:50.282Z",
     "last_update": "2026-09-14T19:38:20.619Z",
@@ -252284,10 +252298,32 @@
         "maturityAt": "2026-09-21T19:36:07.702Z",
         "claimed": false,
         "claimedAt": null
+      },
+      {
+        "id": "bond_3",
+        "userId": "1470136693821800521",
+        "username": "alonglongtimeago.",
+        "amount": 100,
+        "interestRate": 2,
+        "boughtAt": "2026-09-14T22:52:30.422Z",
+        "maturityAt": "2026-09-21T22:52:30.422Z",
+        "claimed": false,
+        "claimedAt": null
+      },
+      {
+        "id": "bond_4",
+        "userId": "1470136693821800521",
+        "username": "alonglongtimeago.",
+        "amount": 4000,
+        "interestRate": 2,
+        "boughtAt": "2026-09-14T22:53:14.401Z",
+        "maturityAt": "2026-09-21T22:53:14.401Z",
+        "claimed": false,
+        "claimedAt": null
       }
     ],
-    "next_id": 3,
-    "total_issued": 5474,
+    "next_id": 5,
+    "total_issued": 9574,
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
