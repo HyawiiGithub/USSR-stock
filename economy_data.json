@@ -640,7 +640,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 72,
-      "heat": 12.471455791287289,
+      "heat": 11.495351343996996,
       "wanted": 0,
       "last_illegal": "2026-09-14T10:36:39.048Z",
       "total_heat_generated": 315.90200000000004,
@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 524,
-      "heat": 18.422284136501325,
+      "heat": 17.45639107368235,
       "wanted": 0,
       "last_illegal": "2026-09-14T10:23:55.648Z",
       "total_heat_generated": 650.588,
@@ -1567,7 +1567,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 401,
-      "heat": 26.728143364489522,
+      "heat": 25.84796633567536,
       "wanted": 0,
       "last_illegal": "2026-09-14T10:20:36.043Z",
       "total_heat_generated": 137.67600000000002,
@@ -226009,8 +226009,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 304.8050402830314,
-      "underground_heat": 764.409377457543,
+      "heat": 304.0092454035792,
+      "underground_heat": 763.7990577440979,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226403,11 +226403,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 85,
-      "change_percent": 0.8060355834092301,
-      "recorded_at": "2026-09-14T06:45:06.476Z"
-    },
     {
       "price": 86,
       "change_percent": 1.2399876627628938,
@@ -226902,6 +226897,11 @@
       "price": 97,
       "change_percent": 7.034926838994203,
       "recorded_at": "2026-09-14T10:43:32.058Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.32047713482721274,
+      "recorded_at": "2026-09-14T10:43:39.540Z"
     }
   ],
   "factory_names": [
@@ -227235,7 +227235,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 3
+    "Bread": 2
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -227251,7 +227251,7 @@
     "Canned Food": 15,
     "Uranium Rod": 17,
     "Canned Fish": 18,
-    "Bread": 220,
+    "Bread": 221,
     "Aluminium Sheet": 8,
     "Circuit Board": 4,
     "Cotton Fabric": 7,
@@ -227262,11 +227262,6 @@
     "Sugar": 10
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 1,
-      "at": "2026-09-06T23:36:48.186Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 2,
@@ -228761,6 +228756,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-14T07:13:34.507Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 1,
+      "at": "2026-09-14T10:43:34.673Z"
     }
   ],
   "demand_history": {
@@ -230952,11 +230952,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.214228802639744,
-        "at": "2026-09-07T09:36:48.366Z",
-        "supply": 0
-      },
-      {
         "demand": 1.236028044362313,
         "at": "2026-09-07T09:51:48.360Z",
         "supply": 0
@@ -231250,6 +231245,11 @@
         "demand": 0.966748713331802,
         "at": "2026-09-13T21:13:32.550Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3266441379264609,
+        "at": "2026-09-14T10:43:34.673Z",
+        "supply": 1
       }
     ],
     "Aluminium Sheet": [
@@ -233022,10 +233022,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 664316,
-      "at": "2026-09-14T02:38:37.368Z"
-    },
-    {
       "total": 664334,
       "at": "2026-09-14T02:43:37.465Z"
     },
@@ -233420,6 +233416,10 @@
     {
       "total": 659563,
       "at": "2026-09-14T10:38:40.794Z"
+    },
+    {
+      "total": 659563,
+      "at": "2026-09-14T10:43:40.754Z"
     }
   ],
   "gold_rush": null,
@@ -233446,7 +233446,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 25.206349999999794,
+  "heat_global": 24.906349999999794,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
