@@ -954,15 +954,15 @@
       "last_daily_work_date": "2026-09-13"
     },
     "791747702689103893": {
-      "cash": 369,
+      "cash": 394,
       "bank": 1025,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-13T20:40:09.601Z",
-      "work_count": 51,
+      "last_work": "2026-09-14T09:38:30.940Z",
+      "work_count": 52,
       "last_claim": null,
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -976,11 +976,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 43,
-      "bot_total_xp": 10088,
-      "daily_work_count": 42,
+      "bot_xp": 66,
+      "bot_total_xp": 10111,
+      "daily_work_count": 43,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-13",
+      "last_daily_work_date": "2026-09-14",
       "mee6_level": 14,
       "last_laylow": null
     },
@@ -225286,14 +225286,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@807254722251587614>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 5883,
+      "funds": 5873,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 167863,
-      "market_cap": 167863,
+      "share_price": 168145,
+      "market_cap": 168145,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -225332,19 +225332,18 @@
         "Uranium Rod": 2,
         "Iron Ore": 19,
         "Sugar": 87,
-        "Wheat": 82,
+        "Wheat": 81,
         "Contraband: Cocaine": 1,
         "Iron Ingot": 4,
         "Copper Ingot": 1,
         "Timber Planks": 10,
         "Uranium": 1,
-        "Gold": 2,
+        "Gold": 4,
         "Steel Ingot": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-14T05:58:37.301Z",
       "price_history": [
-        156302,
         156412,
         156458,
         156478,
@@ -225443,7 +225442,8 @@
         167675,
         167785,
         167805,
-        167863
+        167863,
+        168145
       ],
       "is_state_owned": true,
       "director_id": "807254722251587614",
@@ -226343,16 +226343,6 @@
   "gsi_history": [
     {
       "price": 84,
-      "change_percent": 0.9952903750391876,
-      "recorded_at": "2026-09-14T05:13:37.693Z"
-    },
-    {
-      "price": 84,
-      "change_percent": 1.123284039568271,
-      "recorded_at": "2026-09-14T05:18:37.684Z"
-    },
-    {
-      "price": 84,
       "change_percent": 1.0625203273821078,
       "recorded_at": "2026-09-14T05:23:37.726Z"
     },
@@ -226840,6 +226830,16 @@
       "price": 96,
       "change_percent": 0.3193856633153044,
       "recorded_at": "2026-09-14T09:33:47.668Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.498495061275832,
+      "recorded_at": "2026-09-14T09:38:31.999Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.44018310370245184,
+      "recorded_at": "2026-09-14T09:38:39.518Z"
     }
   ],
   "factory_names": [
@@ -226882,8 +226882,8 @@
     0,
     0,
     0,
-    0,
     25,
+    0,
     0,
     0,
     0,
@@ -227108,9 +227108,9 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3905754734303373,
-    "Cake": 1.387960060070579,
+    "Cake": 1.3901282019016616,
     "Bread": 1.3941441379264607,
-    "Copper Ingot": 1.3754080140779306,
+    "Copper Ingot": 1.3738140750745769,
     "Iron Ingot": 1.3796302533023457,
     "Steel Ingot": 1.3829709398009065,
     "Gold Bar": 1.251417919629481,
@@ -227126,7 +227126,7 @@
     "Reactor Core": 1.3881789485593248,
     "Circuit Board": 1.3959909616969526,
     "Flour": 1.341197168036485,
-    "Sugar": 0.8912371060178155,
+    "Sugar": 0.8939117004811035,
     "Wine": 1.3879455128083742,
     "Canned Food": 1.3959909616969526,
     "Canned Fish": 1.3959909616969526,
@@ -233534,7 +233534,8 @@
         "874346333882945547": 13,
         "1309104161278918706": 1,
         "1325111649816023092": 1,
-        "1483005845867593831": 3
+        "1483005845867593831": 3,
+        "791747702689103893": 1
       }
     },
     "collect_daily": {
