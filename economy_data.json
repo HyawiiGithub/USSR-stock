@@ -227571,7 +227571,7 @@
     "Refined Fuel": 1.1795006558185128,
     "Uranium Rod": 1.163298848903895,
     "Reactor Core": 1.299267113095238,
-    "Circuit Board": 0.9778042784025303,
+    "Circuit Board": 0.9978042784025303,
     "Flour": 1.122514195472254,
     "Sugar": 0.9984126984126984,
     "Wine": 1.1363673907199998,
@@ -227620,7 +227620,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Circuit Board": 9
+    "Circuit Board": 8
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -227638,7 +227638,7 @@
     "Canned Fish": 18,
     "Bread": 223,
     "Aluminium Sheet": 8,
-    "Circuit Board": 5,
+    "Circuit Board": 6,
     "Cotton Fabric": 7,
     "Reactor Core": 2,
     "Gas Fuel": 46,
@@ -227647,11 +227647,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-07T09:21:48.365Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -229146,6 +229141,11 @@
       "item": "Circuit Board",
       "qty": 1,
       "at": "2026-09-14T20:15:55.985Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 1,
+      "at": "2026-09-14T20:30:55.989Z"
     }
   ],
   "demand_history": {
@@ -231693,6 +231693,11 @@
       {
         "demand": 0.9456474354320988,
         "at": "2026-09-14T20:15:55.985Z",
+        "supply": 0
+      },
+      {
+        "demand": 0.9778042784025303,
+        "at": "2026-09-14T20:30:55.990Z",
         "supply": 0
       }
     ],
