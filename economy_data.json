@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 657,
-      "heat": 15.113,
+      "heat": 11.058855786060988,
       "wanted": 0,
       "last_illegal": "2026-09-14T12:39:30.476Z",
       "total_heat_generated": 665.701,
@@ -773,7 +773,7 @@
       "shock_worker": false,
       "last_daily_work_date": "2026-09-14",
       "mee6_level": 18,
-      "last_laylow": "2026-09-14T10:35:58.548Z"
+      "last_laylow": "2026-09-14T12:43:26.344Z"
     },
     "": {
       "cash": 0,
@@ -1567,13 +1567,13 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 28.552411657878196,
+      "heat": 27.715974020444047,
       "wanted": 0,
       "last_illegal": "2026-09-14T12:19:48.984Z",
       "total_heat_generated": 167.90300000000002,
       "bot_level": 13,
-      "bot_xp": 1475,
-      "bot_total_xp": 9925,
+      "bot_xp": 1500,
+      "bot_total_xp": 9950,
       "daily_work_count": 51,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-14",
@@ -226067,8 +226067,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 313.1842015685061,
-      "underground_heat": 790.9426342727218,
+      "heat": 312.4218063570102,
+      "underground_heat": 790.2001924308095,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226461,11 +226461,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.9391089110191134,
-      "recorded_at": "2026-09-14T07:48:39.459Z"
-    },
     {
       "price": 100,
       "change_percent": 0.1565180539596268,
@@ -226960,6 +226955,11 @@
       "price": 85,
       "change_percent": 0.8480347234088769,
       "recorded_at": "2026-09-14T12:39:31.510Z"
+    },
+    {
+      "price": 85,
+      "change_percent": 0.8935519576881394,
+      "recorded_at": "2026-09-14T12:43:39.926Z"
     }
   ],
   "factory_names": [
@@ -227246,7 +227246,7 @@
     "Reactor Core": 1.3881789485593248,
     "Circuit Board": 1.4044932212727144,
     "Flour": 1.351197168036485,
-    "Sugar": 0.8999324054705975,
+    "Sugar": 0.9199324054705975,
     "Wine": 1.3879455128083742,
     "Canned Food": 1.3959909616969526,
     "Canned Fish": 1.4044932212727144,
@@ -227292,9 +227292,7 @@
     "Sugar": "2026-09-14T12:40:01.500Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Sugar": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -227317,14 +227315,9 @@
     "Gas Fuel": 46,
     "Steel Beam": 2,
     "Machine Parts": 4,
-    "Sugar": 10
+    "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-07T07:06:48.207Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -228819,6 +228812,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-14T11:13:34.673Z"
+    },
+    {
+      "item": "Sugar",
+      "qty": 1,
+      "at": "2026-09-14T12:43:34.709Z"
     }
   ],
   "demand_history": {
@@ -231624,6 +231622,11 @@
         "demand": 0.9592620195528276,
         "at": "2026-09-13T02:49:15.511Z",
         "supply": 168
+      },
+      {
+        "demand": 0.8999324054705975,
+        "at": "2026-09-14T12:43:34.709Z",
+        "supply": 175
       }
     ]
   },
@@ -233102,10 +233105,6 @@
   "total_rubles_history": [
     {
       "total": 664394,
-      "at": "2026-09-14T04:38:38.004Z"
-    },
-    {
-      "total": 664394,
       "at": "2026-09-14T04:43:38.093Z"
     },
     {
@@ -233499,6 +233498,10 @@
     {
       "total": 637176,
       "at": "2026-09-14T12:38:40.838Z"
+    },
+    {
+      "total": 637216,
+      "at": "2026-09-14T12:43:40.819Z"
     }
   ],
   "gold_rush": null,
@@ -233525,7 +233528,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 25.10734999999978,
+  "heat_global": 24.80734999999978,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -233824,7 +233827,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789253948737,
-      "1511756975392948224": 1789389737394,
+      "1511756975392948224": 1789389845176,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
