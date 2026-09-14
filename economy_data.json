@@ -67,7 +67,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 124,
-      "heat": 10.944365226837535,
+      "heat": 10.004294129642288,
       "wanted": 0,
       "last_illegal": "2026-09-14T01:51:10.706Z",
       "total_heat_generated": 116.056,
@@ -225855,8 +225855,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 265.95565040227643,
-      "underground_heat": 676.0731462655626,
+      "heat": 265.3219442271772,
+      "underground_heat": 675.5124755935888,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -225867,14 +225867,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 18548,
+      "funds": 24958,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 212850,
-      "market_cap": 212850,
+      "share_price": 216188,
+      "market_cap": 216188,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -225898,15 +225898,11 @@
         "Oil": 132,
         "Gold": 20,
         "Wheat": 191,
-        "Iron Ingot": 1,
-        "Fuel": 16
+        "Iron Ingot": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        204240,
-        204983,
-        204988,
         204946,
         204994,
         205035,
@@ -226003,11 +225999,14 @@
         212688,
         212709,
         212848,
-        212850
+        212850,
+        213858,
+        213786,
+        216188
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
-      "last_factorydeal": "2026-09-11T13:27:30.363Z",
+      "last_factorydeal": "2026-09-14T01:59:05.238Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -226250,11 +226249,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 108,
-      "change_percent": 0.2286356157003183,
-      "recorded_at": "2026-09-13T21:27:20.879Z"
-    },
     {
       "price": 108,
       "change_percent": 0.5045592157171714,
@@ -226749,20 +226743,25 @@
       "price": 90,
       "change_percent": 0.6293391807061552,
       "recorded_at": "2026-09-14T01:55:48.969Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.4882986779880999,
+      "recorded_at": "2026-09-14T01:58:36.344Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Stalin Tractor Plant",
     "Brezhnev Auto Factory",
-    "Siberian Mining Co",
     "Ural Heavy Industries"
   ],
   "used_factory_names": [
     "Volga Shipbuilding",
-    "Khrushchev Agricultural"
+    "Khrushchev Agricultural",
+    "Stalin Tractor Plant",
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -226836,8 +226835,8 @@
     0,
     0,
     0,
-    0,
     25,
+    0,
     0,
     0,
     0,
@@ -227016,45 +227015,45 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3822033177672837,
-    "Cake": 1.3873294591903687,
-    "Bread": 1.3873294591903687,
-    "Copper Ingot": 1.3719510349211146,
-    "Iron Ingot": 1.3565726106518603,
-    "Steel Ingot": 1.3745141056326569,
-    "Gold Bar": 1.1655990179059719,
-    "Aluminium Ingot": 1.2529334449380471,
-    "Timber Planks": 1.3360680449595215,
-    "Bricks": 1.2529334449380471,
-    "Concrete": 1.2529334449380471,
-    "Glass": 1.2529334449380471,
-    "Steel Beam": 1.3873294591903687,
-    "Machine Parts": 1.3873294591903687,
-    "Refined Fuel": 1.382791073256104,
-    "Uranium Rod": 1.3822033177672837,
-    "Reactor Core": 1.3796402470557414,
-    "Circuit Board": 1.3873294591903687,
-    "Flour": 1.2227022971192523,
+    "Fuel": 1.3848492096369382,
+    "Cake": 1.3904970943927766,
+    "Bread": 1.4004970943927766,
+    "Copper Ingot": 1.3750288499613277,
+    "Iron Ingot": 1.3595606055298788,
+    "Steel Ingot": 1.3776068906999024,
+    "Gold Bar": 1.173439621063658,
+    "Aluminium Ingot": 1.2746987693430034,
+    "Timber Planks": 1.3389362796212805,
+    "Bricks": 1.2646987693430034,
+    "Concrete": 1.2646987693430034,
+    "Glass": 1.2646987693430034,
+    "Steel Beam": 1.3904970943927766,
+    "Machine Parts": 1.3904970943927766,
+    "Refined Fuel": 1.207093304942078,
+    "Uranium Rod": 1.3953410129156267,
+    "Reactor Core": 1.3827629721770518,
+    "Circuit Board": 1.3904970943927766,
+    "Flour": 1.2331090641693843,
     "Sugar": 0.8716586380004882,
-    "Wine": 1.2529334449380471,
-    "Canned Food": 1.3873294591903687,
-    "Canned Fish": 1.3873294591903687,
-    "Smoked Fish": 1.3873294591903687,
-    "Fish Stew": 1.2529334449380471,
-    "Peat Fuel": 1.3873294591903687,
-    "Gas Fuel": 1.3719510349211146,
-    "Fertilizer": 1.2529334449380471,
-    "Cotton Fabric": 1.3822033177672837,
-    "Manganese Alloy": 1.2529334449380471,
-    "Sunflower Oil": 1.2529334449380471,
-    "Linen": 1.2529334449380471,
-    "Corn Meal": 1.2529334449380471,
-    "Tea Pack": 1.2529334449380471,
-    "Citrus Juice": 1.2529334449380471,
-    "Antimony Alloy": 1.2529334449380471,
-    "Molybdenum Rod": 1.2529334449380471,
-    "Aluminium Sheet": 1.3873294591903687,
-    "Shale Oil": 1.3873294591903687
+    "Wine": 1.2646987693430034,
+    "Canned Food": 1.3904970943927766,
+    "Canned Fish": 1.3904970943927766,
+    "Smoked Fish": 1.3904970943927766,
+    "Fish Stew": 1.2646987693430034,
+    "Peat Fuel": 1.3904970943927766,
+    "Gas Fuel": 1.3750288499613277,
+    "Fertilizer": 1.2646987693430034,
+    "Cotton Fabric": 1.3853410129156267,
+    "Manganese Alloy": 1.2646987693430034,
+    "Sunflower Oil": 1.2646987693430034,
+    "Linen": 1.2646987693430034,
+    "Corn Meal": 1.2646987693430034,
+    "Tea Pack": 1.2746987693430034,
+    "Citrus Juice": 1.2646987693430034,
+    "Antimony Alloy": 1.2646987693430034,
+    "Molybdenum Rod": 1.2646987693430034,
+    "Aluminium Sheet": 1.3904970943927766,
+    "Shale Oil": 1.3904970943927766
   },
   "market_last_sale": {
     "Fuel": "2026-09-13T16:58:25.066Z",
@@ -227062,7 +227061,7 @@
     "Bread": "2026-09-13T20:19:09.543Z",
     "Copper Ingot": "2026-09-08T15:46:21.969Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
-    "Refined Fuel": "2026-09-13T21:45:44.879Z",
+    "Refined Fuel": "2026-09-14T01:59:05.238Z",
     "Timber Planks": "2026-09-13T07:33:14.494Z",
     "Iron Ingot": "2026-09-11T09:23:45.878Z",
     "Shale Oil": "2026-09-13T09:01:34.582Z",
@@ -227081,7 +227080,9 @@
     "Sugar": "2026-09-12T22:58:19.067Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Refined Fuel": 8
+  },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
@@ -232839,10 +232840,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 679871,
-      "at": "2026-09-13T17:15:34.791Z"
-    },
-    {
       "total": 679956,
       "at": "2026-09-13T17:57:04.438Z"
     },
@@ -233237,6 +233234,10 @@
     {
       "total": 664298,
       "at": "2026-09-14T01:53:37.175Z"
+    },
+    {
+      "total": 664316,
+      "at": "2026-09-14T01:58:37.179Z"
     }
   ],
   "gold_rush": null,
@@ -233263,7 +233264,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-07T10:54:25.335Z",
-  "heat_global": 28.967599999999877,
+  "heat_global": 28.667599999999876,
   "police_budget": 250000,
   "police_raids": [],
   "underground_market": {
