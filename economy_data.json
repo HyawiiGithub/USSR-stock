@@ -223902,7 +223902,7 @@
       "last_laylow": null
     },
     "1545521924166131823": {
-      "cash": 518,
+      "cash": 618,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -226490,11 +226490,6 @@
   "gsi_history": [
     {
       "price": 94,
-      "change_percent": 0.6998357533189331,
-      "recorded_at": "2026-09-14T10:23:39.629Z"
-    },
-    {
-      "price": 94,
       "change_percent": 0.9343605414919715,
       "recorded_at": "2026-09-14T10:23:56.728Z"
     },
@@ -226987,6 +226982,11 @@
       "price": 98,
       "change_percent": 0.7558184269158902,
       "recorded_at": "2026-09-14T14:27:49.568Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 6.473395846494667,
+      "recorded_at": "2026-09-14T14:28:32.749Z"
     }
   ],
   "factory_names": [
@@ -227320,13 +227320,13 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Refined Fuel": 3
+    "Refined Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 132,
-    "Refined Fuel": 109,
+    "Refined Fuel": 111,
     "Fuel": 105,
     "Iron Ingot": 53,
     "Shale Oil": 27,
@@ -227347,11 +227347,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-07T07:21:48.202Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -228846,6 +228841,11 @@
       "item": "Sugar",
       "qty": 1,
       "at": "2026-09-14T12:43:34.709Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-14T14:28:34.704Z"
     }
   ],
   "demand_history": {
@@ -229552,11 +229552,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.3062976157582664,
-        "at": "2026-08-28T19:57:37.676Z",
-        "supply": 0
-      },
-      {
         "demand": 1.317249853395809,
         "at": "2026-08-28T21:57:37.704Z",
         "supply": 0
@@ -229850,6 +229845,11 @@
         "demand": 1.2822286745136078,
         "at": "2026-09-14T03:28:34.460Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3286692636764235,
+        "at": "2026-09-14T14:28:34.704Z",
+        "supply": 1
       }
     ],
     "Fuel": [
