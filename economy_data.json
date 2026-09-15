@@ -669,8 +669,8 @@
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
       "is_employed": true,
-      "is_state_director": false,
-      "director_of": null,
+      "is_state_director": true,
+      "director_of": "state_26",
       "dirty_cash": 118,
       "heat": 12.165270898774178,
       "wanted": 0,
@@ -242489,7 +242489,7 @@
       "name": "Soviet Agriculture",
       "ticker": "ST26",
       "owner_id": "1513968015048184039",
-      "ceo": "State Appointed",
+      "ceo": "<@1229741033265299506>",
       "hq_ssr": "Kazakh SSR",
       "funds": 8715,
       "invested_capital": 500,
@@ -242678,7 +242678,7 @@
         268332
       ],
       "is_state_owned": true,
-      "director_id": null,
+      "director_id": "1229741033265299506",
       "last_factorydeal": "2026-09-15T19:21:25.010Z",
       "last_govcontract": null,
       "specialization": "agriculture",
@@ -243733,7 +243733,8 @@
     "1495413593242337421": "state_27",
     "1379734184259747851": "state_24",
     "1528783188728483944": "state_28",
-    "1186597507720019988": "state_23"
+    "1186597507720019988": "state_23",
+    "1229741033265299506": "state_26"
   },
   "transaction_log": [
     {
@@ -250204,6 +250205,13 @@
       "username": ".kewl1",
       "action": "conglomerate_create",
       "details": "Kewlian Conglomerate Holdings (KCH)"
+    },
+    {
+      "at": "2026-09-15T20:56:10.465Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointdirector",
+      "details": "appointed <@1229741033265299506> (1229741033265299506) as director of Soviet Agriculture (state_26)"
     }
   ],
   "total_rubles_history": [
