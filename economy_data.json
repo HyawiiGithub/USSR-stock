@@ -227607,11 +227607,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 39.12148370262809,
+  "inflation": 1.4552894558836798,
   "money_printed": 44119,
   "total_bank_reserves": 393283,
   "inflation_history": [
-    0,
     1.3645382385772145,
     8.248946678331013,
     8.134881214262737,
@@ -227710,7 +227709,8 @@
     39.086551499528966,
     39.13536928391877,
     39.09638659175415,
-    39.12148370262809
+    39.12148370262809,
+    1.4552894558836798
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 29,
@@ -234019,6 +234019,13 @@
       "username": "napoleon87",
       "action": "launder",
       "details": "₽460 dirty → ₽230 clean fee ₽230"
+    },
+    {
+      "at": "2026-09-15T11:53:04.264Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "setinflation",
+      "details": "offset→-28.46% (target ~10%)"
     }
   ],
   "total_rubles_history": [
@@ -254872,7 +254879,7 @@
       "text": "China settled war with Turkey"
     }
   ],
-  "inflation_adjust": 9.21496616748656,
+  "inflation_adjust": -28.457180114781423,
   "good_crisis": {
     "Wheat": {
       "type": "shortage",
