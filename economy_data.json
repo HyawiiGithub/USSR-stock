@@ -676,8 +676,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 174,
-      "bot_total_xp": 8624,
+      "bot_xp": 196,
+      "bot_total_xp": 8646,
       "daily_work_count": 37,
       "shock_worker": false,
       "mee6_level": 13,
@@ -767,8 +767,8 @@
       "last_illegal": "2026-09-15T17:56:45.251Z",
       "total_heat_generated": 946.5658999999999,
       "bot_level": 20,
-      "bot_xp": 929,
-      "bot_total_xp": 24779,
+      "bot_xp": 947,
+      "bot_total_xp": 24797,
       "daily_work_count": 394,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-15",
@@ -976,8 +976,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 437,
-      "bot_total_xp": 10482,
+      "bot_xp": 456,
+      "bot_total_xp": 10501,
       "daily_work_count": 43,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-14",
@@ -58489,8 +58489,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 31,
-      "bot_total_xp": 286,
+      "bot_xp": 53,
+      "bot_total_xp": 308,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -67069,10 +67069,10 @@
       "work_count": 101,
       "last_claim": "2026-09-13T13:19:25.980Z",
       "ssr_region": "Nuristani SSR",
-      "employed_at": "State Mining Corp",
-      "is_employed": true,
-      "is_state_director": true,
-      "director_of": "state_23",
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -223932,8 +223932,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 186,
-      "bot_total_xp": 956,
+      "bot_xp": 211,
+      "bot_total_xp": 981,
       "daily_work_count": 23,
       "shock_worker": false,
       "last_laylow": null,
@@ -226258,7 +226258,7 @@
       "name": "State Mining Corp",
       "ticker": "ST23",
       "owner_id": "1513968015048184039",
-      "ceo": "<@807254722251587614>",
+      "ceo": "State Appointed",
       "hq_ssr": "Nuristani SSR",
       "funds": 4493,
       "invested_capital": 500,
@@ -226417,7 +226417,7 @@
         274347
       ],
       "is_state_owned": true,
-      "director_id": "807254722251587614",
+      "director_id": null,
       "last_factorydeal": "2026-09-15T18:15:22.383Z",
       "last_govcontract": null,
       "specialization": "extraction",
@@ -226450,8 +226450,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 228632,
-      "market_cap": 228632,
+      "share_price": 228665,
+      "market_cap": 228665,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -226538,7 +226538,8 @@
         164769,
         215772,
         228207,
-        228632
+        228632,
+        228665
       ],
       "is_state_owned": true,
       "director_id": "1379734184259747851",
@@ -227336,11 +227337,6 @@
   "gsi_history": [
     {
       "price": 112,
-      "change_percent": 0.788208379761824,
-      "recorded_at": "2026-09-15T16:26:05.524Z"
-    },
-    {
-      "price": 112,
       "change_percent": 0.43090162335253523,
       "recorded_at": "2026-09-15T16:28:13.258Z"
     },
@@ -227833,6 +227829,11 @@
       "price": 167,
       "change_percent": 0.1436313041920531,
       "recorded_at": "2026-09-15T18:36:34.872Z"
+    },
+    {
+      "price": 167,
+      "change_percent": 0.41525048017920574,
+      "recorded_at": "2026-09-15T18:37:26.971Z"
     }
   ],
   "factory_names": [
@@ -227974,7 +227975,6 @@
   "state_directors": {
     "874346333882945547": "state_26",
     "918518877414100993": "state_25",
-    "807254722251587614": "state_23",
     "1495413593242337421": "state_27",
     "1379734184259747851": "state_24",
     "1528783188728483944": "state_28"
@@ -234358,6 +234358,13 @@
       "username": "localmanandwoman",
       "action": "launder",
       "details": "₽379 dirty → ₽189 clean fee ₽190"
+    },
+    {
+      "at": "2026-09-15T18:38:29.168Z",
+      "by": "1379734184259747851",
+      "username": ".kewl1",
+      "action": "removedirector",
+      "details": "removed <@807254722251587614> (807254722251587614) from State Mining Corp (state_23)"
     }
   ],
   "total_rubles_history": [
@@ -235048,13 +235055,13 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1789495979232,
-      "791747702689103893": 1789497380821,
-      "1456622719985782864": 1789497414260,
+      "791747702689103893": 1789497479685,
+      "1456622719985782864": 1789497478490,
       "1082686076491137115": 1789497038374,
       "1229741033265299506": 1789491354616,
       "1536339779140976711": 1789496482520,
       "780837437987094560": 1789495195139,
-      "874346333882945547": 1789497383797,
+      "874346333882945547": 1789497454328,
       "870686833976172574": 1789495626865,
       "1186597507720019988": 1789497012618,
       "1521043721129558017": 1789475745149,
@@ -235234,7 +235241,7 @@
       "344812035487563778": 1789292215256,
       "1473965687922757747": 1789390915054,
       "1536471243849736322": 1789494877126,
-      "1545521924166131823": 1789497404521,
+      "1545521924166131823": 1789497465595,
       "1483005845867593831": 1789491534875,
       "1236297958933401643": 1789299042115,
       "1251358003857457256": 1789299156791,
@@ -235297,7 +235304,7 @@
       "1100092111287750796": 1789486344813,
       "1309193358757068882": 1789488524387,
       "800787404867764225": 1789490159016,
-      "1532381114600128693": 1789497320580,
+      "1532381114600128693": 1789497462282,
       "1464657106111041753": 1789495480995,
       "1396122645573144767": 1789495975533
     }
