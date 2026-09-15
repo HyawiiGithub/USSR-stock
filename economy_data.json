@@ -654,16 +654,16 @@
       "last_laylow": "2026-09-14T20:13:00.212Z"
     },
     "1456622719985782864": {
-      "cash": 198,
+      "cash": 333,
       "bank": 26881,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-14T19:28:23.036Z",
-      "work_count": 424,
-      "last_claim": "2026-09-13T07:30:15.480Z",
+      "last_work": "2026-09-15T06:51:40.437Z",
+      "work_count": 425,
+      "last_claim": "2026-09-15T06:51:36.325Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
       "is_employed": true,
@@ -676,12 +676,12 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 224,
-      "bot_total_xp": 7254,
-      "daily_work_count": 30,
+      "bot_xp": 273,
+      "bot_total_xp": 7303,
+      "daily_work_count": 31,
       "shock_worker": false,
       "mee6_level": 12,
-      "last_daily_work_date": "2026-09-14",
+      "last_daily_work_date": "2026-09-15",
       "last_laylow": null
     },
     "1528783188728483944": {
@@ -1096,8 +1096,8 @@
       "last_illegal": "2026-09-14T08:37:27.701Z",
       "total_heat_generated": 223.356,
       "bot_level": 15,
-      "bot_xp": 1018,
-      "bot_total_xp": 12843,
+      "bot_xp": 1037,
+      "bot_total_xp": 12862,
       "daily_work_count": 53,
       "shock_worker": false,
       "mee6_level": 15,
@@ -226776,14 +226776,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1456622719985782864>",
       "hq_ssr": "Estonian SSR",
-      "funds": 5983,
+      "funds": 5980,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 73552,
-      "market_cap": 73552,
+      "share_price": 73875,
+      "market_cap": 73875,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -226804,7 +226804,7 @@
         }
       },
       "inventory": {
-        "Phosphorite": 94,
+        "Phosphorite": 95,
         "Peat": 143,
         "Fish": 197,
         "Iron Ore": 1,
@@ -226815,7 +226815,6 @@
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-09-03T08:51:55.944Z",
       "price_history": [
-        60695,
         60652,
         60673,
         60686,
@@ -226914,7 +226913,8 @@
         71758,
         72176,
         72461,
-        73552
+        73552,
+        73875
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -226994,11 +226994,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 1.362855889803242,
-      "recorded_at": "2026-09-15T01:11:00.867Z"
-    },
     {
       "price": 100,
       "change_percent": 0.6984726127446631,
@@ -227493,6 +227488,11 @@
       "price": 100,
       "change_percent": 0.9285222003353004,
       "recorded_at": "2026-09-15T06:51:02.327Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 1.1572474078865205,
+      "recorded_at": "2026-09-15T06:51:41.340Z"
     }
   ],
   "factory_names": [
@@ -227514,7 +227514,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 18.731413223094897,
-  "money_printed": 22703,
+  "money_printed": 22718,
   "total_bank_reserves": 413255,
   "inflation_history": [
     0,
@@ -234459,7 +234459,8 @@
         "807254722251587614": 1,
         "1545521924166131823": 1,
         "1186597507720019988": 1,
-        "1536339779140976711": 1
+        "1536339779140976711": 1,
+        "1456622719985782864": 1
       }
     },
     "collect_daily": {
@@ -234522,10 +234523,10 @@
     "cooldowns": {
       "1544820489191559270": 1789422732207,
       "791747702689103893": 1789417020383,
-      "1456622719985782864": 1789455029760,
+      "1456622719985782864": 1789455117836,
       "1082686076491137115": 1789422536383,
       "1229741033265299506": 1789420559582,
-      "1536339779140976711": 1789452872733,
+      "1536339779140976711": 1789455109433,
       "780837437987094560": 1789441327742,
       "874346333882945547": 1789416787102,
       "870686833976172574": 1789425471617,
@@ -234776,21 +234777,10 @@
     "quarters": {
       "2026-Q3": {
         "positive": 30,
-        "negative": 14,
+        "negative": 15,
         "neutral": 893,
-        "total": 937,
+        "total": 938,
         "mentions": [
-          {
-            "at": "2026-09-12T17:31:49.049Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "605951687974453248",
-            "messageId": "1548385640742260818",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:31:49.617Z",
             "userId": "872464195306782770",
@@ -240437,6 +240427,18 @@
             "messageId": "1549310982294208574",
             "text": "<@1082686076491137115> is the revenge thing about his malicious acts against congress",
             "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-15T06:51:58.492Z",
+            "userId": "1456622719985782864",
+            "username": "seren_menzhinsky",
+            "channelId": "1538704231249354772",
+            "messageId": "1549311798753099830",
+            "text": "<@1082686076491137115> I'm gonna kill you",
+            "sentiment": "negative",
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
@@ -250913,9 +250915,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-15T06:51:58.492Z",
+        "userId": "1456622719985782864",
+        "username": "seren_menzhinsky",
+        "channelId": "1538704231249354772",
+        "messageId": "1549311798753099830",
+        "text": "<@1082686076491137115> I'm gonna kill you",
+        "sentiment": "negative",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-15T06:48:44.076Z",
+    "last_scan": "2026-09-15T06:51:58.492Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
