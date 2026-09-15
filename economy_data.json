@@ -1551,7 +1551,7 @@
       "last_laylow": null
     },
     "1511756975392948224": {
-      "cash": 987,
+      "cash": 1084,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -1567,8 +1567,8 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null,
-      "dirty_cash": 194,
-      "heat": 19.879436748009752,
+      "dirty_cash": 0,
+      "heat": 19.750103414676417,
       "wanted": 0,
       "last_illegal": "2026-09-15T08:36:49.626Z",
       "total_heat_generated": 264.779,
@@ -226437,8 +226437,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 293897,
-      "market_cap": 293897,
+      "share_price": 294388,
+      "market_cap": 294388,
       "employees": 30,
       "level": 1,
       "buildings": {
@@ -226515,7 +226515,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-15T04:54:26.491Z",
       "price_history": [
-        205461,
         207761,
         207986,
         208021,
@@ -226614,7 +226613,8 @@
         293783,
         293809,
         293915,
-        293897
+        293897,
+        294388
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -226635,7 +226635,7 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 355.4315832937329,
+      "heat": 355.36691662706625,
       "underground_heat": 938.227482041067,
       "dirty_cash": 0,
       "last_illegal": null
@@ -227029,11 +227029,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 113,
-      "change_percent": 0.29750374325061313,
-      "recorded_at": "2026-09-15T04:36:02.309Z"
-    },
     {
       "price": 113,
       "change_percent": 0.15317977038527675,
@@ -227528,6 +227523,11 @@
       "price": 134,
       "change_percent": -0.0626125325408327,
       "recorded_at": "2026-09-15T08:36:02.935Z"
+    },
+    {
+      "price": 134,
+      "change_percent": 0.20847286461774078,
+      "recorded_at": "2026-09-15T08:36:50.953Z"
     }
   ],
   "factory_names": [
@@ -233895,6 +233895,13 @@
       "username": "localmanandwoman",
       "action": "launder",
       "details": "₽169 dirty → ₽84 clean fee ₽85"
+    },
+    {
+      "at": "2026-09-15T08:37:04.635Z",
+      "by": "1511756975392948224",
+      "username": "localmanandwoman",
+      "action": "launder",
+      "details": "₽194 dirty → ₽97 clean fee ₽97"
     }
   ],
   "total_rubles_history": [
