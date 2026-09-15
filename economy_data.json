@@ -640,7 +640,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 488,
-      "heat": 0.2857576689939453,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-15T16:50:58.914Z",
       "total_heat_generated": 386.60100000000006,
@@ -762,7 +762,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 168,
-      "heat": 20.93369156957307,
+      "heat": 20.092152537181708,
       "wanted": 0,
       "last_illegal": "2026-09-15T16:33:14.887Z",
       "total_heat_generated": 933.492,
@@ -1568,7 +1568,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 250,
-      "heat": 15.802690055185911,
+      "heat": 14.96038301750122,
       "wanted": 0,
       "last_illegal": "2026-09-15T16:40:29.040Z",
       "total_heat_generated": 341.7150000000001,
@@ -226927,8 +226927,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 431.393595490874,
-      "underground_heat": 1091.0969492679044,
+      "heat": 430.83574577862515,
+      "underground_heat": 1090.5339162045623,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -227321,11 +227321,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 112,
-      "change_percent": -0.39310660467332115,
-      "recorded_at": "2026-09-15T12:51:05.285Z"
-    },
     {
       "price": 111,
       "change_percent": -0.16263874753004023,
@@ -227820,6 +227815,11 @@
       "price": 110,
       "change_percent": 0.36509746944142696,
       "recorded_at": "2026-09-15T17:11:35.739Z"
+    },
+    {
+      "price": 110,
+      "change_percent": 0.7787740466198692,
+      "recorded_at": "2026-09-15T17:16:05.552Z"
     }
   ],
   "factory_names": [
@@ -227840,11 +227840,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 13.861142344046215,
+  "inflation": 13.875483869136232,
   "money_printed": 59545,
   "total_bank_reserves": 390319,
   "inflation_history": [
-    16.175362232385172,
     16.204831743537866,
     16.22664438465349,
     16.301981928449386,
@@ -227943,7 +227942,8 @@
     13.723680225937933,
     13.795441759819028,
     13.824972202985833,
-    13.861142344046215
+    13.861142344046215,
+    13.875483869136232
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 29,
@@ -228089,7 +228089,7 @@
   "market_demand": {
     "Fuel": 1.3837931953565155,
     "Cake": 1.3959249249076566,
-    "Bread": 1.315370425393029,
+    "Bread": 1.3294391430438317,
     "Copper Ingot": 1.4021129596166748,
     "Iron Ingot": 1.3762817686297062,
     "Steel Ingot": 1.3620799489118278,
@@ -228100,20 +228100,20 @@
     "Concrete": 1.4079455128083742,
     "Glass": 1.3979455128083742,
     "Steel Beam": 1.3956557447463274,
-    "Machine Parts": 1.2993182644151093,
+    "Machine Parts": 1.309533439917046,
     "Refined Fuel": 1.403772848528719,
     "Uranium Rod": 1.3880851834185008,
     "Reactor Core": 1.3996015796184715,
     "Circuit Board": 1.395501184878412,
     "Flour": 1.3715955139916856,
-    "Sugar": 0.9719151235615584,
+    "Sugar": 0.9733113426711688,
     "Wine": 1.3879455128083742,
     "Canned Food": 1.404626855882816,
     "Canned Fish": 1.3959909616969526,
     "Smoked Fish": 1.3959909616969526,
     "Fish Stew": 1.398485736911421,
     "Peat Fuel": 1.4044932212727144,
-    "Gas Fuel": 1.3783913633993101,
+    "Gas Fuel": 1.3769185225494827,
     "Fertilizer": 1.3983015645330794,
     "Cotton Fabric": 1.3906442575641569,
     "Manganese Alloy": 1.3879455128083742,
@@ -228153,7 +228153,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 3
+    "Bread": 1
   },
   "global_consumption": {
     "Copper Ingot": 83,
@@ -228169,7 +228169,7 @@
     "Canned Food": 15,
     "Uranium Rod": 18,
     "Canned Fish": 18,
-    "Bread": 238,
+    "Bread": 240,
     "Aluminium Sheet": 8,
     "Circuit Board": 14,
     "Cotton Fabric": 7,
@@ -228180,11 +228180,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-07T21:51:48.583Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -229679,6 +229674,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-09-15T17:00:59.795Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-15T17:15:59.706Z"
     }
   ],
   "demand_history": {
@@ -231875,11 +231875,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.328603999574892,
-        "at": "2026-09-08T03:21:48.562Z",
-        "supply": 0
-      },
-      {
         "demand": 1.3388417703524722,
         "at": "2026-09-08T03:36:48.569Z",
         "supply": 0
@@ -232173,6 +232168,11 @@
         "demand": 1.2834703058536228,
         "at": "2026-09-15T16:45:59.694Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3294391430438317,
+        "at": "2026-09-15T17:15:59.706Z",
+        "supply": 1
       }
     ],
     "Aluminium Sheet": [
@@ -234313,10 +234313,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 472601,
-      "at": "2026-09-15T09:41:04.545Z"
-    },
-    {
       "total": 472621,
       "at": "2026-09-15T09:46:04.724Z"
     },
@@ -234711,6 +234707,10 @@
     {
       "total": 472540,
       "at": "2026-09-15T17:11:07.293Z"
+    },
+    {
+      "total": 472560,
+      "at": "2026-09-15T17:16:07.162Z"
     }
   ],
   "gold_rush": null,
@@ -234737,7 +234737,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 13.93459999999963,
+  "heat_global": 13.63459999999963,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -235257,20 +235257,9 @@
       "2026-Q3": {
         "positive": 30,
         "negative": 15,
-        "neutral": 907,
-        "total": 952,
+        "neutral": 908,
+        "total": 953,
         "mentions": [
-          {
-            "at": "2026-09-12T17:31:59.021Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "605951687974453248",
-            "messageId": "1548385693099757709",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:31:59.496Z",
             "userId": "807944786840387675",
@@ -240931,6 +240920,18 @@
             "channelId": "1538704167890329621",
             "messageId": "1549462283636449514",
             "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-15T17:15:50.345Z",
+            "userId": "1365483598962102305",
+            "username": "ko3nigg",
+            "channelId": "605951687974453248",
+            "messageId": "1549468796807553116",
+            "text": "<@1082686076491137115> can i join the central committee<:CasreorBaked:937077739188547634>",
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text",
@@ -251588,9 +251589,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-15T17:15:50.345Z",
+        "userId": "1365483598962102305",
+        "username": "ko3nigg",
+        "channelId": "605951687974453248",
+        "messageId": "1549468796807553116",
+        "text": "<@1082686076491137115> can i join the central committee<:CasreorBaked:937077739188547634>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-15T16:49:56.770Z",
+    "last_scan": "2026-09-15T17:15:50.345Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -253782,7 +253795,7 @@
       "1536339779140976711": 60,
       "780837437987094560": 39,
       "1545521924166131823": 81,
-      "1225275427145121903": 45,
+      "1225275427145121903": 54,
       "1397601108616024075": 19,
       "963834359994007614": 13
     },
@@ -253804,7 +253817,7 @@
       "1536339779140976711": "2026-09-15T11:20:26.955Z",
       "780837437987094560": "2026-09-15T00:01:58.843Z",
       "1545521924166131823": "2026-09-15T12:01:55.859Z",
-      "1225275427145121903": "2026-09-14T17:03:48.715Z",
+      "1225275427145121903": "2026-09-15T17:16:39.744Z",
       "1397601108616024075": "2026-09-13T20:05:21.600Z",
       "963834359994007614": "2026-09-13T21:17:12.410Z"
     },
