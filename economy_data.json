@@ -118,8 +118,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 1544,
-      "bot_total_xp": 15344,
+      "bot_xp": 1567,
+      "bot_total_xp": 15367,
       "daily_work_count": 3,
       "shock_worker": false,
       "mee6_level": 16,
@@ -1030,8 +1030,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 1008,
-      "bot_total_xp": 11053,
+      "bot_xp": 1030,
+      "bot_total_xp": 11075,
       "daily_work_count": 43,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-14",
@@ -123199,8 +123199,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 39,
-      "bot_total_xp": 39,
+      "bot_xp": 57,
+      "bot_total_xp": 57,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -243544,11 +243544,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 86.06535199236929,
-  "money_printed": 140727,
+  "inflation": 83.47536082531354,
+  "money_printed": 137912.46,
   "total_bank_reserves": 384213,
   "inflation_history": [
-    17.078913957979534,
     17.097140394174218,
     17.241375835012125,
     17.16688764902705,
@@ -243647,7 +243646,8 @@
     79.48447708110996,
     79.57903433134254,
     85.93479164994532,
-    86.06535199236929
+    86.06535199236929,
+    83.47536082531354
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 29,
@@ -250789,9 +250789,9 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1789503981327,
-      "791747702689103893": 1789503926435,
+      "791747702689103893": 1789504067926,
       "1456622719985782864": 1789503499453,
-      "1082686076491137115": 1789503955332,
+      "1082686076491137115": 1789504087501,
       "1229741033265299506": 1789503675466,
       "1536339779140976711": 1789503952694,
       "780837437987094560": 1789495195139,
@@ -251043,7 +251043,7 @@
       "1396122645573144767": 1789495975533,
       "977863303520981032": 1789498306480,
       "1542469950709440512": 1789501359001,
-      "1040194883006234655": 1789503964063
+      "1040194883006234655": 1789504068485
     }
   },
   "mee6_cache": {
@@ -269749,6 +269749,14 @@
         {
           "role": "assistant",
           "content": "I cannot wipe my database - my knowledge base is static with a fixed training cutoff and I don't have persistent storage that can be cleared by user command. I operate based on pre-existing information without ongoing memory modification capabilities.\n\nMy official title is **Jarvis**, the USSR Economy Discord Bot. I'm designed to assist with economic data, historical information, and operational tasks related to the Soviet Union's economic structure during the specified timeframe.\n\nIf you're loo"
+        },
+        {
+          "role": "user",
+          "content": "whos <@1379734184259747851>"
+        },
+        {
+          "role": "assistant",
+          "content": "<|tool_call_start|>[google(query='Discord user <@1379734184259747851> identity'), google(query='Jarvis USSR Discord bot user directory members')]<|tool_call_end|>"
         }
       ]
     },
@@ -271854,9 +271862,14 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4,
-    "history": [],
-    "last_update": null,
+    "rub_per_usd": 8.39,
+    "history": [
+      {
+        "rate": 8.39,
+        "at": "2026-09-15T20:27:40.814Z"
+      }
+    ],
+    "last_update": "2026-09-15T20:27:40.814Z",
     "manual_override": null
   },
   "national_budget": {
@@ -271869,5 +271882,11 @@
     "income_history": [],
     "spending_history": [],
     "last_update": null
+  },
+  "lore": {
+    "entries": [],
+    "seen": [],
+    "last_scan": null,
+    "last_count": 0
   }
 }
