@@ -114,8 +114,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 780,
-      "bot_total_xp": 14580,
+      "bot_xp": 797,
+      "bot_total_xp": 14597,
       "daily_work_count": 3,
       "shock_worker": false,
       "mee6_level": 16,
@@ -654,8 +654,8 @@
       "last_laylow": "2026-09-15T16:51:00.854Z"
     },
     "1456622719985782864": {
-      "cash": 3804,
-      "bank": 27214,
+      "cash": 0,
+      "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -676,8 +676,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1237,
-      "bot_total_xp": 8267,
+      "bot_xp": 1261,
+      "bot_total_xp": 8291,
       "daily_work_count": 35,
       "shock_worker": false,
       "mee6_level": 12,
@@ -698,8 +698,8 @@
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
       "is_employed": true,
-      "is_state_director": false,
-      "director_of": null,
+      "is_state_director": true,
+      "director_of": "state_28",
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -1096,8 +1096,8 @@
       "last_illegal": "2026-09-14T08:37:27.701Z",
       "total_heat_generated": 223.356,
       "bot_level": 16,
-      "bot_xp": 150,
-      "bot_total_xp": 13950,
+      "bot_xp": 171,
+      "bot_total_xp": 13971,
       "daily_work_count": 61,
       "shock_worker": false,
       "mee6_level": 16,
@@ -1216,8 +1216,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 176,
-      "bot_total_xp": 651,
+      "bot_xp": 196,
+      "bot_total_xp": 671,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -1246,8 +1246,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 64,
-      "bot_total_xp": 2269,
+      "bot_xp": 83,
+      "bot_total_xp": 2288,
       "daily_work_count": 3,
       "shock_worker": false,
       "last_laylow": null,
@@ -1345,8 +1345,8 @@
       "mee6_level": 1
     },
     "1325111649816023092": {
-      "cash": 160,
-      "bank": 6816,
+      "cash": 0,
+      "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -43290,8 +43290,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 23,
+      "bot_total_xp": 23,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null
@@ -67079,8 +67079,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1952,
-      "bot_total_xp": 13777,
+      "bot_xp": 1971,
+      "bot_total_xp": 13796,
       "daily_work_count": 51,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-15",
@@ -217060,8 +217060,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 780,
-      "bot_total_xp": 4500,
+      "bot_xp": 800,
+      "bot_total_xp": 4520,
       "daily_work_count": 1,
       "shock_worker": false,
       "last_laylow": null,
@@ -227111,7 +227111,7 @@
       "name": "Baltic Timber & Harbour Co",
       "ticker": "ST28",
       "owner_id": "1513968015048184039",
-      "ceo": "State Appointed",
+      "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
       "funds": 2236,
       "invested_capital": 500,
@@ -227254,7 +227254,7 @@
         87341
       ],
       "is_state_owned": true,
-      "director_id": null,
+      "director_id": "1528783188728483944",
       "last_factorydeal": "2026-09-13T09:01:34.581Z",
       "last_govcontract": null,
       "wage": 3000,
@@ -227331,11 +227331,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.7199764951228871,
-      "recorded_at": "2026-09-15T15:20:09.296Z"
-    },
     {
       "price": 100,
       "change_percent": 0.5024735984990911,
@@ -227830,6 +227825,11 @@
       "price": 146,
       "change_percent": 0.5028426832433195,
       "recorded_at": "2026-09-15T18:12:27.002Z"
+    },
+    {
+      "price": 148,
+      "change_percent": 1.4287481141862444,
+      "recorded_at": "2026-09-15T18:12:31.582Z"
     }
   ],
   "factory_names": [
@@ -227973,7 +227973,8 @@
     "918518877414100993": "state_25",
     "807254722251587614": "state_23",
     "1495413593242337421": "state_27",
-    "1379734184259747851": "state_24"
+    "1379734184259747851": "state_24",
+    "1528783188728483944": "state_28"
   },
   "transaction_log": [
     {
@@ -234330,6 +234331,13 @@
       "username": "seniormanulos",
       "action": "launder",
       "details": "₽1,827 dirty → ₽913 clean fee ₽914"
+    },
+    {
+      "at": "2026-09-15T18:12:36.374Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointdirector",
+      "details": "appointed <@1528783188728483944> (1528783188728483944) as director of Baltic Timber & Harbour Co (state_28)"
     }
   ],
   "total_rubles_history": [
@@ -235018,12 +235026,12 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1789495532612,
+      "1544820489191559270": 1789495979232,
       "791747702689103893": 1789490886602,
-      "1456622719985782864": 1789495907383,
-      "1082686076491137115": 1789495868978,
+      "1456622719985782864": 1789495971065,
+      "1082686076491137115": 1789495966531,
       "1229741033265299506": 1789491354616,
-      "1536339779140976711": 1789495883559,
+      "1536339779140976711": 1789495984942,
       "780837437987094560": 1789495195139,
       "874346333882945547": 1789495937995,
       "870686833976172574": 1789495626865,
@@ -235036,7 +235044,7 @@
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789495917849,
       "1506785783506534426": 1789492419713,
-      "807254722251587614": 1789495915332,
+      "807254722251587614": 1789496005290,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789309736057,
       "997903130543005767": 1788970364999,
@@ -235063,7 +235071,7 @@
       "1225275427145121903": 1789495921953,
       "1520173521244913684": 1789268311306,
       "930716306603405363": 1788998761124,
-      "1494919466713350275": 1789495889429,
+      "1494919466713350275": 1789495972947,
       "1511912848291528732": 1788989492172,
       "1532459782265639083": 1789388772177,
       "1407392503090642986": 1789371516482,
@@ -235148,7 +235156,7 @@
       "872464195306782770": 1789234862495,
       "1214587968296067083": 1789243357880,
       "1473761822858281192": 1789161331592,
-      "1379734184259747851": 1789495923021,
+      "1379734184259747851": 1789495985693,
       "1173662113340854353": 1789437753606,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
@@ -235269,7 +235277,8 @@
       "1309193358757068882": 1789488524387,
       "800787404867764225": 1789490159016,
       "1532381114600128693": 1789493640206,
-      "1464657106111041753": 1789495480995
+      "1464657106111041753": 1789495480995,
+      "1396122645573144767": 1789495975533
     }
   },
   "mee6_cache": {
@@ -235286,31 +235295,9 @@
       "2026-Q3": {
         "positive": 31,
         "negative": 15,
-        "neutral": 919,
-        "total": 965,
+        "neutral": 921,
+        "total": 967,
         "mentions": [
-          {
-            "at": "2026-09-12T17:32:13.152Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "605951687974453248",
-            "messageId": "1548385759424413869",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
-          {
-            "at": "2026-09-12T17:32:13.854Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "605951687974453248",
-            "messageId": "1548385762129748049",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:32:15.105Z",
             "userId": "807944786840387675",
@@ -240976,6 +240963,30 @@
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text+reply",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-15T18:12:51.939Z",
+            "userId": "1456622719985782864",
+            "username": "seren_menzhinsky",
+            "channelId": "605951687974453248",
+            "messageId": "1549483149728161934",
+            "text": "<@1082686076491137115> kirked data",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-15T18:13:06.134Z",
+            "userId": "1379734184259747851",
+            "username": ".kewl1",
+            "channelId": "633979224314871838",
+            "messageId": "1549483208880423014",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
             "quarter": "2026-Q3"
           }
         ]
@@ -251786,9 +251797,33 @@
         "method": "keyword",
         "source": "text+reply",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-15T18:12:51.939Z",
+        "userId": "1456622719985782864",
+        "username": "seren_menzhinsky",
+        "channelId": "605951687974453248",
+        "messageId": "1549483149728161934",
+        "text": "<@1082686076491137115> kirked data",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-15T18:13:06.134Z",
+        "userId": "1379734184259747851",
+        "username": ".kewl1",
+        "channelId": "633979224314871838",
+        "messageId": "1549483208880423014",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-15T18:12:03.882Z",
+    "last_scan": "2026-09-15T18:13:06.134Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
