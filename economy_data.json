@@ -225859,13 +225859,42 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 1,
-      "bot_xp": 143,
-      "bot_total_xp": 243,
+      "bot_level": 2,
+      "bot_xp": 6,
+      "bot_total_xp": 261,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
-      "mee6_level": 1
+      "mee6_level": 2
+    },
+    "784702952740880444": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 23,
+      "bot_total_xp": 23,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null
     }
   },
   "companies": {
@@ -234681,8 +234710,9 @@
       "1431336411432484957": 1789427568172,
       "722566466603319368": 1789434244855,
       "1471655685115613366": 1789434326439,
-      "1444868560319938713": 1789440511762,
-      "781309828794023946": 1789439176258
+      "1444868560319938713": 1789440588005,
+      "781309828794023946": 1789439176258,
+      "784702952740880444": 1789440618645
     }
   },
   "mee6_cache": {
@@ -234699,20 +234729,9 @@
       "2026-Q3": {
         "positive": 30,
         "negative": 14,
-        "neutral": 891,
-        "total": 935,
+        "neutral": 892,
+        "total": 936,
         "mentions": [
-          {
-            "at": "2026-09-12T17:31:47.835Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "605951687974453248",
-            "messageId": "1548385636006895738",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:31:48.443Z",
             "userId": "963834359994007614",
@@ -240356,6 +240375,18 @@
             "channelId": "605951687974453248",
             "messageId": "1549228578506285079",
             "text": "<@1082686076491137115> Dont we already got OPG for investigations ok corruption and as such?",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-15T02:50:19.383Z",
+            "userId": "784702952740880444",
+            "username": "imamf9451",
+            "channelId": "605951687974453248",
+            "messageId": "1549250984818114611",
+            "text": "<@1082686076491137115>",
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text",
@@ -250809,9 +250840,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-15T02:50:19.383Z",
+        "userId": "784702952740880444",
+        "username": "imamf9451",
+        "channelId": "605951687974453248",
+        "messageId": "1549250984818114611",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-15T01:21:17.426Z",
+    "last_scan": "2026-09-15T02:50:19.383Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -250824,13 +250867,6 @@
   "race_history": [],
   "giveaways": [],
   "level_ups": [
-    {
-      "userId": "1381003812466196512",
-      "from": 3,
-      "to": 4,
-      "at": "2026-09-12T15:00:11.669Z",
-      "reason": "chat"
-    },
     {
       "userId": "963834359994007614",
       "from": 18,
@@ -252222,6 +252258,13 @@
       "from": 9,
       "to": 10,
       "at": "2026-09-15T02:42:35.013Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1444868560319938713",
+      "from": 1,
+      "to": 2,
+      "at": "2026-09-15T02:49:48.006Z",
       "reason": "chat"
     }
   ],
