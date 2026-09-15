@@ -762,13 +762,13 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1163,
-      "heat": 25.535778621913778,
+      "heat": 24.718102836537142,
       "wanted": 0,
       "last_illegal": "2026-09-15T14:44:04.951Z",
       "total_heat_generated": 902.894,
       "bot_level": 19,
-      "bot_xp": 2209,
-      "bot_total_xp": 23204,
+      "bot_xp": 2231,
+      "bot_total_xp": 23226,
       "daily_work_count": 372,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-15",
@@ -67078,8 +67078,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 963,
-      "bot_total_xp": 12788,
+      "bot_xp": 984,
+      "bot_total_xp": 12809,
       "daily_work_count": 51,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-15",
@@ -226839,8 +226839,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 406.20488979815775,
-      "underground_heat": 1050.5843787966014,
+      "heat": 405.5035313939349,
+      "underground_heat": 1050.0517834964896,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -227233,11 +227233,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 140,
-      "change_percent": 0.7468852101211607,
-      "recorded_at": "2026-09-15T10:09:27.316Z"
-    },
     {
       "price": 139,
       "change_percent": -0.07651406308096034,
@@ -227732,6 +227727,11 @@
       "price": 99,
       "change_percent": 0.40687268004229776,
       "recorded_at": "2026-09-15T14:44:06.445Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.5716839085909959,
+      "recorded_at": "2026-09-15T14:46:05.301Z"
     }
   ],
   "factory_names": [
@@ -227752,11 +227752,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 3.8660018639803724,
+  "inflation": 3.92104820424462,
   "money_printed": 47210,
   "total_bank_reserves": 393283,
   "inflation_history": [
-    15.34727542756223,
     15.43180379539506,
     15.435148213858069,
     15.47986629636769,
@@ -227855,7 +227854,8 @@
     3.8468915053184958,
     3.7916983912468396,
     3.8456390049640348,
-    3.8660018639803724
+    3.8660018639803724,
+    3.92104820424462
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 29,
@@ -227999,8 +227999,8 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.2441221752261902,
-    "Cake": 1.394566566543542,
+    "Fuel": 1.2537585776053064,
+    "Cake": 1.3959249249076566,
     "Bread": 1.3787541232599303,
     "Copper Ingot": 1.4020792303934415,
     "Iron Ingot": 1.3814641923074515,
@@ -228064,15 +228064,13 @@
     "Sugar": "2026-09-14T12:40:01.500Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {
-    "Fuel": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 83,
     "Steel Ingot": 26,
     "Timber Planks": 132,
     "Refined Fuel": 114,
-    "Fuel": 110,
+    "Fuel": 112,
     "Iron Ingot": 53,
     "Shale Oil": 27,
     "Peat Fuel": 10,
@@ -228092,11 +228090,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 1,
-      "at": "2026-09-07T16:36:48.495Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 2,
@@ -229591,6 +229584,11 @@
       "item": "Fuel",
       "qty": 2,
       "at": "2026-09-15T14:30:59.588Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-09-15T14:45:59.664Z"
     }
   ],
   "demand_history": {
@@ -230599,11 +230597,6 @@
     ],
     "Fuel": [
       {
-        "demand": 1.164078065117977,
-        "at": "2026-09-06T17:51:47.910Z",
-        "supply": 10
-      },
-      {
         "demand": 1.1795828344032704,
         "at": "2026-09-06T18:06:47.902Z",
         "supply": 10
@@ -230896,6 +230889,11 @@
       {
         "demand": 1.2360921966703533,
         "at": "2026-09-15T14:30:59.588Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.2537585776053064,
+        "at": "2026-09-15T14:45:59.664Z",
         "supply": 2
       }
     ],
@@ -234182,10 +234180,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 491922,
-      "at": "2026-09-15T07:06:03.169Z"
-    },
-    {
       "total": 491942,
       "at": "2026-09-15T07:11:03.062Z"
     },
@@ -234580,6 +234574,10 @@
     {
       "total": 475345,
       "at": "2026-09-15T14:41:06.047Z"
+    },
+    {
+      "total": 475365,
+      "at": "2026-09-15T14:46:06.049Z"
     }
   ],
   "gold_rush": null,
@@ -234606,7 +234604,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 10.842349999999652,
+  "heat_global": 10.54234999999965,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -234862,7 +234860,7 @@
       "1229741033265299506": 1789463810907,
       "1536339779140976711": 1789482891278,
       "780837437987094560": 1789476245831,
-      "874346333882945547": 1789470000284,
+      "874346333882945547": 1789483588337,
       "870686833976172574": 1789425471617,
       "1186597507720019988": 1789479411903,
       "1521043721129558017": 1789475745149,
@@ -234873,7 +234871,7 @@
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789474465747,
       "1506785783506534426": 1789477606962,
-      "807254722251587614": 1789475059515,
+      "807254722251587614": 1789483561136,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789309736057,
       "997903130543005767": 1788970364999,
@@ -235117,31 +235115,9 @@
       "2026-Q3": {
         "positive": 30,
         "negative": 15,
-        "neutral": 898,
-        "total": 943,
+        "neutral": 900,
+        "total": 945,
         "mentions": [
-          {
-            "at": "2026-09-12T17:31:53.582Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "605951687974453248",
-            "messageId": "1548385653366980669",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
-          {
-            "at": "2026-09-12T17:31:54.099Z",
-            "userId": "807944786840387675",
-            "username": "brosquare",
-            "channelId": "605951687974453248",
-            "messageId": "1548385657477533717",
-            "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T17:31:54.849Z",
             "userId": "963834359994007614",
@@ -240782,6 +240758,30 @@
             "channelId": "605951687974453248",
             "messageId": "1549404416912785501",
             "text": "<@1082686076491137115> yo might take a while.",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-15T14:46:32.358Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "605951687974453248",
+            "messageId": "1549431227604275231",
+            "text": "Hyawii fault",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-15T14:46:35.805Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "605951687974453248",
+            "messageId": "1549431243064483851",
+            "text": "Lynch premier",
             "sentiment": "neutral",
             "method": "keyword",
             "source": "text",
@@ -251331,9 +251331,33 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-15T14:46:32.358Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "605951687974453248",
+        "messageId": "1549431227604275231",
+        "text": "Hyawii fault",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-15T14:46:35.805Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "605951687974453248",
+        "messageId": "1549431243064483851",
+        "text": "Lynch premier",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-15T13:00:00.400Z",
+    "last_scan": "2026-09-15T14:46:35.805Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
