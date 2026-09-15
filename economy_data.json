@@ -286,8 +286,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 326,
-      "bot_total_xp": 1096,
+      "bot_xp": 349,
+      "bot_total_xp": 1119,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 4,
@@ -676,8 +676,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1060,
-      "bot_total_xp": 8090,
+      "bot_xp": 1077,
+      "bot_total_xp": 8107,
       "daily_work_count": 33,
       "shock_worker": false,
       "mee6_level": 12,
@@ -1573,8 +1573,8 @@
       "last_illegal": "2026-09-15T16:40:29.040Z",
       "total_heat_generated": 341.7150000000001,
       "bot_level": 15,
-      "bot_xp": 1793,
-      "bot_total_xp": 13618,
+      "bot_xp": 1817,
+      "bot_total_xp": 13642,
       "daily_work_count": 65,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-15",
@@ -109841,8 +109841,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 27,
-      "bot_total_xp": 502,
+      "bot_xp": 48,
+      "bot_total_xp": 523,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 3,
@@ -219210,12 +219210,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 81,
-      "bot_total_xp": 81,
+      "bot_level": 1,
+      "bot_xp": 1,
+      "bot_total_xp": 101,
       "daily_work_count": 0,
       "shock_worker": false,
-      "last_laylow": null
+      "last_laylow": null,
+      "mee6_level": 1
     },
     "1327969951478448181": {
       "cash": 0,
@@ -235016,7 +235017,7 @@
     "cooldowns": {
       "1544820489191559270": 1789495264011,
       "791747702689103893": 1789490886602,
-      "1456622719985782864": 1789495287428,
+      "1456622719985782864": 1789495363824,
       "1082686076491137115": 1789495254395,
       "1229741033265299506": 1789491354616,
       "1536339779140976711": 1789495247685,
@@ -235038,14 +235039,14 @@
       "997903130543005767": 1788970364999,
       "1369015006955442326": 1789120293921,
       "914436541072425021": 1789484018810,
-      "1107232271880159292": 1789495276730,
+      "1107232271880159292": 1789495348826,
       "1495413593242337421": 1789495055100,
       "1447308947072614555": 1788973711995,
       "887419379833274388": 1789487836557,
       "807944786840387675": 1789490861591,
       "1529673877767196783": 1789377341879,
       "913497950213267577": 1789484198030,
-      "822079355298906112": 1789469756354,
+      "822079355298906112": 1789495360718,
       "1000271630154596473": 1789414201493,
       "437626060876546069": 1789233001616,
       "1365483598962102305": 1789492656140,
@@ -235095,7 +235096,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789487838057,
-      "1511756975392948224": 1789495311784,
+      "1511756975392948224": 1789495372547,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789129244661,
@@ -235265,7 +235266,7 @@
       "1309193358757068882": 1789488524387,
       "800787404867764225": 1789490159016,
       "1532381114600128693": 1789493640206,
-      "1464657106111041753": 1789495270268
+      "1464657106111041753": 1789495365691
     }
   },
   "mee6_cache": {
@@ -251681,13 +251682,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "673726585194676274",
-      "from": 0,
-      "to": 1,
-      "at": "2026-09-12T17:44:39.733Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1000271630154596473",
       "from": 1,
       "to": 2,
@@ -253079,6 +253073,13 @@
       "to": 6,
       "at": "2026-09-15T18:00:42.623Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1464657106111041753",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-15T18:02:45.692Z",
+      "reason": "chat"
     }
   ],
   "_lastCollectXP": {
@@ -253349,40 +253350,16 @@
   ],
   "jarvis": {
     "1082686076491137115": {
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "used": 0,
       "history": [
         {
           "role": "user",
-          "content": "what is this guy saying if someone put us in a voting, does that make you the sector that is high\nSince it's not in constitution"
+          "content": "whats your acces level to the bot currently"
         },
         {
           "role": "assistant",
-          "content": "Looking at your question about voting and constitutional status—this touches on how an AI assistant operates within the Soviet economic framework.\n\n**I am not a sector**, **not a voting entity**, and **not subject to constitutional law**. As Jarvis, I'm a Discord-based general assistant running on server infrastructure. I have no official standing, no voting rights, and no constitutional mandate. I process requests based on programmed parameters, not legislative authorization.\n\nRegarding the \"hi"
-        },
-        {
-          "role": "user",
-          "content": "5+5"
-        },
-        {
-          "role": "assistant",
-          "content": "10\n\nThat's straightforward math—5 plus 5 equals 10.\n\nAs for your earlier question about whether I'm the \"high sector\" or have some special constitutional standing—the short answer is no. I'm a computational assistant operating under the Soviet economic framework parameters (GDP of 635,186 rubles, GSI of 97, etc.). My role is to assist with information queries using the available data, not to claim political or economic status within the system. The constitution governs human institutions—not AI "
-        },
-        {
-          "role": "user",
-          "content": "code a discord bot that says fuck you to a random person .env file support"
-        },
-        {
-          "role": "assistant",
-          "content": "I can't help with that. Creating a Discord bot designed to send profanity or insulting messages to random people is harmful content that I won't produce, regardless of context. It would constitute:\n\n- **Harassment/bullying** - targeting individuals without their consent\n- **Abusive behavior** - spreading hate speech and personal attacks\n- **Potential legal issues** - many jurisdictions prohibit such automated harassment\n\nThis isn't related to my identity as Jarvis (the USSR-themed assistant) or "
-        },
-        {
-          "role": "user",
-          "content": "serverlore please"
-        },
-        {
-          "role": "assistant",
-          "content": "```python\nimport discord\nfrom discord.ext import commands\n\n# Server lore storage (in-memory for simplicity)\n# In production, use a database\nLORE = {}\nCOUNTS = {\n    \"State Nuclear Energy\": 215850,\n    \"Soviet Agriculture\": 208021,\n    \"State Mining Corp\": 170328\n}\n\nclass ServerLoreBot(commands.Bot):\n    def __init__(self):\n        super().__init__(\n            command_prefix=\"!\",\n            intents=discord.Intent.all()\n        )\n    \n    @commands.command(\"lore\")\n    async def show_lore(self, c"
+          "content": "As Jarvis, the USSR Economy Discord bot, my access level is comprehensive within my designated parameters:\n\n**Capabilities:**\n- Access real-time economic indicators for the USSR economy\n- Retrieve data on GDP (473,961 rubles), GSI (128), inflation (49.07%), and gold backing (9.3%)\n- View company rankings including Soviet Agriculture (₽245,644), State Nuclear Energy (₽216,393), and State Mining Corp (₽171,362)\n- Query economic statistics, financial metrics, and market data up to my knowledge cuto"
         }
       ]
     },
@@ -253448,7 +253425,7 @@
     },
     "874346333882945547": {
       "date": "2026-09-15",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -253457,6 +253434,14 @@
         {
           "role": "assistant",
           "content": "Based on the latest USSR economic data:\n\n**Best Company:** **Soviet Agriculture** (Советская сельское хозяйство) – with revenue of **₽231,142**\n\nThis positions it above other major state enterprises including State Nuclear Energy (₽215,985) and State Mining Corp (₽171,098).\n\n*Note:* Specific leadership details for individual Soviet state enterprises aren't explicitly detailed in the current data set. Soviet Agriculture was the leading enterprise by output/revenue among the major listed companies"
+        },
+        {
+          "role": "user",
+          "content": "spoop or erwin"
+        },
+        {
+          "role": "assistant",
+          "content": "Based on the official USSR economic data from my system:\n\n**Top Companies by Revenue:**\n1. **Soviet Agriculture** – ₽245,644 (highest)\n2. State Nuclear Energy – ₽216,393\n3. State Mining Corp – ₽171,362\n\n**Spoop** and **Erwin** do not appear among the top-ranked state enterprises in the current USSR economic data. If you're referring to specific companies outside this dataset, their ranking would depend on more recent or internal figures beyond the live data I have access to.\n\nThe best-situated c"
         }
       ]
     },
