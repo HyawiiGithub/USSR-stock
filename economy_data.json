@@ -36,7 +36,7 @@
     },
     "780837437987094560": {
       "username": "",
-      "cash": 0,
+      "cash": 15,
       "bank": 12073,
       "resources": {
         "Coal": 34,
@@ -58,8 +58,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-15T20:32:43.804Z",
-      "work_count": 309,
+      "last_work": "2026-09-15T20:53:38.730Z",
+      "work_count": 310,
       "last_claim": "2026-09-10T10:58:43.415Z",
       "last_collect": null,
       "join_date": "2026-08-22T00:33:57.970300",
@@ -74,9 +74,9 @@
       "last_illegal": "2026-09-15T12:43:14.516Z",
       "total_heat_generated": 160.697,
       "bot_level": 8,
-      "bot_xp": 479,
-      "bot_total_xp": 3379,
-      "daily_work_count": 28,
+      "bot_xp": 518,
+      "bot_total_xp": 3418,
+      "daily_work_count": 29,
       "shock_worker": false,
       "mee6_level": 8,
       "last_daily_work_date": "2026-09-15",
@@ -27253,8 +27253,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 15,
-      "bot_total_xp": 15,
+      "bot_xp": 33,
+      "bot_total_xp": 33,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -62507,8 +62507,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 169,
-      "bot_total_xp": 1794,
+      "bot_xp": 194,
+      "bot_total_xp": 1819,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -232012,8 +232012,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 310,
-      "bot_total_xp": 4985,
+      "bot_xp": 334,
+      "bot_total_xp": 5009,
       "daily_work_count": 2,
       "shock_worker": false,
       "last_laylow": null,
@@ -241960,6 +241960,37 @@
       "last_laylow": null,
       "work_reminder": false,
       "work_reminder_sent": null
+    },
+    "1493393461787889774": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null
     }
   },
   "companies": {
@@ -242190,9 +242221,9 @@
         "Sunflower": 16,
         "Iron Ore": 13,
         "Salt": 13,
-        "Wheat": 173,
+        "Wheat": 172,
         "Coal": 28,
-        "Corn": 11,
+        "Corn": 13,
         "Steel Ingot": 3,
         "Steel Beam": 3
       },
@@ -243059,11 +243090,6 @@
   },
   "gsi_history": [
     {
-      "price": 157,
-      "change_percent": 0.7984511051837627,
-      "recorded_at": "2026-09-15T18:18:13.950Z"
-    },
-    {
       "price": 159,
       "change_percent": 1.4082232073140435,
       "recorded_at": "2026-09-15T18:18:59.970Z"
@@ -243557,6 +243583,11 @@
       "price": 165,
       "change_percent": -2.7472913865052737,
       "recorded_at": "2026-09-15T20:48:06.444Z"
+    },
+    {
+      "price": 160,
+      "change_percent": -2.9748305803834048,
+      "recorded_at": "2026-09-15T20:53:08.587Z"
     }
   ],
   "factory_names": [
@@ -243577,11 +243608,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 4.429085803204586,
-  "money_printed": 129859.44581232,
+  "inflation": 2.0655021383228416,
+  "money_printed": 127277.2568960736,
   "total_bank_reserves": 385778,
   "inflation_history": [
-    17.329090200965762,
     17.36101466240043,
     17.41986128484181,
     18.13277582574363,
@@ -243680,7 +243710,8 @@
     83.47536082531354,
     9.414774415103352,
     6.856755534004478,
-    4.429085803204586
+    4.429085803204586,
+    2.0655021383228416
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 29,
@@ -243824,34 +243855,34 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3410291541315231,
+    "Fuel": 1.3489225729006251,
     "Cake": 1.3959249249076566,
     "Bread": 1.4013298692518636,
-    "Copper Ingot": 1.3928309250969326,
-    "Iron Ingot": 1.3842811964127173,
+    "Copper Ingot": 1.394338635396766,
+    "Iron Ingot": 1.3826724357710765,
     "Steel Ingot": 1.3706666734505804,
     "Gold Bar": 1.2392729222191727,
     "Aluminium Ingot": 1.4123750501257253,
     "Timber Planks": 1.3409320781118481,
     "Bricks": 1.4079455128083742,
-    "Concrete": 1.417882352427294,
+    "Concrete": 1.4164517642331105,
     "Glass": 1.3979455128083742,
     "Steel Beam": 1.3956557447463274,
-    "Machine Parts": 1.0718447031172795,
+    "Machine Parts": 1.0896683881361866,
     "Refined Fuel": 1.403772848528719,
     "Uranium Rod": 1.3947041632222266,
     "Reactor Core": 1.3960924496517617,
     "Circuit Board": 1.395501184878412,
     "Flour": 1.3741932508564003,
-    "Sugar": 1.0481000227284851,
+    "Sugar": 1.0499211708925178,
     "Wine": 1.4079455128083742,
-    "Canned Food": 1.4061711995737132,
-    "Canned Fish": 1.3676213649223259,
+    "Canned Food": 1.4046283996802849,
+    "Canned Fish": 1.371579628596714,
     "Smoked Fish": 1.4044932212727144,
-    "Fish Stew": 1.4132851660477792,
-    "Peat Fuel": 1.405832002322387,
+    "Fish Stew": 1.4122223527639568,
+    "Peat Fuel": 1.40437400174179,
     "Gas Fuel": 1.3772295544478348,
-    "Fertilizer": 1.422601410207466,
+    "Fertilizer": 1.4207932973908688,
     "Cotton Fabric": 1.3906442575641569,
     "Manganese Alloy": 1.4079455128083742,
     "Sunflower Oil": 1.4117787816287286,
@@ -243861,7 +243892,7 @@
     "Citrus Juice": 1.4083015645330794,
     "Antimony Alloy": 1.4079455128083742,
     "Molybdenum Rod": 1.4079455128083742,
-    "Aluminium Sheet": 1.4070176685717286,
+    "Aluminium Sheet": 1.4052632514287964,
     "Shale Oil": 1.4044932212727144
   },
   "market_last_sale": {
@@ -250176,14 +250207,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 474460,
-      "at": "2026-09-15T13:01:05.994Z"
-    },
-    {
-      "total": 474480,
-      "at": "2026-09-15T13:06:06.011Z"
-    },
-    {
       "total": 474480,
       "at": "2026-09-15T13:11:06.027Z"
     },
@@ -250574,6 +250597,14 @@
     {
       "total": 466134,
       "at": "2026-09-15T20:48:08.061Z"
+    },
+    {
+      "total": 466134,
+      "at": "2026-09-15T20:53:09.001Z"
+    },
+    {
+      "total": 466134,
+      "at": "2026-09-15T20:53:10.164Z"
     }
   ],
   "gold_rush": null,
@@ -250800,7 +250831,7 @@
         "1544820489191559270": 2,
         "730223629849199093": 2,
         "1542306007772823714": 3,
-        "780837437987094560": 1
+        "780837437987094560": 2
       }
     },
     "collect_daily": {
@@ -250864,13 +250895,13 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1789505516499,
+      "1544820489191559270": 1789505581439,
       "791747702689103893": 1789504701994,
       "1456622719985782864": 1789503499453,
       "1082686076491137115": 1789505515444,
       "1229741033265299506": 1789504854121,
       "1536339779140976711": 1789504851157,
-      "780837437987094560": 1789505325264,
+      "780837437987094560": 1789505612342,
       "874346333882945547": 1789505361132,
       "870686833976172574": 1789503036266,
       "1186597507720019988": 1789497012618,
@@ -251114,13 +251145,13 @@
       "1100092111287750796": 1789486344813,
       "1309193358757068882": 1789488524387,
       "800787404867764225": 1789490159016,
-      "1532381114600128693": 1789505509901,
+      "1532381114600128693": 1789505593759,
       "1464657106111041753": 1789495480995,
       "1396122645573144767": 1789495975533,
       "977863303520981032": 1789498306480,
       "1542469950709440512": 1789501359001,
       "1040194883006234655": 1789504068485,
-      "1497024743579193356": 1789504376313
+      "1497024743579193356": 1789505580929
     }
   },
   "mee6_cache": {
@@ -270276,6 +270307,28 @@
           "content": "I don't have access to individual Discord user profiles or membership lists. My capabilities are limited to the economic and operational data provided in my context (GDP, GSI, inflation rates, gold backing, company rankings, etc.). I cannot look up specific user identities like <@1379734184259747851>.\n\nIf you need information about this account, you would need to consult the Discord server directly or contact the server administrator. Is there anything else I can help you with regarding the econ"
         }
       ]
+    },
+    "780837437987094560": {
+      "date": "2026-09-15",
+      "used": 2,
+      "history": [
+        {
+          "role": "user",
+          "content": "who is napoleon"
+        },
+        {
+          "role": "assistant",
+          "content": "**Napoleon** (full name: Napoleon Bonaparte) was an Italian-born French military and political leader who became Emperor of the French. Here are the key facts:\n\n- **Emperor of the French**: Ruled from 18 May 1804 until his first abdication in 1814, with a brief restoration during the Hundred Days in 1815 before final exile to Elba/Saint Helena.\n- **Military Career**: Rose to prominence as a general during the French Revolution; led successful campaigns across Europe and the Middle East during th"
+        },
+        {
+          "role": "user",
+          "content": "who is Napoleon from the USSR server"
+        },
+        {
+          "role": "assistant",
+          "content": "Based on the **USSR server lore** provided in your message, **there is no character or entity named \"Napoleon\"** associated with the server.\n\nNapoleon (Napoleon Bonaparte) is a **historical figure from France**, not Russia/Soviet Union. He was never part of the Soviet political, economic, or military structure. His empire existed before the USSR's formation (1799–1814), and he had no connection to Soviet institutions like the Economy, Guards, Divisions, Nukes, or Premier Approval.\n\nThe **USSR se"
+        }
+      ]
     }
   },
   "depression": {
@@ -271982,7 +272035,7 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.55,
+    "rub_per_usd": 6.5,
     "history": [
       {
         "rate": 8.39,
@@ -271999,9 +272052,13 @@
       {
         "rate": 6.55,
         "at": "2026-09-15T20:43:05.824Z"
+      },
+      {
+        "rate": 6.5,
+        "at": "2026-09-15T20:53:07.685Z"
       }
     ],
-    "last_update": "2026-09-15T20:43:05.824Z",
+    "last_update": "2026-09-15T20:53:07.685Z",
     "manual_override": null
   },
   "national_budget": {
