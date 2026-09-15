@@ -67,7 +67,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 399,
-      "heat": 7.470033404259169,
+      "heat": 6.509738804130329,
       "wanted": 0,
       "last_illegal": "2026-09-15T00:01:41.020Z",
       "total_heat_generated": 136.566,
@@ -685,15 +685,15 @@
       "last_laylow": null
     },
     "1528783188728483944": {
-      "cash": 15,
+      "cash": 30,
       "bank": 3652,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-13T13:00:36.264Z",
-      "work_count": 53,
+      "last_work": "2026-09-15T00:36:18.396Z",
+      "work_count": 54,
       "last_claim": "2026-08-27T11:08:16.433Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -707,11 +707,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 324,
-      "bot_total_xp": 1474,
-      "daily_work_count": 4,
+      "bot_xp": 340,
+      "bot_total_xp": 1490,
+      "daily_work_count": 5,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-13",
+      "last_daily_work_date": "2026-09-15",
       "mee6_level": 5,
       "last_laylow": null
     },
@@ -226481,8 +226481,8 @@
         "manager": 0
       },
       "wage": 20,
-      "heat": 373.55788674287277,
-      "underground_heat": 920.6437558668415,
+      "heat": 372.8715940708738,
+      "underground_heat": 919.9647802205377,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -226663,8 +226663,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 71758,
-      "market_cap": 71758,
+      "share_price": 72176,
+      "market_cap": 72176,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -226690,13 +226690,12 @@
         "Fish": 197,
         "Iron Ore": 1,
         "Oil Shale": 13,
-        "Timber": 17,
+        "Timber": 18,
         "Gold": 2
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-09-03T08:51:55.944Z",
       "price_history": [
-        60329,
         60344,
         60404,
         60695,
@@ -226795,7 +226794,8 @@
         69498,
         71401,
         71501,
-        71758
+        71758,
+        72176
       ],
       "is_state_owned": true,
       "director_id": "1456622719985782864",
@@ -226875,16 +226875,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 106,
-      "change_percent": 3.785313186333132,
-      "recorded_at": "2026-09-14T19:35:56.689Z"
-    },
-    {
-      "price": 111,
-      "change_percent": 5.2195006856379855,
-      "recorded_at": "2026-09-14T19:36:36.668Z"
-    },
     {
       "price": 116,
       "change_percent": 5.022218741374624,
@@ -227374,6 +227364,16 @@
       "price": 95,
       "change_percent": 0.7070559868252955,
       "recorded_at": "2026-09-15T00:30:59.554Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 1.5844639058651637,
+      "recorded_at": "2026-09-15T00:36:01.007Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 1.4186865684348986,
+      "recorded_at": "2026-09-15T00:36:19.289Z"
     }
   ],
   "factory_names": [
@@ -227394,11 +227394,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 16.08584072088331,
-  "money_printed": 21512,
+  "inflation": 16.12947598746585,
+  "money_printed": 21527,
   "total_bank_reserves": 480325,
   "inflation_history": [
-    0,
     0,
     0,
     0,
@@ -227497,7 +227496,8 @@
     15.906948095848904,
     16.05176843671586,
     15.971886829225328,
-    16.08584072088331
+    16.08584072088331,
+    16.12947598746585
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 29,
@@ -233726,10 +233726,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 637627,
-      "at": "2026-09-14T16:46:05.591Z"
-    },
-    {
       "total": 637647,
       "at": "2026-09-14T16:51:06.178Z"
     },
@@ -234124,6 +234120,10 @@
     {
       "total": 562979,
       "at": "2026-09-15T00:30:59.885Z"
+    },
+    {
+      "total": 562979,
+      "at": "2026-09-15T00:36:01.807Z"
     }
   ],
   "gold_rush": null,
@@ -234150,7 +234150,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 23.702299999999738,
+  "heat_global": 23.402299999999737,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -234324,6 +234324,9 @@
         "963834359994007614": 1,
         "503918799683321866": 1,
         "1470136693821800521": 3
+      },
+      "2026-09-15": {
+        "1528783188728483944": 1
       }
     },
     "collect_daily": {
