@@ -346,7 +346,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 252,
+      "cash": 250,
       "bank": 8121,
       "resources": {
         "Coal": 1
@@ -356,8 +356,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-16T13:17:16.574Z",
-      "work_count": 235,
+      "last_work": "2026-09-16T16:59:36.379Z",
+      "work_count": 236,
       "last_claim": "2026-09-15T07:15:38.994Z",
       "last_collect": null,
       "join_date": "2026-08-22T17:23:44.884271",
@@ -372,9 +372,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 224,
-      "bot_total_xp": 7254,
-      "daily_work_count": 96,
+      "bot_xp": 286,
+      "bot_total_xp": 7316,
+      "daily_work_count": 97,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-16",
       "mee6_level": 12,
@@ -1008,7 +1008,7 @@
       "work_reminder_sent": null
     },
     "791747702689103893": {
-      "cash": 1042,
+      "cash": 1106,
       "bank": 919,
       "resources": {},
       "inventory": {},
@@ -242752,14 +242752,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1186597507720019988>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 3229,
+      "funds": 2771,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 174910,
-      "market_cap": 174910,
+      "share_price": 174616,
+      "market_cap": 174616,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -242791,26 +242791,24 @@
       },
       "inventory": {
         "Zinc": 291,
-        "Copper": 123,
+        "Copper": 124,
         "Lead": 205,
         "Gold Bar": 40,
-        "Aluminium Ore": 109,
+        "Aluminium Ore": 110,
         "Uranium Rod": 2,
-        "Iron Ore": 20,
-        "Sugar": 105,
-        "Wheat": 67,
+        "Iron Ore": 21,
+        "Sugar": 106,
+        "Wheat": 49,
         "Contraband: Cocaine": 1,
         "Timber Planks": 10,
         "Steel Ingot": 1,
-        "Coal": 3,
-        "Gold": 14,
+        "Coal": 4,
+        "Gold": 15,
         "Machine Parts": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-16T07:50:49.017Z",
+      "last_collect": "2026-09-16T16:59:39.084Z",
       "price_history": [
-        165741,
-        165873,
         165895,
         165917,
         165963,
@@ -242908,7 +242906,9 @@
         174324,
         174606,
         174888,
-        174910
+        174910,
+        174956,
+        174616
       ],
       "is_state_owned": true,
       "director_id": "1186597507720019988",
@@ -243860,16 +243860,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": 0.8250834154764137,
-      "recorded_at": "2026-09-16T12:38:14.871Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.529811422619852,
-      "recorded_at": "2026-09-16T12:39:09.518Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.35957612098106784,
       "recorded_at": "2026-09-16T12:39:46.167Z"
     },
@@ -244357,6 +244347,16 @@
       "price": 99,
       "change_percent": -0.04946617925770279,
       "recorded_at": "2026-09-16T16:58:17.846Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.929040380972649,
+      "recorded_at": "2026-09-16T16:59:37.549Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.3610811447724333,
+      "recorded_at": "2026-09-16T16:59:40.176Z"
     }
   ],
   "factory_names": [
@@ -244378,7 +244378,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 15935.40231775305,
+  "money_printed": 15950.40231775305,
   "total_bank_reserves": 398752,
   "inflation_history": [
     0,
@@ -251073,6 +251073,13 @@
       "username": "alice_orlowe",
       "action": "collect-salaries",
       "details": "Baltic Timber & Harbour Co paid ₽211 salaries ceo 1528783188728483944 ₽88, director 1528783188728483944 ₽88, manager 1379734184259747851 ₽35"
+    },
+    {
+      "at": "2026-09-16T16:59:39.084Z",
+      "by": "1186597507720019988",
+      "username": "imdivit",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽448 salaries ceo 1186597507720019988 ₽160, director 1186597507720019988 ₽160, manager 791747702689103893 ₽64, manager 1186597507720019988 ₽64"
     }
   ],
   "total_rubles_history": [
@@ -251706,7 +251713,7 @@
       },
       "2026-09-16": {
         "918518877414100993": 2,
-        "1186597507720019988": 10,
+        "1186597507720019988": 11,
         "1225275427145121903": 3,
         "1528783188728483944": 2,
         "1495413593242337421": 24,
@@ -251769,7 +251776,7 @@
       },
       "2026-09-16": {
         "Azerbaijanian SSR": 0,
-        "Nuristani SSR": 6,
+        "Nuristani SSR": 7,
         "Estonian SSR": 0,
         "Kazakh SSR": 0
       }
@@ -251802,7 +251809,7 @@
       "780837437987094560": 1789563038279,
       "874346333882945547": 1789546299363,
       "870686833976172574": 1789573796228,
-      "1186597507720019988": 1789577763828,
+      "1186597507720019988": 1789578000667,
       "1521043721129558017": 1789577230116,
       "1397601108616024075": 1789526702591,
       "860203156222902332": 1789160394304,
@@ -270537,9 +270544,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 27,
-    "beforeLvlC": 4,
-    "afterLvl": 4,
+    "xpGainC": 26,
+    "beforeLvlC": 12,
+    "afterLvl": 12,
     "leveled": []
   },
   "central_bank": {
@@ -271395,7 +271402,7 @@
       "807254722251587614": 23,
       "791747702689103893": 12,
       "725687617504673872": 12,
-      "1186597507720019988": 154,
+      "1186597507720019988": 162,
       "1494027370208825436": 0,
       "1000271630154596473": 0,
       "1522851408611770409": 69,
@@ -271420,7 +271427,7 @@
       "807254722251587614": "2026-09-13T09:14:17.871Z",
       "791747702689103893": "2026-09-13T09:18:53.925Z",
       "725687617504673872": "2026-09-14T04:29:25.933Z",
-      "1186597507720019988": "2026-09-16T13:17:18.427Z",
+      "1186597507720019988": "2026-09-16T16:59:41.315Z",
       "1494027370208825436": "2026-09-13T09:26:38.723Z",
       "1000271630154596473": "2026-09-13T09:31:01.131Z",
       "1522851408611770409": "2026-09-16T10:02:53.511Z",
