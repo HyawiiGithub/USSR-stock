@@ -243573,11 +243573,6 @@
   },
   "gsi_history": [
     {
-      "price": 90,
-      "change_percent": 1.1816317338993227,
-      "recorded_at": "2026-09-16T08:03:12.826Z"
-    },
-    {
       "price": 91,
       "change_percent": 1.1689715936307836,
       "recorded_at": "2026-09-16T08:07:38.811Z"
@@ -244071,6 +244066,11 @@
       "price": 89,
       "change_percent": 1.4405744318465898,
       "recorded_at": "2026-09-16T12:09:38.541Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.5902672928658592,
+      "recorded_at": "2026-09-16T12:13:14.487Z"
     }
   ],
   "factory_names": [
@@ -244092,10 +244092,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 27371.103856386668,
+  "money_printed": 26823.681779258935,
   "total_bank_reserves": 398617,
   "inflation_history": [
-    79.49068126928113,
     79.48447708110996,
     79.57903433134254,
     85.93479164994532,
@@ -244105,6 +244104,7 @@
     6.856755534004478,
     4.429085803204586,
     2.0655021383228416,
+    0,
     0,
     0,
     0,
@@ -244346,13 +244346,13 @@
     "Steel Ingot": 1.3770937538159513,
     "Gold Bar": 1.2392729222191727,
     "Aluminium Ingot": 1.4123750501257253,
-    "Timber Planks": 1.1573546017402474,
+    "Timber Planks": 1.171950133202018,
     "Bricks": 1.4118275559163482,
     "Concrete": 1.4117859280761802,
     "Glass": 1.3979455128083742,
     "Steel Beam": 1.3956557447463274,
     "Machine Parts": 1.3937038497023566,
-    "Refined Fuel": 1.3310021039063549,
+    "Refined Fuel": 1.3420932673109824,
     "Uranium Rod": 1.3946524891445327,
     "Reactor Core": 1.4045693372388213,
     "Circuit Board": 1.404125888658809,
@@ -244365,10 +244365,10 @@
     "Fish Stew": 1.4122223527639568,
     "Peat Fuel": 1.40437400174179,
     "Gas Fuel": 1.374066624376907,
-    "Fertilizer": 1.4140049492258095,
+    "Fertilizer": 1.4128845532877448,
     "Cotton Fabric": 1.3992331931731177,
     "Manganese Alloy": 1.4079455128083742,
-    "Sunflower Oil": 1.4132056731637583,
+    "Sunflower Oil": 1.4121492193106577,
     "Linen": 1.3983015645330794,
     "Corn Meal": 1.4079455128083742,
     "Tea Pack": 1.4118275559163482,
@@ -244404,12 +244404,12 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Timber Planks": 8
+    "Timber Planks": 7
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 134,
+    "Timber Planks": 135,
     "Refined Fuel": 122,
     "Fuel": 117,
     "Iron Ingot": 53,
@@ -244431,11 +244431,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-08T08:36:48.592Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -245930,6 +245925,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-16T11:58:12.362Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-09-16T12:13:12.333Z"
     }
   ],
   "demand_history": {
@@ -246334,11 +246334,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 1.123499270602855,
-        "at": "2026-08-28T09:27:37.513Z",
-        "supply": 5
-      },
-      {
         "demand": 1.1299442562389117,
         "at": "2026-08-28T09:42:37.515Z",
         "supply": 5
@@ -246631,6 +246626,11 @@
       {
         "demand": 1.117866201353207,
         "at": "2026-09-16T11:28:12.324Z",
+        "supply": 26
+      },
+      {
+        "demand": 1.171950133202018,
+        "at": "2026-09-16T12:13:12.333Z",
         "supply": 26
       }
     ],
@@ -272678,7 +272678,7 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.66,
+    "rub_per_usd": 6.55,
     "history": [
       {
         "rate": 8.39,
@@ -273063,9 +273063,13 @@
       {
         "rate": 6.66,
         "at": "2026-09-16T12:03:11.341Z"
+      },
+      {
+        "rate": 6.55,
+        "at": "2026-09-16T12:13:11.350Z"
       }
     ],
-    "last_update": "2026-09-16T12:03:11.345Z",
+    "last_update": "2026-09-16T12:13:11.350Z",
     "manual_override": null
   },
   "national_budget": {
