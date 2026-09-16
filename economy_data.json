@@ -721,15 +721,15 @@
       "work_reminder_sent": null
     },
     "1528783188728483944": {
-      "cash": 497,
+      "cash": 688,
       "bank": 3652,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-16T02:27:55.107Z",
-      "work_count": 57,
+      "last_work": "2026-09-16T11:44:35.623Z",
+      "work_count": 58,
       "last_claim": "2026-08-27T11:08:16.433Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -743,9 +743,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 307,
-      "bot_total_xp": 1932,
-      "daily_work_count": 8,
+      "bot_xp": 350,
+      "bot_total_xp": 1975,
+      "daily_work_count": 9,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-16",
       "mee6_level": 6,
@@ -1297,7 +1297,7 @@
       "work_reminder_sent": null
     },
     "1379734184259747851": {
-      "cash": 1328,
+      "cash": 1363,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243320,14 +243320,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 1761,
+      "funds": 1565,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 58336,
-      "market_cap": 58336,
+      "share_price": 58342,
+      "market_cap": 58342,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -243350,18 +243350,17 @@
       "inventory": {
         "Phosphorite": 96,
         "Peat": 143,
-        "Fish": 176,
+        "Fish": 174,
         "Iron Ore": 1,
         "Oil Shale": 15,
-        "Timber": 41,
+        "Timber": 48,
         "Gold": 2,
-        "Wheat": 9,
-        "Sugar": 9
+        "Wheat": 6,
+        "Sugar": 6
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-16T02:28:06.542Z",
+      "last_collect": "2026-09-16T11:45:10.737Z",
       "price_history": [
-        60800,
         60814,
         60793,
         62405,
@@ -243460,7 +243459,8 @@
         92734,
         92720,
         58254,
-        58336
+        58336,
+        58342
       ],
       "is_state_owned": true,
       "director_id": "1528783188728483944",
@@ -243540,11 +243540,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.7195543987445533,
-      "recorded_at": "2026-09-16T07:43:12.793Z"
-    },
     {
       "price": 92,
       "change_percent": 0.4796935513001716,
@@ -244039,6 +244034,11 @@
       "price": 91,
       "change_percent": 1.13135043332016,
       "recorded_at": "2026-09-16T11:43:14.102Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.8679550870731803,
+      "recorded_at": "2026-09-16T11:44:36.605Z"
     }
   ],
   "factory_names": [
@@ -244060,7 +244060,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 28423.148538511734,
+  "money_printed": 28438.148538511734,
   "total_bank_reserves": 398617,
   "inflation_history": [
     57.72471553201386,
@@ -250751,6 +250751,13 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽538 salaries ceo 1186597507720019988 ₽192, director 1186597507720019988 ₽192, manager 791747702689103893 ₽77, manager 1186597507720019988 ₽77"
+    },
+    {
+      "at": "2026-09-16T11:45:10.737Z",
+      "by": "1528783188728483944",
+      "username": "alice_orlowe",
+      "action": "collect-salaries",
+      "details": "Baltic Timber & Harbour Co paid ₽211 salaries ceo 1528783188728483944 ₽88, director 1528783188728483944 ₽88, manager 1379734184259747851 ₽35"
     }
   ],
   "total_rubles_history": [
@@ -251386,7 +251393,7 @@
         "918518877414100993": 1,
         "1186597507720019988": 4,
         "1225275427145121903": 1,
-        "1528783188728483944": 1,
+        "1528783188728483944": 2,
         "1495413593242337421": 18,
         "807254722251587614": 2,
         "730223629849199093": 11,
@@ -270188,9 +270195,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 21,
-    "beforeLvlC": 11,
-    "afterLvl": 11,
+    "xpGainC": 24,
+    "beforeLvlC": 6,
+    "afterLvl": 6,
     "leveled": []
   },
   "central_bank": {
