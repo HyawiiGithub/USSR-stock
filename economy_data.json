@@ -1646,15 +1646,15 @@
       "work_reminder_sent": null
     },
     "1511756975392948224": {
-      "cash": 200,
+      "cash": 384,
       "bank": 8603,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-16T07:37:49.108Z",
-      "work_count": 274,
+      "last_work": "2026-09-16T07:43:37.401Z",
+      "work_count": 275,
       "last_claim": "2026-09-12T13:53:06.966Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1662,21 +1662,21 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null,
-      "dirty_cash": 191,
-      "heat": 7.0007291866356125,
+      "dirty_cash": 0,
+      "heat": 11.039837308749867,
       "wanted": 0,
-      "last_illegal": "2026-09-16T07:37:49.108Z",
-      "total_heat_generated": 368.5400000000001,
+      "last_illegal": "2026-09-16T07:43:37.401Z",
+      "total_heat_generated": 377.22800000000007,
       "bot_level": 16,
-      "bot_xp": 1170,
-      "bot_total_xp": 14970,
+      "bot_xp": 1190,
+      "bot_total_xp": 14990,
       "daily_work_count": 74,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-16",
       "mee6_level": 16,
-      "last_laylow": "2026-09-15T15:14:18.958Z",
+      "last_laylow": "2026-09-16T07:44:04.920Z",
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-16T07:43:21.995Z"
+      "work_reminder_sent": null
     },
     "1456863215815364796": {
       "cash": 60,
@@ -242844,14 +242844,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1229741033265299506>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 8645,
+      "funds": 8635,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 251148,
-      "market_cap": 251148,
+      "share_price": 251130,
+      "market_cap": 251130,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -242903,7 +242903,7 @@
       },
       "inventory": {
         "Gold Bar": 29,
-        "Wheat": 157,
+        "Wheat": 156,
         "Sugar": 31,
         "Copper": 43,
         "Lead": 8,
@@ -242925,12 +242925,11 @@
         "Oil": 4,
         "Uranium": 1,
         "Contraband: Heroin": 1,
-        "Contraband: Cocaine": 1
+        "Contraband: Cocaine": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-15T16:55:21.996Z",
       "price_history": [
-        267959,
         267929,
         268601,
         268820,
@@ -243029,7 +243028,8 @@
         251122,
         251168,
         251166,
-        251148
+        251148,
+        251130
       ],
       "is_state_owned": true,
       "director_id": "1229741033265299506",
@@ -243049,8 +243049,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 384.0662731635666,
-      "underground_heat": 1057.8370463767735,
+      "heat": 389.1727398302333,
+      "underground_heat": 1066.5250463767736,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -243445,11 +243445,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 85,
-      "change_percent": 0.9323155685924283,
-      "recorded_at": "2026-09-16T01:28:10.477Z"
-    },
     {
       "price": 85,
       "change_percent": 0.5863131044564068,
@@ -243944,6 +243939,11 @@
       "price": 92,
       "change_percent": 0.7195543987445533,
       "recorded_at": "2026-09-16T07:43:12.793Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.4796935513001716,
+      "recorded_at": "2026-09-16T07:43:38.537Z"
     }
   ],
   "factory_names": [
@@ -250632,6 +250632,13 @@
       "username": "alice_orlowe",
       "action": "collect-salaries",
       "details": "Baltic Timber & Harbour Co paid ₽237 salaries ceo 1528783188728483944 ₽99, director 1528783188728483944 ₽99, manager 1379734184259747851 ₽39"
+    },
+    {
+      "at": "2026-09-16T07:43:54.025Z",
+      "by": "1511756975392948224",
+      "username": "localmanandwoman",
+      "action": "launder",
+      "details": "₽319 dirty → ₽159 clean fee ₽160"
     }
   ],
   "total_rubles_history": [
@@ -251060,7 +251067,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 0.7036499999999999,
+  "heat_global": 2.00685,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -251423,7 +251430,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789512447473,
-      "1511756975392948224": 1789544443912,
+      "1511756975392948224": 1789544608996,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789495529054,
