@@ -118,8 +118,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 29,
-      "bot_total_xp": 16009,
+      "bot_xp": 54,
+      "bot_total_xp": 16034,
       "daily_work_count": 3,
       "shock_worker": false,
       "mee6_level": 17,
@@ -902,8 +902,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 124,
-      "bot_total_xp": 5899,
+      "bot_xp": 143,
+      "bot_total_xp": 5918,
       "daily_work_count": 68,
       "shock_worker": false,
       "mee6_level": 11,
@@ -1663,7 +1663,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 154,
-      "heat": 6.675354784381505,
+      "heat": 5.813098439850716,
       "wanted": 0,
       "last_illegal": "2026-09-16T09:52:38.522Z",
       "total_heat_generated": 395.42800000000005,
@@ -243112,8 +243112,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 377.2717019431884,
-      "underground_heat": 1062.2637263487084,
+      "heat": 376.6522854290125,
+      "underground_heat": 1061.6118993112084,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -243508,11 +243508,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 90,
-      "change_percent": 0.7868516273895239,
-      "recorded_at": "2026-09-16T05:33:12.273Z"
-    },
     {
       "price": 90,
       "change_percent": 0.08122340563457399,
@@ -244007,6 +244002,11 @@
       "price": 93,
       "change_percent": 0.7735240103558824,
       "recorded_at": "2026-09-16T10:11:43.744Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 1.0166921737445975,
+      "recorded_at": "2026-09-16T10:13:13.514Z"
     }
   ],
   "factory_names": [
@@ -244028,10 +244028,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 33017.18118359758,
+  "money_printed": 32356.83755992563,
   "total_bank_reserves": 398617,
   "inflation_history": [
-    49.07278750671996,
     49.1056691746642,
     57.66291403302117,
     59.18247325416607,
@@ -244052,6 +244051,7 @@
     6.856755534004478,
     4.429085803204586,
     2.0655021383228416,
+    0,
     0,
     0,
     0,
@@ -244340,13 +244340,13 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Refined Fuel": 8
+    "Refined Fuel": 7
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 132,
-    "Refined Fuel": 114,
+    "Refined Fuel": 115,
     "Fuel": 117,
     "Iron Ingot": 53,
     "Shale Oil": 27,
@@ -244367,11 +244367,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-08T03:51:48.675Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -245866,6 +245861,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-15T23:43:09.147Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-09-16T10:13:12.296Z"
     }
   ],
   "demand_history": {
@@ -246572,11 +246572,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.3505296736324546,
-        "at": "2026-08-29T19:55:16.913Z",
-        "supply": 0
-      },
-      {
         "demand": 1.3516592647733034,
         "at": "2026-08-29T20:10:16.925Z",
         "supply": 0
@@ -246869,6 +246864,11 @@
       {
         "demand": 1.3475628355107636,
         "at": "2026-09-14T18:42:11.033Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2237728485287191,
+        "at": "2026-09-16T10:13:12.296Z",
         "supply": 0
       }
     ],
@@ -250723,10 +250723,6 @@
   "total_rubles_history": [
     {
       "total": 466979,
-      "at": "2026-09-16T02:13:11.868Z"
-    },
-    {
-      "total": 466979,
       "at": "2026-09-16T02:18:11.756Z"
     },
     {
@@ -251120,6 +251116,10 @@
     {
       "total": 480467,
       "at": "2026-09-16T10:08:13.805Z"
+    },
+    {
+      "total": 480503,
+      "at": "2026-09-16T10:13:13.803Z"
     }
   ],
   "gold_rush": null,
@@ -251146,7 +251146,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 0.32159999999999994,
+  "heat_global": 0.021599999999999953,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -251434,7 +251434,7 @@
       "1544820489191559270": 1789521680807,
       "791747702689103893": 1789535839356,
       "1456622719985782864": 1789541445191,
-      "1082686076491137115": 1789550018611,
+      "1082686076491137115": 1789553619442,
       "1229741033265299506": 1789505797598,
       "1536339779140976711": 1789504851157,
       "780837437987094560": 1789553437107,
@@ -251456,7 +251456,7 @@
       "1369015006955442326": 1789120293921,
       "914436541072425021": 1789484018810,
       "1107232271880159292": 1789495793147,
-      "1495413593242337421": 1789553200478,
+      "1495413593242337421": 1789553640775,
       "1447308947072614555": 1788973711995,
       "887419379833274388": 1789495614642,
       "807944786840387675": 1789490861591,
@@ -272587,7 +272587,7 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.52,
+    "rub_per_usd": 6.53,
     "history": [
       {
         "rate": 8.39,
@@ -272928,9 +272928,13 @@
       {
         "rate": 6.52,
         "at": "2026-09-16T10:03:11.396Z"
+      },
+      {
+        "rate": 6.53,
+        "at": "2026-09-16T10:13:11.323Z"
       }
     ],
-    "last_update": "2026-09-16T10:03:11.396Z",
+    "last_update": "2026-09-16T10:13:11.323Z",
     "manual_override": null
   },
   "national_budget": {
@@ -272958,12 +272962,6 @@
   },
   "lore": {
     "entries": [
-      {
-        "channel": "🏛│moldovian-stand",
-        "author": "just_alex2.",
-        "text": "what did you get",
-        "at": "2026-03-22T21:13:05.217Z"
-      },
       {
         "channel": "🏛│moldovian-stand",
         "author": "just_alex2.",
@@ -273857,6 +273855,12 @@
         "author": "Warsaw Pact",
         "text": "<:flag_ussr:606158616642322433>",
         "at": "2026-09-16T09:08:36.768Z"
+      },
+      {
+        "channel": "⚐│central-committee-of-cpsu",
+        "author": "Napoleon Astrae",
+        "text": "Woah who said it was mine…",
+        "at": "2026-09-16T10:03:54.354Z"
       }
     ],
     "seen": [
@@ -274025,9 +274029,10 @@
       "1549681041348890694",
       "1549689951770255391",
       "1549689911722905611",
-      "1549708576237555723"
+      "1549708576237555723",
+      "1549722491201654855"
     ],
-    "last_scan": "2026-09-16T09:28:15.007Z",
+    "last_scan": "2026-09-16T10:13:17.047Z",
     "last_count": 1
   }
 }
