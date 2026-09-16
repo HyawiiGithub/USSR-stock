@@ -721,7 +721,7 @@
       "work_reminder_sent": null
     },
     "1528783188728483944": {
-      "cash": 299,
+      "cash": 497,
       "bank": 3652,
       "resources": {},
       "inventory": {},
@@ -743,8 +743,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 185,
-      "bot_total_xp": 1810,
+      "bot_xp": 215,
+      "bot_total_xp": 1840,
       "daily_work_count": 8,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-16",
@@ -1297,7 +1297,7 @@
       "work_reminder_sent": null
     },
     "1379734184259747851": {
-      "cash": 1289,
+      "cash": 1328,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -242920,8 +242920,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 420.8392331435475,
-      "underground_heat": 1092.2924670038662,
+      "heat": 420.25118680972054,
+      "underground_heat": 1091.754295091624,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -243096,14 +243096,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 1973,
+      "funds": 1761,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 92720,
-      "market_cap": 92720,
+      "share_price": 58336,
+      "market_cap": 58336,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -243126,18 +243126,17 @@
       "inventory": {
         "Phosphorite": 96,
         "Peat": 143,
-        "Fish": 188,
+        "Fish": 176,
         "Iron Ore": 1,
         "Oil Shale": 15,
-        "Timber": 25,
+        "Timber": 41,
         "Gold": 2,
-        "Wheat": 2
+        "Wheat": 9,
+        "Sugar": 9
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-15T18:28:10.853Z",
+      "last_collect": "2026-09-16T02:28:06.542Z",
       "price_history": [
-        60725,
-        60732,
         60800,
         60814,
         60793,
@@ -243235,7 +243234,9 @@
         92861,
         87341,
         92734,
-        92720
+        92720,
+        58254,
+        58336
       ],
       "is_state_owned": true,
       "director_id": "1528783188728483944",
@@ -243315,21 +243316,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 189,
-      "change_percent": 0.14996651014087953,
-      "recorded_at": "2026-09-15T20:16:07.100Z"
-    },
-    {
-      "price": 189,
-      "change_percent": 0.20063435042400116,
-      "recorded_at": "2026-09-15T20:17:55.415Z"
-    },
-    {
-      "price": 189,
-      "change_percent": 0.19402395181042295,
-      "recorded_at": "2026-09-15T20:19:06.469Z"
-    },
     {
       "price": 189,
       "change_percent": 0.31291862902866063,
@@ -243814,6 +243800,21 @@
       "price": 84,
       "change_percent": 1.228788589180986,
       "recorded_at": "2026-09-16T02:23:11.498Z"
+    },
+    {
+      "price": 84,
+      "change_percent": 0.7229770245954259,
+      "recorded_at": "2026-09-16T02:27:56.471Z"
+    },
+    {
+      "price": 84,
+      "change_percent": 0.6963420013643258,
+      "recorded_at": "2026-09-16T02:28:07.577Z"
+    },
+    {
+      "price": 84,
+      "change_percent": 0.8242822631829195,
+      "recorded_at": "2026-09-16T02:28:11.319Z"
     }
   ],
   "factory_names": [
@@ -250495,13 +250496,16 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽626 salaries ceo 1186597507720019988 ₽224, director 1186597507720019988 ₽224, manager 791747702689103893 ₽89, manager 1186597507720019988 ₽89"
+    },
+    {
+      "at": "2026-09-16T02:28:06.542Z",
+      "by": "1528783188728483944",
+      "username": "alice_orlowe",
+      "action": "collect-salaries",
+      "details": "Baltic Timber & Harbour Co paid ₽237 salaries ceo 1528783188728483944 ₽99, director 1528783188728483944 ₽99, manager 1379734184259747851 ₽39"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 423780,
-      "at": "2026-09-15T18:46:07.497Z"
-    },
     {
       "total": 423820,
       "at": "2026-09-15T18:51:07.496Z"
@@ -250897,6 +250901,10 @@
     {
       "total": 467004,
       "at": "2026-09-16T02:23:11.946Z"
+    },
+    {
+      "total": 467256,
+      "at": "2026-09-16T02:28:11.881Z"
     }
   ],
   "gold_rush": null,
@@ -251176,7 +251184,8 @@
       },
       "2026-09-16": {
         "Azerbaijanian SSR": 0,
-        "Nuristani SSR": 3
+        "Nuristani SSR": 3,
+        "Estonian SSR": 0
       }
     },
     "qotd": {
@@ -269894,9 +269903,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 26,
-    "beforeLvlC": 11,
-    "afterLvl": 11,
+    "xpGainC": 30,
+    "beforeLvlC": 6,
+    "afterLvl": 6,
     "leveled": []
   },
   "central_bank": {
