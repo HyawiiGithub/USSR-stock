@@ -1646,15 +1646,15 @@
       "work_reminder_sent": null
     },
     "1511756975392948224": {
-      "cash": 559,
+      "cash": 584,
       "bank": 8603,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-16T09:47:01.059Z",
-      "work_count": 280,
+      "last_work": "2026-09-16T09:52:38.522Z",
+      "work_count": 281,
       "last_claim": "2026-09-12T13:53:06.966Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1662,11 +1662,11 @@
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null,
-      "dirty_cash": 0,
-      "heat": 0,
+      "dirty_cash": 154,
+      "heat": 10.144,
       "wanted": 0,
-      "last_illegal": "2026-09-16T07:49:32.977Z",
-      "total_heat_generated": 385.28400000000005,
+      "last_illegal": "2026-09-16T09:52:38.522Z",
+      "total_heat_generated": 395.42800000000005,
       "bot_level": 16,
       "bot_xp": 1490,
       "bot_total_xp": 15290,
@@ -1676,7 +1676,7 @@
       "mee6_level": 16,
       "last_laylow": "2026-09-16T07:44:04.920Z",
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-16T09:52:22.527Z"
+      "work_reminder_sent": null
     },
     "1456863215815364796": {
       "cash": 60,
@@ -242906,14 +242906,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1229741033265299506>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 8565,
+      "funds": 8555,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 256089,
-      "market_cap": 256089,
+      "share_price": 256071,
+      "market_cap": 256071,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -242965,7 +242965,7 @@
       },
       "inventory": {
         "Gold Bar": 29,
-        "Wheat": 167,
+        "Wheat": 166,
         "Sugar": 45,
         "Copper": 43,
         "Lead": 8,
@@ -242979,7 +242979,7 @@
         "Steel Ingot": 3,
         "Timber": 14,
         "Contraband: Cannabis": 2,
-        "Contraband: LSD Sheets": 2,
+        "Contraband: LSD Sheets": 3,
         "Bread": 4,
         "Cake": 4,
         "Coal": 25,
@@ -242993,7 +242993,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-16T07:45:30.565Z",
       "price_history": [
-        269248,
         287776,
         279832,
         279874,
@@ -243092,7 +243091,8 @@
         255945,
         255943,
         256091,
-        256089
+        256089,
+        256071
       ],
       "is_state_owned": true,
       "director_id": "1229741033265299506",
@@ -243112,8 +243112,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 373.8465098513138,
-      "underground_heat": 1054.8544336332643,
+      "heat": 379.9329098513138,
+      "underground_heat": 1064.9984336332643,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -243508,11 +243508,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.1902749010203689,
-      "recorded_at": "2026-09-16T04:38:12.037Z"
-    },
     {
       "price": 102,
       "change_percent": 5.711782888160156,
@@ -244007,6 +244002,11 @@
       "price": 93,
       "change_percent": 1.3390180725916552,
       "recorded_at": "2026-09-16T09:50:14.255Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.3053166639819263,
+      "recorded_at": "2026-09-16T09:52:39.494Z"
     }
   ],
   "factory_names": [
@@ -244028,10 +244028,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 27218.347754683036,
+  "money_printed": 26673.980799589375,
   "total_bank_reserves": 398617,
   "inflation_history": [
-    13.8487202083815,
     13.945712648399613,
     49.07278750671996,
     49.1056691746642,
@@ -244054,6 +244053,7 @@
     6.856755534004478,
     4.429085803204586,
     2.0655021383228416,
+    0,
     0,
     0,
     0,
@@ -251144,7 +251144,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 0,
+  "heat_global": 1.5216,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -272585,7 +272585,7 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.52,
+    "rub_per_usd": 6.5,
     "history": [
       {
         "rate": 8.39,
@@ -272918,9 +272918,13 @@
       {
         "rate": 6.52,
         "at": "2026-09-16T09:43:11.521Z"
+      },
+      {
+        "rate": 6.5,
+        "at": "2026-09-16T09:53:11.423Z"
       }
     ],
-    "last_update": "2026-09-16T09:43:11.521Z",
+    "last_update": "2026-09-16T09:53:11.423Z",
     "manual_override": null
   },
   "national_budget": {
