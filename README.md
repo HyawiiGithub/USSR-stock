@@ -18,7 +18,7 @@ All formulas match `bot.js` exactly (`getGoldPrice`, `getSupplyFactor`, `getBala
 
 ## Run locally (with backend)
 ```bash
-cd "website for ahd"
+cd "location of file"
 npm install
 node server.js   # default http://localhost:3001
 # open http://localhost:3001/ussr.html
@@ -59,6 +59,6 @@ Smoother: 60fps, transform-only, `animation: {duration:600}` on charts, `prefers
 Files:
 - `index.html` — new locked design, 5 views (Overview / Markets & GSI / Companies / World Map / Production)
 - `ussr.js` — fetches `/api/ussr/overview` or falls back to client mock, renders 9 charts
-- `ussr-economy-data.mjs` — backend generator (used by `website for ahd/server.js`)
+- `ussr-economy-data.mjs` — backend generator (used by `fileloc/server.js`)
 
 Backend source of truth remains `bot stuff/bot.js` — this site is a read-only mirror.
