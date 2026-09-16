@@ -672,7 +672,7 @@
       "is_state_director": true,
       "director_of": "state_26",
       "dirty_cash": 194,
-      "heat": 1.8748386842568334,
+      "heat": 0.9720327098314939,
       "wanted": 0,
       "last_illegal": "2026-09-16T10:19:04.430Z",
       "total_heat_generated": 433.6450000000001,
@@ -243113,8 +243113,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 375.762230110604,
-      "underground_heat": 1065.876017233523,
+      "heat": 375.0984496731015,
+      "underground_heat": 1065.32967355456,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -243509,16 +243509,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 91,
-      "change_percent": 0.8298601004621841,
-      "recorded_at": "2026-09-16T07:28:12.774Z"
-    },
-    {
-      "price": 92,
-      "change_percent": 1.1562886816419948,
-      "recorded_at": "2026-09-16T07:31:34.891Z"
-    },
     {
       "price": 92,
       "change_percent": 0.40770275707911136,
@@ -244008,6 +243998,16 @@
       "price": 97,
       "change_percent": 0.3365864764393863,
       "recorded_at": "2026-09-16T11:27:45.578Z"
+    },
+    {
+      "price": 89,
+      "change_percent": -8.198074647676986,
+      "recorded_at": "2026-09-16T11:28:11.170Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.1408778726174764,
+      "recorded_at": "2026-09-16T11:28:13.644Z"
     }
   ],
   "factory_names": [
@@ -244342,12 +244342,12 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Refined Fuel": 1,
-    "Timber Planks": 10
+    "Timber Planks": 8
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 132,
+    "Timber Planks": 134,
     "Refined Fuel": 121,
     "Fuel": 117,
     "Iron Ingot": 53,
@@ -244369,11 +244369,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-08T08:06:48.717Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -245868,6 +245863,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-16T11:13:12.342Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-09-16T11:28:12.324Z"
     }
   ],
   "demand_history": {
@@ -246272,11 +246272,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 1.1935864439273687,
-        "at": "2026-08-28T06:42:37.443Z",
-        "supply": 10
-      },
-      {
         "demand": 1.123499270602855,
         "at": "2026-08-28T09:27:37.513Z",
         "supply": 5
@@ -246570,6 +246565,11 @@
         "demand": 1.2699952419167833,
         "at": "2026-09-13T09:34:16.497Z",
         "supply": 8
+      },
+      {
+        "demand": 1.117866201353207,
+        "at": "2026-09-16T11:28:12.324Z",
+        "supply": 26
       }
     ],
     "Refined Fuel": [
@@ -250725,10 +250725,6 @@
   "total_rubles_history": [
     {
       "total": 467256,
-      "at": "2026-09-16T03:23:11.794Z"
-    },
-    {
-      "total": 467256,
       "at": "2026-09-16T03:28:11.794Z"
     },
     {
@@ -251122,6 +251118,10 @@
     {
       "total": 480771,
       "at": "2026-09-16T11:23:14.241Z"
+    },
+    {
+      "total": 480804,
+      "at": "2026-09-16T11:28:14.240Z"
     }
   ],
   "gold_rush": null,
