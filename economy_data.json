@@ -240029,8 +240029,8 @@
       "work_reminder_sent": null
     },
     "1483005845867593831": {
-      "cash": 15,
-      "bank": 453,
+      "cash": 0,
+      "bank": 468,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -243047,8 +243047,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 384.75611341159396,
-      "underground_heat": 1055.3002523660223,
+      "heat": 384.0980974869024,
+      "underground_heat": 1054.702478580937,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -243065,8 +243065,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 217056,
-      "market_cap": 217056,
+      "share_price": 217061,
+      "market_cap": 217061,
       "employees": 10,
       "level": 1,
       "buildings": {
@@ -243095,7 +243095,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-06T08:00:29.154Z",
       "price_history": [
-        210443,
         210448,
         210485,
         210602,
@@ -243194,7 +243193,8 @@
         216840,
         216960,
         217048,
-        217056
+        217056,
+        217061
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -243443,16 +243443,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 80,
-      "change_percent": 1.076115488781699,
-      "recorded_at": "2026-09-16T00:33:10.454Z"
-    },
-    {
-      "price": 80,
-      "change_percent": 0.9167734905309236,
-      "recorded_at": "2026-09-16T00:36:57.374Z"
-    },
     {
       "price": 81,
       "change_percent": 1.5148094467956492,
@@ -243942,6 +243932,16 @@
       "price": 89,
       "change_percent": 0.6170282630623407,
       "recorded_at": "2026-09-16T06:58:12.555Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.8387862182380017,
+      "recorded_at": "2026-09-16T07:02:40.021Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.227240467015122,
+      "recorded_at": "2026-09-16T07:03:12.680Z"
     }
   ],
   "factory_names": [
@@ -243963,10 +243963,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 38064.48259193184,
-  "total_bank_reserves": 390845,
+  "money_printed": 37303.1929400932,
+  "total_bank_reserves": 390860,
   "inflation_history": [
-    3.92104820424462,
     3.839098125987057,
     3.8636452582518857,
     4.883829790905303,
@@ -244006,6 +244005,7 @@
     6.856755534004478,
     4.429085803204586,
     2.0655021383228416,
+    0,
     0,
     0,
     0,
@@ -250635,10 +250635,6 @@
   "total_rubles_history": [
     {
       "total": 466308,
-      "at": "2026-09-15T23:03:10.403Z"
-    },
-    {
-      "total": 466308,
       "at": "2026-09-15T23:08:10.215Z"
     },
     {
@@ -251032,6 +251028,10 @@
     {
       "total": 471807,
       "at": "2026-09-16T06:58:13.498Z"
+    },
+    {
+      "total": 471822,
+      "at": "2026-09-16T07:03:13.522Z"
     }
   ],
   "gold_rush": null,
@@ -272501,7 +272501,7 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.46,
+    "rub_per_usd": 6.36,
     "history": [
       {
         "rate": 8.39,
@@ -272762,9 +272762,13 @@
       {
         "rate": 6.46,
         "at": "2026-09-16T06:53:10.523Z"
+      },
+      {
+        "rate": 6.36,
+        "at": "2026-09-16T07:03:10.563Z"
       }
     ],
-    "last_update": "2026-09-16T06:53:10.523Z",
+    "last_update": "2026-09-16T07:03:10.563Z",
     "manual_override": null
   },
   "national_budget": {
