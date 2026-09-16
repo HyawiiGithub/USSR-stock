@@ -672,7 +672,7 @@
       "is_state_director": true,
       "director_of": "state_26",
       "dirty_cash": 540,
-      "heat": 1.813368713024571,
+      "heat": 0.9142352189556189,
       "wanted": 0,
       "last_illegal": "2026-09-16T16:02:18.649Z",
       "total_heat_generated": 479.07600000000014,
@@ -1153,7 +1153,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 1764,
-      "heat": 4.4055953364494735,
+      "heat": 3.473037719986383,
       "wanted": 0,
       "last_illegal": "2026-09-16T16:48:34.632Z",
       "total_heat_generated": 255.805,
@@ -1663,7 +1663,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 593,
-      "heat": 0.7398296281473332,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-16T16:07:00.009Z",
       "total_heat_generated": 442.68700000000007,
@@ -243493,8 +243493,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 415.89264626129426,
-      "underground_heat": 1164.8020292219314,
+      "heat": 415.165331147344,
+      "underground_heat": 1164.122402633062,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -243889,11 +243889,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.7769042199299977,
-      "recorded_at": "2026-09-16T13:18:14.968Z"
-    },
     {
       "price": 92,
       "change_percent": 0.32346993425657006,
@@ -244388,6 +244383,11 @@
       "price": 101,
       "change_percent": 0.1650360215661236,
       "recorded_at": "2026-09-16T17:39:02.484Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.4483608351619175,
+      "recorded_at": "2026-09-16T17:43:18.051Z"
     }
   ],
   "factory_names": [
@@ -244409,7 +244409,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 14776.901117085616,
+  "money_printed": 14481.363094743903,
   "total_bank_reserves": 398752,
   "inflation_history": [
     0,
@@ -251115,10 +251115,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 480406,
-      "at": "2026-09-16T10:03:13.790Z"
-    },
-    {
       "total": 480467,
       "at": "2026-09-16T10:08:13.805Z"
     },
@@ -251513,6 +251509,10 @@
     {
       "total": 482332,
       "at": "2026-09-16T17:38:19.232Z"
+    },
+    {
+      "total": 482350,
+      "at": "2026-09-16T17:43:19.222Z"
     }
   ],
   "gold_rush": null,
@@ -251539,7 +251539,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 4.4341500000000025,
+  "heat_global": 4.134150000000003,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -273048,12 +273048,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.59,
+    "rub_per_usd": 6.64,
     "history": [
-      {
-        "rate": 6.32,
-        "at": "2026-09-16T00:53:09.123Z"
-      },
       {
         "rate": 6.37,
         "at": "2026-09-16T01:03:09.230Z"
@@ -273449,9 +273445,13 @@
       {
         "rate": 6.59,
         "at": "2026-09-16T17:33:13.865Z"
+      },
+      {
+        "rate": 6.64,
+        "at": "2026-09-16T17:43:13.839Z"
       }
     ],
-    "last_update": "2026-09-16T17:33:13.865Z",
+    "last_update": "2026-09-16T17:43:13.839Z",
     "manual_override": null
   },
   "national_budget": {
@@ -273479,18 +273479,6 @@
   },
   "lore": {
     "entries": [
-      {
-        "channel": "🏛│armenian-stand",
-        "author": "uislrw",
-        "text": "sorry friend",
-        "at": "2026-03-27T04:31:31.895Z"
-      },
-      {
-        "channel": "🏛│armenian-stand",
-        "author": "uislrw",
-        "text": "ion got that time cuh",
-        "at": "2026-03-27T04:31:22.693Z"
-      },
       {
         "channel": "🏛│armenian-stand",
         "author": "mimiku1234",
@@ -274378,6 +274366,18 @@
         "author": "Deputy Chairman Mimothy",
         "text": "Wallahi in English means I swear to God",
         "at": "2026-09-16T16:30:48.730Z"
+      },
+      {
+        "channel": "⚐│sovnarkom",
+        "author": "Premier Google Giggles",
+        "text": "deploy the army",
+        "at": "2026-09-16T17:02:26.390Z"
+      },
+      {
+        "channel": "⚐│central-committee-of-cpsu",
+        "author": "Brill",
+        "text": "tuff tuff",
+        "at": "2026-09-16T17:06:43.911Z"
       }
     ],
     "seen": [
@@ -274633,9 +274633,11 @@
       "1549819957385363549",
       "1549819927421255712",
       "1549819875416088660",
-      "1549819859351765103"
+      "1549819859351765103",
+      "1549827818714570893",
+      "1549828898836062250"
     ],
-    "last_scan": "2026-09-16T16:58:21.263Z",
-    "last_count": 18
+    "last_scan": "2026-09-16T17:43:15.686Z",
+    "last_count": 2
   }
 }
