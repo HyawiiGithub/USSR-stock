@@ -721,15 +721,15 @@
       "work_reminder_sent": "2026-09-16T20:07:42.088Z"
     },
     "1528783188728483944": {
-      "cash": 688,
+      "cash": 861,
       "bank": 3652,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-16T11:44:35.623Z",
-      "work_count": 58,
+      "last_work": "2026-09-17T12:03:26.039Z",
+      "work_count": 59,
       "last_claim": "2026-08-27T11:08:16.433Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -742,13 +742,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 6,
-      "bot_xp": 568,
-      "bot_total_xp": 2193,
-      "daily_work_count": 9,
+      "bot_level": 7,
+      "bot_xp": 36,
+      "bot_total_xp": 2241,
+      "daily_work_count": 10,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-16",
-      "mee6_level": 6,
+      "last_daily_work_date": "2026-09-17",
+      "mee6_level": 7,
       "last_laylow": null,
       "work_reminder": false,
       "work_reminder_sent": null
@@ -1297,7 +1297,7 @@
       "work_reminder_sent": null
     },
     "1379734184259747851": {
-      "cash": 1363,
+      "cash": 1394,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243366,8 +243366,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 36,
-      "bot_total_xp": 36,
+      "bot_xp": 60,
+      "bot_total_xp": 60,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -244227,8 +244227,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 394.8562900540745,
-      "underground_heat": 1223.5594655232874,
+      "heat": 394.1008729229465,
+      "underground_heat": 1222.804080786117,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -244402,14 +244402,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 1565,
+      "funds": 1396,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 58113,
-      "market_cap": 58113,
+      "share_price": 58058,
+      "market_cap": 58058,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -244431,20 +244431,18 @@
       },
       "inventory": {
         "Phosphorite": 96,
-        "Peat": 143,
-        "Fish": 174,
+        "Peat": 145,
+        "Fish": 167,
         "Iron Ore": 1,
         "Oil Shale": 15,
-        "Timber": 48,
+        "Timber": 60,
         "Gold": 2,
-        "Wheat": 6,
-        "Sugar": 6
+        "Wheat": 7,
+        "Sugar": 7
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-16T11:45:10.737Z",
+      "last_collect": "2026-09-17T12:03:28.317Z",
       "price_history": [
-        60793,
-        62405,
         60612,
         60593,
         60656,
@@ -244542,7 +244540,9 @@
         58254,
         58336,
         58342,
-        58113
+        58113,
+        58117,
+        58058
       ],
       "is_state_owned": true,
       "director_id": "1528783188728483944",
@@ -244622,21 +244622,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.2147659849300498,
-      "recorded_at": "2026-09-17T05:28:20.630Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.2928552308597922,
-      "recorded_at": "2026-09-17T05:33:20.771Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.7905219632327969,
-      "recorded_at": "2026-09-17T05:33:42.804Z"
-    },
     {
       "price": 94,
       "change_percent": 0.8096097141862855,
@@ -245121,6 +245106,21 @@
       "price": 90,
       "change_percent": 0.900226058118768,
       "recorded_at": "2026-09-17T11:58:21.765Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.7254163227542827,
+      "recorded_at": "2026-09-17T12:03:21.922Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 1.2892280175780793,
+      "recorded_at": "2026-09-17T12:03:27.151Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.745949183817798,
+      "recorded_at": "2026-09-17T12:03:29.425Z"
     }
   ],
   "factory_names": [
@@ -245142,7 +245142,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 6291.535075233875,
+  "money_printed": 6306.535075233875,
   "total_bank_reserves": 396832,
   "inflation_history": [
     0,
@@ -251982,13 +251982,16 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽386 salaries ceo 1186597507720019988 ₽138, director 1186597507720019988 ₽138, manager 791747702689103893 ₽55, manager 1186597507720019988 ₽55"
+    },
+    {
+      "at": "2026-09-17T12:03:28.317Z",
+      "by": "1528783188728483944",
+      "username": "alice_orlowe",
+      "action": "collect-salaries",
+      "details": "Baltic Timber & Harbour Co paid ₽189 salaries ceo 1528783188728483944 ₽79, director 1528783188728483944 ₽79, manager 1379734184259747851 ₽31"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 484685,
-      "at": "2026-09-17T04:08:21.145Z"
-    },
     {
       "total": 484685,
       "at": "2026-09-17T04:13:21.122Z"
@@ -252384,6 +252387,10 @@
     {
       "total": 482381,
       "at": "2026-09-17T11:58:22.158Z"
+    },
+    {
+      "total": 482381,
+      "at": "2026-09-17T12:03:22.324Z"
     }
   ],
   "gold_rush": null,
@@ -252646,7 +252653,8 @@
         "1531451192419549208": 1,
         "1186597507720019988": 1,
         "1511756975392948224": 1,
-        "913497950213267577": 1
+        "913497950213267577": 1,
+        "1528783188728483944": 1
       }
     },
     "collect_daily": {
@@ -252699,7 +252707,8 @@
       },
       "2026-09-17": {
         "Azerbaijanian SSR": 0,
-        "Nuristani SSR": 2
+        "Nuristani SSR": 2,
+        "Estonian SSR": 0
       }
     },
     "qotd": {
@@ -253018,7 +253027,7 @@
       "1422357874390208644": 1789632873070,
       "843880491731517441": 1789633859694,
       "1508882702357758085": 1789634685102,
-      "1348188485349019741": 1789641514726,
+      "1348188485349019741": 1789646604371,
       "1395595167905480836": 1789645188523
     }
   },
@@ -270231,13 +270240,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "807944786840387675",
-      "from": 6,
-      "to": 7,
-      "at": "2026-09-13T18:38:59.762Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1343006572850184217",
       "from": 6,
       "to": 7,
@@ -271629,12 +271631,19 @@
       "to": 2,
       "at": "2026-09-17T11:37:23.297Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1528783188728483944",
+      "from": 6,
+      "to": 7,
+      "at": "2026-09-17T12:03:26.040Z",
+      "reason": "work"
     }
   ],
   "_lastCollectXP": {
     "xpGainC": 24,
-    "beforeLvlC": 12,
-    "afterLvl": 12,
+    "beforeLvlC": 7,
+    "afterLvl": 7,
     "leveled": []
   },
   "central_bank": {
