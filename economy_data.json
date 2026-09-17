@@ -346,8 +346,8 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 275,
-      "bank": 8421,
+      "cash": 0,
+      "bank": 8696,
       "resources": {
         "Coal": 1
       },
@@ -372,8 +372,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 511,
-      "bot_total_xp": 7541,
+      "bot_xp": 558,
+      "bot_total_xp": 7588,
       "daily_work_count": 102,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-17",
@@ -449,8 +449,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 433,
-      "bot_total_xp": 5108,
+      "bot_xp": 448,
+      "bot_total_xp": 5123,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 10,
@@ -1008,7 +1008,7 @@
       "work_reminder_sent": null
     },
     "791747702689103893": {
-      "cash": 1186,
+      "cash": 1232,
       "bank": 919,
       "resources": {},
       "inventory": {},
@@ -232022,8 +232022,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1099,
-      "bot_total_xp": 8129,
+      "bot_xp": 1119,
+      "bot_total_xp": 8149,
       "daily_work_count": 3,
       "shock_worker": false,
       "last_laylow": null,
@@ -239963,8 +239963,8 @@
       "last_illegal": "2026-09-16T12:43:30.269Z",
       "total_heat_generated": 31.182000000000002,
       "bot_level": 3,
-      "bot_xp": 108,
-      "bot_total_xp": 583,
+      "bot_xp": 127,
+      "bot_total_xp": 602,
       "daily_work_count": 1,
       "shock_worker": false,
       "last_laylow": "2026-09-13T09:32:01.397Z",
@@ -243698,14 +243698,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1186597507720019988>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2335,
+      "funds": 2011,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 175222,
-      "market_cap": 175222,
+      "share_price": 175030,
+      "market_cap": 175030,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -243737,25 +243737,24 @@
       },
       "inventory": {
         "Zinc": 295,
-        "Copper": 129,
+        "Copper": 130,
         "Lead": 205,
         "Gold Bar": 40,
         "Aluminium Ore": 111,
         "Uranium Rod": 2,
-        "Iron Ore": 28,
-        "Sugar": 110,
-        "Wheat": 32,
+        "Iron Ore": 29,
+        "Sugar": 111,
+        "Wheat": 18,
         "Contraband: Cocaine": 1,
         "Timber Planks": 10,
         "Steel Ingot": 1,
-        "Coal": 10,
-        "Gold": 18,
+        "Coal": 11,
+        "Gold": 19,
         "Machine Parts": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-17T08:43:54.341Z",
+      "last_collect": "2026-09-17T17:10:55.695Z",
       "price_history": [
-        166459,
         166481,
         166783,
         166919,
@@ -243854,7 +243853,8 @@
         175024,
         175044,
         175176,
-        175222
+        175222,
+        175030
       ],
       "is_state_owned": true,
       "director_id": "1186597507720019988",
@@ -244818,11 +244818,6 @@
   "gsi_history": [
     {
       "price": 91,
-      "change_percent": 0.745949183817798,
-      "recorded_at": "2026-09-17T12:03:29.425Z"
-    },
-    {
-      "price": 91,
       "change_percent": 0.15607866629212055,
       "recorded_at": "2026-09-17T12:08:21.902Z"
     },
@@ -245315,6 +245310,11 @@
       "price": 85,
       "change_percent": 1.0417841965841885,
       "recorded_at": "2026-09-17T17:10:41.302Z"
+    },
+    {
+      "price": 86,
+      "change_percent": 1.4877424869939422,
+      "recorded_at": "2026-09-17T17:10:56.884Z"
     }
   ],
   "factory_names": [
@@ -252212,6 +252212,13 @@
       "username": "hyawii2.0",
       "action": "appointdirector",
       "details": "appointed <@1229741033265299506> (1229741033265299506) as director of Soviet Agriculture (state_26)"
+    },
+    {
+      "at": "2026-09-17T17:10:55.695Z",
+      "by": "1186597507720019988",
+      "username": "imdivit",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽324 salaries ceo 1186597507720019988 ₽116, director 1186597507720019988 ₽116, manager 791747702689103893 ₽46, manager 1186597507720019988 ₽46"
     }
   ],
   "total_rubles_history": [
@@ -252939,7 +252946,7 @@
       },
       "2026-09-17": {
         "Azerbaijanian SSR": 0,
-        "Nuristani SSR": 2,
+        "Nuristani SSR": 3,
         "Estonian SSR": 0,
         "Ukrainian SSR": 0
       }
@@ -252963,7 +252970,7 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1789665019010,
+      "1544820489191559270": 1789665091670,
       "791747702689103893": 1789663508329,
       "1456622719985782864": 1789664639070,
       "1082686076491137115": 1789664711501,
@@ -252972,8 +252979,8 @@
       "780837437987094560": 1789645278069,
       "874346333882945547": 1789661598961,
       "870686833976172574": 1789660073456,
-      "1186597507720019988": 1789664501138,
-      "1521043721129558017": 1789664740226,
+      "1186597507720019988": 1789665073385,
+      "1521043721129558017": 1789665107051,
       "1397601108616024075": 1789661018096,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -253145,7 +253152,7 @@
       "1466109045604876351": 1789286771799,
       "1004404258415845468": 1789492257198,
       "1439573866300309658": 1789464054248,
-      "1494027370208825436": 1789665001090,
+      "1494027370208825436": 1789665065985,
       "1199062694649675950": 1789399843347,
       "344812035487563778": 1789292215256,
       "1473965687922757747": 1789641928548,
@@ -271975,9 +271982,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 23,
-    "beforeLvlC": 14,
-    "afterLvl": 14,
+    "xpGainC": 28,
+    "beforeLvlC": 12,
+    "afterLvl": 12,
     "leveled": []
   },
   "central_bank": {
