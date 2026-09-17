@@ -243544,8 +243544,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 175044,
-      "market_cap": 175044,
+      "share_price": 175176,
+      "market_cap": 175176,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -243595,7 +243595,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-17T08:43:54.341Z",
       "price_history": [
-        166067,
         207908,
         166459,
         166481,
@@ -243694,7 +243693,8 @@
         174674,
         175004,
         175024,
-        175044
+        175044,
+        175176
       ],
       "is_state_owned": true,
       "director_id": "1186597507720019988",
@@ -244258,8 +244258,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 387.8069904941476,
-      "underground_heat": 1216.6670716265994,
+      "heat": 387.10364805703443,
+      "underground_heat": 1216.0674256885795,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -244654,16 +244654,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": -0.37274786271699145,
-      "recorded_at": "2026-09-17T06:33:20.812Z"
-    },
-    {
-      "price": 98,
-      "change_percent": -0.17008300222702108,
-      "recorded_at": "2026-09-17T06:38:20.874Z"
-    },
     {
       "price": 98,
       "change_percent": 0.1995945633492025,
@@ -245153,6 +245143,16 @@
       "price": 92,
       "change_percent": 0.8334230065587456,
       "recorded_at": "2026-09-17T12:53:22.773Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.3283818435066245,
+      "recorded_at": "2026-09-17T12:57:55.166Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.6968244252336643,
+      "recorded_at": "2026-09-17T12:58:22.804Z"
     }
   ],
   "factory_names": [
@@ -245486,12 +245486,12 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Timber Planks": 6
+    "Timber Planks": 5
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 146,
+    "Timber Planks": 147,
     "Refined Fuel": 132,
     "Fuel": 117,
     "Iron Ingot": 63,
@@ -245513,11 +245513,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Iron Ingot",
-      "qty": 2,
-      "at": "2026-09-09T15:38:13.691Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -247012,6 +247007,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-09-17T12:43:17.354Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-09-17T12:58:17.369Z"
     }
   ],
   "demand_history": {
@@ -247416,11 +247416,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 1.2605871366130446,
-        "at": "2026-08-29T03:10:08.292Z",
-        "supply": 5
-      },
-      {
         "demand": 1.2855982666409584,
         "at": "2026-08-29T03:25:08.304Z",
         "supply": 5
@@ -247713,6 +247708,11 @@
       {
         "demand": 1.13211848352488,
         "at": "2026-09-17T12:43:17.359Z",
+        "supply": 36
+      },
+      {
+        "demand": 1.1418410720546244,
+        "at": "2026-09-17T12:58:17.369Z",
         "supply": 36
       }
     ],
@@ -252028,10 +252028,6 @@
   "total_rubles_history": [
     {
       "total": 484685,
-      "at": "2026-09-17T05:08:21.331Z"
-    },
-    {
-      "total": 484685,
       "at": "2026-09-17T05:13:21.302Z"
     },
     {
@@ -252425,6 +252421,10 @@
     {
       "total": 482854,
       "at": "2026-09-17T12:53:23.399Z"
+    },
+    {
+      "total": 482879,
+      "at": "2026-09-17T12:58:23.261Z"
     }
   ],
   "gold_rush": null,
