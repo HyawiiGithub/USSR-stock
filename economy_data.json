@@ -245265,8 +245265,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 324.6632299570937,
-      "underground_heat": 1185.4230757145442,
+      "heat": 323.92624137992135,
+      "underground_heat": 1184.709153268601,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -245661,11 +245661,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.7105050441826453,
-      "recorded_at": "2026-09-17T21:03:24.347Z"
-    },
     {
       "price": 93,
       "change_percent": -0.0471412851311134,
@@ -246160,6 +246155,11 @@
       "price": 104,
       "change_percent": 0.39590597666152105,
       "recorded_at": "2026-09-18T03:38:25.548Z"
+    },
+    {
+      "price": 103,
+      "change_percent": -0.22546583948169696,
+      "recorded_at": "2026-09-18T03:43:25.470Z"
     }
   ],
   "factory_names": [
@@ -246181,7 +246181,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 5135.626316571445,
+  "money_printed": 5032.913790240016,
   "total_bank_reserves": 406082,
   "inflation_history": [
     0,
@@ -246493,14 +246493,14 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fuel": 6
+    "Fuel": 4
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 162,
     "Refined Fuel": 132,
-    "Fuel": 121,
+    "Fuel": 123,
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
@@ -246520,11 +246520,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Iron Ingot",
-      "qty": 1,
-      "at": "2026-09-09T19:53:15.173Z"
-    },
     {
       "item": "Iron Ingot",
       "qty": 2,
@@ -248019,6 +248014,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-09-18T03:28:20.359Z"
+    },
+    {
+      "item": "Fuel",
+      "qty": 2,
+      "at": "2026-09-18T03:43:20.303Z"
     }
   ],
   "demand_history": {
@@ -249027,11 +249027,6 @@
     ],
     "Fuel": [
       {
-        "demand": 1.2772826365083645,
-        "at": "2026-09-07T11:51:48.488Z",
-        "supply": 1
-      },
-      {
         "demand": 1.2952084217122433,
         "at": "2026-09-07T12:06:48.375Z",
         "supply": 1
@@ -249324,6 +249319,11 @@
       {
         "demand": 1.162483191640046,
         "at": "2026-09-18T03:28:20.360Z",
+        "supply": 15
+      },
+      {
+        "demand": 1.1863444211211678,
+        "at": "2026-09-18T03:43:20.308Z",
         "supply": 15
       }
     ],
@@ -253078,10 +253078,6 @@
   "total_rubles_history": [
     {
       "total": 494314,
-      "at": "2026-09-17T19:53:26.217Z"
-    },
-    {
-      "total": 494314,
       "at": "2026-09-17T19:53:26.862Z"
     },
     {
@@ -253475,6 +253471,10 @@
     {
       "total": 494636,
       "at": "2026-09-18T03:38:27.506Z"
+    },
+    {
+      "total": 494636,
+      "at": "2026-09-18T03:43:27.499Z"
     }
   ],
   "gold_rush": null,
@@ -275470,12 +275470,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.93,
+    "rub_per_usd": 6.88,
     "history": [
-      {
-        "rate": 6.81,
-        "at": "2026-09-17T11:03:14.800Z"
-      },
       {
         "rate": 6.75,
         "at": "2026-09-17T11:13:14.634Z"
@@ -275871,9 +275867,13 @@
       {
         "rate": 6.93,
         "at": "2026-09-18T03:33:15.848Z"
+      },
+      {
+        "rate": 6.88,
+        "at": "2026-09-18T03:43:16.115Z"
       }
     ],
-    "last_update": "2026-09-18T03:33:15.848Z",
+    "last_update": "2026-09-18T03:43:16.115Z",
     "manual_override": null
   },
   "national_budget": {
