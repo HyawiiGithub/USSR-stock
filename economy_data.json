@@ -346,7 +346,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 25,
+      "cash": 290,
       "bank": 8696,
       "resources": {
         "Coal": 1
@@ -356,8 +356,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-17T17:44:24.267Z",
-      "work_count": 242,
+      "last_work": "2026-09-18T06:43:37.716Z",
+      "work_count": 243,
       "last_claim": "2026-09-17T12:09:44.952Z",
       "last_collect": null,
       "join_date": "2026-08-22T17:23:44.884271",
@@ -372,11 +372,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 619,
-      "bot_total_xp": 7649,
-      "daily_work_count": 103,
+      "bot_xp": 670,
+      "bot_total_xp": 7700,
+      "daily_work_count": 104,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-17",
+      "last_daily_work_date": "2026-09-18",
       "mee6_level": 12,
       "last_laylow": null,
       "work_reminder": false,
@@ -1008,7 +1008,7 @@
       "work_reminder_sent": null
     },
     "791747702689103893": {
-      "cash": 1232,
+      "cash": 1272,
       "bank": 919,
       "resources": {},
       "inventory": {},
@@ -244632,14 +244632,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1186597507720019988>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 2001,
+      "funds": 1711,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 175652,
-      "market_cap": 175652,
+      "share_price": 175540,
+      "market_cap": 175540,
       "employees": 9,
       "level": 1,
       "buildings": {
@@ -244670,28 +244670,26 @@
         }
       },
       "inventory": {
-        "Zinc": 295,
-        "Copper": 130,
+        "Zinc": 296,
+        "Copper": 131,
         "Lead": 205,
         "Gold Bar": 40,
         "Aluminium Ore": 111,
         "Uranium Rod": 2,
-        "Iron Ore": 29,
-        "Sugar": 111,
-        "Wheat": 17,
+        "Iron Ore": 30,
+        "Sugar": 112,
+        "Wheat": 4,
         "Contraband: Cocaine": 1,
         "Timber Planks": 10,
         "Steel Ingot": 1,
-        "Coal": 11,
-        "Gold": 19,
+        "Coal": 12,
+        "Gold": 20,
         "Machine Parts": 2,
         "Uranium": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-17T17:10:55.695Z",
+      "last_collect": "2026-09-18T06:43:33.845Z",
       "price_history": [
-        166783,
-        166919,
         167201,
         167263,
         167325,
@@ -244789,7 +244787,9 @@
         175176,
         175222,
         175030,
-        175652
+        175652,
+        175520,
+        175540
       ],
       "is_state_owned": true,
       "director_id": "1186597507720019988",
@@ -245359,8 +245359,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 300.68643843551837,
-      "underground_heat": 1161.7278988431121,
+      "heat": 300.0297114960584,
+      "underground_heat": 1160.9620626073624,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -245755,21 +245755,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 104,
-      "change_percent": 7.539921175463525,
-      "recorded_at": "2026-09-17T23:58:15.167Z"
-    },
-    {
-      "price": 103,
-      "change_percent": -0.1026238653281987,
-      "recorded_at": "2026-09-17T23:58:24.745Z"
-    },
-    {
-      "price": 103,
-      "change_percent": 0.4171125291353337,
-      "recorded_at": "2026-09-18T00:03:24.686Z"
-    },
     {
       "price": 103,
       "change_percent": 0.07237223574026899,
@@ -246254,6 +246239,21 @@
       "price": 94,
       "change_percent": 1.1604597115040043,
       "recorded_at": "2026-09-18T06:40:01.542Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.5080912429195145,
+      "recorded_at": "2026-09-18T06:43:26.381Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.9099825436338184,
+      "recorded_at": "2026-09-18T06:43:35.046Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.6508133908688165,
+      "recorded_at": "2026-09-18T06:43:38.981Z"
     }
   ],
   "factory_names": [
@@ -246275,8 +246275,8 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 3628.761298727975,
-  "total_bank_reserves": 406082,
+  "money_printed": 3571.1860727534154,
+  "total_bank_reserves": 406097,
   "inflation_history": [
     0,
     0,
@@ -253172,13 +253172,16 @@
       "username": "alice_orlowe",
       "action": "collect-salaries",
       "details": "Baltic Timber & Harbour Co paid ₽297 salaries ceo 1528783188728483944 ₽124, director 1528783188728483944 ₽124, manager 1379734184259747851 ₽49"
+    },
+    {
+      "at": "2026-09-18T06:43:33.845Z",
+      "by": "1186597507720019988",
+      "username": "imdivit",
+      "action": "collect-salaries",
+      "details": "State Mining Corp paid ₽280 salaries ceo 1186597507720019988 ₽100, director 1186597507720019988 ₽100, manager 791747702689103893 ₽40, manager 1186597507720019988 ₽40"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 494412,
-      "at": "2026-09-17T22:43:28.063Z"
-    },
     {
       "total": 494412,
       "at": "2026-09-17T22:48:27.437Z"
@@ -253574,6 +253577,10 @@
     {
       "total": 495118,
       "at": "2026-09-18T06:38:27.981Z"
+    },
+    {
+      "total": 495250,
+      "at": "2026-09-18T06:43:27.854Z"
     }
   ],
   "gold_rush": null,
@@ -253857,7 +253864,8 @@
         "1528783188728483944": 1,
         "807254722251587614": 1,
         "1545521924166131823": 1,
-        "1483005845867593831": 1
+        "1483005845867593831": 1,
+        "1186597507720019988": 1
       }
     },
     "collect_daily": {
@@ -253916,7 +253924,8 @@
       },
       "2026-09-18": {
         "Azerbaijanian SSR": 0,
-        "Estonian SSR": 0
+        "Estonian SSR": 0,
+        "Nuristani SSR": 1
       }
     },
     "qotd": {
@@ -273092,12 +273101,10 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 27,
-    "beforeLvlC": 7,
-    "afterLvl": 8,
-    "leveled": [
-      8
-    ]
+    "xpGainC": 26,
+    "beforeLvlC": 12,
+    "afterLvl": 12,
+    "leveled": []
   },
   "central_bank": {
     "reserves": 14844,
@@ -273973,7 +273980,7 @@
       "807254722251587614": 23,
       "791747702689103893": 12,
       "725687617504673872": 12,
-      "1186597507720019988": 183,
+      "1186597507720019988": 190,
       "1494027370208825436": 0,
       "1000271630154596473": 0,
       "1522851408611770409": 77,
@@ -273999,7 +274006,7 @@
       "807254722251587614": "2026-09-13T09:14:17.871Z",
       "791747702689103893": "2026-09-13T09:18:53.925Z",
       "725687617504673872": "2026-09-14T04:29:25.933Z",
-      "1186597507720019988": "2026-09-17T17:10:34.136Z",
+      "1186597507720019988": "2026-09-18T06:43:35.633Z",
       "1494027370208825436": "2026-09-13T09:26:38.723Z",
       "1000271630154596473": "2026-09-13T09:31:01.131Z",
       "1522851408611770409": "2026-09-17T15:25:55.026Z",
@@ -275580,12 +275587,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.98,
+    "rub_per_usd": 7,
     "history": [
-      {
-        "rate": 6.73,
-        "at": "2026-09-17T14:03:14.990Z"
-      },
       {
         "rate": 6.75,
         "at": "2026-09-17T14:13:15.081Z"
@@ -275981,9 +275984,13 @@
       {
         "rate": 6.98,
         "at": "2026-09-18T06:33:16.030Z"
+      },
+      {
+        "rate": 7,
+        "at": "2026-09-18T06:43:15.911Z"
       }
     ],
-    "last_update": "2026-09-18T06:33:16.030Z",
+    "last_update": "2026-09-18T06:43:15.911Z",
     "manual_override": null
   },
   "national_budget": {
