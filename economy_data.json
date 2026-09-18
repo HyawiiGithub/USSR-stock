@@ -576,7 +576,7 @@
     },
     "1225275427145121903": {
       "username": "",
-      "cash": 429,
+      "cash": 490,
       "bank": 0,
       "resources": {
         "Gold": 1
@@ -588,7 +588,7 @@
       "share_holdings": {},
       "last_work": "2026-09-18T21:07:49.547Z",
       "work_count": 57,
-      "last_claim": null,
+      "last_claim": "2026-09-18T21:13:09.603Z",
       "last_collect": null,
       "join_date": "2026-08-23T11:31:59.744636",
       "ssr_region": "Kazakh SSR",
@@ -602,8 +602,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 309,
-      "bot_total_xp": 8759,
+      "bot_xp": 326,
+      "bot_total_xp": 8776,
       "daily_work_count": 40,
       "shock_worker": false,
       "mee6_level": 13,
@@ -246720,7 +246720,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 19347.50412003675,
+  "money_printed": 18960.554037636015,
   "total_bank_reserves": 414214,
   "inflation_history": [
     0,
@@ -246967,19 +246967,19 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3772579071370425,
-    "Cake": 1.333079577614535,
-    "Bread": 1.3901814234669485,
+    "Cake": 1.3448531429368897,
+    "Bread": 1.3920390526748383,
     "Copper Ingot": 1.4042035557227777,
     "Iron Ingot": 1.3716747804620049,
     "Steel Ingot": 1.358747983947884,
-    "Gold Bar": 1.2400935310960222,
+    "Gold Bar": 1.2387487351755047,
     "Aluminium Ingot": 1.4124818456651316,
-    "Timber Planks": 1.3296160073118015,
+    "Timber Planks": 1.3275105129465377,
     "Bricks": 1.4124796113753508,
     "Concrete": 1.4117859280761802,
     "Glass": 1.4079455128083742,
-    "Steel Beam": 1.400862471752536,
-    "Machine Parts": 1.1943648380574545,
+    "Steel Beam": 1.3988558090382825,
+    "Machine Parts": 1.2002720976631016,
     "Refined Fuel": 1.392437154785598,
     "Uranium Rod": 1.3947413074126178,
     "Reactor Core": 1.4015096461362309,
@@ -246990,11 +246990,11 @@
     "Canned Food": 1.4046285697072078,
     "Canned Fish": 1.4045208925608148,
     "Smoked Fish": 1.4045857457933197,
-    "Fish Stew": 1.4182350916969804,
+    "Fish Stew": 1.416776284361222,
     "Peat Fuel": 1.4046030857151472,
     "Gas Fuel": 1.3816781534095863,
     "Fertilizer": 1.4123792084763613,
-    "Cotton Fabric": 1.403340374153002,
+    "Cotton Fabric": 1.401311250764005,
     "Manganese Alloy": 1.4123710449211122,
     "Sunflower Oil": 1.4121492193106577,
     "Linen": 1.412062223029405,
@@ -247033,7 +247033,6 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Bread": 4,
-    "Cake": 1,
     "Machine Parts": 7
   },
   "global_consumption": {
@@ -247045,7 +247044,7 @@
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
-    "Cake": 240,
+    "Cake": 241,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 18,
@@ -247061,11 +247060,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-10T22:53:57.354Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -248560,6 +248554,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-18T20:58:21.296Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-09-18T21:13:22.202Z"
     }
   ],
   "demand_history": {
@@ -250226,11 +250225,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.2809421069934033,
-        "at": "2026-09-08T01:51:48.582Z",
-        "supply": 0
-      },
-      {
         "demand": 1.289608770216692,
         "at": "2026-09-08T02:06:48.691Z",
         "supply": 0
@@ -250523,6 +250517,11 @@
       {
         "demand": 1.3199452558789926,
         "at": "2026-09-18T20:58:21.296Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3448531429368897,
+        "at": "2026-09-18T21:13:22.202Z",
         "supply": 1
       }
     ],
@@ -254564,7 +254563,7 @@
       "1496968738447032410": 1789724207798,
       "1254134534987845877": 1789419071660,
       "1490511870967283733": 1789513410824,
-      "1225275427145121903": 1789765679393,
+      "1225275427145121903": 1789765979185,
       "1520173521244913684": 1789680209105,
       "930716306603405363": 1788998761124,
       "1494919466713350275": 1789668249510,
@@ -276293,12 +276292,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.16,
+    "rub_per_usd": 7.07,
     "history": [
-      {
-        "rate": 6.89,
-        "at": "2026-09-18T04:43:16.103Z"
-      },
       {
         "rate": 7.01,
         "at": "2026-09-18T04:53:15.847Z"
@@ -276694,9 +276689,13 @@
       {
         "rate": 7.16,
         "at": "2026-09-18T21:03:18.626Z"
+      },
+      {
+        "rate": 7.07,
+        "at": "2026-09-18T21:13:18.616Z"
       }
     ],
-    "last_update": "2026-09-18T21:03:18.626Z",
+    "last_update": "2026-09-18T21:13:18.616Z",
     "manual_override": null
   },
   "national_budget": {
