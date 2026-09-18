@@ -672,7 +672,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 52,
-      "heat": 0.6682903422443541,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-18T21:47:49.670Z",
       "total_heat_generated": 634.1070000000002,
@@ -802,7 +802,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1398,
-      "heat": 10.53624198991275,
+      "heat": 9.713795686447355,
       "wanted": 0,
       "last_illegal": "2026-09-18T20:19:46.425Z",
       "total_heat_generated": 1027.4908999999998,
@@ -1664,7 +1664,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 729,
-      "heat": 15.351807675257044,
+      "heat": 14.520334632645373,
       "wanted": 0,
       "last_illegal": "2026-09-18T22:10:11.513Z",
       "total_heat_generated": 598.7830000000002,
@@ -245838,8 +245838,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 277.1872583662204,
-      "underground_heat": 1152.6971183777134,
+      "heat": 276.42894057707224,
+      "underground_heat": 1152.0574621017772,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246234,11 +246234,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.3610029970745876,
-      "recorded_at": "2026-09-18T18:08:29.509Z"
-    },
     {
       "price": 88,
       "change_percent": -3.93473597311699,
@@ -246733,6 +246728,11 @@
       "price": 99,
       "change_percent": 0.1403699023000396,
       "recorded_at": "2026-09-18T22:10:13.272Z"
+    },
+    {
+      "price": 98,
+      "change_percent": -0.11202971160771719,
+      "recorded_at": "2026-09-18T22:13:30.599Z"
     }
   ],
   "factory_names": [
@@ -246754,7 +246754,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 17223.462815619805,
+  "money_printed": 16878.993559307408,
   "total_bank_reserves": 414214,
   "inflation_history": [
     0,
@@ -247066,7 +247066,6 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 1,
     "Machine Parts": 6
   },
   "global_consumption": {
@@ -247083,7 +247082,7 @@
     "Canned Food": 15,
     "Uranium Rod": 18,
     "Canned Fish": 19,
-    "Bread": 250,
+    "Bread": 251,
     "Aluminium Sheet": 8,
     "Circuit Board": 14,
     "Cotton Fabric": 10,
@@ -247094,11 +247093,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-09-11T04:23:58.249Z"
-    },
     {
       "item": "Iron Ingot",
       "qty": 2,
@@ -248593,6 +248587,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-18T21:58:22.695Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 1,
+      "at": "2026-09-18T22:13:22.762Z"
     }
   ],
   "demand_history": {
@@ -250829,11 +250828,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.338393881045924,
-        "at": "2026-09-08T17:36:48.887Z",
-        "supply": 0
-      },
-      {
         "demand": 1.356221153078775,
         "at": "2026-09-08T17:51:48.756Z",
         "supply": 0
@@ -251126,6 +251120,11 @@
       {
         "demand": 1.3934322745807557,
         "at": "2026-09-18T21:58:22.695Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3934322745807557,
+        "at": "2026-09-18T22:13:22.762Z",
         "supply": 1
       }
     ],
@@ -253778,10 +253777,6 @@
   "total_rubles_history": [
     {
       "total": 496228,
-      "at": "2026-09-18T14:08:28.103Z"
-    },
-    {
-      "total": 496228,
       "at": "2026-09-18T14:08:28.701Z"
     },
     {
@@ -254175,6 +254170,10 @@
     {
       "total": 509150,
       "at": "2026-09-18T22:08:31.988Z"
+    },
+    {
+      "total": 509175,
+      "at": "2026-09-18T22:13:31.992Z"
     }
   ],
   "gold_rush": null,
@@ -254201,7 +254200,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 6.681300000000006,
+  "heat_global": 6.381300000000006,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -276339,12 +276338,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.08,
+    "rub_per_usd": 7.16,
     "history": [
-      {
-        "rate": 6.88,
-        "at": "2026-09-18T05:43:16.088Z"
-      },
       {
         "rate": 6.98,
         "at": "2026-09-18T05:53:15.878Z"
@@ -276740,9 +276735,13 @@
       {
         "rate": 7.08,
         "at": "2026-09-18T22:03:18.983Z"
+      },
+      {
+        "rate": 7.16,
+        "at": "2026-09-18T22:13:18.774Z"
       }
     ],
-    "last_update": "2026-09-18T22:03:18.983Z",
+    "last_update": "2026-09-18T22:13:18.774Z",
     "manual_override": null
   },
   "national_budget": {
