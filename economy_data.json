@@ -118,8 +118,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 962,
-      "bot_total_xp": 21957,
+      "bot_xp": 987,
+      "bot_total_xp": 21982,
       "daily_work_count": 4,
       "shock_worker": false,
       "mee6_level": 19,
@@ -785,8 +785,8 @@
       "work_reminder_sent": null
     },
     "874346333882945547": {
-      "cash": 2377,
-      "bank": 1197,
+      "cash": 0,
+      "bank": 3666,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -801,11 +801,11 @@
       "is_state_director": true,
       "director_of": "state_26",
       "ceo_of": null,
-      "dirty_cash": 3424,
-      "heat": 12.28808161078205,
+      "dirty_cash": 10,
+      "heat": 16.134188969093653,
       "wanted": 0,
-      "last_illegal": "2026-09-18T17:28:04.192Z",
-      "total_heat_generated": 986.8798999999999,
+      "last_illegal": "2026-09-18T17:28:39.712Z",
+      "total_heat_generated": 994.8798999999999,
       "bot_level": 21,
       "bot_xp": 710,
       "bot_total_xp": 27660,
@@ -1669,8 +1669,8 @@
       "last_illegal": "2026-09-17T13:22:56.790Z",
       "total_heat_generated": 527.8040000000001,
       "bot_level": 18,
-      "bot_xp": 1913,
-      "bot_total_xp": 20288,
+      "bot_xp": 1930,
+      "bot_total_xp": 20305,
       "daily_work_count": 92,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-18",
@@ -245571,7 +245571,6 @@
         "Steel Ingot": 6,
         "Timber": 23,
         "Contraband: Cannabis": 11,
-        "Contraband: LSD Sheets": 6,
         "Bread": 11,
         "Cake": 11,
         "Coal": 52,
@@ -245704,8 +245703,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 230.46412299606473,
-      "underground_heat": 1084.0801235676672,
+      "heat": 233.88873419696301,
+      "underground_heat": 1083.4501696399927,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246100,16 +246099,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 86,
-      "change_percent": 0.6804375431584676,
-      "recorded_at": "2026-09-18T11:28:26.493Z"
-    },
-    {
-      "price": 87,
-      "change_percent": 1.2509598667344037,
-      "recorded_at": "2026-09-18T11:33:26.619Z"
-    },
     {
       "price": 88,
       "change_percent": 1.152972688653335,
@@ -246599,6 +246588,16 @@
       "price": 81,
       "change_percent": 1.1101074922686265,
       "recorded_at": "2026-09-18T17:26:25.949Z"
+    },
+    {
+      "price": 86,
+      "change_percent": 6.742108828578859,
+      "recorded_at": "2026-09-18T17:28:16.477Z"
+    },
+    {
+      "price": 86,
+      "change_percent": 0.5848901021030334,
+      "recorded_at": "2026-09-18T17:28:29.220Z"
     }
   ],
   "factory_names": [],
@@ -246931,7 +246930,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 6
+    "Gas Fuel": 5
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -246952,17 +246951,12 @@
     "Circuit Board": 14,
     "Cotton Fabric": 10,
     "Reactor Core": 5,
-    "Gas Fuel": 80,
+    "Gas Fuel": 81,
     "Steel Beam": 2,
     "Machine Parts": 24,
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-10T07:53:17.581Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -248457,6 +248451,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-09-18T17:13:21.129Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-18T17:28:21.198Z"
     }
   ],
   "demand_history": {
@@ -251436,6 +251435,11 @@
         "demand": 1.1623208347309895,
         "at": "2026-09-18T17:13:21.129Z",
         "supply": 6
+      },
+      {
+        "demand": 1.176772031295515,
+        "at": "2026-09-18T17:28:21.198Z",
+        "supply": 6
       }
     ],
     "Steel Beam": [
@@ -253596,13 +253600,16 @@
       "username": "seniormanulos",
       "action": "mafia-hire",
       "details": "cosa nostra +1511756975392948224 as Associate"
+    },
+    {
+      "at": "2026-09-18T17:28:50.373Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "launder",
+      "details": "₽4,889 dirty → ₽2,444 clean fee ₽2,445"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 495906,
-      "at": "2026-09-18T09:38:27.877Z"
-    },
     {
       "total": 495906,
       "at": "2026-09-18T09:43:27.894Z"
@@ -253998,6 +254005,10 @@
     {
       "total": 501955,
       "at": "2026-09-18T17:23:29.875Z"
+    },
+    {
+      "total": 502005,
+      "at": "2026-09-18T17:28:29.679Z"
     }
   ],
   "gold_rush": null,
@@ -254024,7 +254035,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 2.4,
+  "heat_global": 3.3,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -254033,7 +254044,7 @@
     "Contraband: Coca Paste": 20,
     "Contraband: Cannabis": 20,
     "Contraband: Heroin": 27,
-    "Contraband: LSD Sheets": 13,
+    "Contraband: LSD Sheets": 19,
     "Contraband: Opium": 17
   },
   "dirty_printed_total": 0,
@@ -254379,7 +254390,7 @@
       "1544820489191559270": 1789742750302,
       "791747702689103893": 1789708210154,
       "1456622719985782864": 1789715348932,
-      "1082686076491137115": 1789752462443,
+      "1082686076491137115": 1789752554069,
       "1229741033265299506": 1789751194320,
       "1536339779140976711": 1789752393141,
       "780837437987094560": 1789735565644,
@@ -254457,7 +254468,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789748451532,
-      "1511756975392948224": 1789752464768,
+      "1511756975392948224": 1789752525832,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789495529054,
@@ -254733,20 +254744,9 @@
       "2026-Q3": {
         "positive": 57,
         "negative": 24,
-        "neutral": 1164,
-        "total": 1245,
+        "neutral": 1165,
+        "total": 1246,
         "mentions": [
-          {
-            "at": "2026-09-12T22:13:13.898Z",
-            "userId": "503918799683321866",
-            "username": "spoop69",
-            "channelId": "605951687974453248",
-            "messageId": "1548456478648574093",
-            "text": "<@1229741033265299506> <@1536339779140976711> <@1082686076491137115> <@874346333882945547>",
-            "sentiment": "neutral",
-            "source": "text+reply",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T22:19:03.038Z",
             "userId": "503918799683321866",
@@ -260704,23 +260704,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-18T17:28:58.695Z",
+            "userId": "1511756975392948224",
+            "username": "localmanandwoman",
+            "channelId": "605951687974453248",
+            "messageId": "1550559268082556989",
+            "text": "<@1082686076491137115> became Capo btw",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:26:32.104Z",
-        "userId": "1456622719985782864",
-        "username": "seren_menzhinsky",
-        "channelId": "1094945640997457953",
-        "messageId": "1548384328789000284",
-        "text": "it was hyawiis order",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:27:02.432Z",
         "userId": "1198413714672591031",
@@ -272178,9 +272179,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-18T17:28:58.695Z",
+        "userId": "1511756975392948224",
+        "username": "localmanandwoman",
+        "channelId": "605951687974453248",
+        "messageId": "1550559268082556989",
+        "text": "<@1082686076491137115> became Capo btw",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-18T17:25:04.983Z",
+    "last_scan": "2026-09-18T17:28:58.695Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
