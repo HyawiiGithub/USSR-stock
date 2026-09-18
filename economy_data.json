@@ -1664,7 +1664,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 524,
-      "heat": 13.278,
+      "heat": 12.304607359247349,
       "wanted": 0,
       "last_illegal": "2026-09-18T20:11:38.464Z",
       "total_heat_generated": 573.3680000000002,
@@ -245767,8 +245767,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 250.49211096505093,
-      "underground_heat": 1108.2863297291321,
+      "heat": 249.86725849522952,
+      "underground_heat": 1107.516671080717,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246163,11 +246163,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 76,
-      "change_percent": -2.810882173556495,
-      "recorded_at": "2026-09-18T16:28:16.086Z"
-    },
     {
       "price": 77,
       "change_percent": 1.5252949761766161,
@@ -246662,6 +246657,11 @@
       "price": 100,
       "change_percent": 0.3976241300590641,
       "recorded_at": "2026-09-18T20:11:39.973Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.3263269605253905,
+      "recorded_at": "2026-09-18T20:13:29.594Z"
     }
   ],
   "factory_names": [
@@ -246683,7 +246683,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 9477.672675999129,
+  "money_printed": 9288.119222479147,
   "total_bank_reserves": 407992,
   "inflation_history": [
     0,
@@ -246996,7 +246996,7 @@
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
     "Bread": 5,
-    "Cake": 6
+    "Cake": 5
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -247007,7 +247007,7 @@
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
-    "Cake": 235,
+    "Cake": 236,
     "Smoked Fish": 20,
     "Canned Food": 15,
     "Uranium Rod": 18,
@@ -247023,11 +247023,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-10T15:53:18.141Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -248522,6 +248517,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-18T19:58:21.180Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-09-18T20:13:21.182Z"
     }
   ],
   "demand_history": {
@@ -250188,11 +250188,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.2713798480702283,
-        "at": "2026-09-07T20:06:48.410Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2943510474621278,
         "at": "2026-09-07T20:21:48.564Z",
         "supply": 0
@@ -250485,6 +250480,11 @@
       {
         "demand": 1.1932161127667527,
         "at": "2026-09-18T19:43:21.176Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.2431566741429836,
+        "at": "2026-09-18T20:13:21.182Z",
         "supply": 1
       }
     ],
@@ -253702,10 +253702,6 @@
   "total_rubles_history": [
     {
       "total": 496117,
-      "at": "2026-09-18T12:13:28.049Z"
-    },
-    {
-      "total": 496117,
       "at": "2026-09-18T12:18:27.920Z"
     },
     {
@@ -254099,6 +254095,10 @@
     {
       "total": 505195,
       "at": "2026-09-18T20:08:31.184Z"
+    },
+    {
+      "total": 505220,
+      "at": "2026-09-18T20:13:31.204Z"
     }
   ],
   "gold_rush": null,
@@ -254125,7 +254125,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 3.2346000000000026,
+  "heat_global": 2.9346000000000028,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -276233,12 +276233,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.07,
+    "rub_per_usd": 7.18,
     "history": [
-      {
-        "rate": 6.88,
-        "at": "2026-09-18T03:43:16.115Z"
-      },
       {
         "rate": 6.88,
         "at": "2026-09-18T03:53:15.868Z"
@@ -276634,9 +276630,13 @@
       {
         "rate": 7.07,
         "at": "2026-09-18T20:03:18.583Z"
+      },
+      {
+        "rate": 7.18,
+        "at": "2026-09-18T20:13:18.270Z"
       }
     ],
-    "last_update": "2026-09-18T20:03:18.583Z",
+    "last_update": "2026-09-18T20:13:18.270Z",
     "manual_override": null
   },
   "national_budget": {
