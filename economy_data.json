@@ -785,15 +785,15 @@
       "work_reminder_sent": null
     },
     "874346333882945547": {
-      "cash": 225,
+      "cash": 250,
       "bank": 3666,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-18T18:49:05.906Z",
-      "work_count": 1526,
+      "last_work": "2026-09-18T18:55:55.133Z",
+      "work_count": 1527,
       "last_claim": "2026-09-15T05:13:20.320Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -807,9 +807,9 @@
       "last_illegal": "2026-09-18T17:28:39.712Z",
       "total_heat_generated": 994.8798999999999,
       "bot_level": 21,
-      "bot_xp": 1869,
-      "bot_total_xp": 28819,
-      "daily_work_count": 420,
+      "bot_xp": 1894,
+      "bot_total_xp": 28844,
+      "daily_work_count": 421,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-18",
       "mee6_level": 21,
@@ -245560,14 +245560,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 8735,
+      "funds": 11337,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 268933,
-      "market_cap": 268933,
+      "share_price": 270171,
+      "market_cap": 270171,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -245619,7 +245619,7 @@
       },
       "inventory": {
         "Gold Bar": 29,
-        "Wheat": 98,
+        "Wheat": 97,
         "Sugar": 67,
         "Copper": 49,
         "Lead": 8,
@@ -245632,13 +245632,12 @@
         "Timber": 23,
         "Contraband: Cannabis": 11,
         "Bread": 1,
-        "Cake": 11,
+        "Cake": 1,
         "Machine Parts": 7,
-        "Oil": 4,
         "Uranium": 1,
         "Gold": 11,
         "Contraband: LSD Sheets": 1,
-        "Fuel": 6,
+        "Fuel": 8,
         "Contraband: Cocaine": 1,
         "Reactor Core": 1,
         "Coal": 7,
@@ -245647,9 +245646,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-18T17:25:51.384Z",
       "price_history": [
-        256887,
-        256917,
-        256899,
         256889,
         256895,
         256877,
@@ -245746,11 +245742,14 @@
         268899,
         268913,
         268927,
-        268933
+        268933,
+        269043,
+        269169,
+        270171
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-18T17:30:51.195Z",
+      "last_factorydeal": "2026-09-18T18:56:23.941Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -246162,11 +246161,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 87,
-      "change_percent": 0.46438545217415167,
-      "recorded_at": "2026-09-18T14:38:27.546Z"
-    },
     {
       "price": 87,
       "change_percent": 0.9040347399140957,
@@ -246661,20 +246655,25 @@
       "price": 96,
       "change_percent": 0.27853131820041266,
       "recorded_at": "2026-09-18T18:53:29.542Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.5139608358274561,
+      "recorded_at": "2026-09-18T18:55:56.475Z"
     }
   ],
   "factory_names": [
-    "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
-    "Brezhnev Auto Factory",
     "Ural Heavy Industries"
   ],
   "used_factory_names": [
     "Siberian Mining Co",
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Brezhnev Auto Factory",
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -246682,7 +246681,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 8158.567138563996,
+  "money_printed": 10785.567138563996,
   "total_bank_reserves": 408406,
   "inflation_history": [
     0,
@@ -246929,12 +246928,12 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3826360267939772,
-    "Cake": 1.3771498852657285,
+    "Cake": 1.1521498852657284,
     "Bread": 1.2630572849145465,
     "Copper Ingot": 1.4042035557227777,
     "Iron Ingot": 1.3716747804620049,
     "Steel Ingot": 1.358747983947884,
-    "Gold Bar": 1.2427548759291582,
+    "Gold Bar": 1.2527548759291582,
     "Aluminium Ingot": 1.4124818456651316,
     "Timber Planks": 1.3411572356843586,
     "Bricks": 1.4124796113753508,
@@ -246942,10 +246941,10 @@
     "Glass": 1.4079455128083742,
     "Steel Beam": 1.3971054224191022,
     "Machine Parts": 1.346392474571493,
-    "Refined Fuel": 1.3922854783496943,
+    "Refined Fuel": 1.4022854783496943,
     "Uranium Rod": 1.3947413074126178,
     "Reactor Core": 1.4015096461362309,
-    "Circuit Board": 1.4045782463911505,
+    "Circuit Board": 1.4145782463911505,
     "Flour": 1.3841932508564003,
     "Sugar": 0.8954201296213838,
     "Wine": 1.4124796113753508,
@@ -246970,7 +246969,7 @@
   },
   "market_last_sale": {
     "Fuel": "2026-09-18T02:52:13.043Z",
-    "Cake": "2026-09-15T10:55:38.889Z",
+    "Cake": "2026-09-18T18:56:23.942Z",
     "Bread": "2026-09-18T17:30:51.195Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
@@ -246994,7 +246993,8 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 7
+    "Bread": 7,
+    "Cake": 10
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -254391,7 +254391,7 @@
         "1531451192419549208": 1,
         "1325111649816023092": 5,
         "1511756975392948224": 1,
-        "874346333882945547": 10,
+        "874346333882945547": 11,
         "1536339779140976711": 3,
         "791747702689103893": 1,
         "1225275427145121903": 1
