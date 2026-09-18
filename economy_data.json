@@ -721,7 +721,7 @@
       "work_reminder_sent": "2026-09-17T17:29:59.418Z"
     },
     "1528783188728483944": {
-      "cash": 1338,
+      "cash": 1731,
       "bank": 3652,
       "resources": {},
       "inventory": {},
@@ -730,7 +730,7 @@
       "share_holdings": {},
       "last_work": "2026-09-17T18:26:29.635Z",
       "work_count": 63,
-      "last_claim": "2026-09-17T17:58:34.795Z",
+      "last_claim": "2026-09-18T06:16:31.664Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
       "is_employed": true,
@@ -742,13 +742,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 7,
-      "bot_xp": 678,
-      "bot_total_xp": 2883,
+      "bot_level": 8,
+      "bot_xp": 10,
+      "bot_total_xp": 2910,
       "daily_work_count": 14,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-17",
-      "mee6_level": 7,
+      "mee6_level": 8,
       "last_laylow": null,
       "work_reminder": false,
       "work_reminder_sent": null
@@ -1297,7 +1297,7 @@
       "work_reminder_sent": null
     },
     "1379734184259747851": {
-      "cash": 1449,
+      "cash": 1498,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -245533,14 +245533,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 2422,
+      "funds": 2199,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 58337,
-      "market_cap": 58337,
+      "share_price": 58082,
+      "market_cap": 58082,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -245563,20 +245563,18 @@
       "inventory": {
         "Phosphorite": 97,
         "Peat": 146,
-        "Fish": 159,
+        "Fish": 150,
         "Iron Ore": 1,
         "Oil Shale": 8,
         "Gold": 2,
-        "Shale Oil": 2,
-        "Timber": 13,
+        "Shale Oil": 1,
+        "Timber": 23,
         "Wheat": 5,
-        "Sugar": 3
+        "Sugar": 5
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-17T18:21:22.948Z",
+      "last_collect": "2026-09-18T06:16:34.246Z",
       "price_history": [
-        60807,
-        60813,
         60837,
         60849,
         60901,
@@ -245674,7 +245672,9 @@
         58579,
         58303,
         58321,
-        58337
+        58337,
+        58341,
+        58082
       ],
       "is_state_owned": true,
       "director_id": "1528783188728483944",
@@ -245754,16 +245754,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": -0.11933895084745945,
-      "recorded_at": "2026-09-17T23:23:24.520Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.08240146976546993,
-      "recorded_at": "2026-09-17T23:28:24.607Z"
-    },
     {
       "price": 93,
       "change_percent": -0.06317769110387758,
@@ -246253,6 +246243,16 @@
       "price": 93,
       "change_percent": -0.0721125877838747,
       "recorded_at": "2026-09-18T06:13:26.381Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 1.01074490798261,
+      "recorded_at": "2026-09-18T06:16:31.432Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.387548956773111,
+      "recorded_at": "2026-09-18T06:16:35.492Z"
     }
   ],
   "factory_names": [
@@ -246274,7 +246274,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 3717.1546217492455,
+  "money_printed": 3732.1546217492455,
   "total_bank_reserves": 406082,
   "inflation_history": [
     0,
@@ -253164,6 +253164,13 @@
       "username": "alice_orlowe",
       "action": "collect-salaries",
       "details": "Baltic Timber & Harbour Co paid ₽329 salaries ceo 1528783188728483944 ₽137, director 1528783188728483944 ₽137, manager 1379734184259747851 ₽55"
+    },
+    {
+      "at": "2026-09-18T06:16:34.246Z",
+      "by": "1528783188728483944",
+      "username": "alice_orlowe",
+      "action": "collect-salaries",
+      "details": "Baltic Timber & Harbour Co paid ₽297 salaries ceo 1528783188728483944 ₽124, director 1528783188728483944 ₽124, manager 1379734184259747851 ₽49"
     }
   ],
   "total_rubles_history": [
@@ -253845,7 +253852,8 @@
       },
       "2026-09-18": {
         "1470136693821800521": 1,
-        "918518877414100993": 1
+        "918518877414100993": 1,
+        "1528783188728483944": 1
       }
     },
     "collect_daily": {
@@ -253903,7 +253911,8 @@
         "Ukrainian SSR": 0
       },
       "2026-09-18": {
-        "Azerbaijanian SSR": 0
+        "Azerbaijanian SSR": 0,
+        "Estonian SSR": 0
       }
     },
     "qotd": {
@@ -271678,20 +271687,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1263934700175626361",
-      "from": 0,
-      "to": 1,
-      "at": "2026-09-13T22:44:33.103Z",
-      "reason": "chat"
-    },
-    {
-      "userId": "1495413593242337421",
-      "from": 8,
-      "to": 9,
-      "at": "2026-09-14T02:22:42.497Z",
-      "reason": "chat"
-    },
-    {
       "userId": "730696111198699600",
       "from": 5,
       "to": 6,
@@ -273076,13 +273071,29 @@
       "to": 3,
       "at": "2026-09-18T06:04:19.309Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1528783188728483944",
+      "from": 7,
+      "to": 8,
+      "at": "2026-09-18T06:16:30.245Z",
+      "reason": "work"
+    },
+    {
+      "userId": "1528783188728483944",
+      "from": 7,
+      "to": 8,
+      "at": "2026-09-18T06:16:34.247Z",
+      "reason": "collect"
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 28,
-    "beforeLvlC": 5,
-    "afterLvl": 5,
-    "leveled": []
+    "xpGainC": 27,
+    "beforeLvlC": 7,
+    "afterLvl": 8,
+    "leveled": [
+      8
+    ]
   },
   "central_bank": {
     "reserves": 14844,
