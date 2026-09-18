@@ -651,7 +651,7 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 947,
+      "cash": 2744,
       "bank": 5104,
       "resources": {
         "Coal": 1
@@ -671,11 +671,11 @@
       "is_employed": false,
       "is_state_director": false,
       "director_of": null,
-      "dirty_cash": 1002,
-      "heat": 0,
+      "dirty_cash": 0,
+      "heat": 9.744235501035426,
       "wanted": 0,
-      "last_illegal": "2026-09-18T11:06:42.110Z",
-      "total_heat_generated": 609.1550000000002,
+      "last_illegal": "2026-09-18T17:34:41.699Z",
+      "total_heat_generated": 625.1550000000002,
       "bot_level": 17,
       "bot_xp": 636,
       "bot_total_xp": 16616,
@@ -683,7 +683,7 @@
       "shock_worker": false,
       "mee6_level": 17,
       "last_daily_work_date": "2026-09-17",
-      "last_laylow": "2026-09-18T11:06:57.878Z",
+      "last_laylow": "2026-09-18T17:34:45.417Z",
       "work_reminder": false,
       "work_reminder_sent": null
     },
@@ -69965,15 +69965,15 @@
       "work_reminder_sent": null
     },
     "1522851408611770409": {
-      "cash": 398,
+      "cash": 423,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-18T10:05:24.350Z",
-      "work_count": 15,
+      "last_work": "2026-09-18T17:34:10.667Z",
+      "work_count": 16,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -69987,9 +69987,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 309,
-      "bot_total_xp": 1934,
-      "daily_work_count": 13,
+      "bot_xp": 331,
+      "bot_total_xp": 1956,
+      "daily_work_count": 14,
       "shock_worker": false,
       "mee6_level": 6,
       "last_laylow": null,
@@ -245498,14 +245498,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 8955,
+      "funds": 8945,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 267615,
-      "market_cap": 267615,
+      "share_price": 267613,
+      "market_cap": 267613,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -245557,7 +245557,7 @@
       },
       "inventory": {
         "Gold Bar": 29,
-        "Wheat": 110,
+        "Wheat": 111,
         "Sugar": 67,
         "Copper": 48,
         "Lead": 8,
@@ -245577,15 +245577,12 @@
         "Machine Parts": 9,
         "Oil": 20,
         "Uranium": 1,
-        "Contraband: Cocaine": 6,
         "Gold": 10,
-        "Contraband: Synthetic": 4,
         "Contraband: LSD Sheets": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-18T17:25:51.384Z",
       "price_history": [
-        256091,
         256089,
         256071,
         256181,
@@ -245684,7 +245681,8 @@
         267053,
         267083,
         267633,
-        267615
+        267615,
+        267613
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -245704,7 +245702,7 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 238.53022862341294,
+      "heat": 248.5318952900796,
       "underground_heat": 1091.9101656948992,
       "dirty_cash": 0,
       "last_illegal": null
@@ -246100,11 +246098,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 82,
-      "change_percent": 0.9536492768480221,
-      "recorded_at": "2026-09-18T11:45:45.494Z"
-    },
     {
       "price": 83,
       "change_percent": 1.3419796460155073,
@@ -246599,6 +246592,11 @@
       "price": 87,
       "change_percent": 0.7328595294252719,
       "recorded_at": "2026-09-18T17:33:29.272Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 1.681731343241213,
+      "recorded_at": "2026-09-18T17:34:11.705Z"
     }
   ],
   "factory_names": [
@@ -246620,7 +246618,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 9208.342589941569,
+  "money_printed": 9223.342589941569,
   "total_bank_reserves": 408376,
   "inflation_history": [
     0,
@@ -253617,6 +253615,13 @@
       "username": "imdivit",
       "action": "collect-salaries",
       "details": "State Mining Corp paid ₽234 salaries ceo 1186597507720019988 ₽84, director 1186597507720019988 ₽84, manager 791747702689103893 ₽33, manager 1186597507720019988 ₽33"
+    },
+    {
+      "at": "2026-09-18T17:34:57.047Z",
+      "by": "1229741033265299506",
+      "username": "desertmarshal",
+      "action": "launder",
+      "details": "₽3,595 dirty → ₽1,797 clean fee ₽1,798"
     }
   ],
   "total_rubles_history": [
@@ -254045,12 +254050,12 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 4.3533,
+  "heat_global": 6.7533,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
-    "Contraband: Cocaine": 21,
-    "Contraband: Synthetic": 29,
+    "Contraband: Cocaine": 27,
+    "Contraband: Synthetic": 33,
     "Contraband: Coca Paste": 20,
     "Contraband: Cannabis": 20,
     "Contraband: Heroin": 27,
@@ -254306,7 +254311,7 @@
         "1186597507720019988": 4,
         "730223629849199093": 1,
         "1382051097614614619": 2,
-        "1522851408611770409": 1,
+        "1522851408611770409": 2,
         "1532381114600128693": 1,
         "913497950213267577": 1,
         "1495413593242337421": 4,
@@ -274470,7 +274475,7 @@
       "1186597507720019988": 202,
       "1494027370208825436": 0,
       "1000271630154596473": 0,
-      "1522851408611770409": 85,
+      "1522851408611770409": 95,
       "1082686076491137115": 10,
       "874346333882945547": 283,
       "1511756975392948224": 270,
@@ -274496,7 +274501,7 @@
       "1186597507720019988": "2026-09-18T17:31:44.324Z",
       "1494027370208825436": "2026-09-13T09:26:38.723Z",
       "1000271630154596473": "2026-09-13T09:31:01.131Z",
-      "1522851408611770409": "2026-09-18T10:05:26.524Z",
+      "1522851408611770409": "2026-09-18T17:34:12.687Z",
       "874346333882945547": "2026-09-18T17:26:28.429Z",
       "1511756975392948224": "2026-09-18T16:38:34.284Z",
       "1325111649816023092": "2026-09-18T16:43:29.253Z",
