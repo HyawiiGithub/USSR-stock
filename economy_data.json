@@ -802,7 +802,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1398,
-      "heat": 5.1426493410748115,
+      "heat": 4.204028807396522,
       "wanted": 0,
       "last_illegal": "2026-09-18T20:19:46.425Z",
       "total_heat_generated": 1027.4908999999998,
@@ -1664,7 +1664,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 729,
-      "heat": 10.128208370287972,
+      "heat": 9.201514193867627,
       "wanted": 0,
       "last_illegal": "2026-09-18T22:10:11.513Z",
       "total_heat_generated": 598.7830000000002,
@@ -245869,8 +245869,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 273.39581866356474,
-      "underground_heat": 1148.6774508289068,
+      "heat": 272.61349217187296,
+      "underground_heat": 1147.9906347634742,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246265,16 +246265,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 89,
-      "change_percent": 0.8441024599434195,
-      "recorded_at": "2026-09-18T18:23:32.735Z"
-    },
-    {
-      "price": 89,
-      "change_percent": 0.9085060392904375,
-      "recorded_at": "2026-09-18T18:27:38.811Z"
-    },
     {
       "price": 89,
       "change_percent": 0.631086945922388,
@@ -246764,6 +246754,16 @@
       "price": 97,
       "change_percent": -0.24693520475506275,
       "recorded_at": "2026-09-18T22:38:30.652Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 6.2298840784678,
+      "recorded_at": "2026-09-18T22:43:16.754Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.4325439603905058,
+      "recorded_at": "2026-09-18T22:43:30.584Z"
     }
   ],
   "factory_names": [
@@ -246785,7 +246785,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 16210.585414358833,
+  "money_printed": 15886.373706071656,
   "total_bank_reserves": 414214,
   "inflation_history": [
     0,
@@ -247097,7 +247097,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Machine Parts": 5
+    "Machine Parts": 4
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -247120,15 +247120,10 @@
     "Reactor Core": 5,
     "Gas Fuel": 86,
     "Steel Beam": 2,
-    "Machine Parts": 26,
+    "Machine Parts": 27,
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Iron Ingot",
-      "qty": 2,
-      "at": "2026-09-11T04:53:58.876Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -248623,6 +248618,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-18T22:28:22.850Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-09-18T22:43:22.968Z"
     }
   ],
   "demand_history": {
@@ -251726,6 +251726,11 @@
         "demand": 1.276043944302362,
         "at": "2026-09-18T22:28:22.850Z",
         "supply": 18
+      },
+      {
+        "demand": 1.2984692065239534,
+        "at": "2026-09-18T22:43:22.968Z",
+        "supply": 18
       }
     ],
     "Sugar": [
@@ -253813,10 +253818,6 @@
   "total_rubles_history": [
     {
       "total": 496228,
-      "at": "2026-09-18T14:38:28.113Z"
-    },
-    {
-      "total": 496228,
       "at": "2026-09-18T14:43:28.127Z"
     },
     {
@@ -254210,6 +254211,10 @@
     {
       "total": 509175,
       "at": "2026-09-18T22:38:32.698Z"
+    },
+    {
+      "total": 509175,
+      "at": "2026-09-18T22:43:32.033Z"
     }
   ],
   "gold_rush": null,
@@ -254236,7 +254241,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 4.881300000000007,
+  "heat_global": 4.581300000000007,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -276374,12 +276379,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.14,
+    "rub_per_usd": 7.08,
     "history": [
-      {
-        "rate": 6.98,
-        "at": "2026-09-18T06:13:15.897Z"
-      },
       {
         "rate": 7,
         "at": "2026-09-18T06:23:15.912Z"
@@ -276775,9 +276776,13 @@
       {
         "rate": 7.14,
         "at": "2026-09-18T22:33:18.953Z"
+      },
+      {
+        "rate": 7.08,
+        "at": "2026-09-18T22:43:18.956Z"
       }
     ],
-    "last_update": "2026-09-18T22:33:18.953Z",
+    "last_update": "2026-09-18T22:43:18.956Z",
     "manual_override": null
   },
   "national_budget": {
