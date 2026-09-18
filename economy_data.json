@@ -672,7 +672,7 @@
       "is_state_director": true,
       "director_of": "state_26",
       "dirty_cash": 1002,
-      "heat": 1.6802469594455816,
+      "heat": 0.6847500448385695,
       "wanted": 0,
       "last_illegal": "2026-09-18T11:06:42.110Z",
       "total_heat_generated": 609.1550000000002,
@@ -1191,8 +1191,8 @@
       "last_illegal": "2026-09-11T14:34:55.564Z",
       "total_heat_generated": 11,
       "bot_level": 14,
-      "bot_xp": 1233,
-      "bot_total_xp": 11278,
+      "bot_xp": 1252,
+      "bot_total_xp": 11297,
       "daily_work_count": 39,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-18",
@@ -1669,8 +1669,8 @@
       "last_illegal": "2026-09-17T13:22:56.790Z",
       "total_heat_generated": 527.8040000000001,
       "bot_level": 18,
-      "bot_xp": 1187,
-      "bot_total_xp": 19562,
+      "bot_xp": 1205,
+      "bot_total_xp": 19580,
       "daily_work_count": 91,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-17",
@@ -245484,8 +245484,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 269.04157592908786,
-      "underground_heat": 1133.2273881067845,
+      "heat": 268.2909537596101,
+      "underground_heat": 1132.5170752535073,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -245880,11 +245880,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.30420096508516653,
-      "recorded_at": "2026-09-18T04:58:26.237Z"
-    },
     {
       "price": 95,
       "change_percent": -0.2349849271239896,
@@ -246379,6 +246374,11 @@
       "price": 86,
       "change_percent": 0.6804375431584676,
       "recorded_at": "2026-09-18T11:28:26.493Z"
+    },
+    {
+      "price": 87,
+      "change_percent": 1.2509598667344037,
+      "recorded_at": "2026-09-18T11:33:26.619Z"
     }
   ],
   "factory_names": [
@@ -246400,7 +246400,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 2099.9844503383865,
+  "money_printed": 2057.9847613316188,
   "total_bank_reserves": 405705,
   "inflation_history": [
     0,
@@ -253309,10 +253309,6 @@
   "total_rubles_history": [
     {
       "total": 494636,
-      "at": "2026-09-18T03:38:27.506Z"
-    },
-    {
-      "total": 494636,
       "at": "2026-09-18T03:43:27.499Z"
     },
     {
@@ -253706,6 +253702,10 @@
     {
       "total": 496061,
       "at": "2026-09-18T11:28:27.893Z"
+    },
+    {
+      "total": 496061,
+      "at": "2026-09-18T11:33:27.910Z"
     }
   ],
   "gold_rush": null,
@@ -254107,7 +254107,7 @@
       "887419379833274388": 1789671075644,
       "807944786840387675": 1789621707254,
       "1529673877767196783": 1789377341879,
-      "913497950213267577": 1789731031352,
+      "913497950213267577": 1789731181089,
       "822079355298906112": 1789726437814,
       "1000271630154596473": 1789414201493,
       "437626060876546069": 1789233001616,
@@ -254158,7 +254158,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789683743733,
-      "1511756975392948224": 1789731121329,
+      "1511756975392948224": 1789731182300,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789495529054,
@@ -254426,20 +254426,9 @@
       "2026-Q3": {
         "positive": 57,
         "negative": 24,
-        "neutral": 1140,
-        "total": 1221,
+        "neutral": 1141,
+        "total": 1222,
         "mentions": [
-          {
-            "at": "2026-09-12T19:17:25.663Z",
-            "userId": "503918799683321866",
-            "username": "spoop69",
-            "channelId": "1058517481431502889",
-            "messageId": "1548412235947184201",
-            "text": "Literally crazy was more fun to debate <@1082686076491137115>",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-12T19:21:27.631Z",
             "userId": "874346333882945547",
@@ -260373,23 +260362,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-18T11:32:53.973Z",
+            "userId": "1511756975392948224",
+            "username": "localmanandwoman",
+            "channelId": "1538703181733695600",
+            "messageId": "1550469660149948437",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text+reply",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T16:35:01.124Z",
-        "userId": "963834359994007614",
-        "username": "that.one.pakistani_",
-        "channelId": "1016787017457225738",
-        "messageId": "1548371364904181853",
-        "text": "<@1082686076491137115> <@1456622719985782864> So at the moment Secretariat want me to take it over which is why you see me doin all of this\n\nUNLIKE the Secretariat I want to actually work with y'all on this",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T16:39:31.784Z",
         "userId": "913497950213267577",
@@ -271823,9 +271813,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-18T11:32:53.973Z",
+        "userId": "1511756975392948224",
+        "username": "localmanandwoman",
+        "channelId": "1538703181733695600",
+        "messageId": "1550469660149948437",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text+reply",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-18T11:31:55.768Z",
+    "last_scan": "2026-09-18T11:32:53.973Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -275724,12 +275726,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.89,
+    "rub_per_usd": 6.92,
     "history": [
-      {
-        "rate": 6.9,
-        "at": "2026-09-17T19:03:15.557Z"
-      },
       {
         "rate": 6.94,
         "at": "2026-09-17T19:13:15.582Z"
@@ -276125,9 +276123,13 @@
       {
         "rate": 6.89,
         "at": "2026-09-18T11:23:17.288Z"
+      },
+      {
+        "rate": 6.92,
+        "at": "2026-09-18T11:33:17.270Z"
       }
     ],
-    "last_update": "2026-09-18T11:23:17.288Z",
+    "last_update": "2026-09-18T11:33:17.270Z",
     "manual_override": null
   },
   "national_budget": {
