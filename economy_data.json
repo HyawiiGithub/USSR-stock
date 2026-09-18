@@ -130,7 +130,7 @@
     },
     "918518877414100993": {
       "username": "",
-      "cash": 2028,
+      "cash": 2048,
       "bank": 0,
       "resources": {
         "Natural Gas": 1,
@@ -143,8 +143,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-17T16:07:44.673Z",
-      "work_count": 44,
+      "last_work": "2026-09-18T02:51:05.982Z",
+      "work_count": 45,
       "last_claim": "2026-09-07T13:51:17.121Z",
       "last_collect": null,
       "join_date": "2026-08-22T01:39:30.028689",
@@ -159,12 +159,12 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 292,
-      "bot_total_xp": 1442,
-      "daily_work_count": 23,
+      "bot_xp": 345,
+      "bot_total_xp": 1495,
+      "daily_work_count": 24,
       "shock_worker": false,
       "mee6_level": 5,
-      "last_daily_work_date": "2026-09-17",
+      "last_daily_work_date": "2026-09-18",
       "last_laylow": null,
       "work_reminder": false,
       "work_reminder_sent": null
@@ -244829,14 +244829,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 29237,
+      "funds": 29232,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 151032,
-      "market_cap": 151032,
+      "share_price": 153974,
+      "market_cap": 153974,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -244857,22 +244857,20 @@
         }
       },
       "inventory": {
-        "Oil": 11,
+        "Oil": 5,
         "Iron Ore": 15,
-        "Flour": 9,
-        "Wheat": 96,
+        "Flour": 8,
+        "Wheat": 87,
         "Cotton": 4,
-        "Sugar": 25,
-        "Gas Fuel": 18,
-        "Fuel": 13,
-        "Gold": 1
+        "Sugar": 30,
+        "Gas Fuel": 21,
+        "Fuel": 24,
+        "Gold": 1,
+        "Natural Gas": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-17T15:21:13.690Z",
+      "last_collect": "2026-09-18T02:51:12.169Z",
       "price_history": [
-        119683,
-        119606,
-        119609,
         119673,
         121099,
         120706,
@@ -244969,7 +244967,10 @@
         150851,
         150830,
         151029,
-        151032
+        151032,
+        151051,
+        153659,
+        153974
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
@@ -245600,16 +245601,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.45729836956944664,
-      "recorded_at": "2026-09-17T20:08:24.280Z"
-    },
-    {
-      "price": 93,
-      "change_percent": 0.8437259977643898,
-      "recorded_at": "2026-09-17T20:12:20.664Z"
-    },
-    {
-      "price": 93,
       "change_percent": 0.27216420549591175,
       "recorded_at": "2026-09-17T20:13:24.253Z"
     },
@@ -246097,6 +246088,16 @@
       "price": 97,
       "change_percent": 0.002947336018266399,
       "recorded_at": "2026-09-18T02:48:24.730Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.5064251935580654,
+      "recorded_at": "2026-09-18T02:51:07.080Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.43098347496241407,
+      "recorded_at": "2026-09-18T02:51:13.480Z"
     }
   ],
   "factory_names": [
@@ -246118,7 +246119,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 1746.500342455054,
+  "money_printed": 1761.500342455054,
   "total_bank_reserves": 406082,
   "inflation_history": [
     0,
@@ -253688,7 +253689,8 @@
         "780837437987094560": 1
       },
       "2026-09-18": {
-        "1470136693821800521": 1
+        "1470136693821800521": 1,
+        "918518877414100993": 1
       }
     },
     "collect_daily": {
@@ -253744,6 +253746,9 @@
         "Nuristani SSR": 3,
         "Estonian SSR": 0,
         "Ukrainian SSR": 0
+      },
+      "2026-09-18": {
+        "Azerbaijanian SSR": 0
       }
     },
     "qotd": {
@@ -272915,9 +272920,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 25,
-    "beforeLvlC": 7,
-    "afterLvl": 7,
+    "xpGainC": 28,
+    "beforeLvlC": 5,
+    "afterLvl": 5,
     "leveled": []
   },
   "central_bank": {
