@@ -802,7 +802,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1398,
-      "heat": 16.001497750526468,
+      "heat": 15.13161483531967,
       "wanted": 0,
       "last_illegal": "2026-09-18T20:19:46.425Z",
       "total_heat_generated": 1027.4908999999998,
@@ -1664,7 +1664,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 595,
-      "heat": 9.246260512075455,
+      "heat": 8.355314617151118,
       "wanted": 0,
       "last_illegal": "2026-09-18T20:17:50.370Z",
       "total_heat_generated": 583.6690000000002,
@@ -245807,8 +245807,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 266.47920830879366,
-      "underground_heat": 1132.4917777252952,
+      "heat": 265.78023905720204,
+      "underground_heat": 1131.8897481200822,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246203,11 +246203,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.7343134731961484,
-      "recorded_at": "2026-09-18T17:53:05.702Z"
-    },
     {
       "price": 94,
       "change_percent": 0.5233919838627875,
@@ -246702,6 +246697,11 @@
       "price": 100,
       "change_percent": 0.4439641250500906,
       "recorded_at": "2026-09-18T21:38:30.567Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.2832017670313834,
+      "recorded_at": "2026-09-18T21:43:30.576Z"
     }
   ],
   "factory_names": [
@@ -246723,7 +246723,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 18299.62729774563,
+  "money_printed": 17933.634751790716,
   "total_bank_reserves": 414214,
   "inflation_history": [
     0,
@@ -247035,7 +247035,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Bread": 4,
+    "Bread": 2,
     "Machine Parts": 6
   },
   "global_consumption": {
@@ -247052,7 +247052,7 @@
     "Canned Food": 15,
     "Uranium Rod": 18,
     "Canned Fish": 19,
-    "Bread": 247,
+    "Bread": 249,
     "Aluminium Sheet": 8,
     "Circuit Board": 14,
     "Cotton Fabric": 10,
@@ -247063,11 +247063,6 @@
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 1,
-      "at": "2026-09-11T03:53:58.039Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -248562,6 +248557,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-18T21:28:22.302Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-18T21:43:22.414Z"
     }
   ],
   "demand_history": {
@@ -250798,11 +250798,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.286626901661228,
-        "at": "2026-09-08T09:06:48.601Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2809823407588645,
         "at": "2026-09-08T16:36:48.757Z",
         "supply": 0
@@ -251095,6 +251090,11 @@
       {
         "demand": 1.3743397593708762,
         "at": "2026-09-18T20:28:21.178Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3934322745807557,
+        "at": "2026-09-18T21:43:22.415Z",
         "supply": 1
       }
     ],
@@ -253747,10 +253747,6 @@
   "total_rubles_history": [
     {
       "total": 496228,
-      "at": "2026-09-18T13:33:28.203Z"
-    },
-    {
-      "total": 496228,
       "at": "2026-09-18T13:38:28.141Z"
     },
     {
@@ -254144,6 +254140,10 @@
     {
       "total": 509125,
       "at": "2026-09-18T21:38:31.996Z"
+    },
+    {
+      "total": 509125,
+      "at": "2026-09-18T21:43:31.979Z"
     }
   ],
   "gold_rush": null,
@@ -254170,7 +254170,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 4.871400000000004,
+  "heat_global": 4.571400000000004,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -276311,10 +276311,6 @@
     "rub_per_usd": 7.14,
     "history": [
       {
-        "rate": 6.93,
-        "at": "2026-09-18T05:13:15.944Z"
-      },
-      {
         "rate": 7,
         "at": "2026-09-18T05:23:15.870Z"
       },
@@ -276709,9 +276705,13 @@
       {
         "rate": 7.14,
         "at": "2026-09-18T21:33:18.801Z"
+      },
+      {
+        "rate": 7.14,
+        "at": "2026-09-18T21:43:18.883Z"
       }
     ],
-    "last_update": "2026-09-18T21:33:18.801Z",
+    "last_update": "2026-09-18T21:43:18.887Z",
     "manual_override": null
   },
   "national_budget": {
