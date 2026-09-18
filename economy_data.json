@@ -602,8 +602,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 151,
-      "bot_total_xp": 8601,
+      "bot_xp": 171,
+      "bot_total_xp": 8621,
       "daily_work_count": 37,
       "shock_worker": false,
       "mee6_level": 13,
@@ -785,15 +785,15 @@
       "work_reminder_sent": null
     },
     "874346333882945547": {
-      "cash": 275,
+      "cash": 300,
       "bank": 3666,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-18T19:15:53.215Z",
-      "work_count": 1528,
+      "last_work": "2026-09-18T19:25:39.429Z",
+      "work_count": 1529,
       "last_claim": "2026-09-15T05:13:20.320Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -807,9 +807,9 @@
       "last_illegal": "2026-09-18T17:28:39.712Z",
       "total_heat_generated": 994.8798999999999,
       "bot_level": 21,
-      "bot_xp": 2170,
-      "bot_total_xp": 29120,
-      "daily_work_count": 422,
+      "bot_xp": 2208,
+      "bot_total_xp": 29158,
+      "daily_work_count": 423,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-18",
       "mee6_level": 21,
@@ -245560,14 +245560,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 11327,
+      "funds": 11317,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 270185,
-      "market_cap": 270185,
+      "share_price": 270183,
+      "market_cap": 270183,
       "employees": 28,
       "level": 1,
       "buildings": {
@@ -245619,7 +245619,7 @@
       },
       "inventory": {
         "Gold Bar": 29,
-        "Wheat": 96,
+        "Wheat": 97,
         "Sugar": 67,
         "Copper": 50,
         "Lead": 8,
@@ -245646,7 +245646,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-18T17:25:51.384Z",
       "price_history": [
-        256895,
         256877,
         256859,
         256841,
@@ -245745,7 +245744,8 @@
         269043,
         269169,
         270171,
-        270185
+        270185,
+        270183
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -246161,11 +246161,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 81,
-      "change_percent": 0.5299976924096357,
-      "recorded_at": "2026-09-18T15:18:27.934Z"
-    },
     {
       "price": 81,
       "change_percent": 1.194526250493511,
@@ -246660,6 +246655,11 @@
       "price": 96,
       "change_percent": -0.027373402650824948,
       "recorded_at": "2026-09-18T19:23:29.535Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.7576109400149575,
+      "recorded_at": "2026-09-18T19:25:40.603Z"
     }
   ],
   "factory_names": [
@@ -246681,7 +246681,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 10180.395506279325,
+  "money_printed": 10195.395506279325,
   "total_bank_reserves": 408406,
   "inflation_history": [
     0,
@@ -254391,7 +254391,7 @@
         "1531451192419549208": 1,
         "1325111649816023092": 5,
         "1511756975392948224": 1,
-        "874346333882945547": 12,
+        "874346333882945547": 13,
         "1536339779140976711": 3,
         "791747702689103893": 1,
         "1225275427145121903": 1
@@ -254485,7 +254485,7 @@
       "1229741033265299506": 1789759336791,
       "1536339779140976711": 1789755179294,
       "780837437987094560": 1789758327542,
-      "874346333882945547": 1789758943636,
+      "874346333882945547": 1789759533874,
       "870686833976172574": 1789759385211,
       "1186597507720019988": 1789758883671,
       "1521043721129558017": 1789758081342,
@@ -254520,7 +254520,7 @@
       "1496968738447032410": 1789724207798,
       "1254134534987845877": 1789419071660,
       "1490511870967283733": 1789513410824,
-      "1225275427145121903": 1789759364579,
+      "1225275427145121903": 1789759571720,
       "1520173521244913684": 1789680209105,
       "930716306603405363": 1788998761124,
       "1494919466713350275": 1789668249510,
@@ -254837,20 +254837,9 @@
       "2026-Q3": {
         "positive": 57,
         "negative": 24,
-        "neutral": 1192,
-        "total": 1273,
+        "neutral": 1193,
+        "total": 1274,
         "mentions": [
-          {
-            "at": "2026-09-13T13:06:56.006Z",
-            "userId": "807254722251587614",
-            "username": "lucky_drink",
-            "channelId": "605951687974453248",
-            "messageId": "1548681386318106745",
-            "text": "<@1082686076491137115>  is our health sector still alive?",
-            "sentiment": "neutral",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-13T13:10:30.249Z",
             "userId": "1506785783506534426",
@@ -260836,23 +260825,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-18T19:25:34.638Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "605951687974453248",
+            "messageId": "1550588611802435636",
+            "text": "<@1082686076491137115> 1.05 remains",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:29:40.430Z",
-        "userId": "963834359994007614",
-        "username": "that.one.pakistani_",
-        "channelId": "1016433654270009354",
-        "messageId": "1548385110301220865",
-        "text": "<@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:29:40.883Z",
         "userId": "807944786840387675",
@@ -272338,9 +272328,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-18T19:25:34.638Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "605951687974453248",
+        "messageId": "1550588611802435636",
+        "text": "<@1082686076491137115> 1.05 remains",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-18T19:21:40.937Z",
+    "last_scan": "2026-09-18T19:25:34.638Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
