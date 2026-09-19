@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 1285,
-      "bot_total_xp": 25135,
+      "bot_xp": 1307,
+      "bot_total_xp": 25157,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 20,
@@ -1419,8 +1419,8 @@
       "last_illegal": "2026-09-11T14:34:55.564Z",
       "total_heat_generated": 11,
       "bot_level": 15,
-      "bot_xp": 86,
-      "bot_total_xp": 11911,
+      "bot_xp": 130,
+      "bot_total_xp": 11955,
       "daily_work_count": 43,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-19",
@@ -1710,7 +1710,7 @@
       "pet_food_source": {}
     },
     "1325111649816023092": {
-      "cash": 0,
+      "cash": 25,
       "bank": 7706,
       "resources": {},
       "inventory": {
@@ -1719,8 +1719,8 @@
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-19T17:51:47.128Z",
-      "work_count": 247,
+      "last_work": "2026-09-19T18:13:20.375Z",
+      "work_count": 248,
       "last_claim": "2026-09-01T22:44:05.083Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -1734,9 +1734,9 @@
       "last_illegal": "2026-09-19T17:12:44.710Z",
       "total_heat_generated": 96.571,
       "bot_level": 15,
-      "bot_xp": 778,
-      "bot_total_xp": 12603,
-      "daily_work_count": 79,
+      "bot_xp": 823,
+      "bot_total_xp": 12648,
+      "daily_work_count": 80,
       "shock_worker": false,
       "mee6_level": 15,
       "last_daily_work_date": "2026-09-19",
@@ -87836,8 +87836,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 12,
-      "bot_total_xp": 21007,
+      "bot_xp": 33,
+      "bot_total_xp": 21028,
       "daily_work_count": 62,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-18",
@@ -301747,14 +301747,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 9606,
+      "funds": 4320,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 326370,
-      "market_cap": 326370,
+      "share_price": 330864,
+      "market_cap": 330864,
       "employees": 30,
       "level": 1,
       "buildings": {
@@ -301807,11 +301807,16 @@
           "level": 1,
           "built_at": "2026-09-18T20:49:18.015Z",
           "type": "mine"
+        },
+        "Quarry": {
+          "level": 1,
+          "built_at": "2026-09-19T18:14:19.343Z",
+          "type": "mine"
         }
       },
       "inventory": {
         "Gold Bar": 37,
-        "Wheat": 156,
+        "Wheat": 155,
         "Sugar": 75,
         "Copper": 40,
         "Lead": 8,
@@ -301827,11 +301832,10 @@
         "Coal": 19,
         "Steel Ingot": 2,
         "Contraband: Synthetic": 2,
-        "Machine Parts": 8,
         "Contraband: Heroin": 3,
         "Refined Fuel": 8,
         "Circuit Board": 3,
-        "Gold": 5,
+        "Gold": 7,
         "Contraband: Opium": 2,
         "Steel Beam": 1,
         "Oil": 1,
@@ -301841,9 +301845,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-19T16:47:18.005Z",
       "price_history": [
-        277417,
-        277423,
-        277421,
         282228,
         282345,
         282345,
@@ -301940,11 +301941,14 @@
         326344,
         326326,
         326356,
-        326370
+        326370,
+        326652,
+        330864,
+        330864
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-19T17:30:16.633Z",
+      "last_factorydeal": "2026-09-19T18:14:02.022Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -302356,11 +302360,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 91,
-      "change_percent": 0.6207193376666371,
-      "recorded_at": "2026-09-19T14:08:06.359Z"
-    },
     {
       "price": 91,
       "change_percent": 0.6960033131199593,
@@ -302855,12 +302854,15 @@
       "price": 108,
       "change_percent": 0.07559247446472482,
       "recorded_at": "2026-09-19T18:11:09.463Z"
+    },
+    {
+      "price": 108,
+      "change_percent": 0.08467468193651102,
+      "recorded_at": "2026-09-19T18:13:21.701Z"
     }
   ],
   "factory_names": [
     "Soviet Iron Foundry",
-    "Stalin Tractor Plant",
-    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Volga Shipbuilding"
   ],
@@ -302868,7 +302870,9 @@
     "Lenin Machine Works",
     "Ural Heavy Industries",
     "Red Star Steelworks",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -302876,7 +302880,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 11458.405998440254,
+  "money_printed": 24197.405998440256,
   "total_bank_reserves": 420350,
   "inflation_history": [
     0,
@@ -303128,39 +303132,39 @@
     "Copper Ingot": 1.40449409380291,
     "Iron Ingot": 1.3715310886044731,
     "Steel Ingot": 1.3613836708863238,
-    "Gold Bar": 1.2439649450752692,
+    "Gold Bar": 1.2539649450752692,
     "Aluminium Ingot": 1.4130597392010857,
     "Timber Planks": 1.325857023397892,
     "Bricks": 1.4115369608186281,
     "Concrete": 1.4143587026607745,
     "Glass": 1.4079455128083742,
     "Steel Beam": 1.392849494730747,
-    "Machine Parts": 1.3466540222797978,
+    "Machine Parts": 1.1666540222797979,
     "Refined Fuel": 1.3844212628982449,
     "Uranium Rod": 1.3993190796444082,
     "Reactor Core": 1.4022146604013082,
     "Circuit Board": 1.397489253087028,
-    "Flour": 1.3867541709344628,
+    "Flour": 1.3967541709344629,
     "Sugar": 0.9211797725472823,
     "Wine": 1.4124796113753508,
     "Canned Food": 1.4109714281629409,
     "Canned Fish": 1.4046177913832323,
-    "Smoked Fish": 1.4109612658474382,
+    "Smoked Fish": 1.4209612658474382,
     "Fish Stew": 1.4145119285268775,
-    "Peat Fuel": 1.4109523142863605,
+    "Peat Fuel": 1.4209523142863605,
     "Gas Fuel": 1.4022381306190093,
     "Fertilizer": 1.3096157355036264,
     "Cotton Fabric": 1.3997894082222575,
     "Manganese Alloy": 1.4124796113753508,
     "Sunflower Oil": 1.4203772817658051,
-    "Linen": 1.412062223029405,
+    "Linen": 1.422062223029405,
     "Corn Meal": 1.4136306247857136,
-    "Tea Pack": 1.4147443423621822,
+    "Tea Pack": 1.4247443423621822,
     "Citrus Juice": 1.4123073361326746,
     "Antimony Alloy": 1.4116227589958519,
     "Molybdenum Rod": 1.4121764278812339,
     "Aluminium Sheet": 1.4049644819137355,
-    "Shale Oil": 1.4048165902671925
+    "Shale Oil": 1.4148165902671925
   },
   "market_last_sale": {
     "Fuel": "2026-09-18T02:52:13.043Z",
@@ -303183,7 +303187,7 @@
     "Reactor Core": "2026-09-15T17:46:31.495Z",
     "Gas Fuel": "2026-09-19T07:09:19.820Z",
     "Steel Beam": "2026-09-08T17:58:34.489Z",
-    "Machine Parts": "2026-09-18T20:45:59.591Z",
+    "Machine Parts": "2026-09-19T18:14:02.023Z",
     "Sugar": "2026-09-14T12:40:01.500Z",
     "Fertilizer": "2026-09-19T14:56:18.322Z"
   },
@@ -303191,7 +303195,8 @@
   "ai_store": {
     "Fertilizer": 7,
     "Bread": 9,
-    "Cake": 2
+    "Cake": 2,
+    "Machine Parts": 8
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -310757,7 +310762,7 @@
         "1186597507720019988": 3,
         "1511756975392948224": 12,
         "730696111198699600": 2,
-        "1325111649816023092": 11,
+        "1325111649816023092": 12,
         "780837437987094560": 3,
         "1542306007772823714": 1,
         "1380189428953124975": 34,
@@ -310862,7 +310867,7 @@
       "1544820489191559270": 1789839528004,
       "791747702689103893": 1789827422736,
       "1456622719985782864": 1789836989163,
-      "1082686076491137115": 1789841551026,
+      "1082686076491137115": 1789841612885,
       "1229741033265299506": 1789841493010,
       "1536339779140976711": 1789841435756,
       "780837437987094560": 1789840389545,
@@ -310875,9 +310880,9 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1789699640761,
       "1309104161278918706": 1789052535895,
-      "1325111649816023092": 1789841518954,
+      "1325111649816023092": 1789841590852,
       "1506785783506534426": 1789837440692,
-      "807254722251587614": 1789841378294,
+      "807254722251587614": 1789841602033,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789758282241,
       "997903130543005767": 1788970364999,
@@ -310889,7 +310894,7 @@
       "887419379833274388": 1789839984845,
       "807944786840387675": 1789830456704,
       "1529673877767196783": 1789377341879,
-      "913497950213267577": 1789838652030,
+      "913497950213267577": 1789841638368,
       "822079355298906112": 1789828527207,
       "1000271630154596473": 1789414201493,
       "437626060876546069": 1789233001616,
@@ -330649,24 +330654,16 @@
       ]
     },
     "874346333882945547": {
-      "date": "2026-09-15",
-      "used": 2,
+      "date": "2026-09-19",
+      "used": 0,
       "history": [
         {
           "role": "user",
-          "content": "what's the best company of ussr and who leads it"
+          "content": "who is speer"
         },
         {
           "role": "assistant",
-          "content": "Based on the latest USSR economic data:\n\n**Best Company:** **Soviet Agriculture** (Советская сельское хозяйство) – with revenue of **₽231,142**\n\nThis positions it above other major state enterprises including State Nuclear Energy (₽215,985) and State Mining Corp (₽171,098).\n\n*Note:* Specific leadership details for individual Soviet state enterprises aren't explicitly detailed in the current data set. Soviet Agriculture was the leading enterprise by output/revenue among the major listed companies"
-        },
-        {
-          "role": "user",
-          "content": "spoop or erwin"
-        },
-        {
-          "role": "assistant",
-          "content": "Based on the official USSR economic data from my system:\n\n**Top Companies by Revenue:**\n1. **Soviet Agriculture** – ₽245,644 (highest)\n2. State Nuclear Energy – ₽216,393\n3. State Mining Corp – ₽171,362\n\n**Spoop** and **Erwin** do not appear among the top-ranked state enterprises in the current USSR economic data. If you're referring to specific companies outside this dataset, their ranking would depend on more recent or internal figures beyond the live data I have access to.\n\nThe best-situated c"
+          "content": "**Albert Speer** (Berthold Konrad Hermann Albert Speer) was a German architect who served as **Minister of Armaments and War Production** in Nazi Germany during most of World War II. He was a close friend and ally of Adolf Hitler. After the war, he was convicted at the Nuremberg Trials and received a 20-year sentence in prison. The exact amounts of compensation, assets, etc., are not specified in the available records beyond his historical role."
         }
       ]
     },
@@ -330976,7 +330973,7 @@
     },
     "807254722251587614": {
       "date": "2026-09-19",
-      "used": 2,
+      "used": 3,
       "history": [
         {
           "role": "user",
@@ -330993,6 +330990,14 @@
         {
           "role": "assistant",
           "content": "<@807254722251587614> is **Nikolai Voronov**, a mid-level department head in the Economic Planning Bureau. He oversees regional economic coordination for the western industrial regions and has been present in several policy discussions regarding infrastructure investment. Not a central figure, but operationally significant.\n\nFor reference, my current sector staff roster includes:\n\n- **@1042912334** — Sector Commander (security/logistics)\n- **@8023411923** — Organizational Director (personnel man"
+        },
+        {
+          "role": "user",
+          "content": "who is <@807254722251587614>"
+        },
+        {
+          "role": "assistant",
+          "content": "**Nikolai Voronov** (@807254722251587614) — Known as \"Lucky\" in the server, he's a mid-level administrator working in the Economic Planning Bureau. Key details:\n\n- **Role:** Lucky (server status)\n- **Cash:** ₽200\n- **Bank Balance:** ₽1,875\n- **Level:** 19\n- **Roles/Positions:** Communist Party of the Soviet Union, Journalist, Communist Party (Traditionalist), All-Union Congress of Soviets, News Ping, Byelorussian Soviet Socialist Republic, Bank Teller, Honourable R.K.U. Graduate, Honourable L.M."
         }
       ]
     },
@@ -334829,8 +334834,13 @@
   },
   "pets_last_decay": "2026-09-19T17:51:15.664Z",
   "national_market": {
-    "stock": {},
-    "sold_count": 10,
+    "stock": {
+      "Machine Parts": {
+        "qty": 8,
+        "price": 1828
+      }
+    },
+    "sold_count": 18,
     "bought_count": 10
   },
   "leaders": {
