@@ -785,15 +785,15 @@
       "work_reminder_sent": null
     },
     "874346333882945547": {
-      "cash": 420,
+      "cash": 445,
       "bank": 7066,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-18T21:22:14.285Z",
-      "work_count": 1544,
+      "last_work": "2026-09-19T04:14:49.661Z",
+      "work_count": 1545,
       "last_claim": "2026-09-18T21:12:12.046Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -807,11 +807,11 @@
       "last_illegal": "2026-09-18T20:19:46.425Z",
       "total_heat_generated": 1027.4908999999998,
       "bot_level": 21,
-      "bot_xp": 2929,
-      "bot_total_xp": 29879,
-      "daily_work_count": 436,
+      "bot_xp": 2980,
+      "bot_total_xp": 29930,
+      "daily_work_count": 437,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-18",
+      "last_daily_work_date": "2026-09-19",
       "mee6_level": 21,
       "last_laylow": "2026-09-18T20:18:21.023Z",
       "work_reminder": false,
@@ -245816,14 +245816,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 6144,
+      "funds": 6134,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 275482,
-      "market_cap": 275482,
+      "share_price": 276252,
+      "market_cap": 276252,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -245880,35 +245880,34 @@
       },
       "inventory": {
         "Gold Bar": 34,
-        "Wheat": 79,
-        "Sugar": 67,
+        "Wheat": 62,
+        "Sugar": 66,
         "Copper": 58,
-        "Lead": 8,
-        "Sulphur": 57,
+        "Lead": 9,
+        "Sulphur": 58,
         "Timber Planks": 23,
-        "Iron Ore": 34,
+        "Iron Ore": 30,
         "Contraband: Coca Paste": 9,
         "Iron Ingot": 9,
-        "Timber": 2,
+        "Timber": 3,
         "Contraband: Cannabis": 13,
-        "Bread": 1,
-        "Cake": 1,
+        "Bread": 2,
+        "Cake": 2,
         "Uranium": 1,
         "Contraband: LSD Sheets": 1,
         "Fuel": 8,
         "Contraband: Cocaine": 2,
         "Reactor Core": 1,
-        "Coal": 13,
-        "Steel Ingot": 2,
+        "Coal": 12,
+        "Steel Ingot": 1,
         "Oil": 3,
         "Contraband: Synthetic": 2,
-        "Gold": 1
+        "Gold": 1,
+        "Machine Parts": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-18T17:25:51.384Z",
+      "last_collect": "2026-09-19T04:14:32.839Z",
       "price_history": [
-        257481,
-        257463,
         257469,
         257451,
         257465,
@@ -246006,7 +246005,9 @@
         275520,
         275518,
         275500,
-        275482
+        275482,
+        276254,
+        276252
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -246026,8 +246027,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 229.62909272220043,
-      "underground_heat": 1106.6938410085927,
+      "heat": 225.62909272220043,
+      "underground_heat": 1102.6938410085927,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246421,16 +246422,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.8449487126057493,
-      "recorded_at": "2026-09-18T21:15:55.743Z"
-    },
-    {
-      "price": 99,
-      "change_percent": 0.7735166930440955,
-      "recorded_at": "2026-09-18T21:16:55.035Z"
-    },
     {
       "price": 99,
       "change_percent": 0.20425362308468878,
@@ -246920,6 +246911,16 @@
       "price": 92,
       "change_percent": 0.34239872953599343,
       "recorded_at": "2026-09-19T04:13:30.756Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.1031634783358488,
+      "recorded_at": "2026-09-19T04:14:34.034Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 1.1680972010034307,
+      "recorded_at": "2026-09-19T04:14:50.827Z"
     }
   ],
   "factory_names": [
@@ -246941,7 +246942,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 8179.033543547806,
+  "money_printed": 8194.033543547806,
   "total_bank_reserves": 414214,
   "inflation_history": [
     0,
@@ -254704,7 +254705,8 @@
         "780837437987094560": 1
       },
       "2026-09-19": {
-        "1528783188728483944": 1
+        "1528783188728483944": 1,
+        "874346333882945547": 1
       }
     },
     "collect_daily": {
@@ -254770,7 +254772,8 @@
         "Ukrainian SSR": 0
       },
       "2026-09-19": {
-        "Estonian SSR": 0
+        "Estonian SSR": 0,
+        "Kazakh SSR": 0
       }
     },
     "qotd": {
@@ -274114,9 +274117,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 27,
-    "beforeLvlC": 8,
-    "afterLvl": 8,
+    "xpGainC": 28,
+    "beforeLvlC": 21,
+    "afterLvl": 21,
     "leveled": []
   },
   "central_bank": {
