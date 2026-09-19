@@ -802,7 +802,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1619,
-      "heat": 19.802613734202883,
+      "heat": 18.86550523764304,
       "wanted": 0,
       "last_illegal": "2026-09-19T08:21:44.320Z",
       "total_heat_generated": 1062.0918999999997,
@@ -1664,7 +1664,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 8.131253150924323,
+      "heat": 7.207818822358604,
       "wanted": 0,
       "last_illegal": "2026-09-19T07:12:15.804Z",
       "total_heat_generated": 627.7970000000003,
@@ -246184,8 +246184,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 230.26480787110674,
-      "underground_heat": 1132.9116854115657,
+      "heat": 229.50292031134887,
+      "underground_heat": 1132.2082561322186,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246579,11 +246579,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.24954435647119333,
-      "recorded_at": "2026-09-19T03:18:30.621Z"
-    },
     {
       "price": 92,
       "change_percent": 0.7687453285961093,
@@ -247078,6 +247073,11 @@
       "price": 91,
       "change_percent": 0.8148626666473608,
       "recorded_at": "2026-09-19T08:38:32.394Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.45328474513192,
+      "recorded_at": "2026-09-19T08:43:32.491Z"
     }
   ],
   "factory_names": [
@@ -247099,7 +247099,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 11706.960679715135,
+  "money_printed": 11472.821466120833,
   "total_bank_reserves": 414328,
   "inflation_history": [
     0,
@@ -247411,7 +247411,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Gas Fuel": 2
+    "Gas Fuel": 1
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -247432,17 +247432,12 @@
     "Circuit Board": 14,
     "Cotton Fabric": 10,
     "Reactor Core": 5,
-    "Gas Fuel": 91,
+    "Gas Fuel": 92,
     "Steel Beam": 2,
     "Machine Parts": 31,
     "Sugar": 11
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-11T08:09:00.731Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -248937,6 +248932,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-09-19T08:28:23.444Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-19T08:43:23.321Z"
     }
   ],
   "demand_history": {
@@ -251633,11 +251633,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 1.3263172167454682,
-        "at": "2026-09-07T16:36:48.495Z",
-        "supply": 14
-      },
-      {
         "demand": 1.338850912675486,
         "at": "2026-09-07T16:51:48.399Z",
         "supply": 14
@@ -251930,6 +251925,11 @@
       {
         "demand": 1.2842591971867912,
         "at": "2026-09-19T08:28:23.444Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3095510130812233,
+        "at": "2026-09-19T08:43:23.322Z",
         "supply": 1
       }
     ],
@@ -254184,10 +254184,6 @@
   "total_rubles_history": [
     {
       "total": 509190,
-      "at": "2026-09-19T00:48:32.169Z"
-    },
-    {
-      "total": 509190,
       "at": "2026-09-19T00:48:32.669Z"
     },
     {
@@ -254581,6 +254577,10 @@
     {
       "total": 515697,
       "at": "2026-09-19T08:38:33.064Z"
+    },
+    {
+      "total": 515697,
+      "at": "2026-09-19T08:43:33.203Z"
     }
   ],
   "gold_rush": null,
@@ -254607,7 +254607,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 3.8422500000000017,
+  "heat_global": 3.542250000000002,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -276782,12 +276782,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.89,
+    "rub_per_usd": 6.95,
     "history": [
-      {
-        "rate": 7.1,
-        "at": "2026-09-18T16:03:17.363Z"
-      },
       {
         "rate": 7.04,
         "at": "2026-09-18T16:13:17.221Z"
@@ -277183,9 +277179,13 @@
       {
         "rate": 6.89,
         "at": "2026-09-19T08:33:19.317Z"
+      },
+      {
+        "rate": 6.95,
+        "at": "2026-09-19T08:43:19.138Z"
       }
     ],
-    "last_update": "2026-09-19T08:33:19.317Z",
+    "last_update": "2026-09-19T08:43:19.138Z",
     "manual_override": null
   },
   "national_budget": {
@@ -277243,12 +277243,6 @@
   },
   "lore": {
     "entries": [
-      {
-        "channel": "⚐│central-committee-of-cpsu",
-        "author": "Premier Google Giggles",
-        "text": "bro thinks its fr",
-        "at": "2026-09-16T20:49:05.931Z"
-      },
       {
         "channel": "⚐│central-committee-of-cpsu",
         "author": "Chairman. Maxim Ivanov",
@@ -278142,6 +278136,12 @@
         "author": "MoC justban",
         "text": "!collect",
         "at": "2026-09-19T06:49:30.394Z"
+      },
+      {
+        "channel": "⚐│central-committee-of-cpsu",
+        "author": "Brill",
+        "text": "https://klipy.com/gifs/aj64-cmb",
+        "at": "2026-09-19T08:29:12.410Z"
       }
     ],
     "seen": [
@@ -278582,9 +278582,10 @@
       "1550706538119958579",
       "1550764759123496961",
       "1550764745882075258",
-      "1550760732604244059"
+      "1550760732604244059",
+      "1550785822998134885"
     ],
-    "last_scan": "2026-09-19T07:13:18.330Z",
-    "last_count": 3
+    "last_scan": "2026-09-19T08:43:17.288Z",
+    "last_count": 1
   }
 }
