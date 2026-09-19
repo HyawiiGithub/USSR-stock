@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 580,
-      "bot_total_xp": 27530,
+      "bot_xp": 593,
+      "bot_total_xp": 27543,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 21,
@@ -207573,8 +207573,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 1168,
-      "bot_total_xp": 9618,
+      "bot_xp": 1180,
+      "bot_total_xp": 9630,
       "daily_work_count": 38,
       "shock_worker": false,
       "mee6_level": 13,
@@ -302717,11 +302717,6 @@
   },
   "gsi_history": [
     {
-      "price": 106,
-      "change_percent": 0.3203092253623526,
-      "recorded_at": "2026-09-19T19:49:43.159Z"
-    },
-    {
       "price": 107,
       "change_percent": 1.023609586499328,
       "recorded_at": "2026-09-19T19:49:48.365Z"
@@ -303215,6 +303210,11 @@
       "price": 98,
       "change_percent": 0.21448250810001895,
       "recorded_at": "2026-09-19T23:17:31.609Z"
+    },
+    {
+      "price": 97,
+      "change_percent": -0.07432795701454169,
+      "recorded_at": "2026-09-19T23:22:31.949Z"
     }
   ],
   "factory_names": [
@@ -303552,7 +303552,7 @@
   "ai_store": {
     "Fertilizer": 5,
     "Bread": 6,
-    "Machine Parts": 3,
+    "Machine Parts": 2,
     "Flour": 1,
     "Sugar": 8,
     "Refined Fuel": 6
@@ -303578,17 +303578,12 @@
     "Reactor Core": 5,
     "Gas Fuel": 93,
     "Steel Beam": 2,
-    "Machine Parts": 36,
+    "Machine Parts": 37,
     "Sugar": 13,
     "Fertilizer": 5,
     "Flour": 9
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-11T21:51:27.164Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -305083,6 +305078,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-19T23:07:30.303Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-09-19T23:22:30.316Z"
     }
   ],
   "demand_history": {
@@ -308221,6 +308221,11 @@
         "demand": 1.3545183029630727,
         "at": "2026-09-19T21:39:44.587Z",
         "supply": 18
+      },
+      {
+        "demand": 1.3545183029630727,
+        "at": "2026-09-19T23:22:30.316Z",
+        "supply": 19
       }
     ],
     "Sugar": [
