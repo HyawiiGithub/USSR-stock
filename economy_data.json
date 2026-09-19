@@ -245710,14 +245710,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 42996,
+      "funds": 49503,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 162877,
-      "market_cap": 162877,
+      "share_price": 165449,
+      "market_cap": 165449,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -245743,19 +245743,14 @@
         "Flour": 7,
         "Wheat": 65,
         "Sugar": 35,
-        "Gas Fuel": 5,
-        "Fuel": 6,
+        "Gas Fuel": 7,
         "Gold": 1,
         "Cotton Fabric": 2,
-        "Refined Fuel": 5,
-        "Natural Gas": 7
+        "Natural Gas": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-19T06:01:44.095Z",
       "price_history": [
-        128424,
-        128427,
-        130735,
         130925,
         130955,
         131106,
@@ -245852,11 +245847,14 @@
         160446,
         161501,
         162814,
-        162877
+        162877,
+        162850,
+        162950,
+        165449
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
-      "last_factorydeal": "2026-09-18T16:34:36.497Z",
+      "last_factorydeal": "2026-09-19T06:03:19.733Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "wage": 20,
@@ -246987,7 +246985,6 @@
     }
   ],
   "factory_names": [
-    "Soviet Iron Foundry",
     "Stalin Tractor Plant",
     "Khrushchev Agricultural"
   ],
@@ -246997,7 +246994,8 @@
     "Brezhnev Auto Factory",
     "Red Star Steelworks",
     "Lenin Machine Works",
-    "Ural Heavy Industries"
+    "Ural Heavy Industries",
+    "Soviet Iron Foundry"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -247005,7 +247003,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 6720.399962259331,
+  "money_printed": 13092.991963014145,
   "total_bank_reserves": 414214,
   "inflation_history": [
     0,
@@ -247259,22 +247257,22 @@
     "Steel Ingot": 1.358747983947884,
     "Gold Bar": 1.2353261112157463,
     "Aluminium Ingot": 1.4124818456651316,
-    "Timber Planks": 1.3259313921725897,
-    "Bricks": 1.4124796113753508,
+    "Timber Planks": 1.3359313921725897,
+    "Bricks": 1.4224796113753508,
     "Concrete": 1.4117859280761802,
     "Glass": 1.4079455128083742,
     "Steel Beam": 1.3973508120025926,
     "Machine Parts": 1.3522761268883046,
-    "Refined Fuel": 1.392437154785598,
+    "Refined Fuel": 1.2095517466862136,
     "Uranium Rod": 1.3947413074126178,
-    "Reactor Core": 1.4015096461362309,
-    "Circuit Board": 1.4046126482722001,
+    "Reactor Core": 1.4115096461362309,
+    "Circuit Board": 1.4146126482722001,
     "Flour": 1.3841932508564003,
     "Sugar": 0.9066927345260866,
     "Wine": 1.4124796113753508,
     "Canned Food": 1.4046285697072078,
     "Canned Fish": 1.4045208925608148,
-    "Smoked Fish": 1.4045857457933197,
+    "Smoked Fish": 1.4145857457933197,
     "Fish Stew": 1.4120184120113375,
     "Peat Fuel": 1.4046030857151472,
     "Gas Fuel": 1.3816781534095863,
@@ -247297,7 +247295,7 @@
     "Bread": "2026-09-18T17:30:51.195Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
-    "Refined Fuel": "2026-09-18T13:31:11.188Z",
+    "Refined Fuel": "2026-09-19T06:03:19.733Z",
     "Timber Planks": "2026-09-17T17:59:01.873Z",
     "Iron Ingot": "2026-09-17T01:43:45.291Z",
     "Shale Oil": "2026-09-13T09:01:34.582Z",
@@ -247316,7 +247314,9 @@
     "Sugar": "2026-09-14T12:40:01.500Z"
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
-  "ai_store": {},
+  "ai_store": {
+    "Refined Fuel": 8
+  },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
@@ -276654,12 +276654,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.83,
+    "rub_per_usd": 6.8,
     "history": [
-      {
-        "rate": 6.92,
-        "at": "2026-09-18T13:23:17.193Z"
-      },
       {
         "rate": 7.07,
         "at": "2026-09-18T13:33:17.358Z"
@@ -277055,9 +277051,13 @@
       {
         "rate": 6.83,
         "at": "2026-09-19T05:53:19.339Z"
+      },
+      {
+        "rate": 6.8,
+        "at": "2026-09-19T06:03:19.196Z"
       }
     ],
-    "last_update": "2026-09-19T05:53:19.339Z",
+    "last_update": "2026-09-19T06:03:19.196Z",
     "manual_override": null
   },
   "national_budget": {
