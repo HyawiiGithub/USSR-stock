@@ -69,16 +69,16 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 160,
-      "heat": 3,
+      "heat": 2.142044542053193,
       "wanted": 0,
       "last_illegal": "2026-09-15T12:43:14.516Z",
       "total_heat_generated": 163.697,
-      "bot_level": 9,
-      "bot_xp": 949,
-      "bot_total_xp": 4669,
+      "bot_level": 10,
+      "bot_xp": 9,
+      "bot_total_xp": 4684,
       "daily_work_count": 34,
       "shock_worker": false,
-      "mee6_level": 9,
+      "mee6_level": 10,
       "last_daily_work_date": "2026-09-18",
       "last_laylow": "2026-09-15T11:31:45.491Z",
       "work_reminder": false,
@@ -245994,8 +245994,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 237.7202273343471,
-      "underground_heat": 1114.3252932638975,
+      "heat": 236.96495825545946,
+      "underground_heat": 1113.7896834862158,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246390,11 +246390,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.6474675521087178,
-      "recorded_at": "2026-09-18T20:52:28.138Z"
-    },
     {
       "price": 99,
       "change_percent": 0.45493621388732425,
@@ -246889,6 +246884,11 @@
       "price": 92,
       "change_percent": 0.10179798134964244,
       "recorded_at": "2026-09-19T03:13:30.670Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.24954435647119333,
+      "recorded_at": "2026-09-19T03:18:30.621Z"
     }
   ],
   "factory_names": [
@@ -253951,10 +253951,6 @@
   "total_rubles_history": [
     {
       "total": 504832,
-      "at": "2026-09-18T19:18:30.799Z"
-    },
-    {
-      "total": 504832,
       "at": "2026-09-18T19:23:31.017Z"
     },
     {
@@ -254348,6 +254344,10 @@
     {
       "total": 509190,
       "at": "2026-09-19T03:13:32.078Z"
+    },
+    {
+      "total": 509190,
+      "at": "2026-09-19T03:18:32.060Z"
     }
   ],
   "gold_rush": null,
@@ -254374,7 +254374,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 0.44999999999999996,
+  "heat_global": 0.14999999999999997,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -254740,7 +254740,7 @@
       "1082686076491137115": 1789781964609,
       "1229741033265299506": 1789762872759,
       "1536339779140976711": 1789755179294,
-      "780837437987094560": 1789787848133,
+      "780837437987094560": 1789787908463,
       "874346333882945547": 1789766550529,
       "870686833976172574": 1789770087577,
       "1186597507720019988": 1789758883671,
@@ -255100,21 +255100,9 @@
       "2026-Q3": {
         "positive": 58,
         "negative": 24,
-        "neutral": 1223,
-        "total": 1305,
+        "neutral": 1224,
+        "total": 1306,
         "mentions": [
-          {
-            "at": "2026-09-13T17:55:06.086Z",
-            "userId": "874346333882945547",
-            "username": "seniormanulos",
-            "channelId": "1538703181733695600",
-            "messageId": "1548753902319566869",
-            "text": "<@1082686076491137115>",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-13T17:55:33.530Z",
             "userId": "1365483598962102305",
@@ -261102,23 +261090,24 @@
             "method": "keyword",
             "source": "text+reply",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-19T03:18:26.348Z",
+            "userId": "780837437987094560",
+            "username": "napoleon87",
+            "channelId": "1549520738523025428",
+            "messageId": "1550707611907923991",
+            "text": "<@1082686076491137115> it not working",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:30:02.280Z",
-        "userId": "963834359994007614",
-        "username": "that.one.pakistani_",
-        "channelId": "1016433654270009354",
-        "messageId": "1548385204643692706",
-        "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY\nhttps://media.discordapp.net/attachments/605951687974453248/1137582562689175582/7uw0yy.gif?ex=6aa6bc12&is=6aa56a92&hm=cfccef1c5ca51010221ee638ae3cbcc4d068d3eaca9cc6371e1d09fdafdb1781&=",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:30:02.846Z",
         "userId": "963834359994007614",
@@ -272636,9 +272625,21 @@
         "method": "keyword",
         "source": "text+reply",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-19T03:18:26.348Z",
+        "userId": "780837437987094560",
+        "username": "napoleon87",
+        "channelId": "1549520738523025428",
+        "messageId": "1550707611907923991",
+        "text": "<@1082686076491137115> it not working",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-19T00:00:21.524Z",
+    "last_scan": "2026-09-19T03:18:26.348Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -272651,13 +272652,6 @@
   "race_history": [],
   "giveaways": [],
   "level_ups": [
-    {
-      "userId": "699561832398192700",
-      "from": 0,
-      "to": 1,
-      "at": "2026-09-14T14:50:20.327Z",
-      "reason": "chat"
-    },
     {
       "userId": "1483005845867593831",
       "from": 5,
@@ -274049,6 +274043,13 @@
       "from": 19,
       "to": 20,
       "at": "2026-09-18T21:36:16.357Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "780837437987094560",
+      "from": 9,
+      "to": 10,
+      "at": "2026-09-19T03:18:28.464Z",
       "reason": "chat"
     }
   ],
