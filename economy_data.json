@@ -118,8 +118,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 571,
-      "bot_total_xp": 24421,
+      "bot_xp": 589,
+      "bot_total_xp": 24439,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 20,
@@ -743,8 +743,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 400,
-      "bot_total_xp": 4120,
+      "bot_xp": 420,
+      "bot_total_xp": 4140,
       "daily_work_count": 25,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-19",
@@ -1063,8 +1063,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 191,
-      "bot_total_xp": 3091,
+      "bot_xp": 207,
+      "bot_total_xp": 3107,
       "daily_work_count": 1,
       "shock_worker": false,
       "last_laylow": null,
@@ -217193,8 +217193,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 6,
-      "bot_total_xp": 4681,
+      "bot_xp": 21,
+      "bot_total_xp": 4696,
       "daily_work_count": 17,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-19",
@@ -246438,8 +246438,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 244.27243001398324,
-      "underground_heat": 1181.587184643967,
+      "heat": 243.7317015407839,
+      "underground_heat": 1180.9178114810984,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -246833,11 +246833,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 1.0963415940487475,
-      "recorded_at": "2026-09-19T11:48:53.300Z"
-    },
     {
       "price": 96,
       "change_percent": 0.41939519243328527,
@@ -247332,6 +247327,11 @@
       "price": 99,
       "change_percent": 1.1546098090484471,
       "recorded_at": "2026-09-19T14:56:32.795Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.7172858808595094,
+      "recorded_at": "2026-09-19T14:58:36.562Z"
     }
   ],
   "factory_names": [
@@ -247666,7 +247666,7 @@
   },
   "last_govcontract": "2026-08-31T12:33:50.529Z",
   "ai_store": {
-    "Fertilizer": 10
+    "Fertilizer": 9
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -247690,14 +247690,10 @@
     "Gas Fuel": 93,
     "Steel Beam": 2,
     "Machine Parts": 31,
-    "Sugar": 11
+    "Sugar": 11,
+    "Fertilizer": 1
   },
   "consumption_history": [
-    {
-      "item": "Iron Ingot",
-      "qty": 2,
-      "at": "2026-09-11T10:24:01.733Z"
-    },
     {
       "item": "Iron Ingot",
       "qty": 2,
@@ -249192,6 +249188,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-19T12:43:23.745Z"
+    },
+    {
+      "item": "Fertilizer",
+      "qty": 1,
+      "at": "2026-09-19T14:58:23.789Z"
     }
   ],
   "demand_history": {
@@ -252353,6 +252354,13 @@
         "at": "2026-09-14T12:43:34.709Z",
         "supply": 175
       }
+    ],
+    "Fertilizer": [
+      {
+        "demand": 1.1873792084763615,
+        "at": "2026-09-19T14:58:23.789Z",
+        "supply": 10
+      }
     ]
   },
   "blacklist": {
@@ -254453,10 +254461,6 @@
   "total_rubles_history": [
     {
       "total": 514373,
-      "at": "2026-09-19T07:03:32.518Z"
-    },
-    {
-      "total": 514373,
       "at": "2026-09-19T07:08:32.650Z"
     },
     {
@@ -254850,6 +254854,10 @@
     {
       "total": 515791,
       "at": "2026-09-19T14:53:37.415Z"
+    },
+    {
+      "total": 515806,
+      "at": "2026-09-19T14:58:37.826Z"
     }
   ],
   "gold_rush": null,
@@ -255264,7 +255272,7 @@
       "1544820489191559270": 1789827540222,
       "791747702689103893": 1789827422736,
       "1456622719985782864": 1789802427162,
-      "1082686076491137115": 1789829746181,
+      "1082686076491137115": 1789829917365,
       "1229741033265299506": 1789827146082,
       "1536339779140976711": 1789829665950,
       "780837437987094560": 1789818286233,
@@ -255289,7 +255297,7 @@
       "1495413593242337421": 1789613526639,
       "1447308947072614555": 1788973711995,
       "887419379833274388": 1789803217769,
-      "807944786840387675": 1789829697968,
+      "807944786840387675": 1789829892569,
       "1529673877767196783": 1789377341879,
       "913497950213267577": 1789819810296,
       "822079355298906112": 1789828527207,
@@ -255326,7 +255334,7 @@
       "918518877414100993": 1789661328908,
       "1013047752747397202": 1789079044629,
       "1371822687231414293": 1789006535512,
-      "1528783188728483944": 1789829861154,
+      "1528783188728483944": 1789829921766,
       "906351599851556925": 1789011133415,
       "1180248109515808798": 1789166708996,
       "1321576779072409731": 1789018893347,
@@ -255355,7 +255363,7 @@
       "673726585194676274": 1789566660918,
       "1405587743542870188": 1789535273706,
       "1489932552394248263": 1789594516876,
-      "730696111198699600": 1789829847014,
+      "730696111198699600": 1789829941589,
       "850229826231992320": 1789468435424,
       "1202316445569273959": 1789331745467,
       "1541073090019074150": 1789330365808,
@@ -255642,21 +255650,9 @@
       "2026-Q3": {
         "positive": 58,
         "negative": 25,
-        "neutral": 1243,
-        "total": 1326,
+        "neutral": 1244,
+        "total": 1327,
         "mentions": [
-          {
-            "at": "2026-09-13T18:35:54.064Z",
-            "userId": "1536339779140976711",
-            "username": "scod3llarp",
-            "channelId": "605951687974453248",
-            "messageId": "1548764170974134293",
-            "text": "did nothing as dep premier btw",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-13T18:40:30.892Z",
             "userId": "874346333882945547",
@@ -261644,23 +261640,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-19T14:58:13.111Z",
+            "userId": "807944786840387675",
+            "username": "brosquare",
+            "channelId": "689149652603502601",
+            "messageId": "1550883718267150468",
+            "text": "Overruled by <@&994182556415184966> . nowhere in the constitution is it  mentioned that the premier has control over Nuristan MW.",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text+reply",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:30:15.698Z",
-        "userId": "807944786840387675",
-        "username": "brosquare",
-        "channelId": "1016433654270009354",
-        "messageId": "1548385249681997905",
-        "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:30:16.404Z",
         "userId": "963834359994007614",
@@ -273199,9 +273196,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-19T14:58:13.111Z",
+        "userId": "807944786840387675",
+        "username": "brosquare",
+        "channelId": "689149652603502601",
+        "messageId": "1550883718267150468",
+        "text": "Overruled by <@&994182556415184966> . nowhere in the constitution is it  mentioned that the premier has control over Nuristan MW.",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text+reply",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-19T14:56:50.741Z",
+    "last_scan": "2026-09-19T14:58:13.111Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
