@@ -786,13 +786,13 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 477,
-      "heat": 17.866639106466057,
+      "heat": 17.003920862519095,
       "wanted": 0,
       "last_illegal": "2026-09-19T18:53:50.530Z",
       "total_heat_generated": 681.9920000000002,
       "bot_level": 18,
-      "bot_xp": 185,
-      "bot_total_xp": 18560,
+      "bot_xp": 208,
+      "bot_total_xp": 18583,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 18,
@@ -927,8 +927,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 251,
-      "bank": 3851,
+      "cash": 445,
+      "bank": 3651,
       "resources": {},
       "inventory": {
         "Bread": 3,
@@ -2000,7 +2000,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 24.957052755146833,
+      "heat": 23.99839191510957,
       "wanted": 0,
       "last_illegal": "2026-09-19T18:41:18.733Z",
       "total_heat_generated": 705.5470000000001,
@@ -166671,7 +166671,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 317,
-      "heat": 11.150828865382381,
+      "heat": 10.295283657283838,
       "wanted": 0,
       "last_illegal": "2026-09-19T18:57:48.540Z",
       "total_heat_generated": 19.467,
@@ -302159,8 +302159,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 312.8087774267475,
-      "underground_heat": 1300.328882550403,
+      "heat": 312.12762381622207,
+      "underground_heat": 1299.6936553464416,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -302554,16 +302554,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 1.2000163865904954,
-      "recorded_at": "2026-09-19T16:59:22.860Z"
-    },
-    {
-      "price": 100,
-      "change_percent": 0.9393366928426079,
-      "recorded_at": "2026-09-19T16:59:34.259Z"
-    },
     {
       "price": 100,
       "change_percent": 0.7818227934645581,
@@ -303053,6 +303043,16 @@
       "price": 109,
       "change_percent": 0.7586929279512428,
       "recorded_at": "2026-09-19T19:24:14.015Z"
+    },
+    {
+      "price": 104,
+      "change_percent": -3.703058125043093,
+      "recorded_at": "2026-09-19T19:24:40.724Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 0.8136445907488502,
+      "recorded_at": "2026-09-19T19:24:41.912Z"
     }
   ],
   "factory_names": [
@@ -303391,7 +303391,7 @@
     "Fertilizer": 5,
     "Bread": 9,
     "Machine Parts": 8,
-    "Flour": 7
+    "Flour": 5
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -303417,14 +303417,9 @@
     "Machine Parts": 31,
     "Sugar": 11,
     "Fertilizer": 5,
-    "Flour": 3
+    "Flour": 5
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 1,
-      "at": "2026-09-11T14:39:03.110Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 2,
@@ -304919,6 +304914,11 @@
       "item": "Fertilizer",
       "qty": 2,
       "at": "2026-09-19T19:09:39.550Z"
+    },
+    {
+      "item": "Flour",
+      "qty": 2,
+      "at": "2026-09-19T19:24:41.231Z"
     }
   ],
   "demand_history": {
@@ -308108,6 +308108,11 @@
         "demand": 1.0662811932667826,
         "at": "2026-09-19T18:54:38.938Z",
         "supply": 15
+      },
+      {
+        "demand": 1.1200363824336341,
+        "at": "2026-09-19T19:24:41.236Z",
+        "supply": 15
       }
     ]
   },
@@ -310293,10 +310298,6 @@
   "total_rubles_history": [
     {
       "total": 513380,
-      "at": "2026-09-19T09:43:33.594Z"
-    },
-    {
-      "total": 513380,
       "at": "2026-09-19T09:48:33.445Z"
     },
     {
@@ -310690,6 +310691,10 @@
     {
       "total": 517321,
       "at": "2026-09-19T19:19:42.491Z"
+    },
+    {
+      "total": 517413,
+      "at": "2026-09-19T19:24:42.514Z"
     }
   ],
   "gold_rush": null,
@@ -310716,7 +310721,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 15.838799999999999,
+  "heat_global": 15.538799999999998,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -311110,7 +311115,7 @@
       "791747702689103893": 1789827422736,
       "1456622719985782864": 1789845310614,
       "1082686076491137115": 1789845133042,
-      "1229741033265299506": 1789845627091,
+      "1229741033265299506": 1789845872504,
       "1536339779140976711": 1789845495344,
       "780837437987094560": 1789845325179,
       "874346333882945547": 1789845833535,
