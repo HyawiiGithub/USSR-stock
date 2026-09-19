@@ -171,7 +171,7 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 1131,
+      "cash": 1960,
       "bank": 12999,
       "resources": {
         "Natural Gas": 4,
@@ -880,7 +880,7 @@
       "work_reminder_sent": null
     },
     "1495413593242337421": {
-      "cash": 5195,
+      "cash": 9343,
       "bank": 25888,
       "resources": {},
       "inventory": {},
@@ -240040,8 +240040,8 @@
       "work_reminder_sent": null
     },
     "1483005845867593831": {
-      "cash": 41,
-      "bank": 1124,
+      "cash": 0,
+      "bank": 1223,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -240049,7 +240049,7 @@
       "share_holdings": {},
       "last_work": "2026-09-19T06:26:39.745Z",
       "work_count": 37,
-      "last_claim": "2026-09-18T06:40:03.735Z",
+      "last_claim": "2026-09-19T06:26:46.241Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
       "is_employed": true,
@@ -240062,8 +240062,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 910,
-      "bot_total_xp": 5585,
+      "bot_xp": 933,
+      "bot_total_xp": 5608,
       "daily_work_count": 37,
       "shock_worker": false,
       "last_laylow": null,
@@ -245371,6 +245371,37 @@
       "last_laylow": null,
       "work_reminder": false,
       "work_reminder_sent": null
+    },
+    "634547073978728478": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 25,
+      "bot_total_xp": 25,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null
     }
   },
   "companies": {
@@ -246131,14 +246162,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1495413593242337421>",
       "hq_ssr": "Russian SFSR",
-      "funds": 41484,
+      "funds": 36507,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 229406,
-      "market_cap": 229406,
+      "share_price": 224693,
+      "market_cap": 224693,
       "employees": 11,
       "level": 1,
       "buildings": {
@@ -246158,16 +246189,14 @@
         "Natural Gas": 138,
         "Iron Ore": 93,
         "Coal": 145,
-        "Uranium": 8,
+        "Uranium": 9,
         "Oil": 66,
         "Gold": 35,
-        "Wheat": 84
+        "Wheat": 75
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-18T17:05:02.448Z",
+      "last_collect": "2026-09-19T06:26:43.850Z",
       "price_history": [
-        221262,
-        221382,
         221438,
         221456,
         221576,
@@ -246265,7 +246294,9 @@
         229225,
         229393,
         229398,
-        229406
+        229406,
+        229422,
+        224693
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -246514,16 +246545,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": -0.14862675865442818,
-      "recorded_at": "2026-09-18T23:21:35.066Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.4303491235211395,
-      "recorded_at": "2026-09-18T23:23:30.657Z"
-    },
     {
       "price": 97,
       "change_percent": 0.39936980469116184,
@@ -247013,6 +247034,16 @@
       "price": 96,
       "change_percent": -0.10243074666870257,
       "recorded_at": "2026-09-19T06:23:31.567Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.8665577410661601,
+      "recorded_at": "2026-09-19T06:26:41.620Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.7924030854706634,
+      "recorded_at": "2026-09-19T06:26:45.097Z"
     }
   ],
   "factory_names": [
@@ -254093,6 +254124,13 @@
       "username": "alice_orlowe",
       "action": "setsalary",
       "details": "Baltic Timber & Harbour Co ceo=0%"
+    },
+    {
+      "at": "2026-09-19T06:26:43.850Z",
+      "by": "1483005845867593831",
+      "username": "cloobulus",
+      "action": "collect-salaries",
+      "details": "State Nuclear Energy paid ₽4977 salaries ceo 1495413593242337421 ₽2074, director 1495413593242337421 ₽2074, manager 730223629849199093 ₽829"
     }
   ],
   "total_rubles_history": [
@@ -254869,7 +254907,8 @@
       "2026-09-19": {
         "Estonian SSR": 0,
         "Kazakh SSR": 0,
-        "Azerbaijanian SSR": 0
+        "Azerbaijanian SSR": 0,
+        "Russian SFSR": 0
       }
     },
     "qotd": {
@@ -255079,7 +255118,7 @@
       "1473965687922757747": 1789744119948,
       "1536471243849736322": 1789494877126,
       "1545521924166131823": 1789734031419,
-      "1483005845867593831": 1789798980547,
+      "1483005845867593831": 1789799214984,
       "1236297958933401643": 1789299042115,
       "1251358003857457256": 1789299156791,
       "1534132570412028027": 1789300584145,
@@ -255245,7 +255284,8 @@
       "1491664815599390780": 1789794254944,
       "1540661235110903930": 1789792017726,
       "1500052034215219363": 1789794759733,
-      "1382528440238084318": 1789799161225
+      "1382528440238084318": 1789799161225,
+      "634547073978728478": 1789799236750
     }
   },
   "mee6_cache": {
@@ -274216,9 +274256,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 25,
-    "beforeLvlC": 5,
-    "afterLvl": 5,
+    "xpGainC": 27,
+    "beforeLvlC": 10,
+    "afterLvl": 10,
     "leveled": []
   },
   "central_bank": {
@@ -275086,7 +275126,7 @@
       "963834359994007614": 13,
       "1495413593242337421": 73,
       "1532381114600128693": 35,
-      "1483005845867593831": 93
+      "1483005845867593831": 107
     },
     "last_train": {
       "913497950213267577": "2026-09-18T20:48:35.280Z",
@@ -275111,7 +275151,7 @@
       "963834359994007614": "2026-09-13T21:17:12.410Z",
       "1495413593242337421": "2026-09-18T11:42:30.064Z",
       "1532381114600128693": "2026-09-18T11:21:44.051Z",
-      "1483005845867593831": "2026-09-18T18:35:05.284Z"
+      "1483005845867593831": "2026-09-19T06:26:47.039Z"
     },
     "vault": 636110,
     "wars": [
@@ -275263,7 +275303,7 @@
       "913497950213267577": "2026-09-18T20:48:36.679Z",
       "1495413593242337421": "2026-09-18T11:42:31.864Z",
       "1532381114600128693": "2026-09-18T11:21:47.524Z",
-      "1483005845867593831": "2026-09-18T18:35:09.691Z"
+      "1483005845867593831": "2026-09-19T06:26:50.716Z"
     }
   },
   "mod": {
