@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 1473,
-      "bot_total_xp": 25323,
+      "bot_xp": 1498,
+      "bot_total_xp": 25348,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 20,
@@ -474,8 +474,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 181,
-      "bot_total_xp": 436,
+      "bot_xp": 205,
+      "bot_total_xp": 460,
       "daily_work_count": 1,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-10",
@@ -786,7 +786,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 477,
-      "heat": 21.52786159009659,
+      "heat": 20.705107100015816,
       "wanted": 0,
       "last_illegal": "2026-09-19T18:53:50.530Z",
       "total_heat_generated": 681.9920000000002,
@@ -947,7 +947,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 142,
-      "heat": 14.572000000000001,
+      "heat": 13.756799152237635,
       "wanted": 0,
       "last_illegal": "2026-09-19T18:51:31.274Z",
       "total_heat_generated": 1120.8548999999996,
@@ -2000,7 +2000,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 28.40799190720165,
+      "heat": 27.560167853419635,
       "wanted": 0,
       "last_illegal": "2026-09-19T18:41:18.733Z",
       "total_heat_generated": 705.5470000000001,
@@ -84906,8 +84906,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 13,
-      "bot_xp": 1380,
-      "bot_total_xp": 9830,
+      "bot_xp": 1404,
+      "bot_total_xp": 9854,
       "daily_work_count": 69,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -87839,8 +87839,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 251,
-      "bot_total_xp": 21246,
+      "bot_xp": 268,
+      "bot_total_xp": 21263,
       "daily_work_count": 63,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-19",
@@ -166671,7 +166671,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 188,
-      "heat": 5.088525711586481,
+      "heat": 4.195843437073352,
       "wanted": 0,
       "last_illegal": "2026-09-19T18:51:37.094Z",
       "total_heat_generated": 9.708,
@@ -302043,8 +302043,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 302.54541567814914,
-      "underground_heat": 1281.1622796144745,
+      "heat": 301.7469778428856,
+      "underground_heat": 1280.4604734575446,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -302438,11 +302438,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.6900056513364113,
-      "recorded_at": "2026-09-19T15:01:33.686Z"
-    },
     {
       "price": 99,
       "change_percent": 0.2514910735793805,
@@ -302937,6 +302932,11 @@
       "price": 104,
       "change_percent": 0.498411014859457,
       "recorded_at": "2026-09-19T18:53:51.576Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 0.8403398926594996,
+      "recorded_at": "2026-09-19T18:54:40.541Z"
     }
   ],
   "factory_names": [
@@ -303275,7 +303275,7 @@
     "Fertilizer": 7,
     "Bread": 9,
     "Machine Parts": 8,
-    "Flour": 9
+    "Flour": 7
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -303301,14 +303301,9 @@
     "Machine Parts": 31,
     "Sugar": 11,
     "Fertilizer": 3,
-    "Flour": 1
+    "Flour": 3
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-11T13:39:03.073Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -304803,6 +304798,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-19T18:39:39.052Z"
+    },
+    {
+      "item": "Flour",
+      "qty": 2,
+      "at": "2026-09-19T18:54:38.938Z"
     }
   ],
   "demand_history": {
@@ -307982,6 +307982,11 @@
         "demand": 1.0438602140713,
         "at": "2026-09-19T18:24:37.836Z",
         "supply": 15
+      },
+      {
+        "demand": 1.0662811932667826,
+        "at": "2026-09-19T18:54:38.938Z",
+        "supply": 15
       }
     ]
   },
@@ -310166,10 +310171,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 515862,
-      "at": "2026-09-19T09:03:33.333Z"
-    },
-    {
       "total": 515945,
       "at": "2026-09-19T09:08:33.181Z"
     },
@@ -310564,6 +310565,10 @@
     {
       "total": 516998,
       "at": "2026-09-19T18:49:42.091Z"
+    },
+    {
+      "total": 517113,
+      "at": "2026-09-19T18:54:42.141Z"
     }
   ],
   "gold_rush": null,
@@ -310590,7 +310595,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 13.762800000000002,
+  "heat_global": 13.462800000000001,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -310983,7 +310988,7 @@
       "1544820489191559270": 1789839528004,
       "791747702689103893": 1789827422736,
       "1456622719985782864": 1789836989163,
-      "1082686076491137115": 1789843973216,
+      "1082686076491137115": 1789844086125,
       "1229741033265299506": 1789842668580,
       "1536339779140976711": 1789843151245,
       "780837437987094560": 1789840389545,
@@ -310997,8 +311002,8 @@
       "1470136693821800521": 1789699640761,
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789842287045,
-      "1506785783506534426": 1789843892985,
-      "807254722251587614": 1789844023253,
+      "1506785783506534426": 1789844091552,
+      "807254722251587614": 1789844098745,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789758282241,
       "997903130543005767": 1788970364999,
@@ -311083,7 +311088,7 @@
       "1466203192638308423": 1789068144599,
       "1531791206261194782": 1789135713604,
       "1213239635400990861": 1789404096492,
-      "682362000210526299": 1789843921214,
+      "682362000210526299": 1789844067395,
       "602848044982992926": 1789230234069,
       "894318687807475783": 1789660503394,
       "1071563539979968602": 1789070744595,
