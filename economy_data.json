@@ -118,8 +118,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 701,
-      "bot_total_xp": 24551,
+      "bot_xp": 720,
+      "bot_total_xp": 24570,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 20,
@@ -799,8 +799,8 @@
       "work_reminder_sent": null
     },
     "874346333882945547": {
-      "cash": 4451,
-      "bank": 0,
+      "cash": 0,
+      "bank": 4451,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -1476,15 +1476,22 @@
       "last_illegal": "2026-09-19T11:33:33.505Z",
       "total_heat_generated": 86.946,
       "bot_level": 15,
-      "bot_xp": 246,
-      "bot_total_xp": 12071,
+      "bot_xp": 271,
+      "bot_total_xp": 12096,
       "daily_work_count": 74,
       "shock_worker": false,
       "mee6_level": 15,
       "last_daily_work_date": "2026-09-19",
       "last_laylow": "2026-09-17T17:32:25.618Z",
       "work_reminder": false,
-      "work_reminder_sent": null
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     },
     "1504373498498383912": {
       "cash": 0,
@@ -71730,8 +71737,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 2535,
-      "bot_total_xp": 20910,
+      "bot_xp": 2556,
+      "bot_total_xp": 20931,
       "daily_work_count": 62,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-18",
@@ -246632,8 +246639,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 225464,
-      "market_cap": 225464,
+      "share_price": 226562,
+      "market_cap": 226562,
       "employees": 11,
       "level": 1,
       "buildings": {
@@ -246661,7 +246668,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-19T06:26:43.850Z",
       "price_history": [
-        222096,
         222104,
         222160,
         222168,
@@ -246760,7 +246766,8 @@
         225334,
         225352,
         225376,
-        225464
+        225464,
+        226562
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -247009,11 +247016,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 0.8010950129428953,
-      "recorded_at": "2026-09-19T12:11:04.162Z"
-    },
     {
       "price": 104,
       "change_percent": 6.814724573729725,
@@ -247508,6 +247510,11 @@
       "price": 97,
       "change_percent": -0.24105599160412303,
       "recorded_at": "2026-09-19T16:50:24.431Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.006549659578902311,
+      "recorded_at": "2026-09-19T16:53:59.066Z"
     }
   ],
   "factory_names": [
@@ -255465,7 +255472,7 @@
       "1544820489191559270": 1789830232296,
       "791747702689103893": 1789827422736,
       "1456622719985782864": 1789802427162,
-      "1082686076491137115": 1789836793453,
+      "1082686076491137115": 1789836858570,
       "1229741033265299506": 1789827146082,
       "1536339779140976711": 1789836494424,
       "780837437987094560": 1789818286233,
@@ -255478,9 +255485,9 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1789699640761,
       "1309104161278918706": 1789052535895,
-      "1325111649816023092": 1789830270144,
+      "1325111649816023092": 1789836879976,
       "1506785783506534426": 1789836702510,
-      "807254722251587614": 1789836766248,
+      "807254722251587614": 1789836860765,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789758282241,
       "997903130543005767": 1788970364999,
@@ -275520,16 +275527,16 @@
       ]
     },
     "807254722251587614": {
-      "date": "2026-09-15",
+      "date": "2026-09-19",
       "used": 1,
       "history": [
         {
           "role": "user",
-          "content": "who is <@1379734184259747851>"
+          "content": "tell me about him <@1082686076491137115>"
         },
         {
           "role": "assistant",
-          "content": "I don't have access to individual Discord user profiles or membership lists. My capabilities are limited to the economic and operational data provided in my context (GDP, GSI, inflation rates, gold backing, company rankings, etc.). I cannot look up specific user identities like <@1379734184259747851>.\n\nIf you need information about this account, you would need to consult the Discord server directly or contact the server administrator. Is there anything else I can help you with regarding the econ"
+          "content": "**Mimothy** — Deputy Chairman of the CPSU Central Committee. A senior figure within the Communist Party leadership, responsible for overseeing organizational matters across the entire party apparatus. As of now he holds significant influence over party policy implementation at the highest levels. Recent chatter in #central-committee-of-cpsu shows him actively involved in strategic discussions regarding economic planning, military organization, and personnel appointments. His counterpart in the s"
         }
       ]
     },
@@ -275566,6 +275573,20 @@
         {
           "role": "assistant",
           "content": "Good morning. I'm Jarvis, your official staff officer for the entire USSR network. I have continuous surveillance across all channels—economy, industry, military, diplomatic affairs, research, and even our internal server history. Your account shows 368 rubles in personal funds and zero balance at the central bank. You're currently at Level 1.\n\nHow can I assist? I can provide real-time intelligence on:\n\n- **Economy**: Current GDP (482,281 rubles), GSI 90, inflation 0.00%, gold backing 6.5%\n- **I"
+        }
+      ]
+    },
+    "730696111198699600": {
+      "date": "2026-09-19",
+      "used": 1,
+      "history": [
+        {
+          "role": "user",
+          "content": "как быстро отрезветь от тупого сообщества"
+        },
+        {
+          "role": "assistant",
+          "content": "Приветствую. Как Жарвис, начальник штаба по операционной безопасности сервера, я вижу ситуацию с общиной и предлагаю конкретные меры:\n\n**Срочные действия:**\n\n1. **Блокировка вредителей** — немедленно блокировать всех аккаунтов, которые публикуют спам, боты или разжигают гнев. В чате «Определение» установить фильтр ключевых слов.\n\n2. **Модерация через совет** — собрать рекомендации в канал `/staff` за 15 минут. Использовать перечень «Типичные паттерны токсичности»: повторяющиеся спамы, переход на"
         }
       ]
     }
