@@ -246102,8 +246102,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 282423,
-      "market_cap": 282423,
+      "share_price": 282562,
+      "market_cap": 282562,
       "employees": 29,
       "level": 1,
       "buildings": {
@@ -246162,8 +246162,8 @@
         "Gold Bar": 34,
         "Wheat": 54,
         "Sugar": 57,
-        "Copper": 52,
-        "Lead": 9,
+        "Copper": 43,
+        "Lead": 7,
         "Sulphur": 60,
         "Timber Planks": 23,
         "Iron Ore": 39,
@@ -246177,7 +246177,7 @@
         "Contraband: LSD Sheets": 2,
         "Contraband: Cocaine": 5,
         "Reactor Core": 1,
-        "Coal": 16,
+        "Coal": 10,
         "Steel Ingot": 3,
         "Oil": 5,
         "Contraband: Synthetic": 2,
@@ -246185,14 +246185,11 @@
         "Machine Parts": 4,
         "Contraband: Heroin": 2,
         "Refined Fuel": 5,
-        "Circuit Board": 1
+        "Circuit Board": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-19T10:34:27.611Z",
       "price_history": [
-        270373,
-        270387,
-        270369,
         270351,
         270333,
         270315,
@@ -246289,7 +246286,10 @@
         282311,
         282295,
         282327,
-        282423
+        282423,
+        282423,
+        282558,
+        282562
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -246704,11 +246704,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 90,
-      "change_percent": 1.4010305676680201,
-      "recorded_at": "2026-09-19T08:33:37.336Z"
-    },
     {
       "price": 91,
       "change_percent": 1.3598037570102621,
@@ -247203,6 +247198,11 @@
       "price": 97,
       "change_percent": 1.0790768382818718,
       "recorded_at": "2026-09-19T11:49:24.140Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.6480003534152337,
+      "recorded_at": "2026-09-19T11:50:13.753Z"
     }
   ],
   "factory_names": [
@@ -247211,12 +247211,12 @@
     "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
-    "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Ural Heavy Industries"
   ],
   "used_factory_names": [
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Brezhnev Auto Factory"
   ],
   "factory_deals": [],
   "government_contracts": [],
