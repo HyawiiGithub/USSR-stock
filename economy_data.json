@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 1121,
-      "bot_total_xp": 24971,
+      "bot_xp": 1139,
+      "bot_total_xp": 24989,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 20,
@@ -786,13 +786,13 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 252,
-      "heat": 2.279345057843596,
+      "heat": 1.4508165524540568,
       "wanted": 0,
       "last_illegal": "2026-09-19T16:54:50.451Z",
       "total_heat_generated": 657.5820000000001,
       "bot_level": 17,
-      "bot_xp": 2253,
-      "bot_total_xp": 18233,
+      "bot_xp": 2270,
+      "bot_total_xp": 18250,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 17,
@@ -946,7 +946,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 0.1101404796057992,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-19T16:51:57.853Z",
       "total_heat_generated": 1106.2828999999997,
@@ -1183,8 +1183,8 @@
       "last_illegal": "2026-09-16T21:12:26.375Z",
       "total_heat_generated": 26.191000000000003,
       "bot_level": 21,
-      "bot_xp": 945,
-      "bot_total_xp": 27895,
+      "bot_xp": 967,
+      "bot_total_xp": 27917,
       "daily_work_count": 15,
       "shock_worker": false,
       "mee6_level": 21,
@@ -1729,7 +1729,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 5.527428681055429,
+      "heat": 4.647006263419081,
       "wanted": 0,
       "last_illegal": "2026-09-19T17:12:44.710Z",
       "total_heat_generated": 96.571,
@@ -1999,7 +1999,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 149,
-      "heat": 5.898555651421248,
+      "heat": 4.919795398680799,
       "wanted": 0,
       "last_illegal": "2026-09-19T17:03:49.213Z",
       "total_heat_generated": 672.4010000000002,
@@ -301960,8 +301960,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 258.7831339313188,
-      "underground_heat": 1204.7943293313638,
+      "heat": 258.0592204319976,
+      "underground_heat": 1204.2228103951547,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -302355,11 +302355,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": -0.15704637931687285,
-      "recorded_at": "2026-09-19T13:53:33.821Z"
-    },
     {
       "price": 96,
       "change_percent": 0.9881011394667272,
@@ -302854,6 +302849,11 @@
       "price": 107,
       "change_percent": 0.5647154832668129,
       "recorded_at": "2026-09-19T17:40:47.891Z"
+    },
+    {
+      "price": 107,
+      "change_percent": 0.3483856160902278,
+      "recorded_at": "2026-09-19T17:42:13.053Z"
     }
   ],
   "factory_names": [
@@ -310018,10 +310018,6 @@
   "total_rubles_history": [
     {
       "total": 515170,
-      "at": "2026-09-19T08:03:32.864Z"
-    },
-    {
-      "total": 515170,
       "at": "2026-09-19T08:08:32.910Z"
     },
     {
@@ -310415,6 +310411,10 @@
     {
       "total": 516140,
       "at": "2026-09-19T17:35:28.444Z"
+    },
+    {
+      "total": 516268,
+      "at": "2026-09-19T17:42:13.393Z"
     }
   ],
   "gold_rush": null,
@@ -310441,7 +310441,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 3.8874000000000013,
+  "heat_global": 3.5874000000000015,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -310833,8 +310833,8 @@
       "1544820489191559270": 1789839528004,
       "791747702689103893": 1789827422736,
       "1456622719985782864": 1789836989163,
-      "1082686076491137115": 1789839692635,
-      "1229741033265299506": 1789839381191,
+      "1082686076491137115": 1789839764568,
+      "1229741033265299506": 1789839741851,
       "1536339779140976711": 1789839691320,
       "780837437987094560": 1789839095187,
       "874346333882945547": 1789839679006,
@@ -310867,7 +310867,7 @@
       "1365483598962102305": 1789819849808,
       "1544296111097909309": 1789301404574,
       "1343006572850184217": 1789656303796,
-      "503918799683321866": 1789839502986,
+      "503918799683321866": 1789839737931,
       "1247430843299921973": 1789747639613,
       "1496968738447032410": 1789724207798,
       "1254134534987845877": 1789419071660,
@@ -330546,6 +330546,14 @@
         {
           "role": "assistant",
           "content": "Based on the verified information in this server's LIVE state and source code, **there is no person named \"Erwin Menzhinsky\"** listed among the known entities.\n\nThe only related figure is:\n\n- **Gen. Sec. Kewl Menzhinsky** — listed as holding the role of General Secretary (Gen. Sec.), with the note \"Don't send these links here\" in the central committee channel.\n\nIf you meant **Kewl Menzhinsky**, he is the General Secretary of some organization within the server. If you are referring to someone el"
+        },
+        {
+          "role": "user",
+          "content": "who is <@1229741033265299506>"
+        },
+        {
+          "role": "assistant",
+          "content": "<@1229741033265299506> is **Erwin**, a private army member who joined the server on **2026-09-19**. Here are his verified details:\n\n- **Company:** SSR Kazakh SSR\n- **Army Role:** Private (power 10)\n- **Level:** 17\n- **Cash:** ₽2,863\n- **Bank Balance:** ₽5,104\n- **Roles:**\n  - Order of Victory\n  - Order of the 2 Month Plan\n  - Order of the March to Triumph\n  - Order of the Red Banner of Labour\n  - Veteran of Labour\n  - Order of the First Patriotic War\n  - Grand Order of Menzhinsky (2nd Class)\n  -"
         }
       ]
     },
@@ -330677,7 +330685,7 @@
     },
     "1536339779140976711": {
       "date": "2026-09-19",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -330686,6 +330694,14 @@
         {
           "role": "assistant",
           "content": "I don't have any record of a person named \"Erwin\" in the server's official data or recent chatter. My knowledge base contains information about the central committee, Brill, Mimothy, and other figures mentioned in the live state, but there's no documented \"Erwin\" among them.\n\nIf Erwin is a member of the server (perhaps an employee, another staff officer, or a community member), I would need additional context or verification from the LIVE state or SERVER LORE to provide accurate details about th"
+        },
+        {
+          "role": "user",
+          "content": "who is Brill in this server"
+        },
+        {
+          "role": "assistant",
+          "content": "**Brill** (`<@1536339779140976711>`) is a server account with several notable roles:\n\n- **Uzbek Soviet Socialist Republic** (SSR)\n- **Journalist-Журналист**\n- **Council of Ministers of the USSR**\n- **Order of the March to Triumph** recipient\n- **Trusted Soviets**\n- **Soviet Soldier-Советский солдат**\n- **Order of the Red Banner of Labour**\n- **Central Committee of the CPSU**\n- **General Staff-Генеральный штаб**\n- **Nuristani Muttahida Wilayaat**\n\nThey were referenced in the central-committee-of-"
         }
       ]
     },
