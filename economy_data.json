@@ -118,8 +118,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 742,
-      "bot_total_xp": 24592,
+      "bot_xp": 757,
+      "bot_total_xp": 24607,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 20,
@@ -456,8 +456,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 395,
-      "bot_total_xp": 6170,
+      "bot_xp": 418,
+      "bot_total_xp": 6193,
       "daily_work_count": 1,
       "shock_worker": false,
       "mee6_level": 11,
@@ -731,15 +731,22 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 1034,
-      "bot_total_xp": 11079,
+      "bot_xp": 1059,
+      "bot_total_xp": 11104,
       "daily_work_count": 57,
       "shock_worker": false,
       "mee6_level": 14,
       "last_daily_work_date": "2026-09-19",
       "last_laylow": null,
       "work_reminder": false,
-      "work_reminder_sent": null
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     },
     "1528783188728483944": {
       "cash": 105,
@@ -69345,8 +69352,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 13,
-      "bot_xp": 1208,
-      "bot_total_xp": 9658,
+      "bot_xp": 1232,
+      "bot_total_xp": 9682,
       "daily_work_count": 69,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -245518,8 +245525,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 140,
-      "bot_total_xp": 615,
+      "bot_xp": 165,
+      "bot_total_xp": 640,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -255486,22 +255493,22 @@
     "cooldowns": {
       "1544820489191559270": 1789830232296,
       "791747702689103893": 1789827422736,
-      "1456622719985782864": 1789802427162,
-      "1082686076491137115": 1789836930993,
+      "1456622719985782864": 1789836989163,
+      "1082686076491137115": 1789837000173,
       "1229741033265299506": 1789827146082,
       "1536339779140976711": 1789836494424,
       "780837437987094560": 1789818286233,
       "874346333882945547": 1789836946247,
       "870686833976172574": 1789829880035,
       "1186597507720019988": 1789826499599,
-      "1521043721129558017": 1789836911936,
+      "1521043721129558017": 1789836977516,
       "1397601108616024075": 1789830375298,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1789699640761,
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789836956649,
-      "1506785783506534426": 1789836702510,
+      "1506785783506534426": 1789837006186,
       "807254722251587614": 1789836932103,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789758282241,
@@ -255840,7 +255847,7 @@
       "1500052034215219363": 1789794759733,
       "1382528440238084318": 1789808410995,
       "634547073978728478": 1789836966103,
-      "850094994202296371": 1789836943783,
+      "850094994202296371": 1789837030595,
       "1380189428953124975": 1789836647716,
       "848146966138716190": 1789816798493,
       "1540368707178463233": 1789820113361,
@@ -255867,33 +255874,9 @@
       "2026-Q3": {
         "positive": 58,
         "negative": 27,
-        "neutral": 1248,
-        "total": 1333,
+        "neutral": 1250,
+        "total": 1335,
         "mentions": [
-          {
-            "at": "2026-09-13T19:26:26.478Z",
-            "userId": "1379734184259747851",
-            "username": ".kewl1",
-            "channelId": "605951687974453248",
-            "messageId": "1548776889089523813",
-            "text": "<@1082686076491137115> bruh",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text+reply",
-            "quarter": "2026-Q3"
-          },
-          {
-            "at": "2026-09-13T19:27:34.260Z",
-            "userId": "1379734184259747851",
-            "username": ".kewl1",
-            "channelId": "605951687974453248",
-            "messageId": "1548777174700662857",
-            "text": "<@1082686076491137115> why did this not import from mee6",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text+reply",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-13T19:31:28.215Z",
             "userId": "503918799683321866",
@@ -261869,34 +261852,36 @@
             "method": "keyword",
             "source": "text+reply",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-19T16:56:18.119Z",
+            "userId": "1521043721129558017",
+            "username": "hamster_fed",
+            "channelId": "742040268110299146",
+            "messageId": "1550913434369916959",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-19T16:56:28.874Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "1538703181733695600",
+            "messageId": "1550913480909922386",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:30:19.645Z",
-        "userId": "963834359994007614",
-        "username": "that.one.pakistani_",
-        "channelId": "1016433654270009354",
-        "messageId": "1548385257588523068",
-        "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY\nhttps://media.discordapp.net/attachments/605951687974453248/1137582562689175582/7uw0yy.gif?ex=6aa6bc12&is=6aa56a92&hm=cfccef1c5ca51010221ee638ae3cbcc4d068d3eaca9cc6371e1d09fdafdb1781&=",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
-      {
-        "at": "2026-09-12T17:30:20.959Z",
-        "userId": "807944786840387675",
-        "username": "brosquare",
-        "channelId": "1016433654270009354",
-        "messageId": "1548385260717477991",
-        "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:30:21.504Z",
         "userId": "963834359994007614",
@@ -273431,9 +273416,33 @@
         "method": "keyword",
         "source": "text+reply",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-19T16:56:18.119Z",
+        "userId": "1521043721129558017",
+        "username": "hamster_fed",
+        "channelId": "742040268110299146",
+        "messageId": "1550913434369916959",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-19T16:56:28.874Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "1538703181733695600",
+        "messageId": "1550913480909922386",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-19T16:55:33.450Z",
+    "last_scan": "2026-09-19T16:56:28.874Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -275327,16 +275336,16 @@
       ]
     },
     "1456622719985782864": {
-      "date": "2026-09-15",
+      "date": "2026-09-19",
       "used": 1,
       "history": [
         {
           "role": "user",
-          "content": "do you know why kewl divorced me"
+          "content": "i love you wanna crack"
         },
         {
           "role": "assistant",
-          "content": "I don't have specific information about \"kewl divorced me\" in my current database. That phrase doesn't appear in the economic records or company listings I'm working with for your account (GDP 465,680 rubles; GSI 177; inflation 79.46%; gold backing 11.1%).\n\nIf you're referring to something specific about your account or recent events, could you provide more context? I can help with:\n\n- Your current cash balance (₽3,876)\n- Bank balance (₽27,214)\n- Account level (13)\n- Company rankings (Soviet Agr"
+          "content": "I appreciate the sentiment, but I can't help with \"cracking\" anything—either literal security breaches or access to restricted information. My role is to share publicly available knowledge about the server and its operations, not to bypass protections or reveal confidential data.\n\nThat said, I can tell you what I *do* know about the server based on live channels:\n\n**Server Lore (recent):**\n- Central Committee is discussing whether martial law can be enforced without military support\n- There's on"
         }
       ]
     },
@@ -275416,7 +275425,7 @@
     },
     "1325111649816023092": {
       "date": "2026-09-19",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -275425,6 +275434,14 @@
         {
           "role": "assistant",
           "content": "**Hyawii** (handled as `@hyawii.2.0`) is an established figure within the server community who specializes in infrastructure overhauls—particularly around economic policy channels and administrative modifications. According to recent public chatter, Hyawii has been actively implementing systemic improvements to various bots and financial structures, often working behind the scenes to maintain continuity even when the primary administration is otherwise occupied.\n\nThe \"good changes\" referenced by"
+        },
+        {
+          "role": "user",
+          "content": "who are the notable figures in this server"
+        },
+        {
+          "role": "assistant",
+          "content": "<|tool_call_start|>[google(query='Hyawii server notable figures'), google(query='Premier Google Giggles server identity'), google(query='Sarbarah-e-Nur Brosquare.E server')]<|tool_call_end|>"
         }
       ]
     },
