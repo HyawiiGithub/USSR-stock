@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 2843,
-      "bot_total_xp": 29793,
+      "bot_xp": 2854,
+      "bot_total_xp": 29804,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 21,
@@ -207573,8 +207573,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 181,
-      "bot_total_xp": 12006,
+      "bot_xp": 199,
+      "bot_total_xp": 12024,
       "daily_work_count": 39,
       "shock_worker": false,
       "mee6_level": 15,
@@ -302398,8 +302398,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 306.8247453879709,
-      "underground_heat": 1313.332354344288,
+      "heat": 306.3101124447008,
+      "underground_heat": 1312.7189936330526,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -302793,11 +302793,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": 0.22850727293299938,
-      "recorded_at": "2026-09-19T20:45:58.737Z"
-    },
     {
       "price": 103,
       "change_percent": 0.5449724732939927,
@@ -303292,6 +303287,11 @@
       "price": 86,
       "change_percent": 1.224015886397139,
       "recorded_at": "2026-09-20T01:47:33.281Z"
+    },
+    {
+      "price": 86,
+      "change_percent": 0.5428289594878608,
+      "recorded_at": "2026-09-20T01:52:33.306Z"
     }
   ],
   "factory_names": [
@@ -303628,7 +303628,7 @@
   "last_govcontract": "2026-09-19T18:21:48.829Z",
   "ai_store": {
     "Fertilizer": 2,
-    "Bread": 2,
+    "Bread": 1,
     "Machine Parts": 1,
     "Sugar": 7,
     "Refined Fuel": 5
@@ -303647,7 +303647,7 @@
     "Canned Food": 15,
     "Uranium Rod": 18,
     "Canned Fish": 19,
-    "Bread": 259,
+    "Bread": 260,
     "Aluminium Sheet": 8,
     "Circuit Board": 14,
     "Cotton Fabric": 10,
@@ -303660,11 +303660,6 @@
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-12T07:21:28.780Z"
-    },
     {
       "item": "Fuel",
       "qty": 2,
@@ -305159,6 +305154,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-20T01:37:31.759Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 1,
+      "at": "2026-09-20T01:52:31.781Z"
     }
   ],
   "demand_history": {
@@ -307395,11 +307395,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.396113488124789,
-        "at": "2026-09-09T21:38:15.180Z",
-        "supply": 1
-      },
-      {
         "demand": 1.238613488124789,
         "at": "2026-09-10T06:53:16.707Z",
         "supply": 0
@@ -307692,6 +307687,11 @@
       {
         "demand": 1.3859006961598381,
         "at": "2026-09-20T01:37:31.760Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.3859006961598381,
+        "at": "2026-09-20T01:52:31.781Z",
         "supply": 5
       }
     ],
@@ -310635,10 +310635,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 516725,
-      "at": "2026-09-19T17:20:28.483Z"
-    },
-    {
       "total": 516740,
       "at": "2026-09-19T17:25:28.455Z"
     },
@@ -311033,6 +311029,10 @@
     {
       "total": 518870,
       "at": "2026-09-20T01:47:35.090Z"
+    },
+    {
+      "total": 518870,
+      "at": "2026-09-20T01:52:35.252Z"
     }
   ],
   "gold_rush": null,
@@ -311059,7 +311059,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 5.363249999999959,
+  "heat_global": 5.063249999999959,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
