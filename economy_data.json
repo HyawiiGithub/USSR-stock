@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 22,
-      "bot_xp": 788,
-      "bot_total_xp": 31093,
+      "bot_xp": 808,
+      "bot_total_xp": 31113,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 22,
@@ -207573,8 +207573,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1694,
-      "bot_total_xp": 13519,
+      "bot_xp": 1714,
+      "bot_total_xp": 13539,
       "daily_work_count": 41,
       "shock_worker": false,
       "mee6_level": 15,
@@ -302436,8 +302436,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 295.0076994143162,
-      "underground_heat": 1301.941379004525,
+      "heat": 294.41720198726995,
+      "underground_heat": 1301.440321653586,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -302831,11 +302831,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.8825422201941971,
-      "recorded_at": "2026-09-19T21:22:22.201Z"
-    },
     {
       "price": 97,
       "change_percent": 0.678870615155424,
@@ -303330,6 +303325,11 @@
       "price": 87,
       "change_percent": 0.7878373019345691,
       "recorded_at": "2026-09-20T03:17:33.709Z"
+    },
+    {
+      "price": 87,
+      "change_percent": 1.1290398399233208,
+      "recorded_at": "2026-09-20T03:22:33.858Z"
     }
   ],
   "factory_names": [
@@ -303666,7 +303666,6 @@
   "last_govcontract": "2026-09-19T18:21:48.829Z",
   "ai_store": {
     "Fertilizer": 1,
-    "Machine Parts": 1,
     "Sugar": 5,
     "Refined Fuel": 12
   },
@@ -303691,17 +303690,12 @@
     "Reactor Core": 5,
     "Gas Fuel": 93,
     "Steel Beam": 2,
-    "Machine Parts": 38,
+    "Machine Parts": 39,
     "Sugar": 16,
     "Fertilizer": 9,
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-12T14:51:29.294Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -305196,6 +305190,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-20T03:07:31.807Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-09-20T03:22:31.763Z"
     }
   ],
   "demand_history": {
@@ -308344,6 +308343,11 @@
         "demand": 1.3545183029630727,
         "at": "2026-09-20T00:37:30.742Z",
         "supply": 19
+      },
+      {
+        "demand": 1.3545183029630727,
+        "at": "2026-09-20T03:22:31.763Z",
+        "supply": 19
       }
     ],
     "Sugar": [
@@ -310682,10 +310686,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 517213,
-      "at": "2026-09-19T19:04:42.563Z"
-    },
-    {
       "total": 517256,
       "at": "2026-09-19T19:09:42.499Z"
     },
@@ -311080,6 +311080,10 @@
     {
       "total": 518946,
       "at": "2026-09-20T03:17:35.662Z"
+    },
+    {
+      "total": 518946,
+      "at": "2026-09-20T03:22:35.700Z"
     }
   ],
   "gold_rush": null,
