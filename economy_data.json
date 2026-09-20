@@ -302661,8 +302661,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 265.6349308310625,
-      "underground_heat": 1297.2622716852309,
+      "heat": 264.9622598997246,
+      "underground_heat": 1296.5991169186736,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -303057,11 +303057,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 91,
-      "change_percent": 1.289094261178857,
-      "recorded_at": "2026-09-20T08:29:47.288Z"
-    },
     {
       "price": 91,
       "change_percent": 0.7799375466597275,
@@ -303556,6 +303551,11 @@
       "price": 100,
       "change_percent": 0.1582247723982298,
       "recorded_at": "2026-09-20T12:13:32.175Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.5630699063384988,
+      "recorded_at": "2026-09-20T12:23:27.797Z"
     }
   ],
   "factory_names": [
@@ -310975,10 +310975,6 @@
   "total_rubles_history": [
     {
       "total": 518946,
-      "at": "2026-09-20T04:07:36.437Z"
-    },
-    {
-      "total": 518946,
       "at": "2026-09-20T04:12:36.608Z"
     },
     {
@@ -311372,6 +311368,10 @@
     {
       "total": 512441,
       "at": "2026-09-20T12:13:32.624Z"
+    },
+    {
+      "total": 512441,
+      "at": "2026-09-20T12:23:28.122Z"
     }
   ],
   "gold_rush": null,
@@ -336105,50 +336105,7 @@
   "ai_memory": {},
   "elections": {
     "enabled": true,
-    "active": {
-      "id": "EL2",
-      "title": "Premiership Election",
-      "candidates": [
-        {
-          "id": "C1",
-          "name": "brill",
-          "userId": "1536339779140976711",
-          "avatarHash": "255d9d5187bb4fbfd36231b79dd638bf",
-          "avatarAnimated": false,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-20T12:19:08.391Z"
-        },
-        {
-          "id": "C2",
-          "name": "peotr",
-          "userId": "913497950213267577",
-          "avatarHash": "dfb37a9623deb757f1f6bef44c787504",
-          "avatarAnimated": false,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-20T12:21:46.237Z"
-        }
-      ],
-      "votes": {
-        "1082686076491137115": "C1",
-        "1536339779140976711": "C1"
-      },
-      "timeline": [
-        {
-          "t": "2026-09-20T12:20:44.268Z",
-          "cid": "C1"
-        },
-        {
-          "t": "2026-09-20T12:21:14.328Z",
-          "cid": "C1"
-        }
-      ],
-      "startsAt": "2026-09-20T12:19:16.094Z",
-      "endsAt": "2026-09-21T12:19:16.094Z",
-      "status": "running",
-      "winnerId": null,
-      "updateMessageId": "1551206114538950789",
-      "startedBy": "hyawii2.0"
-    },
+    "active": null,
     "history": [
       {
         "id": "EL1",
@@ -336164,6 +336121,26 @@
         ],
         "total": 0,
         "endedAt": "2026-09-20T12:07:44.636Z"
+      },
+      {
+        "id": "EL2",
+        "title": "Premiership Election",
+        "winnerId": "C1",
+        "winnerName": "brill",
+        "totals": [
+          {
+            "id": "C1",
+            "name": "brill",
+            "votes": 2
+          },
+          {
+            "id": "C2",
+            "name": "peotr",
+            "votes": 0
+          }
+        ],
+        "total": 2,
+        "endedAt": "2026-09-20T12:23:16.257Z"
       }
     ],
     "updateChannelId": "1547671101725876254",
