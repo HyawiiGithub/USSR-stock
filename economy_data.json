@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 3224,
-      "bot_total_xp": 37149,
+      "bot_xp": 3237,
+      "bot_total_xp": 37162,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 23,
@@ -1380,8 +1380,8 @@
       "last_illegal": "2026-09-19T12:06:12.173Z",
       "total_heat_generated": 267.702,
       "bot_level": 19,
-      "bot_xp": 2527,
-      "bot_total_xp": 23522,
+      "bot_xp": 2505,
+      "bot_total_xp": 23500,
       "daily_work_count": 98,
       "shock_worker": false,
       "mee6_level": 19,
@@ -76582,8 +76582,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 313,
-      "bot_total_xp": 3213,
+      "bot_xp": 330,
+      "bot_total_xp": 3230,
       "daily_work_count": 3,
       "shock_worker": false,
       "last_laylow": null,
@@ -207573,8 +207573,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 946,
-      "bot_total_xp": 19321,
+      "bot_xp": 958,
+      "bot_total_xp": 19333,
       "daily_work_count": 41,
       "shock_worker": false,
       "mee6_level": 18,
@@ -311658,9 +311658,9 @@
       "1456622719985782864": 1789897256404,
       "1082686076491137115": 1789897962841,
       "1229741033265299506": 1789897972254,
-      "1536339779140976711": 1789897992378,
+      "1536339779140976711": 1789897441560,
       "780837437987094560": 1789864159619,
-      "874346333882945547": 1789897978708,
+      "874346333882945547": 1789898037993,
       "870686833976172574": 1789897959216,
       "1186597507720019988": 1789897321181,
       "1521043721129558017": 1789851930951,
@@ -311903,7 +311903,7 @@
       "1100092111287750796": 1789486344813,
       "1309193358757068882": 1789488524387,
       "800787404867764225": 1789490159016,
-      "1532381114600128693": 1789897951735,
+      "1532381114600128693": 1789898014641,
       "1464657106111041753": 1789495480995,
       "1396122645573144767": 1789495975533,
       "977863303520981032": 1789498306480,
@@ -331449,14 +331449,6 @@
       "history": [
         {
           "role": "user",
-          "content": "who is <@1229741033265299506>"
-        },
-        {
-          "role": "assistant",
-          "content": "<@1229741033265299506> is **Erwin** (Executive Secretary of the Central Committee of the CPSU). Here are his verified facts:\n\n- **Roles:** Order of Victory, Order of the 2 Month Plan, Order of the March to Triumph, Order of the Red Banner of Labour, Veteran of Labour, Order of the First Patriotic War, Grand Order of Menzhinsky (2nd Class), Order of the Red Star, Atheist, Hero of Socialist Labour, People's Artist of the U.S.S.R., Order of Menzhinsky (2nd Class)\n- **Company:** SSR Kazakh SSR (Sovi"
-        },
-        {
-          "role": "user",
           "content": "what is <@1229741033265299506> pronouns"
         },
         {
@@ -331478,6 +331470,14 @@
         {
           "role": "assistant",
           "content": "The `-leaders` (or `-nationalleaders`/`-leadership`) command is handled in `bot.js:11728`. Here is the breakdown of how it works:\n\n1.  **Trigger:** The bot listens for the commands `leaders`, `nationalleaders`, or `leadership`.\n2.  **Data Retrieval:** It calls `loadData()` to pull the current server state and `ensureLeaders(data)` to verify that the leadership data exists or initialize it if missing.\n3.  **Visuals:** It creates an `EmbedBuilder` with the title \"⭐ National Leadership of the USSR\""
+        },
+        {
+          "role": "user",
+          "content": "how does the National Market work code and Normally"
+        },
+        {
+          "role": "assistant",
+          "content": "The **National Market** features (e.g., `-market`, `-demand`, `-marketdemand`) work as follows:\n\n## Code Flow (`bot.js`)\n\n### 1. Command Detection & Routing (Line ~1734)\n```javascript\nif (command === 'demand' || command === 'globaldemand' || command === 'marketdemand' || command === 'demandgraph') {\n    // Execute market logic\n}\n```\nWhen a user types any of these commands, the bot enters the **MARKET subsystem**.\n\n### 2. Data Lookup (Lines ~1748-1780)\n```javascript\nconst query = args.join(' ').t"
         }
       ]
     },
