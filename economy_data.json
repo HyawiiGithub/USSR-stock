@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 22,
-      "bot_xp": 1239,
-      "bot_total_xp": 31544,
+      "bot_xp": 1259,
+      "bot_total_xp": 31564,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 22,
@@ -207573,8 +207573,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 167,
-      "bot_total_xp": 13967,
+      "bot_xp": 187,
+      "bot_total_xp": 13987,
       "daily_work_count": 41,
       "shock_worker": false,
       "mee6_level": 16,
@@ -302474,8 +302474,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 290.84231135542956,
-      "underground_heat": 1298.2021654273467,
+      "heat": 290.14559461682927,
+      "underground_heat": 1297.601214628801,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -302869,11 +302869,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.6235628893220453,
-      "recorded_at": "2026-09-19T21:34:45.513Z"
-    },
     {
       "price": 97,
       "change_percent": 0.7944568203257426,
@@ -303368,6 +303363,11 @@
       "price": 92,
       "change_percent": 0.35796366958967957,
       "recorded_at": "2026-09-20T03:47:33.834Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.0013205943914009963,
+      "recorded_at": "2026-09-20T03:52:33.953Z"
     }
   ],
   "factory_names": [
@@ -303654,7 +303654,7 @@
     "Reactor Core": 1.4023387963377434,
     "Circuit Board": 1.3880142423362516,
     "Flour": 1.3717484537427134,
-    "Sugar": 0.9011342479683457,
+    "Sugar": 0.9211342479683458,
     "Wine": 1.4115369608186281,
     "Canned Food": 1.404628571374045,
     "Canned Fish": 1.4046177913832323,
@@ -303704,7 +303704,7 @@
   "last_govcontract": "2026-09-19T18:21:48.829Z",
   "ai_store": {
     "Fertilizer": 1,
-    "Sugar": 5,
+    "Sugar": 3,
     "Refined Fuel": 10
   },
   "global_consumption": {
@@ -303729,16 +303729,11 @@
     "Gas Fuel": 93,
     "Steel Beam": 2,
     "Machine Parts": 39,
-    "Sugar": 16,
+    "Sugar": 18,
     "Fertilizer": 9,
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-12T19:36:29.498Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -305233,6 +305228,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-09-20T03:37:32.348Z"
+    },
+    {
+      "item": "Sugar",
+      "qty": 2,
+      "at": "2026-09-20T03:52:32.353Z"
     }
   ],
   "demand_history": {
@@ -308443,6 +308443,11 @@
         "demand": 0.9132022236151853,
         "at": "2026-09-20T02:22:31.768Z",
         "supply": 215
+      },
+      {
+        "demand": 0.9011342479683457,
+        "at": "2026-09-20T03:52:32.353Z",
+        "supply": 220
       }
     ],
     "Fertilizer": [
@@ -310724,10 +310729,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 517432,
-      "at": "2026-09-19T19:29:42.722Z"
-    },
-    {
       "total": 517537,
       "at": "2026-09-19T19:34:42.883Z"
     },
@@ -311122,6 +311123,10 @@
     {
       "total": 518946,
       "at": "2026-09-20T03:47:35.676Z"
+    },
+    {
+      "total": 518946,
+      "at": "2026-09-20T03:52:36.102Z"
     }
   ],
   "gold_rush": null,
