@@ -791,8 +791,8 @@
       "last_illegal": "2026-09-20T17:26:30.909Z",
       "total_heat_generated": 719.1790000000001,
       "bot_level": 18,
-      "bot_xp": 1318,
-      "bot_total_xp": 19693,
+      "bot_xp": 1333,
+      "bot_total_xp": 19708,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 18,
@@ -311315,6 +311315,13 @@
       "username": "hyawii2.0",
       "action": "appointdirector",
       "details": "appointed <@1521043721129558017> (1521043721129558017) as director of Kewlian Industrial Group (state_24)"
+    },
+    {
+      "at": "2026-09-20T21:36:17.823Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "addcredits",
+      "details": "+50 → <@1229741033265299506> (pool now 50.0)"
     }
   ],
   "total_rubles_history": [
@@ -312172,7 +312179,7 @@
       "791747702689103893": 1789938341077,
       "1456622719985782864": 1789938681118,
       "1082686076491137115": 1789940109736,
-      "1229741033265299506": 1789939917874,
+      "1229741033265299506": 1789940153399,
       "1536339779140976711": 1789933873899,
       "780837437987094560": 1789930575262,
       "874346333882945547": 1789935469582,
@@ -332388,7 +332395,8 @@
           "role": "assistant",
           "content": "I would choose **Erwin Menzhinsky**.  \n\n**Reasoning**  \n- I have verified information about Erwin: he is the Executive Secretary of the Central Committee, a femboy/furry community member, and holds multiple high‑ranking awards (Order of Victory, Order of the 2 Month Plan, etc.).  \n- I have no documented facts about a user named *Hyawii* in this server—no role, no activity, no mention in public logs.  \n- Without any data on Hyawii, I cannot assess their contributions or standing, whereas Erwin’s "
         }
-      ]
+      ],
+      "bonus": 50
     },
     "1325111649816023092": {
       "date": "2026-09-20",
@@ -336710,8 +336718,16 @@
           "addedAt": "2026-09-20T15:03:35.612Z"
         }
       ],
-      "votes": {},
-      "timeline": [],
+      "votes": {
+        "1082686076491137115": "C1"
+      },
+      "timeline": [
+        {
+          "t": "2026-09-20T21:35:38.013Z",
+          "cid": "C1",
+          "by": "1082686076491137115"
+        }
+      ],
       "startsAt": "2026-09-20T15:44:02.971Z",
       "endsAt": "2026-09-21T15:44:02.971Z",
       "status": "running",
@@ -336761,7 +336777,7 @@
     "confirmChannelId": "1547671101725876254",
     "animated": {},
     "next_num": 3,
-    "avatars_refreshed_at": "2026-09-20T15:01:29.980Z",
+    "avatars_refreshed_at": "2026-09-20T21:35:39.583Z",
     "board_style": "broadcast"
   }
 }
