@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 24,
-      "bot_xp": 389,
-      "bot_total_xp": 38209,
+      "bot_xp": 403,
+      "bot_total_xp": 38223,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 24,
@@ -786,7 +786,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 718,
-      "heat": 1.5309561051911,
+      "heat": 0.659058483115955,
       "wanted": 0,
       "last_illegal": "2026-09-20T10:33:05.920Z",
       "total_heat_generated": 708.2880000000001,
@@ -947,7 +947,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 148,
-      "heat": 12.204438781195018,
+      "heat": 11.21782499594246,
       "wanted": 0,
       "last_illegal": "2026-09-20T10:38:13.536Z",
       "total_heat_generated": 1210.7428999999993,
@@ -87842,8 +87842,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 2299,
-      "bot_total_xp": 23294,
+      "bot_xp": 2322,
+      "bot_total_xp": 23317,
       "daily_work_count": 63,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-19",
@@ -166674,7 +166674,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 498,
-      "heat": 1.2625361875854653,
+      "heat": 0.37286329429292453,
       "wanted": 0,
       "last_illegal": "2026-09-20T10:33:22.096Z",
       "total_heat_generated": 48.378,
@@ -207573,8 +207573,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 1880,
-      "bot_total_xp": 20255,
+      "bot_xp": 1893,
+      "bot_total_xp": 20268,
       "daily_work_count": 42,
       "shock_worker": false,
       "mee6_level": 18,
@@ -302585,8 +302585,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 275.92087614173624,
-      "underground_heat": 1307.4736609837632,
+      "heat": 275.3538053722391,
+      "underground_heat": 1306.6974833404756,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -302981,11 +302981,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 84,
-      "change_percent": 0.671393678880339,
-      "recorded_at": "2026-09-20T06:57:36.392Z"
-    },
     {
       "price": 84,
       "change_percent": 0.7427768718546686,
@@ -303480,6 +303475,11 @@
       "price": 104,
       "change_percent": -0.04268485381394857,
       "recorded_at": "2026-09-20T10:49:50.779Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 0.42834382446855207,
+      "recorded_at": "2026-09-20T10:52:39.500Z"
     }
   ],
   "factory_names": [
@@ -303816,7 +303816,7 @@
   "last_govcontract": "2026-09-19T18:21:48.829Z",
   "ai_store": {
     "Gas Fuel": 4,
-    "Circuit Board": 5
+    "Circuit Board": 3
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -303834,7 +303834,7 @@
     "Canned Fish": 19,
     "Bread": 267,
     "Aluminium Sheet": 8,
-    "Circuit Board": 16,
+    "Circuit Board": 18,
     "Cotton Fabric": 10,
     "Reactor Core": 5,
     "Gas Fuel": 97,
@@ -303845,11 +303845,6 @@
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 2,
-      "at": "2026-09-13T03:19:15.517Z"
-    },
     {
       "item": "Fuel",
       "qty": 1,
@@ -305344,6 +305339,11 @@
       "item": "Circuit Board",
       "qty": 2,
       "at": "2026-09-20T10:37:37.991Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-09-20T10:52:37.979Z"
     }
   ],
   "demand_history": {
@@ -307966,6 +307966,11 @@
       {
         "demand": 1.2360941274190502,
         "at": "2026-09-20T10:37:37.991Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.2418890996759095,
+        "at": "2026-09-20T10:52:37.979Z",
         "supply": 0
       }
     ],
@@ -310868,10 +310873,6 @@
   "total_rubles_history": [
     {
       "total": 518890,
-      "at": "2026-09-20T02:37:35.705Z"
-    },
-    {
-      "total": 518890,
       "at": "2026-09-20T02:42:35.656Z"
     },
     {
@@ -311265,6 +311266,10 @@
     {
       "total": 520751,
       "at": "2026-09-20T10:47:40.006Z"
+    },
+    {
+      "total": 520776,
+      "at": "2026-09-20T10:52:40.007Z"
     }
   ],
   "gold_rush": null,
@@ -311291,7 +311296,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 3.5596500000000004,
+  "heat_global": 3.2596500000000006,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -311722,7 +311727,7 @@
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789863083815,
       "1506785783506534426": 1789901314994,
-      "807254722251587614": 1789901411395,
+      "807254722251587614": 1789901550230,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789758282241,
       "997903130543005767": 1788970364999,
@@ -312105,21 +312110,9 @@
       "2026-Q3": {
         "positive": 61,
         "negative": 29,
-        "neutral": 1330,
-        "total": 1420,
+        "neutral": 1331,
+        "total": 1421,
         "mentions": [
-          {
-            "at": "2026-09-14T20:28:32.395Z",
-            "userId": "1198413714672591031",
-            "username": "andre_9982469798",
-            "channelId": "605951687974453248",
-            "messageId": "1549154904512139397",
-            "text": "<@1082686076491137115> how do people run for congress",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-14T20:39:00.801Z",
             "userId": "1082686076491137115",
@@ -318107,23 +318100,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-20T10:52:31.633Z",
+            "userId": "807254722251587614",
+            "username": "lucky_drink",
+            "channelId": "605951687974453248",
+            "messageId": "1551184271354503242",
+            "text": "Which one of you bro <@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:31:37.651Z",
-        "userId": "963834359994007614",
-        "username": "that.one.pakistani_",
-        "channelId": "605951687974453248",
-        "messageId": "1548385599319441559",
-        "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY\nhttps://media.discordapp.net/attachments/605951687974453248/1137582562689175582/7uw0yy.gif?ex=6aa6bc12&is=6aa56a92&hm=cfccef1c5ca51010221ee638ae3cbcc4d068d3eaca9cc6371e1d09fdafdb1781&=",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:31:38.144Z",
         "userId": "963834359994007614",
@@ -329756,9 +329750,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-20T10:52:31.633Z",
+        "userId": "807254722251587614",
+        "username": "lucky_drink",
+        "channelId": "605951687974453248",
+        "messageId": "1551184271354503242",
+        "text": "Which one of you bro <@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-20T10:50:12.149Z",
+    "last_scan": "2026-09-20T10:52:31.633Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
