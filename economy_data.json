@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 24,
-      "bot_xp": 1548,
-      "bot_total_xp": 39368,
+      "bot_xp": 1527,
+      "bot_total_xp": 39347,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 24,
@@ -207574,8 +207574,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 470,
-      "bot_total_xp": 21465,
+      "bot_xp": 460,
+      "bot_total_xp": 21455,
       "daily_work_count": 43,
       "shock_worker": false,
       "mee6_level": 19,
@@ -266185,8 +266185,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 122,
-      "bot_total_xp": 5897,
+      "bot_xp": 144,
+      "bot_total_xp": 5919,
       "daily_work_count": 19,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-20",
@@ -301128,8 +301128,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 102,
-      "bot_total_xp": 357,
+      "bot_xp": 124,
+      "bot_total_xp": 379,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -311813,7 +311813,7 @@
       "1544820489191559270": 1789904781017,
       "791747702689103893": 1789858198913,
       "1456622719985782864": 1789904401591,
-      "1082686076491137115": 1789904972566,
+      "1082686076491137115": 1789904884731,
       "1229741033265299506": 1789902466592,
       "1536339779140976711": 1789903644820,
       "780837437987094560": 1789864159619,
@@ -311904,7 +311904,7 @@
       "673726585194676274": 1789566660918,
       "1405587743542870188": 1789535273706,
       "1489932552394248263": 1789594516876,
-      "730696111198699600": 1789904941397,
+      "730696111198699600": 1789905015997,
       "850229826231992320": 1789468435424,
       "1202316445569273959": 1789331745467,
       "1541073090019074150": 1789330365808,
@@ -312175,7 +312175,7 @@
       "1546874108577452042": 1789826323042,
       "526727889295507457": 1789828444985,
       "1493686305723514882": 1789829243907,
-      "1430983825940414592": 1789904925727,
+      "1430983825940414592": 1789904994526,
       "1296987637990817863": 1789830488403,
       "1225471826252267554": 1789844265476,
       "1466097688771825747": 1789845042575,
@@ -331629,14 +331629,6 @@
       "history": [
         {
           "role": "user",
-          "content": "what is <@1229741033265299506> pronouns"
-        },
-        {
-          "role": "assistant",
-          "content": "Based on the verified facts for <@1229741033265299506> (Erwin, Executive Secretary of the Central Committee), **pronominals are not specified**. The documented roles include:\n\n- Atheist\n- Hero of Socialist Labour\n- People's Artist of the U.S.S.R.\n- Order of the Red Banner of Labour\n- Order of the First Patriotic War\n- Grand Order of Menzhinsky (2nd Class)\n- Order of the Red Star\n- Order of Menzhinsky (1st Class)\n\nNo specific personal pronouns (he/him, she/her, they/them, etc.) are listed in the "
-        },
-        {
-          "role": "user",
           "content": "would in theory this bot work as a global economy for multiple discord servers with thejr own currencies etc"
         },
         {
@@ -331658,6 +331650,14 @@
         {
           "role": "assistant",
           "content": "The **National Market** features (e.g., `-market`, `-demand`, `-marketdemand`) work as follows:\n\n## Code Flow (`bot.js`)\n\n### 1. Command Detection & Routing (Line ~1734)\n```javascript\nif (command === 'demand' || command === 'globaldemand' || command === 'marketdemand' || command === 'demandgraph') {\n    // Execute market logic\n}\n```\nWhen a user types any of these commands, the bot enters the **MARKET subsystem**.\n\n### 2. Data Lookup (Lines ~1748-1780)\n```javascript\nconst query = args.join(' ').t"
+        },
+        {
+          "role": "user",
+          "content": "who is Kewl Menzhinsky"
+        },
+        {
+          "role": "assistant",
+          "content": "Based on the current server state and code, here's what I know about **Kewl Menzhinsky**:\n\n## Who is Kewl Menzhinsky?\n\n- **Role:** General Secretary (Gen. Sec.) of the **Central Committee of the CPSU**\n- **Server ID:** `<@1229741033265299506>`\n- **Title:** Gen. Sec. of the CPSU (Central Committee)\n- **Affiliation:** Central Committee of the CPSU (listed among the server's roles)\n\n## How His \"Leaders\" Command Works (Code Reference)\n\nIn `bot.js:11820` (the `-leaders` command handler):\n\n```javascri"
         }
       ]
     },
