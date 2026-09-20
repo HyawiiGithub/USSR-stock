@@ -809,7 +809,7 @@
       "pet_food_source": {}
     },
     "1456622719985782864": {
-      "cash": 0,
+      "cash": 2000,
       "bank": 31779,
       "resources": {},
       "inventory": {},
@@ -831,8 +831,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1148,
-      "bot_total_xp": 12973,
+      "bot_xp": 1187,
+      "bot_total_xp": 13012,
       "daily_work_count": 62,
       "shock_worker": false,
       "mee6_level": 15,
@@ -1069,8 +1069,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 28,
-      "bot_total_xp": 8478,
+      "bot_xp": 75,
+      "bot_total_xp": 8525,
       "daily_work_count": 112,
       "shock_worker": false,
       "mee6_level": 13,
@@ -107957,8 +107957,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 52,
-      "bot_total_xp": 152,
+      "bot_xp": 92,
+      "bot_total_xp": 192,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -207571,7 +207571,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 379,
-      "heat": 17.91284300241628,
+      "heat": 16.918044194432674,
       "wanted": 0,
       "last_illegal": "2026-09-20T14:53:05.994Z",
       "total_heat_generated": 38.679,
@@ -302777,8 +302777,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 272.6540384889382,
-      "underground_heat": 1323.8409524317917,
+      "heat": 271.946742721319,
+      "underground_heat": 1323.2181389042967,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -303173,16 +303173,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.5630699063384988,
-      "recorded_at": "2026-09-20T12:23:27.797Z"
-    },
-    {
-      "price": 100,
-      "change_percent": 0.30050488375984935,
-      "recorded_at": "2026-09-20T12:28:29.537Z"
-    },
     {
       "price": 100,
       "change_percent": 0.11477251242850875,
@@ -303672,6 +303662,16 @@
       "price": 108,
       "change_percent": 0.1909734049741943,
       "recorded_at": "2026-09-20T15:46:08.272Z"
+    },
+    {
+      "price": 102,
+      "change_percent": -4.786406565003956,
+      "recorded_at": "2026-09-20T15:51:06.843Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.25596824595442835,
+      "recorded_at": "2026-09-20T15:51:09.561Z"
     }
   ],
   "factory_names": [
@@ -303693,7 +303693,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 37032.09390358099,
+  "money_printed": 36291.452025509374,
   "total_bank_reserves": 414762,
   "inflation_history": [
     0,
@@ -303946,16 +303946,16 @@
     "Iron Ingot": 1.3811432216866946,
     "Steel Ingot": 1.3588958378639504,
     "Gold Bar": 1.202048754492001,
-    "Aluminium Ingot": 1.4144997504252719,
-    "Timber Planks": 1.339311236565225,
+    "Aluminium Ingot": 1.41333977039125,
+    "Timber Planks": 1.3413405702810617,
     "Bricks": 1.4120143203936348,
     "Concrete": 1.412472384871264,
     "Glass": 1.4121764278812339,
     "Steel Beam": 1.392849494730747,
     "Machine Parts": 1.3366060749841004,
-    "Refined Fuel": 1.3960246538922507,
+    "Refined Fuel": 1.3947327761334738,
     "Uranium Rod": 1.3993318012447755,
-    "Reactor Core": 1.366642850984045,
+    "Reactor Core": 1.371097991036767,
     "Circuit Board": 1.3957613240234248,
     "Flour": 1.3746178220004626,
     "Sugar": 0.8155218290502393,
@@ -303974,7 +303974,7 @@
     "Corn Meal": 1.4120143203936348,
     "Tea Pack": 1.4120959677173848,
     "Citrus Juice": 1.4115187211578817,
-    "Antimony Alloy": 1.4145407769231368,
+    "Antimony Alloy": 1.413377514769286,
     "Molybdenum Rod": 1.4120143203936348,
     "Aluminium Sheet": 1.404734855605518,
     "Shale Oil": 1.403757561213034
@@ -304006,13 +304006,11 @@
     "Flour": "2026-09-19T18:21:48.830Z"
   },
   "last_govcontract": "2026-09-19T18:21:48.829Z",
-  "ai_store": {
-    "Timber Planks": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 171,
+    "Timber Planks": 172,
     "Refined Fuel": 164,
     "Fuel": 127,
     "Iron Ingot": 63,
@@ -304036,11 +304034,6 @@
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Shale Oil",
-      "qty": 1,
-      "at": "2026-09-13T10:34:16.743Z"
-    },
     {
       "item": "Shale Oil",
       "qty": 1,
@@ -305535,6 +305528,11 @@
       "item": "Timber Planks",
       "qty": 1,
       "at": "2026-09-20T15:36:07.640Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-09-20T15:51:08.874Z"
     }
   ],
   "demand_history": {
@@ -305940,11 +305938,6 @@
     "Timber Planks": [
       {
         "demand": 1.3750475263783957,
-        "at": "2026-08-30T05:14:17.360Z",
-        "supply": 5
-      },
-      {
-        "demand": 1.3750475263783957,
         "at": "2026-08-30T05:29:17.381Z",
         "supply": 5
       },
@@ -306236,6 +306229,11 @@
       {
         "demand": 1.336605458277443,
         "at": "2026-09-20T15:36:07.640Z",
+        "supply": 23
+      },
+      {
+        "demand": 1.3413405702810617,
+        "at": "2026-09-20T15:51:08.874Z",
         "supply": 23
       }
     ],
@@ -311115,10 +311113,6 @@
   "total_rubles_history": [
     {
       "total": 519443,
-      "at": "2026-09-20T07:22:36.968Z"
-    },
-    {
-      "total": 519443,
       "at": "2026-09-20T07:27:37.087Z"
     },
     {
@@ -311512,6 +311506,10 @@
     {
       "total": 510526,
       "at": "2026-09-20T15:46:08.798Z"
+    },
+    {
+      "total": 510526,
+      "at": "2026-09-20T15:51:09.806Z"
     }
   ],
   "gold_rush": null,
@@ -311538,7 +311536,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 0.90375,
+  "heat_global": 0.60375,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -311964,7 +311962,7 @@
     "cooldowns": {
       "1544820489191559270": 1789904781017,
       "791747702689103893": 1789913459024,
-      "1456622719985782864": 1789919415329,
+      "1456622719985782864": 1789919560462,
       "1082686076491137115": 1789918887155,
       "1229741033265299506": 1789916579269,
       "1536339779140976711": 1789915469346,
@@ -311987,7 +311985,7 @@
       "1369015006955442326": 1789120293921,
       "914436541072425021": 1789902109495,
       "1107232271880159292": 1789565232012,
-      "1495413593242337421": 1789919400899,
+      "1495413593242337421": 1789919551469,
       "1447308947072614555": 1788973711995,
       "887419379833274388": 1789894976993,
       "807944786840387675": 1789898276432,
@@ -312141,7 +312139,7 @@
       "1548115237390262273": 1789268429784,
       "1434374436378775632": 1789276804762,
       "1472782603344937144": 1789296028528,
-      "1466109045604876351": 1789919357585,
+      "1466109045604876351": 1789919558857,
       "1004404258415845468": 1789492257198,
       "1439573866300309658": 1789904951611,
       "1494027370208825436": 1789895195948,
@@ -312370,21 +312368,9 @@
       "2026-Q3": {
         "positive": 63,
         "negative": 29,
-        "neutral": 1365,
-        "total": 1457,
+        "neutral": 1366,
+        "total": 1458,
         "mentions": [
-          {
-            "at": "2026-09-15T18:04:10.349Z",
-            "userId": "1456622719985782864",
-            "username": "seren_menzhinsky",
-            "channelId": "605951687974453248",
-            "messageId": "1549480964370202675",
-            "text": "<@1082686076491137115> tsk tsk sexist premier",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-15T18:04:12.810Z",
             "userId": "1511756975392948224",
@@ -318372,23 +318358,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-20T15:51:12.510Z",
+            "userId": "1495413593242337421",
+            "username": "nikita__1991",
+            "channelId": "605951687974453248",
+            "messageId": "1551259430459281482",
+            "text": "how is the best Deputy Premier doing ?",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:32:04.050Z",
-        "userId": "791747702689103893",
-        "username": "guap7_",
-        "channelId": "1016433654270009354",
-        "messageId": "1548385720580964536",
-        "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY\nhttps://media.discordapp.net/attachments/605951687974453248/1137582562689175582/7uw0yy.gif?ex=6aa6bc12&is=6aa56a92&hm=cfccef1c5ca51010221ee638ae3cbcc4d068d3eaca9cc6371e1d09fdafdb1781&=",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:32:04.828Z",
         "userId": "1381003812466196512",
@@ -330058,9 +330045,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-20T15:51:12.510Z",
+        "userId": "1495413593242337421",
+        "username": "nikita__1991",
+        "channelId": "605951687974453248",
+        "messageId": "1551259430459281482",
+        "text": "how is the best Deputy Premier doing ?",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-20T15:45:38.833Z",
+    "last_scan": "2026-09-20T15:51:12.510Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -334081,12 +334080,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.02,
+    "rub_per_usd": 6.93,
     "history": [
-      {
-        "rate": 6.97,
-        "at": "2026-09-19T23:17:30.958Z"
-      },
       {
         "rate": 6.99,
         "at": "2026-09-19T23:27:30.907Z"
@@ -334482,9 +334477,13 @@
       {
         "rate": 7.02,
         "at": "2026-09-20T15:41:07.611Z"
+      },
+      {
+        "rate": 6.93,
+        "at": "2026-09-20T15:51:08.644Z"
       }
     ],
-    "last_update": "2026-09-20T15:41:07.611Z",
+    "last_update": "2026-09-20T15:51:08.644Z",
     "manual_override": null
   },
   "national_budget": {
