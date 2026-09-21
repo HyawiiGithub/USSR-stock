@@ -180,8 +180,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 49,
-      "bot_total_xp": 1674,
+      "bot_xp": 69,
+      "bot_total_xp": 1694,
       "daily_work_count": 26,
       "shock_worker": false,
       "mee6_level": 6,
@@ -384,8 +384,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 1001,
-      "bot_total_xp": 9451,
+      "bot_xp": 1025,
+      "bot_total_xp": 9475,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 13,
@@ -244406,8 +244406,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 1253,
-      "bot_total_xp": 28203,
+      "bot_xp": 1274,
+      "bot_total_xp": 28224,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 21,
@@ -303315,8 +303315,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 178018,
-      "market_cap": 178018,
+      "share_price": 172975,
+      "market_cap": 172975,
       "employees": 5,
       "level": 1,
       "buildings": {
@@ -303337,19 +303337,18 @@
         }
       },
       "inventory": {
-        "Oil": 4,
+        "Oil": 3,
         "Iron Ore": 16,
         "Flour": 6,
-        "Wheat": 143,
-        "Sugar": 45,
+        "Wheat": 124,
+        "Sugar": 46,
         "Gold": 1,
-        "Natural Gas": 1
+        "Fuel": 1,
+        "Gas Fuel": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-20T02:29:47.626Z",
+      "last_collect": "2026-09-21T14:13:48.792Z",
       "price_history": [
-        133487,
-        133614,
         133950,
         134000,
         136555,
@@ -303447,7 +303446,9 @@
         173552,
         176850,
         177879,
-        178018
+        178018,
+        172925,
+        172975
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
@@ -304092,11 +304093,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": 0.560184466444783,
-      "recorded_at": "2026-09-21T09:31:56.217Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.683774865896164,
       "recorded_at": "2026-09-21T09:34:43.452Z"
     },
@@ -304589,10 +304585,14 @@
       "price": 99,
       "change_percent": 0.22253409253792517,
       "recorded_at": "2026-09-21T14:09:44.598Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.24824676952577548,
+      "recorded_at": "2026-09-21T14:13:50.265Z"
     }
   ],
   "factory_names": [
-    "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Stalin Tractor Plant",
     "Brezhnev Auto Factory",
@@ -304602,7 +304602,8 @@
   "used_factory_names": [
     "Siberian Mining Co",
     "Khrushchev Agricultural",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -312984,7 +312985,8 @@
         "Russian SFSR": 0,
         "Ukrainian SSR": 0,
         "Nuristani SSR": 3,
-        "Estonian SSR": 0
+        "Estonian SSR": 0,
+        "Azerbaijanian SSR": 0
       }
     },
     "qotd": {
@@ -313014,7 +313016,7 @@
       "1536339779140976711": 1789998572522,
       "780837437987094560": 1789992618287,
       "874346333882945547": 1789998818792,
-      "870686833976172574": 1789999955855,
+      "870686833976172574": 1790000031866,
       "1186597507720019988": 1789991060934,
       "1521043721129558017": 1789997018823,
       "1397601108616024075": 1789958979210,
@@ -313061,7 +313063,7 @@
       "983175525809926146": 1788996121210,
       "730223629849199093": 1789987994533,
       "418231502627667979": 1789952571646,
-      "710945531794554970": 1789965298395,
+      "710945531794554970": 1790000067038,
       "925564822781845595": 1789167727721,
       "930627006566129744": 1788998973205,
       "1486485728551501827": 1788999024601,
@@ -332595,9 +332597,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 25,
-    "beforeLvlC": 23,
-    "afterLvl": 23,
+    "xpGainC": 20,
+    "beforeLvlC": 6,
+    "afterLvl": 6,
     "leveled": []
   },
   "central_bank": {
