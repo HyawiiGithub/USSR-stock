@@ -925,7 +925,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 0,
+      "cash": 25,
       "bank": 7372,
       "resources": {},
       "inventory": {
@@ -934,8 +934,8 @@
       "company_id": null,
       "gsi_shares": 1,
       "share_holdings": {},
-      "last_work": "2026-09-21T07:44:02.742Z",
-      "work_count": 1709,
+      "last_work": "2026-09-21T07:50:09.373Z",
+      "work_count": 1710,
       "last_claim": "2026-09-21T07:44:52.575Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -943,11 +943,11 @@
       "is_state_director": true,
       "director_of": "state_26",
       "ceo_of": null,
-      "dirty_cash": 4746,
-      "heat": 11.532284021325932,
+      "dirty_cash": 4790,
+      "heat": 22.32017282634142,
       "wanted": 0,
-      "last_illegal": "2026-09-21T07:46:08.906Z",
-      "total_heat_generated": 1226.7428999999993,
+      "last_illegal": "2026-09-21T07:50:09.373Z",
+      "total_heat_generated": 1238.3568999999993,
       "bot_level": 23,
       "bot_xp": 2757,
       "bot_total_xp": 36682,
@@ -303353,14 +303353,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 15676,
+      "funds": 15666,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 339395,
-      "market_cap": 339395,
+      "share_price": 339363,
+      "market_cap": 339363,
       "employees": 31,
       "level": 1,
       "buildings": {
@@ -303423,7 +303423,7 @@
       "inventory": {
         "Gold Bar": 43,
         "Wheat": 58,
-        "Sugar": 92,
+        "Sugar": 91,
         "Copper": 23,
         "Sulphur": 50,
         "Timber Planks": 23,
@@ -303439,7 +303439,7 @@
         "Clay": 7,
         "Sand": 7,
         "Steel Ingot": 2,
-        "Contraband: Cannabis": 3,
+        "Contraband: Cannabis": 4,
         "Cake": 4,
         "Oil": 11,
         "Bread": 2,
@@ -303448,7 +303448,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-21T04:59:27.007Z",
       "price_history": [
-        352482,
         352528,
         352526,
         352524,
@@ -303547,7 +303546,8 @@
         339147,
         339139,
         339411,
-        339395
+        339395,
+        339363
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -303568,8 +303568,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 204.99904410566018,
-      "underground_heat": 1272.7676820697031,
+      "heat": 211.17847480886243,
+      "underground_heat": 1283.6760080125564,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -303964,16 +303964,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.01159966257066724,
-      "recorded_at": "2026-09-21T02:59:41.197Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 3.8607078806032735,
-      "recorded_at": "2026-09-21T03:04:36.786Z"
-    },
     {
       "price": 97,
       "change_percent": 0.10907437179974178,
@@ -304463,6 +304453,16 @@
       "price": 100,
       "change_percent": 0.35603098456739696,
       "recorded_at": "2026-09-21T07:44:43.073Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.7732786627590111,
+      "recorded_at": "2026-09-21T07:49:43.087Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.3424056784114248,
+      "recorded_at": "2026-09-21T07:50:10.882Z"
     }
   ],
   "factory_names": [
@@ -304484,8 +304484,8 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 15581.874713013287,
-  "total_bank_reserves": 419449,
+  "money_printed": 15270.237218753022,
+  "total_bank_reserves": 420690,
   "inflation_history": [
     0,
     0,
@@ -304735,21 +304735,21 @@
     "Bread": 1.3743978645663464,
     "Copper Ingot": 1.40449409380291,
     "Iron Ingot": 1.3878223786585417,
-    "Steel Ingot": 1.3483380735340835,
-    "Gold Bar": 1.1922865265066929,
+    "Steel Ingot": 1.3467608015273742,
+    "Gold Bar": 1.1910949087339835,
     "Aluminium Ingot": 1.4118655461296423,
     "Timber Planks": 1.3428625705679391,
     "Bricks": 1.41228061381012,
     "Concrete": 1.412472384871264,
     "Glass": 1.4123710449211122,
     "Steel Beam": 1.393090147731975,
-    "Machine Parts": 1.3034369629198648,
+    "Machine Parts": 1.307284358758583,
     "Refined Fuel": 1.3960056098335778,
     "Uranium Rod": 1.390882311958152,
     "Reactor Core": 1.3954772387626295,
     "Circuit Board": 1.4043209930175686,
     "Flour": 1.3863256853409267,
-    "Sugar": 0.7942332137043326,
+    "Sugar": 0.7955299827420176,
     "Wine": 1.41228061381012,
     "Canned Food": 1.404628571374045,
     "Canned Fish": 1.4046251605548508,
@@ -311957,10 +311957,6 @@
   "total_rubles_history": [
     {
       "total": 514012,
-      "at": "2026-09-21T00:19:40.984Z"
-    },
-    {
-      "total": 514012,
       "at": "2026-09-21T00:24:40.998Z"
     },
     {
@@ -312354,6 +312350,10 @@
     {
       "total": 508031,
       "at": "2026-09-21T07:44:43.553Z"
+    },
+    {
+      "total": 508205,
+      "at": "2026-09-21T07:49:43.570Z"
     }
   ],
   "gold_rush": null,
@@ -312380,7 +312380,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-14T11:02:00.274Z",
-  "heat_global": 2.4,
+  "heat_global": 3.8421000000000003,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -335145,12 +335145,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.19,
+    "rub_per_usd": 7.11,
     "history": [
-      {
-        "rate": 6.99,
-        "at": "2026-09-20T14:37:23.049Z"
-      },
       {
         "rate": 6.96,
         "at": "2026-09-20T14:47:24.701Z"
@@ -335546,9 +335542,13 @@
       {
         "rate": 7.19,
         "at": "2026-09-21T07:39:40.224Z"
+      },
+      {
+        "rate": 7.11,
+        "at": "2026-09-21T07:49:40.314Z"
       }
     ],
-    "last_update": "2026-09-21T07:39:40.224Z",
+    "last_update": "2026-09-21T07:49:40.314Z",
     "manual_override": null
   },
   "national_budget": {
