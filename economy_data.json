@@ -1708,10 +1708,12 @@
       "pet_food_source": {}
     },
     "1325111649816023092": {
-      "cash": 75,
-      "bank": 7176,
+      "cash": 0,
+      "bank": 5137,
       "resources": {},
-      "inventory": {},
+      "inventory": {
+        "Cake": 6
+      },
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
@@ -1730,8 +1732,8 @@
       "last_illegal": "2026-09-19T17:12:44.710Z",
       "total_heat_generated": 96.571,
       "bot_level": 15,
-      "bot_xp": 1756,
-      "bot_total_xp": 13581,
+      "bot_xp": 1775,
+      "bot_total_xp": 13600,
       "daily_work_count": 92,
       "shock_worker": false,
       "mee6_level": 15,
@@ -303397,8 +303399,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 338912,
-      "market_cap": 338912,
+      "share_price": 339008,
+      "market_cap": 339008,
       "employees": 31,
       "level": 1,
       "buildings": {
@@ -303488,7 +303490,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-21T04:59:27.007Z",
       "price_history": [
-        329349,
         329395,
         329505,
         329568,
@@ -303587,7 +303588,8 @@
         338800,
         338784,
         338816,
-        338912
+        338912,
+        339008
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -304003,11 +304005,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 88,
-      "change_percent": 0.2946222143689956,
-      "recorded_at": "2026-09-21T06:39:41.938Z"
-    },
     {
       "price": 88,
       "change_percent": 1.0100966692966586,
@@ -304502,6 +304499,11 @@
       "price": 93,
       "change_percent": 1.1856140995498468,
       "recorded_at": "2026-09-21T10:54:44.066Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.6511128824613852,
+      "recorded_at": "2026-09-21T10:58:22.312Z"
     }
   ],
   "factory_names": [
@@ -312921,7 +312923,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1789699640761,
       "1309104161278918706": 1789052535895,
-      "1325111649816023092": 1789944547847,
+      "1325111649816023092": 1789988303516,
       "1506785783506534426": 1789931530879,
       "807254722251587614": 1789986515437,
       "1353373037994705078": 1789068315659,
@@ -337284,16 +337286,16 @@
       "name": "meo II",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
       "health": 48,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:59:36.433Z",
-      "last_fed": "2026-09-20T20:43:34.455Z",
+      "last_fed": "2026-09-21T10:58:51.707Z",
       "last_watered": null,
       "death": null,
-      "warned_empty": true
+      "warned_empty": false
     },
     "1511756975392948224": {
       "name": "Soviet Cat",
@@ -337382,10 +337384,6 @@
         "qty": 24,
         "price": 945
       },
-      "Cake": {
-        "qty": 7,
-        "price": 302
-      },
       "Gas Fuel": {
         "qty": 8,
         "price": 370
@@ -337416,7 +337414,7 @@
       }
     },
     "sold_count": 124,
-    "bought_count": 40
+    "bought_count": 47
   },
   "leaders": {
     "gs": {
