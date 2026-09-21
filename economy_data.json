@@ -847,15 +847,15 @@
       "pet_food_source": {}
     },
     "1528783188728483944": {
-      "cash": 180,
+      "cash": 195,
       "bank": 45,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 44,
       "share_holdings": {},
-      "last_work": "2026-09-21T12:03:43.563Z",
-      "work_count": 80,
+      "last_work": "2026-09-21T14:34:11.092Z",
+      "work_count": 81,
       "last_claim": "2026-09-19T11:58:02.121Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -868,13 +868,13 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 9,
-      "bot_xp": 948,
-      "bot_total_xp": 4668,
-      "daily_work_count": 31,
+      "bot_level": 10,
+      "bot_xp": 31,
+      "bot_total_xp": 4706,
+      "daily_work_count": 32,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-21",
-      "mee6_level": 9,
+      "mee6_level": 10,
       "last_laylow": null,
       "work_reminder": false,
       "work_reminder_sent": null,
@@ -303907,14 +303907,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 6817,
+      "funds": 6942,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 61760,
-      "market_cap": 61760,
+      "share_price": 62010,
+      "market_cap": 62010,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -303936,21 +303936,19 @@
       },
       "inventory": {
         "Phosphorite": 64,
-        "Peat": 113,
-        "Fish": 93,
+        "Peat": 114,
+        "Fish": 90,
         "Iron Ore": 1,
         "Oil Shale": 20,
         "Gold": 4,
-        "Wheat": 7,
-        "Sugar": 8,
-        "Timber Planks": 30,
-        "Timber": 2
+        "Timber Planks": 27,
+        "Timber": 19,
+        "Wheat": 10,
+        "Sugar": 10
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-21T08:05:37.905Z",
+      "last_collect": "2026-09-21T14:34:13.993Z",
       "price_history": [
-        72461,
-        73552,
         73875,
         70775,
         70866,
@@ -304048,7 +304046,9 @@
         61106,
         61920,
         62100,
-        61760
+        61760,
+        61765,
+        62010
       ],
       "is_state_owned": true,
       "director_id": "1528783188728483944",
@@ -304128,16 +304128,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 88,
-      "change_percent": 0.7719125718146681,
-      "recorded_at": "2026-09-21T10:04:44.187Z"
-    },
-    {
-      "price": 88,
-      "change_percent": 0.8311623909271867,
-      "recorded_at": "2026-09-21T10:05:24.597Z"
-    },
     {
       "price": 88,
       "change_percent": 1.0799492995761955,
@@ -304627,6 +304617,16 @@
       "price": 105,
       "change_percent": 0.7449911633668723,
       "recorded_at": "2026-09-21T14:31:49.908Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 0.3858341876526778,
+      "recorded_at": "2026-09-21T14:34:12.216Z"
+    },
+    {
+      "price": 104,
+      "change_percent": -0.029947401798212585,
+      "recorded_at": "2026-09-21T14:34:15.549Z"
     }
   ],
   "factory_names": [
@@ -304648,7 +304648,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 9864.45382259346,
+  "money_printed": 9879.45382259346,
   "total_bank_reserves": 433712,
   "inflation_history": [
     0,
@@ -312928,7 +312928,7 @@
         "1521043721129558017": 1,
         "1186597507720019988": 6,
         "1536339779140976711": 5,
-        "1528783188728483944": 2,
+        "1528783188728483944": 3,
         "780837437987094560": 1,
         "1522851408611770409": 2,
         "1397601108616024075": 1,
@@ -331234,13 +331234,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1265605857224298546",
-      "from": 0,
-      "to": 1,
-      "at": "2026-09-16T19:35:10.877Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1549443000881389619",
       "from": 0,
       "to": 1,
@@ -332632,12 +332625,19 @@
       "to": 6,
       "at": "2026-09-21T13:56:17.092Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1528783188728483944",
+      "from": 9,
+      "to": 10,
+      "at": "2026-09-21T14:34:11.093Z",
+      "reason": "work"
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 20,
-    "beforeLvlC": 6,
-    "afterLvl": 6,
+    "xpGainC": 22,
+    "beforeLvlC": 10,
+    "afterLvl": 10,
     "leveled": []
   },
   "central_bank": {
