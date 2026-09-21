@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 25,
-      "bot_xp": 377,
-      "bot_total_xp": 42377,
+      "bot_xp": 399,
+      "bot_total_xp": 42399,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 25,
@@ -125938,8 +125938,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 15,
+      "bot_total_xp": 15,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -303889,8 +303889,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 229.7914638209785,
-      "underground_heat": 1298.6458346916252,
+      "heat": 229.11352476035356,
+      "underground_heat": 1298.021627203209,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304285,16 +304285,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 102,
-      "change_percent": 0.1597014642775376,
-      "recorded_at": "2026-09-21T15:04:45.078Z"
-    },
-    {
-      "price": 102,
-      "change_percent": 0.4821689831157067,
-      "recorded_at": "2026-09-21T15:09:45.077Z"
-    },
     {
       "price": 102,
       "change_percent": 0.41756433824356254,
@@ -304784,6 +304774,16 @@
       "price": 103,
       "change_percent": 0.4088152668702076,
       "recorded_at": "2026-09-21T18:46:26.991Z"
+    },
+    {
+      "price": 95,
+      "change_percent": -7.627340754879776,
+      "recorded_at": "2026-09-21T18:49:38.369Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.8420217519072213,
+      "recorded_at": "2026-09-21T18:49:47.308Z"
     }
   ],
   "factory_names": [
@@ -304805,8 +304805,8 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 9095.974012120712,
-  "total_bank_reserves": 446154,
+  "money_printed": 8914.054531878299,
+  "total_bank_reserves": 447664,
   "inflation_history": [
     0,
     0,
@@ -305065,14 +305065,14 @@
     "Glass": 1.4124796113753508,
     "Steel Beam": 1.3930399527485269,
     "Machine Parts": 1.2901392980193147,
-    "Refined Fuel": 1.3859893139034747,
+    "Refined Fuel": 1.3883558821793116,
     "Uranium Rod": 1.399502313678759,
     "Reactor Core": 1.3954772387626295,
     "Circuit Board": 1.4026610346182489,
     "Flour": 1.3677943605094032,
-    "Sugar": 0.8335961135292239,
+    "Sugar": 0.8419647131248494,
     "Wine": 1.4124291646874383,
-    "Canned Food": 1.3593598737963106,
+    "Canned Food": 1.3634962398861965,
     "Canned Fish": 1.4046274922068083,
     "Smoked Fish": 1.404577776392111,
     "Fish Stew": 1.4120002421751996,
@@ -305119,8 +305119,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Sugar": 6,
-    "Canned Food": 1
+    "Sugar": 6
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -305133,7 +305132,7 @@
     "Peat Fuel": 10,
     "Cake": 260,
     "Smoked Fish": 20,
-    "Canned Food": 17,
+    "Canned Food": 18,
     "Uranium Rod": 20,
     "Canned Fish": 19,
     "Bread": 274,
@@ -305149,11 +305148,6 @@
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-14T03:28:34.460Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -306648,6 +306642,11 @@
       "item": "Sugar",
       "qty": 1,
       "at": "2026-09-21T18:34:42.525Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 1,
+      "at": "2026-09-21T18:49:42.412Z"
     }
   ],
   "demand_history": {
@@ -308735,6 +308734,11 @@
       {
         "demand": 1.3511965311446843,
         "at": "2026-09-21T18:19:42.489Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.3634962398861965,
+        "at": "2026-09-21T18:49:42.412Z",
         "supply": 3
       }
     ],
@@ -312411,10 +312415,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 526431,
-      "at": "2026-09-21T10:39:44.847Z"
-    },
-    {
       "total": 526449,
       "at": "2026-09-21T10:44:44.850Z"
     },
@@ -312809,6 +312809,10 @@
     {
       "total": 539581,
       "at": "2026-09-21T18:44:48.087Z"
+    },
+    {
+      "total": 541116,
+      "at": "2026-09-21T18:49:48.083Z"
     }
   ],
   "gold_rush": null,
@@ -312835,7 +312839,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 8.787449999999984,
+  "heat_global": 8.487449999999983,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -313297,7 +313301,7 @@
       "1544820489191559270": 1790014499204,
       "791747702689103893": 1790013387107,
       "1456622719985782864": 1790015534054,
-      "1082686076491137115": 1790016328998,
+      "1082686076491137115": 1790016548711,
       "1229741033265299506": 1790015842558,
       "1536339779140976711": 1790015658056,
       "780837437987094560": 1789992618287,
@@ -313709,7 +313713,8 @@
       "1409603740515827843": 1790014993999,
       "1502373335349199012": 1790011034808,
       "875747075046928415": 1790015513629,
-      "1176419080652197919": 1790015905994
+      "1176419080652197919": 1790015905994,
+      "895937675813593138": 1790016573229
     }
   },
   "mee6_cache": {
@@ -313726,21 +313731,9 @@
       "2026-Q3": {
         "positive": 64,
         "negative": 30,
-        "neutral": 1449,
-        "total": 1543,
+        "neutral": 1450,
+        "total": 1544,
         "mentions": [
-          {
-            "at": "2026-09-16T17:30:36.572Z",
-            "userId": "1521043721129558017",
-            "username": "hamster_fed",
-            "channelId": "605951687974453248",
-            "messageId": "1549834902646562917",
-            "text": "<@1082686076491137115> I will host on phone and mod chat on laptop",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-16T17:31:20.091Z",
             "userId": "1521043721129558017",
@@ -319728,23 +319721,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-21T18:49:09.481Z",
+            "userId": "1082686076491137115",
+            "username": "hyawii2.0",
+            "channelId": "606543995165999104",
+            "messageId": "1551666610190688331",
+            "text": "WHAT YOUR SSR CAN DO WITH LIMITED AUTONOMY\n\nPolitics • Make your own factions inside the SSR — no other parties besides CPSU per Final Art 12 • Elect your own de facto ruler like the Republican Executive Committee  • Run your own SSR council for local votes • Make local rules as long as they follow Final Art 3\n\nEconomy • Run your own local budget and factories • Set local wages inside Union limits • Control your SSR resources per your work zone • Trade with other SSRs per the trade bonus\n\nOther ",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:33:03.626Z",
-        "userId": "872464195306782770",
-        "username": "the_aurelius.",
-        "channelId": "605951687974453248",
-        "messageId": "1548385936876896279",
-        "text": "# <@1082686076491137115> THE NURISTANIS WANT A GTA VI HOLIDAY\nhttps://media.discordapp.net/attachments/605951687974453248/1137582562689175582/7uw0yy.gif?ex=6aa6bc12&is=6aa56a92&hm=cfccef1c5ca51010221ee638ae3cbcc4d068d3eaca9cc6371e1d09fdafdb1781&=",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:33:04.207Z",
         "userId": "807944786840387675",
@@ -331500,9 +331494,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-21T18:49:09.481Z",
+        "userId": "1082686076491137115",
+        "username": "hyawii2.0",
+        "channelId": "606543995165999104",
+        "messageId": "1551666610190688331",
+        "text": "WHAT YOUR SSR CAN DO WITH LIMITED AUTONOMY\n\nPolitics • Make your own factions inside the SSR — no other parties besides CPSU per Final Art 12 • Elect your own de facto ruler like the Republican Executive Committee  • Run your own SSR council for local votes • Make local rules as long as they follow Final Art 3\n\nEconomy • Run your own local budget and factories • Set local wages inside Union limits • Control your SSR resources per your work zone • Trade with other SSRs per the trade bonus\n\nOther ",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-21T18:45:21.903Z",
+    "last_scan": "2026-09-21T18:49:09.481Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -335676,12 +335682,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.36,
+    "rub_per_usd": 7.42,
     "history": [
-      {
-        "rate": 7.1,
-        "at": "2026-09-21T02:09:38.614Z"
-      },
       {
         "rate": 6.98,
         "at": "2026-09-21T02:19:38.658Z"
@@ -336077,9 +336079,13 @@
       {
         "rate": 7.36,
         "at": "2026-09-21T18:39:41.575Z"
+      },
+      {
+        "rate": 7.42,
+        "at": "2026-09-21T18:49:41.577Z"
       }
     ],
-    "last_update": "2026-09-21T18:39:41.575Z",
+    "last_update": "2026-09-21T18:49:41.577Z",
     "manual_override": null
   },
   "national_budget": {
