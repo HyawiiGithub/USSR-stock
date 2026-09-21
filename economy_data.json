@@ -925,8 +925,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 154,
-      "bank": 6605,
+      "cash": 0,
+      "bank": 9233,
       "resources": {},
       "inventory": {
         "Bread": 7
@@ -943,8 +943,8 @@
       "is_state_director": true,
       "director_of": "state_26",
       "ceo_of": null,
-      "dirty_cash": 5104,
-      "heat": 15.044,
+      "dirty_cash": 104,
+      "heat": 10.719247230365188,
       "wanted": 0,
       "last_illegal": "2026-09-21T13:06:40.229Z",
       "total_heat_generated": 1266.1508999999994,
@@ -1999,7 +1999,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 157,
-      "heat": 15.042,
+      "heat": 14.134536942115297,
       "wanted": 0,
       "last_illegal": "2026-09-21T13:08:02.886Z",
       "total_heat_generated": 771.6600000000002,
@@ -87840,8 +87840,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 1018,
-      "bot_total_xp": 24868,
+      "bot_xp": 1039,
+      "bot_total_xp": 24889,
       "daily_work_count": 69,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-20",
@@ -266183,8 +266183,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 1107,
-      "bot_total_xp": 6882,
+      "bot_xp": 1128,
+      "bot_total_xp": 6903,
       "daily_work_count": 19,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-20",
@@ -303651,8 +303651,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 199.85069509193414,
-      "underground_heat": 1295.941114628864,
+      "heat": 197.38650043830452,
+      "underground_heat": 1295.2192532132763,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304047,11 +304047,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.8525593143969581,
-      "recorded_at": "2026-09-21T08:03:58.553Z"
-    },
     {
       "price": 100,
       "change_percent": -0.17993609795807913,
@@ -304546,6 +304541,11 @@
       "price": 97,
       "change_percent": -0.09771158555403076,
       "recorded_at": "2026-09-21T13:08:04.066Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.5566959003728081,
+      "recorded_at": "2026-09-21T13:09:44.378Z"
     }
   ],
   "factory_names": [
@@ -304567,7 +304567,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 10280.498178881026,
+  "money_printed": 10074.888215303405,
   "total_bank_reserves": 431084,
   "inflation_history": [
     0,
@@ -312074,13 +312074,16 @@
       "username": "GOSBANK",
       "action": "weekly_taxes",
       "details": "collected ₽30,719 from 57 users + 7 companies (individual ₽18,463, corporate ₽12,256) | users: 780837 ₽1,185, 108268 ₽0, 918518 ₽156, 730223 ₽1,353, Google Giggles ₽604, 110723 ₽100, 870686 ₽186, 118659 ₽920, 152104 ₽246, 147013 ₽25 … | companies: State Mining Corp ₽309, Kewlian Industrial Group ₽698, State Oil & Gas ₽5,346, Soviet Agriculture ₽1,058, State Nuclear Energy ₽3,120, Baltic Timber & Harbour Co ₽358, Soviet National Defense Industry ₽1,367"
+    },
+    {
+      "at": "2026-09-21T13:09:38.927Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "launder",
+      "details": "₽5,000 dirty → ₽2,500 clean fee ₽2,500"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 506774,
-      "at": "2026-09-21T04:59:43.342Z"
-    },
     {
       "total": 506799,
       "at": "2026-09-21T05:04:43.226Z"
@@ -312476,6 +312479,10 @@
     {
       "total": 524397,
       "at": "2026-09-21T13:04:45.493Z"
+    },
+    {
+      "total": 526921,
+      "at": "2026-09-21T13:09:45.337Z"
     }
   ],
   "gold_rush": null,
@@ -312502,7 +312509,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 4.5129,
+  "heat_global": 4.2129,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -312971,7 +312978,7 @@
       "1309104161278918706": 1789052535895,
       "1325111649816023092": 1789988303516,
       "1506785783506534426": 1789991061532,
-      "807254722251587614": 1789993376572,
+      "807254722251587614": 1789996219686,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1789990823437,
       "997903130543005767": 1788970364999,
@@ -313047,7 +313054,7 @@
       "673726585194676274": 1789566660918,
       "1405587743542870188": 1789535273706,
       "1489932552394248263": 1789594516876,
-      "730696111198699600": 1789996113629,
+      "730696111198699600": 1789996179481,
       "850229826231992320": 1789468435424,
       "1202316445569273959": 1789331745467,
       "1541073090019074150": 1789926398058,
@@ -335283,12 +335290,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.14,
+    "rub_per_usd": 7.27,
     "history": [
-      {
-        "rate": 7.12,
-        "at": "2026-09-20T20:28:12.386Z"
-      },
       {
         "rate": 7.06,
         "at": "2026-09-20T20:35:07.888Z"
@@ -335684,9 +335687,13 @@
       {
         "rate": 7.14,
         "at": "2026-09-21T12:59:40.308Z"
+      },
+      {
+        "rate": 7.27,
+        "at": "2026-09-21T13:09:40.381Z"
       }
     ],
-    "last_update": "2026-09-21T12:59:40.308Z",
+    "last_update": "2026-09-21T13:09:40.381Z",
     "manual_override": null
   },
   "national_budget": {
