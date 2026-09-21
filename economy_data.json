@@ -304647,9 +304647,7 @@
     "Flour": "2026-09-19T18:21:48.830Z"
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
-  "ai_store": {
-    "Machine Parts": 1
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
@@ -304671,17 +304669,12 @@
     "Reactor Core": 7,
     "Gas Fuel": 101,
     "Steel Beam": 2,
-    "Machine Parts": 45,
+    "Machine Parts": 46,
     "Sugar": 21,
     "Fertilizer": 10,
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-13T15:10:31.403Z"
-    },
     {
       "item": "Uranium Rod",
       "qty": 1,
@@ -306176,6 +306169,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-09-21T05:49:40.451Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-09-21T06:04:40.481Z"
     }
   ],
   "demand_history": {
@@ -309388,6 +309386,11 @@
       {
         "demand": 1.192808446505546,
         "at": "2026-09-21T05:49:40.454Z",
+        "supply": 27
+      },
+      {
+        "demand": 1.2029898910309895,
+        "at": "2026-09-21T06:04:40.482Z",
         "supply": 27
       }
     ],
