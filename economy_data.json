@@ -81,8 +81,8 @@
       "last_illegal": "2026-09-15T12:43:14.516Z",
       "total_heat_generated": 163.697,
       "bot_level": 12,
-      "bot_xp": 980,
-      "bot_total_xp": 8010,
+      "bot_xp": 992,
+      "bot_total_xp": 8022,
       "daily_work_count": 43,
       "shock_worker": false,
       "mee6_level": 12,
@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 25,
-      "bot_xp": 3325,
-      "bot_total_xp": 45325,
+      "bot_xp": 3344,
+      "bot_total_xp": 45344,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 25,
@@ -833,8 +833,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 267,
-      "bot_total_xp": 16247,
+      "bot_xp": 285,
+      "bot_total_xp": 16265,
       "daily_work_count": 66,
       "shock_worker": false,
       "mee6_level": 17,
@@ -87849,8 +87849,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 2995,
-      "bot_total_xp": 26845,
+      "bot_xp": 3007,
+      "bot_total_xp": 26857,
       "daily_work_count": 73,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-21",
@@ -304004,8 +304004,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 206.382800029187,
-      "underground_heat": 1276.6922674953053,
+      "heat": 205.65383642646916,
+      "underground_heat": 1275.9163829095007,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304400,11 +304400,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": 0.44132375303257854,
-      "recorded_at": "2026-09-21T18:44:47.315Z"
-    },
     {
       "price": 103,
       "change_percent": 0.4088152668702076,
@@ -304899,6 +304894,11 @@
       "price": 98,
       "change_percent": 0.5824952157758163,
       "recorded_at": "2026-09-21T22:26:23.935Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.22789287276392375,
+      "recorded_at": "2026-09-21T22:31:23.957Z"
     }
   ],
   "factory_names": [
@@ -305241,7 +305241,7 @@
     "Flour": 4,
     "Machine Parts": 3,
     "Refined Fuel": 3,
-    "Aluminium Ingot": 5
+    "Aluminium Ingot": 4
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -305268,14 +305268,10 @@
     "Sugar": 37,
     "Fertilizer": 17,
     "Flour": 16,
-    "Corn Meal": 1
+    "Corn Meal": 1,
+    "Aluminium Ingot": 1
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 2,
-      "at": "2026-09-14T14:28:34.704Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -306770,6 +306766,11 @@
       "item": "Flour",
       "qty": 2,
       "at": "2026-09-21T20:04:43.171Z"
+    },
+    {
+      "item": "Aluminium Ingot",
+      "qty": 1,
+      "at": "2026-09-21T22:31:22.611Z"
     }
   ],
   "demand_history": {
@@ -310242,6 +310243,13 @@
         "at": "2026-09-21T19:49:43.217Z",
         "supply": 5
       }
+    ],
+    "Aluminium Ingot": [
+      {
+        "demand": 1.3287978977601853,
+        "at": "2026-09-21T22:31:22.611Z",
+        "supply": 0
+      }
     ]
   },
   "blacklist": {
@@ -312587,10 +312595,6 @@
   "total_rubles_history": [
     {
       "total": 526561,
-      "at": "2026-09-21T13:44:45.446Z"
-    },
-    {
-      "total": 526561,
       "at": "2026-09-21T13:49:45.440Z"
     },
     {
@@ -312984,6 +312988,10 @@
     {
       "total": 539769,
       "at": "2026-09-21T22:26:24.255Z"
+    },
+    {
+      "total": 539769,
+      "at": "2026-09-21T22:31:24.297Z"
     }
   ],
   "gold_rush": null,
