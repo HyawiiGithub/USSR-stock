@@ -297654,8 +297654,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 206,
-      "bot_total_xp": 2411,
+      "bot_xp": 221,
+      "bot_total_xp": 2426,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -303735,8 +303735,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 193.7314284175117,
-      "underground_heat": 1302.488381100148,
+      "heat": 192.95598030396079,
+      "underground_heat": 1301.923133857331,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -312176,10 +312176,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 507956,
-      "at": "2026-09-21T07:29:43.589Z"
-    },
-    {
       "total": 508006,
       "at": "2026-09-21T07:34:43.437Z"
     },
@@ -312574,6 +312570,10 @@
     {
       "total": 527405,
       "at": "2026-09-21T15:39:46.084Z"
+    },
+    {
+      "total": 527420,
+      "at": "2026-09-21T15:44:46.195Z"
     }
   ],
   "gold_rush": null,
@@ -313332,7 +313332,7 @@
       "1235612627611156697": 1789576589664,
       "1379201314935799868": 1789579046001,
       "925741833210986557": 1789582386194,
-      "1130672316045602906": 1790004010357,
+      "1130672316045602906": 1790005495523,
       "1549449903892201603": 1789585046038,
       "896463219651145768": 1789585159730,
       "1206781514822590488": 1789585513220,
@@ -337640,56 +337640,7 @@
   "ai_memory": {},
   "elections": {
     "enabled": true,
-    "active": {
-      "id": "EL3",
-      "title": "Premiership Election",
-      "candidates": [
-        {
-          "id": "C1",
-          "name": "Brill",
-          "userId": "1536339779140976711",
-          "avatarHash": "255d9d5187bb4fbfd36231b79dd638bf",
-          "avatarAnimated": false,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-20T15:01:28.477Z"
-        },
-        {
-          "id": "C2",
-          "name": "Poetr",
-          "userId": "913497950213267577",
-          "avatarHash": "dfb37a9623deb757f1f6bef44c787504",
-          "avatarAnimated": false,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-20T15:01:42.370Z"
-        },
-        {
-          "id": "C3",
-          "name": "Erwiny",
-          "userId": "1229741033265299506",
-          "avatarHash": "d1d81cdc9bd2b5f35f081bea5878990a",
-          "avatarAnimated": false,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-20T15:03:35.612Z"
-        }
-      ],
-      "votes": {
-        "1082686076491137115": "C1"
-      },
-      "timeline": [
-        {
-          "t": "2026-09-20T21:35:38.013Z",
-          "cid": "C1",
-          "by": "1082686076491137115"
-        }
-      ],
-      "startsAt": "2026-09-20T15:44:02.971Z",
-      "endsAt": "2026-09-21T15:44:02.971Z",
-      "status": "running",
-      "winnerId": null,
-      "updateMessageId": "1551257800938885181",
-      "next_cid": 3,
-      "startedBy": "hyawii2.0"
-    },
+    "active": null,
     "history": [
       {
         "id": "EL1",
@@ -337725,6 +337676,31 @@
         ],
         "total": 2,
         "endedAt": "2026-09-20T12:23:16.257Z"
+      },
+      {
+        "id": "EL3",
+        "title": "Premiership Election",
+        "winnerId": "C1",
+        "winnerName": "Brill",
+        "totals": [
+          {
+            "id": "C1",
+            "name": "Brill",
+            "votes": 1
+          },
+          {
+            "id": "C2",
+            "name": "Poetr",
+            "votes": 0
+          },
+          {
+            "id": "C3",
+            "name": "Erwiny",
+            "votes": 0
+          }
+        ],
+        "total": 1,
+        "endedAt": "2026-09-21T15:44:57.119Z"
       }
     ],
     "updateChannelId": "1547671101725876254",
