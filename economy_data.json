@@ -304648,7 +304648,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 5
+    "Machine Parts": 3
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -304671,17 +304671,12 @@
     "Reactor Core": 7,
     "Gas Fuel": 101,
     "Steel Beam": 2,
-    "Machine Parts": 41,
+    "Machine Parts": 43,
     "Sugar": 21,
     "Fertilizer": 10,
     "Flour": 10
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-13T14:18:41.469Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -306176,6 +306171,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-09-21T05:19:39.801Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 2,
+      "at": "2026-09-21T05:34:39.865Z"
     }
   ],
   "demand_history": {
@@ -309378,6 +309378,11 @@
       {
         "demand": 1.1720073311841617,
         "at": "2026-09-21T05:19:39.801Z",
+        "supply": 27
+      },
+      {
+        "demand": 1.177038480706973,
+        "at": "2026-09-21T05:34:39.866Z",
         "supply": 27
       }
     ],
