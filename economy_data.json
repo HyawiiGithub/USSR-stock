@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 25,
-      "bot_xp": 276,
-      "bot_total_xp": 42276,
+      "bot_xp": 297,
+      "bot_total_xp": 42297,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 25,
@@ -1578,8 +1578,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 530,
-      "bot_total_xp": 6305,
+      "bot_xp": 554,
+      "bot_total_xp": 6329,
       "daily_work_count": 6,
       "shock_worker": false,
       "last_laylow": null,
@@ -87846,8 +87846,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 1395,
-      "bot_total_xp": 25245,
+      "bot_xp": 1418,
+      "bot_total_xp": 25268,
       "daily_work_count": 71,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-21",
@@ -207557,8 +207557,8 @@
       "pet_food_source": {}
     },
     "1397601108616024075": {
-      "cash": 835,
-      "bank": 1996,
+      "cash": 0,
+      "bank": 12982,
       "resources": {},
       "inventory": {
         "Sugar": 6
@@ -294600,9 +294600,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 98,
-      "bot_total_xp": 98,
+      "bot_level": 1,
+      "bot_xp": 17,
+      "bot_total_xp": 117,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -294614,7 +294614,8 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "mee6_level": 1
     },
     "1455538859264839914": {
       "cash": 0,
@@ -303020,6 +303021,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1502373335349199012": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 20,
+      "bot_total_xp": 20,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -303030,14 +303069,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@807254722251587614>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 5878,
+      "funds": 6397,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 190314,
-      "market_cap": 190314,
+      "share_price": 190687,
+      "market_cap": 190687,
       "employees": 10,
       "level": 1,
       "buildings": {
@@ -303078,18 +303117,16 @@
         "Sugar": 118,
         "Contraband: Cocaine": 1,
         "Machine Parts": 2,
-        "Wheat": 38,
+        "Wheat": 8,
         "Steel Beam": 2,
         "Uranium": 1,
         "Coal": 10,
         "Iron Ingot": 4,
-        "Canned Food": 3
+        "Flour": 10
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-21T16:48:53.280Z",
       "price_history": [
-        194988,
-        195093,
         255618,
         255760,
         255793,
@@ -303187,11 +303224,13 @@
         189952,
         190088,
         190224,
-        190314
+        190314,
+        190474,
+        190687
       ],
       "is_state_owned": true,
       "director_id": "807254722251587614",
-      "last_factorydeal": "2026-09-20T16:45:57.141Z",
+      "last_factorydeal": "2026-09-21T17:17:34.300Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -304671,16 +304710,16 @@
   ],
   "factory_names": [
     "Soviet Iron Foundry",
-    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
-    "Ural Heavy Industries",
-    "Volga Shipbuilding"
+    "Ural Heavy Industries"
   ],
   "used_factory_names": [
     "Stalin Tractor Plant",
     "Lenin Machine Works",
-    "Red Star Steelworks"
+    "Red Star Steelworks",
+    "Khrushchev Agricultural",
+    "Volga Shipbuilding"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -304688,7 +304727,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 10125.383062384075,
+  "money_printed": 10644.383062384075,
   "total_bank_reserves": 433230,
   "inflation_history": [
     0,
@@ -304938,11 +304977,11 @@
     "Cake": 1.3861879556167012,
     "Bread": 1.3652614702614572,
     "Copper Ingot": 1.408152927764137,
-    "Iron Ingot": 1.3759283872719899,
+    "Iron Ingot": 1.3859283872719899,
     "Steel Ingot": 1.3237932436327096,
     "Gold Bar": 1.1872332165921153,
     "Aluminium Ingot": 1.412382867203119,
-    "Timber Planks": 1.2885473574396475,
+    "Timber Planks": 1.2985473574396476,
     "Bricks": 1.4124291646874383,
     "Concrete": 1.4190206265550378,
     "Glass": 1.4189348524212293,
@@ -304954,8 +304993,8 @@
     "Circuit Board": 1.4026610346182489,
     "Flour": 1.3904064202423339,
     "Sugar": 0.6282401346693602,
-    "Wine": 1.41228061381012,
-    "Canned Food": 1.404628571374045,
+    "Wine": 1.42228061381012,
+    "Canned Food": 1.3371285713740448,
     "Canned Fish": 1.4082266528121035,
     "Smoked Fish": 1.404577776392111,
     "Fish Stew": 1.4182075232771443,
@@ -304972,7 +305011,7 @@
     "Antimony Alloy": 1.4124440590676388,
     "Molybdenum Rod": 1.4124291646874383,
     "Aluminium Sheet": 1.404734855605518,
-    "Shale Oil": 1.4081795217819866
+    "Shale Oil": 1.4181795217819866
   },
   "market_last_sale": {
     "Fuel": "2026-09-21T14:14:42.989Z",
@@ -304987,7 +305026,7 @@
     "Peat Fuel": "2026-08-30T10:15:06.364Z",
     "Smoked Fish": "2026-08-31T11:44:52.987Z",
     "Canned Fish": "2026-09-15T19:21:25.010Z",
-    "Canned Food": "2026-09-03T18:04:45.489Z",
+    "Canned Food": "2026-09-21T17:17:34.300Z",
     "Uranium Rod": "2026-09-20T16:45:57.142Z",
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z",
     "Circuit Board": "2026-09-20T10:21:03.994Z",
@@ -305002,7 +305041,8 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Sugar": 15
+    "Sugar": 15,
+    "Canned Food": 3
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -313135,7 +313175,7 @@
       "1544820489191559270": 1790006381529,
       "791747702689103893": 1790011009300,
       "1456622719985782864": 1790009249307,
-      "1082686076491137115": 1790010782485,
+      "1082686076491137115": 1790011040207,
       "1229741033265299506": 1789974906648,
       "1536339779140976711": 1790010860590,
       "780837437987094560": 1789992618287,
@@ -313150,7 +313190,7 @@
       "1309104161278918706": 1790010702166,
       "1325111649816023092": 1790010252550,
       "1506785783506534426": 1790010991728,
-      "807254722251587614": 1790010639564,
+      "807254722251587614": 1790011073612,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1790009678887,
       "997903130543005767": 1788970364999,
@@ -313262,7 +313302,7 @@
       "872464195306782770": 1789234862495,
       "1214587968296067083": 1789243357880,
       "1473761822858281192": 1789161331592,
-      "1379734184259747851": 1790010974062,
+      "1379734184259747851": 1790011037623,
       "1173662113340854353": 1789932482649,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
@@ -313330,7 +313370,7 @@
       "1405393814960734290": 1789305490799,
       "1548662922459353140": 1789308786706,
       "1211857264189644833": 1789338554009,
-      "1097843158269825066": 1790010862635,
+      "1097843158269825066": 1790011052409,
       "1502750979160801410": 1789313349525,
       "1455538859264839914": 1789314846047,
       "1231321353257484309": 1789930546677,
@@ -313544,7 +313584,8 @@
       "1460621806686703740": 1789987668302,
       "1498736500966297843": 1789991140138,
       "1183526347704905800": 1790005482937,
-      "1409603740515827843": 1790005884643
+      "1409603740515827843": 1790005884643,
+      "1502373335349199012": 1790011034808
     }
   },
   "mee6_cache": {
@@ -331342,13 +331383,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1338737886874570843",
-      "from": 0,
-      "to": 1,
-      "at": "2026-09-16T21:18:56.409Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1458831076528095357",
       "from": 0,
       "to": 1,
@@ -332739,6 +332773,13 @@
       "from": 0,
       "to": 1,
       "at": "2026-09-21T17:11:42.167Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1097843158269825066",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-21T17:17:32.410Z",
       "reason": "chat"
     }
   ],
@@ -337708,9 +337749,13 @@
       "Fuel": {
         "qty": 1,
         "price": 493
+      },
+      "Canned Food": {
+        "qty": 3,
+        "price": 198
       }
     },
-    "sold_count": 153,
+    "sold_count": 156,
     "bought_count": 72
   },
   "leaders": {
