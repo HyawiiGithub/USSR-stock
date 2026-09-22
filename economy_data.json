@@ -954,8 +954,8 @@
       "last_illegal": "2026-09-21T17:16:17.254Z",
       "total_heat_generated": 1306.9988999999994,
       "bot_level": 24,
-      "bot_xp": 1956,
-      "bot_total_xp": 39776,
+      "bot_xp": 1973,
+      "bot_total_xp": 39793,
       "daily_work_count": 651,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-22",
@@ -2011,15 +2011,15 @@
       "last_illegal": "2026-09-21T13:18:12.213Z",
       "total_heat_generated": 781.4930000000002,
       "bot_level": 20,
-      "bot_xp": 1785,
-      "bot_total_xp": 25635,
+      "bot_xp": 1804,
+      "bot_total_xp": 25654,
       "daily_work_count": 128,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-22",
       "mee6_level": 20,
       "last_laylow": "2026-09-21T13:18:24.570Z",
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-09-22T05:31:30.869Z",
       "collect_reminder": false,
       "collect_reminder_sent": null,
       "train_reminder": false,
@@ -125940,8 +125940,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 193,
-      "bot_total_xp": 1343,
+      "bot_xp": 211,
+      "bot_total_xp": 1361,
       "daily_work_count": 5,
       "shock_worker": false,
       "last_laylow": null,
@@ -304084,8 +304084,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 149.2578819631505,
-      "underground_heat": 1218.475543579903,
+      "heat": 148.74147063670907,
+      "underground_heat": 1217.765353589328,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304480,11 +304480,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 0.4870517816778757,
-      "recorded_at": "2026-09-21T23:21:26.284Z"
-    },
     {
       "price": 98,
       "change_percent": 0.06510043495508441,
@@ -304979,6 +304974,11 @@
       "price": 88,
       "change_percent": 0.28853436249707487,
       "recorded_at": "2026-09-22T05:26:27.817Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 0.883816603807552,
+      "recorded_at": "2026-09-22T05:31:27.831Z"
     }
   ],
   "factory_names": [
@@ -305315,9 +305315,7 @@
     "Aluminium Ingot": "2026-09-21T20:41:29.446Z"
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
-  "ai_store": {
-    "Cake": 2
-  },
+  "ai_store": {},
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
@@ -305327,7 +305325,7 @@
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
-    "Cake": 264,
+    "Cake": 266,
     "Smoked Fish": 20,
     "Canned Food": 18,
     "Uranium Rod": 20,
@@ -305347,11 +305345,6 @@
     "Aluminium Ingot": 5
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-15T14:15:59.446Z"
-    },
     {
       "item": "Fuel",
       "qty": 2,
@@ -306846,6 +306839,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-22T05:16:25.989Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 2,
+      "at": "2026-09-22T05:31:25.942Z"
     }
   ],
   "demand_history": {
@@ -308512,11 +308510,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.2409353426347087,
-        "at": "2026-09-10T07:53:17.581Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2493184424373478,
         "at": "2026-09-10T08:08:17.526Z",
         "supply": 0
@@ -308809,6 +308802,11 @@
       {
         "demand": 1.2623526139946906,
         "at": "2026-09-22T05:16:25.997Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.270417732421126,
+        "at": "2026-09-22T05:31:25.946Z",
         "supply": 4
       }
     ],
@@ -312779,10 +312777,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 539537,
-      "at": "2026-09-21T20:39:50.056Z"
-    },
-    {
       "total": 539577,
       "at": "2026-09-21T20:44:50.072Z"
     },
@@ -313177,6 +313171,10 @@
     {
       "total": 540103,
       "at": "2026-09-22T05:26:28.402Z"
+    },
+    {
+      "total": 540103,
+      "at": "2026-09-22T05:31:28.392Z"
     }
   ],
   "gold_rush": null,
@@ -313684,7 +313682,7 @@
       "1229741033265299506": 1790033496757,
       "1536339779140976711": 1790022603103,
       "780837437987094560": 1790044548669,
-      "874346333882945547": 1790054328647,
+      "874346333882945547": 1790055062380,
       "870686833976172574": 1790017483854,
       "1186597507720019988": 1790008551219,
       "1521043721129558017": 1790031118690,
@@ -313758,7 +313756,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789827862792,
-      "1511756975392948224": 1790054996533,
+      "1511756975392948224": 1790055057057,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789824818607,
@@ -314093,7 +314091,7 @@
       "1502373335349199012": 1790011034808,
       "875747075046928415": 1790015513629,
       "1176419080652197919": 1790015905994,
-      "895937675813593138": 1790055016387,
+      "895937675813593138": 1790055078064,
       "520925761335721984": 1790017335537,
       "1527242905335631924": 1790017452136,
       "1329014037278887946": 1790020883249,
@@ -337496,7 +337494,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 68,
+      "hunger": 60,
       "water": 60,
       "health": 100,
       "quarters": 3,
@@ -337511,7 +337509,7 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 58,
+      "hunger": 50,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -337526,9 +337524,9 @@
       "name": "meo II",
       "species": "cat",
       "alive": true,
-      "hunger": 36,
+      "hunger": 28,
       "water": 60,
-      "health": 68,
+      "health": 70,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:59:36.433Z",
@@ -337541,7 +337539,7 @@
       "name": "Soviet Cat",
       "species": "cat",
       "alive": true,
-      "hunger": 28,
+      "hunger": 20,
       "water": 60,
       "health": 100,
       "quarters": 2,
@@ -337571,7 +337569,7 @@
       "name": "Kewl",
       "species": "cat",
       "alive": true,
-      "hunger": 60,
+      "hunger": 52,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -337586,9 +337584,9 @@
       "name": "Gaius Octavius von Werman",
       "species": "dog",
       "alive": true,
-      "hunger": 72,
+      "hunger": 64,
       "water": 60,
-      "health": 37,
+      "health": 39,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
@@ -337601,9 +337599,9 @@
       "name": "Mohammed Sumbul 500",
       "species": "cat",
       "alive": true,
-      "hunger": 34,
+      "hunger": 26,
       "water": 60,
-      "health": 76,
+      "health": 79,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T13:40:24.488Z",
@@ -337618,7 +337616,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 85,
+      "health": 70,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-21T13:28:11.192Z",
@@ -337628,7 +337626,7 @@
       "warned_empty": true
     }
   },
-  "pets_last_decay": "2026-09-21T23:19:27.639Z",
+  "pets_last_decay": "2026-09-22T05:31:30.404Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
