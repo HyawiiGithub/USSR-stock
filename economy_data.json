@@ -303908,6 +303908,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1433893335046684835": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -305058,11 +305096,6 @@
   "gsi_history": [
     {
       "price": 99,
-      "change_percent": 0.7311714148509858,
-      "recorded_at": "2026-09-22T10:23:09.816Z"
-    },
-    {
-      "price": 99,
       "change_percent": 0.33788762316583554,
       "recorded_at": "2026-09-22T10:26:30.329Z"
     },
@@ -305555,6 +305588,11 @@
       "price": 90,
       "change_percent": 1.2524401555170828,
       "recorded_at": "2026-09-22T15:51:32.848Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.798046515709102,
+      "recorded_at": "2026-09-22T15:56:32.774Z"
     }
   ],
   "factory_names": [
@@ -305576,7 +305614,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 22216.596295913856,
+  "money_printed": 21772.264369995577,
   "total_bank_reserves": 454681,
   "inflation_history": [
     0,
@@ -305833,22 +305871,22 @@
     "Timber Planks": 1.2943942955745582,
     "Bricks": 1.4001141528643912,
     "Concrete": 1.4055903235192495,
-    "Glass": 1.4189118367941487,
+    "Glass": 1.4173988898506167,
     "Steel Beam": 1.3973181943514992,
     "Machine Parts": 1.2987878736212215,
     "Refined Fuel": 1.3954603240287415,
-    "Uranium Rod": 1.372322416455816,
-    "Reactor Core": 1.358119595289208,
-    "Circuit Board": 1.3907052385016452,
+    "Uranium Rod": 1.3753151111467554,
+    "Reactor Core": 1.3596781931640334,
+    "Circuit Board": 1.389085266904403,
     "Flour": 1.391784829556279,
     "Sugar": 0.8879183645456149,
     "Wine": 1.4119998776378415,
     "Canned Food": 1.39987906825133,
     "Canned Fish": 1.3863986097474852,
-    "Smoked Fish": 1.408219531003381,
+    "Smoked Fish": 1.4061646482525356,
     "Fish Stew": 1.4124247836467947,
     "Peat Fuel": 1.4043303159418232,
-    "Gas Fuel": 1.3746934441348246,
+    "Gas Fuel": 1.3777782998101664,
     "Fertilizer": 1.4046023452030445,
     "Cotton Fabric": 1.4046008743880023,
     "Manganese Alloy": 1.4120143203936348,
@@ -305858,7 +305896,7 @@
     "Tea Pack": 1.4115241105231398,
     "Citrus Juice": 1.4120109617047099,
     "Antimony Alloy": 1.4122749357498534,
-    "Molybdenum Rod": 1.418620696432669,
+    "Molybdenum Rod": 1.4171310407180555,
     "Aluminium Sheet": 1.4046392118473479,
     "Shale Oil": 1.4045970873490874
   },
@@ -313407,14 +313445,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 541139,
-      "at": "2026-09-22T08:21:30.261Z"
-    },
-    {
-      "total": 541189,
-      "at": "2026-09-22T08:26:30.210Z"
-    },
-    {
       "total": 541289,
       "at": "2026-09-22T08:31:30.362Z"
     },
@@ -313805,6 +313835,14 @@
     {
       "total": 545461,
       "at": "2026-09-22T15:51:33.422Z"
+    },
+    {
+      "total": 545461,
+      "at": "2026-09-22T15:56:33.417Z"
+    },
+    {
+      "total": 545461,
+      "at": "2026-09-22T15:56:34.762Z"
     }
   ],
   "gold_rush": null,
@@ -336143,12 +336181,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.6,
+    "rub_per_usd": 7.68,
     "history": [
-      {
-        "rate": 7.29,
-        "at": "2026-09-21T23:46:24.915Z"
-      },
       {
         "rate": 7.26,
         "at": "2026-09-21T23:56:25.039Z"
@@ -336544,9 +336578,13 @@
       {
         "rate": 7.6,
         "at": "2026-09-22T15:46:31.576Z"
+      },
+      {
+        "rate": 7.68,
+        "at": "2026-09-22T15:56:31.655Z"
       }
     ],
-    "last_update": "2026-09-22T15:46:31.576Z",
+    "last_update": "2026-09-22T15:56:31.655Z",
     "manual_override": null
   },
   "national_budget": {
