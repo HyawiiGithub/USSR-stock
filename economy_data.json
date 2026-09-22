@@ -241851,15 +241851,15 @@
       "pet_food_source": {}
     },
     "249550111221219329": {
-      "cash": 0,
+      "cash": 20,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": null,
-      "work_count": 0,
+      "last_work": "2026-09-22T11:17:22.328Z",
+      "work_count": 1,
       "last_claim": null,
       "ssr_region": "Azerbaijanian SSR",
       "employed_at": "State Oil & Gas",
@@ -241872,10 +241872,10 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 85,
-      "bot_total_xp": 85,
-      "daily_work_count": 0,
+      "bot_level": 1,
+      "bot_xp": 4,
+      "bot_total_xp": 104,
+      "daily_work_count": 1,
       "shock_worker": false,
       "last_laylow": null,
       "work_reminder": false,
@@ -241886,7 +241886,9 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "last_daily_work_date": "2026-09-22",
+      "mee6_level": 1
     },
     "1461965393366089792": {
       "cash": 0,
@@ -300458,8 +300460,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 71,
-      "bot_total_xp": 546,
+      "bot_xp": 90,
+      "bot_total_xp": 565,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -303968,14 +303970,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 57985,
+      "funds": 57980,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 173149,
-      "market_cap": 173149,
+      "share_price": 173296,
+      "market_cap": 173296,
       "employees": 6,
       "level": 1,
       "buildings": {
@@ -303998,16 +304000,16 @@
       "inventory": {
         "Oil": 3,
         "Iron Ore": 16,
-        "Flour": 6,
+        "Flour": 5,
         "Wheat": 142,
         "Sugar": 46,
         "Gold": 1,
-        "Gas Fuel": 1
+        "Gas Fuel": 1,
+        "Cotton": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-21T14:13:48.792Z",
       "price_history": [
-        134000,
         136555,
         136745,
         136947,
@@ -304106,7 +304108,8 @@
         178018,
         172925,
         172975,
-        173149
+        173149,
+        173296
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
@@ -304752,11 +304755,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": 0.5753315128588401,
-      "recorded_at": "2026-09-22T07:33:27.709Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.8050614955770528,
       "recorded_at": "2026-09-22T07:33:30.867Z"
     },
@@ -305249,6 +305247,11 @@
       "price": 98,
       "change_percent": 0.34022485701103755,
       "recorded_at": "2026-09-22T11:16:30.521Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.1210503807287433,
+      "recorded_at": "2026-09-22T11:17:23.322Z"
     }
   ],
   "factory_names": [
@@ -305270,7 +305273,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 10152.90679776347,
+  "money_printed": 10167.90679776347,
   "total_bank_reserves": 451562,
   "inflation_history": [
     0,
@@ -313874,7 +313877,8 @@
         "913497950213267577": 5,
         "1522851408611770409": 3,
         "1325111649816023092": 1,
-        "1225275427145121903": 1
+        "1225275427145121903": 1,
+        "249550111221219329": 1
       }
     },
     "collect_daily": {
@@ -314334,7 +314338,7 @@
       "1545362117862096979": 1789806687195,
       "933357231376850954": 1789765435303,
       "1431858554696110162": 1789766752735,
-      "1379775156725092402": 1790075762285,
+      "1379775156725092402": 1790075840779,
       "1111403609381421156": 1789774835801,
       "1176181672723611676": 1789964094137,
       "1532910219980443794": 1789781982181,
@@ -332305,13 +332309,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1130672316045602906",
-      "from": 3,
-      "to": 4,
-      "at": "2026-09-17T19:11:08.090Z",
-      "reason": "chat"
-    },
-    {
       "userId": "870686833976172574",
       "from": 8,
       "to": 9,
@@ -333703,6 +333700,13 @@
       "to": 3,
       "at": "2026-09-22T11:04:29.559Z",
       "reason": "chat"
+    },
+    {
+      "userId": "249550111221219329",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-22T11:17:22.329Z",
+      "reason": "work"
     }
   ],
   "_lastCollectXP": {
