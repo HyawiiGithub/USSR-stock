@@ -541,8 +541,8 @@
     },
     "1470136693821800521": {
       "username": "",
-      "cash": 565,
-      "bank": 0,
+      "cash": 0,
+      "bank": 4747,
       "resources": {
         "Wheat": 1,
         "Natural Gas": 2,
@@ -76591,8 +76591,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 517,
-      "bot_total_xp": 4237,
+      "bot_xp": 540,
+      "bot_total_xp": 4260,
       "daily_work_count": 3,
       "shock_worker": false,
       "last_laylow": null,
@@ -87853,8 +87853,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 1060,
-      "bot_total_xp": 28010,
+      "bot_xp": 1079,
+      "bot_total_xp": 28029,
       "daily_work_count": 74,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-21",
@@ -284384,8 +284384,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 498,
-      "bot_total_xp": 10543,
+      "bot_xp": 519,
+      "bot_total_xp": 10564,
       "daily_work_count": 4,
       "shock_worker": false,
       "last_laylow": null,
@@ -313267,6 +313267,20 @@
       "username": "hyawii2.0",
       "action": "aidel",
       "details": "503918799683321866"
+    },
+    {
+      "at": "2026-09-22T14:26:48.561Z",
+      "by": "1470136693821800521",
+      "username": "alonglongtimeago.",
+      "action": "claim_bond",
+      "details": "bond_3 ₽102"
+    },
+    {
+      "at": "2026-09-22T14:26:57.427Z",
+      "by": "1470136693821800521",
+      "username": "alonglongtimeago.",
+      "action": "claim_bond",
+      "details": "bond_4 ₽4,080"
     }
   ],
   "total_rubles_history": [
@@ -314186,7 +314200,7 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1790087153692,
+      "1544820489191559270": 1790087223899,
       "791747702689103893": 1790079275996,
       "1456622719985782864": 1790060619054,
       "1082686076491137115": 1790087068911,
@@ -314204,7 +314218,7 @@
       "1309104161278918706": 1790010702166,
       "1325111649816023092": 1790087189743,
       "1506785783506534426": 1790087082561,
-      "807254722251587614": 1790087122604,
+      "807254722251587614": 1790087228855,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1790053031026,
       "997903130543005767": 1788970364999,
@@ -314436,7 +314450,7 @@
       "1100092111287750796": 1790008370119,
       "1309193358757068882": 1789488524387,
       "800787404867764225": 1789490159016,
-      "1532381114600128693": 1790087156467,
+      "1532381114600128693": 1790087234327,
       "1464657106111041753": 1789495480995,
       "1396122645573144767": 1789495975533,
       "977863303520981032": 1789498306480,
@@ -333922,7 +333936,7 @@
     "leveled": []
   },
   "central_bank": {
-    "reserves": 15144,
+    "reserves": 10962,
     "interest_rate": 2,
     "prime_rate": 3.5,
     "discount_rate": 6,
@@ -334016,7 +334030,7 @@
       }
     ],
     "total_added": 9874,
-    "total_removed": 144730,
+    "total_removed": 148912,
     "created_at": "2026-09-11T19:05:50.282Z",
     "last_update": "2026-09-14T19:38:20.619Z",
     "chair_id": "874346333882945547",
@@ -334144,8 +334158,8 @@
         "interestRate": 2,
         "boughtAt": "2026-09-14T22:52:30.422Z",
         "maturityAt": "2026-09-21T22:52:30.422Z",
-        "claimed": false,
-        "claimedAt": null
+        "claimed": true,
+        "claimedAt": "2026-09-22T14:26:48.561Z"
       },
       {
         "id": "bond_4",
@@ -334155,8 +334169,8 @@
         "interestRate": 2,
         "boughtAt": "2026-09-14T22:53:14.401Z",
         "maturityAt": "2026-09-21T22:53:14.401Z",
-        "claimed": false,
-        "claimedAt": null
+        "claimed": true,
+        "claimedAt": "2026-09-22T14:26:57.427Z"
       },
       {
         "id": "bond_5",
@@ -334183,8 +334197,8 @@
     ],
     "next_id": 7,
     "total_issued": 9874,
-    "total_redeemed": 0,
-    "total_interest_paid": 0
+    "total_redeemed": 4100,
+    "total_interest_paid": 82
   },
   "mafias": [
     {
