@@ -304083,8 +304083,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 186.25385811384143,
-      "underground_heat": 1256.2609538422678,
+      "heat": 185.59971307872814,
+      "underground_heat": 1255.746667853724,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304479,11 +304479,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.8499518642165929,
-      "recorded_at": "2026-09-21T19:49:14.134Z"
-    },
     {
       "price": 100,
       "change_percent": 0.7307912647335191,
@@ -304978,6 +304973,11 @@
       "price": 96,
       "change_percent": 0.4555675201061968,
       "recorded_at": "2026-09-22T01:12:13.796Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.4959436223750735,
+      "recorded_at": "2026-09-22T01:16:26.827Z"
     }
   ],
   "factory_names": [],
@@ -304998,7 +304998,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 9401.39344622567,
+  "money_printed": 9213.365577301156,
   "total_bank_reserves": 446895,
   "inflation_history": [
     0,
@@ -305316,7 +305316,6 @@
   "ai_store": {
     "Sugar": 4,
     "Corn Meal": 7,
-    "Flour": 1,
     "Machine Parts": 1,
     "Refined Fuel": 1,
     "Aluminium Ingot": 3
@@ -305345,16 +305344,11 @@
     "Machine Parts": 48,
     "Sugar": 47,
     "Fertilizer": 17,
-    "Flour": 19,
+    "Flour": 20,
     "Corn Meal": 1,
     "Aluminium Ingot": 2
   },
   "consumption_history": [
-    {
-      "item": "Circuit Board",
-      "qty": 1,
-      "at": "2026-09-14T21:45:57.330Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 2,
@@ -306849,6 +306843,11 @@
       "item": "Sugar",
       "qty": 2,
       "at": "2026-09-22T01:01:25.500Z"
+    },
+    {
+      "item": "Flour",
+      "qty": 1,
+      "at": "2026-09-22T01:16:25.504Z"
     }
   ],
   "demand_history": {
@@ -310353,6 +310352,11 @@
         "demand": 1.381784829556279,
         "at": "2026-09-22T00:16:24.269Z",
         "supply": 6
+      },
+      {
+        "demand": 1.381784829556279,
+        "at": "2026-09-22T01:16:25.504Z",
+        "supply": 6
       }
     ],
     "Corn Meal": [
@@ -312717,10 +312721,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 527593,
-      "at": "2026-09-21T16:29:46.908Z"
-    },
-    {
       "total": 527708,
       "at": "2026-09-21T16:34:46.907Z"
     },
@@ -313115,6 +313115,10 @@
     {
       "total": 539817,
       "at": "2026-09-22T01:11:27.656Z"
+    },
+    {
+      "total": 539832,
+      "at": "2026-09-22T01:16:27.654Z"
     }
   ],
   "gold_rush": null,
@@ -335382,12 +335386,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.3,
+    "rub_per_usd": 7.32,
     "history": [
-      {
-        "rate": 7.18,
-        "at": "2026-09-21T09:39:40.355Z"
-      },
       {
         "rate": 7.22,
         "at": "2026-09-21T09:49:40.234Z"
@@ -335783,9 +335783,13 @@
       {
         "rate": 7.3,
         "at": "2026-09-22T01:06:26.069Z"
+      },
+      {
+        "rate": 7.32,
+        "at": "2026-09-22T01:16:26.139Z"
       }
     ],
-    "last_update": "2026-09-22T01:06:26.069Z",
+    "last_update": "2026-09-22T01:16:26.139Z",
     "manual_override": null
   },
   "national_budget": {
