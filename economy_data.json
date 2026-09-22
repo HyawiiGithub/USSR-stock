@@ -851,15 +851,15 @@
       "pet_food_source": {}
     },
     "1528783188728483944": {
-      "cash": 210,
+      "cash": 225,
       "bank": 45,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 44,
       "share_holdings": {},
-      "last_work": "2026-09-21T22:07:48.537Z",
-      "work_count": 82,
+      "last_work": "2026-09-22T05:42:19.574Z",
+      "work_count": 83,
       "last_claim": "2026-09-19T11:58:02.121Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -873,11 +873,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 309,
-      "bot_total_xp": 4984,
-      "daily_work_count": 33,
+      "bot_xp": 358,
+      "bot_total_xp": 5033,
+      "daily_work_count": 34,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-21",
+      "last_daily_work_date": "2026-09-22",
       "mee6_level": 10,
       "last_laylow": null,
       "work_reminder": false,
@@ -304259,14 +304259,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 7034,
+      "funds": 7054,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 62123,
-      "market_cap": 62123,
+      "share_price": 61946,
+      "market_cap": 61946,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -304291,18 +304291,16 @@
         "Peat": 114,
         "Fish": 80,
         "Iron Ore": 1,
-        "Oil Shale": 21,
+        "Oil Shale": 22,
         "Gold": 4,
         "Timber Planks": 25,
-        "Timber": 39,
-        "Wheat": 12,
-        "Sugar": 8
+        "Timber": 41,
+        "Wheat": 1,
+        "Sugar": 1
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-21T22:07:53.248Z",
+      "last_collect": "2026-09-22T05:42:30.943Z",
       "price_history": [
-        87341,
-        92734,
         92720,
         58254,
         58336,
@@ -304400,7 +304398,9 @@
         62047,
         62061,
         62223,
-        62123
+        62123,
+        62134,
+        61946
       ],
       "is_state_owned": true,
       "director_id": "1528783188728483944",
@@ -304480,16 +304480,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.4982451349653281,
-      "recorded_at": "2026-09-21T23:41:26.692Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.5821656078834493,
-      "recorded_at": "2026-09-21T23:46:26.455Z"
-    },
     {
       "price": 97,
       "change_percent": 0.3266868528789784,
@@ -304979,6 +304969,16 @@
       "price": 89,
       "change_percent": 0.2945109100194825,
       "recorded_at": "2026-09-22T05:41:28.007Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.991604905256447,
+      "recorded_at": "2026-09-22T05:42:20.396Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.5651505247365753,
+      "recorded_at": "2026-09-22T05:42:32.140Z"
     }
   ],
   "factory_names": [
@@ -305000,7 +305000,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 7012.321774433053,
+  "money_printed": 7027.321774433053,
   "total_bank_reserves": 452272,
   "inflation_history": [
     0,
@@ -313563,7 +313563,8 @@
         "1495413593242337421": 1,
         "874346333882945547": 6,
         "895937675813593138": 2,
-        "1511756975392948224": 3
+        "1511756975392948224": 3,
+        "1528783188728483944": 1
       }
     },
     "collect_daily": {
@@ -313653,7 +313654,8 @@
       },
       "2026-09-22": {
         "Nuristani SSR": 2,
-        "Kazakh SSR": 0
+        "Kazakh SSR": 0,
+        "Estonian SSR": 0
       }
     },
     "qotd": {
@@ -333380,9 +333382,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 21,
-    "beforeLvlC": 20,
-    "afterLvl": 20,
+    "xpGainC": 24,
+    "beforeLvlC": 10,
+    "afterLvl": 10,
     "leveled": []
   },
   "central_bank": {
