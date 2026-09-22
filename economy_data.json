@@ -304082,8 +304082,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 188.0201248192337,
-      "underground_heat": 1258.3040015491836,
+      "heat": 187.30644272779196,
+      "underground_heat": 1257.5341148338675,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304478,11 +304478,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.6617434641640761,
-      "recorded_at": "2026-09-21T19:39:47.952Z"
-    },
     {
       "price": 100,
       "change_percent": 0.5646846842159383,
@@ -304977,6 +304972,11 @@
       "price": 96,
       "change_percent": -0.08653006663397914,
       "recorded_at": "2026-09-22T00:56:26.787Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.5428084986485803,
+      "recorded_at": "2026-09-22T01:01:26.936Z"
     }
   ],
   "factory_names": [],
@@ -305262,7 +305262,7 @@
     "Reactor Core": 1.3954772387626295,
     "Circuit Board": 1.4024435304846803,
     "Flour": 1.381784829556279,
-    "Sugar": 0.9367903647932355,
+    "Sugar": 0.9567903647932355,
     "Wine": 1.4115110706263039,
     "Canned Food": 1.39987906825133,
     "Canned Fish": 1.4046284633845347,
@@ -305313,7 +305313,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Sugar": 6,
+    "Sugar": 4,
     "Corn Meal": 7,
     "Flour": 1,
     "Machine Parts": 1,
@@ -305342,18 +305342,13 @@
     "Gas Fuel": 101,
     "Steel Beam": 2,
     "Machine Parts": 48,
-    "Sugar": 45,
+    "Sugar": 47,
     "Fertilizer": 17,
     "Flour": 19,
     "Corn Meal": 1,
     "Aluminium Ingot": 2
   },
   "consumption_history": [
-    {
-      "item": "Circuit Board",
-      "qty": 2,
-      "at": "2026-09-14T21:30:57.403Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 1,
@@ -306848,6 +306843,11 @@
       "item": "Aluminium Ingot",
       "qty": 1,
       "at": "2026-09-22T00:46:25.496Z"
+    },
+    {
+      "item": "Sugar",
+      "qty": 2,
+      "at": "2026-09-22T01:01:25.500Z"
     }
   ],
   "demand_history": {
@@ -310223,6 +310223,11 @@
         "demand": 0.8931684958437783,
         "at": "2026-09-22T00:31:24.372Z",
         "supply": 189
+      },
+      {
+        "demand": 0.9367903647932355,
+        "at": "2026-09-22T01:01:25.500Z",
+        "supply": 189
       }
     ],
     "Fertilizer": [
@@ -312711,10 +312716,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 527525,
-      "at": "2026-09-21T16:14:46.938Z"
-    },
-    {
       "total": 527550,
       "at": "2026-09-21T16:19:47.037Z"
     },
@@ -313109,6 +313110,10 @@
     {
       "total": 539817,
       "at": "2026-09-22T00:56:27.433Z"
+    },
+    {
+      "total": 539817,
+      "at": "2026-09-22T01:01:27.649Z"
     }
   ],
   "gold_rush": null,
