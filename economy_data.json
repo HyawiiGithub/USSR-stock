@@ -1188,8 +1188,8 @@
       "last_illegal": "2026-09-16T21:12:26.375Z",
       "total_heat_generated": 26.191000000000003,
       "bot_level": 22,
-      "bot_xp": 1392,
-      "bot_total_xp": 31697,
+      "bot_xp": 1412,
+      "bot_total_xp": 31717,
       "daily_work_count": 16,
       "shock_worker": false,
       "mee6_level": 22,
@@ -304082,8 +304082,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 189.8797627282198,
-      "underground_heat": 1260.2129477093333,
+      "heat": 189.24396204324356,
+      "underground_heat": 1259.5388126593862,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304478,11 +304478,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.60796579507496,
-      "recorded_at": "2026-09-21T19:32:53.002Z"
-    },
     {
       "price": 100,
       "change_percent": 0.44435840002185667,
@@ -304977,6 +304972,11 @@
       "price": 99,
       "change_percent": 5.357137935940329,
       "recorded_at": "2026-09-22T00:46:23.664Z"
+    },
+    {
+      "price": 98,
+      "change_percent": -0.3433825449451407,
+      "recorded_at": "2026-09-22T00:46:26.583Z"
     }
   ],
   "factory_names": [],
@@ -304997,7 +304997,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 9972.878484119787,
+  "money_printed": 9773.42091443739,
   "total_bank_reserves": 446895,
   "inflation_history": [
     0,
@@ -305262,7 +305262,7 @@
     "Reactor Core": 1.3954772387626295,
     "Circuit Board": 1.4024435304846803,
     "Flour": 1.381784829556279,
-    "Sugar": 0.9218223133230923,
+    "Sugar": 0.9297279753551823,
     "Wine": 1.4115110706263039,
     "Canned Food": 1.39987906825133,
     "Canned Fish": 1.4046284633845347,
@@ -305318,7 +305318,7 @@
     "Flour": 1,
     "Machine Parts": 1,
     "Refined Fuel": 1,
-    "Aluminium Ingot": 4
+    "Aluminium Ingot": 3
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -305346,14 +305346,9 @@
     "Fertilizer": 17,
     "Flour": 19,
     "Corn Meal": 1,
-    "Aluminium Ingot": 1
+    "Aluminium Ingot": 2
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-14T21:15:57.343Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 2,
@@ -306848,6 +306843,11 @@
       "item": "Sugar",
       "qty": 2,
       "at": "2026-09-22T00:31:24.367Z"
+    },
+    {
+      "item": "Aluminium Ingot",
+      "qty": 1,
+      "at": "2026-09-22T00:46:25.496Z"
     }
   ],
   "demand_history": {
@@ -310361,6 +310361,11 @@
         "demand": 1.3287978977601853,
         "at": "2026-09-21T22:31:22.611Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3962367157457676,
+        "at": "2026-09-22T00:46:25.496Z",
+        "supply": 0
       }
     ]
   },
@@ -312706,10 +312711,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 527460,
-      "at": "2026-09-21T15:59:46.696Z"
-    },
-    {
       "total": 527500,
       "at": "2026-09-21T16:04:46.846Z"
     },
@@ -313104,6 +313105,10 @@
     {
       "total": 539817,
       "at": "2026-09-22T00:41:27.096Z"
+    },
+    {
+      "total": 539817,
+      "at": "2026-09-22T00:46:27.426Z"
     }
   ],
   "gold_rush": null,
@@ -313629,7 +313634,7 @@
       "1365483598962102305": 1790023269139,
       "1544296111097909309": 1789937056116,
       "1343006572850184217": 1789998088939,
-      "503918799683321866": 1790032131716,
+      "503918799683321866": 1790037996548,
       "1247430843299921973": 1789747639613,
       "1496968738447032410": 1790017138826,
       "1254134534987845877": 1789419071660,
@@ -335365,12 +335370,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.36,
+    "rub_per_usd": 7.25,
     "history": [
-      {
-        "rate": 7.22,
-        "at": "2026-09-21T09:09:40.231Z"
-      },
       {
         "rate": 7.18,
         "at": "2026-09-21T09:19:40.312Z"
@@ -335766,9 +335767,13 @@
       {
         "rate": 7.36,
         "at": "2026-09-22T00:36:24.919Z"
+      },
+      {
+        "rate": 7.25,
+        "at": "2026-09-22T00:46:25.970Z"
       }
     ],
-    "last_update": "2026-09-22T00:36:24.919Z",
+    "last_update": "2026-09-22T00:46:25.970Z",
     "manual_override": null
   },
   "national_budget": {
