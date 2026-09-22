@@ -1385,8 +1385,8 @@
       "last_illegal": "2026-09-21T16:54:29.489Z",
       "total_heat_generated": 283.702,
       "bot_level": 21,
-      "bot_xp": 17,
-      "bot_total_xp": 26967,
+      "bot_xp": 32,
+      "bot_total_xp": 26982,
       "daily_work_count": 122,
       "shock_worker": false,
       "mee6_level": 21,
@@ -1740,8 +1740,8 @@
       "last_illegal": "2026-09-21T16:56:47.237Z",
       "total_heat_generated": 116.191,
       "bot_level": 16,
-      "bot_xp": 1347,
-      "bot_total_xp": 15147,
+      "bot_xp": 1372,
+      "bot_total_xp": 15172,
       "daily_work_count": 100,
       "shock_worker": false,
       "mee6_level": 16,
@@ -304354,8 +304354,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 110.69547126681968,
-      "underground_heat": 1182.4227070132345,
+      "heat": 109.92784761317988,
+      "underground_heat": 1181.6453514312498,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -304750,11 +304750,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 0.5359442912238483,
-      "recorded_at": "2026-09-22T07:18:59.371Z"
-    },
     {
       "price": 98,
       "change_percent": 0.28642144961337596,
@@ -305249,6 +305244,11 @@
       "price": 98,
       "change_percent": 0.6569734256539531,
       "recorded_at": "2026-09-22T10:41:30.440Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.7664564813824785,
+      "recorded_at": "2026-09-22T10:46:30.332Z"
     }
   ],
   "factory_names": [
@@ -305270,7 +305270,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 11007.434165727782,
+  "money_printed": 10787.285482413226,
   "total_bank_reserves": 451562,
   "inflation_history": [
     0,
@@ -305522,29 +305522,29 @@
     "Copper Ingot": 1.4000418708324214,
     "Iron Ingot": 1.356062604105567,
     "Steel Ingot": 1.3201336995433992,
-    "Gold Bar": 1.1680555320283652,
+    "Gold Bar": 1.1670453751803818,
     "Aluminium Ingot": 1.3962367157457676,
     "Timber Planks": 1.2886425034380768,
     "Bricks": 1.4001141528643912,
     "Concrete": 1.405379729080325,
     "Glass": 1.4121276826240605,
     "Steel Beam": 1.3973181943514992,
-    "Machine Parts": 1.2544979247709376,
+    "Machine Parts": 1.261856363763957,
     "Refined Fuel": 1.3951272560504968,
-    "Uranium Rod": 1.407879943578065,
+    "Uranium Rod": 1.4059099576835488,
     "Reactor Core": 1.3954772387626295,
     "Circuit Board": 1.3957451501375102,
     "Flour": 1.381784829556279,
     "Sugar": 0.9000998300526977,
     "Wine": 1.4119998776378415,
     "Canned Food": 1.39987906825133,
-    "Canned Fish": 1.2934468576485934,
+    "Canned Fish": 1.2960467663015587,
     "Smoked Fish": 1.4046124995615663,
     "Fish Stew": 1.4122727603238143,
     "Peat Fuel": 1.4043303159418232,
     "Gas Fuel": 1.3999862539853807,
     "Fertilizer": 1.4046023452030445,
-    "Cotton Fabric": 1.4080729512939059,
+    "Cotton Fabric": 1.4060547134704293,
     "Manganese Alloy": 1.4120143203936348,
     "Sunflower Oil": 1.4120538023042242,
     "Linen": 1.4122546773730282,
@@ -305586,7 +305586,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Canned Fish": 3
+    "Canned Fish": 1
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -305601,7 +305601,7 @@
     "Smoked Fish": 20,
     "Canned Food": 18,
     "Uranium Rod": 20,
-    "Canned Fish": 21,
+    "Canned Fish": 23,
     "Bread": 274,
     "Aluminium Sheet": 8,
     "Circuit Board": 21,
@@ -305617,11 +305617,6 @@
     "Aluminium Ingot": 5
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-09-15T15:45:59.751Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -307116,6 +307111,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-09-22T10:31:28.151Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 2,
+      "at": "2026-09-22T10:46:28.071Z"
     }
   ],
   "demand_history": {
@@ -309367,6 +309367,11 @@
       {
         "demand": 1.2921284633845347,
         "at": "2026-09-22T10:31:28.151Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.2934468576485934,
+        "at": "2026-09-22T10:46:28.071Z",
         "supply": 4
       }
     ],
@@ -313070,10 +313075,6 @@
   "total_rubles_history": [
     {
       "total": 539860,
-      "at": "2026-09-22T03:01:28.238Z"
-    },
-    {
-      "total": 539860,
       "at": "2026-09-22T03:06:28.088Z"
     },
     {
@@ -313467,6 +313468,10 @@
     {
       "total": 540836,
       "at": "2026-09-22T10:41:31.299Z"
+    },
+    {
+      "total": 540836,
+      "at": "2026-09-22T10:46:31.431Z"
     }
   ],
   "gold_rush": null,
@@ -313986,7 +313991,7 @@
       "1456622719985782864": 1790060619054,
       "1082686076491137115": 1790073045500,
       "1229741033265299506": 1790033496757,
-      "1536339779140976711": 1790073943550,
+      "1536339779140976711": 1790074022895,
       "780837437987094560": 1790044548669,
       "874346333882945547": 1790071163433,
       "870686833976172574": 1790017483854,
@@ -313997,7 +314002,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1790026216071,
       "1309104161278918706": 1790010702166,
-      "1325111649816023092": 1790073856561,
+      "1325111649816023092": 1790073976203,
       "1506785783506534426": 1790073289982,
       "807254722251587614": 1790072896598,
       "1353373037994705078": 1789068315659,
@@ -314422,21 +314427,9 @@
       "2026-Q3": {
         "positive": 69,
         "negative": 32,
-        "neutral": 1524,
-        "total": 1625,
+        "neutral": 1525,
+        "total": 1626,
         "mentions": [
-          {
-            "at": "2026-09-17T15:20:15.520Z",
-            "userId": "887419379833274388",
-            "username": "toka2411",
-            "channelId": "605951687974453248",
-            "messageId": "1550164488165130242",
-            "text": "Premier trying to act tough",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-17T15:20:21.507Z",
             "userId": "1225275427145121903",
@@ -320424,23 +320417,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-22T10:46:17.187Z",
+            "userId": "1325111649816023092",
+            "username": "px.meo",
+            "channelId": "742040268110299146",
+            "messageId": "1551907478994813009",
+            "text": "i will not participate in the death of hyawii",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T17:33:46.927Z",
-        "userId": "807944786840387675",
-        "username": "brosquare",
-        "channelId": "605951687974453248",
-        "messageId": "1548386048000925757",
-        "text": "# <@1082686076491137115> PHUL POWER OF NURISTANI MUTTAHIDA WILLYATT",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T17:33:47.503Z",
         "userId": "1522851408611770409",
@@ -332278,9 +332272,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-22T10:46:17.187Z",
+        "userId": "1325111649816023092",
+        "username": "px.meo",
+        "channelId": "742040268110299146",
+        "messageId": "1551907478994813009",
+        "text": "i will not participate in the death of hyawii",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-22T10:45:52.434Z",
+    "last_scan": "2026-09-22T10:46:17.187Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -335773,12 +335779,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.39,
+    "rub_per_usd": 7.45,
     "history": [
-      {
-        "rate": 7.49,
-        "at": "2026-09-21T19:29:42.102Z"
-      },
       {
         "rate": 7.44,
         "at": "2026-09-21T19:39:42.409Z"
@@ -336174,9 +336176,13 @@
       {
         "rate": 7.39,
         "at": "2026-09-22T10:36:29.270Z"
+      },
+      {
+        "rate": 7.45,
+        "at": "2026-09-22T10:46:29.334Z"
       }
     ],
-    "last_update": "2026-09-22T10:36:29.270Z",
+    "last_update": "2026-09-22T10:46:29.334Z",
     "manual_override": null
   },
   "national_budget": {
