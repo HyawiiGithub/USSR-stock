@@ -305263,7 +305263,7 @@
     "Reactor Core": 1.3954772387626295,
     "Circuit Board": 1.4024435304846803,
     "Flour": 1.381784829556279,
-    "Sugar": 0.9702152125866901,
+    "Sugar": 0.9902152125866901,
     "Wine": 1.4115110706263039,
     "Canned Food": 1.39987906825133,
     "Canned Fish": 1.4046284633845347,
@@ -305314,7 +305314,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Sugar": 3,
+    "Sugar": 1,
     "Corn Meal": 6,
     "Machine Parts": 1,
     "Refined Fuel": 1,
@@ -305342,18 +305342,13 @@
     "Gas Fuel": 101,
     "Steel Beam": 2,
     "Machine Parts": 48,
-    "Sugar": 48,
+    "Sugar": 50,
     "Fertilizer": 17,
     "Flour": 20,
     "Corn Meal": 2,
     "Aluminium Ingot": 2
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-14T22:30:57.329Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -306848,6 +306843,11 @@
       "item": "Sugar",
       "qty": 1,
       "at": "2026-09-22T01:46:25.716Z"
+    },
+    {
+      "item": "Sugar",
+      "qty": 2,
+      "at": "2026-09-22T02:01:25.623Z"
     }
   ],
   "demand_history": {
@@ -310232,6 +310232,11 @@
       {
         "demand": 0.9562869501155868,
         "at": "2026-09-22T01:46:25.716Z",
+        "supply": 196
+      },
+      {
+        "demand": 0.9702152125866901,
+        "at": "2026-09-22T02:01:25.623Z",
         "supply": 196
       }
     ],
