@@ -228,8 +228,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 1528,
-      "bot_total_xp": 9978,
+      "bot_xp": 1552,
+      "bot_total_xp": 10002,
       "daily_work_count": 64,
       "shock_worker": false,
       "mee6_level": 13,
@@ -127353,8 +127353,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 145,
-      "bot_total_xp": 620,
+      "bot_xp": 162,
+      "bot_total_xp": 637,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -305044,8 +305044,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 46.80662131388828,
-      "underground_heat": 1126.204189512237,
+      "heat": 46.24924660258115,
+      "underground_heat": 1125.616420917859,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -305440,11 +305440,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.6149851154678629,
-      "recorded_at": "2026-09-22T15:27:00.948Z"
-    },
     {
       "price": 94,
       "change_percent": 0.9192530142296638,
@@ -305939,6 +305934,11 @@
       "price": 92,
       "change_percent": 0.8191770934139031,
       "recorded_at": "2026-09-22T21:39:07.229Z"
+    },
+    {
+      "price": 92,
+      "change_percent": 0.5920187975862433,
+      "recorded_at": "2026-09-22T21:44:07.320Z"
     }
   ],
   "factory_names": [],
@@ -313800,10 +313800,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 541037,
-      "at": "2026-09-22T13:41:32.002Z"
-    },
-    {
       "total": 541055,
       "at": "2026-09-22T13:46:32.140Z"
     },
@@ -314198,6 +314194,10 @@
     {
       "total": 545701,
       "at": "2026-09-22T21:39:07.635Z"
+    },
+    {
+      "total": 545701,
+      "at": "2026-09-22T21:44:07.798Z"
     }
   ],
   "gold_rush": null,
@@ -314773,7 +314773,7 @@
       "963834359994007614": 1790109276687,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1788996121210,
-      "730223629849199093": 1790113372328,
+      "730223629849199093": 1790113448203,
       "418231502627667979": 1789952571646,
       "710945531794554970": 1790110205775,
       "925564822781845595": 1789167727721,
@@ -315021,7 +315021,7 @@
       "1395595167905480836": 1789645188523,
       "1320830202049331361": 1789658261775,
       "1450343635634884691": 1789808993970,
-      "1109132251033256037": 1790113398972,
+      "1109132251033256037": 1790113469276,
       "1219137083474448496": 1789658970645,
       "1451685711731490867": 1789659795338,
       "1481263751935033407": 1789660396502,
@@ -338625,7 +338625,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 12,
+      "hunger": 4,
       "water": 60,
       "health": 100,
       "quarters": 3,
@@ -338640,7 +338640,7 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 22,
+      "hunger": 14,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -338655,9 +338655,9 @@
       "name": "meo II",
       "species": "cat",
       "alive": true,
-      "hunger": 24,
+      "hunger": 16,
       "water": 60,
-      "health": 75,
+      "health": 77,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:59:36.433Z",
@@ -338670,16 +338670,16 @@
       "name": "Soviet Cat",
       "species": "cat",
       "alive": true,
-      "hunger": 2,
+      "hunger": 0,
       "water": 60,
-      "health": 100,
+      "health": 85,
       "quarters": 2,
       "cheap_streak": 0,
       "born_at": "2026-09-19T17:00:47.155Z",
       "last_fed": "2026-09-22T05:59:01.458Z",
       "last_watered": null,
       "death": null,
-      "warned_empty": false
+      "warned_empty": true
     },
     "780837437987094560": {
       "name": "Daniel Astrae",
@@ -338700,7 +338700,7 @@
       "name": "Kewl",
       "species": "cat",
       "alive": true,
-      "hunger": 44,
+      "hunger": 36,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -338715,9 +338715,9 @@
       "name": "Gaius Octavius von Werman",
       "species": "dog",
       "alive": true,
-      "hunger": 74,
+      "hunger": 66,
       "water": 60,
-      "health": 27,
+      "health": 29,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
@@ -338730,7 +338730,7 @@
       "name": "Mohammed Sumbul 500",
       "species": "cat",
       "alive": true,
-      "hunger": 74,
+      "hunger": 66,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -338757,7 +338757,7 @@
       "warned_empty": true
     }
   },
-  "pets_last_decay": "2026-09-22T20:43:44.869Z",
+  "pets_last_decay": "2026-09-22T21:44:09.166Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
