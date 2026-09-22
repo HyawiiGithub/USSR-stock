@@ -1206,8 +1206,8 @@
       "pet_food_source": {}
     },
     "791747702689103893": {
-      "cash": 87,
-      "bank": 1176,
+      "cash": 0,
+      "bank": 1191,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -1228,8 +1228,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 1938,
-      "bot_total_xp": 20313,
+      "bot_xp": 1965,
+      "bot_total_xp": 20340,
       "daily_work_count": 54,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-22",
@@ -303463,8 +303463,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 195222,
-      "market_cap": 195222,
+      "share_price": 195950,
+      "market_cap": 195950,
       "employees": 10,
       "level": 1,
       "buildings": {
@@ -303496,25 +303496,23 @@
       },
       "inventory": {
         "Zinc": 321,
-        "Copper": 171,
+        "Copper": 176,
         "Lead": 214,
         "Gold Bar": 57,
         "Aluminium Ore": 99,
-        "Iron Ore": 8,
-        "Sugar": 105,
+        "Iron Ore": 14,
+        "Sugar": 109,
         "Contraband: Cocaine": 1,
-        "Wheat": 75,
+        "Wheat": 59,
         "Uranium": 1,
         "Reactor Core": 1,
         "Fish": 10,
-        "Gold": 6,
-        "Coal": 9
+        "Gold": 8,
+        "Coal": 15
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-22T01:12:12.549Z",
+      "last_collect": "2026-09-22T07:19:01.327Z",
       "price_history": [
-        175044,
-        175176,
         175222,
         175030,
         175652,
@@ -303612,7 +303610,9 @@
         193848,
         194140,
         194432,
-        195222
+        195222,
+        195290,
+        195950
       ],
       "is_state_owned": true,
       "director_id": "807254722251587614",
@@ -304597,16 +304597,6 @@
   },
   "gsi_history": [
     {
-      "price": 88,
-      "change_percent": 0.1643895864802793,
-      "recorded_at": "2026-09-22T02:51:27.785Z"
-    },
-    {
-      "price": 88,
-      "change_percent": 0.1510462547643931,
-      "recorded_at": "2026-09-22T02:56:27.775Z"
-    },
-    {
       "price": 81,
       "change_percent": -7.773393603374973,
       "recorded_at": "2026-09-22T03:01:23.443Z"
@@ -305095,6 +305085,16 @@
       "price": 98,
       "change_percent": -0.07375015534612905,
       "recorded_at": "2026-09-22T07:16:28.893Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.5359442912238483,
+      "recorded_at": "2026-09-22T07:18:59.371Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.28642144961337596,
+      "recorded_at": "2026-09-22T07:19:02.702Z"
     }
   ],
   "factory_names": [
@@ -313772,7 +313772,7 @@
         "Azerbaijanian SSR": 0
       },
       "2026-09-22": {
-        "Nuristani SSR": 2,
+        "Nuristani SSR": 4,
         "Kazakh SSR": 0,
         "Estonian SSR": 0,
         "Russian SFSR": 0
@@ -333503,9 +333503,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 25,
-    "beforeLvlC": 13,
-    "afterLvl": 13,
+    "xpGainC": 27,
+    "beforeLvlC": 18,
+    "afterLvl": 18,
     "leveled": []
   },
   "central_bank": {
