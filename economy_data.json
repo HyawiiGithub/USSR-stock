@@ -493,7 +493,7 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 93,
+      "cash": 108,
       "bank": 0,
       "resources": {
         "Peat": 1
@@ -505,8 +505,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-23T08:20:16.866Z",
-      "work_count": 74,
+      "last_work": "2026-09-23T08:29:10.773Z",
+      "work_count": 75,
       "last_claim": "2026-09-23T07:20:48.740Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:27:29.616694",
@@ -521,15 +521,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1056,
-      "bot_total_xp": 12881,
-      "daily_work_count": 65,
+      "bot_xp": 1075,
+      "bot_total_xp": 12900,
+      "daily_work_count": 66,
       "shock_worker": false,
       "mee6_level": 15,
       "last_daily_work_date": "2026-09-23",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-23T08:25:26.246Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-22T14:42:48.689Z",
       "train_reminder": false,
@@ -304867,8 +304867,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 214863,
-      "market_cap": 214863,
+      "share_price": 214871,
+      "market_cap": 214871,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -304897,8 +304897,8 @@
         "Sunflower": 30,
         "Iron Ore": 34,
         "Salt": 34,
-        "Wheat": 142,
-        "Coal": 47,
+        "Wheat": 141,
+        "Coal": 48,
         "Corn": 7,
         "Steel Ingot": 37,
         "Steel Beam": 3,
@@ -304908,7 +304908,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-23T07:20:44.822Z",
       "price_history": [
-        163355,
         163395,
         163403,
         163563,
@@ -305007,7 +305006,8 @@
         205786,
         214831,
         214855,
-        214863
+        214863,
+        214871
       ],
       "is_state_owned": true,
       "director_id": "1521043721129558017",
@@ -305825,16 +305825,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": -0.0268801846072253,
-      "recorded_at": "2026-09-23T03:39:13.755Z"
-    },
-    {
-      "price": 96,
-      "change_percent": 0.23614077513003703,
-      "recorded_at": "2026-09-23T03:44:13.860Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.15342913927073384,
       "recorded_at": "2026-09-23T03:49:14.419Z"
     },
@@ -306322,6 +306312,16 @@
       "price": 109,
       "change_percent": 0.1484949964891508,
       "recorded_at": "2026-09-23T08:24:14.227Z"
+    },
+    {
+      "price": 108,
+      "change_percent": -0.4807384358115139,
+      "recorded_at": "2026-09-23T08:29:11.713Z"
+    },
+    {
+      "price": 107,
+      "change_percent": -0.32803576327394884,
+      "recorded_at": "2026-09-23T08:29:14.270Z"
     }
   ],
   "factory_names": [
@@ -306343,7 +306343,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 4989.106442062004,
+  "money_printed": 5004.106442062004,
   "total_bank_reserves": 451597,
   "inflation_history": [
     0,
@@ -306591,24 +306591,24 @@
   "market_demand": {
     "Fuel": 1.4015976838832356,
     "Cake": 1.3800812889584506,
-    "Bread": 1.2903232984207171,
+    "Bread": 1.2993704978808962,
     "Copper Ingot": 1.4000963247775777,
     "Iron Ingot": 1.356062604105567,
     "Steel Ingot": 1.3075570356269566,
     "Gold Bar": 1.1670453751803818,
     "Aluminium Ingot": 1.4046440643810758,
     "Timber Planks": 1.3007292835863618,
-    "Bricks": 1.390532407784392,
+    "Bricks": 1.3893067165700912,
     "Concrete": 1.4055903235192495,
     "Glass": 1.4124644422007973,
     "Steel Beam": 1.3973181943514992,
-    "Machine Parts": 1.2726804471013535,
+    "Machine Parts": 1.2712708987062968,
     "Refined Fuel": 1.3954603240287415,
     "Uranium Rod": 1.395653996779424,
     "Reactor Core": 1.39503023393972,
     "Circuit Board": 1.3870206067546897,
     "Flour": 1.391784829556279,
-    "Sugar": 0.8410690245118231,
+    "Sugar": 0.8377031768345715,
     "Wine": 1.4119998776378415,
     "Canned Food": 1.39987906825133,
     "Canned Fish": 1.3893914715040871,
@@ -314185,10 +314185,6 @@
   "total_rubles_history": [
     {
       "total": 545519,
-      "at": "2026-09-23T00:24:13.687Z"
-    },
-    {
-      "total": 545519,
       "at": "2026-09-23T00:29:13.665Z"
     },
     {
@@ -314582,6 +314578,10 @@
     {
       "total": 544443,
       "at": "2026-09-23T08:24:16.623Z"
+    },
+    {
+      "total": 544458,
+      "at": "2026-09-23T08:29:16.391Z"
     }
   ],
   "gold_rush": null,
@@ -315000,7 +315000,7 @@
         "791747702689103893": 17,
         "1483005845867593831": 2,
         "874346333882945547": 2,
-        "1521043721129558017": 3
+        "1521043721129558017": 4
       }
     },
     "collect_daily": {
