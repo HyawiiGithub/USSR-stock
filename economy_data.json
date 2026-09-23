@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 26,
-      "bot_xp": 2415,
-      "bot_total_xp": 48890,
+      "bot_xp": 2430,
+      "bot_total_xp": 48905,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 26,
@@ -228,8 +228,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 775,
-      "bot_total_xp": 12600,
+      "bot_xp": 790,
+      "bot_total_xp": 12615,
       "daily_work_count": 69,
       "shock_worker": false,
       "mee6_level": 15,
@@ -788,7 +788,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 187,
-      "heat": 5.5231124085119045,
+      "heat": 4.620091442002204,
       "wanted": 0,
       "last_illegal": "2026-09-23T19:14:53.645Z",
       "total_heat_generated": 761.2510000000001,
@@ -1384,8 +1384,8 @@
       "last_illegal": "2026-09-21T16:54:29.489Z",
       "total_heat_generated": 283.702,
       "bot_level": 21,
-      "bot_xp": 2739,
-      "bot_total_xp": 29689,
+      "bot_xp": 2760,
+      "bot_total_xp": 29710,
       "daily_work_count": 127,
       "shock_worker": false,
       "mee6_level": 21,
@@ -305815,8 +305815,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 2.8063318784949014,
-      "underground_heat": 1099.7936341054901,
+      "heat": 2.236511020402186,
+      "underground_heat": 1099.2673027994938,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -306211,11 +306211,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 90,
-      "change_percent": 1.3320410828627864,
-      "recorded_at": "2026-09-23T16:04:17.212Z"
-    },
     {
       "price": 91,
       "change_percent": 1.3581337881602362,
@@ -306710,6 +306705,11 @@
       "price": 98,
       "change_percent": 0.04947458060684455,
       "recorded_at": "2026-09-23T19:44:28.747Z"
+    },
+    {
+      "price": 97,
+      "change_percent": -0.10928735226881521,
+      "recorded_at": "2026-09-23T19:49:28.758Z"
     }
   ],
   "factory_names": [
@@ -306731,7 +306731,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 9663.991138333336,
+  "money_printed": 9470.71131556667,
   "total_bank_reserves": 465098,
   "inflation_history": [
     0,
@@ -314614,10 +314614,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 559981,
-      "at": "2026-09-23T12:04:17.689Z"
-    },
-    {
       "total": 559996,
       "at": "2026-09-23T12:09:17.789Z"
     },
@@ -315012,6 +315008,10 @@
     {
       "total": 562877,
       "at": "2026-09-23T19:44:30.247Z"
+    },
+    {
+      "total": 562877,
+      "at": "2026-09-23T19:49:30.224Z"
     }
   ],
   "gold_rush": null,
@@ -315572,9 +315572,9 @@
       "1544820489191559270": 1790192552436,
       "791747702689103893": 1790182352995,
       "1456622719985782864": 1790192496180,
-      "1082686076491137115": 1790192911298,
+      "1082686076491137115": 1790192973431,
       "1229741033265299506": 1790192884193,
-      "1536339779140976711": 1790192801497,
+      "1536339779140976711": 1790192998689,
       "780837437987094560": 1790167646158,
       "874346333882945547": 1790192923908,
       "870686833976172574": 1790179554336,
@@ -315622,7 +315622,7 @@
       "963834359994007614": 1790192476619,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1788996121210,
-      "730223629849199093": 1790192889037,
+      "730223629849199093": 1790192966473,
       "418231502627667979": 1790123104041,
       "710945531794554970": 1790134996267,
       "925564822781845595": 1789167727721,
@@ -316045,21 +316045,9 @@
       "2026-Q3": {
         "positive": 71,
         "negative": 34,
-        "neutral": 1612,
-        "total": 1717,
+        "neutral": 1613,
+        "total": 1718,
         "mentions": [
-          {
-            "at": "2026-09-18T06:04:57.473Z",
-            "userId": "843880491731517441",
-            "username": "xaxocx",
-            "channelId": "605951687974453248",
-            "messageId": "1550387129580912673",
-            "text": "<@1113440810051051671> <@1082686076491137115>",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-18T11:16:03.345Z",
             "userId": "1511756975392948224",
@@ -322047,23 +322035,24 @@
             "method": "keyword",
             "source": "text+reply",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-23T19:49:38.344Z",
+            "userId": "1082686076491137115",
+            "username": "hyawii2.0",
+            "channelId": "605951687974453248",
+            "messageId": "1552406606329675847",
+            "text": "after my premiershi",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-12T18:51:54.176Z",
-        "userId": "1456622719985782864",
-        "username": "seren_menzhinsky",
-        "channelId": "605951687974453248",
-        "messageId": "1548405811720753275",
-        "text": "<@1082686076491137115> nuh uh only 1 deputy premmier",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-12T18:52:34.055Z",
         "userId": "1456622719985782864",
@@ -333993,9 +333982,21 @@
         "method": "keyword",
         "source": "text+reply",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-23T19:49:38.344Z",
+        "userId": "1082686076491137115",
+        "username": "hyawii2.0",
+        "channelId": "605951687974453248",
+        "messageId": "1552406606329675847",
+        "text": "after my premiershi",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-23T19:43:02.369Z",
+    "last_scan": "2026-09-23T19:49:38.344Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -337506,12 +337507,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 8.01,
+    "rub_per_usd": 7.98,
     "history": [
-      {
-        "rate": 7.61,
-        "at": "2026-09-23T02:59:09.523Z"
-      },
       {
         "rate": 7.59,
         "at": "2026-09-23T03:09:09.546Z"
@@ -337907,9 +337904,13 @@
       {
         "rate": 8.01,
         "at": "2026-09-23T19:39:18.111Z"
+      },
+      {
+        "rate": 7.98,
+        "at": "2026-09-23T19:49:18.079Z"
       }
     ],
-    "last_update": "2026-09-23T19:39:18.111Z",
+    "last_update": "2026-09-23T19:49:18.079Z",
     "manual_override": null
   },
   "national_budget": {
