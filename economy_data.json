@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 26,
-      "bot_xp": 478,
-      "bot_total_xp": 46953,
+      "bot_xp": 499,
+      "bot_total_xp": 46974,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 26,
@@ -793,8 +793,8 @@
       "last_illegal": "2026-09-21T17:57:39.164Z",
       "total_heat_generated": 750.354,
       "bot_level": 19,
-      "bot_xp": 1320,
-      "bot_total_xp": 22315,
+      "bot_xp": 1357,
+      "bot_total_xp": 22352,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 19,
@@ -954,8 +954,8 @@
       "last_illegal": "2026-09-21T17:16:17.254Z",
       "total_heat_generated": 1306.9988999999994,
       "bot_level": 24,
-      "bot_xp": 3529,
-      "bot_total_xp": 41349,
+      "bot_xp": 3549,
+      "bot_total_xp": 41369,
       "daily_work_count": 687,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-23",
@@ -1384,8 +1384,8 @@
       "last_illegal": "2026-09-21T16:54:29.489Z",
       "total_heat_generated": 283.702,
       "bot_level": 21,
-      "bot_xp": 1841,
-      "bot_total_xp": 28791,
+      "bot_xp": 1856,
+      "bot_total_xp": 28806,
       "daily_work_count": 125,
       "shock_worker": false,
       "mee6_level": 21,
@@ -2004,7 +2004,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 3.105936053392164,
+      "heat": 2.280377036824733,
       "wanted": 0,
       "last_illegal": "2026-09-23T09:32:17.789Z",
       "total_heat_generated": 826.9020000000002,
@@ -305429,8 +305429,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 0.4823059989700359,
-      "underground_heat": 1081.862868438009,
+      "heat": 0,
+      "underground_heat": 1081.2986032981576,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -305825,11 +305825,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.958751610578994,
-      "recorded_at": "2026-09-23T07:24:14.071Z"
-    },
     {
       "price": 93,
       "change_percent": 1.2175214739460605,
@@ -306324,6 +306319,11 @@
       "price": 99,
       "change_percent": 0.7469249082602355,
       "recorded_at": "2026-09-23T10:32:10.156Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.7062074933426091,
+      "recorded_at": "2026-09-23T10:34:15.168Z"
     }
   ],
   "factory_names": [
@@ -306661,7 +306661,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Bread": 3
+    "Bread": 1
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -306677,7 +306677,7 @@
     "Canned Food": 18,
     "Uranium Rod": 21,
     "Canned Fish": 24,
-    "Bread": 280,
+    "Bread": 282,
     "Aluminium Sheet": 8,
     "Circuit Board": 24,
     "Cotton Fabric": 12,
@@ -306692,11 +306692,6 @@
     "Aluminium Ingot": 5
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-15T19:16:00.060Z"
-    },
     {
       "item": "Canned Fish",
       "qty": 1,
@@ -308191,6 +308186,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-23T07:49:11.482Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-23T10:34:12.370Z"
     }
   ],
   "demand_history": {
@@ -310462,11 +310462,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.2788461268024363,
-        "at": "2026-09-11T23:36:27.683Z",
-        "supply": 0
-      },
-      {
         "demand": 1.1543408769808616,
         "at": "2026-09-12T21:36:42.876Z",
         "supply": 1
@@ -310760,6 +310755,11 @@
         "demand": 1.2632569532594324,
         "at": "2026-09-23T07:49:11.482Z",
         "supply": 18
+      },
+      {
+        "demand": 1.287309313133128,
+        "at": "2026-09-23T10:34:12.370Z",
+        "supply": 15
       }
     ],
     "Aluminium Sheet": [
@@ -314196,10 +314196,6 @@
   "total_rubles_history": [
     {
       "total": 544684,
-      "at": "2026-09-23T02:19:15.490Z"
-    },
-    {
-      "total": 544684,
       "at": "2026-09-23T02:24:15.569Z"
     },
     {
@@ -314593,6 +314589,10 @@
     {
       "total": 560064,
       "at": "2026-09-23T10:29:17.039Z"
+    },
+    {
+      "total": 560446,
+      "at": "2026-09-23T10:34:17.174Z"
     }
   ],
   "gold_rush": null,
@@ -315142,11 +315142,11 @@
       "1544820489191559270": 1790128815251,
       "791747702689103893": 1790153814524,
       "1456622719985782864": 1790148272584,
-      "1082686076491137115": 1790159530899,
-      "1229741033265299506": 1790159578001,
-      "1536339779140976711": 1790159366555,
+      "1082686076491137115": 1790159661745,
+      "1229741033265299506": 1790159661303,
+      "1536339779140976711": 1790159645385,
       "780837437987094560": 1790135273088,
-      "874346333882945547": 1790159530391,
+      "874346333882945547": 1790159641744,
       "870686833976172574": 1790109380733,
       "1186597507720019988": 1790156062250,
       "1521043721129558017": 1790150962579,
