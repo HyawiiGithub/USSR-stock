@@ -46147,8 +46147,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 680,
-      "bot_total_xp": 4400,
+      "bot_xp": 696,
+      "bot_total_xp": 4416,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 9,
@@ -203749,9 +203749,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 80,
-      "bot_total_xp": 80,
+      "bot_level": 1,
+      "bot_xp": 1,
+      "bot_total_xp": 101,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -203763,7 +203763,8 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "mee6_level": 1
     },
     "1072507849013465138": {
       "cash": 0,
@@ -306254,11 +306255,6 @@
   },
   "gsi_history": [
     {
-      "price": 91,
-      "change_percent": 1.0951227212236234,
-      "recorded_at": "2026-09-23T17:14:26.621Z"
-    },
-    {
       "price": 92,
       "change_percent": 1.2405519403182341,
       "recorded_at": "2026-09-23T17:17:31.344Z"
@@ -306752,6 +306748,11 @@
       "price": 98,
       "change_percent": 0.08793831538947171,
       "recorded_at": "2026-09-23T21:38:11.227Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.31508900093773207,
+      "recorded_at": "2026-09-23T21:43:11.183Z"
     }
   ],
   "factory_names": [
@@ -307092,8 +307093,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Refined Fuel": 4,
-    "Circuit Board": 2
+    "Refined Fuel": 4
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -307111,7 +307111,7 @@
     "Canned Fish": 24,
     "Bread": 283,
     "Aluminium Sheet": 8,
-    "Circuit Board": 27,
+    "Circuit Board": 29,
     "Cotton Fabric": 12,
     "Reactor Core": 8,
     "Gas Fuel": 102,
@@ -307124,11 +307124,6 @@
     "Aluminium Ingot": 5
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-16T11:58:12.362Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -308623,6 +308618,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-23T21:28:09.079Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-09-23T21:43:09.422Z"
     }
   ],
   "demand_history": {
@@ -311330,6 +311330,11 @@
       {
         "demand": 1.2722899918170527,
         "at": "2026-09-23T21:13:08.433Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.282352095077711,
+        "at": "2026-09-23T21:43:09.422Z",
         "supply": 5
       }
     ],
@@ -314673,10 +314678,6 @@
   "total_rubles_history": [
     {
       "total": 560314,
-      "at": "2026-09-23T13:34:18.345Z"
-    },
-    {
-      "total": 560314,
       "at": "2026-09-23T13:39:18.256Z"
     },
     {
@@ -315070,6 +315071,10 @@
     {
       "total": 562552,
       "at": "2026-09-23T21:38:11.886Z"
+    },
+    {
+      "total": 562552,
+      "at": "2026-09-23T21:43:12.095Z"
     }
   ],
   "gold_rush": null,
@@ -315661,7 +315666,7 @@
       "822079355298906112": 1790176375087,
       "1000271630154596473": 1789414201493,
       "437626060876546069": 1789233001616,
-      "1365483598962102305": 1790196227229,
+      "1365483598962102305": 1790199795692,
       "1544296111097909309": 1789937056116,
       "1343006572850184217": 1789998088939,
       "503918799683321866": 1790193085718,
@@ -316088,7 +316093,7 @@
       "1151543054201786409": 1790191036701,
       "1238692666447892534": 1790192930305,
       "1498076896166940822": 1790198184915,
-      "1533067512088887436": 1790199758435
+      "1533067512088887436": 1790199834062
     }
   },
   "mee6_cache": {
@@ -334084,13 +334089,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "791747702689103893",
-      "from": 15,
-      "to": 16,
-      "at": "2026-09-19T21:08:32.510Z",
-      "reason": "chat"
-    },
-    {
       "userId": "870686833976172574",
       "from": 10,
       "to": 11,
@@ -335481,6 +335479,13 @@
       "from": 0,
       "to": 1,
       "at": "2026-09-23T21:37:59.237Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1533067512088887436",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-23T21:43:54.063Z",
       "reason": "chat"
     }
   ],
