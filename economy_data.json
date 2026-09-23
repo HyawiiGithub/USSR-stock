@@ -930,11 +930,11 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 394,
-      "bank": 12543,
+      "cash": 269,
+      "bank": 11543,
       "resources": {},
       "inventory": {
-        "Bread": 1,
+        "Bread": 7,
         "Sugar": 1
       },
       "company_id": null,
@@ -294224,8 +294224,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1319,
-      "bot_total_xp": 8349,
+      "bot_xp": 1338,
+      "bot_total_xp": 8368,
       "daily_work_count": 56,
       "shock_worker": false,
       "last_laylow": null,
@@ -305200,14 +305200,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 10316,
+      "funds": 11110,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 369318,
-      "market_cap": 369318,
+      "share_price": 369608,
+      "market_cap": 369608,
       "employees": 32,
       "level": 1,
       "buildings": {
@@ -305287,7 +305287,6 @@
         "Steel Ingot": 5,
         "Coal": 29,
         "Circuit Board": 4,
-        "Bread": 6,
         "Bricks": 7,
         "Copper Ingot": 2,
         "Refined Fuel": 4,
@@ -305305,7 +305304,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-23T01:41:36.618Z",
       "price_history": [
-        355332,
         355366,
         355498,
         355624,
@@ -305404,11 +305402,12 @@
         368976,
         369258,
         369272,
-        369318
+        369318,
+        369608
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-22T08:37:03.587Z",
+      "last_factorydeal": "2026-09-23T06:50:58.097Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -306322,17 +306321,18 @@
       "recorded_at": "2026-09-23T06:49:14.047Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
-    "Lenin Machine Works",
-    "Volga Shipbuilding",
-    "Stalin Tractor Plant",
+  "factory_names": [
     "Red Star Steelworks",
+    "Soviet Iron Foundry",
+    "Lenin Machine Works",
+    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
-    "Soviet Iron Foundry",
-    "Ural Heavy Industries",
-    "Khrushchev Agricultural"
+    "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
+    "Stalin Tractor Plant",
+    "Ural Heavy Industries"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -306340,7 +306340,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 4602.06675508515,
+  "money_printed": 5396.06675508515,
   "total_bank_reserves": 452327,
   "inflation_history": [
     0,
@@ -306588,12 +306588,12 @@
   "market_demand": {
     "Fuel": 1.4015976838832356,
     "Cake": 1.3867550219234221,
-    "Bread": 1.3661339967921826,
-    "Copper Ingot": 1.4000418708324214,
+    "Bread": 1.2311339967921826,
+    "Copper Ingot": 1.4100418708324214,
     "Iron Ingot": 1.356062604105567,
     "Steel Ingot": 1.3201336995433992,
     "Gold Bar": 1.1670453751803818,
-    "Aluminium Ingot": 1.4046775368093256,
+    "Aluminium Ingot": 1.4146775368093256,
     "Timber Planks": 1.3007292835863618,
     "Bricks": 1.3965977705924277,
     "Concrete": 1.4055903235192495,
@@ -306629,7 +306629,7 @@
   "market_last_sale": {
     "Fuel": "2026-09-22T11:21:46.556Z",
     "Cake": "2026-09-22T04:39:20.332Z",
-    "Bread": "2026-09-21T13:30:32.149Z",
+    "Bread": "2026-09-23T06:50:58.101Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-09-21T20:05:09.698Z",
@@ -306655,7 +306655,9 @@
     "Aluminium Ingot": "2026-09-21T20:41:29.446Z"
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
-  "ai_store": {},
+  "ai_store": {
+    "Bread": 6
+  },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
@@ -315304,7 +315306,7 @@
       "1473965687922757747": 1789987256004,
       "1536471243849736322": 1789494877126,
       "1545521924166131823": 1789916561754,
-      "1483005845867593831": 1790146192026,
+      "1483005845867593831": 1790146280156,
       "1236297958933401643": 1789299042115,
       "1251358003857457256": 1790071234665,
       "1534132570412028027": 1789300584145,
@@ -339232,8 +339234,8 @@
         "price": 204
       }
     },
-    "sold_count": 218,
-    "bought_count": 97
+    "sold_count": 224,
+    "bought_count": 103
   },
   "leaders": {
     "gs": {
