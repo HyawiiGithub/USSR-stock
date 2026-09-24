@@ -935,8 +935,7 @@
       "bank": 1494,
       "resources": {},
       "inventory": {
-        "Bread": 13,
-        "Sugar": 1
+        "Bread": 13
       },
       "company_id": null,
       "gsi_shares": 1,
@@ -305913,6 +305912,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1364527522477375539": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -306459,7 +306496,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 42892,
+      "funds": 47009,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -306566,7 +306603,7 @@
         "Cotton": 1,
         "Salt": 1,
         "Cake": 5,
-        "Machine Parts": 4
+        "Machine Parts": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-24T22:00:02.955Z",
@@ -306674,7 +306711,7 @@
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-24T23:14:05.991Z",
+      "last_factorydeal": "2026-09-24T23:48:28.323Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -307087,16 +307124,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.8457190173153301,
-      "recorded_at": "2026-09-24T18:29:19.654Z"
-    },
-    {
-      "price": 100,
-      "change_percent": 0.039199861465298406,
-      "recorded_at": "2026-09-24T18:35:03.254Z"
-    },
     {
       "price": 100,
       "change_percent": 0.15393832573786817,
@@ -307586,11 +307613,19 @@
       "price": 97,
       "change_percent": 0.7017464226447719,
       "recorded_at": "2026-09-24T23:43:02.789Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.8293601441425689,
+      "recorded_at": "2026-09-24T23:47:41.720Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.6537549843601341,
+      "recorded_at": "2026-09-24T23:48:02.705Z"
     }
   ],
-  "factory_names": [
-    "Ural Heavy Industries"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Lenin Machine Works",
     "Khrushchev Agricultural",
@@ -307599,7 +307634,8 @@
     "Siberian Mining Co",
     "Brezhnev Auto Factory",
     "Soviet Iron Foundry",
-    "Red Star Steelworks"
+    "Red Star Steelworks",
+    "Ural Heavy Industries"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -307607,7 +307643,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 40442.18474048259,
+  "money_printed": 44559.18474048259,
   "total_bank_reserves": 449519,
   "inflation_history": [
     0,
@@ -307856,17 +307892,17 @@
     "Fuel": 1.3983884673635132,
     "Cake": 1.3503842218856006,
     "Bread": 1.1961209509994308,
-    "Copper Ingot": 1.404520498707714,
+    "Copper Ingot": 1.414520498707714,
     "Iron Ingot": 1.3186757790341848,
-    "Steel Ingot": 1.2510874828094873,
-    "Gold Bar": 1.1543637002120217,
+    "Steel Ingot": 1.2610874828094873,
+    "Gold Bar": 1.1643637002120217,
     "Aluminium Ingot": 1.4046286205600074,
     "Timber Planks": 1.3163160608218831,
     "Bricks": 1.3518996087469228,
     "Concrete": 1.4062567899369443,
     "Glass": 1.411529175711957,
-    "Steel Beam": 1.399580915861254,
-    "Machine Parts": 1.210763607035474,
+    "Steel Beam": 1.409580915861254,
+    "Machine Parts": 1.143263607035474,
     "Refined Fuel": 1.4061004475755552,
     "Uranium Rod": 1.4058220701288868,
     "Reactor Core": 1.4061352796885467,
@@ -307889,14 +307925,14 @@
     "Tea Pack": 1.4174635843075298,
     "Citrus Juice": 1.4124078692519124,
     "Antimony Alloy": 1.4124259972008166,
-    "Molybdenum Rod": 1.4119985908792962,
+    "Molybdenum Rod": 1.4219985908792963,
     "Aluminium Sheet": 1.404631938123575,
     "Shale Oil": 1.4046275741277865,
     "Bandage": 1.41,
     "Ointment": 1.4123435275452147,
     "Pet Food": 1.4123435275452147,
     "Brass": 1.3138678453516706,
-    "Brass Valve": 1.393402878475234,
+    "Brass Valve": 1.403402878475234,
     "Radiator": 1.41,
     "Brass Lamp": 1.4
   },
@@ -307921,7 +307957,7 @@
     "Reactor Core": "2026-09-22T15:28:35.588Z",
     "Gas Fuel": "2026-09-22T14:16:08.581Z",
     "Steel Beam": "2026-09-08T17:58:34.489Z",
-    "Machine Parts": "2026-09-24T20:45:50.532Z",
+    "Machine Parts": "2026-09-24T23:48:28.324Z",
     "Sugar": "2026-09-21T22:38:00.619Z",
     "Fertilizer": "2026-09-21T08:07:31.041Z",
     "Flour": "2026-09-21T19:11:12.162Z",
@@ -307932,7 +307968,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 31,
+    "Machine Parts": 33,
     "Brass": 10,
     "Cake": 6,
     "Bread": 7
@@ -307958,7 +307994,7 @@
     "Reactor Core": 8,
     "Gas Fuel": 102,
     "Steel Beam": 2,
-    "Machine Parts": 78,
+    "Machine Parts": 79,
     "Sugar": 51,
     "Fertilizer": 17,
     "Flour": 20,
@@ -307968,11 +308004,6 @@
     "Brass Valve": 3
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-09-17T12:28:17.363Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -309467,6 +309498,11 @@
       "item": "Brass",
       "qty": 2,
       "at": "2026-09-24T23:33:00.936Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-09-24T23:48:00.873Z"
     }
   ],
   "demand_history": {
@@ -312865,6 +312901,11 @@
         "demand": 1.0683717719210384,
         "at": "2026-09-24T23:03:00.683Z",
         "supply": 47
+      },
+      {
+        "demand": 1.210763607035474,
+        "at": "2026-09-24T23:48:00.878Z",
+        "supply": 47
       }
     ],
     "Sugar": [
@@ -315658,14 +315699,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 558160,
-      "at": "2026-09-24T15:31:20.918Z"
-    },
-    {
-      "total": 558160,
-      "at": "2026-09-24T15:36:20.754Z"
-    },
-    {
       "total": 558175,
       "at": "2026-09-24T15:41:20.773Z"
     },
@@ -316056,6 +316089,14 @@
     {
       "total": 548599,
       "at": "2026-09-24T23:43:03.171Z"
+    },
+    {
+      "total": 548624,
+      "at": "2026-09-24T23:48:03.298Z"
+    },
+    {
+      "total": 548624,
+      "at": "2026-09-24T23:48:04.691Z"
     }
   ],
   "gold_rush": null,
@@ -340778,13 +340819,13 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 87,
+      "hunger": 100,
       "water": 60,
       "health": 100,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:48:56.457Z",
-      "last_fed": "2026-09-24T19:53:21.060Z",
+      "last_fed": "2026-09-24T23:47:55.804Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -340832,7 +340873,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 29,
+      "friendship": 30,
       "hunts": 1,
       "hunt": {
         "start": "2026-09-24T21:28:33.306Z",
@@ -340862,7 +340903,7 @@
       "starve_since": null,
       "last_pet": "2026-09-24T23:13:49.196Z",
       "lastPetAct": "2026-09-24T23:13:49.196Z",
-      "last_feed_cmd": "2026-09-24T19:53:21.060Z",
+      "last_feed_cmd": "2026-09-24T23:47:55.804Z",
       "last_train_cmd": "2026-09-24T23:13:29.067Z"
     },
     "1521043721129558017": {
@@ -341407,8 +341448,8 @@
   "national_market": {
     "stock": {
       "Machine Parts": {
-        "qty": 78,
-        "price": 1536
+        "qty": 81,
+        "price": 1537
       },
       "Refined Fuel": {
         "qty": 38,
@@ -341471,7 +341512,7 @@
         "price": 144
       }
     },
-    "sold_count": 357,
+    "sold_count": 360,
     "bought_count": 123
   },
   "leaders": {
@@ -342065,6 +342106,16 @@
       "gini": 99.8702021811903,
       "top10": 100,
       "at": "2026-09-24T23:43:03.204Z"
+    },
+    {
+      "gini": 99.87017433468925,
+      "top10": 100,
+      "at": "2026-09-24T23:48:03.305Z"
+    },
+    {
+      "gini": 99.87019048216006,
+      "top10": 100,
+      "at": "2026-09-24T23:48:04.702Z"
     }
   ],
   "gdp_history": [
@@ -342283,6 +342334,14 @@
     {
       "gdp": 2024122,
       "at": "2026-09-24T23:43:03.212Z"
+    },
+    {
+      "gdp": 2024161,
+      "at": "2026-09-24T23:48:03.310Z"
+    },
+    {
+      "gdp": 2024161,
+      "at": "2026-09-24T23:48:04.708Z"
     }
   ]
 }
