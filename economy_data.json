@@ -1752,8 +1752,8 @@
       "last_illegal": "2026-09-23T10:45:53.205Z",
       "total_heat_generated": 131.842,
       "bot_level": 18,
-      "bot_xp": 637,
-      "bot_total_xp": 19012,
+      "bot_xp": 659,
+      "bot_total_xp": 19034,
       "daily_work_count": 102,
       "shock_worker": false,
       "mee6_level": 18,
@@ -284401,8 +284401,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 79,
-      "bot_total_xp": 13879,
+      "bot_xp": 95,
+      "bot_total_xp": 13895,
       "daily_work_count": 4,
       "shock_worker": false,
       "last_laylow": null,
@@ -316583,7 +316583,7 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1790288107961,
+      "1544820489191559270": 1790288175772,
       "791747702689103893": 1790286675062,
       "1456622719985782864": 1790287982278,
       "1082686076491137115": 1790288092862,
@@ -316599,7 +316599,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1790122314087,
       "1309104161278918706": 1790010702166,
-      "1325111649816023092": 1790288082795,
+      "1325111649816023092": 1790288163860,
       "1506785783506534426": 1790288105427,
       "807254722251587614": 1790282170177,
       "1353373037994705078": 1789068315659,
@@ -341450,39 +341450,7 @@
   "ai_memory": {},
   "elections": {
     "enabled": true,
-    "active": {
-      "id": "EL7",
-      "title": "Premiership Election",
-      "candidates": [
-        {
-          "id": "C1",
-          "name": "Iyka  Traditionalist",
-          "userId": "1456622719985782864",
-          "avatarHash": "284baf1dfd0b062e9906a28e2fdceed5",
-          "avatarAnimated": false,
-          "ideology": null,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-24T22:08:56.594Z"
-        }
-      ],
-      "votes": {
-        "1082686076491137115": "C1"
-      },
-      "timeline": [
-        {
-          "t": "2026-09-24T22:12:58.796Z",
-          "cid": "C1",
-          "by": "1082686076491137115"
-        }
-      ],
-      "startsAt": "2026-09-24T22:12:48.949Z",
-      "endsAt": "2026-09-25T22:12:48.949Z",
-      "status": "running",
-      "winnerId": null,
-      "updateMessageId": "1552804062632738816",
-      "next_cid": 2,
-      "startedBy": "hyawii2.0"
-    },
+    "active": null,
     "history": [
       {
         "id": "EL1",
@@ -341598,6 +341566,21 @@
         ],
         "total": 0,
         "endedAt": "2026-09-24T22:08:06.803Z"
+      },
+      {
+        "id": "EL7",
+        "title": "Premiership Election",
+        "winnerId": "C1",
+        "winnerName": "Iyka  Traditionalist",
+        "totals": [
+          {
+            "id": "C1",
+            "name": "Iyka  Traditionalist",
+            "votes": 1
+          }
+        ],
+        "total": 1,
+        "endedAt": "2026-09-24T22:16:27.339Z"
       }
     ],
     "updateChannelId": "1547671101725876254",
