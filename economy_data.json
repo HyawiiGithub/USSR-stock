@@ -835,8 +835,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 751,
-      "bot_total_xp": 21746,
+      "bot_xp": 770,
+      "bot_total_xp": 21765,
       "daily_work_count": 77,
       "shock_worker": false,
       "mee6_level": 19,
@@ -316586,7 +316586,7 @@
     "cooldowns": {
       "1544820489191559270": 1790288636895,
       "791747702689103893": 1790286675062,
-      "1456622719985782864": 1790287982278,
+      "1456622719985782864": 1790288841183,
       "1082686076491137115": 1790288768842,
       "1229741033265299506": 1790288589411,
       "1536339779140976711": 1790283533638,
@@ -341452,47 +341452,38 @@
   "elections": {
     "enabled": true,
     "active": {
-      "id": "EL8",
+      "id": "EL9",
       "title": "Premiership Election",
       "candidates": [
         {
           "id": "C1",
+          "name": "test test test",
+          "userId": null,
+          "avatarHash": null,
+          "avatarAnimated": false,
+          "ideology": null,
+          "addedBy": "hyawii2.0",
+          "addedAt": "2026-09-24T22:27:19.798Z"
+        },
+        {
+          "id": "C2",
           "name": "Erwin",
           "userId": "1229741033265299506",
           "avatarHash": "9bbd0a8e2a378a228e8d4dca219b3644",
           "avatarAnimated": false,
-          "ideology": "Goy",
+          "ideology": null,
           "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-24T22:25:33.737Z"
-        },
-        {
-          "id": "C2",
-          "name": "Iyka Menzhinsky",
-          "userId": "1456622719985782864",
-          "avatarHash": "284baf1dfd0b062e9906a28e2fdceed5",
-          "avatarAnimated": false,
-          "ideology": "Traditionalist",
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-24T22:26:05.510Z"
+          "addedAt": "2026-09-24T22:27:34.915Z"
         }
       ],
-      "votes": {
-        "1082686076491137115": "C1"
-      },
-      "timeline": [
-        {
-          "t": "2026-09-24T22:26:45.434Z",
-          "cid": "C1",
-          "by": "1082686076491137115"
-        }
-      ],
-      "startsAt": "2026-09-24T22:26:35.828Z",
-      "endsAt": "2026-09-25T22:26:35.828Z",
-      "status": "running",
+      "votes": {},
+      "timeline": [],
+      "startsAt": null,
+      "endsAt": null,
+      "status": "staged",
       "winnerId": null,
-      "updateMessageId": "1552808245817511978",
-      "next_cid": 2,
-      "startedBy": "hyawii2.0"
+      "updateMessageId": "1552808691567304834",
+      "next_cid": 2
     },
     "history": [
       {
@@ -341624,12 +341615,32 @@
         ],
         "total": 1,
         "endedAt": "2026-09-24T22:16:27.339Z"
+      },
+      {
+        "id": "EL8",
+        "title": "Premiership Election",
+        "winnerId": "C1",
+        "winnerName": "Erwin",
+        "totals": [
+          {
+            "id": "C1",
+            "name": "Erwin",
+            "votes": 1
+          },
+          {
+            "id": "C2",
+            "name": "Iyka Menzhinsky",
+            "votes": 0
+          }
+        ],
+        "total": 1,
+        "endedAt": "2026-09-24T22:26:48.952Z"
       }
     ],
     "updateChannelId": "1547671101725876254",
     "confirmChannelId": "1547671101725876254",
     "animated": {},
-    "next_num": 8,
+    "next_num": 9,
     "avatars_refreshed_at": "2026-09-24T22:25:34.479Z",
     "board_style": "tno"
   },
