@@ -307089,11 +307089,6 @@
   "gsi_history": [
     {
       "price": 100,
-      "change_percent": 0.2751423131497634,
-      "recorded_at": "2026-09-24T18:15:30.112Z"
-    },
-    {
-      "price": 100,
       "change_percent": 0.16266153788881324,
       "recorded_at": "2026-09-24T18:28:16.694Z"
     },
@@ -307586,6 +307581,11 @@
       "price": 98,
       "change_percent": -0.29978568646468806,
       "recorded_at": "2026-09-24T23:28:02.758Z"
+    },
+    {
+      "price": 97,
+      "change_percent": -0.1070049336783771,
+      "recorded_at": "2026-09-24T23:33:02.507Z"
     }
   ],
   "factory_names": [
@@ -307607,7 +307607,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 42094.111558186785,
+  "money_printed": 41252.22932702305,
   "total_bank_reserves": 449519,
   "inflation_history": [
     0,
@@ -307933,7 +307933,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 31,
-    "Brass": 12,
+    "Brass": 10,
     "Cake": 6,
     "Bread": 7
   },
@@ -307964,15 +307964,10 @@
     "Flour": 20,
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
-    "Brass": 8,
+    "Brass": 10,
     "Brass Valve": 3
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 1,
-      "at": "2026-09-17T12:13:17.325Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -309467,6 +309462,11 @@
       "item": "Brass",
       "qty": 1,
       "at": "2026-09-24T23:18:00.902Z"
+    },
+    {
+      "item": "Brass",
+      "qty": 2,
+      "at": "2026-09-24T23:33:00.936Z"
     }
   ],
   "demand_history": {
@@ -313247,6 +313247,11 @@
         "demand": 1.2919485405799116,
         "at": "2026-09-24T23:18:00.903Z",
         "supply": 32
+      },
+      {
+        "demand": 1.3085361225693508,
+        "at": "2026-09-24T23:33:00.940Z",
+        "supply": 32
       }
     ],
     "Brass Valve": [
@@ -315654,10 +315659,6 @@
   "total_rubles_history": [
     {
       "total": 558145,
-      "at": "2026-09-24T15:16:24.327Z"
-    },
-    {
-      "total": 558145,
       "at": "2026-09-24T15:21:20.759Z"
     },
     {
@@ -316051,6 +316052,10 @@
     {
       "total": 548599,
       "at": "2026-09-24T23:28:03.230Z"
+    },
+    {
+      "total": 548599,
+      "at": "2026-09-24T23:33:03.158Z"
     }
   ],
   "gold_rush": null,
@@ -338677,12 +338682,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.74,
+    "rub_per_usd": 7.82,
     "history": [
-      {
-        "rate": 7.92,
-        "at": "2026-09-24T04:58:12.772Z"
-      },
       {
         "rate": 7.94,
         "at": "2026-09-24T05:08:12.585Z"
@@ -339078,9 +339079,13 @@
       {
         "rate": 7.74,
         "at": "2026-09-24T23:23:01.152Z"
+      },
+      {
+        "rate": 7.82,
+        "at": "2026-09-24T23:33:01.374Z"
       }
     ],
-    "last_update": "2026-09-24T23:23:01.152Z",
+    "last_update": "2026-09-24T23:33:01.374Z",
     "manual_override": null
   },
   "national_budget": {
@@ -342045,6 +342050,11 @@
       "gini": 99.8702021811903,
       "top10": 100,
       "at": "2026-09-24T23:28:03.242Z"
+    },
+    {
+      "gini": 99.8702021811903,
+      "top10": 100,
+      "at": "2026-09-24T23:33:03.181Z"
     }
   ],
   "gdp_history": [
@@ -342251,6 +342261,10 @@
     {
       "gdp": 2024122,
       "at": "2026-09-24T23:28:03.250Z"
+    },
+    {
+      "gdp": 2024122,
+      "at": "2026-09-24T23:33:03.190Z"
     }
   ]
 }
