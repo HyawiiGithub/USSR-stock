@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 27,
-      "bot_xp": 45,
-      "bot_total_xp": 51300,
+      "bot_xp": 65,
+      "bot_total_xp": 51320,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 27,
@@ -84932,8 +84932,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 18,
-      "bot_xp": 1389,
-      "bot_total_xp": 19764,
+      "bot_xp": 1405,
+      "bot_total_xp": 19780,
       "daily_work_count": 69,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-13",
@@ -294245,8 +294245,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 1112,
-      "bot_total_xp": 11157,
+      "bot_xp": 1127,
+      "bot_total_xp": 11172,
       "daily_work_count": 61,
       "shock_worker": false,
       "last_laylow": null,
@@ -307002,11 +307002,6 @@
   },
   "gsi_history": [
     {
-      "price": 88,
-      "change_percent": 0.9405083244625758,
-      "recorded_at": "2026-09-24T14:40:00.170Z"
-    },
-    {
       "price": 89,
       "change_percent": 1.1967282724069792,
       "recorded_at": "2026-09-24T14:41:17.919Z"
@@ -307500,6 +307495,11 @@
       "price": 100,
       "change_percent": 0.3557061434297377,
       "recorded_at": "2026-09-24T19:30:25.578Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.34261985449189347,
+      "recorded_at": "2026-09-24T19:35:25.787Z"
     }
   ],
   "factory_names": [
@@ -307846,7 +307846,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 6,
+    "Machine Parts": 4,
     "Brass": 8,
     "Brass Valve": 3
   },
@@ -307871,7 +307871,7 @@
     "Reactor Core": 8,
     "Gas Fuel": 102,
     "Steel Beam": 2,
-    "Machine Parts": 73,
+    "Machine Parts": 75,
     "Sugar": 51,
     "Fertilizer": 17,
     "Flour": 20,
@@ -307880,11 +307880,6 @@
     "Brass": 2
   },
   "consumption_history": [
-    {
-      "item": "Iron Ingot",
-      "qty": 2,
-      "at": "2026-09-17T03:58:16.684Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 2,
@@ -309379,6 +309374,11 @@
       "item": "Brass",
       "qty": 2,
       "at": "2026-09-24T19:11:39.083Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 2,
+      "at": "2026-09-24T19:35:24.184Z"
     }
   ],
   "demand_history": {
@@ -312757,6 +312757,11 @@
         "demand": 1.0366448414292089,
         "at": "2026-09-24T18:45:03.133Z",
         "supply": 66
+      },
+      {
+        "demand": 1.150909779198335,
+        "at": "2026-09-24T19:35:24.185Z",
+        "supply": 66
       }
     ],
     "Sugar": [
@@ -315502,10 +315507,6 @@
   "total_rubles_history": [
     {
       "total": 563177,
-      "at": "2026-09-24T07:43:18.947Z"
-    },
-    {
-      "total": 563177,
       "at": "2026-09-24T07:48:18.867Z"
     },
     {
@@ -315899,6 +315900,10 @@
     {
       "total": 559181,
       "at": "2026-09-24T19:30:25.903Z"
+    },
+    {
+      "total": 559181,
+      "at": "2026-09-24T19:35:26.019Z"
     }
   ],
   "gold_rush": null,
@@ -316499,7 +316504,7 @@
       "1470136693821800521": 1790122314087,
       "1309104161278918706": 1790010702166,
       "1325111649816023092": 1790275691249,
-      "1506785783506534426": 1790278321128,
+      "1506785783506534426": 1790278544233,
       "807254722251587614": 1790273814083,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1790275366867,
@@ -316971,21 +316976,9 @@
       "2026-Q3": {
         "positive": 73,
         "negative": 38,
-        "neutral": 1654,
-        "total": 1765,
+        "neutral": 1655,
+        "total": 1766,
         "mentions": [
-          {
-            "at": "2026-09-18T18:52:14.419Z",
-            "userId": "1483005845867593831",
-            "username": "cloobulus",
-            "channelId": "688492708838375443",
-            "messageId": "1550580222171029555",
-            "text": "<@1082686076491137115>",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-18T18:59:31.997Z",
             "userId": "807254722251587614",
@@ -322973,23 +322966,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-24T19:35:57.480Z",
+            "userId": "1506785783506534426",
+            "username": "yuktobanian1",
+            "channelId": "605951687974453248",
+            "messageId": "1552765551284195489",
+            "text": "What's you premier level",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-13T00:25:10.706Z",
-        "userId": "1173662113340854353",
-        "username": "ray_4455",
-        "channelId": "605951687974453248",
-        "messageId": "1548489684118671461",
-        "text": "Hey <@1082686076491137115>",
-        "sentiment": "neutral",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-13T09:02:03.611Z",
         "userId": "1456622719985782864",
@@ -334967,9 +334961,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-24T19:35:57.480Z",
+        "userId": "1506785783506534426",
+        "username": "yuktobanian1",
+        "channelId": "605951687974453248",
+        "messageId": "1552765551284195489",
+        "text": "What's you premier level",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-24T19:32:02.348Z",
+    "last_scan": "2026-09-24T19:35:57.480Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -341468,6 +341474,11 @@
       "gini": 99.86500914282065,
       "top10": 100,
       "at": "2026-09-24T19:30:25.916Z"
+    },
+    {
+      "gini": 99.86500914282065,
+      "top10": 100,
+      "at": "2026-09-24T19:35:26.030Z"
     }
   ],
   "gdp_history": [
@@ -341494,6 +341505,10 @@
     {
       "gdp": 2032492,
       "at": "2026-09-24T19:30:25.922Z"
+    },
+    {
+      "gdp": 2032492,
+      "at": "2026-09-24T19:35:26.038Z"
     }
   ]
 }
