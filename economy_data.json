@@ -317075,21 +317075,9 @@
       "2026-Q3": {
         "positive": 73,
         "negative": 38,
-        "neutral": 1668,
-        "total": 1779,
+        "neutral": 1669,
+        "total": 1780,
         "mentions": [
-          {
-            "at": "2026-09-18T20:34:36.232Z",
-            "userId": "1456622719985782864",
-            "username": "seren_menzhinsky",
-            "channelId": "605951687974453248",
-            "messageId": "1550605984571981825",
-            "text": "<@1082686076491137115> you killed it...",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-18T20:35:11.665Z",
             "userId": "874346333882945547",
@@ -323077,24 +323065,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-24T22:25:46.208Z",
+            "userId": "1082686076491137115",
+            "username": "hyawii2.0",
+            "channelId": "1547671101725876254",
+            "messageId": "1552808285529317417",
+            "text": "-addcandidate Google Giggles <@1082686076491137115>  | Reformist",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-13T13:49:21.434Z",
-        "userId": "1506785783506534426",
-        "username": "yuktobanian1",
-        "channelId": "605951687974453248",
-        "messageId": "1548692059857354815",
-        "text": "<@1082686076491137115> and one more thing your pro propaganda newspaper is made",
-        "sentiment": "negative",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-13T13:53:59.460Z",
         "userId": "874346333882945547",
@@ -335082,9 +335070,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-24T22:25:46.208Z",
+        "userId": "1082686076491137115",
+        "username": "hyawii2.0",
+        "channelId": "1547671101725876254",
+        "messageId": "1552808285529317417",
+        "text": "-addcandidate Google Giggles <@1082686076491137115>  | Reformist",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-24T22:23:19.434Z",
+    "last_scan": "2026-09-24T22:25:46.208Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -341451,7 +341451,30 @@
   "ai_memory": {},
   "elections": {
     "enabled": true,
-    "active": null,
+    "active": {
+      "id": "EL8",
+      "title": "Premiership Election",
+      "candidates": [
+        {
+          "id": "C1",
+          "name": "Erwin",
+          "userId": "1229741033265299506",
+          "avatarHash": "9bbd0a8e2a378a228e8d4dca219b3644",
+          "avatarAnimated": false,
+          "ideology": "Goy",
+          "addedBy": "hyawii2.0",
+          "addedAt": "2026-09-24T22:25:33.737Z"
+        }
+      ],
+      "votes": {},
+      "timeline": [],
+      "startsAt": null,
+      "endsAt": null,
+      "status": "staged",
+      "winnerId": null,
+      "updateMessageId": "1552808245817511978",
+      "next_cid": 1
+    },
     "history": [
       {
         "id": "EL1",
@@ -341587,8 +341610,8 @@
     "updateChannelId": "1547671101725876254",
     "confirmChannelId": "1547671101725876254",
     "animated": {},
-    "next_num": 7,
-    "avatars_refreshed_at": "2026-09-24T21:14:43.394Z",
+    "next_num": 8,
+    "avatars_refreshed_at": "2026-09-24T22:25:34.479Z",
     "board_style": "tno"
   },
   "currency": {
