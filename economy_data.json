@@ -306927,11 +306927,6 @@
   "gsi_history": [
     {
       "price": 81,
-      "change_percent": 0.6917227754781899,
-      "recorded_at": "2026-09-24T09:10:38.214Z"
-    },
-    {
-      "price": 81,
       "change_percent": 0.7411466964656509,
       "recorded_at": "2026-09-24T09:13:17.952Z"
     },
@@ -307424,6 +307419,11 @@
       "price": 102,
       "change_percent": 0.1637015058037373,
       "recorded_at": "2026-09-24T17:33:16.926Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.24286385770429272,
+      "recorded_at": "2026-09-24T17:36:21.284Z"
     }
   ],
   "factory_names": [
@@ -307445,8 +307445,8 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 24853.336400816574,
-  "total_bank_reserves": 457890,
+  "money_printed": 24356.26967280024,
+  "total_bank_reserves": 457905,
   "inflation_history": [
     0,
     0,
@@ -307704,7 +307704,7 @@
     "Concrete": 1.4011496862970094,
     "Glass": 1.411529175711957,
     "Steel Beam": 1.3980172698649311,
-    "Machine Parts": 0.8994276564471543,
+    "Machine Parts": 0.9194276564471543,
     "Refined Fuel": 1.395462419190915,
     "Uranium Rod": 1.403800462527732,
     "Reactor Core": 1.40377267545479,
@@ -307764,7 +307764,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 10
+    "Machine Parts": 9
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -307787,7 +307787,7 @@
     "Reactor Core": 8,
     "Gas Fuel": 102,
     "Steel Beam": 2,
-    "Machine Parts": 69,
+    "Machine Parts": 70,
     "Sugar": 51,
     "Fertilizer": 17,
     "Flour": 20,
@@ -307795,11 +307795,6 @@
     "Aluminium Ingot": 5
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 2,
-      "at": "2026-09-17T02:58:16.610Z"
-    },
     {
       "item": "Iron Ingot",
       "qty": 1,
@@ -309294,6 +309289,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-24T17:21:17.936Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-09-24T17:36:17.807Z"
     }
   ],
   "demand_history": {
@@ -312657,6 +312657,11 @@
         "demand": 0.8526422989712985,
         "at": "2026-09-24T17:21:17.937Z",
         "supply": 66
+      },
+      {
+        "demand": 0.8994276564471543,
+        "at": "2026-09-24T17:36:17.812Z",
+        "supply": 66
       }
     ],
     "Sugar": [
@@ -315395,10 +315400,6 @@
   "total_rubles_history": [
     {
       "total": 563225,
-      "at": "2026-09-24T06:03:18.143Z"
-    },
-    {
-      "total": 563225,
       "at": "2026-09-24T06:03:18.662Z"
     },
     {
@@ -315792,6 +315793,10 @@
     {
       "total": 556518,
       "at": "2026-09-24T17:31:22.415Z"
+    },
+    {
+      "total": 556071,
+      "at": "2026-09-24T17:36:22.345Z"
     }
   ],
   "gold_rush": null,
@@ -338385,12 +338390,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.73,
+    "rub_per_usd": 7.71,
     "history": [
-      {
-        "rate": 8.06,
-        "at": "2026-09-23T21:28:10.094Z"
-      },
       {
         "rate": 7.95,
         "at": "2026-09-23T21:38:10.117Z"
@@ -338786,9 +338787,13 @@
       {
         "rate": 7.73,
         "at": "2026-09-24T17:26:18.475Z"
+      },
+      {
+        "rate": 7.71,
+        "at": "2026-09-24T17:36:18.471Z"
       }
     ],
-    "last_update": "2026-09-24T17:26:18.475Z",
+    "last_update": "2026-09-24T17:36:18.471Z",
     "manual_override": null
   },
   "national_budget": {
