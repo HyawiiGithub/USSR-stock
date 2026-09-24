@@ -307561,7 +307561,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 59096.838807455126,
+  "money_printed": 57914.902031306025,
   "total_bank_reserves": 456032,
   "inflation_history": [
     0,
@@ -338604,12 +338604,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.82,
+    "rub_per_usd": 7.81,
     "history": [
-      {
-        "rate": 7.99,
-        "at": "2026-09-24T02:08:12.343Z"
-      },
       {
         "rate": 8.04,
         "at": "2026-09-24T02:18:12.300Z"
@@ -339005,9 +339001,13 @@
       {
         "rate": 7.82,
         "at": "2026-09-24T21:10:27.449Z"
+      },
+      {
+        "rate": 7.81,
+        "at": "2026-09-24T21:13:42.688Z"
       }
     ],
-    "last_update": "2026-09-24T21:10:27.449Z",
+    "last_update": "2026-09-24T21:13:42.688Z",
     "manual_override": null
   },
   "national_budget": {
@@ -341432,47 +341432,7 @@
   "ai_memory": {},
   "elections": {
     "enabled": true,
-    "active": {
-      "id": "EL4",
-      "title": "Premiership Election",
-      "candidates": [
-        {
-          "id": "C1",
-          "name": "erwinzinky",
-          "userId": "1229741033265299506",
-          "avatarHash": "9bbd0a8e2a378a228e8d4dca219b3644",
-          "avatarAnimated": false,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-24T19:13:35.035Z"
-        },
-        {
-          "id": "C2",
-          "name": "speer",
-          "userId": "874346333882945547",
-          "avatarHash": "73a1b4fe643e2b3ea83e67a765ac549c",
-          "avatarAnimated": false,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-24T19:14:35.699Z"
-        }
-      ],
-      "votes": {
-        "1082686076491137115": "C2"
-      },
-      "timeline": [
-        {
-          "t": "2026-09-24T19:15:27.985Z",
-          "cid": "C2",
-          "by": "1082686076491137115"
-        }
-      ],
-      "startsAt": "2026-09-24T19:15:22.807Z",
-      "endsAt": "2026-09-25T19:15:22.807Z",
-      "status": "running",
-      "winnerId": null,
-      "updateMessageId": "1552759931474546698",
-      "next_cid": 2,
-      "startedBy": "hyawii2.0"
-    },
+    "active": null,
     "history": [
       {
         "id": "EL1",
@@ -341533,6 +341493,26 @@
         ],
         "total": 1,
         "endedAt": "2026-09-21T15:44:57.119Z"
+      },
+      {
+        "id": "EL4",
+        "title": "Premiership Election",
+        "winnerId": "C2",
+        "winnerName": "speer",
+        "totals": [
+          {
+            "id": "C2",
+            "name": "speer",
+            "votes": 1
+          },
+          {
+            "id": "C1",
+            "name": "erwinzinky",
+            "votes": 0
+          }
+        ],
+        "total": 1,
+        "endedAt": "2026-09-24T21:14:28.547Z"
       }
     ],
     "updateChannelId": "1547671101725876254",
