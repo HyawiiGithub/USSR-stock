@@ -308298,7 +308298,7 @@
     "Cake": 4,
     "Bread": 1,
     "Steel Beam": 3,
-    "Brass Valve": 3
+    "Brass Valve": 1
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -308328,14 +308328,9 @@
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
     "Brass": 29,
-    "Brass Valve": 3
+    "Brass Valve": 5
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 1,
-      "at": "2026-09-18T17:28:21.198Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 2,
@@ -309830,6 +309825,11 @@
       "item": "Bread",
       "qty": 2,
       "at": "2026-09-25T17:09:48.277Z"
+    },
+    {
+      "item": "Brass Valve",
+      "qty": 2,
+      "at": "2026-09-25T17:24:48.218Z"
     }
   ],
   "demand_history": {
@@ -313706,6 +313706,11 @@
       {
         "demand": 1.3450966437214722,
         "at": "2026-09-24T20:35:25.401Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3347999205542616,
+        "at": "2026-09-25T17:24:48.218Z",
         "supply": 1
       }
     ]
