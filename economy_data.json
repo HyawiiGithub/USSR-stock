@@ -493,22 +493,22 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 20,
+      "cash": 40,
       "bank": 0,
       "resources": {
         "Peat": 1
       },
       "inventory": {
         "Canned Fish": 1,
-        "Bread": 2,
+        "Bread": 1,
         "Cake": 2
       },
       "company_id": null,
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-24T20:47:15.343Z",
-      "work_count": 136,
+      "last_work": "2026-09-25T14:44:46.467Z",
+      "work_count": 137,
       "last_claim": "2026-09-24T07:08:18.461Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:27:29.616694",
@@ -523,15 +523,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 498,
-      "bot_total_xp": 16478,
-      "daily_work_count": 127,
+      "bot_xp": 564,
+      "bot_total_xp": 16544,
+      "daily_work_count": 128,
       "shock_worker": false,
       "mee6_level": 17,
-      "last_daily_work_date": "2026-09-24",
+      "last_daily_work_date": "2026-09-25",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-24T20:52:31.038Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-24T20:12:51.968Z",
       "train_reminder": false,
@@ -950,13 +950,13 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 375,
-      "heat": 14.64701144188623,
+      "heat": 13.69366158706286,
       "wanted": 0,
       "last_illegal": "2026-09-25T14:43:41.551Z",
       "total_heat_generated": 1347.2738999999995,
       "bot_level": 25,
-      "bot_xp": 3170,
-      "bot_total_xp": 45170,
+      "bot_xp": 3194,
+      "bot_total_xp": 45194,
       "daily_work_count": 752,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-25",
@@ -306383,14 +306383,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1521043721129558017>",
       "hq_ssr": "Ukrainian SSR",
-      "funds": 39011,
+      "funds": 39006,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 236964,
-      "market_cap": 236964,
+      "share_price": 247437,
+      "market_cap": 247437,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -306417,23 +306417,28 @@
       },
       "inventory": {
         "Sunflower": 49,
-        "Iron Ore": 13,
+        "Iron Ore": 15,
         "Salt": 31,
-        "Wheat": 133,
-        "Coal": 31,
+        "Wheat": 113,
+        "Coal": 36,
         "Corn": 18,
-        "Steel Ingot": 60,
+        "Steel Ingot": 66,
         "Steel Beam": 3,
-        "Machine Parts": 43,
-        "Gold": 6,
+        "Machine Parts": 51,
+        "Gold": 7,
         "Natural Gas": 2,
-        "Iron Ingot": 15
+        "Iron Ingot": 15,
+        "Sugar": 1,
+        "Phosphorite": 1,
+        "Oil Shale": 1,
+        "Peat": 1,
+        "Timber": 1,
+        "Uranium": 1,
+        "Flax": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-24T20:12:51.968Z",
+      "last_collect": "2026-09-25T14:44:49.502Z",
       "price_history": [
-        203516,
-        203524,
         203532,
         205388,
         205390,
@@ -306531,7 +306536,9 @@
         236931,
         236934,
         236953,
-        236964
+        236964,
+        236975,
+        247437
       ],
       "is_state_owned": true,
       "director_id": "1521043721129558017",
@@ -306735,8 +306742,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 422524,
-      "market_cap": 422524,
+      "share_price": 423320,
+      "market_cap": 423320,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -306849,7 +306856,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T14:32:49.552Z",
       "price_history": [
-        382800,
         382782,
         385344,
         385342,
@@ -306948,7 +306954,8 @@
         415793,
         422335,
         422556,
-        422524
+        422524,
+        423320
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -306969,8 +306976,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 11.416582470605029,
-      "underground_heat": 1102.0806036047686,
+      "heat": 10.631406351650934,
+      "underground_heat": 1101.5005531610204,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -307365,21 +307372,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.11470611650518721,
-      "recorded_at": "2026-09-25T00:08:02.992Z"
-    },
-    {
-      "price": 101,
-      "change_percent": 0.07606479555674724,
-      "recorded_at": "2026-09-25T00:13:03.156Z"
-    },
-    {
-      "price": 101,
-      "change_percent": 0.3689703158964163,
-      "recorded_at": "2026-09-25T00:18:03.063Z"
-    },
     {
       "price": 101,
       "change_percent": 0.38108952255566336,
@@ -307864,12 +307856,26 @@
       "price": 94,
       "change_percent": 0.597730003850268,
       "recorded_at": "2026-09-25T14:43:42.849Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.7977488823578176,
+      "recorded_at": "2026-09-25T14:44:36.127Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.45600883096761013,
+      "recorded_at": "2026-09-25T14:44:47.546Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.8188357728811282,
+      "recorded_at": "2026-09-25T14:44:50.536Z"
     }
   ],
   "factory_names": [
     "Brezhnev Auto Factory",
-    "Siberian Mining Co",
-    "Ural Heavy Industries"
+    "Siberian Mining Co"
   ],
   "used_factory_names": [
     "Khrushchev Agricultural",
@@ -307877,7 +307883,8 @@
     "Red Star Steelworks",
     "Lenin Machine Works",
     "Volga Shipbuilding",
-    "Soviet Iron Foundry"
+    "Soviet Iron Foundry",
+    "Ural Heavy Industries"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -307885,7 +307892,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 25777.110328763567,
+  "money_printed": 25792.110328763567,
   "total_bank_reserves": 445674,
   "inflation_history": [
     0,
@@ -308211,7 +308218,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 20,
-    "Brass": 16,
+    "Brass": 14,
     "Cake": 9
   },
   "global_consumption": {
@@ -308241,15 +308248,10 @@
     "Flour": 20,
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
-    "Brass": 24,
+    "Brass": 26,
     "Brass Valve": 3
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 1,
-      "at": "2026-09-18T13:13:20.420Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 2,
@@ -309744,6 +309746,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-09-25T06:18:01.992Z"
+    },
+    {
+      "item": "Brass",
+      "qty": 2,
+      "at": "2026-09-25T14:44:34.248Z"
     }
   ],
   "demand_history": {
@@ -313594,6 +313601,11 @@
         "demand": 1.1208369634564463,
         "at": "2026-09-25T06:03:01.882Z",
         "supply": 22
+      },
+      {
+        "demand": 1.0355631625983983,
+        "at": "2026-09-25T14:44:34.248Z",
+        "supply": 12
       }
     ],
     "Brass Valve": [
@@ -316001,10 +316013,6 @@
   "total_rubles_history": [
     {
       "total": 549046,
-      "at": "2026-09-24T22:43:02.540Z"
-    },
-    {
-      "total": 549046,
       "at": "2026-09-24T22:48:01.048Z"
     },
     {
@@ -316398,6 +316406,10 @@
     {
       "total": 553610,
       "at": "2026-09-25T14:39:36.475Z"
+    },
+    {
+      "total": 552514,
+      "at": "2026-09-25T14:44:36.339Z"
     }
   ],
   "gold_rush": null,
@@ -316424,7 +316436,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 2.72985,
+  "heat_global": 2.42985,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -316863,7 +316875,8 @@
         "1528783188728483944": 1,
         "874346333882945547": 1,
         "1186597507720019988": 1,
-        "918518877414100993": 1
+        "918518877414100993": 1,
+        "1521043721129558017": 1
       }
     },
     "collect_daily": {
@@ -316978,7 +316991,8 @@
         "Nuristani SSR": 6,
         "Estonian SSR": 0,
         "Kazakh SSR": 0,
-        "Azerbaijanian SSR": 0
+        "Azerbaijanian SSR": 0,
+        "Ukrainian SSR": 0
       }
     },
     "qotd": {
@@ -317007,10 +317021,10 @@
       "1229741033265299506": 1790289124049,
       "1536339779140976711": 1790283533638,
       "780837437987094560": 1790304726682,
-      "874346333882945547": 1790293850685,
+      "874346333882945547": 1790347480198,
       "870686833976172574": 1790260963829,
       "1186597507720019988": 1790347309320,
-      "1521043721129558017": 1790282390467,
+      "1521043721129558017": 1790347484172,
       "1397601108616024075": 1790304807323,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -336922,12 +336936,10 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 28,
-    "beforeLvlC": 14,
-    "afterLvl": 15,
-    "leveled": [
-      15
-    ]
+    "xpGainC": 24,
+    "beforeLvlC": 17,
+    "afterLvl": 17,
+    "leveled": []
   },
   "central_bank": {
     "reserves": 10962,
@@ -341253,13 +341265,13 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 58,
+      "hunger": 98,
       "water": 60,
       "health": 100,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:56:00.173Z",
-      "last_fed": "2026-09-24T17:04:53.649Z",
+      "last_fed": "2026-09-25T14:44:54.031Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -341307,26 +341319,9 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 28,
-      "hunts": 1,
-      "hunt": {
-        "start": "2026-09-24T17:11:25.673Z",
-        "end": "2026-09-25T05:11:25.673Z",
-        "durH": 12,
-        "instant": false,
-        "lootMult": 1,
-        "expB": 0,
-        "treas": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "zoom": false,
-        "thiefLvl": 0,
-        "pcs": 10,
-        "collarUsed": false
-      },
+      "friendship": 29,
+      "hunts": 2,
+      "hunt": null,
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -341336,7 +341331,8 @@
       },
       "starve_since": null,
       "last_pet": "2026-09-24T20:29:09.824Z",
-      "lastPetAct": "2026-09-24T20:29:09.824Z"
+      "lastPetAct": "2026-09-24T20:29:09.824Z",
+      "last_feed_cmd": "2026-09-25T14:44:54.031Z"
     },
     "1511756975392948224": {
       "name": "Soviet Cat",
@@ -342218,11 +342214,6 @@
     {
       "gini": 99.86972003666752,
       "top10": 100,
-      "at": "2026-09-24T22:43:02.556Z"
-    },
-    {
-      "gini": 99.86972003666752,
-      "top10": 100,
       "at": "2026-09-24T22:48:01.063Z"
     },
     {
@@ -342714,13 +342705,14 @@
       "gini": 99.86300336979205,
       "top10": 100,
       "at": "2026-09-25T14:39:36.488Z"
+    },
+    {
+      "gini": 99.86290770212112,
+      "top10": 100,
+      "at": "2026-09-25T14:44:36.354Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2024212,
-      "at": "2026-09-24T22:43:02.562Z"
-    },
     {
       "gdp": 2024212,
       "at": "2026-09-24T22:48:01.071Z"
@@ -343116,6 +343108,10 @@
     {
       "gdp": 2040982,
       "at": "2026-09-25T14:39:36.493Z"
+    },
+    {
+      "gdp": 2041359,
+      "at": "2026-09-25T14:44:36.365Z"
     }
   ]
 }
