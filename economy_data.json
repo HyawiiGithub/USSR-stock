@@ -1201,8 +1201,8 @@
       "last_illegal": "2026-09-16T21:12:26.375Z",
       "total_heat_generated": 26.191000000000003,
       "bot_level": 23,
-      "bot_xp": 1775,
-      "bot_total_xp": 35700,
+      "bot_xp": 1790,
+      "bot_total_xp": 35715,
       "daily_work_count": 16,
       "shock_worker": false,
       "mee6_level": 23,
@@ -308401,8 +308401,7 @@
     "Brass": 14,
     "Canned Fish": 2,
     "Pet Food": 5,
-    "Bread": 7,
-    "Reactor Core": 1
+    "Bread": 7
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -308422,7 +308421,7 @@
     "Aluminium Sheet": 8,
     "Circuit Board": 29,
     "Cotton Fabric": 12,
-    "Reactor Core": 8,
+    "Reactor Core": 9,
     "Gas Fuel": 102,
     "Steel Beam": 5,
     "Machine Parts": 95,
@@ -308436,11 +308435,6 @@
     "Pet Food": 4
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 2,
-      "at": "2026-09-19T06:13:23.026Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -309935,6 +309929,11 @@
       "item": "Canned Fish",
       "qty": 1,
       "at": "2026-09-25T23:22:06.600Z"
+    },
+    {
+      "item": "Reactor Core",
+      "qty": 1,
+      "at": "2026-09-25T23:37:07.167Z"
     }
   ],
   "demand_history": {
@@ -312751,6 +312750,11 @@
       {
         "demand": 1.3570950313110215,
         "at": "2026-09-22T15:31:28.281Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3733936883083206,
+        "at": "2026-09-25T23:37:07.167Z",
         "supply": 0
       }
     ],
