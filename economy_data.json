@@ -305951,6 +305951,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1497008536939528233": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -307132,11 +307170,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": 0.276454078171882,
-      "recorded_at": "2026-09-24T21:39:29.022Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.3692457088544854,
       "recorded_at": "2026-09-24T21:44:31.455Z"
     },
@@ -307629,6 +307662,11 @@
       "price": 102,
       "change_percent": 8.800022152885724,
       "recorded_at": "2026-09-25T04:17:59.892Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.057141995330027215,
+      "recorded_at": "2026-09-25T04:18:04.828Z"
     }
   ],
   "factory_names": [
@@ -307976,7 +308014,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 25,
-    "Brass": 4
+    "Brass": 3
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -308005,15 +308043,10 @@
     "Flour": 20,
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
-    "Brass": 16,
+    "Brass": 17,
     "Brass Valve": 3
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-09-18T03:28:20.359Z"
-    },
     {
       "item": "Fuel",
       "qty": 2,
@@ -309508,6 +309541,11 @@
       "item": "Brass",
       "qty": 2,
       "at": "2026-09-25T04:03:01.845Z"
+    },
+    {
+      "item": "Brass",
+      "qty": 1,
+      "at": "2026-09-25T04:18:01.905Z"
     }
   ],
   "demand_history": {
@@ -313333,6 +313371,11 @@
         "demand": 1.3260672852725448,
         "at": "2026-09-25T04:03:01.845Z",
         "supply": 32
+      },
+      {
+        "demand": 1.3260672852725448,
+        "at": "2026-09-25T04:18:01.905Z",
+        "supply": 32
       }
     ],
     "Brass Valve": [
@@ -315739,14 +315782,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 559226,
-      "at": "2026-09-24T19:45:26.449Z"
-    },
-    {
-      "total": 559226,
-      "at": "2026-09-24T19:50:26.473Z"
-    },
-    {
       "total": 557251,
       "at": "2026-09-24T19:55:26.550Z"
     },
@@ -316137,6 +316172,14 @@
     {
       "total": 548797,
       "at": "2026-09-25T04:13:05.018Z"
+    },
+    {
+      "total": 548797,
+      "at": "2026-09-25T04:18:05.087Z"
+    },
+    {
+      "total": 548797,
+      "at": "2026-09-25T04:18:05.896Z"
     }
   ],
   "gold_rush": null,
@@ -341858,16 +341901,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.86498418471781,
-      "top10": 100,
-      "at": "2026-09-24T19:45:26.463Z"
-    },
-    {
-      "gini": 99.86498418471781,
-      "top10": 100,
-      "at": "2026-09-24T19:50:26.488Z"
-    },
-    {
       "gini": 99.8653707545395,
       "top10": 100,
       "at": "2026-09-24T19:55:26.565Z"
@@ -342356,17 +342389,19 @@
       "gini": 99.86848141938174,
       "top10": 100,
       "at": "2026-09-25T04:13:05.030Z"
+    },
+    {
+      "gini": 99.86848141938174,
+      "top10": 100,
+      "at": "2026-09-25T04:18:05.102Z"
+    },
+    {
+      "gini": 99.86849777537982,
+      "top10": 100,
+      "at": "2026-09-25T04:18:05.922Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2032838,
-      "at": "2026-09-24T19:45:26.471Z"
-    },
-    {
-      "gdp": 2032838,
-      "at": "2026-09-24T19:50:26.496Z"
-    },
     {
       "gdp": 2030893,
       "at": "2026-09-24T19:55:26.569Z"
@@ -342758,6 +342793,14 @@
     {
       "gdp": 2025740,
       "at": "2026-09-25T04:13:05.038Z"
+    },
+    {
+      "gdp": 2025740,
+      "at": "2026-09-25T04:18:05.111Z"
+    },
+    {
+      "gdp": 2025740,
+      "at": "2026-09-25T04:18:05.931Z"
     }
   ]
 }
