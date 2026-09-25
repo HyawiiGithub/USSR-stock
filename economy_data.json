@@ -305989,6 +305989,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1122543880777240606": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -307170,11 +307208,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": -0.03543513558063108,
-      "recorded_at": "2026-09-24T21:53:14.582Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.5515406267226675,
       "recorded_at": "2026-09-24T21:55:25.320Z"
     },
@@ -307667,6 +307700,11 @@
       "price": 101,
       "change_percent": 0.2665879394457398,
       "recorded_at": "2026-09-25T04:38:04.766Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.11190061163182641,
+      "recorded_at": "2026-09-25T04:43:04.730Z"
     }
   ],
   "factory_names": [
@@ -307688,7 +307726,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 24860.409670072946,
+  "money_printed": 24363.201476671486,
   "total_bank_reserves": 447616,
   "inflation_history": [
     0,
@@ -315787,14 +315825,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 556507,
-      "at": "2026-09-24T20:15:26.682Z"
-    },
-    {
-      "total": 556507,
-      "at": "2026-09-24T20:20:26.872Z"
-    },
-    {
       "total": 556527,
       "at": "2026-09-24T20:25:26.971Z"
     },
@@ -316185,6 +316215,14 @@
     {
       "total": 548797,
       "at": "2026-09-25T04:38:05.336Z"
+    },
+    {
+      "total": 548797,
+      "at": "2026-09-25T04:43:05.490Z"
+    },
+    {
+      "total": 548797,
+      "at": "2026-09-25T04:43:06.158Z"
     }
   ],
   "gold_rush": null,
@@ -338822,12 +338860,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.34,
+    "rub_per_usd": 7.4,
     "history": [
-      {
-        "rate": 7.8,
-        "at": "2026-09-24T14:06:15.613Z"
-      },
       {
         "rate": 7.85,
         "at": "2026-09-24T14:16:17.200Z"
@@ -339223,9 +339257,13 @@
       {
         "rate": 7.34,
         "at": "2026-09-25T04:33:02.822Z"
+      },
+      {
+        "rate": 7.4,
+        "at": "2026-09-25T04:43:02.846Z"
       }
     ],
-    "last_update": "2026-09-25T04:33:02.822Z",
+    "last_update": "2026-09-25T04:43:02.846Z",
     "manual_override": null
   },
   "national_budget": {
@@ -341908,16 +341946,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.86682100844195,
-      "top10": 100,
-      "at": "2026-09-24T20:15:26.699Z"
-    },
-    {
-      "gini": 99.86682100844195,
-      "top10": 100,
-      "at": "2026-09-24T20:20:26.881Z"
-    },
-    {
       "gini": 99.86677594389006,
       "top10": 100,
       "at": "2026-09-24T20:25:26.985Z"
@@ -342406,17 +342434,19 @@
       "gini": 99.86849777537982,
       "top10": 100,
       "at": "2026-09-25T04:38:05.350Z"
+    },
+    {
+      "gini": 99.86849777537982,
+      "top10": 100,
+      "at": "2026-09-25T04:43:05.515Z"
+    },
+    {
+      "gini": 99.86851412731026,
+      "top10": 100,
+      "at": "2026-09-25T04:43:06.165Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2040064,
-      "at": "2026-09-24T20:15:26.708Z"
-    },
-    {
-      "gdp": 2043980,
-      "at": "2026-09-24T20:20:26.887Z"
-    },
     {
       "gdp": 2044580,
       "at": "2026-09-24T20:25:26.993Z"
@@ -342808,6 +342838,14 @@
     {
       "gdp": 2025740,
       "at": "2026-09-25T04:38:05.357Z"
+    },
+    {
+      "gdp": 2025740,
+      "at": "2026-09-25T04:43:05.521Z"
+    },
+    {
+      "gdp": 2025740,
+      "at": "2026-09-25T04:43:06.176Z"
     }
   ]
 }
