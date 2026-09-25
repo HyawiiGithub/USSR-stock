@@ -307974,7 +307974,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 32,
+    "Machine Parts": 30,
     "Brass": 10,
     "Cake": 4,
     "Bread": 6
@@ -308000,7 +308000,7 @@
     "Reactor Core": 8,
     "Gas Fuel": 102,
     "Steel Beam": 2,
-    "Machine Parts": 80,
+    "Machine Parts": 82,
     "Sugar": 51,
     "Fertilizer": 17,
     "Flour": 20,
@@ -308010,11 +308010,6 @@
     "Brass Valve": 3
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 2,
-      "at": "2026-09-17T13:28:18.031Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 1,
@@ -309509,6 +309504,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-09-25T00:33:01.687Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 2,
+      "at": "2026-09-25T00:48:01.532Z"
     }
   ],
   "demand_history": {
@@ -312916,6 +312916,11 @@
       {
         "demand": 1.1463706959423785,
         "at": "2026-09-25T00:03:01.226Z",
+        "supply": 44
+      },
+      {
+        "demand": 1.1770500902878276,
+        "at": "2026-09-25T00:48:01.532Z",
         "supply": 44
       }
     ],
