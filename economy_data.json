@@ -428,8 +428,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 70,
-      "bot_total_xp": 11895,
+      "bot_xp": 95,
+      "bot_total_xp": 11920,
       "daily_work_count": 137,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-25",
@@ -542,7 +542,7 @@
     },
     "1470136693821800521": {
       "username": "",
-      "cash": 139,
+      "cash": 212,
       "bank": 4747,
       "resources": {
         "Wheat": 1,
@@ -557,7 +557,7 @@
       "share_holdings": {},
       "last_work": "2026-09-23T00:12:39.324Z",
       "work_count": 46,
-      "last_claim": "2026-09-23T00:12:56.292Z",
+      "last_claim": "2026-09-25T15:17:08.673Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:48:46.526698",
       "ssr_region": "Estonian SSR",
@@ -571,8 +571,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 199,
-      "bot_total_xp": 674,
+      "bot_xp": 227,
+      "bot_total_xp": 702,
       "daily_work_count": 19,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-23",
@@ -1999,10 +1999,12 @@
       "pet_food_source": {}
     },
     "1511756975392948224": {
-      "cash": 458,
-      "bank": 23090,
+      "cash": 75,
+      "bank": 19850,
       "resources": {},
-      "inventory": {},
+      "inventory": {
+        "Bread": 9
+      },
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
@@ -2021,8 +2023,8 @@
       "last_illegal": "2026-09-23T10:56:55.945Z",
       "total_heat_generated": 843.9090000000002,
       "bot_level": 22,
-      "bot_xp": 2809,
-      "bot_total_xp": 33114,
+      "bot_xp": 2829,
+      "bot_total_xp": 33134,
       "daily_work_count": 152,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-25",
@@ -307189,14 +307191,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 7406,
+      "funds": 7447,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 63391,
-      "market_cap": 63391,
+      "share_price": 63632,
+      "market_cap": 63632,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -307223,15 +307225,14 @@
         "Iron Ore": 1,
         "Oil Shale": 23,
         "Gold": 5,
-        "Timber Planks": 18,
-        "Timber": 95,
-        "Wheat": 26,
-        "Sugar": 24
+        "Timber Planks": 17,
+        "Timber": 106,
+        "Wheat": 11,
+        "Sugar": 29
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-25T06:22:56.220Z",
+      "last_collect": "2026-09-25T15:17:14.622Z",
       "price_history": [
-        58575,
         58579,
         58303,
         58321,
@@ -307330,7 +307331,8 @@
         63216,
         63237,
         63263,
-        63391
+        63391,
+        63632
       ],
       "is_state_owned": true,
       "director_id": "1528783188728483944",
@@ -307410,11 +307412,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.09718152137924192,
-      "recorded_at": "2026-09-25T01:28:04.469Z"
-    },
     {
       "price": 99,
       "change_percent": -0.1544015612367105,
@@ -307909,6 +307906,11 @@
       "price": 97,
       "change_percent": 1.0129184961923465,
       "recorded_at": "2026-09-25T15:14:58.702Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 1.0335135019383581,
+      "recorded_at": "2026-09-25T15:17:15.913Z"
     }
   ],
   "factory_names": [
@@ -317067,7 +317069,7 @@
       "780837437987094560": 1790304726682,
       "874346333882945547": 1790349303829,
       "870686833976172574": 1790260963829,
-      "1186597507720019988": 1790349234499,
+      "1186597507720019988": 1790349440144,
       "1521043721129558017": 1790347484172,
       "1397601108616024075": 1790349398724,
       "860203156222902332": 1789160394304,
@@ -317139,7 +317141,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1789827862792,
-      "1511756975392948224": 1790349339662,
+      "1511756975392948224": 1790349436720,
       "1391043482541494282": 1789126426374,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789824818607,
@@ -336980,9 +336982,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 24,
-    "beforeLvlC": 17,
-    "afterLvl": 17,
+    "xpGainC": 28,
+    "beforeLvlC": 3,
+    "afterLvl": 3,
     "leveled": []
   },
   "central_bank": {
@@ -341401,16 +341403,16 @@
       "name": "Soviet Cat",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
-      "health": 74,
+      "health": 84,
       "quarters": 2,
       "cheap_streak": 0,
       "born_at": "2026-09-19T17:00:47.155Z",
-      "last_fed": "2026-09-23T10:53:22.835Z",
+      "last_fed": "2026-09-25T15:17:07.020Z",
       "last_watered": null,
       "death": null,
-      "warned_empty": true,
+      "warned_empty": false,
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -341453,7 +341455,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 14,
+      "friendship": 15,
       "hunts": 0,
       "hunt": null,
       "plant_lvl": 0,
@@ -341463,8 +341465,9 @@
         "day": "",
         "n": 0
       },
-      "starve_since": "2026-09-23T20:45:43.772Z",
-      "last_pet": "2026-09-24T20:49:30.452Z"
+      "starve_since": null,
+      "last_pet": "2026-09-24T20:49:30.452Z",
+      "last_feed_cmd": "2026-09-25T15:17:07.021Z"
     },
     "780837437987094560": {
       "name": "Daniel Astrae",
@@ -341977,14 +341980,10 @@
       "Brass Valve": {
         "qty": 3,
         "price": 1309
-      },
-      "Bread": {
-        "qty": 10,
-        "price": 144
       }
     },
     "sold_count": 412,
-    "bought_count": 124
+    "bought_count": 134
   },
   "leaders": {
     "gs": {
