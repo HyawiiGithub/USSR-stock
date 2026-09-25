@@ -212718,15 +212718,15 @@
       "pet_food_source": {}
     },
     "906351599851556925": {
-      "cash": 50,
-      "bank": 1071,
+      "cash": 0,
+      "bank": 1146,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-24T23:51:13.608Z",
-      "work_count": 11,
+      "last_work": "2026-09-25T15:21:13.333Z",
+      "work_count": 12,
       "last_claim": "2026-09-23T16:29:31.277Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Soviet Agriculture",
@@ -212740,9 +212740,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 298,
-      "bot_total_xp": 1068,
-      "daily_work_count": 11,
+      "bot_xp": 313,
+      "bot_total_xp": 1083,
+      "daily_work_count": 12,
       "shock_worker": false,
       "last_laylow": null,
       "work_reminder": false,
@@ -212755,7 +212755,7 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "mee6_level": 4,
-      "last_daily_work_date": "2026-09-24"
+      "last_daily_work_date": "2026-09-25"
     },
     "1084167970642726972": {
       "cash": 0,
@@ -306776,14 +306776,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 9448,
+      "funds": 9438,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 423702,
-      "market_cap": 423702,
+      "share_price": 423820,
+      "market_cap": 423820,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -306856,7 +306856,7 @@
       "inventory": {
         "Gold Bar": 53,
         "Wheat": 131,
-        "Sugar": 123,
+        "Sugar": 122,
         "Sulphur": 69,
         "Timber Planks": 23,
         "Iron Ore": 22,
@@ -306887,7 +306887,7 @@
         "Cotton": 2,
         "Salt": 1,
         "Machine Parts": 4,
-        "Gold": 6,
+        "Gold": 7,
         "Bread": 1,
         "Copper Ingot": 3,
         "Potash": 1,
@@ -306896,7 +306896,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T14:32:49.552Z",
       "price_history": [
-        390717,
         390715,
         390721,
         390719,
@@ -306995,7 +306994,8 @@
         423476,
         423594,
         423570,
-        423702
+        423702,
+        423820
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -307412,11 +307412,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.16743281671447002,
-      "recorded_at": "2026-09-25T01:43:04.440Z"
-    },
     {
       "price": 99,
       "change_percent": 0.5615226017673021,
@@ -307911,6 +307906,11 @@
       "price": 100,
       "change_percent": 1.1319574165973116,
       "recorded_at": "2026-09-25T15:19:58.618Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.9910278080327798,
+      "recorded_at": "2026-09-25T15:21:14.470Z"
     }
   ],
   "factory_names": [
@@ -307932,7 +307932,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 53127.40013028147,
+  "money_printed": 53142.40013028147,
   "total_bank_reserves": 445772,
   "inflation_history": [
     0,
@@ -316923,7 +316923,8 @@
         "1456622719985782864": 1,
         "1536339779140976711": 1,
         "1511756975392948224": 1,
-        "1470136693821800521": 1
+        "1470136693821800521": 1,
+        "906351599851556925": 1
       }
     },
     "collect_daily": {
@@ -317559,21 +317560,9 @@
       "2026-Q3": {
         "positive": 73,
         "negative": 38,
-        "neutral": 1681,
-        "total": 1792,
+        "neutral": 1682,
+        "total": 1793,
         "mentions": [
-          {
-            "at": "2026-09-18T20:50:43.629Z",
-            "userId": "874346333882945547",
-            "username": "seniormanulos",
-            "channelId": "1538703181733695600",
-            "messageId": "1550610040476401685",
-            "text": "<@1082686076491137115> why theres another steel mill building",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-18T20:51:28.321Z",
             "userId": "1225275427145121903",
@@ -323561,24 +323550,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-25T15:20:52.257Z",
+            "userId": "1186597507720019988",
+            "username": "imdivit",
+            "channelId": "605951687974453248",
+            "messageId": "1553063742848245761",
+            "text": "next thing u know they take my head in announcements and hyawii makes a decree against animal neglect",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text+reply",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-13T15:33:33.460Z",
-        "userId": "874346333882945547",
-        "username": "seniormanulos",
-        "channelId": "1538703181733695600",
-        "messageId": "1548718284487262289",
-        "text": "<@1082686076491137115>",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-13T15:44:41.716Z",
         "userId": "913497950213267577",
@@ -335566,9 +335555,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-25T15:20:52.257Z",
+        "userId": "1186597507720019988",
+        "username": "imdivit",
+        "channelId": "605951687974453248",
+        "messageId": "1553063742848245761",
+        "text": "next thing u know they take my head in announcements and hyawii makes a decree against animal neglect",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text+reply",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-25T15:19:29.726Z",
+    "last_scan": "2026-09-25T15:20:52.257Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
