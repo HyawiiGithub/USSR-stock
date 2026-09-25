@@ -5393,15 +5393,15 @@
       "pet_food_source": {}
     },
     "665302392862015509": {
-      "cash": 30,
-      "bank": 0,
+      "cash": 0,
+      "bank": 630,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-15T18:00:40.893Z",
-      "work_count": 2,
+      "last_work": "2026-09-25T19:08:06.251Z",
+      "work_count": 3,
       "last_claim": null,
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -5415,12 +5415,12 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 6,
-      "bot_total_xp": 106,
-      "daily_work_count": 2,
+      "bot_xp": 31,
+      "bot_total_xp": 131,
+      "daily_work_count": 3,
       "shock_worker": false,
       "last_laylow": null,
-      "last_daily_work_date": "2026-09-15",
+      "last_daily_work_date": "2026-09-25",
       "work_reminder": false,
       "work_reminder_sent": null,
       "collect_reminder": false,
@@ -84934,8 +84934,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 8,
       "bot_level": 19,
-      "bot_xp": 1835,
-      "bot_total_xp": 22830,
+      "bot_xp": 1856,
+      "bot_total_xp": 22851,
       "daily_work_count": 70,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-25",
@@ -100111,8 +100111,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 54,
-      "bot_total_xp": 529,
+      "bot_xp": 75,
+      "bot_total_xp": 550,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -301173,8 +301173,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 349,
-      "bot_total_xp": 1119,
+      "bot_xp": 369,
+      "bot_total_xp": 1139,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -306862,8 +306862,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 424869,
-      "market_cap": 424869,
+      "share_price": 424853,
+      "market_cap": 424853,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -306976,7 +306976,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T14:32:49.552Z",
       "price_history": [
-        392618,
         392664,
         392654,
         392660,
@@ -307075,7 +307074,8 @@
         424783,
         424783,
         424901,
-        424869
+        424869,
+        424853
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -307114,8 +307114,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 230539,
-      "market_cap": 230539,
+      "share_price": 230849,
+      "market_cap": 230849,
       "employees": 11,
       "level": 1,
       "buildings": {
@@ -307137,13 +307137,12 @@
         "Coal": 161,
         "Uranium": 20,
         "Oil": 79,
-        "Gold": 46,
-        "Wheat": 200
+        "Gold": 47,
+        "Wheat": 199
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T16:09:38.502Z",
       "price_history": [
-        234150,
         234155,
         234447,
         234471,
@@ -307242,7 +307241,8 @@
         230238,
         230366,
         230379,
-        230539
+        230539,
+        230849
       ],
       "is_state_owned": true,
       "director_id": "1495413593242337421",
@@ -307492,16 +307492,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.8305505889975029,
-      "recorded_at": "2026-09-25T14:40:45.516Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.3205952555536557,
-      "recorded_at": "2026-09-25T14:41:13.183Z"
-    },
     {
       "price": 94,
       "change_percent": 0.597730003850268,
@@ -307991,6 +307981,16 @@
       "price": 99,
       "change_percent": 0.384405007776539,
       "recorded_at": "2026-09-25T19:07:54.069Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.4949642768037277,
+      "recorded_at": "2026-09-25T19:08:04.925Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.2984004252806566,
+      "recorded_at": "2026-09-25T19:08:07.419Z"
     }
   ],
   "factory_names": [
@@ -308012,7 +308012,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 60646.376875651586,
+  "money_printed": 60661.376875651586,
   "total_bank_reserves": 442889,
   "inflation_history": [
     0,
@@ -317039,7 +317039,8 @@
         "1380189428953124975": 2,
         "791747702689103893": 2,
         "895937675813593138": 1,
-        "1506785783506534426": 1
+        "1506785783506534426": 1,
+        "665302392862015509": 1
       }
     },
     "collect_daily": {
@@ -317195,7 +317196,7 @@
       "1470136693821800521": 1790122314087,
       "1309104161278918706": 1790010702166,
       "1325111649816023092": 1790363166617,
-      "1506785783506534426": 1790363262920,
+      "1506785783506534426": 1790363335141,
       "807254722251587614": 1790356481757,
       "1353373037994705078": 1789068315659,
       "1192563739778625607": 1790362972278,
@@ -317300,7 +317301,7 @@
       "1096547818069561386": 1789644888885,
       "1199480925709402246": 1789323709851,
       "1496849088782663857": 1789137016343,
-      "1343499043229405225": 1790363229996,
+      "1343499043229405225": 1790363294690,
       "1206672286313226293": 1789132533216,
       "1451624537912381664": 1789392797410,
       "849657806772371535": 1789146591935,
@@ -317543,7 +317544,7 @@
       "1546874108577452042": 1789826323042,
       "526727889295507457": 1789828444985,
       "1493686305723514882": 1789829243907,
-      "1430983825940414592": 1790363174536,
+      "1430983825940414592": 1790363314018,
       "1296987637990817863": 1790161472508,
       "1225471826252267554": 1789844265476,
       "1466097688771825747": 1789845042575,
