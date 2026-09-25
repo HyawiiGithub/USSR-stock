@@ -493,7 +493,7 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 65,
+      "cash": 165,
       "bank": 0,
       "resources": {
         "Peat": 1
@@ -507,8 +507,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-25T21:07:19.106Z",
-      "work_count": 154,
+      "last_work": "2026-09-25T21:21:41.244Z",
+      "work_count": 155,
       "last_claim": "2026-09-25T17:52:54.150Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:27:29.616694",
@@ -523,15 +523,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 1878,
-      "bot_total_xp": 17858,
-      "daily_work_count": 145,
+      "bot_xp": 1896,
+      "bot_total_xp": 17876,
+      "daily_work_count": 146,
       "shock_worker": false,
       "mee6_level": 17,
       "last_daily_work_date": "2026-09-25",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-25T21:13:07.784Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-25T14:44:49.502Z",
       "train_reminder": false,
@@ -931,11 +931,11 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 125,
-      "bank": 461,
+      "cash": 134,
+      "bank": 182,
       "resources": {},
       "inventory": {
-        "Bread": 12
+        "Bread": 14
       },
       "company_id": null,
       "gsi_shares": 1,
@@ -1592,8 +1592,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1360,
-      "bot_total_xp": 8390,
+      "bot_xp": 1382,
+      "bot_total_xp": 8412,
       "daily_work_count": 6,
       "shock_worker": false,
       "last_laylow": null,
@@ -207590,9 +207590,7 @@
       "cash": 967,
       "bank": 12882,
       "resources": {},
-      "inventory": {
-        "Flour": 1
-      },
+      "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
@@ -306137,8 +306135,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 10,
-      "bot_total_xp": 110,
+      "bot_xp": 27,
+      "bot_total_xp": 127,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -306556,7 +306554,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1521043721129558017>",
       "hq_ssr": "Ukrainian SSR",
-      "funds": 13086,
+      "funds": 13001,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -306908,14 +306906,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 10439,
+      "funds": 11266,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 436652,
-      "market_cap": 436652,
+      "share_price": 436883,
+      "market_cap": 436883,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -307019,7 +307017,6 @@
         "Salt": 1,
         "Machine Parts": 6,
         "Gold": 12,
-        "Bread": 7,
         "Copper Ingot": 7,
         "Potash": 1,
         "Grapes": 1,
@@ -307029,8 +307026,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T20:33:08.886Z",
       "price_history": [
-        404733,
-        404739,
         405335,
         405381,
         405758,
@@ -307128,11 +307123,13 @@
         436422,
         436572,
         436556,
-        436652
+        436652,
+        436644,
+        436883
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-25T20:35:08.866Z",
+      "last_factorydeal": "2026-09-25T21:21:16.558Z",
       "last_govcontract": null,
       "specialization": "agriculture",
       "managers": [
@@ -307545,11 +307542,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.5214535087464677,
-      "recorded_at": "2026-09-25T18:34:50.951Z"
-    },
     {
       "price": 100,
       "change_percent": 0.3288357735063815,
@@ -308044,20 +308036,25 @@
       "price": 103,
       "change_percent": 0.5804901035939037,
       "recorded_at": "2026-09-25T21:20:49.558Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.9535010057735551,
+      "recorded_at": "2026-09-25T21:20:57.021Z"
     }
   ],
   "factory_names": [
-    "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Khrushchev Agricultural",
     "Siberian Mining Co",
     "Ural Heavy Industries"
   ],
   "used_factory_names": [
     "Volga Shipbuilding",
     "Brezhnev Auto Factory",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Red Star Steelworks",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -308065,7 +308062,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 50693.57069718507,
+  "money_printed": 51535.57069718507,
   "total_bank_reserves": 441714,
   "inflation_history": [
     0,
@@ -308313,16 +308310,16 @@
   "market_demand": {
     "Fuel": 1.3978241178824118,
     "Cake": 1.263334189486815,
-    "Bread": 1.3303898206760771,
-    "Copper Ingot": 1.390312376083716,
+    "Bread": 1.1728898206760772,
+    "Copper Ingot": 1.400312376083716,
     "Iron Ingot": 1.3110358558674116,
     "Steel Ingot": 1.2309062474439267,
     "Gold Bar": 1.1376219323337478,
     "Aluminium Ingot": 1.4046286205600074,
     "Timber Planks": 1.3019371326174465,
     "Bricks": 1.3360696363515758,
-    "Concrete": 1.406411279223267,
-    "Glass": 1.408007495982272,
+    "Concrete": 1.416411279223267,
+    "Glass": 1.418007495982272,
     "Steel Beam": 1.395100918069954,
     "Machine Parts": 1.3570968389665106,
     "Refined Fuel": 1.4046232418427644,
@@ -308336,13 +308333,13 @@
     "Canned Fish": 1.2897241282941625,
     "Smoked Fish": 1.4007317013331877,
     "Fish Stew": 1.419250503755222,
-    "Peat Fuel": 1.4046191237827799,
+    "Peat Fuel": 1.4146191237827799,
     "Gas Fuel": 1.406486048226546,
     "Fertilizer": 1.4046283085737148,
     "Cotton Fabric": 1.4024286953272653,
     "Manganese Alloy": 1.4124763488351397,
     "Sunflower Oil": 1.4115173762835787,
-    "Linen": 1.4175178739078265,
+    "Linen": 1.4275178739078265,
     "Corn Meal": 1.4046238865699223,
     "Tea Pack": 1.4204904246341803,
     "Citrus Juice": 1.4171262931913242,
@@ -308361,7 +308358,7 @@
   "market_last_sale": {
     "Fuel": "2026-09-22T11:21:46.556Z",
     "Cake": "2026-09-25T20:35:08.870Z",
-    "Bread": "2026-09-25T15:15:00.044Z",
+    "Bread": "2026-09-25T21:21:16.558Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-09-23T19:58:11.345Z",
@@ -308395,7 +308392,8 @@
     "Brass": 16,
     "Cake": 3,
     "Canned Fish": 5,
-    "Pet Food": 9
+    "Pet Food": 9,
+    "Bread": 7
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -317114,7 +317112,7 @@
         "874346333882945547": 24,
         "1186597507720019988": 4,
         "918518877414100993": 1,
-        "1521043721129558017": 18,
+        "1521043721129558017": 19,
         "1522851408611770409": 2,
         "1325111649816023092": 4,
         "1456622719985782864": 2,
@@ -317396,7 +317394,7 @@
       "872464195306782770": 1789234862495,
       "1214587968296067083": 1789243357880,
       "1473761822858281192": 1789161331592,
-      "1379734184259747851": 1790369484107,
+      "1379734184259747851": 1790371284449,
       "1173662113340854353": 1790227559047,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
@@ -317753,7 +317751,7 @@
       "1222055001854312499": 1790362548963,
       "1493250945977683998": 1790363664547,
       "854270658615050250": 1790367389732,
-      "1537391844659564604": 1790370766703
+      "1537391844659564604": 1790371265103
     }
   },
   "mee6_cache": {
@@ -317770,33 +317768,9 @@
       "2026-Q3": {
         "positive": 74,
         "negative": 40,
-        "neutral": 1746,
-        "total": 1860,
+        "neutral": 1748,
+        "total": 1862,
         "mentions": [
-          {
-            "at": "2026-09-19T20:26:55.767Z",
-            "userId": "807254722251587614",
-            "username": "lucky_drink",
-            "channelId": "742040268110299146",
-            "messageId": "1550966434157564035",
-            "text": "Fck ray fck everyone atp except brill and hyawii",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text+reply",
-            "quarter": "2026-Q3"
-          },
-          {
-            "at": "2026-09-19T20:32:10.921Z",
-            "userId": "1225275427145121903",
-            "username": "mdhal2",
-            "channelId": "1016787017457225738",
-            "messageId": "1550967762380132463",
-            "text": "<@1082686076491137115> what will become of us",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-19T20:38:15.295Z",
             "userId": "1225275427145121903",
@@ -323772,36 +323746,36 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-25T21:21:25.137Z",
+            "userId": "1379734184259747851",
+            "username": ".kewl1",
+            "channelId": "606543995165999104",
+            "messageId": "1553154480319500389",
+            "text": "# <:COA:1493220839389397022> __Reorganization of the Executive Government__ <:COA:1493220839389397022>\n\nThe Government of the USSR will now be undergoing a comprehensive reorganization to establish a distinct, permanent executive hierarchy parallel to the structure of the CPSU. \n\n## <:flag_ussr:606158616642322433> __The Government Hierarchy__ <:flag_ussr:606158616642322433>\n\nThe Executive Government shall consist of the following hierarchy:\n\n<@&970791253665013830> (Premier of the Soviet Union)\n<",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-25T21:21:27.782Z",
+            "userId": "1379734184259747851",
+            "username": ".kewl1",
+            "channelId": "606543995165999104",
+            "messageId": "1553154492898222130",
+            "text": "## 🟥 Deputy Premiers\n\nDeputy Premiers (a collective) constitute the senior leadership of the Government. They oversee major \"spheres\" of administration and ensure their \"spheres\" remain active and working. Deputy Premiers are permanent, non-elective positions and shall be appointed (through task completions) from among members of the State Presidium.\n\n## 🟥 State Presidium\n\nThe State Presidium constitutes the **permanent senior executive establishment** of the USSR. Members of the Presidium sup",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-13T20:20:08.505Z",
-        "userId": "1379734184259747851",
-        "username": ".kewl1",
-        "channelId": "1016433654270009354",
-        "messageId": "1548790403552120914",
-        "text": "<@1082686076491137115> what is the use of the money though",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
-      {
-        "at": "2026-09-13T20:22:02.848Z",
-        "userId": "1379734184259747851",
-        "username": ".kewl1",
-        "channelId": "1016433654270009354",
-        "messageId": "1548790885238710313",
-        "text": "<@1082686076491137115> what does mafia do",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-13T20:24:44.975Z",
         "userId": "1379734184259747851",
@@ -335777,9 +335751,33 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-25T21:21:25.137Z",
+        "userId": "1379734184259747851",
+        "username": ".kewl1",
+        "channelId": "606543995165999104",
+        "messageId": "1553154480319500389",
+        "text": "# <:COA:1493220839389397022> __Reorganization of the Executive Government__ <:COA:1493220839389397022>\n\nThe Government of the USSR will now be undergoing a comprehensive reorganization to establish a distinct, permanent executive hierarchy parallel to the structure of the CPSU. \n\n## <:flag_ussr:606158616642322433> __The Government Hierarchy__ <:flag_ussr:606158616642322433>\n\nThe Executive Government shall consist of the following hierarchy:\n\n<@&970791253665013830> (Premier of the Soviet Union)\n<",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-25T21:21:27.782Z",
+        "userId": "1379734184259747851",
+        "username": ".kewl1",
+        "channelId": "606543995165999104",
+        "messageId": "1553154492898222130",
+        "text": "## 🟥 Deputy Premiers\n\nDeputy Premiers (a collective) constitute the senior leadership of the Government. They oversee major \"spheres\" of administration and ensure their \"spheres\" remain active and working. Deputy Premiers are permanent, non-elective positions and shall be appointed (through task completions) from among members of the State Presidium.\n\n## 🟥 State Presidium\n\nThe State Presidium constitutes the **permanent senior executive establishment** of the USSR. Members of the Presidium sup",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-25T21:08:43.160Z",
+    "last_scan": "2026-09-25T21:21:27.782Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -341709,13 +341707,13 @@
       "name": "Ray Собака",
       "species": "dog",
       "alive": true,
-      "hunger": 40,
+      "hunger": 70,
       "water": 60,
       "health": 100,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
-      "last_fed": "2026-09-25T20:48:01.557Z",
+      "last_fed": "2026-09-25T21:21:11.667Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -341761,7 +341759,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 15,
+      "friendship": 16,
       "hunts": 0,
       "hunt": null,
       "plant_lvl": 0,
@@ -341773,7 +341771,7 @@
       },
       "starve_since": null,
       "last_pet": "2026-09-25T21:03:06.411Z",
-      "last_feed_cmd": "2026-09-25T20:48:01.557Z"
+      "last_feed_cmd": "2026-09-25T21:21:11.667Z"
     },
     "1225275427145121903": {
       "name": "Mohammed Sumbul 500",
@@ -342214,10 +342212,14 @@
       "Pet Food": {
         "qty": 7,
         "price": 135
+      },
+      "Bread": {
+        "qty": 5,
+        "price": 135
       }
     },
-    "sold_count": 480,
-    "bought_count": 138
+    "sold_count": 487,
+    "bought_count": 140
   },
   "leaders": {
     "gs": {
