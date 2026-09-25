@@ -493,7 +493,7 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 40,
+      "cash": 60,
       "bank": 0,
       "resources": {
         "Peat": 1
@@ -507,8 +507,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-25T14:44:46.467Z",
-      "work_count": 137,
+      "last_work": "2026-09-25T15:30:16.722Z",
+      "work_count": 138,
       "last_claim": "2026-09-24T07:08:18.461Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:27:29.616694",
@@ -523,15 +523,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 564,
-      "bot_total_xp": 16544,
-      "daily_work_count": 128,
+      "bot_xp": 598,
+      "bot_total_xp": 16578,
+      "daily_work_count": 129,
       "shock_worker": false,
       "mee6_level": 17,
       "last_daily_work_date": "2026-09-25",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-25T14:50:09.962Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-24T20:12:51.968Z",
       "train_reminder": false,
@@ -950,7 +950,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 553,
-      "heat": 20.029722014597127,
+      "heat": 19.106605154228898,
       "wanted": 0,
       "last_illegal": "2026-09-25T15:03:36.252Z",
       "total_heat_generated": 1358.1618999999994,
@@ -306423,14 +306423,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1521043721129558017>",
       "hq_ssr": "Ukrainian SSR",
-      "funds": 71376,
+      "funds": 71371,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 259464,
-      "market_cap": 259464,
+      "share_price": 259499,
+      "market_cap": 259499,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -306457,9 +306457,9 @@
       },
       "inventory": {
         "Sunflower": 49,
-        "Iron Ore": 15,
+        "Iron Ore": 17,
         "Salt": 31,
-        "Wheat": 131,
+        "Wheat": 130,
         "Coal": 37,
         "Corn": 18,
         "Steel Ingot": 66,
@@ -306479,7 +306479,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T14:44:49.502Z",
       "price_history": [
-        205390,
         205774,
         205786,
         214831,
@@ -306578,7 +306577,8 @@
         236975,
         247437,
         259159,
-        259464
+        259464,
+        259499
       ],
       "is_state_owned": true,
       "director_id": "1521043721129558017",
@@ -307016,8 +307016,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 13.821447153009807,
-      "underground_heat": 1108.9509184240858,
+      "heat": 13.048591007432066,
+      "underground_heat": 1108.2882510274362,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -307412,16 +307412,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 106,
-      "change_percent": 8.164697460640612,
-      "recorded_at": "2026-09-25T02:02:59.865Z"
-    },
-    {
-      "price": 106,
-      "change_percent": 0.08079767272691865,
-      "recorded_at": "2026-09-25T02:03:04.439Z"
-    },
     {
       "price": 105,
       "change_percent": -0.34286917279108664,
@@ -307911,6 +307901,16 @@
       "price": 101,
       "change_percent": 0.34989700484534914,
       "recorded_at": "2026-09-25T15:29:33.557Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.7810764020628701,
+      "recorded_at": "2026-09-25T15:29:59.346Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 1.025846276947259,
+      "recorded_at": "2026-09-25T15:30:17.935Z"
     }
   ],
   "factory_names": [
@@ -307932,7 +307932,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 52109.25212767584,
+  "money_printed": 52124.25212767584,
   "total_bank_reserves": 442899,
   "inflation_history": [
     0,
@@ -316059,10 +316059,6 @@
   "total_rubles_history": [
     {
       "total": 548599,
-      "at": "2026-09-24T23:23:02.766Z"
-    },
-    {
-      "total": 548599,
       "at": "2026-09-24T23:28:03.230Z"
     },
     {
@@ -316456,6 +316452,10 @@
     {
       "total": 548542,
       "at": "2026-09-25T15:24:59.446Z"
+    },
+    {
+      "total": 548567,
+      "at": "2026-09-25T15:29:59.635Z"
     }
   ],
   "gold_rush": null,
@@ -316482,7 +316482,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 2.5630500000000014,
+  "heat_global": 2.2630500000000016,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -316922,7 +316922,7 @@
         "874346333882945547": 5,
         "1186597507720019988": 2,
         "918518877414100993": 1,
-        "1521043721129558017": 1,
+        "1521043721129558017": 2,
         "1522851408611770409": 1,
         "1325111649816023092": 1,
         "1456622719985782864": 1,
@@ -317077,7 +317077,7 @@
       "874346333882945547": 1790349303829,
       "870686833976172574": 1790350150777,
       "1186597507720019988": 1790349789736,
-      "1521043721129558017": 1790347484172,
+      "1521043721129558017": 1790350221048,
       "1397601108616024075": 1790350111483,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -342330,11 +342330,6 @@
     {
       "gini": 99.8702021811903,
       "top10": 100,
-      "at": "2026-09-24T23:23:02.782Z"
-    },
-    {
-      "gini": 99.8702021811903,
-      "top10": 100,
       "at": "2026-09-24T23:28:03.242Z"
     },
     {
@@ -342826,13 +342821,14 @@
       "gini": 99.86294084750496,
       "top10": 100,
       "at": "2026-09-25T15:24:59.498Z"
+    },
+    {
+      "gini": 99.86290724614157,
+      "top10": 100,
+      "at": "2026-09-25T15:29:59.647Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2024122,
-      "at": "2026-09-24T23:23:02.789Z"
-    },
     {
       "gdp": 2024122,
       "at": "2026-09-24T23:28:03.250Z"
@@ -343228,6 +343224,10 @@
     {
       "gdp": 2061458,
       "at": "2026-09-25T15:24:59.504Z"
+    },
+    {
+      "gdp": 2061609,
+      "at": "2026-09-25T15:29:59.653Z"
     }
   ]
 }
