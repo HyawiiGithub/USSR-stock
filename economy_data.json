@@ -1239,8 +1239,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 857,
-      "bot_total_xp": 27807,
+      "bot_xp": 867,
+      "bot_total_xp": 27817,
       "daily_work_count": 93,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-25",
@@ -306359,7 +306359,7 @@
       },
       "inventory": {
         "Zinc": 240,
-        "Copper": 1,
+        "Copper": 2,
         "Lead": 224,
         "Gold Bar": 72,
         "Aluminium Ore": 117,
@@ -306370,8 +306370,10 @@
         "Uranium": 6,
         "Salt": 15,
         "Coal": 26,
-        "Gold": 2,
-        "Fish": 10
+        "Gold": 3,
+        "Fish": 10,
+        "Flax": 1,
+        "Natural Gas": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T14:41:10.646Z",
@@ -306862,8 +306864,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 426224,
-      "market_cap": 426224,
+      "share_price": 426240,
+      "market_cap": 426240,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -306976,7 +306978,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-25T14:32:49.552Z",
       "price_history": [
-        398906,
         399334,
         399380,
         399410,
@@ -307075,7 +307076,8 @@
         426248,
         426264,
         426256,
-        426224
+        426224,
+        426240
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -307492,11 +307494,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": 0.25022822926167826,
-      "recorded_at": "2026-09-25T15:43:55.388Z"
-    },
     {
       "price": 103,
       "change_percent": 0.6013843618028324,
@@ -307991,6 +307988,11 @@
       "price": 101,
       "change_percent": 0.5627606152099887,
       "recorded_at": "2026-09-25T19:57:09.181Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.31540811433002625,
+      "recorded_at": "2026-09-25T19:58:17.249Z"
     }
   ],
   "factory_names": [
@@ -341918,8 +341920,8 @@
       "last_fed": "2026-09-25T19:58:08.455Z",
       "last_watered": null,
       "death": null,
-      "friendship": 24,
-      "last_pet": "2026-09-24T20:32:51.921Z",
+      "friendship": 26,
+      "last_pet": "2026-09-25T19:58:18.568Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -341962,25 +341964,8 @@
         "epic": 0,
         "legendary": 0
       },
-      "hunts": 0,
-      "hunt": {
-        "start": "2026-09-24T20:34:02.155Z",
-        "end": "2026-09-25T02:34:02.155Z",
-        "durH": 6,
-        "instant": false,
-        "lootMult": 1,
-        "expB": 0,
-        "treas": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "zoom": false,
-        "thiefLvl": 0,
-        "pcs": 5,
-        "collarUsed": false
-      },
+      "hunts": 1,
+      "hunt": null,
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -341988,7 +341973,7 @@
         "day": "",
         "n": 0
       },
-      "lastPetAct": "2026-09-24T20:32:51.921Z",
+      "lastPetAct": "2026-09-25T19:58:18.568Z",
       "starve_since": null,
       "warned_empty": false,
       "last_feed_cmd": "2026-09-25T19:58:08.455Z"
