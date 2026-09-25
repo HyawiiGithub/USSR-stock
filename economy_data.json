@@ -307976,7 +307976,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 25,
-    "Brass": 6
+    "Brass": 4
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -308005,15 +308005,10 @@
     "Flour": 20,
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
-    "Brass": 14,
+    "Brass": 16,
     "Brass Valve": 3
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 2,
-      "at": "2026-09-18T03:13:20.242Z"
-    },
     {
       "item": "Fuel",
       "qty": 1,
@@ -309508,6 +309503,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-09-25T03:48:01.885Z"
+    },
+    {
+      "item": "Brass",
+      "qty": 2,
+      "at": "2026-09-25T04:03:01.845Z"
     }
   ],
   "demand_history": {
@@ -313327,6 +313327,11 @@
       {
         "demand": 1.3260672852725448,
         "at": "2026-09-25T03:03:01.864Z",
+        "supply": 32
+      },
+      {
+        "demand": 1.3260672852725448,
+        "at": "2026-09-25T04:03:01.845Z",
         "supply": 32
       }
     ],
