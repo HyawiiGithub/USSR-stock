@@ -308400,7 +308400,6 @@
   "ai_store": {
     "Machine Parts": 74,
     "Brass": 14,
-    "Canned Fish": 2,
     "Pet Food": 5,
     "Bread": 7
   },
@@ -308417,7 +308416,7 @@
     "Smoked Fish": 20,
     "Canned Food": 18,
     "Uranium Rod": 22,
-    "Canned Fish": 27,
+    "Canned Fish": 29,
     "Bread": 303,
     "Aluminium Sheet": 8,
     "Circuit Board": 29,
@@ -308436,11 +308435,6 @@
     "Pet Food": 4
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-19T06:28:23.237Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -309935,6 +309929,11 @@
       "item": "Reactor Core",
       "qty": 1,
       "at": "2026-09-25T23:37:07.167Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 2,
+      "at": "2026-09-26T00:07:09.093Z"
     }
   ],
   "demand_history": {
@@ -312216,6 +312215,11 @@
       {
         "demand": 1.3626584933481989,
         "at": "2026-09-25T23:22:06.600Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3838038280218747,
+        "at": "2026-09-26T00:07:09.093Z",
         "supply": 1
       }
     ],
