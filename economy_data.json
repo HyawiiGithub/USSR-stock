@@ -308665,7 +308665,6 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 86,
-    "Pet Food": 2,
     "Canned Food": 8,
     "Cake": 7,
     "Uranium Rod": 1,
@@ -308707,16 +308706,11 @@
     "Aluminium Ingot": 5,
     "Brass": 50,
     "Brass Valve": 7,
-    "Pet Food": 7,
+    "Pet Food": 9,
     "Radiator": 1,
     "Fish Stew": 4
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-19T23:07:30.303Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -310211,6 +310205,11 @@
       "item": "Smoked Fish",
       "qty": 1,
       "at": "2026-09-26T09:22:10.851Z"
+    },
+    {
+      "item": "Pet Food",
+      "qty": 2,
+      "at": "2026-09-26T09:37:10.865Z"
     }
   ],
   "demand_history": {
@@ -314275,6 +314274,11 @@
         "demand": 1.3873725687049498,
         "at": "2026-09-26T08:07:10.953Z",
         "supply": 8
+      },
+      {
+        "demand": 1.3953352142593607,
+        "at": "2026-09-26T09:37:10.865Z",
+        "supply": 7
       }
     ],
     "Radiator": [
