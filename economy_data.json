@@ -501,7 +501,7 @@
       "inventory": {
         "Canned Fish": 1,
         "Cake": 2,
-        "Pet Food": 5,
+        "Pet Food": 4,
         "Bread": 1
       },
       "company_id": null,
@@ -524,8 +524,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 39,
-      "bot_total_xp": 18414,
+      "bot_xp": 57,
+      "bot_total_xp": 18432,
       "daily_work_count": 154,
       "shock_worker": false,
       "mee6_level": 18,
@@ -952,13 +952,13 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1168,
-      "heat": 22.608040530840842,
+      "heat": 21.668192986207238,
       "wanted": 0,
       "last_illegal": "2026-09-26T08:06:36.512Z",
       "total_heat_generated": 1510.5828999999992,
       "bot_level": 26,
-      "bot_xp": 2975,
-      "bot_total_xp": 49450,
+      "bot_xp": 2994,
+      "bot_total_xp": 49469,
       "daily_work_count": 802,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-26",
@@ -306797,14 +306797,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1521043721129558017>",
       "hq_ssr": "Ukrainian SSR",
-      "funds": 13745,
+      "funds": 51917,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 223744,
-      "market_cap": 223744,
+      "share_price": 240796,
+      "market_cap": 240796,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -306860,13 +306860,11 @@
         "Fish": 1,
         "Clay": 1,
         "Sulphur": 1,
-        "Oil": 1,
-        "Steel Beam": 16
+        "Oil": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T06:40:46.469Z",
       "price_history": [
-        243378,
         243390,
         243414,
         243414,
@@ -306965,11 +306963,12 @@
         223742,
         223742,
         223744,
-        223744
+        223744,
+        240796
       ],
       "is_state_owned": true,
       "director_id": "1521043721129558017",
-      "last_factorydeal": "2026-09-26T07:47:29.530Z",
+      "last_factorydeal": "2026-09-26T08:17:17.691Z",
       "last_govcontract": null,
       "specialization": "production",
       "managers": [
@@ -307410,8 +307409,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 9.952027948717436,
-      "underground_heat": 1095.7309342641495,
+      "heat": 9.152756728577323,
+      "underground_heat": 1095.176369428609,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -307806,11 +307805,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": -7.222923829350121,
-      "recorded_at": "2026-09-26T03:37:07.846Z"
-    },
     {
       "price": 95,
       "change_percent": 0.5552349229127447,
@@ -308305,20 +308299,25 @@
       "price": 99,
       "change_percent": 0.15890503931441485,
       "recorded_at": "2026-09-26T08:16:24.270Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.546704409535165,
+      "recorded_at": "2026-09-26T08:17:19.443Z"
     }
   ],
   "factory_names": [
     "Soviet Iron Foundry",
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
-    "Ural Heavy Industries",
-    "Volga Shipbuilding"
+    "Ural Heavy Industries"
   ],
   "used_factory_names": [
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Red Star Steelworks",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Volga Shipbuilding"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -308326,7 +308325,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 65947.62884531151,
+  "money_printed": 104119.62884531151,
   "total_bank_reserves": 440973,
   "inflation_history": [
     0,
@@ -308573,19 +308572,19 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3980302919846905,
-    "Cake": 1.3483489808533995,
+    "Cake": 1.3583489808533995,
     "Bread": 1.265014925775147,
     "Copper Ingot": 1.4046578003558208,
     "Iron Ingot": 1.3099073082320964,
-    "Steel Ingot": 1.2924494027393263,
+    "Steel Ingot": 1.3024494027393263,
     "Gold Bar": 1.1366804773431973,
     "Aluminium Ingot": 1.4195113888472626,
     "Timber Planks": 1.2918692862357468,
     "Bricks": 1.3335103796452596,
     "Concrete": 1.411251962829556,
     "Glass": 1.4095383605843432,
-    "Steel Beam": 1.3868094840573373,
-    "Machine Parts": 0.8032910353062779,
+    "Steel Beam": 1.0268094840573374,
+    "Machine Parts": 0.8132910353062779,
     "Refined Fuel": 1.4002581654718975,
     "Uranium Rod": 1.3799689334708156,
     "Reactor Core": 1.404550990610372,
@@ -308595,7 +308594,7 @@
     "Wine": 1.4139379577934474,
     "Canned Food": 1.3774088909746667,
     "Canned Fish": 1.3863806353268098,
-    "Smoked Fish": 1.1865214756058626,
+    "Smoked Fish": 1.1965214756058626,
     "Fish Stew": 1.172780997097506,
     "Peat Fuel": 1.404627625597211,
     "Gas Fuel": 1.400243649134494,
@@ -308603,8 +308602,8 @@
     "Cotton Fabric": 1.402435980164636,
     "Manganese Alloy": 1.4260460929025844,
     "Sunflower Oil": 1.4225788264872266,
-    "Linen": 1.4249272946710239,
-    "Corn Meal": 1.4046281024137155,
+    "Linen": 1.4349272946710239,
+    "Corn Meal": 1.4146281024137155,
     "Tea Pack": 1.4251553660363123,
     "Citrus Juice": 1.4238503966608789,
     "Antimony Alloy": 1.4178673470785097,
@@ -308640,7 +308639,7 @@
     "Cotton Fabric": "2026-09-20T11:08:49.081Z",
     "Reactor Core": "2026-09-25T22:11:52.711Z",
     "Gas Fuel": "2026-09-22T14:16:08.581Z",
-    "Steel Beam": "2026-09-25T16:12:24.890Z",
+    "Steel Beam": "2026-09-26T08:17:17.691Z",
     "Machine Parts": "2026-09-26T08:09:22.221Z",
     "Sugar": "2026-09-21T22:38:00.619Z",
     "Fertilizer": "2026-09-21T08:07:31.041Z",
@@ -308664,7 +308663,8 @@
     "Bread": 7,
     "Smoked Fish": 8,
     "Circuit Board": 10,
-    "Fish Stew": 10
+    "Fish Stew": 10,
+    "Steel Beam": 16
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -316709,10 +316709,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 554568,
-      "at": "2026-09-26T00:17:21.842Z"
-    },
-    {
       "total": 554671,
       "at": "2026-09-26T00:22:22.432Z"
     },
@@ -317107,6 +317103,10 @@
     {
       "total": 551510,
       "at": "2026-09-26T08:12:27.429Z"
+    },
+    {
+      "total": 551703,
+      "at": "2026-09-26T08:17:27.418Z"
     }
   ],
   "gold_rush": null,
@@ -317133,7 +317133,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 1.8,
+  "heat_global": 1.5,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -317753,10 +317753,10 @@
       "1229741033265299506": 1790370522447,
       "1536339779140976711": 1790375782651,
       "780837437987094560": 1790374710091,
-      "874346333882945547": 1790410296920,
+      "874346333882945547": 1790410662796,
       "870686833976172574": 1790366047729,
       "1186597507720019988": 1790399500695,
-      "1521043721129558017": 1790409953641,
+      "1521043721129558017": 1790410666048,
       "1397601108616024075": 1790390117159,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -341999,7 +341999,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 47,
+      "friendship": 49,
       "hunts": 3,
       "hunt": {
         "start": "2026-09-26T05:46:05.664Z",
@@ -342027,8 +342027,8 @@
         "n": 0
       },
       "starve_since": null,
-      "last_pet": "2026-09-26T07:09:14.549Z",
-      "lastPetAct": "2026-09-26T07:09:14.549Z",
+      "last_pet": "2026-09-26T08:17:32.293Z",
+      "lastPetAct": "2026-09-26T08:17:32.293Z",
       "last_feed_cmd": "2026-09-26T05:46:22.065Z",
       "last_train_cmd": "2026-09-26T05:45:48.504Z"
     },
@@ -342036,13 +342036,13 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 36,
+      "hunger": 76,
       "water": 60,
       "health": 100,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:56:00.173Z",
-      "last_fed": "2026-09-25T17:52:44.990Z",
+      "last_fed": "2026-09-26T08:17:51.779Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -342090,7 +342090,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 34,
+      "friendship": 35,
       "hunts": 3,
       "hunt": {
         "start": "2026-09-26T06:42:16.863Z",
@@ -342120,7 +342120,7 @@
       "starve_since": null,
       "last_pet": "2026-09-25T19:57:31.159Z",
       "lastPetAct": "2026-09-25T19:57:31.159Z",
-      "last_feed_cmd": "2026-09-25T17:52:44.990Z"
+      "last_feed_cmd": "2026-09-26T08:17:51.779Z"
     },
     "1511756975392948224": {
       "name": "Soviet Cat",
@@ -342729,8 +342729,8 @@
         "price": 1327
       },
       "Steel Beam": {
-        "qty": 3,
-        "price": 2954
+        "qty": 19,
+        "price": 2775
       },
       "Canned Fish": {
         "qty": 5,
@@ -342761,7 +342761,7 @@
         "price": 13
       }
     },
-    "sold_count": 626,
+    "sold_count": 642,
     "bought_count": 149
   },
   "leaders": {
@@ -343114,11 +343114,6 @@
   },
   "collars": {},
   "gini_history": [
-    {
-      "gini": 99.85688028355975,
-      "top10": 100,
-      "at": "2026-09-26T00:17:21.848Z"
-    },
     {
       "gini": 99.85689993993529,
       "top10": 100,
@@ -343613,13 +343608,14 @@
       "gini": 99.85733278052527,
       "top10": 100,
       "at": "2026-09-26T08:12:27.450Z"
+    },
+    {
+      "gini": 99.85711694619394,
+      "top10": 100,
+      "at": "2026-09-26T08:17:27.427Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2042566,
-      "at": "2026-09-26T00:17:21.853Z"
-    },
     {
       "gdp": 2042600,
       "at": "2026-09-26T00:22:22.444Z"
@@ -344015,6 +344011,10 @@
     {
       "gdp": 2090050,
       "at": "2026-09-26T08:12:27.456Z"
+    },
+    {
+      "gdp": 2107395,
+      "at": "2026-09-26T08:17:27.436Z"
     }
   ],
   "purge_allowed": [
