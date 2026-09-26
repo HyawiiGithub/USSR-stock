@@ -338968,6 +338968,14 @@
         {
           "role": "assistant",
           "content": "The bot’s music playback is handled by **Distube** (a Discord‑JS music wrapper) initialized in `bot.js` around line 680.  \n\n- It creates a `distube` instance and stores its status in the global `MUSIC_STATUS` object (`youtube`, `ytCookies`, `spotify`, `soundcloud`, `ffmpeg`).  \n- FFmpeg is required for audio decoding; the bot first tries to use the bundled `ffmpeg-static` package, falling back to a system‑wide `ffmpeg` binary if unavailable.  \n- Optional features:  \n  * **Spotify** – enabled if "
+        },
+        {
+          "role": "user",
+          "content": "Current Leadership Structure"
+        },
+        {
+          "role": "assistant",
+          "content": "I don’t have the current leadership details in the verified facts, live state, or server lore, so I can’t provide the structure."
         }
       ],
       "bonus": 0
