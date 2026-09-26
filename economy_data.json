@@ -952,7 +952,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 6,
-      "heat": 9.656372338187987,
+      "heat": 8.853860696241306,
       "wanted": 0,
       "last_illegal": "2026-09-26T08:50:18.931Z",
       "total_heat_generated": 1541.0428999999992,
@@ -307537,7 +307537,7 @@
       },
       "wage": 25,
       "heat": 0,
-      "underground_heat": 1078.1324852974412,
+      "underground_heat": 1077.6279433083457,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -307932,11 +307932,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.485032381061413,
-      "recorded_at": "2026-09-26T08:22:19.446Z"
-    },
     {
       "price": 99,
       "change_percent": 0.17244659499461024,
@@ -308431,6 +308426,11 @@
       "price": 93,
       "change_percent": 0.5572609021521931,
       "recorded_at": "2026-09-26T11:58:19.006Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.9160186700904512,
+      "recorded_at": "2026-09-26T12:03:19.262Z"
     }
   ],
   "factory_names": [
@@ -308452,7 +308452,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 52012.04607888318,
+  "money_printed": 50971.80515730551,
   "total_bank_reserves": 435697,
   "inflation_history": [
     0,
@@ -308785,7 +308785,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 86,
-    "Canned Food": 8,
+    "Canned Food": 6,
     "Cake": 8,
     "Bread": 7,
     "Smoked Fish": 7,
@@ -308808,7 +308808,7 @@
     "Peat Fuel": 10,
     "Cake": 304,
     "Smoked Fish": 23,
-    "Canned Food": 23,
+    "Canned Food": 25,
     "Uranium Rod": 24,
     "Canned Fish": 29,
     "Bread": 310,
@@ -308832,11 +308832,6 @@
     "Bricks": 4
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-20T01:22:31.776Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -310331,6 +310326,11 @@
       "item": "Bricks",
       "qty": 1,
       "at": "2026-09-26T11:48:17.116Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 2,
+      "at": "2026-09-26T12:03:18.101Z"
     }
   ],
   "demand_history": {
@@ -312449,6 +312449,11 @@
         "demand": 1.3485932572640653,
         "at": "2026-09-26T07:37:10.814Z",
         "supply": 3
+      },
+      {
+        "demand": 1.3906847003528067,
+        "at": "2026-09-26T12:03:18.101Z",
+        "supply": 0
       }
     ],
     "Uranium Rod": [
@@ -316935,10 +316940,6 @@
   "total_rubles_history": [
     {
       "total": 552868,
-      "at": "2026-09-26T03:57:22.617Z"
-    },
-    {
-      "total": 552868,
       "at": "2026-09-26T04:02:22.640Z"
     },
     {
@@ -317332,6 +317333,10 @@
     {
       "total": 546511,
       "at": "2026-09-26T11:58:19.458Z"
+    },
+    {
+      "total": 546511,
+      "at": "2026-09-26T12:03:19.887Z"
     }
   ],
   "gold_rush": null,
@@ -340072,12 +340077,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.74,
+    "rub_per_usd": 6.66,
     "history": [
-      {
-        "rate": 6.72,
-        "at": "2026-09-25T19:39:49.281Z"
-      },
       {
         "rate": 6.81,
         "at": "2026-09-25T19:49:49.432Z"
@@ -340473,9 +340474,13 @@
       {
         "rate": 6.74,
         "at": "2026-09-26T11:53:18.372Z"
+      },
+      {
+        "rate": 6.66,
+        "at": "2026-09-26T12:03:18.601Z"
       }
     ],
-    "last_update": "2026-09-26T11:53:18.372Z",
+    "last_update": "2026-09-26T12:03:18.601Z",
     "manual_override": null
   },
   "national_budget": {
@@ -343373,11 +343378,6 @@
     {
       "gini": 99.8573104901595,
       "top10": 100,
-      "at": "2026-09-26T03:57:22.627Z"
-    },
-    {
-      "gini": 99.8573104901595,
-      "top10": 100,
       "at": "2026-09-26T04:02:22.650Z"
     },
     {
@@ -343869,13 +343869,14 @@
       "gini": 99.71402977472064,
       "top10": 100,
       "at": "2026-09-26T11:58:19.472Z"
+    },
+    {
+      "gini": 99.71402977472064,
+      "top10": 100,
+      "at": "2026-09-26T12:03:19.930Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2052345,
-      "at": "2026-09-26T03:57:22.640Z"
-    },
     {
       "gdp": 2052345,
       "at": "2026-09-26T04:02:22.656Z"
@@ -344271,6 +344272,10 @@
     {
       "gdp": 2119539,
       "at": "2026-09-26T11:58:19.479Z"
+    },
+    {
+      "gdp": 2119539,
+      "at": "2026-09-26T12:03:19.941Z"
     }
   ],
   "purge_allowed": [
