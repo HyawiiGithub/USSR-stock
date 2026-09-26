@@ -307722,16 +307722,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.16836035057904591,
-      "recorded_at": "2026-09-26T00:19:34.206Z"
-    },
-    {
-      "price": 96,
-      "change_percent": 0.8463812995403027,
-      "recorded_at": "2026-09-26T00:22:17.706Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.8316463309028552,
       "recorded_at": "2026-09-26T00:24:36.749Z"
     },
@@ -308219,6 +308209,16 @@
       "price": 96,
       "change_percent": 1.0387871357823308,
       "recorded_at": "2026-09-26T06:05:43.547Z"
+    },
+    {
+      "price": 90,
+      "change_percent": -5.557111108967368,
+      "recorded_at": "2026-09-26T06:07:08.087Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.46982401263391493,
+      "recorded_at": "2026-09-26T06:07:18.463Z"
     }
   ],
   "factory_names": [
@@ -308567,7 +308567,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 61,
-    "Brass": 3,
+    "Brass": 2,
     "Pet Food": 3,
     "Canned Food": 9,
     "Cake": 7
@@ -308599,16 +308599,11 @@
     "Flour": 20,
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
-    "Brass": 47,
+    "Brass": 48,
     "Brass Valve": 7,
     "Pet Food": 6
   },
   "consumption_history": [
-    {
-      "item": "Flour",
-      "qty": 2,
-      "at": "2026-09-19T19:24:41.231Z"
-    },
     {
       "item": "Flour",
       "qty": 1,
@@ -310103,6 +310098,11 @@
       "item": "Brass",
       "qty": 1,
       "at": "2026-09-26T05:52:10.438Z"
+    },
+    {
+      "item": "Brass",
+      "qty": 1,
+      "at": "2026-09-26T06:07:10.578Z"
     }
   ],
   "demand_history": {
@@ -314062,6 +314062,11 @@
       {
         "demand": 1.395078984837285,
         "at": "2026-09-26T05:52:10.438Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.3935695126005665,
+        "at": "2026-09-26T06:07:10.578Z",
         "supply": 5
       }
     ],
