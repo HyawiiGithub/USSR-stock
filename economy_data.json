@@ -307206,14 +307206,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 26150,
+      "funds": 27410,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 476526,
-      "market_cap": 476526,
+      "share_price": 476766,
+      "market_cap": 476766,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -307330,14 +307330,11 @@
         "Machine Parts": 3,
         "Copper Ingot": 3,
         "Brass Valve": 1,
-        "Contraband: Synthetic": 1,
-        "Bread": 10
+        "Contraband: Synthetic": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T08:36:09.771Z",
       "price_history": [
-        437490,
-        437522,
         437522,
         437522,
         437506,
@@ -307435,7 +307432,9 @@
         475928,
         476208,
         476206,
-        476526
+        476526,
+        476346,
+        476766
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -308372,7 +308371,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 64682.08824775218,
+  "money_printed": 65942.08824775218,
   "total_bank_reserves": 435396,
   "inflation_history": [
     0,
@@ -308620,19 +308619,19 @@
   "market_demand": {
     "Fuel": 1.3980302919846905,
     "Cake": 1.3293146094955663,
-    "Bread": 1.2299461791342245,
+    "Bread": 0.8799461791342245,
     "Copper Ingot": 1.4037589399653245,
     "Iron Ingot": 1.3138003441877708,
     "Steel Ingot": 1.367137018238268,
     "Gold Bar": 1.140538100744347,
     "Aluminium Ingot": 1.4043263888889599,
-    "Timber Planks": 1.2905777673980081,
-    "Bricks": 1.2089630666582412,
+    "Timber Planks": 1.3005777673980081,
+    "Bricks": 1.2189630666582412,
     "Concrete": 1.411251962829556,
     "Glass": 1.4073220208663664,
     "Steel Beam": 1.2501985361444385,
     "Machine Parts": 1.174590555469367,
-    "Refined Fuel": 1.2596600587799514,
+    "Refined Fuel": 1.2696600587799514,
     "Uranium Rod": 1.4044454991019024,
     "Reactor Core": 1.404550990610372,
     "Circuit Board": 1.3527017837408792,
@@ -308642,9 +308641,9 @@
     "Canned Food": 1.3343917987354958,
     "Canned Fish": 1.282792306639886,
     "Smoked Fish": 1.3530421768605194,
-    "Fish Stew": 1.3106451766673803,
+    "Fish Stew": 1.3206451766673803,
     "Peat Fuel": 1.4046282721616175,
-    "Gas Fuel": 1.400243649134494,
+    "Gas Fuel": 1.410243649134494,
     "Fertilizer": 1.4038375531690834,
     "Cotton Fabric": 1.402436534177734,
     "Manganese Alloy": 1.4313319962351327,
@@ -308669,7 +308668,7 @@
   "market_last_sale": {
     "Fuel": "2026-09-22T11:21:46.556Z",
     "Cake": "2026-09-26T09:53:23.854Z",
-    "Bread": "2026-09-26T08:36:55.763Z",
+    "Bread": "2026-09-26T10:03:02.000Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-09-26T09:20:27.006Z",
@@ -316811,6 +316810,13 @@
       "username": "seniormanulos",
       "action": "launder",
       "details": "₽970 dirty → ₽485 clean fee ₽485"
+    },
+    {
+      "at": "2026-09-26T10:03:02.001Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "sellgrain",
+      "details": "Soviet Agriculture 10x Bread for ₽1,260"
     }
   ],
   "total_rubles_history": [
@@ -342855,8 +342861,8 @@
         "price": 198
       },
       "Bread": {
-        "qty": 13,
-        "price": 138
+        "qty": 23,
+        "price": 140
       },
       "Canned Food": {
         "qty": 13,
@@ -342887,7 +342893,7 @@
         "price": 114
       }
     },
-    "sold_count": 697,
+    "sold_count": 707,
     "bought_count": 151
   },
   "leaders": {
@@ -344149,7 +344155,7 @@
   "grain_daily": {
     "date": "2026-09-26",
     "vols": {
-      "state_26": 54
+      "state_26": 64
     }
   }
 }
