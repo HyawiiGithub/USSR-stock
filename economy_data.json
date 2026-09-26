@@ -532,7 +532,7 @@
       "last_daily_work_date": "2026-09-26",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-09-26T11:07:17.470Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-25T20:45:10.033Z",
       "train_reminder": false,
@@ -952,7 +952,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 6,
-      "heat": 18.65929032333038,
+      "heat": 17.770661526580085,
       "wanted": 0,
       "last_illegal": "2026-09-26T08:50:18.931Z",
       "total_heat_generated": 1541.0428999999992,
@@ -307498,7 +307498,7 @@
       },
       "wage": 25,
       "heat": 0,
-      "underground_heat": 1084.4347355708883,
+      "underground_heat": 1083.8334179572946,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -307893,11 +307893,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.36830652986687645,
-      "recorded_at": "2026-09-26T07:52:19.352Z"
-    },
     {
       "price": 92,
       "change_percent": 0.6205661320635537,
@@ -308392,6 +308387,11 @@
       "price": 89,
       "change_percent": -5.537818985429585,
       "recorded_at": "2026-09-26T11:07:08.082Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.599516920155854,
+      "recorded_at": "2026-09-26T11:07:20.364Z"
     }
   ],
   "factory_names": [
@@ -308748,7 +308748,6 @@
     "Machine Parts": 86,
     "Canned Food": 8,
     "Cake": 8,
-    "Uranium Rod": 1,
     "Bread": 7,
     "Smoked Fish": 7,
     "Circuit Board": 9,
@@ -308771,7 +308770,7 @@
     "Cake": 304,
     "Smoked Fish": 23,
     "Canned Food": 23,
-    "Uranium Rod": 23,
+    "Uranium Rod": 24,
     "Canned Fish": 29,
     "Bread": 310,
     "Aluminium Sheet": 8,
@@ -308794,11 +308793,6 @@
     "Bricks": 3
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-20T00:37:30.742Z"
-    },
     {
       "item": "Fertilizer",
       "qty": 2,
@@ -310293,6 +310287,11 @@
       "item": "Bricks",
       "qty": 1,
       "at": "2026-09-26T10:52:10.855Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 1,
+      "at": "2026-09-26T11:07:10.855Z"
     }
   ],
   "demand_history": {
@@ -312512,6 +312511,11 @@
       {
         "demand": 1.355576431305694,
         "at": "2026-09-26T06:52:10.653Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.4044454991019024,
+        "at": "2026-09-26T11:07:10.855Z",
         "supply": 0
       }
     ],
@@ -316882,10 +316886,6 @@
   "total_rubles_history": [
     {
       "total": 552868,
-      "at": "2026-09-26T03:02:22.738Z"
-    },
-    {
-      "total": 552868,
       "at": "2026-09-26T03:02:23.433Z"
     },
     {
@@ -317279,6 +317279,10 @@
     {
       "total": 546421,
       "at": "2026-09-26T11:02:30.977Z"
+    },
+    {
+      "total": 546446,
+      "at": "2026-09-26T11:07:31.013Z"
     }
   ],
   "gold_rush": null,
@@ -343314,11 +343318,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.8572927691573,
-      "top10": 100,
-      "at": "2026-09-26T03:02:22.744Z"
-    },
-    {
       "gini": 99.8573104901595,
       "top10": 100,
       "at": "2026-09-26T03:02:23.439Z"
@@ -343812,13 +343811,14 @@
       "gini": 99.85429350517717,
       "top10": 100,
       "at": "2026-09-26T11:02:30.988Z"
+    },
+    {
+      "gini": 99.8542859772518,
+      "top10": 100,
+      "at": "2026-09-26T11:07:31.026Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2052345,
-      "at": "2026-09-26T03:02:22.749Z"
-    },
     {
       "gdp": 2052345,
       "at": "2026-09-26T03:02:23.445Z"
@@ -344214,6 +344214,10 @@
     {
       "gdp": 2117761,
       "at": "2026-09-26T11:02:30.995Z"
+    },
+    {
+      "gdp": 2117816,
+      "at": "2026-09-26T11:07:31.030Z"
     }
   ],
   "purge_allowed": [
