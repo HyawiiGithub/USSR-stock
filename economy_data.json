@@ -87847,7 +87847,7 @@
       "pet_food_source": {}
     },
     "807254722251587614": {
-      "cash": 386,
+      "cash": 401,
       "bank": 60,
       "resources": {},
       "inventory": {
@@ -87856,8 +87856,8 @@
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-26T06:37:40.575Z",
-      "work_count": 157,
+      "last_work": "2026-09-26T06:48:12.344Z",
+      "work_count": 158,
       "last_claim": "2026-09-23T22:39:18.267Z",
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -87871,9 +87871,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 22,
-      "bot_xp": 2453,
-      "bot_total_xp": 32758,
-      "daily_work_count": 108,
+      "bot_xp": 2470,
+      "bot_total_xp": 32775,
+      "daily_work_count": 109,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-26",
       "mee6_level": 22,
@@ -306556,8 +306556,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 249844,
-      "market_cap": 249844,
+      "share_price": 249986,
+      "market_cap": 249986,
       "employees": 10,
       "level": 1,
       "buildings": {
@@ -306606,7 +306606,7 @@
         "Iron Ore": 4,
         "Sugar": 140,
         "Contraband: Cocaine": 1,
-        "Wheat": 11,
+        "Wheat": 10,
         "Salt": 13,
         "Coal": 21,
         "Fish": 6,
@@ -306620,12 +306620,12 @@
         "Sand": 10,
         "Canned Fish": 8,
         "Brass": 3,
-        "Radiator": 1
+        "Radiator": 1,
+        "Gold": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T05:02:20.340Z",
       "price_history": [
-        215523,
         215665,
         215639,
         215781,
@@ -306724,7 +306724,8 @@
         248021,
         249689,
         249809,
-        249844
+        249844,
+        249986
       ],
       "is_state_owned": true,
       "director_id": "807254722251587614",
@@ -307117,8 +307118,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 462269,
-      "market_cap": 462269,
+      "share_price": 459929,
+      "market_cap": 459929,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -307203,7 +307204,7 @@
         "Wheat": 188,
         "Sugar": 66,
         "Sulphur": 76,
-        "Timber Planks": 48,
+        "Timber Planks": 38,
         "Iron Ore": 27,
         "Iron Ingot": 29,
         "Timber": 18,
@@ -307213,8 +307214,7 @@
         "Steel Ingot": 12,
         "Coal": 147,
         "Circuit Board": 10,
-        "Bricks": 45,
-        "Concrete": 5,
+        "Bricks": 35,
         "Contraband: Coca Paste": 4,
         "Contraband: Cocaine": 4,
         "Contraband: Heroin": 3,
@@ -307229,7 +307229,6 @@
         "Cotton": 3,
         "Potash": 1,
         "Grapes": 1,
-        "Glass": 5,
         "Refined Fuel": 6,
         "Oil": 1,
         "Gold": 7,
@@ -307244,7 +307243,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T02:34:52.189Z",
       "price_history": [
-        426358,
         426374,
         426492,
         426492,
@@ -307343,7 +307341,8 @@
         462260,
         462242,
         462272,
-        462269
+        462269,
+        459929
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -307760,11 +307759,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 102,
-      "change_percent": 8.194254771663926,
-      "recorded_at": "2026-09-26T01:07:07.823Z"
-    },
     {
       "price": 101,
       "change_percent": -0.2249583129211957,
@@ -308259,6 +308253,11 @@
       "price": 93,
       "change_percent": 0.8410043728084929,
       "recorded_at": "2026-09-26T06:47:18.653Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.4403153845019145,
+      "recorded_at": "2026-09-26T06:48:13.292Z"
     }
   ],
   "factory_names": [],
@@ -308279,7 +308278,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 35473.4093917417,
+  "money_printed": 35488.4093917417,
   "total_bank_reserves": 437997,
   "inflation_history": [
     0,
@@ -317497,7 +317496,7 @@
         "874346333882945547": 7,
         "1397601108616024075": 3,
         "1456863215815364796": 1,
-        "807254722251587614": 4,
+        "807254722251587614": 5,
         "906351599851556925": 1,
         "1521043721129558017": 1
       }
@@ -338647,17 +338646,22 @@
         "location": "Tbilisi Vineyards",
         "price": 42000,
         "ownerId": null
-      },
-      {
-        "id": "plot_8",
-        "location": "Alma-Ata Steppe",
-        "price": 50000,
-        "ownerId": "874346333882945547"
       }
     ],
-    "houses": [],
+    "houses": [
+      {
+        "id": "house_1",
+        "plotId": "plot_8",
+        "location": "Alma-Ata Steppe",
+        "ownerId": "874346333882945547",
+        "level": 1,
+        "value": 52808,
+        "builtAt": "2026-09-26T06:48:26.146Z",
+        "last_rent": null
+      }
+    ],
     "next_plot_id": 9,
-    "next_house_id": 1,
+    "next_house_id": 2,
     "plots_seeded": true
   },
   "war": {
