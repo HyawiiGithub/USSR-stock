@@ -952,7 +952,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 18.54178071692684,
+      "heat": 17.70213955555359,
       "wanted": 0,
       "last_illegal": "2026-09-26T07:07:16.180Z",
       "total_heat_generated": 1494.5828999999992,
@@ -1221,15 +1221,15 @@
       "pet_food_source": {}
     },
     "791747702689103893": {
-      "cash": 0,
+      "cash": 15,
       "bank": 1806,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-26T07:09:18.830Z",
-      "work_count": 104,
+      "last_work": "2026-09-26T07:38:03.072Z",
+      "work_count": 105,
       "last_claim": null,
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -1243,9 +1243,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 2181,
-      "bot_total_xp": 29131,
-      "daily_work_count": 95,
+      "bot_xp": 2219,
+      "bot_total_xp": 29169,
+      "daily_work_count": 96,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-26",
       "mee6_level": 21,
@@ -102245,8 +102245,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 9,
-      "bot_total_xp": 1634,
+      "bot_xp": 33,
+      "bot_total_xp": 1658,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -306606,7 +306606,7 @@
         "Iron Ore": 4,
         "Sugar": 140,
         "Contraband: Cocaine": 1,
-        "Wheat": 8,
+        "Wheat": 7,
         "Salt": 13,
         "Coal": 21,
         "Fish": 6,
@@ -306620,7 +306620,7 @@
         "Sand": 10,
         "Canned Fish": 8,
         "Brass": 3,
-        "Gold": 2
+        "Gold": 4
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T05:02:20.340Z",
@@ -307361,8 +307361,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 3.0748206208563738,
-      "underground_heat": 1100.7586469982532,
+      "heat": 2.3078727152923215,
+      "underground_heat": 1100.2318051749291,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -307757,16 +307757,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.672948472023315,
-      "recorded_at": "2026-09-26T02:10:37.662Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.2674732810884572,
-      "recorded_at": "2026-09-26T02:12:18.156Z"
-    },
     {
       "price": 96,
       "change_percent": -0.17789298046007065,
@@ -308256,6 +308246,16 @@
       "price": 99,
       "change_percent": 0.8615103801046998,
       "recorded_at": "2026-09-26T07:35:17.689Z"
+    },
+    {
+      "price": 91,
+      "change_percent": -8.050325984474675,
+      "recorded_at": "2026-09-26T07:37:08.085Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.9702337334856554,
+      "recorded_at": "2026-09-26T07:37:19.038Z"
     }
   ],
   "factory_names": [
@@ -308277,7 +308277,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 45525.757321059755,
+  "money_printed": 45540.757321059755,
   "total_bank_reserves": 440862,
   "inflation_history": [
     0,
@@ -308606,7 +308606,7 @@
   "ai_store": {
     "Machine Parts": 61,
     "Pet Food": 3,
-    "Canned Food": 7,
+    "Canned Food": 5,
     "Cake": 7,
     "Uranium Rod": 1,
     "Bread": 7,
@@ -308624,7 +308624,7 @@
     "Peat Fuel": 10,
     "Cake": 302,
     "Smoked Fish": 20,
-    "Canned Food": 21,
+    "Canned Food": 23,
     "Uranium Rod": 23,
     "Canned Fish": 29,
     "Bread": 310,
@@ -308646,11 +308646,6 @@
     "Radiator": 1
   },
   "consumption_history": [
-    {
-      "item": "Flour",
-      "qty": 1,
-      "at": "2026-09-19T20:54:43.266Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -310145,6 +310140,11 @@
       "item": "Radiator",
       "qty": 1,
       "at": "2026-09-26T07:22:10.854Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 2,
+      "at": "2026-09-26T07:37:10.814Z"
     }
   ],
   "demand_history": {
@@ -312247,6 +312247,11 @@
       {
         "demand": 1.2330345021619078,
         "at": "2026-09-26T06:22:10.721Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.3485932572640653,
+        "at": "2026-09-26T07:37:10.814Z",
         "supply": 3
       }
     ],
@@ -316635,10 +316640,6 @@
   "total_rubles_history": [
     {
       "total": 556081,
-      "at": "2026-09-25T23:37:17.731Z"
-    },
-    {
-      "total": 556081,
       "at": "2026-09-25T23:42:18.696Z"
     },
     {
@@ -317032,6 +317033,10 @@
     {
       "total": 551091,
       "at": "2026-09-26T07:32:27.422Z"
+    },
+    {
+      "total": 551156,
+      "at": "2026-09-26T07:37:27.584Z"
     }
   ],
   "gold_rush": null,
@@ -317058,7 +317063,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 0.25815000000000105,
+  "heat_global": 0,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -317526,7 +317531,7 @@
         "906351599851556925": 1,
         "1521043721129558017": 1,
         "1506785783506534426": 2,
-        "791747702689103893": 1
+        "791747702689103893": 2
       }
     },
     "collect_daily": {
@@ -317671,7 +317676,7 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1790385372532,
-      "791747702689103893": 1790408162324,
+      "791747702689103893": 1790408224025,
       "1456622719985782864": 1790382604395,
       "1082686076491137115": 1790385350644,
       "1229741033265299506": 1790370522447,
@@ -317768,7 +317773,7 @@
       "850229826231992320": 1789468435424,
       "1202316445569273959": 1789331745467,
       "1541073090019074150": 1790227530618,
-      "1469500872462434471": 1790408159703,
+      "1469500872462434471": 1790408244477,
       "1150480039327051866": 1789288556373,
       "1466203192638308423": 1789068144599,
       "1531791206261194782": 1789135713604,
@@ -343032,11 +343037,6 @@
     {
       "gini": 99.85638494664542,
       "top10": 100,
-      "at": "2026-09-25T23:37:17.737Z"
-    },
-    {
-      "gini": 99.85638494664542,
-      "top10": 100,
       "at": "2026-09-25T23:42:18.702Z"
     },
     {
@@ -343528,13 +343528,14 @@
       "gini": 99.8579597427889,
       "top10": 100,
       "at": "2026-09-26T07:32:27.447Z"
+    },
+    {
+      "gini": 99.85786736175872,
+      "top10": 100,
+      "at": "2026-09-26T07:37:27.592Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2044069,
-      "at": "2026-09-25T23:37:17.741Z"
-    },
     {
       "gdp": 2044069,
       "at": "2026-09-25T23:42:18.706Z"
@@ -343930,6 +343931,10 @@
     {
       "gdp": 2068514,
       "at": "2026-09-26T07:32:27.453Z"
+    },
+    {
+      "gdp": 2073157,
+      "at": "2026-09-26T07:37:27.598Z"
     }
   ],
   "purge_allowed": [
