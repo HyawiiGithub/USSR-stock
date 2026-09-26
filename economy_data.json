@@ -308523,7 +308523,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 61,
-    "Brass": 8,
+    "Brass": 6,
     "Pet Food": 3,
     "Bread": 2
   },
@@ -308554,16 +308554,11 @@
     "Flour": 20,
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
-    "Brass": 42,
+    "Brass": 44,
     "Brass Valve": 7,
     "Pet Food": 6
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-19T17:52:12.926Z"
-    },
     {
       "item": "Flour",
       "qty": 1,
@@ -310058,6 +310053,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-09-26T04:37:10.443Z"
+    },
+    {
+      "item": "Brass",
+      "qty": 2,
+      "at": "2026-09-26T04:52:10.550Z"
     }
   ],
   "demand_history": {
@@ -313997,6 +313997,11 @@
       {
         "demand": 1.395078984837285,
         "at": "2026-09-26T04:07:10.419Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.395078984837285,
+        "at": "2026-09-26T04:52:10.550Z",
         "supply": 0
       }
     ],
