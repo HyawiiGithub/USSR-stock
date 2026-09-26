@@ -308524,7 +308524,7 @@
   "ai_store": {
     "Machine Parts": 68,
     "Brass": 12,
-    "Pet Food": 4,
+    "Pet Food": 3,
     "Bread": 2
   },
   "global_consumption": {
@@ -308556,14 +308556,9 @@
     "Aluminium Ingot": 5,
     "Brass": 38,
     "Brass Valve": 7,
-    "Pet Food": 5
+    "Pet Food": 6
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-19T12:13:23.665Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -310058,6 +310053,11 @@
       "item": "Pet Food",
       "qty": 1,
       "at": "2026-09-26T02:52:10.433Z"
+    },
+    {
+      "item": "Pet Food",
+      "qty": 1,
+      "at": "2026-09-26T03:07:10.423Z"
     }
   ],
   "demand_history": {
@@ -314036,6 +314036,11 @@
       {
         "demand": 1.3840967229779428,
         "at": "2026-09-26T02:52:10.433Z",
+        "supply": 8
+      },
+      {
+        "demand": 1.3840967229779428,
+        "at": "2026-09-26T03:07:10.423Z",
         "supply": 8
       }
     ]
