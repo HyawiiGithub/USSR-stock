@@ -286310,9 +286310,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 89,
-      "bot_total_xp": 89,
+      "bot_level": 1,
+      "bot_xp": 14,
+      "bot_total_xp": 114,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -286324,7 +286324,8 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "mee6_level": 1
     },
     "1111033568739737710": {
       "cash": 0,
@@ -308482,7 +308483,7 @@
     "Machine Parts": 70,
     "Brass": 12,
     "Pet Food": 5,
-    "Bread": 4
+    "Bread": 2
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -308498,7 +308499,7 @@
     "Canned Food": 18,
     "Uranium Rod": 22,
     "Canned Fish": 29,
-    "Bread": 306,
+    "Bread": 308,
     "Aluminium Sheet": 8,
     "Circuit Board": 29,
     "Cotton Fabric": 12,
@@ -308516,11 +308517,6 @@
     "Pet Food": 4
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 1,
-      "at": "2026-09-19T08:43:23.321Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 1,
@@ -310015,6 +310011,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-09-26T02:07:10.414Z"
+    },
+    {
+      "item": "Bread",
+      "qty": 2,
+      "at": "2026-09-26T02:22:10.445Z"
     }
   ],
   "demand_history": {
@@ -312306,11 +312307,6 @@
     ],
     "Bread": [
       {
-        "demand": 1.2477006635269927,
-        "at": "2026-09-14T22:15:57.395Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2659833933763087,
         "at": "2026-09-14T22:30:57.330Z",
         "supply": 0
@@ -312603,6 +312599,11 @@
       {
         "demand": 1.3341897780718013,
         "at": "2026-09-26T01:52:10.412Z",
+        "supply": 28
+      },
+      {
+        "demand": 1.3341897780718013,
+        "at": "2026-09-26T02:22:10.445Z",
         "supply": 28
       }
     ],
@@ -317911,7 +317912,7 @@
       "1493250945977683998": 1790363664547,
       "854270658615050250": 1790367389732,
       "1537391844659564604": 1790372461266,
-      "1016804979069165589": 1790388992678,
+      "1016804979069165589": 1790389287472,
       "1253081966652424314": 1790385419530
     }
   },
@@ -335952,13 +335953,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1397601108616024075",
-      "from": 19,
-      "to": 20,
-      "at": "2026-09-21T15:55:02.459Z",
-      "reason": "chat"
-    },
-    {
       "userId": "874346333882945547",
       "from": 23,
       "to": 24,
@@ -337349,6 +337343,13 @@
       "from": 3,
       "to": 4,
       "at": "2026-09-26T02:01:23.250Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1016804979069165589",
+      "from": 0,
+      "to": 1,
+      "at": "2026-09-26T02:21:27.476Z",
       "reason": "chat"
     }
   ],
