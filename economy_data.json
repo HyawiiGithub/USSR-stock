@@ -308672,7 +308672,7 @@
     "Bread": 7,
     "Smoked Fish": 8,
     "Circuit Board": 10,
-    "Fish Stew": 8,
+    "Fish Stew": 6,
     "Steel Beam": 14,
     "Bricks": 10,
     "Canned Fish": 8
@@ -308708,14 +308708,9 @@
     "Brass Valve": 7,
     "Pet Food": 7,
     "Radiator": 1,
-    "Fish Stew": 2
+    "Fish Stew": 4
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-19T22:34:14.031Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -310210,6 +310205,11 @@
       "item": "Steel Beam",
       "qty": 2,
       "at": "2026-09-26T08:52:10.867Z"
+    },
+    {
+      "item": "Fish Stew",
+      "qty": 2,
+      "at": "2026-09-26T09:07:10.863Z"
     }
   ],
   "demand_history": {
@@ -314282,6 +314282,11 @@
       {
         "demand": 1.1838708018421409,
         "at": "2026-09-26T08:37:10.947Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.2185002514185903,
+        "at": "2026-09-26T09:07:10.863Z",
         "supply": 4
       }
     ]
