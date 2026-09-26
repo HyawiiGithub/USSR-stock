@@ -308673,7 +308673,7 @@
     "Smoked Fish": 8,
     "Circuit Board": 10,
     "Fish Stew": 8,
-    "Steel Beam": 16,
+    "Steel Beam": 14,
     "Bricks": 10,
     "Canned Fish": 8
   },
@@ -308697,7 +308697,7 @@
     "Cotton Fabric": 12,
     "Reactor Core": 9,
     "Gas Fuel": 102,
-    "Steel Beam": 5,
+    "Steel Beam": 7,
     "Machine Parts": 108,
     "Sugar": 51,
     "Fertilizer": 17,
@@ -308711,11 +308711,6 @@
     "Fish Stew": 2
   },
   "consumption_history": [
-    {
-      "item": "Sugar",
-      "qty": 2,
-      "at": "2026-09-19T21:54:44.551Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -310210,6 +310205,11 @@
       "item": "Fish Stew",
       "qty": 2,
       "at": "2026-09-26T08:37:10.947Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 2,
+      "at": "2026-09-26T08:52:10.867Z"
     }
   ],
   "demand_history": {
@@ -313385,6 +313385,11 @@
       {
         "demand": 1.395100918069954,
         "at": "2026-09-25T20:24:49.604Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.0587091804271356,
+        "at": "2026-09-26T08:52:10.867Z",
         "supply": 0
       }
     ],
