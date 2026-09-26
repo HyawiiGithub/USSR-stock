@@ -952,7 +952,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1168,
-      "heat": 24.501954294871773,
+      "heat": 23.547012980099574,
       "wanted": 0,
       "last_illegal": "2026-09-26T08:06:36.512Z",
       "total_heat_generated": 1510.5828999999992,
@@ -306588,14 +306588,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@807254722251587614>",
       "hq_ssr": "Nuristani SSR",
-      "funds": 16707,
+      "funds": 17949,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 252175,
-      "market_cap": 252175,
+      "share_price": 252657,
+      "market_cap": 252657,
       "employees": 10,
       "level": 1,
       "buildings": {
@@ -306652,7 +306652,7 @@
         "Natural Gas": 2,
         "Canned Food": 3,
         "Smoked Fish": 3,
-        "Fish Stew": 13,
+        "Fish Stew": 3,
         "Limestone": 1,
         "Clay": 10,
         "Sand": 10,
@@ -306663,7 +306663,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T05:02:20.340Z",
       "price_history": [
-        216168,
         216172,
         217295,
         217607,
@@ -306762,11 +306761,12 @@
         251881,
         251979,
         252077,
-        252175
+        252175,
+        252657
       ],
       "is_state_owned": true,
       "director_id": "807254722251587614",
-      "last_factorydeal": "2026-09-26T07:35:57.126Z",
+      "last_factorydeal": "2026-09-26T08:07:56.899Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -307406,8 +307406,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 11.2,
-      "underground_heat": 1096.9724779688759,
+      "heat": 10.607528487890242,
+      "underground_heat": 1096.321129388603,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -308304,17 +308304,17 @@
     }
   ],
   "factory_names": [
-    "Khrushchev Agricultural"
+    "Red Star Steelworks",
+    "Soviet Iron Foundry",
+    "Lenin Machine Works",
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
   ],
   "used_factory_names": [
-    "Volga Shipbuilding",
-    "Soviet Iron Foundry",
-    "Stalin Tractor Plant",
-    "Ural Heavy Industries",
-    "Brezhnev Auto Factory",
-    "Red Star Steelworks",
-    "Lenin Machine Works",
-    "Siberian Mining Co"
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -308322,7 +308322,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 65595.14316145724,
+  "money_printed": 66837.14316145724,
   "total_bank_reserves": 440973,
   "inflation_history": [
     0,
@@ -308592,7 +308592,7 @@
     "Canned Food": 1.3721624503225591,
     "Canned Fish": 1.3884161895681664,
     "Smoked Fish": 1.1660086329510435,
-    "Fish Stew": 1.3865304557999487,
+    "Fish Stew": 1.1615304557999488,
     "Peat Fuel": 1.404627625597211,
     "Gas Fuel": 1.400243649134494,
     "Fertilizer": 1.4046285451134053,
@@ -308605,8 +308605,8 @@
     "Citrus Juice": 1.4259243441966074,
     "Antimony Alloy": 1.4194210294331628,
     "Molybdenum Rod": 1.4329993363740228,
-    "Aluminium Sheet": 1.4082291706279506,
-    "Shale Oil": 1.40462825587637,
+    "Aluminium Sheet": 1.4182291706279506,
+    "Shale Oil": 1.41462825587637,
     "Bandage": 1.4124642609007318,
     "Ointment": 1.4124642609007318,
     "Pet Food": 1.3873725687049498,
@@ -308645,7 +308645,8 @@
     "Brass": "2026-09-25T19:05:44.049Z",
     "Brass Valve": "2026-09-25T19:46:31.279Z",
     "Pet Food": "2026-09-25T21:08:36.688Z",
-    "Radiator": "2026-09-26T07:00:20.765Z"
+    "Radiator": "2026-09-26T07:00:20.765Z",
+    "Fish Stew": "2026-09-26T08:07:56.903Z"
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
@@ -308656,7 +308657,8 @@
     "Uranium Rod": 1,
     "Bread": 7,
     "Smoked Fish": 8,
-    "Circuit Board": 10
+    "Circuit Board": 10,
+    "Fish Stew": 10
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -317118,7 +317120,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 2.4,
+  "heat_global": 2.1,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -342735,9 +342737,13 @@
       "Smoked Fish": {
         "qty": 10,
         "price": 154
+      },
+      "Fish Stew": {
+        "qty": 10,
+        "price": 142
       }
     },
-    "sold_count": 561,
+    "sold_count": 571,
     "bought_count": 149
   },
   "leaders": {
