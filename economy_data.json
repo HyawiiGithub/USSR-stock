@@ -951,11 +951,11 @@
       "is_state_director": true,
       "director_of": "state_26",
       "ceo_of": null,
-      "dirty_cash": 787,
-      "heat": 16.501954294871773,
+      "dirty_cash": 1168,
+      "heat": 24.501954294871773,
       "wanted": 0,
-      "last_illegal": "2026-09-26T08:05:43.101Z",
-      "total_heat_generated": 1502.5828999999992,
+      "last_illegal": "2026-09-26T08:06:36.512Z",
+      "total_heat_generated": 1510.5828999999992,
       "bot_level": 26,
       "bot_xp": 2914,
       "bot_total_xp": 49389,
@@ -307260,7 +307260,6 @@
         "Steel Ingot": 12,
         "Coal": 146,
         "Bricks": 35,
-        "Contraband: Coca Paste": 4,
         "Contraband: Heroin": 3,
         "Contraband: Cannabis": 4,
         "Contraband: Opium": 2,
@@ -307287,6 +307286,7 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T02:34:52.189Z",
       "price_history": [
+        436478,
         436510,
         436478,
         436470,
@@ -307385,7 +307385,6 @@
         464407,
         464539,
         464478,
-        464417,
         464417
       ],
       "is_state_owned": true,
@@ -307407,7 +307406,7 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 5.6,
+      "heat": 11.2,
       "underground_heat": 1096.9724779688759,
       "dirty_cash": 0,
       "last_illegal": null
@@ -307803,16 +307802,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 106,
-      "change_percent": -0.4850710302893462,
-      "recorded_at": "2026-09-26T03:07:18.214Z"
-    },
-    {
-      "price": 105,
-      "change_percent": -0.32588337483071084,
-      "recorded_at": "2026-09-26T03:12:18.375Z"
-    },
     {
       "price": 105,
       "change_percent": 0.09521310021391514,
@@ -308302,6 +308291,16 @@
       "price": 94,
       "change_percent": 0.6201494168834025,
       "recorded_at": "2026-09-26T08:02:19.466Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 5.542102329622373,
+      "recorded_at": "2026-09-26T08:07:08.121Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.07276875850770254,
+      "recorded_at": "2026-09-26T08:07:19.508Z"
     }
   ],
   "factory_names": [
@@ -308651,7 +308650,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 81,
-    "Pet Food": 3,
+    "Pet Food": 2,
     "Canned Food": 5,
     "Cake": 7,
     "Uranium Rod": 1,
@@ -308688,15 +308687,10 @@
     "Aluminium Ingot": 5,
     "Brass": 50,
     "Brass Valve": 7,
-    "Pet Food": 6,
+    "Pet Food": 7,
     "Radiator": 1
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-19T21:24:44.742Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -310191,6 +310185,11 @@
       "item": "Smoked Fish",
       "qty": 2,
       "at": "2026-09-26T07:52:10.793Z"
+    },
+    {
+      "item": "Pet Food",
+      "qty": 1,
+      "at": "2026-09-26T08:07:10.953Z"
     }
   ],
   "demand_history": {
@@ -314240,6 +314239,11 @@
         "demand": 1.3840967229779428,
         "at": "2026-09-26T03:07:10.423Z",
         "supply": 8
+      },
+      {
+        "demand": 1.3873725687049498,
+        "at": "2026-09-26T08:07:10.953Z",
+        "supply": 8
       }
     ],
     "Radiator": [
@@ -316690,10 +316694,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 556262,
-      "at": "2026-09-26T00:07:21.236Z"
-    },
-    {
       "total": 554465,
       "at": "2026-09-26T00:12:21.898Z"
     },
@@ -317088,6 +317088,10 @@
     {
       "total": 551510,
       "at": "2026-09-26T08:02:27.421Z"
+    },
+    {
+      "total": 551510,
+      "at": "2026-09-26T08:07:27.432Z"
     }
   ],
   "gold_rush": null,
@@ -317114,13 +317118,13 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 1.2,
+  "heat_global": 2.4,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
     "Contraband: Cocaine": 43,
     "Contraband: Synthetic": 49,
-    "Contraband: Coca Paste": 35,
+    "Contraband: Coca Paste": 39,
     "Contraband: Cannabis": 44,
     "Contraband: Heroin": 38,
     "Contraband: LSD Sheets": 25,
@@ -343087,11 +343091,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.85638600837163,
-      "top10": 100,
-      "at": "2026-09-26T00:07:21.276Z"
-    },
-    {
       "gini": 99.85686061988129,
       "top10": 100,
       "at": "2026-09-26T00:12:21.964Z"
@@ -343585,13 +343584,14 @@
       "gini": 99.85733278052527,
       "top10": 100,
       "at": "2026-09-26T08:02:27.428Z"
+    },
+    {
+      "gini": 99.85733278052527,
+      "top10": 100,
+      "at": "2026-09-26T08:07:27.447Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2044406,
-      "at": "2026-09-26T00:07:21.316Z"
-    },
     {
       "gdp": 2042548,
       "at": "2026-09-26T00:12:22.000Z"
@@ -343987,6 +343987,10 @@
     {
       "gdp": 2088826,
       "at": "2026-09-26T08:02:27.439Z"
+    },
+    {
+      "gdp": 2088900,
+      "at": "2026-09-26T08:07:27.452Z"
     }
   ],
   "purge_allowed": [
