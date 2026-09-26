@@ -963,7 +963,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 671,
-      "heat": 18.159084867695945,
+      "heat": 17.22722195003558,
       "wanted": 0,
       "last_illegal": "2026-09-26T20:09:32.262Z",
       "total_heat_generated": 1623.2978999999993,
@@ -308001,8 +308001,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 12.329918972330882,
-      "underground_heat": 1080.0342306792593,
+      "heat": 11.583864501252407,
+      "underground_heat": 1079.325353087423,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -308397,11 +308397,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 106,
-      "change_percent": 0.08000832430758859,
-      "recorded_at": "2026-09-26T16:59:27.562Z"
-    },
     {
       "price": 106,
       "change_percent": 0.13877624026160063,
@@ -308896,6 +308891,11 @@
       "price": 89,
       "change_percent": 0.565717035352141,
       "recorded_at": "2026-09-26T20:22:50.379Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 0.8915200054974661,
+      "recorded_at": "2026-09-26T20:25:04.564Z"
     }
   ],
   "factory_names": [
@@ -317511,10 +317511,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 546511,
-      "at": "2026-09-26T12:03:19.887Z"
-    },
-    {
       "total": 546551,
       "at": "2026-09-26T12:08:20.051Z"
     },
@@ -317909,6 +317905,10 @@
     {
       "total": 550532,
       "at": "2026-09-26T20:20:05.398Z"
+    },
+    {
+      "total": 550582,
+      "at": "2026-09-26T20:25:05.385Z"
     }
   ],
   "gold_rush": null,
@@ -317935,7 +317935,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 2.2134,
+  "heat_global": 1.9134,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -319089,21 +319089,9 @@
       "2026-Q3": {
         "positive": 78,
         "negative": 40,
-        "neutral": 1883,
-        "total": 2001,
+        "neutral": 1884,
+        "total": 2002,
         "mentions": [
-          {
-            "at": "2026-09-20T22:29:55.844Z",
-            "userId": "963834359994007614",
-            "username": "that.one.pakistani_",
-            "channelId": "1016787017457225738",
-            "messageId": "1551359781078310923",
-            "text": "Me and Hyawii were told by Kewl it is a security risk",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-20T23:05:30.089Z",
             "userId": "1544820489191559270",
@@ -325091,24 +325079,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-26T20:24:49.949Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "605951687974453248",
+            "messageId": "1553502627550072913",
+            "text": "Lil hyawii",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-15T20:02:34.885Z",
-        "userId": "1082686076491137115",
-        "username": "hyawii2.0",
-        "channelId": "605951687974453248",
-        "messageId": "1549510762920415345",
-        "text": "PREMIER RATING",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-15T20:02:45.586Z",
         "userId": "1229741033265299506",
@@ -337096,9 +337084,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-26T20:24:49.949Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "605951687974453248",
+        "messageId": "1553502627550072913",
+        "text": "Lil hyawii",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-26T20:24:00.235Z",
+    "last_scan": "2026-09-26T20:24:49.949Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -344018,11 +344018,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.71402977472064,
-      "top10": 100,
-      "at": "2026-09-26T12:03:19.930Z"
-    },
-    {
       "gini": 99.71387949145871,
       "top10": 100,
       "at": "2026-09-26T12:08:20.072Z"
@@ -344516,13 +344511,14 @@
       "gini": 99.71230591847586,
       "top10": 100,
       "at": "2026-09-26T20:20:05.458Z"
+    },
+    {
+      "gini": 99.71224209289903,
+      "top10": 100,
+      "at": "2026-09-26T20:25:05.405Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2119539,
-      "at": "2026-09-26T12:03:19.941Z"
-    },
     {
       "gdp": 2119601,
       "at": "2026-09-26T12:08:20.078Z"
@@ -344918,6 +344914,10 @@
     {
       "gdp": 2138141,
       "at": "2026-09-26T20:20:05.465Z"
+    },
+    {
+      "gdp": 2138251,
+      "at": "2026-09-26T20:25:05.411Z"
     }
   ],
   "purge_allowed": [
