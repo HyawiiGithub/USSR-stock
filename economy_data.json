@@ -308568,7 +308568,7 @@
     "Machine Parts": 61,
     "Brass": 2,
     "Pet Food": 3,
-    "Canned Food": 9,
+    "Canned Food": 7,
     "Cake": 7
   },
   "global_consumption": {
@@ -308582,7 +308582,7 @@
     "Peat Fuel": 10,
     "Cake": 302,
     "Smoked Fish": 20,
-    "Canned Food": 19,
+    "Canned Food": 21,
     "Uranium Rod": 22,
     "Canned Fish": 29,
     "Bread": 310,
@@ -308603,11 +308603,6 @@
     "Pet Food": 6
   },
   "consumption_history": [
-    {
-      "item": "Flour",
-      "qty": 1,
-      "at": "2026-09-19T19:39:41.766Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -310102,6 +310097,11 @@
       "item": "Brass",
       "qty": 1,
       "at": "2026-09-26T06:07:10.578Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 2,
+      "at": "2026-09-26T06:22:10.721Z"
     }
   ],
   "demand_history": {
@@ -312199,6 +312199,11 @@
       {
         "demand": 1.1700923568366808,
         "at": "2026-09-26T05:22:10.555Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.2330345021619078,
+        "at": "2026-09-26T06:22:10.721Z",
         "supply": 3
       }
     ],
