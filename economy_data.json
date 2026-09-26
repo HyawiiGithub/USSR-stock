@@ -952,7 +952,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 1168,
-      "heat": 24.762024639916614,
+      "heat": 23.77412193275905,
       "wanted": 0,
       "last_illegal": "2026-09-26T08:06:36.512Z",
       "total_heat_generated": 1518.5828999999992,
@@ -307173,8 +307173,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 472949,
-      "market_cap": 472949,
+      "share_price": 473217,
+      "market_cap": 473217,
       "employees": 33,
       "level": 1,
       "buildings": {
@@ -307272,7 +307272,7 @@
         "Contraband: Heroin": 3,
         "Contraband: Cannabis": 4,
         "Contraband: Opium": 2,
-        "Copper": 19,
+        "Copper": 15,
         "Corn": 2,
         "Wine": 1,
         "Phosphorite": 1,
@@ -307282,11 +307282,11 @@
         "Refined Fuel": 7,
         "Oil": 2,
         "Gold": 14,
-        "Zinc": 33,
+        "Zinc": 29,
         "Peat": 1,
         "Natural Gas": 1,
         "Sunflower": 2,
-        "Brass": 2,
+        "Brass": 4,
         "Fish Stew": 1,
         "Glass": 2,
         "Cake": 4,
@@ -307296,8 +307296,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T08:36:09.771Z",
       "price_history": [
-        436572,
-        436556,
         436652,
         436644,
         436883,
@@ -307395,7 +307393,9 @@
         465833,
         465824,
         472917,
-        472949
+        472949,
+        473117,
+        473217
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -307416,8 +307416,8 @@
         "manager": 0
       },
       "wage": 25,
-      "heat": 2.954176618261119,
-      "underground_heat": 1089.2559994950093,
+      "heat": 2.3104558631797505,
+      "underground_heat": 1088.5389844241174,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -307812,16 +307812,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 93,
-      "change_percent": 0.6920545672755926,
-      "recorded_at": "2026-09-26T04:27:18.244Z"
-    },
-    {
-      "price": 93,
-      "change_percent": 0.6752437170349354,
-      "recorded_at": "2026-09-26T04:32:18.227Z"
-    },
     {
       "price": 93,
       "change_percent": 0.009168173765822327,
@@ -308311,6 +308301,16 @@
       "price": 100,
       "change_percent": 0.5837936142599842,
       "recorded_at": "2026-09-26T08:36:11.559Z"
+    },
+    {
+      "price": 94,
+      "change_percent": -5.783341200948794,
+      "recorded_at": "2026-09-26T08:37:08.153Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.7161747094038596,
+      "recorded_at": "2026-09-26T08:37:19.458Z"
     }
   ],
   "factory_names": [
@@ -308670,7 +308670,7 @@
     "Bread": 7,
     "Smoked Fish": 8,
     "Circuit Board": 10,
-    "Fish Stew": 10,
+    "Fish Stew": 8,
     "Steel Beam": 16
   },
   "global_consumption": {
@@ -308703,14 +308703,10 @@
     "Brass": 50,
     "Brass Valve": 7,
     "Pet Food": 7,
-    "Radiator": 1
+    "Radiator": 1,
+    "Fish Stew": 2
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-19T21:39:44.587Z"
-    },
     {
       "item": "Sugar",
       "qty": 2,
@@ -310205,6 +310201,11 @@
       "item": "Pet Food",
       "qty": 1,
       "at": "2026-09-26T08:07:10.953Z"
+    },
+    {
+      "item": "Fish Stew",
+      "qty": 2,
+      "at": "2026-09-26T08:37:10.947Z"
     }
   ],
   "demand_history": {
@@ -314267,6 +314268,13 @@
         "at": "2026-09-26T07:22:10.854Z",
         "supply": 0
       }
+    ],
+    "Fish Stew": [
+      {
+        "demand": 1.1838708018421409,
+        "at": "2026-09-26T08:37:10.947Z",
+        "supply": 4
+      }
     ]
   },
   "blacklist": {
@@ -316723,10 +316731,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 554980,
-      "at": "2026-09-26T00:37:22.410Z"
-    },
-    {
       "total": 555083,
       "at": "2026-09-26T00:42:22.305Z"
     },
@@ -317121,6 +317125,10 @@
     {
       "total": 545808,
       "at": "2026-09-26T08:32:31.026Z"
+    },
+    {
+      "total": 545808,
+      "at": "2026-09-26T08:37:30.875Z"
     }
   ],
   "gold_rush": null,
@@ -317147,7 +317155,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 1.8,
+  "heat_global": 1.5,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -343139,11 +343147,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.85695886528505,
-      "top10": 100,
-      "at": "2026-09-26T00:37:22.415Z"
-    },
-    {
       "gini": 99.85697849248956,
       "top10": 100,
       "at": "2026-09-26T00:42:22.311Z"
@@ -343637,13 +343640,14 @@
       "gini": 99.85423139946327,
       "top10": 100,
       "at": "2026-09-26T08:32:31.050Z"
+    },
+    {
+      "gini": 99.85423139946327,
+      "top10": 100,
+      "at": "2026-09-26T08:37:30.881Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2042658,
-      "at": "2026-09-26T00:37:22.421Z"
-    },
     {
       "gdp": 2042700,
       "at": "2026-09-26T00:42:22.317Z"
@@ -344039,6 +344043,10 @@
     {
       "gdp": 2102490,
       "at": "2026-09-26T08:32:31.055Z"
+    },
+    {
+      "gdp": 2110000,
+      "at": "2026-09-26T08:37:30.885Z"
     }
   ],
   "purge_allowed": [
