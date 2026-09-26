@@ -306658,6 +306658,44 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "mee6_level": 1
+    },
+    "1542208168296325263": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -307896,11 +307934,6 @@
   "gsi_history": [
     {
       "price": 99,
-      "change_percent": 0.15890503931441485,
-      "recorded_at": "2026-09-26T08:16:24.270Z"
-    },
-    {
-      "price": 99,
       "change_percent": 0.546704409535165,
       "recorded_at": "2026-09-26T08:17:19.443Z"
     },
@@ -308393,6 +308426,11 @@
       "price": 92,
       "change_percent": 0.3065512987569721,
       "recorded_at": "2026-09-26T11:43:18.649Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 1.2498089939580288,
+      "recorded_at": "2026-09-26T11:48:18.637Z"
     }
   ],
   "factory_names": [
@@ -308754,7 +308792,7 @@
     "Circuit Board": 8,
     "Fish Stew": 6,
     "Steel Beam": 12,
-    "Bricks": 7,
+    "Bricks": 6,
     "Canned Fish": 8,
     "Refined Fuel": 7,
     "Sunflower Oil": 20
@@ -308791,14 +308829,9 @@
     "Pet Food": 9,
     "Radiator": 1,
     "Fish Stew": 4,
-    "Bricks": 3
+    "Bricks": 4
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-20T01:07:31.749Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -310293,6 +310326,11 @@
       "item": "Circuit Board",
       "qty": 1,
       "at": "2026-09-26T11:22:10.895Z"
+    },
+    {
+      "item": "Bricks",
+      "qty": 1,
+      "at": "2026-09-26T11:48:17.116Z"
     }
   ],
   "demand_history": {
@@ -314413,6 +314451,11 @@
         "demand": 1.272360788450001,
         "at": "2026-09-26T10:52:10.855Z",
         "supply": 29
+      },
+      {
+        "demand": 1.3211377797747061,
+        "at": "2026-09-26T11:48:17.116Z",
+        "supply": 29
       }
     ]
   },
@@ -316892,14 +316935,6 @@
   "total_rubles_history": [
     {
       "total": 552868,
-      "at": "2026-09-26T03:37:22.736Z"
-    },
-    {
-      "total": 552868,
-      "at": "2026-09-26T03:42:22.825Z"
-    },
-    {
-      "total": 552868,
       "at": "2026-09-26T03:47:22.604Z"
     },
     {
@@ -317289,6 +317324,14 @@
     {
       "total": 546511,
       "at": "2026-09-26T11:43:18.955Z"
+    },
+    {
+      "total": 546511,
+      "at": "2026-09-26T11:48:18.971Z"
+    },
+    {
+      "total": 546511,
+      "at": "2026-09-26T11:48:21.012Z"
     }
   ],
   "gold_rush": null,
@@ -343329,16 +343372,6 @@
     {
       "gini": 99.8573104901595,
       "top10": 100,
-      "at": "2026-09-26T03:37:22.744Z"
-    },
-    {
-      "gini": 99.8573104901595,
-      "top10": 100,
-      "at": "2026-09-26T03:42:22.832Z"
-    },
-    {
-      "gini": 99.8573104901595,
-      "top10": 100,
       "at": "2026-09-26T03:47:22.615Z"
     },
     {
@@ -343825,17 +343858,19 @@
       "gini": 99.71399428133287,
       "top10": 100,
       "at": "2026-09-26T11:43:18.969Z"
+    },
+    {
+      "gini": 99.71399428133287,
+      "top10": 100,
+      "at": "2026-09-26T11:48:18.989Z"
+    },
+    {
+      "gini": 99.71402977472064,
+      "top10": 100,
+      "at": "2026-09-26T11:48:21.035Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2052345,
-      "at": "2026-09-26T03:37:22.749Z"
-    },
-    {
-      "gdp": 2052345,
-      "at": "2026-09-26T03:42:22.838Z"
-    },
     {
       "gdp": 2052345,
       "at": "2026-09-26T03:47:22.619Z"
@@ -344227,6 +344262,14 @@
     {
       "gdp": 2119539,
       "at": "2026-09-26T11:43:18.974Z"
+    },
+    {
+      "gdp": 2119539,
+      "at": "2026-09-26T11:48:18.997Z"
+    },
+    {
+      "gdp": 2119539,
+      "at": "2026-09-26T11:48:21.050Z"
     }
   ],
   "purge_allowed": [
