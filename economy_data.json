@@ -501,7 +501,7 @@
       "inventory": {
         "Canned Fish": 1,
         "Cake": 2,
-        "Pet Food": 4,
+        "Pet Food": 3,
         "Bread": 3
       },
       "company_id": null,
@@ -306734,6 +306734,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "764091065920651266": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -306959,8 +306997,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 243935,
-      "market_cap": 243935,
+      "share_price": 243975,
+      "market_cap": 243975,
       "employees": 8,
       "level": 1,
       "buildings": {
@@ -307032,7 +307070,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-26T12:41:42.670Z",
       "price_history": [
-        236975,
         247437,
         259159,
         259464,
@@ -307131,7 +307168,8 @@
         243471,
         243487,
         243911,
-        243935
+        243935,
+        243975
       ],
       "is_state_owned": true,
       "director_id": "1521043721129558017",
@@ -307976,16 +308014,6 @@
   "gsi_history": [
     {
       "price": 95,
-      "change_percent": 0.7508221158135179,
-      "recorded_at": "2026-09-26T09:07:20.085Z"
-    },
-    {
-      "price": 95,
-      "change_percent": 0.5751966019803039,
-      "recorded_at": "2026-09-26T09:09:44.276Z"
-    },
-    {
-      "price": 95,
       "change_percent": 0.28343830560698063,
       "recorded_at": "2026-09-26T09:12:20.217Z"
     },
@@ -308473,6 +308501,16 @@
       "price": 94,
       "change_percent": 0.961035788979743,
       "recorded_at": "2026-09-26T12:57:23.763Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 1.098358073553624,
+      "recorded_at": "2026-09-26T12:57:40.416Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.9974713187888334,
+      "recorded_at": "2026-09-26T12:58:07.517Z"
     }
   ],
   "factory_names": [
@@ -308836,14 +308874,14 @@
     "Steel Beam": 12,
     "Bricks": 6,
     "Canned Fish": 8,
-    "Refined Fuel": 7,
+    "Refined Fuel": 5,
     "Sunflower Oil": 20
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 172,
-    "Refined Fuel": 183,
+    "Refined Fuel": 185,
     "Fuel": 129,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -308874,11 +308912,6 @@
     "Bricks": 4
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-20T01:52:31.781Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 2,
@@ -310373,6 +310406,11 @@
       "item": "Canned Food",
       "qty": 2,
       "at": "2026-09-26T12:23:29.357Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-09-26T12:58:05.541Z"
     }
   ],
   "demand_history": {
@@ -311079,11 +311117,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.221892176145519,
-        "at": "2026-09-13T21:58:32.567Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2302573435552036,
         "at": "2026-09-13T22:13:32.561Z",
         "supply": 0
@@ -311376,6 +311409,11 @@
       {
         "demand": 1.3586527791200018,
         "at": "2026-09-23T22:28:10.702Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.391344251695462,
+        "at": "2026-09-26T12:58:05.541Z",
         "supply": 0
       }
     ],
@@ -316993,14 +317031,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 552893,
-      "at": "2026-09-26T04:52:22.635Z"
-    },
-    {
-      "total": 552893,
-      "at": "2026-09-26T04:57:22.644Z"
-    },
-    {
       "total": 552908,
       "at": "2026-09-26T05:02:22.634Z"
     },
@@ -317391,6 +317421,14 @@
     {
       "total": 546877,
       "at": "2026-09-26T12:53:07.840Z"
+    },
+    {
+      "total": 546917,
+      "at": "2026-09-26T12:58:08.060Z"
+    },
+    {
+      "total": 546917,
+      "at": "2026-09-26T12:58:09.828Z"
     }
   ],
   "gold_rush": null,
@@ -342344,13 +342382,13 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 44,
+      "hunger": 84,
       "water": 60,
       "health": 100,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:56:00.173Z",
-      "last_fed": "2026-09-26T08:17:51.779Z",
+      "last_fed": "2026-09-26T12:57:48.868Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -342398,7 +342436,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 37,
+      "friendship": 38,
       "hunts": 3,
       "hunt": {
         "start": "2026-09-26T06:42:16.863Z",
@@ -342428,7 +342466,7 @@
       "starve_since": null,
       "last_pet": "2026-09-26T12:47:17.543Z",
       "lastPetAct": "2026-09-26T12:47:17.543Z",
-      "last_feed_cmd": "2026-09-26T08:17:51.779Z"
+      "last_feed_cmd": "2026-09-26T12:57:48.868Z"
     },
     "1511756975392948224": {
       "name": "Soviet Cat",
@@ -343431,16 +343469,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.8572647236362,
-      "top10": 100,
-      "at": "2026-09-26T04:52:22.645Z"
-    },
-    {
-      "gini": 99.8572647236362,
-      "top10": 100,
-      "at": "2026-09-26T04:57:22.664Z"
-    },
-    {
       "gini": 99.85723389686648,
       "top10": 100,
       "at": "2026-09-26T05:02:22.648Z"
@@ -343929,17 +343957,19 @@
       "gini": 99.71364888589109,
       "top10": 100,
       "at": "2026-09-26T12:53:07.869Z"
+    },
+    {
+      "gini": 99.71358361476068,
+      "top10": 100,
+      "at": "2026-09-26T12:58:08.084Z"
+    },
+    {
+      "gini": 99.71361915029233,
+      "top10": 100,
+      "at": "2026-09-26T12:58:09.846Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2052354,
-      "at": "2026-09-26T04:52:22.650Z"
-    },
-    {
-      "gdp": 2052354,
-      "at": "2026-09-26T04:57:22.674Z"
-    },
     {
       "gdp": 2056243,
       "at": "2026-09-26T05:02:22.655Z"
@@ -344331,6 +344361,14 @@
     {
       "gdp": 2120724,
       "at": "2026-09-26T12:53:07.880Z"
+    },
+    {
+      "gdp": 2120850,
+      "at": "2026-09-26T12:58:08.091Z"
+    },
+    {
+      "gdp": 2120850,
+      "at": "2026-09-26T12:58:09.856Z"
     }
   ],
   "purge_allowed": [
