@@ -671,8 +671,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 29,
-      "bot_total_xp": 799,
+      "bot_xp": 45,
+      "bot_total_xp": 815,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 4,
@@ -1255,8 +1255,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 22,
-      "bot_xp": 518,
-      "bot_total_xp": 30823,
+      "bot_xp": 555,
+      "bot_total_xp": 30860,
       "daily_work_count": 98,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-26",
@@ -1411,8 +1411,8 @@
       "last_illegal": "2026-09-24T06:59:45.310Z",
       "total_heat_generated": 293.325,
       "bot_level": 23,
-      "bot_xp": 1712,
-      "bot_total_xp": 35637,
+      "bot_xp": 1733,
+      "bot_total_xp": 35658,
       "daily_work_count": 140,
       "shock_worker": false,
       "mee6_level": 23,
@@ -318438,11 +318438,11 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1790448732109,
-      "791747702689103893": 1790449641496,
+      "791747702689103893": 1790449714475,
       "1456622719985782864": 1790447098931,
       "1082686076491137115": 1790449518584,
       "1229741033265299506": 1790449682985,
-      "1536339779140976711": 1790449153485,
+      "1536339779140976711": 1790449699723,
       "780837437987094560": 1790426656668,
       "874346333882945547": 1790448344827,
       "870686833976172574": 1790434275621,
@@ -318484,7 +318484,7 @@
       "930716306603405363": 1790385435512,
       "1494919466713350275": 1790372481721,
       "1511912848291528732": 1788989492172,
-      "1532459782265639083": 1790358036944,
+      "1532459782265639083": 1790449723413,
       "1407392503090642986": 1790186769263,
       "1456863215815364796": 1790441218758,
       "963834359994007614": 1790446536381,
@@ -318957,21 +318957,9 @@
       "2026-Q3": {
         "positive": 78,
         "negative": 40,
-        "neutral": 1876,
-        "total": 1994,
+        "neutral": 1877,
+        "total": 1995,
         "mentions": [
-          {
-            "at": "2026-09-20T21:18:01.776Z",
-            "userId": "1229741033265299506",
-            "username": "desertmarshal",
-            "channelId": "605951687974453248",
-            "messageId": "1551341687819870360",
-            "text": "\"Hyawii is supreme leader\"",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-20T21:18:17.058Z",
             "userId": "1082686076491137115",
@@ -324959,24 +324947,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-26T19:08:20.447Z",
+            "userId": "1536339779140976711",
+            "username": "scod3llarp",
+            "channelId": "605951687974453248",
+            "messageId": "1553483376386641952",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-15T19:52:41.220Z",
-        "userId": "1082686076491137115",
-        "username": "hyawii2.0",
-        "channelId": "605951687974453248",
-        "messageId": "1549508273294811138",
-        "text": "in the premier hall",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-15T19:54:04.442Z",
         "userId": "807254722251587614",
@@ -336964,9 +336952,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-26T19:08:20.447Z",
+        "userId": "1536339779140976711",
+        "username": "scod3llarp",
+        "channelId": "605951687974453248",
+        "messageId": "1553483376386641952",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-26T18:28:01.355Z",
+    "last_scan": "2026-09-26T19:08:20.448Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
