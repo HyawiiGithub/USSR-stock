@@ -949,7 +949,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 35,
+      "cash": 2525,
       "bank": 6093,
       "resources": {},
       "inventory": {
@@ -968,7 +968,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 249,
-      "heat": 16.115232189799254,
+      "heat": 15.196760684658768,
       "wanted": 0,
       "last_illegal": "2026-09-27T18:07:02.852Z",
       "total_heat_generated": 1801.6798999999996,
@@ -85793,8 +85793,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 389,
-      "bot_total_xp": 5064,
+      "bot_xp": 408,
+      "bot_total_xp": 5083,
       "daily_work_count": 42,
       "shock_worker": false,
       "mee6_level": 10,
@@ -125984,8 +125984,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 112,
-      "bot_total_xp": 7142,
+      "bot_xp": 137,
+      "bot_total_xp": 7167,
       "daily_work_count": 22,
       "shock_worker": false,
       "last_laylow": null,
@@ -308942,7 +308942,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@874346333882945547>",
       "hq_ssr": "Kazakh SSR",
-      "funds": 24909,
+      "funds": 22419,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -309200,13 +309200,13 @@
       ],
       "work_food": "Wheat",
       "salary_config": {
-        "ceo": 0,
+        "ceo": 10,
         "director": 0,
         "manager": 0
       },
       "wage": 35,
-      "heat": 9.704644224448026,
-      "underground_heat": 1096.8073098130646,
+      "heat": 9.078649622149353,
+      "underground_heat": 1096.1168623024753,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 496854
@@ -309607,16 +309607,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.5172284551545215,
-      "recorded_at": "2026-09-27T15:42:49.783Z"
-    },
-    {
-      "price": 99,
-      "change_percent": 0.44368018383941343,
-      "recorded_at": "2026-09-27T15:44:00.646Z"
-    },
     {
       "price": 99,
       "change_percent": 0.7705532597666845,
@@ -310106,6 +310096,16 @@
       "price": 96,
       "change_percent": 0.2591300459502297,
       "recorded_at": "2026-09-27T18:48:21.569Z"
+    },
+    {
+      "price": 93,
+      "change_percent": -2.9570872237194097,
+      "recorded_at": "2026-09-27T18:50:43.948Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.2717186208862617,
+      "recorded_at": "2026-09-27T18:50:45.269Z"
     }
   ],
   "factory_names": [
@@ -310465,14 +310465,14 @@
     "Bricks": 6,
     "Fish Stew": 10,
     "Uranium Rod": 3,
-    "Refined Fuel": 11,
+    "Refined Fuel": 10,
     "Cake": 1
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 172,
-    "Refined Fuel": 195,
+    "Refined Fuel": 196,
     "Fuel": 129,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -310504,11 +310504,6 @@
     "Sunflower Oil": 19
   },
   "consumption_history": [
-    {
-      "item": "Corn Meal",
-      "qty": 2,
-      "at": "2026-09-22T03:31:25.910Z"
-    },
     {
       "item": "Sugar",
       "qty": 1,
@@ -312003,6 +311998,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-27T18:33:27.356Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-09-27T18:50:44.316Z"
     }
   ],
   "demand_history": {
@@ -312709,11 +312709,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.2822286745136078,
-        "at": "2026-09-14T03:28:34.460Z",
-        "supply": 0
-      },
-      {
         "demand": 1.3286692636764235,
         "at": "2026-09-14T14:28:34.704Z",
         "supply": 1
@@ -313006,6 +313001,11 @@
       {
         "demand": 1.300556545566517,
         "at": "2026-09-27T17:54:03.934Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3619289482998675,
+        "at": "2026-09-27T18:50:44.316Z",
         "supply": 0
       }
     ],
@@ -319221,13 +319221,23 @@
       "username": "hyawii2.0",
       "action": "migratebank",
       "details": "Gosbank ₽125,512 → Central Bank reserves"
+    },
+    {
+      "at": "2026-09-27T18:50:48.490Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "setsalary",
+      "details": "Soviet Agriculture ceo=10%"
+    },
+    {
+      "at": "2026-09-27T18:50:51.586Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "paysalaries",
+      "details": "Soviet Agriculture paid ₽2490 to ceo <@874346333882945547> ₽2490"
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 545695,
-      "at": "2026-09-27T11:27:49.774Z"
-    },
     {
       "total": 545710,
       "at": "2026-09-27T11:32:49.626Z"
@@ -319623,6 +319633,10 @@
     {
       "total": 1551455,
       "at": "2026-09-27T18:45:45.757Z"
+    },
+    {
+      "total": 1551470,
+      "at": "2026-09-27T18:50:46.013Z"
     }
   ],
   "gold_rush": null,
@@ -319649,7 +319663,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 1.4544000000000001,
+  "heat_global": 1.1544,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -320409,7 +320423,7 @@
       "1542306007772823714": 1790276673131,
       "1222917764499640371": 1789254574851,
       "1482729267346538548": 1789052038349,
-      "1522851408611770409": 1790532056742,
+      "1522851408611770409": 1790535019037,
       "1283436444161151019": 1789734217591,
       "1225880714986393622": 1789331848439,
       "673726585194676274": 1790093109734,
@@ -320737,7 +320751,7 @@
       "1502373335349199012": 1790011034808,
       "875747075046928415": 1790015513629,
       "1176419080652197919": 1790015905994,
-      "895937675813593138": 1790534848593,
+      "895937675813593138": 1790535014442,
       "520925761335721984": 1790017335537,
       "1527242905335631924": 1790017452136,
       "1329014037278887946": 1790020883249,
@@ -345858,11 +345872,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70869810755103,
-      "top10": 100,
-      "at": "2026-09-27T11:27:49.788Z"
-    },
-    {
       "gini": 99.70868078218164,
       "top10": 100,
       "at": "2026-09-27T11:32:49.653Z"
@@ -346356,13 +346365,14 @@
       "gini": 99.70556245124686,
       "top10": 100,
       "at": "2026-09-27T18:45:45.784Z"
+    },
+    {
+      "gini": 99.70550116251214,
+      "top10": 100,
+      "at": "2026-09-27T18:50:46.034Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2147216,
-      "at": "2026-09-27T11:27:49.795Z"
-    },
     {
       "gdp": 2147273,
       "at": "2026-09-27T11:32:49.663Z"
@@ -346758,6 +346768,10 @@
     {
       "gdp": 2980626,
       "at": "2026-09-27T18:45:45.789Z"
+    },
+    {
+      "gdp": 2980657,
+      "at": "2026-09-27T18:50:46.041Z"
     }
   ],
   "purge_allowed": [
