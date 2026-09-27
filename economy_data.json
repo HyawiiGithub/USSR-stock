@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 754,
-      "bot_total_xp": 62524,
+      "bot_xp": 778,
+      "bot_total_xp": 62548,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 29,
@@ -853,8 +853,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 22,
-      "bot_xp": 1070,
-      "bot_total_xp": 31375,
+      "bot_xp": 1091,
+      "bot_total_xp": 31396,
       "daily_work_count": 105,
       "shock_worker": false,
       "mee6_level": 22,
@@ -308694,7 +308694,7 @@
       "work_food": "Sugar",
       "wage": 15,
       "salary_config": {
-        "ceo": 5,
+        "ceo": 2,
         "director": 5,
         "manager": 2
       },
@@ -319450,6 +319450,20 @@
       "username": "lucky_drink",
       "action": "paysalaries",
       "details": "State Mining Corp paid ₽918 to ceo <@807254722251587614> ₽328, director <@807254722251587614> ₽328, manager <@791747702689103893> ₽131, manager <@1186597507720019988> ₽131"
+    },
+    {
+      "at": "2026-09-27T20:49:33.790Z",
+      "by": "807254722251587614",
+      "username": "lucky_drink",
+      "action": "setsalary",
+      "details": "State Mining Corp ceo=2%"
+    },
+    {
+      "at": "2026-09-27T20:49:49.623Z",
+      "by": "807254722251587614",
+      "username": "lucky_drink",
+      "action": "setsalary",
+      "details": "State Mining Corp manager=2%"
     }
   ],
   "total_rubles_history": [
@@ -320552,8 +320566,8 @@
     "cooldowns": {
       "1544820489191559270": 1790538536553,
       "791747702689103893": 1790541333656,
-      "1456622719985782864": 1790542039981,
-      "1082686076491137115": 1790542013342,
+      "1456622719985782864": 1790542202796,
+      "1082686076491137115": 1790542161231,
       "1229741033265299506": 1790529954069,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790541285021,
@@ -345195,7 +345209,24 @@
       },
       "friendship": 36,
       "hunts": 0,
-      "hunt": null,
+      "hunt": {
+        "start": "2026-09-27T20:49:32.941Z",
+        "end": "2026-09-28T02:49:32.941Z",
+        "durH": 6,
+        "instant": false,
+        "lootMult": 1,
+        "expB": 0,
+        "treas": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zoom": false,
+        "thiefLvl": 0,
+        "pcs": 5,
+        "collarUsed": false
+      },
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
