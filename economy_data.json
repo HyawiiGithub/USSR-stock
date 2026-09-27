@@ -973,8 +973,8 @@
       "last_illegal": "2026-09-27T18:07:02.852Z",
       "total_heat_generated": 1801.6798999999996,
       "bot_level": 27,
-      "bot_xp": 4595,
-      "bot_total_xp": 55850,
+      "bot_xp": 4612,
+      "bot_total_xp": 55867,
       "daily_work_count": 913,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-27",
@@ -1091,10 +1091,10 @@
       "work_count": 365,
       "last_claim": "2026-09-23T07:45:13.633Z",
       "ssr_region": "Russian SFSR",
-      "employed_at": "State Nuclear Energy",
-      "is_employed": true,
-      "is_state_director": true,
-      "director_of": "state_27",
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -243286,8 +243286,8 @@
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
       "is_employed": true,
-      "is_state_director": false,
-      "director_of": null,
+      "is_state_director": true,
+      "director_of": "state_27",
       "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
@@ -309174,7 +309174,7 @@
       "name": "State Nuclear Energy",
       "ticker": "ST27",
       "owner_id": "1513968015048184039",
-      "ceo": "<@1495413593242337421>",
+      "ceo": "<@963834359994007614>",
       "hq_ssr": "Russian SFSR",
       "funds": 33588,
       "invested_capital": 500,
@@ -309313,7 +309313,7 @@
         232233
       ],
       "is_state_owned": true,
-      "director_id": "1495413593242337421",
+      "director_id": "963834359994007614",
       "last_factorydeal": "2026-09-17T02:53:45.556Z",
       "last_govcontract": null,
       "specialization": "extraction",
@@ -310200,11 +310200,11 @@
   ],
   "state_directors": {
     "918518877414100993": "state_25",
-    "1495413593242337421": "state_27",
     "1528783188728483944": "state_28",
     "874346333882945547": "state_26",
     "807254722251587614": "state_23",
-    "1521043721129558017": "state_24"
+    "1521043721129558017": "state_24",
+    "963834359994007614": "state_27"
   },
   "transaction_log": [
     {
@@ -319147,6 +319147,20 @@
       "username": "juice_wrld9999",
       "action": "SUGGEST",
       "details": "make me owner of your heart"
+    },
+    {
+      "at": "2026-09-27T18:11:01.775Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "removedirector",
+      "details": "removed <@1495413593242337421> (1495413593242337421) from State Nuclear Energy (state_27)"
+    },
+    {
+      "at": "2026-09-27T18:11:08.862Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointdirector",
+      "details": "appointed <@963834359994007614> (963834359994007614) as director of State Nuclear Energy (state_27)"
     }
   ],
   "total_rubles_history": [
@@ -320253,7 +320267,7 @@
       "1229741033265299506": 1790529954069,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790518230104,
-      "874346333882945547": 1790532573135,
+      "874346333882945547": 1790532650463,
       "870686833976172574": 1790514720599,
       "1186597507720019988": 1790531390558,
       "1521043721129558017": 1790530804421,
