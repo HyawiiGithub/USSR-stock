@@ -228,8 +228,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 1006,
-      "bot_total_xp": 19381,
+      "bot_xp": 1022,
+      "bot_total_xp": 19397,
       "daily_work_count": 76,
       "shock_worker": false,
       "mee6_level": 18,
@@ -532,7 +532,7 @@
       "last_daily_work_date": "2026-09-27",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-09-27T09:28:05.618Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-26T18:41:48.811Z",
       "train_reminder": false,
@@ -848,8 +848,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 1880,
-      "bot_total_xp": 28830,
+      "bot_xp": 1897,
+      "bot_total_xp": 28847,
       "daily_work_count": 98,
       "shock_worker": false,
       "mee6_level": 21,
@@ -963,7 +963,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 220,
-      "heat": 8.332805603447902,
+      "heat": 9.2132480511202,
       "wanted": 0,
       "last_illegal": "2026-09-27T06:56:38.113Z",
       "total_heat_generated": 1705.7068999999997,
@@ -95946,9 +95946,9 @@
       "wanted": 0,
       "last_illegal": "2026-09-27T08:00:14.023Z",
       "total_heat_generated": 10.293000000000001,
-      "bot_level": 2,
-      "bot_xp": 218,
-      "bot_total_xp": 473,
+      "bot_level": 3,
+      "bot_xp": 22,
+      "bot_total_xp": 497,
       "daily_work_count": 3,
       "shock_worker": false,
       "last_laylow": null,
@@ -95962,7 +95962,7 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "last_daily_work_date": "2026-09-27",
-      "mee6_level": 2
+      "mee6_level": 3
     },
     "291558974082514945": {
       "cash": 0,
@@ -308358,7 +308358,7 @@
       },
       "wage": 35,
       "heat": 0,
-      "underground_heat": 1067.8247399943145,
+      "underground_heat": 1068.3588324259576,
       "dirty_cash": 0,
       "last_illegal": null
     },
@@ -318128,6 +318128,10 @@
   "total_rubles_history": [
     {
       "total": 551120,
+      "at": "2026-09-27T01:31:47.697Z"
+    },
+    {
+      "total": 551120,
       "at": "2026-09-27T01:36:47.563Z"
     },
     {
@@ -318521,10 +318525,6 @@
     {
       "total": 546639,
       "at": "2026-09-27T09:21:55.236Z"
-    },
-    {
-      "total": 546719,
-      "at": "2026-09-27T09:26:53.550Z"
     }
   ],
   "gold_rush": null,
@@ -319211,7 +319211,7 @@
     "cooldowns": {
       "1544820489191559270": 1790473747378,
       "791747702689103893": 1790499984241,
-      "1456622719985782864": 1790501136238,
+      "1456622719985782864": 1790501250792,
       "1082686076491137115": 1790500049892,
       "1229741033265299506": 1790501003794,
       "1536339779140976711": 1790465632457,
@@ -319262,7 +319262,7 @@
       "963834359994007614": 1790494414952,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790359731112,
-      "730223629849199093": 1790501156480,
+      "730223629849199093": 1790501262141,
       "418231502627667979": 1790296609609,
       "710945531794554970": 1790492591507,
       "925564822781845595": 1789167727721,
@@ -319729,7 +319729,7 @@
       "1459166541412307049": 1790484913647,
       "1480281135916388570": 1790491912211,
       "1500371016260780172": 1790490822677,
-      "1512533360654680126": 1790501044716,
+      "1512533360654680126": 1790501273942,
       "567599353955352578": 1790499608440
     }
   },
@@ -337770,13 +337770,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1379734184259747851",
-      "from": 11,
-      "to": 12,
-      "at": "2026-09-22T18:28:46.507Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1522851408611770409",
       "from": 7,
       "to": 8,
@@ -339168,6 +339161,13 @@
       "to": 22,
       "at": "2026-09-27T09:08:59.937Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1512533360654680126",
+      "from": 2,
+      "to": 3,
+      "at": "2026-09-27T09:27:53.942Z",
+      "reason": "chat"
     }
   ],
   "_lastCollectXP": {
@@ -339519,40 +339519,16 @@
   ],
   "jarvis": {
     "1082686076491137115": {
-      "date": "2026-09-26",
+      "date": "2026-09-27",
       "used": 0,
       "history": [
         {
           "role": "user",
-          "content": "Current Leadership Structure"
+          "content": "who can access jarvis currently"
         },
         {
           "role": "assistant",
-          "content": "I don’t have the current leadership details in the verified facts, live state, or server lore, so I can’t provide the structure."
-        },
-        {
-          "role": "user",
-          "content": "who is nikanor"
-        },
-        {
-          "role": "assistant",
-          "content": "Nikanor Abramovych is the Metropolitan of the Ukrainian Autocephalous Orthodox Church (a historical religious figure). In this server he appears as “Jurisconsult Nikanor” in the tribunal‑hall and propaganda‑hq channels, where he’s been mentioned in discussions about legal appointments and ministerial promotions. Beyond that, I don’t have any verified role, rank, or personal details for him in the bot’s facts."
-        },
-        {
-          "role": "user",
-          "content": "who is <@1506785783506534426>"
-        },
-        {
-          "role": "assistant",
-          "content": "<@1506785783506534426> is known in‑server as **Jurisconsult Nikanor**.  \n- Cash: ₽1,203 | Bank: ₽0  \n- Level: 21  \n- Roles: Communist Party of the Soviet Union, Journalist‑Журналист, Office of the Procurator‑General, Judicial Ping, State Committee for Justice, R.K.U. Graduate, News Ping, Communist Party (Reformist), Chat Revive, Soviet Events, Kazakh Soviet Socialist Republic, Jurisconsult‑Юрисконсульт ⚖︎  \n- SSR: Kazakh SSR  \n- Company: Soviet Agriculture  \n- Army: Private (power 0)  \n- Joined:"
-        },
-        {
-          "role": "user",
-          "content": "bot token"
-        },
-        {
-          "role": "assistant",
-          "content": "I’m unable to share the bot token."
+          "content": "Jarvis can be invoked by anyone who uses the `-jarvis` (or `-jarvisfollowup` etc.) command.  \n\n- **Primaries** (the server owner/creator, <@1082686076491137115>) bypass all restrictions and can use Jarvis without any credit cost or daily limit.  \n- **Regular users** are limited by a daily Jarvis‑credit pool of **5 credits**. A fresh query costs **1 credit**, a follow‑up costs **0.5 credits**. Once the pool is exhausted for the day, further Jarvis commands will be denied until the pool resets.  \n"
         }
       ],
       "bonus": 0
@@ -344673,7 +344649,7 @@
             ]
           },
           "1552334216522629171": {
-            "msgs": 5,
+            "msgs": 4,
             "users": [
               "1533784166624264312",
               "918518877414100993",
@@ -344688,6 +344664,11 @@
   },
   "collars": {},
   "gini_history": [
+    {
+      "gini": 99.71227444164839,
+      "top10": 100,
+      "at": "2026-09-27T01:31:47.724Z"
+    },
     {
       "gini": 99.71227444164839,
       "top10": 100,
@@ -345182,14 +345163,13 @@
       "gini": 99.70807330421991,
       "top10": 100,
       "at": "2026-09-27T09:21:55.244Z"
-    },
-    {
-      "gini": 99.70801677947532,
-      "top10": 100,
-      "at": "2026-09-27T09:26:53.561Z"
     }
   ],
   "gdp_history": [
+    {
+      "gdp": 2148593,
+      "at": "2026-09-27T01:31:47.731Z"
+    },
     {
       "gdp": 2148593,
       "at": "2026-09-27T01:36:47.584Z"
@@ -345585,10 +345565,6 @@
     {
       "gdp": 2144726,
       "at": "2026-09-27T09:21:55.248Z"
-    },
-    {
-      "gdp": 2144800,
-      "at": "2026-09-27T09:26:53.566Z"
     }
   ],
   "purge_allowed": [
