@@ -309955,7 +309955,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 79,
-    "Sunflower Oil": 5,
+    "Sunflower Oil": 4,
     "Canned Fish": 3,
     "Canned Food": 2,
     "Bricks": 10,
@@ -309994,14 +309994,9 @@
     "Radiator": 1,
     "Fish Stew": 10,
     "Bricks": 10,
-    "Sunflower Oil": 16
+    "Sunflower Oil": 17
   },
   "consumption_history": [
-    {
-      "item": "Aluminium Ingot",
-      "qty": 1,
-      "at": "2026-09-21T22:31:22.611Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -311496,6 +311491,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-09-27T13:22:49.006Z"
+    },
+    {
+      "item": "Sunflower Oil",
+      "qty": 1,
+      "at": "2026-09-27T13:37:48.994Z"
     }
   ],
   "demand_history": {
@@ -315932,6 +315932,11 @@
       {
         "demand": 1.4045592512793694,
         "at": "2026-09-27T11:37:49.109Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.404606638100113,
+        "at": "2026-09-27T13:37:48.994Z",
         "supply": 0
       }
     ]
