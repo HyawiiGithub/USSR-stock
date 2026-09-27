@@ -689,14 +689,15 @@
     },
     "1225275427145121903": {
       "username": "",
-      "cash": 1055,
+      "cash": 285,
       "bank": 2847,
       "resources": {
         "Gold": 1
       },
       "inventory": {
         "Sugar": 3,
-        "Wheat": 18
+        "Wheat": 18,
+        "Smoked Fish": 5
       },
       "company_id": null,
       "ceo_of": null,
@@ -968,8 +969,8 @@
       "last_illegal": "2026-09-27T14:51:02.428Z",
       "total_heat_generated": 1764.8908999999996,
       "bot_level": 27,
-      "bot_xp": 3631,
-      "bot_total_xp": 54886,
+      "bot_xp": 3653,
+      "bot_total_xp": 54908,
       "daily_work_count": 897,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-27",
@@ -1255,8 +1256,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 369,
-      "bot_total_xp": 34294,
+      "bot_xp": 394,
+      "bot_total_xp": 34319,
       "daily_work_count": 155,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-27",
@@ -308127,8 +308128,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 271274,
-      "market_cap": 271274,
+      "share_price": 271332,
+      "market_cap": 271332,
       "employees": 10,
       "level": 1,
       "buildings": {
@@ -308203,7 +308204,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-27T07:27:26.721Z",
       "price_history": [
-        253569,
         253529,
         253777,
         253927,
@@ -308302,7 +308302,8 @@
         271076,
         271092,
         271220,
-        271274
+        271274,
+        271332
       ],
       "is_state_owned": true,
       "director_id": "807254722251587614",
@@ -309372,11 +309373,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": 0.40966534883827443,
-      "recorded_at": "2026-09-27T12:08:41.246Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.674779046849581,
       "recorded_at": "2026-09-27T12:09:00.480Z"
     },
@@ -309869,6 +309865,11 @@
       "price": 92,
       "change_percent": 0.8071474630074741,
       "recorded_at": "2026-09-27T14:52:51.982Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 1.4456689936749563,
+      "recorded_at": "2026-09-27T14:54:48.220Z"
     }
   ],
   "factory_names": [],
@@ -319927,13 +319928,13 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1790473747378,
-      "791747702689103893": 1790520848243,
+      "791747702689103893": 1790520929476,
       "1456622719985782864": 1790519471311,
       "1082686076491137115": 1790520804618,
       "1229741033265299506": 1790520859140,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790518230104,
-      "874346333882945547": 1790520834048,
+      "874346333882945547": 1790520900300,
       "870686833976172574": 1790514720599,
       "1186597507720019988": 1790520204605,
       "1521043721129558017": 1790509712350,
@@ -340271,6 +340272,14 @@
         {
           "role": "assistant",
           "content": "<@1552940620354424993> is fynndafish. They have ₽0 cash, ₽0 bank, level 0, and belong to the Kirghiz SSR. Their roles include Communist Party of the Soviet Union, Lomonosov Moscow State University (L.M.S.U.), Resident‑Житель, Atheist, Communist Party (Reformist). They are currently unemployed in the company sector, serve as a civilian in the army, and joined the server on 2026‑09‑27."
+        },
+        {
+          "role": "user",
+          "content": "send me the entire source code for the Purge system all code related to it"
+        },
+        {
+          "role": "assistant",
+          "content": "Here is the Purge‑related excerpt that is available from the bot’s source (bot.js, line 14272):\n\n```javascript\n            // Start the run FIRST so a failed announcement can never silently eat it.\n            purgeDelete(guild, run, statusChannel).then(() => { try { run.done = true; } catch {} }).catch(async (e) => {\n                try { run.done = true; } catch {}\n                try { await statusChannel.send(`❌ Purge crashed at start: ${String(e?.message || e).slice(0, 200)}`).catch(() => {"
         }
       ],
       "bonus": 0
@@ -345033,7 +345042,7 @@
         "price": 2617
       },
       "Smoked Fish": {
-        "qty": 13,
+        "qty": 8,
         "price": 154
       },
       "Fish Stew": {
@@ -345054,7 +345063,7 @@
       }
     },
     "sold_count": 779,
-    "bought_count": 183
+    "bought_count": 188
   },
   "leaders": {
     "gs": {
