@@ -310847,7 +310847,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 79,
-    "Bricks": 4,
+    "Bricks": 3,
     "Fish Stew": 9,
     "Uranium Rod": 1,
     "Refined Fuel": 8,
@@ -310889,15 +310889,10 @@
     "Pet Food": 9,
     "Radiator": 3,
     "Fish Stew": 11,
-    "Bricks": 16,
+    "Bricks": 17,
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Uranium Rod",
-      "qty": 1,
-      "at": "2026-09-22T14:46:28.235Z"
-    },
     {
       "item": "Reactor Core",
       "qty": 1,
@@ -312392,6 +312387,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-09-27T23:05:49.090Z"
+    },
+    {
+      "item": "Bricks",
+      "qty": 1,
+      "at": "2026-09-27T23:20:48.973Z"
     }
   ],
   "demand_history": {
@@ -316841,6 +316841,11 @@
       {
         "demand": 1.3580029845401453,
         "at": "2026-09-27T22:35:49.158Z",
+        "supply": 21
+      },
+      {
+        "demand": 1.3580029845401453,
+        "at": "2026-09-27T23:20:48.973Z",
         "supply": 21
       }
     ],
