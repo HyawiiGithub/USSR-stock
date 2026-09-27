@@ -180,8 +180,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 69,
-      "bot_total_xp": 2274,
+      "bot_xp": 93,
+      "bot_total_xp": 2298,
       "daily_work_count": 29,
       "shock_worker": false,
       "mee6_level": 7,
@@ -871,7 +871,7 @@
       "pet_food_source": {}
     },
     "1528783188728483944": {
-      "cash": 711,
+      "cash": 1049,
       "bank": 45,
       "resources": {},
       "inventory": {},
@@ -1590,7 +1590,7 @@
       "pet_food_source": {}
     },
     "1379734184259747851": {
-      "cash": 1386,
+      "cash": 1470,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -300840,8 +300840,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 576,
-      "bot_total_xp": 4296,
+      "bot_xp": 591,
+      "bot_total_xp": 4311,
       "daily_work_count": 55,
       "shock_worker": false,
       "last_laylow": null,
@@ -309125,8 +309125,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 156372,
-      "market_cap": 156372,
+      "share_price": 156417,
+      "market_cap": 156417,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -309147,18 +309147,19 @@
         }
       },
       "inventory": {
-        "Oil": 5,
+        "Oil": 3,
         "Iron Ore": 21,
-        "Wheat": 142,
-        "Sugar": 58,
+        "Wheat": 123,
+        "Sugar": 59,
         "Gold": 1,
         "Gas Fuel": 11,
-        "Cotton": 1
+        "Cotton": 1,
+        "Fuel": 1,
+        "Natural Gas": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-27T15:39:17.812Z",
+      "last_collect": "2026-09-27T23:14:38.260Z",
       "price_history": [
-        141663,
         141666,
         141645,
         141648,
@@ -309257,7 +309258,8 @@
         156372,
         156372,
         156372,
-        156372
+        156372,
+        156417
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
@@ -309727,7 +309729,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 8464,
+      "funds": 8042,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -309882,8 +309884,8 @@
       "work_food": "auto",
       "salary_config": {
         "ceo": 2,
-        "director": 10,
-        "manager": 10
+        "director": 2,
+        "manager": 1
       },
       "heat": 0,
       "underground_heat": 0,
@@ -309955,11 +309957,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.9032870156830797,
-      "recorded_at": "2026-09-27T19:30:46.484Z"
-    },
     {
       "price": 92,
       "change_percent": -4.068100682520568,
@@ -310454,20 +310451,25 @@
       "price": 100,
       "change_percent": 0.04607443311702617,
       "recorded_at": "2026-09-27T23:10:57.860Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.2507761476586058,
+      "recorded_at": "2026-09-27T23:14:39.503Z"
     }
   ],
   "factory_names": [
     "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Brezhnev Auto Factory",
-    "Siberian Mining Co",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
     "Khrushchev Agricultural",
     "Soviet Iron Foundry",
-    "Red Star Steelworks"
+    "Red Star Steelworks",
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -319779,6 +319781,27 @@
       "username": "alice_orlowe",
       "action": "setsalary",
       "details": "Baltic Timber & Harbour Co ceo=2%"
+    },
+    {
+      "at": "2026-09-27T23:14:16.424Z",
+      "by": "1528783188728483944",
+      "username": "alice_orlowe",
+      "action": "setsalary",
+      "details": "Baltic Timber & Harbour Co director=2%"
+    },
+    {
+      "at": "2026-09-27T23:14:22.928Z",
+      "by": "1528783188728483944",
+      "username": "alice_orlowe",
+      "action": "setsalary",
+      "details": "Baltic Timber & Harbour Co manager=1%"
+    },
+    {
+      "at": "2026-09-27T23:14:26.673Z",
+      "by": "1528783188728483944",
+      "username": "alice_orlowe",
+      "action": "paysalaries",
+      "details": "Baltic Timber & Harbour Co paid ₽422 to ceo <@1528783188728483944> ₽169, director <@1528783188728483944> ₽169, manager <@1379734184259747851> ₽84"
     }
   ],
   "total_rubles_history": [
@@ -321237,7 +321260,7 @@
       "1540661235110903930": 1789792017726,
       "1500052034215219363": 1789794759733,
       "1382528440238084318": 1789860090813,
-      "634547073978728478": 1790550537198,
+      "634547073978728478": 1790550891378,
       "850094994202296371": 1790215356183,
       "1380189428953124975": 1790507889155,
       "848146966138716190": 1789816798493,
@@ -340859,9 +340882,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 25,
-    "beforeLvlC": 11,
-    "afterLvl": 11,
+    "xpGainC": 24,
+    "beforeLvlC": 7,
+    "afterLvl": 7,
     "leveled": []
   },
   "central_bank": {
