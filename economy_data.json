@@ -309363,7 +309363,7 @@
     "Cake": 6,
     "Bread": 1,
     "Smoked Fish": 4,
-    "Circuit Board": 3,
+    "Circuit Board": 1,
     "Steel Beam": 7,
     "Canned Fish": 3,
     "Sunflower Oil": 20
@@ -309384,7 +309384,7 @@
     "Canned Fish": 34,
     "Bread": 316,
     "Aluminium Sheet": 8,
-    "Circuit Board": 36,
+    "Circuit Board": 38,
     "Cotton Fabric": 12,
     "Reactor Core": 9,
     "Gas Fuel": 102,
@@ -309404,11 +309404,6 @@
     "Sunflower Oil": 1
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 1,
-      "at": "2026-09-20T13:33:28.918Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 1,
@@ -310903,6 +310898,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-09-27T01:01:45.258Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-09-27T01:16:45.176Z"
     }
   ],
   "demand_history": {
@@ -313745,6 +313745,11 @@
       {
         "demand": 1.3960170707219235,
         "at": "2026-09-26T22:31:44.229Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3960170707219235,
+        "at": "2026-09-27T01:16:45.177Z",
         "supply": 0
       }
     ],
