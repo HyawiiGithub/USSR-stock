@@ -968,7 +968,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 307,
-      "heat": 23.788963390765257,
+      "heat": 22.9473513468974,
       "wanted": 0,
       "last_illegal": "2026-09-27T19:00:12.143Z",
       "total_heat_generated": 1813.8278999999995,
@@ -1260,8 +1260,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 1813,
-      "bot_total_xp": 35738,
+      "bot_xp": 1831,
+      "bot_total_xp": 35756,
       "daily_work_count": 185,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-27",
@@ -125984,8 +125984,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 430,
-      "bot_total_xp": 7460,
+      "bot_xp": 455,
+      "bot_total_xp": 7485,
       "daily_work_count": 22,
       "shock_worker": false,
       "last_laylow": null,
@@ -309205,8 +309205,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 13.98399082902641,
-      "underground_heat": 1105.4814064905802,
+      "heat": 13.184518981534964,
+      "underground_heat": 1104.9062382072611,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 496854
@@ -309607,11 +309607,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.6025966045292652,
-      "recorded_at": "2026-09-27T16:04:02.369Z"
-    },
     {
       "price": 101,
       "change_percent": 0.7477292934694325,
@@ -310106,6 +310101,11 @@
       "price": 96,
       "change_percent": 0.25652025065852574,
       "recorded_at": "2026-09-27T19:15:46.522Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.8424559570002016,
+      "recorded_at": "2026-09-27T19:20:46.415Z"
     }
   ],
   "factory_names": [
@@ -310459,7 +310459,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 69,
+    "Machine Parts": 67,
     "Sunflower Oil": 2,
     "Canned Fish": 2,
     "Bricks": 6,
@@ -310489,7 +310489,7 @@
     "Reactor Core": 9,
     "Gas Fuel": 102,
     "Steel Beam": 21,
-    "Machine Parts": 131,
+    "Machine Parts": 133,
     "Sugar": 51,
     "Fertilizer": 17,
     "Flour": 20,
@@ -310504,11 +310504,6 @@
     "Sunflower Oil": 19
   },
   "consumption_history": [
-    {
-      "item": "Aluminium Ingot",
-      "qty": 1,
-      "at": "2026-09-22T04:01:25.817Z"
-    },
     {
       "item": "Corn Meal",
       "qty": 1,
@@ -312003,6 +311998,11 @@
       "item": "Uranium Rod",
       "qty": 1,
       "at": "2026-09-27T19:05:44.996Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 2,
+      "at": "2026-09-27T19:20:44.997Z"
     }
   ],
   "demand_history": {
@@ -315423,11 +315423,6 @@
     ],
     "Machine Parts": [
       {
-        "demand": 1.2029898910309895,
-        "at": "2026-09-21T06:04:40.482Z",
-        "supply": 27
-      },
-      {
         "demand": 1.2849077934116107,
         "at": "2026-09-21T22:46:24.328Z",
         "supply": 44
@@ -315720,6 +315715,11 @@
       {
         "demand": 1.396136609396807,
         "at": "2026-09-27T18:33:27.356Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.396136609396807,
+        "at": "2026-09-27T19:20:44.997Z",
         "supply": 4
       }
     ],
@@ -319258,10 +319258,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 545915,
-      "at": "2026-09-27T11:57:51.020Z"
-    },
-    {
       "total": 540953,
       "at": "2026-09-27T12:02:50.966Z"
     },
@@ -319656,6 +319652,10 @@
     {
       "total": 1553675,
       "at": "2026-09-27T19:15:47.513Z"
+    },
+    {
+      "total": 1553675,
+      "at": "2026-09-27T19:20:47.936Z"
     }
   ],
   "gold_rush": null,
@@ -319682,7 +319682,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 1.7766,
+  "heat_global": 1.4766,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -320355,7 +320355,7 @@
   "xp_system": {
     "cooldowns": {
       "1544820489191559270": 1790473747378,
-      "791747702689103893": 1790536797439,
+      "791747702689103893": 1790536867254,
       "1456622719985782864": 1790533647285,
       "1082686076491137115": 1790536837898,
       "1229741033265299506": 1790529954069,
@@ -320770,7 +320770,7 @@
       "1502373335349199012": 1790011034808,
       "875747075046928415": 1790015513629,
       "1176419080652197919": 1790015905994,
-      "895937675813593138": 1790536546780,
+      "895937675813593138": 1790536888260,
       "520925761335721984": 1790017335537,
       "1527242905335631924": 1790017452136,
       "1329014037278887946": 1790020883249,
@@ -320904,21 +320904,9 @@
       "2026-Q3": {
         "positive": 81,
         "negative": 40,
-        "neutral": 1958,
-        "total": 2079,
+        "neutral": 1959,
+        "total": 2080,
         "mentions": [
-          {
-            "at": "2026-09-21T20:25:14.223Z",
-            "userId": "874346333882945547",
-            "username": "seniormanulos",
-            "channelId": "605951687974453248",
-            "messageId": "1551690791171391600",
-            "text": "Difference is hyawii",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-21T20:25:18.043Z",
             "userId": "791747702689103893",
@@ -326906,24 +326894,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-27T19:20:51.631Z",
+            "userId": "963834359994007614",
+            "username": "that.one.pakistani_",
+            "channelId": "605951687974453248",
+            "messageId": "1553848913289810091",
+            "text": "LUNA\nGUAPO\nPOETR\nHYAWII\nEVERY GIRL IN THIS SERVER\n\nI CANT COME TO YOU ON VALENTINES DAY",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-16T20:29:57.228Z",
-        "userId": "780837437987094560",
-        "username": "napoleon87",
-        "channelId": "605951687974453248",
-        "messageId": "1549880038441230432",
-        "text": "Premier slimed",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-16T20:30:14.614Z",
         "userId": "780837437987094560",
@@ -338911,9 +338899,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-27T19:20:51.631Z",
+        "userId": "963834359994007614",
+        "username": "that.one.pakistani_",
+        "channelId": "605951687974453248",
+        "messageId": "1553848913289810091",
+        "text": "LUNA\nGUAPO\nPOETR\nHYAWII\nEVERY GIRL IN THIS SERVER\n\nI CANT COME TO YOU ON VALENTINES DAY",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-27T19:20:11.887Z",
+    "last_scan": "2026-09-27T19:20:51.631Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -345898,11 +345898,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70786359651976,
-      "top10": 100,
-      "at": "2026-09-27T11:57:51.036Z"
-    },
-    {
       "gini": 99.70915893565284,
       "top10": 100,
       "at": "2026-09-27T12:02:51.000Z"
@@ -346396,13 +346391,14 @@
       "gini": 99.70614187114504,
       "top10": 100,
       "at": "2026-09-27T19:15:47.530Z"
+    },
+    {
+      "gini": 99.70614187114504,
+      "top10": 100,
+      "at": "2026-09-27T19:20:47.964Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2149699,
-      "at": "2026-09-27T11:57:51.042Z"
-    },
     {
       "gdp": 2145757,
       "at": "2026-09-27T12:02:51.006Z"
@@ -346798,6 +346794,10 @@
     {
       "gdp": 2983476,
       "at": "2026-09-27T19:15:47.537Z"
+    },
+    {
+      "gdp": 2983476,
+      "at": "2026-09-27T19:20:47.969Z"
     }
   ],
   "purge_allowed": [
