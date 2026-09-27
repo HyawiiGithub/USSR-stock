@@ -949,7 +949,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 2525,
+      "cash": 35,
       "bank": 6093,
       "resources": {},
       "inventory": {
@@ -973,8 +973,8 @@
       "last_illegal": "2026-09-27T18:07:02.852Z",
       "total_heat_generated": 1801.6798999999996,
       "bot_level": 27,
-      "bot_xp": 4969,
-      "bot_total_xp": 56224,
+      "bot_xp": 4985,
+      "bot_total_xp": 56240,
       "daily_work_count": 918,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-27",
@@ -207634,8 +207634,8 @@
       "last_illegal": "2026-09-25T02:44:29.907Z",
       "total_heat_generated": 102.20299999999999,
       "bot_level": 24,
-      "bot_xp": 3443,
-      "bot_total_xp": 41263,
+      "bot_xp": 3468,
+      "bot_total_xp": 41288,
       "daily_work_count": 114,
       "shock_worker": false,
       "mee6_level": 24,
@@ -243295,8 +243295,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 3345,
-      "bot_total_xp": 37270,
+      "bot_xp": 3365,
+      "bot_total_xp": 37290,
       "daily_work_count": 7,
       "shock_worker": false,
       "mee6_level": 23,
@@ -294292,8 +294292,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1590,
-      "bot_total_xp": 13415,
+      "bot_xp": 1607,
+      "bot_total_xp": 13432,
       "daily_work_count": 65,
       "shock_worker": false,
       "last_laylow": null,
@@ -309200,7 +309200,7 @@
       ],
       "work_food": "Wheat",
       "salary_config": {
-        "ceo": 10,
+        "ceo": 0,
         "director": 0,
         "manager": 0
       },
@@ -319235,6 +319235,13 @@
       "username": "seniormanulos",
       "action": "paysalaries",
       "details": "Soviet Agriculture paid ₽2490 to ceo <@874346333882945547> ₽2490"
+    },
+    {
+      "at": "2026-09-27T18:50:58.016Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "setsalary",
+      "details": "Soviet Agriculture ceo=0%"
     }
   ],
   "total_rubles_history": [
@@ -320342,11 +320349,11 @@
       "1229741033265299506": 1790529954069,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790518230104,
-      "874346333882945547": 1790534615997,
+      "874346333882945547": 1790535069713,
       "870686833976172574": 1790514720599,
       "1186597507720019988": 1790531390558,
       "1521043721129558017": 1790532978909,
-      "1397601108616024075": 1790535003739,
+      "1397601108616024075": 1790535076287,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1790122314087,
@@ -320385,7 +320392,7 @@
       "1532459782265639083": 1790449921722,
       "1407392503090642986": 1790186769263,
       "1456863215815364796": 1790441218758,
-      "963834359994007614": 1790534725936,
+      "963834359994007614": 1790535117514,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790359731112,
       "730223629849199093": 1790527398872,
@@ -320523,7 +320530,7 @@
       "1473965687922757747": 1789987256004,
       "1536471243849736322": 1789494877126,
       "1545521924166131823": 1790517578193,
-      "1483005845867593831": 1790518534387,
+      "1483005845867593831": 1790535094273,
       "1236297958933401643": 1789299042115,
       "1251358003857457256": 1790071234665,
       "1534132570412028027": 1789300584145,
@@ -320885,21 +320892,9 @@
       "2026-Q3": {
         "positive": 81,
         "negative": 40,
-        "neutral": 1954,
-        "total": 2075,
+        "neutral": 1955,
+        "total": 2076,
         "mentions": [
-          {
-            "at": "2026-09-21T20:24:03.652Z",
-            "userId": "1536339779140976711",
-            "username": "scod3llarp",
-            "channelId": "742040268110299146",
-            "messageId": "1551690494168272907",
-            "text": "<@1082686076491137115> brutally raped alon behind Ald",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-21T20:24:09.475Z",
             "userId": "1456622719985782864",
@@ -326887,24 +326882,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-27T18:51:10.585Z",
+            "userId": "874346333882945547",
+            "username": "seniormanulos",
+            "channelId": "1538703181733695600",
+            "messageId": "1553841445323145297",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-16T20:26:13.304Z",
-        "userId": "1082686076491137115",
-        "username": "hyawii2.0",
-        "channelId": "606543995165999104",
-        "messageId": "1549879098363617281",
-        "text": "<@&1514216311771758644> ☭ PREMIER DECREE № 031-26 — RGES SUSPENDED\n\nThe Red Guards of Ethos and Socialism hired a Resident. Per Final Art 26 Residents are only observers and per Art 124 only Citizens can hold office.\n\n1. RGES is hereby suspended. No new hires and no operations until cleared.\n\n2. Punishments: The officer who hired the Resident will be investigated per Final Art 111 and faces dismissal depending.\n\n3. Precautions: All future RGES hires must be verified as Citizens via LMSU or Red A",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-16T20:27:31.835Z",
         "userId": "1511756975392948224",
@@ -338892,9 +338887,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-27T18:51:10.585Z",
+        "userId": "874346333882945547",
+        "username": "seniormanulos",
+        "channelId": "1538703181733695600",
+        "messageId": "1553841445323145297",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-27T18:49:14.711Z",
+    "last_scan": "2026-09-27T18:51:10.585Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
