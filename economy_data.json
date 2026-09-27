@@ -968,8 +968,8 @@
       "last_illegal": "2026-09-27T14:30:32.561Z",
       "total_heat_generated": 1753.6428999999996,
       "bot_level": 27,
-      "bot_xp": 3518,
-      "bot_total_xp": 54773,
+      "bot_xp": 3535,
+      "bot_total_xp": 54790,
       "daily_work_count": 896,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-27",
@@ -319851,7 +319851,7 @@
       "1229741033265299506": 1790520059086,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790518230104,
-      "874346333882945547": 1790519797331,
+      "874346333882945547": 1790520068346,
       "870686833976172574": 1790514720599,
       "1186597507720019988": 1790515532908,
       "1521043721129558017": 1790509712350,
@@ -345012,65 +345012,7 @@
   "ai_memory": {},
   "elections": {
     "enabled": true,
-    "active": {
-      "id": "EL12",
-      "title": "Premiership Election",
-      "candidates": [
-        {
-          "id": "C1",
-          "name": "Erwin",
-          "userId": "1229741033265299506",
-          "avatarHash": "9bbd0a8e2a378a228e8d4dca219b3644",
-          "avatarAnimated": false,
-          "ideology": null,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-25T15:19:51.484Z"
-        },
-        {
-          "id": "C2",
-          "name": "test testest",
-          "userId": null,
-          "avatarHash": null,
-          "avatarAnimated": false,
-          "ideology": null,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-25T16:39:09.316Z"
-        },
-        {
-          "id": "C3",
-          "name": "spongebob",
-          "userId": "587966647906598932",
-          "avatarHash": "9420c8245f758ebc0931515d46034870",
-          "avatarAnimated": false,
-          "ideology": null,
-          "addedBy": "hyawii2.0",
-          "addedAt": "2026-09-26T15:30:29.000Z"
-        }
-      ],
-      "votes": {
-        "1082686076491137115": "C3",
-        "1229741033265299506": "C3"
-      },
-      "timeline": [
-        {
-          "t": "2026-09-26T15:31:26.497Z",
-          "cid": "C3",
-          "by": "1082686076491137115"
-        },
-        {
-          "t": "2026-09-26T15:31:27.540Z",
-          "cid": "C3",
-          "by": "1229741033265299506"
-        }
-      ],
-      "startsAt": "2026-09-26T15:31:21.345Z",
-      "endsAt": "2026-09-27T15:31:21.345Z",
-      "status": "running",
-      "winnerId": null,
-      "updateMessageId": "1553063499972739162",
-      "next_cid": 3,
-      "startedBy": "hyawii2.0"
-    },
+    "active": null,
     "history": [
       {
         "id": "EL1",
@@ -345286,6 +345228,31 @@
         ],
         "total": 0,
         "endedAt": "2026-09-25T15:18:35.398Z"
+      },
+      {
+        "id": "EL12",
+        "title": "Premiership Election",
+        "winnerId": "C3",
+        "winnerName": "spongebob",
+        "totals": [
+          {
+            "id": "C3",
+            "name": "spongebob",
+            "votes": 2
+          },
+          {
+            "id": "C1",
+            "name": "Erwin",
+            "votes": 0
+          },
+          {
+            "id": "C2",
+            "name": "test testest",
+            "votes": 0
+          }
+        ],
+        "total": 2,
+        "endedAt": "2026-09-27T14:41:41.499Z"
       }
     ],
     "updateChannelId": "1547671101725876254",
