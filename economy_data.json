@@ -949,8 +949,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 105,
-      "bank": 4679,
+      "cash": 0,
+      "bank": 2784,
       "resources": {},
       "inventory": {
         "Bread": 10
@@ -308717,8 +308717,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 492860,
-      "market_cap": 492860,
+      "share_price": 493026,
+      "market_cap": 493026,
       "employees": 34,
       "level": 1,
       "buildings": {
@@ -308802,7 +308802,7 @@
         "Gold Bar": 69,
         "Wheat": 97,
         "Sugar": 63,
-        "Sulphur": 85,
+        "Sulphur": 84,
         "Timber Planks": 38,
         "Iron Ore": 31,
         "Iron Ingot": 37,
@@ -308817,12 +308817,11 @@
         "Copper": 43,
         "Corn": 3,
         "Wine": 1,
-        "Phosphorite": 2,
         "Cotton": 7,
         "Potash": 1,
         "Grapes": 5,
         "Zinc": 23,
-        "Peat": 4,
+        "Peat": 2,
         "Natural Gas": 1,
         "Sunflower": 4,
         "Brass": 4,
@@ -308850,12 +308849,12 @@
         "Contraband: Heroin": 1,
         "Bread": 1,
         "Amber": 1,
-        "Manganese": 1
+        "Manganese": 1,
+        "Fertilizer": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-27T14:39:12.145Z",
       "price_history": [
-        498821,
         502626,
         502672,
         502670,
@@ -308954,7 +308953,8 @@
         489903,
         490155,
         490137,
-        492860
+        492860,
+        493026
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -344271,7 +344271,7 @@
         "agility": 2,
         "curiosity": 3,
         "luck": 3,
-        "fortune": 1,
+        "fortune": 2,
         "thievery": 1,
         "toxo": 2,
         "endurance": 2
@@ -344313,7 +344313,24 @@
       },
       "friendship": 71,
       "hunts": 6,
-      "hunt": null,
+      "hunt": {
+        "start": "2026-09-27T15:28:10.338Z",
+        "end": "2026-09-28T02:24:48.738Z",
+        "durH": 12,
+        "instant": false,
+        "lootMult": 1,
+        "expB": 0,
+        "treas": [
+          6,
+          3,
+          1.5,
+          0.6000000000000001
+        ],
+        "zoom": false,
+        "thiefLvl": 1,
+        "pcs": 20,
+        "collarUsed": false
+      },
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -344325,7 +344342,7 @@
       "last_pet": "2026-09-27T14:53:49.074Z",
       "lastPetAct": "2026-09-27T14:53:49.074Z",
       "last_feed_cmd": "2026-09-27T11:58:16.414Z",
-      "last_train_cmd": "2026-09-27T14:26:33.304Z"
+      "last_train_cmd": "2026-09-27T15:28:00.502Z"
     },
     "1521043721129558017": {
       "name": "Edward \"Google Giggles\" Astrae",
