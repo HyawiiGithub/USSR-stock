@@ -309519,7 +309519,7 @@
   "ai_store": {
     "Machine Parts": 86,
     "Steel Beam": 2,
-    "Sunflower Oil": 11,
+    "Sunflower Oil": 9,
     "Cotton Fabric": 1,
     "Canned Fish": 7
   },
@@ -309556,14 +309556,9 @@
     "Radiator": 1,
     "Fish Stew": 10,
     "Bricks": 10,
-    "Sunflower Oil": 10
+    "Sunflower Oil": 12
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-21T13:34:41.170Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -311058,6 +311053,11 @@
       "item": "Steel Beam",
       "qty": 1,
       "at": "2026-09-27T07:31:47.563Z"
+    },
+    {
+      "item": "Sunflower Oil",
+      "qty": 2,
+      "at": "2026-09-27T07:46:47.552Z"
     }
   ],
   "demand_history": {
@@ -315424,6 +315424,11 @@
       {
         "demand": 1.396079001705826,
         "at": "2026-09-27T07:16:47.040Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.4045592512793694,
+        "at": "2026-09-27T07:46:47.552Z",
         "supply": 0
       }
     ]
