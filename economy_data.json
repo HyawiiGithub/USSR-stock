@@ -532,7 +532,7 @@
       "last_daily_work_date": "2026-09-27",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-09-27T23:16:03.707Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-27T15:17:40.843Z",
       "train_reminder": false,
@@ -308685,6 +308685,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "814871515756888065": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -309119,14 +309157,14 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@918518877414100993>",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 38828,
+      "funds": 42231,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 156417,
-      "market_cap": 156417,
+      "share_price": 157686,
+      "market_cap": 157686,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -309152,7 +309190,6 @@
         "Wheat": 123,
         "Sugar": 59,
         "Gold": 1,
-        "Gas Fuel": 11,
         "Cotton": 1,
         "Fuel": 1,
         "Natural Gas": 1
@@ -309160,7 +309197,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-27T23:14:38.260Z",
       "price_history": [
-        141666,
         141645,
         141648,
         142793,
@@ -309259,11 +309295,12 @@
         156372,
         156372,
         156372,
-        156417
+        156417,
+        157686
       ],
       "is_state_owned": true,
       "director_id": "918518877414100993",
-      "last_factorydeal": "2026-09-27T15:43:11.862Z",
+      "last_factorydeal": "2026-09-27T23:15:30.205Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "wage": 20,
@@ -309959,11 +309996,6 @@
   "gsi_history": [
     {
       "price": 92,
-      "change_percent": -4.068100682520568,
-      "recorded_at": "2026-09-27T19:35:47.388Z"
-    },
-    {
-      "price": 92,
       "change_percent": 0.7170284917959585,
       "recorded_at": "2026-09-27T19:35:50.084Z"
     },
@@ -310456,11 +310488,15 @@
       "price": 100,
       "change_percent": 0.2507761476586058,
       "recorded_at": "2026-09-27T23:14:39.503Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.19814704148941703,
+      "recorded_at": "2026-09-27T23:15:57.873Z"
     }
   ],
   "factory_names": [
     "Lenin Machine Works",
-    "Stalin Tractor Plant",
     "Brezhnev Auto Factory",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
@@ -310469,7 +310505,8 @@
     "Khrushchev Agricultural",
     "Soviet Iron Foundry",
     "Red Star Steelworks",
-    "Siberian Mining Co"
+    "Siberian Mining Co",
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -310477,7 +310514,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 49668.82652078525,
+  "money_printed": 52010.38999036955,
   "total_bank_reserves": 172225,
   "inflation_history": [
     0,
@@ -310723,9 +310760,9 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.4024302355939358,
-    "Cake": 1.3755788011730388,
-    "Bread": 1.3113977496799087,
+    "Fuel": 1.4007115655843407,
+    "Cake": 1.3782782067526027,
+    "Bread": 1.3247488631883206,
     "Copper Ingot": 1.3935454330194341,
     "Iron Ingot": 1.3491175067861179,
     "Steel Ingot": 1.3267753701080964,
@@ -310733,41 +310770,41 @@
     "Aluminium Ingot": 1.404627613143694,
     "Timber Planks": 1.0733039080579636,
     "Bricks": 1.3580029845401453,
-    "Concrete": 1.4223796896456244,
+    "Concrete": 1.4205893144739745,
     "Glass": 1.4124199634066796,
     "Steel Beam": 1.4046032064972502,
-    "Machine Parts": 1.2640336861237276,
-    "Refined Fuel": 1.4061885960356968,
+    "Machine Parts": 1.2915448727692773,
+    "Refined Fuel": 1.4046414470267725,
     "Uranium Rod": 1.4044595087880465,
     "Reactor Core": 1.4024590055852149,
     "Circuit Board": 1.3934847643858044,
-    "Flour": 1.4147447181569655,
-    "Sugar": 0.9215726029642646,
+    "Flour": 1.4110585386177241,
+    "Sugar": 0.9150683411120872,
     "Wine": 1.402635644295771,
-    "Canned Food": 1.3904635201596796,
+    "Canned Food": 1.3970143067864262,
     "Canned Fish": 1.3890043511584316,
     "Smoked Fish": 1.3691451915785635,
     "Fish Stew": 1.3772326224465896,
     "Peat Fuel": 1.40473869510128,
-    "Gas Fuel": 1.3772138818142006,
+    "Gas Fuel": 1.1297138818142005,
     "Fertilizer": 1.4026353660204791,
     "Cotton Fabric": 1.4048227127710282,
     "Manganese Alloy": 1.411999020851638,
-    "Sunflower Oil": 1.4046216315863638,
+    "Sunflower Oil": 1.4109662236897729,
     "Linen": 1.4115101752748813,
     "Corn Meal": 1.4046285667278249,
     "Tea Pack": 1.4116385455484695,
     "Citrus Juice": 1.4120744859613017,
-    "Antimony Alloy": 1.422355013016988,
+    "Antimony Alloy": 1.4205666119756288,
     "Molybdenum Rod": 1.410274238202821,
-    "Aluminium Sheet": 1.4046557439135459,
+    "Aluminium Sheet": 1.4109918079351593,
     "Shale Oil": 1.4043695445124587,
-    "Bandage": 1.4224277970568644,
+    "Bandage": 1.4206335732923152,
     "Ointment": 1.4124161427201836,
-    "Pet Food": 1.4083249644733176,
-    "Brass": 1.3797606970588998,
-    "Brass Valve": 1.4105192652145853,
-    "Radiator": 1.388266514377765,
+    "Pet Food": 1.412632612243877,
+    "Brass": 1.3912877057913333,
+    "Brass Valve": 1.4067783377998277,
+    "Radiator": 1.3911998857833239,
     "Brass Lamp": 1.4121584518218275,
     "Wheat": 0.6046256550658766
   },
@@ -310790,7 +310827,7 @@
     "Circuit Board": "2026-09-26T07:36:11.526Z",
     "Cotton Fabric": "2026-09-27T06:05:52.571Z",
     "Reactor Core": "2026-09-25T22:11:52.711Z",
-    "Gas Fuel": "2026-09-22T14:16:08.581Z",
+    "Gas Fuel": "2026-09-27T23:15:30.205Z",
     "Steel Beam": "2026-09-26T08:17:17.691Z",
     "Machine Parts": "2026-09-27T21:21:29.360Z",
     "Sugar": "2026-09-21T22:38:00.619Z",
@@ -310817,7 +310854,8 @@
     "Cake": 2,
     "Radiator": 7,
     "Brass": 1,
-    "Timber Planks": 10
+    "Timber Planks": 10,
+    "Gas Fuel": 11
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -319806,14 +319844,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 537723,
-      "at": "2026-09-27T15:34:01.223Z"
-    },
-    {
-      "total": 537808,
-      "at": "2026-09-27T15:39:01.380Z"
-    },
-    {
       "total": 537878,
       "at": "2026-09-27T15:44:01.756Z"
     },
@@ -320204,6 +320234,14 @@
     {
       "total": 1601449,
       "at": "2026-09-27T23:10:59.061Z"
+    },
+    {
+      "total": 1605365,
+      "at": "2026-09-27T23:15:59.151Z"
+    },
+    {
+      "total": 1605365,
+      "at": "2026-09-27T23:16:00.201Z"
     }
   ],
   "gold_rush": null,
@@ -343103,12 +343141,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 11.4,
+    "rub_per_usd": 11.51,
     "history": [
-      {
-        "rate": 6.38,
-        "at": "2026-09-27T07:31:47.303Z"
-      },
       {
         "rate": 6.23,
         "at": "2026-09-27T07:41:47.223Z"
@@ -343504,9 +343538,13 @@
       {
         "rate": 11.4,
         "at": "2026-09-27T23:05:55.843Z"
+      },
+      {
+        "rate": 11.51,
+        "at": "2026-09-27T23:15:55.882Z"
       }
     ],
-    "last_update": "2026-09-27T23:05:55.843Z",
+    "last_update": "2026-09-27T23:15:55.882Z",
     "manual_override": null
   },
   "national_budget": {
@@ -345249,7 +345287,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 93,
+      "hunger": 86,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -345340,7 +345378,7 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 44,
+      "hunger": 36,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -345415,7 +345453,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 74,
+      "health": 72,
       "quarters": 2,
       "cheap_streak": 0,
       "born_at": "2026-09-19T17:00:47.155Z",
@@ -345465,7 +345503,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 10,
+      "friendship": 7,
       "hunts": 0,
       "hunt": null,
       "plant_lvl": 0,
@@ -345476,7 +345514,7 @@
         "n": 0
       },
       "starve_since": "2026-09-27T11:03:49.631Z",
-      "last_pet": "2026-09-26T23:04:49.836Z",
+      "last_pet": "2026-09-27T23:16:03.249Z",
       "last_feed_cmd": "2026-09-26T21:19:38.094Z"
     },
     "780837437987094560": {
@@ -345498,7 +345536,7 @@
       "name": "Ray Собака",
       "species": "dog",
       "alive": true,
-      "hunger": 58,
+      "hunger": 50,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -345586,7 +345624,7 @@
       "name": "Mohammed Sumbul 500",
       "species": "cat",
       "alive": true,
-      "hunger": 40,
+      "hunger": 32,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -345638,7 +345676,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 20,
+      "friendship": 17,
       "hunts": 1,
       "hunt": null,
       "plant_lvl": 0,
@@ -345649,7 +345687,7 @@
         "n": 0
       },
       "starve_since": null,
-      "last_pet": "2026-09-26T23:04:49.836Z",
+      "last_pet": "2026-09-27T23:16:03.249Z",
       "last_feed_cmd": "2026-09-27T14:59:02.278Z",
       "lastPetAct": "2026-09-25T22:06:45.192Z"
     },
@@ -345659,7 +345697,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 73,
+      "health": 71,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-24T06:57:33.301Z",
@@ -345798,7 +345836,7 @@
       "name": "Kewl II",
       "species": "cat",
       "alive": true,
-      "hunger": 24,
+      "hunger": 16,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -345888,7 +345926,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 44,
+      "health": 42,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-25T06:19:11.812Z",
@@ -345952,7 +345990,7 @@
       "warned_empty": true
     }
   },
-  "pets_last_decay": "2026-09-27T21:17:58.919Z",
+  "pets_last_decay": "2026-09-27T23:16:03.249Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
@@ -345964,8 +346002,8 @@
         "price": 925
       },
       "Gas Fuel": {
-        "qty": 9,
-        "price": 370
+        "qty": 20,
+        "price": 361
       },
       "Circuit Board": {
         "qty": 25,
@@ -346056,7 +346094,7 @@
         "price": 114
       }
     },
-    "sold_count": 843,
+    "sold_count": 854,
     "bought_count": 193
   },
   "leaders": {
@@ -346462,16 +346500,6 @@
   },
   "collars": {},
   "gini_history": [
-    {
-      "gini": 99.70865448853515,
-      "top10": 100,
-      "at": "2026-09-27T15:34:01.240Z"
-    },
-    {
-      "gini": 99.70852278996276,
-      "top10": 100,
-      "at": "2026-09-27T15:39:01.402Z"
-    },
     {
       "gini": 99.70848945637512,
       "top10": 100,
@@ -346961,17 +346989,19 @@
       "gini": 99.71176116413918,
       "top10": 100,
       "at": "2026-09-27T23:10:59.076Z"
+    },
+    {
+      "gini": 99.71052541189395,
+      "top10": 100,
+      "at": "2026-09-27T23:15:59.181Z"
+    },
+    {
+      "gini": 99.71056110543135,
+      "top10": 100,
+      "at": "2026-09-27T23:16:00.233Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2154986,
-      "at": "2026-09-27T15:34:01.249Z"
-    },
-    {
-      "gdp": 2155313,
-      "at": "2026-09-27T15:39:01.415Z"
-    },
     {
       "gdp": 2134605,
       "at": "2026-09-27T15:44:01.804Z"
@@ -347363,6 +347393,14 @@
     {
       "gdp": 3030239,
       "at": "2026-09-27T23:10:59.084Z"
+    },
+    {
+      "gdp": 3031916,
+      "at": "2026-09-27T23:15:59.188Z"
+    },
+    {
+      "gdp": 3031916,
+      "at": "2026-09-27T23:16:00.239Z"
     }
   ],
   "purge_allowed": [
