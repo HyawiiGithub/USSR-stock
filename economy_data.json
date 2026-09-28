@@ -161,8 +161,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 3561,
-      "bot_total_xp": 65331,
+      "bot_xp": 3580,
+      "bot_total_xp": 65350,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 29,
@@ -189,8 +189,8 @@
       "inventory": {
         "Gas Fuel": 1
       },
-      "company_id": null,
-      "ceo_of": null,
+      "company_id": "state_25",
+      "ceo_of": "State Oil & Gas",
       "gsi_shares": 0,
       "share_holdings": {},
       "last_work": "2026-09-27T15:41:51.503Z",
@@ -87933,7 +87933,7 @@
       "pet_food_source": {}
     },
     "807254722251587614": {
-      "cash": 4844,
+      "cash": 4794,
       "bank": 0,
       "resources": {},
       "inventory": {
@@ -87941,7 +87941,12 @@
       },
       "company_id": "state_23",
       "gsi_shares": 0,
-      "share_holdings": {},
+      "share_holdings": {
+        "Speers Realm": {
+          "shares": 10,
+          "avg_price": 5
+        }
+      },
       "last_work": "2026-09-28T19:46:33.583Z",
       "work_count": 195,
       "last_claim": "2026-09-28T05:23:15.555Z",
@@ -87957,8 +87962,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 3431,
-      "bot_total_xp": 37356,
+      "bot_xp": 3448,
+      "bot_total_xp": 37373,
       "daily_work_count": 146,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-28",
@@ -310175,8 +310180,8 @@
       "id": "state_25",
       "name": "State Oil & Gas",
       "ticker": "ST25",
-      "owner_id": "1513968015048184039",
-      "ceo": "<@918518877414100993>",
+      "owner_id": "918518877414100993",
+      "ceo": "politicalgamble",
       "hq_ssr": "Azerbaijanian SSR",
       "funds": 38642,
       "invested_capital": 500,
@@ -310347,10 +310352,10 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 19908,
+      "funds": 19958,
       "invested_capital": 500,
       "shares_total": 100000,
-      "shares_available": 48999,
+      "shares_available": 48989,
       "state_shares": 0,
       "founder_shares": 0,
       "share_price": 5,
@@ -321225,6 +321230,13 @@
       "username": "hyawii2.0",
       "action": "appointceo",
       "details": "State Nuclear Energy → <@963834359994007614>"
+    },
+    {
+      "at": "2026-09-28T20:00:04.888Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "appointceo",
+      "details": "State Oil & Gas → <@918518877414100993>"
     }
   ],
   "total_rubles_history": [
@@ -322376,7 +322388,7 @@
       "1544820489191559270": 1790621094847,
       "791747702689103893": 1790624754777,
       "1456622719985782864": 1790625572684,
-      "1082686076491137115": 1790625562273,
+      "1082686076491137115": 1790625631362,
       "1229741033265299506": 1790620788894,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790625484211,
@@ -322391,7 +322403,7 @@
       "1309104161278918706": 1790010702166,
       "1325111649816023092": 1790621587834,
       "1506785783506534426": 1790622263950,
-      "807254722251587614": 1790625555806,
+      "807254722251587614": 1790625620536,
       "1353373037994705078": 1790574728988,
       "1192563739778625607": 1790365373051,
       "997903130543005767": 1788970364999,
@@ -349389,7 +349401,7 @@
     "name": "Gosfinkontrol",
     "full": "State Financial Control Commission",
     "trade_tax_pct": 1,
-    "circuit_pct": 25,
+    "circuit_pct": 100,
     "reserve_pct": 10,
     "max_loan_pct": 50
   },
