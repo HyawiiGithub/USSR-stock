@@ -968,7 +968,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 16.925728290771236,
+      "heat": 15.960048916003489,
       "wanted": 0,
       "last_illegal": "2026-09-28T04:42:17.943Z",
       "total_heat_generated": 1865.9308999999994,
@@ -309785,8 +309785,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 14.478425215225936,
-      "underground_heat": 1090.815773855191,
+      "heat": 13.903861270283867,
+      "underground_heat": 1090.2942654007638,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 530513
@@ -310198,11 +310198,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 99,
-      "change_percent": 0.6257181808840446,
-      "recorded_at": "2026-09-27T23:35:57.829Z"
-    },
     {
       "price": 99,
       "change_percent": 0.1972721737294342,
@@ -310697,6 +310692,11 @@
       "price": 94,
       "change_percent": 0.4303366168363453,
       "recorded_at": "2026-09-28T04:48:10.627Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.8831289263462925,
+      "recorded_at": "2026-09-28T04:51:01.728Z"
     }
   ],
   "factory_names": [
@@ -311052,7 +311052,7 @@
   "ai_store": {
     "Machine Parts": 83,
     "Bricks": 1,
-    "Fish Stew": 5,
+    "Fish Stew": 4,
     "Uranium Rod": 1,
     "Refined Fuel": 7,
     "Timber Planks": 7,
@@ -311089,16 +311089,11 @@
     "Brass Valve": 9,
     "Pet Food": 9,
     "Radiator": 10,
-    "Fish Stew": 15,
+    "Fish Stew": 16,
     "Bricks": 19,
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-09-23T15:49:13.651Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -312593,6 +312588,11 @@
       "item": "Fish Stew",
       "qty": 1,
       "at": "2026-09-28T04:35:51.976Z"
+    },
+    {
+      "item": "Fish Stew",
+      "qty": 1,
+      "at": "2026-09-28T04:50:51.982Z"
     }
   ],
   "demand_history": {
@@ -317021,6 +317021,11 @@
         "demand": 1.3757602877304647,
         "at": "2026-09-28T04:35:51.976Z",
         "supply": 12
+      },
+      {
+        "demand": 1.3822613922684366,
+        "at": "2026-09-28T04:50:51.982Z",
+        "supply": 12
       }
     ],
     "Bricks": [
@@ -320114,10 +320119,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1582484,
-      "at": "2026-09-27T21:00:54.645Z"
-    },
-    {
       "total": 1582529,
       "at": "2026-09-27T21:05:53.789Z"
     },
@@ -320512,6 +320513,10 @@
     {
       "total": 1572217,
       "at": "2026-09-28T04:46:02.341Z"
+    },
+    {
+      "total": 1572232,
+      "at": "2026-09-28T04:51:02.360Z"
     }
   ],
   "gold_rush": null,
@@ -320538,7 +320543,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 3.1015500000000005,
+  "heat_global": 2.8015500000000007,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -346805,11 +346810,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70786199458502,
-      "top10": 100,
-      "at": "2026-09-27T21:00:54.678Z"
-    },
-    {
       "gini": 99.70780677915485,
       "top10": 100,
       "at": "2026-09-27T21:05:53.831Z"
@@ -347303,13 +347303,14 @@
       "gini": 99.70900655488231,
       "top10": 100,
       "at": "2026-09-28T04:46:02.368Z"
+    },
+    {
+      "gini": 99.70895132323261,
+      "top10": 100,
+      "at": "2026-09-28T04:51:02.389Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3008299,
-      "at": "2026-09-27T21:00:54.684Z"
-    },
     {
       "gdp": 3008528,
       "at": "2026-09-27T21:05:53.838Z"
@@ -347705,6 +347706,10 @@
     {
       "gdp": 3069184,
       "at": "2026-09-28T04:46:02.377Z"
+    },
+    {
+      "gdp": 3069223,
+      "at": "2026-09-28T04:51:02.405Z"
     }
   ],
   "purge_allowed": [
