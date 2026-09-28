@@ -310854,13 +310854,13 @@
     "Refined Fuel": 8,
     "Radiator": 6,
     "Brass": 1,
-    "Timber Planks": 10,
+    "Timber Planks": 8,
     "Gas Fuel": 11
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 172,
+    "Timber Planks": 174,
     "Refined Fuel": 198,
     "Fuel": 129,
     "Iron Ingot": 63,
@@ -310893,11 +310893,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Circuit Board",
-      "qty": 1,
-      "at": "2026-09-22T20:01:28.507Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -312392,6 +312387,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-27T23:50:49.061Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-09-28T00:05:48.972Z"
     }
   ],
   "demand_history": {
@@ -312797,11 +312797,6 @@
     "Timber Planks": [
       {
         "demand": 1.3750475263783957,
-        "at": "2026-08-30T05:29:17.381Z",
-        "supply": 5
-      },
-      {
-        "demand": 1.3750475263783957,
         "at": "2026-08-30T06:29:17.402Z",
         "supply": 5
       },
@@ -313094,6 +313089,11 @@
         "demand": 1.3413405702810617,
         "at": "2026-09-20T15:51:08.874Z",
         "supply": 23
+      },
+      {
+        "demand": 1.0927521048296607,
+        "at": "2026-09-28T00:05:48.972Z",
+        "supply": 87
       }
     ],
     "Refined Fuel": [
