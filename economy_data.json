@@ -310892,7 +310892,6 @@
     "Uranium Rod": 1,
     "Refined Fuel": 7,
     "Radiator": 5,
-    "Brass": 1,
     "Timber Planks": 8,
     "Gas Fuel": 11
   },
@@ -310923,7 +310922,7 @@
     "Flour": 20,
     "Corn Meal": 8,
     "Aluminium Ingot": 5,
-    "Brass": 55,
+    "Brass": 56,
     "Brass Valve": 9,
     "Pet Food": 9,
     "Radiator": 5,
@@ -310932,11 +310931,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 2,
-      "at": "2026-09-23T10:34:12.370Z"
-    },
     {
       "item": "Bread",
       "qty": 1,
@@ -312431,6 +312425,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-28T01:05:48.983Z"
+    },
+    {
+      "item": "Brass",
+      "qty": 1,
+      "at": "2026-09-28T01:20:49.070Z"
     }
   ],
   "demand_history": {
@@ -316690,6 +316689,11 @@
       {
         "demand": 1.334560136576337,
         "at": "2026-09-27T21:35:49.140Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3937324240138904,
+        "at": "2026-09-28T01:20:49.070Z",
         "supply": 1
       }
     ],
