@@ -968,7 +968,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 14.196021204628371,
+      "heat": 13.368795162141737,
       "wanted": 0,
       "last_illegal": "2026-09-28T04:42:17.943Z",
       "total_heat_generated": 1865.9308999999994,
@@ -309785,8 +309785,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 12.412406582238363,
-      "underground_heat": 1089.0446365842488,
+      "heat": 11.688793440279534,
+      "underground_heat": 1088.384659121471,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 530513
@@ -310718,7 +310718,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 46890.20486194296,
+  "money_printed": 45952.4007647041,
   "total_bank_reserves": 178984,
   "inflation_history": [
     0,
@@ -311055,13 +311055,13 @@
     "Fish Stew": 4,
     "Uranium Rod": 1,
     "Refined Fuel": 7,
-    "Timber Planks": 7,
+    "Timber Planks": 5,
     "Gas Fuel": 9
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 175,
+    "Timber Planks": 177,
     "Refined Fuel": 199,
     "Fuel": 129,
     "Iron Ingot": 63,
@@ -311094,11 +311094,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-23T16:04:13.688Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 1,
@@ -312593,6 +312588,11 @@
       "item": "Fish Stew",
       "qty": 1,
       "at": "2026-09-28T04:50:51.982Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-09-28T05:05:52.307Z"
     }
   ],
   "demand_history": {
@@ -312997,11 +312997,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 1.1637890205200423,
-        "at": "2026-08-30T11:29:17.473Z",
-        "supply": 0
-      },
-      {
         "demand": 1.3221245205490024,
         "at": "2026-08-30T13:14:17.505Z",
         "supply": 0
@@ -313294,6 +313289,11 @@
       {
         "demand": 1.193578832970815,
         "at": "2026-09-28T03:20:51.982Z",
+        "supply": 87
+      },
+      {
+        "demand": 1.193578832970815,
+        "at": "2026-09-28T05:05:52.307Z",
         "supply": 87
       }
     ],
@@ -320115,6 +320115,13 @@
       "username": "seniormanulos",
       "action": "launder",
       "details": "₽2,128 dirty → ₽1,064 clean fee ₽1,064"
+    },
+    {
+      "at": "2026-09-28T05:06:03.307Z",
+      "by": "634547073978728478",
+      "username": "gockilmann",
+      "action": "SUGGEST",
+      "details": "to be able to sell our inventory"
     }
   ],
   "total_rubles_history": [
@@ -320543,7 +320550,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-21T10:23:04.042Z",
-  "heat_global": 2.201550000000001,
+  "heat_global": 1.901550000000001,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -343440,12 +343447,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 11.41,
+    "rub_per_usd": 11.34,
     "history": [
-      {
-        "rate": 6.01,
-        "at": "2026-09-27T13:12:47.874Z"
-      },
       {
         "rate": 6.08,
         "at": "2026-09-27T13:22:47.931Z"
@@ -343841,9 +343844,13 @@
       {
         "rate": 11.41,
         "at": "2026-09-28T04:55:56.657Z"
+      },
+      {
+        "rate": 11.34,
+        "at": "2026-09-28T05:05:56.687Z"
       }
     ],
-    "last_update": "2026-09-28T04:55:56.657Z",
+    "last_update": "2026-09-28T05:05:56.687Z",
     "manual_override": null
   },
   "national_budget": {
