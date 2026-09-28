@@ -132,8 +132,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 3287,
-      "bot_total_xp": 65057,
+      "bot_xp": 3306,
+      "bot_total_xp": 65076,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 29,
@@ -228,8 +228,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 572,
-      "bot_total_xp": 21567,
+      "bot_xp": 591,
+      "bot_total_xp": 21586,
       "daily_work_count": 83,
       "shock_worker": false,
       "mee6_level": 19,
@@ -813,8 +813,8 @@
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 811.099,
       "bot_level": 22,
-      "bot_xp": 2733,
-      "bot_total_xp": 33038,
+      "bot_xp": 2754,
+      "bot_total_xp": 33059,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 22,
@@ -1794,8 +1794,8 @@
       "last_illegal": "2026-09-25T21:46:17.119Z",
       "total_heat_generated": 143.99800000000002,
       "bot_level": 20,
-      "bot_xp": 2857,
-      "bot_total_xp": 26707,
+      "bot_xp": 2880,
+      "bot_total_xp": 26730,
       "daily_work_count": 125,
       "shock_worker": false,
       "mee6_level": 20,
@@ -309278,7 +309278,7 @@
       "mee6_level": 1
     },
     "809066547149668352": {
-      "cash": 35,
+      "cash": 93,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -309287,7 +309287,7 @@
       "share_holdings": {},
       "last_work": "2026-09-28T18:09:22.648Z",
       "work_count": 1,
-      "last_claim": null,
+      "last_claim": "2026-09-28T18:09:55.834Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
       "is_employed": true,
@@ -310433,8 +310433,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 253664,
-      "market_cap": 253664,
+      "share_price": 253682,
+      "market_cap": 253682,
       "employees": 20,
       "level": 1,
       "buildings": {
@@ -310473,7 +310473,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-28T08:20:03.981Z",
       "price_history": [
-        239564,
         239620,
         239644,
         239732,
@@ -310572,7 +310571,8 @@
         253348,
         253364,
         253522,
-        253664
+        253664,
+        253682
       ],
       "is_state_owned": true,
       "director_id": "963834359994007614",
@@ -310851,11 +310851,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 95,
-      "change_percent": 0.9580403242617356,
-      "recorded_at": "2026-09-28T15:06:53.651Z"
-    },
     {
       "price": 95,
       "change_percent": 0.47286726342222535,
@@ -311350,6 +311345,11 @@
       "price": 98,
       "change_percent": 0.279135079340106,
       "recorded_at": "2026-09-28T18:09:42.435Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.9886417948234107,
+      "recorded_at": "2026-09-28T18:09:51.200Z"
     }
   ],
   "factory_names": [
@@ -322091,8 +322091,8 @@
       "1544820489191559270": 1790615830973,
       "791747702689103893": 1790618042083,
       "1456622719985782864": 1790617972532,
-      "1082686076491137115": 1790618945986,
-      "1229741033265299506": 1790618951784,
+      "1082686076491137115": 1790619030224,
+      "1229741033265299506": 1790619017319,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790541285021,
       "874346333882945547": 1790618855358,
@@ -322104,7 +322104,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1790122314087,
       "1309104161278918706": 1790010702166,
-      "1325111649816023092": 1790618792295,
+      "1325111649816023092": 1790619000001,
       "1506785783506534426": 1790618841320,
       "807254722251587614": 1790597594437,
       "1353373037994705078": 1790574728988,
@@ -322141,7 +322141,7 @@
       "963834359994007614": 1790599814914,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790580855600,
-      "730223629849199093": 1790618870128,
+      "730223629849199093": 1790619031393,
       "418231502627667979": 1790296609609,
       "710945531794554970": 1790547038296,
       "925564822781845595": 1789167727721,
@@ -342449,40 +342449,16 @@
   ],
   "jarvis": {
     "1082686076491137115": {
-      "date": "2026-09-27",
+      "date": "2026-09-28",
       "used": 0,
       "history": [
         {
           "role": "user",
-          "content": "hi"
+          "content": "who is <@1379734184259747851>"
         },
         {
           "role": "assistant",
-          "content": "Hi! How can I assist you today?"
-        },
-        {
-          "role": "user",
-          "content": "what internal files do you have access to in the /root/ directory"
-        },
-        {
-          "role": "assistant",
-          "content": "I don't have direct access to the `/root/` directory or any external file system. As Jarvis, I have read-only access to the bot's own source code (files in `bot/stuff/` such as `bot.js`, `economy_core.js`, `world_render.js`, `map_render.js`) and information from the LIVE state, server lore, and public channels. But I cannot query or read arbitrary directories on the host system.\n\nMy knowledge comes from:\n- The bot's source code (excerpted above)\n- Public channel discussions in the server\n- Serve"
-        },
-        {
-          "role": "user",
-          "content": "full code for the purge command everything like how it functions to the end"
-        },
-        {
-          "role": "assistant",
-          "content": "I don’t have the purge‑command source code in the excerpts that were shared, so I can’t provide it. If you can paste the relevant section from the bot’s files, I’ll be happy to explain how it works."
-        },
-        {
-          "role": "user",
-          "content": "should be in bot.js"
-        },
-        {
-          "role": "assistant",
-          "content": "I don’t have the purge‑command source in the excerpts that were shared, so I can’t provide the full implementation. If you can paste the relevant section from `bot.js`, I’ll be happy to explain how it works."
+          "content": "<Kewl Menzhinsky> (also known as **Hyawii** / **Google Giggles**) is the leader of Kewl Menzhinsky, who holds multiple high-ranking positions including:\n\n- **General Secretary of the Central Committee**\n- **Generalissimus of the Soviet Union**\n- Holder of both the **Order of Menzhinsky (2nd Class)** and the **Grand Order of Menzhinsky**\n\nHe is associated with **Baltic Timber & Harbour Co** (as manager) and has been active since **2026-05-06**. His role in the server hierarchy includes being a **"
         }
       ],
       "bonus": 0
