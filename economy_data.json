@@ -311058,7 +311058,7 @@
     "Uranium Rod": 1,
     "Refined Fuel": 7,
     "Timber Planks": 5,
-    "Gas Fuel": 8,
+    "Gas Fuel": 7,
     "Circuit Board": 4
   },
   "global_consumption": {
@@ -311080,7 +311080,7 @@
     "Circuit Board": 40,
     "Cotton Fabric": 13,
     "Reactor Core": 9,
-    "Gas Fuel": 105,
+    "Gas Fuel": 106,
     "Steel Beam": 21,
     "Machine Parts": 140,
     "Sugar": 51,
@@ -311097,11 +311097,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Circuit Board",
-      "qty": 1,
-      "at": "2026-09-23T21:13:08.433Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -312596,6 +312591,11 @@
       "item": "Fish Stew",
       "qty": 1,
       "at": "2026-09-28T06:05:52.183Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-28T06:20:52.184Z"
     }
   ],
   "demand_history": {
@@ -315652,11 +315652,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 1.1981264626924608,
-        "at": "2026-09-08T12:06:48.611Z",
-        "supply": 1
-      },
-      {
         "demand": 1.2271106559666194,
         "at": "2026-09-08T12:21:48.721Z",
         "supply": 1
@@ -315949,6 +315944,11 @@
       {
         "demand": 1.4022319086034192,
         "at": "2026-09-28T05:50:52.310Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.4022319086034192,
+        "at": "2026-09-28T06:20:52.184Z",
         "supply": 1
       }
     ],
