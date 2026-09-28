@@ -991,7 +991,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 521,
-      "heat": 9.616148210718196,
+      "heat": 8.7053816304825,
       "wanted": 0,
       "last_illegal": "2026-09-28T15:03:58.954Z",
       "total_heat_generated": 2012.5678999999993,
@@ -310367,8 +310367,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 48.95500902302029,
-      "underground_heat": 1211.9891930349136,
+      "heat": 48.36125691509659,
+      "underground_heat": 1211.3522567281766,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 567457
@@ -310803,11 +310803,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 106,
-      "change_percent": 0.5106736319831219,
-      "recorded_at": "2026-09-28T13:28:27.251Z"
-    },
     {
       "price": 106,
       "change_percent": 0.21478352414971624,
@@ -311302,6 +311297,11 @@
       "price": 101,
       "change_percent": 0.8089637297012188,
       "recorded_at": "2026-09-28T17:04:16.192Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.5220476455259675,
+      "recorded_at": "2026-09-28T17:06:08.310Z"
     }
   ],
   "factory_names": [
@@ -311323,7 +311323,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 92811.71210082139,
+  "money_printed": 90955.47785880495,
   "total_bank_reserves": 195268,
   "inflation_history": [
     0,
@@ -311657,7 +311657,7 @@
   "ai_store": {
     "Machine Parts": 79,
     "Refined Fuel": 21,
-    "Timber Planks": 7,
+    "Timber Planks": 5,
     "Gas Fuel": 8,
     "Cake": 13,
     "Canned Fish": 8,
@@ -311667,7 +311667,7 @@
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 185,
+    "Timber Planks": 187,
     "Refined Fuel": 205,
     "Fuel": 129,
     "Iron Ingot": 63,
@@ -311700,11 +311700,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-25T00:33:01.687Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -313199,6 +313194,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-28T16:50:55.780Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-09-28T17:05:55.956Z"
     }
   ],
   "demand_history": {
@@ -313603,11 +313603,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 1.1956552072553976,
-        "at": "2026-08-31T03:09:46.031Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2063310783454637,
         "at": "2026-08-31T03:24:45.930Z",
         "supply": 0
@@ -313900,6 +313895,11 @@
       {
         "demand": 1.250579423289836,
         "at": "2026-09-28T16:35:55.602Z",
+        "supply": 77
+      },
+      {
+        "demand": 1.250579423289836,
+        "at": "2026-09-28T17:05:55.956Z",
         "supply": 77
       }
     ],
@@ -320891,10 +320891,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1555855,
-      "at": "2026-09-28T09:16:06.003Z"
-    },
-    {
       "total": 1557912,
       "at": "2026-09-28T09:21:05.783Z"
     },
@@ -321289,6 +321285,10 @@
     {
       "total": 1608532,
       "at": "2026-09-28T17:01:08.826Z"
+    },
+    {
+      "total": 1541223,
+      "at": "2026-09-28T17:06:08.836Z"
     }
   ],
   "gold_rush": null,
@@ -321315,7 +321315,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 9.46094999999993,
+  "heat_global": 9.160949999999929,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -344257,12 +344257,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.65,
+    "rub_per_usd": 10.81,
     "history": [
-      {
-        "rate": 11.57,
-        "at": "2026-09-28T00:45:56.119Z"
-      },
       {
         "rate": 11.47,
         "at": "2026-09-28T00:55:56.061Z"
@@ -344658,9 +344654,13 @@
       {
         "rate": 10.65,
         "at": "2026-09-28T16:55:59.474Z"
+      },
+      {
+        "rate": 10.81,
+        "at": "2026-09-28T17:05:59.532Z"
       }
     ],
-    "last_update": "2026-09-28T16:55:59.474Z",
+    "last_update": "2026-09-28T17:05:59.532Z",
     "manual_override": null
   },
   "national_budget": {
@@ -347714,11 +347714,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70097035710741,
-      "top10": 100,
-      "at": "2026-09-28T09:16:06.014Z"
-    },
-    {
       "gini": 99.70088389782728,
       "top10": 100,
       "at": "2026-09-28T09:21:05.799Z"
@@ -348212,13 +348207,14 @@
       "gini": 99.68923646903475,
       "top10": 100,
       "at": "2026-09-28T17:01:08.896Z"
+    },
+    {
+      "gini": 99.68914654504539,
+      "top10": 100,
+      "at": "2026-09-28T17:06:08.883Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3109853,
-      "at": "2026-09-28T09:16:06.020Z"
-    },
     {
       "gdp": 3110758,
       "at": "2026-09-28T09:21:05.807Z"
@@ -348614,6 +348610,10 @@
     {
       "gdp": 3170231,
       "at": "2026-09-28T17:01:08.916Z"
+    },
+    {
+      "gdp": 3105260,
+      "at": "2026-09-28T17:06:08.900Z"
     }
   ],
   "purge_allowed": [
