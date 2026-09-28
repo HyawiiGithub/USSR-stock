@@ -310036,11 +310036,6 @@
   "gsi_history": [
     {
       "price": 94,
-      "change_percent": 0.6300993834965054,
-      "recorded_at": "2026-09-27T20:39:35.834Z"
-    },
-    {
-      "price": 94,
       "change_percent": 0.2998459278760894,
       "recorded_at": "2026-09-27T20:40:53.047Z"
     },
@@ -310533,6 +310528,11 @@
       "price": 95,
       "change_percent": 0.017547637232574655,
       "recorded_at": "2026-09-28T00:55:58.194Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.1299087236768339,
+      "recorded_at": "2026-09-28T01:00:58.369Z"
     }
   ],
   "factory_names": [
@@ -319903,10 +319903,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 538900,
-      "at": "2026-09-27T17:24:05.175Z"
-    },
-    {
       "total": 538930,
       "at": "2026-09-27T17:29:05.200Z"
     },
@@ -320301,6 +320297,10 @@
     {
       "total": 1605440,
       "at": "2026-09-28T00:55:59.570Z"
+    },
+    {
+      "total": 1605440,
+      "at": "2026-09-28T01:00:59.575Z"
     }
   ],
   "gold_rush": null,
@@ -345350,7 +345350,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 86,
+      "hunger": 79,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -345441,7 +345441,7 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 36,
+      "hunger": 28,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -345516,7 +345516,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 72,
+      "health": 70,
       "quarters": 2,
       "cheap_streak": 0,
       "born_at": "2026-09-19T17:00:47.155Z",
@@ -345599,7 +345599,7 @@
       "name": "Ray Собака",
       "species": "dog",
       "alive": true,
-      "hunger": 50,
+      "hunger": 42,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -345687,7 +345687,7 @@
       "name": "Mohammed Sumbul 500",
       "species": "cat",
       "alive": true,
-      "hunger": 32,
+      "hunger": 24,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -345760,7 +345760,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 71,
+      "health": 69,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-24T06:57:33.301Z",
@@ -345899,7 +345899,7 @@
       "name": "Kewl II",
       "species": "cat",
       "alive": true,
-      "hunger": 16,
+      "hunger": 8,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -345986,16 +345986,16 @@
     "887419379833274388": {
       "name": "Blondi",
       "species": "dog",
-      "alive": true,
+      "alive": false,
       "hunger": 0,
       "water": 60,
-      "health": 42,
+      "health": 0,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-25T06:19:11.812Z",
       "last_fed": null,
       "last_watered": null,
-      "death": null,
+      "death": "starved 2 days straight (0/100 hunger)",
       "friendship": 14,
       "last_pet": "2026-09-27T08:57:01.048Z",
       "stats": {
@@ -346053,7 +346053,7 @@
       "warned_empty": true
     }
   },
-  "pets_last_decay": "2026-09-27T23:16:03.249Z",
+  "pets_last_decay": "2026-09-28T01:01:03.548Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
@@ -346564,11 +346564,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70657671231055,
-      "top10": 100,
-      "at": "2026-09-27T17:24:05.195Z"
-    },
-    {
       "gini": 99.70650225527704,
       "top10": 100,
       "at": "2026-09-27T17:29:05.223Z"
@@ -347062,13 +347057,14 @@
       "gini": 99.71009659856077,
       "top10": 100,
       "at": "2026-09-28T00:55:59.589Z"
+    },
+    {
+      "gini": 99.71009659856077,
+      "top10": 100,
+      "at": "2026-09-28T01:00:59.613Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2140899,
-      "at": "2026-09-27T17:24:05.200Z"
-    },
     {
       "gdp": 2144292,
       "at": "2026-09-27T17:29:05.240Z"
@@ -347464,6 +347460,10 @@
     {
       "gdp": 3032063,
       "at": "2026-09-28T00:55:59.598Z"
+    },
+    {
+      "gdp": 3032063,
+      "at": "2026-09-28T01:00:59.625Z"
     }
   ],
   "purge_allowed": [
