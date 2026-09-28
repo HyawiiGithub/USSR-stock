@@ -808,7 +808,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 10.008737351516729,
+      "heat": 9.090415325635457,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 811.099,
@@ -991,7 +991,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 326,
-      "heat": 11.25778122606664,
+      "heat": 10.400936465651139,
       "wanted": 0,
       "last_illegal": "2026-09-28T13:04:57.576Z",
       "total_heat_generated": 1984.5128999999993,
@@ -310258,8 +310258,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 59.23694526025138,
-      "underground_heat": 1213.3459562613266,
+      "heat": 58.53636006940081,
+      "underground_heat": 1212.671529116838,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 560485
@@ -310692,11 +310692,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 1.1672135069665208,
-      "recorded_at": "2026-09-28T10:47:43.629Z"
-    },
     {
       "price": 97,
       "change_percent": 0.5196003672893372,
@@ -311191,6 +311186,11 @@
       "price": 96,
       "change_percent": -2.7677848179980407,
       "recorded_at": "2026-09-28T14:50:52.101Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.12688252318728477,
+      "recorded_at": "2026-09-28T14:51:06.807Z"
     }
   ],
   "factory_names": [
@@ -311548,8 +311548,7 @@
     "Refined Fuel": 15,
     "Timber Planks": 9,
     "Gas Fuel": 9,
-    "Cake": 17,
-    "Steel Beam": 1
+    "Cake": 17
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -311571,7 +311570,7 @@
     "Cotton Fabric": 13,
     "Reactor Core": 9,
     "Gas Fuel": 114,
-    "Steel Beam": 26,
+    "Steel Beam": 27,
     "Machine Parts": 154,
     "Sugar": 51,
     "Fertilizer": 17,
@@ -311587,11 +311586,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-24T21:05:26.618Z"
-    },
     {
       "item": "Brass",
       "qty": 1,
@@ -313086,6 +313080,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-28T14:35:55.091Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 1,
+      "at": "2026-09-28T14:50:55.097Z"
     }
   ],
   "demand_history": {
@@ -316546,6 +316545,11 @@
       {
         "demand": 1.339935252237262,
         "at": "2026-09-28T14:20:55.116Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.363074899242294,
+        "at": "2026-09-28T14:50:55.097Z",
         "supply": 3
       }
     ],
@@ -320759,10 +320763,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1579108,
-      "at": "2026-09-28T07:06:04.030Z"
-    },
-    {
       "total": 1587087,
       "at": "2026-09-28T07:11:04.041Z"
     },
@@ -321157,6 +321157,10 @@
     {
       "total": 1562807,
       "at": "2026-09-28T14:46:07.649Z"
+    },
+    {
+      "total": 1562807,
+      "at": "2026-09-28T14:51:07.820Z"
     }
   ],
   "gold_rush": null,
@@ -321183,7 +321187,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 13.352699999999949,
+  "heat_global": 13.052699999999948,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -347579,11 +347583,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70708734754685,
-      "top10": 100,
-      "at": "2026-09-28T07:06:04.047Z"
-    },
-    {
       "gini": 99.70700169982128,
       "top10": 100,
       "at": "2026-09-28T07:11:04.097Z"
@@ -348077,13 +348076,14 @@
       "gini": 99.69153485703501,
       "top10": 100,
       "at": "2026-09-28T14:46:07.674Z"
+    },
+    {
+      "gini": 99.69153485703501,
+      "top10": 100,
+      "at": "2026-09-28T14:51:07.848Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3075607,
-      "at": "2026-09-28T07:06:04.053Z"
-    },
     {
       "gdp": 3078526,
       "at": "2026-09-28T07:11:04.114Z"
@@ -348479,6 +348479,10 @@
     {
       "gdp": 3126884,
       "at": "2026-09-28T14:46:07.690Z"
+    },
+    {
+      "gdp": 3126884,
+      "at": "2026-09-28T14:51:07.855Z"
     }
   ],
   "purge_allowed": [
