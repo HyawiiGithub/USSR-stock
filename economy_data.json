@@ -1030,7 +1030,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 206,
-      "heat": 16.838,
+      "heat": 16.00225381317937,
       "wanted": 0,
       "last_illegal": "2026-09-28T22:25:34.553Z",
       "total_heat_generated": 2060.2828999999992,
@@ -310673,8 +310673,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 56.13103000474284,
-      "underground_heat": 1254.143525022024,
+      "heat": 55.58062909534497,
+      "underground_heat": 1253.383108817777,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 5,
@@ -311117,11 +311117,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 105,
-      "change_percent": 0.7280380784768385,
-      "recorded_at": "2026-09-28T19:08:01.123Z"
-    },
     {
       "price": 105,
       "change_percent": 0.15691374481431117,
@@ -311616,6 +311611,11 @@
       "price": 98,
       "change_percent": 0.2834364768982408,
       "recorded_at": "2026-09-28T22:25:35.638Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.2995138299067332,
+      "recorded_at": "2026-09-28T22:26:13.412Z"
     }
   ],
   "factory_names": [
@@ -311970,7 +311970,7 @@
     "Timber Planks": 4,
     "Gas Fuel": 5,
     "Cake": 8,
-    "Canned Fish": 5,
+    "Canned Fish": 3,
     "Steel Beam": 13,
     "Canned Food": 10,
     "Smoked Fish": 18,
@@ -311989,7 +311989,7 @@
     "Smoked Fish": 37,
     "Canned Food": 38,
     "Uranium Rod": 28,
-    "Canned Fish": 52,
+    "Canned Fish": 54,
     "Bread": 317,
     "Aluminium Sheet": 8,
     "Circuit Board": 44,
@@ -312012,11 +312012,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Brass",
-      "qty": 2,
-      "at": "2026-09-25T05:33:01.879Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -313511,6 +313506,11 @@
       "item": "Fish Stew",
       "qty": 1,
       "at": "2026-09-28T22:11:10.889Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 2,
+      "at": "2026-09-28T22:26:10.797Z"
     }
   ],
   "demand_history": {
@@ -316022,6 +316022,11 @@
       {
         "demand": 1.3371031610196353,
         "at": "2026-09-28T21:41:10.234Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.367332463474619,
+        "at": "2026-09-28T22:26:10.797Z",
         "supply": 1
       }
     ],
@@ -321359,10 +321364,6 @@
   "total_rubles_history": [
     {
       "total": 1562807,
-      "at": "2026-09-28T14:21:07.799Z"
-    },
-    {
-      "total": 1562807,
       "at": "2026-09-28T14:26:07.655Z"
     },
     {
@@ -321756,6 +321757,10 @@
     {
       "total": 1543638,
       "at": "2026-09-28T22:21:14.120Z"
+    },
+    {
+      "total": 1543653,
+      "at": "2026-09-28T22:26:14.279Z"
     }
   ],
   "gold_rush": null,
@@ -321782,7 +321787,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 8.255849999999908,
+  "heat_global": 7.955849999999908,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -348203,11 +348208,6 @@
     {
       "gini": 99.69162969132483,
       "top10": 100,
-      "at": "2026-09-28T14:21:07.823Z"
-    },
-    {
-      "gini": 99.69162969132483,
-      "top10": 100,
       "at": "2026-09-28T14:26:07.677Z"
     },
     {
@@ -348699,13 +348699,14 @@
       "gini": 99.70421688131556,
       "top10": 100,
       "at": "2026-09-28T22:21:14.140Z"
+    },
+    {
+      "gini": 99.70405259106894,
+      "top10": 100,
+      "at": "2026-09-28T22:26:14.298Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3126884,
-      "at": "2026-09-28T14:21:07.830Z"
-    },
     {
       "gdp": 3126884,
       "at": "2026-09-28T14:26:07.684Z"
@@ -349101,6 +349102,10 @@
     {
       "gdp": 3134029,
       "at": "2026-09-28T22:21:14.146Z"
+    },
+    {
+      "gdp": 3134022,
+      "at": "2026-09-28T22:26:14.304Z"
     }
   ],
   "purge_allowed": [
