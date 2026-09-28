@@ -310852,7 +310852,7 @@
     "Fish Stew": 9,
     "Uranium Rod": 1,
     "Refined Fuel": 8,
-    "Radiator": 6,
+    "Radiator": 5,
     "Brass": 1,
     "Timber Planks": 8,
     "Gas Fuel": 11
@@ -310887,17 +310887,12 @@
     "Brass": 55,
     "Brass Valve": 9,
     "Pet Food": 9,
-    "Radiator": 4,
+    "Radiator": 5,
     "Fish Stew": 11,
     "Bricks": 17,
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-23T07:04:11.309Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -312392,6 +312387,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-09-28T00:05:48.972Z"
+    },
+    {
+      "item": "Radiator",
+      "qty": 1,
+      "at": "2026-09-28T00:20:49.092Z"
     }
   ],
   "demand_history": {
@@ -316742,6 +316742,11 @@
       {
         "demand": 1.3933999143374929,
         "at": "2026-09-27T23:35:48.976Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3950499357531196,
+        "at": "2026-09-28T00:20:49.092Z",
         "supply": 0
       }
     ],
