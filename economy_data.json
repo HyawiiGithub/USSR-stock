@@ -502,7 +502,7 @@
         "Canned Fish": 1,
         "Cake": 2,
         "Bread": 7,
-        "Fish Stew": 3
+        "Fish Stew": 2
       },
       "company_id": null,
       "ceo_of": null,
@@ -808,7 +808,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 0.07103791423547023,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 811.099,
@@ -991,13 +991,13 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 521,
-      "heat": 23.458248979401347,
+      "heat": 22.47406831621364,
       "wanted": 0,
       "last_illegal": "2026-09-28T15:03:58.954Z",
       "total_heat_generated": 2012.5678999999993,
       "bot_level": 29,
-      "bot_xp": 883,
-      "bot_total_xp": 62653,
+      "bot_xp": 902,
+      "bot_total_xp": 62672,
       "daily_work_count": 987,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-28",
@@ -309996,8 +309996,8 @@
       "shares_available": 0,
       "state_shares": 1,
       "founder_shares": 0,
-      "share_price": 567433,
-      "market_cap": 567433,
+      "share_price": 567439,
+      "market_cap": 567439,
       "employees": 31,
       "level": 1,
       "buildings": {
@@ -310138,7 +310138,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-28T14:57:53.061Z",
       "price_history": [
-        545234,
         545270,
         545370,
         545370,
@@ -310237,7 +310236,8 @@
         567401,
         567485,
         567451,
-        567433
+        567433,
+        567439
       ],
       "is_state_owned": true,
       "director_id": "874346333882945547",
@@ -310257,8 +310257,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 59.529375231604114,
-      "underground_heat": 1222.6868492498063,
+      "heat": 59.02801667668755,
+      "underground_heat": 1221.9377834962147,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 567401
@@ -310692,16 +310692,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 100,
-      "change_percent": 0.9188518191772539,
-      "recorded_at": "2026-09-28T12:09:23.832Z"
-    },
-    {
-      "price": 101,
-      "change_percent": 1.1245546914711257,
-      "recorded_at": "2026-09-28T12:09:33.094Z"
-    },
     {
       "price": 101,
       "change_percent": 0.20535431710146618,
@@ -311191,6 +311181,16 @@
       "price": 99,
       "change_percent": 0.6736700228616117,
       "recorded_at": "2026-09-28T15:45:11.659Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.8539953696970686,
+      "recorded_at": "2026-09-28T15:45:58.654Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.6700435878924117,
+      "recorded_at": "2026-09-28T15:46:07.827Z"
     }
   ],
   "factory_names": [],
@@ -311211,7 +311211,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 44737.21198936172,
+  "money_printed": 43842.46774957448,
   "total_bank_reserves": 195268,
   "inflation_history": [
     0,
@@ -320770,10 +320770,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1551064,
-      "at": "2026-09-28T08:01:04.438Z"
-    },
-    {
       "total": 1551109,
       "at": "2026-09-28T08:06:04.410Z"
     },
@@ -321168,6 +321164,10 @@
     {
       "total": 1572628,
       "at": "2026-09-28T15:41:08.811Z"
+    },
+    {
+      "total": 1574026,
+      "at": "2026-09-28T15:46:08.670Z"
     }
   ],
   "gold_rush": null,
@@ -321194,7 +321194,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 14.26094999999994,
+  "heat_global": 13.96094999999994,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -321919,7 +321919,7 @@
       "1229741033265299506": 1790609496321,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790541285021,
-      "874346333882945547": 1790609688525,
+      "874346333882945547": 1790610398757,
       "870686833976172574": 1790609530338,
       "1186597507720019988": 1790597042678,
       "1521043721129558017": 1790596746003,
@@ -344135,12 +344135,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.79,
+    "rub_per_usd": 10.76,
     "history": [
-      {
-        "rate": 11.43,
-        "at": "2026-09-27T23:25:55.877Z"
-      },
       {
         "rate": 11.55,
         "at": "2026-09-27T23:35:55.884Z"
@@ -344536,9 +344532,13 @@
       {
         "rate": 10.79,
         "at": "2026-09-28T15:35:58.831Z"
+      },
+      {
+        "rate": 10.76,
+        "at": "2026-09-28T15:45:59.326Z"
       }
     ],
-    "last_update": "2026-09-28T15:35:58.831Z",
+    "last_update": "2026-09-28T15:45:59.326Z",
     "manual_override": null
   },
   "national_budget": {
@@ -346382,13 +346382,13 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 16,
+      "hunger": 56,
       "water": 60,
       "health": 100,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:56:00.173Z",
-      "last_fed": "2026-09-28T08:57:06.674Z",
+      "last_fed": "2026-09-28T15:46:13.245Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -346436,7 +346436,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 52,
+      "friendship": 53,
       "hunts": 6,
       "hunt": {
         "start": "2026-09-28T08:56:27.109Z",
@@ -346466,7 +346466,7 @@
       "starve_since": null,
       "last_pet": "2026-09-28T15:45:38.332Z",
       "lastPetAct": "2026-09-28T15:45:38.332Z",
-      "last_feed_cmd": "2026-09-28T08:57:06.674Z"
+      "last_feed_cmd": "2026-09-28T15:46:13.245Z"
     },
     "1511756975392948224": {
       "name": "Soviet Cat",
@@ -347592,11 +347592,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70414935026257,
-      "top10": 100,
-      "at": "2026-09-28T08:01:04.525Z"
-    },
-    {
       "gini": 99.7039694289661,
       "top10": 100,
       "at": "2026-09-28T08:06:04.435Z"
@@ -348090,13 +348085,14 @@
       "gini": 99.68997980376119,
       "top10": 100,
       "at": "2026-09-28T15:41:08.868Z"
+    },
+    {
+      "gini": 99.68989573399666,
+      "top10": 100,
+      "at": "2026-09-28T15:46:08.687Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3086858,
-      "at": "2026-09-28T08:01:04.532Z"
-    },
     {
       "gdp": 3087065,
       "at": "2026-09-28T08:06:04.441Z"
@@ -348492,6 +348488,10 @@
     {
       "gdp": 3151813,
       "at": "2026-09-28T15:41:08.902Z"
+    },
+    {
+      "gdp": 3152397,
+      "at": "2026-09-28T15:46:08.693Z"
     }
   ],
   "purge_allowed": [
