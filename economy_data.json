@@ -308723,6 +308723,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1139343863211896852": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 15,
+      "bot_total_xp": 15,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -309997,11 +310035,6 @@
   "gsi_history": [
     {
       "price": 99,
-      "change_percent": -0.18888821562054445,
-      "recorded_at": "2026-09-27T20:25:51.009Z"
-    },
-    {
-      "price": 99,
       "change_percent": 0.5722489162897346,
       "recorded_at": "2026-09-27T20:30:50.907Z"
     },
@@ -310494,6 +310527,11 @@
       "price": 95,
       "change_percent": 0.4665417178050687,
       "recorded_at": "2026-09-28T00:25:58.047Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.16357091755676295,
+      "recorded_at": "2026-09-28T00:30:58.279Z"
     }
   ],
   "factory_names": [
@@ -319859,14 +319897,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 538511,
-      "at": "2026-09-27T16:44:04.145Z"
-    },
-    {
-      "total": 538561,
-      "at": "2026-09-27T16:49:03.984Z"
-    },
-    {
       "total": 538576,
       "at": "2026-09-27T16:54:04.053Z"
     },
@@ -320257,6 +320287,14 @@
     {
       "total": 1605440,
       "at": "2026-09-28T00:25:59.561Z"
+    },
+    {
+      "total": 1605440,
+      "at": "2026-09-28T00:30:59.540Z"
+    },
+    {
+      "total": 1605440,
+      "at": "2026-09-28T00:31:00.557Z"
     }
   ],
   "gold_rush": null,
@@ -321497,7 +321535,8 @@
       "1473323576840159385": 1790523420073,
       "1143874875551907930": 1790539120544,
       "973933364509810698": 1790542926956,
-      "1286357701906927703": 1790548256286
+      "1286357701906927703": 1790548256286,
+      "1139343863211896852": 1790555500942
     }
   },
   "mee6_cache": {
@@ -346519,16 +346558,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.7074891965477,
-      "top10": 100,
-      "at": "2026-09-27T16:44:04.167Z"
-    },
-    {
-      "gini": 99.70745155109881,
-      "top10": 100,
-      "at": "2026-09-27T16:49:04.008Z"
-    },
-    {
       "gini": 99.70744450040938,
       "top10": 100,
       "at": "2026-09-27T16:54:04.079Z"
@@ -347017,17 +347046,19 @@
       "gini": 99.71006085214873,
       "top10": 100,
       "at": "2026-09-28T00:25:59.593Z"
+    },
+    {
+      "gini": 99.71006085214873,
+      "top10": 100,
+      "at": "2026-09-28T00:30:59.570Z"
+    },
+    {
+      "gini": 99.71009659856077,
+      "top10": 100,
+      "at": "2026-09-28T00:31:00.583Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 2137878,
-      "at": "2026-09-27T16:44:04.175Z"
-    },
-    {
-      "gdp": 2137952,
-      "at": "2026-09-27T16:49:04.023Z"
-    },
     {
       "gdp": 2138095,
       "at": "2026-09-27T16:54:04.085Z"
@@ -347419,6 +347450,14 @@
     {
       "gdp": 3032063,
       "at": "2026-09-28T00:25:59.601Z"
+    },
+    {
+      "gdp": 3032063,
+      "at": "2026-09-28T00:30:59.584Z"
+    },
+    {
+      "gdp": 3032063,
+      "at": "2026-09-28T00:31:00.603Z"
     }
   ],
   "purge_allowed": [
