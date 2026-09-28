@@ -310578,11 +310578,6 @@
   "gsi_history": [
     {
       "price": 103,
-      "change_percent": 0.8946895209108527,
-      "recorded_at": "2026-09-28T10:01:34.993Z"
-    },
-    {
-      "price": 103,
       "change_percent": 0.5356371124572437,
       "recorded_at": "2026-09-28T10:04:07.767Z"
     },
@@ -311075,6 +311070,11 @@
       "price": 111,
       "change_percent": -0.4127511219482573,
       "recorded_at": "2026-09-28T13:46:06.112Z"
+    },
+    {
+      "price": 115,
+      "change_percent": 4.428783155217707,
+      "recorded_at": "2026-09-28T13:50:52.139Z"
     }
   ],
   "factory_names": [
@@ -311433,7 +311433,7 @@
     "Timber Planks": 9,
     "Gas Fuel": 9,
     "Cake": 17,
-    "Steel Beam": 6
+    "Steel Beam": 4
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -311455,7 +311455,7 @@
     "Cotton Fabric": 13,
     "Reactor Core": 9,
     "Gas Fuel": 114,
-    "Steel Beam": 21,
+    "Steel Beam": 23,
     "Machine Parts": 153,
     "Sugar": 51,
     "Fertilizer": 17,
@@ -311471,11 +311471,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-24T20:05:24.993Z"
-    },
     {
       "item": "Brass",
       "qty": 1,
@@ -312970,6 +312965,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-28T13:35:55.074Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 2,
+      "at": "2026-09-28T13:50:55.194Z"
     }
   ],
   "demand_history": {
@@ -316416,6 +316416,11 @@
         "demand": 1.4045313083211952,
         "at": "2026-09-27T09:01:48.175Z",
         "supply": 0
+      },
+      {
+        "demand": 1.311928202099369,
+        "at": "2026-09-28T13:50:55.194Z",
+        "supply": 3
       }
     ],
     "Machine Parts": [
