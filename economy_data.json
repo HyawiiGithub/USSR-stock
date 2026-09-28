@@ -1030,7 +1030,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 206,
-      "heat": 13.385332443175933,
+      "heat": 12.517556011248981,
       "wanted": 0,
       "last_illegal": "2026-09-28T22:25:34.553Z",
       "total_heat_generated": 2060.2828999999992,
@@ -310673,8 +310673,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 53.782998269496495,
-      "underground_heat": 1251.696056806338,
+      "heat": 53.13504882975854,
+      "underground_heat": 1251.103626474635,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 5,
@@ -311117,11 +311117,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 104,
-      "change_percent": 0.3622820848794105,
-      "recorded_at": "2026-09-28T19:26:10.175Z"
-    },
     {
       "price": 104,
       "change_percent": 0.6242821954876071,
@@ -311616,6 +311611,11 @@
       "price": 101,
       "change_percent": 3.911507530128718,
       "recorded_at": "2026-09-28T22:53:29.080Z"
+    },
+    {
+      "price": 100,
+      "change_percent": -0.22893673594944342,
+      "recorded_at": "2026-09-28T22:53:30.211Z"
     }
   ],
   "factory_names": [
@@ -311965,7 +311965,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 78,
+    "Machine Parts": 76,
     "Refined Fuel": 19,
     "Timber Planks": 4,
     "Gas Fuel": 5,
@@ -311997,7 +311997,7 @@
     "Reactor Core": 9,
     "Gas Fuel": 118,
     "Steel Beam": 27,
-    "Machine Parts": 157,
+    "Machine Parts": 159,
     "Sugar": 51,
     "Fertilizer": 17,
     "Flour": 20,
@@ -312012,11 +312012,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-25T05:48:01.974Z"
-    },
     {
       "item": "Brass",
       "qty": 2,
@@ -313511,6 +313506,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-09-28T22:26:10.797Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 2,
+      "at": "2026-09-28T22:53:29.569Z"
     }
   ],
   "demand_history": {
@@ -317026,11 +317026,6 @@
     ],
     "Machine Parts": [
       {
-        "demand": 1.0366448414292089,
-        "at": "2026-09-24T18:45:03.133Z",
-        "supply": 66
-      },
-      {
         "demand": 1.150909779198335,
         "at": "2026-09-24T19:35:24.185Z",
         "supply": 66
@@ -317324,6 +317319,11 @@
         "demand": 1.1218027341760604,
         "at": "2026-09-28T17:35:56.094Z",
         "supply": 8
+      },
+      {
+        "demand": 1.3785791801482201,
+        "at": "2026-09-28T22:53:29.576Z",
+        "supply": 9
       }
     ],
     "Sugar": [
@@ -321364,10 +321364,6 @@
   "total_rubles_history": [
     {
       "total": 1562807,
-      "at": "2026-09-28T14:36:07.913Z"
-    },
-    {
-      "total": 1562807,
       "at": "2026-09-28T14:36:08.650Z"
     },
     {
@@ -321761,6 +321757,10 @@
     {
       "total": 1543731,
       "at": "2026-09-28T22:48:30.320Z"
+    },
+    {
+      "total": 1543731,
+      "at": "2026-09-28T22:53:30.417Z"
     }
   ],
   "gold_rush": null,
@@ -321787,7 +321787,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 7.055849999999909,
+  "heat_global": 6.755849999999909,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -348206,11 +348206,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69149689209434,
-      "top10": 100,
-      "at": "2026-09-28T14:36:07.963Z"
-    },
-    {
       "gini": 99.69153485703501,
       "top10": 100,
       "at": "2026-09-28T14:36:08.658Z"
@@ -348704,13 +348699,14 @@
       "gini": 99.70363650448944,
       "top10": 100,
       "at": "2026-09-28T22:48:30.350Z"
+    },
+    {
+      "gini": 99.70363650448944,
+      "top10": 100,
+      "at": "2026-09-28T22:53:30.436Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3126884,
-      "at": "2026-09-28T14:36:07.969Z"
-    },
     {
       "gdp": 3126884,
       "at": "2026-09-28T14:36:08.667Z"
@@ -349106,6 +349102,10 @@
     {
       "gdp": 3135398,
       "at": "2026-09-28T22:48:30.357Z"
+    },
+    {
+      "gdp": 3135398,
+      "at": "2026-09-28T22:53:30.444Z"
     }
   ],
   "purge_allowed": [
