@@ -808,7 +808,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 10.338014197826073,
+      "heat": 9.424967891825686,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 786.099,
@@ -980,7 +980,7 @@
       "director_of": "state_26",
       "ceo_of": null,
       "dirty_cash": 169,
-      "heat": 21.7839452528683,
+      "heat": 20.850200168538322,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:56:51.518Z",
       "total_heat_generated": 1969.4708999999993,
@@ -309981,8 +309981,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 61.35864976933291,
-      "underground_heat": 1203.716549178312,
+      "heat": 60.58969201613269,
+      "underground_heat": 1203.0225509040276,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 560023
@@ -309994,7 +309994,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@963834359994007614>",
       "hq_ssr": "Russian SFSR",
-      "funds": 12900,
+      "funds": 900,
       "invested_capital": 500,
       "shares_total": 1,
       "shares_available": 0,
@@ -310018,6 +310018,11 @@
         "Oil Rig": {
           "level": 1,
           "built_at": "2026-09-28T07:40:03.611Z",
+          "type": "mine"
+        },
+        "Farm": {
+          "level": 1,
+          "built_at": "2026-09-28T12:31:43.511Z",
           "type": "mine"
         }
       },
@@ -310407,11 +310412,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 107,
-      "change_percent": 0.08760517206380185,
-      "recorded_at": "2026-09-28T09:14:46.655Z"
-    },
     {
       "price": 107,
       "change_percent": 0.641547049330282,
@@ -310906,6 +310906,11 @@
       "price": 103,
       "change_percent": 0.5890058482439355,
       "recorded_at": "2026-09-28T12:26:05.832Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.6241782656240985,
+      "recorded_at": "2026-09-28T12:31:05.799Z"
     }
   ],
   "factory_names": [
@@ -320450,10 +320455,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1610119,
-      "at": "2026-09-28T04:16:02.340Z"
-    },
-    {
       "total": 1609964,
       "at": "2026-09-28T04:21:02.329Z"
     },
@@ -320848,6 +320849,10 @@
     {
       "total": 1551097,
       "at": "2026-09-28T12:26:07.822Z"
+    },
+    {
+      "total": 1563956,
+      "at": "2026-09-28T12:31:07.818Z"
     }
   ],
   "gold_rush": null,
@@ -320874,7 +320879,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 13.871999999999968,
+  "heat_global": 13.571999999999967,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -347256,11 +347261,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.71177349067437,
-      "top10": 100,
-      "at": "2026-09-28T04:16:02.366Z"
-    },
-    {
       "gini": 99.71184425948817,
       "top10": 100,
       "at": "2026-09-28T04:21:02.351Z"
@@ -347754,13 +347754,14 @@
       "gini": 99.69890765467149,
       "top10": 100,
       "at": "2026-09-28T12:26:07.850Z"
+    },
+    {
+      "gini": 99.69890765467149,
+      "top10": 100,
+      "at": "2026-09-28T12:31:07.849Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3056861,
-      "at": "2026-09-28T04:16:02.372Z"
-    },
     {
       "gdp": 3057324,
       "at": "2026-09-28T04:21:02.364Z"
@@ -348156,6 +348157,10 @@
     {
       "gdp": 3110142,
       "at": "2026-09-28T12:26:07.858Z"
+    },
+    {
+      "gdp": 3115453,
+      "at": "2026-09-28T12:31:07.856Z"
     }
   ],
   "purge_allowed": [
