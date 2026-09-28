@@ -1300,15 +1300,15 @@
       "pet_food_source": {}
     },
     "791747702689103893": {
-      "cash": 60,
+      "cash": 75,
       "bank": 3734,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-28T20:19:19.232Z",
-      "work_count": 230,
+      "last_work": "2026-09-28T20:24:47.217Z",
+      "work_count": 231,
       "last_claim": "2026-09-28T04:17:43.178Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -1322,9 +1322,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 24,
-      "bot_xp": 302,
-      "bot_total_xp": 38122,
-      "daily_work_count": 221,
+      "bot_xp": 327,
+      "bot_total_xp": 38147,
+      "daily_work_count": 222,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-28",
       "mee6_level": 24,
@@ -46256,12 +46256,12 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 10,
-      "bot_xp": 1084,
-      "bot_total_xp": 5759,
+      "bot_level": 11,
+      "bot_xp": 5,
+      "bot_total_xp": 5780,
       "daily_work_count": 0,
       "shock_worker": false,
-      "mee6_level": 10,
+      "mee6_level": 11,
       "last_laylow": null,
       "work_reminder": false,
       "work_reminder_sent": null,
@@ -87967,8 +87967,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 3760,
-      "bot_total_xp": 37685,
+      "bot_xp": 3776,
+      "bot_total_xp": 37701,
       "daily_work_count": 147,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-28",
@@ -310677,19 +310677,18 @@
       "inventory": {
         "Timber": 394,
         "Natural Gas": 179,
-        "Iron Ore": 20,
+        "Iron Ore": 21,
         "Coal": 53,
         "Uranium": 26,
         "Oil": 48,
         "Gold": 72,
-        "Wheat": 195,
+        "Wheat": 194,
         "Refined Fuel": 4,
         "Sugar": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-28T18:13:31.244Z",
       "price_history": [
-        243212,
         243230,
         243248,
         243248,
@@ -310781,6 +310780,7 @@
         256434,
         256554,
         256554,
+        2,
         2,
         2,
         2,
@@ -311070,11 +311070,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 1.242593325490449,
-      "recorded_at": "2026-09-28T18:07:14.470Z"
-    },
     {
       "price": 98,
       "change_percent": 0.7524829977430253,
@@ -311569,6 +311564,11 @@
       "price": 102,
       "change_percent": 1.002199305228129,
       "recorded_at": "2026-09-28T20:23:15.827Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.5305292381349366,
+      "recorded_at": "2026-09-28T20:24:48.305Z"
     }
   ],
   "factory_names": [
@@ -311590,7 +311590,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 64667.37370562666,
+  "money_printed": 64682.37370562666,
   "total_bank_reserves": 195525,
   "inflation_history": [
     0,
@@ -322233,7 +322233,7 @@
         "1506785783506534426": 8,
         "1482469240522018899": 2,
         "1397601108616024075": 12,
-        "791747702689103893": 35,
+        "791747702689103893": 36,
         "634547073978728478": 6,
         "874346333882945547": 60,
         "807254722251587614": 15,
@@ -322440,7 +322440,7 @@
       "1309104161278918706": 1790010702166,
       "1325111649816023092": 1790626878769,
       "1506785783506534426": 1790622263950,
-      "807254722251587614": 1790627017965,
+      "807254722251587614": 1790627097324,
       "1353373037994705078": 1790574728988,
       "1192563739778625607": 1790365373051,
       "997903130543005767": 1788970364999,
@@ -322456,7 +322456,7 @@
       "822079355298906112": 1790621303846,
       "1000271630154596473": 1790442695307,
       "437626060876546069": 1789233001616,
-      "1365483598962102305": 1790627027063,
+      "1365483598962102305": 1790627106048,
       "1544296111097909309": 1790517974906,
       "1343006572850184217": 1790608038248,
       "503918799683321866": 1790624832178,
@@ -341014,13 +341014,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1533487777247920151",
-      "from": 0,
-      "to": 1,
-      "at": "2026-09-24T15:50:34.118Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1380189428953124975",
       "from": 4,
       "to": 5,
@@ -342411,6 +342404,13 @@
       "from": 6,
       "to": 7,
       "at": "2026-09-28T19:22:52.087Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1365483598962102305",
+      "from": 10,
+      "to": 11,
+      "at": "2026-09-28T20:25:06.048Z",
       "reason": "chat"
     }
   ],
