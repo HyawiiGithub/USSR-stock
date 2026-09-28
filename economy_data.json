@@ -522,7 +522,7 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 69,
+      "cash": 90,
       "bank": 0,
       "resources": {
         "Peat": 1
@@ -533,12 +533,12 @@
         "Bread": 7,
         "Fish Stew": 2
       },
-      "company_id": "state_24",
-      "ceo_of": "Kewlian Industrial Group",
+      "company_id": null,
+      "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-28T19:43:26.196Z",
-      "work_count": 260,
+      "last_work": "2026-09-28T20:06:15.413Z",
+      "work_count": 261,
       "last_claim": "2026-09-28T16:43:59.957Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:27:29.616694",
@@ -553,15 +553,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 579,
-      "bot_total_xp": 24429,
-      "daily_work_count": 251,
+      "bot_xp": 622,
+      "bot_total_xp": 24472,
+      "daily_work_count": 252,
       "shock_worker": false,
       "mee6_level": 20,
       "last_daily_work_date": "2026-09-28",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-28T19:48:42.686Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-28T08:56:15.010Z",
       "train_reminder": false,
@@ -927,7 +927,7 @@
       "bank": 0,
       "resources": {},
       "inventory": {},
-      "company_id": "state_28",
+      "company_id": null,
       "gsi_shares": 44,
       "share_holdings": {},
       "last_work": "2026-09-28T19:40:05.902Z",
@@ -938,7 +938,7 @@
       "is_employed": true,
       "is_state_director": true,
       "director_of": "state_28",
-      "ceo_of": "Baltic Timber & Harbour Co",
+      "ceo_of": null,
       "dirty_cash": 0,
       "heat": 0,
       "wanted": 0,
@@ -2100,8 +2100,8 @@
       "last_illegal": "2026-09-28T09:53:52.602Z",
       "total_heat_generated": 885.9200000000002,
       "bot_level": 24,
-      "bot_xp": 2115,
-      "bot_total_xp": 39935,
+      "bot_xp": 2130,
+      "bot_total_xp": 39950,
       "daily_work_count": 176,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-28",
@@ -46252,8 +46252,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 963,
-      "bot_total_xp": 5638,
+      "bot_xp": 978,
+      "bot_total_xp": 5653,
       "daily_work_count": 0,
       "shock_worker": false,
       "mee6_level": 10,
@@ -87951,8 +87951,8 @@
       "work_count": 195,
       "last_claim": "2026-09-28T05:23:15.555Z",
       "ssr_region": "Nuristani SSR",
-      "employed_at": null,
-      "is_employed": false,
+      "employed_at": "State Mining Corp",
+      "is_employed": true,
       "is_state_director": false,
       "director_of": null,
       "ceo_of": "State Mining Corp",
@@ -309967,10 +309967,10 @@
       "id": "state_24",
       "name": "Kewlian Industrial Group",
       "ticker": "ST24",
-      "owner_id": "1521043721129558017",
-      "ceo": "hamster_fed",
+      "owner_id": "1513968015048184039",
+      "ceo": "<@1521043721129558017>",
       "hq_ssr": "Ukrainian SSR",
-      "funds": 22151,
+      "funds": 22145,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 0,
@@ -310053,7 +310053,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-28T15:26:23.401Z",
       "price_history": [
-        252084,
         252090,
         252096,
         252248,
@@ -310152,6 +310151,7 @@
         245831,
         245837,
         245837,
+        2,
         2
       ],
       "is_state_owned": true,
@@ -310446,7 +310446,7 @@
       },
       "inventory": {
         "Gold Bar": 72,
-        "Wheat": 129,
+        "Wheat": 130,
         "Sugar": 21,
         "Sulphur": 91,
         "Timber Planks": 38,
@@ -310673,7 +310673,7 @@
         "Uranium": 26,
         "Oil": 47,
         "Gold": 71,
-        "Wheat": 196,
+        "Wheat": 197,
         "Refined Fuel": 4,
         "Sugar": 3
       },
@@ -310809,8 +310809,8 @@
       "id": "state_28",
       "name": "Baltic Timber & Harbour Co",
       "ticker": "ST28",
-      "owner_id": "1528783188728483944",
-      "ceo": "alice_orlowe",
+      "owner_id": "1513968015048184039",
+      "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
       "funds": 8496,
       "invested_capital": 500,
@@ -311061,11 +311061,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.7240331417301114,
-      "recorded_at": "2026-09-28T17:48:12.712Z"
-    },
     {
       "price": 94,
       "change_percent": 0.5718228674329112,
@@ -311560,6 +311555,11 @@
       "price": 102,
       "change_percent": 0.650400856642844,
       "recorded_at": "2026-09-28T20:03:59.856Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.11645368074998359,
+      "recorded_at": "2026-09-28T20:06:16.534Z"
     }
   ],
   "factory_names": [
@@ -311581,7 +311581,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 67628.5274690251,
+  "money_printed": 67643.5274690251,
   "total_bank_reserves": 214452,
   "inflation_history": [
     0,
@@ -322230,7 +322230,7 @@
         "1522851408611770409": 8,
         "654010925635862539": 1,
         "1511756975392948224": 11,
-        "1521043721129558017": 15,
+        "1521043721129558017": 16,
         "771077238266658837": 2,
         "1470136693821800521": 1,
         "1325111649816023092": 3,
@@ -322409,7 +322409,7 @@
       "874346333882945547": 1790625958532,
       "870686833976172574": 1790609530338,
       "1186597507720019988": 1790597042678,
-      "1521043721129558017": 1790624724491,
+      "1521043721129558017": 1790625964649,
       "1397601108616024075": 1790625265510,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -322433,7 +322433,7 @@
       "822079355298906112": 1790621303846,
       "1000271630154596473": 1790442695307,
       "437626060876546069": 1789233001616,
-      "1365483598962102305": 1790625798326,
+      "1365483598962102305": 1790625972120,
       "1544296111097909309": 1790517974906,
       "1343006572850184217": 1790608038248,
       "503918799683321866": 1790624832178,
@@ -322480,7 +322480,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1790620606375,
-      "1511756975392948224": 1790625923218,
+      "1511756975392948224": 1790625988879,
       "1391043482541494282": 1790418103644,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789824818607,
@@ -322968,21 +322968,9 @@
       "2026-Q3": {
         "positive": 84,
         "negative": 43,
-        "neutral": 2073,
-        "total": 2200,
+        "neutral": 2074,
+        "total": 2201,
         "mentions": [
-          {
-            "at": "2026-09-23T17:26:10.869Z",
-            "userId": "1456622719985782864",
-            "username": "seren_menzhinsky",
-            "channelId": "605951687974453248",
-            "messageId": "1552370502838779976",
-            "text": "<@1082686076491137115> more help needed",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-23T17:26:40.979Z",
             "userId": "1456622719985782864",
@@ -328970,24 +328958,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-28T20:06:13.394Z",
+            "userId": "1365483598962102305",
+            "username": "ko3nigg",
+            "channelId": "605951687974453248",
+            "messageId": "1554222717610237985",
+            "text": "<@1082686076491137115> giggle the google do yoy know how to join the RGES",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-17T19:08:49.097Z",
-        "userId": "913497950213267577",
-        "username": "poetrs0",
-        "channelId": "689149652603502601",
-        "messageId": "1550222008254599280",
-        "text": "<@&955577420969291786> <@&994182556415184966> \n\nNuristan is now fully military controlled by orders of the Premier <:445:1010192434166251631>",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-17T19:09:31.525Z",
         "userId": "1506785783506534426",
@@ -340975,9 +340963,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-28T20:06:13.394Z",
+        "userId": "1365483598962102305",
+        "username": "ko3nigg",
+        "channelId": "605951687974453248",
+        "messageId": "1554222717610237985",
+        "text": "<@1082686076491137115> giggle the google do yoy know how to join the RGES",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-28T20:04:56.208Z",
+    "last_scan": "2026-09-28T20:06:13.394Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
