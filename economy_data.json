@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 54163,
+      "bank": 54169,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -161,8 +161,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 3948,
-      "bot_total_xp": 65718,
+      "bot_xp": 3959,
+      "bot_total_xp": 65729,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 29,
@@ -1300,13 +1300,18 @@
       "pet_food_source": {}
     },
     "791747702689103893": {
-      "cash": 675,
-      "bank": 3134,
+      "cash": 0,
+      "bank": 3203,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
-      "share_holdings": {},
+      "share_holdings": {
+        "State Nuclear Energy": {
+          "shares": 300,
+          "avg_price": 2
+        }
+      },
       "last_work": "2026-09-28T20:24:47.217Z",
       "work_count": 231,
       "last_claim": "2026-09-28T04:17:43.178Z",
@@ -2081,11 +2086,11 @@
       "pet_food_source": {}
     },
     "1511756975392948224": {
-      "cash": 17295,
-      "bank": 0,
+      "cash": 1000,
+      "bank": 16295,
       "resources": {},
       "inventory": {
-        "Bread": 8
+        "Bread": 7
       },
       "company_id": null,
       "gsi_shares": 0,
@@ -145919,8 +145924,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 12,
-      "bot_total_xp": 112,
+      "bot_xp": 24,
+      "bot_total_xp": 124,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -310647,10 +310652,10 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 900,
+      "funds": 1506,
       "invested_capital": 500,
       "shares_total": 100000,
-      "shares_available": 48999,
+      "shares_available": 48699,
       "state_shares": 0,
       "founder_shares": 0,
       "share_price": 2,
@@ -310694,7 +310699,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-28T18:13:31.244Z",
       "price_history": [
-        243230,
         243248,
         243248,
         243540,
@@ -310785,6 +310789,7 @@
         256434,
         256554,
         256554,
+        2,
         2,
         2,
         2,
@@ -322445,7 +322450,7 @@
       "1309104161278918706": 1790010702166,
       "1325111649816023092": 1790627552516,
       "1506785783506534426": 1790622263950,
-      "807254722251587614": 1790627918372,
+      "807254722251587614": 1790627966811,
       "1353373037994705078": 1790574728988,
       "1192563739778625607": 1790365373051,
       "997903130543005767": 1788970364999,
@@ -346985,16 +346990,16 @@
       "name": "Soviet Cat",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
-      "health": 46,
+      "health": 56,
       "quarters": 2,
       "cheap_streak": 0,
       "born_at": "2026-09-19T17:00:47.155Z",
-      "last_fed": "2026-09-26T21:19:38.094Z",
+      "last_fed": "2026-09-28T20:39:23.327Z",
       "last_watered": null,
       "death": null,
-      "warned_empty": true,
+      "warned_empty": false,
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -347037,7 +347042,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 7,
+      "friendship": 8,
       "hunts": 0,
       "hunt": null,
       "plant_lvl": 0,
@@ -347047,9 +347052,9 @@
         "day": "",
         "n": 0
       },
-      "starve_since": "2026-09-27T11:03:49.631Z",
+      "starve_since": null,
       "last_pet": "2026-09-27T23:16:03.249Z",
-      "last_feed_cmd": "2026-09-26T21:19:38.094Z"
+      "last_feed_cmd": "2026-09-28T20:39:23.327Z"
     },
     "780837437987094560": {
       "name": "Daniel Astrae",
