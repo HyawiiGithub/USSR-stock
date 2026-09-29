@@ -311977,7 +311977,7 @@
     "Cake": 4,
     "Canned Fish": 1,
     "Steel Beam": 8,
-    "Canned Food": 8,
+    "Canned Food": 7,
     "Smoked Fish": 18,
     "Fish Stew": 7
   },
@@ -311992,7 +311992,7 @@
     "Peat Fuel": 10,
     "Cake": 342,
     "Smoked Fish": 37,
-    "Canned Food": 40,
+    "Canned Food": 41,
     "Uranium Rod": 28,
     "Canned Fish": 56,
     "Bread": 317,
@@ -312017,11 +312017,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-25T18:09:48.228Z"
-    },
     {
       "item": "Brass",
       "qty": 2,
@@ -313516,6 +313511,11 @@
       "item": "Steel Beam",
       "qty": 2,
       "at": "2026-09-29T02:10:11.468Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 1,
+      "at": "2026-09-29T02:25:11.201Z"
     }
   ],
   "demand_history": {
@@ -315738,6 +315738,11 @@
       {
         "demand": 1.3928988398171112,
         "at": "2026-09-29T01:25:11.263Z",
+        "supply": 6
+      },
+      {
+        "demand": 1.3928988398171112,
+        "at": "2026-09-29T02:25:11.201Z",
         "supply": 6
       }
     ],
