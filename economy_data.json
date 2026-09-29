@@ -553,8 +553,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 1640,
-      "bot_total_xp": 25490,
+      "bot_xp": 1666,
+      "bot_total_xp": 25516,
       "daily_work_count": 257,
       "shock_worker": false,
       "mee6_level": 20,
@@ -1030,7 +1030,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 385,
-      "heat": 8.587645655653692,
+      "heat": 7.602227642542037,
       "wanted": 0,
       "last_illegal": "2026-09-29T07:37:29.023Z",
       "total_heat_generated": 2104.701899999999,
@@ -310213,8 +310213,8 @@
       },
       "inventory": {
         "Salt": 43,
-        "Wheat": 123,
-        "Coal": 78,
+        "Wheat": 104,
+        "Coal": 81,
         "Gold": 4,
         "Natural Gas": 2,
         "Sugar": 2,
@@ -310228,10 +310228,10 @@
         "Clay": 1,
         "Sulphur": 1,
         "Sunflower": 5,
-        "Iron Ore": 19,
-        "Copper": 2,
-        "Zinc": 23,
-        "Lead": 14,
+        "Iron Ore": 31,
+        "Copper": 3,
+        "Zinc": 24,
+        "Lead": 16,
         "Gold Bar": 3,
         "Limestone": 1,
         "Cotton": 2,
@@ -310243,10 +310243,11 @@
         "Fuel": 1,
         "Circuit Board": 2,
         "Corn": 2,
-        "Steel Ingot": 5
+        "Steel Ingot": 8,
+        "Machine Parts": 5
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-29T00:19:29.653Z",
+      "last_collect": "2026-09-29T07:50:58.346Z",
       "price_history": [
         255391,
         255393,
@@ -310821,8 +310822,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 3.886671126316117,
-      "underground_heat": 1197.5871253328514,
+      "heat": 3.2833161900449803,
+      "underground_heat": 1196.9519568838964,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -311277,16 +311278,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 94,
-      "change_percent": 0.27210971992523963,
-      "recorded_at": "2026-09-29T04:45:16.044Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.17829279256676395,
-      "recorded_at": "2026-09-29T04:48:36.814Z"
-    },
     {
       "price": 94,
       "change_percent": 0.5934988581150851,
@@ -311776,6 +311767,16 @@
       "price": 90,
       "change_percent": 0.596789950098958,
       "recorded_at": "2026-09-29T07:46:47.491Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 1.33645929111802,
+      "recorded_at": "2026-09-29T07:50:11.385Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.1802863092306978,
+      "recorded_at": "2026-09-29T07:50:18.214Z"
     }
   ],
   "factory_names": [
@@ -311797,7 +311798,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 41111.55366196139,
+  "money_printed": 40289.32258872216,
   "total_bank_reserves": 189544,
   "inflation_history": [
     0,
@@ -312052,15 +312053,15 @@
     "Concrete": 1.4124833320924868,
     "Glass": 1.4119972433350463,
     "Steel Beam": 1.386365769444279,
-    "Machine Parts": 1.3780267989138684,
-    "Refined Fuel": 1.3565790685879229,
+    "Machine Parts": 1.3835129432462476,
+    "Refined Fuel": 1.3657562223537554,
     "Uranium Rod": 1.4029832215932814,
     "Reactor Core": 1.4026597227393605,
     "Circuit Board": 1.4000851329503423,
     "Flour": 1.4046413308983374,
     "Sugar": 1.1547707449304725,
     "Wine": 1.4056602105382539,
-    "Canned Food": 1.320517062506537,
+    "Canned Food": 1.3318639177241163,
     "Canned Fish": 1.400462464376763,
     "Smoked Fish": 1.395133560289103,
     "Fish Stew": 1.3865205861580907,
@@ -321597,10 +321598,6 @@
   "total_rubles_history": [
     {
       "total": 1543764,
-      "at": "2026-09-28T23:35:07.828Z"
-    },
-    {
-      "total": 1543764,
       "at": "2026-09-28T23:40:08.806Z"
     },
     {
@@ -321994,6 +321991,10 @@
     {
       "total": 1492772,
       "at": "2026-09-29T07:45:18.503Z"
+    },
+    {
+      "total": 1492802,
+      "at": "2026-09-29T07:50:18.490Z"
     }
   ],
   "gold_rush": null,
@@ -322020,7 +322021,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 0.7036499999999999,
+  "heat_global": 0.4036499999999999,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -342755,9 +342756,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 30,
-    "beforeLvlC": 24,
-    "afterLvl": 24,
+    "xpGainC": 26,
+    "beforeLvlC": 20,
+    "afterLvl": 20,
     "leveled": []
   },
   "central_bank": {
@@ -344984,12 +344985,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.26,
+    "rub_per_usd": 10.3,
     "history": [
-      {
-        "rate": 10.76,
-        "at": "2026-09-28T15:45:59.326Z"
-      },
       {
         "rate": 10.89,
         "at": "2026-09-28T15:55:59.472Z"
@@ -345385,9 +345382,13 @@
       {
         "rate": 10.26,
         "at": "2026-09-29T07:40:14.528Z"
+      },
+      {
+        "rate": 10.3,
+        "at": "2026-09-29T07:50:14.437Z"
       }
     ],
-    "last_update": "2026-09-29T07:40:14.528Z",
+    "last_update": "2026-09-29T07:50:14.437Z",
     "manual_override": null
   },
   "national_budget": {
@@ -348544,11 +348545,6 @@
     {
       "gini": 99.70354694981359,
       "top10": 100,
-      "at": "2026-09-28T23:35:07.863Z"
-    },
-    {
-      "gini": 99.70354694981359,
-      "top10": 100,
       "at": "2026-09-28T23:40:08.835Z"
     },
     {
@@ -349040,13 +349036,14 @@
       "gini": 99.69593602680509,
       "top10": 100,
       "at": "2026-09-29T07:45:18.521Z"
+    },
+    {
+      "gini": 99.69594751914235,
+      "top10": 100,
+      "at": "2026-09-29T07:50:18.516Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3135491,
-      "at": "2026-09-28T23:35:07.876Z"
-    },
     {
       "gdp": 3135491,
       "at": "2026-09-28T23:40:08.849Z"
@@ -349442,6 +349439,10 @@
     {
       "gdp": 3153630,
       "at": "2026-09-29T07:45:18.529Z"
+    },
+    {
+      "gdp": 3153692,
+      "at": "2026-09-29T07:50:18.524Z"
     }
   ],
   "purge_allowed": [
