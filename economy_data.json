@@ -842,7 +842,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 26.26305466807754,
+      "heat": 25.438128339958855,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 871.099,
@@ -310675,8 +310675,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 4.458214720024993,
-      "underground_heat": 1202.1706413819788,
+      "heat": 3.8987353903968285,
+      "underground_heat": 1201.4922636925946,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -311123,11 +311123,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 0.5651710660929191,
-      "recorded_at": "2026-09-28T23:30:12.833Z"
-    },
     {
       "price": 97,
       "change_percent": -0.08273406375785652,
@@ -311622,6 +311617,11 @@
       "price": 95,
       "change_percent": 0.5959008736921472,
       "recorded_at": "2026-09-29T04:36:03.567Z"
+    },
+    {
+      "price": 94,
+      "change_percent": -0.12103114511873592,
+      "recorded_at": "2026-09-29T04:40:15.526Z"
     }
   ],
   "factory_names": [
@@ -311643,7 +311643,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 31548.608845945233,
+  "money_printed": 30917.636669026328,
   "total_bank_reserves": 188376,
   "inflation_history": [
     0,
@@ -311973,7 +311973,7 @@
   "ai_store": {
     "Machine Parts": 72,
     "Refined Fuel": 24,
-    "Gas Fuel": 5,
+    "Gas Fuel": 4,
     "Cake": 4,
     "Canned Fish": 1,
     "Steel Beam": 2,
@@ -312000,7 +312000,7 @@
     "Circuit Board": 44,
     "Cotton Fabric": 13,
     "Reactor Core": 9,
-    "Gas Fuel": 118,
+    "Gas Fuel": 119,
     "Steel Beam": 38,
     "Machine Parts": 163,
     "Sugar": 51,
@@ -312017,11 +312017,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Steel Beam",
-      "qty": 1,
-      "at": "2026-09-25T20:24:49.603Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -313516,6 +313511,11 @@
       "item": "Steel Beam",
       "qty": 2,
       "at": "2026-09-29T04:25:11.735Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-09-29T04:40:12.398Z"
     }
   ],
   "demand_history": {
@@ -316652,11 +316652,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 1.2176564037371822,
-        "at": "2026-09-11T15:24:03.536Z",
-        "supply": 1
-      },
-      {
         "demand": 1.2472222664815682,
         "at": "2026-09-11T15:39:04.024Z",
         "supply": 1
@@ -316949,6 +316944,11 @@
       {
         "demand": 1.401796422421924,
         "at": "2026-09-28T19:05:56.696Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.4023986203185221,
+        "at": "2026-09-29T04:40:12.398Z",
         "supply": 1
       }
     ],
@@ -321423,10 +321423,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1554914,
-      "at": "2026-09-28T19:57:43.087Z"
-    },
-    {
       "total": 1554988,
       "at": "2026-09-28T20:03:15.487Z"
     },
@@ -321821,6 +321817,10 @@
     {
       "total": 1542544,
       "at": "2026-09-29T04:35:15.936Z"
+    },
+    {
+      "total": 1542559,
+      "at": "2026-09-29T04:40:15.837Z"
     }
   ],
   "gold_rush": null,
@@ -321847,7 +321847,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 3.450000000000001,
+  "heat_global": 3.1500000000000012,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -344806,12 +344806,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.33,
+    "rub_per_usd": 10.3,
     "history": [
-      {
-        "rate": 10.89,
-        "at": "2026-09-28T12:55:58.426Z"
-      },
       {
         "rate": 10.74,
         "at": "2026-09-28T13:05:58.478Z"
@@ -345207,9 +345203,13 @@
       {
         "rate": 10.33,
         "at": "2026-09-29T04:30:12.919Z"
+      },
+      {
+        "rate": 10.3,
+        "at": "2026-09-29T04:40:13.055Z"
       }
     ],
-    "last_update": "2026-09-29T04:30:12.919Z",
+    "last_update": "2026-09-29T04:40:13.055Z",
     "manual_override": null
   },
   "national_budget": {
@@ -348294,11 +348294,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.686035095236,
-      "top10": 100,
-      "at": "2026-09-28T19:57:43.114Z"
-    },
-    {
       "gini": 99.692094510093,
       "top10": 100,
       "at": "2026-09-28T20:03:15.510Z"
@@ -348792,13 +348787,14 @@
       "gini": 99.69704858359552,
       "top10": 100,
       "at": "2026-09-29T04:35:15.963Z"
+    },
+    {
+      "gini": 99.6969786739959,
+      "top10": 100,
+      "at": "2026-09-29T04:40:15.869Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3127790,
-      "at": "2026-09-28T19:57:43.121Z"
-    },
     {
       "gdp": 3128040,
       "at": "2026-09-28T20:03:15.521Z"
@@ -349194,6 +349190,10 @@
     {
       "gdp": 3136982,
       "at": "2026-09-29T04:35:15.975Z"
+    },
+    {
+      "gdp": 3137015,
+      "at": "2026-09-29T04:40:15.877Z"
     }
   ],
   "purge_allowed": [
