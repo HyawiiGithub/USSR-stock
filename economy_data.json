@@ -522,7 +522,7 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 279,
+      "cash": 300,
       "bank": 0,
       "resources": {
         "Peat": 1
@@ -536,8 +536,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-29T11:49:15.613Z",
-      "work_count": 270,
+      "last_work": "2026-09-29T14:06:46.158Z",
+      "work_count": 271,
       "last_claim": "2026-09-28T16:43:59.957Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:27:29.616694",
@@ -552,15 +552,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 1854,
-      "bot_total_xp": 25704,
-      "daily_work_count": 261,
+      "bot_xp": 1899,
+      "bot_total_xp": 25749,
+      "daily_work_count": 262,
       "shock_worker": false,
       "mee6_level": 20,
       "last_daily_work_date": "2026-09-29",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-29T11:54:26.258Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-29T07:50:58.346Z",
       "train_reminder": false,
@@ -310299,7 +310299,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1521043721129558017>",
       "hq_ssr": "Ukrainian SSR",
-      "funds": 32185,
+      "funds": 32179,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 0,
@@ -310348,7 +310348,7 @@
       },
       "inventory": {
         "Salt": 44,
-        "Coal": 54,
+        "Coal": 66,
         "Gold": 5,
         "Natural Gas": 2,
         "Sugar": 2,
@@ -310361,11 +310361,11 @@
         "Fish": 5,
         "Clay": 2,
         "Sulphur": 2,
-        "Sunflower": 5,
-        "Iron Ore": 4,
-        "Copper": 1,
-        "Zinc": 23,
-        "Lead": 16,
+        "Sunflower": 6,
+        "Iron Ore": 24,
+        "Copper": 3,
+        "Zinc": 26,
+        "Lead": 18,
         "Gold Bar": 3,
         "Limestone": 1,
         "Cotton": 3,
@@ -310381,15 +310381,13 @@
         "Flour": 34,
         "Steel Beam": 2,
         "Iron Ingot": 1,
-        "Steel Ingot": 4,
-        "Wheat": 67,
+        "Steel Ingot": 11,
+        "Wheat": 46,
         "Citrus": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-09-29T07:50:58.346Z",
+      "last_collect": "2026-09-29T14:06:43.101Z",
       "price_history": [
-        278566,
-        278566,
         278566,
         278566,
         278566,
@@ -310487,6 +310485,8 @@
         2,
         2,
         2,
+        2,
+        2,
         2
       ],
       "is_state_owned": true,
@@ -310509,7 +310509,11 @@
       "last_illegal": null,
       "wage": 21,
       "sales_team": 1,
-      "prev_price": 2
+      "prev_price": 2,
+      "value_history": [
+        265287,
+        265285
+      ]
     },
     "state_25": {
       "id": "state_25",
@@ -311457,16 +311461,6 @@
   "gsi_history": [
     {
       "price": 94,
-      "change_percent": 1.0362235583978925,
-      "recorded_at": "2026-09-29T09:48:11.175Z"
-    },
-    {
-      "price": 94,
-      "change_percent": 0.6554227028888473,
-      "recorded_at": "2026-09-29T09:49:20.816Z"
-    },
-    {
-      "price": 94,
       "change_percent": 0.6273731109489425,
       "recorded_at": "2026-09-29T09:50:18.914Z"
     },
@@ -311954,6 +311948,16 @@
       "price": 102,
       "change_percent": 0.8320122802907383,
       "recorded_at": "2026-09-29T14:03:51.081Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.7605867323542821,
+      "recorded_at": "2026-09-29T14:06:44.539Z"
+    },
+    {
+      "price": 102,
+      "change_percent": 0.42656577393383377,
+      "recorded_at": "2026-09-29T14:06:47.414Z"
     }
   ],
   "factory_names": [
@@ -311975,7 +311979,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 32857.35266306192,
+  "money_printed": 32872.35266306192,
   "total_bank_reserves": 205099,
   "inflation_history": [
     0,
@@ -322949,7 +322953,7 @@
         "780837437987094560": 1
       },
       "2026-09-29": {
-        "1521043721129558017": 5,
+        "1521043721129558017": 6,
         "567599353955352578": 32,
         "1495413593242337421": 5,
         "963834359994007614": 15,
@@ -343129,8 +343133,8 @@
   ],
   "_lastCollectXP": {
     "xpGainC": 25,
-    "beforeLvlC": 5,
-    "afterLvl": 5,
+    "beforeLvlC": 20,
+    "afterLvl": 20,
     "leveled": []
   },
   "central_bank": {
