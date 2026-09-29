@@ -1034,8 +1034,8 @@
       "last_illegal": "2026-09-29T08:12:15.637Z",
       "total_heat_generated": 2130.504899999999,
       "bot_level": 29,
-      "bot_xp": 3028,
-      "bot_total_xp": 64798,
+      "bot_xp": 3052,
+      "bot_total_xp": 64822,
       "daily_work_count": 1022,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-29",
@@ -2157,7 +2157,19 @@
       "deal_reminder_sent": null,
       "pet_food_source": {
         "Bread": 376456
-      }
+      },
+      "crime_xp": {
+        "stealth": 0,
+        "lock": 0,
+        "nerves": 0
+      },
+      "crime_cd": {
+        "bank": "2026-09-29T08:42:30.129Z"
+      },
+      "gear": {},
+      "security": {},
+      "cutters": 0,
+      "collars": 0
     },
     "1456863215815364796": {
       "cash": 35,
@@ -310550,7 +310562,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 8077,
+      "funds": 8203,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 43143,
@@ -310695,7 +310707,6 @@
         "Contraband: Synthetic": 4,
         "Cake": 2,
         "Oil": 17,
-        "Bread": 1,
         "Zinc": 3,
         "Phosphorite": 1,
         "Uranium Rod": 2,
@@ -310706,7 +310717,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-29T02:58:26.993Z",
       "price_history": [
-        567327,
         5,
         5,
         5,
@@ -310759,6 +310769,7 @@
         5,
         5,
         5,
+        6,
         6,
         6,
         6,
@@ -311801,7 +311812,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 46096.03830237637,
+  "money_printed": 46222.03830237637,
   "total_bank_reserves": 188951,
   "inflation_history": [
     0,
@@ -312045,7 +312056,7 @@
   "market_demand": {
     "Fuel": 1.398611788087624,
     "Cake": 1.3944994162416458,
-    "Bread": 1.3636746111343276,
+    "Bread": 1.2936746111343276,
     "Copper Ingot": 1.3735019103494106,
     "Iron Ingot": 1.3194047675051834,
     "Steel Ingot": 1.3749421491929592,
@@ -312055,27 +312066,27 @@
     "Bricks": 1.3245359829035186,
     "Concrete": 1.4124833320924868,
     "Glass": 1.4119972433350463,
-    "Steel Beam": 1.386365769444279,
+    "Steel Beam": 1.396365769444279,
     "Machine Parts": 1.2829584116651693,
     "Refined Fuel": 1.3914652921295456,
     "Uranium Rod": 1.3991170865364646,
-    "Reactor Core": 1.4026597227393605,
-    "Circuit Board": 1.4000851329503423,
+    "Reactor Core": 1.4126597227393605,
+    "Circuit Board": 1.4100851329503423,
     "Flour": 1.3603366863484545,
     "Sugar": 1.1547707449304725,
     "Wine": 1.4108989331455628,
-    "Canned Food": 1.375193976432592,
+    "Canned Food": 1.385193976432592,
     "Canned Fish": 1.402157754597971,
     "Smoked Fish": 1.3965254768445263,
     "Fish Stew": 1.3865205861580907,
-    "Peat Fuel": 1.4046296751536262,
-    "Gas Fuel": 1.4023986203185221,
+    "Peat Fuel": 1.4146296751536263,
+    "Gas Fuel": 1.4123986203185221,
     "Fertilizer": 1.4007244691943428,
     "Cotton Fabric": 1.4046291870919143,
     "Manganese Alloy": 1.4122720790126166,
     "Sunflower Oil": 1.386027360428753,
     "Linen": 1.41018638806814,
-    "Corn Meal": 1.3770089791021958,
+    "Corn Meal": 1.3870089791021958,
     "Tea Pack": 1.411520121185702,
     "Citrus Juice": 1.4120052380108499,
     "Antimony Alloy": 1.4065923514264913,
@@ -312089,12 +312100,12 @@
     "Brass Valve": 1.404573775794472,
     "Radiator": 1.403829125601699,
     "Brass Lamp": 1.4122797203888675,
-    "Wheat": 0.60462847904884
+    "Wheat": 0.61462847904884
   },
   "market_last_sale": {
     "Fuel": "2026-09-22T11:21:46.556Z",
     "Cake": "2026-09-28T09:20:33.225Z",
-    "Bread": "2026-09-28T21:54:17.416Z",
+    "Bread": "2026-09-29T08:41:56.698Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-09-29T05:11:41.885Z",
@@ -321605,6 +321616,13 @@
       "username": "alice_orlowe",
       "action": "sellgrain",
       "details": "Baltic Timber & Harbour Co 7x Bread for ₽882"
+    },
+    {
+      "at": "2026-09-29T08:41:56.699Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "sellgrain",
+      "details": "Speers Realm 1x Bread for ₽126"
     }
   ],
   "total_rubles_history": [
@@ -322783,7 +322801,7 @@
       "1229741033265299506": 1790668683583,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790651904824,
-      "874346333882945547": 1790669551681,
+      "874346333882945547": 1790671327415,
       "870686833976172574": 1790609530338,
       "1186597507720019988": 1790597042678,
       "1521043721129558017": 1790669389948,
@@ -348033,7 +348051,7 @@
         "price": 197
       },
       "Bread": {
-        "qty": 53,
+        "qty": 54,
         "price": 141
       },
       "Canned Food": {
@@ -348065,7 +348083,7 @@
         "price": 114
       }
     },
-    "sold_count": 1081,
+    "sold_count": 1082,
     "bought_count": 196
   },
   "leaders": {
@@ -349472,10 +349490,9 @@
     "1379734184259747851"
   ],
   "grain_daily": {
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "vols": {
-      "state_26": 19,
-      "state_28": 8
+      "state_26": 1
     }
   },
   "pacs_pending": [
