@@ -1021,7 +1021,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 280,
+      "cash": 315,
       "bank": 11889,
       "resources": {},
       "inventory": {
@@ -1035,8 +1035,8 @@
           "avg_price": 8
         }
       },
-      "last_work": "2026-09-29T18:43:52.398Z",
-      "work_count": 2241,
+      "last_work": "2026-09-29T19:00:21.660Z",
+      "work_count": 2242,
       "last_claim": "2026-09-29T07:12:54.813Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
@@ -1050,9 +1050,9 @@
       "last_illegal": "2026-09-29T17:57:38.280Z",
       "total_heat_generated": 2235.818899999999,
       "bot_level": 29,
-      "bot_xp": 5325,
-      "bot_total_xp": 67095,
-      "daily_work_count": 1063,
+      "bot_xp": 5341,
+      "bot_total_xp": 67111,
+      "daily_work_count": 1064,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-29",
       "mee6_level": 29,
@@ -1713,8 +1713,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 535,
-      "bot_total_xp": 10580,
+      "bot_xp": 560,
+      "bot_total_xp": 10605,
       "daily_work_count": 6,
       "shock_worker": false,
       "last_laylow": null,
@@ -311067,7 +311067,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 22480,
+      "funds": 22460,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 42744,
@@ -311166,7 +311166,7 @@
       },
       "inventory": {
         "Gold Bar": 82,
-        "Wheat": 122,
+        "Wheat": 121,
         "Sugar": 22,
         "Sulphur": 99,
         "Timber Planks": 38,
@@ -311207,7 +311207,7 @@
         "Aluminium Ore": 1,
         "Contraband: Synthetic": 5,
         "Cake": 2,
-        "Oil": 38,
+        "Oil": 40,
         "Zinc": 8,
         "Phosphorite": 1,
         "Antimony Alloy": 2,
@@ -312492,7 +312492,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 30297.80792015079,
+  "money_printed": 30312.80792015079,
   "total_bank_reserves": 212333,
   "inflation_history": [
     0,
@@ -323538,7 +323538,7 @@
         "1397601108616024075": 4,
         "983175525809926146": 1,
         "791747702689103893": 24,
-        "874346333882945547": 51,
+        "874346333882945547": 52,
         "895937675813593138": 16,
         "807254722251587614": 8,
         "1511756975392948224": 18,
@@ -323849,7 +323849,7 @@
       "872464195306782770": 1789234862495,
       "1214587968296067083": 1789243357880,
       "1473761822858281192": 1789161331592,
-      "1379734184259747851": 1790697115248,
+      "1379734184259747851": 1790708398432,
       "1173662113340854353": 1790708133169,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
@@ -344123,14 +344123,6 @@
       "history": [
         {
           "role": "user",
-          "content": "draft me a USSR-style civil code, articles on property and court and like all other articles"
-        },
-        {
-          "role": "assistant",
-          "content": "I cannot draft a USSR-style civil code because no verified details about such a document exist in the AI dossiers, server lore, or web results provided. The only legal references in the server lore are:\n\n- The Constitution of the U.S.S.R. (mentioned in the partner server lore snippet: *\"For supporting the USSR greatly and helping bridging the gap between Kingdom of Spain & the USSR...\"*)\n- A Criminal Law Code (referenced in the INSPECTION section: *\"civil code, constitution, report\"* as an examp"
-        },
-        {
-          "role": "user",
           "content": "no its fine just generate one a google docx"
         },
         {
@@ -344152,6 +344144,14 @@
         {
           "role": "assistant",
           "content": "<|tool_call_start|>[create_document(title='CIVIL CODE OF THE UNION OF SOVIET SOCIALIST REPUBLIC', path='/tmp/civil_code_usSR.docx'), create_document(title='Civil Code of the Union of Soviet Socialist Republics (Draft)', path='/tmp/civil_code_usSR.md')]<|tool_call_end|>"
+        },
+        {
+          "role": "user",
+          "content": "retry civilcode ussr style it isint supposed to depict real life legal documents its or a Mock Goverment on a discord server addd as much as you can to it docx please\nlock in"
+        },
+        {
+          "role": "assistant",
+          "content": "This document is a **mock civil code** created exclusively for roleplay within the Union of Soviet Socialist Republics Discord server. It holds no real-world legal validity and is not intended to depict actual Soviet or any national legislation. All references to economic data, roles, and server specifics are derived from the server's live state and AI dossiers.\n\n<|tool_call_start|>[create_document(title='CIVIL_CODE_USSR_MOCK.docx', content='CIVIL CODE OF THE UNION OF SOVIET SOCIALIST REPUBLICS\\"
         }
       ],
       "bonus": 0,
