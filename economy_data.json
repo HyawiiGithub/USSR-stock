@@ -944,15 +944,15 @@
       "bank_robbed_at": "2026-09-29T08:43:00.641Z"
     },
     "1528783188728483944": {
-      "cash": 1290,
+      "cash": 1305,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 44,
       "share_holdings": {},
-      "last_work": "2026-09-28T22:05:30.180Z",
-      "work_count": 101,
+      "last_work": "2026-09-29T20:40:46.460Z",
+      "work_count": 102,
       "last_claim": "2026-09-28T21:52:06.093Z",
       "ssr_region": "Estonian SSR",
       "employed_at": "Baltic Timber & Harbour Co",
@@ -966,11 +966,11 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 1126,
-      "bot_total_xp": 6901,
-      "daily_work_count": 52,
+      "bot_xp": 1175,
+      "bot_total_xp": 6950,
+      "daily_work_count": 53,
       "shock_worker": false,
-      "last_daily_work_date": "2026-09-28",
+      "last_daily_work_date": "2026-09-29",
       "mee6_level": 11,
       "last_laylow": null,
       "work_reminder": false,
@@ -304473,8 +304473,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 1363,
-      "bot_total_xp": 13188,
+      "bot_xp": 1382,
+      "bot_total_xp": 13207,
       "daily_work_count": 13,
       "shock_worker": false,
       "last_laylow": null,
@@ -311777,7 +311777,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1528783188728483944>",
       "hq_ssr": "Estonian SSR",
-      "funds": 9418,
+      "funds": 9479,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 0,
@@ -311806,21 +311806,19 @@
       },
       "inventory": {
         "Phosphorite": 68,
-        "Peat": 121,
+        "Peat": 123,
         "Fish": 61,
         "Iron Ore": 1,
         "Oil Shale": 29,
-        "Gold": 7,
+        "Gold": 8,
         "Timber Planks": 39,
-        "Timber": 54,
-        "Sugar": 17,
-        "Wheat": 64
+        "Timber": 71,
+        "Sugar": 24,
+        "Wheat": 52
       },
       "created_at": "2026-08-25T17:16:44.366Z",
-      "last_collect": "2026-09-28T19:40:10.715Z",
+      "last_collect": "2026-09-29T20:40:49.813Z",
       "price_history": [
-        63216,
-        63237,
         63263,
         63391,
         63632,
@@ -311918,6 +311916,8 @@
         1,
         1,
         1,
+        1,
+        1,
         1
       ],
       "is_state_owned": true,
@@ -311947,7 +311947,9 @@
         66505,
         66505,
         66533,
-        66533
+        66533,
+        66701,
+        67049
       ]
     },
     "comp_29": {
@@ -312062,16 +312064,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 103,
-      "change_percent": 0.8341547946019611,
-      "recorded_at": "2026-09-29T17:47:26.060Z"
-    },
-    {
-      "price": 104,
-      "change_percent": 1.1405069984578915,
-      "recorded_at": "2026-09-29T17:50:15.366Z"
-    },
     {
       "price": 104,
       "change_percent": 0.1316094361932107,
@@ -312561,6 +312553,16 @@
       "price": 91,
       "change_percent": 0.7155765100603279,
       "recorded_at": "2026-09-29T20:37:58.368Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.8193269026137497,
+      "recorded_at": "2026-09-29T20:40:47.787Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.7902740595564858,
+      "recorded_at": "2026-09-29T20:40:51.312Z"
     }
   ],
   "factory_names": [],
@@ -312581,7 +312583,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 25205.18462826222,
+  "money_printed": 25220.18462826222,
   "total_bank_reserves": 212958,
   "inflation_history": [
     0,
@@ -323668,7 +323670,8 @@
         "1186597507720019988": 1,
         "913497950213267577": 2,
         "1380189428953124975": 1,
-        "771077238266658837": 1
+        "771077238266658837": 1,
+        "1528783188728483944": 1
       }
     },
     "collect_daily": {
@@ -323813,7 +323816,8 @@
         "Ukrainian SSR": 0,
         "Kazakh SSR": 0,
         "Russian SFSR": 0,
-        "Nuristani SSR": 4
+        "Nuristani SSR": 4,
+        "Estonian SSR": 0
       }
     },
     "qotd": {
@@ -324274,7 +324278,7 @@
       "1547713722775248996": 1790276684861,
       "1533784166624264312": 1790271551574,
       "1541138554107723838": 1790106991897,
-      "1467181939218714656": 1790714393710,
+      "1467181939218714656": 1790714486990,
       "1513508793596514456": 1790287413189,
       "796089488908091402": 1790195855204,
       "1110654646105686047": 1790117615558,
@@ -343840,9 +343844,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 26,
-    "beforeLvlC": 26,
-    "afterLvl": 26,
+    "xpGainC": 25,
+    "beforeLvlC": 11,
+    "afterLvl": 11,
     "leveled": []
   },
   "central_bank": {
