@@ -842,7 +842,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 19.315523701212328,
+      "heat": 18.384723652905695,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 871.099,
@@ -1030,7 +1030,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 254,
-      "heat": 26.207141885368355,
+      "heat": 25.320961510641958,
       "wanted": 0,
       "last_illegal": "2026-09-29T04:42:23.730Z",
       "total_heat_generated": 2096.0108999999993,
@@ -243439,8 +243439,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 25,
-      "bot_xp": 3749,
-      "bot_total_xp": 45749,
+      "bot_xp": 3767,
+      "bot_total_xp": 45767,
       "daily_work_count": 66,
       "shock_worker": false,
       "mee6_level": 25,
@@ -310689,8 +310689,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 6.046597852542735,
-      "underground_heat": 1207.529278585246,
+      "heat": 5.375258506760312,
+      "underground_heat": 1206.7628598020003,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -311143,11 +311143,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 83,
-      "change_percent": 0.9603317429121742,
-      "recorded_at": "2026-09-29T01:15:13.026Z"
-    },
     {
       "price": 84,
       "change_percent": 1.3587449726727676,
@@ -311642,6 +311637,11 @@
       "price": 98,
       "change_percent": 0.12711777899991308,
       "recorded_at": "2026-09-29T05:22:55.772Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.48606657780470347,
+      "recorded_at": "2026-09-29T05:25:16.333Z"
     }
   ],
   "factory_names": [
@@ -311996,7 +311996,6 @@
     "Gas Fuel": 4,
     "Cake": 4,
     "Canned Fish": 1,
-    "Steel Beam": 2,
     "Canned Food": 4,
     "Smoked Fish": 18,
     "Fish Stew": 5
@@ -312021,7 +312020,7 @@
     "Cotton Fabric": 13,
     "Reactor Core": 9,
     "Gas Fuel": 119,
-    "Steel Beam": 38,
+    "Steel Beam": 40,
     "Machine Parts": 163,
     "Sugar": 51,
     "Fertilizer": 17,
@@ -312037,11 +312036,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-09-25T21:22:03.038Z"
-    },
     {
       "item": "Brass",
       "qty": 2,
@@ -313536,6 +313530,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-09-29T05:10:12.920Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 2,
+      "at": "2026-09-29T05:25:12.866Z"
     }
   ],
   "demand_history": {
@@ -317101,6 +317100,11 @@
       {
         "demand": 1.386365769444279,
         "at": "2026-09-29T04:25:11.735Z",
+        "supply": 6
+      },
+      {
+        "demand": 1.386365769444279,
+        "at": "2026-09-29T05:25:12.866Z",
         "supply": 6
       }
     ],
@@ -321448,10 +321452,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1540964,
-      "at": "2026-09-28T20:46:10.222Z"
-    },
-    {
       "total": 1541135,
       "at": "2026-09-28T20:56:11.159Z"
     },
@@ -321846,6 +321846,10 @@
     {
       "total": 1490648,
       "at": "2026-09-29T05:20:17.134Z"
+    },
+    {
+      "total": 1490663,
+      "at": "2026-09-29T05:25:16.975Z"
     }
   ],
   "gold_rush": null,
@@ -321872,7 +321876,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 6.409200000000004,
+  "heat_global": 6.109200000000004,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -322661,7 +322665,7 @@
       "1532459782265639083": 1790449921722,
       "1407392503090642986": 1790186769263,
       "1456863215815364796": 1790542940201,
-      "963834359994007614": 1790658670747,
+      "963834359994007614": 1790659528914,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790653119600,
       "730223629849199093": 1790639874115,
@@ -348389,11 +348393,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69366000633354,
-      "top10": 100,
-      "at": "2026-09-28T20:46:10.247Z"
-    },
-    {
       "gini": 99.7067883465034,
       "top10": 100,
       "at": "2026-09-28T20:56:11.178Z"
@@ -348887,13 +348886,14 @@
       "gini": 99.69800891062181,
       "top10": 100,
       "at": "2026-09-29T05:20:17.150Z"
+    },
+    {
+      "gini": 99.69794002017973,
+      "top10": 100,
+      "at": "2026-09-29T05:25:17.000Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3130009,
-      "at": "2026-09-28T20:46:10.252Z"
-    },
     {
       "gdp": 3130194,
       "at": "2026-09-28T20:56:11.185Z"
@@ -349289,6 +349289,10 @@
     {
       "gdp": 3148804,
       "at": "2026-09-29T05:20:17.156Z"
+    },
+    {
+      "gdp": 3148843,
+      "at": "2026-09-29T05:25:17.015Z"
     }
   ],
   "purge_allowed": [
