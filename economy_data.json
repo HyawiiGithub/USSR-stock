@@ -560,7 +560,7 @@
       "last_daily_work_date": "2026-09-29",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-09-29T15:23:39.427Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-29T07:50:58.346Z",
       "train_reminder": false,
@@ -841,7 +841,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 17.195198981504745,
+      "heat": 16.34510308961321,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 922.099,
@@ -1030,7 +1030,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 142,
-      "heat": 21.354061638800804,
+      "heat": 20.509392179582886,
       "wanted": 0,
       "last_illegal": "2026-09-29T14:16:28.746Z",
       "total_heat_generated": 2209.010899999999,
@@ -126120,7 +126120,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 266,
-      "heat": 20.596597539034583,
+      "heat": 19.713392671744487,
       "wanted": 0,
       "last_illegal": "2026-09-29T14:48:13.776Z",
       "total_heat_generated": 31.256,
@@ -304434,8 +304434,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 308,
-      "bot_total_xp": 12133,
+      "bot_xp": 329,
+      "bot_total_xp": 12154,
       "daily_work_count": 8,
       "shock_worker": false,
       "last_laylow": null,
@@ -311094,8 +311094,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 22.33867482843963,
-      "underground_heat": 1241.446337387011,
+      "heat": 21.81411336560716,
+      "underground_heat": 1240.6751717920313,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -311638,11 +311638,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.5424856234187403,
-      "recorded_at": "2026-09-29T12:26:04.999Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.9855131270376427,
       "recorded_at": "2026-09-29T12:30:20.221Z"
     },
@@ -312135,6 +312130,11 @@
       "price": 99,
       "change_percent": 0.927157527537733,
       "recorded_at": "2026-09-29T15:23:00.316Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.7231312164556439,
+      "recorded_at": "2026-09-29T15:23:34.433Z"
     }
   ],
   "factory_names": [
@@ -312489,7 +312489,6 @@
     "Cake": 8,
     "Canned Food": 4,
     "Smoked Fish": 12,
-    "Circuit Board": 1,
     "Gas Fuel": 8,
     "Fish Stew": 3,
     "Canned Fish": 7
@@ -312510,7 +312509,7 @@
     "Canned Fish": 57,
     "Bread": 317,
     "Aluminium Sheet": 8,
-    "Circuit Board": 50,
+    "Circuit Board": 51,
     "Cotton Fabric": 13,
     "Reactor Core": 9,
     "Gas Fuel": 125,
@@ -312530,11 +312529,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Uranium Rod",
-      "qty": 1,
-      "at": "2026-09-26T06:52:10.653Z"
-    },
     {
       "item": "Brass",
       "qty": 1,
@@ -314029,6 +314023,11 @@
       "item": "Refined Fuel",
       "qty": 2,
       "at": "2026-09-29T15:08:33.169Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 1,
+      "at": "2026-09-29T15:23:33.315Z"
     }
   ],
   "demand_history": {
@@ -317122,6 +317121,11 @@
         "demand": 1.399859322204282,
         "at": "2026-09-29T13:23:37.337Z",
         "supply": 2
+      },
+      {
+        "demand": 1.3984487085206814,
+        "at": "2026-09-29T15:23:33.316Z",
+        "supply": 3
       }
     ],
     "Cotton Fabric": [
@@ -322147,10 +322151,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1492575,
-      "at": "2026-09-29T07:10:18.157Z"
-    },
-    {
       "total": 1492667,
       "at": "2026-09-29T07:15:17.996Z"
     },
@@ -322545,6 +322545,10 @@
     {
       "total": 1569686,
       "at": "2026-09-29T15:18:34.681Z"
+    },
+    {
+      "total": 1569716,
+      "at": "2026-09-29T15:23:34.898Z"
     }
   ],
   "gold_rush": null,
@@ -322571,7 +322575,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 13.733699999999986,
+  "heat_global": 13.433699999999986,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -323760,7 +323764,7 @@
       "1547713722775248996": 1790276684861,
       "1533784166624264312": 1790271551574,
       "1541138554107723838": 1790106991897,
-      "1467181939218714656": 1790695251447,
+      "1467181939218714656": 1790695434165,
       "1513508793596514456": 1790287413189,
       "796089488908091402": 1790195855204,
       "1110654646105686047": 1790117615558,
@@ -346394,6 +346398,12 @@
         "income": 66854,
         "spending": 49806,
         "at": "2026-09-29T15:18:34.812Z"
+      },
+      {
+        "balance": 17048,
+        "income": 66854,
+        "spending": 49806,
+        "at": "2026-09-29T15:23:34.921Z"
       }
     ]
   },
@@ -349439,11 +349449,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69660325293181,
-      "top10": 100,
-      "at": "2026-09-29T07:10:18.179Z"
-    },
-    {
       "gini": 99.6961630641342,
       "top10": 100,
       "at": "2026-09-29T07:15:18.020Z"
@@ -349937,13 +349942,14 @@
       "gini": 99.70069421284269,
       "top10": 100,
       "at": "2026-09-29T15:18:34.767Z"
+    },
+    {
+      "gini": 99.7006966425287,
+      "top10": 100,
+      "at": "2026-09-29T15:23:34.914Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3152923,
-      "at": "2026-09-29T07:10:18.187Z"
-    },
     {
       "gdp": 3153159,
       "at": "2026-09-29T07:15:18.042Z"
@@ -350339,6 +350345,10 @@
     {
       "gdp": 3278825,
       "at": "2026-09-29T15:18:34.812Z"
+    },
+    {
+      "gdp": 3278863,
+      "at": "2026-09-29T15:23:34.921Z"
     }
   ],
   "purge_allowed": [
@@ -351064,6 +351074,12 @@
       "perRole": 10000,
       "active": 234000,
       "at": "2026-09-29T15:18:34.817Z"
+    },
+    {
+      "enlisted": 26,
+      "perRole": 10000,
+      "active": 234000,
+      "at": "2026-09-29T15:23:34.922Z"
     }
   ],
   "casino": {
