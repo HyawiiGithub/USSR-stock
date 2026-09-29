@@ -1030,7 +1030,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 72,
-      "heat": 21.425771682541786,
+      "heat": 20.580728875688354,
       "wanted": 0,
       "last_illegal": "2026-09-29T11:07:01.756Z",
       "total_heat_generated": 2161.708899999999,
@@ -1540,13 +1540,13 @@
       "wanted": 0,
       "last_illegal": "2026-09-28T09:44:29.692Z",
       "total_heat_generated": 89.483,
-      "bot_level": 19,
-      "bot_xp": 2844,
-      "bot_total_xp": 23839,
+      "bot_level": 20,
+      "bot_xp": 14,
+      "bot_total_xp": 23864,
       "daily_work_count": 85,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-28",
-      "mee6_level": 19,
+      "mee6_level": 20,
       "last_laylow": "2026-09-28T08:30:39.817Z",
       "work_reminder": false,
       "work_reminder_sent": null,
@@ -310835,8 +310835,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 8.310208962760093,
-      "underground_heat": 1216.1331914782124,
+      "heat": 7.794243671534388,
+      "underground_heat": 1215.5806609476163,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -311296,11 +311296,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 92,
-      "change_percent": 0.5253708231438382,
-      "recorded_at": "2026-09-29T07:13:09.848Z"
-    },
     {
       "price": 92,
       "change_percent": 0.518156829765306,
@@ -311795,6 +311790,11 @@
       "price": 100,
       "change_percent": 0.5008181351438799,
       "recorded_at": "2026-09-29T11:07:03.443Z"
+    },
+    {
+      "price": 99,
+      "change_percent": -0.3768820222212731,
+      "recorded_at": "2026-09-29T11:10:18.970Z"
     }
   ],
   "factory_names": [
@@ -311816,7 +311816,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 44632.683768259885,
+  "money_printed": 43740.03009289469,
   "total_bank_reserves": 200020,
   "inflation_history": [
     0,
@@ -312059,23 +312059,23 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3987585819923063,
-    "Cake": 1.2486222351127838,
-    "Bread": 1.2323562902348695,
+    "Cake": 1.2656878096773003,
+    "Bread": 1.253775324231892,
     "Copper Ingot": 1.3653937167231496,
     "Iron Ingot": 1.319869528248633,
     "Steel Ingot": 1.36499588844661,
-    "Gold Bar": 1.0582800454386676,
+    "Gold Bar": 1.056895690584062,
     "Aluminium Ingot": 1.4038345192186692,
     "Timber Planks": 1.2543648996464867,
     "Bricks": 1.3245359829035186,
     "Concrete": 1.4124833320924868,
     "Glass": 1.4119972433350463,
     "Steel Beam": 1.387051326250424,
-    "Machine Parts": 1.377181887977465,
+    "Machine Parts": 1.3802862765790103,
     "Refined Fuel": 1.4035989690971593,
     "Uranium Rod": 1.3991170865364646,
     "Reactor Core": 1.4001749466446596,
-    "Circuit Board": 1.3481285799627174,
+    "Circuit Board": 1.3565042966325034,
     "Flour": 1.3384066740798217,
     "Sugar": 1.1121082772606958,
     "Wine": 1.40614778020626,
@@ -312149,7 +312149,7 @@
     "Cake": 9,
     "Canned Food": 7,
     "Smoked Fish": 16,
-    "Circuit Board": 5
+    "Circuit Board": 3
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -312167,7 +312167,7 @@
     "Canned Fish": 57,
     "Bread": 317,
     "Aluminium Sheet": 8,
-    "Circuit Board": 46,
+    "Circuit Board": 48,
     "Cotton Fabric": 13,
     "Reactor Core": 9,
     "Gas Fuel": 123,
@@ -312187,11 +312187,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-26T03:22:10.427Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -313686,6 +313681,11 @@
       "item": "Refined Fuel",
       "qty": 1,
       "at": "2026-09-29T10:55:14.114Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-09-29T11:10:14.275Z"
     }
   ],
   "demand_history": {
@@ -316743,6 +316743,11 @@
       {
         "demand": 1.251235572440045,
         "at": "2026-09-29T09:10:13.897Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.3565042966325034,
+        "at": "2026-09-29T11:10:14.280Z",
         "supply": 2
       }
     ],
@@ -321664,10 +321669,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1533911,
-      "at": "2026-09-29T02:55:15.202Z"
-    },
-    {
       "total": 1533929,
       "at": "2026-09-29T03:00:15.214Z"
     },
@@ -322062,6 +322063,10 @@
     {
       "total": 1525772,
       "at": "2026-09-29T11:05:20.377Z"
+    },
+    {
+      "total": 1525787,
+      "at": "2026-09-29T11:10:20.407Z"
     }
   ],
   "gold_rush": null,
@@ -322088,7 +322093,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 2.0162999999999998,
+  "heat_global": 1.7162999999999997,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -322862,7 +322867,7 @@
       "887419379833274388": 1790363157969,
       "807944786840387675": 1790570738607,
       "1529673877767196783": 1789377341879,
-      "913497950213267577": 1790679097969,
+      "913497950213267577": 1790680250050,
       "822079355298906112": 1790673051863,
       "1000271630154596473": 1790442695307,
       "437626060876546069": 1789233001616,
@@ -341424,13 +341429,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "895937675813593138",
-      "from": 9,
-      "to": 10,
-      "at": "2026-09-24T20:42:23.614Z",
-      "reason": "voice"
-    },
-    {
       "userId": "791747702689103893",
       "from": 19,
       "to": 20,
@@ -342821,6 +342819,13 @@
       "from": 2,
       "to": 3,
       "at": "2026-09-29T08:56:14.854Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "913497950213267577",
+      "from": 19,
+      "to": 20,
+      "at": "2026-09-29T11:10:50.051Z",
       "reason": "chat"
     }
   ],
@@ -345058,12 +345063,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.28,
+    "rub_per_usd": 10.3,
     "history": [
-      {
-        "rate": 10.51,
-        "at": "2026-09-28T19:25:59.521Z"
-      },
       {
         "rate": 10.59,
         "at": "2026-09-28T19:35:59.496Z"
@@ -345459,9 +345460,13 @@
       {
         "rate": 10.28,
         "at": "2026-09-29T11:00:15.258Z"
+      },
+      {
+        "rate": 10.3,
+        "at": "2026-09-29T11:10:15.031Z"
       }
     ],
-    "last_update": "2026-09-29T11:00:15.258Z",
+    "last_update": "2026-09-29T11:10:15.031Z",
     "manual_override": null
   },
   "national_budget": {
@@ -348621,11 +348626,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69817923606774,
-      "top10": 100,
-      "at": "2026-09-29T02:55:15.221Z"
-    },
-    {
       "gini": 99.69821562008916,
       "top10": 100,
       "at": "2026-09-29T03:00:15.243Z"
@@ -349119,13 +349119,14 @@
       "gini": 99.69714248247223,
       "top10": 100,
       "at": "2026-09-29T11:05:20.399Z"
+    },
+    {
+      "gini": 99.69716206617159,
+      "top10": 100,
+      "at": "2026-09-29T11:10:20.434Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3128650,
-      "at": "2026-09-29T02:55:15.232Z"
-    },
     {
       "gdp": 3130305,
       "at": "2026-09-29T03:00:15.257Z"
@@ -349521,6 +349522,10 @@
     {
       "gdp": 3211810,
       "at": "2026-09-29T11:05:20.413Z"
+    },
+    {
+      "gdp": 3211817,
+      "at": "2026-09-29T11:10:20.441Z"
     }
   ],
   "purge_allowed": [
@@ -349665,7 +349670,7 @@
       "index": "1553852700347727883",
       "privat": "1553833225384886387",
       "market": "1553838338161774703",
-      "hourly": "1554435138769649685"
+      "hourly": "1554450240088702977"
     },
     "enabledAt": "2026-09-27T18:18:28.523Z"
   },
