@@ -841,7 +841,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 14.641196732421513,
+      "heat": 13.803569119258222,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 922.099,
@@ -1030,7 +1030,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 142,
-      "heat": 18.666595053858693,
+      "heat": 17.83947509007887,
       "wanted": 0,
       "last_illegal": "2026-09-29T14:16:28.746Z",
       "total_heat_generated": 2209.010899999999,
@@ -2109,7 +2109,7 @@
       "bank": 15513,
       "resources": {},
       "inventory": {
-        "Bread": 5
+        "Bread": 4
       },
       "company_id": null,
       "gsi_shares": 0,
@@ -126120,7 +126120,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 331,
-      "heat": 28.241391671002503,
+      "heat": 27.416209013812537,
       "wanted": 0,
       "last_illegal": "2026-09-29T15:35:16.682Z",
       "total_heat_generated": 41.551,
@@ -311098,8 +311098,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 26.81884064315845,
-      "underground_heat": 1249.8906283146225,
+      "heat": 26.183831171591162,
+      "underground_heat": 1249.3430780244123,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -311648,11 +311648,6 @@
   "gsi_history": [
     {
       "price": 91,
-      "change_percent": 0.6057942023204896,
-      "recorded_at": "2026-09-29T12:49:54.512Z"
-    },
-    {
-      "price": 91,
       "change_percent": 0.1962087396461189,
       "recorded_at": "2026-09-29T12:50:20.808Z"
     },
@@ -312145,6 +312140,11 @@
       "price": 100,
       "change_percent": 0.3364309326695721,
       "recorded_at": "2026-09-29T15:43:16.498Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.6694149666636255,
+      "recorded_at": "2026-09-29T15:45:37.290Z"
     }
   ],
   "factory_names": [
@@ -322162,10 +322162,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1492697,
-      "at": "2026-09-29T07:25:18.197Z"
-    },
-    {
       "total": 1492712,
       "at": "2026-09-29T07:30:18.190Z"
     },
@@ -322560,6 +322556,10 @@
     {
       "total": 1583146,
       "at": "2026-09-29T15:33:35.150Z"
+    },
+    {
+      "total": 1585267,
+      "at": "2026-09-29T15:45:37.757Z"
     }
   ],
   "gold_rush": null,
@@ -322586,7 +322586,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 14.377949999999984,
+  "heat_global": 14.077949999999984,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -346427,6 +346427,12 @@
         "income": 66854,
         "spending": 49806,
         "at": "2026-09-29T15:33:35.174Z"
+      },
+      {
+        "balance": 17048,
+        "income": 66854,
+        "spending": 49806,
+        "at": "2026-09-29T15:45:37.790Z"
       }
     ]
   },
@@ -348150,13 +348156,13 @@
       "name": "Soviet Cat",
       "species": "cat",
       "alive": true,
-      "hunger": 20,
+      "hunger": 60,
       "water": 60,
       "health": 100,
       "quarters": 2,
       "cheap_streak": 0,
       "born_at": "2026-09-19T17:00:47.155Z",
-      "last_fed": "2026-09-28T20:54:39.533Z",
+      "last_fed": "2026-09-29T15:46:13.136Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -348202,7 +348208,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 9,
+      "friendship": 12,
       "hunts": 0,
       "hunt": null,
       "plant_lvl": 0,
@@ -348213,9 +348219,9 @@
         "n": 0
       },
       "starve_since": null,
-      "last_pet": "2026-09-29T07:38:25.692Z",
-      "last_feed_cmd": "2026-09-28T20:54:39.533Z",
-      "lastPetAct": "2026-09-29T07:38:25.692Z"
+      "last_pet": "2026-09-29T15:46:20.042Z",
+      "last_feed_cmd": "2026-09-29T15:46:13.136Z",
+      "lastPetAct": "2026-09-29T15:46:20.042Z"
     },
     "780837437987094560": {
       "name": "Daniel Astrae",
@@ -348790,8 +348796,8 @@
       "last_fed": "2026-09-29T14:35:20.901Z",
       "last_watered": null,
       "death": null,
-      "friendship": 21,
-      "last_pet": "2026-09-29T14:29:00.531Z",
+      "friendship": 23,
+      "last_pet": "2026-09-29T15:46:26.823Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -348862,7 +348868,8 @@
       },
       "starve_since": null,
       "warned_empty": false,
-      "last_feed_cmd": "2026-09-29T14:35:20.901Z"
+      "last_feed_cmd": "2026-09-29T14:35:20.901Z",
+      "lastPetAct": "2026-09-29T15:46:26.823Z"
     }
   },
   "pets_last_decay": "2026-09-29T14:57:35.888Z",
@@ -349482,11 +349489,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69612840380293,
-      "top10": 100,
-      "at": "2026-09-29T07:25:18.219Z"
-    },
-    {
       "gini": 99.69616949757018,
       "top10": 100,
       "at": "2026-09-29T07:30:18.227Z"
@@ -349980,13 +349982,14 @@
       "gini": 99.70067064680647,
       "top10": 100,
       "at": "2026-09-29T15:33:35.167Z"
+    },
+    {
+      "gini": 99.70038361535269,
+      "top10": 100,
+      "at": "2026-09-29T15:45:37.780Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3153237,
-      "at": "2026-09-29T07:25:18.227Z"
-    },
     {
       "gdp": 3153394,
       "at": "2026-09-29T07:30:18.238Z"
@@ -350382,6 +350385,10 @@
     {
       "gdp": 3285184,
       "at": "2026-09-29T15:33:35.174Z"
+    },
+    {
+      "gdp": 3286755,
+      "at": "2026-09-29T15:45:37.788Z"
     }
   ],
   "purge_allowed": [
@@ -351126,6 +351133,12 @@
       "perRole": 10000,
       "active": 234000,
       "at": "2026-09-29T15:33:35.175Z"
+    },
+    {
+      "enlisted": 26,
+      "perRole": 10000,
+      "active": 234000,
+      "at": "2026-09-29T15:45:37.791Z"
     }
   ],
   "casino": {
