@@ -243417,7 +243417,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 885,
+      "cash": 876,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243467,7 +243467,9 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {},
+      "pet_food_source": {
+        "Wheat": 274317
+      },
       "crime_xp": {
         "stealth": 0,
         "lock": 0,
@@ -310853,7 +310855,7 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 25,
+      "funds": 34,
       "invested_capital": 1149,
       "shares_total": 100000,
       "shares_available": 48287,
@@ -310898,7 +310900,7 @@
         "Uranium": 28,
         "Oil": 20,
         "Gold": 76,
-        "Wheat": 98,
+        "Wheat": 97,
         "Sugar": 14,
         "Lead": 6
       },
@@ -347992,16 +347994,16 @@
       "name": "Snuggles",
       "species": "cat",
       "alive": true,
-      "hunger": 20,
+      "hunger": 40,
       "water": 60,
       "health": 100,
       "quarters": 0,
-      "cheap_streak": 0,
+      "cheap_streak": 1,
       "born_at": "2026-09-29T05:18:08.862Z",
-      "last_fed": null,
+      "last_fed": "2026-09-29T12:27:10.796Z",
       "last_watered": null,
       "death": null,
-      "friendship": 24,
+      "friendship": 25,
       "last_pet": "2026-09-29T12:23:00.817Z",
       "stats": {
         "agility": 0,
@@ -348055,7 +348057,9 @@
         "n": 0
       },
       "lastPetAct": "2026-09-29T12:23:00.817Z",
-      "starve_since": null
+      "starve_since": null,
+      "warned_empty": false,
+      "last_feed_cmd": "2026-09-29T12:27:10.796Z"
     }
   },
   "pets_last_decay": "2026-09-29T11:54:26.020Z",
