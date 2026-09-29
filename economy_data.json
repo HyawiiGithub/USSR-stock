@@ -842,7 +842,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 375,
-      "heat": 27.91905434471886,
+      "heat": 27.066253344465288,
       "wanted": 0,
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 871.099,
@@ -310675,8 +310675,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 5.843601158313875,
-      "underground_heat": 1203.5474770184112,
+      "heat": 5.130113840316749,
+      "underground_heat": 1202.7920985990177,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -311123,11 +311123,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": -3.6811759665920936,
-      "recorded_at": "2026-09-28T23:25:06.291Z"
-    },
     {
       "price": 98,
       "change_percent": 0.5781367349738147,
@@ -311622,6 +311617,11 @@
       "price": 95,
       "change_percent": 0.5278529780161989,
       "recorded_at": "2026-09-29T04:28:32.326Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.2052372259993847,
+      "recorded_at": "2026-09-29T04:30:15.529Z"
     }
   ],
   "factory_names": [
@@ -311643,7 +311643,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 32177.151883617586,
+  "money_printed": 31533.608845945233,
   "total_bank_reserves": 188376,
   "inflation_history": [
     0,
@@ -321423,10 +321423,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1554884,
-      "at": "2026-09-28T19:47:40.527Z"
-    },
-    {
       "total": 1554914,
       "at": "2026-09-28T19:52:42.770Z"
     },
@@ -321821,6 +321817,10 @@
     {
       "total": 1542529,
       "at": "2026-09-29T04:25:15.756Z"
+    },
+    {
+      "total": 1542544,
+      "at": "2026-09-29T04:30:15.967Z"
     }
   ],
   "gold_rush": null,
@@ -321847,7 +321847,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 4.050000000000001,
+  "heat_global": 3.750000000000001,
   "police_budget": 255000,
   "police_raids": [],
   "underground_market": {
@@ -344806,12 +344806,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.39,
+    "rub_per_usd": 10.33,
     "history": [
-      {
-        "rate": 10.92,
-        "at": "2026-09-28T12:45:58.527Z"
-      },
       {
         "rate": 10.89,
         "at": "2026-09-28T12:55:58.426Z"
@@ -345207,9 +345203,13 @@
       {
         "rate": 10.39,
         "at": "2026-09-29T04:20:12.837Z"
+      },
+      {
+        "rate": 10.33,
+        "at": "2026-09-29T04:30:12.919Z"
       }
     ],
-    "last_update": "2026-09-29T04:20:12.837Z",
+    "last_update": "2026-09-29T04:30:12.919Z",
     "manual_override": null
   },
   "national_budget": {
@@ -348294,11 +348294,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.68612203994707,
-      "top10": 100,
-      "at": "2026-09-28T19:47:40.546Z"
-    },
-    {
       "gini": 99.686035095236,
       "top10": 100,
       "at": "2026-09-28T19:52:42.784Z"
@@ -348792,13 +348787,14 @@
       "gini": 99.69709133160454,
       "top10": 100,
       "at": "2026-09-29T04:25:15.781Z"
+    },
+    {
+      "gini": 99.69704858359552,
+      "top10": 100,
+      "at": "2026-09-29T04:30:15.986Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3127696,
-      "at": "2026-09-28T19:47:40.555Z"
-    },
     {
       "gdp": 3127790,
       "at": "2026-09-28T19:52:42.791Z"
@@ -349194,6 +349190,10 @@
     {
       "gdp": 3136951,
       "at": "2026-09-29T04:25:15.797Z"
+    },
+    {
+      "gdp": 3136982,
+      "at": "2026-09-29T04:30:15.992Z"
     }
   ],
   "purge_allowed": [
