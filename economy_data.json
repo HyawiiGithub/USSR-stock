@@ -1006,7 +1006,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 140,
+      "cash": 190,
       "bank": 11251,
       "resources": {},
       "inventory": {
@@ -1030,10 +1030,10 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 0,
-      "heat": 16.3825919322019,
+      "heat": 20.3825919322019,
       "wanted": 0,
       "last_illegal": "2026-09-29T13:17:44.873Z",
-      "total_heat_generated": 2189.328899999999,
+      "total_heat_generated": 2193.328899999999,
       "bot_level": 29,
       "bot_xp": 3949,
       "bot_total_xp": 65719,
@@ -1063,7 +1063,8 @@
       "gear": {},
       "cutters": 0,
       "collars": 0,
-      "security": {}
+      "security": {},
+      "casino_cd": "2026-09-29T14:00:45.159Z"
     },
     "": {
       "cash": 0,
@@ -311970,7 +311971,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 33462.60475822645,
+  "money_printed": 33512.60475822645,
   "total_bank_reserves": 204909,
   "inflation_history": [
     0,
@@ -321923,6 +321924,13 @@
       "username": "seniormanulos",
       "action": "mafia-hire",
       "details": "cosa nostra +1550582932425416714 as Associate"
+    },
+    {
+      "at": "2026-09-29T14:00:45.492Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "CASINO",
+      "details": "slots ₽100 → PAIR x1.5 ₽150"
     }
   ],
   "total_rubles_history": [
@@ -322351,7 +322359,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 7.8929999999999945,
+  "heat_global": 8.492999999999995,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -350550,5 +350558,10 @@
       "active": 234000,
       "at": "2026-09-29T13:57:32.401Z"
     }
-  ]
+  ],
+  "casino": {
+    "spins": 1,
+    "paid": 150,
+    "taken": 100
+  }
 }
