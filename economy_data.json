@@ -257,8 +257,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 1039,
-      "bot_total_xp": 22034,
+      "bot_xp": 1062,
+      "bot_total_xp": 22057,
       "daily_work_count": 88,
       "shock_worker": false,
       "mee6_level": 19,
@@ -1035,8 +1035,8 @@
       "last_illegal": "2026-09-29T08:12:15.637Z",
       "total_heat_generated": 2130.504899999999,
       "bot_level": 29,
-      "bot_xp": 3164,
-      "bot_total_xp": 64934,
+      "bot_xp": 3180,
+      "bot_total_xp": 64950,
       "daily_work_count": 1024,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-29",
@@ -310563,7 +310563,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 8083,
+      "funds": 17340,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 43143,
@@ -310690,7 +310690,7 @@
         "Oil Shale": 3,
         "Flax": 6,
         "Steel Ingot": 16,
-        "Reactor Core": 1,
+        "Reactor Core": 2,
         "Limestone": 19,
         "Citrus": 3,
         "Molybdenum Rod": 1,
@@ -310703,21 +310703,18 @@
         "Contraband: Cocaine": 6,
         "Contraband: LSD Sheets": 4,
         "Contraband: Cannabis": 5,
-        "Steel Beam": 10,
+        "Steel Beam": 7,
         "Aluminium Ore": 1,
         "Contraband: Synthetic": 4,
         "Cake": 11,
         "Oil": 23,
         "Zinc": 7,
         "Phosphorite": 1,
-        "Uranium Rod": 2,
         "Antimony Alloy": 2,
         "Bandage": 2,
         "Antimony": 1,
         "Uranium": 1,
-        "Bread": 9,
-        "Machine Parts": 7,
-        "Circuit Board": 7
+        "Machine Parts": 5
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-29T08:58:39.421Z",
@@ -310763,10 +310760,10 @@
         5,
         5,
         5,
-        5,
-        5,
-        5,
-        5,
+        6,
+        6,
+        6,
+        6,
         6,
         6,
         6,
@@ -310825,7 +310822,7 @@
       ],
       "is_state_owned": false,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-29T04:42:57.430Z",
+      "last_factorydeal": "2026-09-29T08:59:15.324Z",
       "last_govcontract": null,
       "specialization": "production",
       "managers": [
@@ -311298,11 +311295,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 101,
-      "change_percent": 0.1804418285722443,
-      "recorded_at": "2026-09-29T05:49:33.528Z"
-    },
     {
       "price": 101,
       "change_percent": 0.6452553636906854,
@@ -311797,19 +311789,25 @@
       "price": 91,
       "change_percent": 1.3187347777781924,
       "recorded_at": "2026-09-29T08:56:11.272Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.5966074512169769,
+      "recorded_at": "2026-09-29T08:58:40.905Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
+  "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Khrushchev Agricultural",
-    "Ural Heavy Industries",
+    "Stalin Tractor Plant",
     "Siberian Mining Co",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
     "Brezhnev Auto Factory",
-    "Volga Shipbuilding",
-    "Stalin Tractor Plant"
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -311817,7 +311815,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 45386.697536328844,
+  "money_printed": 54643.697536328844,
   "total_bank_reserves": 199150,
   "inflation_history": [
     0,
@@ -312059,12 +312057,12 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.398611788087624,
-    "Cake": 1.3929477329129416,
-    "Bread": 1.2936746111343276,
+    "Fuel": 1.408611788087624,
+    "Cake": 1.4029477329129416,
+    "Bread": 0.9786746111343275,
     "Copper Ingot": 1.3735019103494106,
-    "Iron Ingot": 1.3219926000191315,
-    "Steel Ingot": 1.3729139289678902,
+    "Iron Ingot": 1.3319926000191316,
+    "Steel Ingot": 1.3829139289678902,
     "Gold Bar": 1.0724612083161555,
     "Aluminium Ingot": 1.4038345192186692,
     "Timber Planks": 1.2543648996464867,
@@ -312073,36 +312071,36 @@
     "Glass": 1.4119972433350463,
     "Steel Beam": 1.393371888058819,
     "Machine Parts": 1.2889273376009318,
-    "Refined Fuel": 1.3935989690971593,
+    "Refined Fuel": 1.4035989690971593,
     "Uranium Rod": 1.3991170865364646,
-    "Reactor Core": 1.4090069871764714,
-    "Circuit Board": 1.4065882399566592,
+    "Reactor Core": 1.4190069871764714,
+    "Circuit Board": 1.2490882399566592,
     "Flour": 1.3536671489076824,
     "Sugar": 1.1547707449304725,
     "Wine": 1.409558725810991,
     "Canned Food": 1.388492090896259,
     "Canned Fish": 1.4006427061923807,
-    "Smoked Fish": 1.3949550832431508,
-    "Fish Stew": 1.3865205861580907,
+    "Smoked Fish": 1.4049550832431508,
+    "Fish Stew": 1.3965205861580907,
     "Peat Fuel": 1.4109722563652196,
     "Gas Fuel": 1.4088111603608429,
-    "Fertilizer": 1.4007244691943428,
+    "Fertilizer": 1.4107244691943428,
     "Cotton Fabric": 1.4046291870919143,
     "Manganese Alloy": 1.4122720790126166,
-    "Sunflower Oil": 1.386027360428753,
+    "Sunflower Oil": 1.396027360428753,
     "Linen": 1.41018638806814,
-    "Corn Meal": 1.3834274660339638,
+    "Corn Meal": 1.3934274660339638,
     "Tea Pack": 1.411520121185702,
-    "Citrus Juice": 1.4120052380108499,
+    "Citrus Juice": 1.4220052380108499,
     "Antimony Alloy": 1.4065923514264913,
     "Molybdenum Rod": 1.409593963188175,
     "Aluminium Sheet": 1.4046285986932059,
-    "Shale Oil": 1.4046203664007928,
-    "Bandage": 1.4085666813545739,
+    "Shale Oil": 1.4146203664007928,
+    "Bandage": 1.4185666813545739,
     "Ointment": 1.4119961494824205,
     "Pet Food": 1.4007199917291167,
     "Brass": 1.3890805903154286,
-    "Brass Valve": 1.404573775794472,
+    "Brass Valve": 1.414573775794472,
     "Radiator": 1.403829125601699,
     "Brass Lamp": 1.4122797203888675,
     "Wheat": 0.6109713592866299
@@ -312110,7 +312108,7 @@
   "market_last_sale": {
     "Fuel": "2026-09-22T11:21:46.556Z",
     "Cake": "2026-09-28T09:20:33.225Z",
-    "Bread": "2026-09-29T08:41:56.698Z",
+    "Bread": "2026-09-29T08:59:21.451Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-09-29T05:11:41.885Z",
@@ -312123,7 +312121,7 @@
     "Canned Food": "2026-09-29T06:03:08.653Z",
     "Uranium Rod": "2026-09-27T17:26:55.038Z",
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z",
-    "Circuit Board": "2026-09-28T05:09:22.519Z",
+    "Circuit Board": "2026-09-29T08:59:15.329Z",
     "Cotton Fabric": "2026-09-27T06:05:52.571Z",
     "Reactor Core": "2026-09-25T22:11:52.711Z",
     "Gas Fuel": "2026-09-28T07:37:31.504Z",
@@ -312151,7 +312149,8 @@
     "Canned Fish": 1,
     "Canned Food": 7,
     "Smoked Fish": 16,
-    "Fish Stew": 3
+    "Fish Stew": 3,
+    "Circuit Board": 7
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -321628,6 +321627,13 @@
       "username": "seniormanulos",
       "action": "sellgrain",
       "details": "Speers Realm 1x Bread for ₽126"
+    },
+    {
+      "at": "2026-09-29T08:59:21.451Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "sellgrain",
+      "details": "Speers Realm 9x Bread for ₽1,134"
     }
   ],
   "total_rubles_history": [
@@ -322806,7 +322812,7 @@
       "1229741033265299506": 1790668683583,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790651904824,
-      "874346333882945547": 1790671477508,
+      "874346333882945547": 1790672330541,
       "870686833976172574": 1790609530338,
       "1186597507720019988": 1790597042678,
       "1521043721129558017": 1790669389948,
@@ -322852,7 +322858,7 @@
       "963834359994007614": 1790659528914,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790653119600,
-      "730223629849199093": 1790668016903,
+      "730223629849199093": 1790672336670,
       "418231502627667979": 1790296609609,
       "710945531794554970": 1790641436911,
       "925564822781845595": 1789167727721,
@@ -348004,8 +348010,8 @@
         "price": 357
       },
       "Circuit Board": {
-        "qty": 30,
-        "price": 1151
+        "qty": 37,
+        "price": 1185
       },
       "Cotton Fabric": {
         "qty": 3,
@@ -348056,7 +348062,7 @@
         "price": 197
       },
       "Bread": {
-        "qty": 54,
+        "qty": 63,
         "price": 141
       },
       "Canned Food": {
@@ -348088,7 +348094,7 @@
         "price": 114
       }
     },
-    "sold_count": 1082,
+    "sold_count": 1098,
     "bought_count": 196
   },
   "leaders": {
@@ -349497,7 +349503,7 @@
   "grain_daily": {
     "date": "2026-09-29",
     "vols": {
-      "state_26": 1
+      "state_26": 10
     }
   },
   "pacs_pending": [
