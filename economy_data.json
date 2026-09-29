@@ -1300,7 +1300,7 @@
       "pet_food_source": {}
     },
     "791747702689103893": {
-      "cash": 0,
+      "cash": 15,
       "bank": 1201,
       "resources": {},
       "inventory": {},
@@ -1320,8 +1320,8 @@
           "avg_price": 5
         }
       },
-      "last_work": "2026-09-29T04:00:44.102Z",
-      "work_count": 232,
+      "last_work": "2026-09-29T04:05:53.744Z",
+      "work_count": 233,
       "last_claim": "2026-09-29T04:00:42.042Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "State Nuclear Energy",
@@ -1335,9 +1335,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 24,
-      "bot_xp": 407,
-      "bot_total_xp": 38227,
-      "daily_work_count": 223,
+      "bot_xp": 425,
+      "bot_total_xp": 38245,
+      "daily_work_count": 224,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-29",
       "mee6_level": 24,
@@ -310675,8 +310675,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 9.526146568821412,
-      "underground_heat": 1206.7757492159121,
+      "heat": 8.776767032264342,
+      "underground_heat": 1206.119793280466,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -310722,20 +310722,19 @@
         }
       },
       "inventory": {
-        "Timber": 408,
+        "Timber": 410,
         "Natural Gas": 192,
         "Iron Ore": 29,
         "Coal": 58,
         "Uranium": 27,
         "Oil": 35,
         "Gold": 72,
-        "Wheat": 163,
+        "Wheat": 162,
         "Sugar": 8
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-29T03:12:52.126Z",
       "price_history": [
-        252448,
         252448,
         252448,
         252453,
@@ -310788,6 +310787,7 @@
         256434,
         256554,
         256554,
+        2,
         2,
         2,
         2,
@@ -311122,16 +311122,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 98,
-      "change_percent": 0.35698059906176416,
-      "recorded_at": "2026-09-28T22:48:03.616Z"
-    },
-    {
-      "price": 98,
-      "change_percent": 0.08992774199156994,
-      "recorded_at": "2026-09-28T22:48:30.112Z"
-    },
     {
       "price": 101,
       "change_percent": 3.911507530128718,
@@ -311621,6 +311611,16 @@
       "price": 96,
       "change_percent": 0.15881077646611944,
       "recorded_at": "2026-09-29T04:00:45.272Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.5368240439762737,
+      "recorded_at": "2026-09-29T04:05:14.882Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.8400170309878101,
+      "recorded_at": "2026-09-29T04:05:54.872Z"
     }
   ],
   "factory_names": [
@@ -311642,7 +311642,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 33442.98196961431,
+  "money_printed": 33457.98196961431,
   "total_bank_reserves": 188242,
   "inflation_history": [
     0,
@@ -321412,10 +321412,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1539933,
-      "at": "2026-09-28T19:26:11.556Z"
-    },
-    {
       "total": 1539948,
       "at": "2026-09-28T19:31:11.672Z"
     },
@@ -321810,6 +321806,10 @@
     {
       "total": 1542356,
       "at": "2026-09-29T04:00:15.422Z"
+    },
+    {
+      "total": 1542484,
+      "at": "2026-09-29T04:05:15.465Z"
     }
   ],
   "gold_rush": null,
@@ -322407,7 +322407,7 @@
         "963834359994007614": 4,
         "1397601108616024075": 2,
         "983175525809926146": 1,
-        "791747702689103893": 1
+        "791747702689103893": 2
       }
     },
     "collect_daily": {
@@ -348277,11 +348277,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.68517967274487,
-      "top10": 100,
-      "at": "2026-09-28T19:26:11.572Z"
-    },
-    {
       "gini": 99.68508329100283,
       "top10": 100,
       "at": "2026-09-28T19:31:11.719Z"
@@ -348775,13 +348770,14 @@
       "gini": 99.69770271116187,
       "top10": 100,
       "at": "2026-09-29T04:00:15.479Z"
+    },
+    {
+      "gini": 99.69728208706803,
+      "top10": 100,
+      "at": "2026-09-29T04:05:15.475Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3109213,
-      "at": "2026-09-28T19:26:11.577Z"
-    },
     {
       "gdp": 3109348,
       "at": "2026-09-28T19:31:11.724Z"
@@ -349177,6 +349173,10 @@
     {
       "gdp": 3136584,
       "at": "2026-09-29T04:00:15.490Z"
+    },
+    {
+      "gdp": 3136752,
+      "at": "2026-09-29T04:05:15.481Z"
     }
   ],
   "purge_allowed": [
