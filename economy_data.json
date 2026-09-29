@@ -560,7 +560,7 @@
       "last_daily_work_date": "2026-09-29",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-09-29T14:57:36.176Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-29T07:50:58.346Z",
       "train_reminder": false,
@@ -846,8 +846,8 @@
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 914.099,
       "bot_level": 23,
-      "bot_xp": 1437,
-      "bot_total_xp": 35362,
+      "bot_xp": 1457,
+      "bot_total_xp": 35382,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 23,
@@ -243467,8 +243467,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 26,
-      "bot_xp": 772,
-      "bot_total_xp": 47247,
+      "bot_xp": 795,
+      "bot_total_xp": 47270,
       "daily_work_count": 76,
       "shock_worker": false,
       "mee6_level": 26,
@@ -304433,8 +304433,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 7,
-      "bot_total_xp": 11832,
+      "bot_xp": 32,
+      "bot_total_xp": 11857,
       "daily_work_count": 8,
       "shock_worker": false,
       "last_laylow": null,
@@ -310149,8 +310149,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 17,
+      "bot_total_xp": 17,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -310263,7 +310263,6 @@
       "last_collect": "2026-09-29T14:18:21.236Z",
       "price_history": [
         279216,
-        279216,
         279834,
         279834,
         279919,
@@ -310361,6 +310360,7 @@
         3,
         3,
         3,
+        3,
         3
       ],
       "is_state_owned": false,
@@ -310395,7 +310395,8 @@
         300763,
         300769,
         301085,
-        301562
+        301562,
+        301578
       ]
     },
     "state_24": {
@@ -311597,11 +311598,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.05051302719145372,
-      "recorded_at": "2026-09-29T11:40:18.880Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.11892403129901631,
       "recorded_at": "2026-09-29T11:43:23.227Z"
     },
@@ -312094,6 +312090,11 @@
       "price": 97,
       "change_percent": 0.39548945795500995,
       "recorded_at": "2026-09-29T14:53:58.120Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.7832689593222191,
+      "recorded_at": "2026-09-29T14:57:08.177Z"
     }
   ],
   "factory_names": [
@@ -323284,7 +323285,7 @@
       "791747702689103893": 1790689556141,
       "1456622719985782864": 1790692083052,
       "1082686076491137115": 1790693746314,
-      "1229741033265299506": 1790693769379,
+      "1229741033265299506": 1790693832081,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790683492230,
       "874346333882945547": 1790693681210,
@@ -323330,7 +323331,7 @@
       "1532459782265639083": 1790449921722,
       "1407392503090642986": 1790186769263,
       "1456863215815364796": 1790679245889,
-      "963834359994007614": 1790693788974,
+      "963834359994007614": 1790693849303,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790653119600,
       "730223629849199093": 1790676428216,
@@ -323719,7 +323720,7 @@
       "1547713722775248996": 1790276684861,
       "1533784166624264312": 1790271551574,
       "1541138554107723838": 1790106991897,
-      "1467181939218714656": 1790693773175,
+      "1467181939218714656": 1790693872893,
       "1513508793596514456": 1790287413189,
       "796089488908091402": 1790195855204,
       "1110654646105686047": 1790117615558,
@@ -323835,7 +323836,8 @@
       "1125803602829647983": 1790622667100,
       "800425003828379658": 1790688771745,
       "1524445912573804555": 1790689263282,
-      "1096504911665045635": 1790693605458
+      "1096504911665045635": 1790693605458,
+      "1550729634000150554": 1790693870467
     }
   },
   "mee6_cache": {
@@ -347862,9 +347864,9 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 100,
+      "hunger": 93,
       "water": 60,
-      "health": 95,
+      "health": 100,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:48:56.457Z",
@@ -347954,7 +347956,7 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 32,
+      "hunger": 24,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -348045,7 +348047,7 @@
       "name": "Soviet Cat",
       "species": "cat",
       "alive": true,
-      "hunger": 28,
+      "hunger": 20,
       "water": 60,
       "health": 100,
       "quarters": 2,
@@ -348133,7 +348135,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 98,
+      "health": 96,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
@@ -348204,7 +348206,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 96,
+      "health": 94,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T13:40:24.488Z",
@@ -348292,7 +348294,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 27,
+      "health": 25,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-24T06:57:33.301Z",
@@ -348433,7 +348435,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 58,
+      "health": 56,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-24T20:30:17.330Z",
@@ -348588,7 +348590,7 @@
       "name": "Snuggles 2.0",
       "species": "cat",
       "alive": true,
-      "hunger": 92,
+      "hunger": 84,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -348676,7 +348678,7 @@
       "name": "LilNonAgressionPact",
       "species": "cat",
       "alive": true,
-      "hunger": 80,
+      "hunger": 72,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -348760,7 +348762,7 @@
       "last_feed_cmd": "2026-09-29T14:35:20.901Z"
     }
   },
-  "pets_last_decay": "2026-09-29T13:55:32.562Z",
+  "pets_last_decay": "2026-09-29T14:57:35.888Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
