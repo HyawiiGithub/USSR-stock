@@ -311972,7 +311972,6 @@
   "ai_store": {
     "Machine Parts": 73,
     "Refined Fuel": 15,
-    "Timber Planks": 1,
     "Gas Fuel": 5,
     "Cake": 4,
     "Canned Fish": 1,
@@ -311984,7 +311983,7 @@
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
-    "Timber Planks": 191,
+    "Timber Planks": 192,
     "Refined Fuel": 211,
     "Fuel": 129,
     "Iron Ingot": 63,
@@ -312017,11 +312016,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-25T18:39:48.789Z"
-    },
     {
       "item": "Brass Valve",
       "qty": 1,
@@ -313516,6 +313510,11 @@
       "item": "Steel Beam",
       "qty": 2,
       "at": "2026-09-29T02:40:11.216Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 1,
+      "at": "2026-09-29T02:55:11.202Z"
     }
   ],
   "demand_history": {
@@ -313920,11 +313919,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 1.280756631966655,
-        "at": "2026-08-31T04:09:46.036Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2559989489603283,
         "at": "2026-09-03T21:50:36.323Z",
         "supply": 0
@@ -314217,6 +314211,11 @@
       {
         "demand": 1.2543221881028384,
         "at": "2026-09-29T01:10:11.405Z",
+        "supply": 77
+      },
+      {
+        "demand": 1.2543221881028384,
+        "at": "2026-09-29T02:55:11.202Z",
         "supply": 77
       }
     ],
