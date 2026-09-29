@@ -243404,7 +243404,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 1327,
+      "cash": 827,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -310570,7 +310570,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-29T02:58:26.993Z",
       "price_history": [
-        567457,
         567431,
         567397,
         567387,
@@ -310655,6 +310654,7 @@
         5,
         5,
         5,
+        6,
         6,
         6,
         6,
@@ -311143,11 +311143,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 90,
-      "change_percent": 0.4170720018507529,
-      "recorded_at": "2026-09-29T01:05:13.266Z"
-    },
     {
       "price": 83,
       "change_percent": -6.7130787794935625,
@@ -311642,6 +311637,11 @@
       "price": 99,
       "change_percent": 0.34430024724484937,
       "recorded_at": "2026-09-29T05:15:34.285Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.8155531022065523,
+      "recorded_at": "2026-09-29T05:17:33.028Z"
     }
   ],
   "factory_names": [
@@ -347719,6 +347719,73 @@
       },
       "starve_since": "2026-09-26T01:00:59.069Z",
       "warned_empty": true
+    },
+    "963834359994007614": {
+      "name": "Snuggles",
+      "species": "cat",
+      "alive": true,
+      "hunger": 60,
+      "water": 60,
+      "health": 100,
+      "quarters": 0,
+      "cheap_streak": 0,
+      "born_at": "2026-09-29T05:18:08.862Z",
+      "last_fed": null,
+      "last_watered": null,
+      "death": null,
+      "friendship": 20,
+      "last_pet": "2026-09-29T05:18:08.862Z",
+      "stats": {
+        "agility": 0,
+        "curiosity": 0,
+        "luck": 0,
+        "fortune": 0,
+        "thievery": 0,
+        "toxo": 0,
+        "endurance": 0
+      },
+      "toys": [],
+      "acc": {
+        "loot": null,
+        "speed_time": null,
+        "speed_inst": null,
+        "double": null,
+        "treasure": null
+      },
+      "acc_cats": [],
+      "armour": null,
+      "inv": {
+        "collar": 0,
+        "peanut": 0,
+        "catnip": 0
+      },
+      "skips": {
+        "good": 0,
+        "great": 0,
+        "excellent": 0,
+        "unforgettable": 0
+      },
+      "skip_pend": {
+        "good": [],
+        "great": [],
+        "excellent": [],
+        "unforgettable": []
+      },
+      "chests": {
+        "common": 0,
+        "rare": 0,
+        "epic": 0,
+        "legendary": 0
+      },
+      "hunts": 0,
+      "hunt": null,
+      "plant_lvl": 0,
+      "plant_xp": 0,
+      "fruit": 0,
+      "water_xp": {
+        "day": "",
+        "n": 0
+      }
     }
   },
   "pets_last_decay": "2026-09-29T00:00:11.659Z",
