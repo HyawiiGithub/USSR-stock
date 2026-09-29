@@ -228,7 +228,7 @@
     },
     "730223629849199093": {
       "username": "",
-      "cash": 213,
+      "cash": 231,
       "bank": 6506,
       "resources": {
         "Natural Gas": 4,
@@ -241,8 +241,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-29T09:03:54.425Z",
-      "work_count": 246,
+      "last_work": "2026-09-29T09:54:25.356Z",
+      "work_count": 247,
       "last_claim": "2026-09-28T06:36:15.168Z",
       "last_collect": null,
       "join_date": "2026-08-22T05:47:50.692471",
@@ -257,9 +257,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 1095,
-      "bot_total_xp": 22090,
-      "daily_work_count": 89,
+      "bot_xp": 1137,
+      "bot_total_xp": 22132,
+      "daily_work_count": 90,
       "shock_worker": false,
       "mee6_level": 19,
       "last_daily_work_date": "2026-09-29",
@@ -2149,7 +2149,7 @@
       "mee6_level": 25,
       "last_laylow": "2026-09-29T08:43:36.275Z",
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-29T09:54:24.432Z",
+      "work_reminder_sent": null,
       "collect_reminder": false,
       "collect_reminder_sent": null,
       "train_reminder": false,
@@ -310887,14 +310887,14 @@
         }
       },
       "inventory": {
-        "Timber": 436,
+        "Timber": 438,
         "Natural Gas": 213,
         "Iron Ore": 44,
         "Coal": 71,
         "Uranium": 28,
         "Oil": 20,
         "Gold": 76,
-        "Wheat": 106,
+        "Wheat": 105,
         "Sugar": 14,
         "Lead": 6
       },
@@ -311294,11 +311294,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 97,
-      "change_percent": 0.6861772541083728,
-      "recorded_at": "2026-09-29T06:32:19.089Z"
-    },
     {
       "price": 97,
       "change_percent": 0.33306921755085006,
@@ -311793,6 +311788,11 @@
       "price": 94,
       "change_percent": 0.6273731109489425,
       "recorded_at": "2026-09-29T09:50:18.914Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.8720677267177644,
+      "recorded_at": "2026-09-29T09:54:26.379Z"
     }
   ],
   "factory_names": [
@@ -311814,7 +311814,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 51331.56324544023,
+  "money_printed": 51349.56324544023,
   "total_bank_reserves": 200020,
   "inflation_history": [
     0,
@@ -312148,7 +312148,6 @@
     "Canned Fish": 1,
     "Canned Food": 7,
     "Smoked Fish": 16,
-    "Fish Stew": 1,
     "Circuit Board": 5
   },
   "global_consumption": {
@@ -312182,16 +312181,11 @@
     "Brass Valve": 12,
     "Pet Food": 9,
     "Radiator": 10,
-    "Fish Stew": 29,
+    "Fish Stew": 30,
     "Bricks": 20,
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-09-26T02:07:10.414Z"
-    },
     {
       "item": "Bread",
       "qty": 2,
@@ -313686,6 +313680,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-09-29T09:40:13.925Z"
+    },
+    {
+      "item": "Fish Stew",
+      "qty": 1,
+      "at": "2026-09-29T09:55:14.007Z"
     }
   ],
   "demand_history": {
@@ -318339,6 +318338,11 @@
         "demand": 1.3895077320415419,
         "at": "2026-09-29T09:25:14.035Z",
         "supply": 8
+      },
+      {
+        "demand": 1.3882283600067662,
+        "at": "2026-09-29T09:55:14.008Z",
+        "supply": 8
       }
     ],
     "Bricks": [
@@ -322654,7 +322658,7 @@
         "895937675813593138": 2,
         "807254722251587614": 2,
         "1511756975392948224": 17,
-        "730223629849199093": 2,
+        "730223629849199093": 3,
         "763384287037882399": 1
       }
     },
@@ -322875,7 +322879,7 @@
       "963834359994007614": 1790659528914,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790653119600,
-      "730223629849199093": 1790672651301,
+      "730223629849199093": 1790675674776,
       "418231502627667979": 1790296609609,
       "710945531794554970": 1790641436911,
       "925564822781845595": 1789167727721,
@@ -347219,7 +347223,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 93,
+      "hunger": 100,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -347311,7 +347315,7 @@
       "name": "Edward \"Google Giggles\" Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 56,
+      "hunger": 64,
       "water": 60,
       "health": 100,
       "quarters": 4,
@@ -347402,9 +347406,9 @@
       "name": "Soviet Cat",
       "species": "cat",
       "alive": true,
-      "hunger": 52,
+      "hunger": 60,
       "water": 60,
-      "health": 100,
+      "health": 96,
       "quarters": 2,
       "cheap_streak": 0,
       "born_at": "2026-09-19T17:00:47.155Z",
@@ -347488,7 +347492,7 @@
       "name": "Ray Собака",
       "species": "dog",
       "alive": true,
-      "hunger": 22,
+      "hunger": 30,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -347559,7 +347563,7 @@
       "name": "Mohammed Sumbul 500",
       "species": "cat",
       "alive": true,
-      "hunger": 12,
+      "hunger": 20,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -347649,15 +347653,15 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 33,
+      "health": 35,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-24T06:57:33.301Z",
       "last_fed": "2026-09-27T09:20:32.337Z",
       "last_watered": null,
       "death": null,
-      "friendship": 14,
-      "last_pet": "2026-09-29T09:54:24.099Z",
+      "friendship": 17,
+      "last_pet": "2026-09-28T09:20:34.605Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -347790,15 +347794,15 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 64,
+      "health": 66,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-24T20:30:17.330Z",
       "last_fed": "2026-09-27T12:01:04.960Z",
       "last_watered": null,
       "death": null,
-      "friendship": 22,
-      "last_pet": "2026-09-29T09:54:24.099Z",
+      "friendship": 25,
+      "last_pet": "2026-09-28T09:20:34.605Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -347945,7 +347949,7 @@
       "name": "Snuggles",
       "species": "cat",
       "alive": true,
-      "hunger": 28,
+      "hunger": 36,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -348011,7 +348015,7 @@
       "starve_since": null
     }
   },
-  "pets_last_decay": "2026-09-29T09:54:24.099Z",
+  "pets_last_decay": "2026-09-29T08:28:22.196Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
