@@ -1006,8 +1006,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 35,
-      "bank": 11441,
+      "cash": 0,
+      "bank": 11677,
       "resources": {},
       "inventory": {
         "Bread": 6
@@ -310687,7 +310687,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 20165,
+      "funds": 19964,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 43133,
@@ -310959,7 +310959,7 @@
       ],
       "work_food": "Wheat",
       "salary_config": {
-        "ceo": 1,
+        "ceo": 0,
         "director": 0,
         "manager": 0
       },
@@ -321942,6 +321942,20 @@
       "username": "seniormanulos",
       "action": "setsalary",
       "details": "Speers Realm ceo=1%"
+    },
+    {
+      "at": "2026-09-29T14:05:30.156Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "paysalaries",
+      "details": "Speers Realm paid ₽201 to ceo <@874346333882945547> ₽201"
+    },
+    {
+      "at": "2026-09-29T14:06:02.515Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "setsalary",
+      "details": "Speers Realm ceo=0%"
     }
   ],
   "total_rubles_history": [
