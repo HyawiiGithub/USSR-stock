@@ -314229,7 +314229,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 43806.197358996695,
+  "money_printed": 42930.07341181676,
   "total_bank_reserves": 476292,
   "inflation_history": [
     0,
@@ -321417,20 +321417,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-08-30T16:40:12.038Z",
-      "by": "1082686076491137115",
-      "username": "hyawii2.0",
-      "action": "goldrush",
-      "details": "Nuristani SSR +50% for 24h until 2026-08-31T16:40:11.999Z"
-    },
-    {
-      "at": "2026-08-31T12:33:50.529Z",
-      "by": "874346333882945547",
-      "username": "seniormanulos",
-      "action": "govcontract",
-      "details": "State bought 7x Canned Fish from Baltic Timber & Harbour Co for ₽1,222"
-    },
-    {
       "at": "2026-08-31T14:47:48.933Z",
       "by": "1082686076491137115",
       "username": "hyawii2.0",
@@ -324915,6 +324901,20 @@
       "username": "seniormanulos",
       "action": "sellgrain",
       "details": "Speers Realm 7x Bread for ₽882"
+    },
+    {
+      "at": "2026-09-30T22:57:39.850Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "addcandidate",
+      "details": "google giggles (C3)"
+    },
+    {
+      "at": "2026-09-30T22:57:59.366Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "addcandidate",
+      "details": "statelol (C4)"
     }
   ],
   "total_rubles_history": [
@@ -348476,12 +348476,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 9.68,
+    "rub_per_usd": 9.56,
     "history": [
-      {
-        "rate": 9.83,
-        "at": "2026-09-30T06:53:04.829Z"
-      },
       {
         "rate": 9.79,
         "at": "2026-09-30T07:03:04.988Z"
@@ -348877,9 +348873,13 @@
       {
         "rate": 9.68,
         "at": "2026-09-30T22:57:16.356Z"
+      },
+      {
+        "rate": 9.56,
+        "at": "2026-09-30T22:57:32.715Z"
       }
     ],
-    "last_update": "2026-09-30T22:57:16.356Z",
+    "last_update": "2026-09-30T22:57:32.715Z",
     "manual_override": null
   },
   "national_budget": {
@@ -352354,6 +352354,26 @@
           "ideology": null,
           "addedBy": "hyawii2.0",
           "addedAt": "2026-09-27T14:46:16.254Z"
+        },
+        {
+          "id": "C3",
+          "name": "google giggles",
+          "userId": "1082686076491137115",
+          "avatarHash": "a_86ae82c443261cc14f1ca03fbe5376f9",
+          "avatarAnimated": true,
+          "ideology": null,
+          "addedBy": "hyawii2.0",
+          "addedAt": "2026-09-30T22:57:39.449Z"
+        },
+        {
+          "id": "C4",
+          "name": "statelol",
+          "userId": "1538007114717593630",
+          "avatarHash": "16f0c29bdb0a3b0a4961e4830240f4a0",
+          "avatarAnimated": false,
+          "ideology": null,
+          "addedBy": "hyawii2.0",
+          "addedAt": "2026-09-30T22:57:58.983Z"
         }
       ],
       "votes": {},
@@ -352363,7 +352383,7 @@
       "status": "staged",
       "winnerId": null,
       "updateMessageId": "1553778908107903078",
-      "next_cid": 2
+      "next_cid": 4
     },
     "history": [
       {
@@ -352611,7 +352631,7 @@
     "confirmChannelId": "1547671101725876254",
     "animated": {},
     "next_num": 13,
-    "avatars_refreshed_at": "2026-09-27T14:42:38.765Z",
+    "avatars_refreshed_at": "2026-09-30T22:57:40.577Z",
     "board_style": "tno"
   },
   "currency": {
