@@ -311452,7 +311452,7 @@
         "Lead": 17,
         "Clay": 3,
         "Sand": 48,
-        "Coal": 177,
+        "Coal": 167,
         "Bricks": 43,
         "Copper": 14,
         "Corn": 6,
@@ -311467,7 +311467,7 @@
         "Oil Shale": 6,
         "Flax": 7,
         "Steel Ingot": 11,
-        "Limestone": 28,
+        "Limestone": 13,
         "Citrus": 7,
         "Molybdenum Rod": 1,
         "Contraband: Heroin": 6,
@@ -311496,7 +311496,8 @@
         "Cake": 7,
         "Machine Parts": 5,
         "Tea": 1,
-        "Uranium": 1
+        "Uranium": 1,
+        "Glass": 5
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-30T03:01:45.284Z",
@@ -311594,9 +311595,9 @@
         6,
         6,
         6,
-        6,
-        6,
         7,
+        6,
+        6,
         6,
         6,
         6,
@@ -311628,8 +311629,6 @@
       "prev_price": 6,
       "is_private": true,
       "value_history": [
-        651792,
-        651812,
         651784,
         651988,
         652079,
@@ -311727,7 +311726,9 @@
         673496,
         628496,
         628468,
-        628472
+        628472,
+        628600,
+        628632
       ]
     },
     "state_27": {
@@ -325008,21 +325009,9 @@
       "2026-Q3": {
         "positive": 89,
         "negative": 45,
-        "neutral": 2166,
-        "total": 2300,
+        "neutral": 2167,
+        "total": 2301,
         "mentions": [
-          {
-            "at": "2026-09-25T15:53:43.864Z",
-            "userId": "1456622719985782864",
-            "username": "seren_menzhinsky",
-            "channelId": "605951687974453248",
-            "messageId": "1553072015802638429",
-            "text": "!hyawii",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-25T15:56:51.151Z",
             "userId": "1506785783506534426",
@@ -331010,24 +330999,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-30T08:59:02.007Z",
+            "userId": "1532381114600128693",
+            "username": "georgy_zukhov_1945",
+            "channelId": "605951687974453248",
+            "messageId": "1554779587144196187",
+            "text": "<@1082686076491137115> can we talk together about a thing in the Congress in DMs please ?",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-18T21:34:20.617Z",
-        "userId": "780837437987094560",
-        "username": "napoleon87",
-        "channelId": "605951687974453248",
-        "messageId": "1550621019218255943",
-        "text": "<@1082686076491137115>",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-18T21:34:25.620Z",
         "userId": "780837437987094560",
@@ -343015,9 +343004,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-30T08:59:02.007Z",
+        "userId": "1532381114600128693",
+        "username": "georgy_zukhov_1945",
+        "channelId": "605951687974453248",
+        "messageId": "1554779587144196187",
+        "text": "<@1082686076491137115> can we talk together about a thing in the Congress in DMs please ?",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-30T08:55:26.920Z",
+    "last_scan": "2026-09-30T08:59:02.007Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
