@@ -313103,7 +313103,6 @@
     "Machine Parts": 71,
     "Refined Fuel": 13,
     "Cake": 5,
-    "Smoked Fish": 2,
     "Gas Fuel": 5,
     "Canned Fish": 7,
     "Corn Meal": 3,
@@ -313119,7 +313118,7 @@
     "Shale Oil": 27,
     "Peat Fuel": 10,
     "Cake": 354,
-    "Smoked Fish": 53,
+    "Smoked Fish": 55,
     "Canned Food": 61,
     "Uranium Rod": 28,
     "Canned Fish": 63,
@@ -313145,11 +313144,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-26T20:15:01.851Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 2,
@@ -314644,6 +314638,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-09-30T03:03:04.466Z"
+    },
+    {
+      "item": "Smoked Fish",
+      "qty": 2,
+      "at": "2026-09-30T03:18:04.595Z"
     }
   ],
   "demand_history": {
@@ -316769,6 +316768,11 @@
       {
         "demand": 1.373668206233654,
         "at": "2026-09-30T00:18:02.781Z",
+        "supply": 16
+      },
+      {
+        "demand": 1.373668206233654,
+        "at": "2026-09-30T03:18:04.600Z",
         "supply": 16
       }
     ],
