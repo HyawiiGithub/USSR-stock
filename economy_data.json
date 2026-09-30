@@ -1046,7 +1046,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 370,
-      "heat": 5.09349934935544,
+      "heat": 4.169328346016116,
       "wanted": 0,
       "last_illegal": "2026-09-29T17:57:38.280Z",
       "total_heat_generated": 2263.818899999999,
@@ -311541,7 +311541,7 @@
       },
       "wage": 35,
       "heat": 0,
-      "underground_heat": 1229.127900152714,
+      "underground_heat": 1228.5220610761887,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -312236,11 +312236,6 @@
   "gsi_history": [
     {
       "price": 90,
-      "change_percent": 0.7746560292946122,
-      "recorded_at": "2026-09-29T20:14:56.945Z"
-    },
-    {
-      "price": 90,
       "change_percent": 0.6986348934735247,
       "recorded_at": "2026-09-29T20:17:37.314Z"
     },
@@ -312733,6 +312728,11 @@
       "price": 104,
       "change_percent": -0.33808904665667167,
       "recorded_at": "2026-09-30T00:48:05.017Z"
+    },
+    {
+      "price": 103,
+      "change_percent": -0.47595573284894466,
+      "recorded_at": "2026-09-30T00:53:05.094Z"
     }
   ],
   "factory_names": [
@@ -312754,7 +312754,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 31984.819341213075,
+  "money_printed": 31345.12295438881,
   "total_bank_reserves": 209956,
   "inflation_history": [
     0,
@@ -322955,10 +322955,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1585612,
-      "at": "2026-09-29T16:50:44.816Z"
-    },
-    {
       "total": 1585377,
       "at": "2026-09-29T16:55:44.819Z"
     },
@@ -323353,6 +323349,10 @@
     {
       "total": 1602161,
       "at": "2026-09-30T00:48:05.323Z"
+    },
+    {
+      "total": 1602161,
+      "at": "2026-09-30T00:53:05.335Z"
     }
   ],
   "gold_rush": null,
@@ -323379,7 +323379,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 0.2999999999999999,
+  "heat_global": 0,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -346462,12 +346462,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.07,
+    "rub_per_usd": 10.02,
     "history": [
-      {
-        "rate": 10.32,
-        "at": "2026-09-29T09:20:14.608Z"
-      },
       {
         "rate": 10.24,
         "at": "2026-09-29T09:30:14.709Z"
@@ -346863,9 +346859,13 @@
       {
         "rate": 10.07,
         "at": "2026-09-30T00:43:02.915Z"
+      },
+      {
+        "rate": 10.02,
+        "at": "2026-09-30T00:53:03.210Z"
       }
     ],
-    "last_update": "2026-09-30T00:43:02.915Z",
+    "last_update": "2026-09-30T00:53:03.210Z",
     "manual_override": null
   },
   "national_budget": {
@@ -347106,12 +347106,6 @@
     ],
     "last_update": "2026-09-29T20:36:58.789Z",
     "balance_history": [
-      {
-        "balance": 17048,
-        "income": 66854,
-        "spending": 49806,
-        "at": "2026-09-29T16:50:44.860Z"
-      },
       {
         "balance": 17048,
         "income": 66854,
@@ -347705,6 +347699,12 @@
         "income": 66854,
         "spending": 50422,
         "at": "2026-09-30T00:48:05.340Z"
+      },
+      {
+        "balance": 16432,
+        "income": 66854,
+        "spending": 50422,
+        "at": "2026-09-30T00:53:05.360Z"
       }
     ]
   },
@@ -350781,11 +350781,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.6990643099785,
-      "top10": 100,
-      "at": "2026-09-29T16:50:44.850Z"
-    },
-    {
       "gini": 99.69874333334812,
       "top10": 100,
       "at": "2026-09-29T16:55:44.829Z"
@@ -351279,13 +351274,14 @@
       "gini": 99.69564690187815,
       "top10": 100,
       "at": "2026-09-30T00:48:05.334Z"
+    },
+    {
+      "gini": 99.69564690187815,
+      "top10": 100,
+      "at": "2026-09-30T00:53:05.354Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3294393,
-      "at": "2026-09-29T16:50:44.860Z"
-    },
     {
       "gdp": 3294150,
       "at": "2026-09-29T16:55:44.838Z"
@@ -351681,6 +351677,10 @@
     {
       "gdp": 3312619,
       "at": "2026-09-30T00:48:05.339Z"
+    },
+    {
+      "gdp": 3312619,
+      "at": "2026-09-30T00:53:05.360Z"
     }
   ],
   "purge_allowed": [
@@ -352261,12 +352261,6 @@
     }
   },
   "soldier_history": [
-    {
-      "enlisted": 26,
-      "perRole": 10000,
-      "active": 234000,
-      "at": "2026-09-29T16:50:44.860Z"
-    },
     {
       "enlisted": 26,
       "perRole": 10000,
@@ -352860,6 +352854,12 @@
       "perRole": 10000,
       "active": 245700,
       "at": "2026-09-30T00:48:05.340Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T00:53:05.360Z"
     }
   ],
   "casino": {
