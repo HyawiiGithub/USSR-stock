@@ -966,8 +966,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 61,
-      "bot_total_xp": 7091,
+      "bot_xp": 78,
+      "bot_total_xp": 7108,
       "daily_work_count": 54,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-30",
@@ -311442,30 +311442,30 @@
         "Sugar": 33,
         "Sulphur": 102,
         "Timber Planks": 38,
-        "Iron Ore": 38,
+        "Iron Ore": 39,
         "Iron Ingot": 48,
-        "Timber": 81,
+        "Timber": 82,
         "Lead": 17,
         "Clay": 3,
         "Sand": 48,
-        "Coal": 185,
+        "Coal": 187,
         "Bricks": 43,
         "Copper": 14,
         "Corn": 6,
-        "Wine": 1,
+        "Wine": 2,
         "Potash": 3,
-        "Grapes": 12,
+        "Grapes": 13,
         "Natural Gas": 3,
         "Sunflower": 5,
         "Copper Ingot": 28,
-        "Fish": 10,
+        "Fish": 11,
         "Aluminium": 3,
         "Oil Shale": 6,
-        "Flax": 6,
+        "Flax": 7,
         "Steel Ingot": 11,
         "Reactor Core": 3,
-        "Limestone": 27,
-        "Citrus": 6,
+        "Limestone": 28,
+        "Citrus": 7,
         "Molybdenum Rod": 1,
         "Contraband: Coca Paste": 8,
         "Contraband: Heroin": 5,
@@ -311478,16 +311478,16 @@
         "Steel Beam": 10,
         "Aluminium Ore": 1,
         "Contraband: Synthetic": 5,
-        "Oil": 51,
-        "Zinc": 11,
+        "Oil": 52,
+        "Zinc": 13,
         "Phosphorite": 1,
         "Antimony Alloy": 2,
         "Bandage": 2,
-        "Antimony": 1,
+        "Antimony": 3,
         "Gold": 6,
-        "Titanium": 6,
-        "Peat": 2,
-        "Cotton": 3,
+        "Titanium": 7,
+        "Peat": 3,
+        "Cotton": 4,
         "Graphite": 1,
         "Bread": 9,
         "Circuit Board": 7,
@@ -311495,7 +311495,9 @@
         "Contraband: Opium": 1,
         "Salt": 1,
         "Cake": 7,
-        "Machine Parts": 5
+        "Machine Parts": 5,
+        "Tea": 1,
+        "Uranium": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-30T03:01:45.284Z",
@@ -312356,11 +312358,6 @@
   "gsi_history": [
     {
       "price": 92,
-      "change_percent": 0.43064613266729146,
-      "recorded_at": "2026-09-30T02:38:05.900Z"
-    },
-    {
-      "price": 92,
       "change_percent": 0.7057406561770987,
       "recorded_at": "2026-09-30T02:43:05.897Z"
     },
@@ -312853,6 +312850,11 @@
       "price": 104,
       "change_percent": 0.07716910207837464,
       "recorded_at": "2026-09-30T07:59:39.973Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 0.13709579241033593,
+      "recorded_at": "2026-09-30T08:03:08.460Z"
     }
   ],
   "factory_names": [
@@ -312874,8 +312876,8 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 38783.44726675837,
-  "total_bank_reserves": 210838,
+  "money_printed": 38007.778321423204,
+  "total_bank_reserves": 211083,
   "inflation_history": [
     0,
     0,
@@ -313207,7 +313209,7 @@
     "Cake": 1,
     "Gas Fuel": 3,
     "Canned Fish": 5,
-    "Corn Meal": 2,
+    "Corn Meal": 1,
     "Brass Valve": 3,
     "Uranium Rod": 5,
     "Steel Beam": 1,
@@ -313238,7 +313240,7 @@
     "Sugar": 51,
     "Fertilizer": 17,
     "Flour": 20,
-    "Corn Meal": 11,
+    "Corn Meal": 12,
     "Aluminium Ingot": 5,
     "Brass": 56,
     "Brass Valve": 17,
@@ -313249,11 +313251,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Bread",
-      "qty": 1,
-      "at": "2026-09-27T01:31:45.289Z"
-    },
     {
       "item": "Smoked Fish",
       "qty": 1,
@@ -314748,6 +314745,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-30T07:48:05.424Z"
+    },
+    {
+      "item": "Corn Meal",
+      "qty": 1,
+      "at": "2026-09-30T08:03:05.680Z"
     }
   ],
   "demand_history": {
@@ -319124,6 +319126,11 @@
         "demand": 1.3712787073804977,
         "at": "2026-09-30T05:03:05.062Z",
         "supply": 14
+      },
+      {
+        "demand": 1.3776620439858673,
+        "at": "2026-09-30T08:03:05.681Z",
+        "supply": 13
       }
     ],
     "Aluminium Ingot": [
@@ -323159,10 +323166,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1596971,
-      "at": "2026-09-29T23:53:04.491Z"
-    },
-    {
       "total": 1596986,
       "at": "2026-09-29T23:58:04.470Z"
     },
@@ -323557,6 +323560,10 @@
     {
       "total": 1611645,
       "at": "2026-09-30T07:58:09.767Z"
+    },
+    {
+      "total": 1612996,
+      "at": "2026-09-30T08:03:09.765Z"
     }
   ],
   "gold_rush": null,
@@ -324424,7 +324431,7 @@
       "918518877414100993": 1790731048338,
       "1013047752747397202": 1789079044629,
       "1371822687231414293": 1789006535512,
-      "1528783188728483944": 1790755090152,
+      "1528783188728483944": 1790755424730,
       "906351599851556925": 1790508488617,
       "1180248109515808798": 1789166708996,
       "1321576779072409731": 1789018893347,
@@ -324942,21 +324949,9 @@
       "2026-Q3": {
         "positive": 89,
         "negative": 45,
-        "neutral": 2164,
-        "total": 2298,
+        "neutral": 2165,
+        "total": 2299,
         "mentions": [
-          {
-            "at": "2026-09-25T15:53:27.470Z",
-            "userId": "1456622719985782864",
-            "username": "seren_menzhinsky",
-            "channelId": "605951687974453248",
-            "messageId": "1553071946269327383",
-            "text": "<@1082686076491137115> !iyak",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-25T15:53:33.840Z",
             "userId": "1506785783506534426",
@@ -330944,24 +330939,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-30T08:03:45.538Z",
+            "userId": "1528783188728483944",
+            "username": "alice_orlowe",
+            "channelId": "1551466938113196072",
+            "messageId": "1554765678442192958",
+            "text": "Questions regarding 3.\n\nIs constitutional order and the interests of the Soviet people not expansive enough to cover civil moderation? What do those terms mean.\n\nWould there be no emergency powers available to the Premier that could allow him to do this? I note the general role of the Premier as \"a balancing force to the Executive Secretary\" - what is the Executive Secretary and what is the scope of the Premier's powers considering this?",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-18T21:29:55.102Z",
-        "userId": "1325111649816023092",
-        "username": "px.meo",
-        "channelId": "605951687974453248",
-        "messageId": "1550619903776661507",
-        "text": "<@1082686076491137115>",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-18T21:34:19.828Z",
         "userId": "780837437987094560",
@@ -342949,9 +342944,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-30T08:03:45.538Z",
+        "userId": "1528783188728483944",
+        "username": "alice_orlowe",
+        "channelId": "1551466938113196072",
+        "messageId": "1554765678442192958",
+        "text": "Questions regarding 3.\n\nIs constitutional order and the interests of the Soviet people not expansive enough to cover civil moderation? What do those terms mean.\n\nWould there be no emergency powers available to the Premier that could allow him to do this? I note the general role of the Premier as \"a balancing force to the Executive Secretary\" - what is the Executive Secretary and what is the scope of the Premier's powers considering this?",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-30T07:56:20.464Z",
+    "last_scan": "2026-09-30T08:03:45.538Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -346683,12 +346690,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 9.79,
+    "rub_per_usd": 9.95,
     "history": [
-      {
-        "rate": 10.04,
-        "at": "2026-09-29T16:00:37.660Z"
-      },
       {
         "rate": 10.15,
         "at": "2026-09-29T16:10:41.040Z"
@@ -347084,9 +347087,13 @@
       {
         "rate": 9.79,
         "at": "2026-09-30T07:53:05.097Z"
+      },
+      {
+        "rate": 9.95,
+        "at": "2026-09-30T08:03:05.433Z"
       }
     ],
-    "last_update": "2026-09-30T07:53:05.097Z",
+    "last_update": "2026-09-30T08:03:05.433Z",
     "manual_override": null
   },
   "national_budget": {
@@ -347332,12 +347339,6 @@
     ],
     "last_update": "2026-09-30T02:37:10.535Z",
     "balance_history": [
-      {
-        "balance": 16432,
-        "income": 66854,
-        "spending": 50422,
-        "at": "2026-09-29T23:53:04.555Z"
-      },
       {
         "balance": 16432,
         "income": 66854,
@@ -347931,6 +347932,12 @@
         "income": 66854,
         "spending": 51040,
         "at": "2026-09-30T07:58:09.782Z"
+      },
+      {
+        "balance": 15814,
+        "income": 66854,
+        "spending": 51040,
+        "at": "2026-09-30T08:03:09.781Z"
       }
     ]
   },
@@ -349526,25 +349533,8 @@
         "legendary": 0
       },
       "friendship": 100,
-      "hunts": 12,
-      "hunt": {
-        "start": "2026-09-29T19:54:13.449Z",
-        "end": "2026-09-30T06:50:51.849Z",
-        "durH": 12,
-        "instant": false,
-        "lootMult": 1,
-        "expB": 0,
-        "treas": [
-          6,
-          3,
-          1.5,
-          0.6000000000000001
-        ],
-        "zoom": false,
-        "thiefLvl": 2,
-        "pcs": 20,
-        "collarUsed": false
-      },
+      "hunts": 13,
+      "hunt": null,
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -350991,11 +350981,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69780161594961,
-      "top10": 100,
-      "at": "2026-09-29T23:53:04.548Z"
-    },
-    {
       "gini": 99.69774183701581,
       "top10": 100,
       "at": "2026-09-29T23:58:04.477Z"
@@ -351489,13 +351474,14 @@
       "gini": 99.70387316104244,
       "top10": 100,
       "at": "2026-09-30T07:58:09.774Z"
+    },
+    {
+      "gini": 99.70388241760686,
+      "top10": 100,
+      "at": "2026-09-30T08:03:09.773Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3312413,
-      "at": "2026-09-29T23:53:04.554Z"
-    },
     {
       "gdp": 3312570,
       "at": "2026-09-29T23:58:04.482Z"
@@ -351891,6 +351877,10 @@
     {
       "gdp": 3330815,
       "at": "2026-09-30T07:58:09.781Z"
+    },
+    {
+      "gdp": 3331639,
+      "at": "2026-09-30T08:03:09.781Z"
     }
   ],
   "purge_allowed": [
@@ -352503,12 +352493,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 243000,
-      "at": "2026-09-29T23:53:04.555Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 243000,
       "at": "2026-09-29T23:58:04.482Z"
     },
     {
@@ -353098,6 +353082,12 @@
       "perRole": 10000,
       "active": 245700,
       "at": "2026-09-30T07:58:09.782Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T08:03:09.781Z"
     }
   ],
   "casino": {
