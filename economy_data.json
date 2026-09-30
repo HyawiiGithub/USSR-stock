@@ -313079,7 +313079,7 @@
     "Refined Fuel": 16,
     "Cake": 7,
     "Canned Food": 2,
-    "Smoked Fish": 4,
+    "Smoked Fish": 2,
     "Gas Fuel": 5,
     "Canned Fish": 12,
     "Corn Meal": 4,
@@ -313095,7 +313095,7 @@
     "Shale Oil": 27,
     "Peat Fuel": 10,
     "Cake": 352,
-    "Smoked Fish": 51,
+    "Smoked Fish": 53,
     "Canned Food": 59,
     "Uranium Rod": 28,
     "Canned Fish": 58,
@@ -313121,11 +313121,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Fish Stew",
-      "qty": 1,
-      "at": "2026-09-26T16:32:21.281Z"
-    },
     {
       "item": "Steel Beam",
       "qty": 2,
@@ -314620,6 +314615,11 @@
       "item": "Brass Valve",
       "qty": 2,
       "at": "2026-09-30T00:03:02.642Z"
+    },
+    {
+      "item": "Smoked Fish",
+      "qty": 2,
+      "at": "2026-09-30T00:18:02.776Z"
     }
   ],
   "demand_history": {
@@ -316740,6 +316740,11 @@
       {
         "demand": 1.373668206233654,
         "at": "2026-09-29T23:48:02.378Z",
+        "supply": 16
+      },
+      {
+        "demand": 1.373668206233654,
+        "at": "2026-09-30T00:18:02.781Z",
         "supply": 16
       }
     ],
