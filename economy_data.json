@@ -533,7 +533,7 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 136,
+      "cash": 157,
       "bank": 0,
       "resources": {
         "Peat": 1
@@ -548,8 +548,8 @@
       "ceo_of": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-09-30T10:40:41.111Z",
-      "work_count": 287,
+      "last_work": "2026-09-30T10:50:25.543Z",
+      "work_count": 288,
       "last_claim": "2026-09-28T16:43:59.957Z",
       "last_collect": null,
       "join_date": "2026-08-22T18:27:29.616694",
@@ -564,15 +564,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 2585,
-      "bot_total_xp": 26435,
-      "daily_work_count": 278,
+      "bot_xp": 2600,
+      "bot_total_xp": 26450,
+      "daily_work_count": 279,
       "shock_worker": false,
       "mee6_level": 20,
       "last_daily_work_date": "2026-09-30",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": "2026-09-30T10:46:17.835Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-29T14:06:43.101Z",
       "train_reminder": false,
@@ -862,8 +862,8 @@
       "last_illegal": "2026-09-28T11:28:01.100Z",
       "total_heat_generated": 922.099,
       "bot_level": 23,
-      "bot_xp": 2750,
-      "bot_total_xp": 36675,
+      "bot_xp": 2768,
+      "bot_total_xp": 36693,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 23,
@@ -310885,7 +310885,7 @@
       "owner_id": "1513968015048184039",
       "ceo": "<@1521043721129558017>",
       "hq_ssr": "Ukrainian SSR",
-      "funds": 45211,
+      "funds": 45205,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 0,
@@ -310934,7 +310934,7 @@
       },
       "inventory": {
         "Salt": 46,
-        "Coal": 54,
+        "Coal": 55,
         "Gold": 6,
         "Natural Gas": 2,
         "Sugar": 2,
@@ -310965,7 +310965,7 @@
         "Flour": 34,
         "Steel Beam": 3,
         "Iron Ingot": 1,
-        "Wheat": 49,
+        "Wheat": 48,
         "Citrus": 3,
         "Copper": 1,
         "Radiator": 1,
@@ -310974,7 +310974,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-30T07:55:51.126Z",
       "price_history": [
-        310913,
         310931,
         320809,
         245809,
@@ -310985,6 +310984,7 @@
         245831,
         245837,
         245837,
+        2,
         2,
         2,
         2,
@@ -311147,7 +311147,8 @@
         275723,
         275723,
         275723,
-        275741
+        275741,
+        275743
       ]
     },
     "state_25": {
@@ -312374,11 +312375,6 @@
   "gsi_history": [
     {
       "price": 90,
-      "change_percent": 1.3689413230357212,
-      "recorded_at": "2026-09-30T06:03:49.313Z"
-    },
-    {
-      "price": 90,
       "change_percent": 0.2711891139378349,
       "recorded_at": "2026-09-30T06:08:07.353Z"
     },
@@ -312871,6 +312867,11 @@
       "price": 100,
       "change_percent": -0.13441333320058507,
       "recorded_at": "2026-09-30T10:48:12.559Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.6367531787138613,
+      "recorded_at": "2026-09-30T10:50:26.558Z"
     }
   ],
   "factory_names": [
@@ -312892,7 +312893,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 101848.44010746044,
+  "money_printed": 101863.44010746044,
   "total_bank_reserves": 198932,
   "inflation_history": [
     0,
@@ -324294,7 +324295,7 @@
         "807254722251587614": 3,
         "1528783188728483944": 1,
         "1550582932425416714": 1,
-        "1521043721129558017": 3,
+        "1521043721129558017": 4,
         "913497950213267577": 2,
         "1511756975392948224": 1,
         "1495413593242337421": 3,
@@ -324478,7 +324479,7 @@
       "791747702689103893": 1790715613675,
       "1456622719985782864": 1790752105972,
       "1082686076491137115": 1790765001540,
-      "1229741033265299506": 1790758646840,
+      "1229741033265299506": 1790765463286,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1790732349233,
       "874346333882945547": 1790762599672,
@@ -349742,9 +349743,26 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 68,
+      "friendship": 70,
       "hunts": 9,
-      "hunt": null,
+      "hunt": {
+        "start": "2026-09-30T10:50:16.887Z",
+        "end": "2026-09-30T22:14:16.887Z",
+        "durH": 12,
+        "instant": false,
+        "lootMult": 1,
+        "expB": 0,
+        "treas": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zoom": false,
+        "thiefLvl": 0,
+        "pcs": 10,
+        "collarUsed": false
+      },
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -349753,8 +349771,8 @@
         "n": 0
       },
       "starve_since": null,
-      "last_pet": "2026-09-30T07:58:38.054Z",
-      "lastPetAct": "2026-09-30T07:58:38.054Z",
+      "last_pet": "2026-09-30T10:50:28.689Z",
+      "lastPetAct": "2026-09-30T10:50:28.689Z",
       "last_feed_cmd": "2026-09-30T08:52:35.320Z",
       "last_train_cmd": "2026-09-28T19:35:53.277Z"
     },
