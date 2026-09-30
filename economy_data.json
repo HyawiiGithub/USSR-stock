@@ -1027,7 +1027,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 193,
+      "cash": 140,
       "bank": 6147,
       "resources": {},
       "inventory": {
@@ -311788,6 +311788,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1064258782064033833": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -312781,8 +312819,8 @@
         6,
         6,
         6,
-        6,
         7,
+        6,
         6,
         6,
         6,
@@ -312898,7 +312936,6 @@
         676802,
         676802,
         676802,
-        676802,
         676782,
         677925,
         688450,
@@ -312994,7 +313031,8 @@
         670981,
         671947,
         672241,
-        672229
+        672229,
+        672249
       ],
       "sales_team": 1
     },
@@ -313668,16 +313706,6 @@
   "gsi_history": [
     {
       "price": 98,
-      "change_percent": 0.24082283942998517,
-      "recorded_at": "2026-09-30T17:48:17.707Z"
-    },
-    {
-      "price": 98,
-      "change_percent": 0.2292842357712383,
-      "recorded_at": "2026-09-30T17:53:17.757Z"
-    },
-    {
-      "price": 98,
       "change_percent": 0.35693177411975907,
       "recorded_at": "2026-09-30T17:57:24.478Z"
     },
@@ -314165,6 +314193,16 @@
       "price": 96,
       "change_percent": -0.04773348495087947,
       "recorded_at": "2026-09-30T22:47:18.108Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.08439467056607125,
+      "recorded_at": "2026-09-30T22:51:56.890Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.16499009554994615,
+      "recorded_at": "2026-09-30T22:52:18.232Z"
     }
   ],
   "factory_names": [
@@ -324872,14 +324910,6 @@
   "total_rubles_history": [
     {
       "total": 1624740,
-      "at": "2026-09-30T15:43:17.652Z"
-    },
-    {
-      "total": 1624740,
-      "at": "2026-09-30T15:43:18.413Z"
-    },
-    {
-      "total": 1624740,
       "at": "2026-09-30T15:48:17.649Z"
     },
     {
@@ -325269,6 +325299,14 @@
     {
       "total": 1613611,
       "at": "2026-09-30T22:47:19.538Z"
+    },
+    {
+      "total": 1613573,
+      "at": "2026-09-30T22:52:19.646Z"
+    },
+    {
+      "total": 1613573,
+      "at": "2026-09-30T22:52:20.384Z"
     }
   ],
   "gold_rush": null,
@@ -349096,18 +349134,6 @@
         "balance": 14574,
         "income": 66854,
         "spending": 52280,
-        "at": "2026-09-30T15:43:17.706Z"
-      },
-      {
-        "balance": 14574,
-        "income": 66854,
-        "spending": 52280,
-        "at": "2026-09-30T15:43:18.426Z"
-      },
-      {
-        "balance": 14574,
-        "income": 66854,
-        "spending": 52280,
         "at": "2026-09-30T15:48:17.704Z"
       },
       {
@@ -349691,6 +349717,18 @@
         "income": 66854,
         "spending": 52902,
         "at": "2026-09-30T22:47:19.561Z"
+      },
+      {
+        "balance": 13952,
+        "income": 66854,
+        "spending": 52902,
+        "at": "2026-09-30T22:52:19.662Z"
+      },
+      {
+        "balance": 13952,
+        "income": 66854,
+        "spending": 52902,
+        "at": "2026-09-30T22:52:20.407Z"
       }
     ]
   },
@@ -352769,16 +352807,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.7210172972246,
-      "top10": 100,
-      "at": "2026-09-30T15:43:17.688Z"
-    },
-    {
-      "gini": 99.72105148628128,
-      "top10": 100,
-      "at": "2026-09-30T15:43:18.422Z"
-    },
-    {
       "gini": 99.72105148628128,
       "top10": 100,
       "at": "2026-09-30T15:48:17.692Z"
@@ -353267,17 +353295,19 @@
       "gini": 99.71125727102368,
       "top10": 100,
       "at": "2026-09-30T22:47:19.557Z"
+    },
+    {
+      "gini": 99.71125330304585,
+      "top10": 100,
+      "at": "2026-09-30T22:52:19.657Z"
+    },
+    {
+      "gini": 99.7112885849003,
+      "top10": 100,
+      "at": "2026-09-30T22:52:20.400Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3323104,
-      "at": "2026-09-30T15:43:17.706Z"
-    },
-    {
-      "gdp": 3323104,
-      "at": "2026-09-30T15:43:18.426Z"
-    },
     {
       "gdp": 3323104,
       "at": "2026-09-30T15:48:17.703Z"
@@ -353669,6 +353699,14 @@
     {
       "gdp": 3329412,
       "at": "2026-09-30T22:47:19.561Z"
+    },
+    {
+      "gdp": 3329414,
+      "at": "2026-09-30T22:52:19.662Z"
+    },
+    {
+      "gdp": 3329414,
+      "at": "2026-09-30T22:52:20.407Z"
     }
   ],
   "purge_allowed": [
@@ -354341,18 +354379,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 245700,
-      "at": "2026-09-30T15:43:17.706Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 245700,
-      "at": "2026-09-30T15:43:18.426Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 245700,
       "at": "2026-09-30T15:48:17.704Z"
     },
     {
@@ -354936,6 +354962,18 @@
       "perRole": 10000,
       "active": 245700,
       "at": "2026-09-30T22:47:19.561Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T22:52:19.662Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T22:52:20.408Z"
     }
   ],
   "casino": {
