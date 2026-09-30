@@ -915,8 +915,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 2409,
-      "bot_total_xp": 36334,
+      "bot_xp": 2428,
+      "bot_total_xp": 36353,
       "daily_work_count": 105,
       "shock_worker": false,
       "mee6_level": 23,
@@ -1725,8 +1725,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 14,
-      "bot_xp": 1756,
-      "bot_total_xp": 11801,
+      "bot_xp": 1779,
+      "bot_total_xp": 11824,
       "daily_work_count": 6,
       "shock_worker": false,
       "last_laylow": null,
@@ -2169,8 +2169,8 @@
       "last_illegal": "2026-09-28T09:53:52.602Z",
       "total_heat_generated": 918.9200000000002,
       "bot_level": 26,
-      "bot_xp": 1234,
-      "bot_total_xp": 47709,
+      "bot_xp": 1254,
+      "bot_total_xp": 47729,
       "daily_work_count": 199,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-30",
@@ -284691,8 +284691,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 1379,
-      "bot_total_xp": 19754,
+      "bot_xp": 1394,
+      "bot_total_xp": 19769,
       "daily_work_count": 4,
       "shock_worker": false,
       "last_laylow": null,
@@ -311400,6 +311400,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1121600691115397120": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -313264,16 +313302,6 @@
   "gsi_history": [
     {
       "price": 93,
-      "change_percent": 0.24952385859963847,
-      "recorded_at": "2026-09-30T14:58:16.354Z"
-    },
-    {
-      "price": 93,
-      "change_percent": 0.8659728697537304,
-      "recorded_at": "2026-09-30T14:58:55.573Z"
-    },
-    {
-      "price": 93,
       "change_percent": 0.6469808111009074,
       "recorded_at": "2026-09-30T15:03:16.189Z"
     },
@@ -313761,6 +313789,16 @@
       "price": 97,
       "change_percent": 0.013645839665756476,
       "recorded_at": "2026-09-30T19:37:12.134Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 6.428748970900333,
+      "recorded_at": "2026-09-30T19:42:11.196Z"
+    },
+    {
+      "price": 102,
+      "change_percent": -0.1042638983414211,
+      "recorded_at": "2026-09-30T19:42:12.312Z"
     }
   ],
   "factory_names": [
@@ -314117,7 +314155,7 @@
     "Reactor Core": 1,
     "Circuit Board": 2,
     "Cake": 10,
-    "Fish Stew": 8,
+    "Fish Stew": 6,
     "Sugar": 10
   },
   "global_consumption": {
@@ -314151,16 +314189,11 @@
     "Brass Valve": 22,
     "Pet Food": 9,
     "Radiator": 16,
-    "Fish Stew": 35,
+    "Fish Stew": 37,
     "Bricks": 20,
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Canned Fish",
-      "qty": 2,
-      "at": "2026-09-27T13:22:49.006Z"
-    },
     {
       "item": "Sunflower Oil",
       "qty": 1,
@@ -315655,6 +315688,11 @@
       "item": "Steel Beam",
       "qty": 1,
       "at": "2026-09-30T19:27:10.774Z"
+    },
+    {
+      "item": "Fish Stew",
+      "qty": 2,
+      "at": "2026-09-30T19:42:11.506Z"
     }
   ],
   "demand_history": {
@@ -320693,6 +320731,11 @@
         "demand": 1.3806647013137898,
         "at": "2026-09-30T16:33:06.867Z",
         "supply": 8
+      },
+      {
+        "demand": 1.3806647013137898,
+        "at": "2026-09-30T19:42:11.506Z",
+        "supply": 8
       }
     ],
     "Bricks": [
@@ -324372,14 +324415,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1600809,
-      "at": "2026-09-30T12:23:14.215Z"
-    },
-    {
-      "total": 1600809,
-      "at": "2026-09-30T12:23:15.048Z"
-    },
-    {
       "total": 1600938,
       "at": "2026-09-30T12:28:14.217Z"
     },
@@ -324770,6 +324805,14 @@
     {
       "total": 1630679,
       "at": "2026-09-30T19:37:13.549Z"
+    },
+    {
+      "total": 1615428,
+      "at": "2026-09-30T19:42:13.546Z"
+    },
+    {
+      "total": 1615428,
+      "at": "2026-09-30T19:42:14.540Z"
     }
   ],
   "gold_rush": null,
@@ -325583,9 +325626,9 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1790797278267,
+      "1544820489191559270": 1790797340204,
       "791747702689103893": 1790790879100,
-      "1456622719985782864": 1790797263151,
+      "1456622719985782864": 1790797347263,
       "1082686076491137115": 1790796706776,
       "1229741033265299506": 1790792020316,
       "1536339779140976711": 1790465632457,
@@ -325664,7 +325707,7 @@
       "1364506603545432084": 1789040579131,
       "1177928523005038613": 1789045155982,
       "1531451192419549208": 1790620606375,
-      "1511756975392948224": 1790797227317,
+      "1511756975392948224": 1790797348193,
       "1391043482541494282": 1790684011668,
       "832236870577422356": 1789047386911,
       "1011353559301890119": 1789824818607,
@@ -325713,7 +325756,7 @@
       "872464195306782770": 1789234862495,
       "1214587968296067083": 1789243357880,
       "1473761822858281192": 1789161331592,
-      "1379734184259747851": 1790797236717,
+      "1379734184259747851": 1790797334933,
       "1173662113340854353": 1790796525611,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
@@ -326175,21 +326218,9 @@
       "2026-Q3": {
         "positive": 96,
         "negative": 45,
-        "neutral": 2268,
-        "total": 2409,
+        "neutral": 2269,
+        "total": 2410,
         "mentions": [
-          {
-            "at": "2026-09-26T12:22:53.978Z",
-            "userId": "1483005845867593831",
-            "username": "roboute_guilliman2",
-            "channelId": "605951687974453248",
-            "messageId": "1553381345860784129",
-            "text": "<@1082686076491137115>",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-26T12:26:10.940Z",
             "userId": "1397601108616024075",
@@ -332177,24 +332208,24 @@
             "method": "keyword",
             "source": "text+reply",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-30T19:42:16.916Z",
+            "userId": "1379734184259747851",
+            "username": ".kewl1",
+            "channelId": "882617130800001024",
+            "messageId": "1554941464264445982",
+            "text": "**Premier:** <@1082686076491137115> (Hyawii)",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-20T09:07:25.074Z",
-        "userId": "1536339779140976711",
-        "username": "scod3llarp",
-        "channelId": "605951687974453248",
-        "messageId": "1551157823663243308",
-        "text": "i remember the perms that dep premier had",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-20T09:26:45.136Z",
         "userId": "1536339779140976711",
@@ -344182,9 +344213,21 @@
         "method": "keyword",
         "source": "text+reply",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-30T19:42:16.916Z",
+        "userId": "1379734184259747851",
+        "username": ".kewl1",
+        "channelId": "882617130800001024",
+        "messageId": "1554941464264445982",
+        "text": "**Premier:** <@1082686076491137115> (Hyawii)",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-30T19:39:04.930Z",
+    "last_scan": "2026-09-30T19:42:16.916Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -348579,18 +348622,6 @@
         "balance": 15190,
         "income": 66854,
         "spending": 51664,
-        "at": "2026-09-30T12:23:14.236Z"
-      },
-      {
-        "balance": 15190,
-        "income": 66854,
-        "spending": 51664,
-        "at": "2026-09-30T12:23:15.072Z"
-      },
-      {
-        "balance": 15190,
-        "income": 66854,
-        "spending": 51664,
         "at": "2026-09-30T12:28:14.238Z"
       },
       {
@@ -349174,6 +349205,18 @@
         "income": 66854,
         "spending": 52280,
         "at": "2026-09-30T19:37:13.566Z"
+      },
+      {
+        "balance": 14574,
+        "income": 66854,
+        "spending": 52280,
+        "at": "2026-09-30T19:42:13.578Z"
+      },
+      {
+        "balance": 14574,
+        "income": 66854,
+        "spending": 52280,
+        "at": "2026-09-30T19:42:14.561Z"
       }
     ]
   },
@@ -352252,16 +352295,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70530687887542,
-      "top10": 100,
-      "at": "2026-09-30T12:23:14.230Z"
-    },
-    {
-      "gini": 99.70534301537097,
-      "top10": 100,
-      "at": "2026-09-30T12:23:15.066Z"
-    },
-    {
       "gini": 99.70470513128863,
       "top10": 100,
       "at": "2026-09-30T12:28:14.227Z"
@@ -352750,17 +352783,19 @@
       "gini": 99.72289100027905,
       "top10": 100,
       "at": "2026-09-30T19:37:13.557Z"
+    },
+    {
+      "gini": 99.70584995069048,
+      "top10": 100,
+      "at": "2026-09-30T19:42:13.573Z"
+    },
+    {
+      "gini": 99.70588593674985,
+      "top10": 100,
+      "at": "2026-09-30T19:42:14.557Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3291992,
-      "at": "2026-09-30T12:23:14.236Z"
-    },
-    {
-      "gdp": 3291992,
-      "at": "2026-09-30T12:23:15.072Z"
-    },
     {
       "gdp": 3292113,
       "at": "2026-09-30T12:28:14.237Z"
@@ -353152,6 +353187,14 @@
     {
       "gdp": 3333264,
       "at": "2026-09-30T19:37:13.566Z"
+    },
+    {
+      "gdp": 3318013,
+      "at": "2026-09-30T19:42:13.578Z"
+    },
+    {
+      "gdp": 3318013,
+      "at": "2026-09-30T19:42:14.561Z"
     }
   ],
   "purge_allowed": [
@@ -353812,18 +353855,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 245700,
-      "at": "2026-09-30T12:23:14.237Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 245700,
-      "at": "2026-09-30T12:23:15.073Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 245700,
       "at": "2026-09-30T12:28:14.238Z"
     },
     {
@@ -354407,6 +354438,18 @@
       "perRole": 10000,
       "active": 245700,
       "at": "2026-09-30T19:37:13.567Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T19:42:13.578Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T19:42:14.561Z"
     }
   ],
   "casino": {
