@@ -1022,8 +1022,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 35,
-      "bank": 11359,
+      "cash": 0,
+      "bank": 13027,
       "resources": {},
       "inventory": {
         "Bread": 5
@@ -311261,7 +311261,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 22866,
+      "funds": 31029,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 42744,
@@ -311406,7 +311406,6 @@
         "Antimony Alloy": 2,
         "Bandage": 2,
         "Antimony": 1,
-        "Machine Parts": 5,
         "Gold": 6,
         "Titanium": 6,
         "Peat": 2,
@@ -311524,7 +311523,7 @@
       ],
       "is_state_owned": false,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-09-29T21:07:54.857Z",
+      "last_factorydeal": "2026-09-30T00:34:51.262Z",
       "last_govcontract": null,
       "specialization": "production",
       "managers": [
@@ -311548,7 +311547,6 @@
       "prev_price": 6,
       "is_private": true,
       "value_history": [
-        646056,
         646506,
         646526,
         646626,
@@ -311647,7 +311645,8 @@
         655925,
         656187,
         656187,
-        656167
+        656167,
+        660643
       ]
     },
     "state_27": {
@@ -312737,8 +312736,7 @@
     }
   ],
   "factory_names": [
-    "Soviet Iron Foundry",
-    "Ural Heavy Industries"
+    "Soviet Iron Foundry"
   ],
   "used_factory_names": [
     "Red Star Steelworks",
@@ -312747,7 +312745,8 @@
     "Lenin Machine Works",
     "Khrushchev Agricultural",
     "Siberian Mining Co",
-    "Stalin Tractor Plant"
+    "Stalin Tractor Plant",
+    "Ural Heavy Industries"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -312755,7 +312754,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 22823.570756339872,
+  "money_printed": 32619.570756339872,
   "total_bank_reserves": 212988,
   "inflation_history": [
     0,
@@ -312999,7 +312998,7 @@
   "market_demand": {
     "Fuel": 1.398834389879021,
     "Cake": 1.3883099925217843,
-    "Bread": 1.359987565609616,
+    "Bread": 1.369987565609616,
     "Copper Ingot": 1.350319577097638,
     "Iron Ingot": 1.312374868103189,
     "Steel Ingot": 1.3745323836545067,
@@ -313010,16 +313009,16 @@
     "Concrete": 1.4120153856252922,
     "Glass": 1.4062027150663683,
     "Steel Beam": 1.387051326250424,
-    "Machine Parts": 1.3947067823898212,
+    "Machine Parts": 1.282206782389821,
     "Refined Fuel": 1.4043027988158978,
     "Uranium Rod": 1.396668443956672,
     "Reactor Core": 1.3986854268509645,
     "Circuit Board": 1.3969149096638933,
-    "Flour": 1.3385247631494548,
+    "Flour": 1.3485247631494548,
     "Sugar": 1.0954281394372014,
     "Wine": 1.405763036729977,
     "Canned Food": 1.3927958018412805,
-    "Canned Fish": 1.3472974682508805,
+    "Canned Fish": 1.3572974682508805,
     "Smoked Fish": 1.373668206233654,
     "Fish Stew": 1.3625300718428686,
     "Peat Fuel": 1.404628920654077,
@@ -313034,7 +313033,7 @@
     "Citrus Juice": 1.412426338315031,
     "Antimony Alloy": 1.4066989551460967,
     "Molybdenum Rod": 1.4103481458282061,
-    "Aluminium Sheet": 1.4046285722922156,
+    "Aluminium Sheet": 1.4146285722922156,
     "Shale Oil": 1.4046259753065007,
     "Bandage": 1.4080665090378341,
     "Ointment": 1.4121522139150156,
@@ -313066,7 +313065,7 @@
     "Reactor Core": "2026-09-25T22:11:52.711Z",
     "Gas Fuel": "2026-09-29T12:57:23.739Z",
     "Steel Beam": "2026-09-28T16:35:50.396Z",
-    "Machine Parts": "2026-09-29T08:11:57.699Z",
+    "Machine Parts": "2026-09-30T00:34:51.263Z",
     "Sugar": "2026-09-21T22:38:00.619Z",
     "Fertilizer": "2026-09-21T08:07:31.041Z",
     "Flour": "2026-09-21T19:11:12.162Z",
@@ -313083,7 +313082,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 67,
+    "Machine Parts": 72,
     "Refined Fuel": 14,
     "Cake": 7,
     "Canned Food": 2,
@@ -322919,6 +322918,27 @@
       "username": "seniormanulos",
       "action": "CASINO",
       "details": "slots ₽1,700 → nothing ₽0"
+    },
+    {
+      "at": "2026-09-30T00:35:00.766Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "setsalary",
+      "details": "Speers Realm ceo=5%"
+    },
+    {
+      "at": "2026-09-30T00:35:09.634Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "paysalaries",
+      "details": "Speers Realm paid ₽1633 to ceo <@874346333882945547> ₽1633"
+    },
+    {
+      "at": "2026-09-30T00:35:20.040Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "setsalary",
+      "details": "Speers Realm ceo=0%"
     }
   ],
   "total_rubles_history": [
@@ -350132,8 +350152,8 @@
   "national_market": {
     "stock": {
       "Machine Parts": {
-        "qty": 219,
-        "price": 1787
+        "qty": 224,
+        "price": 1797
       },
       "Refined Fuel": {
         "qty": 97,
@@ -350228,7 +350248,7 @@
         "price": 114
       }
     },
-    "sold_count": 1159,
+    "sold_count": 1164,
     "bought_count": 212
   },
   "leaders": {
