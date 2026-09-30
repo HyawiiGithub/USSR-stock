@@ -312339,11 +312339,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": -0.07516850255662329,
-      "recorded_at": "2026-09-30T01:38:05.443Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.1764962273819968,
       "recorded_at": "2026-09-30T01:43:05.457Z"
     },
@@ -312836,6 +312831,11 @@
       "price": 101,
       "change_percent": 0.3528410647866578,
       "recorded_at": "2026-09-30T07:13:07.385Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.17837430227733048,
+      "recorded_at": "2026-09-30T07:18:07.345Z"
     }
   ],
   "factory_names": [
@@ -313193,7 +313193,7 @@
     "Corn Meal": 2,
     "Brass Valve": 5,
     "Uranium Rod": 5,
-    "Steel Beam": 3
+    "Steel Beam": 1
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -313215,7 +313215,7 @@
     "Cotton Fabric": 13,
     "Reactor Core": 9,
     "Gas Fuel": 130,
-    "Steel Beam": 40,
+    "Steel Beam": 42,
     "Machine Parts": 190,
     "Sugar": 51,
     "Fertilizer": 17,
@@ -313231,11 +313231,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Brass",
-      "qty": 1,
-      "at": "2026-09-27T00:46:45.189Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 2,
@@ -314730,6 +314725,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-09-30T07:03:05.349Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 2,
+      "at": "2026-09-30T07:18:05.359Z"
     }
   ],
   "demand_history": {
@@ -318456,6 +318456,11 @@
         "demand": 1.386365769444279,
         "at": "2026-09-29T05:25:12.866Z",
         "supply": 6
+      },
+      {
+        "demand": 1.3078366040257743,
+        "at": "2026-09-30T07:18:05.359Z",
+        "supply": 12
       }
     ],
     "Machine Parts": [
@@ -323132,10 +323137,6 @@
   "total_rubles_history": [
     {
       "total": 1597611,
-      "at": "2026-09-29T23:08:04.246Z"
-    },
-    {
-      "total": 1597611,
       "at": "2026-09-29T23:13:04.252Z"
     },
     {
@@ -323529,6 +323530,10 @@
     {
       "total": 1611475,
       "at": "2026-09-30T07:13:08.867Z"
+    },
+    {
+      "total": 1611475,
+      "at": "2026-09-30T07:18:08.843Z"
     }
   ],
   "gold_rush": null,
@@ -324909,21 +324914,9 @@
       "2026-Q3": {
         "positive": 89,
         "negative": 45,
-        "neutral": 2161,
-        "total": 2295,
+        "neutral": 2162,
+        "total": 2296,
         "mentions": [
-          {
-            "at": "2026-09-25T15:49:02.383Z",
-            "userId": "1456622719985782864",
-            "username": "seren_menzhinsky",
-            "channelId": "605951687974453248",
-            "messageId": "1553070831364739326",
-            "text": "<@1082686076491137115> role this one jurisconsult",
-            "sentiment": "neutral",
-            "method": "keyword",
-            "source": "text+reply",
-            "quarter": "2026-Q3"
-          },
           {
             "at": "2026-09-25T15:50:06.917Z",
             "userId": "1397601108616024075",
@@ -330911,24 +330904,24 @@
             "method": "keyword",
             "source": "text",
             "quarter": "2026-Q3"
+          },
+          {
+            "at": "2026-09-30T07:17:39.139Z",
+            "userId": "1528783188728483944",
+            "username": "alice_orlowe",
+            "channelId": "1551466938113196072",
+            "messageId": "1554754076586287125",
+            "text": "<@1082686076491137115>",
+            "sentiment": "neutral",
+            "method": "keyword",
+            "source": "text",
+            "quarter": "2026-Q3"
           }
         ]
       }
     },
     "current_quarter": "2026-Q3",
     "all_mentions": [
-      {
-        "at": "2026-09-18T20:54:45.585Z",
-        "userId": "1456622719985782864",
-        "username": "seren_menzhinsky",
-        "channelId": "1538703449095676016",
-        "messageId": "1550611057096261643",
-        "text": "<@1082686076491137115> explains",
-        "sentiment": "neutral",
-        "method": "keyword",
-        "source": "text",
-        "quarter": "2026-Q3"
-      },
       {
         "at": "2026-09-18T20:55:49.596Z",
         "userId": "1456622719985782864",
@@ -342916,9 +342909,21 @@
         "method": "keyword",
         "source": "text",
         "quarter": "2026-Q3"
+      },
+      {
+        "at": "2026-09-30T07:17:39.139Z",
+        "userId": "1528783188728483944",
+        "username": "alice_orlowe",
+        "channelId": "1551466938113196072",
+        "messageId": "1554754076586287125",
+        "text": "<@1082686076491137115>",
+        "sentiment": "neutral",
+        "method": "keyword",
+        "source": "text",
+        "quarter": "2026-Q3"
       }
     ],
-    "last_scan": "2026-09-29T21:16:50.518Z",
+    "last_scan": "2026-09-30T07:17:39.139Z",
     "report_channel_id": null,
     "last_report": "2026-09-08T20:16:39.461Z",
     "report_schedule": "quarterly",
@@ -347303,12 +347308,6 @@
         "balance": 16432,
         "income": 66854,
         "spending": 50422,
-        "at": "2026-09-29T23:08:04.261Z"
-      },
-      {
-        "balance": 16432,
-        "income": 66854,
-        "spending": 50422,
         "at": "2026-09-29T23:13:04.272Z"
       },
       {
@@ -347898,6 +347897,12 @@
         "income": 66854,
         "spending": 51040,
         "at": "2026-09-30T07:13:08.882Z"
+      },
+      {
+        "balance": 15814,
+        "income": 66854,
+        "spending": 51040,
+        "at": "2026-09-30T07:18:08.855Z"
       }
     ]
   },
@@ -350977,11 +350982,6 @@
     {
       "gini": 99.69848218544242,
       "top10": 100,
-      "at": "2026-09-29T23:08:04.253Z"
-    },
-    {
-      "gini": 99.69848218544242,
-      "top10": 100,
       "at": "2026-09-29T23:13:04.261Z"
     },
     {
@@ -351473,13 +351473,14 @@
       "gini": 99.70421625114807,
       "top10": 100,
       "at": "2026-09-30T07:13:08.876Z"
+    },
+    {
+      "gini": 99.70421625114807,
+      "top10": 100,
+      "at": "2026-09-30T07:18:08.850Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3312619,
-      "at": "2026-09-29T23:08:04.261Z"
-    },
     {
       "gdp": 3312619,
       "at": "2026-09-29T23:13:04.271Z"
@@ -351875,6 +351876,10 @@
     {
       "gdp": 3329631,
       "at": "2026-09-30T07:13:08.882Z"
+    },
+    {
+      "gdp": 3329631,
+      "at": "2026-09-30T07:18:08.855Z"
     }
   ],
   "purge_allowed": [
@@ -352483,12 +352488,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 243000,
-      "at": "2026-09-29T23:08:04.262Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 243000,
       "at": "2026-09-29T23:13:04.272Z"
     },
     {
@@ -353078,6 +353077,12 @@
       "perRole": 10000,
       "active": 245700,
       "at": "2026-09-30T07:13:08.882Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T07:18:08.856Z"
     }
   ],
   "casino": {
