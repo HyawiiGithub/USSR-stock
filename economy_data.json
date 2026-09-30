@@ -564,15 +564,15 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 43,
-      "bot_total_xp": 26993,
+      "bot_xp": 65,
+      "bot_total_xp": 27015,
       "daily_work_count": 282,
       "shock_worker": false,
       "mee6_level": 21,
       "last_daily_work_date": "2026-09-30",
       "last_laylow": null,
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-09-30T20:10:19.341Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_24@2026-09-30T07:55:51.126Z",
       "train_reminder": false,
@@ -1027,11 +1027,11 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 6719,
-      "bank": 274,
+      "cash": 0,
+      "bank": 6147,
       "resources": {},
       "inventory": {
-        "Bread": 3,
+        "Bread": 9,
         "Sunflower": 1,
         "Wine": 1,
         "Oil Shale": 1,
@@ -1730,8 +1730,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 15,
-      "bot_xp": 17,
-      "bot_total_xp": 11842,
+      "bot_xp": 39,
+      "bot_total_xp": 11864,
       "daily_work_count": 6,
       "shock_worker": false,
       "last_laylow": null,
@@ -312646,7 +312646,7 @@
       ],
       "work_food": "Wheat",
       "salary_config": {
-        "ceo": 20,
+        "ceo": 0,
         "director": 0,
         "manager": 0
       },
@@ -324560,6 +324560,13 @@
       "username": "seniormanulos",
       "action": "paysalaries",
       "details": "Speers Realm paid ₽6579 to ceo <@874346333882945547> ₽6579"
+    },
+    {
+      "at": "2026-09-30T20:09:28.902Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "setsalary",
+      "details": "Speers Realm ceo=0%"
     }
   ],
   "total_rubles_history": [
@@ -325785,7 +325792,7 @@
       "874346333882945547": 1790798204774,
       "870686833976172574": 1790797518213,
       "1186597507720019988": 1790786845978,
-      "1521043721129558017": 1790798927159,
+      "1521043721129558017": 1790798989930,
       "1397601108616024075": 1790798499256,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -325905,7 +325912,7 @@
       "872464195306782770": 1789234862495,
       "1214587968296067083": 1789243357880,
       "1473761822858281192": 1789161331592,
-      "1379734184259747851": 1790798629909,
+      "1379734184259747851": 1790798993012,
       "1173662113340854353": 1790796525611,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
@@ -351876,7 +351883,7 @@
         "price": 197
       },
       "Bread": {
-        "qty": 74,
+        "qty": 68,
         "price": 141
       },
       "Canned Food": {
@@ -351913,7 +351920,7 @@
       }
     },
     "sold_count": 1301,
-    "bought_count": 214
+    "bought_count": 220
   },
   "leaders": {
     "gs": {
