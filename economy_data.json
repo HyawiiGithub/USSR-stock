@@ -126151,7 +126151,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 594,
-      "heat": 9.876053542918097,
+      "heat": 8.974271598285055,
       "wanted": 0,
       "last_illegal": "2026-09-30T11:06:48.045Z",
       "total_heat_generated": 78.624,
@@ -311631,8 +311631,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 5.8523353625419015,
-      "underground_heat": 1221.652327728795,
+      "heat": 5.08758485658256,
+      "underground_heat": 1221.0843270301,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -312376,16 +312376,6 @@
   },
   "gsi_history": [
     {
-      "price": 97,
-      "change_percent": 0.44423719505007714,
-      "recorded_at": "2026-09-30T06:38:07.370Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.44564936711592956,
-      "recorded_at": "2026-09-30T06:43:07.377Z"
-    },
-    {
       "price": 103,
       "change_percent": 7.081948495488685,
       "recorded_at": "2026-09-30T06:48:02.020Z"
@@ -312874,6 +312864,16 @@
       "price": 90,
       "change_percent": 0.8032006903962552,
       "recorded_at": "2026-09-30T11:13:12.505Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 5.761524231402596,
+      "recorded_at": "2026-09-30T11:18:03.132Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.5074455632860159,
+      "recorded_at": "2026-09-30T11:18:12.562Z"
     }
   ],
   "factory_names": [
@@ -313225,7 +313225,7 @@
   "ai_store": {
     "Machine Parts": 65,
     "Refined Fuel": 17,
-    "Canned Fish": 3,
+    "Canned Fish": 1,
     "Brass Valve": 2,
     "Uranium Rod": 4,
     "Steel Beam": 9,
@@ -313248,7 +313248,7 @@
     "Smoked Fish": 55,
     "Canned Food": 64,
     "Uranium Rod": 29,
-    "Canned Fish": 67,
+    "Canned Fish": 69,
     "Bread": 317,
     "Aluminium Sheet": 8,
     "Circuit Board": 51,
@@ -313271,11 +313271,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-09-27T04:46:46.538Z"
-    },
     {
       "item": "Sunflower Oil",
       "qty": 1,
@@ -314770,6 +314765,11 @@
       "item": "Canned Food",
       "qty": 2,
       "at": "2026-09-30T11:03:06.069Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 2,
+      "at": "2026-09-30T11:18:06.146Z"
     }
   ],
   "demand_history": {
@@ -317461,6 +317461,11 @@
       {
         "demand": 1.4022165180116957,
         "at": "2026-09-30T09:33:06.053Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.4025476115678006,
+        "at": "2026-09-30T11:18:06.146Z",
         "supply": 1
       }
     ],
@@ -323278,10 +323283,6 @@
   "total_rubles_history": [
     {
       "total": 1603751,
-      "at": "2026-09-30T03:03:06.501Z"
-    },
-    {
-      "total": 1603751,
       "at": "2026-09-30T03:08:06.576Z"
     },
     {
@@ -323675,6 +323676,10 @@
     {
       "total": 1599514,
       "at": "2026-09-30T11:13:13.087Z"
+    },
+    {
+      "total": 1599514,
+      "at": "2026-09-30T11:18:13.079Z"
     }
   ],
   "gold_rush": null,
@@ -323701,7 +323706,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 1.1432999999999998,
+  "heat_global": 0.8432999999999997,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -347486,12 +347491,6 @@
         "balance": 15814,
         "income": 66854,
         "spending": 51040,
-        "at": "2026-09-30T03:03:06.553Z"
-      },
-      {
-        "balance": 15814,
-        "income": 66854,
-        "spending": 51040,
         "at": "2026-09-30T03:08:06.592Z"
       },
       {
@@ -348081,6 +348080,12 @@
         "income": 66854,
         "spending": 51664,
         "at": "2026-09-30T11:13:13.104Z"
+      },
+      {
+        "balance": 15190,
+        "income": 66854,
+        "spending": 51664,
+        "at": "2026-09-30T11:18:13.095Z"
       }
     ]
   },
@@ -351160,11 +351165,6 @@
     {
       "gini": 99.69657177576086,
       "top10": 100,
-      "at": "2026-09-30T03:03:06.547Z"
-    },
-    {
-      "gini": 99.69657177576086,
-      "top10": 100,
       "at": "2026-09-30T03:08:06.586Z"
     },
     {
@@ -351656,13 +351656,14 @@
       "gini": 99.70593989869552,
       "top10": 100,
       "at": "2026-09-30T11:13:13.095Z"
+    },
+    {
+      "gini": 99.70593989869552,
+      "top10": 100,
+      "at": "2026-09-30T11:18:13.090Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3332157,
-      "at": "2026-09-30T03:03:06.552Z"
-    },
     {
       "gdp": 3332157,
       "at": "2026-09-30T03:08:06.592Z"
@@ -352058,6 +352059,10 @@
     {
       "gdp": 3289587,
       "at": "2026-09-30T11:13:13.103Z"
+    },
+    {
+      "gdp": 3289587,
+      "at": "2026-09-30T11:18:13.095Z"
     }
   ],
   "purge_allowed": [
@@ -352683,12 +352688,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 245700,
-      "at": "2026-09-30T03:03:06.553Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 245700,
       "at": "2026-09-30T03:08:06.592Z"
     },
     {
@@ -353278,6 +353277,12 @@
       "perRole": 10000,
       "active": 245700,
       "at": "2026-09-30T11:13:13.104Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T11:18:13.096Z"
     }
   ],
   "casino": {
