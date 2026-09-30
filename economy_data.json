@@ -1046,7 +1046,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 370,
-      "heat": 0.5429570998024353,
+      "heat": 0,
       "wanted": 0,
       "last_illegal": "2026-09-29T17:57:38.280Z",
       "total_heat_generated": 2255.818899999999,
@@ -310509,6 +310509,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "983084055736225883": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -311499,7 +311537,7 @@
       },
       "wage": 35,
       "heat": 0,
-      "underground_heat": 1231.8175964073391,
+      "underground_heat": 1231.0865657624488,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -312187,11 +312225,6 @@
   "gsi_history": [
     {
       "price": 91,
-      "change_percent": 1.322502426443002,
-      "recorded_at": "2026-09-29T19:52:33.391Z"
-    },
-    {
-      "price": 91,
       "change_percent": 0.9920287653431517,
       "recorded_at": "2026-09-29T19:53:09.532Z"
     },
@@ -312684,6 +312717,11 @@
       "price": 90,
       "change_percent": 0.9521780536472245,
       "recorded_at": "2026-09-29T23:58:04.068Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 0.26511747983936895,
+      "recorded_at": "2026-09-30T00:03:04.089Z"
     }
   ],
   "factory_names": [
@@ -312705,7 +312743,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 24681.72890566807,
+  "money_printed": 24188.09432755471,
   "total_bank_reserves": 212987,
   "inflation_history": [
     0,
@@ -313041,7 +313079,7 @@
     "Gas Fuel": 5,
     "Canned Fish": 12,
     "Corn Meal": 4,
-    "Brass Valve": 5
+    "Brass Valve": 3
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -313071,7 +313109,7 @@
     "Corn Meal": 9,
     "Aluminium Ingot": 5,
     "Brass": 56,
-    "Brass Valve": 12,
+    "Brass Valve": 14,
     "Pet Food": 9,
     "Radiator": 16,
     "Fish Stew": 33,
@@ -313079,11 +313117,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Fish Stew",
-      "qty": 2,
-      "at": "2026-09-26T16:16:29.372Z"
-    },
     {
       "item": "Fish Stew",
       "qty": 1,
@@ -314578,6 +314611,11 @@
       "item": "Smoked Fish",
       "qty": 2,
       "at": "2026-09-29T23:48:02.371Z"
+    },
+    {
+      "item": "Brass Valve",
+      "qty": 2,
+      "at": "2026-09-30T00:03:02.642Z"
     }
   ],
   "demand_history": {
@@ -319150,6 +319188,11 @@
         "demand": 1.3398304865831656,
         "at": "2026-09-28T12:50:55.070Z",
         "supply": 0
+      },
+      {
+        "demand": 1.3872789471353888,
+        "at": "2026-09-30T00:03:02.642Z",
+        "supply": 2
       }
     ],
     "Pet Food": [
@@ -322856,14 +322899,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1585327,
-      "at": "2026-09-29T15:55:38.824Z"
-    },
-    {
-      "total": 1585373,
-      "at": "2026-09-29T16:00:38.909Z"
-    },
-    {
       "total": 1585373,
       "at": "2026-09-29T16:05:38.899Z"
     },
@@ -323254,6 +323289,14 @@
     {
       "total": 1596986,
       "at": "2026-09-29T23:58:04.470Z"
+    },
+    {
+      "total": 1596986,
+      "at": "2026-09-30T00:03:04.654Z"
+    },
+    {
+      "total": 1596986,
+      "at": "2026-09-30T00:03:05.213Z"
     }
   ],
   "gold_rush": null,
@@ -346358,12 +346401,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 10.07,
+    "rub_per_usd": 9.97,
     "history": [
-      {
-        "rate": 10.31,
-        "at": "2026-09-29T08:36:27.690Z"
-      },
       {
         "rate": 10.36,
         "at": "2026-09-29T08:40:14.694Z"
@@ -346759,9 +346798,13 @@
       {
         "rate": 10.07,
         "at": "2026-09-29T23:53:01.935Z"
+      },
+      {
+        "rate": 9.97,
+        "at": "2026-09-30T00:03:02.393Z"
       }
     ],
-    "last_update": "2026-09-29T23:53:01.935Z",
+    "last_update": "2026-09-30T00:03:02.393Z",
     "manual_override": null
   },
   "national_budget": {
@@ -347002,18 +347045,6 @@
     ],
     "last_update": "2026-09-29T20:36:58.789Z",
     "balance_history": [
-      {
-        "balance": 17048,
-        "income": 66854,
-        "spending": 49806,
-        "at": "2026-09-29T15:55:38.856Z"
-      },
-      {
-        "balance": 17048,
-        "income": 66854,
-        "spending": 49806,
-        "at": "2026-09-29T16:00:38.936Z"
-      },
       {
         "balance": 17048,
         "income": 66854,
@@ -347601,6 +347632,18 @@
         "income": 66854,
         "spending": 50422,
         "at": "2026-09-29T23:58:04.482Z"
+      },
+      {
+        "balance": 16432,
+        "income": 66854,
+        "spending": 50422,
+        "at": "2026-09-30T00:03:04.670Z"
+      },
+      {
+        "balance": 16432,
+        "income": 66854,
+        "spending": 50422,
+        "at": "2026-09-30T00:03:05.228Z"
       }
     ]
   },
@@ -350677,16 +350720,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.7003108273766,
-      "top10": 100,
-      "at": "2026-09-29T15:55:38.850Z"
-    },
-    {
-      "gini": 99.70062159316375,
-      "top10": 100,
-      "at": "2026-09-29T16:00:38.930Z"
-    },
-    {
       "gini": 99.70062159316375,
       "top10": 100,
       "at": "2026-09-29T16:05:38.947Z"
@@ -351175,17 +351208,19 @@
       "gini": 99.69774183701581,
       "top10": 100,
       "at": "2026-09-29T23:58:04.477Z"
+    },
+    {
+      "gini": 99.69774183701581,
+      "top10": 100,
+      "at": "2026-09-30T00:03:04.665Z"
+    },
+    {
+      "gini": 99.69777891935698,
+      "top10": 100,
+      "at": "2026-09-30T00:03:05.224Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3293334,
-      "at": "2026-09-29T15:55:38.856Z"
-    },
-    {
-      "gdp": 3293427,
-      "at": "2026-09-29T16:00:38.936Z"
-    },
     {
       "gdp": 3293427,
       "at": "2026-09-29T16:05:38.954Z"
@@ -351577,6 +351612,14 @@
     {
       "gdp": 3312570,
       "at": "2026-09-29T23:58:04.482Z"
+    },
+    {
+      "gdp": 3312570,
+      "at": "2026-09-30T00:03:04.670Z"
+    },
+    {
+      "gdp": 3312570,
+      "at": "2026-09-30T00:03:05.228Z"
     }
   ],
   "purge_allowed": [
@@ -352153,18 +352196,6 @@
     }
   },
   "soldier_history": [
-    {
-      "enlisted": 26,
-      "perRole": 10000,
-      "active": 234000,
-      "at": "2026-09-29T15:55:38.856Z"
-    },
-    {
-      "enlisted": 26,
-      "perRole": 10000,
-      "active": 234000,
-      "at": "2026-09-29T16:00:38.936Z"
-    },
     {
       "enlisted": 26,
       "perRole": 10000,
@@ -352752,6 +352783,18 @@
       "perRole": 10000,
       "active": 243000,
       "at": "2026-09-29T23:58:04.482Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T00:03:04.671Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T00:03:05.229Z"
     }
   ],
   "casino": {
