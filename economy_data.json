@@ -966,8 +966,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 44,
-      "bot_total_xp": 7074,
+      "bot_xp": 61,
+      "bot_total_xp": 7091,
       "daily_work_count": 54,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-30",
@@ -310955,21 +310955,17 @@
         "Fuel": 1,
         "Circuit Board": 2,
         "Corn": 4,
-        "Brass": 2,
         "Flour": 34,
-        "Steel Beam": 2,
+        "Steel Beam": 3,
         "Iron Ingot": 1,
-        "Steel Ingot": 6,
         "Wheat": 50,
         "Citrus": 1,
-        "Copper": 1
+        "Copper": 1,
+        "Radiator": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-09-30T07:55:51.126Z",
       "price_history": [
-        310293,
-        310295,
-        310399,
         310424,
         310487,
         310712,
@@ -310986,6 +310982,9 @@
         245831,
         245837,
         245837,
+        2,
+        2,
+        2,
         2,
         2,
         2,
@@ -311132,7 +311131,10 @@
         274181,
         274187,
         274891,
-        275125
+        275125,
+        275134,
+        275106,
+        275422
       ]
     },
     "state_25": {
@@ -312351,11 +312353,6 @@
   "gsi_history": [
     {
       "price": 92,
-      "change_percent": 0.68915775219404,
-      "recorded_at": "2026-09-30T02:28:05.697Z"
-    },
-    {
-      "price": 92,
       "change_percent": 0.24386064086026907,
       "recorded_at": "2026-09-30T02:33:05.935Z"
     },
@@ -312848,20 +312845,25 @@
       "price": 104,
       "change_percent": 0.3023657804165563,
       "recorded_at": "2026-09-30T07:55:52.155Z"
+    },
+    {
+      "price": 104,
+      "change_percent": 0.04285711909193107,
+      "recorded_at": "2026-09-30T07:58:08.441Z"
     }
   ],
   "factory_names": [
-    "Siberian Mining Co"
+    "Red Star Steelworks",
+    "Soviet Iron Foundry",
+    "Lenin Machine Works",
+    "Stalin Tractor Plant",
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
   ],
   "used_factory_names": [
-    "Soviet Iron Foundry",
-    "Brezhnev Auto Factory",
-    "Stalin Tractor Plant",
-    "Ural Heavy Industries",
-    "Volga Shipbuilding",
-    "Lenin Machine Works",
-    "Khrushchev Agricultural",
-    "Red Star Steelworks"
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -323153,10 +323155,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1596941,
-      "at": "2026-09-29T23:48:04.372Z"
-    },
-    {
       "total": 1596971,
       "at": "2026-09-29T23:53:04.491Z"
     },
@@ -323551,6 +323549,10 @@
     {
       "total": 1611630,
       "at": "2026-09-30T07:53:08.717Z"
+    },
+    {
+      "total": 1611645,
+      "at": "2026-09-30T07:58:09.767Z"
     }
   ],
   "gold_rush": null,
@@ -324418,7 +324420,7 @@
       "918518877414100993": 1790731048338,
       "1013047752747397202": 1789079044629,
       "1371822687231414293": 1789006535512,
-      "1528783188728483944": 1790754268210,
+      "1528783188728483944": 1790755090152,
       "906351599851556925": 1790508488617,
       "1180248109515808798": 1789166708996,
       "1321576779072409731": 1789018893347,
@@ -347330,12 +347332,6 @@
         "balance": 16432,
         "income": 66854,
         "spending": 50422,
-        "at": "2026-09-29T23:48:04.394Z"
-      },
-      {
-        "balance": 16432,
-        "income": 66854,
-        "spending": 50422,
         "at": "2026-09-29T23:53:04.555Z"
       },
       {
@@ -347925,6 +347921,12 @@
         "income": 66854,
         "spending": 51040,
         "at": "2026-09-30T07:53:08.739Z"
+      },
+      {
+        "balance": 15814,
+        "income": 66854,
+        "spending": 51040,
+        "at": "2026-09-30T07:58:09.782Z"
       }
     ]
   },
@@ -351002,11 +351004,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69794351328967,
-      "top10": 100,
-      "at": "2026-09-29T23:48:04.382Z"
-    },
-    {
       "gini": 99.69780161594961,
       "top10": 100,
       "at": "2026-09-29T23:53:04.548Z"
@@ -351500,13 +351497,14 @@
       "gini": 99.70401030990217,
       "top10": 100,
       "at": "2026-09-30T07:53:08.731Z"
+    },
+    {
+      "gini": 99.70387316104244,
+      "top10": 100,
+      "at": "2026-09-30T07:58:09.774Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3312239,
-      "at": "2026-09-29T23:48:04.393Z"
-    },
     {
       "gdp": 3312413,
       "at": "2026-09-29T23:53:04.554Z"
@@ -351902,6 +351900,10 @@
     {
       "gdp": 3329553,
       "at": "2026-09-30T07:53:08.739Z"
+    },
+    {
+      "gdp": 3330815,
+      "at": "2026-09-30T07:58:09.781Z"
     }
   ],
   "purge_allowed": [
@@ -352514,12 +352516,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 243000,
-      "at": "2026-09-29T23:48:04.394Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 243000,
       "at": "2026-09-29T23:53:04.555Z"
     },
     {
@@ -353109,6 +353105,12 @@
       "perRole": 10000,
       "active": 245700,
       "at": "2026-09-30T07:53:08.740Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 245700,
+      "at": "2026-09-30T07:58:09.782Z"
     }
   ],
   "casino": {
