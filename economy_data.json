@@ -284681,8 +284681,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 2133,
-      "bot_total_xp": 18113,
+      "bot_xp": 2153,
+      "bot_total_xp": 18133,
       "daily_work_count": 4,
       "shock_worker": false,
       "last_laylow": null,
@@ -304453,10 +304453,12 @@
       "pet_food_source": {}
     },
     "1467181939218714656": {
-      "cash": 173,
+      "cash": 129,
       "bank": 0,
       "resources": {},
-      "inventory": {},
+      "inventory": {
+        "Fish": 3
+      },
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
@@ -304489,7 +304491,7 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {
-        "Fish": 646614
+        "Fish": 643751
       },
       "mee6_level": 15,
       "last_daily_work_date": "2026-09-29"
@@ -311360,7 +311362,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 27213,
+      "funds": 27257,
       "invested_capital": 8196,
       "shares_total": 100000,
       "shares_available": 42744,
@@ -311479,7 +311481,7 @@
         "Natural Gas": 3,
         "Sunflower": 5,
         "Copper Ingot": 26,
-        "Fish": 11,
+        "Fish": 7,
         "Aluminium": 3,
         "Oil Shale": 6,
         "Flax": 7,
@@ -313239,7 +313241,7 @@
     "Uranium Rod": 4,
     "Steel Beam": 7,
     "Smoked Fish": 10,
-    "Reactor Core": 3,
+    "Reactor Core": 2,
     "Circuit Board": 8,
     "Canned Food": 3,
     "Cake": 6,
@@ -313263,7 +313265,7 @@
     "Aluminium Sheet": 8,
     "Circuit Board": 51,
     "Cotton Fabric": 13,
-    "Reactor Core": 9,
+    "Reactor Core": 10,
     "Gas Fuel": 133,
     "Steel Beam": 46,
     "Machine Parts": 190,
@@ -313281,11 +313283,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Sunflower Oil",
-      "qty": 2,
-      "at": "2026-09-27T05:16:46.510Z"
-    },
     {
       "item": "Canned Food",
       "qty": 1,
@@ -314780,6 +314777,11 @@
       "item": "Steel Beam",
       "qty": 2,
       "at": "2026-09-30T11:33:06.052Z"
+    },
+    {
+      "item": "Reactor Core",
+      "qty": 1,
+      "at": "2026-09-30T11:48:06.067Z"
     }
   ],
   "demand_history": {
@@ -318096,6 +318098,11 @@
       {
         "demand": 1.3733936883083206,
         "at": "2026-09-25T23:37:07.167Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3960220521664788,
+        "at": "2026-09-30T11:48:06.067Z",
         "supply": 0
       }
     ],
@@ -324503,7 +324510,7 @@
   },
   "xp_system": {
     "cooldowns": {
-      "1544820489191559270": 1790765266446,
+      "1544820489191559270": 1790768871687,
       "791747702689103893": 1790715613675,
       "1456622719985782864": 1790752105972,
       "1082686076491137115": 1790768800470,
@@ -350430,16 +350437,16 @@
       "name": "LilNonAgressionPact",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 20,
       "water": 60,
-      "health": 98,
+      "health": 100,
       "quarters": 0,
-      "cheap_streak": 2,
+      "cheap_streak": 3,
       "born_at": "2026-09-29T14:29:00.531Z",
-      "last_fed": "2026-09-29T17:36:52.537Z",
+      "last_fed": "2026-09-30T11:47:57.512Z",
       "last_watered": null,
       "death": null,
-      "friendship": 24,
+      "friendship": 25,
       "last_pet": "2026-09-29T15:46:26.823Z",
       "stats": {
         "agility": 0,
@@ -350509,9 +350516,9 @@
         "day": "",
         "n": 0
       },
-      "starve_since": "2026-09-30T11:46:17.637Z",
-      "warned_empty": true,
-      "last_feed_cmd": "2026-09-29T17:36:52.537Z",
+      "starve_since": null,
+      "warned_empty": false,
+      "last_feed_cmd": "2026-09-30T11:47:57.512Z",
       "lastPetAct": "2026-09-29T15:46:26.823Z"
     }
   },
