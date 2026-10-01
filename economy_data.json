@@ -315424,7 +315424,7 @@
   "ai_store": {
     "Machine Parts": 94,
     "Cake": 18,
-    "Gas Fuel": 72,
+    "Gas Fuel": 70,
     "Uranium Rod": 4,
     "Fuel": 5,
     "Steel Beam": 5,
@@ -315453,7 +315453,7 @@
     "Circuit Board": 73,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
-    "Gas Fuel": 145,
+    "Gas Fuel": 147,
     "Steel Beam": 64,
     "Machine Parts": 208,
     "Sugar": 61,
@@ -315470,11 +315470,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-28T15:20:55.102Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -316969,6 +316964,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-10-01T20:27:40.033Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-10-01T20:42:40.152Z"
     }
   ],
   "demand_history": {
@@ -320500,11 +320500,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 1.2891045013683355,
-        "at": "2026-09-17T04:58:16.685Z",
-        "supply": 14
-      },
-      {
         "demand": 1.3142183659741895,
         "at": "2026-09-17T05:13:16.704Z",
         "supply": 14
@@ -320797,6 +320792,11 @@
       {
         "demand": 1.384371194608745,
         "at": "2026-10-01T20:27:40.038Z",
+        "supply": 6
+      },
+      {
+        "demand": 1.384371194608745,
+        "at": "2026-10-01T20:42:40.156Z",
         "supply": 6
       }
     ],
