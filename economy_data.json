@@ -126167,7 +126167,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 1446,
-      "heat": 7.9554956270250665,
+      "heat": 6.999966127340396,
       "wanted": 0,
       "last_illegal": "2026-10-01T15:31:37.074Z",
       "total_heat_generated": 163.041,
@@ -313431,8 +313431,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 4.3813340150058195,
-      "underground_heat": 1272.069887390322,
+      "heat": 3.800007623284613,
+      "underground_heat": 1271.355238814236,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 7,
@@ -314290,11 +314290,6 @@
   "gsi_history": [
     {
       "price": 101,
-      "change_percent": 0.6072967656508834,
-      "recorded_at": "2026-10-01T12:58:38.038Z"
-    },
-    {
-      "price": 101,
       "change_percent": 0.27551374136581985,
       "recorded_at": "2026-10-01T12:59:09.578Z"
     },
@@ -314787,20 +314782,25 @@
       "price": 103,
       "change_percent": 0.8638334915952425,
       "recorded_at": "2026-10-01T16:00:53.506Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.09895362770821867,
+      "recorded_at": "2026-10-01T16:02:47.076Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Ural Heavy Industries"
   ],
   "used_factory_names": [
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -325651,10 +325651,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1653900,
-      "at": "2026-10-01T08:12:45.677Z"
-    },
-    {
       "total": 1663781,
       "at": "2026-10-01T08:17:45.743Z"
     },
@@ -326049,6 +326045,10 @@
     {
       "total": 1563525,
       "at": "2026-10-01T15:57:49.010Z"
+    },
+    {
+      "total": 1563555,
+      "at": "2026-10-01T16:02:49.040Z"
     }
   ],
   "gold_rush": null,
@@ -326075,7 +326075,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 0.19004999999999972,
+  "heat_global": 0,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -349938,12 +349938,6 @@
         "balance": 13324,
         "income": 66854,
         "spending": 53530,
-        "at": "2026-10-01T08:12:45.693Z"
-      },
-      {
-        "balance": 13324,
-        "income": 66854,
-        "spending": 53530,
         "at": "2026-10-01T08:17:45.859Z"
       },
       {
@@ -350533,6 +350527,12 @@
         "income": 66854,
         "spending": 54808,
         "at": "2026-10-01T15:57:49.076Z"
+      },
+      {
+        "balance": 12046,
+        "income": 66854,
+        "spending": 54808,
+        "at": "2026-10-01T16:02:49.061Z"
       }
     ]
   },
@@ -353625,11 +353625,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70809906012758,
-      "top10": 100,
-      "at": "2026-10-01T08:12:45.684Z"
-    },
-    {
       "gini": 99.71336668374178,
       "top10": 100,
       "at": "2026-10-01T08:17:45.821Z"
@@ -354123,13 +354118,14 @@
       "gini": 99.71659212556077,
       "top10": 100,
       "at": "2026-10-01T15:57:49.061Z"
+    },
+    {
+      "gini": 99.71661445282574,
+      "top10": 100,
+      "at": "2026-10-01T16:02:49.053Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3380962,
-      "at": "2026-10-01T08:12:45.693Z"
-    },
     {
       "gdp": 3382387,
       "at": "2026-10-01T08:17:45.859Z"
@@ -354525,6 +354521,10 @@
     {
       "gdp": 3457193,
       "at": "2026-10-01T15:57:49.076Z"
+    },
+    {
+      "gdp": 3457244,
+      "at": "2026-10-01T16:02:49.061Z"
     }
   ],
   "purge_allowed": [
@@ -355270,12 +355270,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 259200,
-      "at": "2026-10-01T08:12:45.693Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 259200,
       "at": "2026-10-01T08:17:45.864Z"
     },
     {
@@ -355865,6 +355859,12 @@
       "perRole": 10000,
       "active": 259200,
       "at": "2026-10-01T15:57:49.077Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 259200,
+      "at": "2026-10-01T16:02:49.061Z"
     }
   ],
   "casino": {
