@@ -88034,8 +88034,8 @@
       "pet_food_source": {}
     },
     "807254722251587614": {
-      "cash": 61,
-      "bank": 0,
+      "cash": 30,
+      "bank": 61,
       "resources": {},
       "inventory": {
         "Fish Stew": 6
@@ -88052,8 +88052,8 @@
           "avg_price": 2
         }
       },
-      "last_work": "2026-10-01T13:35:41.963Z",
-      "work_count": 224,
+      "last_work": "2026-10-01T15:22:36.239Z",
+      "work_count": 225,
       "last_claim": "2026-10-01T13:06:22.504Z",
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -88067,9 +88067,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 25,
-      "bot_xp": 24,
-      "bot_total_xp": 42024,
-      "daily_work_count": 175,
+      "bot_xp": 39,
+      "bot_total_xp": 42039,
+      "daily_work_count": 176,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-01",
       "mee6_level": 25,
@@ -243495,9 +243495,7 @@
       "cash": 760,
       "bank": 7416,
       "resources": {},
-      "inventory": {
-        "Fish Stew": 1
-      },
+      "inventory": {},
       "company_id": "state_27",
       "gsi_shares": 0,
       "share_holdings": {
@@ -312184,7 +312182,7 @@
       "owner_id": "807254722251587614",
       "ceo": "lucky_drink",
       "hq_ssr": "Nuristani SSR",
-      "funds": 49516,
+      "funds": 49501,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 44748,
@@ -312247,10 +312245,9 @@
         }
       },
       "inventory": {
-        "Zinc": 43,
+        "Zinc": 45,
         "Lead": 20,
         "Gold Bar": 101,
-        "Sugar": 1,
         "Salt": 4,
         "Coal": 15,
         "Fish": 9,
@@ -312396,7 +312393,6 @@
       "value_history": [
         316395,
         316395,
-        316395,
         316785,
         316798,
         317912,
@@ -312493,7 +312489,8 @@
         321494,
         321497,
         330677,
-        330790
+        330790,
+        330829
       ]
     },
     "state_24": {
@@ -313517,15 +313514,19 @@
         "Lead": 5,
         "Timber Planks": 156,
         "Gold Bar": 29,
-        "Timber": 115,
-        "Gold": 30,
+        "Timber": 116,
+        "Gold": 31,
         "Molybdenum": 1,
-        "Cotton": 1,
+        "Cotton": 2,
         "Potash": 1,
-        "Peat": 3,
+        "Peat": 4,
         "Uranium Rod": 1,
         "Steel Ingot": 1,
-        "Wheat": 30
+        "Wheat": 31,
+        "Grapes": 1,
+        "Copper": 1,
+        "Fish": 2,
+        "Flax": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-01T14:30:35.919Z",
@@ -314191,16 +314192,6 @@
   "gsi_history": [
     {
       "price": 98,
-      "change_percent": 0.22773878427565006,
-      "recorded_at": "2026-10-01T11:52:45.552Z"
-    },
-    {
-      "price": 98,
-      "change_percent": 0.6221813672931109,
-      "recorded_at": "2026-10-01T11:56:37.836Z"
-    },
-    {
-      "price": 98,
       "change_percent": 0.38115206330375895,
       "recorded_at": "2026-10-01T11:57:45.586Z"
     },
@@ -314688,6 +314679,16 @@
       "price": 96,
       "change_percent": 0.4172550268968395,
       "recorded_at": "2026-10-01T15:21:44.243Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.8507166410767718,
+      "recorded_at": "2026-10-01T15:22:37.280Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.3813956639734875,
+      "recorded_at": "2026-10-01T15:22:46.916Z"
     }
   ],
   "factory_names": [],
@@ -314708,7 +314709,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 87077.16755972363,
+  "money_printed": 87092.16755972363,
   "total_bank_reserves": 502365,
   "inflation_history": [
     0,
@@ -325541,10 +325542,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1648655,
-      "at": "2026-10-01T07:22:45.536Z"
-    },
-    {
       "total": 1648670,
       "at": "2026-10-01T07:27:45.688Z"
     },
@@ -325939,6 +325936,10 @@
     {
       "total": 1648813,
       "at": "2026-10-01T15:17:49.628Z"
+    },
+    {
+      "total": 1649675,
+      "at": "2026-10-01T15:22:49.055Z"
     }
   ],
   "gold_rush": null,
@@ -326588,7 +326589,7 @@
         "1467181939218714656": 3,
         "1122543880777240606": 1,
         "1483005845867593831": 1,
-        "807254722251587614": 5,
+        "807254722251587614": 6,
         "1521043721129558017": 3,
         "874346333882945547": 12,
         "763384287037882399": 2,
@@ -349826,12 +349827,6 @@
         "balance": 13324,
         "income": 66854,
         "spending": 53530,
-        "at": "2026-10-01T07:22:45.550Z"
-      },
-      {
-        "balance": 13324,
-        "income": 66854,
-        "spending": 53530,
         "at": "2026-10-01T07:27:45.701Z"
       },
       {
@@ -350421,6 +350416,12 @@
         "income": 66854,
         "spending": 54808,
         "at": "2026-10-01T15:17:49.645Z"
+      },
+      {
+        "balance": 12046,
+        "income": 66854,
+        "spending": 54808,
+        "at": "2026-10-01T15:22:49.078Z"
       }
     ]
   },
@@ -352704,16 +352705,16 @@
       "name": "Snuggles 2.0",
       "species": "cat",
       "alive": true,
-      "hunger": 76,
+      "hunger": 100,
       "water": 60,
       "health": 100,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T13:02:18.688Z",
-      "last_fed": "2026-10-01T02:39:48.112Z",
+      "last_fed": "2026-10-01T15:23:14.007Z",
       "last_watered": null,
       "death": null,
-      "friendship": 34,
+      "friendship": 35,
       "last_pet": "2026-10-01T02:37:07.194Z",
       "stats": {
         "agility": 0,
@@ -352757,25 +352758,8 @@
         "epic": 0,
         "legendary": 0
       },
-      "hunts": 2,
-      "hunt": {
-        "start": "2026-10-01T02:44:22.251Z",
-        "end": "2026-10-01T14:44:22.251Z",
-        "durH": 12,
-        "instant": false,
-        "lootMult": 1,
-        "expB": 0,
-        "treas": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "zoom": false,
-        "thiefLvl": 0,
-        "pcs": 10,
-        "collarUsed": false
-      },
+      "hunts": 3,
+      "hunt": null,
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -352786,7 +352770,7 @@
       "lastPetAct": "2026-10-01T02:37:07.194Z",
       "starve_since": null,
       "warned_empty": false,
-      "last_feed_cmd": "2026-10-01T02:39:48.112Z",
+      "last_feed_cmd": "2026-10-01T15:23:14.007Z",
       "last_train_cmd": "2026-10-01T02:40:03.002Z"
     },
     "1467181939218714656": {
@@ -353496,11 +353480,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70745281552014,
-      "top10": 100,
-      "at": "2026-10-01T07:22:45.543Z"
-    },
-    {
       "gini": 99.70744656082759,
       "top10": 100,
       "at": "2026-10-01T07:27:45.696Z"
@@ -353994,13 +353973,14 @@
       "gini": 99.7106738115705,
       "top10": 100,
       "at": "2026-10-01T15:17:49.639Z"
+    },
+    {
+      "gini": 99.71717618912406,
+      "top10": 100,
+      "at": "2026-10-01T15:22:49.070Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3372435,
-      "at": "2026-10-01T07:22:45.550Z"
-    },
     {
       "gdp": 3372455,
       "at": "2026-10-01T07:27:45.700Z"
@@ -354396,6 +354376,10 @@
     {
       "gdp": 3428913,
       "at": "2026-10-01T15:17:49.645Z"
+    },
+    {
+      "gdp": 3430221,
+      "at": "2026-10-01T15:22:49.077Z"
     }
   ],
   "purge_allowed": [
@@ -355136,12 +355120,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 259200,
-      "at": "2026-10-01T07:22:45.551Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 259200,
       "at": "2026-10-01T07:27:45.701Z"
     },
     {
@@ -355731,6 +355709,12 @@
       "perRole": 10000,
       "active": 259200,
       "at": "2026-10-01T15:17:49.645Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 259200,
+      "at": "2026-10-01T15:22:49.078Z"
     }
   ],
   "casino": {
