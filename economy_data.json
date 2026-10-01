@@ -314717,7 +314717,7 @@
     "Machine Parts": 68,
     "Refined Fuel": 13,
     "Cake": 17,
-    "Fish Stew": 3,
+    "Fish Stew": 1,
     "Sugar": 1,
     "Gas Fuel": 39,
     "Uranium Rod": 8
@@ -314753,16 +314753,11 @@
     "Brass Valve": 22,
     "Pet Food": 9,
     "Radiator": 16,
-    "Fish Stew": 40,
+    "Fish Stew": 42,
     "Bricks": 20,
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Radiator",
-      "qty": 1,
-      "at": "2026-09-27T21:05:49.028Z"
-    },
     {
       "item": "Uranium Rod",
       "qty": 1,
@@ -316257,6 +316252,11 @@
       "item": "Sugar",
       "qty": 2,
       "at": "2026-10-01T02:57:36.732Z"
+    },
+    {
+      "item": "Fish Stew",
+      "qty": 2,
+      "at": "2026-10-01T03:12:36.713Z"
     }
   ],
   "demand_history": {
@@ -321409,6 +321409,11 @@
       {
         "demand": 1.3891431042985953,
         "at": "2026-10-01T02:27:36.596Z",
+        "supply": 8
+      },
+      {
+        "demand": 1.3875199788263561,
+        "at": "2026-10-01T03:12:36.714Z",
         "supply": 8
       }
     ],
