@@ -314963,7 +314963,7 @@
     "Gas Fuel": 71,
     "Uranium Rod": 5,
     "Fuel": 8,
-    "Steel Beam": 6,
+    "Steel Beam": 5,
     "Circuit Board": 7,
     "Canned Fish": 1
   },
@@ -314987,7 +314987,7 @@
     "Cotton Fabric": 13,
     "Reactor Core": 12,
     "Gas Fuel": 141,
-    "Steel Beam": 60,
+    "Steel Beam": 61,
     "Machine Parts": 202,
     "Sugar": 61,
     "Fertilizer": 17,
@@ -315003,11 +315003,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 2,
-      "at": "2026-09-28T08:50:52.885Z"
-    },
     {
       "item": "Fish Stew",
       "qty": 1,
@@ -316502,6 +316497,11 @@
       "item": "Circuit Board",
       "qty": 2,
       "at": "2026-10-01T14:12:38.607Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 1,
+      "at": "2026-10-01T14:27:38.698Z"
     }
   ],
   "demand_history": {
@@ -320497,6 +320497,11 @@
       {
         "demand": 1.3628516683205576,
         "at": "2026-10-01T11:42:37.480Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.3899774984816642,
+        "at": "2026-10-01T14:27:38.698Z",
         "supply": 3
       }
     ],
