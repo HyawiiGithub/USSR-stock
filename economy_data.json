@@ -315520,7 +315520,7 @@
     "Fuel": 2,
     "Steel Beam": 1,
     "Circuit Board": 12,
-    "Refined Fuel": 3,
+    "Refined Fuel": 2,
     "Bread": 5,
     "Canned Fish": 5,
     "Canned Food": 5,
@@ -315530,7 +315530,7 @@
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 192,
-    "Refined Fuel": 255,
+    "Refined Fuel": 256,
     "Fuel": 140,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -315562,11 +315562,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Canned Fish",
-      "qty": 2,
-      "at": "2026-09-28T18:20:56.465Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -317061,6 +317056,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-10-01T23:27:39.967Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-10-01T23:42:39.942Z"
     }
   ],
   "demand_history": {
@@ -317767,11 +317767,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.332349852105215,
-        "at": "2026-09-21T16:19:41.752Z",
-        "supply": 1
-      },
-      {
         "demand": 1.337891132628126,
         "at": "2026-09-21T16:49:41.940Z",
         "supply": 1
@@ -318064,6 +318059,11 @@
       {
         "demand": 1.324898782792123,
         "at": "2026-10-01T16:42:38.806Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.4043659027843978,
+        "at": "2026-10-01T23:42:39.942Z",
         "supply": 0
       }
     ],
