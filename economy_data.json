@@ -315148,7 +315148,6 @@
     "Fuel": 7,
     "Steel Beam": 4,
     "Circuit Board": 7,
-    "Canned Fish": 1,
     "Refined Fuel": 3,
     "Bread": 15
   },
@@ -315165,7 +315164,7 @@
     "Smoked Fish": 71,
     "Canned Food": 67,
     "Uranium Rod": 47,
-    "Canned Fish": 70,
+    "Canned Fish": 71,
     "Bread": 317,
     "Aluminium Sheet": 8,
     "Circuit Board": 71,
@@ -315188,11 +315187,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-09-28T12:20:54.083Z"
-    },
     {
       "item": "Brass Valve",
       "qty": 1,
@@ -316687,6 +316681,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-10-01T17:27:38.923Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 1,
+      "at": "2026-10-01T17:42:38.807Z"
     }
   ],
   "demand_history": {
@@ -319498,6 +319497,11 @@
       {
         "demand": 1.402652371638287,
         "at": "2026-09-30T12:33:06.078Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.402010892831512,
+        "at": "2026-10-01T17:42:38.807Z",
         "supply": 1
       }
     ],
