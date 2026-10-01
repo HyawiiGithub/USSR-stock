@@ -314002,11 +314002,6 @@
   "gsi_history": [
     {
       "price": 94,
-      "change_percent": 0.26782581536243055,
-      "recorded_at": "2026-10-01T08:21:38.819Z"
-    },
-    {
-      "price": 94,
       "change_percent": 0.8530250564834403,
       "recorded_at": "2026-10-01T08:21:51.437Z"
     },
@@ -314499,6 +314494,11 @@
       "price": 92,
       "change_percent": 0.2731039316245115,
       "recorded_at": "2026-10-01T11:41:08.034Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 7.572609754321167,
+      "recorded_at": "2026-10-01T11:42:36.983Z"
     }
   ],
   "factory_names": [
@@ -314853,7 +314853,7 @@
     "Gas Fuel": 74,
     "Uranium Rod": 9,
     "Fuel": 9,
-    "Steel Beam": 7,
+    "Steel Beam": 6,
     "Circuit Board": 11
   },
   "global_consumption": {
@@ -314876,7 +314876,7 @@
     "Cotton Fabric": 13,
     "Reactor Core": 12,
     "Gas Fuel": 138,
-    "Steel Beam": 59,
+    "Steel Beam": 60,
     "Machine Parts": 199,
     "Sugar": 61,
     "Fertilizer": 17,
@@ -314892,11 +314892,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 1,
-      "at": "2026-09-28T05:50:52.310Z"
-    },
     {
       "item": "Fish Stew",
       "qty": 1,
@@ -316391,6 +316386,11 @@
       "item": "Steel Beam",
       "qty": 2,
       "at": "2026-10-01T11:27:37.483Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 1,
+      "at": "2026-10-01T11:42:37.480Z"
     }
   ],
   "demand_history": {
@@ -320361,6 +320361,11 @@
       {
         "demand": 1.3425838117114788,
         "at": "2026-10-01T11:27:37.483Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.3628516683205576,
+        "at": "2026-10-01T11:42:37.480Z",
         "supply": 3
       }
     ],
