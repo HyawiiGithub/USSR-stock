@@ -314649,8 +314649,7 @@
     "Cake": 17,
     "Fish Stew": 4,
     "Sugar": 5,
-    "Gas Fuel": 40,
-    "Uranium Rod": 1
+    "Gas Fuel": 40
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -314664,7 +314663,7 @@
     "Cake": 364,
     "Smoked Fish": 69,
     "Canned Food": 67,
-    "Uranium Rod": 35,
+    "Uranium Rod": 36,
     "Canned Fish": 70,
     "Bread": 317,
     "Aluminium Sheet": 8,
@@ -314688,11 +314687,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-09-27T18:33:27.356Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -316187,6 +316181,11 @@
       "item": "Smoked Fish",
       "qty": 2,
       "at": "2026-10-01T00:27:36.549Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 1,
+      "at": "2026-10-01T00:42:36.454Z"
     }
   ],
   "demand_history": {
@@ -318726,6 +318725,11 @@
       {
         "demand": 1.3366526489066528,
         "at": "2026-10-01T00:12:35.568Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.345546007327127,
+        "at": "2026-10-01T00:42:36.454Z",
         "supply": 0
       }
     ],
