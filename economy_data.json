@@ -1060,7 +1060,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 0,
-      "heat": 13.923864846904879,
+      "heat": 12.928394153977376,
       "wanted": 0,
       "last_illegal": "2026-10-01T08:21:37.609Z",
       "total_heat_generated": 2423.041899999999,
@@ -313122,8 +313122,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 3.8612220084983786,
-      "underground_heat": 1277.0635962101574,
+      "heat": 3.0789758136034804,
+      "underground_heat": 1276.382175577685,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 7,
@@ -313954,11 +313954,6 @@
   "gsi_history": [
     {
       "price": 95,
-      "change_percent": 0.30269556823369914,
-      "recorded_at": "2026-10-01T06:07:43.508Z"
-    },
-    {
-      "price": 95,
       "change_percent": 0.24920833685738297,
       "recorded_at": "2026-10-01T06:08:17.177Z"
     },
@@ -314451,6 +314446,11 @@
       "price": 89,
       "change_percent": 0.46728888269972657,
       "recorded_at": "2026-10-01T09:11:18.656Z"
+    },
+    {
+      "price": 89,
+      "change_percent": 1.1032373401684308,
+      "recorded_at": "2026-10-01T09:12:45.579Z"
     }
   ],
   "factory_names": [
@@ -314806,7 +314806,7 @@
     "Gas Fuel": 74,
     "Uranium Rod": 10,
     "Fuel": 11,
-    "Steel Beam": 13
+    "Steel Beam": 11
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -314828,7 +314828,7 @@
     "Cotton Fabric": 13,
     "Reactor Core": 12,
     "Gas Fuel": 138,
-    "Steel Beam": 53,
+    "Steel Beam": 55,
     "Machine Parts": 198,
     "Sugar": 61,
     "Fertilizer": 17,
@@ -314844,11 +314844,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Timber Planks",
-      "qty": 1,
-      "at": "2026-09-28T03:20:51.982Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -316343,6 +316338,11 @@
       "item": "Brass Valve",
       "qty": 1,
       "at": "2026-10-01T08:57:37.600Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 2,
+      "at": "2026-10-01T09:12:37.434Z"
     }
   ],
   "demand_history": {
@@ -320289,6 +320289,11 @@
         "demand": 1.388931566713534,
         "at": "2026-09-30T20:57:14.173Z",
         "supply": 8
+      },
+      {
+        "demand": 1.1140439232667543,
+        "at": "2026-10-01T09:12:37.434Z",
+        "supply": 3
       }
     ],
     "Machine Parts": [
@@ -325247,10 +325252,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1631272,
-      "at": "2026-10-01T00:57:39.898Z"
-    },
-    {
       "total": 1631287,
       "at": "2026-10-01T01:02:39.891Z"
     },
@@ -325645,6 +325646,10 @@
     {
       "total": 1667004,
       "at": "2026-10-01T09:07:47.135Z"
+    },
+    {
+      "total": 1667019,
+      "at": "2026-10-01T09:12:47.197Z"
     }
   ],
   "gold_rush": null,
@@ -325671,7 +325676,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 1.229100000000001,
+  "heat_global": 0.9291000000000009,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -349513,12 +349518,6 @@
         "balance": 13952,
         "income": 66854,
         "spending": 52902,
-        "at": "2026-10-01T00:57:39.910Z"
-      },
-      {
-        "balance": 13952,
-        "income": 66854,
-        "spending": 52902,
         "at": "2026-10-01T01:02:39.914Z"
       },
       {
@@ -350108,6 +350107,12 @@
         "income": 66854,
         "spending": 54167,
         "at": "2026-10-01T09:07:47.146Z"
+      },
+      {
+        "balance": 12687,
+        "income": 66854,
+        "spending": 54167,
+        "at": "2026-10-01T09:12:47.220Z"
       }
     ]
   },
@@ -353184,11 +353189,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70771880512675,
-      "top10": 100,
-      "at": "2026-10-01T00:57:39.903Z"
-    },
-    {
       "gini": 99.70770756116983,
       "top10": 100,
       "at": "2026-10-01T01:02:39.909Z"
@@ -353682,13 +353682,14 @@
       "gini": 99.7072835039595,
       "top10": 100,
       "at": "2026-10-01T09:07:47.141Z"
+    },
+    {
+      "gini": 99.70728821441237,
+      "top10": 100,
+      "at": "2026-10-01T09:12:47.211Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3337057,
-      "at": "2026-10-01T00:57:39.910Z"
-    },
     {
       "gdp": 3337112,
       "at": "2026-10-01T01:02:39.914Z"
@@ -354084,6 +354085,10 @@
     {
       "gdp": 3441846,
       "at": "2026-10-01T09:07:47.145Z"
+    },
+    {
+      "gdp": 3441981,
+      "at": "2026-10-01T09:12:47.219Z"
     }
   ],
   "purge_allowed": [
@@ -354800,12 +354805,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 259200,
-      "at": "2026-10-01T00:57:39.911Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 259200,
       "at": "2026-10-01T01:02:39.914Z"
     },
     {
@@ -355395,6 +355394,12 @@
       "perRole": 10000,
       "active": 259200,
       "at": "2026-10-01T09:07:47.146Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 259200,
+      "at": "2026-10-01T09:12:47.220Z"
     }
   ],
   "casino": {
