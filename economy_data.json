@@ -1060,7 +1060,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 0,
-      "heat": 24.886623395335587,
+      "heat": 24.071441770733333,
       "wanted": 0,
       "last_illegal": "2026-10-01T08:21:37.609Z",
       "total_heat_generated": 2423.041899999999,
@@ -313119,8 +313119,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 14.69723658239827,
-      "underground_heat": 1287.4803516973534,
+      "heat": 14.121781131563957,
+      "underground_heat": 1286.7522280121498,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 6,
@@ -313236,7 +313236,7 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 35261,
+      "funds": 48197,
       "invested_capital": 10172,
       "shares_total": 100000,
       "shares_available": 48257,
@@ -313301,8 +313301,7 @@
         "Fish": 1,
         "Potash": 1,
         "Peat": 3,
-        "Wine": 1,
-        "Uranium Rod": 6
+        "Wine": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-01T08:21:55.185Z",
@@ -313410,7 +313409,7 @@
       ],
       "is_state_owned": false,
       "director_id": "963834359994007614",
-      "last_factorydeal": "2026-10-01T06:29:26.776Z",
+      "last_factorydeal": "2026-10-01T08:22:41.774Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -313433,8 +313432,6 @@
       "prev_price": 3,
       "is_private": true,
       "value_history": [
-        312309,
-        318819,
         318875,
         318899,
         318904,
@@ -313532,7 +313529,9 @@
         329667,
         329707,
         329827,
-        336083
+        336083,
+        336685,
+        341575
       ],
       "sales_team": 1
     },
@@ -313942,11 +313941,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 86,
-      "change_percent": 1.2582682158793255,
-      "recorded_at": "2026-10-01T04:58:41.350Z"
-    },
     {
       "price": 86,
       "change_percent": 1.057825622355529,
@@ -314441,19 +314435,25 @@
       "price": 95,
       "change_percent": 1.1622250234622413,
       "recorded_at": "2026-10-01T08:21:56.835Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.26102890582123534,
+      "recorded_at": "2026-10-01T08:22:44.752Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
+  "factory_names": [
     "Red Star Steelworks",
-    "Ural Heavy Industries",
-    "Siberian Mining Co",
-    "Brezhnev Auto Factory",
-    "Volga Shipbuilding",
-    "Soviet Iron Foundry",
+    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
+    "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
     "Lenin Machine Works",
-    "Stalin Tractor Plant"
+    "Soviet Iron Foundry"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -314461,7 +314461,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 56790.44368511229,
+  "money_printed": 69726.44368511229,
   "total_bank_reserves": 496695,
   "inflation_history": [
     0,
@@ -314712,18 +314712,18 @@
     "Gold Bar": 0.9975493368652036,
     "Aluminium Ingot": 1.4046295333554732,
     "Timber Planks": 0.9676319320218352,
-    "Bricks": 1.2900203292944037,
+    "Bricks": 1.3000203292944037,
     "Concrete": 1.4122812080459797,
     "Glass": 1.408688444567568,
-    "Steel Beam": 1.380684625518406,
+    "Steel Beam": 1.390684625518406,
     "Machine Parts": 1.1837166255931728,
     "Refined Fuel": 1.4046284428717346,
-    "Uranium Rod": 1.3957321163522554,
+    "Uranium Rod": 1.2607321163522553,
     "Reactor Core": 1.4045931237074751,
     "Circuit Board": 1.3825655318673415,
     "Flour": 1.3390855248268578,
-    "Sugar": 1.0325809621467368,
-    "Wine": 1.40054168563648,
+    "Sugar": 1.0425809621467368,
+    "Wine": 1.41054168563648,
     "Canned Food": 1.4045807678369178,
     "Canned Fish": 1.4026960062153753,
     "Smoked Fish": 1.4007360725286067,
@@ -314735,16 +314735,16 @@
     "Manganese Alloy": 1.4124242460206764,
     "Sunflower Oil": 1.3872711623670282,
     "Linen": 1.4100686575433214,
-    "Corn Meal": 1.381472434086707,
-    "Tea Pack": 1.4206304569751582,
+    "Corn Meal": 1.391472434086707,
+    "Tea Pack": 1.4306304569751582,
     "Citrus Juice": 1.4122855401031447,
     "Antimony Alloy": 1.4057280513239705,
     "Molybdenum Rod": 1.410344422293443,
-    "Aluminium Sheet": 1.40454938055125,
+    "Aluminium Sheet": 1.41454938055125,
     "Shale Oil": 1.410971409056517,
     "Bandage": 1.416402572000652,
     "Ointment": 1.4204970575321636,
-    "Pet Food": 1.4007714658899009,
+    "Pet Food": 1.4107714658899009,
     "Brass": 1.3972127363525186,
     "Brass Valve": 1.3727305017747726,
     "Radiator": 1.4027101730852574,
@@ -314765,7 +314765,7 @@
     "Smoked Fish": "2026-09-30T19:22:00.419Z",
     "Canned Fish": "2026-09-29T22:37:12.139Z",
     "Canned Food": "2026-09-30T09:26:02.952Z",
-    "Uranium Rod": "2026-10-01T02:12:59.512Z",
+    "Uranium Rod": "2026-10-01T08:22:41.775Z",
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z",
     "Circuit Board": "2026-09-30T20:08:41.108Z",
     "Cotton Fabric": "2026-09-27T06:05:52.571Z",
@@ -314793,7 +314793,7 @@
     "Refined Fuel": 4,
     "Cake": 11,
     "Gas Fuel": 74,
-    "Uranium Rod": 4,
+    "Uranium Rod": 10,
     "Fuel": 11,
     "Brass Valve": 1
   },
@@ -325231,10 +325231,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1625181,
-      "at": "2026-10-01T00:07:38.291Z"
-    },
-    {
       "total": 1625214,
       "at": "2026-10-01T00:12:38.247Z"
     },
@@ -325629,6 +325625,10 @@
     {
       "total": 1663781,
       "at": "2026-10-01T08:17:45.743Z"
+    },
+    {
+      "total": 1677299,
+      "at": "2026-10-01T08:22:45.843Z"
     }
   ],
   "gold_rush": null,
@@ -325655,7 +325655,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 4.2291,
+  "heat_global": 3.9291,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -349486,12 +349486,6 @@
         "balance": 13952,
         "income": 66854,
         "spending": 52902,
-        "at": "2026-10-01T00:07:38.309Z"
-      },
-      {
-        "balance": 13952,
-        "income": 66854,
-        "spending": 52902,
         "at": "2026-10-01T00:12:38.281Z"
       },
       {
@@ -350081,6 +350075,12 @@
         "income": 66854,
         "spending": 53530,
         "at": "2026-10-01T08:17:45.859Z"
+      },
+      {
+        "balance": 13324,
+        "income": 66854,
+        "spending": 53530,
+        "at": "2026-10-01T08:22:45.853Z"
       }
     ]
   },
@@ -352570,8 +352570,8 @@
         "price": 17967
       },
       "Uranium Rod": {
-        "qty": 26,
-        "price": 2549
+        "qty": 32,
+        "price": 2535
       },
       "Fertilizer": {
         "qty": 7,
@@ -352642,7 +352642,7 @@
         "price": 20
       }
     },
-    "sold_count": 1429,
+    "sold_count": 1435,
     "bought_count": 227
   },
   "leaders": {
@@ -353157,11 +353157,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.7117250413875,
-      "top10": 100,
-      "at": "2026-10-01T00:07:38.305Z"
-    },
-    {
       "gini": 99.71182121456279,
       "top10": 100,
       "at": "2026-10-01T00:12:38.272Z"
@@ -353655,13 +353650,14 @@
       "gini": 99.71336668374178,
       "top10": 100,
       "at": "2026-10-01T08:17:45.821Z"
+    },
+    {
+      "gini": 99.71137056545038,
+      "top10": 100,
+      "at": "2026-10-01T08:22:45.849Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3334203,
-      "at": "2026-10-01T00:07:38.309Z"
-    },
     {
       "gdp": 3334638,
       "at": "2026-10-01T00:12:38.280Z"
@@ -354057,6 +354053,10 @@
     {
       "gdp": 3382387,
       "at": "2026-10-01T08:17:45.859Z"
+    },
+    {
+      "gdp": 3394869,
+      "at": "2026-10-01T08:22:45.853Z"
     }
   ],
   "purge_allowed": [
@@ -354769,12 +354769,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 259200,
-      "at": "2026-10-01T00:07:38.309Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 259200,
       "at": "2026-10-01T00:12:38.281Z"
     },
     {
@@ -355364,6 +355358,12 @@
       "perRole": 10000,
       "active": 259200,
       "at": "2026-10-01T08:17:45.864Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 259200,
+      "at": "2026-10-01T08:22:45.854Z"
     }
   ],
   "casino": {
