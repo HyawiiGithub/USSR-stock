@@ -126166,7 +126166,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 1920,
-      "heat": 9.280835568559878,
+      "heat": 8.442667921536572,
       "wanted": 0,
       "last_illegal": "2026-10-01T18:12:35.288Z",
       "total_heat_generated": 202.58,
@@ -312442,6 +312442,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1289011437464981535": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -313630,8 +313668,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 4.2601019665207644,
-      "underground_heat": 1286.6409131458347,
+      "heat": 3.4813836926148243,
+      "underground_heat": 1285.9092090145948,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 8,
@@ -314494,16 +314532,6 @@
   },
   "gsi_history": [
     {
-      "price": 110,
-      "change_percent": -0.3315786641463238,
-      "recorded_at": "2026-10-01T16:42:47.046Z"
-    },
-    {
-      "price": 110,
-      "change_percent": 0.08527468748955941,
-      "recorded_at": "2026-10-01T16:45:58.087Z"
-    },
-    {
       "price": 109,
       "change_percent": -0.29123980697323665,
       "recorded_at": "2026-10-01T16:47:10.747Z"
@@ -314992,6 +315020,16 @@
       "price": 105,
       "change_percent": 1.1742075110384016,
       "recorded_at": "2026-10-01T19:42:10.274Z"
+    },
+    {
+      "price": 111,
+      "change_percent": 5.751316779971164,
+      "recorded_at": "2026-10-01T19:42:38.386Z"
+    },
+    {
+      "price": 110,
+      "change_percent": -0.2865063088302849,
+      "recorded_at": "2026-10-01T19:42:48.022Z"
     }
   ],
   "factory_names": [
@@ -315343,7 +315381,7 @@
   "ai_store": {
     "Machine Parts": 94,
     "Cake": 18,
-    "Gas Fuel": 76,
+    "Gas Fuel": 74,
     "Uranium Rod": 4,
     "Fuel": 5,
     "Steel Beam": 5,
@@ -315371,7 +315409,7 @@
     "Circuit Board": 73,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
-    "Gas Fuel": 141,
+    "Gas Fuel": 143,
     "Steel Beam": 64,
     "Machine Parts": 208,
     "Sugar": 61,
@@ -315388,11 +315426,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Steel Beam",
-      "qty": 1,
-      "at": "2026-09-28T14:20:55.116Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -316887,6 +316920,11 @@
       "item": "Bread",
       "qty": 1,
       "at": "2026-10-01T19:27:39.196Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-10-01T19:42:39.209Z"
     }
   ],
   "demand_history": {
@@ -320418,11 +320456,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 1.2258095450262076,
-        "at": "2026-09-17T04:13:16.689Z",
-        "supply": 14
-      },
-      {
         "demand": 1.2425281509399815,
         "at": "2026-09-17T04:28:16.866Z",
         "supply": 14
@@ -320716,6 +320749,11 @@
         "demand": 1.4023360788689843,
         "at": "2026-10-01T13:27:38.680Z",
         "supply": 1
+      },
+      {
+        "demand": 1.384371194608745,
+        "at": "2026-10-01T19:42:39.210Z",
+        "supply": 6
       }
     ],
     "Steel Beam": [
@@ -325881,14 +325919,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1680959,
-      "at": "2026-10-01T12:02:48.068Z"
-    },
-    {
-      "total": 1680974,
-      "at": "2026-10-01T12:07:48.103Z"
-    },
-    {
       "total": 1681004,
       "at": "2026-10-01T12:12:48.228Z"
     },
@@ -326279,6 +326309,14 @@
     {
       "total": 1585055,
       "at": "2026-10-01T19:37:49.606Z"
+    },
+    {
+      "total": 1585100,
+      "at": "2026-10-01T19:42:49.549Z"
+    },
+    {
+      "total": 1585100,
+      "at": "2026-10-01T19:42:50.293Z"
     }
   ],
   "gold_rush": null,
@@ -350175,18 +350213,6 @@
         "balance": 12687,
         "income": 66854,
         "spending": 54167,
-        "at": "2026-10-01T12:02:48.083Z"
-      },
-      {
-        "balance": 12687,
-        "income": 66854,
-        "spending": 54167,
-        "at": "2026-10-01T12:07:48.129Z"
-      },
-      {
-        "balance": 12687,
-        "income": 66854,
-        "spending": 54167,
         "at": "2026-10-01T12:12:48.245Z"
       },
       {
@@ -350770,6 +350796,18 @@
         "income": 66854,
         "spending": 54808,
         "at": "2026-10-01T19:37:49.659Z"
+      },
+      {
+        "balance": 12046,
+        "income": 66854,
+        "spending": 54808,
+        "at": "2026-10-01T19:42:49.671Z"
+      },
+      {
+        "balance": 12046,
+        "income": 66854,
+        "spending": 54808,
+        "at": "2026-10-01T19:42:50.306Z"
       }
     ]
   },
@@ -353889,16 +353927,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70726508405025,
-      "top10": 100,
-      "at": "2026-10-01T12:02:48.079Z"
-    },
-    {
-      "gini": 99.70726978582154,
-      "top10": 100,
-      "at": "2026-10-01T12:07:48.122Z"
-    },
-    {
       "gini": 99.70728860113792,
       "top10": 100,
       "at": "2026-10-01T12:12:48.240Z"
@@ -354387,17 +354415,19 @@
       "gini": 99.70985637653386,
       "top10": 100,
       "at": "2026-10-01T19:37:49.648Z"
+    },
+    {
+      "gini": 99.70980026741256,
+      "top10": 100,
+      "at": "2026-10-01T19:42:49.616Z"
+    },
+    {
+      "gini": 99.70983565330849,
+      "top10": 100,
+      "at": "2026-10-01T19:42:50.302Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3450162,
-      "at": "2026-10-01T12:02:48.083Z"
-    },
-    {
-      "gdp": 3450217,
-      "at": "2026-10-01T12:07:48.129Z"
-    },
     {
       "gdp": 3450289,
       "at": "2026-10-01T12:12:48.245Z"
@@ -354789,6 +354819,14 @@
     {
       "gdp": 3479171,
       "at": "2026-10-01T19:37:49.659Z"
+    },
+    {
+      "gdp": 3479359,
+      "at": "2026-10-01T19:42:49.670Z"
+    },
+    {
+      "gdp": 3479359,
+      "at": "2026-10-01T19:42:50.306Z"
     }
   ],
   "purge_allowed": [
@@ -355546,18 +355584,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 259200,
-      "at": "2026-10-01T12:02:48.084Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 259200,
-      "at": "2026-10-01T12:07:48.130Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 259200,
       "at": "2026-10-01T12:12:48.245Z"
     },
     {
@@ -356141,6 +356167,18 @@
       "perRole": 10000,
       "active": 259200,
       "at": "2026-10-01T19:37:49.659Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 259200,
+      "at": "2026-10-01T19:42:49.672Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 259200,
+      "at": "2026-10-01T19:42:50.306Z"
     }
   ],
   "casino": {
