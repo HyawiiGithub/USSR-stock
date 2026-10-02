@@ -572,8 +572,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 21,
-      "bot_xp": 1799,
-      "bot_total_xp": 28749,
+      "bot_xp": 1818,
+      "bot_total_xp": 28768,
       "daily_work_count": 298,
       "shock_worker": false,
       "mee6_level": 21,
@@ -2053,9 +2053,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 1,
-      "bot_xp": 147,
-      "bot_total_xp": 247,
+      "bot_level": 2,
+      "bot_xp": 17,
+      "bot_total_xp": 272,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -2068,7 +2068,7 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {},
-      "mee6_level": 1
+      "mee6_level": 2
     },
     "1103697491322486844": {
       "cash": 60,
@@ -88048,7 +88048,7 @@
       "pet_food_source": {}
     },
     "807254722251587614": {
-      "cash": 725,
+      "cash": 740,
       "bank": 61,
       "resources": {},
       "inventory": {
@@ -88066,8 +88066,8 @@
           "avg_price": 2
         }
       },
-      "last_work": "2026-10-02T12:54:43.737Z",
-      "work_count": 253,
+      "last_work": "2026-10-02T15:59:09.625Z",
+      "work_count": 254,
       "last_claim": "2026-10-01T13:06:22.504Z",
       "ssr_region": "Nuristani SSR",
       "employed_at": "State Mining Corp",
@@ -88081,9 +88081,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 25,
-      "bot_xp": 2476,
-      "bot_total_xp": 44476,
-      "daily_work_count": 204,
+      "bot_xp": 2497,
+      "bot_total_xp": 44497,
+      "daily_work_count": 205,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-02",
       "mee6_level": 25,
@@ -313039,7 +313039,7 @@
       "owner_id": "807254722251587614",
       "ceo": "lucky_drink",
       "hq_ssr": "Nuristani SSR",
-      "funds": 16513,
+      "funds": 17027,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 44718,
@@ -313107,7 +313107,7 @@
         }
       },
       "inventory": {
-        "Zinc": 62,
+        "Zinc": 63,
         "Lead": 59,
         "Gold Bar": 106,
         "Salt": 0,
@@ -313121,12 +313121,12 @@
         "Brass": 1,
         "Copper": 17,
         "Fish Stew": 8,
-        "Sugar": 12,
+        "Sugar": 11,
         "Oil": 11,
         "Natural Gas": 11,
         "Gas Fuel": 2,
         "Fuel": 2,
-        "Canned Fish": 4,
+        "Canned Fish": 1,
         "Smoked Fish": 4,
         "Gold": 14,
         "Uranium": 2,
@@ -313240,7 +313240,7 @@
       ],
       "is_state_owned": false,
       "director_id": "807254722251587614",
-      "last_factorydeal": "2026-10-02T12:46:16.926Z",
+      "last_factorydeal": "2026-10-02T15:59:33.768Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -313260,8 +313260,6 @@
       "prev_price": 3,
       "is_private": true,
       "value_history": [
-        320097,
-        320546,
         320622,
         320583,
         320743,
@@ -313359,7 +313357,9 @@
         351224,
         351224,
         351390,
-        354157
+        354157,
+        354173,
+        354366
       ]
     },
     "state_24": {
@@ -315170,11 +315170,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": -0.019405619457679928,
-      "recorded_at": "2026-10-02T12:52:49.058Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.9157598237398822,
       "recorded_at": "2026-10-02T12:54:44.797Z"
     },
@@ -315667,12 +315662,14 @@
       "price": 89,
       "change_percent": 0.6911115903712878,
       "recorded_at": "2026-10-02T15:58:34.887Z"
+    },
+    {
+      "price": 90,
+      "change_percent": 1.383919687804779,
+      "recorded_at": "2026-10-02T15:59:10.673Z"
     }
   ],
-  "factory_names": [
-    "Siberian Mining Co",
-    "Ural Heavy Industries"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Brezhnev Auto Factory",
     "Soviet Iron Foundry",
@@ -315680,7 +315677,9 @@
     "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Volga Shipbuilding",
-    "Red Star Steelworks"
+    "Red Star Steelworks",
+    "Ural Heavy Industries",
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -315688,10 +315687,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 29309.75926136486,
+  "money_printed": 29252.56407613756,
   "total_bank_reserves": 493905,
   "inflation_history": [
-    8.138340863718142,
     7.688054915553614,
     7.255499241579287,
     6.822965986531091,
@@ -315763,6 +315761,7 @@
     0.7734583071267345,
     0.47549517691788346,
     0.21073350831290227,
+    0,
     0,
     0,
     0,
@@ -315931,9 +315930,9 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3929766538931454,
-    "Cake": 1.1918439055099215,
+    "Cake": 1.2018439055099215,
     "Bread": 1.019404837959771,
-    "Copper Ingot": 1.3267028576845663,
+    "Copper Ingot": 1.3367028576845663,
     "Iron Ingot": 1.2842561732185882,
     "Steel Ingot": 1.335821500064666,
     "Gold Bar": 0.9880370018652028,
@@ -315952,24 +315951,24 @@
     "Sugar": 1.050034441302838,
     "Wine": 1.4007883482835046,
     "Canned Food": 1.3958498556089851,
-    "Canned Fish": 1.3914277107115427,
+    "Canned Fish": 1.3239277107115428,
     "Smoked Fish": 1.3893621987059217,
     "Fish Stew": 1.3709759110061237,
     "Peat Fuel": 1.4061680839338835,
-    "Gas Fuel": 1.3987043086267839,
+    "Gas Fuel": 1.4087043086267839,
     "Fertilizer": 1.4007731497413445,
     "Cotton Fabric": 1.4046285714291913,
     "Manganese Alloy": 1.4173427611337268,
-    "Sunflower Oil": 1.3890014653355316,
+    "Sunflower Oil": 1.3990014653355316,
     "Linen": 1.4098862208212941,
-    "Corn Meal": 1.3886501072285515,
-    "Tea Pack": 1.411501961112369,
+    "Corn Meal": 1.3986501072285515,
+    "Tea Pack": 1.421501961112369,
     "Citrus Juice": 1.4167487142479693,
     "Antimony Alloy": 1.4057256415310497,
     "Molybdenum Rod": 1.4103440905499556,
     "Aluminium Sheet": 1.4046277777304201,
     "Shale Oil": 1.404628571346057,
-    "Bandage": 1.4084248625641356,
+    "Bandage": 1.4184248625641356,
     "Ointment": 1.4122705148443542,
     "Pet Food": 1.4007731328652573,
     "Brass": 1.3949892398639283,
@@ -315990,7 +315989,7 @@
     "Shale Oil": "2026-09-13T09:01:34.582Z",
     "Peat Fuel": "2026-08-30T10:15:06.364Z",
     "Smoked Fish": "2026-10-02T09:08:51.057Z",
-    "Canned Fish": "2026-10-02T08:06:01.108Z",
+    "Canned Fish": "2026-10-02T15:59:33.768Z",
     "Canned Food": "2026-10-02T12:46:16.927Z",
     "Uranium Rod": "2026-10-02T07:47:10.342Z",
     "Aluminium Sheet": "2026-09-03T13:50:43.149Z",
@@ -316021,7 +316020,7 @@
     "Cake": 22,
     "Gas Fuel": 80,
     "Refined Fuel": 7,
-    "Canned Fish": 6,
+    "Canned Fish": 9,
     "Canned Food": 5,
     "Steel Beam": 5,
     "Smoked Fish": 5,
@@ -323249,20 +323248,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-05T21:15:24.517Z",
-      "by": "860203156222902332",
-      "username": "erushim",
-      "action": "collect-salaries",
-      "details": "State Mining Corp paid ₽490 salaries ceo 860203156222902332 ₽175, director 860203156222902332 ₽175, manager 1186597507720019988 ₽70, manager 807254722251587614 ₽70"
-    },
-    {
-      "at": "2026-09-06T08:00:29.154Z",
-      "by": "730223629849199093",
-      "username": "juice_wrld9999",
-      "action": "collect-salaries",
-      "details": "State Nuclear Energy paid ₽218 salaries ceo 1495413593242337421 ₽91, director 1495413593242337421 ₽91, manager 730223629849199093 ₽36"
-    },
-    {
       "at": "2026-09-06T08:26:08.726Z",
       "by": "1186597507720019988",
       "username": "imdivit",
@@ -326747,6 +326732,20 @@
       "username": "hyawii2.0",
       "action": "election-end",
       "details": "EL13 winner C15"
+    },
+    {
+      "at": "2026-10-02T15:59:15.822Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "addcandidate",
+      "details": "Nikanor (C1)"
+    },
+    {
+      "at": "2026-10-02T15:59:32.104Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "addcandidate",
+      "details": "Maxim Ivanov (C2)"
     }
   ],
   "total_rubles_history": [
@@ -327823,7 +327822,7 @@
         "983175525809926146": 1,
         "771077238266658837": 1,
         "1521043721129558017": 6,
-        "807254722251587614": 18,
+        "807254722251587614": 19,
         "1467181939218714656": 5,
         "1397601108616024075": 1,
         "1365483598962102305": 1,
@@ -328028,7 +328027,7 @@
       "874346333882945547": 1790954590938,
       "870686833976172574": 1790946420858,
       "1186597507720019988": 1790954992718,
-      "1521043721129558017": 1790952315132,
+      "1521043721129558017": 1790956781096,
       "1397601108616024075": 1790955970182,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
@@ -328620,7 +328619,7 @@
       "1244001457938628649": 1790942860275,
       "749918466554855507": 1790949760920,
       "1500854055310852186": 1790956627135,
-      "1526505539935146095": 1790956645167,
+      "1526505539935146095": 1790956752042,
       "1080825024048529439": 1790955483333,
       "776049586632261663": 1790956655858
     }
@@ -346662,13 +346661,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "918518877414100993",
-      "from": 6,
-      "to": 7,
-      "at": "2026-09-27T11:08:42.409Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1522851408611770409",
       "from": 9,
       "to": 10,
@@ -348060,6 +348052,13 @@
       "to": 17,
       "at": "2026-10-02T15:56:54.994Z",
       "reason": "work"
+    },
+    {
+      "userId": "1526505539935146095",
+      "from": 1,
+      "to": 2,
+      "at": "2026-10-02T15:59:12.046Z",
+      "reason": "chat"
     }
   ],
   "_lastCollectXP": {
@@ -350439,12 +350438,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 8.61,
+    "rub_per_usd": 8.64,
     "history": [
-      {
-        "rate": 8.65,
-        "at": "2026-10-02T00:07:43.731Z"
-      },
       {
         "rate": 8.61,
         "at": "2026-10-02T00:17:43.727Z"
@@ -350840,9 +350835,13 @@
       {
         "rate": 8.61,
         "at": "2026-10-02T15:58:34.177Z"
+      },
+      {
+        "rate": 8.64,
+        "at": "2026-10-02T15:58:55.461Z"
       }
     ],
-    "last_update": "2026-10-02T15:58:34.177Z",
+    "last_update": "2026-10-02T15:58:55.461Z",
     "manual_override": null
   },
   "national_budget": {
@@ -354275,8 +354274,8 @@
         "price": 2755
       },
       "Canned Fish": {
-        "qty": 62,
-        "price": 197
+        "qty": 65,
+        "price": 196
       },
       "Bread": {
         "qty": 106,
@@ -354315,7 +354314,7 @@
         "price": 205
       }
     },
-    "sold_count": 1687,
+    "sold_count": 1690,
     "bought_count": 267
   },
   "leaders": {
@@ -354364,7 +354363,40 @@
   },
   "elections": {
     "enabled": true,
-    "active": null,
+    "active": {
+      "id": "EL14",
+      "title": "Premiership Election",
+      "candidates": [
+        {
+          "id": "C1",
+          "name": "Nikanor",
+          "userId": "1506785783506534426",
+          "avatarHash": "5de2d1ab4fbc8da0d4df52941650702b",
+          "avatarAnimated": false,
+          "ideology": "Reformist",
+          "addedBy": "hyawii2.0",
+          "addedAt": "2026-10-02T15:59:15.342Z"
+        },
+        {
+          "id": "C2",
+          "name": "Maxim Ivanov",
+          "userId": "1502583799408627712",
+          "avatarHash": "f46d387888d4d2865aa92b3970d454b4",
+          "avatarAnimated": false,
+          "ideology": "Traditionalist",
+          "addedBy": "hyawii2.0",
+          "addedAt": "2026-10-02T15:59:31.679Z"
+        }
+      ],
+      "votes": {},
+      "timeline": [],
+      "startsAt": null,
+      "endsAt": null,
+      "status": "staged",
+      "winnerId": null,
+      "updateMessageId": "1555610132266623062",
+      "next_cid": 2
+    },
     "history": [
       {
         "id": "EL1",
@@ -354640,7 +354672,7 @@
     "updateChannelId": "606543995165999104",
     "confirmChannelId": "1555220917830029322",
     "animated": {},
-    "next_num": 13,
+    "next_num": 14,
     "avatars_refreshed_at": "2026-10-02T15:19:27.046Z",
     "board_style": "tno"
   },
