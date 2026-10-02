@@ -315575,7 +315575,7 @@
   "ai_store": {
     "Machine Parts": 94,
     "Cake": 11,
-    "Gas Fuel": 69,
+    "Gas Fuel": 67,
     "Circuit Board": 8,
     "Refined Fuel": 2,
     "Canned Fish": 4,
@@ -315600,7 +315600,7 @@
     "Circuit Board": 77,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
-    "Gas Fuel": 148,
+    "Gas Fuel": 150,
     "Steel Beam": 69,
     "Machine Parts": 213,
     "Sugar": 61,
@@ -315617,11 +315617,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-09-29T00:40:10.630Z"
-    },
     {
       "item": "Timber Planks",
       "qty": 2,
@@ -317116,6 +317111,11 @@
       "item": "Canned Fish",
       "qty": 1,
       "at": "2026-10-02T05:12:39.998Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-10-02T05:27:40.105Z"
     }
   ],
   "demand_history": {
@@ -320702,11 +320702,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 1.1266618070320156,
-        "at": "2026-09-18T11:58:20.292Z",
-        "supply": 16
-      },
-      {
         "demand": 1.1396966228791092,
         "at": "2026-09-18T12:13:20.283Z",
         "supply": 16
@@ -320999,6 +320994,11 @@
       {
         "demand": 1.384371194608745,
         "at": "2026-10-01T21:27:39.934Z",
+        "supply": 7
+      },
+      {
+        "demand": 1.3909301825095877,
+        "at": "2026-10-02T05:27:40.105Z",
         "supply": 7
       }
     ],
