@@ -129,7 +129,7 @@
     },
     "1082686076491137115": {
       "username": "",
-      "cash": 5338,
+      "cash": 8881,
       "bank": 0,
       "resources": {
         "Copper": 2,
@@ -126184,8 +126184,8 @@
       "last_illegal": "2026-10-02T19:02:04.095Z",
       "total_heat_generated": 246.35800000000003,
       "bot_level": 18,
-      "bot_xp": 892,
-      "bot_total_xp": 19267,
+      "bot_xp": 910,
+      "bot_total_xp": 19285,
       "daily_work_count": 56,
       "shock_worker": false,
       "last_laylow": "2026-10-01T18:12:57.059Z",
@@ -314686,7 +314686,7 @@
         3,
         3,
         3,
-        3,
+        4,
         4,
         4,
         4,
@@ -314734,7 +314734,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        392627,
         392790,
         392940,
         392988,
@@ -314833,7 +314832,8 @@
         403678,
         403694,
         403702,
-        403702
+        403702,
+        403994
       ],
       "sales_team": 1
     },
@@ -315334,11 +315334,6 @@
   },
   "gsi_history": [
     {
-      "price": 86,
-      "change_percent": 1.3160970196466326,
-      "recorded_at": "2026-10-02T15:12:49.582Z"
-    },
-    {
       "price": 87,
       "change_percent": 1.3627047578751654,
       "recorded_at": "2026-10-02T15:14:41.013Z"
@@ -315832,6 +315827,11 @@
       "price": 98,
       "change_percent": 1.062636650612801,
       "recorded_at": "2026-10-02T19:02:04.995Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.6733195588616793,
+      "recorded_at": "2026-10-02T19:03:10.437Z"
     }
   ],
   "factory_names": [
@@ -323444,13 +323444,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-09T20:50:05.160Z",
-      "by": "874346333882945547",
-      "username": "seniormanulos",
-      "action": "launder",
-      "details": "₽4,000 dirty → ₽2,600 clean fee ₽1,400"
-    },
-    {
       "at": "2026-09-10T07:59:49.382Z",
       "by": "1186597507720019988",
       "username": "imdivit",
@@ -326942,6 +326935,13 @@
       "username": "hyawii2.0",
       "action": "setcentralchair",
       "details": "874346333882945547 → 1082686076491137115 (0 salary)"
+    },
+    {
+      "at": "2026-10-02T19:03:40.915Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "claim_bond",
+      "details": "bond_1 ₽3,543"
     }
   ],
   "total_rubles_history": [
@@ -328634,7 +328634,7 @@
       "1502373335349199012": 1790011034808,
       "875747075046928415": 1790015513629,
       "1176419080652197919": 1790015905994,
-      "895937675813593138": 1790967743311,
+      "895937675813593138": 1790967815072,
       "520925761335721984": 1790017335537,
       "1527242905335631924": 1790017452136,
       "1329014037278887946": 1790020883249,
@@ -348270,7 +348270,7 @@
     "leveled": []
   },
   "central_bank": {
-    "reserves": 840332,
+    "reserves": 836789,
     "interest_rate": 10,
     "prime_rate": 3.5,
     "discount_rate": 6,
@@ -348414,7 +348414,7 @@
       }
     ],
     "total_added": 1141386,
-    "total_removed": 451054,
+    "total_removed": 454597,
     "created_at": "2026-09-11T19:05:50.282Z",
     "last_update": "2026-09-30T11:25:46.992Z",
     "chair_id": "1082686076491137115",
@@ -348526,8 +348526,8 @@
         "interestRate": 2,
         "boughtAt": "2026-09-14T19:35:50.601Z",
         "maturityAt": "2026-09-21T19:35:50.601Z",
-        "claimed": false,
-        "claimedAt": null
+        "claimed": true,
+        "claimedAt": "2026-10-02T19:03:40.915Z"
       },
       {
         "id": "bond_2",
@@ -348587,8 +348587,8 @@
     ],
     "next_id": 7,
     "total_issued": 9874,
-    "total_redeemed": 6200,
-    "total_interest_paid": 124
+    "total_redeemed": 9674,
+    "total_interest_paid": 193
   },
   "mafias": [
     {
