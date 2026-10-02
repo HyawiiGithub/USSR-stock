@@ -243496,9 +243496,7 @@
       "cash": 45,
       "bank": 0,
       "resources": {},
-      "inventory": {
-        "Bread": 2
-      },
+      "inventory": {},
       "company_id": "state_27",
       "gsi_shares": 0,
       "share_holdings": {
@@ -243530,8 +243528,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 28,
-      "bot_xp": 3310,
-      "bot_total_xp": 59660,
+      "bot_xp": 3340,
+      "bot_total_xp": 59690,
       "daily_work_count": 439,
       "shock_worker": false,
       "mee6_level": 28,
@@ -314128,11 +314126,11 @@
         }
       },
       "inventory": {
-        "Natural Gas": 2,
-        "Iron Ore": 25,
-        "Coal": 58,
-        "Uranium": 2,
-        "Lead": 10,
+        "Natural Gas": 3,
+        "Iron Ore": 23,
+        "Coal": 57,
+        "Uranium": 1,
+        "Lead": 9,
         "Timber Planks": 84,
         "Gold Bar": 29,
         "Timber": 183,
@@ -314143,16 +314141,20 @@
         "Peat": 4,
         "Copper": 1,
         "Flax": 1,
-        "Oil": 3,
+        "Oil": 4,
         "Limestone": 1,
         "Aluminium": 1,
         "Sulphur": 1,
         "Oil Shale": 1,
         "Salt": 1,
-        "Steel Ingot": 2
+        "Steel Ingot": 1,
+        "Uranium Rod": 1,
+        "Wheat": 1,
+        "Sugar": 1,
+        "Machine Parts": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-10-01T22:20:44.241Z",
+      "last_collect": "2026-10-02T07:40:08.310Z",
       "price_history": [
         3,
         3,
@@ -314280,9 +314282,6 @@
       "prev_price": 3,
       "is_private": true,
       "value_history": [
-        376938,
-        376962,
-        376975,
         376999,
         377063,
         377076,
@@ -314379,7 +314378,10 @@
         390318,
         390342,
         388884,
-        388884
+        388884,
+        388897,
+        389065,
+        390683
       ],
       "sales_team": 1
     },
@@ -314857,16 +314859,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.5904258370226323,
-      "recorded_at": "2026-10-02T03:52:48.642Z"
-    },
-    {
-      "price": 96,
-      "change_percent": 0.7512077878894121,
-      "recorded_at": "2026-10-02T03:57:37.614Z"
-    },
     {
       "price": 96,
       "change_percent": 0.30325041359809357,
@@ -315356,6 +315348,16 @@
       "price": 94,
       "change_percent": 0.8373069481175728,
       "recorded_at": "2026-10-02T07:37:48.678Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.5300894196374276,
+      "recorded_at": "2026-10-02T07:39:47.870Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.7154167515598348,
+      "recorded_at": "2026-10-02T07:40:09.852Z"
     }
   ],
   "factory_names": [
@@ -327578,7 +327580,8 @@
       },
       "2026-10-02": {
         "Nuristani SSR": 1,
-        "Ukrainian SSR": 0
+        "Ukrainian SSR": 0,
+        "Russian SFSR": 0
       }
     },
     "qotd": {
@@ -347638,9 +347641,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 28,
-    "beforeLvlC": 21,
-    "afterLvl": 21,
+    "xpGainC": 30,
+    "beforeLvlC": 28,
+    "afterLvl": 28,
     "leveled": []
   },
   "central_bank": {
