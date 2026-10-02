@@ -315703,7 +315703,7 @@
     "Machine Parts": 94,
     "Cake": 9,
     "Gas Fuel": 84,
-    "Circuit Board": 4,
+    "Circuit Board": 2,
     "Refined Fuel": 10,
     "Canned Fish": 4,
     "Canned Food": 1
@@ -315724,7 +315724,7 @@
     "Canned Fish": 72,
     "Bread": 332,
     "Aluminium Sheet": 8,
-    "Circuit Board": 81,
+    "Circuit Board": 83,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
     "Gas Fuel": 151,
@@ -315744,11 +315744,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Canned Food",
-      "qty": 1,
-      "at": "2026-09-29T02:25:11.201Z"
-    },
     {
       "item": "Steel Beam",
       "qty": 2,
@@ -317243,6 +317238,11 @@
       "item": "Circuit Board",
       "qty": 1,
       "at": "2026-10-02T06:57:39.978Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-10-02T07:12:40.127Z"
     }
   ],
   "demand_history": {
@@ -320725,6 +320725,11 @@
       {
         "demand": 1.3914505570574414,
         "at": "2026-10-02T06:57:39.978Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.3914505570574414,
+        "at": "2026-10-02T07:12:40.127Z",
         "supply": 2
       }
     ],
