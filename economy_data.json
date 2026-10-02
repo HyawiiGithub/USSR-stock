@@ -782,8 +782,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 112,
-      "bot_total_xp": 23962,
+      "bot_xp": 141,
+      "bot_total_xp": 23991,
       "daily_work_count": 77,
       "shock_worker": false,
       "mee6_level": 20,
@@ -1070,7 +1070,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 0,
-      "heat": 4,
+      "heat": 3.121018682218828,
       "wanted": 0,
       "last_illegal": "2026-10-01T08:21:37.609Z",
       "total_heat_generated": 2431.041899999999,
@@ -1387,8 +1387,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 25,
-      "bot_xp": 926,
-      "bot_total_xp": 42926,
+      "bot_xp": 945,
+      "bot_total_xp": 42945,
       "daily_work_count": 246,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-29",
@@ -1700,8 +1700,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 9,
-      "bot_xp": 101,
-      "bot_total_xp": 3821,
+      "bot_xp": 111,
+      "bot_total_xp": 3831,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -284175,8 +284175,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 750,
-      "bot_total_xp": 3650,
+      "bot_xp": 769,
+      "bot_total_xp": 3669,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -314565,7 +314565,7 @@
       },
       "wage": 35,
       "heat": 0,
-      "underground_heat": 1273.7109499078706,
+      "underground_heat": 1272.9306421170932,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 8,
@@ -315505,11 +315505,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": 0.7306701668407548,
-      "recorded_at": "2026-10-02T16:53:58.612Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.6200579339051118,
       "recorded_at": "2026-10-02T16:59:02.685Z"
     },
@@ -316002,6 +315997,11 @@
       "price": 94,
       "change_percent": -0.10758791050718844,
       "recorded_at": "2026-10-02T21:59:06.493Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.20710974191836262,
+      "recorded_at": "2026-10-02T22:04:06.424Z"
     }
   ],
   "factory_names": [
@@ -327146,10 +327146,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1613999,
-      "at": "2026-10-02T14:22:52.485Z"
-    },
-    {
       "total": 1614888,
       "at": "2026-10-02T14:27:52.582Z"
     },
@@ -327544,6 +327540,10 @@
     {
       "total": 1544324,
       "at": "2026-10-02T21:59:10.050Z"
+    },
+    {
+      "total": 1543170,
+      "at": "2026-10-02T22:04:10.044Z"
     }
   ],
   "gold_rush": null,
@@ -327570,7 +327570,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 0.6,
+  "heat_global": 0.3,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -328460,7 +328460,7 @@
       "1496968738447032410": 1790674473289,
       "1254134534987845877": 1789419071660,
       "1490511870967283733": 1789513410824,
-      "1225275427145121903": 1790978461712,
+      "1225275427145121903": 1790978661785,
       "1520173521244913684": 1789680209105,
       "930716306603405363": 1790882518823,
       "1494919466713350275": 1790978473093,
@@ -351578,12 +351578,6 @@
         "balance": 10071,
         "income": 66854,
         "spending": 56783,
-        "at": "2026-10-02T14:22:52.499Z"
-      },
-      {
-        "balance": 10071,
-        "income": 66854,
-        "spending": 56783,
         "at": "2026-10-02T14:27:52.600Z"
       },
       {
@@ -352173,6 +352167,12 @@
         "income": 66854,
         "spending": 58127,
         "at": "2026-10-02T21:59:10.068Z"
+      },
+      {
+        "balance": 8727,
+        "income": 66854,
+        "spending": 58127,
+        "at": "2026-10-02T22:04:10.072Z"
       }
     ]
   },
@@ -355688,11 +355688,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.71418164390799,
-      "top10": 100,
-      "at": "2026-10-02T14:22:52.494Z"
-    },
-    {
       "gini": 99.71409304780452,
       "top10": 100,
       "at": "2026-10-02T14:27:52.593Z"
@@ -356186,13 +356181,14 @@
       "gini": 99.72619713684317,
       "top10": 100,
       "at": "2026-10-02T21:59:10.063Z"
+    },
+    {
+      "gini": 99.72708731327475,
+      "top10": 100,
+      "at": "2026-10-02T22:04:10.057Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3564302,
-      "at": "2026-10-02T14:22:52.499Z"
-    },
     {
       "gdp": 3564812,
       "at": "2026-10-02T14:27:52.599Z"
@@ -356588,6 +356584,10 @@
     {
       "gdp": 3640958,
       "at": "2026-10-02T21:59:10.068Z"
+    },
+    {
+      "gdp": 3639804,
+      "at": "2026-10-02T22:04:10.072Z"
     }
   ],
   "purge_allowed": [
@@ -357378,12 +357378,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 261900,
-      "at": "2026-10-02T14:22:52.499Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 261900,
       "at": "2026-10-02T14:27:52.600Z"
     },
     {
@@ -357973,6 +357967,12 @@
       "perRole": 10000,
       "active": 271600,
       "at": "2026-10-02T21:59:10.068Z"
+    },
+    {
+      "enlisted": 28,
+      "perRole": 10000,
+      "active": 271600,
+      "at": "2026-10-02T22:04:10.072Z"
     }
   ],
   "casino": {
