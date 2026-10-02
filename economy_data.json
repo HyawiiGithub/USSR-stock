@@ -314301,21 +314301,21 @@
         3,
         3,
         3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
         3,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
         3,
         3,
         3,
@@ -314356,7 +314356,6 @@
       "prev_price": 3,
       "is_private": true,
       "value_history": [
-        378700,
         378748,
         378761,
         378809,
@@ -314455,7 +314454,8 @@
         393185,
         393185,
         393233,
-        393257
+        393257,
+        393270
       ],
       "sales_team": 1
     },
@@ -314941,11 +314941,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.4122607198838884,
-      "recorded_at": "2026-10-02T07:59:58.076Z"
-    },
     {
       "price": 97,
       "change_percent": 1.1758366718819813,
@@ -315440,6 +315435,11 @@
       "price": 101,
       "change_percent": 0.5272082019963736,
       "recorded_at": "2026-10-02T11:07:48.646Z"
+    },
+    {
+      "price": 101,
+      "change_percent": 0.8571305777109912,
+      "recorded_at": "2026-10-02T11:11:51.146Z"
     }
   ],
   "factory_names": [
@@ -315798,7 +315798,7 @@
     "Canned Fish": 11,
     "Canned Food": 6,
     "Steel Beam": 6,
-    "Smoked Fish": 8,
+    "Smoked Fish": 6,
     "Glass": 6
   },
   "global_consumption": {
@@ -315811,7 +315811,7 @@
     "Shale Oil": 27,
     "Peat Fuel": 10,
     "Cake": 389,
-    "Smoked Fish": 78,
+    "Smoked Fish": 80,
     "Canned Food": 76,
     "Uranium Rod": 52,
     "Canned Fish": 75,
@@ -315837,11 +315837,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-09-29T06:25:13.438Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -317336,6 +317331,11 @@
       "item": "Canned Fish",
       "qty": 1,
       "at": "2026-10-02T10:57:40.026Z"
+    },
+    {
+      "item": "Smoked Fish",
+      "qty": 2,
+      "at": "2026-10-02T11:12:40.029Z"
     }
   ],
   "demand_history": {
@@ -319531,6 +319531,11 @@
       {
         "demand": 1.2291536528353777,
         "at": "2026-10-02T10:27:40.147Z",
+        "supply": 3
+      },
+      {
+        "demand": 1.3128957566197865,
+        "at": "2026-10-02T11:12:40.029Z",
         "supply": 3
       }
     ],
