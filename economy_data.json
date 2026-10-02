@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 326493,
+      "bank": 326512,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -837,7 +837,7 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 1027,
+      "cash": 28,
       "bank": 0,
       "resources": {
         "Coal": 1
@@ -848,7 +848,7 @@
       "gsi_shares": 0,
       "share_holdings": {
         "Speers Realm": {
-          "shares": 2374,
+          "shares": 2514,
           "avg_price": 5
         }
       },
@@ -863,7 +863,7 @@
       "is_state_director": false,
       "director_of": null,
       "dirty_cash": 0,
-      "heat": 11.587743729970796,
+      "heat": 10.66563351560329,
       "wanted": 0,
       "last_illegal": "2026-10-02T07:51:38.633Z",
       "total_heat_generated": 938.099,
@@ -313661,10 +313661,10 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 63595,
+      "funds": 64594,
       "invested_capital": 8196,
       "shares_total": 100000,
-      "shares_available": 42744,
+      "shares_available": 42604,
       "state_shares": 0,
       "founder_shares": 0,
       "share_price": 7,
@@ -313842,7 +313842,6 @@
         6,
         6,
         6,
-        6,
         7,
         7,
         7,
@@ -313921,6 +313920,7 @@
         8,
         8,
         8,
+        7,
         7,
         7,
         7,
@@ -313949,14 +313949,13 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 10.514999999999999,
-      "underground_heat": 1272.9166425163485,
+      "heat": 9.921273013074776,
+      "underground_heat": 1272.1803259510002,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 7,
       "is_private": true,
       "value_history": [
-        672455,
         672491,
         672491,
         672491,
@@ -314055,7 +314054,8 @@
         769552,
         769552,
         769552,
-        769534
+        769534,
+        770533
       ],
       "sales_team": 1
     },
@@ -314856,11 +314856,6 @@
   "gsi_history": [
     {
       "price": 95,
-      "change_percent": 0.13158748136123344,
-      "recorded_at": "2026-10-02T04:13:07.834Z"
-    },
-    {
-      "price": 95,
       "change_percent": 0.188709485504265,
       "recorded_at": "2026-10-02T04:17:48.539Z"
     },
@@ -315353,6 +315348,11 @@
       "price": 95,
       "change_percent": 0.5050528992563077,
       "recorded_at": "2026-10-02T07:50:59.260Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 1.0181717740266425,
+      "recorded_at": "2026-10-02T07:52:48.761Z"
     }
   ],
   "factory_names": [
@@ -326344,10 +326344,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1605469,
-      "at": "2026-10-01T23:47:49.779Z"
-    },
-    {
       "total": 1605484,
       "at": "2026-10-01T23:52:49.778Z"
     },
@@ -326742,6 +326738,10 @@
     {
       "total": 1583071,
       "at": "2026-10-02T07:47:50.513Z"
+    },
+    {
+      "total": 1584134,
+      "at": "2026-10-02T07:52:50.503Z"
     }
   ],
   "gold_rush": null,
@@ -326768,7 +326768,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 2.4,
+  "heat_global": 2.1,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -350677,12 +350677,6 @@
         "balance": 11396,
         "income": 66854,
         "spending": 55458,
-        "at": "2026-10-01T23:47:49.805Z"
-      },
-      {
-        "balance": 11396,
-        "income": 66854,
-        "spending": 55458,
         "at": "2026-10-01T23:52:49.795Z"
       },
       {
@@ -351272,6 +351266,12 @@
         "income": 66854,
         "spending": 56117,
         "at": "2026-10-02T07:47:50.528Z"
+      },
+      {
+        "balance": 10737,
+        "income": 66854,
+        "spending": 56117,
+        "at": "2026-10-02T07:52:50.517Z"
       }
     ]
   },
@@ -354391,11 +354391,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.7162621849075,
-      "top10": 100,
-      "at": "2026-10-01T23:47:49.795Z"
-    },
-    {
       "gini": 99.71619135669829,
       "top10": 100,
       "at": "2026-10-01T23:52:49.790Z"
@@ -354889,13 +354884,14 @@
       "gini": 99.71629077456508,
       "top10": 100,
       "at": "2026-10-02T07:47:50.523Z"
+    },
+    {
+      "gini": 99.71608659407691,
+      "top10": 100,
+      "at": "2026-10-02T07:52:50.510Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3507161,
-      "at": "2026-10-01T23:47:49.804Z"
-    },
     {
       "gdp": 3507240,
       "at": "2026-10-01T23:52:49.795Z"
@@ -355291,6 +355287,10 @@
     {
       "gdp": 3532553,
       "at": "2026-10-02T07:47:50.528Z"
+    },
+    {
+      "gdp": 3534295,
+      "at": "2026-10-02T07:52:50.517Z"
     }
   ],
   "purge_allowed": [
@@ -356081,12 +356081,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 259200,
-      "at": "2026-10-01T23:47:49.805Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 259200,
       "at": "2026-10-01T23:52:49.796Z"
     },
     {
@@ -356676,6 +356670,12 @@
       "perRole": 10000,
       "active": 261900,
       "at": "2026-10-02T07:47:50.528Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 261900,
+      "at": "2026-10-02T07:52:50.518Z"
     }
   ],
   "casino": {
