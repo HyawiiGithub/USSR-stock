@@ -315520,7 +315520,7 @@
     "Machine Parts": 99,
     "Cake": 16,
     "Gas Fuel": 69,
-    "Uranium Rod": 2,
+    "Uranium Rod": 1,
     "Fuel": 2,
     "Circuit Board": 12,
     "Refined Fuel": 2,
@@ -315541,7 +315541,7 @@
     "Cake": 381,
     "Smoked Fish": 73,
     "Canned Food": 67,
-    "Uranium Rod": 49,
+    "Uranium Rod": 50,
     "Canned Fish": 71,
     "Bread": 328,
     "Aluminium Sheet": 8,
@@ -315565,11 +315565,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 2,
-      "at": "2026-09-28T19:05:56.696Z"
-    },
     {
       "item": "Canned Fish",
       "qty": 1,
@@ -317064,6 +317059,11 @@
       "item": "Steel Beam",
       "qty": 1,
       "at": "2026-10-02T00:12:39.954Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 1,
+      "at": "2026-10-02T00:27:39.948Z"
     }
   ],
   "demand_history": {
@@ -319658,6 +319658,11 @@
       {
         "demand": 1.3951171459980511,
         "at": "2026-10-01T21:42:39.934Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.4038378594985383,
+        "at": "2026-10-02T00:27:39.948Z",
         "supply": 0
       }
     ],
