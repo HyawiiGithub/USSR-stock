@@ -314317,7 +314317,6 @@
       "prev_price": 3,
       "is_private": true,
       "value_history": [
-        377480,
         377496,
         377509,
         377522,
@@ -314416,7 +314415,8 @@
         391849,
         391862,
         391886,
-        391950
+        391950,
+        391966
       ],
       "sales_team": 1
     },
@@ -314896,11 +314896,6 @@
     }
   },
   "gsi_history": [
-    {
-      "price": 96,
-      "change_percent": 0.2865735337937998,
-      "recorded_at": "2026-10-02T05:12:48.627Z"
-    },
     {
       "price": 96,
       "change_percent": 0.5125358887922884,
@@ -315395,6 +315390,11 @@
       "price": 97,
       "change_percent": 0.9318729101768197,
       "recorded_at": "2026-10-02T08:41:29.397Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.5725843800943937,
+      "recorded_at": "2026-10-02T08:42:01.268Z"
     }
   ],
   "factory_names": [],
@@ -315749,7 +315749,7 @@
     "Circuit Board": 2,
     "Refined Fuel": 10,
     "Canned Fish": 13,
-    "Canned Food": 10
+    "Canned Food": 9
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -315762,7 +315762,7 @@
     "Peat Fuel": 10,
     "Cake": 388,
     "Smoked Fish": 76,
-    "Canned Food": 72,
+    "Canned Food": 73,
     "Uranium Rod": 52,
     "Canned Fish": 73,
     "Bread": 332,
@@ -315787,11 +315787,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Fish Stew",
-      "qty": 2,
-      "at": "2026-09-29T03:55:11.548Z"
-    },
     {
       "item": "Canned Food",
       "qty": 1,
@@ -317286,6 +317281,11 @@
       "item": "Uranium Rod",
       "qty": 1,
       "at": "2026-10-02T08:27:39.986Z"
+    },
+    {
+      "item": "Canned Food",
+      "qty": 1,
+      "at": "2026-10-02T08:42:39.989Z"
     }
   ],
   "demand_history": {
@@ -319719,6 +319719,11 @@
         "demand": 1.3990354513791365,
         "at": "2026-10-02T07:42:39.994Z",
         "supply": 3
+      },
+      {
+        "demand": 1.1613120883630148,
+        "at": "2026-10-02T08:42:39.989Z",
+        "supply": 1
       }
     ],
     "Uranium Rod": [
