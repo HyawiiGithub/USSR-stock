@@ -316442,7 +316442,7 @@
     "Steel Beam": 2,
     "Smoked Fish": 1,
     "Glass": 5,
-    "Fish Stew": 3
+    "Fish Stew": 1
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -316475,17 +316475,12 @@
     "Brass Valve": 23,
     "Pet Food": 9,
     "Radiator": 16,
-    "Fish Stew": 50,
+    "Fish Stew": 52,
     "Bricks": 20,
     "Sunflower Oil": 21,
     "Glass": 1
   },
   "consumption_history": [
-    {
-      "item": "Radiator",
-      "qty": 1,
-      "at": "2026-09-29T19:57:31.068Z"
-    },
     {
       "item": "Radiator",
       "qty": 1,
@@ -317980,6 +317975,11 @@
       "item": "Canned Fish",
       "qty": 1,
       "at": "2026-10-02T23:14:00.965Z"
+    },
+    {
+      "item": "Fish Stew",
+      "qty": 2,
+      "at": "2026-10-02T23:29:00.958Z"
     }
   ],
   "demand_history": {
@@ -323512,6 +323512,11 @@
       {
         "demand": 1.3709759110061237,
         "at": "2026-10-02T22:29:00.949Z",
+        "supply": 15
+      },
+      {
+        "demand": 1.3709759110061237,
+        "at": "2026-10-02T23:29:00.959Z",
         "supply": 15
       }
     ],
