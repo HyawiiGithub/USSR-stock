@@ -315528,8 +315528,7 @@
     "Refined Fuel": 2,
     "Bread": 2,
     "Canned Fish": 5,
-    "Canned Food": 5,
-    "Smoked Fish": 2
+    "Canned Food": 5
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -315541,7 +315540,7 @@
     "Shale Oil": 27,
     "Peat Fuel": 10,
     "Cake": 381,
-    "Smoked Fish": 74,
+    "Smoked Fish": 76,
     "Canned Food": 67,
     "Uranium Rod": 50,
     "Canned Fish": 71,
@@ -315567,11 +315566,6 @@
     "Sunflower Oil": 21
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-09-28T20:26:05.478Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -317066,6 +317060,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-10-02T01:12:39.958Z"
+    },
+    {
+      "item": "Smoked Fish",
+      "qty": 2,
+      "at": "2026-10-02T01:27:39.970Z"
     }
   ],
   "demand_history": {
@@ -319251,6 +319250,11 @@
       {
         "demand": 1.3920789685102588,
         "at": "2026-10-02T00:42:39.939Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.3920789685102588,
+        "at": "2026-10-02T01:27:39.970Z",
         "supply": 2
       }
     ],
