@@ -31234,15 +31234,15 @@
       "pet_food_source": {}
     },
     "1500854055310852186": {
-      "cash": 0,
+      "cash": 35,
       "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": null,
-      "work_count": 0,
+      "last_work": "2026-10-02T15:18:16.654Z",
+      "work_count": 1,
       "last_claim": null,
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
@@ -31256,9 +31256,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 106,
-      "bot_total_xp": 581,
-      "daily_work_count": 0,
+      "bot_xp": 122,
+      "bot_total_xp": 597,
+      "daily_work_count": 1,
       "shock_worker": false,
       "last_laylow": null,
       "work_reminder": false,
@@ -31270,7 +31270,8 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {},
-      "mee6_level": 3
+      "mee6_level": 3,
+      "last_daily_work_date": "2026-10-02"
     },
     "852413541444747294": {
       "cash": 0,
@@ -313873,7 +313874,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 80661,
+      "funds": 80641,
       "invested_capital": 8196,
       "shares_total": 100000,
       "shares_available": 42584,
@@ -313989,11 +313990,11 @@
         "Sand": 64,
         "Coal": 107,
         "Bricks": 89,
-        "Copper": 24,
+        "Copper": 26,
         "Corn": 10,
         "Wine": 2,
         "Potash": 3,
-        "Grapes": 5,
+        "Grapes": 4,
         "Natural Gas": 3,
         "Sunflower": 6,
         "Copper Ingot": 39,
@@ -314067,7 +314068,6 @@
         7,
         7,
         7,
-        7,
         8,
         8,
         7,
@@ -314144,6 +314144,7 @@
         7,
         7,
         7,
+        8,
         8
       ],
       "is_state_owned": false,
@@ -314172,7 +314173,6 @@
       "prev_price": 7,
       "is_private": true,
       "value_history": [
-        725365,
         725407,
         725407,
         725519,
@@ -314271,7 +314271,8 @@
         781223,
         781223,
         781223,
-        805731
+        805731,
+        805755
       ],
       "sales_team": 1
     },
@@ -315088,16 +315089,6 @@
   "gsi_history": [
     {
       "price": 97,
-      "change_percent": 0.22998962320850666,
-      "recorded_at": "2026-10-02T12:02:48.650Z"
-    },
-    {
-      "price": 97,
-      "change_percent": 0.7735895801514009,
-      "recorded_at": "2026-10-02T12:03:30.917Z"
-    },
-    {
-      "price": 97,
       "change_percent": 0.6957981471325184,
       "recorded_at": "2026-10-02T12:07:48.601Z"
     },
@@ -315585,6 +315576,16 @@
       "price": 87,
       "change_percent": 1.3627047578751654,
       "recorded_at": "2026-10-02T15:14:41.013Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 1.3533763358469773,
+      "recorded_at": "2026-10-02T15:17:49.675Z"
+    },
+    {
+      "price": 88,
+      "change_percent": 1.0504000421814164,
+      "recorded_at": "2026-10-02T15:18:17.892Z"
     }
   ],
   "factory_names": [
@@ -315606,10 +315607,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 28701.564665270034,
-  "total_bank_reserves": 492540,
+  "money_printed": 28142.533371964633,
+  "total_bank_reserves": 493890,
   "inflation_history": [
-    7.860487338465262,
     10.527970006308696,
     10.033811139298827,
     9.545407399725093,
@@ -315687,6 +315687,7 @@
     0.7734583071267345,
     0.47549517691788346,
     0.21073350831290227,
+    0,
     0,
     0,
     0,
@@ -326668,10 +326669,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1623885,
-      "at": "2026-10-02T07:17:50.419Z"
-    },
-    {
       "total": 1623915,
       "at": "2026-10-02T07:22:50.366Z"
     },
@@ -327066,6 +327063,10 @@
     {
       "total": 1615083,
       "at": "2026-10-02T15:12:52.380Z"
+    },
+    {
+      "total": 1615059,
+      "at": "2026-10-02T15:17:52.506Z"
     }
   ],
   "gold_rush": null,
@@ -327744,7 +327745,8 @@
         "1467181939218714656": 4,
         "1397601108616024075": 1,
         "1365483598962102305": 1,
-        "1506785783506534426": 1
+        "1506785783506534426": 1,
+        "1500854055310852186": 1
       }
     },
     "collect_daily": {
@@ -350347,12 +350349,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 8.73,
+    "rub_per_usd": 8.7,
     "history": [
-      {
-        "rate": 8.51,
-        "at": "2026-10-01T23:07:43.265Z"
-      },
       {
         "rate": 8.59,
         "at": "2026-10-01T23:17:43.266Z"
@@ -350748,9 +350746,13 @@
       {
         "rate": 8.73,
         "at": "2026-10-02T15:07:44.690Z"
+      },
+      {
+        "rate": 8.7,
+        "at": "2026-10-02T15:17:44.539Z"
       }
     ],
-    "last_update": "2026-10-02T15:07:44.690Z",
+    "last_update": "2026-10-02T15:17:44.539Z",
     "manual_override": null
   },
   "national_budget": {
@@ -351046,12 +351048,6 @@
     ],
     "last_update": "2026-10-02T14:39:25.427Z",
     "balance_history": [
-      {
-        "balance": 10737,
-        "income": 66854,
-        "spending": 56117,
-        "at": "2026-10-02T07:17:50.444Z"
-      },
       {
         "balance": 10737,
         "income": 66854,
@@ -351645,6 +351641,12 @@
         "income": 66854,
         "spending": 57450,
         "at": "2026-10-02T15:12:52.405Z"
+      },
+      {
+        "balance": 9404,
+        "income": 66854,
+        "spending": 57450,
+        "at": "2026-10-02T15:17:52.576Z"
       }
     ]
   },
@@ -354769,11 +354771,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.71042331769698,
-      "top10": 100,
-      "at": "2026-10-02T07:17:50.437Z"
-    },
-    {
       "gini": 99.71033658052819,
       "top10": 100,
       "at": "2026-10-02T07:22:50.378Z"
@@ -355267,13 +355264,14 @@
       "gini": 99.71345797103221,
       "top10": 100,
       "at": "2026-10-02T15:12:52.398Z"
+    },
+    {
+      "gini": 99.71350914645495,
+      "top10": 100,
+      "at": "2026-10-02T15:17:52.568Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3524357,
-      "at": "2026-10-02T07:17:50.444Z"
-    },
     {
       "gdp": 3524464,
       "at": "2026-10-02T07:22:50.382Z"
@@ -355669,6 +355667,10 @@
     {
       "gdp": 3590157,
       "at": "2026-10-02T15:12:52.405Z"
+    },
+    {
+      "gdp": 3590149,
+      "at": "2026-10-02T15:17:52.576Z"
     }
   ],
   "purge_allowed": [
@@ -356459,12 +356461,6 @@
       "enlisted": 27,
       "perRole": 10000,
       "active": 261900,
-      "at": "2026-10-02T07:17:50.444Z"
-    },
-    {
-      "enlisted": 27,
-      "perRole": 10000,
-      "active": 261900,
       "at": "2026-10-02T07:22:50.383Z"
     },
     {
@@ -357054,6 +357050,12 @@
       "perRole": 10000,
       "active": 261900,
       "at": "2026-10-02T15:12:52.405Z"
+    },
+    {
+      "enlisted": 27,
+      "perRole": 10000,
+      "active": 261900,
+      "at": "2026-10-02T15:17:52.577Z"
     }
   ],
   "casino": {
