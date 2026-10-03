@@ -315062,7 +315062,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        403478,
         403518,
         403558,
         403678,
@@ -315161,7 +315160,8 @@
         425115,
         425115,
         425139,
-        425147
+        425147,
+        425152
       ],
       "sales_team": 1
     },
@@ -315680,16 +315680,6 @@
   },
   "gsi_history": [
     {
-      "price": 100,
-      "change_percent": 0.41417858792737644,
-      "recorded_at": "2026-10-03T00:24:08.143Z"
-    },
-    {
-      "price": 100,
-      "change_percent": 0.1503200006754772,
-      "recorded_at": "2026-10-03T00:24:36.142Z"
-    },
-    {
       "price": 99,
       "change_percent": -0.0732963416578723,
       "recorded_at": "2026-10-03T00:26:05.688Z"
@@ -316178,6 +316168,16 @@
       "price": 97,
       "change_percent": 0.7984040582998139,
       "recorded_at": "2026-10-03T04:12:29.831Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.37687154799464634,
+      "recorded_at": "2026-10-03T04:13:25.015Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.17154463794766417,
+      "recorded_at": "2026-10-03T04:14:09.849Z"
     }
   ],
   "factory_names": [
@@ -316529,7 +316529,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 91,
-    "Cake": 14,
+    "Cake": 13,
     "Gas Fuel": 71,
     "Canned Food": 1,
     "Glass": 5,
@@ -316544,7 +316544,7 @@
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
-    "Cake": 397,
+    "Cake": 398,
     "Smoked Fish": 86,
     "Canned Food": 82,
     "Uranium Rod": 53,
@@ -316572,11 +316572,6 @@
     "Glass": 1
   },
   "consumption_history": [
-    {
-      "item": "Canned Fish",
-      "qty": 1,
-      "at": "2026-09-30T00:48:03.183Z"
-    },
     {
       "item": "Cake",
       "qty": 1,
@@ -318071,6 +318066,11 @@
       "item": "Canned Fish",
       "qty": 2,
       "at": "2026-10-03T03:59:01.379Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-10-03T04:14:01.492Z"
     }
   ],
   "demand_history": {
@@ -319737,11 +319737,6 @@
     ],
     "Cake": [
       {
-        "demand": 1.3913401785861939,
-        "at": "2026-09-26T20:15:01.853Z",
-        "supply": 6
-      },
-      {
         "demand": 1.2819621281589642,
         "at": "2026-09-26T22:46:44.325Z",
         "supply": 4
@@ -320035,6 +320030,11 @@
         "demand": 1.383046464772487,
         "at": "2026-10-03T00:44:00.964Z",
         "supply": 11
+      },
+      {
+        "demand": 1.383046464772487,
+        "at": "2026-10-03T04:14:01.492Z",
+        "supply": 18
       }
     ],
     "Smoked Fish": [
