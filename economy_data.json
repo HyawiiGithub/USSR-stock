@@ -316525,7 +316525,7 @@
     "Machine Parts": 89,
     "Cake": 14,
     "Gas Fuel": 71,
-    "Canned Fish": 6,
+    "Canned Fish": 5,
     "Canned Food": 1,
     "Glass": 5,
     "Fuel": 7
@@ -316543,7 +316543,7 @@
     "Smoked Fish": 86,
     "Canned Food": 82,
     "Uranium Rod": 53,
-    "Canned Fish": 83,
+    "Canned Fish": 84,
     "Bread": 332,
     "Aluminium Sheet": 8,
     "Circuit Board": 85,
@@ -316567,11 +316567,6 @@
     "Glass": 1
   },
   "consumption_history": [
-    {
-      "item": "Canned Food",
-      "qty": 2,
-      "at": "2026-09-29T23:03:02.431Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -318066,6 +318061,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-10-03T02:14:01.350Z"
+    },
+    {
+      "item": "Canned Fish",
+      "qty": 1,
+      "at": "2026-10-03T02:29:01.357Z"
     }
   ],
   "demand_history": {
@@ -321057,6 +321057,11 @@
       {
         "demand": 1.3922124436165826,
         "at": "2026-10-02T23:14:00.965Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.400706951760056,
+        "at": "2026-10-03T02:29:01.357Z",
         "supply": 2
       }
     ],
