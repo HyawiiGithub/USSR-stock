@@ -349034,7 +349034,7 @@
   "central_bank": {
     "reserves": 836789,
     "interest_rate": 4,
-    "prime_rate": 3.5,
+    "prime_rate": 3,
     "discount_rate": 6,
     "reserve_requirement": 85,
     "history": [
@@ -349181,12 +349181,20 @@
         "amount": 4,
         "old": 10,
         "reserves_after": 836789
+      },
+      {
+        "at": "2026-10-03T09:14:57.823Z",
+        "by": "hyawii2.0",
+        "action": "set_prime_rate",
+        "amount": 3,
+        "old": 3.5,
+        "reserves_after": 836789
       }
     ],
     "total_added": 1141386,
     "total_removed": 454597,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-10-03T09:14:37.494Z",
+    "last_update": "2026-10-03T09:14:57.823Z",
     "chair_id": "1082686076491137115",
     "chair_set_by": "hyawii2.0",
     "chair_set_at": "2026-10-02T19:02:53.964Z",
