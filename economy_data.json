@@ -317090,14 +317090,13 @@
     "Machine Parts": 84,
     "Cake": 19,
     "Gas Fuel": 58,
-    "Refined Fuel": 1,
     "Circuit Board": 20
   },
   "global_consumption": {
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 192,
-    "Refined Fuel": 274,
+    "Refined Fuel": 275,
     "Fuel": 149,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -317130,11 +317129,6 @@
     "Glass": 6
   },
   "consumption_history": [
-    {
-      "item": "Uranium Rod",
-      "qty": 1,
-      "at": "2026-09-30T08:48:05.865Z"
-    },
     {
       "item": "Steel Beam",
       "qty": 2,
@@ -318629,6 +318623,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-10-03T12:29:03.232Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-10-03T12:44:03.216Z"
     }
   ],
   "demand_history": {
@@ -319335,11 +319334,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.3931856287949715,
-        "at": "2026-09-27T01:01:45.258Z",
-        "supply": 5
-      },
-      {
         "demand": 1.1018693041448213,
         "at": "2026-09-27T16:39:01.479Z",
         "supply": 0
@@ -319632,6 +319626,11 @@
       {
         "demand": 1.3959815704583158,
         "at": "2026-10-03T11:59:03.201Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.3959815704583158,
+        "at": "2026-10-03T12:44:03.216Z",
         "supply": 0
       }
     ],
