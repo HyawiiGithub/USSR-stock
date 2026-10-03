@@ -1042,7 +1042,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 2000,
+      "cash": 0,
       "bank": 10322,
       "resources": {},
       "inventory": {
@@ -1075,10 +1075,10 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 0,
-      "heat": 0,
+      "heat": 4,
       "wanted": 0,
       "last_illegal": "2026-10-01T08:21:37.609Z",
-      "total_heat_generated": 2447.041899999999,
+      "total_heat_generated": 2451.041899999999,
       "bot_level": 30,
       "bot_xp": 5116,
       "bot_total_xp": 72641,
@@ -1109,7 +1109,7 @@
       "cutters": 0,
       "collars": 0,
       "security": {},
-      "casino_cd": "2026-10-02T21:59:44.367Z",
+      "casino_cd": "2026-10-03T11:06:52.303Z",
       "mobilize_cd": "2026-10-03T07:36:31.511Z"
     },
     "": {
@@ -243513,7 +243513,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 1407,
+      "cash": 1422,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243533,8 +243533,8 @@
           "avg_price": 5003
         }
       },
-      "last_work": "2026-10-03T11:01:33.201Z",
-      "work_count": 686,
+      "last_work": "2026-10-03T11:06:43.213Z",
+      "work_count": 687,
       "last_claim": "2026-10-01T07:01:27.725Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "Prince Pakistani Atomic Consortium",
@@ -243548,9 +243548,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 5320,
-      "bot_total_xp": 67090,
-      "daily_work_count": 685,
+      "bot_xp": 5345,
+      "bot_total_xp": 67115,
+      "daily_work_count": 686,
       "shock_worker": false,
       "mee6_level": 29,
       "last_laylow": null,
@@ -315254,7 +315254,7 @@
         }
       },
       "inventory": {
-        "Iron Ore": 20,
+        "Iron Ore": 21,
         "Coal": 79,
         "Uranium": 1,
         "Lead": 12,
@@ -315413,7 +315413,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        427247,
         427252,
         427292,
         427434,
@@ -315512,7 +315511,8 @@
         435099,
         435109,
         435109,
-        435036
+        435036,
+        435060
       ],
       "sales_team": 1
     },
@@ -316039,11 +316039,6 @@
   "gsi_history": [
     {
       "price": 99,
-      "change_percent": 0.3455578306365285,
-      "recorded_at": "2026-10-03T08:09:10.942Z"
-    },
-    {
-      "price": 99,
       "change_percent": 0.1857593896771783,
       "recorded_at": "2026-10-03T08:11:05.345Z"
     },
@@ -316536,6 +316531,11 @@
       "price": 95,
       "change_percent": 0.7422955850660313,
       "recorded_at": "2026-10-03T11:04:11.313Z"
+    },
+    {
+      "price": 95,
+      "change_percent": 0.6369261119232664,
+      "recorded_at": "2026-10-03T11:06:44.244Z"
     }
   ],
   "factory_names": [
@@ -316557,7 +316557,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 20972.295508562474,
+  "money_printed": 20987.295508562474,
   "total_bank_reserves": 485545,
   "inflation_history": [
     0,
@@ -324248,13 +324248,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-10T09:57:32.614Z",
-      "by": "1536339779140976711",
-      "username": "scod3llarp",
-      "action": "launder",
-      "details": "₽3,000 dirty → ₽1,950 clean fee ₽1,050"
-    },
-    {
       "at": "2026-09-10T14:45:45.284Z",
       "by": "807254722251587614",
       "username": "lucky_drink",
@@ -327746,6 +327739,13 @@
       "username": "seniormanulos",
       "action": "sellgrain",
       "details": "Speers Realm 14x Bread for ₽1,764"
+    },
+    {
+      "at": "2026-10-03T11:06:52.303Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "CASINO",
+      "details": "dice low ₽2,000 rolled 59 → ₽0"
     }
   ],
   "total_rubles_history": [
@@ -328174,7 +328174,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 0.42059999999999925,
+  "heat_global": 1.0205999999999993,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -328837,7 +328837,7 @@
         "1225275427145121903": 1
       },
       "2026-10-03": {
-        "963834359994007614": 128,
+        "963834359994007614": 129,
         "807254722251587614": 2,
         "1528783188728483944": 1,
         "1397601108616024075": 1,
@@ -358856,9 +358856,9 @@
     }
   ],
   "casino": {
-    "spins": 24,
+    "spins": 25,
     "paid": 30196,
-    "taken": 27531
+    "taken": 29531
   },
   "rails": {
     "lines": [],
