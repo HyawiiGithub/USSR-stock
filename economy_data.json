@@ -243507,8 +243507,8 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 15,
-      "bank": 1102,
+      "cash": 0,
+      "bank": 0,
       "resources": {},
       "inventory": {},
       "company_id": "state_27",
@@ -243542,8 +243542,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 2026,
-      "bot_total_xp": 63796,
+      "bot_xp": 2048,
+      "bot_total_xp": 63818,
       "daily_work_count": 594,
       "shock_worker": false,
       "mee6_level": 29,
@@ -314841,8 +314841,8 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 12932,
-      "invested_capital": 24612,
+      "funds": 14049,
+      "invested_capital": 25729,
       "shares_total": 100000,
       "shares_available": 48219,
       "state_shares": 0,
@@ -314934,8 +314934,8 @@
       "last_collect": "2026-10-02T22:46:57.030Z",
       "price_history": [
         3,
-        3,
-        3,
+        4,
+        4,
         4,
         4,
         4,
@@ -315059,8 +315059,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        397141,
-        397261,
         397381,
         402538,
         402732,
@@ -315158,7 +315156,9 @@
         414520,
         414535,
         414565,
-        414594
+        414594,
+        418680,
+        419797
       ],
       "sales_team": 1
     },
@@ -315677,16 +315677,6 @@
   "gsi_history": [
     {
       "price": 98,
-      "change_percent": 0.23506054996037798,
-      "recorded_at": "2026-10-02T23:24:06.843Z"
-    },
-    {
-      "price": 98,
-      "change_percent": 0.1754336825272214,
-      "recorded_at": "2026-10-02T23:29:06.810Z"
-    },
-    {
-      "price": 98,
       "change_percent": 0.16778713465952663,
       "recorded_at": "2026-10-02T23:29:15.233Z"
     },
@@ -316174,6 +316164,16 @@
       "price": 93,
       "change_percent": 0.6635750801075013,
       "recorded_at": "2026-10-03T03:11:24.904Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 6.852864966392483,
+      "recorded_at": "2026-10-03T03:14:00.851Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.44466201592746146,
+      "recorded_at": "2026-10-03T03:14:09.878Z"
     }
   ],
   "factory_names": [
@@ -316181,13 +316181,13 @@
     "Soviet Iron Foundry",
     "Lenin Machine Works",
     "Stalin Tractor Plant",
-    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
-    "Ural Heavy Industries"
+    "Ural Heavy Industries",
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -316524,7 +316524,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 95,
+    "Machine Parts": 93,
     "Cake": 14,
     "Gas Fuel": 71,
     "Canned Fish": 2,
@@ -316553,7 +316553,7 @@
     "Reactor Core": 12,
     "Gas Fuel": 164,
     "Steel Beam": 75,
-    "Machine Parts": 229,
+    "Machine Parts": 231,
     "Sugar": 61,
     "Fertilizer": 17,
     "Flour": 20,
@@ -316569,11 +316569,6 @@
     "Glass": 1
   },
   "consumption_history": [
-    {
-      "item": "Smoked Fish",
-      "qty": 2,
-      "at": "2026-09-29T23:48:02.371Z"
-    },
     {
       "item": "Brass Valve",
       "qty": 2,
@@ -318068,6 +318063,11 @@
       "item": "Canned Fish",
       "qty": 1,
       "at": "2026-10-03T02:59:01.352Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 2,
+      "at": "2026-10-03T03:14:01.345Z"
     }
   ],
   "demand_history": {
@@ -322374,11 +322374,6 @@
     "Machine Parts": [
       {
         "demand": 1.3896299750098773,
-        "at": "2026-09-28T08:05:52.866Z",
-        "supply": 3
-      },
-      {
-        "demand": 1.3896299750098773,
         "at": "2026-09-28T09:35:53.766Z",
         "supply": 7
       },
@@ -322671,6 +322666,11 @@
         "demand": 1.3876311593339785,
         "at": "2026-10-03T01:29:00.988Z",
         "supply": 6
+      },
+      {
+        "demand": 1.2526311593339785,
+        "at": "2026-10-03T03:14:01.345Z",
+        "supply": 0
       }
     ],
     "Sugar": [
@@ -327366,10 +327366,6 @@
   "total_rubles_history": [
     {
       "total": 1544111,
-      "at": "2026-10-02T19:19:05.222Z"
-    },
-    {
-      "total": 1544111,
       "at": "2026-10-02T19:24:05.339Z"
     },
     {
@@ -327763,6 +327759,10 @@
     {
       "total": 1530915,
       "at": "2026-10-03T03:09:10.891Z"
+    },
+    {
+      "total": 1541346,
+      "at": "2026-10-03T03:14:10.990Z"
     }
   ],
   "gold_rush": null,
@@ -328698,7 +328698,7 @@
       "1532459782265639083": 1790964556795,
       "1407392503090642986": 1790186769263,
       "1456863215815364796": 1790978100803,
-      "963834359994007614": 1790997027127,
+      "963834359994007614": 1790997274615,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790653119600,
       "730223629849199093": 1790705166092,
@@ -351822,12 +351822,6 @@
         "balance": 9404,
         "income": 66854,
         "spending": 57450,
-        "at": "2026-10-02T19:19:05.237Z"
-      },
-      {
-        "balance": 9404,
-        "income": 66854,
-        "spending": 57450,
         "at": "2026-10-02T19:24:05.354Z"
       },
       {
@@ -352417,6 +352411,12 @@
         "income": 66854,
         "spending": 58813,
         "at": "2026-10-03T03:09:10.907Z"
+      },
+      {
+        "balance": 8041,
+        "income": 66854,
+        "spending": 58813,
+        "at": "2026-10-03T03:14:11.008Z"
       }
     ]
   },
@@ -355957,11 +355957,6 @@
     {
       "gini": 99.72695927740656,
       "top10": 100,
-      "at": "2026-10-02T19:19:05.229Z"
-    },
-    {
-      "gini": 99.72695927740656,
-      "top10": 100,
       "at": "2026-10-02T19:24:05.348Z"
     },
     {
@@ -356453,13 +356448,14 @@
       "gini": 99.72509753132913,
       "top10": 100,
       "at": "2026-10-03T03:09:10.901Z"
+    },
+    {
+      "gini": 99.72520101787474,
+      "top10": 100,
+      "at": "2026-10-03T03:14:11.003Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3617839,
-      "at": "2026-10-02T19:19:05.237Z"
-    },
     {
       "gdp": 3617839,
       "at": "2026-10-02T19:24:05.354Z"
@@ -356855,6 +356851,10 @@
     {
       "gdp": 3650656,
       "at": "2026-10-03T03:09:10.906Z"
+    },
+    {
+      "gdp": 3660000,
+      "at": "2026-10-03T03:14:11.008Z"
     }
   ],
   "purge_allowed": [
@@ -357645,12 +357645,6 @@
       "enlisted": 28,
       "perRole": 10000,
       "active": 271600,
-      "at": "2026-10-02T19:19:05.237Z"
-    },
-    {
-      "enlisted": 28,
-      "perRole": 10000,
-      "active": 271600,
       "at": "2026-10-02T19:24:05.354Z"
     },
     {
@@ -358240,6 +358234,12 @@
       "perRole": 10000,
       "active": 274400,
       "at": "2026-10-03T03:09:10.907Z"
+    },
+    {
+      "enlisted": 28,
+      "perRole": 10000,
+      "active": 274400,
+      "at": "2026-10-03T03:14:11.008Z"
     }
   ],
   "casino": {
