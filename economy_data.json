@@ -1894,8 +1894,8 @@
       "pet_food_source": {}
     },
     "1325111649816023092": {
-      "cash": -44755,
-      "bank": 6221,
+      "cash": 0,
+      "bank": 0,
       "resources": {},
       "inventory": {
         "Cake": 2
@@ -1918,8 +1918,8 @@
       "last_illegal": "2026-09-25T21:46:17.119Z",
       "total_heat_generated": 143.99800000000002,
       "bot_level": 23,
-      "bot_xp": 1685,
-      "bot_total_xp": 35610,
+      "bot_xp": 1706,
+      "bot_total_xp": 35631,
       "daily_work_count": 131,
       "shock_worker": false,
       "mee6_level": 23,
@@ -317199,10 +317199,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 13488.553330269477,
+  "money_printed": 13218.782263664087,
   "total_bank_reserves": 492683,
   "inflation_history": [
-    0,
     0,
     0,
     0,
@@ -317236,6 +317235,7 @@
     0.7166657780176973,
     0.4607628791801375,
     0.21034623685992848,
+    0,
     0,
     0,
     0,
@@ -329735,7 +329735,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1790122314087,
       "1309104161278918706": 1791046907592,
-      "1325111649816023092": 1791066379694,
+      "1325111649816023092": 1791068813765,
       "1506785783506534426": 1791066486724,
       "807254722251587614": 1791068559991,
       "1353373037994705078": 1790574728988,
@@ -349800,7 +349800,7 @@
     "leveled": []
   },
   "central_bank": {
-    "reserves": 836789,
+    "reserves": 798255,
     "interest_rate": 4,
     "prime_rate": 3,
     "discount_rate": 6,
@@ -349960,9 +349960,9 @@
       }
     ],
     "total_added": 1141386,
-    "total_removed": 454597,
+    "total_removed": 493131,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-10-03T09:14:57.823Z",
+    "last_update": "2026-10-03T23:07:26.089Z",
     "chair_id": "1082686076491137115",
     "chair_set_by": "hyawii2.0",
     "chair_set_at": "2026-10-02T19:02:53.964Z",
@@ -352364,12 +352364,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 8.09,
+    "rub_per_usd": 7.98,
     "history": [
-      {
-        "rate": 8.39,
-        "at": "2026-10-03T07:39:07.149Z"
-      },
       {
         "rate": 8.31,
         "at": "2026-10-03T07:49:07.162Z"
@@ -352765,9 +352761,13 @@
       {
         "rate": 8.09,
         "at": "2026-10-03T23:01:12.524Z"
+      },
+      {
+        "rate": 7.98,
+        "at": "2026-10-03T23:06:43.998Z"
       }
     ],
-    "last_update": "2026-10-03T23:01:12.524Z",
+    "last_update": "2026-10-03T23:06:43.998Z",
     "manual_override": null
   },
   "national_budget": {
@@ -359450,11 +359450,34 @@
     }
   ],
   "loans": {
-    "central": {},
+    "central": {
+      "1325111649816023092": {
+        "principal": 38534,
+        "owed": 38534,
+        "forced": true,
+        "rate": 6,
+        "rateWeekly": 6,
+        "mode": "undecided",
+        "at": "2026-10-03T23:07:25.512Z",
+        "autopay": 0,
+        "creditHit": true
+      }
+    },
     "ssr": {}
   },
   "loan_rates": {
     "personal": null,
     "ssr": null
+  },
+  "credit": {
+    "1325111649816023092": {
+      "score": 500,
+      "loans": 1,
+      "repaid": 0,
+      "fullRepays": 0,
+      "forced": 1,
+      "forcedRepaid": 0,
+      "lastForcedAt": "2026-10-03T23:07:25.512Z"
+    }
   }
 }
