@@ -31258,7 +31258,7 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 404,
-      "heat": 6.861501999025593,
+      "heat": 5.986423250550653,
       "wanted": 0,
       "last_illegal": "2026-10-03T08:19:19.576Z",
       "total_heat_generated": 37.344,
@@ -314997,8 +314997,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 3.052997404292982,
-      "underground_heat": 1270.3484774056262,
+      "heat": 2.338279385980935,
+      "underground_heat": 1269.6829244073297,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 8,
@@ -315959,11 +315959,6 @@
   "gsi_history": [
     {
       "price": 99,
-      "change_percent": 0.3657803993868916,
-      "recorded_at": "2026-10-03T06:19:09.910Z"
-    },
-    {
-      "price": 99,
       "change_percent": 0.6009108732915313,
       "recorded_at": "2026-10-03T06:22:34.628Z"
     },
@@ -316456,6 +316451,11 @@
       "price": 94,
       "change_percent": 0.5787137987144682,
       "recorded_at": "2026-10-03T09:13:04.681Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.21797800087944783,
+      "recorded_at": "2026-10-03T09:14:11.183Z"
     }
   ],
   "factory_names": [
@@ -316808,7 +316808,7 @@
   "ai_store": {
     "Machine Parts": 88,
     "Cake": 24,
-    "Gas Fuel": 63,
+    "Gas Fuel": 61,
     "Fuel": 3,
     "Refined Fuel": 4
   },
@@ -316831,7 +316831,7 @@
     "Circuit Board": 85,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
-    "Gas Fuel": 172,
+    "Gas Fuel": 174,
     "Steel Beam": 75,
     "Machine Parts": 236,
     "Sugar": 61,
@@ -316849,11 +316849,6 @@
     "Glass": 6
   },
   "consumption_history": [
-    {
-      "item": "Canned Fish",
-      "qty": 2,
-      "at": "2026-09-30T05:48:05.033Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -318348,6 +318343,11 @@
       "item": "Gas Fuel",
       "qty": 1,
       "at": "2026-10-03T08:59:02.243Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-10-03T09:14:02.257Z"
     }
   ],
   "demand_history": {
@@ -322114,11 +322114,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 1.3095510130812233,
-        "at": "2026-09-19T08:43:23.322Z",
-        "supply": 1
-      },
-      {
         "demand": 1.3217535492307997,
         "at": "2026-09-19T08:58:23.310Z",
         "supply": 1
@@ -322411,6 +322406,11 @@
       {
         "demand": 1.358879109557159,
         "at": "2026-10-03T08:59:02.243Z",
+        "supply": 25
+      },
+      {
+        "demand": 1.358879109557159,
+        "at": "2026-10-03T09:14:02.258Z",
         "supply": 25
       }
     ],
@@ -327670,10 +327670,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1530908,
-      "at": "2026-10-03T01:24:10.442Z"
-    },
-    {
       "total": 1530923,
       "at": "2026-10-03T01:29:10.410Z"
     },
@@ -328068,6 +328064,10 @@
     {
       "total": 1553293,
       "at": "2026-10-03T09:09:11.973Z"
+    },
+    {
+      "total": 1553308,
+      "at": "2026-10-03T09:14:11.883Z"
     }
   ],
   "gold_rush": null,
@@ -328094,7 +328094,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 0.5523000000000005,
+  "heat_global": 0.25230000000000047,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -349033,7 +349033,7 @@
   },
   "central_bank": {
     "reserves": 836789,
-    "interest_rate": 10,
+    "interest_rate": 4,
     "prime_rate": 3.5,
     "discount_rate": 6,
     "reserve_requirement": 85,
@@ -349173,12 +349173,20 @@
         "action": "remove_funds",
         "amount": -300000,
         "reserves_after": 840332
+      },
+      {
+        "at": "2026-10-03T09:14:37.494Z",
+        "by": "hyawii2.0",
+        "action": "set_interest_rate",
+        "amount": 4,
+        "old": 10,
+        "reserves_after": 836789
       }
     ],
     "total_added": 1141386,
     "total_removed": 454597,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-09-30T11:25:46.992Z",
+    "last_update": "2026-10-03T09:14:37.494Z",
     "chair_id": "1082686076491137115",
     "chair_set_by": "hyawii2.0",
     "chair_set_at": "2026-10-02T19:02:53.964Z",
@@ -352275,12 +352283,6 @@
         "balance": 8727,
         "income": 66854,
         "spending": 58127,
-        "at": "2026-10-03T01:24:10.456Z"
-      },
-      {
-        "balance": 8727,
-        "income": 66854,
-        "spending": 58127,
         "at": "2026-10-03T01:29:10.453Z"
       },
       {
@@ -352870,6 +352872,12 @@
         "income": 66854,
         "spending": 59502,
         "at": "2026-10-03T09:09:12.026Z"
+      },
+      {
+        "balance": 7352,
+        "income": 66854,
+        "spending": 59502,
+        "at": "2026-10-03T09:14:11.907Z"
       }
     ]
   },
@@ -356462,11 +356470,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.72557478575361,
-      "top10": 100,
-      "at": "2026-10-03T01:24:10.449Z"
-    },
-    {
       "gini": 99.7255347287404,
       "top10": 100,
       "at": "2026-10-03T01:29:10.439Z"
@@ -356960,13 +356963,14 @@
       "gini": 99.71719647885386,
       "top10": 100,
       "at": "2026-10-03T09:09:12.015Z"
+    },
+    {
+      "gini": 99.71715597899772,
+      "top10": 100,
+      "at": "2026-10-03T09:14:11.900Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3649722,
-      "at": "2026-10-03T01:24:10.455Z"
-    },
     {
       "gdp": 3649777,
       "at": "2026-10-03T01:29:10.451Z"
@@ -357362,6 +357366,10 @@
     {
       "gdp": 3692458,
       "at": "2026-10-03T09:09:12.025Z"
+    },
+    {
+      "gdp": 3692481,
+      "at": "2026-10-03T09:14:11.907Z"
     }
   ],
   "purge_allowed": [
@@ -358152,12 +358160,6 @@
       "enlisted": 28,
       "perRole": 10000,
       "active": 274400,
-      "at": "2026-10-03T01:24:10.456Z"
-    },
-    {
-      "enlisted": 28,
-      "perRole": 10000,
-      "active": 274400,
       "at": "2026-10-03T01:29:10.453Z"
     },
     {
@@ -358747,6 +358749,12 @@
       "perRole": 10000,
       "active": 274400,
       "at": "2026-10-03T09:09:12.026Z"
+    },
+    {
+      "enlisted": 28,
+      "perRole": 10000,
+      "active": 274400,
+      "at": "2026-10-03T09:14:11.907Z"
     }
   ],
   "casino": {
