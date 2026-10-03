@@ -315041,7 +315041,7 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 19505,
+      "funds": 26159,
       "invested_capital": 30802,
       "shares_total": 100000,
       "shares_available": 48119,
@@ -315129,7 +315129,6 @@
         "Fuel": 1,
         "Cotton Fabric": 1,
         "Peat Fuel": 1,
-        "Refined Fuel": 8,
         "Natural Gas": 3,
         "Machine Parts": 2
       },
@@ -315239,7 +315238,7 @@
       ],
       "is_state_owned": false,
       "director_id": "963834359994007614",
-      "last_factorydeal": "2026-10-03T03:13:54.380Z",
+      "last_factorydeal": "2026-10-03T07:31:45.727Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -315263,7 +315262,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        408410,
         408426,
         408514,
         408519,
@@ -315362,7 +315360,8 @@
         429658,
         429671,
         429690,
-        429708
+        429708,
+        432354
       ],
       "sales_team": 1
     },
@@ -316387,15 +316386,15 @@
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
-    "Lenin Machine Works",
     "Stalin Tractor Plant",
-    "Brezhnev Auto Factory",
     "Siberian Mining Co",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
     "Ural Heavy Industries",
-    "Khrushchev Agricultural"
+    "Khrushchev Agricultural",
+    "Lenin Machine Works",
+    "Brezhnev Auto Factory"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -316403,7 +316402,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 18209.302393739155,
+  "money_printed": 24863.302393739155,
   "total_bank_reserves": 476058,
   "inflation_history": [
     0,
@@ -316646,20 +316645,20 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3895572981236193,
-    "Cake": 1.3699281333855207,
-    "Bread": 1.3385558245978788,
+    "Cake": 1.3799281333855207,
+    "Bread": 1.3485558245978788,
     "Copper Ingot": 1.3230186388004483,
     "Iron Ingot": 1.2657892970869318,
     "Steel Ingot": 1.328977205183858,
     "Gold Bar": 0.9508986117947366,
     "Aluminium Ingot": 1.4046285715251992,
     "Timber Planks": 0.9750190922486086,
-    "Bricks": 1.2094389388135258,
+    "Bricks": 1.2194389388135258,
     "Concrete": 1.4123174606013473,
     "Glass": 1.3868807719796883,
-    "Steel Beam": 1.3952103871178823,
+    "Steel Beam": 1.4052103871178823,
     "Machine Parts": 1.3867519809156603,
-    "Refined Fuel": 1.3893720279805732,
+    "Refined Fuel": 1.2093720279805733,
     "Uranium Rod": 1.394355826322633,
     "Reactor Core": 1.4009389768132126,
     "Circuit Board": 1.3695077647519174,
@@ -316677,21 +316676,21 @@
     "Manganese Alloy": 1.4115085390693742,
     "Sunflower Oil": 1.3874058794390451,
     "Linen": 1.4098862208212941,
-    "Corn Meal": 1.3876022850574725,
+    "Corn Meal": 1.3976022850574725,
     "Tea Pack": 1.4119947959264538,
     "Citrus Juice": 1.4119986609762971,
     "Antimony Alloy": 1.4062459048302818,
-    "Molybdenum Rod": 1.4103440905499556,
-    "Aluminium Sheet": 1.4046277777304201,
+    "Molybdenum Rod": 1.4203440905499556,
+    "Aluminium Sheet": 1.4146277777304201,
     "Shale Oil": 1.4046285714024633,
-    "Bandage": 1.408593853059601,
+    "Bandage": 1.418593853059601,
     "Ointment": 1.4124235310137094,
     "Pet Food": 1.4008045199039811,
     "Brass": 1.3950682100090295,
     "Brass Valve": 1.404626245354455,
-    "Radiator": 1.3871612027031475,
+    "Radiator": 1.3971612027031475,
     "Brass Lamp": 1.4119976667621643,
-    "Wheat": 0.6041213649360553
+    "Wheat": 0.6141213649360553
   },
   "market_last_sale": {
     "Fuel": "2026-10-03T00:42:45.217Z",
@@ -316699,7 +316698,7 @@
     "Bread": "2026-10-02T15:34:00.295Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
-    "Refined Fuel": "2026-10-02T14:27:18.964Z",
+    "Refined Fuel": "2026-10-03T07:31:45.727Z",
     "Timber Planks": "2026-09-28T06:36:36.730Z",
     "Iron Ingot": "2026-09-17T01:43:45.291Z",
     "Shale Oil": "2026-09-13T09:01:34.582Z",
@@ -316735,7 +316734,8 @@
     "Machine Parts": 88,
     "Cake": 10,
     "Gas Fuel": 68,
-    "Fuel": 3
+    "Fuel": 3,
+    "Refined Fuel": 8
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -355145,8 +355145,8 @@
         "price": 1873
       },
       "Refined Fuel": {
-        "qty": 122,
-        "price": 938
+        "qty": 130,
+        "price": 939
       },
       "Gas Fuel": {
         "qty": 142,
@@ -355241,7 +355241,7 @@
         "price": 205
       }
     },
-    "sold_count": 1715,
+    "sold_count": 1723,
     "bought_count": 271
   },
   "leaders": {
