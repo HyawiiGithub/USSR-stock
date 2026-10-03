@@ -481,8 +481,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 2044,
-      "bot_total_xp": 18024,
+      "bot_xp": 2063,
+      "bot_total_xp": 18043,
       "daily_work_count": 170,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-03",
@@ -243513,7 +243513,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 855,
+      "cash": 870,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243533,8 +243533,8 @@
           "avg_price": 5003
         }
       },
-      "last_work": "2026-10-03T08:00:43.454Z",
-      "work_count": 651,
+      "last_work": "2026-10-03T08:05:53.605Z",
+      "work_count": 652,
       "last_claim": "2026-10-01T07:01:27.725Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "Prince Pakistani Atomic Consortium",
@@ -243548,9 +243548,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 4619,
-      "bot_total_xp": 66389,
-      "daily_work_count": 650,
+      "bot_xp": 4634,
+      "bot_total_xp": 66404,
+      "daily_work_count": 651,
       "shock_worker": false,
       "mee6_level": 29,
       "last_laylow": null,
@@ -315135,7 +315135,7 @@
         }
       },
       "inventory": {
-        "Iron Ore": 8,
+        "Iron Ore": 9,
         "Coal": 69,
         "Uranium": 1,
         "Lead": 12,
@@ -315154,7 +315154,7 @@
         "Oil Shale": 1,
         "Salt": 1,
         "Steel Ingot": 4,
-        "Wheat": 36,
+        "Wheat": 35,
         "Sugar": 5,
         "Sunflower": 1,
         "Antimony": 1,
@@ -315298,7 +315298,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        409077,
         409101,
         409109,
         409127,
@@ -315397,7 +315396,8 @@
         432687,
         432687,
         432703,
-        432719
+        432719,
+        432735
       ],
       "sales_team": 1
     },
@@ -315921,11 +315921,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.9178072511035122,
-      "recorded_at": "2026-10-03T04:49:35.917Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.41730032724830446,
       "recorded_at": "2026-10-03T04:50:03.159Z"
     },
@@ -316418,6 +316413,11 @@
       "price": 99,
       "change_percent": 0.08683590044086742,
       "recorded_at": "2026-10-03T08:04:11.003Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.9190415329549482,
+      "recorded_at": "2026-10-03T08:05:54.626Z"
     }
   ],
   "factory_names": [
@@ -316439,7 +316439,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 29158.658010568142,
+  "money_printed": 29173.658010568142,
   "total_bank_reserves": 477577,
   "inflation_history": [
     0,
@@ -328719,7 +328719,7 @@
         "1225275427145121903": 1
       },
       "2026-10-03": {
-        "963834359994007614": 93,
+        "963834359994007614": 94,
         "807254722251587614": 2,
         "1528783188728483944": 1,
         "1397601108616024075": 1,
@@ -328934,7 +328934,7 @@
       "780837437987094560": 1791009023115,
       "874346333882945547": 1791013471850,
       "870686833976172574": 1790985523728,
-      "1186597507720019988": 1791014630249,
+      "1186597507720019988": 1791014764919,
       "1521043721129558017": 1790980685894,
       "1397601108616024075": 1791000762362,
       "860203156222902332": 1789160394304,
@@ -350300,7 +350300,7 @@
       "963834359994007614": 139,
       "1495413593242337421": 240,
       "1532381114600128693": 66,
-      "1483005845867593831": 373,
+      "1483005845867593831": 375,
       "730223629849199093": 237,
       "1365483598962102305": 18,
       "771077238266658837": 31,
@@ -350660,9 +350660,19 @@
         "status": "accepted",
         "at": "2026-10-03T07:55:03.077Z",
         "decidedAt": "2026-10-03T08:03:00.802Z"
+      },
+      {
+        "id": "order_7",
+        "fromId": "1186597507720019988",
+        "fromName": "imdivit",
+        "toId": "1483005845867593831",
+        "task": "have some free power (+2 if u accept)",
+        "status": "accepted",
+        "at": "2026-10-03T08:05:36.468Z",
+        "decidedAt": "2026-10-03T08:05:58.777Z"
       }
     ],
-    "next_id": 7
+    "next_id": 8
   },
   "logistics": {
     "ministerId": "874346333882945547",
