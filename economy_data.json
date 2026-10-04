@@ -1090,7 +1090,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 267,
-      "heat": 6.616750700400292,
+      "heat": 5.762448143716746,
       "wanted": 0,
       "last_illegal": "2026-10-04T11:06:56.962Z",
       "total_heat_generated": 2492.6888999999987,
@@ -294586,8 +294586,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 1508,
-      "bot_total_xp": 17488,
+      "bot_xp": 1520,
+      "bot_total_xp": 17500,
       "daily_work_count": 73,
       "shock_worker": false,
       "last_laylow": null,
@@ -314968,7 +314968,6 @@
       "is_private": true,
       "value_history": [
         340651,
-        340651,
         340718,
         346072,
         346707,
@@ -315066,7 +315065,8 @@
         368309,
         368309,
         368687,
-        369050
+        369050,
+        369900
       ]
     },
     "state_24": {
@@ -315972,8 +315972,8 @@
         "manager": 0
       },
       "wage": 35,
-      "heat": 3.348543595648917,
-      "underground_heat": 1288.6778156748658,
+      "heat": 2.842102942839428,
+      "underground_heat": 1288.0723074389819,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 9,
@@ -316945,16 +316945,6 @@
   },
   "gsi_history": [
     {
-      "price": 87,
-      "change_percent": 0.978976457487566,
-      "recorded_at": "2026-10-03T19:48:33.930Z"
-    },
-    {
-      "price": 88,
-      "change_percent": 1.2828954085100148,
-      "recorded_at": "2026-10-03T19:51:14.824Z"
-    },
-    {
       "price": 88,
       "change_percent": 0.9088581539661529,
       "recorded_at": "2026-10-03T19:53:43.724Z"
@@ -317443,6 +317433,16 @@
       "price": 90,
       "change_percent": 0.6908720510532197,
       "recorded_at": "2026-10-04T11:25:53.258Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 4.8770485918771405,
+      "recorded_at": "2026-10-04T11:27:30.969Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 1.0470815404889828,
+      "recorded_at": "2026-10-04T11:27:33.137Z"
     }
   ],
   "factory_names": [
@@ -317796,7 +317796,7 @@
     "Machine Parts": 71,
     "Cake": 15,
     "Gas Fuel": 38,
-    "Circuit Board": 7
+    "Circuit Board": 5
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -317814,7 +317814,7 @@
     "Canned Fish": 89,
     "Bread": 332,
     "Aluminium Sheet": 8,
-    "Circuit Board": 105,
+    "Circuit Board": 107,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
     "Gas Fuel": 197,
@@ -317835,11 +317835,6 @@
     "Glass": 6
   },
   "consumption_history": [
-    {
-      "item": "Fish Stew",
-      "qty": 2,
-      "at": "2026-09-30T19:42:11.506Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 1,
@@ -319334,6 +319329,11 @@
       "item": "Circuit Board",
       "qty": 2,
       "at": "2026-10-04T11:12:31.471Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-10-04T11:27:31.409Z"
     }
   ],
   "demand_history": {
@@ -322699,11 +322699,6 @@
     ],
     "Circuit Board": [
       {
-        "demand": 1.2367525062399316,
-        "at": "2026-09-14T22:00:57.326Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2360941274190502,
         "at": "2026-09-20T10:37:37.991Z",
         "supply": 0
@@ -322996,6 +322991,11 @@
       {
         "demand": 1.2497076805962726,
         "at": "2026-10-04T11:12:31.471Z",
+        "supply": 2
+      },
+      {
+        "demand": 1.259614129470941,
+        "at": "2026-10-04T11:27:31.409Z",
         "supply": 2
       }
     ],
@@ -328677,10 +328677,6 @@
   "total_rubles_history": [
     {
       "total": 1573033,
-      "at": "2026-10-03T16:31:10.562Z"
-    },
-    {
-      "total": 1573033,
       "at": "2026-10-03T16:31:12.513Z"
     },
     {
@@ -329074,6 +329070,10 @@
     {
       "total": 1548496,
       "at": "2026-10-04T11:22:33.418Z"
+    },
+    {
+      "total": 1548688,
+      "at": "2026-10-04T11:27:33.464Z"
     }
   ],
   "gold_rush": null,
@@ -329100,7 +329100,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-09-28T10:40:42.739Z",
-  "heat_global": 0.34364999999999984,
+  "heat_global": 0.043649999999999856,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -353380,12 +353380,6 @@
         "balance": 6659,
         "income": 66854,
         "spending": 60195,
-        "at": "2026-10-03T16:31:10.584Z"
-      },
-      {
-        "balance": 6659,
-        "income": 66854,
-        "spending": 60195,
         "at": "2026-10-03T16:31:12.534Z"
       },
       {
@@ -353975,6 +353969,12 @@
         "income": 66854,
         "spending": 61609,
         "at": "2026-10-04T11:22:33.438Z"
+      },
+      {
+        "balance": 5245,
+        "income": 66854,
+        "spending": 61609,
+        "at": "2026-10-04T11:27:33.490Z"
       }
     ]
   },
@@ -357347,11 +357347,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.71622632155321,
-      "top10": 100,
-      "at": "2026-10-03T16:31:10.578Z"
-    },
-    {
       "gini": 99.71626073087518,
       "top10": 100,
       "at": "2026-10-03T16:31:12.529Z"
@@ -357845,13 +357840,14 @@
       "gini": 99.7192622556128,
       "top10": 100,
       "at": "2026-10-04T11:22:33.432Z"
+    },
+    {
+      "gini": 99.71918102834465,
+      "top10": 100,
+      "at": "2026-10-04T11:27:33.484Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3752743,
-      "at": "2026-10-03T16:31:10.584Z"
-    },
     {
       "gdp": 3752743,
       "at": "2026-10-03T16:31:12.534Z"
@@ -358247,6 +358243,10 @@
     {
       "gdp": 3739073,
       "at": "2026-10-04T11:22:33.438Z"
+    },
+    {
+      "gdp": 3740359,
+      "at": "2026-10-04T11:27:33.490Z"
     }
   ],
   "purge_allowed": [
@@ -359037,12 +359037,6 @@
       "enlisted": 28,
       "perRole": 10000,
       "active": 274400,
-      "at": "2026-10-03T16:31:10.584Z"
-    },
-    {
-      "enlisted": 28,
-      "perRole": 10000,
-      "active": 274400,
       "at": "2026-10-03T16:31:12.534Z"
     },
     {
@@ -359632,6 +359626,12 @@
       "perRole": 10000,
       "active": 277200,
       "at": "2026-10-04T11:22:33.438Z"
+    },
+    {
+      "enlisted": 28,
+      "perRole": 10000,
+      "active": 277200,
+      "at": "2026-10-04T11:27:33.490Z"
     }
   ],
   "casino": {
