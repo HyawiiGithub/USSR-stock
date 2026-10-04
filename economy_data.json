@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 321079,
+      "bank": 321078,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -772,7 +772,7 @@
     },
     "1225275427145121903": {
       "username": "",
-      "cash": 523,
+      "cash": 524,
       "bank": 3884,
       "resources": {
         "Gold": 1
@@ -838,8 +838,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W40",
-      "chat_earned_week": 27,
-      "chat_earned": 27
+      "chat_earned_week": 28,
+      "chat_earned": 28
     },
     "1517676669618491552": {
       "username": "",
@@ -294664,8 +294664,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 1939,
-      "bot_total_xp": 17919,
+      "bot_xp": 1963,
+      "bot_total_xp": 17943,
       "daily_work_count": 75,
       "shock_worker": false,
       "last_laylow": null,
@@ -317972,8 +317972,8 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 0,
-  "money_printed": 22100.636020109538,
+  "inflation": 2.32610426045437,
+  "money_printed": 21990.13284000899,
   "total_bank_reserves": 492229,
   "inflation_history": [
     0,
@@ -318075,7 +318075,7 @@
     0,
     0,
     0,
-    0
+    2.32610426045437
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 30,
@@ -330716,7 +330716,7 @@
       "1473965687922757747": 1789987256004,
       "1536471243849736322": 1789494877126,
       "1545521924166131823": 1791115742319,
-      "1483005845867593831": 1791124692535,
+      "1483005845867593831": 1791124768740,
       "1236297958933401643": 1789299042115,
       "1251358003857457256": 1790071234665,
       "1534132570412028027": 1789300584145,
@@ -353677,12 +353677,8 @@
   "conglomerate_id_counter": 1,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.9,
+    "rub_per_usd": 8.06,
     "history": [
-      {
-        "rate": 8.26,
-        "at": "2026-10-03T13:29:08.361Z"
-      },
       {
         "rate": 8.32,
         "at": "2026-10-03T13:39:08.333Z"
@@ -354078,9 +354074,13 @@
       {
         "rate": 7.9,
         "at": "2026-10-04T14:35:49.278Z"
+      },
+      {
+        "rate": 8.06,
+        "at": "2026-10-04T14:38:40.832Z"
       }
     ],
-    "last_update": "2026-10-04T14:35:49.278Z",
+    "last_update": "2026-10-04T14:38:40.832Z",
     "manual_override": null
   },
   "national_budget": {
@@ -360787,5 +360787,11 @@
       "forcedRepaid": 0,
       "lastForcedAt": "2026-10-03T23:07:25.512Z"
     }
+  },
+  "foreign_bonds": {
+    "bonds": [],
+    "total_issued": 0,
+    "total_redeemed": 0,
+    "total_interest_paid": 0
   }
 }
