@@ -1095,8 +1095,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 47,
-      "bank": 1246,
+      "cash": 0,
+      "bank": 7997,
       "resources": {},
       "inventory": {
         "Bread": 8,
@@ -316551,7 +316551,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 67045,
+      "funds": 60341,
       "invested_capital": 8196,
       "shares_total": 100000,
       "shares_available": 39133,
@@ -316840,7 +316840,7 @@
       ],
       "work_food": "Wheat",
       "salary_config": {
-        "ceo": 10,
+        "ceo": 0,
         "director": 0,
         "manager": 0
       },
@@ -326223,20 +326223,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-12T21:44:45.731Z",
-      "by": "874346333882945547",
-      "username": "seniormanulos",
-      "action": "launder",
-      "details": "₽10 dirty → ₽5 clean fee ₽5"
-    },
-    {
-      "at": "2026-09-12T21:45:29.265Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽2 dirty → ₽1 clean fee ₽1"
-    },
-    {
       "at": "2026-09-12T21:45:35.790Z",
       "by": "1229741033265299506",
       "username": "desertmarshal",
@@ -329721,6 +329707,20 @@
       "username": "seniormanulos",
       "action": "setsalary",
       "details": "Speers Realm ceo=10%"
+    },
+    {
+      "at": "2026-10-04T21:12:40.865Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "paysalaries",
+      "details": "Speers Realm paid ₽6704 to ceo <@874346333882945547> ₽6704"
+    },
+    {
+      "at": "2026-10-04T21:13:03.387Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "setsalary",
+      "details": "Speers Realm ceo=0%"
     }
   ],
   "total_rubles_history": [
