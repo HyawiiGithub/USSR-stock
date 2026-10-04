@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 309328,
+      "bank": 309327,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -129,7 +129,7 @@
     },
     "1082686076491137115": {
       "username": "",
-      "cash": 10133,
+      "cash": 10127,
       "bank": 0,
       "resources": {
         "Copper": 2,
@@ -148,6 +148,10 @@
         "Henning Military Complex": {
           "shares": 51000,
           "avg_price": 1
+        },
+        "Henning Foods": {
+          "shares": 200,
+          "avg_price": 50
         }
       },
       "last_work": "2026-10-04T11:57:01.000Z",
@@ -1091,7 +1095,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 36,
+      "cash": 37,
       "bank": 3216,
       "resources": {},
       "inventory": {
@@ -1129,8 +1133,8 @@
       "last_illegal": "2026-10-04T11:06:56.962Z",
       "total_heat_generated": 2492.6888999999987,
       "bot_level": 31,
-      "bot_xp": 2720,
-      "bot_total_xp": 76345,
+      "bot_xp": 2737,
+      "bot_total_xp": 76362,
       "daily_work_count": 1237,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-04",
@@ -1161,8 +1165,8 @@
       "casino_cd": "2026-10-03T11:06:52.303Z",
       "mobilize_cd": "2026-10-04T14:29:31.035Z",
       "chat_week": "2026-W40",
-      "chat_earned_week": 98,
-      "chat_earned": 98
+      "chat_earned_week": 99,
+      "chat_earned": 99
     },
     "": {
       "cash": 0,
@@ -317793,6 +317797,49 @@
       "prev_price": 1,
       "parent_conglomerate_id": "conglom_2",
       "is_subsidiary": true
+    },
+    "comp_31": {
+      "id": "comp_31",
+      "name": "Henning Foods",
+      "ticker": "HFC",
+      "owner_id": "1082686076491137115",
+      "ceo": "Hyawii",
+      "hq_ssr": "Kazakh SSR",
+      "funds": 50000,
+      "invested_capital": 50000,
+      "shares_total": 1000,
+      "shares_available": 400,
+      "state_shares": 400,
+      "founder_shares": 200,
+      "share_price": 52,
+      "market_cap": 52000,
+      "employees": 1,
+      "level": 1,
+      "buildings": {},
+      "inventory": {
+        "Wheat": 200
+      },
+      "created_at": "2026-10-04T19:51:08.271Z",
+      "last_collect": null,
+      "price_history": [
+        50,
+        52
+      ],
+      "is_state_owned": false,
+      "specialization": null,
+      "salary_config": {
+        "ceo": 5,
+        "director": 5,
+        "manager": 2
+      },
+      "managers": [],
+      "parent_conglomerate_id": "conglom_2",
+      "is_subsidiary": true,
+      "wage": 10,
+      "work_food": "auto",
+      "value_history": [
+        51600
+      ]
     }
   },
   "gsi_history": [
@@ -318421,7 +318468,7 @@
     1.7925273779421378
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
-  "company_id_counter": 30,
+  "company_id_counter": 31,
   "total_rubles_in_circulation": 0,
   "total_company_value": 0,
   "total_market_cap": 0,
@@ -326074,27 +326121,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-12T20:42:41.474Z",
-      "by": "1082686076491137115",
-      "username": "hyawii2.0",
-      "action": "appointdirector",
-      "details": "appointed <@807254722251587614> (807254722251587614) as director of State Mining Corp (state_23)"
-    },
-    {
-      "at": "2026-09-12T20:50:38.664Z",
-      "by": "807254722251587614",
-      "username": "lucky_drink",
-      "action": "collect-salaries",
-      "details": "State Mining Corp paid ₽330 salaries ceo 807254722251587614 ₽118, director 807254722251587614 ₽118, manager 1186597507720019988 ₽47, manager 807254722251587614 ₽47"
-    },
-    {
-      "at": "2026-09-12T21:16:54.621Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽296 dirty → ₽148 clean fee ₽148"
-    },
-    {
       "at": "2026-09-12T21:30:04.388Z",
       "by": "874346333882945547",
       "username": "seniormanulos",
@@ -329572,6 +329598,27 @@
       "username": "hyawii2.0",
       "action": "conglomerate_add",
       "details": "Henning Military Complex -> Henning Military Complex"
+    },
+    {
+      "at": "2026-10-04T19:50:52.004Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "givemoney",
+      "details": "gave 50000 to 1082686076491137115"
+    },
+    {
+      "at": "2026-10-04T19:50:58.600Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "takemoney",
+      "details": "took 50000 from 1513968015048184039"
+    },
+    {
+      "at": "2026-10-04T19:51:08.581Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "foundsubsidiary",
+      "details": "Henning Foods (HFC) in Kazakh SSR under Henning Military Complex for ₽50,000"
     }
   ],
   "total_rubles_history": [
@@ -330920,7 +330967,7 @@
       "1229741033265299506": 1791143165283,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791141667067,
-      "874346333882945547": 1791143344744,
+      "874346333882945547": 1791143473567,
       "870686833976172574": 1791045220912,
       "1186597507720019988": 1791133722085,
       "1521043721129558017": 1791142484107,
@@ -351005,7 +351052,7 @@
     "leveled": []
   },
   "central_bank": {
-    "reserves": 648255,
+    "reserves": 598255,
     "interest_rate": 4,
     "prime_rate": 3,
     "discount_rate": 6,
@@ -351169,12 +351216,19 @@
         "action": "founding_grant",
         "amount": 150000,
         "reserves_after": 648255
+      },
+      {
+        "at": "2026-10-04T19:50:43.340Z",
+        "by": "hyawii2.0",
+        "action": "remove_funds",
+        "amount": -50000,
+        "reserves_after": 598255
       }
     ],
     "total_added": 1141386,
-    "total_removed": 643131,
+    "total_removed": 693131,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-10-04T11:48:50.746Z",
+    "last_update": "2026-10-04T19:50:43.340Z",
     "chair_id": "1456622719985782864",
     "chair_set_by": "hyawii2.0",
     "chair_set_at": "2026-10-04T15:10:16.403Z",
@@ -354536,7 +354590,8 @@
       "created_at": "2026-10-04T19:49:00.634Z",
       "treasury": 0,
       "subsidiaries": [
-        "comp_30"
+        "comp_30",
+        "comp_31"
       ]
     }
   },
