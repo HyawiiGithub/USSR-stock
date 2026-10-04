@@ -1226,7 +1226,7 @@
       "pet_food_source": {}
     },
     "1495413593242337421": {
-      "cash": 305,
+      "cash": 307,
       "bank": 25151,
       "resources": {},
       "inventory": {},
@@ -1248,8 +1248,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 1536,
-      "bot_total_xp": 19911,
+      "bot_xp": 1560,
+      "bot_total_xp": 19935,
       "daily_work_count": 157,
       "shock_worker": false,
       "mee6_level": 18,
@@ -1275,8 +1275,8 @@
       "cutters": 0,
       "collars": 0,
       "chat_week": "2026-W40",
-      "chat_earned_week": 16,
-      "chat_earned": 16
+      "chat_earned_week": 18,
+      "chat_earned": 18
     },
     "602848044982992926": {
       "cash": 0,
@@ -20034,7 +20034,7 @@
       "pet_food_source": {}
     },
     "1061880907788722217": {
-      "cash": 0,
+      "cash": 1,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -20056,8 +20056,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 68,
-      "bot_total_xp": 323,
+      "bot_xp": 90,
+      "bot_total_xp": 345,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -20070,7 +20070,10 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {},
-      "mee6_level": 2
+      "mee6_level": 2,
+      "chat_week": "2026-W40",
+      "chat_earned_week": 1,
+      "chat_earned": 1
     },
     "825551204146217011": {
       "cash": 0,
@@ -266569,7 +266572,7 @@
       "pet_food_source": {}
     },
     "730696111198699600": {
-      "cash": 716,
+      "cash": 717,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -266591,8 +266594,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 916,
-      "bot_total_xp": 16896,
+      "bot_xp": 941,
+      "bot_total_xp": 16921,
       "daily_work_count": 24,
       "shock_worker": false,
       "last_daily_work_date": "2026-09-28",
@@ -266606,7 +266609,10 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "chat_week": "2026-W40",
+      "chat_earned_week": 1,
+      "chat_earned": 1
     },
     "788398552799641650": {
       "cash": 0,
@@ -317177,11 +317183,6 @@
   },
   "gsi_history": [
     {
-      "price": 86,
-      "change_percent": 0.7971254401349313,
-      "recorded_at": "2026-10-03T21:26:15.561Z"
-    },
-    {
       "price": 83,
       "change_percent": -3.479380053082845,
       "recorded_at": "2026-10-03T21:31:14.378Z"
@@ -317675,6 +317676,11 @@
       "price": 96,
       "change_percent": 0.807419697035026,
       "recorded_at": "2026-10-04T13:19:01.378Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.5019621711205196,
+      "recorded_at": "2026-10-04T13:20:47.434Z"
     }
   ],
   "factory_names": [
@@ -317696,7 +317702,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 0,
-  "money_printed": 24954.888283784614,
+  "money_printed": 24958.888283784614,
   "total_bank_reserves": 492052,
   "inflation_history": [
     2.0939142173200693,
@@ -318025,7 +318031,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 68,
+    "Machine Parts": 67,
     "Cake": 13,
     "Gas Fuel": 48,
     "Circuit Board": 5,
@@ -318053,7 +318059,7 @@
     "Reactor Core": 12,
     "Gas Fuel": 197,
     "Steel Beam": 75,
-    "Machine Parts": 256,
+    "Machine Parts": 257,
     "Sugar": 61,
     "Fertilizer": 17,
     "Flour": 20,
@@ -318069,11 +318075,6 @@
     "Glass": 6
   },
   "consumption_history": [
-    {
-      "item": "Sugar",
-      "qty": 1,
-      "at": "2026-09-30T20:42:14.249Z"
-    },
     {
       "item": "Steel Beam",
       "qty": 2,
@@ -319568,6 +319569,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-10-04T13:05:44.880Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-10-04T13:20:44.870Z"
     }
   ],
   "demand_history": {
@@ -323903,11 +323909,6 @@
     ],
     "Machine Parts": [
       {
-        "demand": 1.3689007301552614,
-        "at": "2026-09-29T10:40:14.253Z",
-        "supply": 5
-      },
-      {
         "demand": 1.3860430290293309,
         "at": "2026-09-29T11:55:14.214Z",
         "supply": 5
@@ -324200,6 +324201,11 @@
       {
         "demand": 1.3894279358265336,
         "at": "2026-10-04T12:50:43.929Z",
+        "supply": 8
+      },
+      {
+        "demand": 1.3894279358265336,
+        "at": "2026-10-04T13:20:44.871Z",
         "supply": 8
       }
     ],
@@ -330262,7 +330268,7 @@
       "1369015006955442326": 1789120293921,
       "914436541072425021": 1790096616693,
       "1107232271880159292": 1789565232012,
-      "1495413593242337421": 1791119972655,
+      "1495413593242337421": 1791120037538,
       "1447308947072614555": 1788973711995,
       "887419379833274388": 1790363157969,
       "807944786840387675": 1790875085668,
@@ -330331,7 +330337,7 @@
       "673726585194676274": 1790093109734,
       "1405587743542870188": 1789535273706,
       "1489932552394248263": 1790539475832,
-      "730696111198699600": 1791119817378,
+      "730696111198699600": 1791120051922,
       "850229826231992320": 1789468435424,
       "1202316445569273959": 1789331745467,
       "1541073090019074150": 1790227530618,
@@ -330788,7 +330794,7 @@
       "809066547149668352": 1790620811484,
       "1027596894551154738": 1790870812849,
       "1158167687755726858": 1790619529055,
-      "1061880907788722217": 1791047098511,
+      "1061880907788722217": 1791120036981,
       "1125803602829647983": 1790622667100,
       "800425003828379658": 1790688771745,
       "1524445912573804555": 1790689263282,
