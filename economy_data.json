@@ -316771,7 +316771,7 @@
         9,
         9,
         9,
-        9,
+        10,
         10,
         10,
         10,
@@ -316805,7 +316805,6 @@
       "prev_price": 9,
       "is_private": true,
       "value_history": [
-        916524,
         916632,
         916654,
         916676,
@@ -316904,7 +316903,8 @@
         974426,
         974430,
         974418,
-        974414
+        974414,
+        974418
       ],
       "sales_team": 1
     },
@@ -317895,21 +317895,6 @@
   "gsi_history": [
     {
       "price": 99,
-      "change_percent": -4.5450838053617595,
-      "recorded_at": "2026-10-04T16:26:47.885Z"
-    },
-    {
-      "price": 99,
-      "change_percent": 0.10745289777068875,
-      "recorded_at": "2026-10-04T16:26:49.276Z"
-    },
-    {
-      "price": 99,
-      "change_percent": 0.06153510864579355,
-      "recorded_at": "2026-10-04T16:31:49.316Z"
-    },
-    {
-      "price": 99,
       "change_percent": 0.6764026568371138,
       "recorded_at": "2026-10-04T16:33:33.642Z"
     },
@@ -318392,6 +318377,21 @@
       "price": 98,
       "change_percent": 0.18127679371798927,
       "recorded_at": "2026-10-04T20:21:59.622Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.5459602458386995,
+      "recorded_at": "2026-10-04T20:26:15.240Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 5.8071695508877665,
+      "recorded_at": "2026-10-04T20:26:51.687Z"
+    },
+    {
+      "price": 103,
+      "change_percent": 0.41288659414656215,
+      "recorded_at": "2026-10-04T20:26:59.484Z"
     }
   ],
   "factory_names": [
@@ -318743,7 +318743,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 66,
+    "Machine Parts": 65,
     "Cake": 7,
     "Gas Fuel": 46
   },
@@ -318768,7 +318768,7 @@
     "Reactor Core": 12,
     "Gas Fuel": 199,
     "Steel Beam": 76,
-    "Machine Parts": 258,
+    "Machine Parts": 259,
     "Sugar": 61,
     "Fertilizer": 17,
     "Flour": 20,
@@ -318785,11 +318785,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Fish Stew",
-      "qty": 1,
-      "at": "2026-10-01T02:27:36.596Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 1,
@@ -320284,6 +320279,11 @@
       "item": "Brass Valve",
       "qty": 1,
       "at": "2026-10-04T19:41:51.861Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-10-04T20:26:52.204Z"
     }
   ],
   "demand_history": {
@@ -324624,11 +324624,6 @@
     ],
     "Machine Parts": [
       {
-        "demand": 1.3860430290293309,
-        "at": "2026-09-29T14:53:31.919Z",
-        "supply": 3
-      },
-      {
         "demand": 1.388086488639468,
         "at": "2026-09-29T15:55:36.612Z",
         "supply": 4
@@ -324922,6 +324917,11 @@
         "demand": 1.3861880453630993,
         "at": "2026-10-04T14:35:48.417Z",
         "supply": 10
+      },
+      {
+        "demand": 1.3829723341248332,
+        "at": "2026-10-04T20:26:52.205Z",
+        "supply": 12
       }
     ],
     "Sugar": [
