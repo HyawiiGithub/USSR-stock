@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 321062,
+      "bank": 321079,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -199,7 +199,7 @@
     },
     "918518877414100993": {
       "username": "",
-      "cash": 1863,
+      "cash": 983,
       "bank": 0,
       "resources": {
         "Natural Gas": 1,
@@ -211,7 +211,12 @@
       "company_id": "state_25",
       "ceo_of": "State Oil & Gas",
       "gsi_shares": 0,
-      "share_holdings": {},
+      "share_holdings": {
+        "State Oil & Gas": {
+          "shares": 863,
+          "avg_price": 1
+        }
+      },
       "last_work": "2026-10-02T17:37:18.535Z",
       "work_count": 51,
       "last_claim": "2026-09-07T13:51:17.121Z",
@@ -315422,10 +315427,10 @@
       "owner_id": "918518877414100993",
       "ceo": "politicalgamble",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 39822,
+      "funds": 40702,
       "invested_capital": 500,
       "shares_total": 100000,
-      "shares_available": 48669,
+      "shares_available": 47806,
       "state_shares": 0,
       "founder_shares": 0,
       "share_price": 1,
@@ -315452,7 +315457,7 @@
       "inventory": {
         "Oil": 4,
         "Iron Ore": 23,
-        "Wheat": 120,
+        "Wheat": 138,
         "Sugar": 62,
         "Gold": 1,
         "Cotton": 1,
@@ -315596,7 +315601,6 @@
         154402,
         154402,
         154402,
-        154402,
         154435,
         154435,
         154435,
@@ -315683,7 +315687,8 @@
         155583,
         155583,
         155618,
-        155671
+        155671,
+        156551
       ]
     },
     "state_26": {
@@ -316193,7 +316198,7 @@
         "Peat Fuel": 1,
         "Natural Gas": 34,
         "Machine Parts": 3,
-        "Wheat": 195,
+        "Wheat": 197,
         "Titanium": 1,
         "Peat": 2,
         "Grapes": 1,
@@ -316998,7 +317003,14 @@
       "value_history": [
         151600
       ],
-      "wage": 95
+      "wage": 95,
+      "last_factorydeal": null,
+      "last_govcontract": null,
+      "work_food": "auto",
+      "heat": 0,
+      "underground_heat": 0,
+      "dirty_cash": 0,
+      "last_illegal": null
     }
   },
   "gsi_history": [
