@@ -319672,7 +319672,7 @@
     "Refined Fuel": 32,
     "Radiator": 12,
     "Bricks": 18,
-    "Sunflower Oil": 7,
+    "Sunflower Oil": 5,
     "Fuel": 3,
     "Cake": 13
   },
@@ -319709,16 +319709,11 @@
     "Radiator": 24,
     "Fish Stew": 53,
     "Bricks": 42,
-    "Sunflower Oil": 23,
+    "Sunflower Oil": 25,
     "Glass": 6,
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Steel Beam",
-      "qty": 2,
-      "at": "2026-10-01T22:12:39.945Z"
-    },
     {
       "item": "Steel Beam",
       "qty": 2,
@@ -321213,6 +321208,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-10-05T18:26:59.503Z"
+    },
+    {
+      "item": "Sunflower Oil",
+      "qty": 2,
+      "at": "2026-10-05T18:41:59.507Z"
     }
   ],
   "demand_history": {
@@ -327134,6 +327134,11 @@
       {
         "demand": 1.218696089840753,
         "at": "2026-10-05T11:41:55.501Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.393986442545429,
+        "at": "2026-10-05T18:41:59.507Z",
         "supply": 0
       }
     ],
