@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 271401,
+      "bank": 271397,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -913,7 +913,7 @@
     },
     "1229741033265299506": {
       "username": "",
-      "cash": 590,
+      "cash": 592,
       "bank": 0,
       "resources": {
         "Coal": 1
@@ -944,8 +944,8 @@
       "last_illegal": "2026-10-02T07:51:38.633Z",
       "total_heat_generated": 938.099,
       "bot_level": 26,
-      "bot_xp": 125,
-      "bot_total_xp": 46600,
+      "bot_xp": 149,
+      "bot_total_xp": 46624,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 26,
@@ -974,8 +974,8 @@
       "cutters": 0,
       "collars": 0,
       "chat_week": "2026-W41",
-      "chat_earned_week": 10,
-      "chat_earned": 167
+      "chat_earned_week": 12,
+      "chat_earned": 169
     },
     "1456622719985782864": {
       "cash": 155,
@@ -1113,7 +1113,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 1352,
+      "cash": 1354,
       "bank": 7714,
       "resources": {},
       "inventory": {
@@ -1186,8 +1186,8 @@
       "casino_cd": "2026-10-05T04:29:36.854Z",
       "mobilize_cd": "2026-10-04T14:29:31.035Z",
       "chat_week": "2026-W41",
-      "chat_earned_week": 43,
-      "chat_earned": 208
+      "chat_earned_week": 45,
+      "chat_earned": 210
     },
     "": {
       "cash": 0,
@@ -331946,7 +331946,7 @@
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1791211108454,
       "1082686076491137115": 1791213533648,
-      "1229741033265299506": 1791213651274,
+      "1229741033265299506": 1791213712271,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791161830952,
       "874346333882945547": 1791213678424,
@@ -365820,29 +365820,7 @@
     ],
     "next_id": 1
   },
-  "shadow_ramps": [
-    {
-      "id": "ramp_muve6iju465",
-      "kind": "modifier",
-      "label": "modifier valuation→x0.8/5m",
-      "params": {
-        "keys": [
-          "valuation"
-        ],
-        "key": "valuation",
-        "starts": {
-          "valuation": 1
-        },
-        "target": 0.8
-      },
-      "slicesLeft": 5,
-      "remaining": null,
-      "nextAt": "2026-10-05T15:20:45.693Z",
-      "startAt": 1791213350250,
-      "endAt": 1791213650250,
-      "by": "1082686076491137115"
-    }
-  ],
+  "shadow_ramps": [],
   "shadow_econ": {
     "market_halted": true,
     "growth_bonus": {
@@ -365850,7 +365828,7 @@
       "endsAt": null
     },
     "modifiers": {
-      "valuation": 1,
+      "valuation": 0.8,
       "gdp": 1,
       "wages": 1,
       "prices": 1
