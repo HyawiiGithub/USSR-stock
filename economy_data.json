@@ -614,8 +614,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 22,
-      "bot_xp": 253,
-      "bot_total_xp": 30558,
+      "bot_xp": 277,
+      "bot_total_xp": 30582,
       "daily_work_count": 314,
       "shock_worker": false,
       "mee6_level": 22,
@@ -316272,24 +316272,24 @@
       },
       "inventory": {
         "Salt": 58,
-        "Coal": 36,
+        "Coal": 44,
         "Gold": 7,
         "Natural Gas": 4,
         "Sugar": 5,
         "Phosphorite": 2,
-        "Oil Shale": 6,
-        "Peat": 3,
+        "Oil Shale": 7,
+        "Peat": 4,
         "Timber": 9,
-        "Grapes": 5,
+        "Grapes": 6,
         "Fish": 9,
-        "Clay": 2,
+        "Clay": 3,
         "Sulphur": 2,
         "Sunflower": 21,
-        "Zinc": 6,
-        "Lead": 35,
+        "Zinc": 8,
+        "Lead": 38,
         "Gold Bar": 3,
         "Limestone": 4,
-        "Cotton": 5,
+        "Cotton": 6,
         "Wine": 3,
         "Sunflower Oil": 9,
         "Corn Meal": 9,
@@ -316297,30 +316297,30 @@
         "Linen": 1,
         "Fuel": 1,
         "Circuit Board": 2,
-        "Corn": 7,
+        "Corn": 3,
         "Flour": 34,
         "Citrus": 5,
         "Radiator": 4,
         "Tea": 1,
-        "Steel Ingot": 28,
+        "Steel Ingot": 36,
         "Antimony": 2,
         "Sand": 2,
         "Copper Ingot": 2,
         "Brass": 1,
         "Aluminium": 1,
         "Graphite": 3,
-        "Iron Ore": 20,
-        "Wheat": 14,
-        "Flax": 1,
+        "Iron Ore": 34,
+        "Flax": 2,
         "Potash": 1,
         "Molybdenum": 1,
         "Amber": 1,
-        "Machine Parts": 1,
-        "Copper": 7,
-        "Oil": 1
+        "Machine Parts": 11,
+        "Copper": 11,
+        "Oil": 1,
+        "Uranium": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-10-04T23:37:17.608Z",
+      "last_collect": "2026-10-05T06:07:29.866Z",
       "price_history": [
         2,
         2,
@@ -316447,7 +316447,6 @@
       "prev_price": 2,
       "value_history": [
         261940,
-        261940,
         262433,
         263065,
         263533,
@@ -316545,7 +316544,8 @@
         272841,
         272841,
         272841,
-        272835
+        272835,
+        286735
       ]
     },
     "state_25": {
@@ -318257,16 +318257,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.630609998279845,
-      "recorded_at": "2026-10-05T02:30:15.547Z"
-    },
-    {
-      "price": 96,
-      "change_percent": 0.22486626386918496,
-      "recorded_at": "2026-10-05T02:32:01.219Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.8177718477017059,
       "recorded_at": "2026-10-05T02:35:25.728Z"
     },
@@ -318754,6 +318744,16 @@
       "price": 96,
       "change_percent": 0.4754379682738834,
       "recorded_at": "2026-10-05T06:04:17.125Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.8235871882310503,
+      "recorded_at": "2026-10-05T06:07:01.236Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.3981573828192711,
+      "recorded_at": "2026-10-05T06:07:31.007Z"
     }
   ],
   "factory_names": [
@@ -330087,14 +330087,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 1530130,
-      "at": "2026-10-05T01:52:02.205Z"
-    },
-    {
-      "total": 1530145,
-      "at": "2026-10-05T01:57:01.608Z"
-    },
-    {
       "total": 1530145,
       "at": "2026-10-05T01:57:02.693Z"
     },
@@ -330485,6 +330477,14 @@
     {
       "total": 1525466,
       "at": "2026-10-05T06:02:02.828Z"
+    },
+    {
+      "total": 1525496,
+      "at": "2026-10-05T06:07:02.046Z"
+    },
+    {
+      "total": 1525496,
+      "at": "2026-10-05T06:07:02.909Z"
     }
   ],
   "gold_rush": null,
@@ -331417,7 +331417,8 @@
         "Azerbaijanian SSR": 0,
         "Kazakh SSR": 0,
         "Nuristani SSR": 2,
-        "Russian SFSR": 0
+        "Russian SFSR": 0,
+        "Ukrainian SSR": 0
       }
     },
     "qotd": {
@@ -351533,9 +351534,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 23,
-    "beforeLvlC": 30,
-    "afterLvl": 30,
+    "xpGainC": 24,
+    "beforeLvlC": 22,
+    "afterLvl": 22,
     "leveled": []
   },
   "central_bank": {
@@ -356713,18 +356714,6 @@
         "balance": -17762,
         "income": 67828,
         "spending": 85590,
-        "at": "2026-10-05T01:52:02.222Z"
-      },
-      {
-        "balance": -17762,
-        "income": 67828,
-        "spending": 85590,
-        "at": "2026-10-05T01:57:01.634Z"
-      },
-      {
-        "balance": -17762,
-        "income": 67828,
-        "spending": 85590,
         "at": "2026-10-05T01:57:02.718Z"
       },
       {
@@ -357308,6 +357297,18 @@
         "income": 68280,
         "spending": 94380,
         "at": "2026-10-05T06:02:02.846Z"
+      },
+      {
+        "balance": -26100,
+        "income": 68280,
+        "spending": 94380,
+        "at": "2026-10-05T06:07:02.069Z"
+      },
+      {
+        "balance": -26100,
+        "income": 68280,
+        "spending": 94380,
+        "at": "2026-10-05T06:07:02.932Z"
       }
     ]
   },
@@ -358942,7 +358943,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 94,
+      "health": 79,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:56:00.173Z",
@@ -358995,25 +358996,8 @@
         "legendary": 0
       },
       "friendship": 100,
-      "hunts": 14,
-      "hunt": {
-        "start": "2026-10-04T16:11:17.121Z",
-        "end": "2026-10-05T03:35:17.121Z",
-        "durH": 12,
-        "instant": false,
-        "lootMult": 1,
-        "expB": 0.25,
-        "treas": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "zoom": false,
-        "thiefLvl": 0,
-        "pcs": 10,
-        "collarUsed": true
-      },
+      "hunts": 15,
+      "hunt": null,
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -359022,8 +359006,8 @@
         "n": 0
       },
       "starve_since": "2026-10-05T00:14:08.640Z",
-      "last_pet": "2026-10-04T23:37:23.346Z",
-      "lastPetAct": "2026-10-04T23:37:23.346Z",
+      "last_pet": "2026-10-05T06:07:21.484Z",
+      "lastPetAct": "2026-10-05T06:07:21.484Z",
       "last_feed_cmd": "2026-10-03T18:36:27.793Z",
       "last_train_cmd": "2026-09-28T19:35:53.277Z"
     },
@@ -360671,16 +360655,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69402492082476,
-      "top10": 100,
-      "at": "2026-10-05T01:52:02.215Z"
-    },
-    {
-      "gini": 99.69402124498504,
-      "top10": 100,
-      "at": "2026-10-05T01:57:01.627Z"
-    },
-    {
       "gini": 99.69402124498504,
       "top10": 100,
       "at": "2026-10-05T01:57:02.711Z"
@@ -361169,17 +361143,19 @@
       "gini": 99.697963297364,
       "top10": 100,
       "at": "2026-10-05T06:02:02.837Z"
+    },
+    {
+      "gini": 99.70371259913664,
+      "top10": 100,
+      "at": "2026-10-05T06:07:02.061Z"
+    },
+    {
+      "gini": 99.70371259913664,
+      "top10": 100,
+      "at": "2026-10-05T06:07:02.925Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 3796648,
-      "at": "2026-10-05T01:52:02.222Z"
-    },
-    {
-      "gdp": 3796719,
-      "at": "2026-10-05T01:57:01.634Z"
-    },
     {
       "gdp": 3796719,
       "at": "2026-10-05T01:57:02.718Z"
@@ -361571,6 +361547,14 @@
     {
       "gdp": 3835390,
       "at": "2026-10-05T06:02:02.846Z"
+    },
+    {
+      "gdp": 3835425,
+      "at": "2026-10-05T06:07:02.069Z"
+    },
+    {
+      "gdp": 3835425,
+      "at": "2026-10-05T06:07:02.931Z"
     }
   ],
   "purge_allowed": [
@@ -362363,18 +362347,6 @@
       "enlisted": 30,
       "perRole": 10000,
       "active": 300000,
-      "at": "2026-10-05T01:52:02.222Z"
-    },
-    {
-      "enlisted": 30,
-      "perRole": 10000,
-      "active": 300000,
-      "at": "2026-10-05T01:57:01.634Z"
-    },
-    {
-      "enlisted": 30,
-      "perRole": 10000,
-      "active": 300000,
       "at": "2026-10-05T01:57:02.719Z"
     },
     {
@@ -362958,6 +362930,18 @@
       "perRole": 10000,
       "active": 300000,
       "at": "2026-10-05T06:02:02.847Z"
+    },
+    {
+      "enlisted": 30,
+      "perRole": 10000,
+      "active": 300000,
+      "at": "2026-10-05T06:07:02.069Z"
+    },
+    {
+      "enlisted": 30,
+      "perRole": 10000,
+      "active": 300000,
+      "at": "2026-10-05T06:07:02.932Z"
     }
   ],
   "casino": {
@@ -363101,18 +363085,6 @@
     "total_interest_paid": 0
   },
   "debt_history": [
-    {
-      "total": 38868,
-      "gdp": 3796648,
-      "ratio": 1.02,
-      "at": "2026-10-05T01:52:02.230Z"
-    },
-    {
-      "total": 38868,
-      "gdp": 3796719,
-      "ratio": 1.02,
-      "at": "2026-10-05T01:57:01.643Z"
-    },
     {
       "total": 38868,
       "gdp": 3796719,
@@ -363700,24 +363672,21 @@
       "gdp": 3835390,
       "ratio": 1.01,
       "at": "2026-10-05T06:02:02.855Z"
+    },
+    {
+      "total": 38920,
+      "gdp": 3835425,
+      "ratio": 1.01,
+      "at": "2026-10-05T06:07:02.079Z"
+    },
+    {
+      "total": 38920,
+      "gdp": 3835425,
+      "ratio": 1.01,
+      "at": "2026-10-05T06:07:02.939Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8283,
-      "citizens": 8283,
-      "at": "2026-10-05T03:17:01.912Z"
-    },
-    {
-      "total": 7681,
-      "citizens": 8283,
-      "at": "2026-10-05T03:17:02.673Z"
-    },
-    {
-      "total": 8283,
-      "citizens": 8283,
-      "at": "2026-10-05T03:17:02.708Z"
-    },
     {
       "total": 8283,
       "citizens": 8283,
@@ -364202,6 +364171,21 @@
       "total": 8284,
       "citizens": 8284,
       "at": "2026-10-05T06:02:02.861Z"
+    },
+    {
+      "total": 8284,
+      "citizens": 8284,
+      "at": "2026-10-05T06:07:02.081Z"
+    },
+    {
+      "total": 7681,
+      "citizens": 8284,
+      "at": "2026-10-05T06:07:02.903Z"
+    },
+    {
+      "total": 8284,
+      "citizens": 8284,
+      "at": "2026-10-05T06:07:02.940Z"
     }
   ],
   "debt_watch_band": 0,
