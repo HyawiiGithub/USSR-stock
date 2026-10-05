@@ -319114,7 +319114,7 @@
     "Machine Parts": 59,
     "Gas Fuel": 30,
     "Bricks": 2,
-    "Cake": 7,
+    "Cake": 6,
     "Brass Valve": 3
   },
   "global_consumption": {
@@ -319126,7 +319126,7 @@
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
-    "Cake": 445,
+    "Cake": 446,
     "Smoked Fish": 86,
     "Canned Food": 86,
     "Uranium Rod": 53,
@@ -319155,11 +319155,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 2,
-      "at": "2026-10-01T12:12:37.478Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -320654,6 +320649,11 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-10-05T06:11:54.343Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-10-05T06:26:54.451Z"
     }
   ],
   "demand_history": {
@@ -322321,11 +322321,6 @@
     "Cake": [
       {
         "demand": 1.3883099925217843,
-        "at": "2026-09-30T01:03:03.435Z",
-        "supply": 4
-      },
-      {
-        "demand": 1.3883099925217843,
         "at": "2026-09-30T01:48:03.717Z",
         "supply": 4
       },
@@ -322617,6 +322612,11 @@
       {
         "demand": 1.2645722655388145,
         "at": "2026-10-05T05:26:54.350Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.343173357870066,
+        "at": "2026-10-05T06:26:54.452Z",
         "supply": 4
       }
     ],
