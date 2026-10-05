@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 298614,
+      "bank": 298613,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -243650,7 +243650,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 1450,
+      "cash": 1465,
       "bank": 2745,
       "resources": {},
       "inventory": {},
@@ -243670,8 +243670,8 @@
           "avg_price": 5003
         }
       },
-      "last_work": "2026-10-05T00:36:12.549Z",
-      "work_count": 814,
+      "last_work": "2026-10-05T00:41:22.880Z",
+      "work_count": 815,
       "last_claim": "2026-10-01T07:01:27.725Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "Prince Pakistani Atomic Consortium",
@@ -243685,9 +243685,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 30,
-      "bot_xp": 2443,
-      "bot_total_xp": 69968,
-      "daily_work_count": 813,
+      "bot_xp": 2463,
+      "bot_total_xp": 69988,
+      "daily_work_count": 814,
       "shock_worker": false,
       "mee6_level": 30,
       "last_laylow": null,
@@ -315798,7 +315798,7 @@
       "mee6_level": 2
     },
     "1465835749214519297": {
-      "cash": 0,
+      "cash": 1,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -315833,7 +315833,10 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "chat_week": "2026-W41",
+      "chat_earned_week": 1,
+      "chat_earned": 1
     }
   },
   "companies": {
@@ -317252,7 +317255,7 @@
         "Potash": 1,
         "Copper": 1,
         "Flax": 3,
-        "Oil": 92,
+        "Oil": 94,
         "Limestone": 1,
         "Aluminium": 1,
         "Sulphur": 1,
@@ -317268,7 +317271,7 @@
         "Peat Fuel": 1,
         "Natural Gas": 56,
         "Machine Parts": 6,
-        "Wheat": 152,
+        "Wheat": 151,
         "Titanium": 1,
         "Peat": 2,
         "Grapes": 1,
@@ -317404,7 +317407,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        441016,
         441104,
         441120,
         441125,
@@ -317503,7 +317505,8 @@
         453934,
         454022,
         454142,
-        454434
+        454434,
+        454554
       ],
       "sales_team": 1
     },
@@ -318178,11 +318181,6 @@
   "gsi_history": [
     {
       "price": 96,
-      "change_percent": 0.4663157079839984,
-      "recorded_at": "2026-10-04T20:11:58.739Z"
-    },
-    {
-      "price": 96,
       "change_percent": 0.845086751819809,
       "recorded_at": "2026-10-04T20:15:26.249Z"
     },
@@ -318675,6 +318673,11 @@
       "price": 97,
       "change_percent": -0.026884109791875006,
       "recorded_at": "2026-10-05T00:37:00.751Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.6090777732610065,
+      "recorded_at": "2026-10-05T00:41:23.862Z"
     }
   ],
   "factory_names": [
@@ -318696,7 +318699,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 1.7124035780031477,
-  "money_printed": 23832.8794307828,
+  "money_printed": 23847.8794307828,
   "total_bank_reserves": 469292,
   "inflation_history": [
     0,
@@ -319028,7 +319031,7 @@
   "ai_store": {
     "Machine Parts": 58,
     "Gas Fuel": 41,
-    "Bricks": 15
+    "Bricks": 13
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -319062,17 +319065,12 @@
     "Pet Food": 9,
     "Radiator": 16,
     "Fish Stew": 53,
-    "Bricks": 25,
+    "Bricks": 27,
     "Sunflower Oil": 21,
     "Glass": 6,
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 2,
-      "at": "2026-10-01T06:27:37.026Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -320567,6 +320565,11 @@
       "item": "Bricks",
       "qty": 1,
       "at": "2026-10-05T00:26:53.054Z"
+    },
+    {
+      "item": "Bricks",
+      "qty": 2,
+      "at": "2026-10-05T00:41:53.053Z"
     }
   ],
   "demand_history": {
@@ -326302,6 +326305,11 @@
         "demand": 1.1914568198991196,
         "at": "2026-10-05T00:26:53.060Z",
         "supply": 101
+      },
+      {
+        "demand": 1.1981993564973734,
+        "at": "2026-10-05T00:41:53.053Z",
+        "supply": 101
       }
     ],
     "Sunflower Oil": [
@@ -331108,7 +331116,7 @@
         "963834359994007614": 8
       },
       "2026-10-05": {
-        "963834359994007614": 8,
+        "963834359994007614": 9,
         "1521043721129558017": 2
       }
     },
