@@ -319063,7 +319063,7 @@
     "Smoked Fish": 1.4020788433169762,
     "Fish Stew": 1.3842795009016524,
     "Peat Fuel": 1.402836020862586,
-    "Gas Fuel": 0.8890007715620629,
+    "Gas Fuel": 0.9090007715620629,
     "Fertilizer": 1.401032747922126,
     "Cotton Fabric": 1.4028346287376128,
     "Manganese Alloy": 1.4062494348660606,
@@ -319126,7 +319126,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 57,
-    "Gas Fuel": 49,
+    "Gas Fuel": 48,
     "Cake": 2,
     "Brass Valve": 3,
     "Refined Fuel": 18,
@@ -319151,7 +319151,7 @@
     "Circuit Board": 112,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
-    "Gas Fuel": 216,
+    "Gas Fuel": 217,
     "Steel Beam": 76,
     "Machine Parts": 278,
     "Sugar": 61,
@@ -319170,11 +319170,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Steel Beam",
-      "qty": 1,
-      "at": "2026-10-01T14:27:38.698Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -320669,6 +320664,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-10-05T08:26:55.486Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-10-05T08:41:55.504Z"
     }
   ],
   "demand_history": {
@@ -324456,11 +324456,6 @@
     "Gas Fuel": [
       {
         "demand": 1.2846206275268706,
-        "at": "2026-09-29T23:33:02.369Z",
-        "supply": 62
-      },
-      {
-        "demand": 1.2846206275268706,
         "at": "2026-09-30T03:48:04.584Z",
         "supply": 62
       },
@@ -324753,6 +324748,11 @@
         "demand": 1.3300907629828471,
         "at": "2026-10-05T06:56:54.353Z",
         "supply": 43
+      },
+      {
+        "demand": 0.8890007715620629,
+        "at": "2026-10-05T08:41:55.504Z",
+        "supply": 24
       }
     ],
     "Steel Beam": [
