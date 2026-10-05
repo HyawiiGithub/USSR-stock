@@ -106398,8 +106398,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 269,
-      "bot_total_xp": 1039,
+      "bot_xp": 291,
+      "bot_total_xp": 1061,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -315751,8 +315751,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 4,
-      "bot_total_xp": 104,
+      "bot_xp": 22,
+      "bot_total_xp": 122,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -317879,7 +317879,6 @@
         7,
         7,
         7,
-        7,
         6,
         7,
         7,
@@ -317972,6 +317971,7 @@
         5,
         5,
         5,
+        5,
         5
       ],
       "is_state_owned": false,
@@ -318000,7 +318000,6 @@
       "prev_price": 5,
       "is_private": true,
       "value_history": [
-        450047,
         450071,
         450087,
         450151,
@@ -318099,7 +318098,8 @@
         363264,
         363416,
         363429,
-        363543
+        363543,
+        363667
       ],
       "sales_team": 1
     },
@@ -318851,11 +318851,6 @@
   "gsi_history": [
     {
       "price": 145,
-      "change_percent": 1.4414623793063883,
-      "recorded_at": "2026-10-05T17:04:05.117Z"
-    },
-    {
-      "price": 145,
       "change_percent": 0.6865059028384739,
       "recorded_at": "2026-10-05T17:06:05.934Z"
     },
@@ -319348,6 +319343,11 @@
       "price": 142,
       "change_percent": 0.7351728520245203,
       "recorded_at": "2026-10-05T20:22:05.348Z"
+    },
+    {
+      "price": 143,
+      "change_percent": 0.9099664990451725,
+      "recorded_at": "2026-10-05T20:25:35.267Z"
     }
   ],
   "factory_names": [
@@ -332168,7 +332168,7 @@
       "1529673877767196783": 1789377341879,
       "913497950213267577": 1791230424494,
       "822079355298906112": 1790789735554,
-      "1000271630154596473": 1791231905528,
+      "1000271630154596473": 1791231969119,
       "437626060876546069": 1789233001616,
       "1365483598962102305": 1791227803263,
       "1544296111097909309": 1791140496344,
@@ -332789,7 +332789,7 @@
       "1430286088433307721": 1791226840840,
       "1430637954681798737": 1791216666059,
       "1465835749214519297": 1791161086622,
-      "794046247803682896": 1791231879414,
+      "794046247803682896": 1791231947869,
       "1542581967206219811": 1791195028102,
       "1108014476151758858": 1791219322740,
       "1544311554613313616": 1791203943208,
@@ -353525,17 +353525,9 @@
     },
     "1522719030979330066": {
       "date": "2026-10-05",
-      "used": 3,
+      "used": 4,
       "history": [],
       "roamHistory": [
-        {
-          "role": "user",
-          "content": "how are you"
-        },
-        {
-          "role": "assistant",
-          "content": "Systems nominal, sir. I'm functioning at peak efficiency and ready to assist you with anything on your agenda. How can I help?"
-        },
         {
           "role": "user",
           "content": "hey jarvis, how do u say please in japanees english keyboard"
@@ -353551,6 +353543,14 @@
         {
           "role": "assistant",
           "content": "User Safety: safe\nResponse Safety: safe"
+        },
+        {
+          "role": "user",
+          "content": "whats a comic relief"
+        },
+        {
+          "role": "assistant",
+          "content": "Comic relief is a humorous scene, incident, or speech in a serious or dramatic work, intended to break tension and provide the audience a moment of levity. It often appears as a witty character, playf"
         }
       ]
     }
