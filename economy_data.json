@@ -1288,8 +1288,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 610,
-      "bot_total_xp": 21605,
+      "bot_xp": 627,
+      "bot_total_xp": 21622,
       "daily_work_count": 167,
       "shock_worker": false,
       "mee6_level": 19,
@@ -319200,11 +319200,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 58.729447605642484,
-  "money_printed": 104426.1212851953,
-  "total_bank_reserves": 419441,
+  "inflation": 58.552214257339976,
+  "money_printed": 103903.99067876933,
+  "total_bank_reserves": 419436,
   "inflation_history": [
-    3.4572559702994052,
     3.311647703840949,
     3.265896253344499,
     3.2214565609333317,
@@ -319303,7 +319302,8 @@
     55.56307082394242,
     50.87102606554234,
     58.7925853144524,
-    58.729447605642484
+    58.729447605642484,
+    58.552214257339976
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 31,
@@ -331967,7 +331967,7 @@
       "1369015006955442326": 1789120293921,
       "914436541072425021": 1790096616693,
       "1107232271880159292": 1789565232012,
-      "1495413593242337421": 1791213285593,
+      "1495413593242337421": 1791213375233,
       "1447308947072614555": 1788973711995,
       "887419379833274388": 1790363157969,
       "807944786840387675": 1791134052135,
@@ -357048,12 +357048,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.75,
+    "rub_per_usd": 7.81,
     "history": [
-      {
-        "rate": 7.8,
-        "at": "2026-10-05T00:41:55.211Z"
-      },
       {
         "rate": 7.84,
         "at": "2026-10-05T00:51:55.150Z"
@@ -357449,9 +357445,13 @@
       {
         "rate": 7.75,
         "at": "2026-10-05T15:09:54.436Z"
+      },
+      {
+        "rate": 7.81,
+        "at": "2026-10-05T15:15:44.783Z"
       }
     ],
-    "last_update": "2026-10-05T15:09:54.436Z",
+    "last_update": "2026-10-05T15:15:44.783Z",
     "manual_override": null
   },
   "national_budget": {
@@ -365777,32 +365777,24 @@
       "by": "1082686076491137115"
     },
     {
-      "id": "ramp_muvdmgtm165",
-      "kind": "debtadd_ssr_all",
-      "label": "debt+ ALL SSRs/30m",
+      "id": "ramp_muve6iju465",
+      "kind": "modifier",
+      "label": "modifier valuation→x0.8/5m",
       "params": {
-        "each": 150000,
-        "ssrs": [
-          "Russian SFSR",
-          "Byelorussian SSR",
-          "Ukrainian SSR",
-          "Moldavian SSR",
-          "Estonian SSR",
-          "Latvian SSR",
-          "Lithuanian SSR",
-          "Georgian SSR",
-          "Armenian SSR",
-          "Azerbaijanian SSR",
-          "Kazakh SSR",
-          "Uzbek SSR",
-          "Turkmen SSR",
-          "Nuristani SSR",
-          "Kirghiz SSR"
-        ]
+        "keys": [
+          "valuation"
+        ],
+        "key": "valuation",
+        "starts": {
+          "valuation": 1
+        },
+        "target": 0.8
       },
-      "slicesLeft": 22,
-      "remaining": 1650000,
-      "nextAt": "2026-10-05T15:13:55.569Z",
+      "slicesLeft": 5,
+      "remaining": null,
+      "nextAt": "2026-10-05T15:16:50.250Z",
+      "startAt": 1791213350250,
+      "endAt": 1791213650250,
       "by": "1082686076491137115"
     }
   ],
@@ -365811,6 +365803,12 @@
     "growth_bonus": {
       "pct": 0,
       "endsAt": null
+    },
+    "modifiers": {
+      "valuation": 1,
+      "gdp": 1,
+      "wages": 1,
+      "prices": 1
     }
   }
 }
