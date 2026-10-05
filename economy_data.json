@@ -319061,7 +319061,7 @@
   "ai_store": {
     "Machine Parts": 52,
     "Gas Fuel": 30,
-    "Bricks": 7,
+    "Bricks": 6,
     "Cake": 9
   },
   "global_consumption": {
@@ -319096,17 +319096,12 @@
     "Pet Food": 9,
     "Radiator": 16,
     "Fish Stew": 53,
-    "Bricks": 33,
+    "Bricks": 34,
     "Sunflower Oil": 21,
     "Glass": 6,
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Steel Beam",
-      "qty": 2,
-      "at": "2026-10-01T10:12:37.451Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 1,
@@ -320601,6 +320596,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-10-05T04:11:54.429Z"
+    },
+    {
+      "item": "Bricks",
+      "qty": 1,
+      "at": "2026-10-05T04:26:54.485Z"
     }
   ],
   "demand_history": {
@@ -326355,6 +326355,11 @@
       {
         "demand": 1.213626859670917,
         "at": "2026-10-05T03:26:53.994Z",
+        "supply": 101
+      },
+      {
+        "demand": 1.213626859670917,
+        "at": "2026-10-05T04:26:54.485Z",
         "supply": 101
       }
     ],
