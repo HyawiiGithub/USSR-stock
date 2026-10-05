@@ -1288,8 +1288,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 19,
-      "bot_xp": 1208,
-      "bot_total_xp": 22203,
+      "bot_xp": 1224,
+      "bot_total_xp": 22219,
       "daily_work_count": 170,
       "shock_worker": false,
       "mee6_level": 19,
@@ -243707,7 +243707,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 1890,
+      "cash": 1967,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -304749,7 +304749,7 @@
         "Oil Shale": 1,
         "Sand": 1,
         "Uranium": 1,
-        "Bread": 3
+        "Bread": 2
       },
       "company_id": null,
       "gsi_shares": 0,
@@ -317753,7 +317753,7 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 10388,
+      "funds": 8311,
       "invested_capital": 54510,
       "shares_total": 100000,
       "shares_available": 47987,
@@ -317820,10 +317820,10 @@
         "Molybdenum": 1,
         "Potash": 1,
         "Copper": 1,
-        "Flax": 3,
-        "Oil": 49,
+        "Flax": 6,
+        "Oil": 50,
         "Limestone": 1,
-        "Aluminium": 1,
+        "Aluminium": 2,
         "Sulphur": 1,
         "Oil Shale": 2,
         "Salt": 1,
@@ -317839,9 +317839,12 @@
         "Titanium": 1,
         "Peat": 2,
         "Timber": 47,
-        "Gold": 19,
+        "Gold": 20,
         "Machine Parts": 2,
-        "Wheat": 180
+        "Wheat": 181,
+        "Corn": 1,
+        "Sugar": 1,
+        "Grapes": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-05T11:21:15.035Z",
@@ -327227,13 +327230,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-12T21:48:41.337Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽2 dirty → ₽1 clean fee ₽1"
-    },
-    {
       "at": "2026-09-12T21:49:21.098Z",
       "by": "874346333882945547",
       "username": "seniormanulos",
@@ -330725,6 +330721,13 @@
       "username": "hyawii2.0",
       "action": "ccvote",
       "details": "APPROVED war on United States (1081, reparations)"
+    },
+    {
+      "at": "2026-10-05T19:10:24.111Z",
+      "by": "963834359994007614",
+      "username": "that.one.pakistani_",
+      "action": "paysalaries",
+      "details": "Prince Pakistani Atomic Consortium paid ₽2077 to ceo <@963834359994007614> ₽2077"
     }
   ],
   "total_rubles_history": [
@@ -361458,7 +361461,7 @@
       "stats": {
         "agility": 0,
         "curiosity": 0,
-        "luck": 1,
+        "luck": 2,
         "fortune": 1,
         "thievery": 0,
         "toxo": 0,
@@ -361497,25 +361500,8 @@
         "epic": 0,
         "legendary": 0
       },
-      "hunts": 6,
-      "hunt": {
-        "start": "2026-10-05T06:36:00.741Z",
-        "end": "2026-10-05T18:36:00.741Z",
-        "durH": 12,
-        "instant": false,
-        "lootMult": 1,
-        "expB": 0,
-        "treas": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "zoom": false,
-        "thiefLvl": 0,
-        "pcs": 10,
-        "collarUsed": false
-      },
+      "hunts": 7,
+      "hunt": null,
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -361527,22 +361513,22 @@
       "starve_since": null,
       "warned_empty": false,
       "last_feed_cmd": "2026-10-05T06:35:54.101Z",
-      "last_train_cmd": "2026-10-01T15:23:52.926Z"
+      "last_train_cmd": "2026-10-05T19:10:28.843Z"
     },
     "1467181939218714656": {
       "name": "LilNonAgressionPact",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
-      "health": 98,
+      "health": 100,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T14:29:00.531Z",
-      "last_fed": "2026-10-05T09:12:46.020Z",
+      "last_fed": "2026-10-05T19:10:17.030Z",
       "last_watered": null,
       "death": null,
-      "friendship": 32,
+      "friendship": 33,
       "last_pet": "2026-10-05T09:42:35.581Z",
       "stats": {
         "agility": 0,
@@ -361612,9 +361598,9 @@
         "day": "",
         "n": 0
       },
-      "starve_since": "2026-10-05T18:52:05.452Z",
-      "warned_empty": true,
-      "last_feed_cmd": "2026-10-05T09:12:46.020Z",
+      "starve_since": null,
+      "warned_empty": false,
+      "last_feed_cmd": "2026-10-05T19:10:17.030Z",
       "lastPetAct": "2026-10-05T09:42:35.581Z"
     },
     "710945531794554970": {
