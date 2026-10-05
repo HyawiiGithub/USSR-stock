@@ -85253,8 +85253,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 12,
       "bot_level": 24,
-      "bot_xp": 2812,
-      "bot_total_xp": 40632,
+      "bot_xp": 2837,
+      "bot_total_xp": 40657,
       "daily_work_count": 149,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-05",
@@ -212316,8 +212316,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 155,
-      "bot_total_xp": 410,
+      "bot_xp": 178,
+      "bot_total_xp": 433,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -304738,7 +304738,7 @@
       "pet_food_source": {}
     },
     "1467181939218714656": {
-      "cash": 368,
+      "cash": 418,
       "bank": 0,
       "resources": {},
       "inventory": {
@@ -304762,10 +304762,10 @@
       "director_of": null,
       "ceo_of": null,
       "dirty_cash": 0,
-      "heat": 0,
+      "heat": 4,
       "wanted": 0,
       "last_illegal": null,
-      "total_heat_generated": 0,
+      "total_heat_generated": 4,
       "bot_level": 19,
       "bot_xp": 1981,
       "bot_total_xp": 22976,
@@ -304788,7 +304788,18 @@
       "last_daily_work_date": "2026-10-05",
       "chat_week": "2026-W41",
       "chat_earned_week": 69,
-      "chat_earned": 121
+      "chat_earned": 121,
+      "crime_xp": {
+        "stealth": 0,
+        "lock": 0,
+        "nerves": 0
+      },
+      "crime_cd": {},
+      "gear": {},
+      "security": {},
+      "cutters": 0,
+      "collars": 0,
+      "casino_cd": "2026-10-05T15:58:03.186Z"
     },
     "703701834870816816": {
       "cash": 0,
@@ -319245,11 +319256,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 61.19607900131984,
-  "money_printed": 135717.8228232725,
-  "total_bank_reserves": 268815,
+  "inflation": 60.953070490168194,
+  "money_printed": 135089.23370915613,
+  "total_bank_reserves": 268805,
   "inflation_history": [
-    1.8856357482783164,
     1.7443237171106478,
     1.7124035780031477,
     1.680592389667341,
@@ -319348,7 +319358,8 @@
     16.24678613927191,
     36.71583898221538,
     61.46964777070134,
-    61.19607900131984
+    61.19607900131984,
+    60.953070490168194
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 31,
@@ -327124,13 +327135,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-12T21:48:29.756Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽2 dirty → ₽1 clean fee ₽1"
-    },
-    {
       "at": "2026-09-12T21:48:31.763Z",
       "by": "1229741033265299506",
       "username": "desertmarshal",
@@ -330622,6 +330626,13 @@
       "username": "hyawii2.0",
       "action": "addinflation",
       "details": "+25 → offset 23.91%"
+    },
+    {
+      "at": "2026-10-05T15:58:03.542Z",
+      "by": "1467181939218714656",
+      "username": "crackhead0241",
+      "action": "CASINO",
+      "details": "slots ₽100 → PAIR x1.5 ₽150"
     }
   ],
   "total_rubles_history": [
@@ -331050,7 +331061,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-10-05T10:17:28.539Z",
-  "heat_global": 0,
+  "heat_global": 0.6,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -332009,7 +332020,7 @@
       "1470136693821800521": 1790122314087,
       "1309104161278918706": 1791046907592,
       "1325111649816023092": 1791214949307,
-      "1506785783506534426": 1791215817237,
+      "1506785783506534426": 1791215880675,
       "807254722251587614": 1791215696829,
       "1353373037994705078": 1790574728988,
       "1192563739778625607": 1790365373051,
@@ -332572,7 +332583,7 @@
       "1269767998445715618": 1790798076103,
       "1508804669600825364": 1790798770378,
       "852590889402630165": 1790801158006,
-      "1530142528639209503": 1791215735116,
+      "1530142528639209503": 1791215890969,
       "1553748979035144324": 1790879809367,
       "1485511067428716666": 1790804398206,
       "1457342483938672692": 1790804528138,
@@ -357226,12 +357237,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.33,
+    "rub_per_usd": 7.35,
     "history": [
-      {
-        "rate": 7.73,
-        "at": "2026-10-05T02:21:55.474Z"
-      },
       {
         "rate": 7.77,
         "at": "2026-10-05T02:31:55.485Z"
@@ -357627,9 +357634,13 @@
       {
         "rate": 7.33,
         "at": "2026-10-05T15:54:28.380Z"
+      },
+      {
+        "rate": 7.35,
+        "at": "2026-10-05T15:57:29.238Z"
       }
     ],
-    "last_update": "2026-10-05T15:54:28.380Z",
+    "last_update": "2026-10-05T15:57:29.238Z",
     "manual_override": null
   },
   "national_budget": {
@@ -363283,7 +363294,7 @@
       "index": "1553852700347727883",
       "privat": "1555337917684121611",
       "market": "1553838338161774703",
-      "hourly": "1556670288169803777"
+      "hourly": "1556696949082554430"
     },
     "enabledAt": "2026-09-27T18:18:28.523Z"
   },
@@ -364519,9 +364530,9 @@
     }
   ],
   "casino": {
-    "spins": 28,
-    "paid": 30196,
-    "taken": 37631
+    "spins": 29,
+    "paid": 30346,
+    "taken": 37731
   },
   "rails": {
     "lines": [],
