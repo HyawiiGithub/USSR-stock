@@ -327177,20 +327177,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-12T21:48:36.744Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽2 dirty → ₽1 clean fee ₽1"
-    },
-    {
-      "at": "2026-09-12T21:48:38.339Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽2 dirty → ₽1 clean fee ₽1"
-    },
-    {
       "at": "2026-09-12T21:48:41.337Z",
       "by": "1229741033265299506",
       "username": "desertmarshal",
@@ -330675,6 +330661,20 @@
       "username": "seniormanulos",
       "action": "sellgrain",
       "details": "Speers Realm 13x Bread for ₽2,074"
+    },
+    {
+      "at": "2026-10-05T17:27:48.309Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "setwargoal",
+      "details": "declaration United States → reparations"
+    },
+    {
+      "at": "2026-10-05T17:27:57.866Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "ccvote",
+      "details": "APPROVED war on United States (1081, reparations)"
     }
   ],
   "total_rubles_history": [
@@ -353697,9 +353697,26 @@
         "startedBy": "1082686076491137115",
         "startedAt": "2026-09-14T19:05:48.981Z",
         "nuked": true
+      },
+      {
+        "id": "war_5",
+        "nation": "United States",
+        "enemy_power": 1081,
+        "goal": "reparations",
+        "lootMult": 1.3,
+        "aiId": "usa",
+        "foe_divs": 432,
+        "exhaustion": 0,
+        "status": "active",
+        "rounds": 0,
+        "log": [
+          "CC approved <t:1791221277:R> (goal: reparations)"
+        ],
+        "startedBy": "1082686076491137115",
+        "startedAt": "2026-10-05T17:27:57.866Z"
       }
     ],
-    "next_war_id": 5,
+    "next_war_id": 6,
     "armory": {
       "Rifle": 61,
       "Machine Gun": 260,
@@ -353738,15 +353755,7 @@
       }
     },
     "conscripted": true,
-    "declaration": {
-      "nation": "United States",
-      "enemy_power": 940,
-      "goal": "conquest",
-      "aiId": "usa",
-      "status": "pending-cc",
-      "proposedBy": "1082686076491137115",
-      "proposedAt": "2026-10-05T16:16:12.949Z"
-    },
+    "declaration": null,
     "warehouse": {
       "level": 1,
       "log": [
@@ -357228,15 +357237,10 @@
     ]
   },
   "world_tension": {
-    "value": 32,
-    "at": "2026-10-04T14:29:31.035Z"
+    "value": 39,
+    "at": "2026-10-05T17:27:57.866Z"
   },
   "world_news": [
-    {
-      "at": "2026-10-04T17:17:55.680Z",
-      "tag": "VOTE",
-      "text": "United States: passed \"Foreign Aid Package\""
-    },
     {
       "at": "2026-10-04T17:17:55.680Z",
       "tag": "VOTE",
@@ -357381,6 +357385,11 @@
       "at": "2026-10-05T13:19:31.771Z",
       "tag": "VOTE",
       "text": "Sweden: rejected \"Industrial Subsidy Bill\""
+    },
+    {
+      "at": "2026-10-05T17:27:57.866Z",
+      "tag": "WAR",
+      "text": "CC approved war on United States (goal: reparations)"
     }
   ],
   "inflation_adjust": 23.91275183645864,
