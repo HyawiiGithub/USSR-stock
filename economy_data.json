@@ -173,8 +173,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 32,
-      "bot_xp": 4078,
-      "bot_total_xp": 84158,
+      "bot_xp": 4102,
+      "bot_total_xp": 84182,
       "daily_work_count": 6,
       "shock_worker": false,
       "mee6_level": 32,
@@ -319201,12 +319201,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 58.27011399757728,
-  "money_printed": 103444.32072537548,
-  "total_bank_reserves": 418812,
+  "inflation": 24.14127254533163,
+  "money_printed": 102412.46362613986,
+  "total_bank_reserves": 418800,
   "inflation_history": [
-    3.265896253344499,
-    3.2214565609333317,
     3.3323618250689346,
     3.2972248742715156,
     3.1464841150575555,
@@ -319304,7 +319302,9 @@
     58.7925853144524,
     58.729447605642484,
     58.552214257339976,
-    58.27011399757728
+    58.27011399757728,
+    29.14034620261414,
+    24.14127254533163
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 31,
@@ -327076,20 +327076,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-12T21:48:13.362Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽2 dirty → ₽1 clean fee ₽1"
-    },
-    {
-      "at": "2026-09-12T21:48:14.493Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽2 dirty → ₽1 clean fee ₽1"
-    },
-    {
       "at": "2026-09-12T21:48:19.615Z",
       "by": "1229741033265299506",
       "username": "desertmarshal",
@@ -330574,6 +330560,20 @@
       "username": "hyawii2.0",
       "action": "setinflation",
       "details": "offset→31.68% (target ~70%)"
+    },
+    {
+      "at": "2026-10-05T15:29:32.065Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "setinflation",
+      "details": "offset→2.95% (target ~40%)"
+    },
+    {
+      "at": "2026-10-05T15:29:42.529Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "setinflation",
+      "details": "offset→-1.87% (target ~35%)"
     }
   ],
   "total_rubles_history": [
@@ -331946,7 +331946,7 @@
       "1544820489191559270": 1791153828628,
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1791211108454,
-      "1082686076491137115": 1791214081973,
+      "1082686076491137115": 1791214208333,
       "1229741033265299506": 1791214137526,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791161830952,
@@ -357080,7 +357080,7 @@
       "text": "Sweden: rejected \"Industrial Subsidy Bill\""
     }
   ],
-  "inflation_adjust": 31.681262290031952,
+  "inflation_adjust": -1.8684401562282318,
   "good_crisis": {},
   "custom_events": [],
   "event_chance": 0.3,
@@ -357113,16 +357113,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.81,
+    "rub_per_usd": 6.71,
     "history": [
-      {
-        "rate": 7.87,
-        "at": "2026-10-05T01:11:55.188Z"
-      },
-      {
-        "rate": 7.77,
-        "at": "2026-10-05T01:19:14.274Z"
-      },
       {
         "rate": 7.88,
         "at": "2026-10-05T01:21:55.199Z"
@@ -357514,9 +357506,17 @@
       {
         "rate": 7.81,
         "at": "2026-10-05T15:25:46.171Z"
+      },
+      {
+        "rate": 6.93,
+        "at": "2026-10-05T15:29:32.659Z"
+      },
+      {
+        "rate": 6.71,
+        "at": "2026-10-05T15:29:43.107Z"
       }
     ],
-    "last_update": "2026-10-05T15:25:46.171Z",
+    "last_update": "2026-10-05T15:29:43.107Z",
     "manual_override": null
   },
   "national_budget": {
