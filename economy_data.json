@@ -317284,7 +317284,7 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 52886,
+      "funds": 2302,
       "invested_capital": 54510,
       "shares_total": 100000,
       "shares_available": 48089,
@@ -317321,7 +317321,7 @@
           "type": "mine"
         },
         "Iron Mine": {
-          "level": 1,
+          "level": 2,
           "built_at": "2026-10-01T01:34:22.581Z",
           "type": "mine"
         },
@@ -317367,7 +317367,6 @@
         "Cotton Fabric": 1,
         "Peat Fuel": 1,
         "Natural Gas": 12,
-        "Machine Parts": 13,
         "Wheat": 33,
         "Titanium": 1,
         "Peat": 2,
@@ -317426,7 +317425,6 @@
         4,
         4,
         4,
-        4,
         5,
         5,
         5,
@@ -317458,6 +317456,7 @@
         5,
         5,
         5,
+        6,
         6,
         6,
         6,
@@ -317482,7 +317481,7 @@
       ],
       "is_state_owned": false,
       "director_id": "963834359994007614",
-      "last_factorydeal": "2026-10-05T08:16:17.975Z",
+      "last_factorydeal": "2026-10-05T09:25:42.430Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -317506,7 +317505,6 @@
       "prev_price": 6,
       "is_private": true,
       "value_history": [
-        456993,
         456998,
         457038,
         457043,
@@ -317605,7 +317603,8 @@
         488318,
         488336,
         488360,
-        488448
+        488448,
+        498214
       ],
       "sales_team": 1
     },
@@ -318822,17 +318821,18 @@
       "recorded_at": "2026-10-05T09:24:15.965Z"
     }
   ],
-  "factory_names": [],
+  "factory_names": [
+    "Red Star Steelworks",
+    "Soviet Iron Foundry",
+    "Stalin Tractor Plant",
+    "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries",
+    "Volga Shipbuilding"
+  ],
   "used_factory_names": [
     "Lenin Machine Works",
-    "Khrushchev Agricultural",
-    "Siberian Mining Co",
-    "Soviet Iron Foundry",
-    "Red Star Steelworks",
-    "Stalin Tractor Plant",
-    "Volga Shipbuilding",
-    "Ural Heavy Industries",
-    "Brezhnev Auto Factory"
+    "Khrushchev Agricultural"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -318840,7 +318840,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 23.637033328701452,
-  "money_printed": 83142.78199270192,
+  "money_printed": 106740.78199270192,
   "total_bank_reserves": 440579,
   "inflation_history": [
     1.93406870341982,
@@ -319090,13 +319090,13 @@
     "Steel Ingot": 1.3069552870610583,
     "Gold Bar": 0.9196464835441769,
     "Aluminium Ingot": 1.4044543263539755,
-    "Timber Planks": 0.9086309512488455,
+    "Timber Planks": 0.9186309512488455,
     "Bricks": 0.7901582838512119,
     "Concrete": 1.4040973763980646,
     "Glass": 1.3953424041180602,
     "Steel Beam": 1.4045058132827548,
-    "Machine Parts": 1.343269356407267,
-    "Refined Fuel": 1.339022232856303,
+    "Machine Parts": 1.050769356407267,
+    "Refined Fuel": 1.349022232856303,
     "Uranium Rod": 1.390202027435222,
     "Reactor Core": 1.3881594204389665,
     "Circuit Board": 1.382936764001832,
@@ -319115,7 +319115,7 @@
     "Sunflower Oil": 1.388338251092844,
     "Linen": 1.4105286103341115,
     "Corn Meal": 1.3884473538338207,
-    "Tea Pack": 1.4119981381308286,
+    "Tea Pack": 1.4219981381308286,
     "Citrus Juice": 1.4124242915890324,
     "Antimony Alloy": 1.4117934242510424,
     "Molybdenum Rod": 1.4097305898709687,
@@ -319123,7 +319123,7 @@
     "Shale Oil": 1.4046285714283098,
     "Bandage": 1.4088780519441892,
     "Ointment": 1.4119982647316773,
-    "Pet Food": 1.4009328221713235,
+    "Pet Food": 1.4109328221713235,
     "Brass": 1.4022958104934722,
     "Brass Valve": 1.3958364642808403,
     "Radiator": 1.3410122666897106,
@@ -319151,7 +319151,7 @@
     "Reactor Core": "2026-09-30T08:38:21.195Z",
     "Gas Fuel": "2026-10-05T08:16:17.976Z",
     "Steel Beam": "2026-10-04T19:25:35.029Z",
-    "Machine Parts": "2026-10-05T06:15:43.602Z",
+    "Machine Parts": "2026-10-05T09:25:42.435Z",
     "Sugar": "2026-09-30T19:30:44.561Z",
     "Fertilizer": "2026-09-21T08:07:31.041Z",
     "Flour": "2026-09-21T19:11:12.162Z",
@@ -319170,7 +319170,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 57,
+    "Machine Parts": 70,
     "Gas Fuel": 47,
     "Cake": 2,
     "Brass Valve": 3,
@@ -360316,8 +360316,8 @@
   "national_market": {
     "stock": {
       "Machine Parts": {
-        "qty": 304,
-        "price": 1882
+        "qty": 317,
+        "price": 1890
       },
       "Refined Fuel": {
         "qty": 150,
@@ -360420,7 +360420,7 @@
         "price": 198
       }
     },
-    "sold_count": 1960,
+    "sold_count": 1973,
     "bought_count": 290
   },
   "leaders": {
