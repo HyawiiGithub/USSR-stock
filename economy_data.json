@@ -317421,7 +317421,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        443417,
         443457,
         443475,
         443499,
@@ -317520,7 +317519,8 @@
         456104,
         456109,
         456299,
-        456419
+        456419,
+        456475
       ],
       "sales_team": 1
     },
@@ -318203,11 +318203,6 @@
   "gsi_history": [
     {
       "price": 100,
-      "change_percent": 0.5386808982503557,
-      "recorded_at": "2026-10-04T23:12:00.179Z"
-    },
-    {
-      "price": 100,
       "change_percent": 0.2660106999795862,
       "recorded_at": "2026-10-04T23:17:00.201Z"
     },
@@ -318700,6 +318695,11 @@
       "price": 96,
       "change_percent": 0.49474615316557663,
       "recorded_at": "2026-10-05T02:52:01.105Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.9417292404288076,
+      "recorded_at": "2026-10-05T02:56:05.540Z"
     }
   ],
   "factory_names": [
@@ -319051,7 +319051,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 53,
+    "Machine Parts": 52,
     "Gas Fuel": 35,
     "Bricks": 11
   },
@@ -319076,7 +319076,7 @@
     "Reactor Core": 12,
     "Gas Fuel": 210,
     "Steel Beam": 76,
-    "Machine Parts": 271,
+    "Machine Parts": 272,
     "Sugar": 61,
     "Fertilizer": 17,
     "Flour": 20,
@@ -319093,11 +319093,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-10-01T08:42:37.386Z"
-    },
     {
       "item": "Brass Valve",
       "qty": 1,
@@ -320592,6 +320587,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-10-05T02:41:53.773Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-10-05T02:56:53.713Z"
     }
   ],
   "demand_history": {
@@ -324933,11 +324933,6 @@
     "Machine Parts": [
       {
         "demand": 1.3854029103714451,
-        "at": "2026-09-30T05:33:04.933Z",
-        "supply": 5
-      },
-      {
-        "demand": 1.3854029103714451,
         "at": "2026-09-30T06:03:05.362Z",
         "supply": 5
       },
@@ -325229,6 +325224,11 @@
       {
         "demand": 1.3813865539644115,
         "at": "2026-10-05T02:11:53.646Z",
+        "supply": 13
+      },
+      {
+        "demand": 1.3813865539644115,
+        "at": "2026-10-05T02:56:53.713Z",
         "supply": 13
       }
     ],
