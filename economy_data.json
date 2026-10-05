@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 283794,
+      "bank": 283787,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -465,7 +465,7 @@
     },
     "1186597507720019988": {
       "username": "",
-      "cash": 3418,
+      "cash": 3423,
       "bank": 12308,
       "resources": {
         "Coal": 1
@@ -532,8 +532,8 @@
       "cutters": 0,
       "collars": 0,
       "chat_week": "2026-W41",
-      "chat_earned_week": 3,
-      "chat_earned": 103
+      "chat_earned_week": 8,
+      "chat_earned": 108
     },
     "682362000210526299": {
       "username": "",
@@ -243651,7 +243651,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 241,
+      "cash": 258,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243671,8 +243671,8 @@
           "avg_price": 5003
         }
       },
-      "last_work": "2026-10-05T07:30:13.481Z",
-      "work_count": 889,
+      "last_work": "2026-10-05T07:35:43.459Z",
+      "work_count": 890,
       "last_claim": "2026-10-05T06:42:52.580Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "Prince Pakistani Atomic Consortium",
@@ -243686,9 +243686,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 30,
-      "bot_xp": 4470,
-      "bot_total_xp": 71995,
-      "daily_work_count": 888,
+      "bot_xp": 4491,
+      "bot_total_xp": 72016,
+      "daily_work_count": 889,
       "shock_worker": false,
       "mee6_level": 30,
       "last_laylow": null,
@@ -243717,8 +243717,8 @@
       "cutters": 0,
       "collars": 0,
       "chat_week": "2026-W41",
-      "chat_earned_week": 45,
-      "chat_earned": 45
+      "chat_earned_week": 47,
+      "chat_earned": 47
     },
     "1343848145943269417": {
       "cash": 0,
@@ -317298,7 +317298,7 @@
       },
       "inventory": {
         "Iron Ore": 14,
-        "Coal": 76,
+        "Coal": 77,
         "Uranium": 1,
         "Lead": 20,
         "Timber Planks": 206,
@@ -317323,7 +317323,7 @@
         "Peat Fuel": 1,
         "Natural Gas": 4,
         "Machine Parts": 13,
-        "Wheat": 62,
+        "Wheat": 61,
         "Titanium": 1,
         "Peat": 2,
         "Grapes": 1,
@@ -317412,7 +317412,7 @@
         4,
         4,
         4,
-        4,
+        5,
         5,
         5,
         5,
@@ -317460,7 +317460,6 @@
       "prev_price": 5,
       "is_private": true,
       "value_history": [
-        454868,
         454884,
         454940,
         454945,
@@ -317559,7 +317558,8 @@
         483802,
         483852,
         483940,
-        483958
+        483958,
+        483966
       ],
       "sales_team": 1
     },
@@ -318262,11 +318262,6 @@
   "gsi_history": [
     {
       "price": 88,
-      "change_percent": 0.8603337847155048,
-      "recorded_at": "2026-10-05T04:05:53.935Z"
-    },
-    {
-      "price": 88,
       "change_percent": 0.565878256068408,
       "recorded_at": "2026-10-05T04:07:01.070Z"
     },
@@ -318759,6 +318754,11 @@
       "price": 115,
       "change_percent": 1.0795659646637792,
       "recorded_at": "2026-10-05T07:33:18.998Z"
+    },
+    {
+      "price": 116,
+      "change_percent": 0.9497966383030788,
+      "recorded_at": "2026-10-05T07:35:44.369Z"
     }
   ],
   "factory_names": [
@@ -318780,7 +318780,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 22.026218158429504,
-  "money_printed": 78953.35141255015,
+  "money_printed": 78968.35141255015,
   "total_bank_reserves": 444286,
   "inflation_history": [
     0,
@@ -331240,7 +331240,7 @@
         "963834359994007614": 8
       },
       "2026-10-05": {
-        "963834359994007614": 83,
+        "963834359994007614": 84,
         "1521043721129558017": 6,
         "567599353955352578": 5,
         "874346333882945547": 6,
@@ -353144,7 +353144,8 @@
       "1365483598962102305": 1,
       "1500854055310852186": 3,
       "1223569864652755077": 0
-    }
+    },
+    "cgs": []
   },
   "mod": {
     "ministerId": "1495413593242337421",
@@ -353314,9 +353315,18 @@
         "status": "accepted",
         "at": "2026-10-03T08:05:36.468Z",
         "decidedAt": "2026-10-03T08:05:58.777Z"
+      },
+      {
+        "id": "order_8",
+        "fromId": "1186597507720019988",
+        "fromName": "imdivit",
+        "toId": "963834359994007614",
+        "task": "meow",
+        "status": "pending",
+        "at": "2026-10-05T07:36:22.404Z"
       }
     ],
-    "next_id": 8
+    "next_id": 9
   },
   "logistics": {
     "ministerId": "874346333882945547",
