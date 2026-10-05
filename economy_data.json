@@ -317290,8 +317290,8 @@
       "shares_available": 48089,
       "state_shares": 0,
       "founder_shares": 0,
-      "share_price": 6,
-      "market_cap": 600000,
+      "share_price": 5,
+      "market_cap": 500000,
       "employees": 25,
       "level": 1,
       "buildings": {
@@ -317424,7 +317424,6 @@
         4,
         4,
         4,
-        4,
         5,
         5,
         5,
@@ -317477,7 +317476,8 @@
         6,
         6,
         6,
-        6
+        6,
+        5
       ],
       "is_state_owned": false,
       "director_id": "963834359994007614",
@@ -317505,7 +317505,6 @@
       "prev_price": 6,
       "is_private": true,
       "value_history": [
-        456998,
         457038,
         457043,
         457099,
@@ -317604,7 +317603,8 @@
         488336,
         488360,
         488448,
-        498214
+        498214,
+        439032
       ],
       "sales_team": 1
     },
@@ -319174,7 +319174,7 @@
     "Gas Fuel": 47,
     "Cake": 2,
     "Brass Valve": 3,
-    "Refined Fuel": 18,
+    "Refined Fuel": 16,
     "Radiator": 3,
     "Bricks": 20
   },
@@ -319182,7 +319182,7 @@
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 192,
-    "Refined Fuel": 277,
+    "Refined Fuel": 279,
     "Fuel": 152,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -319216,11 +319216,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 2,
-      "at": "2026-10-01T15:12:38.607Z"
-    },
     {
       "item": "Uranium Rod",
       "qty": 1,
@@ -320715,6 +320710,11 @@
       "item": "Radiator",
       "qty": 1,
       "at": "2026-10-05T09:11:55.396Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-10-05T09:26:55.378Z"
     }
   ],
   "demand_history": {
@@ -321421,11 +321421,6 @@
     ],
     "Refined Fuel": [
       {
-        "demand": 1.1518845392660149,
-        "at": "2026-09-27T16:54:02.140Z",
-        "supply": 0
-      },
-      {
         "demand": 1.300556545566517,
         "at": "2026-09-27T17:54:03.934Z",
         "supply": 0
@@ -321718,6 +321713,11 @@
       {
         "demand": 1.0238300208633222,
         "at": "2026-10-05T07:41:54.352Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.349022232856303,
+        "at": "2026-10-05T09:26:55.378Z",
         "supply": 0
       }
     ],
