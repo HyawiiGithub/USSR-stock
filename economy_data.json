@@ -243757,7 +243757,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-05T23:17:13.112Z",
       "train_reminder": true,
-      "train_reminder_sent": "army drill@2026-10-06T01:59:18.055Z",
+      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T02:25:20.976Z",
       "pet_food_source": {
@@ -320142,7 +320142,7 @@
     "Machine Parts": 71,
     "Gas Fuel": 68,
     "Refined Fuel": 39,
-    "Bricks": 13,
+    "Bricks": 11,
     "Cake": 9
   },
   "global_consumption": {
@@ -320177,17 +320177,12 @@
     "Pet Food": 9,
     "Radiator": 36,
     "Fish Stew": 53,
-    "Bricks": 47,
+    "Bricks": 49,
     "Sunflower Oil": 30,
     "Glass": 6,
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-10-02T09:42:40.093Z"
-    },
     {
       "item": "Refined Fuel",
       "qty": 1,
@@ -321682,6 +321677,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-10-06T06:23:06.408Z"
+    },
+    {
+      "item": "Bricks",
+      "qty": 2,
+      "at": "2026-10-06T06:38:06.175Z"
     }
   ],
   "demand_history": {
@@ -327566,6 +327566,11 @@
       {
         "demand": 1.2178353433690086,
         "at": "2026-10-06T02:53:05.564Z",
+        "supply": 106
+      },
+      {
+        "demand": 1.2141615941282133,
+        "at": "2026-10-06T06:38:06.175Z",
         "supply": 106
       }
     ],
