@@ -317100,7 +317100,7 @@
       "owner_id": "807254722251587614",
       "ceo": "lucky_drink",
       "hq_ssr": "Nuristani SSR",
-      "funds": 26823,
+      "funds": 34256,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 44464,
@@ -317193,8 +317193,7 @@
         "Oil": 2,
         "Uranium": 2,
         "Gas Fuel": 3,
-        "Glass": 9,
-        "Brass Valve": 5
+        "Glass": 9
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-06T15:11:30.477Z",
@@ -317210,8 +317209,6 @@
         3,
         3,
         3,
-        3,
-        3,
         4,
         4,
         4,
@@ -317279,6 +317276,8 @@
         5,
         5,
         7,
+        6,
+        6,
         6,
         6,
         6,
@@ -317302,7 +317301,7 @@
       ],
       "is_state_owned": false,
       "director_id": "807254722251587614",
-      "last_factorydeal": "2026-10-06T08:02:14.080Z",
+      "last_factorydeal": "2026-10-06T17:37:39.362Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [],
@@ -317320,8 +317319,6 @@
       "prev_price": 6,
       "is_private": true,
       "value_history": [
-        373839,
-        373839,
         373839,
         373839,
         373839,
@@ -317419,7 +317416,9 @@
         399153,
         399159,
         400519,
-        399947
+        399947,
+        400857,
+        404765
       ]
     },
     "state_24": {
@@ -320109,17 +320108,18 @@
       "recorded_at": "2026-10-06T17:35:18.399Z"
     }
   ],
-  "factory_names": [],
-  "used_factory_names": [
+  "factory_names": [
     "Soviet Iron Foundry",
-    "Red Star Steelworks",
-    "Ural Heavy Industries",
-    "Stalin Tractor Plant",
-    "Siberian Mining Co",
-    "Khrushchev Agricultural",
     "Lenin Machine Works",
+    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
+    "Siberian Mining Co",
+    "Ural Heavy Industries",
     "Volga Shipbuilding"
+  ],
+  "used_factory_names": [
+    "Stalin Tractor Plant",
+    "Red Star Steelworks"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -320127,7 +320127,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 59.691216475118836,
-  "money_printed": 144101.2215512591,
+  "money_printed": 151534.2215512591,
   "total_bank_reserves": 162040,
   "inflation_history": [
     40.91375054436868,
@@ -320370,7 +320370,7 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3847752016751076,
-    "Cake": 1.3559610226930774,
+    "Cake": 1.3659610226930774,
     "Bread": 1.3248712249164294,
     "Copper Ingot": 1.2840896586340378,
     "Iron Ingot": 1.2191020693296588,
@@ -320390,29 +320390,29 @@
     "Flour": 1.3435178525373304,
     "Sugar": 1.0281972758844016,
     "Wine": 1.3657906815451017,
-    "Canned Food": 1.4041173739318036,
+    "Canned Food": 1.4141173739318036,
     "Canned Fish": 1.4023272225297096,
     "Smoked Fish": 1.3937022143092759,
     "Fish Stew": 1.3814159816640559,
     "Peat Fuel": 1.4026714776692712,
     "Gas Fuel": 1.390646679221494,
     "Fertilizer": 1.4011213184385785,
-    "Cotton Fabric": 1.4025370531764634,
+    "Cotton Fabric": 1.4125370531764634,
     "Manganese Alloy": 1.4025760149590887,
     "Sunflower Oil": 1.4044668253456096,
     "Linen": 1.3958568714259083,
-    "Corn Meal": 1.3932679389622467,
+    "Corn Meal": 1.4032679389622467,
     "Tea Pack": 1.4078197435674085,
     "Citrus Juice": 1.3876268193345251,
     "Antimony Alloy": 1.3923169756086742,
-    "Molybdenum Rod": 1.3858568714259083,
+    "Molybdenum Rod": 1.3958568714259083,
     "Aluminium Sheet": 1.4041173739318036,
     "Shale Oil": 1.3954898319090716,
     "Bandage": 1.3840869235172915,
     "Ointment": 1.39801383207877,
     "Pet Food": 1.392197749308216,
     "Brass": 1.3776831939873881,
-    "Brass Valve": 1.404591482089271,
+    "Brass Valve": 1.292091482089271,
     "Radiator": 1.4043981766817846,
     "Brass Lamp": 1.4086979571770333,
     "Wheat": 0.6045500791610686
@@ -320445,7 +320445,7 @@
     "Corn Meal": "2026-09-29T19:42:51.222Z",
     "Aluminium Ingot": "2026-09-21T20:41:29.446Z",
     "Brass": "2026-09-30T14:46:58.756Z",
-    "Brass Valve": "2026-10-05T05:58:23.579Z",
+    "Brass Valve": "2026-10-06T17:37:39.362Z",
     "Pet Food": "2026-09-25T21:08:36.688Z",
     "Radiator": "2026-10-05T11:05:27.797Z",
     "Fish Stew": "2026-10-02T12:11:21.930Z",
@@ -320463,7 +320463,8 @@
     "Cake": 5,
     "Circuit Board": 32,
     "Reactor Core": 11,
-    "Steel Beam": 19
+    "Steel Beam": 19,
+    "Brass Valve": 5
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -363450,8 +363451,8 @@
         "price": 323
       },
       "Brass Valve": {
-        "qty": 34,
-        "price": 1353
+        "qty": 39,
+        "price": 1398
       },
       "Steel Beam": {
         "qty": 93,
@@ -363502,7 +363503,7 @@
         "price": 198
       }
     },
-    "sold_count": 2273,
+    "sold_count": 2278,
     "bought_count": 307
   },
   "leaders": {
