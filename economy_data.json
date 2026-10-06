@@ -243710,7 +243710,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 930,
+      "cash": 945,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243730,8 +243730,8 @@
           "avg_price": 54
         }
       },
-      "last_work": "2026-10-06T07:56:10.447Z",
-      "work_count": 1118,
+      "last_work": "2026-10-06T08:01:20.568Z",
+      "work_count": 1119,
       "last_claim": "2026-10-05T06:42:52.580Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "Prince Pakistani Atomic Consortium",
@@ -243745,9 +243745,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 31,
-      "bot_xp": 5043,
-      "bot_total_xp": 78668,
-      "daily_work_count": 1117,
+      "bot_xp": 5068,
+      "bot_total_xp": 78693,
+      "daily_work_count": 1118,
       "shock_worker": false,
       "mee6_level": 31,
       "last_laylow": null,
@@ -243757,7 +243757,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-05T23:17:13.112Z",
       "train_reminder": true,
-      "train_reminder_sent": "army drill@2026-10-06T01:59:18.055Z",
+      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T06:48:56.885Z",
       "pet_food_source": {
@@ -316942,7 +316942,7 @@
         "Coal": 23,
         "Fish": 1,
         "Iron Ore": 19,
-        "Natural Gas": 19,
+        "Natural Gas": 1,
         "Wheat": 158,
         "Brass": 6,
         "Concrete": 1,
@@ -316951,15 +316951,15 @@
         "Clay": 24,
         "Sand": 24,
         "Sulphur": 3,
-        "Oil": 18,
         "Wine": 4,
         "Sugar": 12,
         "Iron Ingot": 3,
         "Aluminium Ore": 6,
-        "Gas Fuel": 4,
+        "Gas Fuel": 10,
         "Copper": 1,
         "Grapes": 17,
-        "Uranium Rod": 2
+        "Uranium Rod": 2,
+        "Fuel": 6
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-06T06:55:46.751Z",
@@ -317007,8 +317007,6 @@
         3,
         3,
         3,
-        3,
-        3,
         4,
         4,
         4,
@@ -317041,6 +317039,8 @@
         6,
         6,
         5,
+        4,
+        4,
         4,
         4,
         4,
@@ -317085,8 +317085,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        369400,
-        369536,
         369536,
         369745,
         369873,
@@ -317184,7 +317182,9 @@
         312198,
         312198,
         312256,
-        312456
+        312456,
+        312656,
+        312696
       ]
     },
     "state_24": {
@@ -318274,7 +318274,7 @@
         }
       },
       "inventory": {
-        "Iron Ore": 34,
+        "Iron Ore": 36,
         "Coal": 87,
         "Uranium": 2,
         "Lead": 28,
@@ -318303,7 +318303,7 @@
         "Peat": 2,
         "Timber": 91,
         "Gold": 33,
-        "Wheat": 78,
+        "Wheat": 77,
         "Corn": 1,
         "Sugar": 3,
         "Grapes": 1
@@ -318438,7 +318438,6 @@
       "prev_price": 5,
       "is_private": true,
       "value_history": [
-        364642,
         364646,
         364760,
         364804,
@@ -318537,7 +318536,8 @@
         391736,
         391768,
         391788,
-        391832
+        391832,
+        391864
       ],
       "sales_team": 1
     },
@@ -319332,11 +319332,6 @@
   },
   "gsi_history": [
     {
-      "price": 144,
-      "change_percent": -0.00721185922606532,
-      "recorded_at": "2026-10-06T03:08:10.856Z"
-    },
-    {
       "price": 143,
       "change_percent": -0.40689106545916504,
       "recorded_at": "2026-10-06T03:13:11.110Z"
@@ -319830,11 +319825,15 @@
       "price": 138,
       "change_percent": 1.0178554423961872,
       "recorded_at": "2026-10-06T07:58:13.190Z"
+    },
+    {
+      "price": 138,
+      "change_percent": 0.4547175232263348,
+      "recorded_at": "2026-10-06T08:01:21.857Z"
     }
   ],
   "factory_names": [
     "Red Star Steelworks",
-    "Soviet Iron Foundry",
     "Lenin Machine Works",
     "Stalin Tractor Plant",
     "Brezhnev Auto Factory",
@@ -319843,7 +319842,8 @@
   ],
   "used_factory_names": [
     "Volga Shipbuilding",
-    "Khrushchev Agricultural"
+    "Khrushchev Agricultural",
+    "Soviet Iron Foundry"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -319851,7 +319851,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 40.78954411786125,
-  "money_printed": 123169.31384756534,
+  "money_printed": 123184.31384756534,
   "total_bank_reserves": 147473,
   "inflation_history": [
     60.953070490168194,
@@ -332481,7 +332481,7 @@
         "1506785783506534426": 1
       },
       "2026-10-06": {
-        "963834359994007614": 48,
+        "963834359994007614": 49,
         "874346333882945547": 8,
         "1495413593242337421": 6,
         "1186597507720019988": 5,
