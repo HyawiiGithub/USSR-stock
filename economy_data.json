@@ -1113,8 +1113,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 40,
-      "bank": 7375,
+      "cash": 2415,
+      "bank": 0,
       "resources": {},
       "inventory": {
         "Bread": 5,
@@ -1149,13 +1149,13 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 197,
-      "heat": 0,
+      "heat": 4,
       "wanted": 0,
       "last_illegal": "2026-10-04T21:09:41.888Z",
-      "total_heat_generated": 2531.1548999999986,
+      "total_heat_generated": 2535.1548999999986,
       "bot_level": 31,
-      "bot_xp": 6028,
-      "bot_total_xp": 79653,
+      "bot_xp": 6046,
+      "bot_total_xp": 79671,
       "daily_work_count": 1316,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-06",
@@ -1183,7 +1183,7 @@
       "cutters": 0,
       "collars": 0,
       "security": {},
-      "casino_cd": "2026-10-06T08:25:18.440Z",
+      "casino_cd": "2026-10-06T11:11:39.904Z",
       "mobilize_cd": "2026-10-04T14:29:31.035Z",
       "chat_week": "2026-W41",
       "chat_earned_week": 51,
@@ -243757,7 +243757,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-05T23:17:13.112Z",
       "train_reminder": true,
-      "train_reminder_sent": "army drill@2026-10-06T01:59:18.055Z",
+      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T08:30:20.658Z",
       "pet_food_source": {
@@ -327850,13 +327850,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-13T14:26:49.713Z",
-      "by": "1082686076491137115",
-      "username": "hyawii2.0",
-      "action": "set-executive",
-      "details": "Kazakh SSR → 874346333882945547"
-    },
-    {
       "at": "2026-09-13T14:27:30.753Z",
       "by": "1082686076491137115",
       "username": "hyawii2.0",
@@ -331348,6 +331341,13 @@
       "username": "seniormanulos",
       "action": "CASINO",
       "details": "slots ₽1,400 → nothing ₽0"
+    },
+    {
+      "at": "2026-10-06T11:11:39.904Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "CASINO",
+      "details": "slots ₽5,000 → nothing ₽0"
     }
   ],
   "total_rubles_history": [
@@ -331776,7 +331776,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-10-05T10:17:28.539Z",
-  "heat_global": 0,
+  "heat_global": 0.6,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -332744,7 +332744,7 @@
       "1229741033265299506": 1791284702158,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791257483160,
-      "874346333882945547": 1791284891930,
+      "874346333882945547": 1791285092207,
       "870686833976172574": 1791240493328,
       "1186597507720019988": 1791282951579,
       "1521043721129558017": 1791279247096,
@@ -366044,9 +366044,9 @@
     }
   ],
   "casino": {
-    "spins": 30,
+    "spins": 31,
     "paid": 30346,
-    "taken": 39131
+    "taken": 44131
   },
   "rails": {
     "lines": [],
