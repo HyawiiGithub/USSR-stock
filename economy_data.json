@@ -319816,7 +319816,7 @@
     "Refined Fuel": 27,
     "Radiator": 4,
     "Bricks": 14,
-    "Sunflower Oil": 3,
+    "Sunflower Oil": 1,
     "Cake": 23
   },
   "global_consumption": {
@@ -319852,16 +319852,11 @@
     "Radiator": 32,
     "Fish Stew": 53,
     "Bricks": 46,
-    "Sunflower Oil": 27,
+    "Sunflower Oil": 29,
     "Glass": 6,
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Circuit Board",
-      "qty": 2,
-      "at": "2026-10-02T03:42:40.095Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 2,
@@ -321356,6 +321351,11 @@
       "item": "Sunflower Oil",
       "qty": 1,
       "at": "2026-10-06T00:23:04.377Z"
+    },
+    {
+      "item": "Sunflower Oil",
+      "qty": 2,
+      "at": "2026-10-06T00:38:04.503Z"
     }
   ],
   "demand_history": {
@@ -327327,6 +327327,11 @@
       {
         "demand": 1.4041173739318036,
         "at": "2026-10-06T00:23:04.377Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.4041173739318036,
+        "at": "2026-10-06T00:38:04.540Z",
         "supply": 0
       }
     ],
