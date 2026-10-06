@@ -319854,7 +319854,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 75,
-    "Gas Fuel": 62,
+    "Gas Fuel": 60,
     "Refined Fuel": 27,
     "Radiator": 4,
     "Bricks": 14,
@@ -319880,7 +319880,7 @@
     "Circuit Board": 112,
     "Cotton Fabric": 13,
     "Reactor Core": 12,
-    "Gas Fuel": 223,
+    "Gas Fuel": 225,
     "Steel Beam": 76,
     "Machine Parts": 291,
     "Sugar": 61,
@@ -319899,11 +319899,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-10-02T04:42:39.981Z"
-    },
     {
       "item": "Canned Food",
       "qty": 1,
@@ -321398,6 +321393,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-10-06T01:23:04.994Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-10-06T01:38:04.750Z"
     }
   ],
   "demand_history": {
@@ -325184,11 +325184,6 @@
     ],
     "Gas Fuel": [
       {
-        "demand": 0.7188168423020949,
-        "at": "2026-10-01T05:42:37.190Z",
-        "supply": 1
-      },
-      {
         "demand": 1.2387495358946545,
         "at": "2026-10-01T07:27:37.166Z",
         "supply": 1
@@ -325481,6 +325476,11 @@
       {
         "demand": 1.3413770679945358,
         "at": "2026-10-05T17:16:05.819Z",
+        "supply": 8
+      },
+      {
+        "demand": 1.3811888911107064,
+        "at": "2026-10-06T01:38:04.750Z",
         "supply": 8
       }
     ],
