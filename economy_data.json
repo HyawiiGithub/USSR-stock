@@ -173,8 +173,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 32,
-      "bot_xp": 6076,
-      "bot_total_xp": 86156,
+      "bot_xp": 6096,
+      "bot_total_xp": 86176,
       "daily_work_count": 6,
       "shock_worker": false,
       "mee6_level": 32,
@@ -243760,7 +243760,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-06T06:13:21.569Z",
       "train_reminder": true,
-      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
+      "train_reminder_sent": "army drill@2026-10-06T01:59:18.055Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T08:30:20.658Z",
       "pet_food_source": {
@@ -327954,20 +327954,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-13T18:41:03.674Z",
-      "by": "1229741033265299506",
-      "username": "desertmarshal",
-      "action": "launder",
-      "details": "₽1,262 dirty → ₽631 clean fee ₽631"
-    },
-    {
-      "at": "2026-09-13T19:21:38.083Z",
-      "by": "807254722251587614",
-      "username": "lucky_drink",
-      "action": "collect-salaries",
-      "details": "State Mining Corp paid ₽998 salaries ceo 807254722251587614 ₽357, director 807254722251587614 ₽357, manager 1186597507720019988 ₽142, manager 807254722251587614 ₽142"
-    },
-    {
       "at": "2026-09-13T19:26:45.216Z",
       "by": "1379734184259747851",
       "username": ".kewl1",
@@ -331452,6 +331438,20 @@
       "username": "hyawii2.0",
       "action": "cbclose",
       "details": "Emergency credit freeze due to hyperinflation emergency measures active, treasury overdraft. No new obligations until the ruble holds"
+    },
+    {
+      "at": "2026-10-06T13:33:01.918Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "cbopen",
+      "details": ""
+    },
+    {
+      "at": "2026-10-06T13:33:24.580Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "cbclose",
+      "details": "Emergency credit freeze due to hyperinflation emergency measures active, treasury overdraft. No new obligations until the ruble holds"
     }
   ],
   "total_rubles_history": [
@@ -332847,7 +332847,7 @@
       "1544820489191559270": 1791289931679,
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1791270156070,
-      "1082686076491137115": 1791293376901,
+      "1082686076491137115": 1791293595044,
       "1229741033265299506": 1791288825421,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791257483160,
@@ -353226,6 +353226,18 @@
         "by": "hyawii2.0",
         "action": "cbclose",
         "reserves_after": 598090
+      },
+      {
+        "at": "2026-10-06T13:33:01.918Z",
+        "by": "hyawii2.0",
+        "action": "cbopen",
+        "reserves_after": 598090
+      },
+      {
+        "at": "2026-10-06T13:33:24.580Z",
+        "by": "hyawii2.0",
+        "action": "cbclose",
+        "reserves_after": 598090
       }
     ],
     "total_added": 1141386,
@@ -353257,7 +353269,7 @@
     ],
     "shutdown": true,
     "shutdown_by": "hyawii2.0",
-    "shutdown_at": "2026-10-06T13:32:41.095Z",
+    "shutdown_at": "2026-10-06T13:33:24.580Z",
     "shutdown_reason": "Emergency credit freeze due to hyperinflation emergency measures active, treasury overdraft. No new obligations until the ruble holds"
   },
   "fca": {
