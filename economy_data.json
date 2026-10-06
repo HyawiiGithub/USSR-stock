@@ -243760,7 +243760,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-06T06:13:21.569Z",
       "train_reminder": true,
-      "train_reminder_sent": "army drill@2026-10-06T01:59:18.055Z",
+      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T08:30:20.658Z",
       "pet_food_source": {
@@ -320533,7 +320533,7 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3911375810316116,
-    "Cake": 0.9747194634570301,
+    "Cake": 0.9947194634570301,
     "Bread": 0.6054069515505618,
     "Copper Ingot": 1.2840896586340378,
     "Iron Ingot": 1.2156606443350118,
@@ -320627,7 +320627,7 @@
     "Reactor Core": 9,
     "Steel Beam": 17,
     "Brass Valve": 5,
-    "Cake": 18
+    "Cake": 17
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -320638,7 +320638,7 @@
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
-    "Cake": 479,
+    "Cake": 480,
     "Smoked Fish": 86,
     "Canned Food": 86,
     "Uranium Rod": 53,
@@ -320667,11 +320667,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 2,
-      "at": "2026-10-02T22:44:01.095Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -322166,6 +322161,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-10-06T19:40:14.903Z"
+    },
+    {
+      "item": "Cake",
+      "qty": 1,
+      "at": "2026-10-06T19:55:15.015Z"
     }
   ],
   "demand_history": {
@@ -323833,11 +323833,6 @@
     "Cake": [
       {
         "demand": 1.3884658800251715,
-        "at": "2026-10-02T04:42:39.981Z",
-        "supply": 8
-      },
-      {
-        "demand": 1.3884658800251715,
         "at": "2026-10-02T06:42:40.109Z",
         "supply": 8
       },
@@ -324129,6 +324124,11 @@
       {
         "demand": 0.919203320038233,
         "at": "2026-10-06T19:40:14.903Z",
+        "supply": 7
+      },
+      {
+        "demand": 0.9747194634570301,
+        "at": "2026-10-06T19:55:15.015Z",
         "supply": 7
       }
     ],
