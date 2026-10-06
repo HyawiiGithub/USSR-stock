@@ -319932,7 +319932,7 @@
     "Machine Parts": 75,
     "Gas Fuel": 60,
     "Refined Fuel": 27,
-    "Radiator": 4,
+    "Radiator": 3,
     "Bricks": 14,
     "Sunflower Oil": 1,
     "Cake": 20
@@ -319967,7 +319967,7 @@
     "Brass": 58,
     "Brass Valve": 34,
     "Pet Food": 9,
-    "Radiator": 32,
+    "Radiator": 33,
     "Fish Stew": 53,
     "Bricks": 46,
     "Sunflower Oil": 29,
@@ -319975,11 +319975,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Canned Food",
-      "qty": 1,
-      "at": "2026-10-02T04:57:39.976Z"
-    },
     {
       "item": "Canned Fish",
       "qty": 1,
@@ -321474,6 +321469,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-10-06T01:38:04.750Z"
+    },
+    {
+      "item": "Radiator",
+      "qty": 1,
+      "at": "2026-10-06T01:53:04.752Z"
     }
   ],
   "demand_history": {
@@ -326994,6 +326994,11 @@
       {
         "demand": 1.3937022143092759,
         "at": "2026-10-05T23:53:03.073Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.3937022143092759,
+        "at": "2026-10-06T01:53:04.752Z",
         "supply": 1
       }
     ],
