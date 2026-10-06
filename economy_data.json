@@ -516,8 +516,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 929,
-      "bot_total_xp": 24779,
+      "bot_xp": 947,
+      "bot_total_xp": 24797,
       "daily_work_count": 234,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-06",
@@ -1114,7 +1114,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 327,
+      "cash": 367,
       "bank": 10878,
       "resources": {},
       "inventory": {
@@ -1140,8 +1140,8 @@
           "avg_price": 8
         }
       },
-      "last_work": "2026-10-06T19:09:22.368Z",
-      "work_count": 2520,
+      "last_work": "2026-10-06T19:14:34.899Z",
+      "work_count": 2521,
       "last_claim": "2026-10-06T08:25:51.174Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
@@ -1155,9 +1155,9 @@
       "last_illegal": "2026-10-04T21:09:41.888Z",
       "total_heat_generated": 2543.1548999999986,
       "bot_level": 32,
-      "bot_xp": 92,
-      "bot_total_xp": 80172,
-      "daily_work_count": 1330,
+      "bot_xp": 110,
+      "bot_total_xp": 80190,
+      "daily_work_count": 1331,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-06",
       "mee6_level": 32,
@@ -243760,7 +243760,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-06T06:13:21.569Z",
       "train_reminder": true,
-      "train_reminder_sent": "army drill@2026-10-06T01:59:18.055Z",
+      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T08:30:20.658Z",
       "pet_food_source": {
@@ -308107,8 +308107,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 544,
-      "bot_total_xp": 14344,
+      "bot_xp": 566,
+      "bot_total_xp": 14366,
       "daily_work_count": 24,
       "shock_worker": false,
       "last_laylow": null,
@@ -318152,7 +318152,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 118322,
+      "funds": 125356,
       "invested_capital": 8196,
       "shares_total": 130000,
       "shares_available": 69083,
@@ -318328,15 +318328,13 @@
         "Brass": 1,
         "Zinc": 10,
         "Bread": 23,
-        "Cake": 23,
+        "Cake": 3,
         "Corn": 1,
         "Reactor Core": 2
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-06T14:31:21.544Z",
       "price_history": [
-        13,
-        12,
         12,
         13,
         13,
@@ -318434,11 +318432,13 @@
         14,
         14,
         14,
+        14,
+        14,
         14
       ],
       "is_state_owned": false,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-10-06T11:14:09.968Z",
+      "last_factorydeal": "2026-10-06T19:14:58.045Z",
       "last_govcontract": null,
       "specialization": "production",
       "managers": [
@@ -318462,8 +318462,6 @@
       "prev_price": 14,
       "is_private": true,
       "value_history": [
-        822462,
-        822548,
         822534,
         856083,
         856069,
@@ -318561,7 +318559,9 @@
         1184818,
         1184849,
         1185928,
-        1185959
+        1185959,
+        1185934,
+        1189773
       ],
       "sales_team": 1
     },
@@ -319731,11 +319731,6 @@
   "gsi_history": [
     {
       "price": 166,
-      "change_percent": -0.25485024191370836,
-      "recorded_at": "2026-10-06T16:05:17.579Z"
-    },
-    {
-      "price": 166,
       "change_percent": 0.41871277478482266,
       "recorded_at": "2026-10-06T16:06:57.299Z"
     },
@@ -320228,20 +320223,25 @@
       "price": 150,
       "change_percent": 1.116924571049578,
       "recorded_at": "2026-10-06T19:13:01.905Z"
+    },
+    {
+      "price": 150,
+      "change_percent": 0.6215167546287672,
+      "recorded_at": "2026-10-06T19:14:36.179Z"
     }
   ],
   "factory_names": [
     "Soviet Iron Foundry",
     "Lenin Machine Works",
-    "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
-    "Siberian Mining Co",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
     "Stalin Tractor Plant",
-    "Red Star Steelworks"
+    "Red Star Steelworks",
+    "Khrushchev Agricultural",
+    "Siberian Mining Co"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -320249,7 +320249,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 54.691216475118836,
-  "money_printed": 137420.01162695186,
+  "money_printed": 144494.01162695186,
   "total_bank_reserves": 162671,
   "inflation_history": [
     42.66626889984602,
@@ -320492,38 +320492,38 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3847752016751076,
-    "Cake": 1.3560486750612004,
+    "Cake": 0.9060486750612005,
     "Bread": 1.3248712249164294,
     "Copper Ingot": 1.2840896586340378,
     "Iron Ingot": 1.2156606443350118,
     "Steel Ingot": 1.3292870595444857,
     "Gold Bar": 0.899209997210021,
-    "Aluminium Ingot": 1.4026714776692712,
+    "Aluminium Ingot": 1.4126714776692713,
     "Timber Planks": 0.911772418483581,
-    "Bricks": 1.1726471989234297,
+    "Bricks": 1.1826471989234297,
     "Concrete": 1.4023272225297096,
     "Glass": 1.3797658219398998,
-    "Steel Beam": 1.3819552088733669,
+    "Steel Beam": 1.3919552088733669,
     "Machine Parts": 1.331411238352212,
     "Refined Fuel": 1.3956304437736884,
-    "Uranium Rod": 1.3735699855868515,
+    "Uranium Rod": 1.3835699855868515,
     "Reactor Core": 1.3958979726534009,
     "Circuit Board": 1.3885258090843249,
     "Flour": 1.3435178525373304,
     "Sugar": 1.0281972758844016,
     "Wine": 1.3657906815451017,
-    "Canned Food": 1.4044668253456096,
+    "Canned Food": 1.4144668253456096,
     "Canned Fish": 1.4023272225297096,
     "Smoked Fish": 1.3937022143092759,
-    "Fish Stew": 1.3814159816640559,
-    "Peat Fuel": 1.4026714776692712,
+    "Fish Stew": 1.391415981664056,
+    "Peat Fuel": 1.4126714776692713,
     "Gas Fuel": 1.390646679221494,
     "Fertilizer": 1.4011213184385785,
     "Cotton Fabric": 1.4027378693973458,
     "Manganese Alloy": 1.4025760149590887,
     "Sunflower Oil": 1.4044668253456096,
     "Linen": 1.3958568714259083,
-    "Corn Meal": 1.3936604008066553,
+    "Corn Meal": 1.4036604008066553,
     "Tea Pack": 1.4078197435674085,
     "Citrus Juice": 1.3876268193345251,
     "Antimony Alloy": 1.3923169756086742,
@@ -320531,17 +320531,17 @@
     "Aluminium Sheet": 1.4041173739318036,
     "Shale Oil": 1.3954898319090716,
     "Bandage": 1.3840869235172915,
-    "Ointment": 1.39801383207877,
+    "Ointment": 1.40801383207877,
     "Pet Food": 1.392197749308216,
     "Brass": 1.3867941601762237,
     "Brass Valve": 1.3442684467698685,
     "Radiator": 1.4043981766817846,
-    "Brass Lamp": 1.4086979571770333,
-    "Wheat": 0.6045500791610686
+    "Brass Lamp": 1.4186979571770333,
+    "Wheat": 0.6145500791610686
   },
   "market_last_sale": {
     "Fuel": "2026-10-05T14:31:36.389Z",
-    "Cake": "2026-10-05T23:20:47.770Z",
+    "Cake": "2026-10-06T19:14:58.046Z",
     "Bread": "2026-10-05T23:20:55.230Z",
     "Copper Ingot": "2026-09-15T18:15:22.388Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
@@ -320585,7 +320585,8 @@
     "Circuit Board": 32,
     "Reactor Core": 9,
     "Steel Beam": 19,
-    "Brass Valve": 5
+    "Brass Valve": 5,
+    "Cake": 20
   },
   "global_consumption": {
     "Copper Ingot": 84,
@@ -332937,7 +332938,7 @@
       },
       "2026-10-06": {
         "963834359994007614": 178,
-        "874346333882945547": 29,
+        "874346333882945547": 30,
         "1495413593242337421": 10,
         "1186597507720019988": 27,
         "1521043721129558017": 6,
@@ -333183,7 +333184,7 @@
       "780837437987094560": 1791257483160,
       "874346333882945547": 1791314001871,
       "870686833976172574": 1791240493328,
-      "1186597507720019988": 1791314022513,
+      "1186597507720019988": 1791314084106,
       "1521043721129558017": 1791310904873,
       "1397601108616024075": 1791306085841,
       "860203156222902332": 1789160394304,
@@ -333696,7 +333697,7 @@
       "1500371016260780172": 1790490822677,
       "1512533360654680126": 1790503447003,
       "567599353955352578": 1791258255423,
-      "1550582932425416714": 1791313889993,
+      "1550582932425416714": 1791314115009,
       "1549125598155120813": 1790509793240,
       "853139077477302282": 1790690572981,
       "1353360476213346365": 1790802066086,
@@ -363596,8 +363597,8 @@
         "price": 560
       },
       "Cake": {
-        "qty": 215,
-        "price": 330
+        "qty": 235,
+        "price": 336
       },
       "Brass": {
         "qty": 58,
@@ -363656,7 +363657,7 @@
         "price": 198
       }
     },
-    "sold_count": 2278,
+    "sold_count": 2298,
     "bought_count": 307
   },
   "leaders": {
