@@ -320709,7 +320709,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 102,
+    "Machine Parts": 101,
     "Gas Fuel": 87,
     "Refined Fuel": 21,
     "Circuit Board": 47,
@@ -320740,7 +320740,7 @@
     "Reactor Core": 22,
     "Gas Fuel": 241,
     "Steel Beam": 81,
-    "Machine Parts": 313,
+    "Machine Parts": 314,
     "Sugar": 61,
     "Fertilizer": 17,
     "Flour": 20,
@@ -320757,11 +320757,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Steel Beam",
-      "qty": 1,
-      "at": "2026-10-03T01:59:01.105Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 1,
@@ -322256,6 +322251,11 @@
       "item": "Steel Beam",
       "qty": 1,
       "at": "2026-10-06T23:08:32.379Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-10-06T23:23:32.269Z"
     }
   ],
   "demand_history": {
@@ -326647,11 +326647,6 @@
     "Machine Parts": [
       {
         "demand": 1.3876311593339785,
-        "at": "2026-10-02T22:59:00.945Z",
-        "supply": 6
-      },
-      {
-        "demand": 1.3876311593339785,
         "at": "2026-10-03T01:29:00.988Z",
         "supply": 6
       },
@@ -326943,6 +326938,11 @@
       {
         "demand": 1.271070559430825,
         "at": "2026-10-06T22:23:27.734Z",
+        "supply": 30
+      },
+      {
+        "demand": 1.331724748575878,
+        "at": "2026-10-06T23:23:32.269Z",
         "supply": 30
       }
     ],
