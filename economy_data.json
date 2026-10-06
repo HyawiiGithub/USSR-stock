@@ -243713,7 +243713,7 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 4830,
+      "cash": 4845,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -243733,8 +243733,8 @@
           "avg_price": 54
         }
       },
-      "last_work": "2026-10-06T13:06:10.038Z",
-      "work_count": 1178,
+      "last_work": "2026-10-06T13:11:20.097Z",
+      "work_count": 1179,
       "last_claim": "2026-10-05T06:42:52.580Z",
       "ssr_region": "Russian SFSR",
       "employed_at": "Prince Pakistani Atomic Consortium",
@@ -243748,9 +243748,9 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 31,
-      "bot_xp": 6258,
-      "bot_total_xp": 79883,
-      "daily_work_count": 1177,
+      "bot_xp": 6277,
+      "bot_total_xp": 79902,
+      "daily_work_count": 1178,
       "shock_worker": false,
       "mee6_level": 31,
       "last_laylow": null,
@@ -243760,7 +243760,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-06T06:13:21.569Z",
       "train_reminder": true,
-      "train_reminder_sent": "army drill@2026-10-06T01:59:18.055Z",
+      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T08:30:20.658Z",
       "pet_food_source": {
@@ -318358,7 +318358,7 @@
         }
       },
       "inventory": {
-        "Iron Ore": 58,
+        "Iron Ore": 59,
         "Coal": 113,
         "Uranium": 2,
         "Lead": 28,
@@ -318387,7 +318387,6 @@
         "Peat": 2,
         "Timber": 117,
         "Gold": 42,
-        "Corn": 1,
         "Sugar": 3,
         "Grapes": 1
       },
@@ -318426,7 +318425,6 @@
         5,
         5,
         5,
-        5,
         9,
         9,
         9,
@@ -318493,6 +318491,7 @@
         7,
         7,
         7,
+        6,
         6
       ],
       "is_state_owned": false,
@@ -318521,7 +318520,6 @@
       "prev_price": 7,
       "is_private": true,
       "value_history": [
-        391181,
         391277,
         391322,
         391326,
@@ -318620,7 +318618,8 @@
         396670,
         396804,
         396849,
-        396881
+        396881,
+        396892
       ],
       "sales_team": 1
     },
@@ -319435,11 +319434,6 @@
   },
   "gsi_history": [
     {
-      "price": 218,
-      "change_percent": -0.2475013480523834,
-      "recorded_at": "2026-10-06T10:03:14.818Z"
-    },
-    {
       "price": 217,
       "change_percent": -0.41615898830687503,
       "recorded_at": "2026-10-06T10:05:21.640Z"
@@ -319933,6 +319927,11 @@
       "price": 171,
       "change_percent": 0.6291650426661938,
       "recorded_at": "2026-10-06T13:08:15.739Z"
+    },
+    {
+      "price": 171,
+      "change_percent": 0.25265446428005683,
+      "recorded_at": "2026-10-06T13:11:21.511Z"
     }
   ],
   "factory_names": [
@@ -319954,7 +319953,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 73.22573974264932,
-  "money_printed": 274336.1891619446,
+  "money_printed": 274351.1891619446,
   "total_bank_reserves": 157923,
   "inflation_history": [
     49.014795119049644,
@@ -332611,7 +332610,7 @@
         "1506785783506534426": 1
       },
       "2026-10-06": {
-        "963834359994007614": 108,
+        "963834359994007614": 109,
         "874346333882945547": 19,
         "1495413593242337421": 10,
         "1186597507720019988": 19,
@@ -352959,10 +352958,10 @@
   },
   "central_bank": {
     "reserves": 598090,
-    "interest_rate": 50,
-    "prime_rate": 9,
-    "discount_rate": 5,
-    "reserve_requirement": 95,
+    "interest_rate": 20,
+    "prime_rate": 20,
+    "discount_rate": 15,
+    "reserve_requirement": 30,
     "history": [
       {
         "at": "2026-09-11T19:05:50.282Z",
@@ -353185,12 +353184,44 @@
         "amount": 95,
         "old": 99,
         "reserves_after": 598090
+      },
+      {
+        "at": "2026-10-06T13:10:56.581Z",
+        "by": "hyawii2.0",
+        "action": "set_interest_rate",
+        "amount": 20,
+        "old": 50,
+        "reserves_after": 598090
+      },
+      {
+        "at": "2026-10-06T13:11:02.076Z",
+        "by": "hyawii2.0",
+        "action": "set_reserve_requirement",
+        "amount": 30,
+        "old": 95,
+        "reserves_after": 598090
+      },
+      {
+        "at": "2026-10-06T13:11:07.867Z",
+        "by": "hyawii2.0",
+        "action": "set_prime_rate",
+        "amount": 20,
+        "old": 9,
+        "reserves_after": 598090
+      },
+      {
+        "at": "2026-10-06T13:11:12.513Z",
+        "by": "hyawii2.0",
+        "action": "set_discount_rate",
+        "amount": 15,
+        "old": 5,
+        "reserves_after": 598090
       }
     ],
     "total_added": 1141386,
     "total_removed": 693296,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-10-05T15:50:32.146Z",
+    "last_update": "2026-10-06T13:11:12.513Z",
     "chair_id": "1456622719985782864",
     "chair_set_by": "hyawii2.0",
     "chair_set_at": "2026-10-04T15:10:16.403Z",
