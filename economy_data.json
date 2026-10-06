@@ -319955,11 +319955,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 85.02865883940564,
-  "money_printed": 258211.13388247363,
-  "total_bank_reserves": 157923,
+  "inflation": 72.19121647511884,
+  "money_printed": 245300.57718834994,
+  "total_bank_reserves": 157924,
   "inflation_history": [
-    48.699167954911516,
     48.51830941461016,
     48.27917955891657,
     46.859106921391174,
@@ -320058,7 +320057,8 @@
     77.02512710232996,
     73.22573974264932,
     87.41549366925776,
-    85.02865883940564
+    85.02865883940564,
+    72.19121647511884
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 31,
@@ -327954,13 +327954,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-13T18:33:56.686Z",
-      "by": "874346333882945547",
-      "username": "seniormanulos",
-      "action": "launder",
-      "details": "₽1,488 dirty → ₽744 clean fee ₽744"
-    },
-    {
       "at": "2026-09-13T18:41:03.674Z",
       "by": "1229741033265299506",
       "username": "desertmarshal",
@@ -331452,6 +331445,13 @@
       "username": "hyawii2.0",
       "action": "milspending",
       "details": "5%"
+    },
+    {
+      "at": "2026-10-06T13:32:41.095Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "cbclose",
+      "details": "Emergency credit freeze due to hyperinflation emergency measures active, treasury overdraft. No new obligations until the ruble holds"
     }
   ],
   "total_rubles_history": [
@@ -353220,6 +353220,12 @@
         "amount": 15,
         "old": 5,
         "reserves_after": 598090
+      },
+      {
+        "at": "2026-10-06T13:32:41.095Z",
+        "by": "hyawii2.0",
+        "action": "cbclose",
+        "reserves_after": 598090
       }
     ],
     "total_added": 1141386,
@@ -353249,7 +353255,10 @@
         "next": "1456622719985782864"
       }
     ],
-    "shutdown": false
+    "shutdown": true,
+    "shutdown_by": "hyawii2.0",
+    "shutdown_at": "2026-10-06T13:32:41.095Z",
+    "shutdown_reason": "Emergency credit freeze due to hyperinflation emergency measures active, treasury overdraft. No new obligations until the ruble holds"
   },
   "fca": {
     "agents": [
@@ -358587,12 +358596,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 8.51,
+    "rub_per_usd": 8.17,
     "history": [
-      {
-        "rate": 6.85,
-        "at": "2026-10-05T23:13:06.075Z"
-      },
       {
         "rate": 6.88,
         "at": "2026-10-05T23:22:14.533Z"
@@ -358988,9 +358993,13 @@
       {
         "rate": 8.51,
         "at": "2026-10-06T13:23:31.079Z"
+      },
+      {
+        "rate": 8.17,
+        "at": "2026-10-06T13:32:10.050Z"
       }
     ],
-    "last_update": "2026-10-06T13:23:31.079Z",
+    "last_update": "2026-10-06T13:32:10.050Z",
     "manual_override": null
   },
   "national_budget": {
@@ -367699,5 +367708,6 @@
   },
   "turn_digest_message": "1557020485751930991",
   "chat_rubles_enabled": false,
-  "state_debt_owed": 170473
+  "state_debt_owed": 170473,
+  "inflation_updated_at": "2026-10-06T13:32:09.912Z"
 }
