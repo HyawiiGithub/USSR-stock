@@ -320715,7 +320715,7 @@
   "ai_store": {
     "Machine Parts": 101,
     "Gas Fuel": 87,
-    "Refined Fuel": 21,
+    "Refined Fuel": 19,
     "Circuit Board": 47,
     "Reactor Core": 5,
     "Steel Beam": 14,
@@ -320727,7 +320727,7 @@
     "Copper Ingot": 84,
     "Steel Ingot": 26,
     "Timber Planks": 192,
-    "Refined Fuel": 308,
+    "Refined Fuel": 310,
     "Fuel": 159,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -320761,11 +320761,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Canned Fish",
-      "qty": 1,
-      "at": "2026-10-03T02:29:01.357Z"
-    },
     {
       "item": "Canned Fish",
       "qty": 2,
@@ -322260,6 +322255,11 @@
       "item": "Reactor Core",
       "qty": 2,
       "at": "2026-10-06T23:38:32.270Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 2,
+      "at": "2026-10-06T23:53:32.397Z"
     }
   ],
   "demand_history": {
@@ -322967,11 +322967,6 @@
     "Refined Fuel": [
       {
         "demand": 1.4043027988158978,
-        "at": "2026-09-29T15:08:33.169Z",
-        "supply": 0
-      },
-      {
-        "demand": 1.4043027988158978,
         "at": "2026-09-29T17:25:42.953Z",
         "supply": 0
       },
@@ -323263,6 +323258,11 @@
       {
         "demand": 1.3956304437736884,
         "at": "2026-10-06T22:53:32.249Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.3956304437736884,
+        "at": "2026-10-06T23:53:32.402Z",
         "supply": 5
       }
     ],
