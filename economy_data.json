@@ -321451,7 +321451,7 @@
     "Circuit Board": 46,
     "Steel Beam": 5,
     "Cake": 38,
-    "Glass": 4,
+    "Glass": 2,
     "Copper Ingot": 11,
     "Fuel": 5
   },
@@ -321489,15 +321489,10 @@
     "Fish Stew": 53,
     "Bricks": 60,
     "Sunflower Oil": 30,
-    "Glass": 11,
+    "Glass": 13,
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 2,
-      "at": "2026-10-03T20:16:13.883Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 2,
@@ -322992,6 +322987,11 @@
       "item": "Fuel",
       "qty": 1,
       "at": "2026-10-07T17:37:58.368Z"
+    },
+    {
+      "item": "Glass",
+      "qty": 2,
+      "at": "2026-10-07T17:52:58.564Z"
     }
   ],
   "demand_history": {
@@ -329175,6 +329175,11 @@
       {
         "demand": 1.3948621069667144,
         "at": "2026-10-07T10:06:18.410Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.3948621069667144,
+        "at": "2026-10-07T17:52:58.565Z",
         "supply": 5
       }
     ],
