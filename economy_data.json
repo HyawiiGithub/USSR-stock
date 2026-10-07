@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 0,
-      "bank": 1599733,
+      "bank": 3602609,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -1162,7 +1162,7 @@
       "mee6_level": 32,
       "last_laylow": "2026-10-07T11:20:38.527Z",
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-10-07T16:46:57.076Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_26@2026-10-07T08:36:00.722Z",
       "train_reminder": false,
@@ -215457,8 +215457,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 32,
-      "bot_total_xp": 802,
+      "bot_xp": 57,
+      "bot_total_xp": 827,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -317280,8 +317280,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 12,
-      "bot_xp": 1245,
-      "bot_total_xp": 8275,
+      "bot_xp": 1260,
+      "bot_total_xp": 8290,
       "daily_work_count": 168,
       "shock_worker": false,
       "last_laylow": null,
@@ -334222,7 +334222,7 @@
       "1173662113340854353": 1791288741574,
       "1500583869173465119": 1789165643507,
       "1457941149476983011": 1789164948836,
-      "1539379067470614649": 1791391517114,
+      "1539379067470614649": 1791391602586,
       "1253542058212196372": 1789393228675,
       "694662421054488577": 1791308163714,
       "443504451777593344": 1791224327155,
@@ -334766,7 +334766,7 @@
       "764990823673757746": 1791309553797,
       "1520361366031040603": 1791310656800,
       "1285277076995309655": 1791313930095,
-      "1128425608146325544": 1791391477964,
+      "1128425608146325544": 1791391626160,
       "1523681146284539934": 1791317248700,
       "1180159151482093609": 1791317714358,
       "659652953518505984": 1791321279943,
@@ -355909,12 +355909,12 @@
       "913497950213267577": 173,
       "1229741033265299506": 7,
       "503918799683321866": 39,
-      "1506785783506534426": 2,
+      "1506785783506534426": 1,
       "807254722251587614": 70,
-      "791747702689103893": 4,
+      "791747702689103893": 2,
       "725687617504673872": 4,
       "1186597507720019988": 593,
-      "1494027370208825436": 2,
+      "1494027370208825436": 1,
       "1000271630154596473": 2,
       "1522851408611770409": 359,
       "1082686076491137115": 8,
@@ -355922,7 +355922,7 @@
       "1511756975392948224": 499,
       "1325111649816023092": 76,
       "1536339779140976711": 166,
-      "780837437987094560": 31,
+      "780837437987094560": 18,
       "1545521924166131823": 259,
       "1225275427145121903": 173,
       "1397601108616024075": 846,
@@ -355931,7 +355931,7 @@
       "1532381114600128693": 58,
       "1483005845867593831": 382,
       "730223629849199093": 230,
-      "1365483598962102305": 10,
+      "1365483598962102305": 6,
       "771077238266658837": 25,
       "1500854055310852186": 76,
       "1502583799408627712": 2,
@@ -355939,7 +355939,7 @@
       "1448090911564103813": 7,
       "794046247803682896": 3,
       "1470136693821800521": 5,
-      "1076191909766246450": 12
+      "1076191909766246450": 7
     },
     "last_train": {
       "913497950213267577": "2026-10-03T07:39:50.727Z",
@@ -356058,23 +356058,126 @@
       {
         "id": "war_5",
         "nation": "United States",
-        "enemy_power": 71029,
+        "enemy_power": 57299,
         "goal": "reparations",
         "lootMult": 1.2,
         "aiId": "usa",
-        "foe_divs": 203,
-        "exhaustion": 12,
+        "foe_divs": 113,
+        "exhaustion": 16,
         "status": "active",
-        "rounds": 2,
+        "rounds": 3,
         "log": [
           "CC approved <t:1791221277:R> (goal: reparations)",
           "R1: LOSS — troops -9 power, militia -3, lost nothing",
           "R1: enemy reinforced +3802",
           "R2: WIN -16523 enemy, +₽991,380 vault, own losses 2/troop",
-          "R2: enemy reinforced +3356"
+          "R2: enemy reinforced +3356",
+          "R3: WIN -16310 enemy, +₽1,007,958 Gosbank, KIA 0 WIA 6 foe ~1111 dead",
+          "R3: enemy reinforced +2670"
         ],
         "startedBy": "1082686076491137115",
-        "startedAt": "2026-10-05T17:27:57.866Z"
+        "startedAt": "2026-10-05T17:27:57.866Z",
+        "occupation": 6,
+        "kia": 0,
+        "wia": 6,
+        "mia": 0,
+        "foeKia": 1111,
+        "foeWia": 2680,
+        "front": {
+          "sectors": {
+            "north": {
+              "control": 58,
+              "integrity": 100
+            },
+            "center": {
+              "control": 60,
+              "integrity": 100
+            },
+            "south": {
+              "control": 58,
+              "integrity": 100
+            }
+          },
+          "cities": [
+            {
+              "name": "Washington",
+              "pop": 760,
+              "capital": true,
+              "lon": -77,
+              "lat": 38.9,
+              "status": "free",
+              "threshold": 17,
+              "at": null
+            },
+            {
+              "name": "New York",
+              "pop": 7800,
+              "capital": false,
+              "lon": -74,
+              "lat": 40.7,
+              "status": "free",
+              "threshold": 33,
+              "at": null
+            },
+            {
+              "name": "Chicago",
+              "pop": 3500,
+              "capital": false,
+              "lon": -87.6,
+              "lat": 41.8,
+              "status": "free",
+              "threshold": 50,
+              "at": null
+            },
+            {
+              "name": "Los Angeles",
+              "pop": 2500,
+              "capital": false,
+              "lon": -118.2,
+              "lat": 34,
+              "status": "free",
+              "threshold": 67,
+              "at": null
+            },
+            {
+              "name": "Houston",
+              "pop": 940,
+              "capital": false,
+              "lon": -95.3,
+              "lat": 29.7,
+              "status": "free",
+              "threshold": 83,
+              "at": null
+            },
+            {
+              "name": "Detroit",
+              "pop": 1670,
+              "capital": false,
+              "lon": -83,
+              "lat": 42.3,
+              "status": "free",
+              "threshold": 95,
+              "at": null
+            }
+          ],
+          "momentum": "advancing",
+          "civDead": 134
+        },
+        "civDead": 134,
+        "momentum": "advancing",
+        "wins": 1,
+        "casUs": [
+          80
+        ],
+        "casFoe": [
+          16310
+        ],
+        "netRub": [
+          994918
+        ],
+        "supHist": [
+          69
+        ]
       }
     ],
     "next_war_id": 6,
@@ -356098,9 +356201,9 @@
         "1082686076491137115": 0,
         "1000271630154596473": 0,
         "1456622719985782864": 0,
-        "730223629849199093": 1,
+        "730223629849199093": 0,
         "567599353955352578": 0,
-        "1128425608146325544": 1
+        "1128425608146325544": 0
       },
       "last_train": {
         "1397601108616024075": "2026-09-13T13:46:17.796Z",
@@ -356234,11 +356337,48 @@
     },
     "fallen": [],
     "kia": 0,
-    "wia": 0,
+    "wia": 6,
     "mia": 0,
-    "foeKia": 0,
-    "civDead": 0,
-    "hospital": {}
+    "foeKia": 1111,
+    "civDead": 134,
+    "hospital": {
+      "1506785783506534426": {
+        "until": "2026-10-08T04:46:38.152Z",
+        "war": "United States",
+        "warId": "war_5",
+        "round": 3
+      },
+      "1494027370208825436": {
+        "until": "2026-10-08T04:46:38.152Z",
+        "war": "United States",
+        "warId": "war_5",
+        "round": 3
+      },
+      "1365483598962102305": {
+        "until": "2026-10-08T04:46:38.152Z",
+        "war": "United States",
+        "warId": "war_5",
+        "round": 3
+      },
+      "1076191909766246450": {
+        "until": "2026-10-08T04:46:38.152Z",
+        "war": "United States",
+        "warId": "war_5",
+        "round": 3
+      },
+      "791747702689103893": {
+        "until": "2026-10-08T04:46:38.152Z",
+        "war": "United States",
+        "warId": "war_5",
+        "round": 3
+      },
+      "780837437987094560": {
+        "until": "2026-10-08T04:46:38.152Z",
+        "war": "United States",
+        "warId": "war_5",
+        "round": 3
+      }
+    }
   },
   "mod": {
     "ministerId": "1495413593242337421",
@@ -356510,10 +356650,10 @@
           "Rifle": 100
         },
         "commander": null,
-        "hp": 61,
+        "hp": 56,
         "wins": 0,
         "formedAt": "2026-09-14T17:02:38.353Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_2",
@@ -356522,10 +356662,10 @@
           "Rifle": 100
         },
         "commander": null,
-        "hp": 72,
+        "hp": 66,
         "wins": 0,
         "formedAt": "2026-09-14T17:02:47.691Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_3",
@@ -356534,10 +356674,10 @@
           "Rifle": 100
         },
         "commander": null,
-        "hp": 62,
+        "hp": 51,
         "wins": 0,
         "formedAt": "2026-09-14T17:02:48.422Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_4",
@@ -356546,10 +356686,10 @@
           "Rifle": 100
         },
         "commander": null,
-        "hp": 64,
+        "hp": 57,
         "wins": 0,
         "formedAt": "2026-09-14T17:02:48.995Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_5",
@@ -356558,10 +356698,10 @@
           "Rifle": 100
         },
         "commander": null,
-        "hp": 64,
+        "hp": 54,
         "wins": 0,
         "formedAt": "2026-09-14T17:02:53.808Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_6",
@@ -356571,10 +356711,10 @@
           "Machine Gun": 20
         },
         "commander": null,
-        "hp": 69,
+        "hp": 59,
         "wins": 0,
         "formedAt": "2026-09-14T17:03:15.343Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_7",
@@ -356584,10 +356724,10 @@
           "Machine Gun": 20
         },
         "commander": null,
-        "hp": 67,
+        "hp": 61,
         "wins": 0,
         "formedAt": "2026-09-14T17:03:22.568Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_8",
@@ -356597,10 +356737,10 @@
           "Artillery": 12
         },
         "commander": null,
-        "hp": 67,
+        "hp": 61,
         "wins": 0,
         "formedAt": "2026-09-14T17:03:43.592Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_9",
@@ -356610,10 +356750,10 @@
           "Tank": 15
         },
         "commander": null,
-        "hp": 62,
+        "hp": 51,
         "wins": 0,
         "formedAt": "2026-09-14T17:03:55.701Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_10",
@@ -356623,10 +356763,10 @@
           "Tank": 15
         },
         "commander": null,
-        "hp": 64,
+        "hp": 52,
         "wins": 0,
         "formedAt": "2026-09-14T17:03:58.541Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_11",
@@ -356636,10 +356776,10 @@
           "Tank": 15
         },
         "commander": null,
-        "hp": 73,
+        "hp": 64,
         "wins": 0,
         "formedAt": "2026-09-14T17:03:59.246Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_12",
@@ -356649,10 +356789,10 @@
           "Tank": 15
         },
         "commander": null,
-        "hp": 59,
+        "hp": 54,
         "wins": 0,
         "formedAt": "2026-09-14T17:03:59.941Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_13",
@@ -356662,10 +356802,10 @@
           "Tank": 15
         },
         "commander": null,
-        "hp": 58,
+        "hp": 49,
         "wins": 0,
         "formedAt": "2026-09-14T17:04:04.880Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_14",
@@ -356674,10 +356814,10 @@
           "Fighter": 10
         },
         "commander": null,
-        "hp": 72,
+        "hp": 65,
         "wins": 0,
         "formedAt": "2026-09-14T17:04:29.798Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_15",
@@ -356686,10 +356826,10 @@
           "Fighter": 10
         },
         "commander": null,
-        "hp": 61,
+        "hp": 55,
         "wins": 0,
         "formedAt": "2026-09-14T17:04:32.365Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_16",
@@ -356698,10 +356838,10 @@
           "Fighter": 10
         },
         "commander": null,
-        "hp": 74,
+        "hp": 67,
         "wins": 0,
         "formedAt": "2026-09-14T17:04:33.419Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_17",
@@ -356710,10 +356850,10 @@
           "Fighter": 10
         },
         "commander": null,
-        "hp": 70,
+        "hp": 63,
         "wins": 0,
         "formedAt": "2026-09-14T17:04:34.957Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_18",
@@ -356722,10 +356862,10 @@
           "Bomber": 6
         },
         "commander": null,
-        "hp": 64,
+        "hp": 59,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:13.989Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_19",
@@ -356734,10 +356874,10 @@
           "Bomber": 6
         },
         "commander": null,
-        "hp": 71,
+        "hp": 64,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:16.175Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_20",
@@ -356746,10 +356886,10 @@
           "Bomber": 6
         },
         "commander": null,
-        "hp": 66,
+        "hp": 57,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:17.170Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_21",
@@ -356758,10 +356898,10 @@
           "Bomber": 6
         },
         "commander": null,
-        "hp": 61,
+        "hp": 50,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:17.802Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_22",
@@ -356771,10 +356911,10 @@
           "Anti-Air Gun": 8
         },
         "commander": null,
-        "hp": 72,
+        "hp": 61,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:30.942Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_23",
@@ -356784,10 +356924,10 @@
           "Anti-Air Gun": 8
         },
         "commander": null,
-        "hp": 61,
+        "hp": 52,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:31.945Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_24",
@@ -356797,10 +356937,10 @@
           "Anti-Air Gun": 8
         },
         "commander": null,
-        "hp": 63,
+        "hp": 54,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:32.560Z",
-        "xp": 3
+        "xp": 4
       },
       {
         "id": "div_25",
@@ -356810,10 +356950,10 @@
           "Anti-Air Gun": 8
         },
         "commander": null,
-        "hp": 69,
+        "hp": 64,
         "wins": 0,
         "formedAt": "2026-09-14T17:06:33.126Z",
-        "xp": 3
+        "xp": 4
       }
     ],
     "next_id": 26
@@ -360096,8 +360236,8 @@
     ]
   },
   "world_tension": {
-    "value": 51,
-    "at": "2026-10-07T11:04:30.913Z"
+    "value": 53,
+    "at": "2026-10-07T16:46:38.154Z"
   },
   "world_news": [
     {
@@ -360693,8 +360833,8 @@
   "national_budget": {
     "tax_collected": 118753,
     "trade_income": 15629,
-    "other_income": 0,
-    "defense_spending": 298232,
+    "other_income": 1007958,
+    "defense_spending": 311272,
     "payroll_paid": 2415,
     "other_spending": 0,
     "income_history": [
@@ -361112,6 +361252,11 @@
         "kind": "trade",
         "amount": 287,
         "at": "2026-10-07T15:52:18.330Z"
+      },
+      {
+        "kind": "war",
+        "amount": 1007958,
+        "at": "2026-10-07T16:46:38.150Z"
       }
     ],
     "spending_history": [
@@ -361949,9 +362094,14 @@
         "kind": "defense",
         "amount": 71,
         "at": "2026-10-07T15:52:18.330Z"
+      },
+      {
+        "kind": "defense",
+        "amount": 13040,
+        "at": "2026-10-07T16:46:37.268Z"
       }
     ],
-    "last_update": "2026-10-07T15:52:18.330Z",
+    "last_update": "2026-10-07T16:46:38.150Z",
     "balance_history": [
       {
         "balance": -161631,
