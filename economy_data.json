@@ -320823,7 +320823,6 @@
     "Circuit Board": 44,
     "Reactor Core": 5,
     "Steel Beam": 12,
-    "Brass Valve": 1,
     "Cake": 32,
     "Glass": 7,
     "Copper Ingot": 19
@@ -320856,7 +320855,7 @@
     "Corn Meal": 13,
     "Aluminium Ingot": 5,
     "Brass": 58,
-    "Brass Valve": 38,
+    "Brass Valve": 39,
     "Pet Food": 9,
     "Radiator": 36,
     "Fish Stew": 53,
@@ -320866,11 +320865,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Glass",
-      "qty": 1,
-      "at": "2026-10-03T05:59:01.933Z"
-    },
     {
       "item": "Glass",
       "qty": 2,
@@ -322365,6 +322359,11 @@
       "item": "Brass Valve",
       "qty": 2,
       "at": "2026-10-07T03:08:33.381Z"
+    },
+    {
+      "item": "Brass Valve",
+      "qty": 1,
+      "at": "2026-10-07T03:23:33.372Z"
     }
   ],
   "demand_history": {
@@ -327801,6 +327800,11 @@
       {
         "demand": 1.4040060006924786,
         "at": "2026-10-07T03:08:33.381Z",
+        "supply": 0
+      },
+      {
+        "demand": 1.4040060006924786,
+        "at": "2026-10-07T03:23:33.372Z",
         "supply": 0
       }
     ],
