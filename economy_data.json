@@ -1114,8 +1114,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 371,
-      "bank": 11558,
+      "cash": 0,
+      "bank": 12338,
       "resources": {},
       "inventory": {
         "Bread": 3,
@@ -1149,10 +1149,10 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 766,
-      "heat": 17.493766586561645,
+      "heat": 25.493766586561645,
       "wanted": 0,
       "last_illegal": "2026-10-07T01:25:43.370Z",
-      "total_heat_generated": 2571.558899999998,
+      "total_heat_generated": 2579.558899999998,
       "bot_level": 32,
       "bot_xp": 759,
       "bot_total_xp": 80839,
@@ -1171,7 +1171,7 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "crime_xp": {
-        "stealth": 192,
+        "stealth": 204,
         "lock": 36,
         "nerves": 0
       },
@@ -212301,7 +212301,7 @@
       "pet_food_source": {}
     },
     "1530142528639209503": {
-      "cash": 2,
+      "cash": 0,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -212340,7 +212340,17 @@
       "mee6_level": 3,
       "chat_week": "2026-W41",
       "chat_earned_week": 2,
-      "chat_earned": 2
+      "chat_earned": 2,
+      "crime_xp": {
+        "stealth": 0,
+        "lock": 0,
+        "nerves": 0
+      },
+      "crime_cd": {},
+      "gear": {},
+      "security": {},
+      "cutters": 0,
+      "collars": 0
     },
     "688464798911954944": {
       "cash": 0,
@@ -332416,7 +332426,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-10-05T10:17:28.539Z",
-  "heat_global": 2.1605999999999996,
+  "heat_global": 3.3606,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -367255,6 +367265,16 @@
       "victim": "1186597507720019988",
       "amount": 1343,
       "heat": 11.013618710762852,
+      "alarm": false,
+      "victimAlarm": false
+    },
+    {
+      "at": "2026-10-07T01:30:45.438Z",
+      "type": "pickpocket",
+      "robber": "874346333882945547",
+      "victim": "1530142528639209503",
+      "amount": 700,
+      "heat": 25.493766586561645,
       "alarm": false,
       "victimAlarm": false
     }
