@@ -945,8 +945,8 @@
       "last_illegal": "2026-10-06T02:48:33.716Z",
       "total_heat_generated": 958.099,
       "bot_level": 26,
-      "bot_xp": 2161,
-      "bot_total_xp": 48636,
+      "bot_xp": 2185,
+      "bot_total_xp": 48660,
       "daily_work_count": 10,
       "shock_worker": false,
       "mee6_level": 26,
@@ -1115,7 +1115,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 0,
+      "cash": 40,
       "bank": 16116,
       "resources": {},
       "inventory": {
@@ -1139,8 +1139,8 @@
           "avg_price": 8
         }
       },
-      "last_work": "2026-10-07T11:20:27.675Z",
-      "work_count": 2551,
+      "last_work": "2026-10-07T11:40:33.334Z",
+      "work_count": 2552,
       "last_claim": "2026-10-07T08:42:50.238Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
@@ -1154,15 +1154,15 @@
       "last_illegal": "2026-10-07T11:20:27.675Z",
       "total_heat_generated": 2610.942899999998,
       "bot_level": 32,
-      "bot_xp": 1313,
-      "bot_total_xp": 81393,
-      "daily_work_count": 1356,
+      "bot_xp": 1332,
+      "bot_total_xp": 81412,
+      "daily_work_count": 1357,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-07",
       "mee6_level": 32,
       "last_laylow": "2026-10-07T11:20:38.527Z",
       "work_reminder": true,
-      "work_reminder_sent": "2026-10-07T11:25:42.233Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_26@2026-10-06T20:37:11.909Z",
       "train_reminder": false,
@@ -318470,7 +318470,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 39767,
+      "funds": 39742,
       "invested_capital": 8196,
       "shares_total": 130000,
       "shares_available": 69083,
@@ -318590,10 +318590,10 @@
       "inventory": {
         "Gold Bar": 94,
         "Wheat": 64,
-        "Sugar": 75,
+        "Sugar": 74,
         "Sulphur": 145,
         "Timber Planks": 38,
-        "Iron Ore": 153,
+        "Iron Ore": 154,
         "Iron Ingot": 97,
         "Timber": 160,
         "Lead": 8,
@@ -318655,7 +318655,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-07T08:36:00.722Z",
       "price_history": [
-        15,
         15,
         15,
         15,
@@ -318754,6 +318753,7 @@
         14,
         14,
         14,
+        14,
         14
       ],
       "is_state_owned": false,
@@ -318782,7 +318782,6 @@
       "prev_price": 14,
       "is_private": true,
       "value_history": [
-        1184875,
         1184858,
         1184857,
         1184857,
@@ -318881,7 +318880,8 @@
         1280321,
         1280290,
         1280383,
-        1280336
+        1280336,
+        1280313
       ],
       "sales_team": 1
     },
@@ -320117,11 +320117,6 @@
   "gsi_history": [
     {
       "price": 149,
-      "change_percent": 0.25395628290711436,
-      "recorded_at": "2026-10-07T09:55:10.481Z"
-    },
-    {
-      "price": 149,
       "change_percent": 0.6272906515255399,
       "recorded_at": "2026-10-07T09:55:38.258Z"
     },
@@ -320614,6 +320609,11 @@
       "price": 150,
       "change_percent": 0.10840202035317832,
       "recorded_at": "2026-10-07T11:39:45.618Z"
+    },
+    {
+      "price": 150,
+      "change_percent": 0.24315820856429388,
+      "recorded_at": "2026-10-07T11:40:34.806Z"
     }
   ],
   "factory_names": [
@@ -320635,7 +320635,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 44.14705784958093,
-  "money_printed": 128766.0433170793,
+  "money_printed": 128781.0433170793,
   "total_bank_reserves": 178883,
   "inflation_history": [
     62.691216475118836,
@@ -333433,7 +333433,7 @@
       "2026-10-07": {
         "963834359994007614": 118,
         "1128425608146325544": 109,
-        "874346333882945547": 12,
+        "874346333882945547": 13,
         "1397601108616024075": 3,
         "567599353955352578": 5,
         "1467181939218714656": 1,
@@ -333681,7 +333681,7 @@
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1791357994294,
       "1082686076491137115": 1791373097633,
-      "1229741033265299506": 1791373019222,
+      "1229741033265299506": 1791373220535,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791326415559,
       "874346333882945547": 1791373185945,
@@ -363544,7 +363544,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 86,
+      "hunger": 79,
       "water": 60,
       "health": 100,
       "quarters": 5,
@@ -363638,7 +363638,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 53,
+      "health": 51,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:56:00.173Z",
@@ -363831,7 +363831,7 @@
       "name": "Ray Собака",
       "species": "dog",
       "alive": true,
-      "hunger": 32,
+      "hunger": 24,
       "water": 60,
       "health": 100,
       "quarters": 1,
@@ -363904,7 +363904,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 20,
+      "health": 18,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T13:40:24.488Z",
@@ -364288,7 +364288,7 @@
       "name": "Snuggles 2.0",
       "species": "cat",
       "alive": true,
-      "hunger": 52,
+      "hunger": 44,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -364377,9 +364377,9 @@
       "name": "LilNonAgressionPact",
       "species": "cat",
       "alive": true,
-      "hunger": 8,
+      "hunger": 0,
       "water": 60,
-      "health": 100,
+      "health": 98,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T14:29:00.531Z",
@@ -364456,8 +364456,8 @@
         "day": "",
         "n": 0
       },
-      "starve_since": null,
-      "warned_empty": false,
+      "starve_since": "2026-10-07T11:40:42.772Z",
+      "warned_empty": true,
       "last_feed_cmd": "2026-10-07T03:49:27.778Z",
       "lastPetAct": "2026-10-05T09:42:35.581Z"
     },
@@ -364534,7 +364534,7 @@
       "name": "Jund II",
       "species": "dog",
       "alive": true,
-      "hunger": 92,
+      "hunger": 84,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -364603,7 +364603,7 @@
       "last_train_cmd": "2026-10-06T16:06:23.692Z"
     }
   },
-  "pets_last_decay": "2026-10-07T10:40:41.359Z",
+  "pets_last_decay": "2026-10-07T11:40:42.772Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
