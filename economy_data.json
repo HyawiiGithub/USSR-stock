@@ -321367,7 +321367,7 @@
   "ai_store": {
     "Machine Parts": 112,
     "Gas Fuel": 71,
-    "Refined Fuel": 26,
+    "Refined Fuel": 25,
     "Circuit Board": 50,
     "Steel Beam": 5,
     "Cake": 38,
@@ -321379,7 +321379,7 @@
     "Copper Ingot": 93,
     "Steel Ingot": 26,
     "Timber Planks": 192,
-    "Refined Fuel": 323,
+    "Refined Fuel": 324,
     "Fuel": 163,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -321413,11 +321413,6 @@
     "Concrete": 3
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-10-03T19:01:12.840Z"
-    },
     {
       "item": "Gas Fuel",
       "qty": 2,
@@ -322912,6 +322907,11 @@
       "item": "Circuit Board",
       "qty": 2,
       "at": "2026-10-07T16:14:17.559Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-10-07T16:29:17.494Z"
     }
   ],
   "demand_history": {
@@ -323619,11 +323619,6 @@
     "Refined Fuel": [
       {
         "demand": 1.4045004490903747,
-        "at": "2026-09-30T21:12:14.178Z",
-        "supply": 0
-      },
-      {
-        "demand": 1.4045004490903747,
         "at": "2026-09-30T22:42:15.522Z",
         "supply": 0
       },
@@ -323915,6 +323910,11 @@
       {
         "demand": 1.387432478680228,
         "at": "2026-10-07T15:06:22.785Z",
+        "supply": 5
+      },
+      {
+        "demand": 1.387432478680228,
+        "at": "2026-10-07T16:29:17.495Z",
         "supply": 5
       }
     ],
