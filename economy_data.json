@@ -208027,11 +208027,11 @@
       "pet_food_source": {}
     },
     "1397601108616024075": {
-      "cash": 16516,
+      "cash": 16255,
       "bank": 15702,
       "resources": {},
       "inventory": {
-        "Bread": 1
+        "Bread": 2
       },
       "company_id": null,
       "gsi_shares": 0,
@@ -208041,8 +208041,8 @@
           "avg_price": 9
         }
       },
-      "last_work": "2026-10-06T23:57:48.929Z",
-      "work_count": 257,
+      "last_work": "2026-10-07T01:06:39.002Z",
+      "work_count": 258,
       "last_claim": "2026-10-01T15:42:05.834Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
@@ -208056,12 +208056,12 @@
       "last_illegal": "2026-09-29T16:19:30.029Z",
       "total_heat_generated": 127.18899999999998,
       "bot_level": 28,
-      "bot_xp": 1628,
-      "bot_total_xp": 57978,
-      "daily_work_count": 184,
+      "bot_xp": 1643,
+      "bot_total_xp": 57993,
+      "daily_work_count": 185,
       "shock_worker": false,
       "mee6_level": 28,
-      "last_daily_work_date": "2026-10-06",
+      "last_daily_work_date": "2026-10-07",
       "last_laylow": "2026-09-21T17:15:23.720Z",
       "work_reminder": false,
       "work_reminder_sent": null,
@@ -243760,7 +243760,7 @@
       "collect_reminder": true,
       "collect_reminder_sent": "state_27@2026-10-06T14:47:57.308Z",
       "train_reminder": true,
-      "train_reminder_sent": "army drill@2026-10-06T20:18:43.000Z",
+      "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
       "deal_reminder_sent": "state_27@2026-10-06T08:30:20.658Z",
       "pet_food_source": {
@@ -318308,7 +318308,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 208114,
+      "funds": 208089,
       "invested_capital": 8196,
       "shares_total": 130000,
       "shares_available": 69083,
@@ -318502,7 +318502,6 @@
         9,
         9,
         9,
-        9,
         10,
         10,
         9,
@@ -318588,6 +318587,7 @@
         14,
         14,
         14,
+        14,
         14
       ],
       "is_state_owned": false,
@@ -318616,7 +318616,6 @@
       "prev_price": 14,
       "is_private": true,
       "value_history": [
-        896369,
         896381,
         896381,
         896457,
@@ -318715,7 +318714,8 @@
         1305018,
         1304985,
         1307265,
-        1308252
+        1308252,
+        1308227
       ],
       "sales_team": 1
     },
@@ -319905,11 +319905,6 @@
   },
   "gsi_history": [
     {
-      "price": 158,
-      "change_percent": 0.009705781132031063,
-      "recorded_at": "2026-10-06T21:43:26.170Z"
-    },
-    {
       "price": 157,
       "change_percent": -0.031760130619684634,
       "recorded_at": "2026-10-06T21:45:41.376Z"
@@ -320403,6 +320398,11 @@
       "price": 146,
       "change_percent": 0.714302600587715,
       "recorded_at": "2026-10-07T01:04:19.427Z"
+    },
+    {
+      "price": 146,
+      "change_percent": 0.5782574911994582,
+      "recorded_at": "2026-10-07T01:06:40.391Z"
     }
   ],
   "factory_names": [
@@ -320424,7 +320424,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 45.311088484292696,
-  "money_printed": 139194.18819223176,
+  "money_printed": 139212.18819223176,
   "total_bank_reserves": 165865,
   "inflation_history": [
     45.902299089644856,
@@ -333173,7 +333173,8 @@
       "2026-10-07": {
         "963834359994007614": 13,
         "1128425608146325544": 9,
-        "874346333882945547": 1
+        "874346333882945547": 1,
+        "1397601108616024075": 1
       }
     },
     "collect_daily": {
@@ -363176,16 +363177,16 @@
       "name": "Ray Собака",
       "species": "dog",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
-      "health": 98,
+      "health": 100,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
-      "last_fed": "2026-10-06T20:04:12.873Z",
+      "last_fed": "2026-10-07T01:06:53.375Z",
       "last_watered": null,
       "death": null,
-      "warned_empty": true,
+      "warned_empty": false,
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -363228,7 +363229,7 @@
         "epic": 0,
         "legendary": 0
       },
-      "friendship": 59,
+      "friendship": 62,
       "hunts": 2,
       "hunt": null,
       "plant_lvl": 0,
@@ -363238,10 +363239,10 @@
         "day": "",
         "n": 0
       },
-      "starve_since": "2026-10-07T01:05:39.576Z",
-      "last_pet": "2026-10-06T16:18:23.146Z",
-      "last_feed_cmd": "2026-10-06T20:04:12.873Z",
-      "lastPetAct": "2026-10-05T15:33:20.537Z"
+      "starve_since": null,
+      "last_pet": "2026-10-07T01:07:00.905Z",
+      "last_feed_cmd": "2026-10-07T01:06:53.375Z",
+      "lastPetAct": "2026-10-07T01:07:00.905Z"
     },
     "1225275427145121903": {
       "name": "Mohammed Sumbul 500",
@@ -364016,7 +364017,7 @@
         "price": 196
       },
       "Bread": {
-        "qty": 178,
+        "qty": 176,
         "price": 152
       },
       "Canned Food": {
@@ -364061,7 +364062,7 @@
       }
     },
     "sold_count": 2417,
-    "bought_count": 308
+    "bought_count": 310
   },
   "leaders": {
     "gs": {
