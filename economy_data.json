@@ -318812,7 +318812,7 @@
       "owner_id": "918518877414100993",
       "ceo": "politicalgamble",
       "hq_ssr": "Azerbaijanian SSR",
-      "funds": 46407,
+      "funds": 46719,
       "invested_capital": 500,
       "shares_total": 100000,
       "shares_available": 47469,
@@ -318845,10 +318845,11 @@
         "Wheat": 110,
         "Sugar": 70,
         "Gold": 1,
-        "Cotton": 4,
-        "Natural Gas": 5,
+        "Cotton": 1,
+        "Natural Gas": 2,
         "Refined Fuel": 5,
-        "Fuel": 1
+        "Fuel": 1,
+        "Cotton Fabric": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-08T05:53:01.915Z",
@@ -318876,8 +318877,6 @@
         1,
         1,
         1,
-        1,
-        1,
         2,
         2,
         2,
@@ -318949,6 +318948,8 @@
         2,
         2,
         2,
+        1,
+        1,
         1,
         1,
         1,
@@ -318956,7 +318957,7 @@
       ],
       "is_state_owned": false,
       "director_id": "918518877414100993",
-      "last_factorydeal": "2026-10-06T04:11:57.466Z",
+      "last_factorydeal": "2026-10-08T05:54:39.310Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "wage": 20,
@@ -318975,8 +318976,6 @@
       "prev_price": 1,
       "is_private": true,
       "value_history": [
-        155583,
-        155583,
         155583,
         155618,
         155671,
@@ -319074,7 +319073,9 @@
         164657,
         164657,
         164692,
-        164737
+        164737,
+        164787,
+        164817
       ]
     },
     "state_26": {
@@ -321301,7 +321302,6 @@
     }
   ],
   "factory_names": [
-    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Siberian Mining Co",
     "Ural Heavy Industries"
@@ -321311,7 +321311,8 @@
     "Brezhnev Auto Factory",
     "Volga Shipbuilding",
     "Soviet Iron Foundry",
-    "Red Star Steelworks"
+    "Red Star Steelworks",
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -321319,7 +321320,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 19.32394290550365,
-  "money_printed": 45102.38986178009,
+  "money_printed": 45414.38986178009,
   "total_bank_reserves": 3521822,
   "inflation_history": [
     37.14705784958093,
@@ -321580,14 +321581,14 @@
     "Reactor Core": 1.3785847655784051,
     "Circuit Board": 1.3925097224732428,
     "Flour": 1.3356732664519286,
-    "Sugar": 1.0595837243048698,
+    "Sugar": 1.0695837243048698,
     "Wine": 1.3511836999279945,
     "Canned Food": 1.3959909616969526,
     "Canned Fish": 1.3942503420850978,
     "Smoked Fish": 1.3942503420850978,
-    "Fish Stew": 1.3820660048021145,
+    "Fish Stew": 1.3920660048021145,
     "Peat Fuel": 1.3942503420850978,
-    "Gas Fuel": 1.3391427575780468,
+    "Gas Fuel": 1.2941427575780469,
     "Fertilizer": 1.3890284832495334,
     "Cotton Fabric": 1.3942503420850978,
     "Manganese Alloy": 1.3828297478043075,
@@ -321628,7 +321629,7 @@
     "Circuit Board": "2026-10-07T09:37:27.716Z",
     "Cotton Fabric": "2026-09-27T06:05:52.571Z",
     "Reactor Core": "2026-10-06T08:49:57.997Z",
-    "Gas Fuel": "2026-10-06T08:30:20.659Z",
+    "Gas Fuel": "2026-10-08T05:54:39.311Z",
     "Steel Beam": "2026-10-06T15:20:41.027Z",
     "Machine Parts": "2026-10-07T10:28:47.269Z",
     "Sugar": "2026-09-30T19:30:44.561Z",
@@ -321648,7 +321649,9 @@
     "Concrete": "2026-10-04T14:09:25.695Z"
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
-  "ai_store": {},
+  "ai_store": {
+    "Gas Fuel": 1
+  },
   "global_consumption": {
     "Copper Ingot": 97,
     "Steel Ingot": 26,
@@ -365945,7 +365948,7 @@
         "price": 996
       },
       "Gas Fuel": {
-        "qty": 235,
+        "qty": 236,
         "price": 322
       },
       "Circuit Board": {
@@ -366045,7 +366048,7 @@
         "price": 330
       }
     },
-    "sold_count": 2506,
+    "sold_count": 2507,
     "bought_count": 321
   },
   "leaders": {
