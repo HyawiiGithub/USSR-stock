@@ -319612,7 +319612,6 @@
         6,
         6,
         6,
-        6,
         7,
         7,
         7,
@@ -319639,6 +319638,7 @@
         7,
         6,
         8,
+        6,
         6,
         6,
         6,
@@ -319734,7 +319734,6 @@
       "prev_price": 6,
       "is_private": true,
       "value_history": [
-        507292,
         507316,
         507334,
         507334,
@@ -319833,7 +319832,8 @@
         517185,
         517190,
         517310,
-        517366
+        517366,
+        517382
       ],
       "sales_team": 1
     },
@@ -320790,11 +320790,6 @@
   "gsi_history": [
     {
       "price": 132,
-      "change_percent": 0.3082151042209699,
-      "recorded_at": "2026-10-07T23:22:14.912Z"
-    },
-    {
-      "price": 132,
       "change_percent": 0.08094541589381728,
       "recorded_at": "2026-10-07T23:23:13.333Z"
     },
@@ -321287,6 +321282,11 @@
       "price": 112,
       "change_percent": 0.972257070547943,
       "recorded_at": "2026-10-08T02:58:14.365Z"
+    },
+    {
+      "price": 113,
+      "change_percent": 1.0591776721768702,
+      "recorded_at": "2026-10-08T02:59:15.035Z"
     }
   ],
   "factory_names": [
@@ -364815,16 +364815,16 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 2,
+      "hunger": 0,
       "water": 60,
-      "health": 100,
+      "health": 98,
       "quarters": 5,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:48:56.457Z",
       "last_fed": "2026-10-07T08:38:40.904Z",
       "last_watered": null,
       "death": null,
-      "warned_empty": false,
+      "warned_empty": true,
       "stats": {
         "agility": 3,
         "curiosity": 3,
@@ -364896,7 +364896,7 @@
         "day": "",
         "n": 0
       },
-      "starve_since": null,
+      "starve_since": "2026-10-08T03:00:26.302Z",
       "last_pet": "2026-10-07T08:36:57.989Z",
       "lastPetAct": "2026-10-07T08:36:57.989Z",
       "last_feed_cmd": "2026-10-07T08:38:40.904Z",
@@ -364909,7 +364909,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 29,
+      "health": 27,
       "quarters": 4,
       "cheap_streak": 0,
       "born_at": "2026-09-19T16:56:00.173Z",
@@ -365104,7 +365104,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 82,
+      "health": 80,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
@@ -365561,15 +365561,15 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 88,
+      "health": 86,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T13:02:18.688Z",
       "last_fed": "2026-10-07T02:19:22.017Z",
       "last_watered": null,
       "death": null,
-      "friendship": 65,
-      "last_pet": "2026-10-07T02:13:33.377Z",
+      "friendship": 62,
+      "last_pet": "2026-10-08T03:00:26.302Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -365650,7 +365650,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 96,
+      "health": 94,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T14:29:00.531Z",
@@ -365807,7 +365807,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 98,
+      "health": 96,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-10-03T16:30:35.098Z",
@@ -365874,7 +365874,7 @@
       "last_train_cmd": "2026-10-06T16:06:23.692Z"
     }
   },
-  "pets_last_decay": "2026-10-08T02:00:26.226Z",
+  "pets_last_decay": "2026-10-08T03:00:26.302Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
