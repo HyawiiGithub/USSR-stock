@@ -315850,8 +315850,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 246,
-      "bot_total_xp": 1396,
+      "bot_xp": 267,
+      "bot_total_xp": 1417,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -319628,9 +319628,9 @@
         7,
         7,
         7,
-        7,
         6,
         8,
+        6,
         6,
         6,
         6,
@@ -319734,7 +319734,6 @@
       "prev_price": 6,
       "is_private": true,
       "value_history": [
-        507608,
         507613,
         507653,
         507661,
@@ -319833,7 +319832,8 @@
         517518,
         517534,
         517574,
-        517590
+        517590,
+        517678
       ],
       "sales_team": 1
     },
@@ -320790,11 +320790,6 @@
   "gsi_history": [
     {
       "price": 129,
-      "change_percent": 0.2720548596045253,
-      "recorded_at": "2026-10-07T23:58:13.622Z"
-    },
-    {
-      "price": 129,
       "change_percent": 0.036377969095144,
       "recorded_at": "2026-10-07T23:58:24.811Z"
     },
@@ -321287,6 +321282,11 @@
       "price": 118,
       "change_percent": 0.29193650416394956,
       "recorded_at": "2026-10-08T03:28:14.459Z"
+    },
+    {
+      "price": 118,
+      "change_percent": 0.6802727473328034,
+      "recorded_at": "2026-10-08T03:30:15.335Z"
     }
   ],
   "factory_names": [
@@ -335028,7 +335028,7 @@
       "1257410294062514186": 1791146925309,
       "722064019426377783": 1791146640562,
       "1337550948368777257": 1791150166241,
-      "1430286088433307721": 1791430180096,
+      "1430286088433307721": 1791430243893,
       "1430637954681798737": 1791385231741,
       "1465835749214519297": 1791161086622,
       "794046247803682896": 1791424671912,
@@ -354522,7 +354522,7 @@
   },
   "central_bank": {
     "reserves": 130020,
-    "interest_rate": 43,
+    "interest_rate": 48,
     "prime_rate": 33,
     "discount_rate": 15,
     "reserve_requirement": 30,
@@ -354911,12 +354911,20 @@
         "amount": 43,
         "old": 45,
         "reserves_after": 130020
+      },
+      {
+        "at": "2026-10-08T03:31:18.561Z",
+        "by": "_prussianemperor45",
+        "action": "set_interest_rate",
+        "amount": 48,
+        "old": 43,
+        "reserves_after": 130020
       }
     ],
     "total_added": 1141386,
     "total_removed": 1161366,
     "created_at": "2026-09-11T19:05:50.282Z",
-    "last_update": "2026-10-08T02:58:22.135Z",
+    "last_update": "2026-10-08T03:31:18.561Z",
     "chair_id": "1128425608146325544",
     "chair_set_by": "hyawii2.0",
     "chair_set_at": "2026-10-06T21:24:31.309Z",
