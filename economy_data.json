@@ -243724,10 +243724,12 @@
       "pet_food_source": {}
     },
     "963834359994007614": {
-      "cash": 7559,
+      "cash": 7253,
       "bank": 2710,
       "resources": {},
-      "inventory": {},
+      "inventory": {
+        "Bread": 1
+      },
       "company_id": "state_27",
       "gsi_shares": 0,
       "share_holdings": {
@@ -308038,8 +308040,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 11,
-      "bot_xp": 1128,
-      "bot_total_xp": 6903,
+      "bot_xp": 1147,
+      "bot_total_xp": 6922,
       "daily_work_count": 146,
       "shock_worker": false,
       "last_laylow": null,
@@ -319568,19 +319570,19 @@
       },
       "inventory": {
         "Iron Ore": 251,
-        "Coal": 263,
+        "Coal": 264,
         "Uranium": 2,
         "Lead": 51,
         "Timber Planks": 268,
         "Gold Bar": 81,
         "Molybdenum": 1,
-        "Potash": 2,
+        "Potash": 3,
         "Copper": 1,
-        "Flax": 6,
+        "Flax": 7,
         "Oil": 150,
-        "Limestone": 2,
+        "Limestone": 3,
         "Aluminium": 2,
-        "Sulphur": 1,
+        "Sulphur": 2,
         "Oil Shale": 2,
         "Salt": 1,
         "Steel Ingot": 4,
@@ -319590,20 +319592,23 @@
         "Gas Fuel": 25,
         "Cotton Fabric": 1,
         "Peat Fuel": 1,
-        "Natural Gas": 100,
+        "Natural Gas": 101,
         "Titanium": 1,
         "Peat": 2,
-        "Timber": 152,
+        "Timber": 154,
         "Gold": 48,
         "Machine Parts": 18,
         "Sand": 2,
-        "Cotton": 2,
+        "Cotton": 3,
         "Phosphorite": 1,
         "Zinc": 1,
         "Amber": 1,
         "Fuel": 4,
-        "Wheat": 6,
-        "Sugar": 5
+        "Wheat": 7,
+        "Sugar": 7,
+        "Graphite": 1,
+        "Fish": 1,
+        "Sunflower": 1
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-08T05:40:29.698Z",
@@ -334921,7 +334926,7 @@
       "1480281135916388570": 1790887848961,
       "1500371016260780172": 1790490822677,
       "1512533360654680126": 1790503447003,
-      "567599353955352578": 1791440388622,
+      "567599353955352578": 1791441950727,
       "1550582932425416714": 1791403673714,
       "1549125598155120813": 1790509793240,
       "853139077477302282": 1790690572981,
@@ -365642,17 +365647,17 @@
       "name": "Snuggles 2.0",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
-      "health": 84,
+      "health": 79,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T13:02:18.688Z",
-      "last_fed": "2026-10-07T02:19:22.017Z",
+      "last_fed": "2026-10-08T06:46:08.640Z",
       "last_watered": null,
       "death": null,
-      "friendship": 62,
-      "last_pet": "2026-10-08T03:00:26.302Z",
+      "friendship": 65,
+      "last_pet": "2026-10-08T06:46:15.019Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -365695,25 +365700,8 @@
         "epic": 0,
         "legendary": 0
       },
-      "hunts": 8,
-      "hunt": {
-        "start": "2026-10-07T02:19:32.734Z",
-        "end": "2026-10-07T14:19:32.734Z",
-        "durH": 12,
-        "instant": false,
-        "lootMult": 1,
-        "expB": 0,
-        "treas": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "zoom": false,
-        "thiefLvl": 0,
-        "pcs": 15,
-        "collarUsed": false
-      },
+      "hunts": 9,
+      "hunt": null,
       "plant_lvl": 0,
       "plant_xp": 0,
       "fruit": 0,
@@ -365721,10 +365709,10 @@
         "day": "",
         "n": 0
       },
-      "lastPetAct": "2026-10-07T02:13:33.377Z",
-      "starve_since": "2026-10-07T17:48:03.961Z",
-      "warned_empty": true,
-      "last_feed_cmd": "2026-10-07T02:19:22.017Z",
+      "lastPetAct": "2026-10-08T06:46:15.019Z",
+      "starve_since": null,
+      "warned_empty": false,
+      "last_feed_cmd": "2026-10-08T06:46:08.640Z",
       "last_train_cmd": "2026-10-05T19:10:28.843Z"
     },
     "1467181939218714656": {
@@ -366025,7 +366013,7 @@
         "price": 196
       },
       "Bread": {
-        "qty": 180,
+        "qty": 178,
         "price": 153
       },
       "Canned Food": {
@@ -366070,7 +366058,7 @@
       }
     },
     "sold_count": 2507,
-    "bought_count": 325
+    "bought_count": 327
   },
   "leaders": {
     "gs": {
