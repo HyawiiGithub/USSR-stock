@@ -304770,7 +304770,7 @@
       "pet_food_source": {}
     },
     "1467181939218714656": {
-      "cash": 459,
+      "cash": 294,
       "bank": 0,
       "resources": {},
       "inventory": {
@@ -317301,8 +317301,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 16,
-      "bot_xp": 858,
-      "bot_total_xp": 14658,
+      "bot_xp": 881,
+      "bot_total_xp": 14681,
       "daily_work_count": 216,
       "shock_worker": false,
       "last_laylow": null,
@@ -336744,7 +336744,7 @@
       "764990823673757746": 1791309553797,
       "1520361366031040603": 1791310656800,
       "1285277076995309655": 1791313930095,
-      "1128425608146325544": 1791547216806,
+      "1128425608146325544": 1791547326471,
       "1523681146284539934": 1791317248700,
       "1180159151482093609": 1791317714358,
       "659652953518505984": 1791321279943,
@@ -356225,7 +356225,7 @@
     "leveled": []
   },
   "central_bank": {
-    "reserves": 506648,
+    "reserves": 506813,
     "interest_rate": 53,
     "prime_rate": 50,
     "discount_rate": 15,
@@ -356736,7 +356736,7 @@
         "reserves_after": 509980
       }
     ],
-    "total_added": 1701446,
+    "total_added": 1701611,
     "total_removed": 1344798,
     "created_at": "2026-09-11T19:05:50.282Z",
     "last_update": "2026-10-09T11:36:42.080Z",
@@ -371387,17 +371387,6 @@
         "autopay": 0,
         "creditHit": true
       },
-      "1467181939218714656": {
-        "principal": 165,
-        "owed": 165,
-        "forced": true,
-        "rate": 52,
-        "rateWeekly": 52,
-        "mode": "manual",
-        "at": "2026-10-05T15:45:52.747Z",
-        "autopay": 0,
-        "creditHit": true
-      },
       "1506785783506534426": {
         "principal": 3332,
         "owed": 3342,
@@ -371533,12 +371522,12 @@
       "lastForcedAt": "2026-10-03T23:07:25.512Z"
     },
     "1467181939218714656": {
-      "score": 415,
+      "score": 455,
       "loans": 1,
-      "repaid": 0,
-      "fullRepays": 0,
+      "repaid": 165,
+      "fullRepays": 1,
       "forced": 1,
-      "forcedRepaid": 0,
+      "forcedRepaid": 1,
       "lastForcedAt": "2026-10-05T15:45:52.747Z"
     },
     "1506785783506534426": {
@@ -372753,5 +372742,12 @@
   "vault_axed": {
     "at": "2026-10-07T16:42:55.623Z",
     "amount": 1599517
-  }
+  },
+  "loan_log": [
+    {
+      "at": "2026-10-09T12:02:10.290Z",
+      "kind": "clear",
+      "text": "<@1467181939218714656> repaid ₽165 (debt clear)"
+    }
+  ]
 }
