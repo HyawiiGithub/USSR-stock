@@ -125,7 +125,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 54,
+      "bank": 51,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -10922,7 +10922,7 @@
       "pet_food_source": {}
     },
     "1467181939218714656": {
-      "cash": 2,
+      "cash": 3,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -10944,8 +10944,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 40,
-      "bot_total_xp": 40,
+      "bot_xp": 63,
+      "bot_total_xp": 63,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -10959,8 +10959,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W41",
-      "chat_earned_week": 2,
-      "chat_earned": 2
+      "chat_earned_week": 3,
+      "chat_earned": 3
     },
     "1375529617443786913": {
       "cash": 0,
@@ -87229,7 +87229,7 @@
       "pet_food_source": {}
     },
     "1506785783506534426": {
-      "cash": 2,
+      "cash": 3,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -87266,8 +87266,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W41",
-      "chat_earned_week": 2,
-      "chat_earned": 2
+      "chat_earned_week": 3,
+      "chat_earned": 3
     },
     "793472599153573911": {
       "cash": 0,
@@ -88106,17 +88106,19 @@
       "pet_food_source": {}
     },
     "1522851408611770409": {
-      "cash": 0,
+      "cash": 10,
       "bank": 0,
-      "resources": {},
+      "resources": {
+        "Oil": 1
+      },
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": null,
-      "work_count": 0,
+      "last_work": "2026-10-10T21:20:05.753Z",
+      "work_count": 1,
       "last_claim": null,
-      "ssr_region": null,
+      "ssr_region": "Uzbek SSR",
       "employed_at": null,
       "is_employed": false,
       "is_state_director": false,
@@ -88128,8 +88130,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 19,
-      "bot_total_xp": 19,
+      "bot_xp": 25,
+      "bot_total_xp": 25,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -217442,8 +217444,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 23,
-      "bot_total_xp": 23,
+      "bot_xp": 38,
+      "bot_total_xp": 38,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -235511,7 +235513,7 @@
       "pet_food_source": {}
     },
     "1353373037994705078": {
-      "cash": 0,
+      "cash": 1,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -235533,8 +235535,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 22,
+      "bot_total_xp": 22,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -235546,7 +235548,10 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "chat_week": "2026-W41",
+      "chat_earned_week": 1,
+      "chat_earned": 1
     },
     "1189243169108410459": {
       "cash": 0,
@@ -294009,6 +294014,11 @@
       "price": 98,
       "change_percent": -0.31003320470126844,
       "recorded_at": "2026-10-10T21:18:49.050Z"
+    },
+    {
+      "price": 98,
+      "change_percent": 0.05861990571495058,
+      "recorded_at": "2026-10-10T21:20:06.463Z"
     }
   ],
   "factory_names": [
@@ -294024,7 +294034,7 @@
   ],
   "used_factory_names": [],
   "inflation": 0,
-  "money_printed": 0,
+  "money_printed": 10,
   "inflation_adjust": 0,
   "good_crisis": {},
   "custom_events": [],
@@ -294251,9 +294261,10 @@
       "1494919466713350275": 1791666576663,
       "1325111649816023092": 1791667060437,
       "1506785783506534426": 1791667130655,
-      "1467181939218714656": 1791667120261,
-      "1397601108616024075": 1791667070587,
-      "1522851408611770409": 1791667168301
+      "1467181939218714656": 1791667183167,
+      "1397601108616024075": 1791667223569,
+      "1522851408611770409": 1791667168301,
+      "1353373037994705078": 1791667172629
     }
   },
   "mee6_cache": {
@@ -294340,11 +294351,11 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 1,
+        "rate": 0.000372203818811181,
         "set": true
       },
-      "supply": 0,
-      "printed": 0,
+      "supply": 10,
+      "printed": 10,
       "workPrint": 15,
       "workChannelId": null,
       "resources": null,
@@ -295282,7 +295293,18 @@
     ]
   },
   "ssr_board": {
-    "weeks": {},
+    "weeks": {
+      "2026-W41": {
+        "channels": {
+          "1071101280702963752": {
+            "msgs": 3,
+            "users": [
+              "1522851408611770409"
+            ]
+          }
+        }
+      }
+    },
     "last_board_week": "2026-W40"
   },
   "gini_history": [
