@@ -153,6 +153,84 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1379734184259747851": {
+      "cash": 0,
+      "bank": 26847,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 17,
+      "bot_total_xp": 17,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {},
+      "chat_week": "2026-W41",
+      "chat_earned_week": 0
+    },
+    "1082686076491137115": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 15,
+      "bot_total_xp": 15,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {},
@@ -183,7 +261,9 @@
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
   "total_bank_reserves": 0,
-  "inflation_history": [],
+  "inflation_history": [
+    0
+  ],
   "company_id_counter": 0,
   "currency": {
     "code": "RUB",
@@ -194,9 +274,14 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4,
-    "history": [],
-    "last_update": null,
+    "rub_per_usd": 4.45,
+    "history": [
+      {
+        "rate": 4.45,
+        "at": "2026-10-10T21:08:46.810Z"
+      }
+    ],
+    "last_update": "2026-10-10T21:08:46.810Z",
     "manual_override": null
   },
   "national_budget": {
@@ -296,7 +381,9 @@
     "cooldowns": {
       "1456622719985782864": 1791666505434,
       "807254722251587614": 1791666510958,
-      "1338737886874570843": 1791666514486
+      "1338737886874570843": 1791666514486,
+      "1379734184259747851": 1791666530190,
+      "1082686076491137115": 1791666545880
     }
   },
   "mee6_cache": {
@@ -365,9 +452,48 @@
     "setBy": null,
     "setAt": null
   },
-  "servers": {},
-  "server_econ": {},
-  "local_elections": {},
+  "servers": {
+    "605950584859918337": {
+      "id": "605950584859918337",
+      "name": "Union of Soviet Socialist Republics",
+      "members": 7782,
+      "lastSeen": "2026-10-10T21:09:10.269Z",
+      "joinedAt": "2026-10-10T21:09:10.269Z",
+      "owners": [
+        "860577675763384322"
+      ],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "blacklisted": false,
+      "currency": {
+        "code": "RUB",
+        "symbol": "₽",
+        "name": "Ruble",
+        "rate": 1,
+        "set": true
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0
+    }
+  },
+  "server_econ": {
+    "605950584859918337": {
+      "history": [],
+      "works": 0
+    }
+  },
+  "local_elections": {
+    "605950584859918337": {
+      "active": null,
+      "history": [],
+      "next_num": 0
+    }
+  },
   "pets": {},
   "pets_last_decay": "2026-10-10T21:08:39.866Z",
   "autonomy": {
@@ -463,8 +589,37 @@
   "mafias": [],
   "race_history": [],
   "giveaways": [],
-  "jarvis": {},
+  "jarvis": {
+    "1082686076491137115": {
+      "date": "2026-10-10",
+      "used": 0,
+      "history": [
+        {
+          "role": "user",
+          "content": "who is Kewl Menzhinsky also reffered to as Kewl"
+        },
+        {
+          "role": "assistant",
+          "content": "Kewl Menzhinsky (often just called Kewl) is the current Generalissimus of the USSR and General Secretary of the Central Committee, holding that post since 27 July 2026 after succeeding Felix Dzerzhinsky. He was previously a Secretariat member and close aide to the General Secretary, overseeing the Commissariats for Communications, Justice and State Affairs. According to the AI dossier, he is a Sigma‑Alpha‑Male, heterosexual, enjoys trollfaces, and assumed power after Felix’s death via a Secretar"
+        }
+      ],
+      "bonus": 0
+    }
+  },
   "last_weekly_tax": "2026-10-05T12:00:00.000Z",
+  "loans": {
+    "central": {},
+    "ssr": {}
+  },
+  "foreign_bonds": {
+    "bonds": [],
+    "total_issued": 0,
+    "total_redeemed": 0,
+    "total_interest_paid": 0
+  },
+  "inflation_updated_at": "2026-10-10T21:08:46.810Z",
+  "jarvis_unlimited": [],
+  "ai_memory": {},
   "access_codes_hashed": {
     "09378ed616fd9eb1": {
       "permissions": [
