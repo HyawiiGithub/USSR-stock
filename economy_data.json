@@ -324180,16 +324180,6 @@
   "gsi_history": [
     {
       "price": 106,
-      "change_percent": 0.12624992112724537,
-      "recorded_at": "2026-10-10T10:30:58.534Z"
-    },
-    {
-      "price": 106,
-      "change_percent": 0.26954019251701905,
-      "recorded_at": "2026-10-10T10:34:56.188Z"
-    },
-    {
-      "price": 106,
       "change_percent": 0.8078542537405697,
       "recorded_at": "2026-10-10T10:36:51.324Z"
     },
@@ -324677,6 +324667,16 @@
       "price": 126,
       "change_percent": 0.6759449801797546,
       "recorded_at": "2026-10-10T23:11:36.742Z"
+    },
+    {
+      "price": 118,
+      "change_percent": -6.310177498800407,
+      "recorded_at": "2026-10-10T23:16:34.702Z"
+    },
+    {
+      "price": 119,
+      "change_percent": 1.462359719515164,
+      "recorded_at": "2026-10-10T23:16:38.461Z"
     }
   ],
   "factory_names": [
@@ -324697,11 +324697,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 35.937618406546385,
-  "money_printed": 319009.56782949384,
+  "inflation": 36.437618406546385,
+  "money_printed": 318850.0630455791,
   "total_bank_reserves": 5198693,
   "inflation_history": [
-    5.989330619349179,
     5.888809884940521,
     5.7898124973017495,
     5.705284694246178,
@@ -324800,7 +324799,8 @@
     34.437618406546385,
     34.937618406546385,
     35.437618406546385,
-    35.937618406546385
+    35.937618406546385,
+    36.437618406546385
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 31,
@@ -324946,9 +324946,9 @@
     "Copper Ingot": 1.2975100987996213,
     "Iron Ingot": 1.0436866130136877,
     "Steel Ingot": 1.3263102828550615,
-    "Gold Bar": 0.8011496905818397,
+    "Gold Bar": 0.7999676054451826,
     "Aluminium Ingot": 1.4011820262140762,
-    "Timber Planks": 0.8882423139268185,
+    "Timber Planks": 0.8825553618187403,
     "Bricks": 1.130140796655379,
     "Concrete": 1.4028673455689313,
     "Glass": 1.3951025056004653,
@@ -325033,7 +325033,7 @@
     "Reactor Core": 14,
     "Refined Fuel": 14,
     "Glass": 3,
-    "Radiator": 9,
+    "Radiator": 7,
     "Timber Planks": 13
   },
   "global_consumption": {
@@ -325066,7 +325066,7 @@
     "Brass": 58,
     "Brass Valve": 47,
     "Pet Food": 9,
-    "Radiator": 41,
+    "Radiator": 43,
     "Fish Stew": 53,
     "Bricks": 80,
     "Sunflower Oil": 30,
@@ -325075,11 +325075,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-10-05T18:56:59.634Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -326574,6 +326569,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-10-10T23:01:34.209Z"
+    },
+    {
+      "item": "Radiator",
+      "qty": 2,
+      "at": "2026-10-10T23:16:36.700Z"
     }
   ],
   "demand_history": {
@@ -332369,6 +332369,11 @@
       {
         "demand": 1.3872154885429835,
         "at": "2026-10-10T22:46:34.217Z",
+        "supply": 4
+      },
+      {
+        "demand": 1.388653374648996,
+        "at": "2026-10-10T23:16:36.700Z",
         "supply": 4
       }
     ],
@@ -365059,12 +365064,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.07,
+    "rub_per_usd": 7.14,
     "history": [
-      {
-        "rate": 6.13,
-        "at": "2026-10-10T01:44:57.424Z"
-      },
       {
         "rate": 6.07,
         "at": "2026-10-10T01:54:57.473Z"
@@ -365460,9 +365461,13 @@
       {
         "rate": 7.07,
         "at": "2026-10-10T23:06:34.145Z"
+      },
+      {
+        "rate": 7.14,
+        "at": "2026-10-10T23:16:36.421Z"
       }
     ],
-    "last_update": "2026-10-10T23:06:34.145Z",
+    "last_update": "2026-10-10T23:16:36.421Z",
     "manual_override": null
   },
   "national_budget": {
@@ -375210,7 +375215,7 @@
   "turn_digest_message": "1557783596444422255",
   "chat_rubles_enabled": false,
   "state_debt_owed": 0,
-  "inflation_updated_at": "2026-10-10T23:06:33.851Z",
+  "inflation_updated_at": "2026-10-10T23:16:36.163Z",
   "vault_axe_pending": 0,
   "vault_axe_unb": 0,
   "vault_axed": {
