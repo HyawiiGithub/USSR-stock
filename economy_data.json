@@ -88225,8 +88225,8 @@
       "pet_food_source": {}
     },
     "807254722251587614": {
-      "cash": 231,
-      "bank": 752,
+      "cash": 0,
+      "bank": 883,
       "resources": {},
       "inventory": {
         "Fish Stew": 6
@@ -88262,8 +88262,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 28,
-      "bot_xp": 2740,
-      "bot_total_xp": 59090,
+      "bot_xp": 2760,
+      "bot_total_xp": 59110,
       "daily_work_count": 283,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-10",
@@ -321032,8 +321032,8 @@
       "shares_available": 44464,
       "state_shares": 0,
       "founder_shares": 0,
-      "share_price": 4,
-      "market_cap": 400000,
+      "share_price": 5,
+      "market_cap": 500000,
       "employees": 7,
       "level": 1,
       "buildings": {
@@ -321094,34 +321094,34 @@
         }
       },
       "inventory": {
-        "Zinc": 63,
-        "Lead": 54,
+        "Zinc": 73,
+        "Lead": 70,
         "Gold Bar": 137,
         "Salt": 0,
         "Fish": 1,
-        "Wheat": 129,
+        "Wheat": 111,
         "Concrete": 1,
         "Sulphur": 3,
         "Wine": 17,
-        "Sugar": 32,
+        "Sugar": 34,
         "Iron Ingot": 14,
         "Uranium Rod": 6,
-        "Grapes": 3,
+        "Grapes": 8,
         "Gas Fuel": 3,
-        "Natural Gas": 2,
-        "Iron Ore": 1,
-        "Coal": 1,
-        "Copper": 1,
-        "Limestone": 1,
-        "Clay": 1,
-        "Sand": 1,
-        "Oil": 1,
-        "Uranium": 2,
+        "Natural Gas": 8,
+        "Iron Ore": 11,
+        "Coal": 10,
+        "Copper": 8,
+        "Limestone": 6,
+        "Clay": 6,
+        "Sand": 6,
+        "Oil": 7,
+        "Uranium": 3,
         "Aluminium Ore": 2,
-        "Gold": 1
+        "Gold": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-10-10T06:42:58.471Z",
+      "last_collect": "2026-10-10T14:14:33.776Z",
       "price_history": [
         4,
         4,
@@ -321130,7 +321130,6 @@
         4,
         4,
         4,
-        4,
         5,
         5,
         5,
@@ -321222,7 +321221,8 @@
         4,
         4,
         4,
-        4
+        4,
+        5
       ],
       "is_state_owned": false,
       "director_id": "807254722251587614",
@@ -321244,7 +321244,6 @@
       "prev_price": 4,
       "is_private": true,
       "value_history": [
-        419160,
         419160,
         419160,
         420517,
@@ -321343,7 +321342,8 @@
         440939,
         441081,
         441081,
-        441113
+        441113,
+        444666
       ]
     },
     "state_24": {
@@ -323757,11 +323757,6 @@
   "gsi_history": [
     {
       "price": 98,
-      "change_percent": 1.20242288194512,
-      "recorded_at": "2026-10-10T09:41:35.751Z"
-    },
-    {
-      "price": 98,
       "change_percent": 0.756257068407703,
       "recorded_at": "2026-10-10T09:42:20.824Z"
     },
@@ -324254,6 +324249,11 @@
       "price": 106,
       "change_percent": 0.5101315782577724,
       "recorded_at": "2026-10-10T14:10:59.831Z"
+    },
+    {
+      "price": 106,
+      "change_percent": 0.4159737643664484,
+      "recorded_at": "2026-10-10T14:14:35.671Z"
     }
   ],
   "factory_names": [
@@ -337634,7 +337634,7 @@
       "2026-10-10": {
         "Estonian SSR": 0,
         "Kazakh SSR": 0,
-        "Nuristani SSR": 1,
+        "Nuristani SSR": 3,
         "Russian SFSR": 0,
         "Azerbaijanian SSR": 0
       }
@@ -357833,9 +357833,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 21,
-    "beforeLvlC": 32,
-    "afterLvl": 32,
+    "xpGainC": 20,
+    "beforeLvlC": 28,
+    "afterLvl": 28,
     "leveled": []
   },
   "central_bank": {
@@ -374873,9 +374873,10 @@
     }
   },
   "lottery": {
-    "pot": 1180,
+    "pot": 1270,
     "tickets": {
-      "874346333882945547": 2
+      "874346333882945547": 2,
+      "807254722251587614": 1
     },
     "endsAt": "2026-10-11T14:06:59.196Z",
     "lastWinner": null,
