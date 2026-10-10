@@ -324909,7 +324909,7 @@
     "Steel Ingot": 1.3263102828550615,
     "Gold Bar": 0.8069992676532579,
     "Aluminium Ingot": 1.4011820262140762,
-    "Timber Planks": 0.869981406218853,
+    "Timber Planks": 0.889981406218853,
     "Bricks": 1.130140796655379,
     "Concrete": 1.4028673455689313,
     "Glass": 1.3951025056004653,
@@ -324995,12 +324995,12 @@
     "Refined Fuel": 14,
     "Glass": 3,
     "Radiator": 10,
-    "Timber Planks": 17
+    "Timber Planks": 15
   },
   "global_consumption": {
     "Copper Ingot": 97,
     "Steel Ingot": 26,
-    "Timber Planks": 195,
+    "Timber Planks": 197,
     "Refined Fuel": 329,
     "Fuel": 173,
     "Iron Ingot": 63,
@@ -325036,11 +325036,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-10-05T18:11:56.674Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -326535,6 +326530,11 @@
       "item": "Reactor Core",
       "qty": 1,
       "at": "2026-10-10T22:11:09.090Z"
+    },
+    {
+      "item": "Timber Planks",
+      "qty": 2,
+      "at": "2026-10-10T22:31:31.250Z"
     }
   ],
   "demand_history": {
@@ -326939,11 +326939,6 @@
     ],
     "Timber Planks": [
       {
-        "demand": 1.3930820419352339,
-        "at": "2026-09-03T23:35:37.617Z",
-        "supply": 0
-      },
-      {
         "demand": 1.396108648588569,
         "at": "2026-09-04T00:05:37.677Z",
         "supply": 0
@@ -327236,6 +327231,11 @@
       {
         "demand": 0.8514770397936355,
         "at": "2026-10-10T14:51:32.200Z",
+        "supply": 304
+      },
+      {
+        "demand": 0.869981406218853,
+        "at": "2026-10-10T22:31:31.250Z",
         "supply": 304
       }
     ],
