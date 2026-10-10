@@ -125,7 +125,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 58,
+      "bank": 54,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -10922,7 +10922,7 @@
       "pet_food_source": {}
     },
     "1467181939218714656": {
-      "cash": 0,
+      "cash": 2,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -10957,7 +10957,10 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "chat_week": "2026-W41",
+      "chat_earned_week": 2,
+      "chat_earned": 2
     },
     "1375529617443786913": {
       "cash": 0,
@@ -87226,7 +87229,7 @@
       "pet_food_source": {}
     },
     "1506785783506534426": {
-      "cash": 0,
+      "cash": 2,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -87248,8 +87251,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 50,
-      "bot_total_xp": 50,
+      "bot_xp": 66,
+      "bot_total_xp": 66,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -87261,7 +87264,10 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "chat_week": "2026-W41",
+      "chat_earned_week": 2,
+      "chat_earned": 2
     },
     "793472599153573911": {
       "cash": 0,
@@ -88122,8 +88128,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 19,
+      "bot_total_xp": 19,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -293998,6 +294004,11 @@
       "price": 99,
       "change_percent": -0.08362255268351415,
       "recorded_at": "2026-10-10T21:13:46.815Z"
+    },
+    {
+      "price": 98,
+      "change_percent": -0.31003320470126844,
+      "recorded_at": "2026-10-10T21:18:49.050Z"
     }
   ],
   "factory_names": [
@@ -294019,8 +294030,9 @@
   "custom_events": [],
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
-  "total_bank_reserves": 0,
+  "total_bank_reserves": 28363,
   "inflation_history": [
+    0,
     0
   ],
   "company_id_counter": 0,
@@ -294033,7 +294045,7 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.49,
+    "rub_per_usd": 4.5,
     "history": [
       {
         "rate": 4.45,
@@ -294042,9 +294054,13 @@
       {
         "rate": 4.49,
         "at": "2026-10-10T21:09:47.350Z"
+      },
+      {
+        "rate": 4.5,
+        "at": "2026-10-10T21:18:48.400Z"
       }
     ],
-    "last_update": "2026-10-10T21:09:47.350Z",
+    "last_update": "2026-10-10T21:18:48.401Z",
     "manual_override": null
   },
   "national_budget": {
@@ -294075,13 +294091,66 @@
         "income": 77,
         "spending": 0,
         "at": "2026-10-10T21:13:47.434Z"
+      },
+      {
+        "balance": 77,
+        "income": 77,
+        "spending": 0,
+        "at": "2026-10-10T21:18:49.422Z"
       }
     ]
   },
   "state_companies": [],
   "state_directors": {},
   "transaction_log": [],
-  "market_demand": {},
+  "market_demand": {
+    "Iron Ingot": 1.4,
+    "Steel Ingot": 1.4,
+    "Copper Ingot": 1.4,
+    "Brass": 1.4,
+    "Brass Valve": 1.4,
+    "Radiator": 1.4,
+    "Brass Lamp": 1.4,
+    "Gold Bar": 1.4,
+    "Aluminium Ingot": 1.4,
+    "Timber Planks": 1.4,
+    "Bricks": 1.4,
+    "Concrete": 1.4,
+    "Glass": 1.4,
+    "Steel Beam": 1.4,
+    "Machine Parts": 1.4,
+    "Fuel": 1.4,
+    "Refined Fuel": 1.4,
+    "Uranium Rod": 1.4,
+    "Reactor Core": 1.4,
+    "Circuit Board": 1.4,
+    "Flour": 1.4,
+    "Sugar": 1.4,
+    "Bread": 1.4,
+    "Cake": 1.4,
+    "Wine": 1.4,
+    "Canned Food": 1.4,
+    "Canned Fish": 1.4,
+    "Smoked Fish": 1.4,
+    "Fish Stew": 1.4,
+    "Peat Fuel": 1.4,
+    "Shale Oil": 1.4,
+    "Gas Fuel": 1.4,
+    "Fertilizer": 1.4,
+    "Cotton Fabric": 1.4,
+    "Manganese Alloy": 1.4,
+    "Sunflower Oil": 1.4,
+    "Linen": 1.4,
+    "Corn Meal": 1.4,
+    "Tea Pack": 1.4,
+    "Citrus Juice": 1.4,
+    "Antimony Alloy": 1.4,
+    "Molybdenum Rod": 1.4,
+    "Aluminium Sheet": 1.4,
+    "Bandage": 1.4,
+    "Ointment": 1.4,
+    "Pet Food": 1.4
+  },
   "market_last_sale": {},
   "last_govcontract": null,
   "ai_store": {},
@@ -294109,6 +294178,10 @@
     {
       "total": 29138,
       "at": "2026-10-10T21:13:47.400Z"
+    },
+    {
+      "total": 29138,
+      "at": "2026-10-10T21:18:49.314Z"
     }
   ],
   "gold_rush": null,
@@ -294177,9 +294250,10 @@
       "1082686076491137115": 1791666867685,
       "1494919466713350275": 1791666576663,
       "1325111649816023092": 1791667060437,
-      "1506785783506534426": 1791667021219,
+      "1506785783506534426": 1791667130655,
       "1467181939218714656": 1791667120261,
-      "1397601108616024075": 1791667070587
+      "1397601108616024075": 1791667070587,
+      "1522851408611770409": 1791667168301
     }
   },
   "mee6_cache": {
@@ -294285,6 +294359,12 @@
           "wealth": 29072,
           "members": 13,
           "works": 0
+        },
+        {
+          "at": "2026-10-10T21:18:49.435Z",
+          "wealth": 26867,
+          "members": 197,
+          "works": 0
         }
       ],
       "works": 0
@@ -294293,6 +294373,12 @@
       "history": [
         {
           "at": "2026-10-10T21:13:46.820Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
+        },
+        {
+          "at": "2026-10-10T21:18:49.435Z",
           "wealth": 0,
           "members": 0,
           "works": 0
@@ -294307,6 +294393,12 @@
           "wealth": 0,
           "members": 0,
           "works": 0
+        },
+        {
+          "at": "2026-10-10T21:18:49.435Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
         }
       ],
       "works": 0
@@ -294315,6 +294407,12 @@
       "history": [
         {
           "at": "2026-10-10T21:13:46.820Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
+        },
+        {
+          "at": "2026-10-10T21:18:49.435Z",
           "wealth": 0,
           "members": 0,
           "works": 0
@@ -294594,7 +294692,7 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-10T21:08:46.810Z",
+  "inflation_updated_at": "2026-10-10T21:18:48.235Z",
   "jarvis_unlimited": [],
   "ai_memory": {},
   "world1959": {
@@ -295197,6 +295295,11 @@
       "gini": 99.9850803959872,
       "top10": 100,
       "at": "2026-10-10T21:13:47.426Z"
+    },
+    {
+      "gini": 99.98505967339469,
+      "top10": 100,
+      "at": "2026-10-10T21:18:49.334Z"
     }
   ],
   "gdp_history": [
@@ -295207,6 +295310,10 @@
     {
       "gdp": 29138,
       "at": "2026-10-10T21:13:47.434Z"
+    },
+    {
+      "gdp": 29138,
+      "at": "2026-10-10T21:18:49.422Z"
     }
   ],
   "soldier_history": [],
@@ -295222,6 +295329,12 @@
       "gdp": 29138,
       "ratio": 0,
       "at": "2026-10-10T21:13:47.442Z"
+    },
+    {
+      "total": 0,
+      "gdp": 29138,
+      "ratio": 0,
+      "at": "2026-10-10T21:18:49.432Z"
     }
   ],
   "pop_history": [
@@ -295239,6 +295352,11 @@
       "total": 7736,
       "citizens": 7736,
       "at": "2026-10-10T21:13:47.443Z"
+    },
+    {
+      "total": 7736,
+      "citizens": 7736,
+      "at": "2026-10-10T21:18:49.434Z"
     }
   ],
   "debt_watch_band": 0,
