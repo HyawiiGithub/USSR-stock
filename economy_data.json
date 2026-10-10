@@ -321023,7 +321023,7 @@
         "Gold Bar": 137,
         "Salt": 0,
         "Fish": 1,
-        "Wheat": 68,
+        "Wheat": 129,
         "Concrete": 1,
         "Sulphur": 3,
         "Wine": 17,
@@ -321376,7 +321376,8 @@
         "Radiator": 4,
         "Steel Beam": 5,
         "Steel Ingot": 22,
-        "Manganese": 1
+        "Manganese": 1,
+        "Wheat": 63
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-09T18:43:50.584Z",
@@ -321644,7 +321645,7 @@
       "inventory": {
         "Oil": 4,
         "Iron Ore": 36,
-        "Wheat": 63,
+        "Wheat": 122,
         "Sugar": 78,
         "Gold": 1,
         "Cotton": 4,
@@ -322067,7 +322068,7 @@
         "Contraband: Synthetic": 3,
         "Bread": 2,
         "Cake": 2,
-        "Wheat": 14,
+        "Wheat": 81,
         "Grapes": 1,
         "Corn": 2,
         "Phosphorite": 1,
@@ -322409,7 +322410,8 @@
         "Fuel": 113,
         "Graphite": 1,
         "Manganese": 1,
-        "Reactor Core": 6
+        "Reactor Core": 6,
+        "Wheat": 200
       },
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-10T08:46:12.350Z",
@@ -322687,7 +322689,7 @@
         "Timber Planks": 28,
         "Timber": 170,
         "Sugar": 53,
-        "Wheat": 10
+        "Wheat": 35
       },
       "created_at": "2026-08-25T17:16:44.366Z",
       "last_collect": "2026-10-10T04:09:58.205Z",
@@ -323197,7 +323199,7 @@
         }
       },
       "inventory": {
-        "Wheat": 198,
+        "Wheat": 199,
         "Corn": 1,
         "Oil": 1,
         "Natural Gas": 1
@@ -336070,14 +336072,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 7346023,
-      "at": "2026-10-10T08:09:58.748Z"
-    },
-    {
-      "total": 7346211,
-      "at": "2026-10-10T08:14:57.732Z"
-    },
-    {
       "total": 7346211,
       "at": "2026-10-10T08:14:58.607Z"
     },
@@ -336468,6 +336462,14 @@
     {
       "total": 7519785,
       "at": "2026-10-10T12:25:00.619Z"
+    },
+    {
+      "total": 7519830,
+      "at": "2026-10-10T12:29:59.756Z"
+    },
+    {
+      "total": 7519830,
+      "at": "2026-10-10T12:30:01.732Z"
     }
   ],
   "gold_rush": null,
@@ -359217,7 +359219,7 @@
     },
     "963834359994007614": {
       "date": "2026-10-10",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -359226,6 +359228,14 @@
         {
           "role": "assistant",
           "content": "Pakistani Gazi is a former Premier of the Union of Soviet Socialist Republics in this server, referenced in alwaysthearchangel's announcement as having outdated decrees. No further details (tenure, specific actions, identity) are available in the verified server lore or LIVE state."
+        },
+        {
+          "role": "user",
+          "content": "who is Maulana Fazl ur Rehman"
+        },
+        {
+          "role": "assistant",
+          "content": "Maulana Fazl ur Rehman refers to Fazal-ur-Rehman, a Pakistani Islamic scholar and politician born in 1953. He is president of Jamiat Ulema-e-Islam (F), has been a member of Pakistan's National Assembly since February 2024 (previously serving 1988–2018), was Leader of the Opposition from 2004–2007, and in the 1980s participated in the Movement for the Restoration of Democracy opposing General Zia-ul-Haq's regime. (Source: WEB)"
         }
       ],
       "bonus": 0
@@ -366636,18 +366646,6 @@
         "balance": 1562769,
         "income": 2256806,
         "spending": 694037,
-        "at": "2026-10-10T08:09:59.105Z"
-      },
-      {
-        "balance": 1562769,
-        "income": 2256806,
-        "spending": 694037,
-        "at": "2026-10-10T08:14:57.856Z"
-      },
-      {
-        "balance": 1562769,
-        "income": 2256806,
-        "spending": 694037,
         "at": "2026-10-10T08:14:58.749Z"
       },
       {
@@ -367231,6 +367229,18 @@
         "income": 2258358,
         "spending": 694037,
         "at": "2026-10-10T12:25:00.971Z"
+      },
+      {
+        "balance": 1564321,
+        "income": 2258358,
+        "spending": 694037,
+        "at": "2026-10-10T12:29:59.986Z"
+      },
+      {
+        "balance": 1564321,
+        "income": 2258358,
+        "spending": 694037,
+        "at": "2026-10-10T12:30:01.977Z"
       }
     ]
   },
@@ -370734,16 +370744,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.7201953455951,
-      "top10": 100,
-      "at": "2026-10-10T08:09:58.759Z"
-    },
-    {
-      "gini": 99.72002527281805,
-      "top10": 100,
-      "at": "2026-10-10T08:14:57.745Z"
-    },
-    {
       "gini": 99.72005857539057,
       "top10": 100,
       "at": "2026-10-10T08:14:58.622Z"
@@ -371232,17 +371232,19 @@
       "gini": 99.71498791164603,
       "top10": 100,
       "at": "2026-10-10T12:25:00.638Z"
+    },
+    {
+      "gini": 99.71498300821631,
+      "top10": 100,
+      "at": "2026-10-10T12:29:59.834Z"
+    },
+    {
+      "gini": 99.71498300821631,
+      "top10": 100,
+      "at": "2026-10-10T12:30:01.773Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10398564,
-      "at": "2026-10-10T08:09:59.104Z"
-    },
-    {
-      "gdp": 10398800,
-      "at": "2026-10-10T08:14:57.855Z"
-    },
     {
       "gdp": 10398800,
       "at": "2026-10-10T08:14:58.749Z"
@@ -371634,6 +371636,14 @@
     {
       "gdp": 10394969,
       "at": "2026-10-10T12:25:00.966Z"
+    },
+    {
+      "gdp": 10395091,
+      "at": "2026-10-10T12:29:59.986Z"
+    },
+    {
+      "gdp": 10395091,
+      "at": "2026-10-10T12:30:01.977Z"
     }
   ],
   "purge_allowed": [
@@ -373380,18 +373390,6 @@
   "debt_history": [
     {
       "total": 1423789,
-      "gdp": 10398564,
-      "ratio": 13.69,
-      "at": "2026-10-10T08:09:59.125Z"
-    },
-    {
-      "total": 1423789,
-      "gdp": 10398800,
-      "ratio": 13.69,
-      "at": "2026-10-10T08:14:57.862Z"
-    },
-    {
-      "total": 1423789,
       "gdp": 10398800,
       "ratio": 13.69,
       "at": "2026-10-10T08:14:58.756Z"
@@ -373977,24 +373975,21 @@
       "gdp": 10394969,
       "ratio": 13.88,
       "at": "2026-10-10T12:25:00.996Z"
+    },
+    {
+      "total": 1442750,
+      "gdp": 10395091,
+      "ratio": 13.88,
+      "at": "2026-10-10T12:29:59.996Z"
+    },
+    {
+      "total": 1442750,
+      "gdp": 10395091,
+      "ratio": 13.88,
+      "at": "2026-10-10T12:30:01.988Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8410,
-      "citizens": 8410,
-      "at": "2026-10-10T09:34:58.278Z"
-    },
-    {
-      "total": 7735,
-      "citizens": 8410,
-      "at": "2026-10-10T09:34:59.208Z"
-    },
-    {
-      "total": 8410,
-      "citizens": 8410,
-      "at": "2026-10-10T09:34:59.596Z"
-    },
     {
       "total": 8410,
       "citizens": 8410,
@@ -374479,6 +374474,21 @@
       "total": 8413,
       "citizens": 8413,
       "at": "2026-10-10T12:25:00.997Z"
+    },
+    {
+      "total": 8413,
+      "citizens": 8413,
+      "at": "2026-10-10T12:29:59.998Z"
+    },
+    {
+      "total": 7734,
+      "citizens": 8413,
+      "at": "2026-10-10T12:30:01.721Z"
+    },
+    {
+      "total": 8413,
+      "citizens": 8413,
+      "at": "2026-10-10T12:30:01.990Z"
     }
   ],
   "debt_watch_band": 0,
