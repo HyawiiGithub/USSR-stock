@@ -240,8 +240,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 10,
-      "bot_xp": 797,
-      "bot_total_xp": 5472,
+      "bot_xp": 820,
+      "bot_total_xp": 5495,
       "daily_work_count": 39,
       "shock_worker": false,
       "mee6_level": 10,
@@ -291,8 +291,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 22,
-      "bot_xp": 810,
-      "bot_total_xp": 31115,
+      "bot_xp": 832,
+      "bot_total_xp": 31137,
       "daily_work_count": 153,
       "shock_worker": false,
       "mee6_level": 22,
@@ -86155,7 +86155,7 @@
       "last_laylow": null,
       "last_daily_work_date": "2026-10-11",
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-10-11T09:56:42.065Z",
       "collect_reminder": false,
       "collect_reminder_sent": null,
       "train_reminder": false,
@@ -266787,8 +266787,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 1203,
-      "bot_total_xp": 19578,
+      "bot_xp": 1221,
+      "bot_total_xp": 19596,
       "daily_work_count": 25,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-08",
@@ -322552,16 +322552,17 @@
       "inventory": {
         "Oil": 4,
         "Iron Ore": 36,
-        "Wheat": 122,
-        "Sugar": 78,
+        "Wheat": 103,
+        "Sugar": 79,
         "Gold": 1,
         "Cotton": 4,
         "Cotton Fabric": 4,
-        "Fuel": 1,
-        "Gas Fuel": 10
+        "Fuel": 2,
+        "Gas Fuel": 10,
+        "Natural Gas": 3
       },
       "created_at": "2026-08-25T17:15:02.477Z",
-      "last_collect": "2026-10-10T11:16:19.046Z",
+      "last_collect": "2026-10-11T09:56:05.119Z",
       "price_history": [
         1,
         1,
@@ -322574,7 +322575,6 @@
         1,
         1,
         1,
-        1,
         2,
         2,
         2,
@@ -322653,6 +322653,7 @@
         1,
         1,
         1,
+        2,
         2,
         2,
         2,
@@ -322685,7 +322686,6 @@
       "prev_price": 2,
       "is_private": true,
       "value_history": [
-        164692,
         164737,
         164787,
         164817,
@@ -322784,7 +322784,8 @@
         179855,
         179855,
         179855,
-        179855
+        179855,
+        180124
       ]
     },
     "state_26": {
@@ -324592,11 +324593,6 @@
   },
   "gsi_history": [
     {
-      "price": 156,
-      "change_percent": 6.233605278207136,
-      "recorded_at": "2026-10-11T05:50:30.900Z"
-    },
-    {
       "price": 155,
       "change_percent": -0.15781216651773247,
       "recorded_at": "2026-10-11T05:54:34.487Z"
@@ -325090,6 +325086,11 @@
       "price": 158,
       "change_percent": -0.26424213478801506,
       "recorded_at": "2026-10-11T09:55:29.860Z"
+    },
+    {
+      "price": 158,
+      "change_percent": 0.09681718386338987,
+      "recorded_at": "2026-10-11T09:56:06.892Z"
     }
   ],
   "factory_names": [
@@ -338603,7 +338604,8 @@
         "Russian SFSR": 0,
         "Kazakh SSR": 0,
         "Nuristani SSR": 3,
-        "Ukrainian SSR": 0
+        "Ukrainian SSR": 0,
+        "Azerbaijanian SSR": 0
       }
     },
     "qotd": {
@@ -338678,7 +338680,7 @@
       "963834359994007614": 1791669603829,
       "1339755726117011519": 1788994069140,
       "983175525809926146": 1790653119600,
-      "730223629849199093": 1791712513246,
+      "730223629849199093": 1791712597846,
       "418231502627667979": 1791425735660,
       "710945531794554970": 1791696733399,
       "925564822781845595": 1791557973655,
@@ -338719,7 +338721,7 @@
       "673726585194676274": 1790093109734,
       "1405587743542870188": 1791678945635,
       "1489932552394248263": 1791633003512,
-      "730696111198699600": 1791712312329,
+      "730696111198699600": 1791712555120,
       "850229826231992320": 1789468435424,
       "1202316445569273959": 1789331745467,
       "1541073090019074150": 1791398242314,
@@ -358804,9 +358806,9 @@
     }
   ],
   "_lastCollectXP": {
-    "xpGainC": 27,
-    "beforeLvlC": 23,
-    "afterLvl": 23,
+    "xpGainC": 23,
+    "beforeLvlC": 10,
+    "afterLvl": 10,
     "leveled": []
   },
   "central_bank": {
@@ -370006,7 +370008,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 76,
+      "hunger": 69.5,
       "water": 60,
       "health": 100,
       "quarters": 5,
@@ -370203,7 +370205,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 64,
+      "health": 62,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
@@ -370660,7 +370662,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 78,
+      "health": 76,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T13:02:18.688Z",
@@ -370732,7 +370734,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 82,
+      "health": 80,
       "quarters": 0,
       "cheap_streak": 1,
       "born_at": "2026-09-29T14:29:00.531Z",
@@ -370887,7 +370889,7 @@
       "name": "Jund II",
       "species": "dog",
       "alive": true,
-      "hunger": 76,
+      "hunger": 68,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -370959,7 +370961,7 @@
       "name": "Edward Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 40,
+      "hunger": 32,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -371046,7 +371048,7 @@
       "last_feed_cmd": "2026-10-11T08:38:25.679Z"
     }
   },
-  "pets_last_decay": "2026-10-11T08:36:40.232Z",
+  "pets_last_decay": "2026-10-11T09:56:41.269Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
