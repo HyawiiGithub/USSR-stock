@@ -3,7 +3,7 @@
     "1513968015048184039": {
       "username": "GOSBANK",
       "cash": 1000000,
-      "bank": 5056794,
+      "bank": 5057210,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -1167,7 +1167,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 1,
-      "heat": 15.675242626883701,
+      "heat": 14.738125072745518,
       "wanted": 0,
       "last_illegal": "2026-10-11T06:01:33.022Z",
       "total_heat_generated": 2727.890899999998,
@@ -1180,7 +1180,7 @@
       "mee6_level": 32,
       "last_laylow": "2026-10-11T05:56:00.354Z",
       "work_reminder": true,
-      "work_reminder_sent": null,
+      "work_reminder_sent": "2026-10-11T07:05:37.818Z",
       "collect_reminder": true,
       "collect_reminder_sent": "state_26@2026-10-10T12:14:55.594Z",
       "train_reminder": false,
@@ -323027,7 +323027,7 @@
       },
       "wage": 50,
       "heat": 0,
-      "underground_heat": 1239.8759159738274,
+      "underground_heat": 1239.1631688238172,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 14,
@@ -324512,16 +324512,6 @@
   },
   "gsi_history": [
     {
-      "price": 128,
-      "change_percent": 0.6700716970702603,
-      "recorded_at": "2026-10-11T02:06:41.216Z"
-    },
-    {
-      "price": 129,
-      "change_percent": 1.413838680217151,
-      "recorded_at": "2026-10-11T02:07:10.623Z"
-    },
-    {
       "price": 130,
       "change_percent": 0.9945592506133675,
       "recorded_at": "2026-10-11T02:11:41.121Z"
@@ -325010,6 +325000,16 @@
       "price": 152,
       "change_percent": 0.04305100244127759,
       "recorded_at": "2026-10-11T07:00:27.296Z"
+    },
+    {
+      "price": 152,
+      "change_percent": 0.43319865649704936,
+      "recorded_at": "2026-10-11T07:05:27.054Z"
+    },
+    {
+      "price": 138,
+      "change_percent": -8.757259395739409,
+      "recorded_at": "2026-10-11T07:05:31.418Z"
     }
   ],
   "factory_names": [
@@ -325031,10 +325031,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 55.06046434342224,
-  "money_printed": 317189.49512035935,
-  "total_bank_reserves": 5209554,
+  "money_printed": 317030.9003727992,
+  "total_bank_reserves": 5210018,
   "inflation_history": [
-    4.044822258538494,
     4.544822258538494,
     4.566668546501145,
     4.474870766103773,
@@ -325128,6 +325127,7 @@
     54.729593406546385,
     55.21027097402509,
     55.21053575552705,
+    55.06046434342224,
     55.06046434342224,
     55.06046434342224,
     55.06046434342224,
@@ -325291,7 +325291,7 @@
     "Gold Bar": 0.8045961650673261,
     "Aluminium Ingot": 1.4011820262140762,
     "Timber Planks": 0.8899828063909807,
-    "Bricks": 0.7621996786434179,
+    "Bricks": 0.7821996786434179,
     "Concrete": 1.4028673455689313,
     "Glass": 1.3951025056004653,
     "Steel Beam": 1.3653294515137033,
@@ -325375,7 +325375,7 @@
     "Reactor Core": 9,
     "Refined Fuel": 8,
     "Timber Planks": 2,
-    "Bricks": 20
+    "Bricks": 19
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -325409,18 +325409,13 @@
     "Pet Food": 9,
     "Radiator": 50,
     "Fish Stew": 53,
-    "Bricks": 80,
+    "Bricks": 81,
     "Sunflower Oil": 30,
     "Glass": 19,
     "Concrete": 3,
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Bricks",
-      "qty": 1,
-      "at": "2026-10-06T02:53:05.564Z"
-    },
     {
       "item": "Sunflower Oil",
       "qty": 1,
@@ -326915,6 +326910,11 @@
       "item": "Timber Planks",
       "qty": 2,
       "at": "2026-10-11T06:50:31.852Z"
+    },
+    {
+      "item": "Bricks",
+      "qty": 1,
+      "at": "2026-10-11T07:05:32.002Z"
     }
   ],
   "demand_history": {
@@ -333205,6 +333205,11 @@
         "demand": 1.124294371757601,
         "at": "2026-10-09T07:54:40.196Z",
         "supply": 154
+      },
+      {
+        "demand": 0.7621996786434179,
+        "at": "2026-10-11T07:05:32.002Z",
+        "supply": 133
       }
     ],
     "Sunflower Oil": [
@@ -336988,14 +336993,6 @@
   "total_rubles_history": [
     {
       "total": 7548638,
-      "at": "2026-10-11T02:21:42.596Z"
-    },
-    {
-      "total": 7548638,
-      "at": "2026-10-11T02:21:43.600Z"
-    },
-    {
-      "total": 7548638,
       "at": "2026-10-11T02:26:42.411Z"
     },
     {
@@ -337385,6 +337382,14 @@
     {
       "total": 7375700,
       "at": "2026-10-11T07:00:29.084Z"
+    },
+    {
+      "total": 7375700,
+      "at": "2026-10-11T07:05:27.972Z"
+    },
+    {
+      "total": 7375700,
+      "at": "2026-10-11T07:05:28.898Z"
     }
   ],
   "gold_rush": null,
@@ -337411,7 +337416,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-10-05T10:17:28.539Z",
-  "heat_global": 0.7360500000000012,
+  "heat_global": 0.4360500000000012,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -361602,9 +361607,9 @@
   "last_financials_week": "2026-10-05T11:11:52.356Z",
   "national_seed_done": true,
   "world1959": {
-    "tick": 259,
-    "date": "1963-12-19T00:00:00.000Z",
-    "lastTickAt": "2026-10-11T06:05:37.867Z",
+    "tick": 260,
+    "date": "1963-12-26T00:00:00.000Z",
+    "lastTickAt": "2026-10-11T07:05:39.022Z",
     "tickMinutes": 60,
     "paused": false,
     "milspending": 5,
@@ -361642,7 +361647,7 @@
         "ideology": "Liberal Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 1390.3,
+        "gdp": 1398.6,
         "pop": 183,
         "stability": 99,
         "military": 100,
@@ -361657,10 +361662,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 1168.9
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 1175.9
@@ -361776,9 +361777,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 1390.3
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 1398.6
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Defense Appropriations Act",
+            "passed": true
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -361879,9 +361890,9 @@
         "ideology": "Conservatism",
         "bloc": "nato",
         "personality": "diplomatic",
-        "gdp": 170,
+        "gdp": 170.5,
         "pop": 52,
-        "stability": 45.54629758352734,
+        "stability": 44.989072506499184,
         "military": 100,
         "readiness": 70,
         "relations": 1,
@@ -361894,10 +361905,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 155.5
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 156
@@ -362013,9 +362020,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 170
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 170.5
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Nuclear Test Moratorium",
+            "passed": false
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -362116,9 +362133,9 @@
         "ideology": "Gaullism",
         "bloc": "nato",
         "personality": "opportunistic",
-        "gdp": 177.9,
+        "gdp": 178.4,
         "pop": 46,
-        "stability": 57.340332250759516,
+        "stability": 57.797388978797066,
         "military": 100,
         "readiness": 68,
         "relations": -15,
@@ -362131,10 +362148,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": 190,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 160.1
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 162.2
@@ -362250,9 +362263,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 177.9
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 178.4
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Foreign Aid Package",
+            "passed": false
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -362353,7 +362376,7 @@
         "ideology": "Christian Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 313.6,
+        "gdp": 315.5,
         "pop": 53,
         "stability": 99,
         "military": 100,
@@ -362368,10 +362391,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 261
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 262.6
@@ -362487,9 +362506,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 313.6
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 315.5
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Nuclear Test Moratorium",
+            "passed": true
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -362590,9 +362619,9 @@
         "ideology": "Christian Democracy",
         "bloc": "nato",
         "personality": "diplomatic",
-        "gdp": 113.1,
+        "gdp": 113.4,
         "pop": 50,
-        "stability": 57.38615779288425,
+        "stability": 57.86492525680567,
         "military": 100,
         "readiness": 55,
         "relations": 1,
@@ -362605,10 +362634,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 101.2
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 102.5
@@ -362724,9 +362749,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 113.1
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 113.4
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Nuclear Test Moratorium",
+            "passed": true
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -362827,9 +362862,9 @@
         "ideology": "Conservatism",
         "bloc": "nato",
         "personality": "defensive",
-        "gdp": 72.2,
+        "gdp": 72.4,
         "pop": 18,
-        "stability": 87.28038343280002,
+        "stability": 86.43273915647097,
         "military": 100,
         "readiness": 95,
         "relations": 0,
@@ -362842,10 +362877,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 65.7
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 65.9
@@ -362961,9 +362992,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 72.2
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 72.4
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Foreign Aid Package",
+            "passed": true
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -363064,9 +363105,9 @@
         "ideology": "Liberal Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 150.5,
+        "gdp": 151.4,
         "pop": 94,
-        "stability": 99,
+        "stability": 98.40282025026549,
         "military": 100,
         "readiness": 45,
         "relations": 0,
@@ -363079,10 +363120,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 126.4
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 127.2
@@ -363198,9 +363235,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 150.5
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 151.4
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Trade Tariff Revision",
+            "passed": false
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -363303,7 +363350,7 @@
         "personality": "defensive",
         "gdp": 15,
         "pop": 28,
-        "stability": 51.75007329302565,
+        "stability": 52.3373953147505,
         "military": 100,
         "readiness": 95,
         "relations": 0,
@@ -363316,10 +363363,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 15
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 15
@@ -363435,6 +363478,10 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 15
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 15
           }
         ],
         "bills": []
@@ -363447,9 +363494,9 @@
         "ideology": "Marxism-Leninism",
         "bloc": "wp",
         "personality": "defensive",
-        "gdp": 45.2,
+        "gdp": 45.3,
         "pop": 30,
-        "stability": 54.359521243292654,
+        "stability": 53.46607168814806,
         "military": 100,
         "readiness": 95,
         "relations": 0,
@@ -363462,10 +363509,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 42.3
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 42.4
@@ -363581,6 +363624,10 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 45.2
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 45.3
           }
         ],
         "bills": []
@@ -363593,9 +363640,9 @@
         "ideology": "Marxism-Leninism",
         "bloc": "wp",
         "personality": "defensive",
-        "gdp": 50.3,
+        "gdp": 50.5,
         "pop": 17,
-        "stability": 49.14500378967784,
+        "stability": 49.92556169537679,
         "military": 100,
         "readiness": 95,
         "relations": 0,
@@ -363608,10 +363655,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 47.3
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 47.4
@@ -363727,6 +363770,10 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 50.3
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 50.5
           }
         ],
         "bills": []
@@ -363739,9 +363786,9 @@
         "ideology": "Maoism",
         "bloc": "wp",
         "personality": "aggressive",
-        "gdp": 108.9,
+        "gdp": 109.2,
         "pop": 660,
-        "stability": 52.00180044422719,
+        "stability": 51.18211378682308,
         "military": 100,
         "readiness": 65,
         "relations": 0,
@@ -363754,10 +363801,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": 157,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 100.2
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 100.5
@@ -363873,6 +363916,10 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 108.9
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 109.2
           }
         ],
         "bills": []
@@ -363885,9 +363932,9 @@
         "ideology": "Titoism",
         "bloc": "neutral",
         "personality": "opportunistic",
-        "gdp": 33.2,
+        "gdp": 33.3,
         "pop": 18,
-        "stability": 62.946942212703306,
+        "stability": 63.27011606126771,
         "military": 77.8055,
         "readiness": 58,
         "relations": -15,
@@ -363900,10 +363947,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 30.3
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 30.4
@@ -364019,6 +364062,10 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 33.2
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 33.3
           }
         ],
         "bills": []
@@ -364031,9 +364078,9 @@
         "ideology": "Non-Alignment",
         "bloc": "neutral",
         "personality": "diplomatic",
-        "gdp": 89.4,
+        "gdp": 90.6,
         "pop": 440,
-        "stability": 63.74593153456543,
+        "stability": 64.141187556422,
         "military": 77.8055,
         "readiness": 50,
         "relations": 6,
@@ -364046,10 +364093,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 81.6
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 81.8
@@ -364165,9 +364208,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 89.4
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 89.7
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Trade Tariff Revision",
+            "passed": true
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -364270,7 +364323,7 @@
         "personality": "aggressive",
         "gdp": 12,
         "pop": 26,
-        "stability": 44.739605916435714,
+        "stability": 44.58086248592212,
         "military": 100,
         "readiness": 55,
         "relations": 0,
@@ -364283,10 +364336,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 12
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 12
@@ -364402,6 +364451,10 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 12
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 12
           }
         ],
         "bills": []
@@ -364414,9 +364467,9 @@
         "ideology": "Populism",
         "bloc": "neutral",
         "personality": "economic",
-        "gdp": 65.6,
+        "gdp": 66.7,
         "pop": 72,
-        "stability": 98.13264377100478,
+        "stability": 98.31963104161179,
         "military": 78.8055,
         "readiness": 45,
         "relations": 0,
@@ -364429,10 +364482,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 54.5
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 54.8
@@ -364548,9 +364597,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 65.6
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 66
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Industrial Subsidy Bill",
+            "passed": true
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -364651,7 +364710,7 @@
         "ideology": "Social Democracy",
         "bloc": "neutral",
         "personality": "economic",
-        "gdp": 48.3,
+        "gdp": 48.6,
         "pop": 7,
         "stability": 99,
         "military": 78.8055,
@@ -364666,10 +364725,6 @@
         "lastElectionTick": 144,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1963-05-30T00:00:00.000Z",
-            "v": 40.3
-          },
           {
             "t": "1963-06-06T00:00:00.000Z",
             "v": 40.5
@@ -364785,9 +364840,19 @@
           {
             "t": "1963-12-19T00:00:00.000Z",
             "v": 48.3
+          },
+          {
+            "t": "1963-12-26T00:00:00.000Z",
+            "v": 48.6
           }
         ],
         "bills": [
+          {
+            "tick": 260,
+            "date": "1963-12-26",
+            "title": "Foreign Aid Package",
+            "passed": true
+          },
           {
             "tick": 250,
             "date": "1963-10-17",
@@ -364891,12 +364956,8 @@
       "china|uk": -30,
       "eger|france": -30
     },
-    "lastIncome": 414,
+    "lastIncome": 416,
     "gdpHistory": [
-      {
-        "t": "1963-01-10T00:00:00.000Z",
-        "v": 10378.39
-      },
       {
         "t": "1963-01-17T00:00:00.000Z",
         "v": 10375.61
@@ -365092,13 +365153,13 @@
       {
         "t": "1963-12-19T00:00:00.000Z",
         "v": 10292.55
+      },
+      {
+        "t": "1963-12-26T00:00:00.000Z",
+        "v": 10299.09
       }
     ],
     "goldHistory": [
-      {
-        "t": "1963-01-10T00:00:00.000Z",
-        "v": 2.3
-      },
       {
         "t": "1963-01-17T00:00:00.000Z",
         "v": 2.32
@@ -365294,6 +365355,10 @@
       {
         "t": "1963-12-19T00:00:00.000Z",
         "v": 3.5
+      },
+      {
+        "t": "1963-12-26T00:00:00.000Z",
+        "v": 3.52
       }
     ]
   },
@@ -365302,56 +365367,6 @@
     "at": "2026-10-08T12:39:35.549Z"
   },
   "world_news": [
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "United States: rejected \"Trade Tariff Revision\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "United Kingdom: passed \"Civil Rights Measure\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "France: passed \"Industrial Subsidy Bill\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "West Germany: rejected \"Trade Tariff Revision\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "Italy: passed \"Industrial Subsidy Bill\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "Canada: passed \"Nuclear Test Moratorium\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "Japan: passed \"Highway Infrastructure Bill\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "India: passed \"Highway Infrastructure Bill\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "Brazil: rejected \"Industrial Subsidy Bill\""
-    },
-    {
-      "at": "2026-10-09T17:58:51.767Z",
-      "tag": "VOTE",
-      "text": "Sweden: passed \"Immigration Quota Act\""
-    },
     {
       "at": "2026-10-10T03:59:10.624Z",
       "tag": "VOTE",
@@ -365451,6 +365466,56 @@
       "at": "2026-10-10T14:01:59.752Z",
       "tag": "VOTE",
       "text": "Sweden: rejected \"Highway Infrastructure Bill\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.028Z",
+      "tag": "VOTE",
+      "text": "United States: passed \"Defense Appropriations Act\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "United Kingdom: rejected \"Nuclear Test Moratorium\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "France: rejected \"Foreign Aid Package\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "West Germany: passed \"Nuclear Test Moratorium\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "Italy: passed \"Nuclear Test Moratorium\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "Canada: passed \"Foreign Aid Package\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "Japan: rejected \"Trade Tariff Revision\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "India: passed \"Trade Tariff Revision\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "Brazil: passed \"Industrial Subsidy Bill\""
+    },
+    {
+      "at": "2026-10-11T07:05:39.029Z",
+      "tag": "VOTE",
+      "text": "Sweden: passed \"Foreign Aid Package\""
     }
   ],
   "inflation_adjust": 9.760464343422242,
@@ -365486,16 +365551,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 7.69,
+    "rub_per_usd": 7.63,
     "history": [
-      {
-        "rate": 6.06,
-        "at": "2026-10-10T09:55:03.677Z"
-      },
-      {
-        "rate": 6.05,
-        "at": "2026-10-10T09:59:19.831Z"
-      },
       {
         "rate": 6.15,
         "at": "2026-10-10T10:05:04.099Z"
@@ -365887,14 +365944,22 @@
       {
         "rate": 7.69,
         "at": "2026-10-11T06:55:25.873Z"
+      },
+      {
+        "rate": 7.71,
+        "at": "2026-10-11T07:05:25.825Z"
+      },
+      {
+        "rate": 7.63,
+        "at": "2026-10-11T07:05:40.599Z"
       }
     ],
-    "last_update": "2026-10-11T06:55:25.873Z",
+    "last_update": "2026-10-11T07:05:40.599Z",
     "manual_override": null
   },
   "national_budget": {
     "tax_collected": 118753,
-    "trade_income": 42030,
+    "trade_income": 42446,
     "other_income": 2102005,
     "defense_spending": 691622,
     "payroll_paid": 2415,
@@ -366719,6 +366784,11 @@
         "kind": "trade",
         "amount": 414,
         "at": "2026-10-11T06:05:38.375Z"
+      },
+      {
+        "kind": "trade",
+        "amount": 416,
+        "at": "2026-10-11T07:05:39.446Z"
       }
     ],
     "spending_history": [
@@ -367693,20 +367763,8 @@
         "at": "2026-10-08T15:55:49.054Z"
       }
     ],
-    "last_update": "2026-10-11T06:05:38.375Z",
+    "last_update": "2026-10-11T07:05:39.446Z",
     "balance_history": [
-      {
-        "balance": 1567111,
-        "income": 2261148,
-        "spending": 694037,
-        "at": "2026-10-11T02:21:42.738Z"
-      },
-      {
-        "balance": 1567111,
-        "income": 2261148,
-        "spending": 694037,
-        "at": "2026-10-11T02:21:43.742Z"
-      },
       {
         "balance": 1567111,
         "income": 2261148,
@@ -368294,6 +368352,18 @@
         "income": 2262788,
         "spending": 694037,
         "at": "2026-10-11T07:00:29.232Z"
+      },
+      {
+        "balance": 1568751,
+        "income": 2262788,
+        "spending": 694037,
+        "at": "2026-10-11T07:05:28.105Z"
+      },
+      {
+        "balance": 1568751,
+        "income": 2262788,
+        "spending": 694037,
+        "at": "2026-10-11T07:05:29.014Z"
       }
     ]
   },
@@ -371804,16 +371874,6 @@
     {
       "gini": 99.721866838686,
       "top10": 100,
-      "at": "2026-10-11T02:21:42.609Z"
-    },
-    {
-      "gini": 99.721866838686,
-      "top10": 100,
-      "at": "2026-10-11T02:21:43.619Z"
-    },
-    {
-      "gini": 99.721866838686,
-      "top10": 100,
       "at": "2026-10-11T02:26:42.428Z"
     },
     {
@@ -372300,17 +372360,19 @@
       "gini": 99.7173612000056,
       "top10": 100,
       "at": "2026-10-11T07:00:29.094Z"
+    },
+    {
+      "gini": 99.7173612000056,
+      "top10": 100,
+      "at": "2026-10-11T07:05:27.983Z"
+    },
+    {
+      "gini": 99.7173612000056,
+      "top10": 100,
+      "at": "2026-10-11T07:05:28.913Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10461525,
-      "at": "2026-10-11T02:21:42.737Z"
-    },
-    {
-      "gdp": 10461525,
-      "at": "2026-10-11T02:21:43.742Z"
-    },
     {
       "gdp": 10461525,
       "at": "2026-10-11T02:26:42.554Z"
@@ -372702,6 +372764,14 @@
     {
       "gdp": 10299087,
       "at": "2026-10-11T07:00:29.231Z"
+    },
+    {
+      "gdp": 10299087,
+      "at": "2026-10-11T07:05:28.104Z"
+    },
+    {
+      "gdp": 10299087,
+      "at": "2026-10-11T07:05:29.014Z"
     }
   ],
   "purge_allowed": [
@@ -373494,7 +373564,7 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 0.00048793876368515753,
+        "rate": 0.005331556147950683,
         "set": true
       },
       "supply": 16,
@@ -374491,18 +374561,6 @@
       "total": 1456076,
       "gdp": 10461525,
       "ratio": 13.92,
-      "at": "2026-10-11T02:21:42.764Z"
-    },
-    {
-      "total": 1456076,
-      "gdp": 10461525,
-      "ratio": 13.92,
-      "at": "2026-10-11T02:21:43.752Z"
-    },
-    {
-      "total": 1456076,
-      "gdp": 10461525,
-      "ratio": 13.92,
       "at": "2026-10-11T02:26:42.562Z"
     },
     {
@@ -375086,24 +375144,21 @@
       "gdp": 10299087,
       "ratio": 14.31,
       "at": "2026-10-11T07:00:29.240Z"
+    },
+    {
+      "total": 1474054,
+      "gdp": 10299087,
+      "ratio": 14.31,
+      "at": "2026-10-11T07:05:28.114Z"
+    },
+    {
+      "total": 1474054,
+      "gdp": 10299087,
+      "ratio": 14.31,
+      "at": "2026-10-11T07:05:29.022Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8432,
-      "citizens": 8432,
-      "at": "2026-10-11T04:15:27.391Z"
-    },
-    {
-      "total": 7738,
-      "citizens": 8432,
-      "at": "2026-10-11T04:15:28.102Z"
-    },
-    {
-      "total": 8432,
-      "citizens": 8432,
-      "at": "2026-10-11T04:15:28.449Z"
-    },
     {
       "total": 8432,
       "citizens": 8432,
@@ -375588,6 +375643,21 @@
       "total": 8434,
       "citizens": 8434,
       "at": "2026-10-11T07:00:29.241Z"
+    },
+    {
+      "total": 8434,
+      "citizens": 8434,
+      "at": "2026-10-11T07:05:28.115Z"
+    },
+    {
+      "total": 7736,
+      "citizens": 8434,
+      "at": "2026-10-11T07:05:28.884Z"
+    },
+    {
+      "total": 8434,
+      "citizens": 8434,
+      "at": "2026-10-11T07:05:29.023Z"
     }
   ],
   "debt_watch_band": 0,
@@ -375676,7 +375746,7 @@
   "turn_digest_message": "1557783596444422255",
   "chat_rubles_enabled": false,
   "state_debt_owed": 0,
-  "inflation_updated_at": "2026-10-11T06:55:25.625Z",
+  "inflation_updated_at": "2026-10-11T07:05:25.668Z",
   "vault_axe_pending": 0,
   "vault_axe_unb": 0,
   "vault_axed": {
@@ -375693,12 +375763,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-10T22:16:12.087Z",
-          "wealth": 43863,
-          "members": 199,
-          "works": 0
-        },
         {
           "at": "2026-10-10T22:21:32.139Z",
           "wealth": 77292,
@@ -376292,18 +376356,18 @@
           "wealth": 32791,
           "members": 198,
           "works": 0
+        },
+        {
+          "at": "2026-10-11T07:05:28.116Z",
+          "wealth": 3001,
+          "members": 199,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-10T22:16:12.087Z",
-          "wealth": 0,
-          "members": 141,
-          "works": 0
-        },
         {
           "at": "2026-10-10T22:21:32.139Z",
           "wealth": 0,
@@ -376897,18 +376961,18 @@
           "wealth": 0,
           "members": 1,
           "works": 0
+        },
+        {
+          "at": "2026-10-11T07:05:28.116Z",
+          "wealth": 0,
+          "members": 1,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-10T22:16:12.087Z",
-          "wealth": 0,
-          "members": 0,
-          "works": 0
-        },
         {
           "at": "2026-10-10T22:21:32.139Z",
           "wealth": 0,
@@ -377502,18 +377566,18 @@
           "wealth": 0,
           "members": 0,
           "works": 0
+        },
+        {
+          "at": "2026-10-11T07:05:28.116Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-10T22:16:12.087Z",
-          "wealth": 0,
-          "members": 5,
-          "works": 0
-        },
         {
           "at": "2026-10-10T22:21:32.139Z",
           "wealth": 0,
@@ -378104,6 +378168,12 @@
         },
         {
           "at": "2026-10-11T07:00:28.189Z",
+          "wealth": 0,
+          "members": 5,
+          "works": 0
+        },
+        {
+          "at": "2026-10-11T07:05:28.116Z",
           "wealth": 0,
           "members": 5,
           "works": 0
