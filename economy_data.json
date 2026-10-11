@@ -601,7 +601,7 @@
     },
     "1521043721129558017": {
       "username": "",
-      "cash": 374,
+      "cash": 429,
       "bank": 0,
       "resources": {
         "Peat": 1
@@ -609,7 +609,6 @@
       "inventory": {
         "Canned Fish": 1,
         "Cake": 2,
-        "Bread": 1,
         "Smoked Fish": 16
       },
       "company_id": null,
@@ -322164,13 +322163,13 @@
       "inventory": {
         "Salt": 62,
         "Gold": 10,
-        "Natural Gas": 5,
+        "Natural Gas": 6,
         "Sugar": 4,
         "Phosphorite": 2,
         "Oil Shale": 8,
         "Peat": 4,
-        "Timber": 15,
-        "Grapes": 7,
+        "Timber": 16,
+        "Grapes": 8,
         "Fish": 12,
         "Clay": 4,
         "Sulphur": 2,
@@ -322178,7 +322177,7 @@
         "Lead": 68,
         "Gold Bar": 3,
         "Limestone": 9,
-        "Cotton": 8,
+        "Cotton": 10,
         "Wine": 3,
         "Corn Meal": 5,
         "Antimony Alloy": 1,
@@ -322231,7 +322230,6 @@
         4,
         4,
         4,
-        4,
         5,
         5,
         4,
@@ -322309,6 +322307,7 @@
         5,
         5,
         5,
+        6,
         6,
         6,
         6,
@@ -322339,7 +322338,6 @@
       "sales_team": 1,
       "prev_price": 6,
       "value_history": [
-        386242,
         386242,
         386242,
         386242,
@@ -322438,7 +322436,8 @@
         413648,
         413648,
         413648,
-        413648
+        413648,
+        413654
       ]
     },
     "state_25": {
@@ -324518,11 +324517,6 @@
   },
   "gsi_history": [
     {
-      "price": 140,
-      "change_percent": 0.9549841807651653,
-      "recorded_at": "2026-10-11T04:15:26.345Z"
-    },
-    {
       "price": 141,
       "change_percent": 0.7228574354706748,
       "recorded_at": "2026-10-11T04:15:39.811Z"
@@ -325016,6 +325010,11 @@
       "price": 147,
       "change_percent": 1.180117670115375,
       "recorded_at": "2026-10-11T08:38:09.845Z"
+    },
+    {
+      "price": 147,
+      "change_percent": 0.5350041704290696,
+      "recorded_at": "2026-10-11T08:38:25.001Z"
     }
   ],
   "factory_names": [
@@ -370879,17 +370878,17 @@
       "name": "Edward Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
-      "health": 92,
+      "health": 100,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-10-08T19:51:41.850Z",
-      "last_fed": "2026-10-10T23:41:07.887Z",
+      "last_fed": "2026-10-11T08:38:25.678Z",
       "last_watered": null,
       "death": null,
-      "friendship": 33,
-      "last_pet": "2026-10-10T10:03:00.792Z",
+      "friendship": 36,
+      "last_pet": "2026-10-11T08:39:08.795Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -370902,12 +370901,14 @@
       "toys": [],
       "acc": {
         "loot": null,
-        "speed_time": null,
+        "speed_time": "drink",
         "speed_inst": null,
         "double": null,
         "treasure": null
       },
-      "acc_cats": [],
+      "acc_cats": [
+        "speed"
+      ],
       "armour": null,
       "inv": {
         "collar": 0,
@@ -370932,10 +370933,10 @@
         "epic": 0,
         "legendary": 0
       },
-      "hunts": 1,
+      "hunts": 2,
       "hunt": {
-        "start": "2026-10-09T12:40:58.357Z",
-        "end": "2026-10-10T00:40:58.357Z",
+        "start": "2026-10-11T08:39:06.976Z",
+        "end": "2026-10-11T20:03:06.976Z",
         "durH": 12,
         "instant": false,
         "lootMult": 1,
@@ -370958,10 +370959,10 @@
         "day": "",
         "n": 0
       },
-      "lastPetAct": "2026-10-10T10:03:00.792Z",
-      "starve_since": "2026-10-11T05:21:34.447Z",
-      "warned_empty": true,
-      "last_feed_cmd": "2026-10-10T23:41:07.888Z"
+      "lastPetAct": "2026-10-11T08:39:08.795Z",
+      "starve_since": null,
+      "warned_empty": false,
+      "last_feed_cmd": "2026-10-11T08:38:25.679Z"
     }
   },
   "pets_last_decay": "2026-10-11T08:36:40.232Z",
