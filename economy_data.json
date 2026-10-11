@@ -325535,7 +325535,6 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Machine Parts": 4,
-    "Reactor Core": 2,
     "Bricks": 14,
     "Fuel": 6,
     "Gas Fuel": 11
@@ -325558,7 +325557,7 @@
     "Aluminium Sheet": 8,
     "Circuit Board": 150,
     "Cotton Fabric": 13,
-    "Reactor Core": 46,
+    "Reactor Core": 48,
     "Gas Fuel": 273,
     "Steel Beam": 96,
     "Machine Parts": 360,
@@ -325579,11 +325578,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 1,
-      "at": "2026-10-06T06:53:06.174Z"
-    },
     {
       "item": "Bricks",
       "qty": 1,
@@ -327078,6 +327072,11 @@
       "item": "Bricks",
       "qty": 2,
       "at": "2026-10-11T11:07:26.778Z"
+    },
+    {
+      "item": "Reactor Core",
+      "qty": 2,
+      "at": "2026-10-11T11:36:10.476Z"
     }
   ],
   "demand_history": {
@@ -331039,6 +331038,11 @@
       {
         "demand": 1.3822448553691862,
         "at": "2026-10-11T10:50:33.584Z",
+        "supply": 13
+      },
+      {
+        "demand": 1.3822448553691862,
+        "at": "2026-10-11T11:36:10.477Z",
         "supply": 13
       }
     ],
