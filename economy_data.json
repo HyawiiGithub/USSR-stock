@@ -1166,7 +1166,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 251,
-      "heat": 0.9215185321973252,
+      "heat": 0.09598995894810913,
       "wanted": 0,
       "last_illegal": "2026-10-11T12:19:55.888Z",
       "total_heat_generated": 2743.0258999999983,
@@ -243804,7 +243804,7 @@
       "work_reminder": false,
       "work_reminder_sent": null,
       "collect_reminder": true,
-      "collect_reminder_sent": "state_27@2026-10-11T01:24:40.537Z",
+      "collect_reminder_sent": "state_27@2026-10-11T08:05:29.992Z",
       "train_reminder": false,
       "train_reminder_sent": "guard drill@2026-09-30T06:59:57.687Z",
       "deal_reminder": true,
@@ -323342,8 +323342,8 @@
         "manager": 0
       },
       "wage": 50,
-      "heat": 1.0077498780544265,
-      "underground_heat": 1231.9543886017937,
+      "heat": 0.4662423129111829,
+      "underground_heat": 1231.2296815799766,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 15,
@@ -324829,11 +324829,6 @@
   "gsi_history": [
     {
       "price": 149,
-      "change_percent": 0.5323107779910387,
-      "recorded_at": "2026-10-11T08:40:52.723Z"
-    },
-    {
-      "price": 149,
       "change_percent": 0.42961983997552544,
       "recorded_at": "2026-10-11T08:45:28.603Z"
     },
@@ -325326,6 +325321,11 @@
       "price": 144,
       "change_percent": 0.16683356944955305,
       "recorded_at": "2026-10-11T14:01:20.872Z"
+    },
+    {
+      "price": 145,
+      "change_percent": 0.8042767397063565,
+      "recorded_at": "2026-10-11T14:06:20.979Z"
     }
   ],
   "factory_names": [
@@ -337367,10 +337367,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 7377374,
-      "at": "2026-10-11T09:15:31.156Z"
-    },
-    {
       "total": 7377499,
       "at": "2026-10-11T09:20:29.707Z"
     },
@@ -337765,6 +337761,10 @@
     {
       "total": 7377986,
       "at": "2026-10-11T14:01:22.143Z"
+    },
+    {
+      "total": 7377986,
+      "at": "2026-10-11T14:06:21.265Z"
     }
   ],
   "gold_rush": null,
@@ -368176,12 +368176,6 @@
         "balance": 1570004,
         "income": 2264041,
         "spending": 694037,
-        "at": "2026-10-11T09:15:31.304Z"
-      },
-      {
-        "balance": 1570004,
-        "income": 2264041,
-        "spending": 694037,
         "at": "2026-10-11T09:20:29.994Z"
       },
       {
@@ -368771,6 +368765,12 @@
         "income": 2265741,
         "spending": 694037,
         "at": "2026-10-11T14:01:22.441Z"
+      },
+      {
+        "balance": 1571704,
+        "income": 2265741,
+        "spending": 694037,
+        "at": "2026-10-11T14:06:21.594Z"
       }
     ]
   },
@@ -370311,7 +370311,7 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 100,
+      "hunger": 93.5,
       "water": 60,
       "health": 100,
       "quarters": 5,
@@ -370508,7 +370508,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 60,
+      "health": 58,
       "quarters": 1,
       "cheap_streak": 0,
       "born_at": "2026-09-20T12:56:31.233Z",
@@ -370965,15 +370965,15 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 74,
+      "health": 72,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-09-29T13:02:18.688Z",
       "last_fed": "2026-10-10T12:23:26.371Z",
       "last_watered": null,
       "death": null,
-      "friendship": 79,
-      "last_pet": "2026-10-10T12:23:29.468Z",
+      "friendship": 76,
+      "last_pet": "2026-10-11T14:06:24.465Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -371037,7 +371037,7 @@
       "alive": true,
       "hunger": 0,
       "water": 60,
-      "health": 78,
+      "health": 76,
       "quarters": 0,
       "cheap_streak": 1,
       "born_at": "2026-09-29T14:29:00.531Z",
@@ -371192,7 +371192,7 @@
       "name": "Jund II",
       "species": "dog",
       "alive": true,
-      "hunger": 60,
+      "hunger": 52,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -371264,7 +371264,7 @@
       "name": "Edward Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 24,
+      "hunger": 16,
       "water": 60,
       "health": 100,
       "quarters": 0,
@@ -371351,7 +371351,7 @@
       "last_feed_cmd": "2026-10-11T08:38:25.679Z"
     }
   },
-  "pets_last_decay": "2026-10-11T11:29:12.258Z",
+  "pets_last_decay": "2026-10-11T14:06:24.465Z",
   "national_market": {
     "stock": {
       "Machine Parts": {
@@ -372281,11 +372281,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.71686108735231,
-      "top10": 100,
-      "at": "2026-10-11T09:15:31.170Z"
-    },
-    {
       "gini": 99.71683883310185,
       "top10": 100,
       "at": "2026-10-11T09:20:29.724Z"
@@ -372779,13 +372774,14 @@
       "gini": 99.7157223434416,
       "top10": 100,
       "at": "2026-10-11T14:01:22.160Z"
+    },
+    {
+      "gini": 99.7157223434416,
+      "top10": 100,
+      "at": "2026-10-11T14:06:21.284Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10415130,
-      "at": "2026-10-11T09:15:31.304Z"
-    },
     {
       "gdp": 10415267,
       "at": "2026-10-11T09:20:29.994Z"
@@ -373181,6 +373177,10 @@
     {
       "gdp": 10415227,
       "at": "2026-10-11T14:01:22.441Z"
+    },
+    {
+      "gdp": 10415227,
+      "at": "2026-10-11T14:06:21.594Z"
     }
   ],
   "purge_allowed": [
@@ -373973,7 +373973,7 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 0.005329780146568954,
+        "rate": 0.002157788267026298,
         "set": true
       },
       "supply": 16,
@@ -374967,12 +374967,6 @@
   },
   "debt_history": [
     {
-      "total": 1483135,
-      "gdp": 10415130,
-      "ratio": 14.24,
-      "at": "2026-10-11T09:15:31.312Z"
-    },
-    {
       "total": 1487699,
       "gdp": 10415267,
       "ratio": 14.28,
@@ -375565,14 +375559,15 @@
       "gdp": 10415227,
       "ratio": 14.42,
       "at": "2026-10-11T14:01:22.503Z"
+    },
+    {
+      "total": 1501436,
+      "gdp": 10415227,
+      "ratio": 14.42,
+      "at": "2026-10-11T14:06:21.672Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 7736,
-      "citizens": 8437,
-      "at": "2026-10-11T10:30:32.407Z"
-    },
     {
       "total": 8437,
       "citizens": 8437,
@@ -376067,6 +376062,11 @@
       "total": 8442,
       "citizens": 8442,
       "at": "2026-10-11T14:01:22.504Z"
+    },
+    {
+      "total": 8442,
+      "citizens": 8442,
+      "at": "2026-10-11T14:06:21.674Z"
     }
   ],
   "debt_watch_band": 0,
@@ -376341,12 +376341,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-11T05:30:28.240Z",
-          "wealth": 3001,
-          "members": 199,
-          "works": 0
-        },
         {
           "at": "2026-10-11T05:35:28.167Z",
           "wealth": 28032,
@@ -376940,18 +376934,18 @@
           "wealth": 3002,
           "members": 199,
           "works": 0
+        },
+        {
+          "at": "2026-10-11T14:06:21.674Z",
+          "wealth": 7415,
+          "members": 200,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-11T05:30:28.240Z",
-          "wealth": 0,
-          "members": 1,
-          "works": 0
-        },
         {
           "at": "2026-10-11T05:35:28.167Z",
           "wealth": 0,
@@ -377545,18 +377539,18 @@
           "wealth": 4414,
           "members": 1,
           "works": 0
+        },
+        {
+          "at": "2026-10-11T14:06:21.674Z",
+          "wealth": 4414,
+          "members": 1,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-11T05:30:28.240Z",
-          "wealth": 0,
-          "members": 0,
-          "works": 0
-        },
         {
           "at": "2026-10-11T05:35:28.167Z",
           "wealth": 0,
@@ -378150,18 +378144,18 @@
           "wealth": 0,
           "members": 0,
           "works": 0
+        },
+        {
+          "at": "2026-10-11T14:06:21.675Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-11T05:30:28.240Z",
-          "wealth": 0,
-          "members": 5,
-          "works": 0
-        },
         {
           "at": "2026-10-11T05:35:28.167Z",
           "wealth": 0,
@@ -378752,6 +378746,12 @@
         },
         {
           "at": "2026-10-11T14:01:21.527Z",
+          "wealth": 30119,
+          "members": 3,
+          "works": 0
+        },
+        {
+          "at": "2026-10-11T14:06:21.675Z",
           "wealth": 30119,
           "members": 3,
           "works": 0
