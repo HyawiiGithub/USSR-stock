@@ -325690,7 +325690,7 @@
     "Machine Parts": 3,
     "Bricks": 11,
     "Fuel": 5,
-    "Gas Fuel": 5
+    "Gas Fuel": 4
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -325711,7 +325711,7 @@
     "Circuit Board": 150,
     "Cotton Fabric": 13,
     "Reactor Core": 48,
-    "Gas Fuel": 279,
+    "Gas Fuel": 280,
     "Steel Beam": 96,
     "Machine Parts": 361,
     "Sugar": 61,
@@ -325731,11 +325731,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Gas Fuel",
-      "qty": 1,
-      "at": "2026-10-06T09:08:06.312Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 1,
@@ -327230,6 +327225,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-10-11T13:51:16.828Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 1,
+      "at": "2026-10-11T14:06:16.970Z"
     }
   ],
   "demand_history": {
@@ -331202,11 +331202,6 @@
     "Gas Fuel": [
       {
         "demand": 1.358879109557159,
-        "at": "2026-10-03T19:31:13.249Z",
-        "supply": 25
-      },
-      {
-        "demand": 1.358879109557159,
         "at": "2026-10-03T21:31:14.659Z",
         "supply": 25
       },
@@ -331498,6 +331493,11 @@
       {
         "demand": 1.198453400781562,
         "at": "2026-10-11T13:51:16.828Z",
+        "supply": 112
+      },
+      {
+        "demand": 1.2006680075754188,
+        "at": "2026-10-11T14:06:16.970Z",
         "supply": 112
       }
     ],
