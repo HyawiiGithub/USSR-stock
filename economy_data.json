@@ -326087,7 +326087,6 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Bricks": 1,
     "Cake": 10,
     "Circuit Board": 2
   },
@@ -326123,18 +326122,13 @@
     "Pet Food": 11,
     "Radiator": 50,
     "Fish Stew": 53,
-    "Bricks": 99,
+    "Bricks": 100,
     "Sunflower Oil": 30,
     "Glass": 19,
     "Concrete": 3,
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Bricks",
-      "qty": 2,
-      "at": "2026-10-06T17:25:14.717Z"
-    },
     {
       "item": "Reactor Core",
       "qty": 2,
@@ -327629,6 +327623,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-10-11T21:36:21.253Z"
+    },
+    {
+      "item": "Bricks",
+      "qty": 1,
+      "at": "2026-10-11T21:51:21.253Z"
     }
   ],
   "demand_history": {
@@ -333707,11 +333706,6 @@
     "Bricks": [
       {
         "demand": 1.333462568041448,
-        "at": "2026-09-26T13:43:58.792Z",
-        "supply": 29
-      },
-      {
-        "demand": 1.333462568041448,
         "at": "2026-09-26T14:59:00.184Z",
         "supply": 30
       },
@@ -334003,6 +333997,11 @@
       {
         "demand": 1.139426241601745,
         "at": "2026-10-11T19:36:20.961Z",
+        "supply": 151
+      },
+      {
+        "demand": 1.139426241601745,
+        "at": "2026-10-11T21:51:21.253Z",
         "supply": 151
       }
     ],
