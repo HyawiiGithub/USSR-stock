@@ -1178,7 +1178,7 @@
       "last_daily_work_date": "2026-10-11",
       "mee6_level": 32,
       "last_laylow": "2026-10-11T05:56:00.354Z",
-      "work_reminder": false,
+      "work_reminder": true,
       "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_26@2026-10-11T02:31:52.207Z",
@@ -294850,8 +294850,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 18,
-      "bot_xp": 2556,
-      "bot_total_xp": 20931,
+      "bot_xp": 2580,
+      "bot_total_xp": 20955,
       "daily_work_count": 81,
       "shock_worker": false,
       "last_laylow": null,
@@ -313927,7 +313927,7 @@
       "pet_food_source": {}
     },
     "1101540379859365899": {
-      "cash": 20,
+      "cash": 35,
       "bank": 0,
       "resources": {
         "Coal": 1
@@ -313936,12 +313936,12 @@
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": "2026-10-11T01:39:12.260Z",
-      "work_count": 2,
+      "last_work": "2026-10-11T11:30:47.889Z",
+      "work_count": 3,
       "last_claim": null,
       "ssr_region": "Russian SFSR",
-      "employed_at": null,
-      "is_employed": false,
+      "employed_at": "Prince Pakistani Atomic Consortium",
+      "is_employed": true,
       "is_state_director": false,
       "director_of": null,
       "ceo_of": null,
@@ -313950,10 +313950,10 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 99,
-      "bot_total_xp": 99,
-      "daily_work_count": 0,
+      "bot_level": 1,
+      "bot_xp": 18,
+      "bot_total_xp": 118,
+      "daily_work_count": 1,
       "shock_worker": false,
       "last_laylow": null,
       "work_reminder": false,
@@ -313964,7 +313964,11 @@
       "train_reminder_sent": null,
       "deal_reminder": false,
       "deal_reminder_sent": null,
-      "pet_food_source": {}
+      "pet_food_source": {},
+      "work_streak": 1,
+      "last_work_day": "2026-10-11",
+      "last_daily_work_date": "2026-10-11",
+      "mee6_level": 1
     },
     "1523907314657001564": {
       "cash": 0,
@@ -323313,7 +323317,7 @@
       "founder_shares": 0,
       "share_price": 9,
       "market_cap": 900000,
-      "employees": 26,
+      "employees": 27,
       "level": 1,
       "buildings": {
         "Uranium Mine": {
@@ -323364,7 +323368,7 @@
       },
       "inventory": {
         "Iron Ore": 176,
-        "Coal": 83,
+        "Coal": 85,
         "Uranium": 2,
         "Lead": 71,
         "Timber Planks": 248,
@@ -323399,7 +323403,7 @@
         "Graphite": 1,
         "Manganese": 1,
         "Reactor Core": 6,
-        "Wheat": 194,
+        "Wheat": 193,
         "Oil": 19,
         "Gold": 3,
         "Sugar": 5
@@ -323407,7 +323411,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-11T08:05:29.992Z",
       "price_history": [
-        5,
         5,
         5,
         5,
@@ -323506,6 +323509,7 @@
         9,
         9,
         9,
+        9,
         9
       ],
       "is_state_owned": false,
@@ -323533,7 +323537,6 @@
       "prev_price": 9,
       "is_private": true,
       "value_history": [
-        575172,
         575185,
         575198,
         575262,
@@ -323632,7 +323635,8 @@
         617353,
         617353,
         617675,
-        617825
+        617825,
+        617849
       ],
       "sales_team": 1
     },
@@ -324671,11 +324675,6 @@
   },
   "gsi_history": [
     {
-      "price": 151,
-      "change_percent": 0.9386005909543256,
-      "recorded_at": "2026-10-11T06:55:27.144Z"
-    },
-    {
       "price": 152,
       "change_percent": 1.0378636444440412,
       "recorded_at": "2026-10-11T06:59:48.807Z"
@@ -325169,6 +325168,11 @@
       "price": 156,
       "change_percent": 0.5847685530009066,
       "recorded_at": "2026-10-11T11:26:10.943Z"
+    },
+    {
+      "price": 157,
+      "change_percent": 0.8793502124939633,
+      "recorded_at": "2026-10-11T11:30:49.482Z"
     }
   ],
   "factory_names": [
@@ -325190,7 +325194,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 55.16145814740017,
-  "money_printed": 317846.1227825173,
+  "money_printed": 317861.1227825173,
   "total_bank_reserves": 5204014,
   "inflation_history": [
     8.232369517657496,
@@ -338471,7 +338475,8 @@
         "1467181939218714656": 2,
         "1521043721129558017": 2,
         "913497950213267577": 1,
-        "1325111649816023092": 1
+        "1325111649816023092": 1,
+        "1101540379859365899": 1
       }
     },
     "collect_daily": {
@@ -338915,7 +338920,7 @@
       "1473965687922757747": 1789987256004,
       "1536471243849736322": 1789494877126,
       "1545521924166131823": 1791295228944,
-      "1483005845867593831": 1791717874331,
+      "1483005845867593831": 1791718262752,
       "1236297958933401643": 1789299042115,
       "1251358003857457256": 1790071234665,
       "1534132570412028027": 1789300584145,
@@ -357505,13 +357510,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "1554879270646452315",
-      "from": 3,
-      "to": 4,
-      "at": "2026-10-04T23:18:25.879Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1521043721129558017",
       "from": 21,
       "to": 22,
@@ -358903,6 +358901,13 @@
       "to": 4,
       "at": "2026-10-11T11:13:20.071Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1101540379859365899",
+      "from": 0,
+      "to": 1,
+      "at": "2026-10-11T11:30:47.890Z",
+      "reason": "work"
     }
   ],
   "_lastCollectXP": {
@@ -373790,7 +373795,7 @@
         "set": true
       },
       "supply": 16,
-      "printed": 1865,
+      "printed": 1880,
       "workPrint": 15,
       "workChannelId": null,
       "resources": null,
