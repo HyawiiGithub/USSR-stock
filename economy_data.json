@@ -325682,11 +325682,6 @@
   "gsi_history": [
     {
       "price": 146,
-      "change_percent": 0.48255150101551464,
-      "recorded_at": "2026-10-12T05:41:29.458Z"
-    },
-    {
-      "price": 146,
       "change_percent": 0.587774415573774,
       "recorded_at": "2026-10-12T05:46:29.494Z"
     },
@@ -326179,6 +326174,11 @@
       "price": 149,
       "change_percent": -5.056762289516359,
       "recorded_at": "2026-10-12T11:36:21.475Z"
+    },
+    {
+      "price": 149,
+      "change_percent": 0.42800028401382073,
+      "recorded_at": "2026-10-12T11:36:38.869Z"
     }
   ],
   "factory_names": [],
@@ -338236,14 +338236,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 7371452,
-      "at": "2026-10-12T06:26:35.448Z"
-    },
-    {
-      "total": 7371467,
-      "at": "2026-10-12T06:31:34.587Z"
-    },
-    {
       "total": 7371467,
       "at": "2026-10-12T06:31:35.545Z"
     },
@@ -338634,6 +338626,14 @@
     {
       "total": 7387444,
       "at": "2026-10-12T11:31:39.769Z"
+    },
+    {
+      "total": 7387459,
+      "at": "2026-10-12T11:36:39.112Z"
+    },
+    {
+      "total": 7387459,
+      "at": "2026-10-12T11:36:40.269Z"
     }
   ],
   "gold_rush": null,
@@ -369321,18 +369321,6 @@
         "balance": 1579348,
         "income": 2273385,
         "spending": 694037,
-        "at": "2026-10-12T06:26:35.692Z"
-      },
-      {
-        "balance": 1579348,
-        "income": 2273385,
-        "spending": 694037,
-        "at": "2026-10-12T06:31:34.728Z"
-      },
-      {
-        "balance": 1579348,
-        "income": 2273385,
-        "spending": 694037,
         "at": "2026-10-12T06:31:35.841Z"
       },
       {
@@ -369916,6 +369904,18 @@
         "income": 2353314,
         "spending": 694037,
         "at": "2026-10-12T11:31:39.916Z"
+      },
+      {
+        "balance": 1659277,
+        "income": 2353314,
+        "spending": 694037,
+        "at": "2026-10-12T11:36:39.351Z"
+      },
+      {
+        "balance": 1659277,
+        "income": 2353314,
+        "spending": 694037,
+        "at": "2026-10-12T11:36:40.398Z"
       }
     ]
   },
@@ -373351,16 +373351,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70448356996573,
-      "top10": 100,
-      "at": "2026-10-12T06:26:35.459Z"
-    },
-    {
-      "gini": 99.70445268269647,
-      "top10": 100,
-      "at": "2026-10-12T06:31:34.598Z"
-    },
-    {
       "gini": 99.70445268269647,
       "top10": 100,
       "at": "2026-10-12T06:31:35.563Z"
@@ -373849,17 +373839,19 @@
       "gini": 99.70194333164928,
       "top10": 100,
       "at": "2026-10-12T11:31:39.786Z"
+    },
+    {
+      "gini": 99.70185943587305,
+      "top10": 100,
+      "at": "2026-10-12T11:36:39.123Z"
+    },
+    {
+      "gini": 99.70185943587305,
+      "top10": 100,
+      "at": "2026-10-12T11:36:40.278Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10506032,
-      "at": "2026-10-12T06:26:35.692Z"
-    },
-    {
-      "gdp": 10506189,
-      "at": "2026-10-12T06:31:34.727Z"
-    },
     {
       "gdp": 10506189,
       "at": "2026-10-12T06:31:35.839Z"
@@ -374251,6 +374243,14 @@
     {
       "gdp": 10576716,
       "at": "2026-10-12T11:31:39.915Z"
+    },
+    {
+      "gdp": 10576747,
+      "at": "2026-10-12T11:36:39.351Z"
+    },
+    {
+      "gdp": 10576747,
+      "at": "2026-10-12T11:36:40.398Z"
     }
   ],
   "purge_allowed": [
@@ -375043,7 +375043,7 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 0.0056179775280898875,
+        "rate": 0.0006358036956089807,
         "set": true
       },
       "supply": 16,
@@ -376088,18 +376088,6 @@
   "debt_history": [
     {
       "total": 1581819,
-      "gdp": 10506032,
-      "ratio": 15.06,
-      "at": "2026-10-12T06:26:35.756Z"
-    },
-    {
-      "total": 1581819,
-      "gdp": 10506189,
-      "ratio": 15.06,
-      "at": "2026-10-12T06:31:34.737Z"
-    },
-    {
-      "total": 1581819,
       "gdp": 10506189,
       "ratio": 15.06,
       "at": "2026-10-12T06:31:35.900Z"
@@ -376685,24 +376673,21 @@
       "gdp": 10576716,
       "ratio": 15.19,
       "at": "2026-10-12T11:31:39.924Z"
+    },
+    {
+      "total": 1606296,
+      "gdp": 10576747,
+      "ratio": 15.19,
+      "at": "2026-10-12T11:36:39.398Z"
+    },
+    {
+      "total": 1606296,
+      "gdp": 10576747,
+      "ratio": 15.19,
+      "at": "2026-10-12T11:36:40.404Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8462,
-      "citizens": 8462,
-      "at": "2026-10-12T07:56:36.142Z"
-    },
-    {
-      "total": 7741,
-      "citizens": 8462,
-      "at": "2026-10-12T07:56:37.019Z"
-    },
-    {
-      "total": 8462,
-      "citizens": 8462,
-      "at": "2026-10-12T07:56:37.372Z"
-    },
     {
       "total": 8462,
       "citizens": 8462,
@@ -377187,6 +377172,21 @@
       "total": 8464,
       "citizens": 8464,
       "at": "2026-10-12T11:31:39.925Z"
+    },
+    {
+      "total": 8464,
+      "citizens": 8464,
+      "at": "2026-10-12T11:36:39.400Z"
+    },
+    {
+      "total": 7739,
+      "citizens": 8464,
+      "at": "2026-10-12T11:36:40.263Z"
+    },
+    {
+      "total": 8464,
+      "citizens": 8464,
+      "at": "2026-10-12T11:36:40.405Z"
     }
   ],
   "debt_watch_band": 0,
@@ -377197,32 +377197,32 @@
         "received": 0
       },
       "People's Commissar for Justice": {
-        "balance": 0,
-        "received": 0
+        "balance": 21153,
+        "received": 21153
       },
       "People's Commissar for Culture": {
         "balance": 0,
         "received": 0
       },
       "People's Commissar for Foreign Affairs": {
-        "balance": 0,
-        "received": 0
+        "balance": 21153,
+        "received": 21153
       },
       "People's Commissar for Communications": {
-        "balance": 0,
-        "received": 0
+        "balance": 21153,
+        "received": 21153
       },
       "People's Commissar for Finance": {
-        "balance": 0,
-        "received": 0
+        "balance": 21153,
+        "received": 21153
       },
       "People's Commissar for Education": {
         "balance": 0,
         "received": 0
       },
       "Red Guards of Ethos and Socialism": {
-        "balance": 0,
-        "received": 0
+        "balance": 21153,
+        "received": 21153
       }
     },
     "banker": {
@@ -377310,40 +377310,72 @@
       "perSector": [
         {
           "name": "People's Commissar for the Interior",
-          "messageId": "1558801641271074868"
+          "messageId": "1558801641271074868",
+          "yes": 2,
+          "no": 5,
+          "passed": false
         },
         {
           "name": "People's Commissar for Justice",
-          "messageId": "1558801649437380671"
+          "messageId": "1558801649437380671",
+          "yes": 4,
+          "no": 3,
+          "passed": true
         },
         {
           "name": "People's Commissar for Culture",
-          "messageId": "1558801657440116807"
+          "messageId": "1558801657440116807",
+          "yes": 1,
+          "no": 6,
+          "passed": false
         },
         {
           "name": "People's Commissar for Foreign Affairs",
-          "messageId": "1558801664184422462"
+          "messageId": "1558801664184422462",
+          "yes": 5,
+          "no": 2,
+          "passed": true
         },
         {
           "name": "People's Commissar for Communications",
-          "messageId": "1558801671923171328"
+          "messageId": "1558801671923171328",
+          "yes": 5,
+          "no": 1,
+          "passed": true
         },
         {
           "name": "People's Commissar for Finance",
-          "messageId": "1558801678604566619"
+          "messageId": "1558801678604566619",
+          "yes": 4,
+          "no": 2,
+          "passed": true
         },
         {
           "name": "People's Commissar for Education",
-          "messageId": "1558801686963818588"
+          "messageId": "1558801686963818588",
+          "yes": 2,
+          "no": 4,
+          "passed": false
         },
         {
           "name": "Red Guards of Ethos and Socialism",
-          "messageId": "1558801701400608864"
+          "messageId": "1558801701400608864",
+          "yes": 1,
+          "no": 0,
+          "passed": true
         }
       ],
       "channelId": "907316488321527838",
       "endsAt": "2026-10-12T11:21:28.277Z",
-      "status": "open"
+      "status": "closed",
+      "passed": [
+        "People's Commissar for Justice",
+        "People's Commissar for Foreign Affairs",
+        "People's Commissar for Communications",
+        "People's Commissar for Finance",
+        "Red Guards of Ethos and Socialism"
+      ],
+      "shareEach": 21153
     },
     "testing": null,
     "last_sunday": "2026-W41",
@@ -377394,6 +377426,21 @@
             "net": 0
           }
         ]
+      },
+      {
+        "kind": "congress",
+        "id": "cong_2026-10-11_408",
+        "at": "2026-10-12T11:36:38.057Z",
+        "poolPct": 1,
+        "pool": 105767,
+        "passed": [
+          "People's Commissar for Justice",
+          "People's Commissar for Foreign Affairs",
+          "People's Commissar for Communications",
+          "People's Commissar for Finance",
+          "Red Guards of Ethos and Socialism"
+        ],
+        "shareEach": 21153
       }
     ],
     "roles": {
@@ -377461,12 +377508,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-12T03:01:30.770Z",
-          "wealth": 3001,
-          "members": 199,
-          "works": 0
-        },
         {
           "at": "2026-10-12T03:06:30.752Z",
           "wealth": 25904,
@@ -378060,18 +378101,18 @@
           "wealth": 2848,
           "members": 199,
           "works": 0
+        },
+        {
+          "at": "2026-10-12T11:36:39.445Z",
+          "wealth": 25165,
+          "members": 196,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-12T03:01:30.770Z",
-          "wealth": 6169,
-          "members": 11,
-          "works": 0
-        },
         {
           "at": "2026-10-12T03:06:30.753Z",
           "wealth": 6169,
@@ -378665,18 +378706,18 @@
           "wealth": 8347,
           "members": 19,
           "works": 0
+        },
+        {
+          "at": "2026-10-12T11:36:39.445Z",
+          "wealth": 8347,
+          "members": 19,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-12T03:01:30.770Z",
-          "wealth": 0,
-          "members": 0,
-          "works": 0
-        },
         {
           "at": "2026-10-12T03:06:30.753Z",
           "wealth": 0,
@@ -379270,18 +379311,18 @@
           "wealth": 0,
           "members": 0,
           "works": 0
+        },
+        {
+          "at": "2026-10-12T11:36:39.445Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-12T03:01:30.770Z",
-          "wealth": 76259,
-          "members": 6,
-          "works": 0
-        },
         {
           "at": "2026-10-12T03:06:30.753Z",
           "wealth": 76259,
@@ -379872,6 +379913,12 @@
         },
         {
           "at": "2026-10-12T11:31:38.943Z",
+          "wealth": 68723,
+          "members": 6,
+          "works": 0
+        },
+        {
+          "at": "2026-10-12T11:36:39.445Z",
           "wealth": 68723,
           "members": 6,
           "works": 0
