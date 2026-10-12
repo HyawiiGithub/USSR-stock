@@ -325873,11 +325873,6 @@
   "gsi_history": [
     {
       "price": 149,
-      "change_percent": 0.5098698844478555,
-      "recorded_at": "2026-10-12T07:01:30.246Z"
-    },
-    {
-      "price": 149,
       "change_percent": 0.6272827925674681,
       "recorded_at": "2026-10-12T07:06:30.808Z"
     },
@@ -326370,6 +326365,11 @@
       "price": 155,
       "change_percent": 0.20593815833351084,
       "recorded_at": "2026-10-12T13:05:23.313Z"
+    },
+    {
+      "price": 154,
+      "change_percent": -0.3732869441231076,
+      "recorded_at": "2026-10-12T13:06:39.055Z"
     }
   ],
   "factory_names": [
@@ -326731,7 +326731,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Gas Fuel": 6
+    "Gas Fuel": 4
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -326752,7 +326752,7 @@
     "Circuit Board": 178,
     "Cotton Fabric": 13,
     "Reactor Core": 48,
-    "Gas Fuel": 288,
+    "Gas Fuel": 290,
     "Steel Beam": 96,
     "Machine Parts": 364,
     "Sugar": 61,
@@ -326772,11 +326772,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Brass Valve",
-      "qty": 1,
-      "at": "2026-10-07T03:23:33.372Z"
-    },
     {
       "item": "Reactor Core",
       "qty": 2,
@@ -328271,6 +328266,11 @@
       "item": "Gas Fuel",
       "qty": 2,
       "at": "2026-10-12T12:51:22.122Z"
+    },
+    {
+      "item": "Gas Fuel",
+      "qty": 2,
+      "at": "2026-10-12T13:06:22.287Z"
     }
   ],
   "demand_history": {
@@ -332243,11 +332243,6 @@
     "Gas Fuel": [
       {
         "demand": 1.3720172226717176,
-        "at": "2026-10-04T23:26:52.797Z",
-        "supply": 18
-      },
-      {
-        "demand": 1.3720172226717176,
         "at": "2026-10-05T00:56:52.944Z",
         "supply": 18
       },
@@ -332539,6 +332534,11 @@
       {
         "demand": 1.0111343735983156,
         "at": "2026-10-12T12:51:22.122Z",
+        "supply": 104
+      },
+      {
+        "demand": 1.0207227454526222,
+        "at": "2026-10-12T13:06:22.287Z",
         "supply": 104
       }
     ],
