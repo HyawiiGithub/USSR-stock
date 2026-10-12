@@ -1138,8 +1138,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 1100,
-      "bank": 1250,
+      "cash": 0,
+      "bank": 2400,
       "resources": {},
       "inventory": {
         "Oil Shale": 1,
@@ -1160,8 +1160,8 @@
           "avg_price": 8
         }
       },
-      "last_work": "2026-10-12T04:17:49.905Z",
-      "work_count": 2691,
+      "last_work": "2026-10-12T04:24:10.695Z",
+      "work_count": 2692,
       "last_claim": "2026-10-11T03:15:44.768Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
@@ -1175,15 +1175,15 @@
       "last_illegal": "2026-10-11T16:18:33.733Z",
       "total_heat_generated": 2768.6588999999985,
       "bot_level": 32,
-      "bot_xp": 6598,
-      "bot_total_xp": 86678,
-      "daily_work_count": 1487,
+      "bot_xp": 6645,
+      "bot_total_xp": 86725,
+      "daily_work_count": 1488,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-12",
       "mee6_level": 32,
       "last_laylow": "2026-10-11T14:47:29.228Z",
       "work_reminder": true,
-      "work_reminder_sent": "2026-10-12T04:23:46.284Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_26@2026-10-11T14:46:37.795Z",
       "train_reminder": false,
@@ -323691,7 +323691,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 53036,
+      "funds": 53001,
       "invested_capital": 8196,
       "shares_total": 130000,
       "shares_available": 69083,
@@ -323839,7 +323839,7 @@
         "Manganese": 4,
         "Fertilizer": 4,
         "Aluminium Ore": 1,
-        "Oil": 99,
+        "Oil": 101,
         "Antimony Alloy": 2,
         "Bandage": 2,
         "Antimony": 18,
@@ -323867,7 +323867,7 @@
         "Steel Beam": 26,
         "Contraband: Heroin": 6,
         "Contraband: Synthetic": 4,
-        "Wheat": 78,
+        "Wheat": 77,
         "Grapes": 4,
         "Corn": 7,
         "Phosphorite": 1,
@@ -323899,7 +323899,6 @@
         14,
         14,
         14,
-        14,
         15,
         15,
         15,
@@ -323978,6 +323977,7 @@
         16,
         16,
         16,
+        17,
         17,
         17,
         17,
@@ -324011,7 +324011,6 @@
       "prev_price": 17,
       "is_private": true,
       "value_history": [
-        1234511,
         1234532,
         1234633,
         1234712,
@@ -324110,7 +324109,8 @@
         1446320,
         1450021,
         1451401,
-        1451401
+        1451401,
+        1451486
       ],
       "sales_team": 1,
       "execs": {
@@ -325492,11 +325492,6 @@
   "gsi_history": [
     {
       "price": 147,
-      "change_percent": 0.018634472427409357,
-      "recorded_at": "2026-10-11T21:46:25.686Z"
-    },
-    {
-      "price": 147,
       "change_percent": 0.4285206096859267,
       "recorded_at": "2026-10-11T21:51:25.915Z"
     },
@@ -325989,6 +325984,11 @@
       "price": 150,
       "change_percent": -0.16985536725594927,
       "recorded_at": "2026-10-12T04:21:28.974Z"
+    },
+    {
+      "price": 150,
+      "change_percent": 0.43096854619703895,
+      "recorded_at": "2026-10-12T04:24:12.139Z"
     }
   ],
   "factory_names": [
@@ -326010,7 +326010,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 55.09288648598755,
-  "money_printed": 341456.5485447318,
+  "money_printed": 341471.5485447318,
   "total_bank_reserves": 5002105,
   "inflation_history": [
     55.06788015531603,
@@ -339333,7 +339333,7 @@
         "1470136693821800521": 2
       },
       "2026-10-12": {
-        "874346333882945547": 5
+        "874346333882945547": 6
       }
     },
     "collect_daily": {
@@ -339600,7 +339600,7 @@
       "1229741033265299506": 1791777458240,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791747154708,
-      "874346333882945547": 1791776849100,
+      "874346333882945547": 1791779073600,
       "870686833976172574": 1791731590749,
       "1186597507720019988": 1791738131104,
       "1521043721129558017": 1791732992136,
@@ -374794,7 +374794,7 @@
         "set": true
       },
       "supply": 16,
-      "printed": 3400,
+      "printed": 3415,
       "workPrint": 15,
       "workChannelId": null,
       "resources": null,
