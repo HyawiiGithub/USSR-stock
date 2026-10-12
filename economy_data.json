@@ -326709,11 +326709,6 @@
   "gsi_history": [
     {
       "price": 150,
-      "change_percent": 0.40713412744384814,
-      "recorded_at": "2026-10-12T17:06:40.322Z"
-    },
-    {
-      "price": 150,
       "change_percent": 0.6632036517928319,
       "recorded_at": "2026-10-12T17:11:40.113Z"
     },
@@ -327206,6 +327201,11 @@
       "price": 141,
       "change_percent": 0.5853453252738154,
       "recorded_at": "2026-10-12T23:31:41.206Z"
+    },
+    {
+      "price": 137,
+      "change_percent": -2.2900017045202565,
+      "recorded_at": "2026-10-12T23:36:24.379Z"
     }
   ],
   "factory_names": [
@@ -327568,7 +327568,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Cake": 2,
-    "Reactor Core": 6
+    "Reactor Core": 5
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -327588,7 +327588,7 @@
     "Aluminium Sheet": 8,
     "Circuit Board": 195,
     "Cotton Fabric": 13,
-    "Reactor Core": 62,
+    "Reactor Core": 63,
     "Gas Fuel": 294,
     "Steel Beam": 96,
     "Machine Parts": 364,
@@ -327609,11 +327609,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Steel Beam",
-      "qty": 1,
-      "at": "2026-10-07T13:36:22.752Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 2,
@@ -329108,6 +329103,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-10-12T23:21:25.719Z"
+    },
+    {
+      "item": "Reactor Core",
+      "qty": 1,
+      "at": "2026-10-12T23:36:25.842Z"
     }
   ],
   "demand_history": {
@@ -333114,6 +333114,11 @@
       {
         "demand": 1.384916010338872,
         "at": "2026-10-12T23:06:25.600Z",
+        "supply": 6
+      },
+      {
+        "demand": 1.384916010338872,
+        "at": "2026-10-12T23:36:25.842Z",
         "supply": 6
       }
     ],
