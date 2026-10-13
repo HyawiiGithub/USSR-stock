@@ -325767,7 +325767,6 @@
         9,
         9,
         9,
-        9,
         10,
         10,
         10,
@@ -325794,6 +325793,7 @@
         10,
         10,
         9,
+        10,
         10,
         10,
         10,
@@ -325878,7 +325878,6 @@
       "prev_price": 10,
       "is_private": true,
       "value_history": [
-        631496,
         631552,
         631560,
         631560,
@@ -325977,7 +325976,8 @@
         667150,
         667166,
         667190,
-        667246
+        667246,
+        667286
       ],
       "sales_team": 1
     },
@@ -327015,16 +327015,6 @@
   },
   "gsi_history": [
     {
-      "price": 153,
-      "change_percent": 0.6022092894268891,
-      "recorded_at": "2026-10-13T03:36:41.306Z"
-    },
-    {
-      "price": 153,
-      "change_percent": 0.25327723041405764,
-      "recorded_at": "2026-10-13T03:39:09.791Z"
-    },
-    {
       "price": 152,
       "change_percent": -0.026702359966894462,
       "recorded_at": "2026-10-13T03:41:41.260Z"
@@ -327513,6 +327503,16 @@
       "price": 152,
       "change_percent": 0.4309881166421961,
       "recorded_at": "2026-10-13T07:01:41.291Z"
+    },
+    {
+      "price": 152,
+      "change_percent": 0.35061936661128745,
+      "recorded_at": "2026-10-13T07:05:49.495Z"
+    },
+    {
+      "price": 157,
+      "change_percent": 3.6201490584268368,
+      "recorded_at": "2026-10-13T07:06:24.941Z"
     }
   ],
   "factory_names": [
@@ -327799,7 +327799,7 @@
     "Glass": 1.4043749109969852,
     "Steel Beam": 1.3323995830592381,
     "Machine Parts": 1.10347419872735,
-    "Refined Fuel": 0.9547916192982698,
+    "Refined Fuel": 0.9747916192982699,
     "Uranium Rod": 1.3414181149767626,
     "Reactor Core": 1.384916010338872,
     "Circuit Board": 1.3922233689501078,
@@ -327874,14 +327874,14 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Refined Fuel": 21,
+    "Refined Fuel": 20,
     "Cake": 5
   },
   "global_consumption": {
     "Copper Ingot": 97,
     "Steel Ingot": 26,
     "Timber Planks": 212,
-    "Refined Fuel": 362,
+    "Refined Fuel": 363,
     "Fuel": 179,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -327916,11 +327916,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Copper Ingot",
-      "qty": 2,
-      "at": "2026-10-07T19:23:02.756Z"
-    },
     {
       "item": "Copper Ingot",
       "qty": 1,
@@ -329415,6 +329410,11 @@
       "item": "Cake",
       "qty": 2,
       "at": "2026-10-13T06:51:26.499Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-10-13T07:06:26.489Z"
     }
   ],
   "demand_history": {
@@ -330122,11 +330122,6 @@
     "Refined Fuel": [
       {
         "demand": 1.3956896042431928,
-        "at": "2026-10-02T22:14:00.943Z",
-        "supply": 0
-      },
-      {
-        "demand": 1.3956896042431928,
         "at": "2026-10-03T01:14:01.097Z",
         "supply": 0
       },
@@ -330418,6 +330413,11 @@
       {
         "demand": 1.3710012600855304,
         "at": "2026-10-13T06:06:26.270Z",
+        "supply": 0
+      },
+      {
+        "demand": 0.9547916192982698,
+        "at": "2026-10-13T07:06:26.489Z",
         "supply": 0
       }
     ],
