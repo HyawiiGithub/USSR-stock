@@ -327802,7 +327802,7 @@
     "Glass": 1.4043749109969852,
     "Steel Beam": 1.3323995830592381,
     "Machine Parts": 1.0984931381630432,
-    "Refined Fuel": 0.9493071571282146,
+    "Refined Fuel": 0.9693071571282146,
     "Uranium Rod": 1.334837878161999,
     "Reactor Core": 1.384916010338872,
     "Circuit Board": 1.3922233689501078,
@@ -327877,13 +327877,13 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Refined Fuel": 20
+    "Refined Fuel": 19
   },
   "global_consumption": {
     "Copper Ingot": 97,
     "Steel Ingot": 26,
     "Timber Planks": 212,
-    "Refined Fuel": 343,
+    "Refined Fuel": 344,
     "Fuel": 179,
     "Iron Ingot": 63,
     "Shale Oil": 27,
@@ -327918,11 +327918,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 1,
-      "at": "2026-10-07T15:06:22.785Z"
-    },
     {
       "item": "Fuel",
       "qty": 2,
@@ -329417,6 +329412,11 @@
       "item": "Reactor Core",
       "qty": 2,
       "at": "2026-10-13T00:51:26.161Z"
+    },
+    {
+      "item": "Refined Fuel",
+      "qty": 1,
+      "at": "2026-10-13T03:06:26.169Z"
     }
   ],
   "demand_history": {
@@ -330124,11 +330124,6 @@
     "Refined Fuel": [
       {
         "demand": 1.4046284428717346,
-        "at": "2026-10-01T09:42:37.515Z",
-        "supply": 0
-      },
-      {
-        "demand": 1.4046284428717346,
         "at": "2026-10-01T10:57:37.459Z",
         "supply": 0
       },
@@ -330420,6 +330415,11 @@
       {
         "demand": 1.3956131324711816,
         "at": "2026-10-11T10:35:33.574Z",
+        "supply": 0
+      },
+      {
+        "demand": 0.9493071571282146,
+        "at": "2026-10-13T03:06:26.169Z",
         "supply": 0
       }
     ],
