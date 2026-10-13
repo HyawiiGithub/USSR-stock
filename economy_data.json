@@ -1139,7 +1139,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 50,
+      "cash": 92,
       "bank": 18816,
       "resources": {},
       "inventory": {
@@ -1173,7 +1173,7 @@
       },
       "last_work": "2026-10-13T05:33:11.151Z",
       "work_count": 2711,
-      "last_claim": "2026-10-12T11:18:51.447Z",
+      "last_claim": "2026-10-13T05:37:19.506Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
       "is_employed": true,
@@ -325215,7 +325215,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 420968,
+      "funds": 422576,
       "invested_capital": 8196,
       "shares_total": 130000,
       "shares_available": 69083,
@@ -325402,7 +325402,6 @@
         "Fish": 5,
         "Contraband: Coca Paste": 2,
         "Radiator": 7,
-        "Bread": 10,
         "Cake": 10,
         "Zinc": 7,
         "Circuit Board": 7,
@@ -325411,7 +325410,6 @@
       "created_at": "2026-08-25T17:15:02.477Z",
       "last_collect": "2026-10-13T01:29:43.884Z",
       "price_history": [
-        16,
         16,
         16,
         16,
@@ -325510,6 +325508,7 @@
         21,
         21,
         21,
+        21,
         21
       ],
       "is_state_owned": false,
@@ -325537,7 +325536,6 @@
       "prev_price": 21,
       "is_private": true,
       "value_history": [
-        1354148,
         1354233,
         1354330,
         1354415,
@@ -325636,7 +325634,8 @@
         1798977,
         1799979,
         1799936,
-        1799901
+        1799901,
+        1800669
       ],
       "sales_team": 2,
       "execs": {
@@ -327520,14 +327519,14 @@
     "Soviet Iron Foundry",
     "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
-    "Ural Heavy Industries",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
     "Stalin Tractor Plant",
     "Red Star Steelworks",
     "Siberian Mining Co",
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Ural Heavy Industries"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -327535,7 +327534,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 55.354665090526595,
-  "money_printed": 786664.738471643,
+  "money_printed": 788314.738471643,
   "total_bank_reserves": 5114382,
   "inflation_history": [
     55.33907829158983,
@@ -327786,10 +327785,10 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.2607371105074106,
+    "Fuel": 1.2707371105074106,
     "Cake": 1.3800145808137372,
-    "Bread": 1.3545957279922862,
-    "Copper Ingot": 1.2615698847821903,
+    "Bread": 1.0045957279922861,
+    "Copper Ingot": 1.2715698847821904,
     "Iron Ingot": 1.0295978985260876,
     "Steel Ingot": 1.2316291435748146,
     "Gold Bar": 0.8141934325424357,
@@ -327802,19 +327801,19 @@
     "Machine Parts": 1.0984931381630432,
     "Refined Fuel": 1.3350254571627467,
     "Uranium Rod": 1.334837878161999,
-    "Reactor Core": 1.384916010338872,
+    "Reactor Core": 1.394916010338872,
     "Circuit Board": 1.3922233689501078,
     "Flour": 1.346882070479914,
     "Sugar": 0.9497473363735139,
     "Wine": 1.3587773371788043,
-    "Canned Food": 1.404628249427219,
+    "Canned Food": 1.414628249427219,
     "Canned Fish": 1.4028400500637148,
     "Smoked Fish": 1.3654852133580768,
     "Fish Stew": 1.392157899116083,
-    "Peat Fuel": 1.4028564770938574,
+    "Peat Fuel": 1.4128564770938574,
     "Gas Fuel": 1.2190664762810732,
     "Fertilizer": 1.3978114827486081,
-    "Cotton Fabric": 1.394390340236225,
+    "Cotton Fabric": 1.404390340236225,
     "Manganese Alloy": 1.4070722639345183,
     "Sunflower Oil": 1.3992459086195093,
     "Linen": 1.412471356371789,
@@ -327837,7 +327836,7 @@
   "market_last_sale": {
     "Fuel": "2026-10-11T09:39:56.174Z",
     "Cake": "2026-10-12T16:20:04.995Z",
-    "Bread": "2026-10-12T16:20:11.225Z",
+    "Bread": "2026-10-13T05:37:58.431Z",
     "Copper Ingot": "2026-10-07T00:59:00.438Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
     "Refined Fuel": "2026-10-13T02:54:35.504Z",
@@ -336150,13 +336149,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-15T20:46:33.670Z",
-      "by": "1379734184259747851",
-      "username": ".kewl1",
-      "action": "conglomerate_create",
-      "details": "Kewlian Conglomerate Holdings (KCH)"
-    },
-    {
       "at": "2026-09-15T20:56:10.465Z",
       "by": "1082686076491137115",
       "username": "hyawii2.0",
@@ -339648,6 +339640,13 @@
       "username": "seniormanulos",
       "action": "salesteam",
       "details": "Speers Realm → Lv2 for ₽77,577"
+    },
+    {
+      "at": "2026-10-13T05:37:58.434Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "sellgrain",
+      "details": "Speers Realm 10x Bread for ₽1,608"
     }
   ],
   "total_rubles_history": [
@@ -374069,8 +374068,8 @@
         "price": 196
       },
       "Bread": {
-        "qty": 209,
-        "price": 157
+        "qty": 219,
+        "price": 158
       },
       "Canned Food": {
         "qty": 68,
@@ -374117,7 +374116,7 @@
         "price": 171
       }
     },
-    "sold_count": 3018,
+    "sold_count": 3028,
     "bought_count": 417
   },
   "leaders": {
@@ -375852,9 +375851,9 @@
     "1379734184259747851"
   ],
   "grain_daily": {
-    "date": "2026-10-12",
+    "date": "2026-10-13",
     "vols": {
-      "state_26": 40
+      "state_26": 10
     }
   },
   "pacs_pending": [
@@ -376641,7 +376640,7 @@
         "set": true
       },
       "supply": 16,
-      "printed": 5201,
+      "printed": 5243,
       "workPrint": 15,
       "workChannelId": null,
       "resources": null,
