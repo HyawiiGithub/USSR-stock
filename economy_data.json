@@ -205236,17 +205236,19 @@
       "pet_food_source": {}
     },
     "1225880714986393622": {
-      "cash": 0,
+      "cash": 10,
       "bank": 569,
-      "resources": {},
+      "resources": {
+        "Coal": 1
+      },
       "inventory": {},
       "company_id": null,
       "gsi_shares": 0,
       "share_holdings": {},
-      "last_work": null,
-      "work_count": 0,
+      "last_work": "2026-10-13T21:03:04.605Z",
+      "work_count": 1,
       "last_claim": "2026-10-13T21:01:15.429Z",
-      "ssr_region": null,
+      "ssr_region": "Russian SFSR",
       "employed_at": null,
       "is_employed": false,
       "is_state_director": false,
@@ -205258,8 +205260,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 748,
-      "bot_total_xp": 3648,
+      "bot_xp": 773,
+      "bot_total_xp": 3673,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -326872,7 +326874,6 @@
       "prev_price": 10,
       "is_private": true,
       "value_history": [
-        673078,
         673228,
         673378,
         673442,
@@ -326971,7 +326972,8 @@
         677574,
         677582,
         677622,
-        677662
+        677662,
+        677678
       ],
       "sales_team": 1
     },
@@ -328010,16 +328012,6 @@
   },
   "gsi_history": [
     {
-      "price": 144,
-      "change_percent": 0.43233856265980086,
-      "recorded_at": "2026-10-13T17:21:44.869Z"
-    },
-    {
-      "price": 145,
-      "change_percent": 0.7440158220932941,
-      "recorded_at": "2026-10-13T17:25:49.590Z"
-    },
-    {
       "price": 145,
       "change_percent": 0.6207693817192224,
       "recorded_at": "2026-10-13T17:26:44.852Z"
@@ -328508,6 +328500,16 @@
       "price": 155,
       "change_percent": 0.41317295416720656,
       "recorded_at": "2026-10-13T21:01:00.502Z"
+    },
+    {
+      "price": 155,
+      "change_percent": 0.2808719264735235,
+      "recorded_at": "2026-10-13T21:02:49.470Z"
+    },
+    {
+      "price": 155,
+      "change_percent": 0.03898641061364401,
+      "recorded_at": "2026-10-13T21:03:05.520Z"
     }
   ],
   "factory_names": [],
@@ -328528,7 +328530,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 55.14038268514096,
-  "money_printed": 783464.4633954008,
+  "money_printed": 783474.4633954008,
   "total_bank_reserves": 5107041,
   "inflation_history": [
     55.358333617245776,
@@ -342318,7 +342320,7 @@
       "1482729267346538548": 1789052038349,
       "1522851408611770409": 1791919104236,
       "1283436444161151019": 1789734217591,
-      "1225880714986393622": 1791925309002,
+      "1225880714986393622": 1791925403424,
       "673726585194676274": 1790093109734,
       "1405587743542870188": 1791807149001,
       "1489932552394248263": 1791923241518,
@@ -377750,7 +377752,7 @@
         "set": true
       },
       "supply": 16,
-      "printed": 9247,
+      "printed": 9257,
       "workPrint": 15,
       "workChannelId": null,
       "resources": null,
