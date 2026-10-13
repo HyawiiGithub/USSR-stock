@@ -326647,7 +326647,7 @@
       "owner_id": "963834359994007614",
       "ceo": "that.one.pakistani_",
       "hq_ssr": "Russian SFSR",
-      "funds": 46156,
+      "funds": 65899,
       "invested_capital": 64849,
       "shares_total": 100000,
       "shares_available": 47987,
@@ -326737,11 +326737,10 @@
         "Phosphorite": 1,
         "Zinc": 1,
         "Amber": 2,
-        "Fuel": 33,
         "Graphite": 1,
         "Manganese": 1,
         "Reactor Core": 8,
-        "Oil": 101,
+        "Oil": 80,
         "Gold": 23,
         "Wheat": 169,
         "Sugar": 2
@@ -326852,7 +326851,7 @@
       ],
       "is_state_owned": false,
       "director_id": "963834359994007614",
-      "last_factorydeal": "2026-10-13T06:44:54.068Z",
+      "last_factorydeal": "2026-10-13T21:38:00.397Z",
       "last_govcontract": null,
       "specialization": "extraction",
       "managers": [
@@ -326875,9 +326874,6 @@
       "prev_price": 10,
       "is_private": true,
       "value_history": [
-        673650,
-        673674,
-        673687,
         673700,
         673724,
         673740,
@@ -326974,7 +326970,10 @@
         680578,
         680578,
         680602,
-        680642
+        680642,
+        681083,
+        680903,
+        690626
       ],
       "sales_team": 1
     },
@@ -328516,15 +328515,15 @@
   "factory_names": [
     "Red Star Steelworks",
     "Soviet Iron Foundry",
-    "Stalin Tractor Plant",
     "Khrushchev Agricultural",
     "Brezhnev Auto Factory",
-    "Siberian Mining Co",
     "Ural Heavy Industries",
     "Volga Shipbuilding"
   ],
   "used_factory_names": [
-    "Lenin Machine Works"
+    "Lenin Machine Works",
+    "Siberian Mining Co",
+    "Stalin Tractor Plant"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -328532,7 +328531,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 55.15599736418392,
-  "money_printed": 782766.4098062211,
+  "money_printed": 802509.4098062211,
   "total_bank_reserves": 5108078,
   "inflation_history": [
     55.35278648355711,
@@ -328793,16 +328792,16 @@
     "Aluminium Ingot": 1.401185912444163,
     "Timber Planks": 0.892283449417258,
     "Bricks": 1.0822504745343142,
-    "Concrete": 1.4029261309589836,
+    "Concrete": 1.4129261309589836,
     "Glass": 1.4043749109969852,
-    "Steel Beam": 1.3256254332369115,
+    "Steel Beam": 1.3356254332369115,
     "Machine Parts": 1.0402071729468985,
-    "Refined Fuel": 1.3960000608041683,
+    "Refined Fuel": 0.9460000608041683,
     "Uranium Rod": 1.3282709071301986,
     "Reactor Core": 1.3731377937306792,
     "Circuit Board": 1.364603268561038,
     "Flour": 1.346882070479914,
-    "Sugar": 0.9288060626585299,
+    "Sugar": 0.93880606265853,
     "Wine": 1.3571136545860856,
     "Canned Food": 1.404628249427219,
     "Canned Fish": 1.4028400500637148,
@@ -328821,7 +328820,7 @@
     "Antimony Alloy": 1.4089706749952495,
     "Molybdenum Rod": 1.410473150403204,
     "Aluminium Sheet": 1.4046242840293879,
-    "Shale Oil": 1.4046275537452853,
+    "Shale Oil": 1.4146275537452853,
     "Bandage": 1.4084225306689306,
     "Ointment": 1.4123319487062964,
     "Pet Food": 1.4004587438177438,
@@ -328837,7 +328836,7 @@
     "Bread": "2026-10-13T12:37:52.610Z",
     "Copper Ingot": "2026-10-07T00:59:00.438Z",
     "Steel Ingot": "2026-09-06T20:36:21.714Z",
-    "Refined Fuel": "2026-10-13T06:44:54.068Z",
+    "Refined Fuel": "2026-10-13T21:38:00.398Z",
     "Timber Planks": "2026-10-10T11:33:45.575Z",
     "Iron Ingot": "2026-09-17T01:43:45.291Z",
     "Shale Oil": "2026-09-13T09:01:34.582Z",
@@ -328871,7 +328870,9 @@
     "Wine": "2026-10-09T19:15:23.973Z"
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
-  "ai_store": {},
+  "ai_store": {
+    "Refined Fuel": 20
+  },
   "global_consumption": {
     "Copper Ingot": 97,
     "Steel Ingot": 26,
@@ -375094,8 +375095,8 @@
         "price": 1989
       },
       "Refined Fuel": {
-        "qty": 260,
-        "price": 1018
+        "qty": 280,
+        "price": 1026
       },
       "Gas Fuel": {
         "qty": 272,
@@ -375202,7 +375203,7 @@
         "price": 171
       }
     },
-    "sold_count": 3090,
+    "sold_count": 3110,
     "bought_count": 427
   },
   "leaders": {
