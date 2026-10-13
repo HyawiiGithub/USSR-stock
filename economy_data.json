@@ -327604,7 +327604,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Reactor Core": 3
+    "Reactor Core": 2
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -327624,7 +327624,7 @@
     "Aluminium Sheet": 8,
     "Circuit Board": 195,
     "Cotton Fabric": 13,
-    "Reactor Core": 65,
+    "Reactor Core": 66,
     "Gas Fuel": 294,
     "Steel Beam": 96,
     "Machine Parts": 364,
@@ -327645,11 +327645,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Refined Fuel",
-      "qty": 2,
-      "at": "2026-10-07T14:36:22.861Z"
-    },
     {
       "item": "Cake",
       "qty": 2,
@@ -329144,6 +329139,11 @@
       "item": "Cake",
       "qty": 1,
       "at": "2026-10-13T00:21:25.999Z"
+    },
+    {
+      "item": "Reactor Core",
+      "qty": 1,
+      "at": "2026-10-13T00:36:26.121Z"
     }
   ],
   "demand_history": {
@@ -333160,6 +333160,11 @@
       {
         "demand": 1.384916010338872,
         "at": "2026-10-13T00:06:26.145Z",
+        "supply": 6
+      },
+      {
+        "demand": 1.384916010338872,
+        "at": "2026-10-13T00:36:26.122Z",
         "supply": 6
       }
     ],
