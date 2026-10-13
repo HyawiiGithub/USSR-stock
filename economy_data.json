@@ -611,7 +611,7 @@
       "inventory": {
         "Canned Fish": 1,
         "Cake": 2,
-        "Smoked Fish": 15
+        "Smoked Fish": 14
       },
       "company_id": null,
       "ceo_of": null,
@@ -324878,7 +324878,6 @@
         4,
         4,
         4,
-        4,
         5,
         5,
         5,
@@ -324934,6 +324933,7 @@
         6,
         6,
         6,
+        7,
         7,
         7,
         7,
@@ -324988,7 +324988,6 @@
       "sales_team": 1,
       "prev_price": 7,
       "value_history": [
-        390725,
         390725,
         390725,
         390725,
@@ -325087,7 +325086,8 @@
         475038,
         475038,
         475038,
-        475038
+        475038,
+        475032
       ]
     },
     "state_25": {
@@ -327169,11 +327169,6 @@
   "gsi_history": [
     {
       "price": 151,
-      "change_percent": 0.32423046975258096,
-      "recorded_at": "2026-10-13T08:36:46.261Z"
-    },
-    {
-      "price": 151,
       "change_percent": 0.21747048856872245,
       "recorded_at": "2026-10-13T08:38:25.274Z"
     },
@@ -327666,6 +327661,11 @@
       "price": 159,
       "change_percent": -0.43954011375159746,
       "recorded_at": "2026-10-13T12:06:42.955Z"
+    },
+    {
+      "price": 159,
+      "change_percent": 0.4647507215339502,
+      "recorded_at": "2026-10-13T12:08:20.144Z"
     }
   ],
   "factory_names": [
@@ -374075,17 +374075,17 @@
       "name": "Edward Astrae",
       "species": "cat",
       "alive": true,
-      "hunger": 0,
+      "hunger": 40,
       "water": 60,
-      "health": 83,
+      "health": 93,
       "quarters": 0,
       "cheap_streak": 0,
       "born_at": "2026-10-08T19:51:41.850Z",
-      "last_fed": "2026-10-13T06:41:30.770Z",
+      "last_fed": "2026-10-13T12:08:21.801Z",
       "last_watered": null,
       "death": null,
-      "friendship": 43,
-      "last_pet": "2026-10-12T15:36:27.989Z",
+      "friendship": 46,
+      "last_pet": "2026-10-13T12:08:22.921Z",
       "stats": {
         "agility": 0,
         "curiosity": 0,
@@ -374156,10 +374156,10 @@
         "day": "",
         "n": 0
       },
-      "lastPetAct": "2026-10-12T15:36:27.989Z",
-      "starve_since": "2026-10-13T11:54:22.167Z",
-      "warned_empty": true,
-      "last_feed_cmd": "2026-10-13T06:41:30.770Z"
+      "lastPetAct": "2026-10-13T12:08:22.921Z",
+      "starve_since": null,
+      "warned_empty": false,
+      "last_feed_cmd": "2026-10-13T12:08:21.801Z"
     }
   },
   "pets_last_decay": "2026-10-13T11:54:22.167Z",
