@@ -88306,8 +88306,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 29,
-      "bot_xp": 4519,
-      "bot_total_xp": 66289,
+      "bot_xp": 4542,
+      "bot_total_xp": 66312,
       "daily_work_count": 298,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-14",
@@ -325520,9 +325520,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 1,
-      "bot_xp": 143,
-      "bot_total_xp": 243,
+      "bot_level": 2,
+      "bot_xp": 4,
+      "bot_total_xp": 259,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -325535,7 +325535,7 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {},
-      "mee6_level": 1
+      "mee6_level": 2
     },
     "1333478644001013853": {
       "cash": 0,
@@ -342637,7 +342637,7 @@
       "1309104161278918706": 1791385206033,
       "1325111649816023092": 1791980657104,
       "1506785783506534426": 1791980851595,
-      "807254722251587614": 1791980561529,
+      "807254722251587614": 1791980885314,
       "1353373037994705078": 1791915906745,
       "1192563739778625607": 1790365373051,
       "997903130543005767": 1788970364999,
@@ -343410,7 +343410,7 @@
       "1235504042587983887": 1791920126202,
       "1322605666551992404": 1791924299317,
       "1449721609672855698": 1791924284517,
-      "1558219605753860178": 1791980821847,
+      "1558219605753860178": 1791980886924,
       "1549310232533016651": 1791980195032,
       "1557801900101992508": 1791977354700,
       "1499767732416151575": 1791980056394
@@ -361453,13 +361453,6 @@
   "giveaways": [],
   "level_ups": [
     {
-      "userId": "637728239304966145",
-      "from": 0,
-      "to": 1,
-      "at": "2026-10-07T19:22:05.000Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1365483598962102305",
       "from": 12,
       "to": 13,
@@ -362850,6 +362843,13 @@
       "from": 1,
       "to": 2,
       "at": "2026-10-14T12:03:57.559Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1558219605753860178",
+      "from": 1,
+      "to": 2,
+      "at": "2026-10-14T12:28:06.924Z",
       "reason": "chat"
     }
   ],
@@ -364597,7 +364597,7 @@
     },
     "1558219605753860178": {
       "date": "2026-10-14",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -364606,6 +364606,14 @@
         {
           "role": "assistant",
           "content": "As Jarvis, I can help you manage events on the Union of Soviet Socialist Republics server. However, my knowledge is limited to the current server state:\n\n- **Server**: Union of Soviet Socialist Republics\n- **Currency**: RUB ₽ @ 0.00 per P1\n- **Starting cash**: 100,000\n- **GDP**: 7,561,981 rubles (exact)\n- **GSI**: 104\n- **Inflation**: 5.79%\n- **Gold backing**: 2.5%\n\nThe system doesn't have detailed documentation about event-handling mechanics beyond these parameters. I can assist with tasks rela"
+        },
+        {
+          "role": "user",
+          "content": "How to handle Events"
+        },
+        {
+          "role": "assistant",
+          "content": "I don't have specific information about event mechanics on this server. The scope I can see includes:\n\n- Server: Union of Soviet Socialist Republics\n- Currency: Ruble (RUB) @ 0.00/P1\n- Starting cash: 100,000 rubles\n- GDP: 7,561,996 rubles\n- GSI: 104\n- Inflation: 5.79%\n- Gold backing: 2.5%\n\nEvents aren't mentioned in the visible data. You might want to check server documentation, ask admins, or look for event-related commands like `/events` or `/help`.\n\nAs a general approach, economic events migh"
         }
       ],
       "bonus": 0
@@ -378130,7 +378138,7 @@
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
       "members": 7824,
-      "lastSeen": "2026-10-14T12:26:23.646Z",
+      "lastSeen": "2026-10-14T12:27:41.742Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -383094,13 +383102,13 @@
   },
   "jarvis_power": {
     "605950584859918337": {
-      "awakeUntil": 1791981982792
+      "awakeUntil": 1791982090808
     }
   },
   "jarvis_spend": {
     "month": "2026-10",
     "usd": 0,
-    "tokens": 23730,
-    "calls": 26
+    "tokens": 24224,
+    "calls": 27
   }
 }
