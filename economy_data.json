@@ -329298,7 +329298,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Cake": 15,
-    "Circuit Board": 7,
+    "Circuit Board": 5,
     "Machine Parts": 37
   },
   "global_consumption": {
@@ -329317,7 +329317,7 @@
     "Canned Fish": 89,
     "Bread": 332,
     "Aluminium Sheet": 8,
-    "Circuit Board": 218,
+    "Circuit Board": 220,
     "Cotton Fabric": 18,
     "Reactor Core": 68,
     "Gas Fuel": 294,
@@ -329340,11 +329340,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Machine Parts",
-      "qty": 2,
-      "at": "2026-10-10T10:24:48.397Z"
-    },
     {
       "item": "Machine Parts",
       "qty": 1,
@@ -330839,6 +330834,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-10-14T13:54:03.834Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-10-14T14:09:03.693Z"
     }
   ],
   "demand_history": {
@@ -334269,11 +334269,6 @@
     ],
     "Circuit Board": [
       {
-        "demand": 1.2313636419681222,
-        "at": "2026-10-08T22:20:14.535Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2336779511336324,
         "at": "2026-10-08T22:35:14.504Z",
         "supply": 0
@@ -334566,6 +334561,11 @@
       {
         "demand": 1.4024077388839433,
         "at": "2026-10-14T13:09:01.384Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.4024077388839433,
+        "at": "2026-10-14T14:09:03.693Z",
         "supply": 1
       }
     ],
