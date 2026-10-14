@@ -175,8 +175,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 34,
-      "bot_xp": 3923,
-      "bot_total_xp": 98018,
+      "bot_xp": 3945,
+      "bot_total_xp": 98040,
       "daily_work_count": 6,
       "shock_worker": false,
       "mee6_level": 34,
@@ -85306,8 +85306,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 12,
       "bot_level": 27,
-      "bot_xp": 4239,
-      "bot_total_xp": 55494,
+      "bot_xp": 4254,
+      "bot_total_xp": 55509,
       "daily_work_count": 158,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-10",
@@ -328361,11 +328361,6 @@
   },
   "gsi_history": [
     {
-      "price": 97,
-      "change_percent": 1.0886586044714197,
-      "recorded_at": "2026-10-14T08:54:22.915Z"
-    },
-    {
       "price": 98,
       "change_percent": 1.113984681341159,
       "recorded_at": "2026-10-14T08:59:02.251Z"
@@ -328859,6 +328854,11 @@
       "price": 105,
       "change_percent": 0.5771452688866986,
       "recorded_at": "2026-10-14T12:05:32.976Z"
+    },
+    {
+      "price": 105,
+      "change_percent": 0.37787307190369,
+      "recorded_at": "2026-10-14T12:09:05.349Z"
     }
   ],
   "factory_names": [
@@ -329221,7 +329221,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Cake": 17,
-    "Circuit Board": 11,
+    "Circuit Board": 10,
     "Machine Parts": 40
   },
   "global_consumption": {
@@ -329240,7 +329240,7 @@
     "Canned Fish": 89,
     "Bread": 332,
     "Aluminium Sheet": 8,
-    "Circuit Board": 214,
+    "Circuit Board": 215,
     "Cotton Fabric": 18,
     "Reactor Core": 68,
     "Gas Fuel": 294,
@@ -329263,11 +329263,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Fuel",
-      "qty": 2,
-      "at": "2026-10-09T22:09:46.229Z"
-    },
     {
       "item": "Wine",
       "qty": 1,
@@ -330762,6 +330757,11 @@
       "item": "Circuit Board",
       "qty": 2,
       "at": "2026-10-14T11:54:00.951Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 1,
+      "at": "2026-10-14T12:09:01.281Z"
     }
   ],
   "demand_history": {
@@ -334192,11 +334192,6 @@
     ],
     "Circuit Board": [
       {
-        "demand": 1.358596650989175,
-        "at": "2026-10-07T12:21:21.402Z",
-        "supply": 2
-      },
-      {
         "demand": 1.392573489345358,
         "at": "2026-10-07T16:14:17.564Z",
         "supply": 2
@@ -334489,6 +334484,11 @@
       {
         "demand": 1.4024077388839433,
         "at": "2026-10-14T11:54:00.951Z",
+        "supply": 1
+      },
+      {
+        "demand": 1.4024077388839433,
+        "at": "2026-10-14T12:09:01.281Z",
         "supply": 1
       }
     ],
@@ -341015,10 +341015,6 @@
   "total_rubles_history": [
     {
       "total": 7525155,
-      "at": "2026-10-14T07:59:02.686Z"
-    },
-    {
-      "total": 7525155,
       "at": "2026-10-14T07:59:03.581Z"
     },
     {
@@ -341412,6 +341408,10 @@
     {
       "total": 7561278,
       "at": "2026-10-14T12:04:10.026Z"
+    },
+    {
+      "total": 7561293,
+      "at": "2026-10-14T12:09:09.152Z"
     }
   ],
   "gold_rush": null,
@@ -342624,7 +342624,7 @@
       "1544820489191559270": 1791414322995,
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1791960596144,
-      "1082686076491137115": 1791978707480,
+      "1082686076491137115": 1791979705256,
       "1229741033265299506": 1791975894289,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791851295596,
@@ -342638,7 +342638,7 @@
       "1470136693821800521": 1791739578492,
       "1309104161278918706": 1791385206033,
       "1325111649816023092": 1791978402866,
-      "1506785783506534426": 1791979651128,
+      "1506785783506534426": 1791979724263,
       "807254722251587614": 1791929210611,
       "1353373037994705078": 1791915906745,
       "1192563739778625607": 1790365373051,
@@ -363765,40 +363765,16 @@
   ],
   "jarvis": {
     "1082686076491137115": {
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "used": 0,
       "history": [
         {
           "role": "user",
-          "content": "i gave you access mf"
+          "content": "Jarvis Activate go wild"
         },
         {
           "role": "assistant",
-          "content": "I don't have any special access beyond what's already in our current conversation and server data. I can only work with what's visible in this scope — no hidden systems, files, or external tools. If you're trying to share something, feel free to paste it here and I'll help however I can."
-        },
-        {
-          "role": "user",
-          "content": "honest reaction"
-        },
-        {
-          "role": "assistant",
-          "content": "Honest reaction: I'm limited to what's currently visible in this server state. I can only reference the explicit data provided:\n\n- Current inflation rate: 55.11%\n- GDP: 7,408,412 RUB\n- GSI: 153\n- Gold backing: 3.7%\n\nThe \"Calculations for Inflation\" you're looking for would require accessing the bot's internal formula and sources, which aren't exposed to me in this context. I don't have access to token-based logic, hidden configurations, or proprietary formulas unless they're explicitly present i"
-        },
-        {
-          "role": "user",
-          "content": "literaly just ping the bot  yo can you delete this message"
-        },
-        {
-          "role": "assistant",
-          "content": "User Safety: safe\nResponse Safety: safe"
-        },
-        {
-          "role": "user",
-          "content": "update"
-        },
-        {
-          "role": "assistant",
-          "content": "Latest update is V4.6 as announced in [₽│treasury-hall] by hyawii2.0. Creator Hyawii (Google Giggles) manages all systems via console per dossier."
+          "content": "Here’s the current USSR snapshot: cash 100 000 RUB, GDP 7 561"
         }
       ],
       "bonus": 0
@@ -372390,12 +372366,6 @@
         "balance": 1683238,
         "income": 2377275,
         "spending": 694037,
-        "at": "2026-10-14T07:59:02.827Z"
-      },
-      {
-        "balance": 1683238,
-        "income": 2377275,
-        "spending": 694037,
         "at": "2026-10-14T07:59:03.843Z"
       },
       {
@@ -372985,6 +372955,12 @@
         "income": 2379748,
         "spending": 694037,
         "at": "2026-10-14T12:04:10.372Z"
+      },
+      {
+        "balance": 1685711,
+        "income": 2379748,
+        "spending": 694037,
+        "at": "2026-10-14T12:09:09.320Z"
       }
     ]
   },
@@ -376463,11 +376439,6 @@
     {
       "gini": 99.6960714142088,
       "top10": 100,
-      "at": "2026-10-14T07:59:02.701Z"
-    },
-    {
-      "gini": 99.6960714142088,
-      "top10": 100,
       "at": "2026-10-14T07:59:03.599Z"
     },
     {
@@ -376959,13 +376930,14 @@
       "gini": 99.69533440375527,
       "top10": 100,
       "at": "2026-10-14T12:04:10.046Z"
+    },
+    {
+      "gini": 99.69533401526276,
+      "top10": 100,
+      "at": "2026-10-14T12:09:09.165Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10884668,
-      "at": "2026-10-14T07:59:02.827Z"
-    },
     {
       "gdp": 10884668,
       "at": "2026-10-14T07:59:03.843Z"
@@ -377361,6 +377333,10 @@
     {
       "gdp": 10898209,
       "at": "2026-10-14T12:04:10.367Z"
+    },
+    {
+      "gdp": 10898229,
+      "at": "2026-10-14T12:09:09.320Z"
     }
   ],
   "purge_allowed": [
@@ -378139,8 +378115,8 @@
     "605950584859918337": {
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
-      "members": 7822,
-      "lastSeen": "2026-10-13T21:23:59.684Z",
+      "members": 7825,
+      "lastSeen": "2026-10-14T12:08:27.110Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -378153,7 +378129,7 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 0.0010131070727537517,
+        "rate": 0.0003432960714055829,
         "set": true
       },
       "supply": 16,
@@ -379241,12 +379217,6 @@
       "total": 1849617,
       "gdp": 10884668,
       "ratio": 16.99,
-      "at": "2026-10-14T07:59:02.835Z"
-    },
-    {
-      "total": 1849617,
-      "gdp": 10884668,
-      "ratio": 16.99,
       "at": "2026-10-14T07:59:03.885Z"
     },
     {
@@ -379836,14 +379806,15 @@
       "gdp": 10898209,
       "ratio": 17.18,
       "at": "2026-10-14T12:04:10.450Z"
+    },
+    {
+      "total": 1872554,
+      "gdp": 10898229,
+      "ratio": 17.18,
+      "at": "2026-10-14T12:09:09.336Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8532,
-      "citizens": 8532,
-      "at": "2026-10-14T09:19:05.495Z"
-    },
     {
       "total": 8532,
       "citizens": 8532,
@@ -380338,6 +380309,11 @@
       "total": 8533,
       "citizens": 8533,
       "at": "2026-10-14T12:04:10.452Z"
+    },
+    {
+      "total": 8533,
+      "citizens": 8533,
+      "at": "2026-10-14T12:09:09.338Z"
     }
   ],
   "debt_watch_band": 0,
@@ -380659,12 +380635,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-14T03:49:00.289Z",
-          "wealth": 15514,
-          "members": 199,
-          "works": 0
-        },
         {
           "at": "2026-10-14T03:54:00.251Z",
           "wealth": 10458,
@@ -381258,18 +381228,18 @@
           "wealth": 15793,
           "members": 198,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T12:09:09.339Z",
+          "wealth": 46607,
+          "members": 197,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-14T03:49:00.289Z",
-          "wealth": 0,
-          "members": 1,
-          "works": 0
-        },
         {
           "at": "2026-10-14T03:54:00.251Z",
           "wealth": 0,
@@ -381863,18 +381833,18 @@
           "wealth": 0,
           "members": 3,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T12:09:09.339Z",
+          "wealth": 0,
+          "members": 3,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-14T03:49:00.289Z",
-          "wealth": 0,
-          "members": 0,
-          "works": 0
-        },
         {
           "at": "2026-10-14T03:54:00.251Z",
           "wealth": 0,
@@ -382468,18 +382438,18 @@
           "wealth": 0,
           "members": 0,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T12:09:09.340Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-14T03:49:00.289Z",
-          "wealth": 70365,
-          "members": 4,
-          "works": 0
-        },
         {
           "at": "2026-10-14T03:54:00.251Z",
           "wealth": 70380,
@@ -383073,6 +383043,12 @@
           "wealth": 71067,
           "members": 4,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T12:09:09.340Z",
+          "wealth": 71082,
+          "members": 4,
+          "works": 0
         }
       ],
       "works": 0
@@ -383104,13 +383080,13 @@
   },
   "jarvis_power": {
     "605950584859918337": {
-      "sleep": true
+      "awakeUntil": 1791980906479
     }
   },
   "jarvis_spend": {
     "month": "2026-10",
     "usd": 0,
-    "tokens": 16324,
-    "calls": 16
+    "tokens": 17012,
+    "calls": 17
   }
 }
