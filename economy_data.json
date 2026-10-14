@@ -329183,7 +329183,7 @@
     "Cake": 17,
     "Circuit Board": 15,
     "Machine Parts": 42,
-    "Cotton Fabric": 5
+    "Cotton Fabric": 3
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -329202,7 +329202,7 @@
     "Bread": 332,
     "Aluminium Sheet": 8,
     "Circuit Board": 210,
-    "Cotton Fabric": 13,
+    "Cotton Fabric": 15,
     "Reactor Core": 68,
     "Gas Fuel": 294,
     "Steel Beam": 96,
@@ -329224,11 +329224,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Wine",
-      "qty": 2,
-      "at": "2026-10-09T20:09:45.806Z"
-    },
     {
       "item": "Fuel",
       "qty": 2,
@@ -330723,6 +330718,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-10-14T09:53:58.490Z"
+    },
+    {
+      "item": "Cotton Fabric",
+      "qty": 2,
+      "at": "2026-10-14T10:08:58.653Z"
     }
   ],
   "demand_history": {
@@ -334513,6 +334513,11 @@
         "demand": 1.3870090684300174,
         "at": "2026-09-27T08:16:47.748Z",
         "supply": 0
+      },
+      {
+        "demand": 1.2857729122631152,
+        "at": "2026-10-14T10:08:58.653Z",
+        "supply": 1
       }
     ],
     "Reactor Core": [
