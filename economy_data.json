@@ -1139,8 +1139,8 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 50,
-      "bank": 3388,
+      "cash": 0,
+      "bank": 4918,
       "resources": {},
       "inventory": {
         "Oil Shale": 1,
@@ -1153,7 +1153,7 @@
         "Cotton": 2,
         "Coal": 1,
         "Bread": 7,
-        "Fish": 2,
+        "Fish": 1,
         "Timber": 4,
         "Sulphur": 1,
         "Phosphorite": 1,
@@ -1172,15 +1172,15 @@
       },
       "last_work": "2026-10-14T03:16:35.709Z",
       "work_count": 2726,
-      "last_claim": "2026-10-13T05:37:19.506Z",
+      "last_claim": "2026-10-14T03:17:03.084Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
       "is_employed": true,
       "is_state_director": false,
       "director_of": null,
       "ceo_of": "Speers Realm",
-      "dirty_cash": 2698,
-      "heat": 23.291072138863527,
+      "dirty_cash": 0,
+      "heat": 21.49240547219686,
       "wanted": 0,
       "last_illegal": "2026-10-14T03:16:35.709Z",
       "total_heat_generated": 2976.1065499999986,
@@ -326607,7 +326607,6 @@
         18,
         18,
         18,
-        18,
         19,
         18,
         18,
@@ -326685,6 +326684,7 @@
         19,
         19,
         19,
+        13,
         13,
         13,
         13,
@@ -326713,14 +326713,13 @@
         "manager": 0
       },
       "wage": 50,
-      "heat": 7.253399999999999,
+      "heat": 6.354066666666666,
       "underground_heat": 1178.7923160443868,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 13,
       "is_private": true,
       "value_history": [
-        1511794,
         1511767,
         1511740,
         1511740,
@@ -326819,7 +326818,8 @@
         1661554,
         1665007,
         1666277,
-        1680402
+        1680402,
+        1680359
       ],
       "sales_team": 2,
       "execs": {
@@ -328200,11 +328200,6 @@
   "gsi_history": [
     {
       "price": 107,
-      "change_percent": 0.3144061519573432,
-      "recorded_at": "2026-10-13T23:03:57.101Z"
-    },
-    {
-      "price": 107,
       "change_percent": 0.06668098961446675,
       "recorded_at": "2026-10-13T23:06:48.567Z"
     },
@@ -328697,6 +328692,11 @@
       "price": 94,
       "change_percent": 0.39796333471633605,
       "recorded_at": "2026-10-14T03:15:57.981Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 0.5850380490335291,
+      "recorded_at": "2026-10-14T03:16:37.879Z"
     }
   ],
   "factory_names": [
@@ -328718,7 +328718,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 5.502477213069341,
-  "money_printed": 832843.6256883251,
+  "money_printed": 832974.6256883251,
   "total_bank_reserves": 5114263,
   "inflation_history": [
     55.10480701396632,
@@ -337334,13 +337334,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-16T07:50:49.017Z",
-      "by": "1186597507720019988",
-      "username": "imdivit",
-      "action": "collect-salaries",
-      "details": "State Mining Corp paid ₽538 salaries ceo 1186597507720019988 ₽192, director 1186597507720019988 ₽192, manager 791747702689103893 ₽77, manager 1186597507720019988 ₽77"
-    },
-    {
       "at": "2026-09-16T11:45:10.737Z",
       "by": "1528783188728483944",
       "username": "alice_orlowe",
@@ -340832,6 +340825,13 @@
       "username": "seniormanulos",
       "action": "sellgrain",
       "details": "Speers Realm 28x Bread for ₽3,622"
+    },
+    {
+      "at": "2026-10-14T03:16:50.655Z",
+      "by": "874346333882945547",
+      "username": "seniormanulos",
+      "action": "launder",
+      "details": "₽2,698 dirty → ₽1,349 clean fee ₽1,349"
     }
   ],
   "total_rubles_history": [
@@ -374333,13 +374333,13 @@
       "name": "Tito",
       "species": "parrot",
       "alive": true,
-      "hunger": 75.5,
+      "hunger": 95.5,
       "water": 60,
       "health": 100,
       "quarters": 6,
-      "cheap_streak": 1,
+      "cheap_streak": 2,
       "born_at": "2026-09-19T16:48:56.457Z",
-      "last_fed": "2026-10-13T17:39:45.224Z",
+      "last_fed": "2026-10-14T03:17:25.610Z",
       "last_watered": null,
       "death": null,
       "warned_empty": false,
@@ -374387,7 +374387,7 @@
         "epic": 1,
         "legendary": 0
       },
-      "friendship": 97,
+      "friendship": 98,
       "hunts": 37,
       "hunt": {
         "start": "2026-10-13T17:40:00.245Z",
@@ -374417,7 +374417,7 @@
       "starve_since": null,
       "last_pet": "2026-10-13T21:24:57.358Z",
       "lastPetAct": "2026-10-12T20:43:24.677Z",
-      "last_feed_cmd": "2026-10-13T17:39:45.224Z",
+      "last_feed_cmd": "2026-10-14T03:17:25.610Z",
       "last_train_cmd": "2026-10-13T12:36:34.145Z",
       "last_play": "2026-10-13T17:39:53.775Z"
     },
@@ -376213,7 +376213,7 @@
       "2026-W42": {
         "channels": {
           "1071101280702963752": {
-            "msgs": 13,
+            "msgs": 14,
             "users": [
               "1365483598962102305",
               "1399295039594696735",
@@ -377964,7 +377964,7 @@
         "set": true
       },
       "supply": 16,
-      "printed": 11085,
+      "printed": 11216,
       "workPrint": 15,
       "workChannelId": null,
       "resources": null,
