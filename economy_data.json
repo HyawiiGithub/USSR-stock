@@ -1179,7 +1179,7 @@
       "director_of": null,
       "ceo_of": "Speers Realm",
       "dirty_cash": 0,
-      "heat": 4,
+      "heat": 3.0246314168205997,
       "wanted": 0,
       "last_illegal": "2026-10-14T03:16:35.709Z",
       "total_heat_generated": 3005.1065499999986,
@@ -317398,8 +317398,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 17,
-      "bot_xp": 2342,
-      "bot_total_xp": 18322,
+      "bot_xp": 2360,
+      "bot_total_xp": 18340,
       "daily_work_count": 216,
       "shock_worker": false,
       "last_laylow": null,
@@ -325524,8 +325524,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 11,
-      "bot_total_xp": 781,
+      "bot_xp": 15,
+      "bot_total_xp": 785,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -325792,8 +325792,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 133,
-      "bot_total_xp": 388,
+      "bot_xp": 150,
+      "bot_total_xp": 405,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -327108,7 +327108,7 @@
       },
       "wage": 50,
       "heat": 0,
-      "underground_heat": 1132.9303014510297,
+      "underground_heat": 1132.266700850318,
       "dirty_cash": 0,
       "last_illegal": null,
       "prev_price": 13,
@@ -328592,11 +328592,6 @@
   },
   "gsi_history": [
     {
-      "price": 106,
-      "change_percent": 0.5605418841221366,
-      "recorded_at": "2026-10-14T10:53:12.724Z"
-    },
-    {
       "price": 111,
       "change_percent": 4.958591311960917,
       "recorded_at": "2026-10-14T10:53:57.594Z"
@@ -329090,6 +329085,11 @@
       "price": 107,
       "change_percent": 0.05212831417262232,
       "recorded_at": "2026-10-14T15:47:11.070Z"
+    },
+    {
+      "price": 106,
+      "change_percent": -0.0321717044584053,
+      "recorded_at": "2026-10-14T15:52:11.145Z"
     }
   ],
   "factory_names": [
@@ -329110,11 +329110,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 5.344332836440529,
-  "money_printed": 865727.0574083524,
-  "total_bank_reserves": 5120981,
+  "inflation": 5.844332836440529,
+  "money_printed": 865294.1938796482,
+  "total_bank_reserves": 5137161,
   "inflation_history": [
-    5.652049568406355,
     5.6442825437014505,
     5.64428114884808,
     5.644279754006007,
@@ -329213,7 +329212,8 @@
     5.337297314884296,
     5.3453384519405205,
     5.344941496038658,
-    5.344332836440529
+    5.344332836440529,
+    5.844332836440529
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 31,
@@ -329363,25 +329363,25 @@
   "national_minimum_wage": 15,
   "market_demand": {
     "Fuel": 1.3920397961252646,
-    "Cake": 1.388736516749672,
-    "Bread": 1.3645915230848449,
+    "Cake": 1.3864997559833065,
+    "Bread": 1.36291732652416,
     "Copper Ingot": 1.2431069233656447,
     "Iron Ingot": 0.9868598467583517,
     "Steel Ingot": 1.257595852622321,
     "Gold Bar": 0.8146251264107571,
     "Aluminium Ingot": 1.4012121649497113,
     "Timber Planks": 0.9029854491532399,
-    "Bricks": 1.0626756087734819,
+    "Bricks": 1.0606909171064272,
     "Concrete": 1.4029263447939535,
     "Glass": 1.4043749109969852,
     "Steel Beam": 1.321507338119409,
-    "Machine Parts": 1.083561417260608,
+    "Machine Parts": 1.0805657997875613,
     "Refined Fuel": 1.404618565240938,
     "Uranium Rod": 1.3266287122625426,
     "Reactor Core": 1.364061434367664,
-    "Circuit Board": 1.3976701425959024,
+    "Circuit Board": 1.396147343789032,
     "Flour": 1.347185262530557,
-    "Sugar": 0.8864226625491056,
+    "Sugar": 0.8851327863855134,
     "Wine": 1.357326424185847,
     "Canned Food": 1.4046285391920774,
     "Canned Fish": 1.4028400500637148,
@@ -341246,14 +341246,6 @@
   "total_rubles_history": [
     {
       "total": 7561626,
-      "at": "2026-10-14T11:19:08.543Z"
-    },
-    {
-      "total": 7561626,
-      "at": "2026-10-14T11:19:12.595Z"
-    },
-    {
-      "total": 7561626,
       "at": "2026-10-14T11:24:08.927Z"
     },
     {
@@ -341643,6 +341635,14 @@
     {
       "total": 7573174,
       "at": "2026-10-14T15:42:18.074Z"
+    },
+    {
+      "total": 7569174,
+      "at": "2026-10-14T15:52:13.750Z"
+    },
+    {
+      "total": 7569174,
+      "at": "2026-10-14T15:52:15.105Z"
     }
   ],
   "gold_rush": null,
@@ -341669,7 +341669,7 @@
   },
   "five_year_plan_announced": true,
   "last_weekly_tax": "2026-10-12T10:27:31.949Z",
-  "heat_global": 0.6,
+  "heat_global": 0.3,
   "police_budget": 260000,
   "police_raids": [],
   "underground_market": {
@@ -343530,7 +343530,7 @@
       "764990823673757746": 1791309553797,
       "1520361366031040603": 1791571951148,
       "1285277076995309655": 1791313930095,
-      "1128425608146325544": 1791993023463,
+      "1128425608146325544": 1791993157279,
       "1523681146284539934": 1791317248700,
       "1180159151482093609": 1791317714358,
       "659652953518505984": 1791321279943,
@@ -343643,14 +343643,14 @@
       "1235504042587983887": 1791920126202,
       "1322605666551992404": 1791924299317,
       "1449721609672855698": 1791924284517,
-      "1558219605753860178": 1791993120746,
+      "1558219605753860178": 1791993126685,
       "1549310232533016651": 1791983792907,
       "1557801900101992508": 1791977354700,
       "1499767732416151575": 1791980056394,
       "1544303382364168306": 1791987365826,
       "927579984216883200": 1791987722887,
       "1559642743590887586": 1791989520566,
-      "1549773411830595629": 1791993067655
+      "1549773411830595629": 1791993131589
     }
   },
   "mee6_cache": {
@@ -363086,7 +363086,7 @@
       "userId": "1558219605753860178",
       "from": 3,
       "to": 4,
-      "at": "2026-10-14T15:52:00.747Z",
+      "at": "2026-10-14T15:52:06.686Z",
       "reason": "chat"
     }
   ],
@@ -364994,6 +364994,21 @@
           "content": "I don't have access to gambling-related data or context in the information provided to me. I'm unable to assist with gambling-related queries."
         }
       ]
+    },
+    "1549773411830595629": {
+      "date": "2026-10-14",
+      "used": 1,
+      "history": [
+        {
+          "role": "user",
+          "content": "stonks too confusifying for me"
+        },
+        {
+          "role": "assistant",
+          "content": "Don't worry, Hyawii. Even the most seasoned commissars struggle when the numbers start dancing. If the economic indicators look like a chaotic mess of Cyrillic scribbles, it is likely because the market is behaving with its usual lack of discipline.\n\nTo simplify the situation for you, here is the current state of the Union's economy as I have it recorded:\n\nThe GDP is sitting exactly at 756,9174 ₽. Inflation is currently at 5.34%, which means your Rubles are losing their fighting spirit a little "
+        }
+      ],
+      "bonus": 0
     }
   },
   "depression": {
@@ -370372,12 +370387,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.18,
+    "rub_per_usd": 6.12,
     "history": [
-      {
-        "rate": 6.16,
-        "at": "2026-10-14T01:53:54.604Z"
-      },
       {
         "rate": 6.17,
         "at": "2026-10-14T02:03:54.671Z"
@@ -370773,9 +370784,13 @@
       {
         "rate": 6.18,
         "at": "2026-10-14T15:42:08.412Z"
+      },
+      {
+        "rate": 6.12,
+        "at": "2026-10-14T15:52:10.077Z"
       }
     ],
-    "last_update": "2026-10-14T15:42:08.412Z",
+    "last_update": "2026-10-14T15:52:10.077Z",
     "manual_override": null
   },
   "national_budget": {
@@ -372765,18 +372780,6 @@
         "balance": 1685711,
         "income": 2379748,
         "spending": 694037,
-        "at": "2026-10-14T11:19:08.704Z"
-      },
-      {
-        "balance": 1685711,
-        "income": 2379748,
-        "spending": 694037,
-        "at": "2026-10-14T11:19:12.755Z"
-      },
-      {
-        "balance": 1685711,
-        "income": 2379748,
-        "spending": 694037,
         "at": "2026-10-14T11:24:09.232Z"
       },
       {
@@ -373360,6 +373363,18 @@
         "income": 2382275,
         "spending": 694037,
         "at": "2026-10-14T15:42:18.253Z"
+      },
+      {
+        "balance": 1688238,
+        "income": 2382275,
+        "spending": 694037,
+        "at": "2026-10-14T15:52:14.089Z"
+      },
+      {
+        "balance": 1688238,
+        "income": 2382275,
+        "spending": 694037,
+        "at": "2026-10-14T15:52:15.296Z"
       }
     ]
   },
@@ -376838,16 +376853,6 @@
     {
       "gini": 99.69532539731748,
       "top10": 100,
-      "at": "2026-10-14T11:19:08.564Z"
-    },
-    {
-      "gini": 99.69532539731748,
-      "top10": 100,
-      "at": "2026-10-14T11:19:12.616Z"
-    },
-    {
-      "gini": 99.69532539731748,
-      "top10": 100,
       "at": "2026-10-14T11:24:08.946Z"
     },
     {
@@ -377334,17 +377339,19 @@
       "gini": 99.69678765212802,
       "top10": 100,
       "at": "2026-10-14T15:42:18.113Z"
+    },
+    {
+      "gini": 99.69556467685692,
+      "top10": 100,
+      "at": "2026-10-14T15:52:13.789Z"
+    },
+    {
+      "gini": 99.69556467685692,
+      "top10": 100,
+      "at": "2026-10-14T15:52:15.147Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10896980,
-      "at": "2026-10-14T11:19:08.704Z"
-    },
-    {
-      "gdp": 10896980,
-      "at": "2026-10-14T11:19:12.755Z"
-    },
     {
       "gdp": 10896980,
       "at": "2026-10-14T11:24:09.232Z"
@@ -377736,6 +377743,14 @@
     {
       "gdp": 10960629,
       "at": "2026-10-14T15:42:18.253Z"
+    },
+    {
+      "gdp": 10956629,
+      "at": "2026-10-14T15:52:14.087Z"
+    },
+    {
+      "gdp": 10956629,
+      "at": "2026-10-14T15:52:15.296Z"
     }
   ],
   "purge_allowed": [
@@ -378515,7 +378530,7 @@
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
       "members": 7826,
-      "lastSeen": "2026-10-14T15:47:12.150Z",
+      "lastSeen": "2026-10-14T15:51:53.250Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -378528,7 +378543,7 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 0.00033131095603917754,
+        "rate": 0.00037322136692325634,
         "set": true
       },
       "supply": 16,
@@ -379638,18 +379653,6 @@
   },
   "debt_history": [
     {
-      "total": 1866797,
-      "gdp": 10896980,
-      "ratio": 17.13,
-      "at": "2026-10-14T11:19:08.714Z"
-    },
-    {
-      "total": 1866797,
-      "gdp": 10896980,
-      "ratio": 17.13,
-      "at": "2026-10-14T11:19:12.766Z"
-    },
-    {
       "total": 1872554,
       "gdp": 10896980,
       "ratio": 17.18,
@@ -380236,24 +380239,21 @@
       "gdp": 10960629,
       "ratio": 17.24,
       "at": "2026-10-14T15:42:18.261Z"
+    },
+    {
+      "total": 1889960,
+      "gdp": 10956629,
+      "ratio": 17.25,
+      "at": "2026-10-14T15:52:14.148Z"
+    },
+    {
+      "total": 1889960,
+      "gdp": 10956629,
+      "ratio": 17.25,
+      "at": "2026-10-14T15:52:15.307Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8533,
-      "citizens": 8533,
-      "at": "2026-10-14T12:44:10.467Z"
-    },
-    {
-      "total": 7777,
-      "citizens": 8533,
-      "at": "2026-10-14T12:44:14.404Z"
-    },
-    {
-      "total": 8533,
-      "citizens": 8533,
-      "at": "2026-10-14T12:44:14.730Z"
-    },
     {
       "total": 8533,
       "citizens": 8533,
@@ -380738,6 +380738,21 @@
       "total": 8539,
       "citizens": 8539,
       "at": "2026-10-14T15:42:18.263Z"
+    },
+    {
+      "total": 8539,
+      "citizens": 8539,
+      "at": "2026-10-14T15:52:14.150Z"
+    },
+    {
+      "total": 7780,
+      "citizens": 8539,
+      "at": "2026-10-14T15:52:15.044Z"
+    },
+    {
+      "total": 8539,
+      "citizens": 8539,
+      "at": "2026-10-14T15:52:15.311Z"
     }
   ],
   "debt_watch_band": 0,
@@ -381042,7 +381057,7 @@
   "turn_digest_message": "1557783596444422255",
   "chat_rubles_enabled": false,
   "state_debt_owed": 0,
-  "inflation_updated_at": "2026-10-14T15:42:08.244Z",
+  "inflation_updated_at": "2026-10-14T15:52:09.919Z",
   "vault_axe_pending": 0,
   "vault_axe_unb": 0,
   "vault_axed": {
@@ -381059,12 +381074,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-14T07:14:02.851Z",
-          "wealth": 11985,
-          "members": 199,
-          "works": 0
-        },
         {
           "at": "2026-10-14T07:19:02.884Z",
           "wealth": 10773,
@@ -381658,18 +381667,18 @@
           "wealth": 48293,
           "members": 198,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T15:52:14.151Z",
+          "wealth": 42870,
+          "members": 197,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-14T07:14:02.851Z",
-          "wealth": 0,
-          "members": 3,
-          "works": 0
-        },
         {
           "at": "2026-10-14T07:19:02.884Z",
           "wealth": 0,
@@ -382263,18 +382272,18 @@
           "wealth": 0,
           "members": 141,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T15:52:14.151Z",
+          "wealth": 0,
+          "members": 141,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-14T07:14:02.851Z",
-          "wealth": 0,
-          "members": 0,
-          "works": 0
-        },
         {
           "at": "2026-10-14T07:19:02.884Z",
           "wealth": 0,
@@ -382868,18 +382877,18 @@
           "wealth": 0,
           "members": 0,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T15:52:14.151Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-14T07:14:02.851Z",
-          "wealth": 70695,
-          "members": 4,
-          "works": 0
-        },
         {
           "at": "2026-10-14T07:19:02.884Z",
           "wealth": 70710,
@@ -383470,6 +383479,12 @@
         },
         {
           "at": "2026-10-14T15:42:12.262Z",
+          "wealth": 0,
+          "members": 5,
+          "works": 0
+        },
+        {
+          "at": "2026-10-14T15:52:14.151Z",
           "wealth": 0,
           "members": 5,
           "works": 0
