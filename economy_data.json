@@ -175,8 +175,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 34,
-      "bot_xp": 4295,
-      "bot_total_xp": 98390,
+      "bot_xp": 4318,
+      "bot_total_xp": 98413,
       "daily_work_count": 6,
       "shock_worker": false,
       "mee6_level": 34,
@@ -85306,8 +85306,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 12,
       "bot_level": 27,
-      "bot_xp": 4695,
-      "bot_total_xp": 55950,
+      "bot_xp": 4712,
+      "bot_total_xp": 55967,
       "daily_work_count": 158,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-10",
@@ -328516,11 +328516,6 @@
   "gsi_history": [
     {
       "price": 100,
-      "change_percent": 0.6301712064077273,
-      "recorded_at": "2026-10-14T10:29:02.193Z"
-    },
-    {
-      "price": 100,
       "change_percent": 0.5953884808291225,
       "recorded_at": "2026-10-14T10:32:32.937Z"
     },
@@ -329013,6 +329008,11 @@
       "price": 104,
       "change_percent": 0.15751327493311926,
       "recorded_at": "2026-10-14T14:47:09.490Z"
+    },
+    {
+      "price": 103,
+      "change_percent": -0.17095406174950428,
+      "recorded_at": "2026-10-14T14:54:56.473Z"
     }
   ],
   "factory_names": [
@@ -341168,14 +341168,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 7560806,
-      "at": "2026-10-14T10:34:04.635Z"
-    },
-    {
-      "total": 7560806,
-      "at": "2026-10-14T10:34:05.757Z"
-    },
-    {
       "total": 7560851,
       "at": "2026-10-14T10:39:04.466Z"
     },
@@ -341566,6 +341558,14 @@
     {
       "total": 7563686,
       "at": "2026-10-14T14:47:12.040Z"
+    },
+    {
+      "total": 7563686,
+      "at": "2026-10-14T14:54:56.751Z"
+    },
+    {
+      "total": 7563686,
+      "at": "2026-10-14T14:55:00.584Z"
     }
   ],
   "gold_rush": null,
@@ -342778,7 +342778,7 @@
       "1544820489191559270": 1791414322995,
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1791960596144,
-      "1082686076491137115": 1791989576943,
+      "1082686076491137115": 1791989712737,
       "1229741033265299506": 1791975894289,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791851295596,
@@ -342792,7 +342792,7 @@
       "1470136693821800521": 1791739578492,
       "1309104161278918706": 1791385206033,
       "1325111649816023092": 1791989225603,
-      "1506785783506534426": 1791989154113,
+      "1506785783506534426": 1791989690064,
       "807254722251587614": 1791984766483,
       "1353373037994705078": 1791915906745,
       "1192563739778625607": 1790365373051,
@@ -363928,14 +363928,6 @@
       "history": [
         {
           "role": "user",
-          "content": "hey jarvis theres a bug regarding chat revive it wont work"
-        },
-        {
-          "role": "assistant",
-          "content": "User Safety: safe\nResponse Safety: safe"
-        },
-        {
-          "role": "user",
           "content": "hey jarvis"
         },
         {
@@ -363957,6 +363949,14 @@
         {
           "role": "assistant",
           "content": "I checked the provided source code excerpt (bot.js:12946 and surrounding context). It contains only:\n- `jarvisBlockCheck` function\n- Handling for `jarvisblock`, `jarvisban`, `jarvisunblock`, `jarvisunban`, `jarvisblocks`, `jarvisbans`, `jarvisblocklist` commands\n\nThere is no mention of a \"chat rvive\" command, \"rvive\" functionality, or any chat revival logic in the visible scope. If this command exists, it would be outside the provided code snippet — perhaps in another file or not implemented yet"
+        },
+        {
+          "role": "user",
+          "content": "jarvis sybau please"
+        },
+        {
+          "role": "assistant",
+          "content": "Not visible in provided scope (bot.js:12946 only shows jarvisblock/ban/unblock commands)"
         }
       ],
       "bonus": 0
@@ -372610,18 +372610,6 @@
         "balance": 1685087,
         "income": 2379124,
         "spending": 694037,
-        "at": "2026-10-14T10:34:04.786Z"
-      },
-      {
-        "balance": 1685087,
-        "income": 2379124,
-        "spending": 694037,
-        "at": "2026-10-14T10:34:05.927Z"
-      },
-      {
-        "balance": 1685087,
-        "income": 2379124,
-        "spending": 694037,
         "at": "2026-10-14T10:39:04.806Z"
       },
       {
@@ -373205,6 +373193,18 @@
         "income": 2381638,
         "spending": 694037,
         "at": "2026-10-14T14:47:12.198Z"
+      },
+      {
+        "balance": 1687601,
+        "income": 2381638,
+        "spending": 694037,
+        "at": "2026-10-14T14:54:57.054Z"
+      },
+      {
+        "balance": 1687601,
+        "income": 2381638,
+        "spending": 694037,
+        "at": "2026-10-14T14:55:00.756Z"
       }
     ]
   },
@@ -376681,16 +376681,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.69561020526483,
-      "top10": 100,
-      "at": "2026-10-14T10:34:04.647Z"
-    },
-    {
-      "gini": 99.69561020526483,
-      "top10": 100,
-      "at": "2026-10-14T10:34:05.778Z"
-    },
-    {
       "gini": 99.6953887099992,
       "top10": 100,
       "at": "2026-10-14T10:39:04.499Z"
@@ -377179,17 +377169,19 @@
       "gini": 99.69517039807397,
       "top10": 100,
       "at": "2026-10-14T14:47:12.066Z"
+    },
+    {
+      "gini": 99.69520610913322,
+      "top10": 100,
+      "at": "2026-10-14T14:54:56.790Z"
+    },
+    {
+      "gini": 99.69520610913322,
+      "top10": 100,
+      "at": "2026-10-14T14:55:00.612Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10895285,
-      "at": "2026-10-14T10:34:04.785Z"
-    },
-    {
-      "gdp": 10895285,
-      "at": "2026-10-14T10:34:05.927Z"
-    },
     {
       "gdp": 10895466,
       "at": "2026-10-14T10:39:04.806Z"
@@ -377581,6 +377573,14 @@
     {
       "gdp": 10914841,
       "at": "2026-10-14T14:47:12.198Z"
+    },
+    {
+      "gdp": 10914841,
+      "at": "2026-10-14T14:54:57.054Z"
+    },
+    {
+      "gdp": 10914841,
+      "at": "2026-10-14T14:55:00.756Z"
     }
   ],
   "purge_allowed": [
@@ -378360,7 +378360,7 @@
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
       "members": 7824,
-      "lastSeen": "2026-10-14T14:53:47.140Z",
+      "lastSeen": "2026-10-14T14:55:16.325Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -378373,7 +378373,7 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 0.00045230960592525585,
+        "rate": 0.0004494129543284085,
         "set": true
       },
       "supply": 16,
@@ -379459,18 +379459,6 @@
   "debt_history": [
     {
       "total": 1866797,
-      "gdp": 10895285,
-      "ratio": 17.13,
-      "at": "2026-10-14T10:34:04.795Z"
-    },
-    {
-      "total": 1866797,
-      "gdp": 10895285,
-      "ratio": 17.13,
-      "at": "2026-10-14T10:34:05.937Z"
-    },
-    {
-      "total": 1866797,
       "gdp": 10895466,
       "ratio": 17.13,
       "at": "2026-10-14T10:39:04.872Z"
@@ -380056,24 +380044,21 @@
       "gdp": 10914841,
       "ratio": 17.32,
       "at": "2026-10-14T14:47:12.207Z"
+    },
+    {
+      "total": 1889960,
+      "gdp": 10914841,
+      "ratio": 17.32,
+      "at": "2026-10-14T14:54:57.130Z"
+    },
+    {
+      "total": 1889960,
+      "gdp": 10914841,
+      "ratio": 17.32,
+      "at": "2026-10-14T14:55:00.771Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 7779,
-      "citizens": 8533,
-      "at": "2026-10-14T11:54:10.098Z"
-    },
-    {
-      "total": 8533,
-      "citizens": 8533,
-      "at": "2026-10-14T11:54:10.260Z"
-    },
-    {
-      "total": 8533,
-      "citizens": 8533,
-      "at": "2026-10-14T11:59:09.213Z"
-    },
     {
       "total": 7779,
       "citizens": 8533,
@@ -380558,6 +380543,21 @@
       "total": 8536,
       "citizens": 8536,
       "at": "2026-10-14T14:47:12.209Z"
+    },
+    {
+      "total": 8537,
+      "citizens": 8537,
+      "at": "2026-10-14T14:54:57.132Z"
+    },
+    {
+      "total": 7778,
+      "citizens": 8537,
+      "at": "2026-10-14T14:55:00.576Z"
+    },
+    {
+      "total": 8537,
+      "citizens": 8537,
+      "at": "2026-10-14T14:55:00.773Z"
     }
   ],
   "debt_watch_band": 0,
@@ -380879,12 +380879,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-14T06:29:01.712Z",
-          "wealth": 24843,
-          "members": 198,
-          "works": 0
-        },
         {
           "at": "2026-10-14T06:34:01.659Z",
           "wealth": 28646,
@@ -381478,18 +381472,18 @@
           "wealth": 35374,
           "members": 7,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T14:54:57.133Z",
+          "wealth": 35602,
+          "members": 4,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-14T06:29:01.712Z",
-          "wealth": 0,
-          "members": 2,
-          "works": 0
-        },
         {
           "at": "2026-10-14T06:34:01.659Z",
           "wealth": 0,
@@ -382083,18 +382077,18 @@
           "wealth": 0,
           "members": 141,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T14:54:57.133Z",
+          "wealth": 0,
+          "members": 141,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-14T06:29:01.712Z",
-          "wealth": 0,
-          "members": 0,
-          "works": 0
-        },
         {
           "at": "2026-10-14T06:34:01.659Z",
           "wealth": 0,
@@ -382688,18 +382682,18 @@
           "wealth": 0,
           "members": 0,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T14:54:57.133Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-14T06:29:01.712Z",
-          "wealth": 70560,
-          "members": 4,
-          "works": 0
-        },
         {
           "at": "2026-10-14T06:34:01.659Z",
           "wealth": 70575,
@@ -383293,6 +383287,12 @@
           "wealth": 0,
           "members": 5,
           "works": 0
+        },
+        {
+          "at": "2026-10-14T14:54:57.133Z",
+          "wealth": 0,
+          "members": 5,
+          "works": 0
         }
       ],
       "works": 0
@@ -383324,7 +383324,7 @@
   },
   "jarvis_power": {
     "605950584859918337": {
-      "awakeUntil": 1791990825971
+      "awakeUntil": 1791990914611
     }
   },
   "jarvis_spend": {
