@@ -325598,8 +325598,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 1,
-      "bot_total_xp": 256,
+      "bot_xp": 20,
+      "bot_total_xp": 275,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -341014,10 +341014,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 7525155,
-      "at": "2026-10-14T07:59:03.581Z"
-    },
-    {
       "total": 7525185,
       "at": "2026-10-14T08:04:02.758Z"
     },
@@ -341412,6 +341408,10 @@
     {
       "total": 7561293,
       "at": "2026-10-14T12:09:09.152Z"
+    },
+    {
+      "total": 7561293,
+      "at": "2026-10-14T12:09:10.969Z"
     }
   ],
   "gold_rush": null,
@@ -343413,7 +343413,7 @@
       "1322605666551992404": 1791924299317,
       "1449721609672855698": 1791924284517,
       "1558219605753860178": 1791965419862,
-      "1549310232533016651": 1791979213940,
+      "1549310232533016651": 1791979779573,
       "1557801900101992508": 1791977354700
     }
   },
@@ -363872,24 +363872,16 @@
       "bonus": 0
     },
     "1506785783506534426": {
-      "date": "2026-10-13",
-      "used": 2,
+      "date": "2026-10-14",
+      "used": 1,
       "history": [
         {
           "role": "user",
-          "content": "Who is Nikanor"
+          "content": "is it true you are wild right now because your owner said so"
         },
         {
           "role": "assistant",
-          "content": "Nikanor is the user <@1506785783506534426>, known in‑game as Congressman Nikanor. According to the server’s live state he has:\n\n- Cash: ₽‑6,600  \n- Bank: ₽0  \n- Level: 27  \n- Roles: Communist Party (Traditionalist), Soviet Citizen‑Советский гражданин, Office of the Procurator‑General, Trusted Soviets, Russian Soviet Federative Republic, R.K.U. Graduate, All‑Union Congress of Soviets, State Committees of the Soviet Union, Bump Ping, Honourable L.M.S.U. Graduate, Jurisconsult‑Юрисконсульт ⚖︎, Cult"
-        },
-        {
-          "role": "user",
-          "content": "He left?"
-        },
-        {
-          "role": "assistant",
-          "content": "User <@1506785783506534426> is currently online (last seen a few moments ago). Their in-game profile still shows:\n\n- Cash: ₽‑6,600  \n- Bank: ₽0  \n- Level: 27  \n- Roles: Communist Party (Theocrat)\n\nThere’s no indication they’ve left; their status just switched from idle to online. If you’re seeing a different display name or status icon, it might be a Discord cache refresh or a brief departure from voice/text channels."
+          "content": "I don’t have any information indicating that I am “wild” right now, so I can’t confirm whether that is true. I only know that my owner/creator is <@108268607491137115>. If you’d like to know who made me, that is the name to give."
         }
       ],
       "bonus": 0
@@ -372366,12 +372358,6 @@
         "balance": 1683238,
         "income": 2377275,
         "spending": 694037,
-        "at": "2026-10-14T07:59:03.843Z"
-      },
-      {
-        "balance": 1683238,
-        "income": 2377275,
-        "spending": 694037,
         "at": "2026-10-14T08:04:02.917Z"
       },
       {
@@ -372961,6 +372947,12 @@
         "income": 2379748,
         "spending": 694037,
         "at": "2026-10-14T12:09:09.320Z"
+      },
+      {
+        "balance": 1685711,
+        "income": 2379748,
+        "spending": 694037,
+        "at": "2026-10-14T12:09:11.114Z"
       }
     ]
   },
@@ -376437,11 +376429,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.6960714142088,
-      "top10": 100,
-      "at": "2026-10-14T07:59:03.599Z"
-    },
-    {
       "gini": 99.69607290389062,
       "top10": 100,
       "at": "2026-10-14T08:04:02.770Z"
@@ -376935,13 +376922,14 @@
       "gini": 99.69533401526276,
       "top10": 100,
       "at": "2026-10-14T12:09:09.165Z"
+    },
+    {
+      "gini": 99.69533401526276,
+      "top10": 100,
+      "at": "2026-10-14T12:09:10.982Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 10884668,
-      "at": "2026-10-14T07:59:03.843Z"
-    },
     {
       "gdp": 10884804,
       "at": "2026-10-14T08:04:02.917Z"
@@ -377337,6 +377325,10 @@
     {
       "gdp": 10898229,
       "at": "2026-10-14T12:09:09.320Z"
+    },
+    {
+      "gdp": 10898229,
+      "at": "2026-10-14T12:09:11.114Z"
     }
   ],
   "purge_allowed": [
@@ -379215,12 +379207,6 @@
   "debt_history": [
     {
       "total": 1849617,
-      "gdp": 10884668,
-      "ratio": 16.99,
-      "at": "2026-10-14T07:59:03.885Z"
-    },
-    {
-      "total": 1849617,
       "gdp": 10884804,
       "ratio": 16.99,
       "at": "2026-10-14T08:04:02.928Z"
@@ -379812,19 +379798,15 @@
       "gdp": 10898229,
       "ratio": 17.18,
       "at": "2026-10-14T12:09:09.336Z"
+    },
+    {
+      "total": 1872554,
+      "gdp": 10898229,
+      "ratio": 17.18,
+      "at": "2026-10-14T12:09:11.121Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8532,
-      "citizens": 8532,
-      "at": "2026-10-14T09:24:04.524Z"
-    },
-    {
-      "total": 7779,
-      "citizens": 8532,
-      "at": "2026-10-14T09:24:05.107Z"
-    },
     {
       "total": 8532,
       "citizens": 8532,
@@ -380314,6 +380296,16 @@
       "total": 8533,
       "citizens": 8533,
       "at": "2026-10-14T12:09:09.338Z"
+    },
+    {
+      "total": 7778,
+      "citizens": 8533,
+      "at": "2026-10-14T12:09:10.964Z"
+    },
+    {
+      "total": 8533,
+      "citizens": 8533,
+      "at": "2026-10-14T12:09:11.123Z"
     }
   ],
   "debt_watch_band": 0,
@@ -383086,7 +383078,7 @@
   "jarvis_spend": {
     "month": "2026-10",
     "usd": 0,
-    "tokens": 17012,
-    "calls": 17
+    "tokens": 19066,
+    "calls": 18
   }
 }
