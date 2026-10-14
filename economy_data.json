@@ -1139,7 +1139,7 @@
       "pet_food_source": {}
     },
     "874346333882945547": {
-      "cash": 51,
+      "cash": 102,
       "bank": 4918,
       "resources": {},
       "inventory": {
@@ -1170,8 +1170,8 @@
           "avg_price": 8
         }
       },
-      "last_work": "2026-10-14T03:29:54.479Z",
-      "work_count": 2727,
+      "last_work": "2026-10-14T03:37:39.714Z",
+      "work_count": 2728,
       "last_claim": "2026-10-14T03:17:03.084Z",
       "ssr_region": "Kazakh SSR",
       "employed_at": "Speers Realm",
@@ -1185,15 +1185,15 @@
       "last_illegal": "2026-10-14T03:16:35.709Z",
       "total_heat_generated": 2976.1065499999986,
       "bot_level": 33,
-      "bot_xp": 1405,
-      "bot_total_xp": 88305,
-      "daily_work_count": 1514,
+      "bot_xp": 1445,
+      "bot_total_xp": 88345,
+      "daily_work_count": 1515,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-14",
       "mee6_level": 33,
       "last_laylow": "2026-10-14T03:16:30.181Z",
       "work_reminder": true,
-      "work_reminder_sent": "2026-10-14T03:35:11.921Z",
+      "work_reminder_sent": null,
       "collect_reminder": true,
       "collect_reminder_sent": "state_26@2026-10-13T20:30:12.854Z",
       "train_reminder": false,
@@ -326400,7 +326400,7 @@
       "owner_id": "874346333882945547",
       "ceo": "seniormanulos",
       "hq_ssr": "Kazakh SSR",
-      "funds": 81390,
+      "funds": 112083,
       "invested_capital": 8196,
       "shares_total": 130000,
       "shares_available": 69083,
@@ -326563,7 +326563,7 @@
         "Molybdenum": 18,
         "Silver": 3,
         "Contraband: Cannabis": 5,
-        "Machine Parts": 109,
+        "Machine Parts": 79,
         "Uranium Rod": 30,
         "Gold": 61,
         "Citrus": 8,
@@ -326574,7 +326574,7 @@
         "Steel Beam": 44,
         "Contraband: Heroin": 6,
         "Contraband: Synthetic": 8,
-        "Wheat": 38,
+        "Wheat": 39,
         "Grapes": 4,
         "Corn": 8,
         "Phosphorite": 1,
@@ -326603,8 +326603,6 @@
         18,
         18,
         18,
-        18,
-        18,
         19,
         18,
         18,
@@ -326682,6 +326680,8 @@
         19,
         19,
         19,
+        13,
+        13,
         13,
         13,
         13,
@@ -326697,7 +326697,7 @@
       ],
       "is_state_owned": false,
       "director_id": "874346333882945547",
-      "last_factorydeal": "2026-10-14T03:15:47.057Z",
+      "last_factorydeal": "2026-10-14T03:38:08.260Z",
       "last_govcontract": null,
       "specialization": "production",
       "managers": [
@@ -326720,8 +326720,6 @@
       "prev_price": 13,
       "is_private": true,
       "value_history": [
-        1511740,
-        1511745,
         1512533,
         1512490,
         1512463,
@@ -326819,7 +326817,9 @@
         1680402,
         1680359,
         1680359,
-        1680444
+        1680444,
+        1680417,
+        1679225
       ],
       "sales_team": 2,
       "execs": {
@@ -328200,11 +328200,6 @@
   "gsi_history": [
     {
       "price": 94,
-      "change_percent": 0.7239585084781849,
-      "recorded_at": "2026-10-13T23:28:57.564Z"
-    },
-    {
-      "price": 94,
       "change_percent": 0.49207113382799816,
       "recorded_at": "2026-10-13T23:32:38.636Z"
     },
@@ -328697,12 +328692,14 @@
       "price": 96,
       "change_percent": 0.456198623179229,
       "recorded_at": "2026-10-14T03:36:37.961Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 1.2234454943040938,
+      "recorded_at": "2026-10-14T03:37:41.573Z"
     }
   ],
-  "factory_names": [
-    "Khrushchev Agricultural",
-    "Brezhnev Auto Factory"
-  ],
+  "factory_names": [],
   "used_factory_names": [
     "Lenin Machine Works",
     "Siberian Mining Co",
@@ -328710,7 +328707,9 @@
     "Red Star Steelworks",
     "Soviet Iron Foundry",
     "Ural Heavy Industries",
-    "Volga Shipbuilding"
+    "Volga Shipbuilding",
+    "Khrushchev Agricultural",
+    "Brezhnev Auto Factory"
   ],
   "factory_deals": [],
   "government_contracts": [],
@@ -328718,7 +328717,7 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 5.956355306144374,
-  "money_printed": 832217.8213100433,
+  "money_printed": 862961.8213100433,
   "total_bank_reserves": 5115793,
   "inflation_history": [
     55.10495193880898,
@@ -328977,17 +328976,17 @@
     "Steel Ingot": 1.2628600625124276,
     "Gold Bar": 0.8156748598821828,
     "Aluminium Ingot": 1.4012121649497113,
-    "Timber Planks": 0.892283449417258,
+    "Timber Planks": 0.902283449417258,
     "Bricks": 1.0688502050709856,
     "Concrete": 1.4029263447939535,
     "Glass": 1.4043749109969852,
-    "Steel Beam": 1.3226908152166945,
-    "Machine Parts": 1.015931338176372,
+    "Steel Beam": 1.3326908152166945,
+    "Machine Parts": 0.6,
     "Refined Fuel": 1.3961580869879173,
     "Uranium Rod": 1.3266287122625426,
-    "Reactor Core": 1.3692517111011666,
+    "Reactor Core": 1.3792517111011666,
     "Circuit Board": 0.726431310019425,
-    "Flour": 1.346882070479914,
+    "Flour": 1.356882070479914,
     "Sugar": 0.9011160806248202,
     "Wine": 1.357014767537336,
     "Canned Food": 1.4046284695453308,
@@ -329001,14 +329000,14 @@
     "Manganese Alloy": 1.4070722639345183,
     "Sunflower Oil": 1.3992459086195093,
     "Linen": 1.4115656797265552,
-    "Corn Meal": 1.3997102058716986,
+    "Corn Meal": 1.4097102058716986,
     "Tea Pack": 1.4073763311664582,
     "Citrus Juice": 1.4132802327103244,
-    "Antimony Alloy": 1.4155338856989579,
+    "Antimony Alloy": 1.425533885698958,
     "Molybdenum Rod": 1.4170670276927613,
     "Aluminium Sheet": 1.4046242840293879,
     "Shale Oil": 1.404628249427219,
-    "Bandage": 1.4084225306689306,
+    "Bandage": 1.4184225306689306,
     "Ointment": 1.4220050887878204,
     "Pet Food": 1.4009820842515084,
     "Brass": 1.4029217477248517,
@@ -329038,7 +329037,7 @@
     "Reactor Core": "2026-10-12T17:50:54.673Z",
     "Gas Fuel": "2026-10-12T12:27:22.466Z",
     "Steel Beam": "2026-10-08T14:14:54.780Z",
-    "Machine Parts": "2026-10-10T10:12:48.480Z",
+    "Machine Parts": "2026-10-14T03:38:08.260Z",
     "Sugar": "2026-09-30T19:30:44.561Z",
     "Fertilizer": "2026-09-21T08:07:31.041Z",
     "Flour": "2026-09-21T19:11:12.162Z",
@@ -329059,7 +329058,8 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Cake": 27,
-    "Circuit Board": 29
+    "Circuit Board": 29,
+    "Machine Parts": 30
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -342159,7 +342159,7 @@
         "963834359994007614": 34,
         "1521043721129558017": 1,
         "1470136693821800521": 1,
-        "874346333882945547": 1
+        "874346333882945547": 2
       }
     },
     "collect_daily": {
@@ -342441,7 +342441,7 @@
       "1229741033265299506": 1791925223695,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1791851295596,
-      "874346333882945547": 1791947775040,
+      "874346333882945547": 1791949067652,
       "870686833976172574": 1791915660919,
       "1186597507720019988": 1791918611020,
       "1521043721129558017": 1791939123617,
@@ -375291,8 +375291,8 @@
   "national_market": {
     "stock": {
       "Machine Parts": {
-        "qty": 444,
-        "price": 1989
+        "qty": 474,
+        "price": 1937
       },
       "Refined Fuel": {
         "qty": 280,
@@ -375403,7 +375403,7 @@
         "price": 171
       }
     },
-    "sold_count": 3198,
+    "sold_count": 3228,
     "bought_count": 427
   },
   "leaders": {
@@ -377966,7 +377966,7 @@
         "set": true
       },
       "supply": 16,
-      "printed": 11292,
+      "printed": 11308,
       "workPrint": 15,
       "workChannelId": null,
       "resources": null,
