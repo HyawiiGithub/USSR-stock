@@ -85314,8 +85314,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 12,
       "bot_level": 28,
-      "bot_xp": 956,
-      "bot_total_xp": 57306,
+      "bot_xp": 974,
+      "bot_total_xp": 57324,
       "daily_work_count": 158,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-10",
@@ -344391,7 +344391,7 @@
       "1470136693821800521": 1791739578492,
       "1309104161278918706": 1791385206033,
       "1325111649816023092": 1792082975460,
-      "1506785783506534426": 1792085288121,
+      "1506785783506534426": 1792087095037,
       "807254722251587614": 1792086520949,
       "1353373037994705078": 1792086251452,
       "1192563739778625607": 1790365373051,
@@ -365571,14 +365571,6 @@
       "history": [
         {
           "role": "user",
-          "content": "Jarvis ultimate ragebait"
-        },
-        {
-          "role": "assistant",
-          "content": "**Ultimate ragebait:** trying to make the Soviet bot fail at capitalism while simultaneously demanding a balanced GDP. 🎖️💸"
-        },
-        {
-          "role": "user",
           "content": "yeah jarvis still in wip"
         },
         {
@@ -365600,6 +365592,14 @@
         {
           "role": "assistant",
           "content": "**Command:** `-revive` (alias `-reviveping`)  \n\n**Where it lives:** `bot.js` – see the handler around line 19640.\n\n```js\n// bot.js:19640‑19663\nif (command === 'reviveping' || command === 'revive') {\n    if (!isBotOwner(userId)) { await message.reply('❌ Primaries only.'); return; }\n    const data = loadData();\n    const ch = await client.channels.fetch(REVIVE_CHANNEL_ID)\n               .catch(() => client.channels.cache.get(REVIVE_CHANNEL_ID));\n    if (!ch || !ch.isTextBased?.()) { await message."
+        },
+        {
+          "role": "user",
+          "content": "lets make jarvis lock in"
+        },
+        {
+          "role": "assistant",
+          "content": "**What I found**\n\nI poked into `bot.js` at the line you mentioned (4834). That spot is part of the big help‑embed that lists every command the bot knows. The exact snippet (trimmed for readability) reads:\n\n```\n- **📯 `-mobilize`** (enlisted, 24h): readiness +8, tension +2. **⚔️ `-skirmish <nation>`** (12h): power‑vs‑strength border raids, loot"
         }
       ],
       "bonus": 0
@@ -380081,8 +380081,8 @@
     "605950584859918337": {
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
-      "members": 7831,
-      "lastSeen": "2026-10-15T17:51:52.126Z",
+      "members": 7830,
+      "lastSeen": "2026-10-15T17:57:35.896Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -385085,7 +385085,7 @@
   },
   "jarvis_power": {
     "605950584859918337": {
-      "awakeUntil": 1792083799804
+      "awakeUntil": 1792088298004
     }
   },
   "jarvis_spend": {
