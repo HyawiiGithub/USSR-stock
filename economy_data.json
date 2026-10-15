@@ -175,8 +175,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 34,
-      "bot_xp": 4874,
-      "bot_total_xp": 98969,
+      "bot_xp": 4898,
+      "bot_total_xp": 98993,
       "daily_work_count": 6,
       "shock_worker": false,
       "mee6_level": 34,
@@ -522,8 +522,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 23,
-      "bot_xp": 3048,
-      "bot_total_xp": 36973,
+      "bot_xp": 3072,
+      "bot_total_xp": 36997,
       "daily_work_count": 327,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-15",
@@ -85314,8 +85314,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 12,
       "bot_level": 28,
-      "bot_xp": 754,
-      "bot_total_xp": 57104,
+      "bot_xp": 770,
+      "bot_total_xp": 57120,
       "daily_work_count": 158,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-10",
@@ -304877,8 +304877,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 24,
-      "bot_xp": 260,
-      "bot_total_xp": 38080,
+      "bot_xp": 280,
+      "bot_total_xp": 38100,
       "daily_work_count": 60,
       "shock_worker": false,
       "last_laylow": null,
@@ -344285,13 +344285,13 @@
       "1544820489191559270": 1791414322995,
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1792082262006,
-      "1082686076491137115": 1792081791396,
+      "1082686076491137115": 1792082488218,
       "1229741033265299506": 1792082349451,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1792001081248,
       "874346333882945547": 1791953582487,
       "870686833976172574": 1792079317053,
-      "1186597507720019988": 1792082144413,
+      "1186597507720019988": 1792082512050,
       "1521043721129558017": 1791996278339,
       "1397601108616024075": 1792080115550,
       "860203156222902332": 1789160394304,
@@ -344299,7 +344299,7 @@
       "1470136693821800521": 1791739578492,
       "1309104161278918706": 1791385206033,
       "1325111649816023092": 1792081687017,
-      "1506785783506534426": 1792082424344,
+      "1506785783506534426": 1792082528258,
       "807254722251587614": 1792082438778,
       "1353373037994705078": 1791915906745,
       "1192563739778625607": 1790365373051,
@@ -344721,7 +344721,7 @@
       "1547713722775248996": 1790276684861,
       "1533784166624264312": 1790271551574,
       "1541138554107723838": 1790106991897,
-      "1467181939218714656": 1792082400642,
+      "1467181939218714656": 1792082475289,
       "1513508793596514456": 1790287413189,
       "796089488908091402": 1791315785011,
       "1110654646105686047": 1790117615558,
@@ -365491,6 +365491,14 @@
         {
           "role": "assistant",
           "content": "⚔️ **War/Army systems are currently retired** – the bot’s code explicitly blocks any old arsenal commands and replies with a notice:\n\n```js\n// bot.js:4124\n// WAR/ARMY SYSTEMS RETIRED — full rebuild from scratch. Friendly notice\n// instead of 'unknown command' for the old arsenal.\nif (typeof WAR_RETIRED_COMMANDS !== 'undefined' && WAR_RETIRED_COMMANDS.has(command)) {\n    try { await message.reply('⚔️ That system was **retired** — war/army rebuild from scratch in progress. Economy, companies, loan"
+        },
+        {
+          "role": "user",
+          "content": "Jarvis ultimate ragebait"
+        },
+        {
+          "role": "assistant",
+          "content": "**Ultimate ragebait:** trying to make the Soviet bot fail at capitalism while simultaneously demanding a balanced GDP. 🎖️💸"
         }
       ],
       "bonus": 0
@@ -379910,7 +379918,7 @@
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
       "members": 7832,
-      "lastSeen": "2026-10-15T16:40:42.370Z",
+      "lastSeen": "2026-10-15T16:41:36.358Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -384913,7 +384921,7 @@
   },
   "jarvis_power": {
     "605950584859918337": {
-      "awakeUntil": 1792083258694
+      "sleep": true
     }
   },
   "jarvis_spend": {
