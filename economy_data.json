@@ -331066,11 +331066,6 @@
   },
   "gsi_history": [
     {
-      "price": 96,
-      "change_percent": 1.3154997260635146,
-      "recorded_at": "2026-10-16T06:24:40.242Z"
-    },
-    {
       "price": 97,
       "change_percent": 1.1373531351465587,
       "recorded_at": "2026-10-16T06:27:21.459Z"
@@ -331564,6 +331559,11 @@
       "price": 97,
       "change_percent": 0.8703722392984793,
       "recorded_at": "2026-10-16T10:37:25.818Z"
+    },
+    {
+      "price": 97,
+      "change_percent": 0.906504584018545,
+      "recorded_at": "2026-10-16T10:42:25.768Z"
     }
   ],
   "factory_names": [
@@ -343755,14 +343755,6 @@
   ],
   "total_rubles_history": [
     {
-      "total": 7476504,
-      "at": "2026-10-16T06:32:22.846Z"
-    },
-    {
-      "total": 7476504,
-      "at": "2026-10-16T06:32:23.984Z"
-    },
-    {
       "total": 7476519,
       "at": "2026-10-16T06:37:22.837Z"
     },
@@ -344153,6 +344145,14 @@
     {
       "total": 7486790,
       "at": "2026-10-16T10:37:27.331Z"
+    },
+    {
+      "total": 7486790,
+      "at": "2026-10-16T10:42:26.423Z"
+    },
+    {
+      "total": 7486790,
+      "at": "2026-10-16T10:42:27.410Z"
     }
   ],
   "gold_rush": null,
@@ -367276,7 +367276,7 @@
     },
     "913497950213267577": {
       "date": "2026-10-16",
-      "used": 2,
+      "used": 3,
       "history": [
         {
           "role": "user",
@@ -367293,6 +367293,14 @@
         {
           "role": "assistant",
           "content": "I hear you, but I need a little more than yelling to start sorting out the numbers. Let me pull up the relevant data first.\n\n**Current State (from scope):**\n- **Server:** Union of Soviet Socialist Republics\n- **Currency:** Ruble (RUB) ₽ @ 0.00/P1\n- **Starting Cash:** 100,000\n- **GDP:** 7,485,968 rubles\n- **GSI:** 103\n- **Inflation:** 7.02%\n- **Gold Backing:** 2.6%\n\nThis is the visible state. I don't see"
+        },
+        {
+          "role": "user",
+          "content": "Welcome to the **SBA (Sharkuses British Army)**!\n\nOriginally established in October 2022, the SBA is officially reopening its doors to a new era of military excellence. Following our temporary closure, we have revamped our operations, restructured our leadership, and are ready to reclaim our positio"
+        },
+        {
+          "role": "assistant",
+          "content": "I don't process enlistment for external forces, and I don't run ads for outside armies. This terminal handles the USSR economy and Jarvis support only.\n\nIf there's a real bug in this bot, file it with `-bug` — exact command, what happened versus expected, and a screenshot if you have one. Otherwise, take the recruitment speech to whatever server it belongs to."
         }
       ],
       "bonus": 0
@@ -375616,18 +375624,6 @@
         "balance": 1714342,
         "income": 2408379,
         "spending": 694037,
-        "at": "2026-10-16T06:32:23.134Z"
-      },
-      {
-        "balance": 1714342,
-        "income": 2408379,
-        "spending": 694037,
-        "at": "2026-10-16T06:32:24.108Z"
-      },
-      {
-        "balance": 1714342,
-        "income": 2408379,
-        "spending": 694037,
         "at": "2026-10-16T06:37:23.169Z"
       },
       {
@@ -376211,6 +376207,18 @@
         "income": 2411519,
         "spending": 694037,
         "at": "2026-10-16T10:37:27.500Z"
+      },
+      {
+        "balance": 1717482,
+        "income": 2411519,
+        "spending": 694037,
+        "at": "2026-10-16T10:42:26.554Z"
+      },
+      {
+        "balance": 1717482,
+        "income": 2411519,
+        "spending": 694037,
+        "at": "2026-10-16T10:42:27.565Z"
       }
     ]
   },
@@ -379621,16 +379629,6 @@
   "collars": {},
   "gini_history": [
     {
-      "gini": 99.70601527663656,
-      "top10": 100,
-      "at": "2026-10-16T06:32:22.877Z"
-    },
-    {
-      "gini": 99.70601527663656,
-      "top10": 100,
-      "at": "2026-10-16T06:32:23.993Z"
-    },
-    {
       "gini": 99.70601537471092,
       "top10": 100,
       "at": "2026-10-16T06:37:22.861Z"
@@ -380119,17 +380117,19 @@
       "gini": 99.70635560302863,
       "top10": 100,
       "at": "2026-10-16T10:37:27.360Z"
+    },
+    {
+      "gini": 99.70635560302863,
+      "top10": 100,
+      "at": "2026-10-16T10:42:26.434Z"
+    },
+    {
+      "gini": 99.70635560302863,
+      "top10": 100,
+      "at": "2026-10-16T10:42:27.423Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 11078419,
-      "at": "2026-10-16T06:32:23.133Z"
-    },
-    {
-      "gdp": 11078419,
-      "at": "2026-10-16T06:32:24.108Z"
-    },
     {
       "gdp": 11078490,
       "at": "2026-10-16T06:37:23.169Z"
@@ -380521,6 +380521,14 @@
     {
       "gdp": 11182975,
       "at": "2026-10-16T10:37:27.500Z"
+    },
+    {
+      "gdp": 11182975,
+      "at": "2026-10-16T10:42:26.553Z"
+    },
+    {
+      "gdp": 11182975,
+      "at": "2026-10-16T10:42:27.565Z"
     }
   ],
   "purge_allowed": [
@@ -381299,8 +381307,8 @@
     "605950584859918337": {
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
-      "members": 7846,
-      "lastSeen": "2026-10-16T09:51:04.861Z",
+      "members": 7848,
+      "lastSeen": "2026-10-16T10:41:47.214Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -382460,18 +382468,6 @@
   "debt_history": [
     {
       "total": 2105900,
-      "gdp": 11078419,
-      "ratio": 19.01,
-      "at": "2026-10-16T06:32:23.184Z"
-    },
-    {
-      "total": 2105900,
-      "gdp": 11078419,
-      "ratio": 19.01,
-      "at": "2026-10-16T06:32:24.115Z"
-    },
-    {
-      "total": 2105900,
       "gdp": 11078490,
       "ratio": 19.01,
       "at": "2026-10-16T06:37:23.191Z"
@@ -383057,24 +383053,21 @@
       "gdp": 11182975,
       "ratio": 19.1,
       "at": "2026-10-16T10:37:27.511Z"
+    },
+    {
+      "total": 2135530,
+      "gdp": 11182975,
+      "ratio": 19.1,
+      "at": "2026-10-16T10:42:26.562Z"
+    },
+    {
+      "total": 2135530,
+      "gdp": 11182975,
+      "ratio": 19.1,
+      "at": "2026-10-16T10:42:27.590Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8597,
-      "citizens": 8597,
-      "at": "2026-10-16T07:52:24.367Z"
-    },
-    {
-      "total": 8597,
-      "citizens": 8597,
-      "at": "2026-10-16T07:57:23.095Z"
-    },
-    {
-      "total": 7800,
-      "citizens": 8597,
-      "at": "2026-10-16T07:57:24.533Z"
-    },
     {
       "total": 8597,
       "citizens": 8597,
@@ -383559,6 +383552,21 @@
       "total": 8600,
       "citizens": 8600,
       "at": "2026-10-16T10:37:27.513Z"
+    },
+    {
+      "total": 8600,
+      "citizens": 8600,
+      "at": "2026-10-16T10:42:26.563Z"
+    },
+    {
+      "total": 7803,
+      "citizens": 8600,
+      "at": "2026-10-16T10:42:27.402Z"
+    },
+    {
+      "total": 8600,
+      "citizens": 8600,
+      "at": "2026-10-16T10:42:27.595Z"
     }
   ],
   "debt_watch_band": 0,
@@ -383885,12 +383893,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-16T02:22:20.372Z",
-          "wealth": 2778,
-          "members": 198,
-          "works": 0
-        },
         {
           "at": "2026-10-16T02:27:20.349Z",
           "wealth": 2778,
@@ -384484,18 +384486,18 @@
           "wealth": 3028,
           "members": 200,
           "works": 0
+        },
+        {
+          "at": "2026-10-16T10:42:26.564Z",
+          "wealth": 3028,
+          "members": 199,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-16T02:22:20.372Z",
-          "wealth": 1488,
-          "members": 2,
-          "works": 0
-        },
         {
           "at": "2026-10-16T02:27:20.349Z",
           "wealth": 1488,
@@ -385089,18 +385091,18 @@
           "wealth": 6547,
           "members": 7,
           "works": 0
+        },
+        {
+          "at": "2026-10-16T10:42:26.564Z",
+          "wealth": 6547,
+          "members": 7,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-16T02:22:20.372Z",
-          "wealth": 35596,
-          "members": 3,
-          "works": 0
-        },
         {
           "at": "2026-10-16T02:27:20.349Z",
           "wealth": 35596,
@@ -385694,18 +385696,18 @@
           "wealth": 35596,
           "members": 3,
           "works": 0
+        },
+        {
+          "at": "2026-10-16T10:42:26.564Z",
+          "wealth": 35596,
+          "members": 3,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-16T02:22:20.372Z",
-          "wealth": 0,
-          "members": 5,
-          "works": 0
-        },
         {
           "at": "2026-10-16T02:27:20.349Z",
           "wealth": 0,
@@ -386299,6 +386301,12 @@
           "wealth": 0,
           "members": 5,
           "works": 0
+        },
+        {
+          "at": "2026-10-16T10:42:26.564Z",
+          "wealth": 0,
+          "members": 5,
+          "works": 0
         }
       ],
       "works": 0
@@ -386340,6 +386348,15 @@
     "calls": 28
   },
   "support_tickets": [
+    {
+      "at": "2026-10-16T10:42:23.284Z",
+      "guild": "605950584859918337",
+      "channel": "605956509637279770",
+      "user": "913497950213267577",
+      "name": "poetrs0",
+      "kind": "bug",
+      "text": "Welcome to the **SBA (Sharkuses British Army)**!\n\nOriginally established in October 2022, the SBA is officially reopening its doors to a new era of military excellence. Following o"
+    },
     {
       "at": "2026-10-16T09:51:20.331Z",
       "guild": "605950584859918337",
