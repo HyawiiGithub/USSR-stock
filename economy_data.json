@@ -2047,8 +2047,8 @@
       "last_illegal": "2026-10-12T14:41:05.868Z",
       "total_heat_generated": 164.64200000000002,
       "bot_level": 26,
-      "bot_xp": 508,
-      "bot_total_xp": 46983,
+      "bot_xp": 524,
+      "bot_total_xp": 46999,
       "daily_work_count": 141,
       "shock_worker": false,
       "mee6_level": 26,
@@ -127825,8 +127825,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 13,
-      "bot_xp": 527,
-      "bot_total_xp": 8977,
+      "bot_xp": 550,
+      "bot_total_xp": 9000,
       "daily_work_count": 5,
       "shock_worker": false,
       "mee6_level": 13,
@@ -308221,8 +308221,8 @@
       "last_illegal": "2026-10-12T14:40:55.458Z",
       "total_heat_generated": 37.187,
       "bot_level": 23,
-      "bot_xp": 108,
-      "bot_total_xp": 34033,
+      "bot_xp": 130,
+      "bot_total_xp": 34055,
       "daily_work_count": 39,
       "shock_worker": false,
       "last_laylow": "2026-10-12T14:44:59.313Z",
@@ -345739,7 +345739,7 @@
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1791739578492,
       "1309104161278918706": 1791385206033,
-      "1325111649816023092": 1792176871628,
+      "1325111649816023092": 1792176956046,
       "1506785783506534426": 1792176773015,
       "807254722251587614": 1792176868459,
       "1353373037994705078": 1792164836537,
@@ -345759,7 +345759,7 @@
       "437626060876546069": 1789233001616,
       "1365483598962102305": 1792153759605,
       "1544296111097909309": 1792075414428,
-      "1343006572850184217": 1792176845890,
+      "1343006572850184217": 1792176912498,
       "503918799683321866": 1792164633061,
       "1247430843299921973": 1791108766323,
       "1496968738447032410": 1792111629827,
@@ -346245,7 +346245,7 @@
       "1500371016260780172": 1790490822677,
       "1512533360654680126": 1790503447003,
       "567599353955352578": 1791836228044,
-      "1550582932425416714": 1792176810856,
+      "1550582932425416714": 1792176909702,
       "1549125598155120813": 1790509793240,
       "853139077477302282": 1790690572981,
       "1353360476213346365": 1791537590958,
@@ -368262,6 +368262,21 @@
         }
       ],
       "bonus": 0
+    },
+    "1343006572850184217": {
+      "date": "2026-10-16",
+      "used": 1,
+      "history": [
+        {
+          "role": "user",
+          "content": "You gotta be VERY educated to help plan a whole society"
+        },
+        {
+          "role": "assistant",
+          "content": "That sounds more like a philosophical remark than a bug report. If you’ve run into an actual issue with one of the bot’s commands (e.g., ‑work, ‑balance, ‑company, etc.), please give the exact command you used, what happened, what you expected, and a screenshot if possible. I’ll log it and dig into the source. Otherwise, you can check the full command list with `-help`."
+        }
+      ],
+      "bonus": 0
     }
   },
   "depression": {
@@ -381716,8 +381731,8 @@
     "605950584859918337": {
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
-      "members": 7846,
-      "lastSeen": "2026-10-16T18:31:02.640Z",
+      "members": 7847,
+      "lastSeen": "2026-10-16T18:55:18.016Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -386757,6 +386772,15 @@
     "calls": 28
   },
   "support_tickets": [
+    {
+      "at": "2026-10-16T18:55:32.646Z",
+      "guild": "605950584859918337",
+      "channel": "605951687974453248",
+      "user": "1343006572850184217",
+      "name": "mel033_",
+      "kind": "bug",
+      "text": "You gotta be VERY educated to help plan a whole society"
+    },
     {
       "at": "2026-10-16T18:31:20.529Z",
       "guild": "605950584859918337",
