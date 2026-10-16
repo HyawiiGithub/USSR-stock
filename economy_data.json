@@ -328308,6 +328308,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1145228195512201226": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {
@@ -331193,11 +331231,6 @@
   "gsi_history": [
     {
       "price": 104,
-      "change_percent": 1.0356219146065588,
-      "recorded_at": "2026-10-16T07:42:10.054Z"
-    },
-    {
-      "price": 104,
       "change_percent": 0.5756836629438393,
       "recorded_at": "2026-10-16T07:42:21.431Z"
     },
@@ -331690,6 +331723,11 @@
       "price": 96,
       "change_percent": 0.8737694538670013,
       "recorded_at": "2026-10-16T13:27:28.404Z"
+    },
+    {
+      "price": 96,
+      "change_percent": 0.6753409909353949,
+      "recorded_at": "2026-10-16T13:32:28.357Z"
     }
   ],
   "factory_names": [
@@ -331710,11 +331748,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 6.7986111615758915,
-  "money_printed": 878431.8901659006,
+  "inflation": 6.798410589497735,
+  "money_printed": 877992.6742208176,
   "total_bank_reserves": 5186715,
   "inflation_history": [
-    6.700000000000003,
     6.700000000000003,
     6.700000000000003,
     6.700000000000003,
@@ -331813,7 +331850,8 @@
     6.79839441424329,
     6.79839441424329,
     6.809135637468231,
-    6.7986111615758915
+    6.7986111615758915,
+    6.798410589497735
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 32,
@@ -343882,14 +343920,6 @@
   "total_rubles_history": [
     {
       "total": 7485983,
-      "at": "2026-10-16T09:17:25.370Z"
-    },
-    {
-      "total": 7485983,
-      "at": "2026-10-16T09:17:26.379Z"
-    },
-    {
-      "total": 7485983,
       "at": "2026-10-16T09:22:25.199Z"
     },
     {
@@ -344279,6 +344309,14 @@
     {
       "total": 7493350,
       "at": "2026-10-16T13:27:33.125Z"
+    },
+    {
+      "total": 7493350,
+      "at": "2026-10-16T13:32:30.125Z"
+    },
+    {
+      "total": 7493350,
+      "at": "2026-10-16T13:32:31.199Z"
     }
   ],
   "gold_rush": null,
@@ -373339,12 +373377,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.23,
+    "rub_per_usd": 6.19,
     "history": [
-      {
-        "rate": 6.21,
-        "at": "2026-10-15T22:58:24.218Z"
-      },
       {
         "rate": 6.24,
         "at": "2026-10-15T23:02:11.585Z"
@@ -373740,9 +373774,13 @@
       {
         "rate": 6.23,
         "at": "2026-10-16T13:22:18.702Z"
+      },
+      {
+        "rate": 6.19,
+        "at": "2026-10-16T13:32:18.635Z"
       }
     ],
-    "last_update": "2026-10-16T13:22:18.702Z",
+    "last_update": "2026-10-16T13:32:18.635Z",
     "manual_override": null
   },
   "national_budget": {
@@ -375732,18 +375770,6 @@
         "balance": 1716690,
         "income": 2410727,
         "spending": 694037,
-        "at": "2026-10-16T09:17:25.512Z"
-      },
-      {
-        "balance": 1716690,
-        "income": 2410727,
-        "spending": 694037,
-        "at": "2026-10-16T09:17:26.527Z"
-      },
-      {
-        "balance": 1716690,
-        "income": 2410727,
-        "spending": 694037,
         "at": "2026-10-16T09:22:25.496Z"
       },
       {
@@ -376327,6 +376353,18 @@
         "income": 2413918,
         "spending": 694037,
         "at": "2026-10-16T13:27:33.293Z"
+      },
+      {
+        "balance": 1719881,
+        "income": 2413918,
+        "spending": 694037,
+        "at": "2026-10-16T13:32:30.283Z"
+      },
+      {
+        "balance": 1719881,
+        "income": 2413918,
+        "spending": 694037,
+        "at": "2026-10-16T13:32:31.351Z"
       }
     ]
   },
@@ -379739,16 +379777,6 @@
     {
       "gini": 99.70631497086057,
       "top10": 100,
-      "at": "2026-10-16T09:17:25.380Z"
-    },
-    {
-      "gini": 99.70631497086057,
-      "top10": 100,
-      "at": "2026-10-16T09:17:26.390Z"
-    },
-    {
-      "gini": 99.70631497086057,
-      "top10": 100,
       "at": "2026-10-16T09:22:25.215Z"
     },
     {
@@ -380235,17 +380263,19 @@
       "gini": 99.70636588125652,
       "top10": 100,
       "at": "2026-10-16T13:27:33.139Z"
+    },
+    {
+      "gini": 99.70636588125652,
+      "top10": 100,
+      "at": "2026-10-16T13:32:30.138Z"
+    },
+    {
+      "gini": 99.70640001285236,
+      "top10": 100,
+      "at": "2026-10-16T13:32:31.211Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 11182138,
-      "at": "2026-10-16T09:17:25.511Z"
-    },
-    {
-      "gdp": 11182138,
-      "at": "2026-10-16T09:17:26.526Z"
-    },
     {
       "gdp": 11182138,
       "at": "2026-10-16T09:22:25.496Z"
@@ -380637,6 +380667,14 @@
     {
       "gdp": 11187127,
       "at": "2026-10-16T13:27:33.293Z"
+    },
+    {
+      "gdp": 11187127,
+      "at": "2026-10-16T13:32:30.283Z"
+    },
+    {
+      "gdp": 11187127,
+      "at": "2026-10-16T13:32:31.350Z"
     }
   ],
   "purge_allowed": [
@@ -381429,7 +381467,7 @@
         "code": "RUB",
         "symbol": "₽",
         "name": "Ruble",
-        "rate": 0.0009184001469440236,
+        "rate": 0.0011125945705384957,
         "set": true
       },
       "supply": 20,
@@ -382575,18 +382613,6 @@
   },
   "debt_history": [
     {
-      "total": 2120670,
-      "gdp": 11182138,
-      "ratio": 18.96,
-      "at": "2026-10-16T09:17:25.521Z"
-    },
-    {
-      "total": 2120670,
-      "gdp": 11182138,
-      "ratio": 18.96,
-      "at": "2026-10-16T09:17:26.536Z"
-    },
-    {
       "total": 2128085,
       "gdp": 11182138,
       "ratio": 19.03,
@@ -383173,24 +383199,21 @@
       "gdp": 11187127,
       "ratio": 19.29,
       "at": "2026-10-16T13:27:33.302Z"
+    },
+    {
+      "total": 2158034,
+      "gdp": 11187127,
+      "ratio": 19.29,
+      "at": "2026-10-16T13:32:30.293Z"
+    },
+    {
+      "total": 2158034,
+      "gdp": 11187127,
+      "ratio": 19.29,
+      "at": "2026-10-16T13:32:31.359Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 8600,
-      "citizens": 8600,
-      "at": "2026-10-16T10:37:27.513Z"
-    },
-    {
-      "total": 8600,
-      "citizens": 8600,
-      "at": "2026-10-16T10:42:26.563Z"
-    },
-    {
-      "total": 7803,
-      "citizens": 8600,
-      "at": "2026-10-16T10:42:27.402Z"
-    },
     {
       "total": 8600,
       "citizens": 8600,
@@ -383675,6 +383698,21 @@
       "total": 8603,
       "citizens": 8603,
       "at": "2026-10-16T13:27:33.304Z"
+    },
+    {
+      "total": 8603,
+      "citizens": 8603,
+      "at": "2026-10-16T13:32:30.295Z"
+    },
+    {
+      "total": 7802,
+      "citizens": 8604,
+      "at": "2026-10-16T13:32:31.185Z"
+    },
+    {
+      "total": 8604,
+      "citizens": 8604,
+      "at": "2026-10-16T13:32:31.360Z"
     }
   ],
   "debt_watch_band": 0,
@@ -383979,7 +384017,7 @@
   "turn_digest_message": "1557783596444422255",
   "chat_rubles_enabled": false,
   "state_debt_owed": 0,
-  "inflation_updated_at": "2026-10-16T13:22:18.374Z",
+  "inflation_updated_at": "2026-10-16T13:32:18.447Z",
   "vault_axe_pending": 0,
   "vault_axe_unb": 0,
   "vault_axed": {
@@ -384001,12 +384039,6 @@
   "server_econ": {
     "605950584859918337": {
       "history": [
-        {
-          "at": "2026-10-16T05:07:20.970Z",
-          "wealth": 2778,
-          "members": 200,
-          "works": 0
-        },
         {
           "at": "2026-10-16T05:12:22.112Z",
           "wealth": 11636,
@@ -384600,18 +384632,18 @@
           "wealth": 21777,
           "members": 199,
           "works": 0
+        },
+        {
+          "at": "2026-10-16T13:32:30.295Z",
+          "wealth": 17976,
+          "members": 195,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-16T05:07:20.971Z",
-          "wealth": 1488,
-          "members": 3,
-          "works": 0
-        },
         {
           "at": "2026-10-16T05:12:22.112Z",
           "wealth": 1488,
@@ -385205,18 +385237,18 @@
           "wealth": 6547,
           "members": 7,
           "works": 0
+        },
+        {
+          "at": "2026-10-16T13:32:30.295Z",
+          "wealth": 6547,
+          "members": 7,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-16T05:07:20.971Z",
-          "wealth": 35596,
-          "members": 3,
-          "works": 0
-        },
         {
           "at": "2026-10-16T05:12:22.112Z",
           "wealth": 35596,
@@ -385810,18 +385842,18 @@
           "wealth": 35596,
           "members": 3,
           "works": 0
+        },
+        {
+          "at": "2026-10-16T13:32:30.296Z",
+          "wealth": 35596,
+          "members": 3,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-16T05:07:20.971Z",
-          "wealth": 0,
-          "members": 5,
-          "works": 0
-        },
         {
           "at": "2026-10-16T05:12:22.112Z",
           "wealth": 0,
@@ -386412,6 +386444,12 @@
         },
         {
           "at": "2026-10-16T13:27:30.321Z",
+          "wealth": 0,
+          "members": 5,
+          "works": 0
+        },
+        {
+          "at": "2026-10-16T13:32:30.296Z",
           "wealth": 0,
           "members": 5,
           "works": 0
