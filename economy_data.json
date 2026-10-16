@@ -1714,8 +1714,8 @@
       "last_illegal": "2026-10-03T10:15:09.123Z",
       "total_heat_generated": 101.565,
       "bot_level": 26,
-      "bot_xp": 1508,
-      "bot_total_xp": 47983,
+      "bot_xp": 1529,
+      "bot_total_xp": 48004,
       "daily_work_count": 109,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-15",
@@ -294906,8 +294906,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 20,
-      "bot_xp": 2165,
-      "bot_total_xp": 26015,
+      "bot_xp": 2184,
+      "bot_total_xp": 26034,
       "daily_work_count": 88,
       "shock_worker": false,
       "last_laylow": null,
@@ -331827,10 +331827,9 @@
   "ipo_queue": [],
   "admin_log": [],
   "inflation": 6.700000000000003,
-  "money_printed": 875631.5846124178,
-  "total_bank_reserves": 5188335,
+  "money_printed": 875193.7688201116,
+  "total_bank_reserves": 5188350,
   "inflation_history": [
-    6.700000000000003,
     6.975885099913839,
     6.975885099913839,
     6.965330235518977,
@@ -331926,6 +331925,7 @@
     6.809204095173612,
     6.798613889157892,
     6.798413338693891,
+    6.700000000000003,
     6.700000000000003,
     6.700000000000003,
     6.700000000000003,
@@ -345673,7 +345673,7 @@
       "887419379833274388": 1790363157969,
       "807944786840387675": 1791570630870,
       "1529673877767196783": 1789377341879,
-      "913497950213267577": 1792164721989,
+      "913497950213267577": 1792164787440,
       "822079355298906112": 1792003285679,
       "1000271630154596473": 1792164681141,
       "437626060876546069": 1789233001616,
@@ -345831,7 +345831,7 @@
       "1473965687922757747": 1789987256004,
       "1536471243849736322": 1792128714871,
       "1545521924166131823": 1791295228944,
-      "1483005845867593831": 1792164643796,
+      "1483005845867593831": 1792164737871,
       "1236297958933401643": 1791719091609,
       "1251358003857457256": 1790071234665,
       "1534132570412028027": 1789300584145,
@@ -366863,6 +366863,14 @@
         {
           "role": "assistant",
           "content": "The request you’re making isn’t covered by any of the commands this bot exposes. The only log‑related actions are the backup/restore commands (e.g. `-checkpoint`, `-restore`), and those are restricted to the bot owner — see the check in `bot.js:14484`. Since you’re not the primary, there’s no way for me to pull a “30 k debt increase” entry for you.\n\nIf you need to see what commands are available, run `-help`."
+        },
+        {
+          "role": "user",
+          "content": "command to open the market for trading?"
+        },
+        {
+          "role": "assistant",
+          "content": "There is no command to “open” the market. The stock/private-company market runs automatically via hourly repricing (see `economy_core.js:6391` `marketTick`), and market data is viewed with `-market`, `-trade`, `-stocks`, `-buyshares`, and `-sellshares`. If you need to force a market event or change market state, that’s handled through the console by Hyawii, not a user command."
         }
       ],
       "bonus": 0
@@ -373442,12 +373450,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.14,
+    "rub_per_usd": 6.18,
     "history": [
-      {
-        "rate": 6.24,
-        "at": "2026-10-16T00:52:13.252Z"
-      },
       {
         "rate": 6.15,
         "at": "2026-10-16T00:58:24.469Z"
@@ -373843,9 +373847,13 @@
       {
         "rate": 6.14,
         "at": "2026-10-16T15:22:21.883Z"
+      },
+      {
+        "rate": 6.18,
+        "at": "2026-10-16T15:32:21.647Z"
       }
     ],
-    "last_update": "2026-10-16T15:22:21.883Z",
+    "last_update": "2026-10-16T15:32:21.647Z",
     "manual_override": null
   },
   "national_budget": {
@@ -384082,7 +384090,7 @@
   "turn_digest_message": "1557783596444422255",
   "chat_rubles_enabled": false,
   "state_debt_owed": 0,
-  "inflation_updated_at": "2026-10-16T15:22:21.572Z",
+  "inflation_updated_at": "2026-10-16T15:32:21.517Z",
   "vault_axe_pending": 0,
   "vault_axe_unb": 0,
   "vault_axed": {
