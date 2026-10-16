@@ -1714,8 +1714,8 @@
       "last_illegal": "2026-10-03T10:15:09.123Z",
       "total_heat_generated": 101.565,
       "bot_level": 26,
-      "bot_xp": 945,
-      "bot_total_xp": 47420,
+      "bot_xp": 962,
+      "bot_total_xp": 47437,
       "daily_work_count": 109,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-15",
@@ -85314,8 +85314,8 @@
       "last_illegal": "2026-09-11T16:37:25.975Z",
       "total_heat_generated": 12,
       "bot_level": 28,
-      "bot_xp": 2604,
-      "bot_total_xp": 58954,
+      "bot_xp": 2624,
+      "bot_total_xp": 58974,
       "daily_work_count": 160,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-15",
@@ -208135,8 +208135,8 @@
       "last_illegal": "2026-10-07T16:21:35.483Z",
       "total_heat_generated": 136.945,
       "bot_level": 29,
-      "bot_xp": 3213,
-      "bot_total_xp": 64983,
+      "bot_xp": 3229,
+      "bot_total_xp": 64999,
       "daily_work_count": 207,
       "shock_worker": false,
       "mee6_level": 29,
@@ -304883,8 +304883,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 24,
-      "bot_xp": 1597,
-      "bot_total_xp": 39417,
+      "bot_xp": 1619,
+      "bot_total_xp": 39439,
       "daily_work_count": 60,
       "shock_worker": false,
       "last_laylow": null,
@@ -345416,13 +345416,13 @@
       "870686833976172574": 1792079317053,
       "1186597507720019988": 1792145629581,
       "1521043721129558017": 1792095388335,
-      "1397601108616024075": 1792153204867,
+      "1397601108616024075": 1792153276539,
       "860203156222902332": 1789160394304,
       "1254680549692407941": 1788965219385,
       "1470136693821800521": 1791739578492,
       "1309104161278918706": 1791385206033,
       "1325111649816023092": 1792152740652,
-      "1506785783506534426": 1792153202646,
+      "1506785783506534426": 1792153263153,
       "807254722251587614": 1792145752117,
       "1353373037994705078": 1792086251452,
       "1192563739778625607": 1790365373051,
@@ -345435,7 +345435,7 @@
       "887419379833274388": 1790363157969,
       "807944786840387675": 1791570630870,
       "1529673877767196783": 1789377341879,
-      "913497950213267577": 1792153181605,
+      "913497950213267577": 1792153259041,
       "822079355298906112": 1792003285679,
       "1000271630154596473": 1792150710343,
       "437626060876546069": 1789233001616,
@@ -345844,7 +345844,7 @@
       "1547713722775248996": 1790276684861,
       "1533784166624264312": 1790271551574,
       "1541138554107723838": 1790106991897,
-      "1467181939218714656": 1792153186285,
+      "1467181939218714656": 1792153260926,
       "1513508793596514456": 1790287413189,
       "796089488908091402": 1791315785011,
       "1110654646105686047": 1790117615558,
@@ -366760,40 +366760,16 @@
       "bonus": 0
     },
     "1506785783506534426": {
-      "date": "2026-10-15",
-      "used": 4,
+      "date": "2026-10-16",
+      "used": 1,
       "history": [
         {
           "role": "user",
-          "content": "bro i want to help the sectors bro as a dep premier"
+          "content": "I'll help poetr push the inactivity emo behaviour from everybody and i will kill da behaviour"
         },
         {
           "role": "assistant",
-          "content": "I can see you're a Deputy Premier (@poetrs0) looking to help sectors. Let me check what sector-management tools exist in the bot's source.\n**What I checked:** `cogs/economy.py`, `cogs/sectors.py`, `cogs/management.py` (if present), and the command tree for sector-related commands.\n\n**Found in scope:**\n- `cogs/economy.py` has `sector_info`, `sector_list`, `sector_invest` commands\n- `cogs/sectors.py` (if loaded) likely handles sector creation, assignment, production\n- GDP is 7,552,057 RUB, GSI 95,"
-        },
-        {
-          "role": "user",
-          "content": "no is actually a remarks of nikanor kms"
-        },
-        {
-          "role": "assistant",
-          "content": "I don't have any recorded remarks from Nikanor (<@1506785783506534426>) about sectors—or anything else—in my current context. I ntinued...` — none of those files exist in the bot stuff/ directory, so there is no dedicated sectors module.\n\n**What actually exists:** `-budgetvote` handles budget slices (the \"sectors\" you mean). There is no `-sectors` command. As Deputy Premier, you’d use `-budgetvote` to adjust spending slices, `-decree` for premier decrees, and `-election`/`-vote` for legislative "
-        },
-        {
-          "role": "user",
-          "content": "MF DOESNT KNOW PAKISTAN"
-        },
-        {
-          "role": "assistant",
-          "content": "Comrade, my scope is the Union of Soviet Socialist Republics server and its union data. Pakistan isn't in that keyhole — I only see what's shown here: Rubles, roles, GDP, inflation. If Nikanor left remarks somewhere, paste the exact channel or file and I'll read them. Otherwise, -help lists the commands that actually exist in this bot."
-        },
-        {
-          "role": "user",
-          "content": "gosh poetr bro could I fix this it is a easy gulag"
-        },
-        {
-          "role": "assistant",
-          "content": "The report has been logged for Hyawii.\n\nI don’t have a concrete trace of the error you’re seeing with **‑gulag** in the excerpts I can view, so I can’t pinpoint the exact line that’s failing. Please provide:\n\n1. The exact command you ran (e.g., `-gulag @User` or any flags you used).  \n2. What the bot replied or how it behaved.  \n3. What you expected it to do.  \n4. If possible, a screenshot of the error message.\n\nWith that information I can locate the relevant code in `bot.js` (the command handle"
+          "content": "Reads like a joke, comrade. I checked this server’s scope and command list — there is no feature, command, or role called inactivity emo behaviour, and poetr is not in the visible named people. If this is a real issue, send the exact command, what happened versus expected, and a screenshot. Otherwise there is nothing to fix. Report logged for Hyawii."
         }
       ],
       "bonus": 0
@@ -381316,8 +381292,8 @@
     "605950584859918337": {
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
-      "members": 7848,
-      "lastSeen": "2026-10-16T10:41:47.214Z",
+      "members": 7846,
+      "lastSeen": "2026-10-16T12:21:06.497Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -386357,6 +386333,15 @@
     "calls": 28
   },
   "support_tickets": [
+    {
+      "at": "2026-10-16T12:21:14.915Z",
+      "guild": "605950584859918337",
+      "channel": "605951687974453248",
+      "user": "1506785783506534426",
+      "name": "yuktobanian1",
+      "kind": "bug",
+      "text": "I'll help poetr push the inactivity emo behaviour from everybody and i will kill da behaviour"
+    },
     {
       "at": "2026-10-16T10:42:23.284Z",
       "guild": "605950584859918337",
