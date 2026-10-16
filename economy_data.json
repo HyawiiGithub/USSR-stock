@@ -316022,8 +316022,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 71,
-      "bot_total_xp": 841,
+      "bot_xp": 96,
+      "bot_total_xp": 866,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -325553,8 +325553,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 490,
-      "bot_total_xp": 3390,
+      "bot_xp": 507,
+      "bot_total_xp": 3407,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -346528,7 +346528,7 @@
       "722064019426377783": 1791146640562,
       "1337550948368777257": 1791150166241,
       "1430286088433307721": 1792185596795,
-      "1430637954681798737": 1792185693563,
+      "1430637954681798737": 1792185778018,
       "1465835749214519297": 1791161086622,
       "794046247803682896": 1792099258194,
       "1542581967206219811": 1791195028102,
@@ -346668,7 +346668,7 @@
       "1235504042587983887": 1791920126202,
       "1322605666551992404": 1791924299317,
       "1449721609672855698": 1791924284517,
-      "1558219605753860178": 1792185327170,
+      "1558219605753860178": 1792185808623,
       "1549310232533016651": 1791983792907,
       "1557801900101992508": 1791977354700,
       "1499767732416151575": 1791980056394,
@@ -367323,6 +367323,14 @@
         {
           "role": "assistant",
           "content": "Comrade <@1456622719985782864>, your report has been logged as **Bug Ticket #1**.\n\n**What I checked**\n\n- I searched the provided source excerpts for any reference to the `-gulag` command (e.g., `bot.js` sections handling gulag, shift calculations, or board rendering).  \n- The current excerpts contain only the bug‑desk logic (see `bot.js:4376`), but no implementation details for `-gulag`.  \n- Because the relevant code isn’t present in the excerpts, I cannot pinpoint the exact line that governs sh"
+        },
+        {
+          "role": "user",
+          "content": "<@&658421581202325545> wanna help?"
+        },
+        {
+          "role": "assistant",
+          "content": "Comrade <@1456622719985782864>, the ticket has been recorded as **Bug #1**.\n\n**Current status** – I have scanned the visible source files (`bot.js`, `economy_core.js`, `election_render.js`, etc.) for any handling of shift counts or the Gulag board, but none of the excerpts contain the relevant logic. Without the exact snippet I cannot pinpoint the faulty line.\n\n**What I need to proceed**\n\n1. The exact command you ran (e.g., `-gulag` with any flags or arguments).  \n2. The output you received (cop"
         }
       ],
       "bonus": 0
@@ -367763,7 +367771,7 @@
     },
     "913497950213267577": {
       "date": "2026-10-16",
-      "used": 3,
+      "used": 4,
       "history": [
         {
           "role": "user",
@@ -367788,6 +367796,14 @@
         {
           "role": "assistant",
           "content": "I don't process enlistment for external forces, and I don't run ads for outside armies. This terminal handles the USSR economy and Jarvis support only.\n\nIf there's a real bug in this bot, file it with `-bug` — exact command, what happened versus expected, and a screenshot if you have one. Otherwise, take the recruitment speech to whatever server it belongs to."
+        },
+        {
+          "role": "user",
+          "content": "what's the correlation though he handles the budget of the sector"
+        },
+        {
+          "role": "assistant",
+          "content": "The “sector‑budget” you’re talking about isn’t a separate feature with its own command. In this server the only way the budget is divided into sectors is through the **‑budgetvote** command – each vote slice represents a sector’s share of the overall budget.  \n\nSo the person you’re referring to can only affect a sector’s allocation by:\n\n1. **Participating in ‑budgetvote** – casting votes for the slices that correspond to the sectors they care about.  \n2. **Holding a relevant role** – many of the"
         }
       ],
       "bonus": 0
@@ -381935,7 +381951,7 @@
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
       "members": 7851,
-      "lastSeen": "2026-10-16T21:20:13.775Z",
+      "lastSeen": "2026-10-16T21:22:59.935Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
@@ -386978,6 +386994,15 @@
     "calls": 28
   },
   "support_tickets": [
+    {
+      "at": "2026-10-16T21:22:50.857Z",
+      "guild": "605950584859918337",
+      "channel": "605951687974453248",
+      "user": "1456622719985782864",
+      "name": "seren_menzhinsky",
+      "kind": "bug",
+      "text": "<@&658421581202325545> wanna help?"
+    },
     {
       "at": "2026-10-16T18:55:32.646Z",
       "guild": "605950584859918337",
