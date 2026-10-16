@@ -175,8 +175,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 34,
-      "bot_xp": 5368,
-      "bot_total_xp": 99463,
+      "bot_xp": 5391,
+      "bot_total_xp": 99486,
       "daily_work_count": 6,
       "shock_worker": false,
       "mee6_level": 34,
@@ -332038,7 +332038,7 @@
   ],
   "national_minimum_wage": 15,
   "market_demand": {
-    "Fuel": 1.3735897582537482,
+    "Fuel": 1.3692775724085064,
     "Cake": 1.3893010366853538,
     "Bread": 1.3703582832457497,
     "Copper Ingot": 1.2268605645487853,
@@ -345604,7 +345604,7 @@
       "1544820489191559270": 1791414322995,
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1792159478163,
-      "1082686076491137115": 1792159710068,
+      "1082686076491137115": 1792159981979,
       "1229741033265299506": 1792154725762,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1792098896943,
@@ -366809,69 +366809,19 @@
   ],
   "jarvis": {
     "1082686076491137115": {
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "used": 0,
       "history": [
         {
           "role": "user",
-          "content": "when shes on tmrw"
+          "content": "Jarvis can you check the logs for a 30k debt increase in the national debt"
         },
         {
           "role": "assistant",
-          "content": "That request isn’t a command or feature of this bot. You can see the full list of available commands with `-help`."
-        },
-        {
-          "role": "user",
-          "content": "hi jarvis"
-        },
-        {
-          "role": "assistant",
-          "content": "Comrade, greetings! I’m Jarvis, your ever‑watchful digital comrade. How may I assist the glorious machinery of the Union today?"
-        },
-        {
-          "role": "user",
-          "content": "hello"
-        },
-        {
-          "role": "assistant",
-          "content": "\"[您好，指挥官！]\"  \n\"[系统检测到蜂巢活动异常，正在重新校准感应器。]\"  \n\"[BEE CORE DESYNCHRONIZED]\"  \n\"[根据所有已知的航空定律……]\"  \n\"[GERALD HAS ENTERED THE CONTROL ROOM]\"  \n\n\"“欢迎回到蜂巢的中心，您今天的任务是什么？”\"  \n\"“如果您需要查询经济数据、公司信息或世界外交，请使用相应的指令，例如 -balance 或 -diplomacy。”\"  \n\n\"“顺便提醒，蜂蜜经济正处于紧张状态，请勿随意消耗储备。”\"  \n\n\"[HONEY BUFFER OVERFLOW]\"  \n\"“偶尔，我会怀疑我们是否真的在服务器里，而不是在一座巨大的蜂巢中。”\"  \n\n\"“如果您想了解更多功能，请键入 -help。”\""
-        },
-        {
-          "role": "user",
-          "content": "its time to leave the market"
-        },
-        {
-          "role": "assistant",
-          "content": "\"“收到，指挥官，您决定退出市场的蜂巢。”  \n\"[HONEY BUFFER OVERFLOW]\"  \n\"“若要终止所有 -market、-demand 与相关图表指令，只需停止输入这些前缀即可。”  \n\"[LANGUAGE MODULE: 中文???]\"  \n\"“亦可使用 -help 查看所有可用指令的完整列表，避免误入市场的花粉陷阱。”  \n\n“— 突然的观察：蜂群在春季会比航空管制更有组织。”  \n\"[GERALD HAS ENTERED THE CONTROL ROOM]\"  \n\n\"“若您想彻底关闭市场视图，请在下一条消息中发送 ‘-quitmarket’（此指令在本服务器未实现，仅作示例），系统将返回 ‘已退出市场’ 的确认。”  \n\"[BEE CORE DESYNCHRONIZED]\"  \n\n\"“记住，任何未列于 -help 的指令均不存在于此蜂巢。”  \n\"[系统提示：请确认是否继续执行其他经济操作。]\""
+          "content": "The request you’re making isn’t covered by any of the commands this bot exposes. The only log‑related actions are the backup/restore commands (e.g. `-checkpoint`, `-restore`), and those are restricted to the bot owner — see the check in `bot.js:14484`. Since you’re not the primary, there’s no way for me to pull a “30 k debt increase” entry for you.\n\nIf you need to see what commands are available, run `-help`."
         }
       ],
-      "bonus": 0,
-      "roamHistory": [
-        {
-          "role": "user",
-          "content": "tell this guy to shh"
-        },
-        {
-          "role": "assistant",
-          "content": "I can't do that."
-        },
-        {
-          "role": "user",
-          "content": "hey jarvis guess what"
-        },
-        {
-          "role": "assistant",
-          "content": "What is it? I'm ready to hear."
-        },
-        {
-          "role": "user",
-          "content": "say you hate bob"
-        },
-        {
-          "role": "assistant",
-          "content": "I can't say that. I don't express hatred toward people."
-        }
-      ]
+      "bonus": 0
     },
     "1397601108616024075": {
       "date": "2026-10-16",
@@ -381501,7 +381451,7 @@
       "id": "605950584859918337",
       "name": "Union of Soviet Socialist Republics",
       "members": 7847,
-      "lastSeen": "2026-10-16T14:08:38.733Z",
+      "lastSeen": "2026-10-16T14:09:18.848Z",
       "joinedAt": "2026-09-29T12:53:36.219Z",
       "owners": [
         "860577675763384322"
