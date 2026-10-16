@@ -331556,7 +331556,7 @@
     "Bricks": 1.0349139132747645,
     "Concrete": 1.4029139010136447,
     "Glass": 1.4043749109969852,
-    "Steel Beam": 0.9918901370941441,
+    "Steel Beam": 1,
     "Machine Parts": 1.0376035243677209,
     "Refined Fuel": 1.4046254054082654,
     "Uranium Rod": 1.3286636506496228,
@@ -331634,7 +331634,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Circuit Board": 2,
-    "Steel Beam": 27
+    "Steel Beam": 26
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -331656,7 +331656,7 @@
     "Cotton Fabric": 18,
     "Reactor Core": 68,
     "Gas Fuel": 294,
-    "Steel Beam": 99,
+    "Steel Beam": 100,
     "Machine Parts": 424,
     "Sugar": 61,
     "Fertilizer": 17,
@@ -331675,11 +331675,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Bricks",
-      "qty": 2,
-      "at": "2026-10-11T10:05:33.721Z"
-    },
     {
       "item": "Reactor Core",
       "qty": 1,
@@ -333174,6 +333169,11 @@
       "item": "Circuit Board",
       "qty": 2,
       "at": "2026-10-16T01:22:13.232Z"
+    },
+    {
+      "item": "Steel Beam",
+      "qty": 1,
+      "at": "2026-10-16T01:37:12.981Z"
     }
   ],
   "demand_history": {
@@ -337547,11 +337547,6 @@
     ],
     "Steel Beam": [
       {
-        "demand": 1.0587091804271356,
-        "at": "2026-09-26T08:52:10.867Z",
-        "supply": 0
-      },
-      {
         "demand": 1.2005930133809402,
         "at": "2026-09-26T09:52:10.868Z",
         "supply": 0
@@ -337844,6 +337839,11 @@
       {
         "demand": 0.6710640931460545,
         "at": "2026-10-16T00:22:12.218Z",
+        "supply": 21
+      },
+      {
+        "demand": 0.9918901370941441,
+        "at": "2026-10-16T01:37:12.981Z",
         "supply": 21
       }
     ],
