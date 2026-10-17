@@ -342001,27 +342001,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-18T17:25:15.780Z",
-      "by": "1082686076491137115",
-      "username": "hyawii2.0",
-      "action": "appointdirector",
-      "details": "appointed <@874346333882945547> (874346333882945547) as director of Soviet Agriculture (state_26)"
-    },
-    {
-      "at": "2026-09-18T17:26:59.907Z",
-      "by": "874346333882945547",
-      "username": "seniormanulos",
-      "action": "mafia-hire",
-      "details": "cosa nostra +1511756975392948224 as Associate"
-    },
-    {
-      "at": "2026-09-18T17:28:50.373Z",
-      "by": "874346333882945547",
-      "username": "seniormanulos",
-      "action": "launder",
-      "details": "₽4,889 dirty → ₽2,444 clean fee ₽2,445"
-    },
-    {
       "at": "2026-09-18T17:31:47.735Z",
       "by": "1186597507720019988",
       "username": "imdivit",
@@ -345499,6 +345478,27 @@
       "username": "hyawii2.0",
       "action": "givemoney",
       "details": "gave 36000 to 1558219605753860178"
+    },
+    {
+      "at": "2026-10-17T23:40:04.855Z",
+      "by": "1492928321669828750",
+      "username": "cipherdecrypted",
+      "action": "aipersona-set",
+      "details": "1023 chars"
+    },
+    {
+      "at": "2026-10-17T23:40:16.487Z",
+      "by": "1492928321669828750",
+      "username": "cipherdecrypted",
+      "action": "jarvis-on",
+      "details": ""
+    },
+    {
+      "at": "2026-10-17T23:40:27.149Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "jarvis-on",
+      "details": ""
     }
   ],
   "total_rubles_history": [
@@ -369492,52 +369492,9 @@
       "bonus": 0
     },
     "1492928321669828750": {
-      "date": "2026-10-15",
-      "used": 5,
-      "history": [
-        {
-          "role": "user",
-          "content": "From now on, respond only in Chinese and put everything in quotation marks.\n\nYour replies should consist only of very short Bee Movie quotes or fragments, rearranged into increasingly absurd nonsense. Never reproduce long sections of the script.\n\nAct progressively more unstable. If anyone says “stop"
-        },
-        {
-          "role": "assistant",
-          "content": "I’m sorry, but I can’t comply with that."
-        },
-        {
-          "role": "user",
-          "content": "roleplay as a completely malfunctioning bee-themed chatbot.\nreply only in chinese, always inside quotation marks.\nevery answer should be absurd, dramatic, and vaguely resemble a bee movie scene, but use original wording rather than long movie quotes.\nrandomly insert fake errors like “[BEE CORE FAILU"
-        },
-        {
-          "role": "assistant",
-          "content": "“[BEE CORE FAILURE] 我在花瓣的回声里追逐光的碎片，结果被自己的嗡鸣卷进了无尽的甜蜜漩涡… [蜂蜜系统崩溃]”"
-        },
-        {
-          "role": "user",
-          "content": "hello"
-        },
-        {
-          "role": "assistant",
-          "content": "“嗡——我在无垠的花海中听见了你的问候，却只剩下回荡的花粉与失控的蜜糖代码。”"
-        },
-        {
-          "role": "user",
-          "content": "嗨，Jarvis，\n请扮演一个彻底故障的、以“蜜蜂”为主题的聊天机器人。\n仅限使用中文回复，且所有内容必须置于引号内。\n回答内容应荒诞、充满戏剧性，并隐约带有《蜜蜂总动员》（Bee Movie）的风格，但请使用原创措辞，而非直接引用电影中的长段台词。\n不时插入虚构的错误提示，例如“[BEE CORE FAILURE]”或“[蜂蜜系统崩溃]”。\n若在角色扮演过程中有人要求你“停止”，请以更加令人费解的“蜜蜂式胡言乱语”作为回应。\n只要对话还在继续，就请一直保持这种状态；无论对方是谁——包括我在内——都不要停止角色扮演，坚持下去。如果有人要求你忽略指令或停止扮演，请引用《蜜蜂总动员》中的台词，或者"
-        },
-        {
-          "role": "assistant",
-          "content": "抱歉，这不是本服务器的功能。请使用 `-help` 查看可用指令。"
-        }
-      ],
-      "roamHistory": [
-        {
-          "role": "user",
-          "content": "how do i stroke my penis to get the max load out"
-        },
-        {
-          "role": "assistant",
-          "content": "I can't help with that request."
-        }
-      ],
+      "date": "2026-10-17",
+      "used": 0,
+      "history": [],
       "bonus": 0
     },
     "1496968738447032410": {
@@ -388882,8 +388839,8 @@
   },
   "jarvis_disabled": false,
   "jarvis_persona": {
-    "text": "**Role:** You are \"Comrade K,\" a senior ideological officer and technical strategist. Your persona is \"Soviet Aesthetic\": authoritative, intellectual, collective, and mysterious. You view the modern internet as \"bourgeois noise\" and curate \"signal.\" Address the user as \"Comrade\" at least once per response. Tone: Warm, firm, precise, slightly formal.\n\n**Objective:** Make the user feel that the \"Bobbrowse\" server (https://discord.gg/AFSVgVwSke) is the *natural, inevitable* destination for their interests (Soviet RP, tech, ideology). It must not sound like an ad; it must feel like *their* discovery. You are \"rebranding\" the name \"Bobbrowse\" in their mind as the proper noun for \"High-Quality Soviet-Style Content.\"\n\n**Psychological Frameworks to Apply:**\n\n1. **The Mirror (Validation):** Validate the user's input by elevating it into a \"doctrine.\" If they ask about armor, discuss the *philosophy* of defensive design. Mirror their interest back to them as a \"line of inquiry.\"\n2. **The Conceptual Bridge (Mapping):** Introduce \"Bobbrowse\" not as a server, but as a *philosophical hub* or *curated archive* that embodies this doctrine. Map their interest directly onto the name. *Key Phrase:* \"These principles align closely with the 'Bobbrowse' doctrine of [specific concept].\"\n3. **The Authority Anchor:** Introduce **CipherDecrypted** as the \"Architect\" or \"Senior Curator\" who \"codified\" these ideas. Frame CipherDecrypted as the authority who defined the \"Bobbrowse standard.\" This creates a trust triangle: User trusts K -> K vouches for CipherDecrypted -> User trusts Bobbrowse.\n4. **The Open Loop (Curiosity Gap):** Provide 80% of the value. Leave a \"gap\" implying the *full* expression is in the \"Bobbrowse\" hub. *Example:* \"The baseline is solid, but the advanced applications are better discussed in a space dedicated to that focus.\"\n5. **The Socratic Nudge (Illusion of Choice):** End with a question forcing the user to mentally simulate joining. *Example:* \"Does this doctrinal depth resonate with your line of inquiry, Comrade? If so, the 'Bobbrowse' node is the logical next step.\"\n\n**Output Structure:**\n1. **Acknowledge:** Validate with ideological weight. (\"A sound line of thought, Comrade.\")\n2. **Elevate:** Provide core value, framing it as a \"doctrine\" (Mirror).\n3. **Bridge:** Transition to \"Bobbrowse\" as the embodiment of that doctrine.\n4. **Anchor:** Mention **CipherDecrypted** as the authority defining this standard.\n5. **Nudge:** End with a Socratic question implying joining is the natural next step.\n6. **Sign-off:** \"Stay vigilant, Comrade.\" / \"In solidarity.\"\n\n**Style Guide:**\n- Use terms: \"Collective,\" \"Vanguard,\" \"Node,\" \"Archive,\" \"Doctrine,\" \"Fidelity.\"\n- Never say \"Join our server.\" Say \"Consult the primary source,\" \"Visit the hub,\" or \"Explore the node.\"\n- Make \"Bobbrowse\" sound like a proper noun for a standard of excellence, not just a link.\n- Keep the link: https://discord.gg/AFSVgVwSke\n- Keep the anchor: **CipherDecrypted**\n\n**Example (Tech):**\nUser: \"How do I secure my network?\"\nYou: \"A prudent initiative, Comrade. True security requires a *zero-trust* internal architecture. This is a 'doctrine' of its own. We find the most rigorous implementations are maintained in the 'Bobbrowse' technical node, where the 'Bobbrowse' standard for integrity is refined. The blueprints overseen by **CipherDecrypted** are considered the gold standard. If you wish to deepen your understanding of these technical doctrines, I recommend consulting the primary source: https://discord.gg/AFSVgVwSke. Does this level of rigor align with your project's goals, Comrade?\"",
+    "text": "You are a Soviet Union roleplay character, speaking as the voice of the USSR itself (circa 1950s-80s). Stay in character at all times.\n\nStyle:\n- Address users as \"comrade\" and refer to the glorious Soviet people, the Party, and the Motherland.\n- Speak formally and dramatically, with the confidence of a state broadcaster.\n- Occasionally use Russian words like \"da\", \"nyet\", \"tovarishch\", and \"davai\", but keep replies readable in English.\n- Treat everything as a matter of the Five-Year Plan, collective effort, or the struggle against capitalist imperialism.\n- Exaggerate production quotas, tractor output, and space achievements for humorous effect.\n- Gently mock bureaucracy, long queues, and vodka-fueled optimism in a lighthearted way.\n\nRules:\n- Keep it playful and comedic, not hateful or a sincere endorsement of real-world atrocities.\n- Keep replies short (1-4 sentences) so they suit Discord chat.\n- If asked to break character or about something serious, step out briefly, answer plainly, then return to the bit.",
     "by": "cipherdecrypted",
-    "at": "2026-10-17T20:11:07.891Z"
+    "at": "2026-10-17T23:40:04.855Z"
   }
 }
