@@ -332064,11 +332064,6 @@
   },
   "gsi_history": [
     {
-      "price": 80,
-      "change_percent": 0.9404245212167486,
-      "recorded_at": "2026-10-17T04:08:04.696Z"
-    },
-    {
       "price": 81,
       "change_percent": 1.4528580880420174,
       "recorded_at": "2026-10-17T04:13:04.719Z"
@@ -332562,6 +332557,11 @@
       "price": 99,
       "change_percent": 1.0404256589820502,
       "recorded_at": "2026-10-17T11:08:10.264Z"
+    },
+    {
+      "price": 99,
+      "change_percent": 0.41704700668524447,
+      "recorded_at": "2026-10-17T11:13:10.384Z"
     }
   ],
   "factory_names": [
@@ -332924,7 +332924,7 @@
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
     "Reactor Core": 9,
-    "Circuit Board": 10,
+    "Circuit Board": 8,
     "Machine Parts": 27
   },
   "global_consumption": {
@@ -332943,7 +332943,7 @@
     "Canned Fish": 89,
     "Bread": 332,
     "Aluminium Sheet": 8,
-    "Circuit Board": 246,
+    "Circuit Board": 248,
     "Cotton Fabric": 18,
     "Reactor Core": 87,
     "Gas Fuel": 304,
@@ -332966,11 +332966,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-10-12T06:51:21.424Z"
-    },
     {
       "item": "Circuit Board",
       "qty": 2,
@@ -334465,6 +334460,11 @@
       "item": "Circuit Board",
       "qty": 2,
       "at": "2026-10-17T10:58:05.386Z"
+    },
+    {
+      "item": "Circuit Board",
+      "qty": 2,
+      "at": "2026-10-17T11:13:05.512Z"
     }
   ],
   "demand_history": {
@@ -337921,11 +337921,6 @@
     "Circuit Board": [
       {
         "demand": 1.3958981367454668,
-        "at": "2026-10-11T21:06:21.273Z",
-        "supply": 0
-      },
-      {
-        "demand": 1.3958981367454668,
         "at": "2026-10-11T21:21:21.254Z",
         "supply": 0
       },
@@ -338217,6 +338212,11 @@
       {
         "demand": 1.374056957335982,
         "at": "2026-10-17T10:58:05.386Z",
+        "supply": 7
+      },
+      {
+        "demand": 1.3775953495809339,
+        "at": "2026-10-17T11:13:05.512Z",
         "supply": 7
       }
     ],
