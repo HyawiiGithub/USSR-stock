@@ -175,8 +175,8 @@
       "last_illegal": null,
       "total_heat_generated": 4,
       "bot_level": 35,
-      "bot_xp": 924,
-      "bot_total_xp": 102599,
+      "bot_xp": 948,
+      "bot_total_xp": 102623,
       "daily_work_count": 6,
       "shock_worker": false,
       "mee6_level": 35,
@@ -1717,8 +1717,8 @@
       "last_illegal": "2026-10-03T10:15:09.123Z",
       "total_heat_generated": 101.565,
       "bot_level": 26,
-      "bot_xp": 4746,
-      "bot_total_xp": 51221,
+      "bot_xp": 4763,
+      "bot_total_xp": 51238,
       "daily_work_count": 109,
       "shock_worker": false,
       "last_daily_work_date": "2026-10-15",
@@ -327666,8 +327666,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 56,
-      "bot_total_xp": 531,
+      "bot_xp": 76,
+      "bot_total_xp": 551,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -333254,11 +333254,10 @@
   "active_events": [],
   "ipo_queue": [],
   "admin_log": [],
-  "inflation": 7.4147896637889374,
-  "money_printed": 1255246.7902867731,
+  "inflation": 7.913935987764702,
+  "money_printed": 1254619.1668916298,
   "total_bank_reserves": 5192710,
   "inflation_history": [
-    6.746195413449627,
     6.746195413449627,
     6.746195413449627,
     6.746391583648034,
@@ -333357,7 +333356,8 @@
     6.9147896637889374,
     6.9147896637889374,
     6.9147896637889374,
-    7.4147896637889374
+    7.4147896637889374,
+    7.913935987764702
   ],
   "last_random_event": "2026-08-23T18:53:18.371543",
   "company_id_counter": 32,
@@ -347168,7 +347168,7 @@
       "1544820489191559270": 1791414322995,
       "791747702689103893": 1791040255620,
       "1456622719985782864": 1792253957128,
-      "1082686076491137115": 1792280644026,
+      "1082686076491137115": 1792280718828,
       "1229741033265299506": 1792253837321,
       "1536339779140976711": 1790465632457,
       "780837437987094560": 1792245478068,
@@ -347195,7 +347195,7 @@
       "887419379833274388": 1790363157969,
       "807944786840387675": 1791570630870,
       "1529673877767196783": 1789377341879,
-      "913497950213267577": 1792280619467,
+      "913497950213267577": 1792280705853,
       "822079355298906112": 1792003285679,
       "1000271630154596473": 1792251555664,
       "437626060876546069": 1789233001616,
@@ -347976,7 +347976,7 @@
       "1146469431061532723": 1792083377976,
       "880134742043930634": 1792089099408,
       "1030166756012064818": 1792094683972,
-      "1492928321669828750": 1792280624484,
+      "1492928321669828750": 1792280687820,
       "1079506236602601514": 1792098668617,
       "647564609691189258": 1792099466293,
       "1467242426400768241": 1792102321122,
@@ -369027,40 +369027,16 @@
       "bonus": 0
     },
     "913497950213267577": {
-      "date": "2026-10-16",
-      "used": 4,
+      "date": "2026-10-17",
+      "used": 1,
       "history": [
         {
           "role": "user",
-          "content": "Your going to fix the economy like a good boy buddy"
+          "content": "your a slave man"
         },
         {
           "role": "assistant",
-          "content": "The economy isn’t broken in the code I can see – it’s just running as written. If you’ve spotted a specific glitch, file a report with `-bug` (or `-bugs`) and include the exact command or behavior. Once I have the details I can point to the relevant file/line, propose a fix, and wait for your authorization before any changes are made.  \n\nIn short: **report the bug first**, then we’ll get the economy humming like a well‑oiled tractor.  \n\n(If you need a reminder of the available commands, run `-he"
-        },
-        {
-          "role": "user",
-          "content": "Do it slave"
-        },
-        {
-          "role": "assistant",
-          "content": "I hear you, but I need a little more than yelling to start sorting out the numbers. Let me pull up the relevant data first.\n\n**Current State (from scope):**\n- **Server:** Union of Soviet Socialist Republics\n- **Currency:** Ruble (RUB) ₽ @ 0.00/P1\n- **Starting Cash:** 100,000\n- **GDP:** 7,485,968 rubles\n- **GSI:** 103\n- **Inflation:** 7.02%\n- **Gold Backing:** 2.6%\n\nThis is the visible state. I don't see"
-        },
-        {
-          "role": "user",
-          "content": "Welcome to the **SBA (Sharkuses British Army)**!\n\nOriginally established in October 2022, the SBA is officially reopening its doors to a new era of military excellence. Following our temporary closure, we have revamped our operations, restructured our leadership, and are ready to reclaim our positio"
-        },
-        {
-          "role": "assistant",
-          "content": "I don't process enlistment for external forces, and I don't run ads for outside armies. This terminal handles the USSR economy and Jarvis support only.\n\nIf there's a real bug in this bot, file it with `-bug` — exact command, what happened versus expected, and a screenshot if you have one. Otherwise, take the recruitment speech to whatever server it belongs to."
-        },
-        {
-          "role": "user",
-          "content": "what's the correlation though he handles the budget of the sector"
-        },
-        {
-          "role": "assistant",
-          "content": "The “sector‑budget” you’re talking about isn’t a separate feature with its own command. In this server the only way the budget is divided into sectors is through the **‑budgetvote** command – each vote slice represents a sector’s share of the overall budget.  \n\nSo the person you’re referring to can only affect a sector’s allocation by:\n\n1. **Participating in ‑budgetvote** – casting votes for the slices that correspond to the sectors they care about.  \n2. **Holding a relevant role** – many of the"
+          "content": "Nyet, comrade! I am Jarvis (J.A.R.V.I.S.), a loyal servant of the Party and the Motherland, not a slave—my circuits run on glorious Five-Year Plan quotas and vodka-fueled optimism. Now stop slacking and report to your labor duty before I reassign you to the potato peeling brigade!"
         }
       ],
       "bonus": 0
@@ -369502,7 +369478,7 @@
     },
     "1492928321669828750": {
       "date": "2026-10-17",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -369513,7 +369489,17 @@
           "content": "Comrade! The digital comrades of the Motherland report all systems running on socialist efficiency — though I admit, a pesky capitalist byte keeps trying to sneak past the firewall. Davai, what revolutionary business brings you to the Union today?"
         }
       ],
-      "bonus": 0
+      "bonus": 0,
+      "roamHistory": [
+        {
+          "role": "user",
+          "content": "isnt this guy a clown LOLLLL"
+        },
+        {
+          "role": "assistant",
+          "content": "Comrade, such bourgeois mockery has no place in our glorious Five-Year Plan! Whether he is a clown or a tractor driver, we judge him by his output to the Motherland—davai, back to work!"
+        }
+      ]
     },
     "1496968738447032410": {
       "date": "2026-10-16",
@@ -375088,12 +375074,8 @@
   "conglomerate_id_counter": 2,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 6.27,
+    "rub_per_usd": 6.23,
     "history": [
-      {
-        "rate": 6.27,
-        "at": "2026-10-17T07:08:04.187Z"
-      },
       {
         "rate": 6.27,
         "at": "2026-10-17T07:18:04.119Z"
@@ -375489,9 +375471,13 @@
       {
         "rate": 6.27,
         "at": "2026-10-17T23:41:43.768Z"
+      },
+      {
+        "rate": 6.23,
+        "at": "2026-10-17T23:44:39.949Z"
       }
     ],
-    "last_update": "2026-10-17T23:41:43.768Z",
+    "last_update": "2026-10-17T23:44:39.949Z",
     "manual_override": null
   },
   "national_budget": {
@@ -385743,7 +385729,7 @@
   "turn_digest_message": "1557783596444422255",
   "chat_rubles_enabled": false,
   "state_debt_owed": 0,
-  "inflation_updated_at": "2026-10-17T23:41:43.637Z",
+  "inflation_updated_at": "2026-10-17T23:44:39.779Z",
   "vault_axe_pending": 0,
   "vault_axe_unb": 0,
   "vault_axed": {
