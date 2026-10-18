@@ -333519,7 +333519,7 @@
     "Concrete": 1.4029139010136447,
     "Glass": 1.3956998949440775,
     "Steel Beam": 1.3419733811820258,
-    "Machine Parts": 0.9842625507555509,
+    "Machine Parts": 1,
     "Refined Fuel": 1.4046254054082654,
     "Uranium Rod": 1.3199189511730953,
     "Reactor Core": 1.3813662398272835,
@@ -333595,7 +333595,6 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Machine Parts": 1,
     "Fuel": 1
   },
   "global_consumption": {
@@ -333619,7 +333618,7 @@
     "Reactor Core": 96,
     "Gas Fuel": 304,
     "Steel Beam": 126,
-    "Machine Parts": 453,
+    "Machine Parts": 454,
     "Sugar": 61,
     "Fertilizer": 17,
     "Flour": 20,
@@ -333637,11 +333636,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Cake",
-      "qty": 1,
-      "at": "2026-10-12T18:21:24.018Z"
-    },
     {
       "item": "Reactor Core",
       "qty": 2,
@@ -335136,6 +335130,11 @@
       "item": "Machine Parts",
       "qty": 2,
       "at": "2026-10-18T00:14:40.642Z"
+    },
+    {
+      "item": "Machine Parts",
+      "qty": 1,
+      "at": "2026-10-18T00:29:40.696Z"
     }
   ],
   "demand_history": {
@@ -339876,11 +339875,6 @@
     ],
     "Machine Parts": [
       {
-        "demand": 1.2472678973929674,
-        "at": "2026-10-11T08:20:32.026Z",
-        "supply": 90
-      },
-      {
         "demand": 1.2078479132493103,
         "at": "2026-10-11T12:51:16.626Z",
         "supply": 113
@@ -340173,6 +340167,11 @@
       {
         "demand": 0.9749462890624999,
         "at": "2026-10-18T00:14:40.642Z",
+        "supply": 255
+      },
+      {
+        "demand": 0.9842625507555509,
+        "at": "2026-10-18T00:29:40.696Z",
         "supply": 255
       }
     ],
