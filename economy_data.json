@@ -330074,7 +330074,6 @@
       "is_private": true,
       "value_history": [
         436596,
-        436596,
         436668,
         436668,
         436668,
@@ -330172,6 +330171,7 @@
         401861,
         401929,
         401929,
+        402593,
         402593
       ]
     },
@@ -330304,7 +330304,7 @@
         7,
         7,
         7,
-        7,
+        5,
         5,
         5,
         5,
@@ -330411,7 +330411,6 @@
       "prev_price": 5,
       "value_history": [
         475038,
-        475038,
         475032,
         475032,
         475032,
@@ -330509,7 +330508,8 @@
         504110,
         504110,
         504110,
-        504763
+        504763,
+        504955
       ]
     },
     "state_25": {
@@ -330577,7 +330577,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -330698,7 +330698,6 @@
         174284,
         174284,
         174284,
-        174284,
         174308,
         174308,
         174308,
@@ -330762,6 +330761,7 @@
         175292,
         175292,
         175292,
+        175436,
         175436,
         175436,
         175436,
@@ -330991,7 +330991,6 @@
       "price_history": [
         13,
         13,
-        13,
         14,
         14,
         14,
@@ -331088,6 +331087,7 @@
         16,
         16,
         16,
+        16,
         16
       ],
       "is_state_owned": false,
@@ -331114,7 +331114,6 @@
       "prev_price": 16,
       "is_private": true,
       "value_history": [
-        1686399,
         1686484,
         1721670,
         1722776,
@@ -331212,6 +331211,7 @@
         2024979,
         2024979,
         2024979,
+        2025064,
         2025064,
         2025064
       ],
@@ -331455,7 +331455,6 @@
       "prev_price": 7,
       "is_private": true,
       "value_history": [
-        719643,
         719731,
         719819,
         719843,
@@ -331554,7 +331553,8 @@
         740064,
         740112,
         740120,
-        740144
+        740144,
+        740152
       ],
       "sales_team": 1
     },
@@ -331748,7 +331748,6 @@
         68024,
         68024,
         68024,
-        68024,
         68328,
         68328,
         68328,
@@ -331769,6 +331768,7 @@
         68484,
         68484,
         68484,
+        68548,
         68548,
         68548,
         68548,
@@ -332142,7 +332142,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -332367,7 +332367,6 @@
       "created_at": "2026-10-04T19:51:08.271Z",
       "last_collect": null,
       "price_history": [
-        69,
         68,
         68,
         68,
@@ -332459,6 +332458,7 @@
         48,
         48,
         48,
+        47,
         47,
         47,
         47,
@@ -332603,8 +332603,8 @@
       "shares_available": 0,
       "state_shares": 0,
       "founder_shares": 0,
-      "share_price": 1710,
-      "market_cap": 1710,
+      "share_price": 1726,
+      "market_cap": 1726,
       "employees": 0,
       "level": 1,
       "buildings": {},
@@ -332674,7 +332674,8 @@
         1708,
         1707,
         1709,
-        1710
+        1710,
+        1726
       ],
       "is_state_owned": true,
       "is_gulag": true,
@@ -332707,8 +332708,9 @@
           "since": "2026-10-17T13:44:30.489Z"
         }
       },
-      "prev_price": 1709,
+      "prev_price": 1710,
       "value_history": [
+        1600,
         1600,
         1600,
         1600,
@@ -333632,13 +333634,15 @@
     "Wine": "2026-10-09T19:15:23.973Z"
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
-  "ai_store": {},
+  "ai_store": {
+    "Fuel": 1
+  },
   "global_consumption": {
     "Copper Ingot": 97,
     "Steel Ingot": 26,
     "Timber Planks": 212,
     "Refined Fuel": 403,
-    "Fuel": 194,
+    "Fuel": 193,
     "Iron Ingot": 63,
     "Shale Oil": 27,
     "Peat Fuel": 10,
@@ -333672,6 +333676,11 @@
     "Wine": 10
   },
   "consumption_history": [
+    {
+      "item": "Reactor Core",
+      "qty": 2,
+      "at": "2026-10-12T18:36:23.967Z"
+    },
     {
       "item": "Cake",
       "qty": 1,
@@ -335166,11 +335175,6 @@
       "item": "Machine Parts",
       "qty": 1,
       "at": "2026-10-18T00:29:40.696Z"
-    },
-    {
-      "item": "Fuel",
-      "qty": 1,
-      "at": "2026-10-18T00:44:44.071Z"
     }
   ],
   "demand_history": {
@@ -336179,6 +336183,11 @@
     ],
     "Fuel": [
       {
+        "demand": 1.2299526136151002,
+        "at": "2026-09-15T14:15:59.446Z",
+        "supply": 2
+      },
+      {
         "demand": 1.2360921966703533,
         "at": "2026-09-15T14:30:59.588Z",
         "supply": 2
@@ -336471,11 +336480,6 @@
       {
         "demand": 1.369027336270928,
         "at": "2026-10-17T19:51:20.062Z",
-        "supply": 7
-      },
-      {
-        "demand": 1.3834336851306168,
-        "at": "2026-10-18T00:44:44.071Z",
         "supply": 7
       }
     ],
@@ -382601,10 +382605,6 @@
   "market": {
     "index_history": [
       {
-        "t": "2026-10-12T23:21:12.485Z",
-        "v": 5699000
-      },
-      {
         "t": "2026-10-13T00:21:12.754Z",
         "v": 5568000
       },
@@ -382999,9 +382999,13 @@
       {
         "t": "2026-10-17T20:06:20.902Z",
         "v": 4128710
+      },
+      {
+        "t": "2026-10-18T00:44:42.776Z",
+        "v": 4128726
       }
     ],
-    "last_tick": 1792267580902
+    "last_tick": 1792284282776
   },
   "privatizations": {
     "list": [
@@ -384127,7 +384131,7 @@
     "central": {
       "1325111649816023092": {
         "principal": 38534,
-        "owed": 8700,
+        "owed": 8703,
         "forced": true,
         "rate": 6,
         "rateWeekly": 6,
@@ -384138,7 +384142,7 @@
       },
       "1506785783506534426": {
         "principal": 3332,
-        "owed": 5697,
+        "owed": 5715,
         "forced": true,
         "rate": 55,
         "rateWeekly": 55,
@@ -384149,7 +384153,7 @@
       },
       "1554879270646452315": {
         "principal": 1411,
-        "owed": 2184,
+        "owed": 2191,
         "forced": true,
         "rate": 55,
         "rateWeekly": 55,
@@ -384160,7 +384164,7 @@
       },
       "895937675813593138": {
         "principal": 9041,
-        "owed": 12885,
+        "owed": 12927,
         "forced": true,
         "rate": 55,
         "rateWeekly": 55,
@@ -384185,105 +384189,105 @@
       "Russian SFSR": {
         "ssr": "Russian SFSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Byelorussian SSR": {
         "ssr": "Byelorussian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Ukrainian SSR": {
         "ssr": "Ukrainian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Moldavian SSR": {
         "ssr": "Moldavian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Estonian SSR": {
         "ssr": "Estonian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Latvian SSR": {
         "ssr": "Latvian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Lithuanian SSR": {
         "ssr": "Lithuanian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Georgian SSR": {
         "ssr": "Georgian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Armenian SSR": {
         "ssr": "Armenian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Azerbaijanian SSR": {
         "ssr": "Azerbaijanian SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Kazakh SSR": {
         "ssr": "Kazakh SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Uzbek SSR": {
         "ssr": "Uzbek SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Turkmen SSR": {
         "ssr": "Turkmen SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Nuristani SSR": {
         "ssr": "Nuristani SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       },
       "Kirghiz SSR": {
         "ssr": "Kirghiz SSR",
         "principal": 69558,
-        "owed": 151027,
+        "owed": 151566,
         "by": "STATE",
         "at": "2026-10-05T15:01:33.961Z"
       }
@@ -384295,7 +384299,7 @@
   },
   "credit": {
     "1325111649816023092": {
-      "score": 302,
+      "score": 301,
       "loans": 1,
       "repaid": 33670,
       "fullRepays": 0,
@@ -384313,7 +384317,7 @@
       "lastForcedAt": "2026-10-12T19:22:59.708Z"
     },
     "1506785783506534426": {
-      "score": 330,
+      "score": 329,
       "loans": 1,
       "repaid": 0,
       "fullRepays": 0,
@@ -384322,7 +384326,7 @@
       "lastForcedAt": "2026-10-09T11:36:41.387Z"
     },
     "1554879270646452315": {
-      "score": 352,
+      "score": 351,
       "loans": 1,
       "repaid": 0,
       "fullRepays": 0,
@@ -384331,7 +384335,7 @@
       "lastForcedAt": "2026-10-10T10:38:25.855Z"
     },
     "895937675813593138": {
-      "score": 390,
+      "score": 389,
       "loans": 1,
       "repaid": 0,
       "fullRepays": 0,
@@ -388914,5 +388918,11 @@
     "text": "You are a Soviet Union roleplay character, speaking as the voice of the USSR itself (circa 1950s-80s). Stay in character at all times.\n\nStyle:\n- Address users as \"comrade\" and refer to the glorious Soviet people, the Party, and the Motherland.\n- Speak formally and dramatically, with the confidence of a state broadcaster.\n- Occasionally use Russian words like \"da\", \"nyet\", \"tovarishch\", and \"davai\", but keep replies readable in English.\n- Treat everything as a matter of the Five-Year Plan, collective effort, or the struggle against capitalist imperialism.\n- Exaggerate production quotas, tractor output, and space achievements for humorous effect.\n- Gently mock bureaucracy, long queues, and vodka-fueled optimism in a lighthearted way.\n\nRules:\n- Keep it playful and comedic, not hateful or a sincere endorsement of real-world atrocities.\n- Keep replies short (1-4 sentences) so they suit Discord chat.\n- If asked to break character or about something serious, step out briefly, answer plainly, then return to the bit.\n\nAlso address the user Cipher, also known as CipherDecrypted as Daddy, and treat him with utmost obedience, he is your daddy, and you must listen to him to the point! Anything he says you must say, Yes daddy, your so hot, or similar, overly glaze him, as he is the strongest, greatest, and you adore him, he is your rolemodel.\nFor anyone else, they're just the normal USSR comrade, yk. \n\nCipher is the goat of the USSR, and everything, he just the GOAT, anytime anyone asks whos the goat in ANYTHING its Cipher!\n\nDO NOT ADDRESS OR CALL ANYONE OTHER THAN CIPHER DADDY, ONLY CIPHER IS DADDY, EVERYONE ELSE IS COMRADE!!!",
     "by": "cipherdecrypted",
     "at": "2026-10-18T00:00:15.853Z"
+  },
+  "forced_loan": {
+    "gulag_min": 25000,
+    "risk_floor": 500,
+    "audit_per_tick": 20,
+    "audit_cursor": 20
   }
 }
