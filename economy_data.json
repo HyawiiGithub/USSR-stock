@@ -85,7 +85,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 51,
+      "bank": 49,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -122,7 +122,7 @@
       "pet_food_source": {}
     },
     "1082686076491137115": {
-      "cash": 7,
+      "cash": 9,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -144,8 +144,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 1,
-      "bot_xp": 19,
-      "bot_total_xp": 119,
+      "bot_xp": 38,
+      "bot_total_xp": 138,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -159,8 +159,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 7,
-      "chat_earned": 7,
+      "chat_earned_week": 9,
+      "chat_earned": 9,
       "mee6_level": 1
     },
     "1456622719985782864": {
@@ -295674,6 +295674,11 @@
       "price": 98,
       "change_percent": -0.291441718559639,
       "recorded_at": "2026-10-19T19:37:39.896Z"
+    },
+    {
+      "price": 97,
+      "change_percent": -0.049621702815562864,
+      "recorded_at": "2026-10-19T19:42:39.843Z"
     }
   ],
   "factory_names": [
@@ -295695,8 +295700,9 @@
   "custom_events": [],
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
-  "total_bank_reserves": 75,
+  "total_bank_reserves": 51,
   "inflation_history": [
+    0,
     0
   ],
   "company_id_counter": 0,
@@ -295709,7 +295715,7 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.46,
+    "rub_per_usd": 4.49,
     "history": [
       {
         "rate": 4.46,
@@ -295718,9 +295724,13 @@
       {
         "rate": 4.46,
         "at": "2026-10-19T19:32:36.374Z"
+      },
+      {
+        "rate": 4.49,
+        "at": "2026-10-19T19:42:36.866Z"
       }
     ],
-    "last_update": "2026-10-19T19:32:36.374Z",
+    "last_update": "2026-10-19T19:42:36.866Z",
     "manual_override": null
   },
   "national_budget": {
@@ -295763,6 +295773,18 @@
         "income": 77,
         "spending": 0,
         "at": "2026-10-19T19:37:43.692Z"
+      },
+      {
+        "balance": 77,
+        "income": 77,
+        "spending": 0,
+        "at": "2026-10-19T19:42:42.464Z"
+      },
+      {
+        "balance": 77,
+        "income": 77,
+        "spending": 0,
+        "at": "2026-10-19T19:42:43.528Z"
       }
     ]
   },
@@ -295861,6 +295883,14 @@
     {
       "total": 77,
       "at": "2026-10-19T19:37:43.551Z"
+    },
+    {
+      "total": 77,
+      "at": "2026-10-19T19:42:42.342Z"
+    },
+    {
+      "total": 77,
+      "at": "2026-10-19T19:42:43.338Z"
     }
   ],
   "gold_rush": null,
@@ -295919,7 +295949,7 @@
     "cooldowns": {
       "807254722251587614": 1792438907253,
       "1397601108616024075": 1792438471221,
-      "1082686076491137115": 1792438904444,
+      "1082686076491137115": 1792438965792,
       "1456622719985782864": 1792438925694,
       "1365483598962102305": 1792438710178,
       "1235522146449494038": 1792438861416
@@ -296739,7 +296769,7 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-19T19:32:36.373Z",
+  "inflation_updated_at": "2026-10-19T19:42:36.758Z",
   "gini_history": [
     {
       "gini": 50,
@@ -296760,6 +296790,16 @@
       "gini": 99.96539005409039,
       "top10": 100,
       "at": "2026-10-19T19:37:43.579Z"
+    },
+    {
+      "gini": 99.96341234289557,
+      "top10": 100,
+      "at": "2026-10-19T19:42:42.361Z"
+    },
+    {
+      "gini": 99.96341234289557,
+      "top10": 100,
+      "at": "2026-10-19T19:42:43.381Z"
     }
   ],
   "gdp_history": [
@@ -296778,6 +296818,14 @@
     {
       "gdp": 77,
       "at": "2026-10-19T19:37:43.691Z"
+    },
+    {
+      "gdp": 77,
+      "at": "2026-10-19T19:42:42.463Z"
+    },
+    {
+      "gdp": 77,
+      "at": "2026-10-19T19:42:43.528Z"
     }
   ],
   "soldier_history": [],
@@ -296805,6 +296853,18 @@
       "gdp": 77,
       "ratio": 0,
       "at": "2026-10-19T19:37:43.700Z"
+    },
+    {
+      "total": 0,
+      "gdp": 77,
+      "ratio": 0,
+      "at": "2026-10-19T19:42:42.470Z"
+    },
+    {
+      "total": 0,
+      "gdp": 77,
+      "ratio": 0,
+      "at": "2026-10-19T19:42:43.576Z"
     }
   ],
   "pop_history": [
@@ -296837,6 +296897,21 @@
       "total": 7780,
       "citizens": 7780,
       "at": "2026-10-19T19:37:43.701Z"
+    },
+    {
+      "total": 7780,
+      "citizens": 7780,
+      "at": "2026-10-19T19:42:42.471Z"
+    },
+    {
+      "total": 7776,
+      "citizens": 7780,
+      "at": "2026-10-19T19:42:43.333Z"
+    },
+    {
+      "total": 7780,
+      "citizens": 7780,
+      "at": "2026-10-19T19:42:43.586Z"
     }
   ],
   "server_econ": {
@@ -296851,6 +296926,12 @@
         {
           "at": "2026-10-19T19:37:42.615Z",
           "wealth": 0,
+          "members": 200,
+          "works": 0
+        },
+        {
+          "at": "2026-10-19T19:42:42.472Z",
+          "wealth": 5,
           "members": 200,
           "works": 0
         }
@@ -296870,6 +296951,12 @@
           "wealth": 12,
           "members": 16,
           "works": 0
+        },
+        {
+          "at": "2026-10-19T19:42:42.472Z",
+          "wealth": 25,
+          "members": 16,
+          "works": 0
         }
       ],
       "works": 0
@@ -296884,6 +296971,12 @@
         },
         {
           "at": "2026-10-19T19:37:42.616Z",
+          "wealth": 0,
+          "members": 0,
+          "works": 0
+        },
+        {
+          "at": "2026-10-19T19:42:42.472Z",
           "wealth": 0,
           "members": 0,
           "works": 0
@@ -296903,6 +296996,12 @@
           "at": "2026-10-19T19:37:42.616Z",
           "wealth": 13,
           "members": 9,
+          "works": 0
+        },
+        {
+          "at": "2026-10-19T19:42:42.472Z",
+          "wealth": 25,
+          "members": 10,
           "works": 0
         }
       ],
