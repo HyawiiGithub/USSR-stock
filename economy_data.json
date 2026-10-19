@@ -335238,8 +335238,7 @@
   },
   "last_govcontract": "2026-09-20T21:49:44.062Z",
   "ai_store": {
-    "Circuit Board": 16,
-    "Uranium Rod": 1
+    "Circuit Board": 16
   },
   "global_consumption": {
     "Copper Ingot": 97,
@@ -335253,7 +335252,7 @@
     "Cake": 629,
     "Smoked Fish": 86,
     "Canned Food": 86,
-    "Uranium Rod": 84,
+    "Uranium Rod": 85,
     "Canned Fish": 89,
     "Bread": 332,
     "Aluminium Sheet": 8,
@@ -335280,11 +335279,6 @@
     "Wine": 10
   },
   "consumption_history": [
-    {
-      "item": "Reactor Core",
-      "qty": 1,
-      "at": "2026-10-13T00:36:26.121Z"
-    },
     {
       "item": "Reactor Core",
       "qty": 2,
@@ -336779,6 +336773,11 @@
       "item": "Uranium Rod",
       "qty": 1,
       "at": "2026-10-19T10:15:01.938Z"
+    },
+    {
+      "item": "Uranium Rod",
+      "qty": 1,
+      "at": "2026-10-19T10:30:01.980Z"
     }
   ],
   "demand_history": {
@@ -339297,11 +339296,6 @@
     "Uranium Rod": [
       {
         "demand": 1.3880647217099362,
-        "at": "2026-08-31T23:36:11.802Z",
-        "supply": 2
-      },
-      {
-        "demand": 1.3880647217099362,
         "at": "2026-09-01T00:36:12.009Z",
         "supply": 2
       },
@@ -339593,6 +339587,11 @@
       {
         "demand": 1.281519667466497,
         "at": "2026-10-19T10:15:01.938Z",
+        "supply": 45
+      },
+      {
+        "demand": 1.2855306535063675,
+        "at": "2026-10-19T10:30:01.981Z",
         "supply": 45
       }
     ],
