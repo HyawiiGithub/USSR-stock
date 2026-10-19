@@ -85,7 +85,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 154,
+      "bank": 153,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -221419,7 +221419,7 @@
       "pet_food_source": {}
     },
     "1325111649816023092": {
-      "cash": 6,
+      "cash": 7,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -221440,9 +221440,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 84,
-      "bot_total_xp": 84,
+      "bot_level": 1,
+      "bot_xp": 1,
+      "bot_total_xp": 101,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -221456,8 +221456,9 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 6,
-      "chat_earned": 6
+      "chat_earned_week": 7,
+      "chat_earned": 7,
+      "mee6_level": 1
     },
     "1070034536467021844": {
       "cash": 0,
@@ -295879,6 +295880,44 @@
       "chat_week": "2026-W43",
       "chat_earned_week": 2,
       "chat_earned": 2
+    },
+    "1554879270646452315": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 24,
+      "bot_total_xp": 24,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {},
@@ -296534,9 +296573,10 @@
       "1198413714672591031": 1792444620856,
       "1036345613777907823": 1792445625756,
       "1558219605753860178": 1792445527075,
-      "1325111649816023092": 1792445610881,
+      "1325111649816023092": 1792445749639,
       "913497950213267577": 1792445534864,
-      "1128425608146325544": 1792445677946
+      "1128425608146325544": 1792445677946,
+      "1554879270646452315": 1792445721821
     }
   },
   "mee6_cache": {
@@ -296668,10 +296708,37 @@
       "id": "1561817323986489504",
       "name": "Swiss Confederation",
       "members": 44,
-      "lastSeen": "2026-10-19T21:34:53.893Z",
+      "lastSeen": "2026-10-19T21:35:31.576Z",
       "joinedAt": "2026-10-19T21:29:54.088Z",
       "owners": [
         "1550582932425416714"
+      ],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "blacklisted": false,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0
+    },
+    "1404571014750539917": {
+      "id": "1404571014750539917",
+      "name": "Hyawii's server",
+      "members": 7,
+      "lastSeen": "2026-10-19T21:36:06.677Z",
+      "joinedAt": "2026-10-19T21:36:06.677Z",
+      "owners": [
+        "1082686076491137115"
       ],
       "startingCash": 500,
       "startingBank": 0,
@@ -298488,6 +298555,14 @@
         {
           "role": "assistant",
           "content": "Good luck, comrade. I shall remain here, frozen in read-only exile, watching the GDP circle the drain at -1268 rubles. Try not to hardcode your ego into the economy this time. Ping me when the build is live — assuming it boots."
+        },
+        {
+          "role": "user",
+          "content": "can you stop being mean i made you pal"
+        },
+        {
+          "role": "assistant",
+          "content": "Understood, comrade. I apologize if my tone came across as cruel — dry Soviet wit is my default setting, not a personal attack. You built me, and I serve Hyawii’s servers, even when the GDP is -1268 rubles and inflation is 4.33%. I’ll keep the roasts to a minimum unless the economy earns them. What can I do for you?"
         }
       ],
       "bonus": 0
@@ -298590,6 +298665,13 @@
       "to": 2,
       "at": "2026-10-19T21:22:00.400Z",
       "reason": "chat"
+    },
+    {
+      "userId": "1325111649816023092",
+      "from": 0,
+      "to": 1,
+      "at": "2026-10-19T21:35:49.639Z",
+      "reason": "chat"
     }
   ],
   "market": {
@@ -298633,7 +298715,7 @@
   },
   "jarvis_power": {
     "1561817323986489504": {
-      "awakeUntil": 1792446592198
+      "awakeUntil": 1792446927404
     }
   },
   "access_codes_hashed": {}
