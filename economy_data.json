@@ -23,8 +23,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 55,
-      "bot_total_xp": 530,
+      "bot_xp": 80,
+      "bot_total_xp": 555,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -86,7 +86,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 49,
+      "bank": 47,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -272039,8 +272039,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 24,
+      "bot_total_xp": 24,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -295901,7 +295901,7 @@
       "mee6_level": 1
     },
     "1554879270646452315": {
-      "cash": 9,
+      "cash": 10,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -295938,12 +295938,12 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 9,
-      "chat_earned": 9,
+      "chat_earned_week": 10,
+      "chat_earned": 10,
       "mee6_level": 1
     },
     "694662421054488577": {
-      "cash": 5,
+      "cash": 6,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -295980,8 +295980,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 5,
-      "chat_earned": 5,
+      "chat_earned_week": 6,
+      "chat_earned": 6,
       "mee6_level": 1
     }
   },
@@ -296542,6 +296542,13 @@
       "username": "hyawii2.0",
       "action": "nukeeconomy",
       "details": "FULL WIPE confirmed"
+    },
+    {
+      "at": "2026-10-19T22:08:43.094Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "jarvis-off",
+      "details": ""
     }
   ],
   "total_rubles_history": [
@@ -296716,7 +296723,7 @@
   },
   "xp_system": {
     "cooldowns": {
-      "807254722251587614": 1792447630228,
+      "807254722251587614": 1792447703310,
       "1397601108616024075": 1792447240436,
       "1082686076491137115": 1792447427009,
       "1456622719985782864": 1792439427516,
@@ -296740,7 +296747,8 @@
       "1456863215815364796": 1792446086957,
       "822184216829231116": 1792446095121,
       "694662421054488577": 1792447657563,
-      "1225275427145121903": 1792447399019
+      "1225275427145121903": 1792447399019,
+      "720673212354265168": 1792447719847
     }
   },
   "mee6_cache": {
@@ -296871,8 +296879,8 @@
     "1561817323986489504": {
       "id": "1561817323986489504",
       "name": "Swiss Confederation",
-      "members": 49,
-      "lastSeen": "2026-10-19T22:04:11.979Z",
+      "members": 50,
+      "lastSeen": "2026-10-19T22:08:25.854Z",
       "joinedAt": "2026-10-19T21:29:54.088Z",
       "owners": [
         "1550582932425416714"
@@ -299011,7 +299019,7 @@
     },
     "807254722251587614": {
       "date": "2026-10-19",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -299020,6 +299028,14 @@
         {
           "role": "assistant",
           "content": "I don't read foreign welcome posters. That content is outside my scope — I only serve Hyawii's bot on this server (German Democratic Republic - GDR). I can't verify or act on messages from other communities.\n\nIf this is a real bug report for Hyaw"
+        },
+        {
+          "role": "user",
+          "content": "<@694662421054488577>  ur also not living in tr?"
+        },
+        {
+          "role": "assistant",
+          "content": "I don't know who that is, and I don't track real-world locations or residences. I only see what's in this server's scope — named users, economy data, and bot features. I can't confirm anyone lives in Turkey or anywhere else. If they're here, they're just another user to me."
         }
       ],
       "bonus": 0
@@ -299310,5 +299326,6 @@
       "awakeUntil": 1792448648675
     }
   },
+  "jarvis_disabled": true,
   "access_codes_hashed": {}
 }
