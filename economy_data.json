@@ -65,8 +65,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 109,
-      "bot_total_xp": 364,
+      "bot_xp": 128,
+      "bot_total_xp": 383,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -296332,6 +296332,11 @@
       "price": 93,
       "change_percent": 0.6459796345002953,
       "recorded_at": "2026-10-19T22:47:44.190Z"
+    },
+    {
+      "price": 94,
+      "change_percent": 1.2031989525792153,
+      "recorded_at": "2026-10-19T22:52:44.335Z"
     }
   ],
   "factory_names": [
@@ -296346,14 +296351,14 @@
     "Volga Shipbuilding"
   ],
   "used_factory_names": [],
-  "inflation": 7.500018333333333,
+  "inflation": 8,
   "money_printed": 0,
   "inflation_adjust": 0,
   "good_crisis": {},
   "custom_events": [],
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
-  "total_bank_reserves": 35,
+  "total_bank_reserves": 29,
   "inflation_history": [
     0,
     0,
@@ -296371,7 +296376,8 @@
     6.000018333333333,
     6.500018333333333,
     7.000018333333333,
-    7.500018333333333
+    7.500018333333333,
+    8
   ],
   "company_id_counter": 0,
   "currency": {
@@ -296383,7 +296389,7 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.69,
+    "rub_per_usd": 4.7,
     "history": [
       {
         "rate": 4.46,
@@ -296468,9 +296474,13 @@
       {
         "rate": 4.69,
         "at": "2026-10-19T22:42:37.589Z"
+      },
+      {
+        "rate": 4.7,
+        "at": "2026-10-19T22:52:37.588Z"
       }
     ],
-    "last_update": "2026-10-19T22:42:37.589Z",
+    "last_update": "2026-10-19T22:52:37.588Z",
     "manual_override": null
   },
   "national_budget": {
@@ -296720,6 +296730,12 @@
         "income": 319,
         "spending": 0,
         "at": "2026-10-19T22:42:46.353Z"
+      },
+      {
+        "balance": 319,
+        "income": 319,
+        "spending": 0,
+        "at": "2026-10-19T22:52:46.389Z"
       }
     ]
   },
@@ -296967,6 +296983,10 @@
     {
       "total": -1186,
       "at": "2026-10-19T22:42:46.163Z"
+    },
+    {
+      "total": -1186,
+      "at": "2026-10-19T22:52:46.220Z"
     }
   ],
   "gold_rush": null,
@@ -297024,7 +297044,7 @@
   "xp_system": {
     "cooldowns": {
       "807254722251587614": 1792447703310,
-      "1397601108616024075": 1792448574538,
+      "1397601108616024075": 1792450393953,
       "1082686076491137115": 1792448782256,
       "1456622719985782864": 1792439427516,
       "1365483598962102305": 1792440392059,
@@ -298152,7 +298172,7 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-19T22:42:37.477Z",
+  "inflation_updated_at": "2026-10-19T22:52:37.475Z",
   "gini_history": [
     {
       "gini": 50,
@@ -298333,6 +298353,11 @@
       "gini": 99.84776437831096,
       "top10": 100,
       "at": "2026-10-19T22:42:46.172Z"
+    },
+    {
+      "gini": 99.84887787171883,
+      "top10": 100,
+      "at": "2026-10-19T22:52:46.228Z"
     }
   ],
   "gdp_history": [
@@ -298479,6 +298504,10 @@
     {
       "gdp": 1,
       "at": "2026-10-19T22:42:46.349Z"
+    },
+    {
+      "gdp": 1,
+      "at": "2026-10-19T22:52:46.389Z"
     }
   ],
   "soldier_history": [],
@@ -298698,6 +298727,12 @@
       "gdp": 1,
       "ratio": 150500,
       "at": "2026-10-19T22:42:46.398Z"
+    },
+    {
+      "total": 1505,
+      "gdp": 1,
+      "ratio": 150500,
+      "at": "2026-10-19T22:52:46.440Z"
     }
   ],
   "pop_history": [
@@ -298895,6 +298930,11 @@
       "total": 7791,
       "citizens": 7791,
       "at": "2026-10-19T22:42:46.404Z"
+    },
+    {
+      "total": 7791,
+      "citizens": 7791,
+      "at": "2026-10-19T22:52:46.450Z"
     }
   ],
   "server_econ": {
@@ -299120,6 +299160,12 @@
           "wealth": 92,
           "members": 22,
           "works": 0
+        },
+        {
+          "at": "2026-10-19T22:52:46.450Z",
+          "wealth": 92,
+          "members": 22,
+          "works": 0
         }
       ],
       "works": 0
@@ -299320,6 +299366,12 @@
         },
         {
           "at": "2026-10-19T22:42:46.409Z",
+          "wealth": 40,
+          "members": 1,
+          "works": 0
+        },
+        {
+          "at": "2026-10-19T22:52:46.450Z",
           "wealth": 40,
           "members": 1,
           "works": 0
@@ -299526,6 +299578,12 @@
           "wealth": 104,
           "members": 11,
           "works": 0
+        },
+        {
+          "at": "2026-10-19T22:52:46.450Z",
+          "wealth": 104,
+          "members": 11,
+          "works": 0
         }
       ],
       "works": 0
@@ -299602,6 +299660,12 @@
           "at": "2026-10-19T22:42:46.409Z",
           "wealth": 279,
           "members": 31,
+          "works": 0
+        },
+        {
+          "at": "2026-10-19T22:52:46.450Z",
+          "wealth": 285,
+          "members": 32,
           "works": 0
         }
       ],
