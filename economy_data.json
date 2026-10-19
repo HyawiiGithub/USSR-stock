@@ -329554,8 +329554,8 @@
       "pet_food_source": {}
     },
     "893433830306873345": {
-      "cash": 270,
-      "bank": 913,
+      "cash": 170,
+      "bank": 13,
       "resources": {
         "Iron Ore": 1,
         "Coal": 2,
@@ -329580,8 +329580,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 188,
-      "bot_total_xp": 443,
+      "bot_xp": 213,
+      "bot_total_xp": 468,
       "daily_work_count": 9,
       "shock_worker": false,
       "last_laylow": null,
@@ -343643,13 +343643,6 @@
   "trade_schedules": [],
   "owner_logs": [
     {
-      "at": "2026-09-19T11:04:42.514Z",
-      "by": "874346333882945547",
-      "username": "seniormanulos",
-      "action": "launder",
-      "details": "₽2,500 dirty → ₽1,250 clean fee ₽1,250"
-    },
-    {
       "at": "2026-09-19T16:52:11.271Z",
       "by": "874346333882945547",
       "username": "seniormanulos",
@@ -347141,6 +347134,13 @@
       "username": "GOSBANK",
       "action": "weekly_taxes",
       "details": "collected ₽84,717 from 94 users + 9 companies (individual ₽46,914, corporate ₽37,803) (SSR budgets kept ₽3,776: Nuristani SSR ₽70, Ukrainian SSR ₽1,161, Azerbaijanian SSR ₽492, Kazakh SSR ₽1,343, Russian SFSR ₽664, Estonian SSR ₽46) | users: 780837 ₽1,354, 108268 ₽3,559, 918518 ₽283, 730223 ₽194, Google Giggles ₽314, 110723 ₽49, 870686 ₽136, 118659 ₽1,486, 152104 ₽27, 147013 ₽350 … | companies: State Mining Corp ₽708, Kewlian Industrial Group ₽4,144, State Oil & Gas ₽4,928, Speers Realm ₽9,790, Prince Pakistani Atomic Consortium ₽5,601, Baltic Timber & Harbour Co ₽469, Soviet National Defense Industry ₽1,045, Henning Military Complex ₽7,476, Henning Foods ₽3,642"
+    },
+    {
+      "at": "2026-10-19T11:32:33.973Z",
+      "by": "893433830306873345",
+      "username": "nguyenduytan7950",
+      "action": "buy_bond",
+      "details": "bond_7 ₽1,000 @63% matures 2026-10-26"
     }
   ],
   "total_rubles_history": [
@@ -349688,7 +349688,7 @@
       "1537741558709747722": 1792259435704,
       "748176359993639012": 1792261508382,
       "1360592440649715832": 1792261521237,
-      "893433830306873345": 1792397605849,
+      "893433830306873345": 1792409522954,
       "1095352041469120512": 1792344168476,
       "1036345613777907823": 1792267126747,
       "1257713625628413954": 1792267230998,
@@ -369164,7 +369164,7 @@
     "leveled": []
   },
   "central_bank": {
-    "reserves": 538495,
+    "reserves": 539495,
     "interest_rate": 63,
     "prime_rate": 15,
     "discount_rate": 15,
@@ -369741,7 +369741,7 @@
         "reserves_after": 529696
       }
     ],
-    "total_added": 1746103,
+    "total_added": 1747103,
     "total_removed": 1356656,
     "created_at": "2026-09-11T19:05:50.282Z",
     "last_update": "2026-10-18T19:14:00.928Z",
@@ -370019,10 +370019,21 @@
         "maturityAt": "2026-09-26T18:43:07.196Z",
         "claimed": false,
         "claimedAt": null
+      },
+      {
+        "id": "bond_7",
+        "userId": "893433830306873345",
+        "username": "nguyenduytan7950",
+        "amount": 1000,
+        "interestRate": 63,
+        "boughtAt": "2026-10-19T11:32:33.973Z",
+        "maturityAt": "2026-10-26T11:32:33.973Z",
+        "claimed": false,
+        "claimedAt": null
       }
     ],
-    "next_id": 7,
-    "total_issued": 9874,
+    "next_id": 8,
+    "total_issued": 10874,
     "total_redeemed": 9674,
     "total_interest_paid": 193
   },
