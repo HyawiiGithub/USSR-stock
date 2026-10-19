@@ -295841,9 +295841,8 @@
   "custom_events": [],
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
-  "total_bank_reserves": 35,
+  "total_bank_reserves": 40,
   "inflation_history": [
-    0,
     0,
     0,
     0
@@ -295858,7 +295857,7 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.48,
+    "rub_per_usd": 4.5,
     "history": [
       {
         "rate": 4.46,
@@ -295875,13 +295874,9 @@
       {
         "rate": 4.5,
         "at": "2026-10-19T19:52:36.839Z"
-      },
-      {
-        "rate": 4.48,
-        "at": "2026-10-19T20:02:36.840Z"
       }
     ],
-    "last_update": "2026-10-19T20:02:36.840Z",
+    "last_update": "2026-10-19T19:52:36.839Z",
     "manual_override": null
   },
   "national_budget": {
@@ -296151,16 +296146,16 @@
   "custom_items": {},
   "custom_buildings": {},
   "central_bank": {
-    "reserves": 0,
+    "reserves": -1505,
     "interest_rate": 5,
     "prime_rate": 7.5,
     "discount_rate": 4.5,
     "reserve_requirement": 10,
     "history": [],
     "total_added": 0,
-    "total_removed": 0,
+    "total_removed": 1505,
     "created_at": "2026-10-19T19:31:57.005Z",
-    "last_update": null,
+    "last_update": "2026-10-19T20:02:36.032Z",
     "chair_id": null,
     "chair_set_by": null,
     "chair_set_at": null,
@@ -296947,7 +296942,19 @@
   },
   "mafias": [],
   "loans": {
-    "central": {},
+    "central": {
+      "1000271630154596473": {
+        "principal": 1505,
+        "owed": 1505,
+        "forced": true,
+        "rate": 7,
+        "rateWeekly": 7,
+        "mode": "undecided",
+        "at": "2026-10-19T20:02:35.420Z",
+        "autopay": 0,
+        "creditHit": true
+      }
+    },
     "ssr": {}
   },
   "foreign_bonds": {
@@ -296956,7 +296963,7 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-19T20:02:36.669Z",
+  "inflation_updated_at": "2026-10-19T19:52:36.693Z",
   "gini_history": [
     {
       "gini": 50,
@@ -297373,5 +297380,40 @@
       "reason": "chat"
     }
   ],
+  "market": {
+    "index_history": [
+      {
+        "t": "2026-10-19T20:02:27.642Z",
+        "v": 0
+      }
+    ],
+    "last_tick": 1792440147642
+  },
+  "banks": {},
+  "loan_rates": {
+    "personal": null,
+    "ssr": null
+  },
+  "forced_loan": {
+    "gulag_min": 25000,
+    "risk_floor": 500,
+    "audit_per_tick": 20,
+    "audit_cursor": 20
+  },
+  "credit": {
+    "1000271630154596473": {
+      "score": 500,
+      "loans": 1,
+      "repaid": 0,
+      "fullRepays": 0,
+      "forced": 1,
+      "forcedRepaid": 0,
+      "lastForcedAt": "2026-10-19T20:02:35.420Z"
+    }
+  },
+  "privatizations": {
+    "list": [],
+    "next_id": 0
+  },
   "access_codes_hashed": {}
 }
