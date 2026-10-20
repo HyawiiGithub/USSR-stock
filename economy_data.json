@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 84,
+      "bank": 83,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -94836,7 +94836,7 @@
       "username_updated_at": "2026-10-20T00:15:59.107Z"
     },
     "1506785783506534426": {
-      "cash": 29,
+      "cash": 30,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -94876,8 +94876,8 @@
       "global_name": "Nikanor",
       "username_updated_at": "2026-10-20T00:15:59.107Z",
       "chat_week": "2026-W43",
-      "chat_earned_week": 85,
-      "chat_earned": 85,
+      "chat_earned_week": 86,
+      "chat_earned": 86,
       "mee6_level": 7
     },
     "793472599153573911": {
@@ -243147,8 +243147,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 73,
-      "bot_total_xp": 328,
+      "bot_xp": 94,
+      "bot_total_xp": 349,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -376925,6 +376925,13 @@
       "username": "hyawii2.0",
       "action": "jarvis-on",
       "details": ""
+    },
+    {
+      "at": "2026-10-20T19:01:39.637Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "addcredits",
+      "details": "+10 → <@1506785783506534426> (pool now 10.0)"
     }
   ],
   "total_rubles_history": [
@@ -377460,7 +377467,7 @@
       "1095352041469120512": 1792500367389,
       "1257043671346319423": 1792500713344,
       "1097843158269825066": 1792522608218,
-      "1528783188728483944": 1792522596528,
+      "1528783188728483944": 1792522866356,
       "1346438392245911589": 1792502316815,
       "1023637731001241621": 1792504103497,
       "1300423049874505800": 1792521685569,
@@ -378207,6 +378214,120 @@
           "roleId": null,
           "announceChannelId": null,
           "defaultHours": 48
+        },
+        "stocks": {
+          "channelId": null,
+          "intervalMinutes": 15,
+          "live": true
+        },
+        "jarvis": {
+          "mode": "ping",
+          "allow": [],
+          "neutral": true
+        },
+        "mining": {
+          "enabled": false,
+          "region": "russia",
+          "wage": 20,
+          "autoTickMinutes": 60
+        },
+        "regulations": {
+          "incomeTax": 5,
+          "corporateTax": 6.5,
+          "minWage": 10,
+          "maxWage": 100,
+          "resourceRoyalty": 5,
+          "tradeTax": 3.5
+        },
+        "notifications": {
+          "ssrBoard": false,
+          "taxes": false
+        },
+        "institutions": {
+          "government": "Government",
+          "congress": "Congress",
+          "stateBank": "State Bank",
+          "centralBank": "Central Bank",
+          "financeMinistry": "Ministry of Finance",
+          "treasury": "Treasury",
+          "headOfState": "President",
+          "headOfGovernment": "Prime Minister",
+          "miningAuthority": "Mining Authority",
+          "electionCommission": "Election Commission",
+          "assembly": "Assembly",
+          "judiciary": "Supreme Court"
+        }
+      },
+      "treasury": 0,
+      "stockpile": {},
+      "stateMines": [],
+      "mineSeq": 0
+    },
+    "1519287377703731270": {
+      "id": "1519287377703731270",
+      "name": "Union of Yuktobanian Republics",
+      "members": 50,
+      "lastSeen": "2026-10-20T19:01:12.846Z",
+      "joinedAt": "2026-10-20T19:01:12.846Z",
+      "owners": [
+        "1352000529785552967"
+      ],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "blacklisted": false,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0,
+      "config": {
+        "brand": {
+          "name": null,
+          "color": 5793266,
+          "footer": null
+        },
+        "government": {
+          "type": "democracy",
+          "name": "Republic",
+          "democratic": true
+        },
+        "congress": {
+          "name": "Congress",
+          "seats": 10,
+          "color": 5793266,
+          "style": "classic",
+          "layout": "classic",
+          "autoSeats": true,
+          "parties": [],
+          "channelId": null,
+          "roleId": null,
+          "termDays": 30,
+          "passPct": 50
+        },
+        "stateBank": {
+          "name": "State Bank",
+          "chairId": null,
+          "mode": "finance_chair",
+          "interest": 5,
+          "prime": 7.5,
+          "discount": 4.5,
+          "reserve": 10
+        },
+        "elections": {
+          "channelId": null,
+          "roleId": null,
+          "announceChannelId": null,
+          "defaultHours": 48,
+          "cantons": []
         },
         "stocks": {
           "channelId": null,
@@ -385534,7 +385655,7 @@
           "content": "I don’t have the ability to add myself to another server. If you’d like me here, you’ll need to ask <@1082686076491137115> (Hyawii) to invite me."
         }
       ],
-      "bonus": 0,
+      "bonus": 10,
       "roamHistory": [
         {
           "role": "user",
