@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 6,
+      "bank": 2,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -319101,7 +319101,7 @@
       "username_updated_at": "2026-10-20T00:15:59.160Z"
     },
     "694662421054488577": {
-      "cash": 24,
+      "cash": 25,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -319138,8 +319138,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 24,
-      "chat_earned": 24,
+      "chat_earned_week": 25,
+      "chat_earned": 25,
       "mee6_level": 3,
       "username": "thekingslayer_x",
       "global_name": "Poltergeist",
@@ -319389,7 +319389,7 @@
       "mee6_level": 4
     },
     "1526505539935146095": {
-      "cash": 68,
+      "cash": 69,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -319426,12 +319426,12 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 68,
-      "chat_earned": 68,
+      "chat_earned_week": 69,
+      "chat_earned": 69,
       "mee6_level": 5
     },
     "874346333882945547": {
-      "cash": 136,
+      "cash": 138,
       "bank": 11343,
       "resources": {},
       "inventory": {},
@@ -319453,8 +319453,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 261,
-      "bot_total_xp": 1886,
+      "bot_xp": 277,
+      "bot_total_xp": 1902,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -319468,8 +319468,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 91,
-      "chat_earned": 91,
+      "chat_earned_week": 93,
+      "chat_earned": 93,
       "mee6_level": 6
     },
     "1483005845867593831": {
@@ -320179,11 +320179,6 @@
   "companies": {},
   "gsi_history": [
     {
-      "price": 102,
-      "change_percent": 0.15677822635580102,
-      "recorded_at": "2026-10-20T04:17:46.177Z"
-    },
-    {
       "price": 101,
       "change_percent": -0.0015823616821695596,
       "recorded_at": "2026-10-20T04:22:46.220Z"
@@ -320677,6 +320672,11 @@
       "price": 87,
       "change_percent": 0.6515073635672228,
       "recorded_at": "2026-10-20T13:51:14.873Z"
+    },
+    {
+      "price": 87,
+      "change_percent": 0.9127262338272928,
+      "recorded_at": "2026-10-20T14:10:26.173Z"
     }
   ],
   "factory_names": [
@@ -321328,12 +321328,6 @@
         "balance": 659,
         "income": 659,
         "spending": 0,
-        "at": "2026-10-20T03:12:48.189Z"
-      },
-      {
-        "balance": 659,
-        "income": 659,
-        "spending": 0,
         "at": "2026-10-20T03:17:47.962Z"
       },
       {
@@ -321923,6 +321917,12 @@
         "income": 1864,
         "spending": 0,
         "at": "2026-10-20T13:56:16.730Z"
+      },
+      {
+        "balance": 1864,
+        "income": 1864,
+        "spending": 0,
+        "at": "2026-10-20T14:10:26.787Z"
       }
     ]
   },
@@ -376595,10 +376595,6 @@
   "total_rubles_history": [
     {
       "total": -846,
-      "at": "2026-10-20T03:12:47.788Z"
-    },
-    {
-      "total": -846,
       "at": "2026-10-20T03:17:47.776Z"
     },
     {
@@ -376992,6 +376988,10 @@
     {
       "total": 105459,
       "at": "2026-10-20T13:56:16.353Z"
+    },
+    {
+      "total": 105459,
+      "at": "2026-10-20T14:10:26.597Z"
     }
   ],
   "gold_rush": null,
@@ -377091,7 +377091,7 @@
       "983175525809926146": 1792494618277,
       "1173662113340854353": 1792471307810,
       "1506785783506534426": 1792505081265,
-      "874346333882945547": 1792505330161,
+      "874346333882945547": 1792505392094,
       "1186597507720019988": 1792504820051,
       "1521043721129558017": 1792500833203,
       "860203156222902332": 1792504754115,
@@ -377253,7 +377253,8 @@
           "termDays": 30,
           "passPct": 50,
           "layout": "classic",
-          "parties": []
+          "parties": [],
+          "autoSeats": true
         },
         "stateBank": {
           "name": "State Bank",
@@ -377268,7 +377269,8 @@
           "channelId": null,
           "roleId": null,
           "announceChannelId": null,
-          "defaultHours": 48
+          "defaultHours": 48,
+          "cantons": []
         },
         "stocks": {
           "channelId": null,
@@ -377365,7 +377367,8 @@
           "termDays": 30,
           "passPct": 50,
           "layout": "classic",
-          "parties": []
+          "parties": [],
+          "autoSeats": true
         },
         "stateBank": {
           "name": "State Bank",
@@ -377380,7 +377383,8 @@
           "channelId": null,
           "roleId": null,
           "announceChannelId": null,
-          "defaultHours": 48
+          "defaultHours": 48,
+          "cantons": []
         },
         "stocks": {
           "channelId": null,
@@ -377621,7 +377625,8 @@
           "termDays": 30,
           "passPct": 50,
           "layout": "classic",
-          "parties": []
+          "parties": [],
+          "autoSeats": true
         },
         "stateBank": {
           "name": "State Bank",
@@ -377636,7 +377641,8 @@
           "channelId": null,
           "roleId": null,
           "announceChannelId": null,
-          "defaultHours": 48
+          "defaultHours": 48,
+          "cantons": []
         },
         "stocks": {
           "channelId": null,
@@ -377725,7 +377731,8 @@
           "termDays": 30,
           "passPct": 50,
           "layout": "classic",
-          "parties": []
+          "parties": [],
+          "autoSeats": true
         },
         "stateBank": {
           "name": "State Bank",
@@ -377740,7 +377747,8 @@
           "channelId": null,
           "roleId": null,
           "announceChannelId": null,
-          "defaultHours": 48
+          "defaultHours": 48,
+          "cantons": []
         },
         "stocks": {
           "channelId": null,
@@ -379983,11 +379991,6 @@
     {
       "gini": 99.864347124709,
       "top10": 100,
-      "at": "2026-10-20T03:12:47.811Z"
-    },
-    {
-      "gini": 99.864347124709,
-      "top10": 100,
       "at": "2026-10-20T03:17:47.799Z"
     },
     {
@@ -380479,13 +380482,14 @@
       "gini": 99.98090443889964,
       "top10": 100,
       "at": "2026-10-20T13:56:16.399Z"
+    },
+    {
+      "gini": 99.98075019212568,
+      "top10": 100,
+      "at": "2026-10-20T14:10:26.616Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 1,
-      "at": "2026-10-20T03:12:48.188Z"
-    },
     {
       "gdp": 1,
       "at": "2026-10-20T03:17:47.962Z"
@@ -380881,16 +380885,14 @@
     {
       "gdp": 105459,
       "at": "2026-10-20T13:56:16.725Z"
+    },
+    {
+      "gdp": 105459,
+      "at": "2026-10-20T14:10:26.787Z"
     }
   ],
   "soldier_history": [],
   "debt_history": [
-    {
-      "total": 1505,
-      "gdp": 1,
-      "ratio": 150500,
-      "at": "2026-10-20T03:12:48.200Z"
-    },
     {
       "total": 1505,
       "gdp": 1,
@@ -381484,14 +381486,15 @@
       "gdp": 105459,
       "ratio": 7.57,
       "at": "2026-10-20T13:56:16.740Z"
+    },
+    {
+      "total": 7986,
+      "gdp": 105459,
+      "ratio": 7.57,
+      "at": "2026-10-20T14:10:26.794Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 7794,
-      "citizens": 7794,
-      "at": "2026-10-20T03:12:48.201Z"
-    },
     {
       "total": 7794,
       "citizens": 7794,
@@ -381986,6 +381989,11 @@
       "total": 7812,
       "citizens": 7812,
       "at": "2026-10-20T13:56:16.741Z"
+    },
+    {
+      "total": 7813,
+      "citizens": 7813,
+      "at": "2026-10-20T14:10:26.795Z"
     }
   ],
   "server_econ": {
@@ -382014,12 +382022,6 @@
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-20T03:12:48.202Z",
-          "wealth": 93,
-          "members": 23,
-          "works": 0
-        },
         {
           "at": "2026-10-20T03:17:47.971Z",
           "wealth": 93,
@@ -382613,18 +382615,18 @@
           "wealth": 0,
           "members": 141,
           "works": 0
+        },
+        {
+          "at": "2026-10-20T14:10:26.796Z",
+          "wealth": 0,
+          "members": 141,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-20T03:12:48.202Z",
-          "wealth": 40,
-          "members": 1,
-          "works": 0
-        },
         {
           "at": "2026-10-20T03:17:47.971Z",
           "wealth": 40,
@@ -383218,18 +383220,18 @@
           "wealth": 0,
           "members": 7,
           "works": 0
+        },
+        {
+          "at": "2026-10-20T14:10:26.796Z",
+          "wealth": 0,
+          "members": 7,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-20T03:12:48.202Z",
-          "wealth": 213,
-          "members": 11,
-          "works": 0
-        },
         {
           "at": "2026-10-20T03:17:47.971Z",
           "wealth": 213,
@@ -383823,18 +383825,18 @@
           "wealth": 90,
           "members": 2,
           "works": 0
+        },
+        {
+          "at": "2026-10-20T14:10:26.796Z",
+          "wealth": 0,
+          "members": 19,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1561817323986489504": {
       "history": [
-        {
-          "at": "2026-10-20T03:17:47.971Z",
-          "wealth": 569,
-          "members": 38,
-          "works": 0
-        },
         {
           "at": "2026-10-20T03:22:48.133Z",
           "wealth": 569,
@@ -384427,6 +384429,12 @@
           "at": "2026-10-20T13:56:16.742Z",
           "wealth": 112661,
           "members": 35,
+          "works": 0
+        },
+        {
+          "at": "2026-10-20T14:10:26.796Z",
+          "wealth": 12362,
+          "members": 13,
           "works": 0
         }
       ],
