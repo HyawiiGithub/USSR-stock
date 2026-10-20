@@ -46,7 +46,7 @@
       "username_updated_at": "2026-10-20T00:15:59.078Z"
     },
     "1397601108616024075": {
-      "cash": 36,
+      "cash": 37,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -68,8 +68,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 78,
-      "bot_total_xp": 553,
+      "bot_xp": 96,
+      "bot_total_xp": 571,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -83,8 +83,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 36,
-      "chat_earned": 36,
+      "chat_earned_week": 37,
+      "chat_earned": 37,
       "mee6_level": 3,
       "username": "lunaria_xwx",
       "global_name": "Luma",
@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 108,
+      "bank": 107,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -319580,6 +319580,11 @@
       "price": 93,
       "change_percent": 1.0473015780914054,
       "recorded_at": "2026-10-20T00:52:45.282Z"
+    },
+    {
+      "price": 93,
+      "change_percent": 0.5957130473528588,
+      "recorded_at": "2026-10-20T01:02:45.809Z"
     }
   ],
   "factory_names": [
@@ -319601,7 +319606,7 @@
   "custom_events": [],
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
-  "total_bank_reserves": 141,
+  "total_bank_reserves": 108,
   "inflation_history": [
     0,
     0,
@@ -319632,6 +319637,7 @@
     8,
     8,
     8,
+    8,
     8
   ],
   "company_id_counter": 0,
@@ -319644,7 +319650,7 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.68,
+    "rub_per_usd": 4.7,
     "history": [
       {
         "rate": 4.46,
@@ -319789,9 +319795,13 @@
       {
         "rate": 4.68,
         "at": "2026-10-20T00:52:38.154Z"
+      },
+      {
+        "rate": 4.7,
+        "at": "2026-10-20T01:02:39.094Z"
       }
     ],
-    "last_update": "2026-10-20T00:52:38.154Z",
+    "last_update": "2026-10-20T01:02:39.094Z",
     "manual_override": null
   },
   "national_budget": {
@@ -320207,6 +320217,12 @@
         "income": 483,
         "spending": 0,
         "at": "2026-10-20T00:57:46.677Z"
+      },
+      {
+        "balance": 483,
+        "income": 483,
+        "spending": 0,
+        "at": "2026-10-20T01:02:46.612Z"
       }
     ]
   },
@@ -375068,6 +375084,10 @@
     {
       "total": -1022,
       "at": "2026-10-20T00:57:46.304Z"
+    },
+    {
+      "total": -1022,
+      "at": "2026-10-20T01:02:46.291Z"
     }
   ],
   "gold_rush": null,
@@ -375125,7 +375145,7 @@
   "xp_system": {
     "cooldowns": {
       "807254722251587614": 1792447703310,
-      "1397601108616024075": 1792458104526,
+      "1397601108616024075": 1792458209691,
       "1082686076491137115": 1792448782256,
       "1456622719985782864": 1792439427516,
       "1365483598962102305": 1792452998670,
@@ -376399,7 +376419,7 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-20T00:52:37.985Z",
+  "inflation_updated_at": "2026-10-20T01:02:38.919Z",
   "gini_history": [
     {
       "gini": 50,
@@ -376710,6 +376730,11 @@
       "gini": 99.84623210139833,
       "top10": 100,
       "at": "2026-10-20T00:57:46.323Z"
+    },
+    {
+      "gini": 99.84440584744536,
+      "top10": 100,
+      "at": "2026-10-20T01:02:46.307Z"
     }
   ],
   "gdp_history": [
@@ -376960,6 +376985,10 @@
     {
       "gdp": 1,
       "at": "2026-10-20T00:57:46.677Z"
+    },
+    {
+      "gdp": 1,
+      "at": "2026-10-20T01:02:46.611Z"
     }
   ],
   "soldier_history": [],
@@ -377335,6 +377364,12 @@
       "gdp": 1,
       "ratio": 150500,
       "at": "2026-10-20T00:57:46.686Z"
+    },
+    {
+      "total": 1505,
+      "gdp": 1,
+      "ratio": 150500,
+      "at": "2026-10-20T01:02:46.626Z"
     }
   ],
   "pop_history": [
@@ -377662,6 +377697,11 @@
       "total": 7792,
       "citizens": 7792,
       "at": "2026-10-20T00:57:46.687Z"
+    },
+    {
+      "total": 7792,
+      "citizens": 7792,
+      "at": "2026-10-20T01:02:46.628Z"
     }
   ],
   "server_econ": {
@@ -378043,6 +378083,12 @@
           "wealth": 93,
           "members": 23,
           "works": 0
+        },
+        {
+          "at": "2026-10-20T01:02:46.628Z",
+          "wealth": 93,
+          "members": 23,
+          "works": 0
         }
       ],
       "works": 0
@@ -378399,6 +378445,12 @@
         },
         {
           "at": "2026-10-20T00:57:46.688Z",
+          "wealth": 40,
+          "members": 1,
+          "works": 0
+        },
+        {
+          "at": "2026-10-20T01:02:46.628Z",
           "wealth": 40,
           "members": 1,
           "works": 0
@@ -378761,6 +378813,12 @@
           "wealth": 109,
           "members": 11,
           "works": 0
+        },
+        {
+          "at": "2026-10-20T01:02:46.628Z",
+          "wealth": 129,
+          "members": 11,
+          "works": 0
         }
       ],
       "works": 0
@@ -378992,6 +379050,12 @@
         {
           "at": "2026-10-20T00:57:46.688Z",
           "wealth": 346,
+          "members": 37,
+          "works": 0
+        },
+        {
+          "at": "2026-10-20T01:02:46.628Z",
+          "wealth": 371,
           "members": 37,
           "works": 0
         }
