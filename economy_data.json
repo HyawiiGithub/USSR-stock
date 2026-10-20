@@ -318847,9 +318847,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 2,
-      "bot_xp": 205,
-      "bot_total_xp": 460,
+      "bot_level": 3,
+      "bot_xp": 4,
+      "bot_total_xp": 479,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -318865,7 +318865,7 @@
       "chat_week": "2026-W43",
       "chat_earned_week": 20,
       "chat_earned": 20,
-      "mee6_level": 2,
+      "mee6_level": 3,
       "username": "angxlicv",
       "global_name": "EmperorPxrsa ✞",
       "username_updated_at": "2026-10-20T00:15:59.160Z"
@@ -318981,8 +318981,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 447,
-      "bot_total_xp": 3347,
+      "bot_xp": 465,
+      "bot_total_xp": 3365,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -376928,13 +376928,13 @@
       "1467181939218714656": 1792500581654,
       "730223629849199093": 1792487066188,
       "768104319631097878": 1792439358389,
-      "1410911007311790080": 1792502351730,
+      "1410911007311790080": 1792502412308,
       "1550582932425416714": 1792501691258,
       "1549443000881389619": 1792441571786,
       "963834359994007614": 1792486916314,
       "1198413714672591031": 1792446033170,
       "1036345613777907823": 1792499050977,
-      "1558219605753860178": 1792502366199,
+      "1558219605753860178": 1792502439767,
       "1325111649816023092": 1792502391396,
       "913497950213267577": 1792502387218,
       "1128425608146325544": 1792445677946,
@@ -384648,13 +384648,24 @@
       "active": {
         "id": "L1",
         "title": "Test",
-        "candidates": [],
+        "candidates": [
+          {
+            "id": "C1",
+            "name": "Ivanov",
+            "userId": "1558219605753860178"
+          },
+          {
+            "id": "C2",
+            "name": "Hyawii",
+            "userId": "1082686076491137115"
+          }
+        ],
         "votes": {},
         "status": "running",
         "endsAt": "2026-10-20T14:19:40.541Z",
         "startedBy": "1082686076491137115",
         "startedAt": "2026-10-20T13:19:40.541Z",
-        "next_cid": 0,
+        "next_cid": 2,
         "officeRoleId": null
       },
       "history": [],
@@ -385744,6 +385755,13 @@
       "from": 2,
       "to": 3,
       "at": "2026-10-20T13:19:47.223Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1410911007311790080",
+      "from": 2,
+      "to": 3,
+      "at": "2026-10-20T13:20:12.309Z",
       "reason": "chat"
     }
   ],
