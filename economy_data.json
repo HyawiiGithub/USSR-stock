@@ -151,8 +151,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 378,
-      "bot_total_xp": 2003,
+      "bot_xp": 402,
+      "bot_total_xp": 2027,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -199244,8 +199244,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 3,
-      "bot_xp": 73,
-      "bot_total_xp": 548,
+      "bot_xp": 91,
+      "bot_total_xp": 566,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -224651,8 +224651,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 0,
-      "bot_total_xp": 0,
+      "bot_xp": 18,
+      "bot_total_xp": 18,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -319116,8 +319116,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 180,
-      "bot_total_xp": 435,
+      "bot_xp": 197,
+      "bot_total_xp": 452,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -376921,7 +376921,7 @@
     "cooldowns": {
       "807254722251587614": 1792498087484,
       "1397601108616024075": 1792501150445,
-      "1082686076491137115": 1792502530692,
+      "1082686076491137115": 1792502633636,
       "1456622719985782864": 1792478836471,
       "1365483598962102305": 1792489417545,
       "1235522146449494038": 1792438861416,
@@ -376933,7 +376933,7 @@
       "1549443000881389619": 1792441571786,
       "963834359994007614": 1792486916314,
       "1198413714672591031": 1792446033170,
-      "1036345613777907823": 1792499050977,
+      "1036345613777907823": 1792502669978,
       "1558219605753860178": 1792502521189,
       "1325111649816023092": 1792502391396,
       "913497950213267577": 1792502387218,
@@ -376942,7 +376942,7 @@
       "780837437987094560": 1792499483415,
       "1456863215815364796": 1792446086957,
       "822184216829231116": 1792472957862,
-      "694662421054488577": 1792502567725,
+      "694662421054488577": 1792502659538,
       "1225275427145121903": 1792495745338,
       "720673212354265168": 1792447719847,
       "1482470388746424423": 1792448288162,
@@ -376992,7 +376992,8 @@
       "1257043671346319423": 1792500713344,
       "1097843158269825066": 1792500610396,
       "1528783188728483944": 1792502057656,
-      "1346438392245911589": 1792502316815
+      "1346438392245911589": 1792502316815,
+      "1023637731001241621": 1792502676368
     }
   },
   "mee6_cache": {
@@ -377571,6 +377572,116 @@
           "passPct": 50,
           "layout": "classic",
           "parties": []
+        },
+        "stateBank": {
+          "name": "State Bank",
+          "chairId": null,
+          "mode": "finance_chair",
+          "interest": 5,
+          "prime": 7.5,
+          "discount": 4.5,
+          "reserve": 10
+        },
+        "elections": {
+          "channelId": null,
+          "roleId": null,
+          "announceChannelId": null,
+          "defaultHours": 48
+        },
+        "stocks": {
+          "channelId": null,
+          "intervalMinutes": 15,
+          "live": true
+        },
+        "jarvis": {
+          "mode": "ping",
+          "allow": [],
+          "neutral": true
+        },
+        "mining": {
+          "enabled": false,
+          "region": "russia",
+          "wage": 20,
+          "autoTickMinutes": 60
+        },
+        "regulations": {
+          "incomeTax": 5,
+          "corporateTax": 6.5,
+          "minWage": 10,
+          "maxWage": 100,
+          "resourceRoyalty": 5,
+          "tradeTax": 3.5
+        },
+        "notifications": {
+          "ssrBoard": false,
+          "taxes": false
+        },
+        "institutions": {
+          "government": "Government",
+          "congress": "Congress",
+          "stateBank": "State Bank",
+          "centralBank": "Central Bank",
+          "financeMinistry": "Ministry of Finance",
+          "treasury": "Treasury",
+          "headOfState": "President",
+          "headOfGovernment": "Prime Minister",
+          "miningAuthority": "Mining Authority",
+          "electionCommission": "Election Commission",
+          "assembly": "Assembly",
+          "judiciary": "Supreme Court"
+        }
+      },
+      "treasury": 0,
+      "stockpile": {},
+      "stateMines": [],
+      "mineSeq": 0
+    },
+    "1262812699969192027": {
+      "id": "1262812699969192027",
+      "name": "?",
+      "members": 0,
+      "lastSeen": "2026-10-20T13:24:30.867Z",
+      "joinedAt": "2026-10-20T13:24:30.867Z",
+      "owners": [],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "blacklisted": false,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0,
+      "config": {
+        "brand": {
+          "name": null,
+          "color": 5793266,
+          "footer": null
+        },
+        "government": {
+          "type": "democracy",
+          "name": "Republic",
+          "democratic": true
+        },
+        "congress": {
+          "name": "Congress",
+          "seats": 10,
+          "color": 5793266,
+          "style": "classic",
+          "layout": "classic",
+          "parties": [],
+          "channelId": null,
+          "roleId": null,
+          "termDays": 30,
+          "passPct": 50
         },
         "stateBank": {
           "name": "State Bank",
