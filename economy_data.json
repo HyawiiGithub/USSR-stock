@@ -23,8 +23,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 426,
-      "bot_total_xp": 1576,
+      "bot_xp": 443,
+      "bot_total_xp": 1593,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -151,8 +151,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 6,
-      "bot_total_xp": 1156,
+      "bot_xp": 31,
+      "bot_total_xp": 1181,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -318945,8 +318945,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 173,
-      "bot_total_xp": 2378,
+      "bot_xp": 195,
+      "bot_total_xp": 2400,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -376680,9 +376680,9 @@
   },
   "xp_system": {
     "cooldowns": {
-      "807254722251587614": 1792491908452,
+      "807254722251587614": 1792492019804,
       "1397601108616024075": 1792491922554,
-      "1082686076491137115": 1792491914046,
+      "1082686076491137115": 1792491997673,
       "1456622719985782864": 1792478836471,
       "1365483598962102305": 1792489417545,
       "1235522146449494038": 1792438861416,
@@ -376695,7 +376695,7 @@
       "963834359994007614": 1792486916314,
       "1198413714672591031": 1792446033170,
       "1036345613777907823": 1792489871942,
-      "1558219605753860178": 1792491940566,
+      "1558219605753860178": 1792492034638,
       "1325111649816023092": 1792491877085,
       "913497950213267577": 1792449051267,
       "1128425608146325544": 1792445677946,
@@ -376872,7 +376872,7 @@
       "id": "1561817323986489504",
       "name": "🇨🇭 𝙎𝙬𝙞𝙨𝙨 𝘾𝙤𝙣𝙛𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙣",
       "members": 85,
-      "lastSeen": "2026-10-20T10:25:50.608Z",
+      "lastSeen": "2026-10-20T10:26:39.884Z",
       "joinedAt": "2026-10-19T21:29:54.088Z",
       "owners": [
         "1550582932425416714"
@@ -383582,6 +383582,14 @@
         {
           "role": "assistant",
           "content": "If by “CC remove” you"
+        },
+        {
+          "role": "user",
+          "content": "WHEN I COME BACK HOME IN 30M"
+        },
+        {
+          "role": "assistant",
+          "content": "The bot only stays “awake” while someone is actively calling it.  \nFrom the source code we can see the rule that governs this:\n\n- **Name‑calls for everyone:** saying “jarvis …” answers without a ping; *your summons wakes the server 20 min*. Cool‑downs are now 30 s flat.  \n  (bot.js:5040)\n\nSo if you leave the server idle for longer than **20 minutes**, the bot will go dormant. When you return after **30 minutes**, you’ll need to summon it again (e.g., type `jarvis` or any command that starts with"
         }
       ],
       "bonus": 0
