@@ -11881,8 +11881,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 4,
-      "bot_xp": 91,
-      "bot_total_xp": 861,
+      "bot_xp": 70,
+      "bot_total_xp": 840,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -319850,6 +319850,44 @@
       "deal_reminder": false,
       "deal_reminder_sent": null,
       "pet_food_source": {}
+    },
+    "1546297806841577623": {
+      "cash": 0,
+      "bank": 0,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 19,
+      "bot_total_xp": 19,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
     }
   },
   "companies": {},
@@ -376687,7 +376725,7 @@
       "1456622719985782864": 1792478836471,
       "1365483598962102305": 1792489417545,
       "1235522146449494038": 1792438861416,
-      "1467181939218714656": 1792492119916,
+      "1467181939218714656": 1792492040591,
       "730223629849199093": 1792487066188,
       "768104319631097878": 1792439358389,
       "1410911007311790080": 1792488991996,
@@ -376741,7 +376779,8 @@
       "1553710982239485998": 1792491197480,
       "1551986486147026974": 1792491199286,
       "1553131380546871379": 1792491201439,
-      "1553382805231112254": 1792491203229
+      "1553382805231112254": 1792491203229,
+      "1546297806841577623": 1792492177124
     }
   },
   "mee6_cache": {
@@ -376873,7 +376912,7 @@
       "id": "1561817323986489504",
       "name": "🇨🇭 𝙎𝙬𝙞𝙨𝙨 𝘾𝙤𝙣𝙛𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙣",
       "members": 85,
-      "lastSeen": "2026-10-20T10:27:24.801Z",
+      "lastSeen": "2026-10-20T10:29:12.599Z",
       "joinedAt": "2026-10-19T21:29:54.088Z",
       "owners": [
         "1550582932425416714"
@@ -383272,7 +383311,7 @@
     },
     "807254722251587614": {
       "date": "2026-10-20",
-      "used": 1,
+      "used": 2,
       "history": [
         {
           "role": "user",
@@ -383281,6 +383320,14 @@
         {
           "role": "assistant",
           "content": "Comrade, your bug report reads like a keyboard fell down a staircase. “Ither two”? I only see this server — Swiss Confederation — and nothing about two others in my scope. Other servers, games, or bots do not exist here.\n\nIf this is a real issue, please reply with:\n- the exact command you ran"
+        },
+        {
+          "role": "user",
+          "content": "Ye thzn you can ban him back?"
+        },
+        {
+          "role": "assistant",
+          "content": "Da, dar nu prin acest bot: am verificat comenzile disponibile și nu există o comandă `-ban` sau `-unban`. Pentru ajutor, încearcă `-help` sau `-serverhelp`; o interdicție Discord reală trebuie făcută de un administrator cu permisiunile corespunzătoare.\n\nDacă te referi la o persoană anume, spune-i clar — și nu presupune că pot face acțiuni pe baza unei poreclie sau a unei conversații anterioare."
         }
       ],
       "bonus": 0
@@ -383591,6 +383638,14 @@
         {
           "role": "assistant",
           "content": "The bot only stays “awake” while someone is actively calling it.  \nFrom the source code we can see the rule that governs this:\n\n- **Name‑calls for everyone:** saying “jarvis …” answers without a ping; *your summons wakes the server 20 min*. Cool‑downs are now 30 s flat.  \n  (bot.js:5040)\n\nSo if you leave the server idle for longer than **20 minutes**, the bot will go dormant. When you return after **30 minutes**, you’ll need to summon it again (e.g., type `jarvis` or any command that starts with"
+        },
+        {
+          "role": "user",
+          "content": "Gray Emminence?"
+        },
+        {
+          "role": "assistant",
+          "content": "“Gray Emminence” isn’t a command or feature in this bot. The only available commands are those listed in the help (‑help, ‑jarvis, ‑economy, etc.). If you’re looking for something specific, try checking the command list with `-help` or let me know the exact command name you have in mind. \n\n— (And Hyawii, if you were hoping this was a secret “gray‑area” cheat, you’ll have to look elsewhere; the bot’s not that mysterious.)"
         }
       ],
       "bonus": 0
