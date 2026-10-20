@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 38,
+      "bank": 34,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -129,7 +129,7 @@
       "pet_food_source": {}
     },
     "1082686076491137115": {
-      "cash": 77,
+      "cash": 79,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -151,8 +151,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 135,
-      "bot_total_xp": 1760,
+      "bot_xp": 157,
+      "bot_total_xp": 1782,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -166,8 +166,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 77,
-      "chat_earned": 77,
+      "chat_earned_week": 79,
+      "chat_earned": 79,
       "mee6_level": 6,
       "username": "hyawii2.0",
       "global_name": "Hyawii",
@@ -150060,8 +150060,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 0,
-      "bot_xp": 45,
-      "bot_total_xp": 45,
+      "bot_xp": 64,
+      "bot_total_xp": 64,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -259284,7 +259284,7 @@
       "username_updated_at": "2026-10-20T00:15:59.141Z"
     },
     "1186597507720019988": {
-      "cash": 39,
+      "cash": 41,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -259324,8 +259324,8 @@
       "global_name": "justban",
       "username_updated_at": "2026-10-20T00:15:59.141Z",
       "chat_week": "2026-W43",
-      "chat_earned_week": 39,
-      "chat_earned": 39,
+      "chat_earned_week": 41,
+      "chat_earned": 41,
       "mee6_level": 4
     },
     "846818809914195979": {
@@ -376914,7 +376914,7 @@
     "cooldowns": {
       "807254722251587614": 1792498087484,
       "1397601108616024075": 1792501150445,
-      "1082686076491137115": 1792501053366,
+      "1082686076491137115": 1792501281895,
       "1456622719985782864": 1792478836471,
       "1365483598962102305": 1792489417545,
       "1235522146449494038": 1792438861416,
@@ -376963,7 +376963,7 @@
       "1451888329044791409": 1792500158339,
       "1526031499336351846": 1792487445067,
       "1061880907788722217": 1792491981824,
-      "848668020846755870": 1792489939302,
+      "848668020846755870": 1792501294682,
       "895937675813593138": 1792490030582,
       "1561802825397174315": 1792490394978,
       "1552017747892899894": 1792491187805,
@@ -377252,8 +377252,8 @@
     "1561817323986489504": {
       "id": "1561817323986489504",
       "name": "🇨🇭 𝙎𝙬𝙞𝙨𝙨 𝘾𝙤𝙣𝙛𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙣 🇨🇭",
-      "members": 88,
-      "lastSeen": "2026-10-20T11:29:48.392Z",
+      "members": 98,
+      "lastSeen": "2026-10-20T13:01:11.103Z",
       "joinedAt": "2026-10-19T21:29:54.088Z",
       "owners": [
         "1550582932425416714"
@@ -377282,34 +377282,133 @@
           "footer": null
         },
         "government": {
-          "type": "democracy",
-          "name": "Republic",
+          "type": "republic",
+          "name": "Swiss Confederation",
           "democratic": true
         },
         "congress": {
-          "name": "Congress",
-          "seats": 10,
-          "color": 5793266,
-          "style": "classic",
+          "name": "National Council",
+          "seats": 200,
+          "color": 13970206,
+          "style": "swiss",
           "channelId": null,
           "roleId": null,
-          "termDays": 30,
-          "passPct": 50
+          "termDays": 1460,
+          "passPct": 50,
+          "layout": "swiss",
+          "parties": [
+            {
+              "name": "SP",
+              "long": "Social Democrats",
+              "color": 14942251,
+              "votes": 16.84,
+              "seats": 39,
+              "change": -4
+            },
+            {
+              "name": "GPS",
+              "long": "Greens",
+              "color": 8042496,
+              "votes": 13.24,
+              "seats": 28,
+              "change": 17
+            },
+            {
+              "name": "PdA",
+              "long": "Labour",
+              "color": 12582912,
+              "votes": 1.05,
+              "seats": 1,
+              "change": 0
+            },
+            {
+              "name": "Sol",
+              "long": "Solidarity",
+              "color": 16738740,
+              "votes": 0.54,
+              "seats": 1,
+              "change": 1
+            },
+            {
+              "name": "GLP",
+              "long": "Green Liberals",
+              "color": 10866967,
+              "votes": 7.8,
+              "seats": 16,
+              "change": 9
+            },
+            {
+              "name": "CVP",
+              "long": "Christian Democrats",
+              "color": 16747520,
+              "votes": 11.38,
+              "seats": 25,
+              "change": -2
+            },
+            {
+              "name": "EVP",
+              "long": "Evangelical People's",
+              "color": 16760832,
+              "votes": 2.08,
+              "seats": 3,
+              "change": 1
+            },
+            {
+              "name": "BDP",
+              "long": "Conservative Democrats",
+              "color": 16766720,
+              "votes": 2.47,
+              "seats": 3,
+              "change": -4
+            },
+            {
+              "name": "FDP",
+              "long": "Liberals",
+              "color": 745381,
+              "votes": 15.11,
+              "seats": 29,
+              "change": -4
+            },
+            {
+              "name": "SVP",
+              "long": "Swiss People's",
+              "color": 4950586,
+              "votes": 25.59,
+              "seats": 53,
+              "change": -12
+            },
+            {
+              "name": "EDU",
+              "long": "Federal Democrats",
+              "color": 10508844,
+              "votes": 1.05,
+              "seats": 1,
+              "change": 1
+            },
+            {
+              "name": "Lega",
+              "long": "Ticino League",
+              "color": 1986204,
+              "votes": 0.75,
+              "seats": 1,
+              "change": -1
+            }
+          ]
         },
         "stateBank": {
-          "name": "State Bank",
+          "name": "Swiss National Bank",
           "chairId": null,
-          "mode": "finance_chair",
-          "interest": 5,
-          "prime": 7.5,
-          "discount": 4.5,
-          "reserve": 10
+          "mode": "appointed",
+          "interest": 1.5,
+          "prime": 2.5,
+          "discount": 1,
+          "reserve": 4
         },
         "elections": {
           "channelId": null,
           "roleId": null,
           "announceChannelId": null,
-          "defaultHours": 48
+          "defaultHours": 168
         },
         "stocks": {
           "channelId": null,
@@ -377338,6 +377437,20 @@
         "notifications": {
           "ssrBoard": false,
           "taxes": false
+        },
+        "institutions": {
+          "government": "Federal Council",
+          "congress": "National Council",
+          "stateBank": "Swiss National Bank",
+          "centralBank": "Swiss National Bank",
+          "financeMinistry": "Federal Department of Finance",
+          "treasury": "Federal Treasury",
+          "headOfState": "President of the Confederation",
+          "headOfGovernment": "Federal Council",
+          "miningAuthority": "Federal Office for the Environment",
+          "electionCommission": "Federal Chancellery",
+          "assembly": "United Federal Assembly",
+          "judiciary": "Federal Supreme Court"
         }
       },
       "treasury": 0,
