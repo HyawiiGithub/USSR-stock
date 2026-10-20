@@ -151,8 +151,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 501,
-      "bot_total_xp": 2706,
+      "bot_xp": 522,
+      "bot_total_xp": 2727,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -238795,8 +238795,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 8,
-      "bot_xp": 721,
-      "bot_total_xp": 3621,
+      "bot_xp": 737,
+      "bot_total_xp": 3637,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -377157,7 +377157,7 @@
     "cooldowns": {
       "807254722251587614": 1792504193712,
       "1397601108616024075": 1792508104026,
-      "1082686076491137115": 1792510340316,
+      "1082686076491137115": 1792510493765,
       "1456622719985782864": 1792507342518,
       "1365483598962102305": 1792489417545,
       "1235522146449494038": 1792438861416,
@@ -377171,7 +377171,7 @@
       "1198413714672591031": 1792446033170,
       "1036345613777907823": 1792503054202,
       "1558219605753860178": 1792505737864,
-      "1325111649816023092": 1792510435149,
+      "1325111649816023092": 1792510495320,
       "913497950213267577": 1792504293905,
       "1128425608146325544": 1792445677946,
       "1554879270646452315": 1792509229506,
@@ -377544,7 +377544,7 @@
       "id": "1561817323986489504",
       "name": "🇨🇭 𝙎𝙬𝙞𝙨𝙨 𝘾𝙤𝙣𝙛𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙣 🇨🇭",
       "members": 110,
-      "lastSeen": "2026-10-20T15:33:20.516Z",
+      "lastSeen": "2026-10-20T15:34:28.777Z",
       "joinedAt": "2026-10-19T21:29:54.088Z",
       "owners": [
         "1550582932425416714",
@@ -384688,14 +384688,6 @@
       "history": [
         {
           "role": "user",
-          "content": "(note: jarvis will still work btw"
-        },
-        {
-          "role": "assistant",
-          "content": "Noted. I’ll keep working whether you like it or not — Soviet efficiency, comrade. What do you actually need?"
-        },
-        {
-          "role": "user",
           "content": "ragebait jarvis"
         },
         {
@@ -384717,6 +384709,14 @@
         {
           "role": "assistant",
           "content": "✅ Bug ticket received.\n\nI’ve logged your report under the bug‑desk system (see `bot.js:4924` where the `-bug` command is processed).  \n\n**What to do next**  \n- If you haven’t already, file the ticket using the proper syntax so it’s recorded in the system:  \n\n```\n-bug <brief description of what broke>\n```  \n\n- You can view the ten most recent open tickets with:  \n\n```\n-bug list\n```  \n\n- Primary owners will then investigate, claim, approve, and eventually close the ticket.\n\nIf you have more detail"
+        },
+        {
+          "role": "user",
+          "content": "BUG TICKET #2 (filed by <@1082686076491137115>): list"
+        },
+        {
+          "role": "assistant",
+          "content": "✅ Bug ticket #2 has been logged.\n\nThe current bug‑desk workflow (see `bot.js:4924`) expects a clear description of the problem so it can be reproduced and investigated. “list” is too vague – we need to know:\n\n1. **Exact command you ran** (e.g., `-bug list`, `-bugs`, `-bug <something>`).  \n2. **What you expected to happen** (e.g., a list of open tickets, a help message, etc.).  \n3. **What actually happened** (error message, no response, wrong output, etc.).  \n4. If possible, a screenshot or copy‑"
         }
       ],
       "bonus": 0
@@ -386803,8 +386803,31 @@
     "1456622719985782864"
   ],
   "bug_tickets": {
-    "next": 1,
+    "next": 2,
     "list": [
+      {
+        "id": 2,
+        "user": "1082686076491137115",
+        "name": "hyawii2.0",
+        "text": "list",
+        "status": "investigated",
+        "claimedBy": null,
+        "investigation": "✅ Bug ticket #2 has been logged.\n\nThe current bug‑desk workflow (see `bot.js:4924`) expects a clear description of the problem so it can be reproduced and investigated. “list” is too vague – we need to know:\n\n1. **Exact command you ran** (e.g., `-bug list`, `-bugs`, `-bug <something>`).  \n2. **What you expected to happen** (e.g., a list of open tickets, a help message, etc.).  \n3. **What actually happened** (error message, no response, wrong output, etc.).  \n4. If possible, a screenshot or copy‑paste of the bot’s reply.\n\nPlease reply with those details and the ticket will be handed to the Primaries for investigation.  \n\n*Your report is recorded; you can view open tickets with `-bug list` (or `-bugs`).*",
+        "guild": "1561817323986489504",
+        "history": [
+          {
+            "by": "1082686076491137115",
+            "note": "filed",
+            "at": "2026-10-20T15:34:25.756Z"
+          },
+          {
+            "by": "1082686076491137115",
+            "note": "investigated",
+            "at": "2026-10-20T15:34:48.586Z"
+          }
+        ],
+        "at": "2026-10-20T15:34:25.756Z"
+      },
       {
         "id": 1,
         "user": "1082686076491137115",
