@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 286,
+      "bank": 450,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -320688,9 +320688,9 @@
       "wanted": 0,
       "last_illegal": null,
       "total_heat_generated": 0,
-      "bot_level": 0,
-      "bot_xp": 85,
-      "bot_total_xp": 85,
+      "bot_level": 1,
+      "bot_xp": 5,
+      "bot_total_xp": 105,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -320704,7 +320704,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 0
+      "chat_earned_week": 0,
+      "mee6_level": 1
     }
   },
   "companies": {},
@@ -321342,12 +321343,8 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.61,
+    "rub_per_usd": 4.54,
     "history": [
-      {
-        "rate": 4.52,
-        "at": "2026-10-20T09:47:40.937Z"
-      },
       {
         "rate": 4.51,
         "at": "2026-10-20T09:50:15.623Z"
@@ -321743,14 +321740,18 @@
       {
         "rate": 4.61,
         "at": "2026-10-21T01:37:11.266Z"
+      },
+      {
+        "rate": 4.54,
+        "at": "2026-10-21T01:42:01.932Z"
       }
     ],
-    "last_update": "2026-10-21T01:37:11.266Z",
+    "last_update": "2026-10-21T01:42:01.932Z",
     "manual_override": null
   },
   "national_budget": {
     "tax_collected": 0,
-    "trade_income": 3475,
+    "trade_income": 3639,
     "other_income": 0,
     "defense_spending": 0,
     "payroll_paid": 0,
@@ -321905,10 +321906,15 @@
         "kind": "trade",
         "amount": 161,
         "at": "2026-10-21T00:41:52.457Z"
+      },
+      {
+        "kind": "trade",
+        "amount": 164,
+        "at": "2026-10-21T01:42:00.235Z"
       }
     ],
     "spending_history": [],
-    "last_update": "2026-10-21T00:41:52.458Z",
+    "last_update": "2026-10-21T01:42:00.235Z",
     "balance_history": [
       {
         "balance": 1996,
@@ -377754,7 +377760,7 @@
       "1263934700175626361": 1792546744372,
       "1492928321669828750": 1792537826908,
       "1499774852180213857": 1792541512131,
-      "1399400276254785536": 1792546834261
+      "1399400276254785536": 1792546898292
     }
   },
   "mee6_cache": {
@@ -378734,9 +378740,9 @@
     "next_num": 0
   },
   "world1959": {
-    "tick": 30,
-    "date": "1961-07-30T00:00:00.000Z",
-    "lastTickAt": "2026-10-21T00:41:51.934Z",
+    "tick": 31,
+    "date": "1961-08-06T00:00:00.000Z",
+    "lastTickAt": "2026-10-21T01:41:59.728Z",
     "tickMinutes": 60,
     "paused": false,
     "milspending": 10,
@@ -378766,12 +378772,12 @@
         "ideology": "Liberal Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 670.1,
+        "gdp": 674.1,
         "pop": 183,
-        "stability": 93.01911107586889,
+        "stability": 92.57658005179775,
         "military": 93,
         "readiness": 85,
-        "relations": -25,
+        "relations": -24,
         "nukes": true,
         "democracy": true,
         "allies": [],
@@ -378781,10 +378787,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 563.4
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 566.8
@@ -378900,6 +378902,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 670.1
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 674.1
           }
         ],
         "bills": [
@@ -378931,9 +378937,9 @@
         "ideology": "Conservatism",
         "bloc": "nato",
         "personality": "diplomatic",
-        "gdp": 114,
+        "gdp": 114.3,
         "pop": 52,
-        "stability": 74.47277013490296,
+        "stability": 74.98222399384551,
         "military": 55,
         "readiness": 70,
         "relations": 1,
@@ -378946,10 +378952,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 105.3
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 105.6
@@ -379065,6 +379067,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 114
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 114.3
           }
         ],
         "bills": [
@@ -379096,9 +379102,9 @@
         "ideology": "Gaullism",
         "bloc": "nato",
         "personality": "opportunistic",
-        "gdp": 119.7,
+        "gdp": 120.1,
         "pop": 46,
-        "stability": 64.95435651584955,
+        "stability": 65.4626522971828,
         "military": 58,
         "readiness": 68,
         "relations": -30,
@@ -379111,10 +379117,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 110.3
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 110.6
@@ -379230,6 +379232,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 119.7
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 120.1
           }
         ],
         "bills": [
@@ -379261,12 +379267,12 @@
         "ideology": "Christian Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 149.9,
+        "gdp": 150.8,
         "pop": 53,
-        "stability": 88.91390464215647,
+        "stability": 89.97576991957449,
         "military": 45,
         "readiness": 65,
-        "relations": -30,
+        "relations": -29,
         "nukes": false,
         "democracy": true,
         "allies": [],
@@ -379276,10 +379282,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 125.8
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 126.6
@@ -379395,6 +379397,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 149.9
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 150.8
           }
         ],
         "bills": [
@@ -379426,9 +379432,9 @@
         "ideology": "Christian Democracy",
         "bloc": "nato",
         "personality": "diplomatic",
-        "gdp": 76.8,
+        "gdp": 77,
         "pop": 50,
-        "stability": 65.6082311708895,
+        "stability": 64.69982254152215,
         "military": 35,
         "readiness": 55,
         "relations": 1,
@@ -379441,10 +379447,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 70.2
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 70.4
@@ -379560,6 +379562,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 76
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 77
           }
         ],
         "bills": [
@@ -379591,11 +379597,11 @@
         "ideology": "Conservatism",
         "bloc": "nato",
         "personality": "defensive",
-        "gdp": 48,
+        "gdp": 48.1,
         "pop": 18,
-        "stability": 78.34177493809158,
+        "stability": 78.19302764356075,
         "military": 23,
-        "readiness": 73.99999999999991,
+        "readiness": 74.79999999999991,
         "relations": 0,
         "nukes": false,
         "democracy": true,
@@ -379606,10 +379612,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 45.1
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 45.2
@@ -379725,6 +379727,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 48
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 48.1
           }
         ],
         "bills": [
@@ -379756,9 +379762,9 @@
         "ideology": "Liberal Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 72.6,
+        "gdp": 73,
         "pop": 94,
-        "stability": 87.77046750778229,
+        "stability": 87.77229931445696,
         "military": 18,
         "readiness": 45,
         "relations": 0,
@@ -379771,10 +379777,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 60.4
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 60.8
@@ -379890,6 +379892,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 72.6
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 73
           }
         ],
         "bills": [
@@ -379923,10 +379929,10 @@
         "personality": "defensive",
         "gdp": 15,
         "pop": 28,
-        "stability": 54.60992415347195,
+        "stability": 55.03806183773106,
         "military": 40,
-        "readiness": 83.99999999999991,
-        "relations": -15,
+        "readiness": 84.79999999999991,
+        "relations": -14,
         "nukes": false,
         "democracy": false,
         "allies": [],
@@ -379936,10 +379942,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 15
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 15
@@ -380055,6 +380057,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 15
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 15
           }
         ],
         "bills": []
@@ -380067,12 +380073,12 @@
         "ideology": "Marxism-Leninism",
         "bloc": "wp",
         "personality": "defensive",
-        "gdp": 33,
+        "gdp": 33.1,
         "pop": 30,
-        "stability": 58.05902129559895,
+        "stability": 57.2936997810033,
         "military": 35,
-        "readiness": 83.99999999999991,
-        "relations": 25,
+        "readiness": 84.79999999999991,
+        "relations": 24,
         "nukes": false,
         "democracy": false,
         "allies": [],
@@ -380082,10 +380088,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 30.1
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 30.2
@@ -380201,6 +380203,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 33
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 33.1
           }
         ],
         "bills": []
@@ -380213,12 +380219,12 @@
         "ideology": "Marxism-Leninism",
         "bloc": "wp",
         "personality": "defensive",
-        "gdp": 38,
+        "gdp": 38.1,
         "pop": 17,
-        "stability": 58.46703466477284,
+        "stability": 57.803614110353585,
         "military": 30,
-        "readiness": 85.99999999999991,
-        "relations": 30,
+        "readiness": 86.79999999999991,
+        "relations": 29,
         "nukes": false,
         "democracy": false,
         "allies": [],
@@ -380228,10 +380234,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 35.1
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 35.2
@@ -380347,6 +380349,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 38
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 38.1
           }
         ],
         "bills": []
@@ -380359,10 +380365,10 @@
         "ideology": "Maoism",
         "bloc": "wp",
         "personality": "aggressive",
-        "gdp": 76,
+        "gdp": 76.2,
         "pop": 660,
-        "stability": 45.98460287572531,
-        "military": 93.99999999999991,
+        "stability": 46.82930556005977,
+        "military": 94.79999999999991,
         "readiness": 65,
         "relations": 0,
         "nukes": false,
@@ -380374,10 +380380,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 70.2
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 70.4
@@ -380493,6 +380495,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 76
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 76.2
           }
         ],
         "bills": []
@@ -380505,9 +380511,9 @@
         "ideology": "Titoism",
         "bloc": "neutral",
         "personality": "opportunistic",
-        "gdp": 21,
+        "gdp": 21.1,
         "pop": 18,
-        "stability": 63.35952376461123,
+        "stability": 63.32775394961074,
         "military": 38,
         "readiness": 58,
         "relations": 0,
@@ -380520,10 +380526,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 18.1
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 18.2
@@ -380639,6 +380641,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 21
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 21.1
           }
         ],
         "bills": []
@@ -380651,9 +380657,9 @@
         "ideology": "Non-Alignment",
         "bloc": "neutral",
         "personality": "diplomatic",
-        "gdp": 61.6,
+        "gdp": 61.8,
         "pop": 440,
-        "stability": 57.81355635434149,
+        "stability": 56.8281248230607,
         "military": 30,
         "readiness": 50,
         "relations": 15,
@@ -380666,10 +380672,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 55.2
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 55.4
@@ -380785,6 +380787,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 61.6
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 61.8
           }
         ],
         "bills": [
@@ -380818,8 +380824,8 @@
         "personality": "aggressive",
         "gdp": 12,
         "pop": 26,
-        "stability": 52.72120663855561,
-        "military": 55.999999999999915,
+        "stability": 53.55591826532661,
+        "military": 56.79999999999991,
         "readiness": 55,
         "relations": 0,
         "nukes": false,
@@ -380831,10 +380837,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 12
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 12
@@ -380950,6 +380952,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 12
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 12
           }
         ],
         "bills": []
@@ -380962,9 +380968,9 @@
         "ideology": "Populism",
         "bloc": "neutral",
         "personality": "economic",
-        "gdp": 31,
+        "gdp": 31.2,
         "pop": 72,
-        "stability": 72.9307960357529,
+        "stability": 72.65845180186969,
         "military": 25,
         "readiness": 45,
         "relations": 0,
@@ -380977,10 +380983,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 25.2
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 25.4
@@ -381096,6 +381098,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 31
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 31.2
           }
         ],
         "bills": [
@@ -381127,7 +381133,7 @@
         "ideology": "Social Democracy",
         "bloc": "neutral",
         "personality": "economic",
-        "gdp": 23,
+        "gdp": 23.1,
         "pop": 7,
         "stability": 99,
         "military": 28,
@@ -381142,10 +381148,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1961-01-08T00:00:00.000Z",
-            "v": 20.1
-          },
           {
             "t": "1961-01-15T00:00:00.000Z",
             "v": 20.2
@@ -381261,6 +381263,10 @@
           {
             "t": "1961-07-30T00:00:00.000Z",
             "v": 23
+          },
+          {
+            "t": "1961-08-06T00:00:00.000Z",
+            "v": 23.1
           }
         ],
         "bills": [
@@ -381287,7 +381293,7 @@
     },
     "aiWars": [],
     "matrix": {},
-    "lastIncome": 161,
+    "lastIncome": 164,
     "gdpHistory": [
       {
         "t": "1961-01-08T00:00:00.000Z",
@@ -381408,6 +381414,10 @@
       {
         "t": "1961-07-30T00:00:00.000Z",
         "v": 107.43
+      },
+      {
+        "t": "1961-08-06T00:00:00.000Z",
+        "v": 107.59
       }
     ],
     "goldHistory": [
@@ -381529,6 +381539,10 @@
       },
       {
         "t": "1961-07-30T00:00:00.000Z",
+        "v": 0
+      },
+      {
+        "t": "1961-08-06T00:00:00.000Z",
         "v": 0
       }
     ]
@@ -387256,13 +387270,6 @@
   ],
   "level_ups": [
     {
-      "userId": "1053886353366057041",
-      "from": 0,
-      "to": 1,
-      "at": "2026-10-20T01:21:26.035Z",
-      "reason": "chat"
-    },
-    {
       "userId": "1554879270646452315",
       "from": 3,
       "to": 4,
@@ -388653,6 +388660,13 @@
       "from": 4,
       "to": 5,
       "at": "2026-10-21T01:39:55.113Z",
+      "reason": "chat"
+    },
+    {
+      "userId": "1399400276254785536",
+      "from": 0,
+      "to": 1,
+      "at": "2026-10-21T01:41:38.293Z",
       "reason": "chat"
     }
   ],
