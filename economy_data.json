@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 1390,
+      "bank": 1389,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -266054,7 +266054,7 @@
       "username_updated_at": "2026-10-20T00:15:59.141Z"
     },
     "1222055001854312499": {
-      "cash": 35,
+      "cash": 36,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -266076,8 +266076,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 5,
-      "bot_xp": 80,
-      "bot_total_xp": 1230,
+      "bot_xp": 102,
+      "bot_total_xp": 1252,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -266094,8 +266094,8 @@
       "global_name": "Macomcat",
       "username_updated_at": "2026-10-20T00:15:59.141Z",
       "chat_week": "2026-W43",
-      "chat_earned_week": 35,
-      "chat_earned": 35,
+      "chat_earned_week": 36,
+      "chat_earned": 36,
       "mee6_level": 5
     },
     "486440454775111680": {
@@ -320798,11 +320798,6 @@
   "gsi_history": [
     {
       "price": 92,
-      "change_percent": 0.8784476347393211,
-      "recorded_at": "2026-10-21T01:07:18.258Z"
-    },
-    {
-      "price": 92,
       "change_percent": 0.3519568097078171,
       "recorded_at": "2026-10-21T01:12:18.297Z"
     },
@@ -321295,6 +321290,11 @@
       "price": 91,
       "change_percent": 0.5898181484001873,
       "recorded_at": "2026-10-21T09:22:24.042Z"
+    },
+    {
+      "price": 91,
+      "change_percent": 0.5589079714416548,
+      "recorded_at": "2026-10-21T09:27:23.979Z"
     }
   ],
   "factory_names": [
@@ -321309,16 +321309,15 @@
     "Volga Shipbuilding"
   ],
   "used_factory_names": [],
-  "inflation": 3.444473876569974,
-  "money_printed": 480.6302291656699,
+  "inflation": 3.4439311379944786,
+  "money_printed": 480.3899140510871,
   "inflation_adjust": 0,
   "good_crisis": {},
   "custom_events": [],
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
-  "total_bank_reserves": 12980,
+  "total_bank_reserves": 12962,
   "inflation_history": [
-    1.7583404506352742,
     1.7583404506352742,
     1.7583404506352742,
     1.7578451652656133,
@@ -321417,7 +321416,8 @@
     3.5970150326864516,
     3.596657814481059,
     3.5963565678866964,
-    3.444473876569974
+    3.444473876569974,
+    3.4439311379944786
   ],
   "company_id_counter": 0,
   "currency": {
@@ -321431,10 +321431,6 @@
   "forex": {
     "rub_per_usd": 4.55,
     "history": [
-      {
-        "rate": 4.58,
-        "at": "2026-10-20T17:38:59.347Z"
-      },
       {
         "rate": 4.59,
         "at": "2026-10-20T17:46:40.448Z"
@@ -321830,9 +321826,13 @@
       {
         "rate": 4.55,
         "at": "2026-10-21T09:17:15.062Z"
+      },
+      {
+        "rate": 4.55,
+        "at": "2026-10-21T09:27:15.061Z"
       }
     ],
-    "last_update": "2026-10-21T09:17:15.062Z",
+    "last_update": "2026-10-21T09:27:15.061Z",
     "manual_override": null
   },
   "national_budget": {
@@ -322037,12 +322037,6 @@
     "spending_history": [],
     "last_update": "2026-10-21T08:42:11.860Z",
     "balance_history": [
-      {
-        "balance": 3475,
-        "income": 3475,
-        "spending": 0,
-        "at": "2026-10-21T00:52:19.109Z"
-      },
       {
         "balance": 3475,
         "income": 3475,
@@ -322636,6 +322630,12 @@
         "income": 4868,
         "spending": 0,
         "at": "2026-10-21T09:22:26.931Z"
+      },
+      {
+        "balance": 4868,
+        "income": 4868,
+        "spending": 0,
+        "at": "2026-10-21T09:27:27.253Z"
       }
     ]
   },
@@ -377324,13 +377324,16 @@
       "username": "desertmarshal2",
       "action": "jarvis-off",
       "details": ""
+    },
+    {
+      "at": "2026-10-21T09:27:26.371Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "jarvis-on",
+      "details": ""
     }
   ],
   "total_rubles_history": [
-    {
-      "total": 107588,
-      "at": "2026-10-21T00:52:18.765Z"
-    },
     {
       "total": 107588,
       "at": "2026-10-21T00:57:18.865Z"
@@ -377726,6 +377729,10 @@
     {
       "total": 108981,
       "at": "2026-10-21T09:22:26.581Z"
+    },
+    {
+      "total": 108981,
+      "at": "2026-10-21T09:27:27.073Z"
     }
   ],
   "gold_rush": null,
@@ -377831,7 +377838,7 @@
       "860203156222902332": 1792573817727,
       "1483005845867593831": 1792508316887,
       "1536471243849736322": 1792530511196,
-      "1222055001854312499": 1792574732199,
+      "1222055001854312499": 1792574827308,
       "1294972150645522578": 1792501085437,
       "1211857264189644833": 1792493832313,
       "1457709153085816862": 1792497409363,
@@ -381774,13 +381781,8 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-21T09:17:14.697Z",
+  "inflation_updated_at": "2026-10-21T09:27:14.723Z",
   "gini_history": [
-    {
-      "gini": 99.97604879633948,
-      "top10": 100,
-      "at": "2026-10-21T00:52:18.802Z"
-    },
     {
       "gini": 99.97604423434939,
       "top10": 100,
@@ -382275,13 +382277,14 @@
       "gini": 99.97496981970835,
       "top10": 100,
       "at": "2026-10-21T09:22:26.604Z"
+    },
+    {
+      "gini": 99.97490453443167,
+      "top10": 100,
+      "at": "2026-10-21T09:27:27.092Z"
     }
   ],
   "gdp_history": [
-    {
-      "gdp": 107588,
-      "at": "2026-10-21T00:52:19.104Z"
-    },
     {
       "gdp": 107588,
       "at": "2026-10-21T00:57:19.039Z"
@@ -382677,16 +382680,14 @@
     {
       "gdp": 108981,
       "at": "2026-10-21T09:22:26.931Z"
+    },
+    {
+      "gdp": 108981,
+      "at": "2026-10-21T09:27:27.253Z"
     }
   ],
   "soldier_history": [],
   "debt_history": [
-    {
-      "total": 7996,
-      "gdp": 107588,
-      "ratio": 7.43,
-      "at": "2026-10-21T00:52:19.119Z"
-    },
     {
       "total": 7996,
       "gdp": 107588,
@@ -383280,14 +383281,15 @@
       "gdp": 108981,
       "ratio": 7.35,
       "at": "2026-10-21T09:22:26.943Z"
+    },
+    {
+      "total": 8014,
+      "gdp": 108981,
+      "ratio": 7.35,
+      "at": "2026-10-21T09:27:27.261Z"
     }
   ],
   "pop_history": [
-    {
-      "total": 7824,
-      "citizens": 7824,
-      "at": "2026-10-21T00:52:19.120Z"
-    },
     {
       "total": 7824,
       "citizens": 7824,
@@ -383782,6 +383784,11 @@
       "total": 7827,
       "citizens": 7827,
       "at": "2026-10-21T09:22:26.945Z"
+    },
+    {
+      "total": 7827,
+      "citizens": 7827,
+      "at": "2026-10-21T09:27:27.262Z"
     }
   ],
   "server_econ": {
@@ -383810,12 +383817,6 @@
     },
     "1365639669206880297": {
       "history": [
-        {
-          "at": "2026-10-21T00:52:19.121Z",
-          "wealth": 1,
-          "members": 4,
-          "works": 0
-        },
         {
           "at": "2026-10-21T00:57:19.048Z",
           "wealth": 1,
@@ -384409,18 +384410,18 @@
           "wealth": 277,
           "members": 9,
           "works": 0
+        },
+        {
+          "at": "2026-10-21T09:27:27.263Z",
+          "wealth": 280,
+          "members": 9,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1404571014750539917": {
       "history": [
-        {
-          "at": "2026-10-21T00:52:19.121Z",
-          "wealth": 0,
-          "members": 7,
-          "works": 0
-        },
         {
           "at": "2026-10-21T00:57:19.048Z",
           "wealth": 0,
@@ -385014,18 +385015,18 @@
           "wealth": 0,
           "members": 7,
           "works": 0
+        },
+        {
+          "at": "2026-10-21T09:27:27.263Z",
+          "wealth": 0,
+          "members": 7,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1557847860983242752": {
       "history": [
-        {
-          "at": "2026-10-21T00:52:19.121Z",
-          "wealth": 237,
-          "members": 1,
-          "works": 0
-        },
         {
           "at": "2026-10-21T00:57:19.049Z",
           "wealth": 237,
@@ -385619,18 +385620,18 @@
           "wealth": 612,
           "members": 2,
           "works": 0
+        },
+        {
+          "at": "2026-10-21T09:27:27.265Z",
+          "wealth": 612,
+          "members": 2,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1561817323986489504": {
       "history": [
-        {
-          "at": "2026-10-21T00:52:19.121Z",
-          "wealth": 1858,
-          "members": 28,
-          "works": 0
-        },
         {
           "at": "2026-10-21T00:57:19.049Z",
           "wealth": 1859,
@@ -386224,18 +386225,18 @@
           "wealth": 114907,
           "members": 51,
           "works": 0
+        },
+        {
+          "at": "2026-10-21T09:27:27.265Z",
+          "wealth": 114919,
+          "members": 51,
+          "works": 0
         }
       ],
       "works": 0
     },
     "1519287377703731270": {
       "history": [
-        {
-          "at": "2026-10-21T00:52:19.121Z",
-          "wealth": 0,
-          "members": 51,
-          "works": 0
-        },
         {
           "at": "2026-10-21T00:57:19.048Z",
           "wealth": 0,
@@ -386829,6 +386830,12 @@
           "wealth": 669,
           "members": 3,
           "works": 0
+        },
+        {
+          "at": "2026-10-21T09:27:27.264Z",
+          "wealth": 670,
+          "members": 4,
+          "works": 0
         }
       ],
       "works": 0
@@ -386837,42 +386844,9 @@
   "debt_watch_band": 0,
   "jarvis": {
     "1082686076491137115": {
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "used": 0,
-      "history": [
-        {
-          "role": "user",
-          "content": "BUG TICKET #1 (filed by <@1082686076491137115>): jarvis brain"
-        },
-        {
-          "role": "assistant",
-          "content": "✅ Bug ticket received.\n\nI’ve logged your report under the bug‑desk system (see `bot.js:4924` where the `-bug` command is processed).  \n\n**What to do next**  \n- If you haven’t already, file the ticket using the proper syntax so it’s recorded in the system:  \n\n```\n-bug <brief description of what broke>\n```  \n\n- You can view the ten most recent open tickets with:  \n\n```\n-bug list\n```  \n\n- Primary owners will then investigate, claim, approve, and eventually close the ticket.\n\nIf you have more detail"
-        },
-        {
-          "role": "user",
-          "content": "BUG TICKET #2 (filed by <@1082686076491137115>): list"
-        },
-        {
-          "role": "assistant",
-          "content": "✅ Bug ticket #2 has been logged.\n\nThe current bug‑desk workflow (see `bot.js:4924`) expects a clear description of the problem so it can be reproduced and investigated. “list” is too vague – we need to know:\n\n1. **Exact command you ran** (e.g., `-bug list`, `-bugs`, `-bug <something>`).  \n2. **What you expected to happen** (e.g., a list of open tickets, a help message, etc.).  \n3. **What actually happened** (error message, no response, wrong output, etc.).  \n4. If possible, a screenshot or copy‑"
-        },
-        {
-          "role": "user",
-          "content": "and jarvis helps me fix them fr"
-        },
-        {
-          "role": "assistant",
-          "content": "<tool_call>skill<param_key>name</param_key><param_value>discord-bot</param_value></tool_call>"
-        },
-        {
-          "role": "user",
-          "content": "Uhh if you make a ticket"
-        },
-        {
-          "role": "assistant",
-          "content": "Da. Ticket #2 is already filed, and Hyawii receives the report. I checked the Jarvis ticket workflow in `bot.js:4967`: it loads the existing ticket, records the diagnosis with a"
-        }
-      ],
+      "history": [],
       "bonus": 0
     },
     "913497950213267577": {
@@ -389278,7 +389252,7 @@
       "awakeUntil": 1792495559271
     }
   },
-  "jarvis_disabled": true,
+  "jarvis_disabled": false,
   "world_news": [
     {
       "at": "2026-10-20T04:33:20.337Z",
