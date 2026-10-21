@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 181,
+      "bank": 182,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -238791,7 +238791,7 @@
       "username_updated_at": "2026-10-20T00:15:59.138Z"
     },
     "1325111649816023092": {
-      "cash": 332,
+      "cash": 331,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -238828,8 +238828,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 332,
-      "chat_earned": 332,
+      "chat_earned_week": 331,
+      "chat_earned": 331,
       "mee6_level": 12,
       "username": "px.meo",
       "global_name": "Meo",
@@ -319158,8 +319158,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 6,
-      "bot_xp": 113,
-      "bot_total_xp": 1738,
+      "bot_xp": 135,
+      "bot_total_xp": 1760,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -321181,15 +321181,16 @@
     "Volga Shipbuilding"
   ],
   "used_factory_names": [],
-  "inflation": 4.151653138551749,
-  "money_printed": 493.540462966162,
+  "inflation": 4.152073902074988,
+  "money_printed": 493.78735664448425,
   "inflation_adjust": 0,
   "good_crisis": {},
   "custom_events": [],
   "event_chance": 0.3,
   "gsi_volatility": 0.005,
-  "total_bank_reserves": 11754,
+  "total_bank_reserves": 11765,
   "inflation_history": [
+    8,
     7.5,
     7,
     6.5,
@@ -321288,8 +321289,7 @@
     4.124052055116322,
     4.123743494885982,
     4.272719603235814,
-    4.152073902074988,
-    4.151653138551749
+    4.152073902074988
   ],
   "company_id_counter": 0,
   "currency": {
@@ -321301,8 +321301,12 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.59,
+    "rub_per_usd": 4.57,
     "history": [
+      {
+        "rate": 4.52,
+        "at": "2026-10-20T08:17:28.957Z"
+      },
       {
         "rate": 4.55,
         "at": "2026-10-20T08:27:31.158Z"
@@ -321698,13 +321702,9 @@
       {
         "rate": 4.57,
         "at": "2026-10-20T23:57:07.867Z"
-      },
-      {
-        "rate": 4.59,
-        "at": "2026-10-21T00:07:10.202Z"
       }
     ],
-    "last_update": "2026-10-21T00:07:10.202Z",
+    "last_update": "2026-10-20T23:57:07.867Z",
     "manual_override": null
   },
   "national_budget": {
@@ -377630,7 +377630,7 @@
       "780837437987094560": 1792529492373,
       "1456863215815364796": 1792446086957,
       "822184216829231116": 1792537387580,
-      "694662421054488577": 1792541202842,
+      "694662421054488577": 1792541275002,
       "1225275427145121903": 1792495745338,
       "720673212354265168": 1792447719847,
       "1482470388746424423": 1792448288162,
@@ -378012,8 +378012,8 @@
     "1561817323986489504": {
       "id": "1561817323986489504",
       "name": "🇨🇭 𝙎𝙬𝙞𝙨𝙨 𝘾𝙤𝙣𝙛𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙣 🇨🇭",
-      "members": 123,
-      "lastSeen": "2026-10-20T22:19:27.235Z",
+      "members": 125,
+      "lastSeen": "2026-10-21T00:06:53.999Z",
       "joinedAt": "2026-10-19T21:29:54.088Z",
       "owners": [
         "1550582932425416714",
@@ -381457,7 +381457,7 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-21T00:07:10.019Z",
+  "inflation_updated_at": "2026-10-20T23:57:07.665Z",
   "gini_history": [
     {
       "gini": 99.98113678218246,
@@ -386778,6 +386778,21 @@
         {
           "role": "assistant",
           "content": "It looks like this isn’t a bug or issue report for the bot. If you encounter a problem with a command (e.g., ‑work, ‑bank, ‑election, etc.) or notice unexpected behavior, please open a proper report with the exact command you used, what happened versus what you expected, and any relevant screenshot. The report will be logged for Hyawii. If you have a different question, feel free to ask in the appropriate channel."
+        }
+      ],
+      "bonus": 0
+    },
+    "1155221526262579290": {
+      "date": "2026-10-21",
+      "used": 1,
+      "history": [
+        {
+          "role": "user",
+          "content": "What is this for?"
+        },
+        {
+          "role": "assistant",
+          "content": "This is the **🇨🇭 Swiss Confederation** Discord server, a role‑play‑economy simulation.  \n\n- **Currency:** Swiss Franc (CHF) – 1 CHF = 1 P1.  \n- **Starting cash:** 100 000 CHF for new players.  \n- **Economy stats:** GDP 107 427 rubles, GSI 96, inflation 4.15 %, gold backing 0 %.  \n\nMembers are assigned roles such as **Supreme Court Judge**, **Swiss Citizen**, and party affiliations (e.g., Free Democratic Party of Switzerland).  \n\nThe bot provides a suite of economy‑related commands (‑work, ‑ban"
         }
       ],
       "bonus": 0
