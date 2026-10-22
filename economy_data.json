@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 7944,
+      "bank": 7941,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -319069,7 +319069,7 @@
       "username_updated_at": "2026-10-20T00:15:59.160Z"
     },
     "913497950213267577": {
-      "cash": 100,
+      "cash": 101,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -319091,8 +319091,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 7,
-      "bot_xp": 76,
-      "bot_total_xp": 2281,
+      "bot_xp": 96,
+      "bot_total_xp": 2301,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -319106,15 +319106,15 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 100,
-      "chat_earned": 100,
+      "chat_earned_week": 101,
+      "chat_earned": 101,
       "mee6_level": 7,
       "username": "poetrs0",
       "global_name": "Poetr",
       "username_updated_at": "2026-10-20T00:15:59.160Z"
     },
     "1554879270646452315": {
-      "cash": 334,
+      "cash": 336,
       "bank": 0,
       "resources": {},
       "inventory": {},
@@ -319151,8 +319151,8 @@
       "deal_reminder_sent": null,
       "pet_food_source": {},
       "chat_week": "2026-W43",
-      "chat_earned_week": 334,
-      "chat_earned": 334,
+      "chat_earned_week": 336,
+      "chat_earned": 336,
       "mee6_level": 10,
       "username": "imeowforwifey",
       "global_name": "AlabamaAroze",
@@ -321070,8 +321070,8 @@
       "last_illegal": null,
       "total_heat_generated": 0,
       "bot_level": 2,
-      "bot_xp": 129,
-      "bot_total_xp": 384,
+      "bot_xp": 150,
+      "bot_total_xp": 405,
       "daily_work_count": 0,
       "shock_worker": false,
       "last_laylow": null,
@@ -377954,6 +377954,13 @@
       "username": "hyawii2.0",
       "action": "jarvis-on",
       "details": ""
+    },
+    {
+      "at": "2026-10-22T19:00:55.076Z",
+      "by": "1082686076491137115",
+      "username": "hyawii2.0",
+      "action": "addcandidate",
+      "details": "hyawii (C1)"
     }
   ],
   "total_rubles_history": [
@@ -378434,7 +378441,7 @@
       "1036345613777907823": 1792608658577,
       "1558219605753860178": 1792505737864,
       "1325111649816023092": 1792695177651,
-      "913497950213267577": 1792695517037,
+      "913497950213267577": 1792695647145,
       "1128425608146325544": 1792691743982,
       "1554879270646452315": 1792695628548,
       "780837437987094560": 1792682905778,
@@ -378531,7 +378538,7 @@
       "1545375870158372887": 1792587463978,
       "1550448231274782824": 1792588391775,
       "981844761847660554": 1792588938544,
-      "1394747030412329070": 1792695320656,
+      "1394747030412329070": 1792695665082,
       "730696111198699600": 1792658478438,
       "1229741033265299506": 1792693052660,
       "1530777750217031721": 1792655810633,
@@ -379508,13 +379515,37 @@
     "refunded": 0
   },
   "elections": {
-    "enabled": false,
-    "active": null,
+    "enabled": true,
+    "active": {
+      "id": "EL1",
+      "title": "Premiership Election",
+      "candidates": [
+        {
+          "id": "C1",
+          "name": "hyawii",
+          "userId": "1082686076491137115",
+          "avatarHash": "a_86ae82c443261cc14f1ca03fbe5376f9",
+          "avatarAnimated": true,
+          "ideology": null,
+          "addedBy": "hyawii2.0",
+          "addedAt": "2026-10-22T19:00:54.431Z"
+        }
+      ],
+      "votes": {},
+      "timeline": [],
+      "startsAt": null,
+      "endsAt": null,
+      "status": "staged",
+      "winnerId": null,
+      "updateMessageId": null,
+      "next_cid": 1
+    },
     "history": [],
     "updateChannelId": null,
     "confirmChannelId": null,
     "animated": {},
-    "next_num": 0
+    "next_num": 1,
+    "avatars_refreshed_at": "2026-10-22T19:00:56.066Z"
   },
   "world1959": {
     "tick": 72,
