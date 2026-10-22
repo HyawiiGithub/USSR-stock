@@ -321216,6 +321216,11 @@
   "gsi_history": [
     {
       "price": 95,
+      "change_percent": 0.1166489721518618,
+      "recorded_at": "2026-10-22T10:11:25.876Z"
+    },
+    {
+      "price": 95,
       "change_percent": 0.0936055624644987,
       "recorded_at": "2026-10-22T10:16:25.797Z"
     },
@@ -321708,11 +321713,6 @@
       "price": 87,
       "change_percent": 1.3439133401808196,
       "recorded_at": "2026-10-22T18:38:43.435Z"
-    },
-    {
-      "price": 83,
-      "change_percent": -4.404876812479933,
-      "recorded_at": "2026-10-22T18:43:36.386Z"
     }
   ],
   "factory_names": [
@@ -382732,7 +382732,7 @@
       },
       "1506785783506534426": {
         "principal": 6477,
-        "owed": 6569,
+        "owed": 6571,
         "forced": true,
         "rate": 7,
         "rateWeekly": 7,
@@ -390709,9 +390709,13 @@
       {
         "t": "2026-10-22T17:25:47.435Z",
         "v": 0
+      },
+      {
+        "t": "2026-10-22T18:43:32.476Z",
+        "v": 0
       }
     ],
-    "last_tick": 1792689947435
+    "last_tick": 1792694612476
   },
   "banks": {},
   "loan_rates": {
@@ -390722,11 +390726,11 @@
     "gulag_min": 25000,
     "risk_floor": 500,
     "audit_per_tick": 20,
-    "audit_cursor": 1180
+    "audit_cursor": 1200
   },
   "credit": {
     "1000271630154596473": {
-      "score": 442,
+      "score": 441,
       "loans": 1,
       "repaid": 0,
       "fullRepays": 0,
@@ -390735,7 +390739,7 @@
       "lastForcedAt": "2026-10-19T20:02:35.420Z"
     },
     "1506785783506534426": {
-      "score": 454,
+      "score": 453,
       "loans": 1,
       "repaid": 0,
       "fullRepays": 0,
