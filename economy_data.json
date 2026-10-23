@@ -321942,8 +321942,8 @@
     "Volga Shipbuilding"
   ],
   "used_factory_names": [],
-  "inflation": 3.6295487834468867,
-  "money_printed": 409.9595338392503,
+  "inflation": 3.629760479940199,
+  "money_printed": 409.7545540723307,
   "inflation_adjust": 0,
   "good_crisis": {},
   "custom_events": [],
@@ -321951,7 +321951,6 @@
   "gsi_volatility": 0.005,
   "total_bank_reserves": 47825,
   "inflation_history": [
-    3.5371081869341845,
     3.541485359305839,
     3.541330610998185,
     3.5411759400646847,
@@ -322050,7 +322049,8 @@
     3.630015623218837,
     3.6298431772532855,
     3.629695943541658,
-    3.6295487834468867
+    3.6295487834468867,
+    3.629760479940199
   ],
   "company_id_counter": 0,
   "currency": {
@@ -322062,12 +322062,8 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4.54,
+    "rub_per_usd": 4.52,
     "history": [
-      {
-        "rate": 4.56,
-        "at": "2026-10-23T03:23:45.354Z"
-      },
       {
         "rate": 4.58,
         "at": "2026-10-23T03:33:45.474Z"
@@ -322463,9 +322459,13 @@
       {
         "rate": 4.54,
         "at": "2026-10-23T18:34:03.983Z"
+      },
+      {
+        "rate": 4.52,
+        "at": "2026-10-23T18:44:04.052Z"
       }
     ],
-    "last_update": "2026-10-23T18:34:03.983Z",
+    "last_update": "2026-10-23T18:44:04.052Z",
     "manual_override": null
   },
   "national_budget": {
@@ -383244,7 +383244,7 @@
       },
       "1506785783506534426": {
         "principal": 6477,
-        "owed": 6617,
+        "owed": 6619,
         "forced": true,
         "rate": 7,
         "rateWeekly": 7,
@@ -383262,7 +383262,7 @@
     "total_redeemed": 0,
     "total_interest_paid": 0
   },
-  "inflation_updated_at": "2026-10-23T18:34:03.621Z",
+  "inflation_updated_at": "2026-10-23T18:44:03.673Z",
   "gini_history": [
     {
       "gini": 99.96508677236613,
@@ -391369,9 +391369,13 @@
       {
         "t": "2026-10-23T17:43:33.387Z",
         "v": 0
+      },
+      {
+        "t": "2026-10-23T18:43:33.400Z",
+        "v": 0
       }
     ],
-    "last_tick": 1792777413387
+    "last_tick": 1792781013400
   },
   "banks": {},
   "loan_rates": {
@@ -391382,11 +391386,11 @@
     "gulag_min": 25000,
     "risk_floor": 500,
     "audit_per_tick": 20,
-    "audit_cursor": 1660
+    "audit_cursor": 1680
   },
   "credit": {
     "1000271630154596473": {
-      "score": 418,
+      "score": 417,
       "loans": 1,
       "repaid": 0,
       "fullRepays": 0,
@@ -391395,7 +391399,7 @@
       "lastForcedAt": "2026-10-19T20:02:35.420Z"
     },
     "1506785783506534426": {
-      "score": 430,
+      "score": 429,
       "loans": 1,
       "repaid": 0,
       "fullRepays": 0,
