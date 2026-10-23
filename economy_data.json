@@ -92,7 +92,7 @@
     },
     "1513968015048184039": {
       "cash": 0,
-      "bank": 15481,
+      "bank": 15792,
       "resources": {},
       "inventory": {},
       "company_id": null,
@@ -322475,7 +322475,7 @@
   },
   "national_budget": {
     "tax_collected": 0,
-    "trade_income": 20809,
+    "trade_income": 21120,
     "other_income": 0,
     "defense_spending": 0,
     "payroll_paid": 0,
@@ -322975,10 +322975,15 @@
         "kind": "trade",
         "amount": 309,
         "at": "2026-10-23T21:56:00.700Z"
+      },
+      {
+        "kind": "trade",
+        "amount": 311,
+        "at": "2026-10-23T22:56:00.912Z"
       }
     ],
     "spending_history": [],
-    "last_update": "2026-10-23T21:56:00.700Z",
+    "last_update": "2026-10-23T22:56:00.912Z",
     "balance_history": [
       {
         "balance": 18369,
@@ -379922,9 +379927,9 @@
     "board_style": "tno"
   },
   "world1959": {
-    "tick": 99,
-    "date": "1962-11-25T00:00:00.000Z",
-    "lastTickAt": "2026-10-23T21:56:00.169Z",
+    "tick": 100,
+    "date": "1962-12-02T00:00:00.000Z",
+    "lastTickAt": "2026-10-23T22:56:00.359Z",
     "tickMinutes": 60,
     "paused": false,
     "milspending": 10,
@@ -379954,9 +379959,9 @@
         "ideology": "Liberal Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 1012.6,
+        "gdp": 1018.7,
         "pop": 183,
-        "stability": 98.9210580731718,
+        "stability": 99,
         "military": 94,
         "readiness": 85,
         "relations": 0,
@@ -379969,10 +379974,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 851.2
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 856.3
@@ -380088,9 +380089,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 1012.6
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 1018.7
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Defense Appropriations Act",
+            "passed": false
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -380155,9 +380166,9 @@
         "ideology": "Conservatism",
         "bloc": "nato",
         "personality": "diplomatic",
-        "gdp": 143.1,
+        "gdp": 143.5,
         "pop": 52,
-        "stability": 77.36674353919241,
+        "stability": 77.17436854998952,
         "military": 56,
         "readiness": 70,
         "relations": 1,
@@ -380170,10 +380181,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 131.5
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 131.9
@@ -380289,9 +380296,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 143.1
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 143.5
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Civil Rights Measure",
+            "passed": true
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -380356,9 +380373,9 @@
         "ideology": "Gaullism",
         "bloc": "nato",
         "personality": "opportunistic",
-        "gdp": 147.3,
+        "gdp": 149.2,
         "pop": 46,
-        "stability": 67.34901244007716,
+        "stability": 67.68855473804959,
         "military": 58,
         "readiness": 68,
         "relations": -30,
@@ -380371,10 +380388,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 135.7
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 136.1
@@ -380490,9 +380503,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 147.3
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 147.7
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Industrial Subsidy Bill",
+            "passed": true
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -380557,9 +380580,9 @@
         "ideology": "Christian Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 228.5,
+        "gdp": 229.9,
         "pop": 53,
-        "stability": 99,
+        "stability": 98.44304886134616,
         "military": 45,
         "readiness": 65,
         "relations": 0,
@@ -380572,10 +380595,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 190.2
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 191.3
@@ -380691,9 +380710,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 228.5
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 229.9
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Defense Appropriations Act",
+            "passed": false
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -380758,10 +380787,10 @@
         "ideology": "Christian Democracy",
         "bloc": "nato",
         "personality": "diplomatic",
-        "gdp": 94.2,
+        "gdp": 94.5,
         "pop": 50,
-        "stability": 61.001386262238995,
-        "military": 35,
+        "stability": 62.00016220648241,
+        "military": 36,
         "readiness": 55,
         "relations": 1,
         "nukes": false,
@@ -380773,10 +380802,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 85.5
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 85.8
@@ -380892,9 +380917,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 94.2
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 94.5
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Defense Appropriations Act",
+            "passed": true
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -380959,9 +380994,9 @@
         "ideology": "Conservatism",
         "bloc": "nato",
         "personality": "defensive",
-        "gdp": 61.9,
+        "gdp": 62.1,
         "pop": 18,
-        "stability": 73.53395047859684,
+        "stability": 73.79609031616195,
         "military": 23,
         "readiness": 95,
         "relations": 0,
@@ -380974,10 +381009,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 54.9
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 55.1
@@ -381093,9 +381124,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 61.9
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 62.1
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Civil Rights Measure",
+            "passed": false
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -381160,9 +381201,9 @@
         "ideology": "Liberal Democracy",
         "bloc": "nato",
         "personality": "economic",
-        "gdp": 109.5,
+        "gdp": 110.2,
         "pop": 94,
-        "stability": 98.13304307734678,
+        "stability": 98.081449906919,
         "military": 18,
         "readiness": 45,
         "relations": 0,
@@ -381175,10 +381216,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 92
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 92.6
@@ -381294,9 +381331,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 109.5
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 110.2
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Trade Tariff Revision",
+            "passed": false
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -381363,7 +381410,7 @@
         "personality": "defensive",
         "gdp": 15,
         "pop": 28,
-        "stability": 62.22650900298157,
+        "stability": 62.680179857360564,
         "military": 40,
         "readiness": 95,
         "relations": 0,
@@ -381376,10 +381423,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 15
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 15
@@ -381495,6 +381538,10 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 15
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 15
           }
         ],
         "bills": []
@@ -381507,9 +381554,9 @@
         "ideology": "Marxism-Leninism",
         "bloc": "wp",
         "personality": "defensive",
-        "gdp": 39.9,
+        "gdp": 40,
         "pop": 30,
-        "stability": 53.184326427219894,
+        "stability": 54.06909597328038,
         "military": 35,
         "readiness": 95,
         "relations": 0,
@@ -381522,10 +381569,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 37
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 37.1
@@ -381641,6 +381684,10 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 39.9
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 40
           }
         ],
         "bills": []
@@ -381653,9 +381700,9 @@
         "ideology": "Marxism-Leninism",
         "bloc": "wp",
         "personality": "defensive",
-        "gdp": 44.9,
+        "gdp": 45,
         "pop": 17,
-        "stability": 50.11857851775106,
+        "stability": 50.512631732103294,
         "military": 30,
         "readiness": 95,
         "relations": 0,
@@ -381668,10 +381715,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 42
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 42.1
@@ -381787,6 +381830,10 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 44.9
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 45
           }
         ],
         "bills": []
@@ -381799,9 +381846,9 @@
         "ideology": "Maoism",
         "bloc": "wp",
         "personality": "aggressive",
-        "gdp": 93,
+        "gdp": 93.3,
         "pop": 660,
-        "stability": 43.34925845684239,
+        "stability": 43.16811783646533,
         "military": 100,
         "readiness": 65,
         "relations": 0,
@@ -381814,10 +381861,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 84.3
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 84.6
@@ -381933,6 +381976,10 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 93
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 93.3
           }
         ],
         "bills": []
@@ -381945,9 +381992,9 @@
         "ideology": "Titoism",
         "bloc": "neutral",
         "personality": "opportunistic",
-        "gdp": 27.9,
+        "gdp": 28,
         "pop": 18,
-        "stability": 61.324653185169865,
+        "stability": 60.778584249260874,
         "military": 38,
         "readiness": 58,
         "relations": 0,
@@ -381960,10 +382007,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 25
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 25.1
@@ -382079,6 +382122,10 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 27.9
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 28
           }
         ],
         "bills": []
@@ -382091,9 +382138,9 @@
         "ideology": "Non-Alignment",
         "bloc": "neutral",
         "personality": "diplomatic",
-        "gdp": 75.4,
+        "gdp": 75.6,
         "pop": 440,
-        "stability": 60.06565766641415,
+        "stability": 60.15329938822293,
         "military": 30,
         "readiness": 50,
         "relations": 15,
@@ -382106,10 +382153,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 69.6
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 69.8
@@ -382225,9 +382268,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 75.4
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 75.6
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Highway Infrastructure Bill",
+            "passed": true
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -382294,7 +382347,7 @@
         "personality": "aggressive",
         "gdp": 12,
         "pop": 26,
-        "stability": 56.923991678139004,
+        "stability": 56.543748302735565,
         "military": 100,
         "readiness": 55,
         "relations": 0,
@@ -382307,10 +382360,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 12
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 12
@@ -382426,6 +382475,10 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 12
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 12
           }
         ],
         "bills": []
@@ -382438,9 +382491,9 @@
         "ideology": "Populism",
         "bloc": "neutral",
         "personality": "economic",
-        "gdp": 46.3,
+        "gdp": 46.6,
         "pop": 72,
-        "stability": 98.44108045237328,
+        "stability": 99,
         "military": 26,
         "readiness": 45,
         "relations": 0,
@@ -382453,10 +382506,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 39
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 39.2
@@ -382572,9 +382621,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 46.3
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 46.6
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Immigration Quota Act",
+            "passed": false
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -382639,9 +382698,9 @@
         "ideology": "Social Democracy",
         "bloc": "neutral",
         "personality": "economic",
-        "gdp": 34.8,
+        "gdp": 35,
         "pop": 7,
-        "stability": 99,
+        "stability": 98.63170600605991,
         "military": 28,
         "readiness": 60,
         "relations": 0,
@@ -382654,10 +382713,6 @@
         "lastElectionTick": 0,
         "lastIncidentTick": -999,
         "gdpHistory": [
-          {
-            "t": "1962-05-06T00:00:00.000Z",
-            "v": 29
-          },
           {
             "t": "1962-05-13T00:00:00.000Z",
             "v": 29.2
@@ -382773,9 +382828,19 @@
           {
             "t": "1962-11-25T00:00:00.000Z",
             "v": 34.8
+          },
+          {
+            "t": "1962-12-02T00:00:00.000Z",
+            "v": 35
           }
         ],
         "bills": [
+          {
+            "tick": 100,
+            "date": "1962-12-02",
+            "title": "Industrial Subsidy Bill",
+            "passed": false
+          },
           {
             "tick": 90,
             "date": "1962-09-23",
@@ -382835,12 +382900,8 @@
     },
     "aiWars": [],
     "matrix": {},
-    "lastIncome": 309,
+    "lastIncome": 311,
     "gdpHistory": [
-      {
-        "t": "1961-12-17T00:00:00.000Z",
-        "v": 111.28
-      },
       {
         "t": "1961-12-24T00:00:00.000Z",
         "v": 111.51
@@ -383036,13 +383097,13 @@
       {
         "t": "1962-11-25T00:00:00.000Z",
         "v": 146.55
+      },
+      {
+        "t": "1962-12-02T00:00:00.000Z",
+        "v": 146.86
       }
     ],
     "goldHistory": [
-      {
-        "t": "1961-12-17T00:00:00.000Z",
-        "v": 0
-      },
       {
         "t": "1961-12-24T00:00:00.000Z",
         "v": 0
@@ -383237,6 +383298,10 @@
       },
       {
         "t": "1962-11-25T00:00:00.000Z",
+        "v": 0
+      },
+      {
+        "t": "1962-12-02T00:00:00.000Z",
         "v": 0
       }
     ]
@@ -391448,56 +391513,6 @@
   "jarvis_disabled": false,
   "world_news": [
     {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "United States: rejected \"Nuclear Test Moratorium\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "United Kingdom: rejected \"Immigration Quota Act\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "France: passed \"Nuclear Test Moratorium\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "West Germany: passed \"Nuclear Test Moratorium\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "Italy: rejected \"Foreign Aid Package\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "Canada: rejected \"Industrial Subsidy Bill\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "Japan: passed \"Civil Rights Measure\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "India: passed \"Immigration Quota Act\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "Brazil: passed \"Nuclear Test Moratorium\""
-    },
-    {
-      "at": "2026-10-22T16:51:46.150Z",
-      "tag": "VOTE",
-      "text": "Sweden: rejected \"Immigration Quota Act\""
-    },
-    {
       "at": "2026-10-23T02:54:13.680Z",
       "tag": "VOTE",
       "text": "United States: rejected \"Nuclear Test Moratorium\""
@@ -391596,6 +391611,56 @@
       "at": "2026-10-23T12:54:42.091Z",
       "tag": "VOTE",
       "text": "Sweden: passed \"Highway Infrastructure Bill\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "United States: rejected \"Defense Appropriations Act\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "United Kingdom: passed \"Civil Rights Measure\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "France: passed \"Industrial Subsidy Bill\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "West Germany: rejected \"Defense Appropriations Act\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "Italy: passed \"Defense Appropriations Act\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "Canada: rejected \"Civil Rights Measure\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "Japan: rejected \"Trade Tariff Revision\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "India: passed \"Highway Infrastructure Bill\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "Brazil: rejected \"Immigration Quota Act\""
+    },
+    {
+      "at": "2026-10-23T22:56:00.360Z",
+      "tag": "VOTE",
+      "text": "Sweden: rejected \"Industrial Subsidy Bill\""
     }
   ],
   "ai_memory": {},
