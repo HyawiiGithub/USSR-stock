@@ -45,6 +45,11 @@
       "price": 100,
       "change_percent": 0,
       "recorded_at": "2026-10-28T19:23:07.748Z"
+    },
+    {
+      "price": 100,
+      "change_percent": 0.09373074286738459,
+      "recorded_at": "2026-10-28T19:23:57.957Z"
     }
   ],
   "factory_names": [
@@ -103,7 +108,15 @@
       }
     ],
     "spending_history": [],
-    "last_update": "2026-10-28T19:23:09.009Z"
+    "last_update": "2026-10-28T19:23:09.009Z",
+    "balance_history": [
+      {
+        "balance": 77,
+        "income": 77,
+        "spending": 0,
+        "at": "2026-10-28T19:23:58.980Z"
+      }
+    ]
   },
   "state_companies": [],
   "state_directors": {},
@@ -127,7 +140,12 @@
   "compensation_log": [],
   "trade_schedules": [],
   "owner_logs": [],
-  "total_rubles_history": [],
+  "total_rubles_history": [
+    {
+      "total": 77,
+      "at": "2026-10-28T19:23:58.979Z"
+    }
+  ],
   "gold_rush": null,
   "heat_global": 0,
   "police_budget": 250000,
@@ -927,5 +945,623 @@
     "bought_count": 0
   },
   "mafias": [],
+  "gini_history": [
+    {
+      "gini": 0,
+      "top10": 0,
+      "at": "2026-10-28T19:23:58.979Z"
+    }
+  ],
+  "gdp_history": [
+    {
+      "gdp": 77,
+      "at": "2026-10-28T19:23:58.980Z"
+    }
+  ],
+  "soldier_history": [],
+  "servers": {
+    "605950584859918337": {
+      "owners": [],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0,
+      "config": {
+        "brand": {
+          "name": null,
+          "color": 5793266,
+          "footer": null
+        },
+        "government": {
+          "type": "democracy",
+          "name": "Republic",
+          "democratic": true
+        },
+        "congress": {
+          "name": "Congress",
+          "seats": 10,
+          "color": 5793266,
+          "style": "classic",
+          "layout": "classic",
+          "autoSeats": true,
+          "parties": [],
+          "channelId": null,
+          "roleId": null,
+          "termDays": 30,
+          "passPct": 50
+        },
+        "stateBank": {
+          "name": "State Bank",
+          "chairId": null,
+          "mode": "finance_chair",
+          "interest": 5,
+          "prime": 7.5,
+          "discount": 4.5,
+          "reserve": 10
+        },
+        "elections": {
+          "channelId": null,
+          "roleId": null,
+          "announceChannelId": null,
+          "defaultHours": 48,
+          "cantons": []
+        },
+        "stocks": {
+          "channelId": null,
+          "intervalMinutes": 15,
+          "live": true
+        },
+        "jarvis": {
+          "mode": "ping",
+          "allow": [],
+          "neutral": true
+        },
+        "mining": {
+          "enabled": false,
+          "region": "russia",
+          "wage": 20,
+          "autoTickMinutes": 60
+        },
+        "regulations": {
+          "incomeTax": 5,
+          "corporateTax": 6.5,
+          "minWage": 10,
+          "maxWage": 100,
+          "resourceRoyalty": 5,
+          "tradeTax": 3.5
+        },
+        "notifications": {
+          "ssrBoard": false,
+          "taxes": false
+        },
+        "institutions": {
+          "government": "Government",
+          "congress": "Congress",
+          "stateBank": "State Bank",
+          "centralBank": "Central Bank",
+          "financeMinistry": "Ministry of Finance",
+          "treasury": "Treasury",
+          "headOfState": "President",
+          "headOfGovernment": "Prime Minister",
+          "miningAuthority": "Mining Authority",
+          "electionCommission": "Election Commission",
+          "assembly": "Assembly",
+          "judiciary": "Supreme Court"
+        }
+      },
+      "treasury": 0,
+      "stockpile": {},
+      "stateMines": [],
+      "mineSeq": 0
+    },
+    "1365639669206880297": {
+      "owners": [],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0,
+      "config": {
+        "brand": {
+          "name": null,
+          "color": 5793266,
+          "footer": null
+        },
+        "government": {
+          "type": "democracy",
+          "name": "Republic",
+          "democratic": true
+        },
+        "congress": {
+          "name": "Congress",
+          "seats": 10,
+          "color": 5793266,
+          "style": "classic",
+          "layout": "classic",
+          "autoSeats": true,
+          "parties": [],
+          "channelId": null,
+          "roleId": null,
+          "termDays": 30,
+          "passPct": 50
+        },
+        "stateBank": {
+          "name": "State Bank",
+          "chairId": null,
+          "mode": "finance_chair",
+          "interest": 5,
+          "prime": 7.5,
+          "discount": 4.5,
+          "reserve": 10
+        },
+        "elections": {
+          "channelId": null,
+          "roleId": null,
+          "announceChannelId": null,
+          "defaultHours": 48,
+          "cantons": []
+        },
+        "stocks": {
+          "channelId": null,
+          "intervalMinutes": 15,
+          "live": true
+        },
+        "jarvis": {
+          "mode": "ping",
+          "allow": [],
+          "neutral": true
+        },
+        "mining": {
+          "enabled": false,
+          "region": "russia",
+          "wage": 20,
+          "autoTickMinutes": 60
+        },
+        "regulations": {
+          "incomeTax": 5,
+          "corporateTax": 6.5,
+          "minWage": 10,
+          "maxWage": 100,
+          "resourceRoyalty": 5,
+          "tradeTax": 3.5
+        },
+        "notifications": {
+          "ssrBoard": false,
+          "taxes": false
+        },
+        "institutions": {
+          "government": "Government",
+          "congress": "Congress",
+          "stateBank": "State Bank",
+          "centralBank": "Central Bank",
+          "financeMinistry": "Ministry of Finance",
+          "treasury": "Treasury",
+          "headOfState": "President",
+          "headOfGovernment": "Prime Minister",
+          "miningAuthority": "Mining Authority",
+          "electionCommission": "Election Commission",
+          "assembly": "Assembly",
+          "judiciary": "Supreme Court"
+        }
+      },
+      "treasury": 0,
+      "stockpile": {},
+      "stateMines": [],
+      "mineSeq": 0
+    },
+    "1404571014750539917": {
+      "owners": [],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0,
+      "config": {
+        "brand": {
+          "name": null,
+          "color": 5793266,
+          "footer": null
+        },
+        "government": {
+          "type": "democracy",
+          "name": "Republic",
+          "democratic": true
+        },
+        "congress": {
+          "name": "Congress",
+          "seats": 10,
+          "color": 5793266,
+          "style": "classic",
+          "layout": "classic",
+          "autoSeats": true,
+          "parties": [],
+          "channelId": null,
+          "roleId": null,
+          "termDays": 30,
+          "passPct": 50
+        },
+        "stateBank": {
+          "name": "State Bank",
+          "chairId": null,
+          "mode": "finance_chair",
+          "interest": 5,
+          "prime": 7.5,
+          "discount": 4.5,
+          "reserve": 10
+        },
+        "elections": {
+          "channelId": null,
+          "roleId": null,
+          "announceChannelId": null,
+          "defaultHours": 48,
+          "cantons": []
+        },
+        "stocks": {
+          "channelId": null,
+          "intervalMinutes": 15,
+          "live": true
+        },
+        "jarvis": {
+          "mode": "ping",
+          "allow": [],
+          "neutral": true
+        },
+        "mining": {
+          "enabled": false,
+          "region": "russia",
+          "wage": 20,
+          "autoTickMinutes": 60
+        },
+        "regulations": {
+          "incomeTax": 5,
+          "corporateTax": 6.5,
+          "minWage": 10,
+          "maxWage": 100,
+          "resourceRoyalty": 5,
+          "tradeTax": 3.5
+        },
+        "notifications": {
+          "ssrBoard": false,
+          "taxes": false
+        },
+        "institutions": {
+          "government": "Government",
+          "congress": "Congress",
+          "stateBank": "State Bank",
+          "centralBank": "Central Bank",
+          "financeMinistry": "Ministry of Finance",
+          "treasury": "Treasury",
+          "headOfState": "President",
+          "headOfGovernment": "Prime Minister",
+          "miningAuthority": "Mining Authority",
+          "electionCommission": "Election Commission",
+          "assembly": "Assembly",
+          "judiciary": "Supreme Court"
+        }
+      },
+      "treasury": 0,
+      "stockpile": {},
+      "stateMines": [],
+      "mineSeq": 0
+    },
+    "1557847860983242752": {
+      "owners": [],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0,
+      "config": {
+        "brand": {
+          "name": null,
+          "color": 5793266,
+          "footer": null
+        },
+        "government": {
+          "type": "democracy",
+          "name": "Republic",
+          "democratic": true
+        },
+        "congress": {
+          "name": "Congress",
+          "seats": 10,
+          "color": 5793266,
+          "style": "classic",
+          "layout": "classic",
+          "autoSeats": true,
+          "parties": [],
+          "channelId": null,
+          "roleId": null,
+          "termDays": 30,
+          "passPct": 50
+        },
+        "stateBank": {
+          "name": "State Bank",
+          "chairId": null,
+          "mode": "finance_chair",
+          "interest": 5,
+          "prime": 7.5,
+          "discount": 4.5,
+          "reserve": 10
+        },
+        "elections": {
+          "channelId": null,
+          "roleId": null,
+          "announceChannelId": null,
+          "defaultHours": 48,
+          "cantons": []
+        },
+        "stocks": {
+          "channelId": null,
+          "intervalMinutes": 15,
+          "live": true
+        },
+        "jarvis": {
+          "mode": "ping",
+          "allow": [],
+          "neutral": true
+        },
+        "mining": {
+          "enabled": false,
+          "region": "russia",
+          "wage": 20,
+          "autoTickMinutes": 60
+        },
+        "regulations": {
+          "incomeTax": 5,
+          "corporateTax": 6.5,
+          "minWage": 10,
+          "maxWage": 100,
+          "resourceRoyalty": 5,
+          "tradeTax": 3.5
+        },
+        "notifications": {
+          "ssrBoard": false,
+          "taxes": false
+        },
+        "institutions": {
+          "government": "Government",
+          "congress": "Congress",
+          "stateBank": "State Bank",
+          "centralBank": "Central Bank",
+          "financeMinistry": "Ministry of Finance",
+          "treasury": "Treasury",
+          "headOfState": "President",
+          "headOfGovernment": "Prime Minister",
+          "miningAuthority": "Mining Authority",
+          "electionCommission": "Election Commission",
+          "assembly": "Assembly",
+          "judiciary": "Supreme Court"
+        }
+      },
+      "treasury": 0,
+      "stockpile": {},
+      "stateMines": [],
+      "mineSeq": 0
+    },
+    "1561817323986489504": {
+      "owners": [],
+      "startingCash": 500,
+      "startingBank": 0,
+      "soldiersPerRole": 10000,
+      "currency": {
+        "code": null,
+        "symbol": null,
+        "name": null,
+        "rate": 1,
+        "set": false
+      },
+      "supply": 0,
+      "printed": 0,
+      "workPrint": 15,
+      "workChannelId": null,
+      "resources": null,
+      "works": 0,
+      "config": {
+        "brand": {
+          "name": null,
+          "color": 5793266,
+          "footer": null
+        },
+        "government": {
+          "type": "democracy",
+          "name": "Republic",
+          "democratic": true
+        },
+        "congress": {
+          "name": "Congress",
+          "seats": 10,
+          "color": 5793266,
+          "style": "classic",
+          "layout": "classic",
+          "autoSeats": true,
+          "parties": [],
+          "channelId": null,
+          "roleId": null,
+          "termDays": 30,
+          "passPct": 50
+        },
+        "stateBank": {
+          "name": "State Bank",
+          "chairId": null,
+          "mode": "finance_chair",
+          "interest": 5,
+          "prime": 7.5,
+          "discount": 4.5,
+          "reserve": 10
+        },
+        "elections": {
+          "channelId": null,
+          "roleId": null,
+          "announceChannelId": null,
+          "defaultHours": 48,
+          "cantons": []
+        },
+        "stocks": {
+          "channelId": null,
+          "intervalMinutes": 15,
+          "live": true
+        },
+        "jarvis": {
+          "mode": "ping",
+          "allow": [],
+          "neutral": true
+        },
+        "mining": {
+          "enabled": false,
+          "region": "russia",
+          "wage": 20,
+          "autoTickMinutes": 60
+        },
+        "regulations": {
+          "incomeTax": 5,
+          "corporateTax": 6.5,
+          "minWage": 10,
+          "maxWage": 100,
+          "resourceRoyalty": 5,
+          "tradeTax": 3.5
+        },
+        "notifications": {
+          "ssrBoard": false,
+          "taxes": false
+        },
+        "institutions": {
+          "government": "Government",
+          "congress": "Congress",
+          "stateBank": "State Bank",
+          "centralBank": "Central Bank",
+          "financeMinistry": "Ministry of Finance",
+          "treasury": "Treasury",
+          "headOfState": "President",
+          "headOfGovernment": "Prime Minister",
+          "miningAuthority": "Mining Authority",
+          "electionCommission": "Election Commission",
+          "assembly": "Assembly",
+          "judiciary": "Supreme Court"
+        }
+      },
+      "treasury": 0,
+      "stockpile": {},
+      "stateMines": [],
+      "mineSeq": 0
+    }
+  },
+  "debt_history": [
+    {
+      "total": 0,
+      "gdp": 77,
+      "ratio": 0,
+      "at": "2026-10-28T19:23:58.981Z"
+    }
+  ],
+  "loans": {
+    "central": {},
+    "ssr": {}
+  },
+  "foreign_bonds": {
+    "bonds": [],
+    "total_issued": 0,
+    "total_redeemed": 0,
+    "total_interest_paid": 0
+  },
+  "pop_history": [
+    {
+      "total": 1,
+      "citizens": 1,
+      "at": "2026-10-28T19:23:58.981Z"
+    }
+  ],
+  "server_econ": {
+    "1365639669206880297": {
+      "history": [
+        {
+          "at": "2026-10-28T19:23:58.981Z",
+          "wealth": 0,
+          "members": 1,
+          "works": 0
+        }
+      ],
+      "works": 0
+    },
+    "1404571014750539917": {
+      "history": [
+        {
+          "at": "2026-10-28T19:23:58.982Z",
+          "wealth": 0,
+          "members": 3,
+          "works": 0
+        }
+      ],
+      "works": 0
+    },
+    "1557847860983242752": {
+      "history": [
+        {
+          "at": "2026-10-28T19:23:58.982Z",
+          "wealth": 0,
+          "members": 1,
+          "works": 0
+        }
+      ],
+      "works": 0
+    },
+    "1561817323986489504": {
+      "history": [
+        {
+          "at": "2026-10-28T19:23:58.982Z",
+          "wealth": 0,
+          "members": 13,
+          "works": 0
+        }
+      ],
+      "works": 0
+    }
+  },
+  "debt_watch_band": 0,
   "access_codes_hashed": {}
 }
