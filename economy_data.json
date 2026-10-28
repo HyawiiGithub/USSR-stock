@@ -1,5 +1,44 @@
 {
-  "users": {},
+  "users": {
+    "1513968015048184039": {
+      "cash": 0,
+      "bank": 77,
+      "resources": {},
+      "inventory": {},
+      "company_id": null,
+      "gsi_shares": 0,
+      "share_holdings": {},
+      "last_work": null,
+      "work_count": 0,
+      "last_claim": null,
+      "ssr_region": null,
+      "employed_at": null,
+      "is_employed": false,
+      "is_state_director": false,
+      "director_of": null,
+      "ceo_of": null,
+      "dirty_cash": 0,
+      "heat": 0,
+      "wanted": 0,
+      "last_illegal": null,
+      "total_heat_generated": 0,
+      "bot_level": 0,
+      "bot_xp": 0,
+      "bot_total_xp": 0,
+      "daily_work_count": 0,
+      "shock_worker": false,
+      "last_laylow": null,
+      "work_reminder": false,
+      "work_reminder_sent": null,
+      "collect_reminder": false,
+      "collect_reminder_sent": null,
+      "train_reminder": false,
+      "train_reminder_sent": null,
+      "deal_reminder": false,
+      "deal_reminder_sent": null,
+      "pet_food_source": {}
+    }
+  },
   "companies": {},
   "gsi_history": [
     {
@@ -39,21 +78,32 @@
   "conglomerate_id_counter": 0,
   "max_wage": 100,
   "forex": {
-    "rub_per_usd": 4,
-    "history": [],
-    "last_update": null,
+    "rub_per_usd": 4.47,
+    "history": [
+      {
+        "rate": 4.47,
+        "at": "2026-10-28T19:23:09.555Z"
+      }
+    ],
+    "last_update": "2026-10-28T19:23:09.555Z",
     "manual_override": null
   },
   "national_budget": {
     "tax_collected": 0,
-    "trade_income": 0,
+    "trade_income": 77,
     "other_income": 0,
     "defense_spending": 0,
     "payroll_paid": 0,
     "other_spending": 0,
-    "income_history": [],
+    "income_history": [
+      {
+        "kind": "trade",
+        "amount": 77,
+        "at": "2026-10-28T19:23:09.009Z"
+      }
+    ],
     "spending_history": [],
-    "last_update": null
+    "last_update": "2026-10-28T19:23:09.009Z"
   },
   "state_companies": [],
   "state_directors": {},
@@ -150,7 +200,7 @@
     "history": [],
     "total_added": 0,
     "total_removed": 0,
-    "created_at": null,
+    "created_at": "2026-10-28T19:23:09.006Z",
     "last_update": null,
     "chair_id": null,
     "chair_set_by": null,
@@ -285,5 +335,597 @@
     "animated": {},
     "next_num": 0
   },
+  "world1959": {
+    "tick": 1,
+    "date": "1961-01-08T00:00:00.000Z",
+    "lastTickAt": "2026-10-28T19:23:09.005Z",
+    "tickMinutes": 60,
+    "paused": false,
+    "milspending": 10,
+    "readiness": 60,
+    "tradeBonus": 0,
+    "aviationBonus": 0,
+    "research": {
+      "industry": {
+        "level": 0,
+        "progress": 0
+      },
+      "space": {
+        "level": 0,
+        "progress": 0
+      }
+    },
+    "nukes": {
+      "devices": 12,
+      "lastBuildAt": null
+    },
+    "nations": {
+      "usa": {
+        "id": "usa",
+        "name": "United States",
+        "gov": "Federal Republic",
+        "leader": "John F. Kennedy",
+        "ideology": "Liberal Democracy",
+        "bloc": "nato",
+        "personality": "economic",
+        "gdp": 563.4,
+        "pop": 183,
+        "stability": 79.48152569393395,
+        "military": 92,
+        "readiness": 85,
+        "relations": -54,
+        "nukes": true,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 560
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 563.4
+          }
+        ],
+        "bills": []
+      },
+      "uk": {
+        "id": "uk",
+        "name": "United Kingdom",
+        "gov": "Parliamentary Monarchy",
+        "leader": "Harold Macmillan",
+        "ideology": "Conservatism",
+        "bloc": "nato",
+        "personality": "diplomatic",
+        "gdp": 105.3,
+        "pop": 52,
+        "stability": 74.7234007281539,
+        "military": 55,
+        "readiness": 70,
+        "relations": -38,
+        "nukes": true,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 105
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 105.3
+          }
+        ],
+        "bills": []
+      },
+      "france": {
+        "id": "france",
+        "name": "France",
+        "gov": "Fifth Republic",
+        "leader": "Charles de Gaulle",
+        "ideology": "Gaullism",
+        "bloc": "nato",
+        "personality": "opportunistic",
+        "gdp": 110.3,
+        "pop": 46,
+        "stability": 61.68971406803159,
+        "military": 58,
+        "readiness": 68,
+        "relations": -30,
+        "nukes": true,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 110
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 110.3
+          }
+        ],
+        "bills": []
+      },
+      "wger": {
+        "id": "wger",
+        "name": "West Germany",
+        "gov": "Federal Republic",
+        "leader": "Konrad Adenauer",
+        "ideology": "Christian Democracy",
+        "bloc": "nato",
+        "personality": "economic",
+        "gdp": 125.8,
+        "pop": 53,
+        "stability": 77.30190238585088,
+        "military": 45,
+        "readiness": 65,
+        "relations": -59,
+        "nukes": false,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 125
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 125.8
+          }
+        ],
+        "bills": []
+      },
+      "italy": {
+        "id": "italy",
+        "name": "Italy",
+        "gov": "Parliamentary Republic",
+        "leader": "Amintore Fanfani",
+        "ideology": "Christian Democracy",
+        "bloc": "nato",
+        "personality": "diplomatic",
+        "gdp": 70.2,
+        "pop": 50,
+        "stability": 64.63049064425113,
+        "military": 35,
+        "readiness": 55,
+        "relations": -23,
+        "nukes": false,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 70
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 70.2
+          }
+        ],
+        "bills": []
+      },
+      "canada": {
+        "id": "canada",
+        "name": "Canada",
+        "gov": "Parliamentary Monarchy",
+        "leader": "John Diefenbaker",
+        "ideology": "Conservatism",
+        "bloc": "nato",
+        "personality": "defensive",
+        "gdp": 45.1,
+        "pop": 18,
+        "stability": 80.16003933774263,
+        "military": 22,
+        "readiness": 50.8,
+        "relations": -19,
+        "nukes": false,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 45
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 45.1
+          }
+        ],
+        "bills": []
+      },
+      "japan": {
+        "id": "japan",
+        "name": "Japan",
+        "gov": "Constitutional Monarchy",
+        "leader": "Hayato Ikeda",
+        "ideology": "Liberal Democracy",
+        "bloc": "nato",
+        "personality": "economic",
+        "gdp": 60.4,
+        "pop": 94,
+        "stability": 72.86103675791514,
+        "military": 18,
+        "readiness": 45,
+        "relations": -24,
+        "nukes": false,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 60
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 60.4
+          }
+        ],
+        "bills": []
+      },
+      "turkey": {
+        "id": "turkey",
+        "name": "Turkey",
+        "gov": "Republic",
+        "leader": "Cemal Gursel",
+        "ideology": "Kemalism",
+        "bloc": "nato",
+        "personality": "defensive",
+        "gdp": 15,
+        "pop": 28,
+        "stability": 54.12280588405838,
+        "military": 40,
+        "readiness": 60.8,
+        "relations": -44,
+        "nukes": false,
+        "democracy": false,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 15
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 15
+          }
+        ],
+        "bills": []
+      },
+      "poland": {
+        "id": "poland",
+        "name": "Poland",
+        "gov": "People's Republic",
+        "leader": "Wladyslaw Gomulka",
+        "ideology": "Marxism-Leninism",
+        "bloc": "wp",
+        "personality": "defensive",
+        "gdp": 30.1,
+        "pop": 30,
+        "stability": 59.21421569110433,
+        "military": 35,
+        "readiness": 60.8,
+        "relations": 54,
+        "nukes": false,
+        "democracy": false,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 30
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 30.1
+          }
+        ],
+        "bills": []
+      },
+      "eger": {
+        "id": "eger",
+        "name": "East Germany",
+        "gov": "Socialist Republic",
+        "leader": "Walter Ulbricht",
+        "ideology": "Marxism-Leninism",
+        "bloc": "wp",
+        "personality": "defensive",
+        "gdp": 35.1,
+        "pop": 17,
+        "stability": 58.62220856125346,
+        "military": 30,
+        "readiness": 62.8,
+        "relations": 59,
+        "nukes": false,
+        "democracy": false,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 35
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 35.1
+          }
+        ],
+        "bills": []
+      },
+      "china": {
+        "id": "china",
+        "name": "China",
+        "gov": "People's Republic",
+        "leader": "Mao Zedong",
+        "ideology": "Maoism",
+        "bloc": "wp",
+        "personality": "aggressive",
+        "gdp": 70.2,
+        "pop": 660,
+        "stability": 44.7618595858043,
+        "military": 70.8,
+        "readiness": 65,
+        "relations": 19,
+        "nukes": false,
+        "democracy": false,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 70
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 70.2
+          }
+        ],
+        "bills": []
+      },
+      "yugoslavia": {
+        "id": "yugoslavia",
+        "name": "Yugoslavia",
+        "gov": "Socialist Federation",
+        "leader": "Josip Broz Tito",
+        "ideology": "Titoism",
+        "bloc": "neutral",
+        "personality": "opportunistic",
+        "gdp": 18.1,
+        "pop": 18,
+        "stability": 63.06474450827866,
+        "military": 38,
+        "readiness": 58,
+        "relations": 9,
+        "nukes": false,
+        "democracy": false,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 18
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 18.1
+          }
+        ],
+        "bills": []
+      },
+      "india": {
+        "id": "india",
+        "name": "India",
+        "gov": "Federal Republic",
+        "leader": "Jawaharlal Nehru",
+        "ideology": "Non-Alignment",
+        "bloc": "neutral",
+        "personality": "diplomatic",
+        "gdp": 55.2,
+        "pop": 440,
+        "stability": 60.39393505047001,
+        "military": 30,
+        "readiness": 50,
+        "relations": 15,
+        "nukes": false,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 55
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 55.2
+          }
+        ],
+        "bills": []
+      },
+      "egypt": {
+        "id": "egypt",
+        "name": "United Arab Republic",
+        "gov": "Republic",
+        "leader": "Gamal Abdel Nasser",
+        "ideology": "Pan-Arabism",
+        "bloc": "neutral",
+        "personality": "aggressive",
+        "gdp": 12,
+        "pop": 26,
+        "stability": 51.8292020112519,
+        "military": 32.8,
+        "readiness": 55,
+        "relations": 4,
+        "nukes": false,
+        "democracy": false,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 12
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 12
+          }
+        ],
+        "bills": []
+      },
+      "brazil": {
+        "id": "brazil",
+        "name": "Brazil",
+        "gov": "Republic",
+        "leader": "Janio Quadros",
+        "ideology": "Populism",
+        "bloc": "neutral",
+        "personality": "economic",
+        "gdp": 25.2,
+        "pop": 72,
+        "stability": 56.89570782604957,
+        "military": 25,
+        "readiness": 45,
+        "relations": 0,
+        "nukes": false,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 25
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 25.2
+          }
+        ],
+        "bills": []
+      },
+      "sweden": {
+        "id": "sweden",
+        "name": "Sweden",
+        "gov": "Parliamentary Monarchy",
+        "leader": "Tage Erlander",
+        "ideology": "Social Democracy",
+        "bloc": "neutral",
+        "personality": "economic",
+        "gdp": 20.1,
+        "pop": 7,
+        "stability": 84.79218351644408,
+        "military": 28,
+        "readiness": 60,
+        "relations": 19,
+        "nukes": false,
+        "democracy": true,
+        "allies": [],
+        "sanctioned": false,
+        "lastGiftTick": -999,
+        "lastSummitTick": -999,
+        "lastElectionTick": 0,
+        "lastIncidentTick": -999,
+        "gdpHistory": [
+          {
+            "t": "2026-10-28T19:23:09.005Z",
+            "v": 20
+          },
+          {
+            "t": "1961-01-08T00:00:00.000Z",
+            "v": 20.1
+          }
+        ],
+        "bills": []
+      }
+    },
+    "aiWars": [],
+    "matrix": {},
+    "lastIncome": 77,
+    "gdpHistory": [
+      {
+        "t": "1961-01-08T00:00:00.000Z",
+        "v": 0
+      }
+    ],
+    "goldHistory": [
+      {
+        "t": "1961-01-08T00:00:00.000Z",
+        "v": 0
+      }
+    ]
+  },
+  "national_market": {
+    "stock": {},
+    "sold_count": 0,
+    "bought_count": 0
+  },
+  "mafias": [],
   "access_codes_hashed": {}
 }
